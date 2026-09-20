@@ -16,15 +16,15 @@ def fetch_rss_headlines():
     for category, url in FEEDS.items():
         try:
             parsed = feedparser.parse(url)
-            for entry in parsed.entries[:3]:
+            for entry in parsed.entries[:2]:
                 summary = getattr(entry, 'summary', '')
                 headlines.append(f"[{category}] {entry.title}: {summary}")
         except Exception as e:
             print(f"Warning: RSS feed issue for {category}: {e}")
     
     if not headlines:
-        headlines.append("[Defence] Joint tri-service military exercise initiated.")
-        headlines.append("[National] Government introduces new education grant.")
+        headlines.append("[Defence] Tri-service military exercise conducted in Indian Ocean region.")
+        headlines.append("[National] Government releases national infrastructure updates.")
 
     return "\n".join(headlines)
 
@@ -36,14 +36,25 @@ def generate_affairs_and_quiz(news_text):
     client = genai.Client(api_key=api_key)
     
     prompt = f"""
-You are an expert exam strategist for Indian competitive exams.
+You are an expert exam strategist for Indian competitive exams (UPSC, SSC, Banking, State PCS).
 Analyze these news items:
 
 {news_text}
 
 Task:
-1. Extract 4 distinct current affairs headlines (1 Defence, 1 Schemes, 1 International, 1 National).
-2. Create 2 multiple-choice quiz questions based on them.
+1. Extract 4 distinct current affairs entries (1 Defence, 1 Schemes, 1 International, 1 National).
+2. For EACH current affair, research and detail the following structured information:
+   - title
+   - image_url (Find a verified direct image URL from credible news sources, Wikimedia, or news media)
+   - date (Important date/period)
+   - place (Location/City/Region)
+   - persons_ministers (Ministers or Key VIPs involved)
+   - officers (Key administrative/military officers involved)
+   - countries_states (Countries/Indian States involved)
+   - reason (Reason for importance for exams)
+   - mission (Mission / Scheme / Project / Operation name)
+   - conclusion (Summary / Impact)
+3. Create 2 multiple-choice quiz questions based on these 4 entries.
 
 Return ONLY a valid JSON object with this exact structure:
 {{
@@ -51,8 +62,16 @@ Return ONLY a valid JSON object with this exact structure:
     {{
       "id": 1,
       "category": "Defence",
-      "title": "Headline title",
-      "detail": "Exam relevant brief breakdown."
+      "title": "Title here",
+      "image_url": "https://...",
+      "date": "YYYY-MM-DD",
+      "place": "Place name",
+      "persons_ministers": "Ministers involved",
+      "officers": "Officers involved",
+      "countries_states": "Countries or States",
+      "reason": "Why this matters for competitive exams",
+      "mission": "Operation or Mission name",
+      "conclusion": "Final outcome or key takeaways"
     }}
   ],
   "quizzes": [
@@ -65,15 +84,24 @@ Return ONLY a valid JSON object with this exact structure:
 }}
 """
 
+    # Enable Google Search tool to ground results and source verified image links
     response = client.models.generate_content(
         model="gemini-2.5-flash",
         contents=prompt,
         config=types.GenerateContentConfig(
-            response_mime_type="application/json"
+            response_mime_type="application/json",
+            tools=[{"google_search": {}}]
         )
     )
     
-    return json.loads(response.text)
+    # Extract JSON string from output
+    text_content = response.text.strip()
+    if "```json" in text_content:
+        text_content = text_content.split("```json")[1].split("```")[0].strip()
+    elif "```" in text_content:
+        text_content = text_content.split("```")[1].split("```")[0].strip()
+
+    return json.loads(text_content)
 
 def update_index_html(data):
     if not os.path.exists("index.html"):
@@ -97,7 +125,7 @@ if __name__ == "__main__":
     print("Fetching news feeds...")
     headlines = fetch_rss_headlines()
     
-    print("Generating current affairs with Gemini...")
+    print("Generating comprehensive current affairs with Gemini Grounding...")
     app_data = generate_affairs_and_quiz(headlines)
     
     print("Updating index.html...")
