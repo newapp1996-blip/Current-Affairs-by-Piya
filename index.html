@@ -17,7 +17,6 @@
       --neon-gold: #eab308;
       --text-main: #f9fafb;
       --text-muted: #9ca3af;
-      --category-bg: linear-gradient(135deg, #0f172a, #1e1b4b);
     }
 
     * { box-sizing: border-box; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
@@ -31,7 +30,6 @@
       background-attachment: fixed;
     }
 
-    /* Dynamic Futuristic Background Blur */
     body::before {
       content: '';
       position: fixed;
@@ -57,12 +55,12 @@
 
     .logo {
       font-family: 'Orbitron', sans-serif;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-weight: 900;
       background: linear-gradient(90deg, var(--neon-cyan), var(--neon-purple));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      letter-spacing: 1.5px;
+      letter-spacing: 1px;
     }
 
     .header-controls { display: flex; gap: 10px; align-items: center; }
@@ -112,7 +110,6 @@
 
     .container { max-width: 800px; margin: 0 auto; padding: 0 15px 40px; }
 
-    /* Futuristic Dynamic Cards */
     .card {
       background: var(--card-glass);
       backdrop-filter: blur(12px);
@@ -163,9 +160,10 @@
     .quiz-option.correct { background: rgba(34, 197, 94, 0.2); border-color: #22c55e; }
     .quiz-option.wrong { background: rgba(239, 68, 68, 0.2); border-color: #ef4444; }
 
-    .hidden { display: none; }
+    /* Hidden Utility Class */
+    .hidden { display: none !important; }
 
-    /* Login Modal */
+    /* Modal Styling */
     .modal {
       position: fixed; top: 0; left: 0; width: 100%; height: 100%;
       background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(10px);
@@ -210,13 +208,14 @@
   <div id="saved-section" class="hidden"></div>
 </div>
 
-<!-- Authentication Modal -->
+<!-- Authentication Modal (Hidden by default) -->
 <div id="authModal" class="modal hidden">
   <div class="modal-content">
     <h2 style="font-family: 'Orbitron';">Student Login</h2>
     <p style="font-size: 0.85rem; color: var(--text-muted);">Enter phone number or email to save current affairs</p>
     <input type="text" id="userInput" placeholder="Phone Number / Email">
     <button class="btn-auth" style="width: 100%; padding: 12px;" onclick="sendOTP()">Send OTP</button>
+    <br>
     <button style="background: none; border: none; color: var(--text-muted); margin-top: 15px; cursor: pointer;" onclick="toggleAuthModal()">Cancel</button>
   </div>
 </div>
