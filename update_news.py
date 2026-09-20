@@ -3,7 +3,9 @@ import json
 import re
 import feedparser
 from google import genai
+from google.genai import types
 
+# RSS Feeds for National, Defence, and International News
 FEEDS = {
     "National": "https://www.thehindu.com/news/national/feeder/default.rss",
     "International": "https://www.thehindu.com/news/international/feeder/default.rss",
@@ -11,6 +13,7 @@ FEEDS = {
 }
 
 def fetch_rss_headlines():
+    """Fetches top headlines from specified RSS feeds."""
     headlines = []
     for category, url in FEEDS.items():
         parsed = feedparser.parse(url)
@@ -20,20 +23,21 @@ def fetch_rss_headlines():
     return "\n".join(headlines)
 
 def generate_affairs_and_quiz(news_text):
+    """Generates current affairs items and multiple choice quiz questions using Gemini API."""
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
-        raise ValueError("GEMINI_API_KEY environment variable not set.")
+        raise ValueError("GEMINI_API_KEY environment variable is missing or empty in GitHub Secrets.")
 
     client = genai.Client(api_key=api_key)
     
     prompt = f"""
-You are an expert exam strategist for Indian competitive exams (UPSC, Defence, Teaching).
+You are an expert exam strategist for Indian competitive exams (UPSC, Defence, Teaching, SSC).
 Analyze these recent news items:
 
 {news_text}
 
 Task:
-1. Extract 4 distinct current affairs headlines (1 Defence, 1 Schemes, 1 International, 1 National). Assign sequential integer IDs (1, 2, 3, 4).
+1. Extract 4 distinct, high-yield current affairs headlines (1 Defence, 1 Schemes, 1 International, 1 National). Assign sequential integer IDs (1, 2, 3, 4).
 2. Create 2 multiple-choice questions directly based on these news events.
 
 Return ONLY a strictly valid JSON object matching this exact structure:
@@ -58,13 +62,16 @@ Return ONLY a strictly valid JSON object matching this exact structure:
 
     response = client.models.generate_content(
         model="gemini-2.5-flash",
-        contents=prompt
+        contents=prompt,
+        config=types.GenerateContentConfig(
+            response_mime_type="application/json"
+        )
     )
     
-    clean_json = re.sub(r'```json\s*|\s*```', '', response.text).strip()
-    return json.loads(clean_json)
+    return json.loads(response.text)
 
 def update_index_html(data):
+    """Replaces the existing `appData` JavaScript object inside index.html with new content."""
     with open("index.html", "r", encoding="utf-8") as f:
         html_content = f.read()
 
@@ -83,9 +90,9 @@ if __name__ == "__main__":
     print("Fetching news feeds...")
     news_headlines = fetch_rss_headlines()
     
-    print("Generating updated current affairs and quizzes with Gemini...")
+    print("Generating current affairs and quizzes with Gemini...")
     app_data = generate_affairs_and_quiz(news_headlines)
     
-    print("Injecting new data into index.html...")
+    print("Updating index.html with generated content...")
     update_index_html(app_data)
-    print("Success! App updated automatically.")
+    print("Success! index.html updated.")
