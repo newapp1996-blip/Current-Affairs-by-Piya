@@ -4,7 +4,6 @@ import re
 import feedparser
 from google import genai
 
-# Leading News Platform RSS Feeds
 FEEDS = {
     "National": "https://www.thehindu.com/news/national/feeder/default.rss",
     "International": "https://www.thehindu.com/news/international/feeder/default.rss",
@@ -12,7 +11,6 @@ FEEDS = {
 }
 
 def fetch_rss_headlines():
-    """Fetches top headlines from specified Indian news RSS feeds."""
     headlines = []
     for category, url in FEEDS.items():
         parsed = feedparser.parse(url)
@@ -22,7 +20,6 @@ def fetch_rss_headlines():
     return "\n".join(headlines)
 
 def generate_affairs_and_quiz(news_text):
-    """Uses Gemini API to curate current affairs and generate quiz questions."""
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         raise ValueError("GEMINI_API_KEY environment variable not set.")
@@ -36,13 +33,14 @@ Analyze these recent news items:
 {news_text}
 
 Task:
-1. Extract 4 distinct, high-yield current affairs headlines (1 Defence, 1 Schemes, 1 International, 1 National).
-2. Create 2 multiple-choice questions directly related to these news events.
+1. Extract 4 distinct current affairs headlines (1 Defence, 1 Schemes, 1 International, 1 National). Assign sequential integer IDs (1, 2, 3, 4).
+2. Create 2 multiple-choice questions directly based on these news events.
 
 Return ONLY a strictly valid JSON object matching this exact structure:
 {{
   "news": [
     {{
+      "id": 1,
       "category": "Defence",
       "title": "Headline title",
       "detail": "Exam relevant brief breakdown."
@@ -63,12 +61,10 @@ Return ONLY a strictly valid JSON object matching this exact structure:
         contents=prompt
     )
     
-    # Clean up markdown formatting wrapper if returned by model
     clean_json = re.sub(r'```json\s*|\s*```', '', response.text).strip()
     return json.loads(clean_json)
 
 def update_index_html(data):
-    """Injects the freshly generated current affairs JSON directly into index.html."""
     with open("index.html", "r", encoding="utf-8") as f:
         html_content = f.read()
 
@@ -84,12 +80,12 @@ def update_index_html(data):
         f.write(updated_html)
 
 if __name__ == "__main__":
-    print("Fetching news feeds from Indian news sources...")
+    print("Fetching news feeds...")
     news_headlines = fetch_rss_headlines()
     
-    print("Processing current affairs and quizzes with Gemini...")
+    print("Generating updated current affairs and quizzes with Gemini...")
     app_data = generate_affairs_and_quiz(news_headlines)
     
-    print("Updating index.html with new content...")
+    print("Injecting new data into index.html...")
     update_index_html(app_data)
     print("Success! App updated automatically.")
