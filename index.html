@@ -1,71 +1,202 @@
-import os
-import json
-import feedparser
-import google.generativeai as genai
-import firebase_admin
-from firebase_admin import credentials, firestore
-from datetime import datetime
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Exam Current Affairs & Quizzes</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --secondary: #2563eb;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: var(--secondary);
+    }
+    nav button {
+      background: none;
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    nav button.active {
+      border-bottom: 3px solid #facc15;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .tag {
+      display: inline-block;
+      padding: 3px 8px;
+      font-size: 12px;
+      border-radius: 4px;
+      background: #e2e8f0;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .quiz-option {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 6px 0;
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 5px;
+      text-align: left;
+      cursor: pointer;
+    }
+    .quiz-option.correct { background: #bbf7d0; border-color: #22c55e; }
+    .quiz-option.wrong { background: #fecaca; border-color: #ef4444; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
 
-# Initialize Firebase
-cred_json = json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT'])
-cred = credentials.Certificate(cred_json)
-firebase_admin.initialize_app(cred)
-db = firestore.client()
+<header>
+  <h1>Daily Exam Current Affairs</h1>
+  <p>For UPSC, Defence, Teaching & All India Competitive Exams</p>
+</header>
 
-# Initialize Gemini API
-genai.configure(api_key=os.environ['GEMINI_API_KEY'])
-model = genai.GenerativeModel('gemini-1.5-flash')
+<nav>
+  <button class="active" onclick="switchTab('news')">Daily News</button>
+  <button onclick="switchTab('quiz')">Daily Quiz</button>
+  <button onclick="switchTab('revision')">Weekly/Monthly Quiz</button>
+</nav>
 
-# RSS Feed sources
-FEEDS = {
-    "National": "https://www.thehindu.com/news/national/feeder/default.rss",
-    "International": "https://www.thehindu.com/news/international/feeder/default.rss",
-    "Defense": "https://indianexpress.com/section/india/feed/"
-}
+<div class="container">
+  <!-- News Section -->
+  <div id="news-section">
+    <h2>Today's Key Headlines</h2>
+    <div id="news-container"></div>
+  </div>
 
-def process_news():
-    today_str = datetime.now().strftime('%Y-%m-%d')
-    all_articles = []
+  <!-- Daily Quiz Section -->
+  <div id="quiz-section" class="hidden">
+    <h2>Daily Quiz Practice</h2>
+    <div id="quiz-container"></div>
+  </div>
 
-    for category, url in FEEDS.items():
-        parsed = feedparser.parse(url)
-        # Take the top 3 items per feed
-        for entry in parsed.entries[:3]:
-            prompt = f"""
-            You are an expert content creator for Indian Competitive Exams (UPSC, Defense, SSC, Teaching).
-            Analyze this article summary: "{entry.summary}" (Title: {entry.title}).
-            
-            Return ONLY a valid JSON object with no markdown formatting:
-            {{
-                "title": "{entry.title}",
-                "category": "{category}",
-                "summary": "3-bullet point breakdown relevant for competitive exams.",
-                "quiz": {{
-                    "question": "A multiple choice question based on this event.",
-                    "options": ["Option A", "Option B", "Option C", "Option D"],
-                    "answer": "Correct Option verbatim",
-                    "explanation": "Brief explanation of why it is correct."
-                }}
-            }}
-            """
-            try:
-                response = model.generate_content(prompt)
-                clean_text = response.text.replace("```json", "").replace("```", "").strip()
-                article_data = json.loads(clean_text)
-                article_data['date'] = today_str
-                article_data['source'] = "Leading National Daily"
-                all_articles.append(article_data)
-            except Exception as e:
-                print(f"Error processing article: {e}")
+  <!-- Weekly/Monthly Revision Section -->
+  <div id="revision-section" class="hidden">
+    <h2>Revision Quizzes</h2>
+    <div class="card">
+      <h3>Weekly Revision Test</h3>
+      <p>Test your retention for the past 7 days of news.</p>
+      <button onclick="alert('Weekly quiz loads historical saved data.')">Start Weekly Quiz</button>
+    </div>
+    <div class="card">
+      <h3>Monthly Mega Quiz</h3>
+      <p>Comprehensive current affairs review for UPSC & Defence exams.</p>
+      <button onclick="alert('Monthly quiz loads historical saved data.')">Start Monthly Quiz</button>
+    </div>
+  </div>
+</div>
 
-    # Save to Firestore
-    doc_ref = db.collection('daily_news').document(today_str)
-    doc_ref.set({
-        'date': today_str,
-        'articles': all_articles,
-        'created_at': firestore.SERVER_TIMESTAMP
-    })
-    print(f"Successfully processed and uploaded current affairs for {today_str}")
+<script>
+  const appData = {
+    news: [
+      { category: "Defence", title: "Joint Military Exercise Initiated", detail: "India and partner nations begin joint tri-service maneuvers aimed at enhancing maritime security." },
+      { category: "Schemes", title: "New Education Incentive Launched", detail: "Government announces revised scholarship funds under the national education framework for competitive aspirants." },
+      { category: "International", title: "Global Climate Summit Outcome", detail: "Key accords signed regarding renewable energy targets and multilateral tech-transfer agreements." },
+      { category: "National", title: "Infrastructure Expansion Mandate", detail: "High-speed rail corridor Phase 2 approved to boost regional industrial freight connectivity." }
+    ],
+    quizzes: [
+      {
+        question: "Which sector receives new funding focus under the latest national education framework update?",
+        options: ["Competitive Exam Scholarships", "Agricultural Grants", "Export Subsidies", "Mining Logistics"],
+        answer: 0
+      },
+      {
+        question: "What is the primary aim of the newly initiated tri-service joint military exercises?",
+        options: ["Cyber defense audit", "Enhancing maritime security", "Border infrastructure survey", "Space research expansion"],
+        answer: 1
+      }
+    ]
+  };
 
-if __name__ == "__main__":
-    process_news()
+  function renderNews() {
+    const container = document.getElementById('news-container');
+    container.innerHTML = appData.news.map(item => `
+      <div class="card">
+        <span class="tag">${item.category}</span>
+        <h3>${item.title}</h3>
+        <p>${item.detail}</p>
+      </div>
+    `).join('');
+  }
+
+  function renderQuiz() {
+    const container = document.getElementById('quiz-container');
+    container.innerHTML = appData.quizzes.map((q, qIndex) => `
+      <div class="card">
+        <h3>Q${qIndex + 1}: ${q.question}</h3>
+        ${q.options.map((opt, oIndex) => `
+          <button class="quiz-option" onclick="checkAnswer(this, ${qIndex}, ${oIndex})">${opt}</button>
+        `).join('')}
+      </div>
+    `).join('');
+  }
+
+  function checkAnswer(btn, qIdx, selectedOpt) {
+    const parent = btn.parentElement;
+    const options = parent.querySelectorAll('.quiz-option');
+    const correctOpt = appData.quizzes[qIdx].answer;
+
+    options.forEach((b, i) => {
+      b.disabled = true;
+      if (i === correctOpt) b.classList.add('correct');
+      else if (i === selectedOpt) b.classList.add('wrong');
+    });
+  }
+
+  function switchTab(tab) {
+    document.getElementById('news-section').classList.add('hidden');
+    document.getElementById('quiz-section').classList.add('hidden');
+    document.getElementById('revision-section').classList.add('hidden');
+
+    document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+
+    if (tab === 'news') {
+      document.getElementById('news-section').classList.remove('hidden');
+      event.target.classList.add('active');
+    } else if (tab === 'quiz') {
+      document.getElementById('quiz-section').classList.remove('hidden');
+      event.target.classList.add('active');
+    } else if (tab === 'revision') {
+      document.getElementById('revision-section').classList.remove('hidden');
+      event.target.classList.add('active');
+    }
+  }
+
+  renderNews();
+  renderQuiz();
+</script>
+</body>
+</html>
