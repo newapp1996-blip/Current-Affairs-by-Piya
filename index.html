@@ -3,157 +3,328 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daily Exam Current Affairs & Quizzes</title>
+  <title>AURA | AI Daily Exam Current Affairs & Quizzes</title>
+  <link rel="manifest" href="manifest.json">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #1e3a8a;
-      --secondary: #2563eb;
-      --bg: #f8fafc;
-      --card: #ffffff;
-      --text: #0f172a;
+      --bg-dark: #030712;
+      --card-glass: rgba(17, 24, 39, 0.75);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --neon-cyan: #06b6d4;
+      --neon-blue: #3b82f6;
+      --neon-purple: #a855f7;
+      --neon-gold: #eab308;
+      --text-main: #f9fafb;
+      --text-muted: #9ca3af;
+      --category-bg: linear-gradient(135deg, #0f172a, #1e1b4b);
     }
+
+    * { box-sizing: border-box; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
-      background-color: var(--bg);
-      color: var(--text);
+      background: var(--bg-dark);
+      color: var(--text-main);
+      min-height: 100vh;
+      background-attachment: fixed;
     }
+
+    /* Dynamic Futuristic Background Blur */
+    body::before {
+      content: '';
+      position: fixed;
+      top: -10%; left: -10%; width: 120%; height: 120%;
+      background: radial-gradient(circle at 50% 20%, rgba(59, 130, 246, 0.15), transparent 40%),
+                  radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.15), transparent 40%);
+      z-index: -1;
+      filter: blur(60px);
+    }
+
     header {
-      background-color: var(--primary);
-      color: white;
-      padding: 15px;
-      text-align: center;
+      background: rgba(3, 7, 18, 0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--card-border);
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
+
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 900;
+      background: linear-gradient(90deg, var(--neon-cyan), var(--neon-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 1.5px;
+    }
+
+    .header-controls { display: flex; gap: 10px; align-items: center; }
+
+    select, .btn-auth {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      color: var(--text-main);
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+
+    .btn-auth {
+      background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+      font-weight: 600;
+      border: none;
+    }
+
     nav {
       display: flex;
       justify-content: center;
-      background: var(--secondary);
-    }
-    nav button {
-      background: none;
-      border: none;
-      color: white;
-      padding: 12px 20px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    nav button.active {
-      border-bottom: 3px solid #facc15;
-    }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 0 15px;
-    }
-    .card {
-      background: var(--card);
-      border-radius: 8px;
+      gap: 10px;
       padding: 15px;
-      margin-bottom: 15px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      background: rgba(17, 24, 39, 0.4);
+      backdrop-filter: blur(10px);
     }
-    .tag {
-      display: inline-block;
-      padding: 3px 8px;
-      font-size: 12px;
-      border-radius: 4px;
-      background: #e2e8f0;
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-    .quiz-option {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      margin: 6px 0;
-      background: #f1f5f9;
-      border: 1px solid #cbd5e1;
-      border-radius: 5px;
-      text-align: left;
+
+    nav button {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      padding: 10px 18px;
+      border-radius: 20px;
+      font-weight: 600;
       cursor: pointer;
+      font-size: 0.85rem;
     }
-    .quiz-option.correct { background: #bbf7d0; border-color: #22c55e; }
-    .quiz-option.wrong { background: #fecaca; border-color: #ef4444; }
+
+    nav button.active {
+      color: var(--text-main);
+      background: linear-gradient(90deg, rgba(6, 182, 212, 0.2), rgba(168, 85, 247, 0.2));
+      border-color: var(--neon-cyan);
+      box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+    }
+
+    .container { max-width: 800px; margin: 0 auto; padding: 0 15px 40px; }
+
+    /* Futuristic Dynamic Cards */
+    .card {
+      background: var(--card-glass);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; width: 4px; height: 100%;
+      background: var(--neon-cyan);
+    }
+
+    .card[data-cat="Defence"]::before { background: #f59e0b; }
+    .card[data-cat="Schemes"]::before { background: #10b981; }
+    .card[data-cat="International"]::before { background: #06b6d4; }
+    .card[data-cat="National"]::before { background: #a855f7; }
+
+    .card-header { display: flex; justify-content: space-between; align-items: center; }
+
+    .tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      letter-spacing: 1px;
+    }
+
+    .fav-btn {
+      background: none; border: none; font-size: 1.3rem; cursor: pointer; color: var(--text-muted);
+    }
+    .fav-btn.active { color: var(--neon-gold); text-shadow: 0 0 10px var(--neon-gold); }
+
+    .quiz-option {
+      display: block; width: 100%; padding: 12px 15px; margin: 8px 0;
+      background: rgba(255, 255, 255, 0.03); border: 1px solid var(--card-border);
+      border-radius: 10px; color: var(--text-main); text-align: left; cursor: pointer;
+    }
+    .quiz-option:hover { background: rgba(255, 255, 255, 0.08); border-color: var(--neon-cyan); }
+    .quiz-option.correct { background: rgba(34, 197, 94, 0.2); border-color: #22c55e; }
+    .quiz-option.wrong { background: rgba(239, 68, 68, 0.2); border-color: #ef4444; }
+
     .hidden { display: none; }
+
+    /* Login Modal */
+    .modal {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(10px);
+      display: flex; justify-content: center; align-items: center; z-index: 200;
+    }
+    .modal-content {
+      background: #0f172a; border: 1px solid var(--card-border);
+      padding: 30px; border-radius: 20px; width: 90%; max-width: 400px; text-align: center;
+    }
+    .modal-content input {
+      width: 100%; padding: 12px; margin: 10px 0; border-radius: 8px;
+      border: 1px solid var(--card-border); background: rgba(255,255,255,0.05); color: white;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Daily Exam Current Affairs</h1>
-  <p>For UPSC, Defence, Teaching & All India Competitive Exams</p>
+  <div class="logo">AURA EXAM AI</div>
+  <div class="header-controls">
+    <select id="langSelector" onchange="changeLanguage(this.value)">
+      <option value="en">English</option>
+      <option value="hi">हिंदी (Hindi)</option>
+      <option value="bn">বাংলা (Bengali)</option>
+      <option value="ta">தமிழ் (Tamil)</option>
+      <option value="te">తెలుగు (Telugu)</option>
+      <option value="mr">मराठी (Marathi)</option>
+    </select>
+    <button class="btn-auth" id="authBtn" onclick="toggleAuthModal()">Login</button>
+  </div>
 </header>
 
 <nav>
-  <button class="active" onclick="switchTab('news')">Daily News</button>
-  <button onclick="switchTab('quiz')">Daily Quiz</button>
-  <button onclick="switchTab('revision')">Weekly/Monthly Quiz</button>
+  <button class="active" onclick="switchTab('news', event)">Daily News</button>
+  <button onclick="switchTab('quiz', event)">Daily Quiz</button>
+  <button onclick="switchTab('saved', event)">Bookmarks ⭐</button>
 </nav>
 
 <div class="container">
-  <!-- News Section -->
-  <div id="news-section">
-    <h2>Today's Key Headlines</h2>
-    <div id="news-container"></div>
-  </div>
+  <div id="news-section"></div>
+  <div id="quiz-section" class="hidden"></div>
+  <div id="saved-section" class="hidden"></div>
+</div>
 
-  <!-- Daily Quiz Section -->
-  <div id="quiz-section" class="hidden">
-    <h2>Daily Quiz Practice</h2>
-    <div id="quiz-container"></div>
-  </div>
-
-  <!-- Weekly/Monthly Revision Section -->
-  <div id="revision-section" class="hidden">
-    <h2>Revision Quizzes</h2>
-    <div class="card">
-      <h3>Weekly Revision Test</h3>
-      <p>Test your retention for the past 7 days of news.</p>
-      <button onclick="alert('Weekly quiz loads historical saved data.')">Start Weekly Quiz</button>
-    </div>
-    <div class="card">
-      <h3>Monthly Mega Quiz</h3>
-      <p>Comprehensive current affairs review for UPSC & Defence exams.</p>
-      <button onclick="alert('Monthly quiz loads historical saved data.')">Start Monthly Quiz</button>
-    </div>
+<!-- Authentication Modal -->
+<div id="authModal" class="modal hidden">
+  <div class="modal-content">
+    <h2 style="font-family: 'Orbitron';">Student Login</h2>
+    <p style="font-size: 0.85rem; color: var(--text-muted);">Enter phone number or email to save current affairs</p>
+    <input type="text" id="userInput" placeholder="Phone Number / Email">
+    <button class="btn-auth" style="width: 100%; padding: 12px;" onclick="sendOTP()">Send OTP</button>
+    <button style="background: none; border: none; color: var(--text-muted); margin-top: 15px; cursor: pointer;" onclick="toggleAuthModal()">Cancel</button>
   </div>
 </div>
 
 <script>
+  let currentUser = localStorage.getItem('aura_user') || null;
+  let favorites = JSON.parse(localStorage.getItem('aura_favs')) || [];
+  let currentLang = 'en';
+
+  const translations = {
+    hi: {
+      "Defence": "रक्षा", "Schemes": "योजनाएं", "International": "अंतर्राष्ट्रीय", "National": "राष्ट्रीय",
+      "Joint Military Exercise Initiated": "संयुक्त सैन्य अभ्यास शुरू किया गया",
+      "India and partner nations begin joint tri-service maneuvers aimed at enhancing maritime security.": "भारत और साझेदार देशों ने समुद्री सुरक्षा बढ़ाने के उद्देश्य से संयुक्त त्रि-सेवा युद्धाभ्यास शुरू किया।"
+    }
+  };
+
   const appData = {
     news: [
-      { category: "Defence", title: "Joint Military Exercise Initiated", detail: "India and partner nations begin joint tri-service maneuvers aimed at enhancing maritime security." },
-      { category: "Schemes", title: "New Education Incentive Launched", detail: "Government announces revised scholarship funds under the national education framework for competitive aspirants." },
-      { category: "International", title: "Global Climate Summit Outcome", detail: "Key accords signed regarding renewable energy targets and multilateral tech-transfer agreements." },
-      { category: "National", title: "Infrastructure Expansion Mandate", detail: "High-speed rail corridor Phase 2 approved to boost regional industrial freight connectivity." }
+      { id: 1, category: "Defence", title: "Joint Military Exercise Initiated", detail: "India and partner nations begin joint tri-service maneuvers aimed at enhancing maritime security." },
+      { id: 2, category: "Schemes", title: "New Education Incentive Launched", detail: "Government announces revised scholarship funds under the national education framework for competitive aspirants." },
+      { id: 3, category: "International", title: "Global Climate Summit Outcome", detail: "Key accords signed regarding renewable energy targets and multilateral tech-transfer agreements." },
+      { id: 4, category: "National", title: "Infrastructure Expansion Mandate", detail: "High-speed rail corridor Phase 2 approved to boost regional industrial freight connectivity." }
     ],
     quizzes: [
       {
         question: "Which sector receives new funding focus under the latest national education framework update?",
         options: ["Competitive Exam Scholarships", "Agricultural Grants", "Export Subsidies", "Mining Logistics"],
         answer: 0
-      },
-      {
-        question: "What is the primary aim of the newly initiated tri-service joint military exercises?",
-        options: ["Cyber defense audit", "Enhancing maritime security", "Border infrastructure survey", "Space research expansion"],
-        answer: 1
       }
     ]
   };
 
+  function updateAuthUI() {
+    const btn = document.getElementById('authBtn');
+    if (currentUser) {
+      btn.innerText = "Logged In";
+      btn.style.background = "#10b981";
+    }
+  }
+
+  function toggleAuthModal() {
+    document.getElementById('authModal').classList.toggle('hidden');
+  }
+
+  function sendOTP() {
+    const val = document.getElementById('userInput').value;
+    if (val) {
+      currentUser = val;
+      localStorage.setItem('aura_user', currentUser);
+      updateAuthUI();
+      toggleAuthModal();
+      alert("Successfully logged in! You can now save favorites.");
+    }
+  }
+
+  function toggleFav(id) {
+    if (!currentUser) {
+      toggleAuthModal();
+      return;
+    }
+    if (favorites.includes(id)) {
+      favorites = favorites.filter(f => f !== id);
+    } else {
+      favorites.push(id);
+    }
+    localStorage.setItem('aura_favs', JSON.stringify(favorites));
+    renderNews();
+    renderSaved();
+  }
+
+  function translateText(text) {
+    if (currentLang === 'hi' && translations.hi[text]) return translations.hi[text];
+    return text;
+  }
+
   function renderNews() {
-    const container = document.getElementById('news-container');
+    const container = document.getElementById('news-section');
     container.innerHTML = appData.news.map(item => `
-      <div class="card">
-        <span class="tag">${item.category}</span>
-        <h3>${item.title}</h3>
-        <p>${item.detail}</p>
+      <div class="card" data-cat="${item.category}">
+        <div class="card-header">
+          <span class="tag">${translateText(item.category)}</span>
+          <button class="fav-btn ${favorites.includes(item.id) ? 'active' : ''}" onclick="toggleFav(${item.id})">★</button>
+        </div>
+        <h3 style="margin: 12px 0 8px;">${translateText(item.title)}</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">${translateText(item.detail)}</p>
+      </div>
+    `).join('');
+  }
+
+  function renderSaved() {
+    const container = document.getElementById('saved-section');
+    const savedNews = appData.news.filter(n => favorites.includes(n.id));
+    if (savedNews.length === 0) {
+      container.innerHTML = `<div class="card"><p style="text-align: center; color: var(--text-muted);">No saved current affairs yet.</p></div>`;
+      return;
+    }
+    container.innerHTML = savedNews.map(item => `
+      <div class="card" data-cat="${item.category}">
+        <span class="tag">${translateText(item.category)}</span>
+        <h3>${translateText(item.title)}</h3>
+        <p style="color: var(--text-muted);">${translateText(item.detail)}</p>
       </div>
     `).join('');
   }
 
   function renderQuiz() {
-    const container = document.getElementById('quiz-container');
+    const container = document.getElementById('quiz-section');
     container.innerHTML = appData.quizzes.map((q, qIndex) => `
       <div class="card">
         <h3>Q${qIndex + 1}: ${q.question}</h3>
@@ -165,10 +336,8 @@
   }
 
   function checkAnswer(btn, qIdx, selectedOpt) {
-    const parent = btn.parentElement;
-    const options = parent.querySelectorAll('.quiz-option');
+    const options = btn.parentElement.querySelectorAll('.quiz-option');
     const correctOpt = appData.quizzes[qIdx].answer;
-
     options.forEach((b, i) => {
       b.disabled = true;
       if (i === correctOpt) b.classList.add('correct');
@@ -176,25 +345,26 @@
     });
   }
 
-  function switchTab(tab) {
-    document.getElementById('news-section').classList.add('hidden');
-    document.getElementById('quiz-section').classList.add('hidden');
-    document.getElementById('revision-section').classList.add('hidden');
-
-    document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
-
-    if (tab === 'news') {
-      document.getElementById('news-section').classList.remove('hidden');
-      event.target.classList.add('active');
-    } else if (tab === 'quiz') {
-      document.getElementById('quiz-section').classList.remove('hidden');
-      event.target.classList.add('active');
-    } else if (tab === 'revision') {
-      document.getElementById('revision-section').classList.remove('hidden');
-      event.target.classList.add('active');
-    }
+  function changeLanguage(lang) {
+    currentLang = lang;
+    renderNews();
+    renderSaved();
   }
 
+  function switchTab(tab, evt) {
+    document.getElementById('news-section').classList.add('hidden');
+    document.getElementById('quiz-section').classList.add('hidden');
+    document.getElementById('saved-section').classList.add('hidden');
+    document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+
+    if (tab === 'news') document.getElementById('news-section').classList.remove('hidden');
+    else if (tab === 'quiz') document.getElementById('quiz-section').classList.remove('hidden');
+    else if (tab === 'saved') { renderSaved(); document.getElementById('saved-section').classList.remove('hidden'); }
+    
+    evt.target.classList.add('active');
+  }
+
+  updateAuthUI();
   renderNews();
   renderQuiz();
 </script>
