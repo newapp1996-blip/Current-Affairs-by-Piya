@@ -1,0 +1,71 @@
+import os
+import json
+import feedparser
+import google.generativeai as genai
+import firebase_admin
+from firebase_admin import credentials, firestore
+from datetime import datetime
+
+# Initialize Firebase
+cred_json = json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT'])
+cred = credentials.Certificate(cred_json)
+firebase_admin.initialize_app(cred)
+db = firestore.client()
+
+# Initialize Gemini API
+genai.configure(api_key=os.environ['GEMINI_API_KEY'])
+model = genai.GenerativeModel('gemini-1.5-flash')
+
+# RSS Feed sources
+FEEDS = {
+    "National": "https://www.thehindu.com/news/national/feeder/default.rss",
+    "International": "https://www.thehindu.com/news/international/feeder/default.rss",
+    "Defense": "https://indianexpress.com/section/india/feed/"
+}
+
+def process_news():
+    today_str = datetime.now().strftime('%Y-%m-%d')
+    all_articles = []
+
+    for category, url in FEEDS.items():
+        parsed = feedparser.parse(url)
+        # Take the top 3 items per feed
+        for entry in parsed.entries[:3]:
+            prompt = f"""
+            You are an expert content creator for Indian Competitive Exams (UPSC, Defense, SSC, Teaching).
+            Analyze this article summary: "{entry.summary}" (Title: {entry.title}).
+            
+            Return ONLY a valid JSON object with no markdown formatting:
+            {{
+                "title": "{entry.title}",
+                "category": "{category}",
+                "summary": "3-bullet point breakdown relevant for competitive exams.",
+                "quiz": {{
+                    "question": "A multiple choice question based on this event.",
+                    "options": ["Option A", "Option B", "Option C", "Option D"],
+                    "answer": "Correct Option verbatim",
+                    "explanation": "Brief explanation of why it is correct."
+                }}
+            }}
+            """
+            try:
+                response = model.generate_content(prompt)
+                clean_text = response.text.replace("```json", "").replace("```", "").strip()
+                article_data = json.loads(clean_text)
+                article_data['date'] = today_str
+                article_data['source'] = "Leading National Daily"
+                all_articles.append(article_data)
+            except Exception as e:
+                print(f"Error processing article: {e}")
+
+    # Save to Firestore
+    doc_ref = db.collection('daily_news').document(today_str)
+    doc_ref.set({
+        'date': today_str,
+        'articles': all_articles,
+        'created_at': firestore.SERVER_TIMESTAMP
+    })
+    print(f"Successfully processed and uploaded current affairs for {today_str}")
+
+if __name__ == "__main__":
+    process_news()
