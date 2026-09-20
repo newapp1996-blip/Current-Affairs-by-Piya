@@ -20,32 +20,32 @@ def fetch_rss_headlines():
                 summary = getattr(entry, 'summary', '')
                 headlines.append(f"[{category}] {entry.title}: {summary}")
         except Exception as e:
-            print(f"Warning: RSS feed issue for {category}: {e}")
+            print(f"Warning: Could not fetch feed for {category}: {e}")
     
     if not headlines:
-        headlines.append("[Defence] Joint tri-service military exercise initiated.")
-        headlines.append("[National] Government introduces new education grant.")
-
+        headlines.append("Defence: Joint defense exercise scheduled for next month.")
+        headlines.append("National: Education board announces revised exam schedule.")
+    
     return "\n".join(headlines)
 
 def generate_affairs_and_quiz(news_text):
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
-        raise ValueError("GEMINI_API_KEY secret is missing or empty in GitHub Settings!")
+        raise ValueError("GEMINI_API_KEY is missing from GitHub Secrets.")
 
     client = genai.Client(api_key=api_key)
     
     prompt = f"""
 You are an expert exam strategist for Indian competitive exams.
-Analyze these news items:
+Analyze these recent news items:
 
 {news_text}
 
 Task:
-1. Extract 4 distinct current affairs headlines (1 Defence, 1 Schemes, 1 International, 1 National).
-2. Create 2 multiple-choice quiz questions based on them.
+1. Extract 4 distinct, high-yield current affairs items (1 Defence, 1 Schemes, 1 International, 1 National). Assign sequential integer IDs (1, 2, 3, 4).
+2. Create 2 multiple-choice questions directly based on these events.
 
-Return ONLY a valid JSON object with this exact structure:
+Return ONLY a valid JSON object matching this structure:
 {{
   "news": [
     {{
@@ -77,7 +77,7 @@ Return ONLY a valid JSON object with this exact structure:
 
 def update_index_html(data):
     if not os.path.exists("index.html"):
-        raise FileNotFoundError("index.html not found in repository root.")
+        raise FileNotFoundError("index.html file not found in repository root.")
         
     with open("index.html", "r", encoding="utf-8") as f:
         html_content = f.read()
@@ -95,11 +95,11 @@ def update_index_html(data):
 
 if __name__ == "__main__":
     print("Fetching news feeds...")
-    headlines = fetch_rss_headlines()
+    news_headlines = fetch_rss_headlines()
     
-    print("Generating current affairs with Gemini...")
-    app_data = generate_affairs_and_quiz(headlines)
+    print("Generating current affairs and quizzes with Gemini...")
+    app_data = generate_affairs_and_quiz(news_headlines)
     
     print("Updating index.html...")
     update_index_html(app_data)
-    print("Update complete!")
+    print("Success! index.html updated.")
