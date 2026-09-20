@@ -65,7 +65,7 @@
 
     .header-controls { display: flex; gap: 10px; align-items: center; }
 
-    select, .btn-auth {
+    select {
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid var(--card-border);
       color: var(--text-main);
@@ -73,12 +73,6 @@
       border-radius: 8px;
       font-size: 0.85rem;
       cursor: pointer;
-    }
-
-    .btn-auth {
-      background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
-      font-weight: 600;
-      border: none;
     }
 
     nav {
@@ -160,23 +154,7 @@
     .quiz-option.correct { background: rgba(34, 197, 94, 0.2); border-color: #22c55e; }
     .quiz-option.wrong { background: rgba(239, 68, 68, 0.2); border-color: #ef4444; }
 
-    /* Hidden Utility Class */
     .hidden { display: none !important; }
-
-    /* Modal Styling */
-    .modal {
-      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(10px);
-      display: flex; justify-content: center; align-items: center; z-index: 200;
-    }
-    .modal-content {
-      background: #0f172a; border: 1px solid var(--card-border);
-      padding: 30px; border-radius: 20px; width: 90%; max-width: 400px; text-align: center;
-    }
-    .modal-content input {
-      width: 100%; padding: 12px; margin: 10px 0; border-radius: 8px;
-      border: 1px solid var(--card-border); background: rgba(255,255,255,0.05); color: white;
-    }
   </style>
 </head>
 <body>
@@ -192,7 +170,6 @@
       <option value="te">తెలుగు (Telugu)</option>
       <option value="mr">मराठी (Marathi)</option>
     </select>
-    <button class="btn-auth" id="authBtn" onclick="toggleAuthModal()">Login</button>
   </div>
 </header>
 
@@ -208,20 +185,7 @@
   <div id="saved-section" class="hidden"></div>
 </div>
 
-<!-- Authentication Modal (Hidden by default) -->
-<div id="authModal" class="modal hidden">
-  <div class="modal-content">
-    <h2 style="font-family: 'Orbitron';">Student Login</h2>
-    <p style="font-size: 0.85rem; color: var(--text-muted);">Enter phone number or email to save current affairs</p>
-    <input type="text" id="userInput" placeholder="Phone Number / Email">
-    <button class="btn-auth" style="width: 100%; padding: 12px;" onclick="sendOTP()">Send OTP</button>
-    <br>
-    <button style="background: none; border: none; color: var(--text-muted); margin-top: 15px; cursor: pointer;" onclick="toggleAuthModal()">Cancel</button>
-  </div>
-</div>
-
 <script>
-  let currentUser = localStorage.getItem('aura_user') || null;
   let favorites = JSON.parse(localStorage.getItem('aura_favs')) || [];
   let currentLang = 'en';
 
@@ -249,34 +213,7 @@
     ]
   };
 
-  function updateAuthUI() {
-    const btn = document.getElementById('authBtn');
-    if (currentUser) {
-      btn.innerText = "Logged In";
-      btn.style.background = "#10b981";
-    }
-  }
-
-  function toggleAuthModal() {
-    document.getElementById('authModal').classList.toggle('hidden');
-  }
-
-  function sendOTP() {
-    const val = document.getElementById('userInput').value;
-    if (val) {
-      currentUser = val;
-      localStorage.setItem('aura_user', currentUser);
-      updateAuthUI();
-      toggleAuthModal();
-      alert("Successfully logged in! You can now save favorites.");
-    }
-  }
-
   function toggleFav(id) {
-    if (!currentUser) {
-      toggleAuthModal();
-      return;
-    }
     if (favorites.includes(id)) {
       favorites = favorites.filter(f => f !== id);
     } else {
@@ -310,14 +247,17 @@
     const container = document.getElementById('saved-section');
     const savedNews = appData.news.filter(n => favorites.includes(n.id));
     if (savedNews.length === 0) {
-      container.innerHTML = `<div class="card"><p style="text-align: center; color: var(--text-muted);">No saved current affairs yet.</p></div>`;
+      container.innerHTML = `<div class="card"><p style="text-align: center; color: var(--text-muted);">No bookmarked news items yet. Tap the ★ star icon on any news to save it here!</p></div>`;
       return;
     }
     container.innerHTML = savedNews.map(item => `
       <div class="card" data-cat="${item.category}">
-        <span class="tag">${translateText(item.category)}</span>
-        <h3>${translateText(item.title)}</h3>
-        <p style="color: var(--text-muted);">${translateText(item.detail)}</p>
+        <div class="card-header">
+          <span class="tag">${translateText(item.category)}</span>
+          <button class="fav-btn active" onclick="toggleFav(${item.id})">★</button>
+        </div>
+        <h3 style="margin: 12px 0 8px;">${translateText(item.title)}</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">${translateText(item.detail)}</p>
       </div>
     `).join('');
   }
@@ -363,7 +303,6 @@
     evt.target.classList.add('active');
   }
 
-  updateAuthUI();
   renderNews();
   renderQuiz();
 </script>
