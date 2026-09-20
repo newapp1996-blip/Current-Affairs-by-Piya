@@ -1,15 +1,14 @@
 import os
 import json
 import re
+import urllib.request
 import feedparser
-from google import genai
-from google.genai import types
 
 FEEDS = {
-    "National": "[https://www.thehindu.com/news/national/feeder/default.rss](https://www.thehindu.com/news/national/feeder/default.rss)",
-    "International": "[https://www.thehindu.com/news/international/feeder/default.rss](https://www.thehindu.com/news/international/feeder/default.rss)",
-    "Defence": "[https://indianexpress.com/section/india/feed/](https://indianexpress.com/section/india/feed/)",
-    "Economy": "[https://www.thehindubusinessline.com/feeder/default.rss](https://www.thehindubusinessline.com/feeder/default.rss)"
+    "National": "https://www.thehindu.com/news/national/feeder/default.rss",
+    "International": "https://www.thehindu.com/news/international/feeder/default.rss",
+    "Defence": "https://indianexpress.com/section/india/feed/",
+    "Economy": "https://www.thehindubusinessline.com/feeder/default.rss"
 }
 
 def fetch_rss_headlines():
@@ -32,9 +31,9 @@ def fetch_rss_headlines():
 def generate_affairs_and_quiz(news_text):
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
-        raise ValueError("GEMINI_API_KEY secret is missing or empty in GitHub Settings!")
+        raise ValueError("GEMINI_API_KEY secret is missing in GitHub Repository Settings -> Secrets and variables -> Actions!")
 
-    client = genai.Client(api_key=api_key)
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
     
     prompt = f"""
 You are an expert exam strategist for Indian competitive exams (UPSC, SSC, Banking, State PCS).
@@ -48,33 +47,32 @@ Task:
    - id (integer 1 to 12)
    - category (e.g. Defence, Schemes, International, National, Economy, Science & Tech)
    - title (Headline)
-   - image_url (A valid stock image URL from Unsplash e.g. "[https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800](https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800)")
+   - image_url (A stock photo placeholder URL from Unsplash e.g. "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800")
    - date (Important date / period e.g. September 2026)
    - place (Location / City / Region / State involved)
    - persons_ministers (Ministers / VIPs / Officials involved)
    - officers (Key administrative/military officers or designation)
    - countries_states (Countries or Indian States involved)
-   - reason (Reason for importance for exams)
+   - reason (Reason for importance for competitive exams)
    - mission (Mission / Scheme / Project / Operation name or N/A)
    - conclusion (Summary / Impact / Key Takeaway)
 
 3. Create 4 multiple-choice quiz questions based on these entries.
 
-Return ONLY a single valid JSON object. Do not include markdown or extra commentary outside the JSON object.
-JSON Format:
+Return ONLY a single valid JSON object following this exact structure:
 {{
   "news": [
     {{
       "id": 1,
       "category": "Defence",
       "title": "Title here",
-      "image_url": "[https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800](https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800)",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
       "date": "2026-09-21",
       "place": "New Delhi, India",
       "persons_ministers": "Defense Minister",
       "officers": "Chief of Defence Staff",
       "countries_states": "India",
-      "reason": "Important for exam syllabus",
+      "reason": "Crucial for national security questions",
       "mission": "Operation Raksha",
       "conclusion": "Enhanced preparedness"
     }}
@@ -89,28 +87,28 @@ JSON Format:
 }}
 """
 
-    response = client.models.generate_content(
-        model="gemini-2.5-flash",
-        contents=prompt,
-        config=types.GenerateContentConfig(
-            response_mime_type="application/json",
-            max_output_tokens=8192
-        )
+    payload = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {
+            "responseMimeType": "application/json"
+        }
+    }
+
+    req = urllib.request.Request(
+        url,
+        data=json.dumps(payload).encode("utf-8"),
+        headers={"Content-Type": "application/json"}
     )
-    
-    text_content = response.text.strip()
-    
-    # Strip markdown code blocks if present
+
+    with urllib.request.urlopen(req) as response:
+        result = json.loads(response.read().decode("utf-8"))
+        text_content = result["candidates"][0]["content"]["parts"][0]["text"].strip()
+
     match = re.search(r'\{.*\}', text_content, re.DOTALL)
     if match:
         text_content = match.group(0)
 
-    try:
-        return json.loads(text_content)
-    except json.JSONDecodeError as e:
-        print(f"JSON Parsing Error: {e}")
-        print("Raw Output was:", text_content[:500])
-        raise e
+    return json.loads(text_content)
 
 def update_index_html(data):
     if not os.path.exists("index.html"):
