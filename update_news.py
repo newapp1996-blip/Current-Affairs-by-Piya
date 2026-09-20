@@ -2,6 +2,7 @@ import os
 import json
 import re
 import urllib.request
+import urllib.error
 import feedparser
 
 FEEDS = {
@@ -31,6 +32,7 @@ def fetch_rss_headlines():
 def generate_affairs_and_quiz(news_text):
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
+        print("ERROR: GEMINI_API_KEY environment variable is missing or empty!")
         raise ValueError("GEMINI_API_KEY secret is missing in GitHub Repository Settings -> Secrets and variables -> Actions!")
 
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
@@ -47,7 +49,7 @@ Task:
    - id (integer 1 to 12)
    - category (e.g. Defence, Schemes, International, National, Economy, Science & Tech)
    - title (Headline)
-   - image_url (A stock photo placeholder URL from Unsplash e.g. "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800")
+   - image_url (A stock photo URL from Unsplash e.g. "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800")
    - date (Important date / period e.g. September 2026)
    - place (Location / City / Region / State involved)
    - persons_ministers (Ministers / VIPs / Officials involved)
@@ -100,9 +102,13 @@ Return ONLY a single valid JSON object following this exact structure:
         headers={"Content-Type": "application/json"}
     )
 
-    with urllib.request.urlopen(req) as response:
-        result = json.loads(response.read().decode("utf-8"))
-        text_content = result["candidates"][0]["content"]["parts"][0]["text"].strip()
+    try:
+        with urllib.request.urlopen(req) as response:
+            result = json.loads(response.read().decode("utf-8"))
+            text_content = result["candidates"][0]["content"]["parts"][0]["text"].strip()
+    except urllib.error.HTTPError as e:
+        print(f"HTTP Error from Gemini API: {e.code} - {e.read().decode('utf-8')}")
+        raise e
 
     match = re.search(r'\{.*\}', text_content, re.DOTALL)
     if match:
