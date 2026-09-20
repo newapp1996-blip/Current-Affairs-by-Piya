@@ -6,10 +6,10 @@ from google import genai
 from google.genai import types
 
 FEEDS = {
-    "National": "https://www.thehindu.com/news/national/feeder/default.rss",
-    "International": "https://www.thehindu.com/news/international/feeder/default.rss",
-    "Defence": "https://indianexpress.com/section/india/feed/",
-    "Economy": "https://www.thehindubusinessline.com/feeder/default.rss"
+    "National": "[https://www.thehindu.com/news/national/feeder/default.rss](https://www.thehindu.com/news/national/feeder/default.rss)",
+    "International": "[https://www.thehindu.com/news/international/feeder/default.rss](https://www.thehindu.com/news/international/feeder/default.rss)",
+    "Defence": "[https://indianexpress.com/section/india/feed/](https://indianexpress.com/section/india/feed/)",
+    "Economy": "[https://www.thehindubusinessline.com/feeder/default.rss](https://www.thehindubusinessline.com/feeder/default.rss)"
 }
 
 def fetch_rss_headlines():
@@ -44,11 +44,11 @@ Analyze these news items:
 
 Task:
 1. Extract exactly 12 distinct current affairs entries across Defence, Schemes, International, National, Economy, Science & Tech.
-2. For EACH current affair entry, provide complete detailed information for these exact fields:
-   - id (1 to 12)
+2. For EACH current affair entry, provide complete concise information for these exact fields:
+   - id (integer 1 to 12)
    - category (e.g. Defence, Schemes, International, National, Economy, Science & Tech)
    - title (Headline)
-   - image_url (A relevant image topic query URL from Unsplash e.g. "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800" or similar high quality placeholder URL)
+   - image_url (A valid stock image URL from Unsplash e.g. "[https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800](https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800)")
    - date (Important date / period e.g. September 2026)
    - place (Location / City / Region / State involved)
    - persons_ministers (Ministers / VIPs / Officials involved)
@@ -60,22 +60,23 @@ Task:
 
 3. Create 4 multiple-choice quiz questions based on these entries.
 
-Return ONLY a valid JSON object formatted as follows:
+Return ONLY a single valid JSON object. Do not include markdown or extra commentary outside the JSON object.
+JSON Format:
 {{
   "news": [
     {{
       "id": 1,
       "category": "Defence",
       "title": "Title here",
-      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
-      "date": "2026-09-20",
+      "image_url": "[https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800](https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800)",
+      "date": "2026-09-21",
       "place": "New Delhi, India",
       "persons_ministers": "Defense Minister",
       "officers": "Chief of Defence Staff",
-      "countries_states": "India & Partner Nations",
-      "reason": "Crucial for national security questions in competitive exams",
+      "countries_states": "India",
+      "reason": "Important for exam syllabus",
       "mission": "Operation Raksha",
-      "conclusion": "Strengthened defense posture and international cooperation"
+      "conclusion": "Enhanced preparedness"
     }}
   ],
   "quizzes": [
@@ -92,17 +93,24 @@ Return ONLY a valid JSON object formatted as follows:
         model="gemini-2.5-flash",
         contents=prompt,
         config=types.GenerateContentConfig(
-            response_mime_type="application/json"
+            response_mime_type="application/json",
+            max_output_tokens=8192
         )
     )
     
     text_content = response.text.strip()
-    if "```json" in text_content:
-        text_content = text_content.split("```json")[1].split("```")[0].strip()
-    elif "```" in text_content:
-        text_content = text_content.split("```")[1].split("```")[0].strip()
+    
+    # Strip markdown code blocks if present
+    match = re.search(r'\{.*\}', text_content, re.DOTALL)
+    if match:
+        text_content = match.group(0)
 
-    return json.loads(text_content)
+    try:
+        return json.loads(text_content)
+    except json.JSONDecodeError as e:
+        print(f"JSON Parsing Error: {e}")
+        print("Raw Output was:", text_content[:500])
+        raise e
 
 def update_index_html(data):
     if not os.path.exists("index.html"):
