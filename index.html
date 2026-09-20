@@ -63,16 +63,6 @@
       letter-spacing: 1px;
     }
 
-    select {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--card-border);
-      color: var(--text-main);
-      padding: 8px 12px;
-      border-radius: 8px;
-      font-size: 0.85rem;
-      cursor: pointer;
-    }
-
     nav {
       display: flex;
       justify-content: center;
@@ -125,6 +115,7 @@
     .card[data-cat="Schemes"]::before { background: #10b981; }
     .card[data-cat="International"]::before { background: #06b6d4; }
     .card[data-cat="National"]::before { background: #a855f7; }
+    .card[data-cat="Economy"]::before { background: #eab308; }
 
     .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
 
@@ -145,7 +136,7 @@
 
     .news-img {
       width: 100%;
-      max-height: 320px;
+      max-height: 280px;
       object-fit: cover;
       border-radius: 12px;
       margin: 10px 0 15px;
@@ -154,13 +145,13 @@
 
     .info-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
       margin: 15px 0;
-      background: rgba(0, 0, 0, 0.25);
-      padding: 12px;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 14px;
       border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .info-item { font-size: 0.85rem; line-height: 1.4; }
@@ -185,16 +176,10 @@
 
 <header>
   <div class="logo">AURA EXAM AI</div>
-  <div class="header-controls">
-    <select id="langSelector" onchange="changeLanguage(this.value)">
-      <option value="en">English</option>
-      <option value="hi">हिंदी (Hindi)</option>
-    </select>
-  </div>
 </header>
 
 <nav>
-  <button class="active" onclick="switchTab('news', event)">Daily News</button>
+  <button class="active" onclick="switchTab('news', event)">Daily News (12)</button>
   <button onclick="switchTab('quiz', event)">Daily Quiz</button>
   <button onclick="switchTab('saved', event)">Bookmarks ⭐</button>
 </nav>
@@ -207,32 +192,10 @@
 
 <script>
   let favorites = JSON.parse(localStorage.getItem('aura_favs')) || [];
-  let currentLang = 'en';
 
   const appData = {
-    news: [
-      {
-        id: 1,
-        category: "Defence",
-        title: "Joint Tri-Service Maritime Security Exercise Conducted",
-        image_url: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=800",
-        date: "2026-09-20",
-        place: "Arabian Sea",
-        persons_ministers: "Defense Minister & Chief of Defence Staff",
-        officers: "Vice Admiral & Fleet Commanders",
-        countries_states: "India, Quad Nations",
-        reason: "Enhancing interoperability and operational readiness in maritime security.",
-        mission: "Operation Samudra Sanrakshan",
-        conclusion: "Strengthened multilateral defense coordination across vital sea lanes."
-      }
-    ],
-    quizzes: [
-      {
-        question: "Where was the Joint Tri-Service Maritime Security Exercise conducted?",
-        options: ["Arabian Sea", "Bay of Bengal", "Indian Ocean", "South China Sea"],
-        answer: 0
-      }
-    ]
+    news: [],
+    quizzes: []
   };
 
   function toggleFav(id) {
@@ -278,6 +241,10 @@
 
   function renderNews() {
     const container = document.getElementById('news-section');
+    if (!appData.news || appData.news.length === 0) {
+      container.innerHTML = `<div class="card"><p style="text-align: center; color: var(--text-muted);">Fetching latest daily current affairs...</p></div>`;
+      return;
+    }
     container.innerHTML = appData.news.map(renderNewsCard).join('');
   }
 
@@ -293,6 +260,10 @@
 
   function renderQuiz() {
     const container = document.getElementById('quiz-section');
+    if (!appData.quizzes || appData.quizzes.length === 0) {
+      container.innerHTML = `<div class="card"><p style="text-align: center; color: var(--text-muted);">Daily Quizzes loading...</p></div>`;
+      return;
+    }
     container.innerHTML = appData.quizzes.map((q, qIndex) => `
       <div class="card">
         <h3>Q${qIndex + 1}: ${q.question}</h3>
