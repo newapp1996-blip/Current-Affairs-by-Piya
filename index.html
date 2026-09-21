@@ -6,7 +6,7 @@
   <title>AURA EXAM AI - Daily Current Affairs & Quiz</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
   
-  <!-- Google Translate Element Script -->
+  <!-- Google Translate Script -->
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({
@@ -38,8 +38,8 @@
 
     header {
       text-align: center;
-      padding: 20px 15px 15px;
-      background: rgba(15, 23, 42, 0.9);
+      padding: 18px 15px 12px;
+      background: rgba(15, 23, 42, 0.92);
       backdrop-filter: blur(10px);
       border-bottom: 2px solid rgba(255, 255, 255, 0.1);
       position: sticky;
@@ -51,13 +51,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      max-width: 1400px;
+      max-width: 1450px;
       margin: 0 auto 10px;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 12px;
     }
 
-    /* REAL TIME CLOCK */
+    /* REAL TIME LIVE CLOCK */
     .live-clock-box {
       background: rgba(255, 255, 255, 0.1);
       padding: 6px 14px;
@@ -82,7 +82,6 @@
       margin: 0 auto;
     }
 
-    /* TRANSLATE & SHARE APP */
     .header-actions {
       display: flex;
       align-items: center;
@@ -122,8 +121,8 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
-      margin-top: 10px;
-      padding: 8px 20px;
+      margin-top: 6px;
+      padding: 8px 22px;
       background: #ff0000;
       color: #fff;
       text-decoration: none;
@@ -139,7 +138,7 @@
     }
     .yt-icon { width: 22px; height: 22px; fill: currentColor; }
 
-    /* LAYOUT WRAPPER FOR SIDE MOTIVATIONAL BANNERS */
+    /* GRID LAYOUT FOR SIDE BANNERS */
     .page-layout {
       display: grid;
       grid-template-columns: 240px 1fr 240px;
@@ -150,9 +149,7 @@
     }
 
     @media (max-width: 1200px) {
-      .page-layout {
-        grid-template-columns: 1fr;
-      }
+      .page-layout { grid-template-columns: 1fr; }
       .side-banner { display: none; }
     }
 
@@ -166,7 +163,7 @@
       top: 140px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 18px;
     }
 
     .banner-title {
@@ -189,10 +186,7 @@
       line-height: 1.5;
       color: #cbd5e1;
     }
-    .quote-card.hi {
-      border-left-color: #f59e0b;
-      font-family: 'Poppins', sans-serif;
-    }
+    .quote-card.hi { border-left-color: #f59e0b; }
 
     /* CONTROLS BAR */
     .controls-bar {
@@ -347,6 +341,7 @@
       justify-content: space-between;
       align-items: center;
       margin-top: 10px;
+      gap: 10px;
     }
 
     .btn-read-more {
@@ -354,7 +349,6 @@
       color: #fff;
       padding: 8px 16px;
       border-radius: 8px;
-      text-decoration: none;
       font-weight: 700;
       font-size: 0.85rem;
       border: none;
@@ -413,7 +407,7 @@
     .opt-btn.correct { background: #dcfce7 !important; border-color: #16a34a !important; color: #15803d; }
     .opt-btn.wrong { background: #ffe4e6 !important; border-color: #e11d48 !important; color: #be123c; }
 
-    /* MODAL FOR DETAILED NEWS VIEW */
+    /* FULL ARTICLE POPUP MODAL */
     .modal-overlay {
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
@@ -468,7 +462,7 @@
       </div>
     </div>
 
-    <!-- Official Channel Subscription Link -->
+    <!-- YouTube Channel Subscription Banner -->
     <a href="https://youtube.com/@zeroratta?si=dhJFjE1eOYCuIoGv" target="_blank" rel="noopener" class="yt-banner">
       <svg class="yt-icon" viewBox="0 0 24 24">
         <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
@@ -477,7 +471,6 @@
     </a>
   </header>
 
-  <!-- 3-COLUMN LAYOUT WITH MOTIVATIONAL SIDE BANNERS -->
   <div class="page-layout">
     
     <!-- LEFT SIDE: ENGLISH MOTIVATIONAL QUOTES -->
@@ -494,26 +487,24 @@
       </div>
     </aside>
 
-    <!-- CENTER MAIN CONTENT AREA -->
+    <!-- MAIN CONTENT AREA -->
     <main>
       <div class="controls-bar">
         <div class="nav-tabs">
-          <button class="tab-btn active" id="btnNews" onclick="switchTab('news')">Daily News (15)</button>
-          <button class="tab-btn" id="btnQuiz" onclick="switchTab('quiz')">Daily Quiz (15)</button>
+          <button class="tab-btn active" id="btnNews" onclick="switchTab('news')">Daily News</button>
+          <button class="tab-btn" id="btnQuiz" onclick="switchTab('quiz')">Daily Quiz</button>
         </div>
 
         <div class="date-picker-wrapper">
           <label for="dateSelect">📅 Select Date:</label>
-          <select id="dateSelect" onchange="loadDateData(this.value)">
-            <!-- Dates dynamically injected -->
-          </select>
+          <select id="dateSelect" onchange="loadDateData(this.value)"></select>
         </div>
       </div>
 
-      <!-- NEWS FEED -->
+      <!-- NEWS SECTION -->
       <div id="newsSection" class="news-grid"></div>
 
-      <!-- QUIZ FEED -->
+      <!-- QUIZ SECTION -->
       <div id="quizSection" class="quiz-section"></div>
     </main>
 
@@ -533,7 +524,7 @@
 
   </div>
 
-  <!-- FULL ARTICLE DETAIL MODAL -->
+  <!-- ARTICLE DETAIL POPUP MODAL -->
   <div class="modal-overlay" id="articleModal">
     <div class="modal-content" id="modalBody">
       <span class="close-modal" onclick="closeModal()">&times;</span>
@@ -545,7 +536,7 @@
     let globalPayload = null;
     let currentData = null;
 
-    // Real-time ticking clock function
+    // Real-time live clock function
     function updateClock() {
       const now = new Date();
       document.getElementById('liveClock').textContent = now.toLocaleTimeString('en-US', {
@@ -589,11 +580,12 @@
 
     function renderNews() {
       const container = document.getElementById('newsSection');
+      const totalNews = currentData.news.length;
       container.innerHTML = currentData.news.map(item => `
         <div class="info-card">
           <div class="card-header">
             <span class="badge-cat">${item.category}</span>
-            <span class="card-id">#${item.id} of 15</span>
+            <span class="card-id">#${item.id} of ${totalNews}</span>
           </div>
           <div class="card-body">
             <div>
@@ -628,20 +620,20 @@
       modalContainer.innerHTML = `
         <span style="background:var(--primary-red); color:#fff; font-size:0.8rem; font-weight:700; padding:4px 10px; border-radius:4px; text-transform:uppercase;">${item.category}</span>
         <h1 style="font-size:1.8rem; font-weight:800; color:#0f172a; margin:15px 0 10px;">${item.headline}</h1>
-        <p style="font-size:0.85rem; color:#64748b; margin-bottom:15px;">Verified Source: Press Information Bureau (PIB) / The Hindu News Desk | Date: ${currentData.date}</p>
+        <p style="font-size:0.85rem; color:#64748b; margin-bottom:15px;">Verified Source: Press Information Bureau (PIB) / News Desk | Date: ${currentData.date}</p>
         <img src="${item.image_url}" style="width:100%; max-height:350px; object-fit:cover; border-radius:12px; margin-bottom:20px;" />
         
         <div style="font-size:1.05rem; line-height:1.7; color:#1e293b; margin-bottom:20px;">
           ${item.story_lead}
         </div>
 
-        <h3 style="font-size:1.2rem; font-weight:700; color:#0f172a; margin-bottom:10px;">Key Exam Points & Background:</h3>
+        <h3 style="font-size:1.2rem; font-weight:700; color:#0f172a; margin-bottom:10px;">Key Exam Points & Details:</h3>
         <ul class="bullet-list" style="margin-bottom:20px;">
           ${item.bullet_points.map(bp => `<li style="font-size:1rem; margin-bottom:8px;">${bp}</li>`).join('')}
         </ul>
 
         <div class="exam-box" style="font-size:0.95rem; padding:12px 18px; margin-bottom:20px;">
-          <strong>UPSC & Competitive Exam Relevance:</strong><br/>
+          <strong>Exam Relevance:</strong><br/>
           ${item.exam_relevance}
         </div>
 
@@ -665,12 +657,12 @@
       const decodedTitle = decodeURIComponent(title);
       const shareData = {
         title: decodedTitle,
-        text: `📰 Current Affairs: ${decodedTitle}\nRead complete exam notes on Zerro Ratta AURA EXAM AI!`,
+        text: `📰 Current Affairs: ${decodedTitle}\nRead detailed exam notes on Zerro Ratta AURA EXAM AI!`,
         url: window.location.href
       };
 
       if (navigator.share) {
-        navigator.share(shareData).catch(err => console.log('Share canceled'));
+        navigator.share(shareData).catch(() => {});
       } else {
         navigator.clipboard.writeText(`${shareData.text}\n${shareData.url}`);
         alert('Article link copied to clipboard!');
@@ -680,12 +672,12 @@
     function shareApp() {
       const shareData = {
         title: 'AURA EXAM AI - Daily Current Affairs & Quiz',
-        text: 'Prepare for UPSC, SSC, and State PCS with daily current affairs infographics and quizzes on AURA EXAM AI!',
+        text: 'Prepare for UPSC, SSC, and State PCS with daily current affairs and quizzes on AURA EXAM AI!',
         url: window.location.href
       };
 
       if (navigator.share) {
-        navigator.share(shareData).catch(err => console.log('Share canceled'));
+        navigator.share(shareData).catch(() => {});
       } else {
         navigator.clipboard.writeText(`${shareData.text}\n${shareData.url}`);
         alert('App link copied to clipboard!');
