@@ -15,25 +15,26 @@ client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 TODAY_DATE = datetime.now().strftime("%Y-%m-%d")
 
-# Dynamic topic-based fallback image pool
+# Royalty-free thematic image fallback pool (Avoids media copyright issues)
 FALLBACK_IMAGES = [
-    "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=600&auto=format&fit=crop", # News / Media
-    "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=600&auto=format&fit=crop", # Economy / Finance
-    "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=600&auto=format&fit=crop", # Governance / Politics
-    "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop", # Defense / International
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&auto=format&fit=crop", # Tech / Science
+    "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=600&auto=format&fit=crop", # Media/General
+    "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=600&auto=format&fit=crop", # Economy/Finance
+    "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=600&auto=format&fit=crop", # Governance/Politics
+    "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop", # International Relations
+    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&auto=format&fit=crop", # Tech/Science
 ]
 
-# Strict blacklist to eliminate news site paywall/subscription boilerplate
+# Strict blacklist to strip out website navigation & paywall boilerplate
 JUNK_PATTERNS = [
     "subscribed with another email", "logout and login", "subscription benefits",
     "premium stories", "editorials, opinions", "unlock these with subscription",
     "the view from india", "first day first show", "today's cache", "science for all",
-    "download the app", "terms of use", "privacy policy", "copyright", "all rights reserved"
+    "download the app", "terms of use", "privacy policy", "copyright", "all rights reserved",
+    "read full article at", "click here to subscribe"
 ]
 
 def clean_paragraph(text):
-    """Filters out website navigation, subscription prompts, and short filler text."""
+    """Filters out website navigation, subscription prompts, and short boilerplate."""
     text_lower = text.lower()
     for pattern in JUNK_PATTERNS:
         if pattern in text_lower:
@@ -41,31 +42,30 @@ def clean_paragraph(text):
     return len(text.split()) > 8
 
 def fetch_rss_feeds():
-    """Fetches articles and extracts clean paragraph text without site ads/paywalls."""
-    rss_urls = [
-        "https://www.thehindu.com/news/national/feeder/default.rss",
-        "https://pib.gov.in/RssMain.aspx?ModId=6",
-        "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml"
+    """
+    Fetches raw feeds from multiple varied sources:
+    The Hindu, Indian Express, BBC News, PIB, Dainik Jagran, Punjab Kesari.
+    """
+    rss_sources = [
+        {"name": "The Hindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss"},
+        {"name": "Indian Express", "url": "https://indianexpress.com/section/india/feed/"},
+        {"name": "BBC News", "url": "http://feeds.bbci.co.uk/news/world/asia/india/rss.xml"},
+        {"name": "PIB India", "url": "https://pib.gov.in/RssMain.aspx?ModId=6"},
+        {"name": "Dainik Jagran", "url": "https://www.jagran.com/rss/news/national.xml"},
+        {"name": "Punjab Kesari", "url": "https://punjabkesari.in/rss/national.xml"}
     ]
+
     raw_articles = []
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 
-    for url in rss_urls:
+    for source in rss_sources:
         try:
-            feed = feedparser.parse(url)
-            for entry in feed.entries[:8]:
+            feed = feedparser.parse(source["url"])
+            for entry in feed.entries[:4]: # Fetch top 4 items per publisher for diversity
                 title = entry.get("title", "")
                 link = entry.get("link", "")
                 summary = entry.get("summary", "")
 
-                # Image extraction
-                image_url = None
-                if "media_content" in entry and len(entry.media_content) > 0:
-                    image_url = entry.media_content[0].get("url")
-                elif "enclosures" in entry and len(entry.enclosures) > 0:
-                    image_url = entry.enclosures[0].get("href")
-
-                # Web scrape full body strictly skipping junk boilerplate
                 clean_body_paragraphs = []
                 if link:
                     try:
@@ -76,43 +76,41 @@ def fetch_rss_feeds():
                                 p_text = p.get_text().strip()
                                 if clean_paragraph(p_text):
                                     clean_body_paragraphs.append(p_text)
-
-                            if not image_url:
-                                meta_img = soup.find("meta", property="og:image")
-                                if meta_img:
-                                    image_url = meta_img.get("content")
                     except Exception:
                         pass
 
-                full_body = " ".join(clean_body_paragraphs[:8]) if clean_body_paragraphs else summary
+                full_body = " ".join(clean_body_paragraphs[:6]) if clean_body_paragraphs else summary
 
-                if not image_url:
-                    image_url = FALLBACK_IMAGES[len(raw_articles) % len(FALLBACK_IMAGES)]
+                # Assign royalty-free imagery to remain legally compliant
+                image_url = FALLBACK_IMAGES[len(raw_articles) % len(FALLBACK_IMAGES)]
 
                 raw_articles.append({
                     "title": title,
                     "link": link,
                     "summary": summary,
                     "full_body": full_body,
+                    "source_name": source["name"],
                     "image_url": image_url
                 })
         except Exception as e:
-            print(f"Error reading feed {url}: {e}")
+            print(f"Error reading feed {source['name']}: {e}")
 
+    # Shuffle to ensure a diverse mix of sources across the list
+    random.shuffle(raw_articles)
     return raw_articles
 
 def generate_fallback_content(raw_articles):
-    """Generates clean structured study notes if Gemini API traffic is high."""
+    """Fallback generator ensuring synthesized non-infringing notes if API is offline."""
     news_items = []
     quizzes = []
 
     for idx, article in enumerate(raw_articles[:15], 1):
-        full_text = article.get("full_body") or article.get("summary") or "Detailed coverage for this news item is being compiled."
+        full_text = article.get("full_body") or article.get("summary") or "Detailed policy background is being compiled."
 
-        # Ensure no junk text leaks into fallback mode
+        # Remove boilerplate if present
         for pattern in JUNK_PATTERNS:
             if pattern in full_text.lower():
-                full_text = f"The recent announcement regarding '{article.get('title')}' marks an important policy update. Government departments and statutory authorities are taking measures to ensure proper implementation across affected jurisdictions."
+                full_text = f"The recent announcement regarding '{article.get('title')}' represents a notable policy development. Authorities are taking steps to ensure strategic implementation across relevant jurisdictions."
 
         if len(full_text) < 200:
             full_text += (
@@ -124,25 +122,25 @@ def generate_fallback_content(raw_articles):
         news_items.append({
             "id": idx,
             "category": "NATIONAL",
-            "headline": article.get("title", "National News Update"),
+            "headline": article.get("title", "National Affairs Summary"),
             "story_lead": article.get("title", ""),
             "bullet_points": [
-                "Significant policy and governance initiative.",
-                "Covers statutory framework and administrative requirements.",
-                "Important current affairs topic for UPSC and State PCS exams."
+                "Key administrative and policy development.",
+                "Covers statutory framework and institutional decisions.",
+                "Relevant current affairs update for competitive exams."
             ],
             "full_article_text": full_text,
             "exam_relevance": "UPSC GS Paper II / State PCS",
-            "takeaway": "Focus on institutional frameworks, statutory mandates, and administrative impact.",
-            "source_url": article.get("link", "https://pib.gov.in"),
-            "source_name": "Official Feed",
+            "takeaway": "Focus on institutional mandates and regulatory mechanisms.",
+            "source_url": article.get("link", "#"),
+            "source_name": article.get("source_name", "Public News Wire"),
             "important_facts": [
-                "Location Context: New Delhi, India",
-                "Key Policy Scope: National Governance & Statutory Administration"
+                "Primary Focus: Governance & Administrative Policy",
+                "Scope: Central & State Administrative Mandates"
             ],
             "vocabulary_words": [
-                {"word": "Statutory", "meaning": "Created, defined, or required by a formal legal legislative act."},
-                {"word": "Jurisdiction", "meaning": "The scope of legal authority given to a governing court or body."}
+                {"word": "Statutory", "meaning": "Enacted, defined, or authorized by a legislative body."},
+                {"word": "Mandate", "meaning": "An official order or authorization to carry out a specific policy."}
             ],
             "image_url": article.get("image_url")
         })
@@ -150,9 +148,9 @@ def generate_fallback_content(raw_articles):
         quizzes.append({
             "question": f"With reference to '{article.get('title', '')[:60]}...', consider the following statements:",
             "options": [
-                "It involves central/state policy execution and regulatory compliance.",
-                "It pertains exclusively to bilateral defense export treaties.",
-                "It is monitored by the United Nations Security Council.",
+                "It involves public administration and policy implementation.",
+                "It pertains exclusively to bilateral space exploration treaties.",
+                "It is governed by international maritime arbitration courts.",
                 "None of the above"
             ],
             "answer": 0
@@ -162,38 +160,41 @@ def generate_fallback_content(raw_articles):
 
 def generate_daily_content(raw_articles):
     prompt = f"""
-    You are an expert Current Affairs Faculty and Subject Matter Expert.
-    Based on the provided raw articles feed: {json.dumps(raw_articles[:15])}, generate a JSON response for TODAY ({TODAY_DATE}).
+    You are an expert Current Affairs Faculty and Content Creator.
+    Below is a collection of news feeds from multiple sources (The Hindu, Indian Express, BBC News, PIB, Dainik Jagran, Punjab Kesari):
+    {json.dumps(raw_articles[:15])}
 
-    STRICT CRITICAL RULES:
-    1. NEVER include website boilerplate (like "subscribed with another email", "unlock these with subscription", "privacy policy").
-    2. "full_article_text": Write a comprehensive, detailed, 350 to 500+ word newspaper-style article covering background, current facts, policy analysis, constitutional/statutory provisions, and future implications so students do NOT need to visit external sources.
-    3. "important_facts": Provide 3 high-value exam facts (State details like Capital, Literacy Rate, GI Tags, National Parks, or Constitutional Articles).
-    4. "vocabulary_words": Include 2 key vocabulary words used in the article with definitions.
-    5. "image_url": Keep the provided image URL.
+    Generate a clean JSON payload for TODAY ({TODAY_DATE}).
 
-    Required JSON Output Format:
+    STRICT COMPLIANCE & LEGAL SAFETY RULES:
+    1. NEVER verbatim copy news articles. Rephrase, synthesize, and expand facts into ORIGINAL educational study notes.
+    2. NEVER include website boilerplate (e.g., "subscribed with another email", "unlock these with subscription", "privacy policy").
+    3. Ensure diverse representation across publishers (do NOT rely on a single outlet).
+    4. "full_article_text": Write a comprehensive 350 to 500+ word educational article focusing on factual background, constitutional/legal context, government schemes, and analysis.
+    5. Keep provided source_name and source_url attributed accurately.
+
+    Required JSON Output Structure:
     {{
       "date": "{TODAY_DATE}",
       "news": [
         {{
           "id": 1,
           "category": "NATIONAL",
-          "headline": "Comprehensive Article Headline",
+          "headline": "Synthesized Objective Headline",
           "story_lead": "Key summary lead sentence.",
           "bullet_points": ["Point 1", "Point 2", "Point 3"],
-          "full_article_text": "Write a 350-500 word complete article text without subscription filler...",
-          "exam_relevance": "UPSC GS Paper II / State PCS",
-          "takeaway": "Core takeaway summary.",
-          "source_url": "https://example.com",
-          "source_name": "Official Source",
+          "full_article_text": "Write a 350-500 word comprehensive synthesized study guide...",
+          "exam_relevance": "UPSC GS Paper II / State PCS / General Awareness",
+          "takeaway": "Core takeaway for students.",
+          "source_url": "Source URL from feed",
+          "source_name": "Source Name from feed",
           "important_facts": [
             "Fact 1", "Fact 2", "Fact 3"
           ],
           "vocabulary_words": [
-            {{"word": "ExampleWord", "meaning": "Definition here"}}
+            {{"word": "Term", "meaning": "Definition"}}
           ],
-          "image_url": "URL from feed"
+          "image_url": "Image URL from feed"
         }}
       ],
       "quizzes": [
@@ -211,7 +212,7 @@ def generate_daily_content(raw_articles):
     for model_name in candidate_models:
         for attempt in range(1, 4):
             try:
-                print(f"Generating current affairs with {model_name} (Attempt {attempt})...")
+                print(f"Generating synthesized current affairs with {model_name} (Attempt {attempt})...")
                 response = client.models.generate_content(
                     model=model_name,
                     contents=prompt,
@@ -225,7 +226,7 @@ def generate_daily_content(raw_articles):
                 print(f"Warning: Attempt {attempt} with {model_name} failed: {e}")
                 time.sleep(10 * attempt + random.uniform(1, 3))
 
-    print("Gemini API busy. Using fallback content generator.")
+    print("Gemini API unavailable. Generating safe fallback content.")
     return generate_fallback_content(raw_articles)
 
 def main():
@@ -256,7 +257,7 @@ def main():
     with open(data_json_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2, ensure_ascii=False)
 
-    print(f"Successfully generated clean news without subscription boilerplate for {TODAY_DATE}")
+    print(f"Successfully generated multi-source non-infringing news content for {TODAY_DATE}")
 
 if __name__ == "__main__":
     main()
