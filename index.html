@@ -1,40 +1,155 @@
-let appData = typeof appData !== 'undefined' ? appData : { news: [], quizzes: [] };
-
-async function loadData() {
-  // If appData is empty, fetch data.json
-  if (!appData.news || appData.news.length === 0) {
-    try {
-      const res = await fetch('data.json?v=' + new Date().getTime());
-      if (res.ok) {
-        appData = await res.json();
-      }
-    } catch (e) {
-      console.error("Error loading data.json", e);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA EXAM AI - Daily Current Affairs</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
-  }
-  
-  renderNews();
-}
+    body {
+      background-color: #0b0f19;
+      color: #e5e7eb;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #1f2937;
+    }
+    h1 {
+      color: #38bdf8;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+    .tab-btn {
+      background: #1e293b;
+      color: #94a3b8;
+      border: 1px solid #334155;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+    .tab-btn.active {
+      background: #0284c7;
+      color: #fff;
+      border-color: #38bdf8;
+    }
+    .news-card {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.1);
+      color: #38bdf8;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .news-title {
+      color: #f3f4f6;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .news-meta {
+      color: #9ca3af;
+      font-size: 0.825rem;
+      margin-bottom: 12px;
+    }
+    .news-conclusion {
+      color: #d1d5db;
+      font-size: 0.925rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
 
-function renderNews() {
-  const container = document.getElementById('news-container') || document.querySelector('.news-feed');
-  if (!container) return;
+  <header>
+    <h1>AURA EXAM AI</h1>
+  </header>
 
-  if (!appData.news || appData.news.length === 0) {
-    container.innerHTML = `<div style="padding: 20px; text-align: center; color: #888;">
-      No news available. Run the GitHub Action workflow to fetch updates.
-    </div>`;
-    return;
-  }
+  <div class="tabs">
+    <button class="tab-btn active">Daily News (12)</button>
+    <button class="tab-btn">Daily Quiz</button>
+    <button class="tab-btn">Bookmarks ★</button>
+  </div>
 
-  container.innerHTML = appData.news.map(item => `
-    <div style="background: #111827; border: 1px solid #1f2937; border-radius: 8px; padding: 16px; margin-bottom: 16px;">
-      <span style="color: #38bdf8; font-weight: 600; font-size: 0.85rem;">[${item.category}]</span>
-      <h3 style="color: #f3f4f6; margin: 8px 0;">${item.title}</h3>
-      <p style="color: #9ca3af; font-size: 0.85rem;">📍 ${item.place} | 🗓️ ${item.date}</p>
-      <p style="color: #d1d5db; margin-top: 8px;">${item.conclusion}</p>
+  <div id="news-container">
+    <div style="text-align: center; color: #888; padding: 40px 0;">
+      Fetching latest daily current affairs...
     </div>
-  `).join('');
-}
+  </div>
 
-document.addEventListener('DOMContentLoaded', loadData);
+  <script>
+    // Placeholder targeted by update_news.py regex replacement
+    const appData = { "news": [], "quizzes": [] };
+
+    async function loadData() {
+      // If appData is empty, fetch data.json directly
+      if (!appData.news || appData.news.length === 0) {
+        try {
+          const res = await fetch('data.json?v=' + new Date().getTime());
+          if (res.ok) {
+            const fetchedData = await res.json();
+            appData.news = fetchedData.news || [];
+            appData.quizzes = fetchedData.quizzes || [];
+          }
+        } catch (e) {
+          console.error("Error loading data.json:", e);
+        }
+      }
+      renderNews();
+    }
+
+    function renderNews() {
+      const container = document.getElementById('news-container');
+      if (!container) return;
+
+      if (!appData.news || appData.news.length === 0) {
+        container.innerHTML = `
+          <div style="padding: 20px; text-align: center; color: #888;">
+            No current affairs available yet. Run the GitHub Action workflow to fetch updates.
+          </div>`;
+        return;
+      }
+
+      container.innerHTML = appData.news.map(item => `
+        <div class="news-card">
+          <span class="badge">[${item.category || 'General'}]</span>
+          <h3 class="news-title">${item.title}</h3>
+          <div class="news-meta">
+            📍 ${item.place || 'N/A'} | 🗓️ ${item.date || 'Today'}
+          </div>
+          <p class="news-conclusion">${item.conclusion || ''}</p>
+        </div>
+      `).join('');
+    }
+
+    document.addEventListener('DOMContentLoaded', loadData);
+  </script>
+
+</body>
+</html>
