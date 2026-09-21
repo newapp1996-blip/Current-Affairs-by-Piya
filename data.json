@@ -2,53 +2,280 @@
   "news": [
     {
       "id": 1,
-      "category": "Defence",
-      "title": "Tri-Service Exercise Sagar Shakti Executed in Indian Ocean Region",
+      "category": "National",
+      "title": "Heavy rains in Kerala cause rivers to swell in Kottayam",
       "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
-      "date": "2026-09-21",
-      "place": "Indian Ocean Region",
-      "persons_ministers": "Defense Minister",
-      "officers": "Chief of Defence Staff",
-      "countries_states": "India",
-      "reason": "Crucial for national maritime defense strategy and tri-service integration topics.",
-      "mission": "Exercise Sagar Shakti",
-      "conclusion": "Enhanced joint operational readiness across Navy, Army, and Air Force divisions."
+      "date": "2024-05-22",
+      "place": "Kottayam, Kerala",
+      "person_name": "N/A",
+      "ministry_portfolio": "N/A",
+      "officers": "N/A",
+      "countries_states": "Kerala",
+      "reason": "Relevant for Disaster Management and Geography sections of UPSC/State PCS.",
+      "mission": "N/A",
+      "conclusion": "Flash flood warnings issued for high-range areas due to rising river levels."
     },
     {
       "id": 2,
       "category": "National",
-      "title": "Cabinet Approves Expansion of National Green Hydrogen Mission",
-      "image_url": "https://images.unsplash.com/photo-1509391365360-2e959784a276?w=800",
-      "date": "2026-09-21",
-      "place": "New Delhi, India",
-      "persons_ministers": "Union Power Minister",
-      "officers": "Secretary, Ministry of New & Renewable Energy",
+      "title": "Allegations of money power raised in DUSU polls",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
+      "date": "2024-05-22",
+      "place": "Delhi",
+      "person_name": "Dipke",
+      "ministry_portfolio": "N/A",
+      "officers": "N/A",
+      "countries_states": "Delhi",
+      "reason": "Important for understanding student politics and institutional governance.",
+      "mission": "N/A",
+      "conclusion": "Campaigners accused of using luxury transport and excessive funds in university elections."
+    },
+    {
+      "id": 3,
+      "category": "National",
+      "title": "Heritage tour organized for Kalaburagi students for World Tourism Day",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
+      "date": "2024-05-22",
+      "place": "Kalaburagi, Karnataka",
+      "person_name": "N/A",
+      "ministry_portfolio": "N/A",
+      "officers": "N/A",
+      "countries_states": "Karnataka",
+      "reason": "Relevant for Culture and Tourism-related questions in SSC and State PCS.",
+      "mission": "World Tourism Day Awareness",
+      "conclusion": "Initiative aims to educate youth on local historical and cultural heritage."
+    },
+    {
+      "id": 4,
+      "category": "National",
+      "title": "CJI to consider listing Mamata Banerjee's plea against TMC symbol freeze",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
+      "date": "2024-05-22",
+      "place": "New Delhi",
+      "person_name": "D.Y. Chandrachud",
+      "ministry_portfolio": "N/A",
+      "officers": "N/A",
+      "countries_states": "West Bengal",
+      "reason": "Crucial for Polity and Judicial proceedings questions.",
+      "mission": "N/A",
+      "conclusion": "The Supreme Court is reviewing the legality of the symbol allotment to TMC factions."
+    },
+    {
+      "id": 5,
+      "category": "Defence",
+      "title": "Explosion injures three South Korean military officers in DMZ",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
+      "date": "2024-05-22",
+      "place": "DMZ",
+      "person_name": "N/A",
+      "ministry_portfolio": "N/A",
+      "officers": "N/A",
+      "countries_states": "South Korea",
+      "reason": "Important for International Relations and Border Security topics.",
+      "mission": "N/A",
+      "conclusion": "Military personnel injured in the Demilitarized Zone, highlighting regional tensions."
+    },
+    {
+      "id": 6,
+      "category": "International",
+      "title": "Two Indian students killed during flight training in Canada",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
+      "date": "2024-05-22",
+      "place": "Canada",
+      "person_name": "Manoj Sivakumar and Srisaran Thirugnanasambantham",
+      "ministry_portfolio": "N/A",
+      "officers": "N/A",
+      "countries_states": "Canada, Tamil Nadu, Puducherry",
+      "reason": "Relevant for general awareness and international news.",
+      "mission": "N/A",
+      "conclusion": "Tragic accident during aviation training involving Indian nationals in Canada."
+    },
+    {
+      "id": 7,
+      "category": "International",
+      "title": "United Russia party set to retain power amid cyberattacks",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
+      "date": "2024-05-22",
+      "place": "Russia",
+      "person_name": "Vladimir Putin",
+      "ministry_portfolio": "N/A",
+      "officers": "N/A",
+      "countries_states": "Russia",
+      "reason": "Important for International Relations and Global Politics.",
+      "mission": "N/A",
+      "conclusion": "Putin's party maintains a strong lead despite cyberattacks and drone disruptions."
+    },
+    {
+      "id": 8,
+      "category": "International",
+      "title": "USCIRF seeks sanctions against RSS",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
+      "date": "2024-05-22",
+      "place": "USA",
+      "person_name": "Mohan Bhagwat",
+      "ministry_portfolio": "N/A",
+      "officers": "N/A",
+      "countries_states": "USA, India",
+      "reason": "Relevant for International Relations and Religious Freedom discussions.",
+      "mission": "N/A",
+      "conclusion": "The US Commission for International Religious Freedom has called for sanctions."
+    },
+    {
+      "id": 9,
+      "category": "Economy",
+      "title": "Bangladesh raises fuel prices by up to 17%",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
+      "date": "2024-05-22",
+      "place": "Bangladesh",
+      "person_name": "N/A",
+      "ministry_portfolio": "N/A",
+      "officers": "N/A",
+      "countries_states": "Bangladesh",
+      "reason": "Important for understanding global economic trends and inflation.",
+      "mission": "N/A",
+      "conclusion": "Rising global oil prices have forced the Bangladeshi government to hike fuel costs."
+    },
+    {
+      "id": 10,
+      "category": "Economy",
+      "title": "US data center construction faces moratoriums",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
+      "date": "2024-05-22",
+      "place": "USA",
+      "person_name": "N/A",
+      "ministry_portfolio": "N/A",
+      "officers": "N/A",
+      "countries_states": "USA",
+      "reason": "Relevant for Tech-Economy and infrastructure-related questions.",
+      "mission": "N/A",
+      "conclusion": "Communities are halting new data center developments worth billions."
+    },
+    {
+      "id": 11,
+      "category": "National",
+      "title": "IMD warns of very heavy rain in Odisha and Andhra Pradesh",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
+      "date": "2024-05-22",
+      "place": "Odisha and Andhra Pradesh",
+      "person_name": "N/A",
+      "ministry_portfolio": "N/A",
+      "officers": "N/A",
+      "countries_states": "Odisha, Andhra Pradesh",
+      "reason": "Crucial for Geography and Disaster Management topics.",
+      "mission": "N/A",
+      "conclusion": "A low-pressure area is expected to intensify into a deep depression."
+    },
+    {
+      "id": 12,
+      "category": "National",
+      "title": "Supreme Court to hear NHAI plea on stray cattle shelters",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
+      "date": "2024-05-22",
+      "place": "New Delhi",
+      "person_name": "N/A",
+      "ministry_portfolio": "N/A",
+      "officers": "N/A",
       "countries_states": "India",
-      "reason": "High probability question topic for environmental initiatives and government schemes.",
-      "mission": "National Green Hydrogen Mission",
-      "conclusion": "Accelerates transition to clean energy independence and target reductions in carbon emissions."
+      "reason": "Relevant for Law and Environmental/Animal Welfare governance.",
+      "mission": "N/A",
+      "conclusion": "The SC will form a special bench to address the \u20b97,000 crore expenditure issue."
+    },
+    {
+      "id": 13,
+      "category": "Economy",
+      "title": "India focuses on domestic semiconductor manufacturing",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
+      "date": "2024-05-22",
+      "place": "India",
+      "person_name": "N/A",
+      "ministry_portfolio": "N/A",
+      "officers": "N/A",
+      "countries_states": "India",
+      "reason": "High relevance for Economy and Science & Tech (Semiconductors).",
+      "mission": "N/A",
+      "conclusion": "India aims to deepen its electronics value chain to meet $200 billion demand by 2035."
+    },
+    {
+      "id": 14,
+      "category": "Science & Tech",
+      "title": "AI industry debates acceleration versus slowing down",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
+      "date": "2024-05-22",
+      "place": "Global",
+      "person_name": "Dario Amodei",
+      "ministry_portfolio": "N/A",
+      "officers": "N/A",
+      "countries_states": "Global",
+      "reason": "Important for Science & Tech and Ethics in AI.",
+      "mission": "N/A",
+      "conclusion": "Leaders are clashing over the pace of AI advancement and safety regulations."
+    },
+    {
+      "id": 15,
+      "category": "Science & Tech",
+      "title": "Salesforce CEO discusses the impact of Agentic AI",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
+      "date": "2024-05-22",
+      "place": "South Asia",
+      "person_name": "Arundhati Bhattacharya",
+      "ministry_portfolio": "N/A",
+      "officers": "N/A",
+      "countries_states": "South Asia",
+      "reason": "Relevant for emerging technology trends in business and AI.",
+      "mission": "N/A",
+      "conclusion": "Leaders must consider human-AI synergy when deploying AI agents."
     }
   ],
   "quizzes": [
     {
-      "question": "Which exercise was recently conducted to enhance tri-service operational readiness in the Indian Ocean?",
+      "question": "Which Indian state is currently facing flash flood warnings due to swelling rivers in Kottayam?",
       "options": [
-        "Exercise Sagar Shakti",
-        "Exercise Malabar",
-        "Exercise Varuna",
-        "Exercise Garuda"
+        "Tamil Nadu",
+        "Karnataka",
+        "Kerala",
+        "Andhra Pradesh"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
-      "question": "What is the primary objective of the National Green Hydrogen Mission?",
+      "question": "The 'United Russia' party is associated with which country's recent elections?",
       "options": [
-        "Clean Energy Transition",
-        "Digital Literacy",
-        "Urban Infrastructure",
-        "Space Exploration"
+        "USA",
+        "Russia",
+        "South Korea",
+        "Bangladesh"
       ],
-      "answer": 0
+      "answer": 1
+    },
+    {
+      "question": "What is the projected global semiconductor demand by the year 2035?",
+      "options": [
+        "$100 billion",
+        "$150 billion",
+        "$200 billion",
+        "$250 billion"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Who is the current Chief Justice of India (CJI) mentioned in recent legal news regarding the TMC plea?",
+      "options": [
+        "N.V. Ramana",
+        "D.Y. Chandrachud",
+        "U.U. Lalit",
+        "S.A. Bobde"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The term 'Agentic AI' was recently discussed by the CEO of which company?",
+      "options": [
+        "OpenAI",
+        "Google",
+        "Salesforce",
+        "Anthropic"
+      ],
+      "answer": 2
     }
   ]
 }
