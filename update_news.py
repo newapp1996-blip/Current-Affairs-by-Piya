@@ -10,7 +10,6 @@ from bs4 import BeautifulSoup
 from google import genai
 from google.genai import types
 
-# Initialize Gemini Client
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 TODAY_DATE = datetime.now().strftime("%Y-%m-%d")
@@ -23,26 +22,24 @@ FALLBACK_IMAGES = [
     "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&auto=format&fit=crop",
 ]
 
-# Strict blacklist to eliminate website menus, navigation, and subscription boilerplate
+# Blacklist menu text, navigation headers, photo credits, and subscription prompts
 JUNK_PATTERNS = [
-    "subscribed with another email", "logout and login", "subscription benefits",
-    "premium stories", "editorials, opinions", "unlock these with subscription",
-    "the view from india", "first day first show", "today's cache", "science for all",
-    "data point decoding", "theedge at the cutting edge", "health matters ramya kannan",
-    "the hindu on books", "published - september", "photo credit:", "download the app",
-    "terms of use", "privacy policy", "copyright", "all rights reserved"
+    r"subscribed with another email", r"logout and login", r"subscription benefits",
+    r"premium stories", r"editorials, opinions", r"unlock these with subscription",
+    r"the view from india", r"first day first show", r"today's cache", r"science for all",
+    r"data point decoding", r"theedge at the cutting edge", r"health matters ramya kannan",
+    r"the hindu on books", r"published - \w+ \d+, \d{4}", r"photo credit:.*$",
+    r"download the app", r"terms of use", r"privacy policy", r"copyright", r"all rights reserved"
 ]
 
-def is_clean_paragraph(text):
-    """Filters out menu text, dates, photo credits, and promo text."""
-    text_lower = text.lower()
+def clean_extracted_text(text):
+    """Filters out junk patterns and removes raw webpage artifacts."""
     for pattern in JUNK_PATTERNS:
-        if pattern in text_lower:
-            return False
-    return len(text.split()) > 8
+        text = re.sub(pattern, "", text, flags=re.IGNORECASE)
+    return text.strip()
 
 def fetch_rss_feeds():
-    """Fetches articles across diverse news sources."""
+    """Fetches articles across multiple sources."""
     rss_sources = [
         {"name": "PIB India", "url": "https://pib.gov.in/RssMain.aspx?ModId=6"},
         {"name": "Indian Express", "url": "https://indianexpress.com/section/india/feed/"},
@@ -58,31 +55,25 @@ def fetch_rss_feeds():
     for source in rss_sources:
         try:
             feed = feedparser.parse(source["url"])
-            for entry in feed.entries[:5]: # Extract top 5 from each source to reach 20+ total
+            for entry in feed.entries[:5]:
                 title = entry.get("title", "")
                 link = entry.get("link", "")
-                summary = entry.get("summary", "")
+                summary = clean_extracted_text(entry.get("summary", ""))
 
-                clean_body_paragraphs = []
+                clean_paragraphs = []
                 if link:
                     try:
                         res = requests.get(link, headers=headers, timeout=5)
                         if res.status_code == 200:
                             soup = BeautifulSoup(res.text, "html.parser")
                             for p in soup.find_all("p"):
-                                p_text = p.get_text().strip()
-                                if is_clean_paragraph(p_text):
-                                    clean_body_paragraphs.append(p_text)
+                                p_text = clean_extracted_text(p.get_text())
+                                if len(p_text.split()) > 10:
+                                    clean_paragraphs.append(p_text)
                     except Exception:
                         pass
 
-                full_body = " ".join(clean_body_paragraphs[:6]) if clean_body_paragraphs else summary
-                
-                # Sanitize extracted text
-                for pattern in JUNK_PATTERNS:
-                    full_body = re.sub(pattern, "", full_body, flags=re.IGNORECASE)
-
-                image_url = FALLBACK_IMAGES[len(raw_articles) % len(FALLBACK_IMAGES)]
+                full_body = " ".join(clean_paragraphs[:5]) if clean_paragraphs else summary
 
                 raw_articles.append({
                     "title": title,
@@ -90,26 +81,24 @@ def fetch_rss_feeds():
                     "summary": summary,
                     "full_body": full_body,
                     "source_name": source["name"],
-                    "image_url": image_url
+                    "image_url": FALLBACK_IMAGES[len(raw_articles) % len(FALLBACK_IMAGES)]
                 })
         except Exception as e:
-            print(f"Error fetching {source['name']}: {e}")
+            print(f"Error reading source {source['name']}: {e}")
 
     random.shuffle(raw_articles)
-    return raw_articles[:20] # Return up to 20 articles
+    return raw_articles[:20]
 
 def generate_daily_content(raw_articles):
     prompt = f"""
-    You are an expert Current Affairs Faculty and Content Creator for competitive exams (UPSC / State PCS).
-    Below is a feed of raw news updates: {json.dumps(raw_articles)}
+    You are an expert Current Affairs Faculty for UPSC and State PCS competitive exams.
+    Synthesize these raw news feeds into study material: {json.dumps(raw_articles)}
 
-    Generate a clean JSON response containing AT LEAST 15 to 20 unique news items for TODAY ({TODAY_DATE}).
-
-    STRICT COMPLIANCE RULES:
-    1. FORMATTING MANDATE: Inside "full_article_text", "headline", and "important_facts", EVERY key person name, organization name, statutory body, city, state, or country MUST be wrapped in HTML bold and underline tags: `<b><u>Name or Location</u></b>`. Example: `<b><u>Supreme Court of India</u></b>` or `<b><u>New Delhi</u></b>`.
-    2. NO WEBPAGE BOILERPLATE: NEVER include menu links, dates, author names, or site navigation text.
-    3. ORIGINAL SYNTHESIS: Rephrase and expand each story into 350+ words of complete, original exam notes to ensure copyright compliance.
-    4. Provide 3 factual points in "important_facts" and 2 terms in "vocabulary_words".
+    CRITICAL RULES:
+    1. EXTRACT FACTS (NO N/A): Do NOT output "N/A" for any field. Always extract or infer meaningful locations, agencies, or key dates from the news event.
+    2. HTML HIGHLIGHTING: In "full_article_text", "headline", and "important_locations", every important location, person name, statutory body, or government ministry MUST be enclosed in `<b><u>...</u></b>` tags. Example: `<b><u>New Delhi</u></b>` or `<b><u>Supreme Court of India</u></b>`.
+    3. ORIGINAL REWRITING: Synthesize news into original 350+ word comprehensive study notes to prevent copyright issues.
+    4. NO WEBPAGE JUNK: Exclude author credits, dates, or site menu snippets.
 
     JSON Output Structure:
     {{
@@ -118,21 +107,22 @@ def generate_daily_content(raw_articles):
         {{
           "id": 1,
           "category": "NATIONAL",
-          "headline": "Headline with <b><u>Key Entity</u></b>",
-          "story_lead": "Lead sentence...",
+          "headline": "Headline with <b><u>Entity Name</u></b>",
+          "story_lead": "Key summary sentence...",
           "bullet_points": ["Point 1", "Point 2", "Point 3"],
-          "full_article_text": "Write a 350+ word article where every important location (e.g., <b><u>New Delhi</u></b>) and key person or institution (e.g., <b><u>Prime Minister</u></b>) is wrapped in <b><u>...</u></b> tags.",
+          "full_article_text": "Write a 350+ word study article. Enclose all major locations (e.g., <b><u>Bengaluru</u></b>) and key figures/agencies in <b><u>...</u></b> tags.",
           "exam_relevance": "UPSC GS Paper II / State PCS",
-          "takeaway": "Core takeaway for students.",
-          "source_url": "Source link",
+          "takeaway": "Core takeaway for exam preparation.",
+          "important_locations": "<b><u>New Delhi</u></b>, India",
+          "important_dates": "September 2026",
+          "source_url": "Source Link",
           "source_name": "Source Name",
           "important_facts": [
-            "Location: <b><u>New Delhi</u></b>, India",
-            "Authority: <b><u>Ministry of Finance</u></b>",
-            "Scope: National Governance"
+            "Fact 1 featuring <b><u>Ministry of Home Affairs</u></b>",
+            "Fact 2"
           ],
           "vocabulary_words": [
-            {{"word": "Jurisdiction", "meaning": "Legal power or authority."}}
+            {{"word": "Statutory", "meaning": "Authorized or defined by legislation."}}
           ],
           "image_url": "Image URL"
         }}
@@ -140,19 +130,17 @@ def generate_daily_content(raw_articles):
       "quizzes": [
         {{
           "question": "Question?",
-          "options": ["A", "B", "C", "D"],
+          "options": ["Option A", "Option B", "Option C", "Option D"],
           "answer": 0
         }}
       ]
     }}
     """
 
-    candidate_models = ['gemini-2.5-flash', 'gemini-1.5-flash']
-
-    for model_name in candidate_models:
+    for model_name in ['gemini-2.5-flash', 'gemini-1.5-flash']:
         for attempt in range(1, 4):
             try:
-                print(f"Generating content using {model_name} (Attempt {attempt})...")
+                print(f"Generating content via {model_name} (Attempt {attempt})...")
                 response = client.models.generate_content(
                     model=model_name,
                     contents=prompt,
@@ -163,7 +151,7 @@ def generate_daily_content(raw_articles):
                 )
                 return json.loads(response.text)
             except Exception as e:
-                print(f"Warning: {model_name} attempt {attempt} failed: {e}")
+                print(f"Attempt {attempt} failed: {e}")
                 time.sleep(5)
 
     return {"date": TODAY_DATE, "news": [], "quizzes": []}
@@ -179,7 +167,7 @@ def main():
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump({"current_date": TODAY_DATE, "today": data}, f, indent=2, ensure_ascii=False)
 
-    print("News script execution complete.")
+    print(f"Update completed successfully for {TODAY_DATE}.")
 
 if __name__ == "__main__":
     main()
