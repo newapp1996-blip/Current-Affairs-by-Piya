@@ -97,7 +97,7 @@
 
         .news-meta-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 8px;
             font-size: 13px;
             color: var(--text-muted);
@@ -247,8 +247,9 @@
                     <div class="news-meta-grid">
                         <div class="news-meta-item"><strong>Date:</strong> ${item.date || 'N/A'}</div>
                         <div class="news-meta-item"><strong>Place:</strong> ${item.place || 'N/A'}</div>
-                        <div class="news-meta-item"><strong>Ministers/VIPs:</strong> ${item.persons_ministers || 'N/A'}</div>
-                        <div class="news-meta-item"><strong>Officers:</strong> ${item.officers || 'N/A'}</div>
+                        <div class="news-meta-item"><strong>Minister/Personality:</strong> ${item.person_name || 'N/A'}</div>
+                        <div class="news-meta-item"><strong>Ministry/Portfolio:</strong> ${item.ministry_portfolio || 'N/A'}</div>
+                        <div class="news-meta-item"><strong>Key Officers:</strong> ${item.officers || 'N/A'}</div>
                         <div class="news-meta-item"><strong>States/Countries:</strong> ${item.countries_states || 'N/A'}</div>
                         <div class="news-meta-item"><strong>Mission/Scheme:</strong> ${item.mission || 'N/A'}</div>
                     </div>
