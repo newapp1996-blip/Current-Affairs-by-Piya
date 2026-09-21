@@ -38,7 +38,7 @@ def fetch_rss_headlines():
     return "\n\n".join(headlines)
 
 # ============================================================
-# 2. GEMINI GENERATION WITH MINISTRY DETAILS
+# 2. GEMINI GENERATION WITH UPDATED MODEL NAMES
 # ============================================================
 
 def generate_affairs_and_quiz(news_text):
@@ -101,7 +101,8 @@ Return ONLY a single valid JSON object formatted as:
 }}
 """
 
-    models_to_try = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
+    # Updated model identifiers to match active Gemini API endpoints
+    models_to_try = ["gemini-2.0-flash-exp", "gemini-1.5-flash-latest", "gemini-1.5-pro-latest", "gemini-1.5-flash"]
     
     for model_name in models_to_try:
         try:
