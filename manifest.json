@@ -1,0 +1,10 @@
+{
+  "name": "AURA Exam AI",
+  "short_name": "AURA AI",
+  "description": "Daily Current Affairs and Competitive Exam Quizzes",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#030712",
+  "theme_color": "#030712",
+  "icons": []
+}
