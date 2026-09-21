@@ -1,4 +1,54 @@
 {
-  "news": [],
-  "quizzes": []
+  "news": [
+    {
+      "id": 1,
+      "category": "Defence",
+      "title": "Tri-Service Exercise Sagar Shakti Executed in Indian Ocean Region",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
+      "date": "2026-09-21",
+      "place": "Indian Ocean Region",
+      "persons_ministers": "Defense Minister",
+      "officers": "Chief of Defence Staff",
+      "countries_states": "India",
+      "reason": "Crucial for national maritime defense strategy and tri-service integration topics.",
+      "mission": "Exercise Sagar Shakti",
+      "conclusion": "Enhanced joint operational readiness across Navy, Army, and Air Force divisions."
+    },
+    {
+      "id": 2,
+      "category": "National",
+      "title": "Cabinet Approves Expansion of National Green Hydrogen Mission",
+      "image_url": "https://images.unsplash.com/photo-1509391365360-2e959784a276?w=800",
+      "date": "2026-09-21",
+      "place": "New Delhi, India",
+      "persons_ministers": "Union Power Minister",
+      "officers": "Secretary, Ministry of New & Renewable Energy",
+      "countries_states": "India",
+      "reason": "High probability question topic for environmental initiatives and government schemes.",
+      "mission": "National Green Hydrogen Mission",
+      "conclusion": "Accelerates transition to clean energy independence and target reductions in carbon emissions."
+    }
+  ],
+  "quizzes": [
+    {
+      "question": "Which exercise was recently conducted to enhance tri-service operational readiness in the Indian Ocean?",
+      "options": [
+        "Exercise Sagar Shakti",
+        "Exercise Malabar",
+        "Exercise Varuna",
+        "Exercise Garuda"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the primary objective of the National Green Hydrogen Mission?",
+      "options": [
+        "Clean Energy Transition",
+        "Digital Literacy",
+        "Urban Infrastructure",
+        "Space Exploration"
+      ],
+      "answer": 0
+    }
+  ]
 }
