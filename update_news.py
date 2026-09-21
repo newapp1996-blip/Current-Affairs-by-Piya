@@ -8,178 +8,137 @@ from google import genai
 from google.genai import types
 
 # ============================================================
-# 1. RSS NEWS FETCHING
+# 1. LIVE RSS NEWS FETCHING
 # ============================================================
 
 FEEDS = {
     "National": "https://www.thehindu.com/news/national/feeder/default.rss",
     "International": "https://www.thehindu.com/news/international/feeder/default.rss",
-    "Defence": "https://www.pib.gov.in/RssMain.aspx?ModId=1&Lang=1",
-    "Economy": "https://www.thehindubusinessline.com/feeder/default.rss"
+    "Business": "https://www.thehindubusinessline.com/feeder/default.rss",
+    "PIB Release": "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=1",
+    "Sci-Tech": "https://www.thehindu.com/sci-tech/feeder/default.rss"
 }
 
 def fetch_rss_headlines():
     headlines = []
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
     
     for category, url in FEEDS.items():
         try:
             req = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(req, timeout=8) as response:
+            with urllib.request.urlopen(req, timeout=10) as response:
                 parsed = feedparser.parse(response.read())
-                for entry in parsed.entries[:4]:
+                for entry in parsed.entries[:5]: # Extract top 5 per feed
                     summary = getattr(entry, 'summary', '')
-                    headlines.append(f"[{category}] {entry.title}: {summary}")
+                    clean_summary = re.sub(r'<[^>]+>', '', summary)[:250]
+                    headlines.append(f"[{category}] {entry.title}: {clean_summary}")
         except Exception as e:
-            print(f"Warning: RSS Feed issue for {category}: {e}")
+            print(f"Warning: Feed error for {category}: {e}")
     
-    if not headlines:
-        headlines.append("[Defence] Tri-service military exercise conducted in Indian Ocean region.")
-        headlines.append("[National] Government releases national infrastructure updates.")
-
-    return "\n".join(headlines[:15])
-
+    return "\n\n".join(headlines)
 
 # ============================================================
-# 2. GEMINI GENERATION & FALLBACK DATA
+# 2. GEMINI GENERATION WITH MINISTRY DETAILS
 # ============================================================
-
-def get_fallback_data():
-    return {
-        "news": [
-            {
-                "id": 1,
-                "category": "Defence",
-                "title": "Tri-Service Exercise Sagar Shakti Executed in Indian Ocean Region",
-                "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
-                "date": "2026-09-21",
-                "place": "Indian Ocean Region",
-                "persons_ministers": "Defense Minister",
-                "officers": "Chief of Defence Staff",
-                "countries_states": "India",
-                "reason": "Crucial for national maritime defense strategy and tri-service integration topics.",
-                "mission": "Exercise Sagar Shakti",
-                "conclusion": "Enhanced joint operational readiness across Navy, Army, and Air Force divisions."
-            },
-            {
-                "id": 2,
-                "category": "National",
-                "title": "Cabinet Approves Expansion of National Green Hydrogen Mission",
-                "image_url": "https://images.unsplash.com/photo-1509391365360-2e959784a276?w=800",
-                "date": "2026-09-21",
-                "place": "New Delhi, India",
-                "persons_ministers": "Union Power Minister",
-                "officers": "Secretary, Ministry of New & Renewable Energy",
-                "countries_states": "India",
-                "reason": "High probability question topic for environmental initiatives and government schemes.",
-                "mission": "National Green Hydrogen Mission",
-                "conclusion": "Accelerates transition to clean energy independence and target reductions in carbon emissions."
-            }
-        ],
-        "quizzes": [
-            {
-                "question": "Which exercise was recently conducted to enhance tri-service operational readiness in the Indian Ocean?",
-                "options": ["Exercise Sagar Shakti", "Exercise Malabar", "Exercise Varuna", "Exercise Garuda"],
-                "answer": 0
-            },
-            {
-                "question": "What is the primary objective of the National Green Hydrogen Mission?",
-                "options": ["Clean Energy Transition", "Digital Literacy", "Urban Infrastructure", "Space Exploration"],
-                "answer": 0
-            }
-        ]
-    }
 
 def generate_affairs_and_quiz(news_text):
     GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
     if not GEMINI_API_KEY:
-        print("GEMINI_API_KEY not found. Returning fallback data.")
-        return get_fallback_data()
+        raise RuntimeError("GEMINI_API_KEY environment variable is not set in GitHub Secrets.")
 
-    try:
-        client = genai.Client(api_key=GEMINI_API_KEY)
-    except Exception as e:
-        print(f"Failed to initialize Gemini Client: {e}")
-        return get_fallback_data()
+    client = genai.Client(api_key=GEMINI_API_KEY)
+    
+    prompt = f"""
+You are an expert competitive exam strategist for UPSC, SSC CGL, Banking, and State PCS.
+Analyze these live headlines and generate EXACTLY 15 distinct current affairs entries.
+
+LIVE HEADLINES:
+{news_text}
+
+For EACH entry, extract:
+1. id: (integer 1 to 15)
+2. category: (Defence, Schemes, National, International, Economy, Science & Tech, Sports)
+3. title: (Clean factual news headline)
+4. image_url: ("https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800")
+5. date: (Current date in YYYY-MM-DD format)
+6. place: (City / State / Country)
+7. person_name: (Full name of the Minister or key Leader / Personality involved, or "N/A")
+8. ministry_portfolio: (Exact Ministry / Portfolio controlled by them, e.g., "Ministry of Defence", "Ministry of Finance", or "N/A")
+9. officers: (Key secretaries/military officers involved, or "N/A")
+10. countries_states: (States/Countries involved)
+11. reason: (Exam relevance explanation)
+12. mission: (Scheme/Project/Operation name, or "N/A")
+13. conclusion: (Key summary takeaway)
+
+Also generate 5 exam-style multiple-choice questions based on these items.
+
+Return ONLY a single valid JSON object formatted as:
+{{
+  "news": [
+    {{
+      "id": 1,
+      "category": "National",
+      "title": "Title here",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
+      "date": "2026-09-21",
+      "place": "New Delhi",
+      "person_name": "Rajnath Singh",
+      "ministry_portfolio": "Ministry of Defence",
+      "officers": "General Anil Chauhan (CDS)",
+      "countries_states": "India",
+      "reason": "Crucial for national security and governance questions",
+      "mission": "Operation Raksha",
+      "conclusion": "Strengthened national defense framework"
+    }}
+  ],
+  "quizzes": [
+    {{
+      "question": "Sample Question?",
+      "options": ["Option A", "Option B", "Option C", "Option D"],
+      "answer": 0
+    }}
+  ]
+}}
+"""
 
     models_to_try = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
     
-    prompt = f"""
-You are an expert exam strategist for Indian competitive exams (UPSC, SSC, Banking, State PCS).
-Analyze these news items:
-
-{news_text}
-
-Task:
-1. Extract 10-12 distinct current affairs entries across Defence, Schemes, International, National, Economy, Science & Tech.
-2. For EACH entry, provide:
-   - id (integer 1..N)
-   - category (Defence, Schemes, International, National, Economy, Science & Tech)
-   - title (Headline)
-   - image_url ("https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800")
-   - date ("2026-09-21")
-   - place (Location)
-   - persons_ministers (Ministers / VIPs involved)
-   - officers (Key officers or N/A)
-   - countries_states (Countries / States involved)
-   - reason (Exam importance)
-   - mission (Mission name or N/A)
-   - conclusion (Summary)
-
-3. Create 4 multiple-choice quiz questions based on these entries.
-
-Return ONLY a single valid JSON object with keys "news" and "quizzes".
-"""
-
     for model_name in models_to_try:
-        for attempt in range(2):
-            try:
-                print(f"Calling model: {model_name} (Attempt {attempt+1})...")
-                response = client.models.generate_content(
-                    model=model_name,
-                    contents=prompt,
-                    config=types.GenerateContentConfig(
-                        temperature=0.3,
-                        max_output_tokens=8192,
-                        response_mime_type="application/json"
-                    ),
-                )
+        try:
+            print(f"Generating news with {model_name}...")
+            response = client.models.generate_content(
+                model=model_name,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    temperature=0.2,
+                    max_output_tokens=8192,
+                    response_mime_type="application/json"
+                ),
+            )
 
-                if response and response.text:
-                    text = response.text.strip()
-                    match = re.search(r'\{.*\}', text, re.DOTALL)
-                    if match:
-                        text = match.group(0)
-                    data = json.loads(text)
-                    if "news" in data and isinstance(data["news"], list) and len(data["news"]) > 0:
-                        return data
-            except Exception as e:
-                print(f"Model {model_name} error: {e}")
-                time.sleep(2)
-                continue
+            if response and response.text:
+                data = json.loads(response.text.strip())
+                if "news" in data and len(data["news"]) >= 10:
+                    return data
+        except Exception as e:
+            print(f"Model {model_name} error: {e}")
+            time.sleep(2)
 
-    print("Gemini generation failed. Reverting to default fallback data.")
-    return get_fallback_data()
-
+    raise RuntimeError("All Gemini API models failed to generate valid news data.")
 
 # ============================================================
-# 3. FILE SAVING
+# 3. MAIN EXECUTION
 # ============================================================
 
 if __name__ == "__main__":
-    print("Fetching news headlines...")
-    headlines = fetch_rss_headlines()
-    
-    print("Generating current affairs data...")
-    app_data = generate_affairs_and_quiz(headlines)
-    
-    # Ensure news array is non-empty before writing
-    if not app_data.get("news"):
-        app_data = get_fallback_data()
+    print("Fetching live news feeds...")
+    news_text = fetch_rss_headlines()
 
-    print(f"Saving {len(app_data['news'])} news items to data.json...")
+    print("Generating news data...")
+    app_data = generate_affairs_and_quiz(news_text)
+
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump(app_data, f, indent=2)
 
-    print("data.json generated successfully!")
+    print(f"Successfully updated data.json with {len(app_data['news'])} news items!")
     
