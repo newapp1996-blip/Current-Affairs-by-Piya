@@ -39,8 +39,8 @@ def generate_affairs_and_quiz(news_text):
         print("ERROR: GEMINI_API_KEY environment variable is missing or empty!")
         raise ValueError("GEMINI_API_KEY secret is missing in GitHub Repository Settings -> Secrets and variables -> Actions!")
 
-    # Updated model endpoint to gemini-3.0-flash
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.0-flash:generateContent?key={api_key}"
+    # Using standard stable model identifier for v1beta REST API
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
     
     prompt = f"""
 You are an expert exam strategist for Indian competitive exams (UPSC, SSC, Banking, State PCS).
@@ -149,4 +149,3 @@ if __name__ == "__main__":
     print("Updating index.html...")
     update_index_html(app_data)
     print("Update complete!")
-    
