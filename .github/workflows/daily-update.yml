@@ -40,12 +40,17 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python update_news.py
 
-      - name: Commit Updated Data to Branch
+      - name: Verify generated data
+        run: |
+          ls -la data.json index.html
+          cat data.json | head -n 20
+
+      - name: Commit Updated Data
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update news [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update news data [skip ci]" && git push)
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
