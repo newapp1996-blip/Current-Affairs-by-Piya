@@ -38,7 +38,7 @@ def fetch_rss_headlines():
     return "\n\n".join(headlines)
 
 # ============================================================
-# 2. GEMINI GENERATION WITH UPDATED MODEL NAMES
+# 2. GEMINI GENERATION WITH DYNAMIC MODEL RESOLUTION
 # ============================================================
 
 def generate_affairs_and_quiz(news_text):
@@ -48,6 +48,26 @@ def generate_affairs_and_quiz(news_text):
 
     client = genai.Client(api_key=GEMINI_API_KEY)
     
+    # Retrieve available models directly from API to avoid hardcoded 404 name mismatches
+    available_models = []
+    try:
+        for m in client.models.list():
+            # Check for generateContent capability
+            if hasattr(m, 'supported_generation_methods') and 'generateContent' in m.supported_generation_methods:
+                model_id = m.name.replace("models/", "")
+                available_models.append(model_id)
+            elif hasattr(m, 'name'):
+                model_id = m.name.replace("models/", "")
+                available_models.append(model_id)
+    except Exception as e:
+        print(f"Could not list models: {e}")
+
+    # Fallback default candidates if list API call fails
+    if not available_models:
+        available_models = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
+
+    print(f"Discovered available models for key: {available_models}")
+
     prompt = f"""
 You are an expert competitive exam strategist for UPSC, SSC CGL, Banking, and State PCS.
 Analyze these live headlines and generate EXACTLY 15 distinct current affairs entries.
@@ -101,12 +121,9 @@ Return ONLY a single valid JSON object formatted as:
 }}
 """
 
-    # Updated model identifiers to match active Gemini API endpoints
-    models_to_try = ["gemini-2.0-flash-exp", "gemini-1.5-flash-latest", "gemini-1.5-pro-latest", "gemini-1.5-flash"]
-    
-    for model_name in models_to_try:
+    for model_name in available_models:
         try:
-            print(f"Generating news with {model_name}...")
+            print(f"Generating news with model: {model_name}...")
             response = client.models.generate_content(
                 model=model_name,
                 contents=prompt,
@@ -123,7 +140,7 @@ Return ONLY a single valid JSON object formatted as:
                     return data
         except Exception as e:
             print(f"Model {model_name} error: {e}")
-            time.sleep(2)
+            time.sleep(1)
 
     raise RuntimeError("All Gemini API models failed to generate valid news data.")
 
@@ -142,4 +159,3 @@ if __name__ == "__main__":
         json.dump(app_data, f, indent=2)
 
     print(f"Successfully updated data.json with {len(app_data['news'])} news items!")
-    
