@@ -86,25 +86,28 @@ def generate_daily_content(raw_articles):
     }}
     """
 
-    model_name = 'gemini-3.6-flash'
-    
-    for attempt in range(3):
-        try:
-            print(f"Attempting content generation with {model_name} (Attempt {attempt + 1})...")
-            response = client.models.generate_content(
-                model=model_name,
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    response_mime_type="application/json",
-                    temperature=0.3
+    # List of candidate models to try in order of preference
+    candidate_models = ['gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-2.5-flash']
+
+    for model_name in candidate_models:
+        for attempt in range(1, 4):
+            try:
+                print(f"Attempting content generation with {model_name} (Attempt {attempt})...")
+                response = client.models.generate_content(
+                    model=model_name,
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
+                        response_mime_type="application/json",
+                        temperature=0.3
+                    )
                 )
-            )
-            return json.loads(response.text)
-        except Exception as e:
-            print(f"Warning: Attempt {attempt + 1} with {model_name} failed: {e}")
-            time.sleep(5 * (attempt + 1))
-            
-    raise RuntimeError(f"Failed to generate daily content with {model_name} after retries.")
+                return json.loads(response.text)
+            except Exception as e:
+                print(f"Warning: Attempt {attempt} with {model_name} failed: {e}")
+                # Wait longer on each attempt (10s, 20s, 30s) to allow 503 traffic spikes to subside
+                time.sleep(10 * attempt)
+
+    raise RuntimeError("Failed to generate daily content across all models and retry attempts.")
 
 def main():
     raw_news = fetch_rss_feeds()
