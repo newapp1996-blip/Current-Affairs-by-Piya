@@ -3,363 +3,363 @@
   "news": [
     {
       "id": 1,
-      "category": "NATIONAL",
-      "headline": "SOUTH DELHI ROAD-WIDENING DRIVE RAZES UNAUTHORISED STRUCTURES",
-      "story_lead": "In a major enforcement drive, the <b>District Magistrate (South)</b> ordered the demolition of approximately <b>20 unauthorised homes</b> and several <b>farmhouses</b> in <b>South Delhi</b> to facilitate road-widening projects.",
+      "category": "ENVIRONMENT",
+      "headline": "PUNJAB FACES SEVERE GROUNDWATER CRISIS",
+      "story_lead": "A recent study reveals that <b>Punjab</b> is grappling with a widening socio-economic divide due to a massive groundwater crisis. The state currently holds the highest percentage of over-exploited groundwater blocks in India at <b>76.47%</b>.",
       "bullet_points": [
-        "The action was carried out using <b>bulldozers</b> to clear illegal encroachments.",
-        "The drive aims to improve connectivity through <b>road-widening</b> in the capital."
+        "Heavy reliance on groundwater for water-intensive crops like <b>wheat and rice</b> is driving the crisis.",
+        "Rising costs for <b>deeper wells</b> are exacerbating economic inequality among farmers."
       ],
-      "image_url": "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800",
-      "exam_relevance": "Relevant for UPSC GS Paper II (Governance) and State PCS (Urban Planning/Local Administration).",
-      "takeaway": "Enforcement of urban planning laws in Delhi via demolition of unauthorised structures."
+      "image_url": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800",
+      "exam_relevance": "Crucial for UPSC Geography (Water Resources) and Environment sections.",
+      "takeaway": "Punjab's 76.47% groundwater over-exploitation threatens agricultural sustainability."
     },
     {
       "id": 2,
-      "category": "NATIONAL",
-      "headline": "BIHAR STATE COMMISSION FOR WOMEN INTERVENES IN JAMUI CASE",
-      "story_lead": "The <b>Bihar State Commission for Women</b> has taken <b>suo motu cognisance</b> of a case involving the harassment of a <b>minor girl</b> and her friend in <b>Jamui</b>, Bihar.",
+      "category": "SCI-TECH",
+      "headline": "MICROSOFT LAUNCHES CLOUD REGION IN HYDERABAD",
+      "story_lead": "<b>Microsoft</b> has officially launched its <b>India South Central</b> cloud region in <b>Hyderabad</b>. This infrastructure is specifically designed to support massive AI workloads and mission-critical services.",
       "bullet_points": [
-        "The Commission demanded <b>stern action</b> against all individuals involved in the incident.",
-        "The case has triggered a significant <b>political slugfest</b> in the state."
+        "The region features <b>three availability zones</b> to ensure high resilience.",
+        "Designed to meet <b>India's regulatory and seismic requirements</b> for data sovereignty."
       ],
-      "image_url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800",
-      "exam_relevance": "Important for UPSC GS Paper II (Social Justice/Women Empowerment) and SSC.",
-      "takeaway": "Commission's proactive role in protecting women's rights in Bihar."
+      "image_url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?w=800",
+      "exam_relevance": "Relevant for Science & Technology (Cloud Computing/AI) and Digital India initiatives.",
+      "takeaway": "Microsoft expands India's digital infrastructure with a new Hyderabad cloud hub."
     },
     {
       "id": 3,
-      "category": "NATIONAL",
-      "headline": "TELANGANA EAGLE FORCE SUCCESS IN DRUG REHABILITATION",
-      "story_lead": "Following the <b>EAGLE Force operation</b> in <b>Telangana</b>, <b>23 drug consumers</b> have successfully completed a comprehensive de-addiction and rehabilitation programme.",
+      "category": "SCI-TECH",
+      "headline": "3,261 FLOWERING SPECIES RECORDED IN AGATHTYAMALAI",
+      "story_lead": "A research team from the <b>Jawaharlal Nehru Tropical Botanic Garden and Research Institute</b> has documented <b>3,261 flowering plant species</b> in the <b>Agasthyamalai Biosphere Reserve</b>.",
       "bullet_points": [
-        "The consumers were produced before the court in <b>L.B. Nagar</b> as part of the legal process.",
-        "The operation emphasizes <b>counselling and rehabilitation</b> alongside law enforcement."
+        "The study reaffirms the <b>Western Ghats</b> as a critical global biodiversity hotspot.",
+        "Highlights the urgent need for <b>region-specific conservation strategies</b>."
       ],
-      "image_url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800",
-      "exam_relevance": "Relevant for UPSC GS Paper III (Internal Security/Social Issues) and State PCS.",
-      "takeaway": "Integrated approach of enforcement and rehabilitation in drug control."
+      "image_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800",
+      "exam_relevance": "Important for UPSC Environment & Ecology (Biodiversity Hotspots).",
+      "takeaway": "New checklist confirms high floral diversity in the Agasthyamalai Biosphere Reserve."
     },
     {
       "id": 4,
-      "category": "NATIONAL",
-      "headline": "IIT-BOMBAY REMOVES DEAN AMID STUDENT DEATH CASE",
-      "story_lead": "In the wake of a student death case, <b>IIT-Bombay</b> has removed <b>Prof. Doolla</b>, who was serving as the <b>Dean (Administrative Affairs)</b>.",
+      "category": "SCI-TECH",
+      "headline": "GOOGLE FINED \u20ac403 MILLION OVER PRIVACY FAILURES",
+      "story_lead": "The <b>Irish privacy regulator</b> has imposed a massive fine of <b>\u20ac403 million</b> on <b>Google</b> for failures in processing user location data.",
       "bullet_points": [
-        "The announcement was made by the Institute's Director, <b>Prof. Shireesh Kedare</b>.",
-        "The institute also issued a clarification to <b>deny reports</b> regarding the Director's resignation."
+        "The regulator found users were unaware their <b>location data</b> was being used for targeted advertising.",
+        "The fine emphasizes the loss of <b>individual control</b> over personal digital data."
       ],
-      "image_url": "https://images.unsplash.com/photo-1562774053-701939374585?w=800",
-      "exam_relevance": "Important for Current Affairs and institutional governance topics in SSC/Banking.",
-      "takeaway": "Administrative changes at IIT-Bombay following a critical incident."
+      "image_url": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800",
+      "exam_relevance": "Relevant for Data Privacy laws and International Tech Regulation.",
+      "takeaway": "Google faces heavy penalties for mishandling user location data in the EU."
     },
     {
       "id": 5,
       "category": "ECONOMY",
-      "headline": "THE PARADOX OF INDIA-CHINA TRADE DYNAMICS",
-      "story_lead": "Analysis shows that while India is expanding its <b>manufacturing capabilities</b>, its growth remains deeply embedded in <b>China-centric, import-dependent supply chains</b>.",
+      "headline": "CHINA'S SDLG TO INVEST \u20b9300 CRORE IN GUJARAT",
+      "story_lead": "In a boost to local manufacturing, China's <b>SDLG</b> has announced an investment of <b>\u20b9300 crore</b> in its <b>Gujarat</b> plant to expand production of construction equipment.",
       "bullet_points": [
-        "The paradox highlights the difficulty of achieving true <b>self-reliance</b>.",
-        "Strategic focus is needed to decouple from <b>import-dependent</b> dependencies."
+        "The move aims to increase <b>sourcing from Indian suppliers</b>.",
+        "Strengthens the local supply chain within the <b>construction equipment market</b>."
       ],
-      "image_url": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800",
-      "exam_relevance": "Crucial for UPSC GS Paper III (Indian Economy/Trade) and Banking exams.",
-      "takeaway": "India's manufacturing growth is currently tied to Chinese supply chains."
+      "image_url": "https://images.unsplash.com/photo-1581094288338-2314dddb7ca3?w=800",
+      "exam_relevance": "Important for Economy (FDI and Manufacturing) and Make in India.",
+      "takeaway": "SDLG's \u20b9300 crore investment targets expansion in the Indian construction sector."
     },
     {
       "id": 6,
-      "category": "INTERNATIONAL",
-      "headline": "EU FACES STANDOFF OVER RUSSIA SANCTIONS EXTENSION",
-      "story_lead": "The <b>European Union</b> is struggling to reach a consensus on extending sanctions against <b>Russia</b> due to a political standoff with <b>France</b>.",
+      "category": "ECONOMY",
+      "headline": "COLOMBO PORT CITY PITCHES 'INDIA-PLUS-ONE'",
+      "story_lead": "The <b>Colombo Port City</b> is actively courting Indian companies using an <b>'India-plus-one'</b> strategy to attract high-value Foreign Direct Investment (FDI).",
       "bullet_points": [
-        "EU member states must agree to extend sanctions every <b>six months</b>.",
-        "The sanctions are a core part of the bloc's response to the <b>war since 2022</b>."
+        "Focus sectors include <b>Financial Services, IT, and Maritime logistics</b>.",
+        "Designed to serve as a hub for <b>regional headquarters operations</b>."
       ],
-      "image_url": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=800",
-      "exam_relevance": "Important for UPSC GS Paper II (International Relations) and SSC.",
-      "takeaway": "Internal EU divisions impacting the unified response to Russia."
+      "image_url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+      "exam_relevance": "Relevant for International Trade and Regional Economic Integration.",
+      "takeaway": "Sri Lanka's Port City aims to become a major hub for Indian-led regional business."
     },
     {
       "id": 7,
       "category": "INTERNATIONAL",
-      "headline": "UNITED RUSSIA WINS MAJORITY IN PARLIAMENTARY ELECTIONS",
-      "story_lead": "The pro-Putin party <b>United Russia</b> secured a resounding victory in the parliamentary elections, winning <b>57.83%</b> of the vote.",
+      "headline": "EU STRUGGLES WITH RUSSIA SANCTIONS EXTENSION",
+      "story_lead": "The <b>European Union</b> is facing a standoff, particularly with <b>France</b>, regarding the extension of sanctions against <b>Russia</b> following the 2022 war.",
       "bullet_points": [
-        "<b>Ella Pamfilova</b>, chair of the <b>Central Electoral Commission</b>, confirmed the results.",
-        "The party's share increased from <b>49.8%</b> in the 2021 elections."
+        "EU rules require <b>unanimous agreement</b> from all member states to extend sanctions.",
+        "Sanctions must be reviewed and renewed every <b>six months</b>."
       ],
-      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
-      "exam_relevance": "Relevant for UPSC GS Paper II (World Politics) and SSC.",
-      "takeaway": "Consolidation of power by the United Russia party."
+      "image_url": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=800",
+      "exam_relevance": "Crucial for International Relations (EU-Russia dynamics).",
+      "takeaway": "Internal EU disagreements threaten the continuity of Russia sanctions."
     },
     {
       "id": 8,
       "category": "INTERNATIONAL",
-      "headline": "PAKISTAN: THREE SISTERS OF IMRAN KHAN ARRESTED",
-      "story_lead": "The <b>Deputy Commissioner of Lahore</b> has ordered the <b>30-day detention</b> of the three sisters of former PM <b>Imran Khan</b>.",
+      "headline": "UNITED RUSSIA WINS PARLIAMENTARY ELECTION",
+      "story_lead": "The pro-Putin party, <b>United Russia</b>, has secured a resounding victory in the parliamentary elections, winning <b>57.83%</b> of the vote.",
       "bullet_points": [
-        "The arrest was executed under the <b>Maintenance of Public Order law</b> of Punjab province.",
-        "The orders were issued on <b>September 20, 2026</b>."
+        "The party's vote share rose from <b>49.8%</b> in the 2021 elections.",
+        "<b>Ella Pamfilova</b>, chair of the Central Electoral Commission, confirmed the results."
       ],
-      "image_url": "https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?w=800",
-      "exam_relevance": "Important for UPSC GS Paper II (International Relations/Regional Stability).",
-      "takeaway": "Political crackdown in Pakistan targeting the family of Imran Khan."
+      "image_url": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=800",
+      "exam_relevance": "Important for International Political Affairs.",
+      "takeaway": "United Russia strengthens its grip on the Russian parliament."
     },
     {
       "id": 9,
-      "category": "INTERNATIONAL",
-      "headline": "XI JINPING TO VISIT U.S. FOR TALKS WITH DONALD TRUMP",
-      "story_lead": "Chinese President <b>Xi Jinping</b> is set to visit the <b>United States</b> this week for high-level talks with <b>Donald Trump</b>.",
+      "category": "NATIONAL",
+      "headline": "FSSAI TAKES ACTION AGAINST NESTLE INDIA",
+      "story_lead": "The <b>Food Safety and Standards Authority of India (FSSAI)</b> has initiated legal action against <b>Nestle India</b> regarding its infant nutrition products.",
       "bullet_points": [
-        "Spokesman <b>Guo Jiakun</b> confirmed the visit will focus on <b>China-U.S. relations</b>.",
-        "Discussions will also cover <b>world peace and development</b>."
+        "FSSAI is seeking clarifications on claims related to <b>'5HMOs' and 'Whey Protein'</b>.",
+        "The move aims to ensure transparency in <b>infant nutrition labeling</b>."
       ],
-      "image_url": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=800",
-      "exam_relevance": "Critical for UPSC GS Paper II (International Relations) and SSC.",
-      "takeaway": "Major diplomatic engagement between the world's two largest economies."
+      "image_url": "https://images.unsplash.com/photo-1550583724-1255818c053b?w=800",
+      "exam_relevance": "Relevant for Governance (Regulatory bodies) and Consumer Protection.",
+      "takeaway": "FSSAI scrutinizes Nestle India's nutritional claims for infant products."
     },
     {
       "id": 10,
-      "category": "BUSINESS",
-      "headline": "KERALA RAILWAY PROJECTS WORTH \u20b920,000 CRORE UNDERWAY",
-      "story_lead": "Union Minister <b>Ashwini Vaishnaw</b> announced that railway works worth over <b>\u20b920,000 crore</b> are currently being implemented in <b>Kerala</b>.",
+      "category": "SCI-TECH",
+      "headline": "ADVANCING ALZHEIMER'S DIAGNOSIS VIA BLOOD TESTS",
+      "story_lead": "New advancements in medical science are utilizing blood tests like <b>p-tau217 and p-tau181</b> to improve the diagnosis of <b>Alzheimer's disease</b>.",
       "bullet_points": [
-        "<b>Mangaluru</b> is set to remain within the <b>SWR zone</b>.",
-        "<b>Land acquisition lags</b> are currently delaying several sanctioned lines and doubling projects."
+        "These tests identify specific <b>biological changes</b> linked to the disease.",
+        "Offers a potentially less invasive alternative to traditional <b>neurological assessments</b>."
       ],
-      "image_url": "https://images.unsplash.com/photo-1474487056217-76fe7573622c?w=800",
-      "exam_relevance": "Relevant for UPSC GS Paper III (Infrastructure/Economy) and SSC.",
-      "takeaway": "Massive infrastructure investment in Kerala's railway network."
+      "image_url": "https://images.unsplash.com/photo-1579154273801-e91e354c862a?w=800",
+      "exam_relevance": "Important for Science & Technology (Biotechnology/Health).",
+      "takeaway": "Blood-based biomarkers are revolutionizing early Alzheimer's detection."
     },
     {
       "id": 11,
-      "category": "SCI-TECH",
-      "headline": "MICROSOFT LAUNCHES FOURTH INDIA CLOUD REGION IN HYDERABAD",
-      "story_lead": "<b>Microsoft</b> has launched its <b>India South Central cloud region</b> in <b>Hyderabad</b> to support mission-critical and <b>AI workloads</b>.",
+      "category": "NATIONAL",
+      "headline": "TN CM VIJAY REVIEWS MONSOON PREPAREDNESS",
+      "story_lead": "Tamil Nadu Chief Minister <b>Vijay</b> has reviewed the state's preparedness for the upcoming <b>Northeast monsoon</b>, focusing on disaster mitigation.",
       "bullet_points": [
-        "The region features <b>three availability zones</b> for high resilience.",
-        "It is designed to meet <b>India's regulatory and seismic requirements</b>."
+        "Officials were directed to identify areas vulnerable to <b>sea water intrusion and coastal erosion</b>.",
+        "Emphasis placed on ensuring <b>storm warnings</b> reach fishermen and rehabilitation centers."
       ],
-      "image_url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?w=800",
-      "exam_relevance": "Important for UPSC GS Paper III (Science & Tech/Digital Infrastructure) and Banking.",
-      "takeaway": "Expansion of cloud and AI infrastructure in India via Microsoft."
+      "image_url": "https://images.unsplash.com/photo-1516912481808-34061f8e2000?w=800",
+      "exam_relevance": "Relevant for Disaster Management and State Governance.",
+      "takeaway": "Tamil Nadu strengthens monsoon readiness and coastal protection measures."
     },
     {
       "id": 12,
-      "category": "SCI-TECH",
-      "headline": "FSSAI INITIATES LEGAL ACTION AGAINST NESTLE INDIA",
-      "story_lead": "The <b>Food Safety and Standards Authority of India (FSSAI)</b> has initiated legal action against <b>Nestle India</b> regarding its <b>infant nutrition</b> products.",
+      "category": "NATIONAL",
+      "headline": "FINANCIAL IRREGULARITIES AT MALABAR MILMA",
+      "story_lead": "The <b>Malabar Milma</b> dairy cooperative is facing scrutiny following allegations of financial irregularities resulting in a <b>\u20b927.45 lakh loss</b>.",
       "bullet_points": [
-        "FSSAI is seeking clarifications on claims related to <b>'5HMOs'</b> and <b>'Whey Protein'</b>.",
-        "The action focuses on the accuracy of nutritional labeling."
+        "The alleged loss occurred at the <b>Kasaragod dairy</b> unit.",
+        "The case highlights challenges in <b>cooperative sector governance</b>."
       ],
-      "image_url": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800",
-      "exam_relevance": "Relevant for UPSC GS Paper II (Regulatory Bodies) and SSC.",
-      "takeaway": "Regulatory scrutiny on infant food nutritional claims in India."
+      "image_url": "https://images.unsplash.com/photo-1528498033373-3c6c08e93d79?w=800",
+      "exam_relevance": "Relevant for Economy (Cooperative Sector) and Governance.",
+      "takeaway": "Kasaragod's Malabar Milma faces action over significant financial losses."
     },
     {
       "id": 13,
-      "category": "SCI-TECH",
-      "headline": "3,261 FLOWERING PLANT SPECIES RECORDED IN AGATHTYAMALAI",
-      "story_lead": "A research team from <b>JNTBGRI</b> has recorded <b>3,261 flowering plant species</b> in the <b>Agasthyamalai Biosphere Reserve</b>.",
+      "category": "ECONOMY",
+      "headline": "INDIA-CHINA TRADE: THE SELF-RELIANCE PARADOX",
+      "story_lead": "Despite India's push for manufacturing, trade dynamics show that expansion remains deeply embedded in <b>China-centric, import-dependent supply chains</b>.",
       "bullet_points": [
-        "The study reaffirms the <b>Western Ghats</b> as a global <b>biodiversity hotspot</b>.",
-        "The findings highlight the need for <b>region-specific protection strategies</b>."
+        "The paradox highlights the difficulty of achieving true <b>self-reliance</b>.",
+        "India is building capabilities but remains tied to <b>Chinese components and raw materials</b>."
       ],
-      "image_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800",
-      "exam_relevance": "Crucial for UPSC GS Paper III (Environment/Biodiversity) and State PCS.",
-      "takeaway": "Significant biodiversity documentation in the Western Ghats."
+      "image_url": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800",
+      "exam_relevance": "Crucial for UPSC International Relations and Indian Economy.",
+      "takeaway": "India's manufacturing growth is currently constrained by Chinese supply chain dependencies."
     },
     {
       "id": 14,
-      "category": "SCI-TECH",
-      "headline": "ADVANCEMENTS IN ALZHEIMER\u2019S BLOOD DIAGNOSIS",
-      "story_lead": "New blood tests, specifically <b>p-tau217</b> and <b>p-tau181</b>, are significantly advancing the early diagnosis of <b>Alzheimer\u2019s disease</b>.",
+      "category": "INTERNATIONAL",
+      "headline": "PAKISTAN STRIKES AFGHAN MILITANT HIDEOUTS",
+      "story_lead": "Pakistan conducted strikes in <b>Afghanistan</b>, targeting militant hideouts and reportedly killing <b>28 people</b>, though the <b>Taliban</b> disputes the death toll.",
       "bullet_points": [
-        "These tests help identify <b>biological changes</b> linked to the disease.",
-        "They offer a non-invasive alternative to traditional diagnostic methods."
+        "One strike hit a house in <b>Kunar province</b>, killing three family members.",
+        "The action followed an attack on a <b>police facility in Pakistan</b>."
       ],
-      "image_url": "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=800",
-      "exam_relevance": "Important for UPSC GS Paper III (Science & Tech/Health) and SSC.",
-      "takeaway": "Breakthrough in non-invasive Alzheimer's detection via blood markers."
+      "image_url": "https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=800",
+      "exam_relevance": "Important for International Security and Regional Conflicts.",
+      "takeaway": "Cross-border strikes between Pakistan and Afghanistan escalate tensions."
     },
     {
       "id": 15,
-      "category": "SCI-TECH",
-      "headline": "NEW CAT SPECIES IDENTIFIED IN BOLIVIA",
-      "story_lead": "In a major zoological discovery, a <b>new cat species</b> has been identified in <b>Bolivia</b>, the first such find in over a century.",
+      "category": "NATIONAL",
+      "headline": "DELHI COURT SETS ASIDE ORDER IN SONIA GANDHI CASE",
+      "story_lead": "A <b>Delhi Court</b> has set aside a Magistrate's order that had refused to probe <b>Sonia Gandhi's</b> pre-citizenship electoral entry.",
       "bullet_points": [
-        "Evidence suggests the species may be <b>nocturnal</b> based on camera-trap data.",
-        "Dietary analysis of scat samples indicates a diet of <b>small rodents</b>."
+        "The judge ruled the Magistrate incorrectly focused on <b>citizenship</b> instead of the <b>cognisable offence</b>.",
+        "The case concerns the legality of her <b>electoral entry</b> prior to citizenship."
       ],
-      "image_url": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800",
-      "exam_relevance": "Relevant for UPSC GS Paper III (Environment/Biodiversity) and SSC.",
-      "takeaway": "Significant new species discovery in South American wildlife."
+      "image_url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800",
+      "exam_relevance": "Relevant for Indian Polity (Judiciary and Constitutional Law).",
+      "takeaway": "Delhi Court mandates a probe into Sonia Gandhi's electoral entry legality."
     }
   ],
   "quizzes": [
     {
       "id": 1,
-      "question": "Which authority ordered the demolition of 20 unauthorised homes in South Delhi?",
+      "question": "What is the percentage of over-exploited groundwater blocks in Punjab according to the recent study?",
       "options": [
-        "Delhi Police",
-        "District Magistrate (South)",
-        "Municipal Corporation of Delhi",
-        "Lieutenant Governor"
+        "65.40%",
+        "76.47%",
+        "82.15%",
+        "55.90%"
       ],
       "answer": 1
     },
     {
       "id": 2,
-      "question": "In which district of Bihar did the State Commission for Women take suo motu cognisance of a harassment case?",
+      "question": "In which city has Microsoft launched its 'India South Central' cloud region?",
       "options": [
-        "Patna",
-        "Gaya",
-        "Jamui",
-        "Bhagalpur"
+        "Bengaluru",
+        "Mumbai",
+        "Hyderabad",
+        "Chennai"
       ],
       "answer": 2
     },
     {
       "id": 3,
-      "question": "Which force in Telangana conducted the operation resulting in the rehabilitation of 23 drug consumers?",
+      "question": "How many flowering plant species were recorded in the Agasthyamalai Biosphere Reserve by the JNTBGRI team?",
       "options": [
-        "EAGLE Force",
-        "Special Task Force",
-        "Anti-Narcotics Bureau",
-        "Greyhounds"
+        "2,500",
+        "3,261",
+        "4,110",
+        "2,895"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "id": 4,
-      "question": "Who was the Dean of Administrative Affairs at IIT-Bombay removed following the student death case?",
+      "question": "How much fine was imposed on Google by the Irish privacy regulator?",
       "options": [
-        "Prof. Shireesh Kedare",
-        "Prof. Doolla",
-        "Prof. Gupta",
-        "Prof. Verma"
+        "\u20ac200 million",
+        "\u20ac403 million",
+        "\u20ac550 million",
+        "\u20ac150 million"
       ],
       "answer": 1
     },
     {
       "id": 5,
-      "question": "What is the primary challenge identified in India's manufacturing expansion?",
+      "question": "How much is China's SDLG investing in its Gujarat plant?",
       "options": [
-        "Lack of skilled labor",
-        "China-centric supply chains",
-        "High electricity costs",
-        "Logistical bottlenecks"
+        "\u20b9100 crore",
+        "\u20b9250 crore",
+        "\u20b9300 crore",
+        "\u20b9500 crore"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "id": 6,
-      "question": "How often must EU countries agree to extend sanctions against Russia?",
+      "question": "Which strategy is Colombo Port City using to attract Indian companies?",
       "options": [
-        "Every month",
-        "Every six months",
-        "Every year",
-        "Every two years"
+        "China-plus-one",
+        "India-plus-one",
+        "Asia-centric",
+        "Global-hub"
       ],
       "answer": 1
     },
     {
       "id": 7,
-      "question": "Which party won 57.83% of the vote in the recent Russian parliamentary elections?",
+      "question": "How often must the EU agree to extend sanctions against Russia?",
       "options": [
-        "Communist Party",
-        "Liberal Democratic Party",
-        "United Russia",
-        "Just Russia"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 8,
-      "question": "Under which law were the sisters of Imran Khan detained in Lahore?",
-      "options": [
-        "Prevention of Terrorism Act",
-        "Maintenance of Public Order law",
-        "Anti-Terrorism Act",
-        "Political Parties Act"
+        "Every 3 months",
+        "Every 6 months",
+        "Every year",
+        "Every 2 years"
       ],
       "answer": 1
     },
     {
-      "id": 9,
-      "question": "Who is the Chinese Foreign Ministry Spokesman who confirmed Xi Jinping's visit to the U.S.?",
+      "id": 8,
+      "question": "Which party won the Russian parliamentary election with 57.83% of the vote?",
       "options": [
-        "Wang Yi",
-        "Guo Jiakun",
-        "Li Qiang",
-        "Xi Jinping"
+        "Communist Party",
+        "Liberal Democratic Party",
+        "United Russia",
+        "Die Linke"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 9,
+      "question": "FSSAI is seeking clarification from Nestle India regarding which specific claims?",
+      "options": [
+        "Vitamin D and Calcium",
+        "5HMOs and Whey Protein",
+        "Iron and Zinc",
+        "Sugar-free content"
       ],
       "answer": 1
     },
     {
       "id": 10,
-      "question": "What is the approximate value of railway works currently underway in Kerala?",
+      "question": "Which blood tests are being used to advance Alzheimer's diagnosis?",
       "options": [
-        "\u20b910,000 crore",
-        "\u20b915,000 crore",
-        "\u20b920,000 crore",
-        "\u20b925,000 crore"
+        "p-tau217 and p-tau181",
+        "HbA1c and CRP",
+        "Glucose and Insulin",
+        "LDL and HDL"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "id": 11,
-      "question": "Where is Microsoft's fourth India cloud region located?",
+      "question": "Who is the Chief Minister of Tamil Nadu reviewing monsoon preparedness?",
       "options": [
-        "Chennai",
-        "Mumbai",
-        "Bengaluru",
-        "Hyderabad"
+        "M.K. Stalin",
+        "Vijay",
+        "Edappadi Palaniswami",
+        "K. Annamalai"
       ],
-      "answer": 3
+      "answer": 1
     },
     {
       "id": 12,
-      "question": "Which regulatory body is taking legal action against Nestle India regarding infant nutrition?",
+      "question": "In which district is the Malabar Milma dairy facing financial irregularities?",
       "options": [
-        "Ministry of Health",
-        "FSSAI",
-        "BIS",
-        "Ministry of Consumer Affairs"
+        "Thiruvananthapuram",
+        "Kasaragod",
+        "Kozhikode",
+        "Kannur"
       ],
       "answer": 1
     },
     {
       "id": 13,
-      "question": "Which institute's team recorded 3,261 flowering plant species in Agasthyamalai?",
+      "question": "India's manufacturing expansion is currently described as being embedded in what?",
       "options": [
-        "IIT Madras",
-        "JNTBGRI",
-        "IISc Bangalore",
-        "Botanical Survey of India"
+        "US-centric supply chains",
+        "China-centric supply chains",
+        "EU-centric supply chains",
+        "Japan-centric supply chains"
       ],
       "answer": 1
     },
     {
       "id": 14,
-      "question": "Which blood markers are being used to advance Alzheimer's diagnosis?",
+      "question": "In which Afghan province was a house hit during the Pakistani strikes?",
       "options": [
-        "p-tau217 and p-tau181",
-        "Beta-amyloid and Tau",
-        "CRP and ESR",
-        "Glucose and Insulin"
+        "Kabul",
+        "Kandahar",
+        "Kunar",
+        "Herat"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "id": 15,
-      "question": "In which country was a new cat species recently identified?",
+      "question": "The Delhi Court set aside an order regarding which political figure's electoral entry?",
       "options": [
-        "Brazil",
-        "Bolivia",
-        "Peru",
-        "Chile"
+        "Narendra Modi",
+        "Sonia Gandhi",
+        "Rahul Gandhi",
+        "Amit Shah"
       ],
       "answer": 1
     }

@@ -1,66 +1,372 @@
 {
   "current_date": "2026-09-21",
-  "available_dates": ["2026-09-21"],
+  "available_dates": [
+    "2026-09-21",
+    "2026-09-20"
+  ],
   "today": {
     "date": "2026-09-21",
     "news": [
       {
         "id": 1,
-        "category": "NATIONAL",
-        "headline": "Mandatory Biometric Aadhaar Authentication for Subsidised Domestic LPG Refills",
-        "story_lead": "The <b>Ministry of Petroleum & Natural Gas</b> has made <b>Biometric Aadhaar Authentication (BAA)</b> mandatory for domestic LPG consumers to book cylinder refills at subsidized rates.",
+        "category": "ENVIRONMENT",
+        "headline": "PUNJAB FACES SEVERE GROUNDWATER CRISIS",
+        "story_lead": "A recent study reveals that <b>Punjab</b> is grappling with a widening socio-economic divide due to a massive groundwater crisis. The state currently holds the highest percentage of over-exploited groundwater blocks in India at <b>76.47%</b>.",
         "bullet_points": [
-          "Effective from <b>October 1, 2026</b> across all domestic LPG distributors.",
-          "Over <b>89.9% (27.43 Crore)</b> active domestic consumers have already completed verification.",
-          "Aims to prevent commercial diversion of subsidized domestic LPG cylinders."
+          "Heavy reliance on groundwater for water-intensive crops like <b>wheat and rice</b> is driving the crisis.",
+          "Rising costs for <b>deeper wells</b> are exacerbating economic inequality among farmers."
         ],
-        "exam_relevance": "Relevant for UPSC GS Paper II (Governance & Scheme Implementation) and Banking/SSC exams.",
-        "takeaway": "Mandatory BAA ensures targeted financial subsidy delivery and prevents diversion.",
-        "image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
+        "image_url": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800",
+        "exam_relevance": "Crucial for UPSC Geography (Water Resources) and Environment sections.",
+        "takeaway": "Punjab's 76.47% groundwater over-exploitation threatens agricultural sustainability."
       },
       {
         "id": 2,
-        "category": "SCIENCE & TECH",
-        "headline": "Semicon 2.0 Roadmap Launched with ₹1 Lakh Crore Investment Commitments",
-        "story_lead": "The Ministry of Electronics and IT unveiled the execution framework for <b>Semicon 2.0</b> during <b>SEMICON India 2026</b> at Yashobhoomi, New Delhi.",
+        "category": "SCI-TECH",
+        "headline": "MICROSOFT LAUNCHES CLOUD REGION IN HYDERABAD",
+        "story_lead": "<b>Microsoft</b> has officially launched its <b>India South Central</b> cloud region in <b>Hyderabad</b>. This infrastructure is specifically designed to support massive AI workloads and mission-critical services.",
         "bullet_points": [
-          "Attracted over <b>₹1 Lakh Crore</b> in private investment commitments across 16 MoUs.",
-          "Focuses on 6 pillars: chip design, fab capacity, packaging, research, equipment, and talent.",
-          "Targeting support for <b>200 semiconductor design start-ups</b> across Indian universities."
+          "The region features <b>three availability zones</b> to ensure high resilience.",
+          "Designed to meet <b>India's regulatory and seismic requirements</b> for data sovereignty."
         ],
-        "exam_relevance": "Relevant for UPSC GS Paper III (Technology & Industrial Policy) and State PCS.",
-        "takeaway": "Semicon 2.0 expands India's semiconductor ecosystem beyond assembly to full-stack manufacturing.",
-        "image_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
+        "image_url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?w=800",
+        "exam_relevance": "Relevant for Science & Technology (Cloud Computing/AI) and Digital India initiatives.",
+        "takeaway": "Microsoft expands India's digital infrastructure with a new Hyderabad cloud hub."
       },
       {
         "id": 3,
-        "category": "SPORTS",
-        "headline": "Smriti Mandhana Scripts History as Highest Run-Scorer in Women's T20Is",
-        "story_lead": "Indian women's cricket team vice-captain <b>Smriti Mandhana</b> became the highest run-scorer in Women's T20 International history during the <b>Asian Games 2026</b>.",
+        "category": "SCI-TECH",
+        "headline": "3,261 FLOWERING SPECIES RECORDED IN AGATHTYAMALAI",
+        "story_lead": "A research team from the <b>Jawaharlal Nehru Tropical Botanic Garden and Research Institute</b> has documented <b>3,261 flowering plant species</b> in the <b>Agasthyamalai Biosphere Reserve</b>.",
         "bullet_points": [
-          "Reached a milestone total of <b>4,788 T20I runs</b>.",
-          "Achieved during the Asian Games 2026 semi-final match against Bangladesh.",
-          "India also secured two silver medals in shooting at the Games."
+          "The study reaffirms the <b>Western Ghats</b> as a critical global biodiversity hotspot.",
+          "Highlights the urgent need for <b>region-specific conservation strategies</b>."
         ],
-        "exam_relevance": "Relevant for SSC, Banking, Railway, and State PCS sports current affairs questions.",
-        "takeaway": "Mandhana now holds the world record for the highest overall aggregate runs in Women's T20Is.",
-        "image_url": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=600&q=80"
+        "image_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800",
+        "exam_relevance": "Important for UPSC Environment & Ecology (Biodiversity Hotspots).",
+        "takeaway": "New checklist confirms high floral diversity in the Agasthyamalai Biosphere Reserve."
+      },
+      {
+        "id": 4,
+        "category": "SCI-TECH",
+        "headline": "GOOGLE FINED \u20ac403 MILLION OVER PRIVACY FAILURES",
+        "story_lead": "The <b>Irish privacy regulator</b> has imposed a massive fine of <b>\u20ac403 million</b> on <b>Google</b> for failures in processing user location data.",
+        "bullet_points": [
+          "The regulator found users were unaware their <b>location data</b> was being used for targeted advertising.",
+          "The fine emphasizes the loss of <b>individual control</b> over personal digital data."
+        ],
+        "image_url": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800",
+        "exam_relevance": "Relevant for Data Privacy laws and International Tech Regulation.",
+        "takeaway": "Google faces heavy penalties for mishandling user location data in the EU."
+      },
+      {
+        "id": 5,
+        "category": "ECONOMY",
+        "headline": "CHINA'S SDLG TO INVEST \u20b9300 CRORE IN GUJARAT",
+        "story_lead": "In a boost to local manufacturing, China's <b>SDLG</b> has announced an investment of <b>\u20b9300 crore</b> in its <b>Gujarat</b> plant to expand production of construction equipment.",
+        "bullet_points": [
+          "The move aims to increase <b>sourcing from Indian suppliers</b>.",
+          "Strengthens the local supply chain within the <b>construction equipment market</b>."
+        ],
+        "image_url": "https://images.unsplash.com/photo-1581094288338-2314dddb7ca3?w=800",
+        "exam_relevance": "Important for Economy (FDI and Manufacturing) and Make in India.",
+        "takeaway": "SDLG's \u20b9300 crore investment targets expansion in the Indian construction sector."
+      },
+      {
+        "id": 6,
+        "category": "ECONOMY",
+        "headline": "COLOMBO PORT CITY PITCHES 'INDIA-PLUS-ONE'",
+        "story_lead": "The <b>Colombo Port City</b> is actively courting Indian companies using an <b>'India-plus-one'</b> strategy to attract high-value Foreign Direct Investment (FDI).",
+        "bullet_points": [
+          "Focus sectors include <b>Financial Services, IT, and Maritime logistics</b>.",
+          "Designed to serve as a hub for <b>regional headquarters operations</b>."
+        ],
+        "image_url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "exam_relevance": "Relevant for International Trade and Regional Economic Integration.",
+        "takeaway": "Sri Lanka's Port City aims to become a major hub for Indian-led regional business."
+      },
+      {
+        "id": 7,
+        "category": "INTERNATIONAL",
+        "headline": "EU STRUGGLES WITH RUSSIA SANCTIONS EXTENSION",
+        "story_lead": "The <b>European Union</b> is facing a standoff, particularly with <b>France</b>, regarding the extension of sanctions against <b>Russia</b> following the 2022 war.",
+        "bullet_points": [
+          "EU rules require <b>unanimous agreement</b> from all member states to extend sanctions.",
+          "Sanctions must be reviewed and renewed every <b>six months</b>."
+        ],
+        "image_url": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=800",
+        "exam_relevance": "Crucial for International Relations (EU-Russia dynamics).",
+        "takeaway": "Internal EU disagreements threaten the continuity of Russia sanctions."
+      },
+      {
+        "id": 8,
+        "category": "INTERNATIONAL",
+        "headline": "UNITED RUSSIA WINS PARLIAMENTARY ELECTION",
+        "story_lead": "The pro-Putin party, <b>United Russia</b>, has secured a resounding victory in the parliamentary elections, winning <b>57.83%</b> of the vote.",
+        "bullet_points": [
+          "The party's vote share rose from <b>49.8%</b> in the 2021 elections.",
+          "<b>Ella Pamfilova</b>, chair of the Central Electoral Commission, confirmed the results."
+        ],
+        "image_url": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=800",
+        "exam_relevance": "Important for International Political Affairs.",
+        "takeaway": "United Russia strengthens its grip on the Russian parliament."
+      },
+      {
+        "id": 9,
+        "category": "NATIONAL",
+        "headline": "FSSAI TAKES ACTION AGAINST NESTLE INDIA",
+        "story_lead": "The <b>Food Safety and Standards Authority of India (FSSAI)</b> has initiated legal action against <b>Nestle India</b> regarding its infant nutrition products.",
+        "bullet_points": [
+          "FSSAI is seeking clarifications on claims related to <b>'5HMOs' and 'Whey Protein'</b>.",
+          "The move aims to ensure transparency in <b>infant nutrition labeling</b>."
+        ],
+        "image_url": "https://images.unsplash.com/photo-1550583724-1255818c053b?w=800",
+        "exam_relevance": "Relevant for Governance (Regulatory bodies) and Consumer Protection.",
+        "takeaway": "FSSAI scrutinizes Nestle India's nutritional claims for infant products."
+      },
+      {
+        "id": 10,
+        "category": "SCI-TECH",
+        "headline": "ADVANCING ALZHEIMER'S DIAGNOSIS VIA BLOOD TESTS",
+        "story_lead": "New advancements in medical science are utilizing blood tests like <b>p-tau217 and p-tau181</b> to improve the diagnosis of <b>Alzheimer's disease</b>.",
+        "bullet_points": [
+          "These tests identify specific <b>biological changes</b> linked to the disease.",
+          "Offers a potentially less invasive alternative to traditional <b>neurological assessments</b>."
+        ],
+        "image_url": "https://images.unsplash.com/photo-1579154273801-e91e354c862a?w=800",
+        "exam_relevance": "Important for Science & Technology (Biotechnology/Health).",
+        "takeaway": "Blood-based biomarkers are revolutionizing early Alzheimer's detection."
+      },
+      {
+        "id": 11,
+        "category": "NATIONAL",
+        "headline": "TN CM VIJAY REVIEWS MONSOON PREPAREDNESS",
+        "story_lead": "Tamil Nadu Chief Minister <b>Vijay</b> has reviewed the state's preparedness for the upcoming <b>Northeast monsoon</b>, focusing on disaster mitigation.",
+        "bullet_points": [
+          "Officials were directed to identify areas vulnerable to <b>sea water intrusion and coastal erosion</b>.",
+          "Emphasis placed on ensuring <b>storm warnings</b> reach fishermen and rehabilitation centers."
+        ],
+        "image_url": "https://images.unsplash.com/photo-1516912481808-34061f8e2000?w=800",
+        "exam_relevance": "Relevant for Disaster Management and State Governance.",
+        "takeaway": "Tamil Nadu strengthens monsoon readiness and coastal protection measures."
+      },
+      {
+        "id": 12,
+        "category": "NATIONAL",
+        "headline": "FINANCIAL IRREGULARITIES AT MALABAR MILMA",
+        "story_lead": "The <b>Malabar Milma</b> dairy cooperative is facing scrutiny following allegations of financial irregularities resulting in a <b>\u20b927.45 lakh loss</b>.",
+        "bullet_points": [
+          "The alleged loss occurred at the <b>Kasaragod dairy</b> unit.",
+          "The case highlights challenges in <b>cooperative sector governance</b>."
+        ],
+        "image_url": "https://images.unsplash.com/photo-1528498033373-3c6c08e93d79?w=800",
+        "exam_relevance": "Relevant for Economy (Cooperative Sector) and Governance.",
+        "takeaway": "Kasaragod's Malabar Milma faces action over significant financial losses."
+      },
+      {
+        "id": 13,
+        "category": "ECONOMY",
+        "headline": "INDIA-CHINA TRADE: THE SELF-RELIANCE PARADOX",
+        "story_lead": "Despite India's push for manufacturing, trade dynamics show that expansion remains deeply embedded in <b>China-centric, import-dependent supply chains</b>.",
+        "bullet_points": [
+          "The paradox highlights the difficulty of achieving true <b>self-reliance</b>.",
+          "India is building capabilities but remains tied to <b>Chinese components and raw materials</b>."
+        ],
+        "image_url": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800",
+        "exam_relevance": "Crucial for UPSC International Relations and Indian Economy.",
+        "takeaway": "India's manufacturing growth is currently constrained by Chinese supply chain dependencies."
+      },
+      {
+        "id": 14,
+        "category": "INTERNATIONAL",
+        "headline": "PAKISTAN STRIKES AFGHAN MILITANT HIDEOUTS",
+        "story_lead": "Pakistan conducted strikes in <b>Afghanistan</b>, targeting militant hideouts and reportedly killing <b>28 people</b>, though the <b>Taliban</b> disputes the death toll.",
+        "bullet_points": [
+          "One strike hit a house in <b>Kunar province</b>, killing three family members.",
+          "The action followed an attack on a <b>police facility in Pakistan</b>."
+        ],
+        "image_url": "https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=800",
+        "exam_relevance": "Important for International Security and Regional Conflicts.",
+        "takeaway": "Cross-border strikes between Pakistan and Afghanistan escalate tensions."
+      },
+      {
+        "id": 15,
+        "category": "NATIONAL",
+        "headline": "DELHI COURT SETS ASIDE ORDER IN SONIA GANDHI CASE",
+        "story_lead": "A <b>Delhi Court</b> has set aside a Magistrate's order that had refused to probe <b>Sonia Gandhi's</b> pre-citizenship electoral entry.",
+        "bullet_points": [
+          "The judge ruled the Magistrate incorrectly focused on <b>citizenship</b> instead of the <b>cognisable offence</b>.",
+          "The case concerns the legality of her <b>electoral entry</b> prior to citizenship."
+        ],
+        "image_url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800",
+        "exam_relevance": "Relevant for Indian Polity (Judiciary and Constitutional Law).",
+        "takeaway": "Delhi Court mandates a probe into Sonia Gandhi's electoral entry legality."
       }
     ],
     "quizzes": [
       {
-        "question": "Which authentication process has been made mandatory for domestic LPG subsidy refills from October 1, 2026?",
-        "options": ["Pan Card Verification", "Biometric Aadhaar Authentication", "Voter ID Mapping", "Ration Card Linking"],
+        "id": 1,
+        "question": "What is the percentage of over-exploited groundwater blocks in Punjab according to the recent study?",
+        "options": [
+          "65.40%",
+          "76.47%",
+          "82.15%",
+          "55.90%"
+        ],
         "answer": 1
       },
       {
-        "question": "Where was SEMICON India 2026 organized?",
-        "options": ["Bengaluru", "Yashobhoomi, New Delhi", "Hyderabad", "Mumbai"],
+        "id": 2,
+        "question": "In which city has Microsoft launched its 'India South Central' cloud region?",
+        "options": [
+          "Bengaluru",
+          "Mumbai",
+          "Hyderabad",
+          "Chennai"
+        ],
+        "answer": 2
+      },
+      {
+        "id": 3,
+        "question": "How many flowering plant species were recorded in the Agasthyamalai Biosphere Reserve by the JNTBGRI team?",
+        "options": [
+          "2,500",
+          "3,261",
+          "4,110",
+          "2,895"
+        ],
         "answer": 1
       },
       {
-        "question": "Who became the highest run-scorer in Women's T20 International cricket during Asian Games 2026?",
-        "options": ["Harmanpreet Kaur", "Smriti Mandhana", "Meg Lanning", "Suzie Bates"],
+        "id": 4,
+        "question": "How much fine was imposed on Google by the Irish privacy regulator?",
+        "options": [
+          "\u20ac200 million",
+          "\u20ac403 million",
+          "\u20ac550 million",
+          "\u20ac150 million"
+        ],
+        "answer": 1
+      },
+      {
+        "id": 5,
+        "question": "How much is China's SDLG investing in its Gujarat plant?",
+        "options": [
+          "\u20b9100 crore",
+          "\u20b9250 crore",
+          "\u20b9300 crore",
+          "\u20b9500 crore"
+        ],
+        "answer": 2
+      },
+      {
+        "id": 6,
+        "question": "Which strategy is Colombo Port City using to attract Indian companies?",
+        "options": [
+          "China-plus-one",
+          "India-plus-one",
+          "Asia-centric",
+          "Global-hub"
+        ],
+        "answer": 1
+      },
+      {
+        "id": 7,
+        "question": "How often must the EU agree to extend sanctions against Russia?",
+        "options": [
+          "Every 3 months",
+          "Every 6 months",
+          "Every year",
+          "Every 2 years"
+        ],
+        "answer": 1
+      },
+      {
+        "id": 8,
+        "question": "Which party won the Russian parliamentary election with 57.83% of the vote?",
+        "options": [
+          "Communist Party",
+          "Liberal Democratic Party",
+          "United Russia",
+          "Die Linke"
+        ],
+        "answer": 2
+      },
+      {
+        "id": 9,
+        "question": "FSSAI is seeking clarification from Nestle India regarding which specific claims?",
+        "options": [
+          "Vitamin D and Calcium",
+          "5HMOs and Whey Protein",
+          "Iron and Zinc",
+          "Sugar-free content"
+        ],
+        "answer": 1
+      },
+      {
+        "id": 10,
+        "question": "Which blood tests are being used to advance Alzheimer's diagnosis?",
+        "options": [
+          "p-tau217 and p-tau181",
+          "HbA1c and CRP",
+          "Glucose and Insulin",
+          "LDL and HDL"
+        ],
+        "answer": 0
+      },
+      {
+        "id": 11,
+        "question": "Who is the Chief Minister of Tamil Nadu reviewing monsoon preparedness?",
+        "options": [
+          "M.K. Stalin",
+          "Vijay",
+          "Edappadi Palaniswami",
+          "K. Annamalai"
+        ],
+        "answer": 1
+      },
+      {
+        "id": 12,
+        "question": "In which district is the Malabar Milma dairy facing financial irregularities?",
+        "options": [
+          "Thiruvananthapuram",
+          "Kasaragod",
+          "Kozhikode",
+          "Kannur"
+        ],
+        "answer": 1
+      },
+      {
+        "id": 13,
+        "question": "India's manufacturing expansion is currently described as being embedded in what?",
+        "options": [
+          "US-centric supply chains",
+          "China-centric supply chains",
+          "EU-centric supply chains",
+          "Japan-centric supply chains"
+        ],
+        "answer": 1
+      },
+      {
+        "id": 14,
+        "question": "In which Afghan province was a house hit during the Pakistani strikes?",
+        "options": [
+          "Kabul",
+          "Kandahar",
+          "Kunar",
+          "Herat"
+        ],
+        "answer": 2
+      },
+      {
+        "id": 15,
+        "question": "The Delhi Court set aside an order regarding which political figure's electoral entry?",
+        "options": [
+          "Narendra Modi",
+          "Sonia Gandhi",
+          "Rahul Gandhi",
+          "Amit Shah"
+        ],
         "answer": 1
       }
     ]
