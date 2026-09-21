@@ -6,7 +6,7 @@
   <title>AURA EXAM AI - Daily Current Affairs & Quiz</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
   
-  <!-- Google Translate Script -->
+  <!-- Google Translate Element Script -->
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({
@@ -325,6 +325,26 @@
       top: -3px;
     }
 
+    /* PERSON CHIPS */
+    .entity-tag {
+      display: inline-flex;
+      align-items: center;
+      background: #e0f2fe;
+      color: #0369a1;
+      border: 1px solid #7dd3fc;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+      margin: 2px 4px 2px 0;
+      transition: all 0.2s;
+    }
+    .entity-tag:hover {
+      background: #0284c7;
+      color: #fff;
+    }
+
     .exam-box {
       background: #f1f5f9;
       border-left: 4px solid var(--accent-blue);
@@ -342,6 +362,7 @@
       align-items: center;
       margin-top: 10px;
       gap: 10px;
+      flex-wrap: wrap;
     }
 
     .btn-read-more {
@@ -356,6 +377,20 @@
       transition: background 0.2s;
     }
     .btn-read-more:hover { background: #0369a1; }
+
+    .btn-official-source {
+      background: #475569;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.82rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .btn-official-source:hover { background: #334155; }
 
     .btn-share-item {
       background: #25d366;
@@ -407,7 +442,7 @@
     .opt-btn.correct { background: #dcfce7 !important; border-color: #16a34a !important; color: #15803d; }
     .opt-btn.wrong { background: #ffe4e6 !important; border-color: #e11d48 !important; color: #be123c; }
 
-    /* FULL ARTICLE POPUP MODAL */
+    /* MODALS */
     .modal-overlay {
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
@@ -441,6 +476,32 @@
       color: #64748b;
     }
     .close-modal:hover { color: #0f172a; }
+
+    /* PROFILE POPUP CARD */
+    .profile-card {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 15px;
+    }
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 12px;
+      margin-bottom: 15px;
+    }
+    .profile-avatar {
+      width: 60px; height: 60px;
+      background: #0284c7; color: #fff;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; font-weight: 800;
+    }
+    .profile-title h3 { font-size: 1.2rem; font-weight: 800; color: #0f172a; }
+    .profile-title p { font-size: 0.88rem; color: #0284c7; font-weight: 700; }
   </style>
 </head>
 <body>
@@ -462,7 +523,7 @@
       </div>
     </div>
 
-    <!-- YouTube Channel Subscription Banner -->
+    <!-- YouTube Banner -->
     <a href="https://youtube.com/@zeroratta?si=dhJFjE1eOYCuIoGv" target="_blank" rel="noopener" class="yt-banner">
       <svg class="yt-icon" viewBox="0 0 24 24">
         <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
@@ -527,8 +588,16 @@
   <!-- ARTICLE DETAIL POPUP MODAL -->
   <div class="modal-overlay" id="articleModal">
     <div class="modal-content" id="modalBody">
-      <span class="close-modal" onclick="closeModal()">&times;</span>
+      <span class="close-modal" onclick="closeModal('articleModal')">&times;</span>
       <div id="modalContainer"></div>
+    </div>
+  </div>
+
+  <!-- PERSONALITY PROFILE POPUP MODAL -->
+  <div class="modal-overlay" id="profileModal" style="z-index: 1100;">
+    <div class="modal-content" style="max-width: 600px;">
+      <span class="close-modal" onclick="closeModal('profileModal')">&times;</span>
+      <div id="profileModalContainer"></div>
     </div>
   </div>
 
@@ -536,7 +605,6 @@
     let globalPayload = null;
     let currentData = null;
 
-    // Real-time live clock function
     function updateClock() {
       const now = new Date();
       document.getElementById('liveClock').textContent = now.toLocaleTimeString('en-US', {
@@ -581,59 +649,100 @@
     function renderNews() {
       const container = document.getElementById('newsSection');
       const totalNews = currentData.news.length;
-      container.innerHTML = currentData.news.map(item => `
-        <div class="info-card">
-          <div class="card-header">
-            <span class="badge-cat">${item.category}</span>
-            <span class="card-id">#${item.id} of ${totalNews}</span>
-          </div>
-          <div class="card-body">
-            <div>
-              <a href="javascript:void(0)" class="card-headline-link" onclick="openFullArticle(${item.id})">
-                <h2 class="card-headline">${item.headline}</h2>
-              </a>
-              <div class="story-lead">${item.story_lead}</div>
-              <ul class="bullet-list">
-                ${item.bullet_points.map(bp => `<li>${bp}</li>`).join('')}
-              </ul>
-              <div class="exam-box">
-                <strong>Exam Relevance:</strong> ${item.exam_relevance}
+
+      container.innerHTML = currentData.news.map(item => {
+        // Entity tags with Party & State
+        const entityChips = (item.entities || []).map(e => `
+          <span class="entity-tag" onclick="openProfileModal(${item.id}, '${e.name}')">
+            👤 ${e.name} [${e.party_and_state || 'Profile'}]
+          </span>
+        `).join('');
+
+        return `
+          <div class="info-card">
+            <div class="card-header">
+              <span class="badge-cat">${item.category}</span>
+              <span class="card-id">#${item.id} of ${totalNews}</span>
+            </div>
+            <div class="card-body">
+              <div>
+                <a href="javascript:void(0)" class="card-headline-link" onclick="openFullArticle(${item.id})">
+                  <h2 class="card-headline">${item.headline}</h2>
+                </a>
+                <div class="story-lead">${item.story_lead}</div>
+
+                ${entityChips ? `<div style="margin-bottom: 12px;">${entityChips}</div>` : ''}
+
+                <ul class="bullet-list">
+                  ${item.bullet_points.map(bp => `<li>${bp}</li>`).join('')}
+                </ul>
+
+                <div class="exam-box">
+                  <strong>Exam Relevance:</strong> ${item.exam_relevance}
+                </div>
+
+                <div class="card-footer-actions">
+                  <button class="btn-read-more" onclick="openFullArticle(${item.id})">📖 Read Full Article (100-500 Words)</button>
+                  ${item.source_url ? `
+                    <a href="${item.source_url}" target="_blank" rel="noopener" class="btn-official-source">
+                      🌐 Source (${item.source_name || 'Official'})
+                    </a>
+                  ` : ''}
+                  <button class="btn-share-item" onclick="shareArticle('${encodeURIComponent(item.headline)}')">📲 Share</button>
+                </div>
               </div>
-              <div class="card-footer-actions">
-                <button class="btn-read-more" onclick="openFullArticle(${item.id})">📖 Read Full Article</button>
-                <button class="btn-share-item" onclick="shareArticle('${encodeURIComponent(item.headline)}')">📲 Share News</button>
+              <div class="card-img-container">
+                <img src="${item.image_url}" alt="${item.headline}" loading="lazy" />
               </div>
             </div>
-            <div class="card-img-container">
-              <img src="${item.image_url}" alt="${item.headline}" loading="lazy" />
-            </div>
           </div>
-        </div>
-      `).join('');
+        `;
+      }).join('');
     }
 
     function openFullArticle(newsId) {
       const item = currentData.news.find(n => n.id === newsId);
       if (!item) return;
 
+      const entityChips = (item.entities || []).map(e => `
+        <span class="entity-tag" onclick="openProfileModal(${item.id}, '${e.name}')">
+          👤 ${e.name} [${e.party_and_state || 'Profile'}]
+        </span>
+      `).join('');
+
       const modalContainer = document.getElementById('modalContainer');
       modalContainer.innerHTML = `
         <span style="background:var(--primary-red); color:#fff; font-size:0.8rem; font-weight:700; padding:4px 10px; border-radius:4px; text-transform:uppercase;">${item.category}</span>
         <h1 style="font-size:1.8rem; font-weight:800; color:#0f172a; margin:15px 0 10px;">${item.headline}</h1>
-        <p style="font-size:0.85rem; color:#64748b; margin-bottom:15px;">Verified Source: Press Information Bureau (PIB) / News Desk | Date: ${currentData.date}</p>
-        <img src="${item.image_url}" style="width:100%; max-height:350px; object-fit:cover; border-radius:12px; margin-bottom:20px;" />
         
-        <div style="font-size:1.05rem; line-height:1.7; color:#1e293b; margin-bottom:20px;">
-          ${item.story_lead}
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:15px; font-size:0.88rem; color:#64748b;">
+          <span>Verified Date: ${currentData.date}</span>
+          ${item.source_url ? `<a href="${item.source_url}" target="_blank" rel="noopener" style="color:var(--accent-blue); font-weight:700;">Read Original Article on ${item.source_name || 'News Portal'} ↗</a>` : ''}
         </div>
 
-        <h3 style="font-size:1.2rem; font-weight:700; color:#0f172a; margin-bottom:10px;">Key Exam Points & Details:</h3>
-        <ul class="bullet-list" style="margin-bottom:20px;">
-          ${item.bullet_points.map(bp => `<li style="font-size:1rem; margin-bottom:8px;">${bp}</li>`).join('')}
-        </ul>
+        <img src="${item.image_url}" style="width:100%; max-height:360px; object-fit:cover; border-radius:12px; margin-bottom:20px;" />
 
-        <div class="exam-box" style="font-size:0.95rem; padding:12px 18px; margin-bottom:20px;">
-          <strong>Exam Relevance:</strong><br/>
+        ${entityChips ? `
+          <div style="background:#f0f9ff; border:1px solid #bae6fd; padding:12px; border-radius:10px; margin-bottom:20px;">
+            <strong style="color:#0369a1; display:block; margin-bottom:6px;">Key Personalities & Dignitaries Mentioned:</strong>
+            ${entityChips}
+          </div>
+        ` : ''}
+
+        <h3 style="font-size:1.2rem; font-weight:800; color:#0f172a; margin-bottom:10px;">Full Article Coverage:</h3>
+        <div style="font-size:1rem; line-height:1.8; color:#334155; margin-bottom:20px; text-align:justify;">
+          ${item.full_article_text || item.story_lead}
+        </div>
+
+        <!-- KEY LOCATIONS AND DATES SUMMARY TABLE -->
+        <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:15px; margin-bottom:20px;">
+          <h4 style="font-size:1rem; font-weight:700; color:#0f172a; margin-bottom:8px;">📌 Quick Fact Sheet</h4>
+          <p style="font-size:0.9rem; color:#475569; margin-bottom:4px;"><b>Important Locations/Plants/Drills:</b> ${item.key_locations || 'N/A'}</p>
+          <p style="font-size:0.9rem; color:#475569;"><b>Important Dates/Deadlines:</b> ${item.important_dates || 'N/A'}</p>
+        </div>
+
+        <div class="exam-box" style="font-size:0.95rem; padding:14px 18px; margin-bottom:20px;">
+          <strong>Exam Relevance & Syllabus Mapping:</strong><br/>
           ${item.exam_relevance}
         </div>
 
@@ -649,15 +758,43 @@
       document.getElementById('articleModal').style.display = 'flex';
     }
 
-    function closeModal() {
-      document.getElementById('articleModal').style.display = 'none';
+    function openProfileModal(newsId, entityName) {
+      const item = currentData.news.find(n => n.id === newsId);
+      if (!item) return;
+
+      const entity = (item.entities || []).find(e => e.name === entityName);
+      if (!entity) return;
+
+      const container = document.getElementById('profileModalContainer');
+      container.innerHTML = `
+        <div class="profile-header">
+          <div class="profile-avatar">${entity.name.charAt(0)}</div>
+          <div class="profile-title">
+            <h3>${entity.name}</h3>
+            <p>${entity.role}</p>
+          </div>
+        </div>
+        <p style="font-size:0.9rem; color:#475569; margin-bottom:10px;">
+          <b>Party & Home State:</b> ${entity.party_and_state || 'N/A'}
+        </p>
+        <div style="font-size:0.95rem; line-height:1.6; color:#334155; background:#fff; padding:15px; border-radius:10px; border:1px solid #e2e8f0;">
+          <strong>Profile & Background Details:</strong><br/>
+          ${entity.bio_details || 'Detailed profile information available in political and news archives.'}
+        </div>
+      `;
+
+      document.getElementById('profileModal').style.display = 'flex';
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).style.display = 'none';
     }
 
     function shareArticle(title) {
       const decodedTitle = decodeURIComponent(title);
       const shareData = {
         title: decodedTitle,
-        text: `📰 Current Affairs: ${decodedTitle}\nRead detailed exam notes on Zerro Ratta AURA EXAM AI!`,
+        text: `📰 Current Affairs: ${decodedTitle}\nRead complete exam notes on Zerro Ratta AURA EXAM AI!`,
         url: window.location.href
       };
 
