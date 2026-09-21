@@ -43,14 +43,14 @@ def fetch_rss_feeds():
                 link = entry.get("link", "")
                 summary = entry.get("summary", "")
 
-                # 1. Try extracting actual image URL from feed enclosures or media tags
+                # Extract thumbnail from RSS feed if present
                 image_url = None
                 if "media_content" in entry and len(entry.media_content) > 0:
                     image_url = entry.media_content[0].get("url")
                 elif "enclosures" in entry and len(entry.enclosures) > 0:
                     image_url = entry.enclosures[0].get("href")
 
-                # 2. Extract detailed paragraph content directly from source link if possible
+                # Web-scrape full article body and meta image directly from source URL
                 full_body = summary
                 if link:
                     try:
@@ -59,9 +59,8 @@ def fetch_rss_feeds():
                             soup = BeautifulSoup(res.text, "html.parser")
                             paragraphs = [p.get_text().strip() for p in soup.find_all("p") if len(p.get_text().strip()) > 50]
                             if paragraphs:
-                                full_body = " ".join(paragraphs[:6]) # Get top paragraphs
+                                full_body = " ".join(paragraphs[:6])
                             
-                            # Find meta image if thumbnail wasn't in RSS feed
                             if not image_url:
                                 meta_img = soup.find("meta", property="og:image")
                                 if meta_img:
@@ -69,7 +68,6 @@ def fetch_rss_feeds():
                     except Exception:
                         pass
 
-                # Fallback to topic image pool if no specific photo was found
                 if not image_url:
                     image_url = FALLBACK_IMAGES[len(raw_articles) % len(FALLBACK_IMAGES)]
 
@@ -86,14 +84,13 @@ def fetch_rss_feeds():
     return raw_articles
 
 def generate_fallback_content(raw_articles):
-    """Generates detailed articles directly from scraped RSS text if AI API is busy."""
+    """Generates detailed articles directly from scraped text if AI API traffic is high."""
     news_items = []
     quizzes = []
 
     for idx, article in enumerate(raw_articles[:15], 1):
         full_text = article.get("full_body") or article.get("summary") or "Detailed coverage for this development is being compiled."
         
-        # Ensure a minimum article length even in fallback mode
         if len(full_text) < 200:
             full_text = full_text + " This initiative highlights key policy, legal, and governance implications for national development. Exam candidates should focus on institutional roles, constitutional provisions, and administrative implementation strategies."
 
