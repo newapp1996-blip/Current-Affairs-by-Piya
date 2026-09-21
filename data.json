@@ -2,27 +2,7 @@
   "current_date": "2026-09-21",
   "today": {
     "date": "2026-09-21",
-    "news": [
-      {
-        "id": 1,
-        "category": "NATIONAL",
-        "headline": "<b><u>Supreme Court of India</u></b> Reviews New Administrative Mandates in <b><u>New Delhi</u></b>",
-        "story_lead": "Key judicial review on constitutional administrative frameworks.",
-        "full_article_text": "The <b><u>Supreme Court of India</u></b> convened in <b><u>New Delhi</u></b> to evaluate legislative compliance across statutory bodies. The bench highlighted key requirements for public governance, ensuring that statutory provisions remain strictly aligned with constitutional mandates. Policy analysts from the <b><u>Ministry of Law and Justice</u></b> noted that these updates aim to streamline regional governance in states like <b><u>Karnataka</u></b> and <b><u>Maharashtra</u></b>.",
-        "important_locations": "<b><u>New Delhi</u></b>, <b><u>Bengaluru</u></b>",
-        "important_dates": "September 2026",
-        "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=600&auto=format&fit=crop"
-      },
-      {
-        "id": 2,
-        "category": "ECONOMY",
-        "headline": "<b><u>Reserve Bank of India</u></b> Announces Updated Monetary Policy in <b><u>Mumbai</u></b>",
-        "story_lead": "Financial regulations updated to support economic stability.",
-        "full_article_text": "Headquartered in <b><u>Mumbai</u></b>, the <b><u>Reserve Bank of India</u></b> issued new regulatory updates targeting fiscal stabilization across national banking sectors. Officials from <b><u>Ministry of Finance</u></b> reiterated commitment toward regulatory transparency.",
-        "important_locations": "<b><u>Mumbai</u></b>, <b><u>New Delhi</u></b>",
-        "important_dates": "September 2026",
-        "image_url": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=600&auto=format&fit=crop"
-      }
-    ]
+    "news": [],
+    "quizzes": []
   }
 }
