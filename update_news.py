@@ -1,184 +1,132 @@
 import os
 import json
 import re
-import time
-import urllib.request
 from datetime import datetime
 import feedparser
 from google import genai
 from google.genai import types
 
-# Get today's execution date
+# Set up Gemini Client
+client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+
 TODAY_DATE = datetime.now().strftime("%Y-%m-%d")
 
-# Live news RSS feeds
-FEEDS = {
-    "National": "https://www.thehindu.com/news/national/feeder/default.rss",
-    "International": "https://www.thehindu.com/news/international/feeder/default.rss",
-    "Business": "https://www.thehindubusinessline.com/feeder/default.rss",
-    "PIB Release": "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=1",
-    "Sci-Tech": "https://www.thehindu.com/sci-tech/feeder/default.rss"
-}
+def fetch_rss_feeds():
+    # Fetch news headlines from reliable sources
+    rss_urls = [
+        "https://www.thehindu.com/news/national/feeder/default.rss",
+        "https://pib.gov.in/RssMain.aspx?ModId=6",
+        "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml"
+    ]
+    raw_articles = []
+    for url in rss_urls:
+        feed = feedparser.parse(url)
+        for entry in feed.entries[:10]:
+            raw_articles.append({
+                "title": entry.title,
+                "link": entry.link,
+                "summary": entry.get("summary", "")
+            })
+    return raw_articles
 
-def fetch_rss_headlines():
-    headlines = []
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
-    
-    for category, url in FEEDS.items():
-        try:
-            req = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(req, timeout=10) as response:
-                parsed = feedparser.parse(response.read())
-                for entry in parsed.entries[:8]:
-                    summary = getattr(entry, 'summary', '')
-                    clean_summary = re.sub(r'<[^>]+>', '', summary)[:250]
-                    headlines.append(f"[{category}] {entry.title}: {clean_summary}")
-        except Exception as e:
-            print(f"Warning: Feed error for {category}: {e}")
-    
-    return "\n\n".join(headlines)
-
-def generate_affairs_and_quiz(news_text):
-    GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
-    if not GEMINI_API_KEY:
-        raise RuntimeError("GEMINI_API_KEY environment variable is not set in GitHub Secrets.")
-
-    # Explicitly enforce stable v1 endpoint to prevent v1beta 404 path issues
-    client = genai.Client(
-        api_key=GEMINI_API_KEY,
-        http_options=types.HttpOptions(api_version="v1")
-    )
-    
-    # Priority list of models
-    available_models = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
-    
-    try:
-        listed_models = []
-        for m in client.models.list():
-            model_id = getattr(m, 'name', '').replace("models/", "")
-            if model_id:
-                listed_models.append(model_id)
-        if listed_models:
-            # Put preferred models at top if present in user's key capability
-            for pref in reversed(["gemini-2.5-flash", "gemini-2.0-flash"]):
-                if pref in listed_models:
-                    listed_models.remove(pref)
-                    listed_models.insert(0, pref)
-            available_models = listed_models
-    except Exception as e:
-        print(f"Could not dynamically list models: {e}")
-
-    print(f"Candidate API models: {available_models}")
-
+def generate_daily_content(raw_articles):
     prompt = f"""
-You are an expert competitive exam strategist for UPSC, SSC CGL, Banking, and State PCS.
-Today's date is strictly {TODAY_DATE}.
+    You are an expert UPSC/PCS Current Affairs Faculty and Content Developer.
+    Based on the provided raw news feed: {json.dumps(raw_articles[:15])}, generate a JSON response for TODAY ({TODAY_DATE}).
 
-Analyze these live news headlines and generate EXACTLY 15 distinct, comprehensive current affairs entries.
-Each entry MUST contain all key facts so students do NOT need to read full news articles elsewhere.
-In the detailed narrative text, wrap critical names, numbers, scores, locations, and achievements in <b>bold tags</b> (like newspaper infographics).
+    Create exactly 15 detailed exam-focused news items and 15 matching quiz questions.
 
-LIVE HEADLINES:
-{news_text}
+    For each news item, ensure:
+    1. "full_article_text": A detailed explanation (minimum 100 to 500+ words) covering full context, background, locations (plant site, city, state, country), military drills, international affairs, and key historical dates.
+    2. "entities": List key personalities mentioned (Ministers, Presidents, Dignitaries). Include:
+       - "name": Full name
+       - "role": Current designation/ministry
+       - "party_and_state": E.g., "BJP (Lucknow, Uttar Pradesh)" or "Independent (USA)"
+       - "bio_details": Comprehensive profile including age, educational background, career, political party, key portfolios, and major initiatives/views.
+    3. "source_url": Authentic direct web link (e.g., The Hindu, PIB, Hindustan Times).
+    4. "key_locations": Specific places, plants, cities, or countries of importance.
+    5. "important_dates": Important dates/deadlines mentioned.
 
-For EACH of the 15 entries, generate:
-1. id: integer 1 to 15
-2. category: (e.g. SHOOTING, CRICKET, HOCKEY, DEFENCE, NATIONAL, ECONOMY, SCI-TECH)
-3. headline: Concise catchy main title (e.g., "WOMEN LEAD EARLY CHARGE FOR INDIA AT ASIAD")
-4. story_lead: Paragraph with <b>bolded highlights</b> detailing the story, names, background, and records set.
-5. bullet_points: Array of 2 to 3 detailed key fact bullet points with <b>bold highlights</b>.
-6. image_url: A high quality HD sports/news image URL (use Unsplash current event placeholders).
-7. exam_relevance: Specific UPSC/SSC topic relevance statement.
-8. takeaway: Short summary takeaway.
-
-ALSO, create EXACTLY 15 multiple-choice quiz questions (1 question directly corresponding to each news item, from id 1 to 15).
-
-Return ONLY a single valid JSON object formatted as:
-{{
-  "date": "{TODAY_DATE}",
-  "news": [
+    JSON Structure strictly required:
     {{
-      "id": 1,
-      "category": "SHOOTING",
-      "headline": "Elavenil Valarivan Wins Silver at Asian Games",
-      "story_lead": "<b>Elavenil Valarivan</b> signalled a brilliant campaign for India, winning a <b>silver double in the 10m air rifle individual and team events</b>.",
-      "bullet_points": [
-        "Mentored by 2010 Asiad silver winner <b>Gagan Narang</b>.",
-        "Team silver achieved alongside <b>Sonam U Maskar</b> and <b>Vidarsa Vinod</b> with 1898 points."
+      "date": "{TODAY_DATE}",
+      "news": [
+        {{
+          "id": 1,
+          "category": "NATIONAL",
+          "headline": "Headline Here",
+          "story_lead": "Summary lead sentence.",
+          "bullet_points": ["Point 1", "Point 2", "Point 3"],
+          "full_article_text": "Comprehensive 100 to 500+ word detailed article content explaining all key aspects of the topic...",
+          "exam_relevance": "UPSC GS Paper II (Governance) & State PCS",
+          "takeaway": "Key takeaway for competitive exams.",
+          "source_url": "https://www.thehindu.com/news/example",
+          "source_name": "The Hindu",
+          "key_locations": "Noida, Uttar Pradesh, India",
+          "important_dates": "October 1, 2026",
+          "entities": [
+            {{
+              "name": "Rajnath Singh",
+              "role": "Minister of Defence",
+              "party_and_state": "BJP (Lucknow, Uttar Pradesh)",
+              "bio_details": "Born July 10, 1951. Educated at Gorakhpur University (M.Sc Physics). Union Minister of Defence, former Chief Minister of Uttar Pradesh, and former National President of BJP. Known for modernizing defense infrastructure and promoting Atmanirbhar Bharat in defense manufacturing."
+            }}
+          ],
+          "image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
+        }}
       ],
-      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
-      "exam_relevance": "Important for Sports Current Affairs & Asian Games records in UPSC/SSC.",
-      "takeaway": "India secures silver double in 10m Air Rifle."
+      "quizzes": [
+        {{
+          "question": "Question text?",
+          "options": ["Option A", "Option B", "Option C", "Option D"],
+          "answer": 0
+        }}
+      ]
     }}
-  ],
-  "quizzes": [
-    {{
-      "id": 1,
-      "question": "Who mentored Elavenil Valarivan to win silver in 10m Air Rifle?",
-      "options": ["Gagan Narang", "Abhinav Bindra", "Rajyavardhan Rathore", "Jaspal Rana"],
-      "answer": 0
-    }}
-  ]
-}}
-"""
+    """
 
-    for model_name in available_models:
-        try:
-            print(f"Generating news with model: {model_name}...")
-            response = client.models.generate_content(
-                model=model_name,
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    temperature=0.2,
-                    max_output_tokens=8192,
-                    response_mime_type="application/json"
-                ),
-            )
+    response = client.models.generate_content(
+        model='gemini-2.5-flash',
+        contents=prompt,
+        config=types.GenerateContentConfig(
+            response_mime_type="application/json",
+            temperature=0.3
+        )
+    )
 
-            if response and response.text:
-                data = json.loads(response.text.strip())
-                if "news" in data and len(data["news"]) >= 10 and len(data["quizzes"]) >= 10:
-                    data["date"] = TODAY_DATE
-                    return data
-        except Exception as e:
-            print(f"Model {model_name} error: {e}")
-            time.sleep(1)
+    return json.loads(response.text)
 
-    raise RuntimeError("Failed to generate complete news and quiz dataset.")
+def main():
+    raw_news = fetch_rss_feeds()
+    data = generate_daily_content(raw_news)
 
-if __name__ == "__main__":
-    print(f"Fetching live news feeds for date: {TODAY_DATE}...")
-    news_text = fetch_rss_headlines()
-
-    print("Generating news data...")
-    app_data = generate_affairs_and_quiz(news_text)
-
-    # Save to history folder
+    # Save today's date JSON
     os.makedirs("data", exist_ok=True)
-    history_file = f"data/{TODAY_DATE}.json"
-    with open(history_file, "w", encoding="utf-8") as f:
-        json.dump(app_data, f, indent=2)
+    with open(f"data/{TODAY_DATE}.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
 
-    # Maintain available dates index starting from 2026-09-20
-    dates_index_file = "data/dates.json"
-    available_dates = ["2026-09-20"]
-    if os.path.exists(dates_index_file):
-        with open(dates_index_file, "r") as f:
-            available_dates = json.load(f)
-    if TODAY_DATE not in available_dates:
-        available_dates.append(TODAY_DATE)
-    available_dates = sorted(list(set(available_dates)), reverse=True)
+    # Update main index data.json
+    data_json_path = "data.json"
+    available_dates = [TODAY_DATE]
+    if os.path.exists(data_json_path):
+        try:
+            with open(data_json_path, "r", encoding="utf-8") as f:
+                existing = json.load(f)
+                available_dates = list(set(existing.get("available_dates", []) + [TODAY_DATE]))
+                available_dates.sort(reverse=True)
+        except Exception:
+            pass
 
-    with open(dates_index_file, "w", encoding="utf-8") as f:
-        json.dump(available_dates, f, indent=2)
-
-    # Save latest current payload
-    app_payload = {
+    payload = {
         "current_date": TODAY_DATE,
         "available_dates": available_dates,
-        "today": app_data
+        "today": data
     }
-    with open("data.json", "w", encoding="utf-8") as f:
-        json.dump(app_payload, f, indent=2)
 
-    print(f"Successfully saved {len(app_data['news'])} news and {len(app_data['quizzes'])} quiz items for {TODAY_DATE}!")
+    with open(data_json_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+
+    print(f"Successfully updated current affairs data for {TODAY_DATE}")
+
+if __name__ == "__main__":
+    main()
