@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Current Affairs</title>
     
-    <!-- PWA Web App Manifest & Android Integration -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#007bff">
 
@@ -45,35 +44,47 @@
 
         async function initApp() {
             try {
-                const response = await fetch('data.json');
+                const response = await fetch('data.json?cache_bust=' + new Date().getTime());
+                if (!response.ok) throw new Error("Network response was not ok");
+                
                 const data = await response.json();
-                articles = data.today.news || [];
-                if (articles.length > 0) {
+                
+                // Flexible extraction regardless of JSON format
+                if (data.today && data.today.news) {
+                    articles = data.today.news;
+                } else if (data.news) {
+                    articles = data.news;
+                } else if (Array.isArray(data)) {
+                    articles = data;
+                }
+
+                if (articles && articles.length > 0) {
                     renderArticle();
                 } else {
                     document.getElementById('news-headline').innerText = "No articles available today.";
                 }
             } catch (err) {
                 console.error("Error loading data.json:", err);
+                document.getElementById('news-headline').innerText = "Unable to load news data. Please check data.json file.";
             }
         }
 
         function renderArticle() {
             const current = articles[currentIndex];
 
-            // Use innerHTML to render bold and underline tags <b><u>...</u></b>
-            document.getElementById('news-headline').innerHTML = current.headline;
-            document.getElementById('news-body').innerHTML = current.full_article_text;
+            document.getElementById('news-headline').innerHTML = current.headline || "Current Affairs Update";
+            document.getElementById('news-body').innerHTML = current.full_article_text || "No detailed text available.";
             document.getElementById('news-locations').innerHTML = current.important_locations || "National Governance";
             document.getElementById('news-dates').innerHTML = current.important_dates || "Ongoing";
 
+            const img = document.getElementById('news-image');
             if (current.image_url) {
-                const img = document.getElementById('news-image');
                 img.src = current.image_url;
                 img.style.display = "block";
+            } else {
+                img.style.display = "none";
             }
 
-            // Update Pagination UI
             document.getElementById('counter').innerText = `Article ${currentIndex + 1} of ${articles.length}`;
             document.getElementById('prev-btn').disabled = (currentIndex === 0);
             document.getElementById('next-btn').disabled = (currentIndex === articles.length - 1);
