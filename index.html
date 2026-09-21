@@ -1,1613 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <meta
-    name="theme-color"
-    content="#030712"
-  >
-
-  <meta
-    name="description"
-    content="AURA Exam AI - Daily Current Affairs and Competitive Exam Quizzes"
-  >
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AURA | AI Daily Exam Current Affairs & Quizzes</title>
-
-  <link
-    rel="manifest"
-    href="manifest.json"
-  >
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;600;800&display=swap"
-    rel="stylesheet"
-  >
-
-
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
-
-    /* =========================================================
-       ROOT
-    ========================================================= */
-
     :root {
-
       --bg-dark: #030712;
-
-      --card-glass:
-        rgba(17, 24, 39, 0.88);
-
-      --card-border:
-        rgba(255, 255, 255, 0.12);
-
-      --neon-cyan:
-        #06b6d4;
-
-      --neon-blue:
-        #3b82f6;
-
-      --neon-purple:
-        #a855f7;
-
-      --neon-gold:
-        #eab308;
-
-      --text-main:
-        #f9fafb;
-
-      --text-muted:
-        #9ca3af;
-
-      --success:
-        #22c55e;
-
-      --danger:
-        #ef4444;
+      --card-glass: rgba(17, 24, 39, 0.85);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --neon-cyan: #06b6d4;
+      --neon-purple: #a855f7;
+      --neon-gold: #eab308;
+      --text-main: #f9fafb;
+      --text-muted: #9ca3af;
     }
 
-
-    /* =========================================================
-       GLOBAL
-    ========================================================= */
-
-    * {
-      box-sizing: border-box;
-    }
-
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    * { box-sizing: border-box; transition: all 0.25s ease-in-out; }
 
     body {
-
-      font-family:
-        'Inter',
-        sans-serif;
-
+      font-family: 'Inter', sans-serif;
       margin: 0;
-
-      background:
-        var(--bg-dark);
-
-      color:
-        var(--text-main);
-
+      background: var(--bg-dark);
+      color: var(--text-main);
       min-height: 100vh;
-
-      background-attachment:
-        fixed;
+      background-attachment: fixed;
     }
-
 
     body::before {
-
       content: '';
-
       position: fixed;
-
-      top: -10%;
-      left: -10%;
-
-      width: 120%;
-      height: 120%;
-
-      background:
-
-        radial-gradient(
-          circle at 50% 20%,
-          rgba(59, 130, 246, 0.15),
-          transparent 40%
-        ),
-
-        radial-gradient(
-          circle at 80% 80%,
-          rgba(168, 85, 247, 0.15),
-          transparent 40%
-        );
-
+      top: -10%; left: -10%; width: 120%; height: 120%;
+      background: radial-gradient(circle at 50% 20%, rgba(59, 130, 246, 0.15), transparent 40%),
+                  radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.15), transparent 40%);
       z-index: -1;
-
-      filter:
-        blur(60px);
-
-      pointer-events:
-        none;
+      filter: blur(60px);
     }
-
-
-    button {
-      font-family:
-        inherit;
-    }
-
-
-    /* =========================================================
-       HEADER
-    ========================================================= */
 
     header {
-
-      background:
-        rgba(3, 7, 18, 0.94);
-
-      backdrop-filter:
-        blur(16px);
-
-      -webkit-backdrop-filter:
-        blur(16px);
-
-      border-bottom:
-        1px solid var(--card-border);
-
-      padding:
-        15px 20px;
-
-      position:
-        sticky;
-
+      background: rgba(3, 7, 18, 0.9);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--card-border);
+      padding: 15px 20px;
+      position: sticky;
       top: 0;
-
-      z-index:
-        100;
-
-      display:
-        flex;
-
-      justify-content:
-        center;
-
-      align-items:
-        center;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-
 
     .logo {
-
-      font-family:
-        'Orbitron',
-        sans-serif;
-
-      font-size:
-        1.2rem;
-
-      font-weight:
-        900;
-
-      background:
-        linear-gradient(
-          90deg,
-          var(--neon-cyan),
-          var(--neon-purple)
-        );
-
-      -webkit-background-clip:
-        text;
-
-      -webkit-text-fill-color:
-        transparent;
-
-      background-clip:
-        text;
-
-      letter-spacing:
-        1px;
-
-      text-align:
-        center;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 900;
+      background: linear-gradient(90deg, var(--neon-cyan), var(--neon-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 1px;
     }
-
-
-    /* =========================================================
-       NAVIGATION
-    ========================================================= */
 
     nav {
-
-      display:
-        flex;
-
-      justify-content:
-        center;
-
-      gap:
-        10px;
-
-      padding:
-        15px;
-
-      background:
-        rgba(17, 24, 39, 0.45);
-
-      backdrop-filter:
-        blur(10px);
-
-      -webkit-backdrop-filter:
-        blur(10px);
-
-      position:
-        sticky;
-
-      top:
-        56px;
-
-      z-index:
-        90;
-
-      overflow-x:
-        auto;
-
-      scrollbar-width:
-        none;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px;
+      background: rgba(17, 24, 39, 0.4);
+      backdrop-filter: blur(10px);
     }
-
-
-    nav::-webkit-scrollbar {
-      display: none;
-    }
-
 
     nav button {
-
-      flex:
-        0 0 auto;
-
-      background:
-        rgba(255, 255, 255, 0.03);
-
-      border:
-        1px solid var(--card-border);
-
-      color:
-        var(--text-muted);
-
-      padding:
-        10px 18px;
-
-      border-radius:
-        20px;
-
-      font-weight:
-        600;
-
-      cursor:
-        pointer;
-
-      font-size:
-        0.85rem;
-
-      transition:
-        all 0.25s ease;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      padding: 10px 18px;
+      border-radius: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.85rem;
     }
-
-
-    nav button:hover {
-
-      color:
-        var(--text-main);
-
-      border-color:
-        var(--neon-cyan);
-
-      background:
-        rgba(6, 182, 212, 0.08);
-    }
-
 
     nav button.active {
-
-      color:
-        var(--text-main);
-
-      background:
-        linear-gradient(
-          90deg,
-          rgba(6, 182, 212, 0.2),
-          rgba(168, 85, 247, 0.2)
-        );
-
-      border-color:
-        var(--neon-cyan);
-
-      box-shadow:
-        0 0 15px
-        rgba(6, 182, 212, 0.3);
+      color: var(--text-main);
+      background: linear-gradient(90deg, rgba(6, 182, 212, 0.2), rgba(168, 85, 247, 0.2));
+      border-color: var(--neon-cyan);
+      box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
     }
 
-
-    /* =========================================================
-       MAIN CONTAINER
-    ========================================================= */
-
-    .container {
-
-      width:
-        100%;
-
-      max-width:
-        850px;
-
-      margin:
-        0 auto;
-
-      padding:
-        0 15px 40px;
-    }
-
-
-    /* =========================================================
-       CARDS
-    ========================================================= */
+    .container { max-width: 850px; margin: 0 auto; padding: 0 15px 40px; }
 
     .card {
-
-      background:
-        var(--card-glass);
-
-      backdrop-filter:
-        blur(12px);
-
-      -webkit-backdrop-filter:
-        blur(12px);
-
-      border:
-        1px solid var(--card-border);
-
-      border-radius:
-        16px;
-
-      padding:
-        20px;
-
-      margin-bottom:
-        25px;
-
-      position:
-        relative;
-
-      overflow:
-        hidden;
-
-      box-shadow:
-        0 8px 32px
-        rgba(0, 0, 0, 0.37);
+      background: var(--card-glass);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     }
-
 
     .card::before {
-
       content: '';
-
-      position:
-        absolute;
-
-      top: 0;
-      left: 0;
-
-      width:
-        4px;
-
-      height:
-        100%;
-
-      background:
-        var(--neon-cyan);
+      position: absolute;
+      top: 0; left: 0; width: 4px; height: 100%;
+      background: var(--neon-cyan);
     }
 
+    .card[data-cat="Defence"]::before { background: #f59e0b; }
+    .card[data-cat="Schemes"]::before { background: #10b981; }
+    .card[data-cat="International"]::before { background: #06b6d4; }
+    .card[data-cat="National"]::before { background: #a855f7; }
+    .card[data-cat="Economy"]::before { background: #eab308; }
 
-    .card[data-cat="Defence"]::before {
-      background:
-        #f59e0b;
-    }
-
-
-    .card[data-cat="Schemes"]::before {
-      background:
-        #10b981;
-    }
-
-
-    .card[data-cat="International"]::before {
-      background:
-        #06b6d4;
-    }
-
-
-    .card[data-cat="National"]::before {
-      background:
-        #a855f7;
-    }
-
-
-    .card[data-cat="Economy"]::before {
-      background:
-        #eab308;
-    }
-
-
-    .card[data-cat="Science & Tech"]::before {
-      background:
-        #3b82f6;
-    }
-
-
-    .card-header {
-
-      display:
-        flex;
-
-      justify-content:
-        space-between;
-
-      align-items:
-        center;
-
-      margin-bottom:
-        12px;
-
-      gap:
-        10px;
-    }
-
+    .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
 
     .tag {
-
-      font-size:
-        0.75rem;
-
-      font-weight:
-        700;
-
-      text-transform:
-        uppercase;
-
-      padding:
-        4px 10px;
-
-      border-radius:
-        6px;
-
-      background:
-        rgba(255, 255, 255, 0.08);
-
-      letter-spacing:
-        1px;
-
-      color:
-        var(--text-main);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      letter-spacing: 1px;
     }
-
 
     .fav-btn {
-
-      background:
-        transparent;
-
-      border:
-        none;
-
-      font-size:
-        1.4rem;
-
-      cursor:
-        pointer;
-
-      color:
-        var(--text-muted);
-
-      padding:
-        2px 6px;
-
-      line-height:
-        1;
-
-      transition:
-        all 0.2s ease;
+      background: none; border: none; font-size: 1.4rem; cursor: pointer; color: var(--text-muted);
     }
-
-
-    .fav-btn:hover {
-
-      color:
-        var(--neon-gold);
-
-      transform:
-        scale(1.12);
-    }
-
-
-    .fav-btn.active {
-
-      color:
-        var(--neon-gold);
-
-      text-shadow:
-        0 0 10px var(--neon-gold);
-    }
-
-
-    /* =========================================================
-       NEWS IMAGE
-    ========================================================= */
+    .fav-btn.active { color: var(--neon-gold); text-shadow: 0 0 10px var(--neon-gold); }
 
     .news-img {
-
-      display:
-        block;
-
-      width:
-        100%;
-
-      max-height:
-        280px;
-
-      object-fit:
-        cover;
-
-      border-radius:
-        12px;
-
-      margin:
-        10px 0 15px;
-
-      border:
-        1px solid var(--card-border);
-
-      background:
-        rgba(255, 255, 255, 0.03);
+      width: 100%;
+      max-height: 280px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin: 10px 0 15px;
+      border: 1px solid var(--card-border);
     }
-
-
-    /* =========================================================
-       INFORMATION GRID
-    ========================================================= */
 
     .info-grid {
-
-      display:
-        grid;
-
-      grid-template-columns:
-        repeat(
-          auto-fit,
-          minmax(220px, 1fr)
-        );
-
-      gap:
-        12px;
-
-      margin:
-        15px 0;
-
-      background:
-        rgba(0, 0, 0, 0.3);
-
-      padding:
-        14px;
-
-      border-radius:
-        10px;
-
-      border:
-        1px solid
-        rgba(255, 255, 255, 0.08);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin: 15px 0;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
+    .info-item { font-size: 0.85rem; line-height: 1.4; }
+    .info-item strong { color: var(--neon-cyan); display: block; font-size: 0.75rem; text-transform: uppercase; margin-bottom: 2px; }
 
-    .info-item {
-
-      font-size:
-        0.85rem;
-
-      line-height:
-        1.4;
-
-      color:
-        var(--text-main);
-    }
-
-
-    .info-item strong {
-
-      color:
-        var(--neon-cyan);
-
-      display:
-        block;
-
-      font-size:
-        0.75rem;
-
-      text-transform:
-        uppercase;
-
-      margin-bottom:
-        2px;
-    }
-
-
-    /* =========================================================
-       CONTENT
-    ========================================================= */
-
-    .section-block {
-
-      margin-top:
-        10px;
-
-      font-size:
-        0.9rem;
-
-      line-height:
-        1.5;
-
-      color:
-        var(--text-main);
-    }
-
-
-    .section-block strong {
-
-      color:
-        var(--neon-purple);
-    }
-
-
-    /* =========================================================
-       QUIZ
-    ========================================================= */
+    .section-block { margin-top: 10px; font-size: 0.9rem; line-height: 1.5; color: var(--text-main); }
+    .section-block strong { color: var(--neon-purple); }
 
     .quiz-option {
-
-      display:
-        block;
-
-      width:
-        100%;
-
-      padding:
-        12px 15px;
-
-      margin:
-        8px 0;
-
-      background:
-        rgba(255, 255, 255, 0.03);
-
-      border:
-        1px solid var(--card-border);
-
-      border-radius:
-        10px;
-
-      color:
-        var(--text-main);
-
-      text-align:
-        left;
-
-      cursor:
-        pointer;
-
-      transition:
-        all 0.2s ease;
+      display: block; width: 100%; padding: 12px 15px; margin: 8px 0;
+      background: rgba(255, 255, 255, 0.03); border: 1px solid var(--card-border);
+      border-radius: 10px; color: var(--text-main); text-align: left; cursor: pointer;
     }
+    .quiz-option:hover { background: rgba(255, 255, 255, 0.08); border-color: var(--neon-cyan); }
+    .quiz-option.correct { background: rgba(34, 197, 94, 0.2); border-color: #22c55e; }
+    .quiz-option.wrong { background: rgba(239, 68, 68, 0.2); border-color: #ef4444; }
 
-
-    .quiz-option:hover:not(:disabled) {
-
-      background:
-        rgba(255, 255, 255, 0.08);
-
-      border-color:
-        var(--neon-cyan);
-
-      transform:
-        translateX(2px);
-    }
-
-
-    .quiz-option:disabled {
-      cursor:
-        default;
-    }
-
-
-    .quiz-option.correct {
-
-      background:
-        rgba(34, 197, 94, 0.2);
-
-      border-color:
-        var(--success);
-    }
-
-
-    .quiz-option.wrong {
-
-      background:
-        rgba(239, 68, 68, 0.2);
-
-      border-color:
-        var(--danger);
-    }
-
-
-    /* =========================================================
-       EMPTY / LOADING
-    ========================================================= */
-
-    .empty-message {
-
-      text-align:
-        center;
-
-      color:
-        var(--text-muted);
-
-      padding:
-        10px;
-    }
-
-
-    /* =========================================================
-       HIDDEN
-    ========================================================= */
-
-    .hidden {
-      display:
-        none !important;
-    }
-
-
-    /* =========================================================
-       MOBILE
-    ========================================================= */
-
-    @media (max-width: 600px) {
-
-      header {
-        padding:
-          13px 15px;
-      }
-
-
-      .logo {
-        font-size:
-          1rem;
-      }
-
-
-      nav {
-
-        justify-content:
-          flex-start;
-
-        padding:
-          10px;
-
-        top:
-          50px;
-      }
-
-
-      nav button {
-
-        padding:
-          9px 14px;
-
-        font-size:
-          0.78rem;
-      }
-
-
-      .container {
-
-        padding:
-          0 10px 30px;
-      }
-
-
-      .card {
-
-        padding:
-          16px;
-
-        border-radius:
-          14px;
-
-        margin-bottom:
-          18px;
-      }
-
-
-      .info-grid {
-
-        grid-template-columns:
-          1fr;
-
-        padding:
-          12px;
-      }
-
-
-      .news-img {
-
-        max-height:
-          220px;
-      }
-
-
-      .card h2 {
-
-        font-size:
-          1.1rem !important;
-
-        line-height:
-          1.4;
-      }
-    }
-
+    .hidden { display: none !important; }
   </style>
-
 </head>
-
-
 <body>
 
+<header>
+  <div class="logo">AURA EXAM AI</div>
+</header>
 
-  <!-- ========================================================
-       HEADER
-  ========================================================= -->
+<nav>
+  <button class="active" onclick="switchTab('news', event)">Daily News (12)</button>
+  <button onclick="switchTab('quiz', event)">Daily Quiz</button>
+  <button onclick="switchTab('saved', event)">Bookmarks ⭐</button>
+</nav>
 
-  <header>
+<div class="container">
+  <div id="news-section"></div>
+  <div id="quiz-section" class="hidden"></div>
+  <div id="saved-section" class="hidden"></div>
+</div>
 
-    <div class="logo">
-      AURA EXAM AI
-    </div>
+<script>
+  let favorites = JSON.parse(localStorage.getItem('aura_favs')) || [];
 
-  </header>
+  const appData = {
+    news: [],
+    quizzes: []
+  };
 
-
-  <!-- ========================================================
-       NAVIGATION
-  ========================================================= -->
-
-  <nav>
-
-    <button
-      class="active"
-      onclick="switchTab('news', event)"
-    >
-      Daily News (12)
-    </button>
-
-
-    <button
-      onclick="switchTab('quiz', event)"
-    >
-      Daily Quiz
-    </button>
-
-
-    <button
-      onclick="switchTab('saved', event)"
-    >
-      Bookmarks ⭐
-    </button>
-
-  </nav>
-
-
-  <!-- ========================================================
-       MAIN
-  ========================================================= -->
-
-  <main class="container">
-
-    <section
-      id="news-section"
-    ></section>
-
-
-    <section
-      id="quiz-section"
-      class="hidden"
-    ></section>
-
-
-    <section
-      id="saved-section"
-      class="hidden"
-    ></section>
-
-  </main>
-
-
-  <!-- ========================================================
-       JAVASCRIPT
-  ========================================================= -->
-
-  <script>
-
-
-    /* ========================================================
-       AURA DATA
-
-       IMPORTANT:
-       DO NOT REMOVE THESE TWO MARKERS.
-
-       update_news.py automatically replaces the data
-       between these markers every day.
-    ========================================================= */
-
-    /* AURA_DATA_START */
-
-    const appData = {
-      "news": [],
-      "quizzes": []
-    };
-
-    /* AURA_DATA_END */
-
-
-    /* ========================================================
-       FAVORITES
-    ========================================================= */
-
-    let favorites = [];
-
-    try {
-
-      favorites = JSON.parse(
-        localStorage.getItem("aura_favs") || "[]"
-      );
-
-
-      if (!Array.isArray(favorites)) {
-        favorites = [];
-      }
-
-    } catch (error) {
-
-      console.warn(
-        "Could not read bookmarks:",
-        error
-      );
-
-      favorites = [];
+  function toggleFav(id) {
+    if (favorites.includes(id)) {
+      favorites = favorites.filter(f => f !== id);
+    } else {
+      favorites.push(id);
     }
-
-
-    /* ========================================================
-       ESCAPE HTML
-    ========================================================= */
-
-    function escapeHtml(value) {
-
-      if (
-        value === null ||
-        value === undefined ||
-        value === ""
-      ) {
-        return "N/A";
-      }
-
-
-      return String(value)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-    }
-
-
-    /* ========================================================
-       TOGGLE BOOKMARK
-    ========================================================= */
-
-    function toggleFav(id) {
-
-      id = Number(id);
-
-
-      if (favorites.includes(id)) {
-
-        favorites =
-          favorites.filter(
-            fav => fav !== id
-          );
-
-      } else {
-
-        favorites.push(id);
-      }
-
-
-      localStorage.setItem(
-        "aura_favs",
-        JSON.stringify(favorites)
-      );
-
-
-      renderNews();
-      renderSaved();
-    }
-
-
-    /* ========================================================
-       NEWS CARD
-    ========================================================= */
-
-    function renderNewsCard(item) {
-
-      const imageUrl =
-        item.image_url || "";
-
-
-      let imageHTML = "";
-
-
-      if (imageUrl) {
-
-        imageHTML = `
-          <img
-            class="news-img"
-            src="${escapeHtml(imageUrl)}"
-            alt="${escapeHtml(item.title)}"
-            loading="lazy"
-            onerror="this.style.display='none'"
-          >
-        `;
-      }
-
-
-      return `
-
-        <article
-          class="card"
-          data-cat="${escapeHtml(item.category)}"
-        >
-
-          <div class="card-header">
-
-            <span class="tag">
-              ${escapeHtml(item.category)}
-            </span>
-
-
-            <button
-              class="fav-btn ${
-                favorites.includes(Number(item.id))
-                  ? "active"
-                  : ""
-              }"
-              onclick="toggleFav(${Number(item.id)})"
-              aria-label="Bookmark this news"
-              title="Bookmark"
-            >
-              ★
-            </button>
-
-          </div>
-
-
-          <h2
-            style="
-              margin: 8px 0;
-              font-size: 1.25rem;
-              line-height: 1.4;
-            "
-          >
-            ${escapeHtml(item.title)}
-          </h2>
-
-
-          ${imageHTML}
-
-
-          <div class="info-grid">
-
-
-            <div class="info-item">
-
-              <strong>
-                📅 Important Date
-              </strong>
-
-              ${escapeHtml(item.date)}
-
-            </div>
-
-
-            <div class="info-item">
-
-              <strong>
-                📍 Place / Location
-              </strong>
-
-              ${escapeHtml(item.place)}
-
-            </div>
-
-
-            <div class="info-item">
-
-              <strong>
-                👤 Persons / Ministers
-              </strong>
-
-              ${escapeHtml(item.persons_ministers)}
-
-            </div>
-
-
-            <div class="info-item">
-
-              <strong>
-                🎖️ Key Officers
-              </strong>
-
-              ${escapeHtml(item.officers)}
-
-            </div>
-
-
-            <div class="info-item">
-
-              <strong>
-                🌐 Countries / States
-              </strong>
-
-              ${escapeHtml(item.countries_states)}
-
-            </div>
-
-
-            <div class="info-item">
-
-              <strong>
-                🚀 Mission / Project
-              </strong>
-
-              ${escapeHtml(item.mission)}
-
-            </div>
-
-
-          </div>
-
-
-          <div class="section-block">
-
-            <strong>
-              💡 Reason for Importance:
-            </strong>
-
-            ${escapeHtml(item.reason)}
-
-          </div>
-
-
-          <div
-            class="section-block"
-            style="margin-top: 8px;"
-          >
-
-            <strong>
-              🎯 Key Conclusion:
-            </strong>
-
-            ${escapeHtml(item.conclusion)}
-
-          </div>
-
-
-        </article>
-
-      `;
-    }
-
-
-    /* ========================================================
-       RENDER NEWS
-    ========================================================= */
-
-    function renderNews() {
-
-      const container =
-        document.getElementById(
-          "news-section"
-        );
-
-
-      if (
-        !appData ||
-        !Array.isArray(appData.news) ||
-        appData.news.length === 0
-      ) {
-
-        container.innerHTML = `
-
-          <div class="card">
-
-            <p class="empty-message">
-              Daily current affairs are loading...
-            </p>
-
-          </div>
-
-        `;
-
-        return;
-      }
-
-
-      container.innerHTML =
-        appData.news
-          .map(renderNewsCard)
-          .join("");
-    }
-
-
-    /* ========================================================
-       RENDER SAVED
-    ========================================================= */
-
-    function renderSaved() {
-
-      const container =
-        document.getElementById(
-          "saved-section"
-        );
-
-
-      const news =
-        Array.isArray(appData.news)
-          ? appData.news
-          : [];
-
-
-      const savedNews =
-        news.filter(
-          item =>
-            favorites.includes(
-              Number(item.id)
-            )
-        );
-
-
-      if (savedNews.length === 0) {
-
-        container.innerHTML = `
-
-          <div class="card">
-
-            <p class="empty-message">
-
-              No bookmarked news items yet.
-              Tap the ★ star icon on any news
-              card to save it here.
-
-            </p>
-
-          </div>
-
-        `;
-
-        return;
-      }
-
-
-      container.innerHTML =
-        savedNews
-          .map(renderNewsCard)
-          .join("");
-    }
-
-
-    /* ========================================================
-       RENDER QUIZ
-    ========================================================= */
-
-    function renderQuiz() {
-
-      const container =
-        document.getElementById(
-          "quiz-section"
-        );
-
-
-      if (
-        !appData ||
-        !Array.isArray(appData.quizzes) ||
-        appData.quizzes.length === 0
-      ) {
-
-        container.innerHTML = `
-
-          <div class="card">
-
-            <p class="empty-message">
-              Daily Quiz is loading...
-            </p>
-
-          </div>
-
-        `;
-
-        return;
-      }
-
-
-      container.innerHTML =
-        appData.quizzes
-          .map(
-            (quiz, qIndex) => {
-
-              const options =
-                Array.isArray(quiz.options)
-                  ? quiz.options
-                  : [];
-
-
-              return `
-
-                <article class="card">
-
-                  <h3
-                    style="
-                      line-height: 1.5;
-                      margin-top: 0;
-                    "
-                  >
-
-                    Q${qIndex + 1}:
-                    ${escapeHtml(
-                      quiz.question
-                    )}
-
-                  </h3>
-
-
-                  ${options
-                    .map(
-                      (option, oIndex) => `
-
-                        <button
-                          class="quiz-option"
-                          onclick="
-                            checkAnswer(
-                              this,
-                              ${qIndex},
-                              ${oIndex}
-                            )
-                          "
-                        >
-                          ${escapeHtml(option)}
-                        </button>
-
-                      `
-                    )
-                    .join("")
-                  }
-
-
-                </article>
-
-              `;
-            }
-          )
-          .join("");
-    }
-
-
-    /* ========================================================
-       CHECK ANSWER
-    ========================================================= */
-
-    function checkAnswer(
-      selectedButton,
-      questionIndex,
-      selectedOption
-    ) {
-
-      const quiz =
-        appData.quizzes[
-          questionIndex
-        ];
-
-
-      if (!quiz) {
-        return;
-      }
-
-
-      const buttons =
-        selectedButton.parentElement
-          .querySelectorAll(
-            ".quiz-option"
-          );
-
-
-      const correctOption =
-        Number(quiz.answer);
-
-
-      buttons.forEach(
-        (button, index) => {
-
-          button.disabled = true;
-
-
-          if (
-            index === correctOption
-          ) {
-
-            button.classList.add(
-              "correct"
-            );
-
-          }
-
-
-          else if (
-            index === selectedOption
-          ) {
-
-            button.classList.add(
-              "wrong"
-            );
-          }
-
-        }
-      );
-    }
-
-
-    /* ========================================================
-       SWITCH TABS
-    ========================================================= */
-
-    function switchTab(
-      tab,
-      event
-    ) {
-
-      document
-        .getElementById(
-          "news-section"
-        )
-        .classList.add(
-          "hidden"
-        );
-
-
-      document
-        .getElementById(
-          "quiz-section"
-        )
-        .classList.add(
-          "hidden"
-        );
-
-
-      document
-        .getElementById(
-          "saved-section"
-        )
-        .classList.add(
-          "hidden"
-        );
-
-
-      document
-        .querySelectorAll(
-          "nav button"
-        )
-        .forEach(
-          button => {
-            button.classList.remove(
-              "active"
-            );
-          }
-        );
-
-
-      if (tab === "news") {
-
-        document
-          .getElementById(
-            "news-section"
-          )
-          .classList.remove(
-            "hidden"
-          );
-      }
-
-
-      else if (tab === "quiz") {
-
-        document
-          .getElementById(
-            "quiz-section"
-          )
-          .classList.remove(
-            "hidden"
-          );
-      }
-
-
-      else if (tab === "saved") {
-
-        renderSaved();
-
-        document
-          .getElementById(
-            "saved-section"
-          )
-          .classList.remove(
-            "hidden"
-          );
-      }
-
-
-      if (
-        event &&
-        event.currentTarget
-      ) {
-
-        event.currentTarget
-          .classList.add(
-            "active"
-          );
-      }
-    }
-
-
-    /* ========================================================
-       INITIALIZE
-    ========================================================= */
-
+    localStorage.setItem('aura_favs', JSON.stringify(favorites));
     renderNews();
-
-    renderQuiz();
-
     renderSaved();
+  }
 
+  function renderNewsCard(item) {
+    return `
+      <div class="card" data-cat="${item.category}">
+        <div class="card-header">
+          <span class="tag">${item.category}</span>
+          <button class="fav-btn ${favorites.includes(item.id) ? 'active' : ''}" onclick="toggleFav(${item.id})">★</button>
+        </div>
+        <h2 style="margin: 8px 0; font-size: 1.25rem;">${item.title}</h2>
+        
+        ${item.image_url ? `<img class="news-img" src="${item.image_url}" alt="${item.title}" loading="lazy" onerror="this.style.display='none'" />` : ''}
 
-  </script>
+        <div class="info-grid">
+          <div class="info-item"><strong>📅 Important Date</strong> ${item.date || 'N/A'}</div>
+          <div class="info-item"><strong>📍 Place / Location</strong> ${item.place || 'N/A'}</div>
+          <div class="info-item"><strong>👤 Persons / Ministers</strong> ${item.persons_ministers || 'N/A'}</div>
+          <div class="info-item"><strong>🎖️ Key Officers</strong> ${item.officers || 'N/A'}</div>
+          <div class="info-item"><strong>🌐 Countries / States</strong> ${item.countries_states || 'N/A'}</div>
+          <div class="info-item"><strong>🚀 Mission / Project</strong> ${item.mission || 'N/A'}</div>
+        </div>
 
+        <div class="section-block">
+          <strong>💡 Reason for Importance:</strong> ${item.reason || ''}
+        </div>
+        <div class="section-block" style="margin-top: 8px;">
+          <strong>🎯 Key Conclusion:</strong> ${item.conclusion || ''}
+        </div>
+      </div>
+    `;
+  }
+
+  function renderNews() {
+    const container = document.getElementById('news-section');
+    if (!appData.news || appData.news.length === 0) {
+      container.innerHTML = `<div class="card"><p style="text-align: center; color: var(--text-muted);">Fetching latest daily current affairs...</p></div>`;
+      return;
+    }
+    container.innerHTML = appData.news.map(renderNewsCard).join('');
+  }
+
+  function renderSaved() {
+    const container = document.getElementById('saved-section');
+    const savedNews = appData.news.filter(n => favorites.includes(n.id));
+    if (savedNews.length === 0) {
+      container.innerHTML = `<div class="card"><p style="text-align: center; color: var(--text-muted);">No bookmarked news items yet. Tap the ★ star icon on any news card to save it here!</p></div>`;
+      return;
+    }
+    container.innerHTML = savedNews.map(renderNewsCard).join('');
+  }
+
+  function renderQuiz() {
+    const container = document.getElementById('quiz-section');
+    if (!appData.quizzes || appData.quizzes.length === 0) {
+      container.innerHTML = `<div class="card"><p style="text-align: center; color: var(--text-muted);">Daily Quizzes loading...</p></div>`;
+      return;
+    }
+    container.innerHTML = appData.quizzes.map((q, qIndex) => `
+      <div class="card">
+        <h3>Q${qIndex + 1}: ${q.question}</h3>
+        ${q.options.map((opt, oIndex) => `
+          <button class="quiz-option" onclick="checkAnswer(this, ${qIndex}, ${oIndex})">${opt}</button>
+        `).join('')}
+      </div>
+    `).join('');
+  }
+
+  function checkAnswer(btn, qIdx, selectedOpt) {
+    const options = btn.parentElement.querySelectorAll('.quiz-option');
+    const correctOpt = appData.quizzes[qIdx].answer;
+    options.forEach((b, i) => {
+      b.disabled = true;
+      if (i === correctOpt) b.classList.add('correct');
+      else if (i === selectedOpt) b.classList.add('wrong');
+    });
+  }
+
+  function switchTab(tab, evt) {
+    document.getElementById('news-section').classList.add('hidden');
+    document.getElementById('quiz-section').classList.add('hidden');
+    document.getElementById('saved-section').classList.add('hidden');
+    document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+
+    if (tab === 'news') document.getElementById('news-section').classList.remove('hidden');
+    else if (tab === 'quiz') document.getElementById('quiz-section').classList.remove('hidden');
+    else if (tab === 'saved') { renderSaved(); document.getElementById('saved-section').classList.remove('hidden'); }
+    
+    evt.target.classList.add('active');
+  }
+
+  renderNews();
+  renderQuiz();
+</script>
 </body>
-
 </html>
