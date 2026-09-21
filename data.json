@@ -9,365 +9,440 @@
     "news": [
       {
         "id": 1,
-        "category": "ENVIRONMENT",
-        "headline": "PUNJAB FACES SEVERE GROUNDWATER CRISIS",
-        "story_lead": "A recent study reveals that <b>Punjab</b> is grappling with a widening socio-economic divide due to a massive groundwater crisis. The state currently holds the highest percentage of over-exploited groundwater blocks in India at <b>76.47%</b>.",
+        "category": "NATIONAL",
+        "headline": "Beyond blood ties: A Gen Z-built home offering the bonds of a family",
+        "story_lead": "A unique foster-care model brings children, youth and elders under one roof...",
         "bullet_points": [
-          "Heavy reliance on groundwater for water-intensive crops like <b>wheat and rice</b> is driving the crisis.",
-          "Rising costs for <b>deeper wells</b> are exacerbating economic inequality among farmers."
+          "Key development in national affairs.",
+          "Examine policy and administrative context."
         ],
-        "image_url": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800",
-        "exam_relevance": "Crucial for UPSC Geography (Water Resources) and Environment sections.",
-        "takeaway": "Punjab's 76.47% groundwater over-exploitation threatens agricultural sustainability."
+        "full_article_text": "A unique foster-care model brings children, youth and elders under one roof",
+        "exam_relevance": "UPSC GS Paper II / State PCS",
+        "takeaway": "Important update for general competitive examination prep.",
+        "source_url": "https://www.thehindu.com/news/national/kerala/beyond-blood-ties-a-gen-z-built-home-offering-the-bonds-of-a-family/article71491229.ece",
+        "source_name": "Official News Stream",
+        "key_locations": "New Delhi, India",
+        "important_dates": "2026-09-21",
+        "entities": [],
+        "image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
       },
       {
         "id": 2,
-        "category": "SCI-TECH",
-        "headline": "MICROSOFT LAUNCHES CLOUD REGION IN HYDERABAD",
-        "story_lead": "<b>Microsoft</b> has officially launched its <b>India South Central</b> cloud region in <b>Hyderabad</b>. This infrastructure is specifically designed to support massive AI workloads and mission-critical services.",
+        "category": "NATIONAL",
+        "headline": "NIT-Srinagar to open campus observatory with 14-inch telescope",
+        "story_lead": "The observatory, developed with the Indian Institute of Astrophysics, will give students hands-on access to astronomical observation and imaging...",
         "bullet_points": [
-          "The region features <b>three availability zones</b> to ensure high resilience.",
-          "Designed to meet <b>India's regulatory and seismic requirements</b> for data sovereignty."
+          "Key development in national affairs.",
+          "Examine policy and administrative context."
         ],
-        "image_url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?w=800",
-        "exam_relevance": "Relevant for Science & Technology (Cloud Computing/AI) and Digital India initiatives.",
-        "takeaway": "Microsoft expands India's digital infrastructure with a new Hyderabad cloud hub."
+        "full_article_text": "The observatory, developed with the Indian Institute of Astrophysics, will give students hands-on access to astronomical observation and imaging",
+        "exam_relevance": "UPSC GS Paper II / State PCS",
+        "takeaway": "Important update for general competitive examination prep.",
+        "source_url": "https://www.thehindu.com/sci-tech/science/nit-srinagar-to-open-campus-observatory-with-14-inch-telescope/article71491214.ece",
+        "source_name": "Official News Stream",
+        "key_locations": "New Delhi, India",
+        "important_dates": "2026-09-21",
+        "entities": [],
+        "image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
       },
       {
         "id": 3,
-        "category": "SCI-TECH",
-        "headline": "3,261 FLOWERING SPECIES RECORDED IN AGATHTYAMALAI",
-        "story_lead": "A research team from the <b>Jawaharlal Nehru Tropical Botanic Garden and Research Institute</b> has documented <b>3,261 flowering plant species</b> in the <b>Agasthyamalai Biosphere Reserve</b>.",
+        "category": "NATIONAL",
+        "headline": "Ram Temple donations theft case: Chargesheet on or before September 25",
+        "story_lead": "A status report submitted by the U.P. govt.’s SIT has identified 105 instances of unauthorised currency removal captured on CCTV in the Ram Temple don...",
         "bullet_points": [
-          "The study reaffirms the <b>Western Ghats</b> as a critical global biodiversity hotspot.",
-          "Highlights the urgent need for <b>region-specific conservation strategies</b>."
+          "Key development in national affairs.",
+          "Examine policy and administrative context."
         ],
-        "image_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800",
-        "exam_relevance": "Important for UPSC Environment & Ecology (Biodiversity Hotspots).",
-        "takeaway": "New checklist confirms high floral diversity in the Agasthyamalai Biosphere Reserve."
+        "full_article_text": "A status report submitted by the U.P. govt.’s SIT has identified 105 instances of unauthorised currency removal captured on CCTV in the Ram Temple donations misappropriation case",
+        "exam_relevance": "UPSC GS Paper II / State PCS",
+        "takeaway": "Important update for general competitive examination prep.",
+        "source_url": "https://www.thehindu.com/news/national/ram-temple-donations-theft-case-chargesheet-on-or-before-september-25/article71491193.ece",
+        "source_name": "Official News Stream",
+        "key_locations": "New Delhi, India",
+        "important_dates": "2026-09-21",
+        "entities": [],
+        "image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
       },
       {
         "id": 4,
-        "category": "SCI-TECH",
-        "headline": "GOOGLE FINED \u20ac403 MILLION OVER PRIVACY FAILURES",
-        "story_lead": "The <b>Irish privacy regulator</b> has imposed a massive fine of <b>\u20ac403 million</b> on <b>Google</b> for failures in processing user location data.",
+        "category": "NATIONAL",
+        "headline": "Seven Ethiopian armed groups announce anti-government alliance",
+        "story_lead": "The announcement of the Ethiopian Peoples’ Forces Alliance for Survival brought together a geographically and ethnically diverse groups ranging from ‌...",
         "bullet_points": [
-          "The regulator found users were unaware their <b>location data</b> was being used for targeted advertising.",
-          "The fine emphasizes the loss of <b>individual control</b> over personal digital data."
+          "Key development in national affairs.",
+          "Examine policy and administrative context."
         ],
-        "image_url": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800",
-        "exam_relevance": "Relevant for Data Privacy laws and International Tech Regulation.",
-        "takeaway": "Google faces heavy penalties for mishandling user location data in the EU."
+        "full_article_text": "The announcement of the Ethiopian Peoples’ Forces Alliance for Survival brought together a geographically and ethnically diverse groups ranging from ‌Tigray in the north to the Somali Region in the south",
+        "exam_relevance": "UPSC GS Paper II / State PCS",
+        "takeaway": "Important update for general competitive examination prep.",
+        "source_url": "https://www.thehindu.com/news/national/seven-ethiopian-armed-groups-announce-anti-government-alliance/article71491242.ece",
+        "source_name": "Official News Stream",
+        "key_locations": "New Delhi, India",
+        "important_dates": "2026-09-21",
+        "entities": [],
+        "image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
       },
       {
         "id": 5,
-        "category": "ECONOMY",
-        "headline": "CHINA'S SDLG TO INVEST \u20b9300 CRORE IN GUJARAT",
-        "story_lead": "In a boost to local manufacturing, China's <b>SDLG</b> has announced an investment of <b>\u20b9300 crore</b> in its <b>Gujarat</b> plant to expand production of construction equipment.",
+        "category": "NATIONAL",
+        "headline": "Glitzy Ganesh idol immersions leave behind chaos",
+        "story_lead": "...",
         "bullet_points": [
-          "The move aims to increase <b>sourcing from Indian suppliers</b>.",
-          "Strengthens the local supply chain within the <b>construction equipment market</b>."
+          "Key development in national affairs.",
+          "Examine policy and administrative context."
         ],
-        "image_url": "https://images.unsplash.com/photo-1581094288338-2314dddb7ca3?w=800",
-        "exam_relevance": "Important for Economy (FDI and Manufacturing) and Make in India.",
-        "takeaway": "SDLG's \u20b9300 crore investment targets expansion in the Indian construction sector."
+        "full_article_text": "",
+        "exam_relevance": "UPSC GS Paper II / State PCS",
+        "takeaway": "Important update for general competitive examination prep.",
+        "source_url": "https://www.thehindu.com/news/national/andhra-pradesh/glitzy-ganesh-idol-immersions-leave-behind-chaos/article71488916.ece",
+        "source_name": "Official News Stream",
+        "key_locations": "New Delhi, India",
+        "important_dates": "2026-09-21",
+        "entities": [],
+        "image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
       },
       {
         "id": 6,
-        "category": "ECONOMY",
-        "headline": "COLOMBO PORT CITY PITCHES 'INDIA-PLUS-ONE'",
-        "story_lead": "The <b>Colombo Port City</b> is actively courting Indian companies using an <b>'India-plus-one'</b> strategy to attract high-value Foreign Direct Investment (FDI).",
+        "category": "NATIONAL",
+        "headline": "Python rescued from dance troupe during Ganesh procession in Hyderabad",
+        "story_lead": "...",
         "bullet_points": [
-          "Focus sectors include <b>Financial Services, IT, and Maritime logistics</b>.",
-          "Designed to serve as a hub for <b>regional headquarters operations</b>."
+          "Key development in national affairs.",
+          "Examine policy and administrative context."
         ],
-        "image_url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
-        "exam_relevance": "Relevant for International Trade and Regional Economic Integration.",
-        "takeaway": "Sri Lanka's Port City aims to become a major hub for Indian-led regional business."
+        "full_article_text": "",
+        "exam_relevance": "UPSC GS Paper II / State PCS",
+        "takeaway": "Important update for general competitive examination prep.",
+        "source_url": "https://www.thehindu.com/news/cities/Hyderabad/python-rescued-from-dance-troupe-during-ganesh-procession-in-hyderabad/article71491210.ece",
+        "source_name": "Official News Stream",
+        "key_locations": "New Delhi, India",
+        "important_dates": "2026-09-21",
+        "entities": [],
+        "image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
       },
       {
         "id": 7,
-        "category": "INTERNATIONAL",
-        "headline": "EU STRUGGLES WITH RUSSIA SANCTIONS EXTENSION",
-        "story_lead": "The <b>European Union</b> is facing a standoff, particularly with <b>France</b>, regarding the extension of sanctions against <b>Russia</b> following the 2022 war.",
+        "category": "NATIONAL",
+        "headline": "Tamil Nadu CM Vijay reviews Northeast monsoon preparedness, dengue prevention measures",
+        "story_lead": "CM directed officials to prepare a list of areas vulnerable to sea water intrusion and coastal erosion during the monsoon and ensure that weather and ...",
         "bullet_points": [
-          "EU rules require <b>unanimous agreement</b> from all member states to extend sanctions.",
-          "Sanctions must be reviewed and renewed every <b>six months</b>."
+          "Key development in national affairs.",
+          "Examine policy and administrative context."
         ],
-        "image_url": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=800",
-        "exam_relevance": "Crucial for International Relations (EU-Russia dynamics).",
-        "takeaway": "Internal EU disagreements threaten the continuity of Russia sanctions."
+        "full_article_text": "CM directed officials to prepare a list of areas vulnerable to sea water intrusion and coastal erosion during the monsoon and ensure that weather and storm warnings reached fishermen and rehabilitation centres",
+        "exam_relevance": "UPSC GS Paper II / State PCS",
+        "takeaway": "Important update for general competitive examination prep.",
+        "source_url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-cm-vijay-reviews-northeast-monsoon-preparedness-dengue-prevention-measures/article71491281.ece",
+        "source_name": "Official News Stream",
+        "key_locations": "New Delhi, India",
+        "important_dates": "2026-09-21",
+        "entities": [],
+        "image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
       },
       {
         "id": 8,
-        "category": "INTERNATIONAL",
-        "headline": "UNITED RUSSIA WINS PARLIAMENTARY ELECTION",
-        "story_lead": "The pro-Putin party, <b>United Russia</b>, has secured a resounding victory in the parliamentary elections, winning <b>57.83%</b> of the vote.",
+        "category": "NATIONAL",
+        "headline": "Malabar Milma faces action over financial irregularities",
+        "story_lead": "27.45 lakh loss alleged at Kasaragod dairy...",
         "bullet_points": [
-          "The party's vote share rose from <b>49.8%</b> in the 2021 elections.",
-          "<b>Ella Pamfilova</b>, chair of the Central Electoral Commission, confirmed the results."
+          "Key development in national affairs.",
+          "Examine policy and administrative context."
         ],
-        "image_url": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=800",
-        "exam_relevance": "Important for International Political Affairs.",
-        "takeaway": "United Russia strengthens its grip on the Russian parliament."
+        "full_article_text": "27.45 lakh loss alleged at Kasaragod dairy",
+        "exam_relevance": "UPSC GS Paper II / State PCS",
+        "takeaway": "Important update for general competitive examination prep.",
+        "source_url": "https://www.thehindu.com/news/national/kerala/malabar-milma-faces-action-over-financial-irregularities/article71491096.ece",
+        "source_name": "Official News Stream",
+        "key_locations": "New Delhi, India",
+        "important_dates": "2026-09-21",
+        "entities": [],
+        "image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
       },
       {
         "id": 9,
         "category": "NATIONAL",
-        "headline": "FSSAI TAKES ACTION AGAINST NESTLE INDIA",
-        "story_lead": "The <b>Food Safety and Standards Authority of India (FSSAI)</b> has initiated legal action against <b>Nestle India</b> regarding its infant nutrition products.",
+        "headline": "Delhi Court sets aside Magistrate order refusing probe in Sonia Gandhi’s pre-citizenship electoral entry",
+        "story_lead": "The Judge said that the Magistrate, instead of considering the core aspect of whether the complaint disclosed commission of a cognisable offence, digr...",
         "bullet_points": [
-          "FSSAI is seeking clarifications on claims related to <b>'5HMOs' and 'Whey Protein'</b>.",
-          "The move aims to ensure transparency in <b>infant nutrition labeling</b>."
+          "Key development in national affairs.",
+          "Examine policy and administrative context."
         ],
-        "image_url": "https://images.unsplash.com/photo-1550583724-1255818c053b?w=800",
-        "exam_relevance": "Relevant for Governance (Regulatory bodies) and Consumer Protection.",
-        "takeaway": "FSSAI scrutinizes Nestle India's nutritional claims for infant products."
+        "full_article_text": "The Judge said that the Magistrate, instead of considering the core aspect of whether the complaint disclosed commission of a cognisable offence, digressed towards the issue of citizenship",
+        "exam_relevance": "UPSC GS Paper II / State PCS",
+        "takeaway": "Important update for general competitive examination prep.",
+        "source_url": "https://www.thehindu.com/news/national/delhi-court-sets-aside-magistrate-order-refusing-probe-in-sonia-gandhis-pre-citizenship-electoral-entry/article71490940.ece",
+        "source_name": "Official News Stream",
+        "key_locations": "New Delhi, India",
+        "important_dates": "2026-09-21",
+        "entities": [],
+        "image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
       },
       {
         "id": 10,
-        "category": "SCI-TECH",
-        "headline": "ADVANCING ALZHEIMER'S DIAGNOSIS VIA BLOOD TESTS",
-        "story_lead": "New advancements in medical science are utilizing blood tests like <b>p-tau217 and p-tau181</b> to improve the diagnosis of <b>Alzheimer's disease</b>.",
+        "category": "NATIONAL",
+        "headline": "Heavy rainfall forecast in 14 Telangana districts on September 22",
+        "story_lead": "Hyderabad is forecast to be covered with cloudy sky...",
         "bullet_points": [
-          "These tests identify specific <b>biological changes</b> linked to the disease.",
-          "Offers a potentially less invasive alternative to traditional <b>neurological assessments</b>."
+          "Key development in national affairs.",
+          "Examine policy and administrative context."
         ],
-        "image_url": "https://images.unsplash.com/photo-1579154273801-e91e354c862a?w=800",
-        "exam_relevance": "Important for Science & Technology (Biotechnology/Health).",
-        "takeaway": "Blood-based biomarkers are revolutionizing early Alzheimer's detection."
+        "full_article_text": "Hyderabad is forecast to be covered with cloudy sky",
+        "exam_relevance": "UPSC GS Paper II / State PCS",
+        "takeaway": "Important update for general competitive examination prep.",
+        "source_url": "https://www.thehindu.com/news/national/telangana/heavy-rainfall-forecast-in-14-telangana-districts-on-september-22/article71490919.ece",
+        "source_name": "Official News Stream",
+        "key_locations": "New Delhi, India",
+        "important_dates": "2026-09-21",
+        "entities": [],
+        "image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
       },
       {
         "id": 11,
         "category": "NATIONAL",
-        "headline": "TN CM VIJAY REVIEWS MONSOON PREPAREDNESS",
-        "story_lead": "Tamil Nadu Chief Minister <b>Vijay</b> has reviewed the state's preparedness for the upcoming <b>Northeast monsoon</b>, focusing on disaster mitigation.",
+        "headline": "Mahanadi water dispute likely to be resolved soon: Chhattisgarh CM",
+        "story_lead": "The dispute over sharing of Mahanadi waters has continued for more than a decade, with Odisha objecting to the construction of barrages by Chhattisgar...",
         "bullet_points": [
-          "Officials were directed to identify areas vulnerable to <b>sea water intrusion and coastal erosion</b>.",
-          "Emphasis placed on ensuring <b>storm warnings</b> reach fishermen and rehabilitation centers."
+          "Key development in national affairs.",
+          "Examine policy and administrative context."
         ],
-        "image_url": "https://images.unsplash.com/photo-1516912481808-34061f8e2000?w=800",
-        "exam_relevance": "Relevant for Disaster Management and State Governance.",
-        "takeaway": "Tamil Nadu strengthens monsoon readiness and coastal protection measures."
+        "full_article_text": "The dispute over sharing of Mahanadi waters has continued for more than a decade, with Odisha objecting to the construction of barrages by Chhattisgarh",
+        "exam_relevance": "UPSC GS Paper II / State PCS",
+        "takeaway": "Important update for general competitive examination prep.",
+        "source_url": "https://www.hindustantimes.com/india-news/mahanadi-water-dispute-likely-to-be-resolved-soon-chhattisgarh-cm-101789991802696.html",
+        "source_name": "Official News Stream",
+        "key_locations": "New Delhi, India",
+        "important_dates": "2026-09-21",
+        "entities": [],
+        "image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
       },
       {
         "id": 12,
         "category": "NATIONAL",
-        "headline": "FINANCIAL IRREGULARITIES AT MALABAR MILMA",
-        "story_lead": "The <b>Malabar Milma</b> dairy cooperative is facing scrutiny following allegations of financial irregularities resulting in a <b>\u20b927.45 lakh loss</b>.",
+        "headline": "15-yr-old boy shot dead by unknown armed individuals in Manipur’s Tamei: Cop",
+        "story_lead": "Police said the motive behind the attack is still uncertain and those responsible for the incident are yet to be identified...",
         "bullet_points": [
-          "The alleged loss occurred at the <b>Kasaragod dairy</b> unit.",
-          "The case highlights challenges in <b>cooperative sector governance</b>."
+          "Key development in national affairs.",
+          "Examine policy and administrative context."
         ],
-        "image_url": "https://images.unsplash.com/photo-1528498033373-3c6c08e93d79?w=800",
-        "exam_relevance": "Relevant for Economy (Cooperative Sector) and Governance.",
-        "takeaway": "Kasaragod's Malabar Milma faces action over significant financial losses."
+        "full_article_text": "Police said the motive behind the attack is still uncertain and those responsible for the incident are yet to be identified",
+        "exam_relevance": "UPSC GS Paper II / State PCS",
+        "takeaway": "Important update for general competitive examination prep.",
+        "source_url": "https://www.hindustantimes.com/india-news/15yrold-boy-shot-dead-by-unknown-armed-individuals-in-manipur-s-tamei-cop-101789990964828.html",
+        "source_name": "Official News Stream",
+        "key_locations": "New Delhi, India",
+        "important_dates": "2026-09-21",
+        "entities": [],
+        "image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
       },
       {
         "id": 13,
-        "category": "ECONOMY",
-        "headline": "INDIA-CHINA TRADE: THE SELF-RELIANCE PARADOX",
-        "story_lead": "Despite India's push for manufacturing, trade dynamics show that expansion remains deeply embedded in <b>China-centric, import-dependent supply chains</b>.",
+        "category": "NATIONAL",
+        "headline": "Kasturirangan opposes Kasturirangan report, seeks ground level survey of Western ghats",
+        "story_lead": "Kasturirangan opposes Kasturirangan report, seeks ground level survey of Western ghats...",
         "bullet_points": [
-          "The paradox highlights the difficulty of achieving true <b>self-reliance</b>.",
-          "India is building capabilities but remains tied to <b>Chinese components and raw materials</b>."
+          "Key development in national affairs.",
+          "Examine policy and administrative context."
         ],
-        "image_url": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800",
-        "exam_relevance": "Crucial for UPSC International Relations and Indian Economy.",
-        "takeaway": "India's manufacturing growth is currently constrained by Chinese supply chain dependencies."
+        "full_article_text": "Kasturirangan opposes Kasturirangan report, seeks ground level survey of Western ghats",
+        "exam_relevance": "UPSC GS Paper II / State PCS",
+        "takeaway": "Important update for general competitive examination prep.",
+        "source_url": "https://www.hindustantimes.com/india-news/kasturirangan-opposes-kasturirangan-report-seeks-ground-level-survey-of-western-ghats-101789988129746.html",
+        "source_name": "Official News Stream",
+        "key_locations": "New Delhi, India",
+        "important_dates": "2026-09-21",
+        "entities": [],
+        "image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
       },
       {
         "id": 14,
-        "category": "INTERNATIONAL",
-        "headline": "PAKISTAN STRIKES AFGHAN MILITANT HIDEOUTS",
-        "story_lead": "Pakistan conducted strikes in <b>Afghanistan</b>, targeting militant hideouts and reportedly killing <b>28 people</b>, though the <b>Taliban</b> disputes the death toll.",
+        "category": "NATIONAL",
+        "headline": "3 arrested, SIT formed, Opposition fumes over Jamui harassment case | Top updates",
+        "story_lead": "Three people have been arrested in connection with the incident and Jamui Police has formed an SIT to investigate the viral video....",
         "bullet_points": [
-          "One strike hit a house in <b>Kunar province</b>, killing three family members.",
-          "The action followed an attack on a <b>police facility in Pakistan</b>."
+          "Key development in national affairs.",
+          "Examine policy and administrative context."
         ],
-        "image_url": "https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=800",
-        "exam_relevance": "Important for International Security and Regional Conflicts.",
-        "takeaway": "Cross-border strikes between Pakistan and Afghanistan escalate tensions."
+        "full_article_text": "Three people have been arrested in connection with the incident and Jamui Police has formed an SIT to investigate the viral video.",
+        "exam_relevance": "UPSC GS Paper II / State PCS",
+        "takeaway": "Important update for general competitive examination prep.",
+        "source_url": "https://www.hindustantimes.com/india-news/3-arrested-sit-formed-victims-identified-in-bihar-jamui-harassment-case-viral-video-top-updates-101789985173813.html",
+        "source_name": "Official News Stream",
+        "key_locations": "New Delhi, India",
+        "important_dates": "2026-09-21",
+        "entities": [],
+        "image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
       },
       {
         "id": 15,
         "category": "NATIONAL",
-        "headline": "DELHI COURT SETS ASIDE ORDER IN SONIA GANDHI CASE",
-        "story_lead": "A <b>Delhi Court</b> has set aside a Magistrate's order that had refused to probe <b>Sonia Gandhi's</b> pre-citizenship electoral entry.",
+        "headline": "IIT Bombay faculty forum backs professor accused of abetting student suicide",
+        "story_lead": "The forum said Suryanarayan Doolla has not been suspended and continues to be a faculty member of the institute...",
         "bullet_points": [
-          "The judge ruled the Magistrate incorrectly focused on <b>citizenship</b> instead of the <b>cognisable offence</b>.",
-          "The case concerns the legality of her <b>electoral entry</b> prior to citizenship."
+          "Key development in national affairs.",
+          "Examine policy and administrative context."
         ],
-        "image_url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800",
-        "exam_relevance": "Relevant for Indian Polity (Judiciary and Constitutional Law).",
-        "takeaway": "Delhi Court mandates a probe into Sonia Gandhi's electoral entry legality."
+        "full_article_text": "The forum said Suryanarayan Doolla has not been suspended and continues to be a faculty member of the institute",
+        "exam_relevance": "UPSC GS Paper II / State PCS",
+        "takeaway": "Important update for general competitive examination prep.",
+        "source_url": "https://www.hindustantimes.com/india-news/iit-bombay-faculty-forum-backs-professor-accused-of-abetting-student-suicide-101789987302415.html",
+        "source_name": "Official News Stream",
+        "key_locations": "New Delhi, India",
+        "important_dates": "2026-09-21",
+        "entities": [],
+        "image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
       }
     ],
     "quizzes": [
       {
-        "id": 1,
-        "question": "What is the percentage of over-exploited groundwater blocks in Punjab according to the recent study?",
+        "question": "Regarding the recent news 'Beyond blood ties: A Gen Z-built home offering the...', which statement is correct?",
         "options": [
-          "65.40%",
-          "76.47%",
-          "82.15%",
-          "55.90%"
-        ],
-        "answer": 1
-      },
-      {
-        "id": 2,
-        "question": "In which city has Microsoft launched its 'India South Central' cloud region?",
-        "options": [
-          "Bengaluru",
-          "Mumbai",
-          "Hyderabad",
-          "Chennai"
-        ],
-        "answer": 2
-      },
-      {
-        "id": 3,
-        "question": "How many flowering plant species were recorded in the Agasthyamalai Biosphere Reserve by the JNTBGRI team?",
-        "options": [
-          "2,500",
-          "3,261",
-          "4,110",
-          "2,895"
-        ],
-        "answer": 1
-      },
-      {
-        "id": 4,
-        "question": "How much fine was imposed on Google by the Irish privacy regulator?",
-        "options": [
-          "\u20ac200 million",
-          "\u20ac403 million",
-          "\u20ac550 million",
-          "\u20ac150 million"
-        ],
-        "answer": 1
-      },
-      {
-        "id": 5,
-        "question": "How much is China's SDLG investing in its Gujarat plant?",
-        "options": [
-          "\u20b9100 crore",
-          "\u20b9250 crore",
-          "\u20b9300 crore",
-          "\u20b9500 crore"
-        ],
-        "answer": 2
-      },
-      {
-        "id": 6,
-        "question": "Which strategy is Colombo Port City using to attract Indian companies?",
-        "options": [
-          "China-plus-one",
-          "India-plus-one",
-          "Asia-centric",
-          "Global-hub"
-        ],
-        "answer": 1
-      },
-      {
-        "id": 7,
-        "question": "How often must the EU agree to extend sanctions against Russia?",
-        "options": [
-          "Every 3 months",
-          "Every 6 months",
-          "Every year",
-          "Every 2 years"
-        ],
-        "answer": 1
-      },
-      {
-        "id": 8,
-        "question": "Which party won the Russian parliamentary election with 57.83% of the vote?",
-        "options": [
-          "Communist Party",
-          "Liberal Democratic Party",
-          "United Russia",
-          "Die Linke"
-        ],
-        "answer": 2
-      },
-      {
-        "id": 9,
-        "question": "FSSAI is seeking clarification from Nestle India regarding which specific claims?",
-        "options": [
-          "Vitamin D and Calcium",
-          "5HMOs and Whey Protein",
-          "Iron and Zinc",
-          "Sugar-free content"
-        ],
-        "answer": 1
-      },
-      {
-        "id": 10,
-        "question": "Which blood tests are being used to advance Alzheimer's diagnosis?",
-        "options": [
-          "p-tau217 and p-tau181",
-          "HbA1c and CRP",
-          "Glucose and Insulin",
-          "LDL and HDL"
+          "It pertains to national development policy.",
+          "It is an international treaty.",
+          "It relates to environmental standard updates.",
+          "None of the above"
         ],
         "answer": 0
       },
       {
-        "id": 11,
-        "question": "Who is the Chief Minister of Tamil Nadu reviewing monsoon preparedness?",
+        "question": "Regarding the recent news 'NIT-Srinagar to open campus observatory with 14-in...', which statement is correct?",
         "options": [
-          "M.K. Stalin",
-          "Vijay",
-          "Edappadi Palaniswami",
-          "K. Annamalai"
+          "It pertains to national development policy.",
+          "It is an international treaty.",
+          "It relates to environmental standard updates.",
+          "None of the above"
         ],
-        "answer": 1
+        "answer": 0
       },
       {
-        "id": 12,
-        "question": "In which district is the Malabar Milma dairy facing financial irregularities?",
+        "question": "Regarding the recent news 'Ram Temple donations theft case: Chargesheet on or...', which statement is correct?",
         "options": [
-          "Thiruvananthapuram",
-          "Kasaragod",
-          "Kozhikode",
-          "Kannur"
+          "It pertains to national development policy.",
+          "It is an international treaty.",
+          "It relates to environmental standard updates.",
+          "None of the above"
         ],
-        "answer": 1
+        "answer": 0
       },
       {
-        "id": 13,
-        "question": "India's manufacturing expansion is currently described as being embedded in what?",
+        "question": "Regarding the recent news 'Seven Ethiopian armed groups announce anti-governm...', which statement is correct?",
         "options": [
-          "US-centric supply chains",
-          "China-centric supply chains",
-          "EU-centric supply chains",
-          "Japan-centric supply chains"
+          "It pertains to national development policy.",
+          "It is an international treaty.",
+          "It relates to environmental standard updates.",
+          "None of the above"
         ],
-        "answer": 1
+        "answer": 0
       },
       {
-        "id": 14,
-        "question": "In which Afghan province was a house hit during the Pakistani strikes?",
+        "question": "Regarding the recent news 'Glitzy Ganesh idol immersions leave behind chaos...', which statement is correct?",
         "options": [
-          "Kabul",
-          "Kandahar",
-          "Kunar",
-          "Herat"
+          "It pertains to national development policy.",
+          "It is an international treaty.",
+          "It relates to environmental standard updates.",
+          "None of the above"
         ],
-        "answer": 2
+        "answer": 0
       },
       {
-        "id": 15,
-        "question": "The Delhi Court set aside an order regarding which political figure's electoral entry?",
+        "question": "Regarding the recent news 'Python rescued from dance troupe during Ganesh pro...', which statement is correct?",
         "options": [
-          "Narendra Modi",
-          "Sonia Gandhi",
-          "Rahul Gandhi",
-          "Amit Shah"
+          "It pertains to national development policy.",
+          "It is an international treaty.",
+          "It relates to environmental standard updates.",
+          "None of the above"
         ],
-        "answer": 1
+        "answer": 0
+      },
+      {
+        "question": "Regarding the recent news 'Tamil Nadu CM Vijay reviews Northeast monsoon prep...', which statement is correct?",
+        "options": [
+          "It pertains to national development policy.",
+          "It is an international treaty.",
+          "It relates to environmental standard updates.",
+          "None of the above"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Regarding the recent news 'Malabar Milma faces action over financial irregula...', which statement is correct?",
+        "options": [
+          "It pertains to national development policy.",
+          "It is an international treaty.",
+          "It relates to environmental standard updates.",
+          "None of the above"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Regarding the recent news 'Delhi Court sets aside Magistrate order refusing p...', which statement is correct?",
+        "options": [
+          "It pertains to national development policy.",
+          "It is an international treaty.",
+          "It relates to environmental standard updates.",
+          "None of the above"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Regarding the recent news 'Heavy rainfall forecast in 14 Telangana districts ...', which statement is correct?",
+        "options": [
+          "It pertains to national development policy.",
+          "It is an international treaty.",
+          "It relates to environmental standard updates.",
+          "None of the above"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Regarding the recent news 'Mahanadi water dispute likely to be resolved soon:...', which statement is correct?",
+        "options": [
+          "It pertains to national development policy.",
+          "It is an international treaty.",
+          "It relates to environmental standard updates.",
+          "None of the above"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Regarding the recent news '15-yr-old boy shot dead by unknown armed individua...', which statement is correct?",
+        "options": [
+          "It pertains to national development policy.",
+          "It is an international treaty.",
+          "It relates to environmental standard updates.",
+          "None of the above"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Regarding the recent news 'Kasturirangan opposes Kasturirangan report, seeks ...', which statement is correct?",
+        "options": [
+          "It pertains to national development policy.",
+          "It is an international treaty.",
+          "It relates to environmental standard updates.",
+          "None of the above"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Regarding the recent news '3 arrested, SIT formed, Opposition fumes over Jamu...', which statement is correct?",
+        "options": [
+          "It pertains to national development policy.",
+          "It is an international treaty.",
+          "It relates to environmental standard updates.",
+          "None of the above"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Regarding the recent news 'IIT Bombay faculty forum backs professor accused o...', which statement is correct?",
+        "options": [
+          "It pertains to national development policy.",
+          "It is an international treaty.",
+          "It relates to environmental standard updates.",
+          "None of the above"
+        ],
+        "answer": 0
       }
     ]
   }
