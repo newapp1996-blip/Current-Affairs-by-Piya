@@ -40,7 +40,7 @@ def fetch_rss_headlines():
 
 
 # ============================================================
-# 2. GEMINI GENERATION
+# 2. GEMINI CONFIGURATION & GENERATION
 # ============================================================
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
@@ -50,8 +50,12 @@ if not GEMINI_API_KEY:
 
 client = genai.Client(api_key=GEMINI_API_KEY)
 
-# Fallback model list to prevent 404/deprecation errors
-MODELS_TO_TRY = ["gemini-2.5-flash", "gemini-1.5-flash", "gemini-2.0-flash"]
+# Updated model chain using gemini-3.6-flash as specified in the error log
+MODELS_TO_TRY = [
+    "gemini-3.6-flash",
+    "gemini-2.5-flash",
+    "gemini-1.5-flash"
+]
 
 def generate_affairs_and_quiz(news_text):
     prompt = f"""
@@ -62,23 +66,23 @@ Analyze these news items:
 
 Task:
 1. Extract exactly 12 distinct current affairs entries across Defence, Schemes, International, National, Economy, Science & Tech.
-2. For EACH entry, provide complete concise information for these fields:
+2. For EACH entry, provide complete concise information for these exact fields:
    - id (integer 1 to 12)
    - category (e.g. Defence, Schemes, International, National, Economy, Science & Tech)
    - title (Headline)
    - image_url (A stock photo URL from Unsplash e.g. "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800")
-   - date (Important date / period)
-   - place (Location / City / Region / State)
+   - date (Important date / period e.g. September 2026)
+   - place (Location / City / Region / State involved)
    - persons_ministers (Ministers / VIPs / Officials involved)
-   - officers (Key administrative/military officers)
+   - officers (Key administrative/military officers or designation)
    - countries_states (Countries or Indian States involved)
-   - reason (Reason for importance for exams)
-   - mission (Mission / Scheme / Operation name or N/A)
+   - reason (Reason for importance for competitive exams)
+   - mission (Mission / Scheme / Project / Operation name or N/A)
    - conclusion (Summary / Impact / Key Takeaway)
 
 3. Create 4 multiple-choice quiz questions based on these entries.
 
-Return ONLY a valid JSON object matching this exact structure:
+Return ONLY a single valid JSON object following this exact structure:
 {{
   "news": [
     {{
@@ -136,16 +140,20 @@ Return ONLY a valid JSON object matching this exact structure:
 
 
 # ============================================================
-# 3. FILE SAVING & INJECTION
+# 3. FILE SAVING AND HTML UPDATE
 # ============================================================
 
 def update_output_files(data_dict):
-    # Save standalone data.json so async fetch calls succeed
+    """
+    Saves JSON data to data.json and updates index.html so both 
+    fetch-based calls and inline variables receive the latest news.
+    """
+    # 1. Output data.json for fetch requests
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump(data_dict, f, indent=2)
     print("Updated data.json successfully!")
 
-    # Inject into index.html variable if present
+    # 2. Inject into index.html variable if present
     if os.path.exists("index.html"):
         with open("index.html", "r", encoding="utf-8") as f:
             html_content = f.read()
@@ -165,11 +173,11 @@ def update_output_files(data_dict):
 
 if __name__ == "__main__":
     print("Fetching news feeds...")
-    news_text = fetch_rss_headlines()
+    headlines = fetch_rss_headlines()
     
-    print("Generating current affairs with Gemini...")
-    app_data = generate_affairs_and_quiz(news_text)
+    print("Generating 12 detailed current affairs with Gemini...")
+    app_data = generate_affairs_and_quiz(headlines)
     
     print("Saving updated files...")
     update_output_files(app_data)
-    print("Completed successfully!")
+    print("Update complete!")
