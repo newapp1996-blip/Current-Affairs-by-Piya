@@ -1,155 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AURA EXAM AI - Daily Current Affairs</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
-    body {
-      background-color: #0b0f19;
-      color: #e5e7eb;
-      padding: 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 24px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid #1f2937;
-    }
-    h1 {
-      color: #38bdf8;
-      font-size: 1.8rem;
-      letter-spacing: 1px;
-    }
-    .tabs {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 20px;
-      justify-content: center;
-    }
-    .tab-btn {
-      background: #1e293b;
-      color: #94a3b8;
-      border: 1px solid #334155;
-      padding: 8px 16px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      cursor: pointer;
-    }
-    .tab-btn.active {
-      background: #0284c7;
-      color: #fff;
-      border-color: #38bdf8;
-    }
-    .news-card {
-      background: #111827;
-      border: 1px solid #1f2937;
-      border-radius: 12px;
-      padding: 16px;
-      margin-bottom: 16px;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-    }
-    .badge {
-      display: inline-block;
-      background: rgba(56, 189, 248, 0.1);
-      color: #38bdf8;
-      padding: 4px 10px;
-      border-radius: 6px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .news-title {
-      color: #f3f4f6;
-      font-size: 1.1rem;
-      margin-bottom: 8px;
-      line-height: 1.4;
-    }
-    .news-meta {
-      color: #9ca3af;
-      font-size: 0.825rem;
-      margin-bottom: 12px;
-    }
-    .news-conclusion {
-      color: #d1d5db;
-      font-size: 0.925rem;
-      line-height: 1.5;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA EXAM AI - Daily Current Affairs</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+
+        .header-title {
+            text-align: center;
+            color: var(--accent-color);
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .tab-btn {
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            padding: 10px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .tab-btn.active {
+            background-color: #0284c7;
+            color: #ffffff;
+            border-color: var(--accent-color);
+        }
+
+        .tab-content {
+            display: none;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* News Cards */
+        .news-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .category-badge {
+            display: inline-block;
+            background-color: rgba(56, 189, 248, 0.2);
+            color: var(--accent-color);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .news-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0 0 12px 0;
+            line-height: 1.4;
+        }
+
+        .news-meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 8px;
+            font-size: 13px;
+            color: var(--text-muted);
+            background: rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .news-meta-item strong {
+            color: var(--text-color);
+        }
+
+        .news-section {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .news-section strong {
+            color: var(--accent-color);
+        }
+
+        /* Quiz Cards */
+        .quiz-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .quiz-question {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .quiz-option {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            text-align: left;
+            color: var(--text-color);
+        }
+
+        .quiz-option.correct {
+            background-color: #15803d;
+            border-color: #22c55e;
+        }
+
+        .quiz-option.incorrect {
+            background-color: #991b1b;
+            border-color: #ef4444;
+        }
+
+        .status-msg {
+            text-align: center;
+            color: var(--text-muted);
+            margin-top: 40px;
+            font-size: 15px;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>AURA EXAM AI</h1>
-  </header>
+    <div class="header-title">AURA EXAM AI</div>
 
-  <div class="tabs">
-    <button class="tab-btn active">Daily News (12)</button>
-    <button class="tab-btn">Daily Quiz</button>
-    <button class="tab-btn">Bookmarks ★</button>
-  </div>
-
-  <div id="news-container">
-    <div style="text-align: center; color: #888; padding: 40px 0;">
-      Fetching latest daily current affairs...
+    <div class="nav-tabs">
+        <button class="tab-btn active" onclick="switchTab('news')">Daily News (<span id="news-count">0</span>)</button>
+        <button class="tab-btn" onclick="switchTab('quiz')">Daily Quiz</button>
     </div>
-  </div>
 
-  <script>
-    // Placeholder targeted by update_news.py regex replacement
-    const appData = { "news": [], "quizzes": [] };
-
-    async function loadData() {
-      // If appData is empty, fetch data.json directly
-      if (!appData.news || appData.news.length === 0) {
-        try {
-          const res = await fetch('data.json?v=' + new Date().getTime());
-          if (res.ok) {
-            const fetchedData = await res.json();
-            appData.news = fetchedData.news || [];
-            appData.quizzes = fetchedData.quizzes || [];
-          }
-        } catch (e) {
-          console.error("Error loading data.json:", e);
-        }
-      }
-      renderNews();
-    }
-
-    function renderNews() {
-      const container = document.getElementById('news-container');
-      if (!container) return;
-
-      if (!appData.news || appData.news.length === 0) {
-        container.innerHTML = `
-          <div style="padding: 20px; text-align: center; color: #888;">
-            No current affairs available yet. Run the GitHub Action workflow to fetch updates.
-          </div>`;
-        return;
-      }
-
-      container.innerHTML = appData.news.map(item => `
-        <div class="news-card">
-          <span class="badge">[${item.category || 'General'}]</span>
-          <h3 class="news-title">${item.title}</h3>
-          <div class="news-meta">
-            📍 ${item.place || 'N/A'} | 🗓️ ${item.date || 'Today'}
-          </div>
-          <p class="news-conclusion">${item.conclusion || ''}</p>
+    <!-- News Tab -->
+    <div id="news-tab" class="tab-content active">
+        <div id="news-container">
+            <div class="status-msg">Loading latest current affairs...</div>
         </div>
-      `).join('');
-    }
+    </div>
 
-    document.addEventListener('DOMContentLoaded', loadData);
-  </script>
+    <!-- Quiz Tab -->
+    <div id="quiz-tab" class="tab-content">
+        <div id="quiz-container">
+            <div class="status-msg">Loading quizzes...</div>
+        </div>
+    </div>
 
+    <script>
+        function switchTab(tab) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+            if (tab === 'news') {
+                document.querySelectorAll('.tab-btn')[0].classList.add('active');
+                document.getElementById('news-tab').classList.add('active');
+            } else {
+                document.querySelectorAll('.tab-btn')[1].classList.add('active');
+                document.getElementById('quiz-tab').classList.add('active');
+            }
+        }
+
+        async function loadAppData() {
+            try {
+                // Fetch data.json directly with cache-busting timestamp
+                const response = await fetch(`./data.json?v=${new Date().getTime()}`, {
+                    cache: 'no-store'
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json();
+
+                if (data && data.news && data.news.length > 0) {
+                    renderNews(data.news);
+                    renderQuiz(data.quizzes || []);
+                } else {
+                    showError("No current affairs available yet. Run the GitHub Action workflow to fetch updates.");
+                }
+            } catch (err) {
+                console.error("Failed to fetch data.json:", err);
+                showError("Error loading current affairs data. Please try refreshing.");
+            }
+        }
+
+        function renderNews(newsList) {
+            document.getElementById('news-count').textContent = newsList.length;
+            const container = document.getElementById('news-container');
+            container.innerHTML = '';
+
+            newsList.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'news-card';
+                card.innerHTML = `
+                    <span class="category-badge">${item.category || 'General'}</span>
+                    <h2 class="news-title">${item.title}</h2>
+                    <div class="news-meta-grid">
+                        <div class="news-meta-item"><strong>Date:</strong> ${item.date || 'N/A'}</div>
+                        <div class="news-meta-item"><strong>Place:</strong> ${item.place || 'N/A'}</div>
+                        <div class="news-meta-item"><strong>Ministers/VIPs:</strong> ${item.persons_ministers || 'N/A'}</div>
+                        <div class="news-meta-item"><strong>Officers:</strong> ${item.officers || 'N/A'}</div>
+                        <div class="news-meta-item"><strong>States/Countries:</strong> ${item.countries_states || 'N/A'}</div>
+                        <div class="news-meta-item"><strong>Mission/Scheme:</strong> ${item.mission || 'N/A'}</div>
+                    </div>
+                    <div class="news-section"><strong>Exam Relevance:</strong> ${item.reason || ''}</div>
+                    <div class="news-section"><strong>Conclusion/Key Takeaway:</strong> ${item.conclusion || ''}</div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function renderQuiz(quizList) {
+            const container = document.getElementById('quiz-container');
+            container.innerHTML = '';
+
+            if (!quizList || quizList.length === 0) {
+                container.innerHTML = '<div class="status-msg">No quizzes available for today.</div>';
+                return;
+            }
+
+            quizList.forEach((quiz, index) => {
+                const card = document.createElement('div');
+                card.className = 'quiz-card';
+
+                let optionsHtml = '';
+                quiz.options.forEach((opt, optIdx) => {
+                    optionsHtml += `<button class="quiz-option" onclick="checkAnswer(this, ${optIdx}, ${quiz.answer})">${opt}</button>`;
+                });
+
+                card.innerHTML = `
+                    <div class="quiz-question">${index + 1}. ${quiz.question}</div>
+                    <div class="quiz-options">${optionsHtml}</div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function checkAnswer(btn, selectedIdx, correctIdx) {
+            const parent = btn.parentElement;
+            const buttons = parent.querySelectorAll('.quiz-option');
+            buttons.forEach(b => b.disabled = true);
+
+            if (selectedIdx === correctIdx) {
+                btn.classList.add('correct');
+            } else {
+                btn.classList.add('incorrect');
+                buttons[correctIdx].classList.add('correct');
+            }
+        }
+
+        function showError(message) {
+            document.getElementById('news-container').innerHTML = `<div class="status-msg">${message}</div>`;
+            document.getElementById('quiz-container').innerHTML = `<div class="status-msg">${message}</div>`;
+        }
+
+        // Initialize on load
+        document.addEventListener('DOMContentLoaded', loadAppData);
+    </script>
 </body>
 </html>
