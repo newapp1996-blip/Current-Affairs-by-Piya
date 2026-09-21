@@ -1,9 +1,9 @@
 import os
 import json
 import re
+import urllib.request
+import urllib.error
 import feedparser
-from google import genai
-from google.genai import types
 
 FEEDS = {
     "National": "https://www.thehindu.com/news/national/feeder/default.rss",
@@ -14,12 +14,16 @@ FEEDS = {
 
 def fetch_rss_headlines():
     headlines = []
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
+    
     for category, url in FEEDS.items():
         try:
-            parsed = feedparser.parse(url)
-            for entry in parsed.entries[:4]:
-                summary = getattr(entry, 'summary', '')
-                headlines.append(f"[{category}] {entry.title}: {summary}")
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=10) as response:
+                parsed = feedparser.parse(response.read())
+                for entry in parsed.entries[:4]:
+                    summary = getattr(entry, 'summary', '')
+                    headlines.append(f"[{category}] {entry.title}: {summary}")
         except Exception as e:
             print(f"Warning: RSS feed issue for {category}: {e}")
     
@@ -32,10 +36,9 @@ def fetch_rss_headlines():
 def generate_affairs_and_quiz(news_text):
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
+        print("ERROR: GEMINI_API_KEY environment variable is missing or empty!")
         raise ValueError("GEMINI_API_KEY secret is missing in GitHub Repository Settings -> Secrets and variables -> Actions!")
 
-    client = genai.Client(api_key=api_key)
-    
     prompt = f"""
 You are an expert exam strategist for Indian competitive exams (UPSC, SSC, Banking, State PCS).
 Analyze these news items:
@@ -48,7 +51,7 @@ Task:
    - id (integer 1 to 12)
    - category (e.g. Defence, Schemes, International, National, Economy, Science & Tech)
    - title (Headline)
-   - image_url (A stock photo placeholder URL from Unsplash e.g. "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800")
+   - image_url (A stock photo URL from Unsplash e.g. "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800")
    - date (Important date / period e.g. September 2026)
    - place (Location / City / Region / State involved)
    - persons_ministers (Ministers / VIPs / Officials involved)
@@ -88,31 +91,55 @@ Return ONLY a single valid JSON object following this exact structure:
 }}
 """
 
-    models_to_try = ["gemini-3.0-flash", "gemini-2.5-flash"]
-    
-    for model_name in models_to_try:
+    payload = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {
+            "responseMimeType": "application/json"
+        }
+    }
+
+    # Order of endpoints to try: v1beta gemini-2.5-flash, v1beta gemini-1.5-flash, v1 gemini-1.5-flash
+    endpoints = [
+        ("v1beta", "gemini-2.5-flash"),
+        ("v1beta", "gemini-1.5-flash"),
+        ("v1", "gemini-1.5-flash"),
+        ("v1beta", "gemini-2.0-flash")
+    ]
+
+    last_error = None
+
+    for api_version, model in endpoints:
+        url = f"https://generativelanguage.googleapis.com/{api_version}/models/{model}:generateContent?key={api_key}"
+        print(f"Trying endpoint: {api_version} with model: {model}...")
+
+        req = urllib.request.Request(
+            url,
+            data=json.dumps(payload).encode("utf-8"),
+            headers={"Content-Type": "application/json"}
+        )
+
         try:
-            print(f"Trying Gemini model: {model_name}...")
-            response = client.models.generate_content(
-                model=model_name,
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    response_mime_type="application/json",
-                    max_output_tokens=8192
-                )
-            )
-            text_content = response.text.strip()
-            
-            match = re.search(r'\{.*\}', text_content, re.DOTALL)
-            if match:
-                text_content = match.group(0)
+            with urllib.request.urlopen(req, timeout=120) as response:
+                result = json.loads(response.read().decode("utf-8"))
+                text_content = result["candidates"][0]["content"]["parts"][0]["text"].strip()
 
-            return json.loads(text_content)
+                match = re.search(r'\{.*\}', text_content, re.DOTALL)
+                if match:
+                    text_content = match.group(0)
+
+                data = json.loads(text_content)
+                print(f"Successfully generated current affairs using {model} ({api_version})!")
+                return data
+
+        except urllib.error.HTTPError as e:
+            err_msg = e.read().decode("utf-8")
+            print(f"Endpoint {api_version}/{model} failed with HTTP {e.code}: {err_msg}")
+            last_error = f"HTTP {e.code}: {err_msg}"
         except Exception as e:
-            print(f"Model {model_name} failed: {e}")
-            continue
+            print(f"Endpoint {api_version}/{model} failed with error: {e}")
+            last_error = str(e)
 
-    raise RuntimeError("All attempted Gemini models failed. Check API key or quota.")
+    raise RuntimeError(f"All Gemini API endpoints failed. Last error: {last_error}")
 
 def update_index_html(data):
     if not os.path.exists("index.html"):
