@@ -8,10 +8,10 @@ import feedparser
 from google import genai
 from google.genai import types
 
-# Current execution date
+# Get today's execution date
 TODAY_DATE = datetime.now().strftime("%Y-%m-%d")
 
-# Live RSS feeds
+# Live news RSS feeds
 FEEDS = {
     "National": "https://www.thehindu.com/news/national/feeder/default.rss",
     "International": "https://www.thehindu.com/news/international/feeder/default.rss",
@@ -43,18 +43,32 @@ def generate_affairs_and_quiz(news_text):
     if not GEMINI_API_KEY:
         raise RuntimeError("GEMINI_API_KEY environment variable is not set in GitHub Secrets.")
 
-    client = genai.Client(api_key=GEMINI_API_KEY)
+    # Explicitly enforce stable v1 endpoint to prevent v1beta 404 path issues
+    client = genai.Client(
+        api_key=GEMINI_API_KEY,
+        http_options=types.HttpOptions(api_version="v1")
+    )
     
-    available_models = []
+    # Priority list of models
+    available_models = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
+    
     try:
+        listed_models = []
         for m in client.models.list():
-            if hasattr(m, 'supported_generation_methods') and 'generateContent' in m.supported_generation_methods:
-                available_models.append(m.name.replace("models/", ""))
+            model_id = getattr(m, 'name', '').replace("models/", "")
+            if model_id:
+                listed_models.append(model_id)
+        if listed_models:
+            # Put preferred models at top if present in user's key capability
+            for pref in reversed(["gemini-2.5-flash", "gemini-2.0-flash"]):
+                if pref in listed_models:
+                    listed_models.remove(pref)
+                    listed_models.insert(0, pref)
+            available_models = listed_models
     except Exception as e:
-        print(f"Could not list models: {e}")
+        print(f"Could not dynamically list models: {e}")
 
-    if not available_models:
-        available_models = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
+    print(f"Candidate API models: {available_models}")
 
     prompt = f"""
 You are an expert competitive exam strategist for UPSC, SSC CGL, Banking, and State PCS.
@@ -123,7 +137,7 @@ Return ONLY a single valid JSON object formatted as:
 
             if response and response.text:
                 data = json.loads(response.text.strip())
-                if "news" in data and len(data["news"]) == 15 and len(data["quizzes"]) == 15:
+                if "news" in data and len(data["news"]) >= 10 and len(data["quizzes"]) >= 10:
                     data["date"] = TODAY_DATE
                     return data
         except Exception as e:
