@@ -1,10 +1,12 @@
 import os
 import json
 import re
+import time
 from datetime import datetime
 import feedparser
 from google import genai
 from google.genai import types
+from google.genai.errors import APIError
 
 # Set up Gemini Client
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
@@ -85,16 +87,27 @@ def generate_daily_content(raw_articles):
     }}
     """
 
-    response = client.models.generate_content(
-        model='gemini-3.6-flash',
-        contents=prompt,
-        config=types.GenerateContentConfig(
-            response_mime_type="application/json",
-            temperature=0.3
-        )
-    )
-
-    return json.loads(response.text)
+    # Try supported models with retry and exponential backoff
+    candidate_models = ['gemini-2.5-flash', 'gemini-1.5-flash']
+    
+    for model_name in candidate_models:
+        for attempt in range(3):
+            try:
+                print(f"Attempting content generation with {model_name} (Attempt {attempt + 1})...")
+                response = client.models.generate_content(
+                    model=model_name,
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
+                        response_mime_type="application/json",
+                        temperature=0.3
+                    )
+                )
+                return json.loads(response.text)
+            except Exception as e:
+                print(f"Warning: Attempt {attempt + 1} with {model_name} failed: {e}")
+                time.sleep(5 * (attempt + 1))  # Wait 5s, 10s before retrying
+                
+    raise RuntimeError("Failed to generate daily content across all candidate models and retries.")
 
 def main():
     raw_news = fetch_rss_feeds()
