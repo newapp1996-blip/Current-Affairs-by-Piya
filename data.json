@@ -1,45 +1,44 @@
 {
-  "date": "2026-09-22",
-  "news": [
-    {
-      "id": 1,
-      "category": "National",
-      "headline": "...",
-      "story_lead": "...",
-      "bullet_points": [],
-      "full_article_text": "...",
-      "key_locations": [],
-      "important_dates": [],
-      "key_facts": [],
-      "exam_relevance": "...",
-      "takeaway": "...",
-      "source_name": "...",
-      "source_url": "...",
-      "image_url": "..."
-    },
-    {
-      "id": 2,
-      "category": "International",
-      "headline": "...",
-      "story_lead": "...",
-      "bullet_points": [],
-      "full_article_text": "...",
-      "key_locations": [],
-      "important_dates": [],
-      "key_facts": [],
-      "exam_relevance": "...",
-      "takeaway": "...",
-      "source_name": "...",
-      "source_url": "...",
-      "image_url": "..."
-    }
-
-    // ... continue until ID 15
+  "current_date": "2026-09-22",
+  "available_dates": [
+    "2026-09-22"
   ],
+  "today": {
+    "date": "2026-09-22",
+    "news": [
+      {
+        "id": 1,
+        "category": "National",
+        "headline": "Actual current-affairs headline",
+        "story_lead": "A concise summary of exactly this news event.",
+        "bullet_points": [
+          "What happened",
+          "Where it happened",
+          "Who or which institution is involved",
+          "Why it matters"
+        ],
+        "full_article_text": "A complete, factual explanation of this specific news event.",
+        "key_locations": [
+          "Relevant location"
+        ],
+        "important_dates": [
+          "2026-09-22"
+        ],
+        "key_facts": [
+          "Important factual detail"
+        ],
+        "exam_relevance": "Relevant exam concepts.",
+        "takeaway": "One concise revision takeaway.",
+        "source_name": "Indian Express",
+        "source_url": "ACTUAL ARTICLE URL",
+        "image_url": "ACTUAL IMAGE URL"
+      }
+    ]
+  },
   "motivation": {
-    "english": "...",
-    "hindi": "...",
-    "author": "...",
-    "image_url": "..."
+    "english": "Success is the sum of small efforts, repeated day in and day out.",
+    "hindi": "सफलता छोटे-छोटे प्रयासों का परिणाम है।",
+    "author": "Robert Collier",
+    "image_url": "ACTUAL IMAGE URL"
   }
 }
