@@ -6,49 +6,30 @@
 
   <title>AURA EXAM AI - Daily Current Affairs & Quiz</title>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto+Condensed:wght@700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
 
-  <!-- =========================================================
-       GOOGLE TRANSLATE
-       English is now explicitly included.
-       ========================================================= -->
   <script type="text/javascript">
     function googleTranslateElementInit() {
-      new google.translate.TranslateElement(
-        {
-          pageLanguage: "en",
-          includedLanguages: "en,hi,pa,bn,ta,te,mr,gu,kn,ml,ur",
-          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: false
-        },
-        "google_translate_element"
-      );
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,pa,bn,ta,te,mr,gu,kn,ml,ur',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
     }
   </script>
 
   <script
     type="text/javascript"
-    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-  ></script>
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+  </script>
 
   <style>
     :root {
-      --bg-gradient: linear-gradient(
-        135deg,
-        #0f172a 0%,
-        #1e1b4b 50%,
-        #311042 100%
-      );
-
-      --card-bg: rgba(255, 255, 255, 0.97);
+      --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+      --card-bg: rgba(255,255,255,0.97);
       --primary-red: #e11d48;
       --accent-blue: #0284c7;
-      --accent-cyan: #38bdf8;
       --text-dark: #0f172a;
-      --muted: #64748b;
     }
 
     * {
@@ -57,33 +38,22 @@
       padding: 0;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
       background: var(--bg-gradient);
       min-height: 100vh;
       color: #f8fafc;
       padding-bottom: 50px;
     }
 
-    button,
-    select {
-      font-family: inherit;
-    }
-
-    /* =========================================================
-       HEADER
-       ========================================================= */
+    /* ================= HEADER ================= */
 
     header {
       text-align: center;
-      padding: 15px 15px 12px;
-      background: rgba(15, 23, 42, 0.94);
+      padding: 15px;
+      background: rgba(15,23,42,0.94);
       backdrop-filter: blur(12px);
-      border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 2px solid rgba(255,255,255,0.1);
       position: sticky;
       top: 0;
       z-index: 100;
@@ -98,102 +68,48 @@
       gap: 15px;
     }
 
-    /* =========================================================
-       ATTRACTIVE DIGITAL CLOCK
-       ========================================================= */
-
     .live-clock-box {
       justify-self: start;
-      min-width: 155px;
-      padding: 9px 14px;
-      border-radius: 16px;
+      background: linear-gradient(
+        135deg,
+        rgba(56,189,248,0.15),
+        rgba(99,102,241,0.18)
+      );
 
-      background:
-        linear-gradient(
-          135deg,
-          rgba(56, 189, 248, 0.15),
-          rgba(59, 130, 246, 0.05)
-        );
+      padding: 8px 15px;
+      border-radius: 14px;
 
-      border: 1px solid rgba(56, 189, 248, 0.4);
-
-      box-shadow:
-        0 0 20px rgba(56, 189, 248, 0.12),
-        inset 0 0 15px rgba(255, 255, 255, 0.03);
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 800;
 
       color: #7dd3fc;
-    }
 
-    .clock-time {
-      font-family: "Roboto Condensed", sans-serif;
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      line-height: 1;
-    }
+      border: 1px solid rgba(56,189,248,0.35);
 
-    .clock-date {
-      margin-top: 4px;
-      font-size: 0.66rem;
-      color: #cbd5e1;
-      font-weight: 600;
-    }
-
-    .clock-status {
       display: flex;
       align-items: center;
-      gap: 5px;
-      margin-top: 4px;
-      font-size: 0.6rem;
-      color: #86efac;
-      text-transform: uppercase;
-      letter-spacing: 0.7px;
+      gap: 7px;
+
+      box-shadow:
+        0 0 15px rgba(56,189,248,0.08),
+        inset 0 0 10px rgba(255,255,255,0.03);
     }
 
-    .clock-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: #22c55e;
-      box-shadow: 0 0 8px #22c55e;
-      animation: pulseClock 1.5s infinite;
-    }
-
-    @keyframes pulseClock {
-      0%,
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-
-      50% {
-        opacity: 0.45;
-        transform: scale(0.75);
-      }
+    #liveClock {
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.5px;
     }
 
     h1.brand {
-      font-size: 2.2rem;
+      font-size: 2.15rem;
       font-weight: 800;
       letter-spacing: 1px;
 
-      background: linear-gradient(
-        90deg,
-        #38bdf8,
-        #818cf8,
-        #f43f5e
-      );
-
+      background: linear-gradient(90deg,#38bdf8,#f43f5e);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
 
       text-transform: uppercase;
-      margin: 0 auto;
     }
 
     .header-actions {
@@ -201,10 +117,6 @@
       display: flex;
       align-items: center;
       gap: 10px;
-    }
-
-    #google_translate_element {
-      min-height: 32px;
     }
 
     #google_translate_element select {
@@ -222,25 +134,23 @@
       background: #10b981;
       color: #fff;
       border: none;
+
       padding: 7px 14px;
       border-radius: 20px;
+
       font-size: 0.85rem;
       font-weight: 700;
+
       cursor: pointer;
+
       display: flex;
       align-items: center;
       gap: 6px;
-      transition: 0.2s;
     }
 
     .btn-share-app:hover {
       background: #059669;
-      transform: translateY(-1px);
     }
-
-    /* =========================================================
-       YOUTUBE
-       ========================================================= */
 
     .yt-banner {
       display: inline-flex;
@@ -253,20 +163,14 @@
 
       background: #ff0000;
       color: #fff;
+
       text-decoration: none;
       border-radius: 30px;
 
       font-weight: 700;
       font-size: 0.92rem;
 
-      box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
-
-      transition: 0.2s;
-    }
-
-    .yt-banner:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(255, 0, 0, 0.6);
+      box-shadow: 0 4px 15px rgba(255,0,0,0.4);
     }
 
     .yt-icon {
@@ -275,125 +179,127 @@
       fill: currentColor;
     }
 
-    /* =========================================================
-       MAIN GRID
-       ========================================================= */
+    /* ================= PAGE ================= */
 
     .page-layout {
       display: grid;
-      grid-template-columns: 240px minmax(0, 1fr) 240px;
+      grid-template-columns: 240px 1fr 240px;
+
       gap: 20px;
 
       max-width: 1550px;
+
       margin: 20px auto 0;
+
       padding: 0 15px;
     }
 
-    @media (max-width: 1200px) {
+    @media(max-width:1200px) {
       .page-layout {
         grid-template-columns: 1fr;
       }
 
       .side-banner {
-        display: none;
+        display:none;
       }
     }
 
-    /* =========================================================
-       MOTIVATIONAL SIDEBARS
-       ========================================================= */
+    /* ================= MOTIVATION ================= */
 
     .side-banner {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255,255,255,0.05);
+
+      border: 1px solid rgba(255,255,255,0.1);
+
       border-radius: 16px;
 
-      padding: 15px;
+      padding: 18px 15px;
+
       height: fit-content;
 
       position: sticky;
-      top: 145px;
+      top: 140px;
 
       display: flex;
       flex-direction: column;
+
       gap: 15px;
     }
 
     .banner-title {
       font-size: 1rem;
       font-weight: 800;
+
       text-transform: uppercase;
       letter-spacing: 1px;
 
       color: #38bdf8;
 
-      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+
       padding-bottom: 8px;
 
       text-align: center;
     }
 
     .quote-card {
-      background: rgba(15, 23, 42, 0.75);
+      background: rgba(15,23,42,0.65);
+
       border-left: 3px solid var(--primary-red);
 
       padding: 10px;
+
       border-radius: 0 10px 10px 0;
 
-      font-size: 0.83rem;
-      line-height: 1.45;
+      font-size: 0.86rem;
+
+      line-height: 1.5;
 
       color: #cbd5e1;
-
-      overflow: hidden;
     }
 
-    .quote-card.hi {
-      border-left-color: #f59e0b;
-    }
-
-    .quote-image {
+    .quote-card img {
       width: 100%;
-      height: 105px;
+      height: 120px;
 
       object-fit: cover;
 
       border-radius: 8px;
+
       margin-bottom: 8px;
-
-      display: block;
-    }
-
-    .quote-text {
-      font-weight: 500;
     }
 
     .quote-author {
       display: block;
-      margin-top: 6px;
 
-      font-size: 0.72rem;
+      margin-top: 7px;
+
+      font-size: 0.76rem;
+
       color: #94a3b8;
 
-      text-align: right;
+      font-weight: 700;
     }
 
-    /* =========================================================
-       CONTROLS
-       ========================================================= */
+    /* ================= CONTROLS ================= */
 
     .controls-bar {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+
       margin-bottom: 15px;
+
+      gap: 10px;
     }
 
     .top-controls {
       display: flex;
-      justify-content: space-between;
+
       align-items: center;
-      gap: 12px;
+      justify-content: space-between;
+
+      gap: 10px;
+
       flex-wrap: wrap;
     }
 
@@ -404,241 +310,183 @@
 
     .tab-btn {
       padding: 9px 18px;
+
       border: none;
+
       border-radius: 20px;
 
-      background: rgba(255, 255, 255, 0.15);
+      background: rgba(255,255,255,0.15);
+
       color: #fff;
 
       font-weight: 600;
-      cursor: pointer;
 
-      transition: 0.3s;
+      cursor: pointer;
     }
 
     .tab-btn.active {
       background: var(--accent-blue);
-      box-shadow: 0 0 15px rgba(2, 132, 199, 0.5);
+
+      box-shadow: 0 0 15px rgba(2,132,199,0.5);
     }
 
-    /* =========================================================
-       COMPACT CALENDAR
-       ========================================================= */
+    /* ================= COMPACT DATE STRIP ================= */
 
-    .calendar-wrapper {
+    .date-strip-wrapper {
       width: 100%;
-      background: rgba(255, 255, 255, 0.08);
 
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255,255,255,0.07);
+
+      border: 1px solid rgba(255,255,255,0.1);
+
       border-radius: 14px;
 
-      padding: 9px;
+      padding: 7px;
+
+      overflow-x: auto;
     }
 
-    .calendar-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      margin-bottom: 7px;
-      padding: 0 4px;
-    }
-
-    .calendar-title {
-      font-size: 0.78rem;
-      font-weight: 700;
-      color: #cbd5e1;
-    }
-
-    .calendar-month {
-      font-size: 0.78rem;
-      font-weight: 700;
-      color: #7dd3fc;
-    }
-
-    .week-calendar {
+    .date-strip {
       display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      gap: 5px;
+
+      grid-template-columns: repeat(7,minmax(75px,1fr));
+
+      gap: 6px;
+
+      min-width: 540px;
     }
 
-    .day-cell {
-      min-width: 0;
-      padding: 6px 3px;
+    .date-btn {
+      border: 1px solid rgba(255,255,255,0.12);
 
-      border: 1px solid transparent;
-      border-radius: 9px;
+      background: rgba(15,23,42,0.65);
 
-      background: rgba(255, 255, 255, 0.06);
       color: #cbd5e1;
+
+      border-radius: 10px;
+
+      padding: 7px 4px;
+
+      cursor: pointer;
 
       text-align: center;
-      cursor: pointer;
 
       transition: 0.2s;
     }
 
-    .day-cell:hover {
-      background: rgba(56, 189, 248, 0.15);
-      border-color: rgba(56, 189, 248, 0.4);
-    }
-
-    .day-cell.active {
-      background: var(--accent-blue);
-      color: #fff;
-      box-shadow: 0 3px 12px rgba(2, 132, 199, 0.4);
-    }
-
-    .day-cell.today {
+    .date-btn:hover {
       border-color: #38bdf8;
     }
 
-    .day-name {
-      display: block;
-      font-size: 0.58rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      margin-bottom: 2px;
+    .date-btn.active {
+      background: var(--accent-blue);
+
+      color: #fff;
+
+      border-color: #38bdf8;
+
+      box-shadow: 0 0 12px rgba(56,189,248,0.25);
     }
 
-    .day-number {
+    .date-day {
       display: block;
-      font-size: 0.9rem;
+
+      font-size: 0.68rem;
+
+      font-weight: 700;
+
+      text-transform: uppercase;
+    }
+
+    .date-number {
+      display: block;
+
+      font-size: 1rem;
+
       font-weight: 800;
     }
 
-    .day-status {
+    .date-month {
       display: block;
-      font-size: 0.48rem;
-      margin-top: 1px;
-      color: #86efac;
+
+      font-size: 0.62rem;
+
+      opacity: 0.8;
     }
 
-    .day-cell.active .day-status {
-      color: #fff;
-    }
-
-    .calendar-nav {
-      display: flex;
-      justify-content: center;
-      gap: 6px;
-      margin-top: 7px;
-    }
-
-    .calendar-nav button {
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      background: rgba(255, 255, 255, 0.08);
-      color: #fff;
-
-      width: 27px;
-      height: 25px;
-
-      border-radius: 7px;
-      cursor: pointer;
-      font-weight: 700;
-    }
-
-    .calendar-nav button:hover {
-      background: var(--accent-blue);
-    }
-
-    /* =========================================================
-       STATUS / LOADING
-       ========================================================= */
-
-    .data-status {
-      display: none;
-
-      padding: 16px;
-      margin-bottom: 15px;
-
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-
-      border-radius: 12px;
-
-      color: #cbd5e1;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-
-    .data-status.error {
-      display: block;
-      border-color: rgba(244, 63, 94, 0.5);
-      color: #fecdd3;
-    }
-
-    .data-status.loading {
-      display: block;
-    }
-
-    /* =========================================================
-       NEWS
-       ========================================================= */
+    /* ================= NEWS ================= */
 
     .news-grid {
       display: flex;
+
       flex-direction: column;
+
       gap: 25px;
     }
 
     .info-card {
       background: var(--card-bg);
+
       color: var(--text-dark);
 
       border-radius: 16px;
+
       overflow: hidden;
 
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 
       border-top: 5px solid var(--primary-red);
-
-      display: flex;
-      flex-direction: column;
     }
 
     .card-header {
       background: #1e293b;
+
       color: #fff;
 
-      padding: 12px 20px;
+      padding: 11px 18px;
 
       display: flex;
+
       align-items: center;
+
       justify-content: space-between;
-      gap: 10px;
     }
 
     .badge-cat {
       background: var(--primary-red);
 
-      font-family: "Roboto Condensed", sans-serif;
+      font-family: 'Roboto Condensed',sans-serif;
 
       text-transform: uppercase;
-      font-size: 0.85rem;
 
-      padding: 4px 10px;
+      font-size: 0.8rem;
+
+      padding: 4px 9px;
+
       border-radius: 4px;
 
       letter-spacing: 1px;
+
       font-weight: 700;
     }
 
     .card-id {
       font-weight: 700;
+
       color: #94a3b8;
-      font-size: 0.82rem;
     }
 
     .card-body {
       padding: 20px;
 
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 300px;
+
+      grid-template-columns: 1fr 300px;
+
       gap: 20px;
     }
 
-    @media (max-width: 768px) {
+    @media(max-width:768px) {
       .card-body {
         grid-template-columns: 1fr;
       }
@@ -646,43 +494,41 @@
 
     .card-headline-link {
       text-decoration: none;
+
       color: #0f172a;
+
       display: block;
     }
 
     .card-headline {
       font-size: 1.35rem;
+
       font-weight: 800;
+
       line-height: 1.35;
+
       margin-bottom: 12px;
 
-      transition: color 0.2s;
       cursor: pointer;
     }
 
-    .card-headline-link:hover .card-headline {
+    .card-headline:hover {
       color: var(--accent-blue);
     }
 
     .story-lead {
       font-size: 0.98rem;
+
       color: #334155;
+
       line-height: 1.6;
+
       margin-bottom: 12px;
-    }
-
-    .story-lead b,
-    .bullet-list b {
-      color: #9f1239;
-      font-weight: 700;
-      background: rgba(244, 63, 94, 0.1);
-
-      padding: 0 3px;
-      border-radius: 2px;
     }
 
     .bullet-list {
       list-style: none;
+
       margin-bottom: 15px;
     }
 
@@ -692,9 +538,11 @@
       padding-left: 20px;
 
       font-size: 0.92rem;
+
       color: #475569;
 
       margin-bottom: 6px;
+
       line-height: 1.5;
     }
 
@@ -702,46 +550,39 @@
       content: "•";
 
       color: var(--primary-red);
+
       font-size: 1.4rem;
 
       position: absolute;
+
       left: 0;
+
       top: -3px;
     }
 
-    /* =========================================================
-       ENTITY CHIPS
-       ========================================================= */
-
     .entity-tag {
       display: inline-flex;
+
       align-items: center;
 
       background: #e0f2fe;
+
       color: #0369a1;
 
       border: 1px solid #7dd3fc;
 
       padding: 2px 8px;
+
       border-radius: 12px;
 
       font-size: 0.82rem;
+
       font-weight: 700;
 
       cursor: pointer;
+
       margin: 2px 4px 2px 0;
-
-      transition: 0.2s;
     }
-
-    .entity-tag:hover {
-      background: #0284c7;
-      color: #fff;
-    }
-
-    /* =========================================================
-       EXAM BOX
-       ========================================================= */
 
     .exam-box {
       background: #f1f5f9;
@@ -753,6 +594,7 @@
       border-radius: 0 8px 8px 0;
 
       font-size: 0.88rem;
+
       color: #1e293b;
 
       margin-bottom: 15px;
@@ -762,107 +604,85 @@
       color: var(--accent-blue);
     }
 
-    /* =========================================================
-       CARD BUTTONS
-       ========================================================= */
-
     .card-footer-actions {
       display: flex;
+
       justify-content: space-between;
+
       align-items: center;
 
       margin-top: 10px;
-      gap: 10px;
+
+      gap: 8px;
 
       flex-wrap: wrap;
     }
 
-    .btn-read-more {
-      background: var(--accent-blue);
-      color: #fff;
+    .btn-read-more,
+    .btn-official-source,
+    .btn-share-item {
+      padding: 8px 13px;
 
-      padding: 8px 16px;
       border-radius: 8px;
 
       font-weight: 700;
-      font-size: 0.85rem;
 
-      border: none;
+      font-size: 0.82rem;
+
       cursor: pointer;
 
-      transition: background 0.2s;
+      border: none;
+
+      text-decoration: none;
+
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 5px;
     }
 
-    .btn-read-more:hover {
-      background: #0369a1;
+    .btn-read-more {
+      background: var(--accent-blue);
+
+      color: #fff;
     }
 
     .btn-official-source {
       background: #475569;
+
       color: #fff;
-
-      padding: 8px 14px;
-      border-radius: 8px;
-
-      text-decoration: none;
-
-      font-weight: 700;
-      font-size: 0.82rem;
-
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .btn-official-source:hover {
-      background: #334155;
     }
 
     .btn-share-item {
       background: #25d366;
+
       color: #fff;
-
-      border: none;
-
-      padding: 8px 16px;
-      border-radius: 8px;
-
-      font-weight: 700;
-      font-size: 0.85rem;
-
-      cursor: pointer;
-
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .btn-share-item:hover {
-      background: #1da851;
     }
 
     .card-img-container {
       width: 100%;
+
       height: 220px;
 
       border-radius: 12px;
+
       overflow: hidden;
 
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 
       background: #e2e8f0;
     }
 
     .card-img-container img {
       width: 100%;
+
       height: 100%;
+
       object-fit: cover;
-      display: block;
     }
 
-    /* =========================================================
-       QUIZ
-       ========================================================= */
+    /* ================= QUIZ ================= */
 
     .quiz-section {
       display: none;
@@ -870,27 +690,31 @@
 
     .quiz-card {
       background: var(--card-bg);
+
       color: var(--text-dark);
 
       border-radius: 16px;
 
       padding: 20px;
+
       margin-bottom: 20px;
 
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
 
     .quiz-q {
       font-size: 1.1rem;
+
       font-weight: 700;
 
       margin-bottom: 15px;
-      color: #0f172a;
     }
 
     .quiz-options {
       display: flex;
+
       flex-direction: column;
+
       gap: 10px;
     }
 
@@ -900,46 +724,40 @@
       padding: 12px 16px;
 
       border: 2px solid #e2e8f0;
+
       border-radius: 10px;
 
       background: #fff;
 
       font-weight: 600;
+
       cursor: pointer;
-
-      transition: 0.2s;
-    }
-
-    .opt-btn:hover {
-      border-color: var(--accent-blue);
-      background: #f0f9ff;
     }
 
     .opt-btn.correct {
       background: #dcfce7 !important;
+
       border-color: #16a34a !important;
+
       color: #15803d;
     }
 
     .opt-btn.wrong {
       background: #ffe4e6 !important;
+
       border-color: #e11d48 !important;
+
       color: #be123c;
     }
 
-    /* =========================================================
-       MODALS
-       ========================================================= */
+    /* ================= MODAL ================= */
 
     .modal-overlay {
       position: fixed;
 
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      inset: 0;
 
-      background: rgba(15, 23, 42, 0.85);
+      background: rgba(15,23,42,0.88);
 
       backdrop-filter: blur(8px);
 
@@ -948,6 +766,7 @@
       display: none;
 
       justify-content: center;
+
       align-items: center;
 
       padding: 20px;
@@ -955,9 +774,11 @@
 
     .modal-content {
       background: #fff;
+
       color: var(--text-dark);
 
       max-width: 850px;
+
       width: 100%;
 
       max-height: 90vh;
@@ -970,5 +791,1900 @@
 
       position: relative;
 
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-   
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+    }
+
+    .close-modal {
+      position: absolute;
+
+      top: 12px;
+
+      right: 20px;
+
+      font-size: 1.8rem;
+
+      font-weight: 800;
+
+      cursor: pointer;
+
+      color: #64748b;
+
+      z-index: 5;
+    }
+
+    .profile-header {
+      display: flex;
+
+      align-items: center;
+
+      gap: 15px;
+
+      border-bottom: 2px solid #e2e8f0;
+
+      padding-bottom: 12px;
+
+      margin-bottom: 15px;
+    }
+
+    .profile-avatar {
+      width: 60px;
+
+      height: 60px;
+
+      background: #0284c7;
+
+      color: #fff;
+
+      border-radius: 50%;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      font-size: 1.5rem;
+
+      font-weight: 800;
+    }
+
+    .profile-title h3 {
+      font-size: 1.2rem;
+
+      font-weight: 800;
+    }
+
+    .profile-title p {
+      font-size: 0.88rem;
+
+      color: #0284c7;
+
+      font-weight: 700;
+    }
+
+    /* ================= LOADING ================= */
+
+    .loading-box {
+      background: rgba(255,255,255,0.08);
+
+      border: 1px solid rgba(255,255,255,0.1);
+
+      border-radius: 14px;
+
+      padding: 35px;
+
+      text-align: center;
+
+      color: #cbd5e1;
+
+      font-weight: 600;
+    }
+
+    .error-box {
+      background: rgba(244,63,94,0.12);
+
+      border: 1px solid rgba(244,63,94,0.3);
+
+      border-radius: 14px;
+
+      padding: 25px;
+
+      text-align: center;
+
+      color: #fecdd3;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="header-top">
+
+    <div class="live-clock-box">
+      <span>⏰</span>
+      <span id="liveClock">00:00:00</span>
+    </div>
+
+    <h1 class="brand">AURA EXAM AI</h1>
+
+    <div class="header-actions">
+
+      <div id="google_translate_element"></div>
+
+      <button class="btn-share-app" onclick="shareApp()">
+        🔗 Share App
+      </button>
+
+    </div>
+
+  </div>
+
+  <a
+    href="https://youtube.com/@zeroratta?si=dhJFjE1eOYCuIoGv"
+    target="_blank"
+    rel="noopener"
+    class="yt-banner"
+  >
+    <svg class="yt-icon" viewBox="0 0 24 24">
+      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505-.505 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+    </svg>
+
+    Subscribe on YouTube: Zerro Ratta
+  </a>
+
+</header>
+
+
+<div class="page-layout">
+
+  <!-- LEFT MOTIVATION -->
+
+  <aside class="side-banner">
+
+    <div class="banner-title">
+      ⚡ Daily Motivation
+    </div>
+
+    <div id="motivationEnglish">
+      <div class="quote-card">
+        Loading today's motivation...
+      </div>
+    </div>
+
+  </aside>
+
+
+  <!-- MAIN -->
+
+  <main>
+
+    <div class="controls-bar">
+
+      <div class="top-controls">
+
+        <div class="nav-tabs">
+
+          <button
+            class="tab-btn active"
+            id="btnNews"
+            onclick="switchTab('news')"
+          >
+            Daily News
+          </button>
+
+          <button
+            class="tab-btn"
+            id="btnQuiz"
+            onclick="switchTab('quiz')"
+          >
+            Daily Quiz
+          </button>
+
+        </div>
+
+        <div
+          id="selectedDateLabel"
+          style="
+            font-size:0.82rem;
+            color:#cbd5e1;
+            font-weight:600;
+          "
+        >
+        </div>
+
+      </div>
+
+
+      <!-- COMPACT WEEK STRIP -->
+
+      <div class="date-strip-wrapper">
+
+        <div id="dateStrip" class="date-strip"></div>
+
+      </div>
+
+    </div>
+
+
+    <div id="newsSection" class="news-grid">
+
+      <div class="loading-box">
+        Loading today's current affairs...
+      </div>
+
+    </div>
+
+
+    <div id="quizSection" class="quiz-section"></div>
+
+  </main>
+
+
+  <!-- RIGHT MOTIVATION -->
+
+  <aside class="side-banner">
+
+    <div class="banner-title">
+      🔥 आज का सुविचार
+    </div>
+
+    <div id="motivationHindi">
+
+      <div class="quote-card">
+        आज का सुविचार लोड हो रहा है...
+      </div>
+
+    </div>
+
+  </aside>
+
+</div>
+
+
+<!-- ARTICLE MODAL -->
+
+<div class="modal-overlay" id="articleModal">
+
+  <div class="modal-content">
+
+    <span
+      class="close-modal"
+      onclick="closeModal('articleModal')"
+    >
+      &times;
+    </span>
+
+    <div id="modalContainer"></div>
+
+  </div>
+
+</div>
+
+
+<!-- PROFILE MODAL -->
+
+<div
+  class="modal-overlay"
+  id="profileModal"
+  style="z-index:1100;"
+>
+
+  <div
+    class="modal-content"
+    style="max-width:600px;"
+  >
+
+    <span
+      class="close-modal"
+      onclick="closeModal('profileModal')"
+    >
+      &times;
+    </span>
+
+    <div id="profileModalContainer"></div>
+
+  </div>
+
+</div>
+
+
+<script>
+
+  let globalPayload = null;
+  let currentData = null;
+
+
+  /* ================= CLOCK ================= */
+
+  function updateClock() {
+
+    const now = new Date();
+
+    const time = now.toLocaleTimeString(
+      'en-IN',
+      {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true
+      }
+    );
+
+    document.getElementById('liveClock').textContent = time;
+
+  }
+
+  setInterval(updateClock,1000);
+
+  updateClock();
+
+
+  /* ================= INITIAL LOAD ================= */
+
+  async function init() {
+
+    try {
+
+      const response = await fetch(
+        'data.json?cache=' + Date.now()
+      );
+
+      if(!response.ok) {
+        throw new Error(
+          `data.json HTTP ${response.status}`
+        );
+      }
+
+      globalPayload = await response.json();
+
+      if(!globalPayload) {
+        throw new Error('Empty data.json');
+      }
+
+
+      /*
+       * If Python generated today's data,
+       * use it immediately.
+       */
+
+      if(
+        globalPayload.today &&
+        Array.isArray(globalPayload.today.news)
+      ) {
+
+        currentData = globalPayload.today;
+
+        renderDateStrip();
+
+        renderAll();
+
+        return;
+
+      }
+
+
+      /*
+       * Otherwise use current_date
+       */
+
+      const currentDate =
+        globalPayload.current_date ||
+        getLocalDate();
+
+      renderDateStrip();
+
+      await loadDateData(currentDate);
+
+    }
+
+    catch(error) {
+
+      console.error(
+        'AURA INIT ERROR:',
+        error
+      );
+
+      showError(
+        'Today\'s news could not be loaded. Please run the Python update script and refresh the page.'
+      );
+
+    }
+
+  }
+
+
+  /* ================= DATE STRIP ================= */
+
+  function renderDateStrip() {
+
+    const strip =
+      document.getElementById('dateStrip');
+
+    strip.innerHTML = '';
+
+    let dates =
+      Array.isArray(globalPayload.available_dates)
+        ? [...globalPayload.available_dates]
+        : [];
+
+
+    /*
+     * Always include current date if Python
+     * has today's data.
+     */
+
+    if(
+      globalPayload.current_date &&
+      !dates.includes(globalPayload.current_date)
+    ) {
+
+      dates.push(
+        globalPayload.current_date
+      );
+
+    }
+
+
+    /*
+     * Sort newest first.
+     */
+
+    dates.sort(
+      (a,b) =>
+        new Date(b) - new Date(a)
+    );
+
+
+    /*
+     * Display the latest 7 dates.
+     */
+
+    dates =
+      dates.slice(0,7);
+
+
+    dates.forEach(date => {
+
+      const button =
+        document.createElement('button');
+
+      button.className =
+        'date-btn';
+
+      button.dataset.date =
+        date;
+
+      const d =
+        new Date(date + 'T00:00:00');
+
+      const weekday =
+        d.toLocaleDateString(
+          'en-IN',
+          {weekday:'short'}
+        );
+
+      const day =
+        d.toLocaleDateString(
+          'en-IN',
+          {day:'numeric'}
+        );
+
+      const month =
+        d.toLocaleDateString(
+          'en-IN',
+          {month:'short'}
+        );
+
+
+      button.innerHTML = `
+        <span class="date-day">
+          ${weekday}
+        </span>
+
+        <span class="date-number">
+          ${day}
+        </span>
+
+        <span class="date-month">
+          ${month}
+        </span>
+      `;
+
+
+      button.onclick =
+        () => loadDateData(date);
+
+
+      strip.appendChild(button);
+
+    });
+
+
+    /*
+     * If there are no archived dates,
+     * still show today's date.
+     */
+
+    if(!dates.length) {
+
+      const today =
+        globalPayload.current_date ||
+        getLocalDate();
+
+      const button =
+        document.createElement('button');
+
+      button.className =
+        'date-btn';
+
+      button.dataset.date =
+        today;
+
+      button.innerHTML = `
+        <span class="date-day">
+          ${new Date(today + 'T00:00:00')
+            .toLocaleDateString('en-IN',{weekday:'short'})}
+        </span>
+
+        <span class="date-number">
+          ${new Date(today + 'T00:00:00')
+            .getDate()}
+        </span>
+
+        <span class="date-month">
+          ${new Date(today + 'T00:00:00')
+            .toLocaleDateString('en-IN',{month:'short'})}
+        </span>
+      `;
+
+      button.onclick =
+        () => loadDateData(today);
+
+      strip.appendChild(button);
+
+    }
+
+  }
+
+
+  /* ================= LOAD DATE ================= */
+
+  async function loadDateData(selectedDate) {
+
+    try {
+
+      setActiveDate(selectedDate);
+
+
+      document.getElementById(
+        'selectedDateLabel'
+      ).textContent =
+        formatReadableDate(selectedDate);
+
+
+      /*
+       * IMPORTANT:
+       * Today's data comes directly from data.json.
+       */
+
+      if(
+        globalPayload.today &&
+        globalPayload.today.date === selectedDate
+      ) {
+
+        currentData =
+          globalPayload.today;
+
+      }
+
+      else {
+
+        const response =
+          await fetch(
+            `data/${selectedDate}.json?cache=${Date.now()}`
+          );
+
+
+        if(!response.ok) {
+
+          throw new Error(
+            `No data file found for ${selectedDate}`
+          );
+
+        }
+
+
+        currentData =
+          await response.json();
+
+      }
+
+
+      if(
+        !currentData ||
+        !Array.isArray(currentData.news)
+      ) {
+
+        throw new Error(
+          'News array missing from data'
+        );
+
+      }
+
+
+      renderAll();
+
+    }
+
+    catch(error) {
+
+      console.error(
+        'DATE LOAD ERROR:',
+        error
+      );
+
+      showError(
+        `No complete current-affairs file was found for ${formatReadableDate(selectedDate)}.`
+      );
+
+    }
+
+  }
+
+
+  function setActiveDate(date) {
+
+    document
+      .querySelectorAll('.date-btn')
+      .forEach(btn => {
+
+        btn.classList.toggle(
+          'active',
+          btn.dataset.date === date
+        );
+
+      });
+
+  }
+
+
+  function formatReadableDate(date) {
+
+    const d =
+      new Date(date + 'T00:00:00');
+
+    return d.toLocaleDateString(
+      'en-IN',
+      {
+        weekday:'long',
+        day:'numeric',
+        month:'long',
+        year:'numeric'
+      }
+    );
+
+  }
+
+
+  function getLocalDate() {
+
+    const d = new Date();
+
+    return [
+      d.getFullYear(),
+      String(d.getMonth()+1).padStart(2,'0'),
+      String(d.getDate()).padStart(2,'0')
+    ].join('-');
+
+  }
+
+
+  /* ================= RENDER EVERYTHING ================= */
+
+  function renderAll() {
+
+    renderMotivation();
+
+    renderNews();
+
+    renderQuiz();
+
+  }
+
+
+  /* ================= MOTIVATION ================= */
+
+  function renderMotivation() {
+
+    const motivation =
+      currentData.motivation ||
+      globalPayload.motivation;
+
+
+    if(!motivation) return;
+
+
+    const english =
+      motivation.english || {};
+
+    const hindi =
+      motivation.hindi || {};
+
+
+    document.getElementById(
+      'motivationEnglish'
+    ).innerHTML = `
+
+      <div class="quote-card">
+
+        ${
+          english.image_url
+          ?
+          `<img
+             src="${escapeAttr(english.image_url)}"
+             alt="Daily motivation"
+             loading="lazy"
+           />`
+          :
+          ''
+        }
+
+        "${escapeHtml(
+          english.quote || ''
+        )}"
+
+        ${
+          english.author
+          ?
+          `<span class="quote-author">
+             — ${escapeHtml(english.author)}
+           </span>`
+          :
+          ''
+        }
+
+      </div>
+
+    `;
+
+
+    document.getElementById(
+      'motivationHindi'
+    ).innerHTML = `
+
+      <div class="quote-card">
+
+        ${
+          hindi.image_url
+          ?
+          `<img
+             src="${escapeAttr(hindi.image_url)}"
+             alt="आज का सुविचार"
+             loading="lazy"
+           />`
+          :
+          ''
+        }
+
+        "${escapeHtml(
+          hindi.quote || ''
+        )}"
+
+        ${
+          hindi.author
+          ?
+          `<span class="quote-author">
+             — ${escapeHtml(hindi.author)}
+           </span>`
+          :
+          ''
+        }
+
+      </div>
+
+    `;
+
+  }
+
+
+  /* ================= NEWS ================= */
+
+  function renderNews() {
+
+    const container =
+      document.getElementById(
+        'newsSection'
+      );
+
+
+    if(
+      !currentData.news ||
+      !currentData.news.length
+    ) {
+
+      showError(
+        'No current-affairs articles were generated for this date.'
+      );
+
+      return;
+
+    }
+
+
+    const totalNews =
+      currentData.news.length;
+
+
+    container.innerHTML =
+      currentData.news
+      .map((item,index) => {
+
+        /*
+         * Use stable ID.
+         */
+
+        const newsId =
+          item.id || index + 1;
+
+
+        const entities =
+          Array.isArray(item.entities)
+          ? item.entities
+          : [];
+
+
+        const entityChips =
+          entities.map(entity => {
+
+            const name =
+              entity.name || '';
+
+            return `
+
+              <span
+                class="entity-tag"
+                onclick="openProfileModal(
+                  ${newsId},
+                  '${escapeJs(name)}'
+                )"
+              >
+                👤 ${escapeHtml(name)}
+                ${
+                  entity.party_and_state
+                  ?
+                  ` [${escapeHtml(
+                      entity.party_and_state
+                    )}]`
+                  :
+                  ''
+                }
+              </span>
+
+            `;
+
+          }).join('');
+
+
+        const bullets =
+          Array.isArray(item.bullet_points)
+          ? item.bullet_points
+          : [];
+
+
+        const image =
+          item.image_url ||
+          'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=900&q=80';
+
+
+        return `
+
+          <div class="info-card">
+
+            <div class="card-header">
+
+              <span class="badge-cat">
+                ${escapeHtml(
+                  item.category || 'Current Affairs'
+                )}
+              </span>
+
+              <span class="card-id">
+                #${newsId} of ${totalNews}
+              </span>
+
+            </div>
+
+
+            <div class="card-body">
+
+              <div>
+
+                <a
+                  href="javascript:void(0)"
+                  class="card-headline-link"
+                  onclick="openFullArticle(${newsId})"
+                >
+
+                  <h2 class="card-headline">
+                    ${escapeHtml(
+                      item.headline || 'Untitled News'
+                    )}
+                  </h2>
+
+                </a>
+
+
+                <div class="story-lead">
+                  ${escapeHtml(
+                    item.story_lead ||
+                    item.summary ||
+                    'Detailed coverage is available below.'
+                  )}
+                </div>
+
+
+                ${
+                  entityChips
+                  ?
+                  `<div style="margin-bottom:12px;">
+                    ${entityChips}
+                  </div>`
+                  :
+                  ''
+                }
+
+
+                ${
+                  bullets.length
+                  ?
+                  `
+                  <ul class="bullet-list">
+
+                    ${bullets.map(
+                      bp =>
+                        `<li>${escapeHtml(bp)}</li>`
+                    ).join('')}
+
+                  </ul>
+                  `
+                  :
+                  ''
+                }
+
+
+                <div class="exam-box">
+
+                  <strong>
+                    Exam Relevance:
+                  </strong>
+
+                  ${escapeHtml(
+                    item.exam_relevance ||
+                    'Relevant current-affairs topic.'
+                  )}
+
+                </div>
+
+
+                <div class="card-footer-actions">
+
+                  <button
+                    class="btn-read-more"
+                    onclick="openFullArticle(${newsId})"
+                  >
+                    📖 Read Complete Coverage
+                  </button>
+
+
+                  ${
+                    item.source_url
+                    ?
+                    `
+                    <a
+                      href="${escapeAttr(item.source_url)}"
+                      target="_blank"
+                      rel="noopener"
+                      class="btn-official-source"
+                    >
+                      🌐 Original Source
+                    </a>
+                    `
+                    :
+                    ''
+                  }
+
+
+                  <button
+                    class="btn-share-item"
+                    onclick="shareArticle(
+                      '${encodeURIComponent(
+                        item.headline || ''
+                      )}'
+                    )"
+                  >
+                    📲 Share
+                  </button>
+
+                </div>
+
+              </div>
+
+
+              <div class="card-img-container">
+
+                <img
+                  src="${escapeAttr(image)}"
+                  alt="${escapeAttr(
+                    item.headline || 'Current affair'
+                  )}"
+                  loading="lazy"
+                  onerror="this.style.display='none';"
+                />
+
+              </div>
+
+            </div>
+
+          </div>
+
+        `;
+
+      })
+      .join('');
+
+  }
+
+
+  /* ================= COMPLETE ARTICLE ================= */
+
+  function openFullArticle(newsId) {
+
+    if(
+      !currentData ||
+      !Array.isArray(currentData.news)
+    ) return;
+
+
+    const item =
+      currentData.news.find(
+        n => Number(n.id) === Number(newsId)
+      );
+
+
+    if(!item) {
+
+      console.error(
+        'News item not found:',
+        newsId
+      );
+
+      return;
+
+    }
+
+
+    const modalContainer =
+      document.getElementById(
+        'modalContainer'
+      );
+
+
+    const entities =
+      Array.isArray(item.entities)
+      ? item.entities
+      : [];
+
+
+    const entityChips =
+      entities.map(entity => {
+
+        const name =
+          entity.name || '';
+
+        return `
+
+          <span
+            class="entity-tag"
+            onclick="openProfileModal(
+              ${item.id},
+              '${escapeJs(name)}'
+            )"
+          >
+            👤 ${escapeHtml(name)}
+            ${
+              entity.party_and_state
+              ?
+              ` [${escapeHtml(
+                  entity.party_and_state
+                )}]`
+              :
+              ''
+            }
+          </span>
+
+        `;
+
+      }).join('');
+
+
+    /*
+     * THIS IS THE IMPORTANT FIX.
+     *
+     * We do NOT display scraped webpage
+     * paragraphs here.
+     *
+     * We display the article generated
+     * specifically for this news item.
+     */
+
+    const articleText =
+      item.full_article_text ||
+      item.detailed_coverage ||
+      item.article_text ||
+      item.story_lead ||
+      'Detailed coverage is currently unavailable. Please open the original source below.';
+
+
+    const paragraphs =
+      String(articleText)
+        .split(/\n+/)
+        .filter(p => p.trim())
+        .map(
+          p =>
+            `<p style="
+              margin-bottom:14px;
+              line-height:1.8;
+              text-align:justify;
+            ">
+              ${escapeHtml(p)}
+            </p>`
+        )
+        .join('');
+
+
+    modalContainer.innerHTML = `
+
+      <span
+        style="
+          background:var(--primary-red);
+          color:#fff;
+          font-size:0.8rem;
+          font-weight:700;
+          padding:4px 10px;
+          border-radius:4px;
+          text-transform:uppercase;
+        "
+      >
+        ${escapeHtml(
+          item.category || 'Current Affairs'
+        )}
+      </span>
+
+
+      <h1
+        style="
+          font-size:1.8rem;
+          font-weight:800;
+          color:#0f172a;
+          margin:15px 0 10px;
+        "
+      >
+        ${escapeHtml(
+          item.headline || ''
+        )}
+      </h1>
+
+
+      <div
+        style="
+          display:flex;
+          justify-content:space-between;
+          align-items:center;
+          flex-wrap:wrap;
+          gap:10px;
+          margin-bottom:15px;
+          font-size:0.88rem;
+          color:#64748b;
+        "
+      >
+
+        <span>
+          Date:
+          ${escapeHtml(
+            currentData.date || ''
+          )}
+        </span>
+
+        ${
+          item.source_url
+          ?
+          `
+          <a
+            href="${escapeAttr(item.source_url)}"
+            target="_blank"
+            rel="noopener"
+            style="
+              color:var(--accent-blue);
+              font-weight:700;
+            "
+          >
+            Open Original Source ↗
+          </a>
+          `
+          :
+          ''
+        }
+
+      </div>
+
+
+      ${
+        item.image_url
+        ?
+        `
+        <img
+          src="${escapeAttr(item.image_url)}"
+          style="
+            width:100%;
+            max-height:360px;
+            object-fit:cover;
+            border-radius:12px;
+            margin-bottom:20px;
+          "
+          alt="News image"
+        />
+        `
+        :
+        ''
+      }
+
+
+      ${
+        entityChips
+        ?
+        `
+        <div
+          style="
+            background:#f0f9ff;
+            border:1px solid #bae6fd;
+            padding:12px;
+            border-radius:10px;
+            margin-bottom:20px;
+          "
+        >
+
+          <strong
+            style="
+              color:#0369a1;
+              display:block;
+              margin-bottom:6px;
+            "
+          >
+            Key Personalities & Entities
+          </strong>
+
+          ${entityChips}
+
+        </div>
+        `
+        :
+        ''
+      }
+
+
+      <h3
+        style="
+          font-size:1.2rem;
+          font-weight:800;
+          color:#0f172a;
+          margin-bottom:12px;
+        "
+      >
+        Complete Current-Affairs Coverage
+      </h3>
+
+
+      <div
+        style="
+          font-size:1rem;
+          color:#334155;
+          margin-bottom:20px;
+        "
+      >
+        ${paragraphs}
+      </div>
+
+
+      <div
+        style="
+          background:#f8fafc;
+          border:1px solid #e2e8f0;
+          border-radius:10px;
+          padding:15px;
+          margin-bottom:20px;
+        "
+      >
+
+        <h4
+          style="
+            font-size:1rem;
+            font-weight:700;
+            color:#0f172a;
+            margin-bottom:8px;
+          "
+        >
+          📌 Quick Fact Sheet
+        </h4>
+
+
+        <p
+          style="
+            font-size:0.9rem;
+            color:#475569;
+            margin-bottom:7px;
+          "
+        >
+          <b>Important Locations:</b>
+          ${escapeHtml(
+            item.key_locations || 'N/A'
+          )}
+        </p>
+
+
+        <p
+          style="
+            font-size:0.9rem;
+            color:#475569;
+            margin-bottom:7px;
+          "
+        >
+          <b>Important Dates:</b>
+          ${escapeHtml(
+            item.important_dates || 'N/A'
+          )}
+        </p>
+
+
+        ${
+          item.key_facts
+          ?
+          `
+          <p
+            style="
+              font-size:0.9rem;
+              color:#475569;
+            "
+          >
+            <b>Key Facts:</b>
+            ${escapeHtml(item.key_facts)}
+          </p>
+          `
+          :
+          ''
+        }
+
+      </div>
+
+
+      <div
+        class="exam-box"
+        style="
+          font-size:0.95rem;
+          padding:14px 18px;
+          margin-bottom:20px;
+        "
+      >
+
+        <strong>
+          Exam Relevance & Syllabus Mapping
+        </strong>
+
+        <br/>
+
+        ${escapeHtml(
+          item.exam_relevance ||
+          'Relevant current-affairs topic.'
+        )}
+
+      </div>
+
+
+      ${
+        item.takeaway
+        ?
+        `
+        <div
+          style="
+            background:#eff6ff;
+            border:1px solid #bfdbfe;
+            padding:12px 16px;
+            border-radius:10px;
+            color:#1e40af;
+            font-size:0.95rem;
+            margin-bottom:20px;
+          "
+        >
+
+          <strong>
+            Key Takeaway:
+          </strong>
+
+          ${escapeHtml(
+            item.takeaway
+          )}
+
+        </div>
+        `
+        :
+        ''
+      }
+
+
+      <div
+        style="
+          display:flex;
+          gap:10px;
+          justify-content:flex-end;
+          flex-wrap:wrap;
+        "
+      >
+
+        ${
+          item.source_url
+          ?
+          `
+          <a
+            href="${escapeAttr(item.source_url)}"
+            target="_blank"
+            rel="noopener"
+            class="btn-official-source"
+          >
+            🌐 Read Original News
+          </a>
+          `
+          :
+          ''
+        }
+
+
+        <button
+          class="btn-share-item"
+          onclick="shareArticle(
+            '${encodeURIComponent(
+              item.headline || ''
+            )}'
+          )"
+        >
+          📲 Share Article
+        </button>
+
+      </div>
+
+    `;
+
+
+    document.getElementById(
+      'articleModal'
+    ).style.display = 'flex';
+
+  }
+
+
+  /* ================= PROFILE ================= */
+
+  function openProfileModal(newsId, entityName) {
+
+    if(!currentData) return;
+
+
+    const item =
+      currentData.news.find(
+        n => Number(n.id) === Number(newsId)
+      );
+
+
+    if(!item) return;
+
+
+    const entity =
+      (item.entities || []).find(
+        e => e.name === entityName
+      );
+
+
+    if(!entity) return;
+
+
+    const container =
+      document.getElementById(
+        'profileModalContainer'
+      );
+
+
+    container.innerHTML = `
+
+      <div class="profile-header">
+
+        <div class="profile-avatar">
+          ${escapeHtml(
+            entity.name.charAt(0)
+          )}
+        </div>
+
+        <div class="profile-title">
+
+          <h3>
+            ${escapeHtml(entity.name)}
+          </h3>
+
+          <p>
+            ${escapeHtml(
+              entity.role || ''
+            )}
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <p
+        style="
+          font-size:0.9rem;
+          color:#475569;
+          margin-bottom:10px;
+        "
+      >
+
+        <b>Party & Home State:</b>
+
+        ${escapeHtml(
+          entity.party_and_state || 'N/A'
+        )}
+
+      </p>
+
+
+      <div
+        style="
+          font-size:0.95rem;
+          line-height:1.6;
+          color:#334155;
+          background:#fff;
+          padding:15px;
+          border-radius:10px;
+          border:1px solid #e2e8f0;
+        "
+      >
+
+        <strong>
+          Profile & Background:
+        </strong>
+
+        <br/>
+
+        ${escapeHtml(
+          entity.bio_details ||
+          'Profile information is not available for this article.'
+        )}
+
+      </div>
+
+    `;
+
+
+    document.getElementById(
+      'profileModal'
+    ).style.display = 'flex';
+
+  }
+
+
+  /* ================= MODALS ================= */
+
+  function closeModal(id) {
+
+    document.getElementById(id)
+      .style.display = 'none';
+
+  }
+
+
+  /* ================= QUIZ ================= */
+
+  function renderQuiz() {
+
+    const container =
+      document.getElementById(
+        'quizSection'
+      );
+
+
+    const quizzes =
+      Array.isArray(currentData.quizzes)
+      ? currentData.quizzes
+      : [];
+
+
+    if(!quizzes.length) {
+
+      container.innerHTML = `
+        <div class="quiz-card">
+          No quiz is available for this date.
+        </div>
+      `;
+
+      return;
+
+    }
+
+
+    container.innerHTML =
+      quizzes.map(
+        (q,idx) => `
+
+        <div class="quiz-card">
+
+          <div class="quiz-q">
+            Q${idx+1}.
+            ${escapeHtml(
+              q.question || ''
+            )}
+          </div>
+
+          <div class="quiz-options">
+
+            ${(q.options || [])
+              .map(
+                (opt,i) => `
+
+                <button
+                  class="opt-btn"
+                  onclick="
+                    checkAnswer(
+                      this,
+                      ${i},
+                      ${Number(q.answer)}
+                    )
+                  "
+                >
+                  ${escapeHtml(opt)}
+                </button>
+
+              `
+              ).join('')
+            }
+
+          </div>
+
+        </div>
+
+      `
+      ).join('');
+
+  }
+
+
+  function checkAnswer(
+    btn,
+    chosen,
+    correct
+  ) {
+
+    const parent =
+      btn.parentElement;
+
+    const buttons =
+      parent.querySelectorAll(
+        '.opt-btn'
+      );
+
+
+    buttons.forEach(
+      (b,idx) => {
+
+        b.disabled = true;
+
+        if(idx === correct) {
+          b.classList.add('correct');
+        }
+
+        if(
+          idx === chosen &&
+          chosen !== correct
+        ) {
+          b.classList.add('wrong');
+        }
+
+      }
+    );
+
+  }
+
+
+  /* ================= TABS ================= */
+
+  function switchTab(tab) {
+
+    document
+      .getElementById('btnNews')
+      .classList.toggle(
+        'active',
+        tab === 'news'
+      );
+
+
+    document
+      .getElementById('btnQuiz')
+      .classList.toggle(
+        'active',
+        tab === 'quiz'
+      );
+
+
+    document
+      .getElementById('newsSection')
+      .style.display =
+        tab === 'news'
+        ? 'flex'
+        : 'none';
+
+
+    document
+      .getElementById('quizSection')
+      .style.display =
+        tab === 'quiz'
+        ? 'block'
+        : 'none';
+
+  }
+
+
+  /* ================= SHARE ================= */
+
+  function shareArticle(title) {
+
+    const decodedTitle =
+      decodeURIComponent(title);
+
+
+    const shareData = {
+
+      title: decodedTitle,
+
+      text:
+        `📰 Current Affairs: ${decodedTitle}\n` +
+        `Read complete exam notes on AURA EXAM AI!`,
+
+      url: window.location.href
+
+    };
+
+
+    if(navigator.share) {
+
+      navigator
+        .share(shareData)
+        .catch(() => {});
+
+    }
+
+    else if(navigator.clipboard) {
+
+      navigator
+        .clipboard
+        .writeText(
+          `${shareData.text}\n${shareData.url}`
+        );
+
+      alert(
+        'Article link copied to clipboard!'
+      );
+
+    }
+
+  }
+
+
+  function shareApp() {
+
+    const shareData = {
+
+      title:
+        'AURA EXAM AI - Daily Current Affairs & Quiz',
+
+      text:
+        'Prepare with daily current affairs and quizzes on AURA EXAM AI!',
+
+      url:
+        window.location.href
+
+    };
+
+
+    if(navigator.share) {
+
+      navigator
+        .share(shareData)
+        .catch(() => {});
+
+    }
+
+    else if(navigator.clipboard) {
+
+      navigator
+        .clipboard
+        .writeText(
+          `${shareData.text}\n${shareData.url}`
+        );
+
+      alert(
+        'App link copied to clipboard!'
+      );
+
+    }
+
+  }
+
+
+  /* ================= ERROR ================= */
+
+  function showError(message) {
+
+    document.getElementById(
+      'newsSection'
+    ).innerHTML = `
+
+      <div class="error-box">
+
+        ⚠️ ${escapeHtml(message)}
+
+      </div>
+
+    `;
+
+  }
+
+
+  /* ================= SECURITY HELPERS ================= */
+
+  function escapeHtml(value) {
+
+    return String(value ?? '')
+      .replace(/&/g,'&amp;')
+      .replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;')
+      .replace(/'/g,'&#039;');
+
+  }
+
+
+  function escapeAttr(value) {
+
+    return escapeHtml(value);
+
+  }
+
+
+  function escapeJs(value) {
+
+    return String(value ?? '')
+      .replace(/\\/g,'\\\\')
+      .replace(/'/g,"\\'")
+      .replace(/"/g,'\\"')
+      .replace(/\n/g,' ');
+
+  }
+
+
+  /* ================= START ================= */
+
+  init();
+
+</script>
+
+</body>
+</html>
