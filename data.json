@@ -1,8 +1,21 @@
 {
-  "current_date": "2026-09-22",
-  "today": {
-    "date": "2026-09-22",
-    "news": [],
-    "quizzes": []
-  }
+  "id": 1,
+  "category": "National",
+  "headline": "Actual current-affairs headline",
+  "story_lead": "A concise summary of exactly this news event.",
+  "bullet_points": [
+    "What happened",
+    "Where it happened",
+    "Who/which institution is involved",
+    "Why it matters"
+  ],
+  "full_article_text": "A complete, factual explanation of THIS specific news event...",
+  "key_locations": "Relevant location",
+  "important_dates": "Relevant date",
+  "key_facts": "Important factual details",
+  "exam_relevance": "Relevant exam concepts",
+  "takeaway": "One concise revision takeaway",
+  "source_name": "Indian Express",
+  "source_url": "ACTUAL ARTICLE URL",
+  "image_url": "ACTUAL IMAGE URL"
 }
