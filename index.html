@@ -1,811 +1,611 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>AURA Exam AI | Daily Current Affairs & Quiz</title>
-
-  <meta
-    name="description"
-    content="AURA Exam AI - Daily current affairs, competitive exam quizzes and exam-focused news."
-  >
-
-  <meta name="theme-color" content="#030712">
-
-  <link rel="manifest" href="manifest.json">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
-
-  <style>
-    :root {
-      --bg: #030712;
-      --bg2: #0b1120;
-      --card: rgba(15, 23, 42, 0.78);
-      --card2: rgba(17, 24, 39, 0.9);
-
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-
-      --neon-cyan: #22d3ee;
-      --neon-purple: #a855f7;
-      --neon-blue: #3b82f6;
-      --neon-green: #22c55e;
-      --neon-red: #ef4444;
-      --neon-yellow: #facc15;
-
-      --border: rgba(148, 163, 184, 0.16);
-
-      --shadow:
-        0 10px 40px rgba(0, 0, 0, 0.35),
-        0 0 25px rgba(34, 211, 238, 0.04);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background:
-        radial-gradient(
-          circle at 10% 10%,
-          rgba(34, 211, 238, 0.08),
-          transparent 28%
-        ),
-        radial-gradient(
-          circle at 90% 15%,
-          rgba(168, 85, 247, 0.08),
-          transparent 28%
-        ),
-        linear-gradient(
-          180deg,
-          #020617 0%,
-          #030712 45%,
-          #020617 100%
-        );
-
-      color: var(--text-main);
-      font-family: "Inter", sans-serif;
-      min-height: 100vh;
-    }
-
-    button {
-      font-family: inherit;
-    }
-
-    /* ================= HEADER ================= */
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-
-      background: rgba(3, 7, 18, 0.82);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-
-      border-bottom: 1px solid rgba(34, 211, 238, 0.12);
-    }
-
-    .header-inner {
-      max-width: 1250px;
-      margin: auto;
-      padding: 18px 20px 0;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 15px;
-      padding-bottom: 16px;
-    }
-
-    .logo {
-      font-family: "Orbitron", sans-serif;
-      font-size: clamp(1.15rem, 3vw, 1.65rem);
-      font-weight: 800;
-      letter-spacing: 2px;
-
-      background: linear-gradient(
-        90deg,
-        var(--neon-cyan),
-        #60a5fa,
-        var(--neon-purple)
-      );
-
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-
-    .logo-subtitle {
-      color: var(--text-muted);
-      font-size: 0.72rem;
-      margin-top: 3px;
-      letter-spacing: 1px;
-    }
-
-    .live-dot {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-
-      font-size: 0.72rem;
-      font-weight: 700;
-      color: #86efac;
-      letter-spacing: 1px;
-    }
-
-    .live-dot span {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #22c55e;
-      box-shadow: 0 0 12px #22c55e;
-    }
-
-    /* ================= TABS ================= */
-
-    .tabs {
-      display: flex;
-      gap: 6px;
-      overflow-x: auto;
-      scrollbar-width: none;
-    }
-
-    .tabs::-webkit-scrollbar {
-      display: none;
-    }
-
-    .tab {
-      flex: 0 0 auto;
-
-      background: transparent;
-      border: none;
-      color: var(--text-muted);
-
-      padding: 13px 16px;
-
-      font-size: 0.82rem;
-      font-weight: 700;
-
-      cursor: pointer;
-
-      border-bottom: 2px solid transparent;
-      transition: 0.25s ease;
-    }
-
-    .tab:hover {
-      color: var(--text-main);
-    }
-
-    .tab.active {
-      color: var(--neon-cyan);
-      border-bottom-color: var(--neon-cyan);
-      text-shadow: 0 0 15px rgba(34, 211, 238, 0.35);
-    }
-
-    /* ================= CONTAINER ================= */
-
-    .container {
-      max-width: 1250px;
-      margin: auto;
-      padding: 24px 20px 60px;
-    }
-
-    /* ================= MOTIVATION ================= */
-
-    .motivation-card {
-      position: relative;
-
-      padding: 20px 22px;
-      margin-bottom: 22px;
-
-      border: 1px solid rgba(168, 85, 247, 0.35);
-
-      background:
-        linear-gradient(
-          135deg,
-          rgba(59, 130, 246, 0.12),
-          rgba(168, 85, 247, 0.12)
-        );
-
-      border-radius: 18px;
-
-      text-align: center;
-
-      overflow: hidden;
-
-      box-shadow:
-        0 10px 35px rgba(0, 0, 0, 0.2),
-        0 0 30px rgba(168, 85, 247, 0.04);
-    }
-
-    .motivation-card::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 2px;
-
-      background: linear-gradient(
-        90deg,
-        transparent,
-        var(--neon-purple),
-        var(--neon-cyan),
-        transparent
-      );
-    }
-
-    .motivation-label {
-      font-size: 0.68rem;
-      font-weight: 800;
-      letter-spacing: 2px;
-      color: var(--neon-cyan);
-      margin-bottom: 8px;
-    }
-
-    #motivation-text {
-      font-family: "Orbitron", sans-serif;
-      font-size: 0.9rem;
-      line-height: 1.7;
-      color: var(--text-main);
-    }
-
-    /* ================= SECTION HEADER ================= */
-
-    .section-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-
-      margin: 28px 0 16px;
-    }
-
-    .section-title {
-      font-family: "Orbitron", sans-serif;
-      font-size: 1rem;
-      letter-spacing: 1px;
-    }
-
-    .count-badge {
-      background: rgba(34, 211, 238, 0.08);
-      color: var(--neon-cyan);
-
-      border: 1px solid rgba(34, 211, 238, 0.18);
-
-      padding: 5px 10px;
-      border-radius: 999px;
-
-      font-size: 0.7rem;
-      font-weight: 800;
-    }
-
-    /* ================= NEWS GRID ================= */
-
-    #news-list {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .news-card {
-      position: relative;
-
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-
-      overflow: hidden;
-
-      box-shadow: var(--shadow);
-
-      transition:
-        transform 0.25s ease,
-        border-color 0.25s ease,
-        box-shadow 0.25s ease;
-    }
-
-    .news-card:hover {
-      transform: translateY(-3px);
-
-      border-color: rgba(34, 211, 238, 0.28);
-
-      box-shadow:
-        0 15px 45px rgba(0, 0, 0, 0.4),
-        0 0 30px rgba(34, 211, 238, 0.05);
-    }
-
-    .news-image-wrap {
-      position: relative;
-      height: 210px;
-      background: #0f172a;
-      overflow: hidden;
-    }
-
-    .news-image {
-      width: 100%;
-      height: 100%;
-
-      object-fit: cover;
-
-      display: block;
-
-      transition: transform 0.4s ease;
-    }
-
-    .news-card:hover .news-image {
-      transform: scale(1.025);
-    }
-
-    .image-overlay {
-      position: absolute;
-      inset: 0;
-
-      background:
-        linear-gradient(
-          to top,
-          rgba(2, 6, 23, 0.8),
-          transparent 60%
-        );
-    }
-
-    .category {
-      position: absolute;
-      top: 12px;
-      left: 12px;
-
-      background: rgba(2, 6, 23, 0.78);
-      backdrop-filter: blur(8px);
-
-      color: var(--neon-cyan);
-
-      border: 1px solid rgba(34, 211, 238, 0.25);
 
-      padding: 5px 9px;
-      border-radius: 999px;
+    <meta charset="UTF-8">
 
-      font-size: 0.66rem;
-      font-weight: 800;
-      letter-spacing: 0.7px;
-      text-transform: uppercase;
-    }
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    .bookmark-btn {
-      position: absolute;
-      top: 11px;
-      right: 11px;
+    <meta
+        name="theme-color"
+        content="#030712"
+    >
 
-      width: 35px;
-      height: 35px;
+    <meta
+        name="description"
+        content="AURA Exam AI - Daily Current Affairs and Competitive Exam Quizzes"
+    >
 
-      border-radius: 50%;
+    <title>AURA EXAM AI</title>
 
-      border: 1px solid rgba(255,255,255,0.12);
-      background: rgba(2, 6, 23, 0.78);
+    <link
+        rel="manifest"
+        href="manifest.json"
+    >
 
-      color: #cbd5e1;
+    <style>
 
-      cursor: pointer;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-      font-size: 1rem;
+        body {
 
-      backdrop-filter: blur(8px);
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
 
-      transition: 0.2s ease;
-    }
+            background:
+                radial-gradient(
+                    circle at top,
+                    #172554 0%,
+                    #030712 45%,
+                    #000000 100%
+                );
 
-    .bookmark-btn:hover,
-    .bookmark-btn.saved {
-      color: var(--neon-yellow);
-      border-color: rgba(250, 204, 21, 0.35);
-    }
+            color: #f8fafc;
 
-    .news-content {
-      padding: 18px;
-    }
+            min-height: 100vh;
 
-    .news-title {
-      font-size: 1.05rem;
-      line-height: 1.45;
-      font-weight: 800;
+            line-height: 1.6;
+        }
 
-      margin-bottom: 12px;
-    }
+        header {
 
-    .news-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
+            padding: 22px 16px;
 
-      color: var(--text-muted);
-      font-size: 0.72rem;
+            text-align: center;
 
-      margin-bottom: 14px;
-    }
+            border-bottom:
+                1px solid
+                rgba(255,255,255,0.1);
 
-    .meta-item {
-      background: rgba(148, 163, 184, 0.06);
-      border: 1px solid rgba(148, 163, 184, 0.08);
+            background:
+                rgba(3,7,18,0.75);
 
-      padding: 4px 7px;
-      border-radius: 6px;
-    }
+            backdrop-filter:
+                blur(12px);
 
-    .news-section {
-      margin-top: 13px;
-    }
+            position: sticky;
 
-    .news-section-title {
-      color: var(--neon-cyan);
+            top: 0;
 
-      font-size: 0.72rem;
-      font-weight: 800;
+            z-index: 100;
+        }
 
-      letter-spacing: 0.5px;
+        .logo {
 
-      margin-bottom: 4px;
-    }
+            font-size: 28px;
 
-    .news-section-text {
-      color: #cbd5e1;
-      font-size: 0.82rem;
-      line-height: 1.6;
-    }
+            font-weight: 900;
 
-    .exam-box {
-      margin-top: 16px;
+            letter-spacing: 2px;
 
-      padding: 12px;
+            color: #38bdf8;
 
-      background: rgba(34, 211, 238, 0.05);
+            text-shadow:
+                0 0 20px
+                rgba(56,189,248,0.7);
+        }
 
-      border-left: 2px solid var(--neon-cyan);
+        .subtitle {
 
-      border-radius: 0 8px 8px 0;
-    }
+            color: #94a3b8;
 
-    .exam-title {
-      color: var(--neon-yellow);
+            font-size: 13px;
 
-      font-size: 0.72rem;
-      font-weight: 800;
+            margin-top: 4px;
+        }
 
-      margin-bottom: 4px;
-    }
+        .tabs {
 
-    .exam-text {
-      color: #cbd5e1;
-      font-size: 0.8rem;
-      line-height: 1.5;
-    }
+            display: flex;
 
-    /* ================= QUIZ ================= */
+            justify-content: center;
 
-    .quiz-container {
-      max-width: 850px;
-      margin: auto;
-    }
+            gap: 10px;
 
-    .quiz-card {
-      background: var(--card);
-      border: 1px solid var(--border);
+            padding: 15px;
 
-      border-radius: 18px;
+            flex-wrap: wrap;
+        }
 
-      padding: 22px;
+        .tab {
 
-      margin-bottom: 18px;
+            border: 1px solid
+                rgba(56,189,248,0.25);
 
-      box-shadow: var(--shadow);
-    }
+            background:
+                rgba(15,23,42,0.75);
 
-    .quiz-number {
-      color: var(--neon-cyan);
+            color: #cbd5e1;
 
-      font-size: 0.72rem;
-      font-weight: 800;
+            padding:
+                10px 18px;
 
-      letter-spacing: 1px;
+            border-radius: 999px;
 
-      margin-bottom: 10px;
-    }
+            cursor: pointer;
 
-    .quiz-question {
-      font-size: 1rem;
-      font-weight: 700;
-      line-height: 1.6;
+            transition: 0.2s;
+        }
 
-      margin-bottom: 17px;
-    }
+        .tab:hover {
 
-    .options {
-      display: grid;
-      gap: 10px;
-    }
+            border-color: #38bdf8;
 
-    .option {
-      width: 100%;
+            color: white;
+        }
 
-      padding: 13px 15px;
+        .tab.active {
 
-      text-align: left;
+            background: #0ea5e9;
 
-      background: rgba(15, 23, 42, 0.75);
+            color: white;
 
-      color: #cbd5e1;
+            border-color: #38bdf8;
 
-      border: 1px solid rgba(148, 163, 184, 0.13);
+            box-shadow:
+                0 0 18px
+                rgba(14,165,233,0.4);
+        }
 
-      border-radius: 10px;
+        main {
 
-      cursor: pointer;
+            width: min(
+                1100px,
+                calc(100% - 30px)
+            );
 
-      font-size: 0.84rem;
+            margin:
+                0 auto 50px;
+        }
 
-      transition: 0.2s ease;
-    }
+        .motivation {
 
-    .option:hover {
-      border-color: rgba(34, 211, 238, 0.35);
-      color: white;
-    }
+            margin:
+                10px 0 25px;
 
-    .option.correct {
-      background: rgba(34, 197, 94, 0.12);
-      border-color: rgba(34, 197, 94, 0.55);
-      color: #86efac;
-    }
+            padding: 18px;
 
-    .option.wrong {
-      background: rgba(239, 68, 68, 0.12);
-      border-color: rgba(239, 68, 68, 0.55);
-      color: #fca5a5;
-    }
+            border:
+                1px solid
+                rgba(56,189,248,0.2);
 
-    .quiz-result {
-      margin-top: 12px;
+            border-radius: 16px;
 
-      padding: 10px 12px;
+            background:
+                rgba(15,23,42,0.65);
 
-      border-radius: 8px;
+            text-align: center;
 
-      font-size: 0.78rem;
-      line-height: 1.5;
+            color: #cbd5e1;
+        }
 
-      display: none;
-    }
+        .motivation-title {
 
-    .quiz-result.show {
-      display: block;
-    }
+            color: #38bdf8;
 
-    .quiz-result.correct-result {
-      background: rgba(34, 197, 94, 0.08);
-      color: #86efac;
-    }
+            font-weight: 800;
 
-    .quiz-result.wrong-result {
-      background: rgba(239, 68, 68, 0.08);
-      color: #fca5a5;
-    }
+            margin-bottom: 5px;
+        }
 
-    /* ================= EMPTY / LOADING ================= */
+        .section-header {
 
-    .status-card {
-      background: var(--card);
-      border: 1px solid var(--border);
+            display: flex;
 
-      border-radius: 18px;
+            justify-content: space-between;
 
-      padding: 40px 20px;
+            align-items: center;
 
-      text-align: center;
+            gap: 10px;
 
-      color: var(--text-muted);
-    }
+            margin-bottom: 18px;
 
-    .status-title {
-      font-family: "Orbitron", sans-serif;
-      color: var(--text-main);
+            flex-wrap: wrap;
+        }
 
-      font-size: 0.95rem;
+        .section-title {
 
-      margin-bottom: 8px;
-    }
+            font-size: 25px;
 
-    .status-text {
-      font-size: 0.82rem;
-      line-height: 1.6;
-    }
+            font-weight: 900;
+        }
 
-    .loader {
-      width: 32px;
-      height: 32px;
+        .news-count {
 
-      margin: 0 auto 15px;
+            color: #38bdf8;
 
-      border: 3px solid rgba(148, 163, 184, 0.15);
-      border-top-color: var(--neon-cyan);
+            font-weight: 800;
+        }
 
-      border-radius: 50%;
+        .news-grid {
 
-      animation: spin 0.8s linear infinite;
-    }
+            display: grid;
 
-    @keyframes spin {
-      to {
-        transform: rotate(360deg);
-      }
-    }
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(
+                        290px,
+                        1fr
+                    )
+                );
 
-    /* ================= FOOTER ================= */
+            gap: 18px;
+        }
 
-    footer {
-      max-width: 1250px;
-      margin: auto;
+        .card {
 
-      padding: 25px 20px 35px;
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(15,23,42,0.95),
+                    rgba(2,6,23,0.92)
+                );
 
-      text-align: center;
+            border:
+                1px solid
+                rgba(148,163,184,0.14);
 
-      color: #64748b;
+            border-radius: 18px;
 
-      font-size: 0.7rem;
+            overflow: hidden;
 
-      border-top: 1px solid rgba(148, 163, 184, 0.08);
-    }
+            box-shadow:
+                0 12px 35px
+                rgba(0,0,0,0.25);
 
-    /* ================= RESPONSIVE ================= */
+            transition:
+                transform 0.2s,
+                border-color 0.2s;
+        }
 
-    @media (max-width: 850px) {
-      #news-list {
-        grid-template-columns: 1fr;
-      }
+        .card:hover {
 
-      .news-image-wrap {
-        height: 220px;
-      }
-    }
+            transform:
+                translateY(-3px);
 
-    @media (max-width: 600px) {
-      .header-inner {
-        padding-left: 14px;
-        padding-right: 14px;
-      }
+            border-color:
+                rgba(56,189,248,0.45);
+        }
 
-      .container {
-        padding: 18px 14px 45px;
-      }
+        .news-image {
 
-      .brand {
-        align-items: flex-start;
-      }
+            width: 100%;
 
-      .live-dot {
-        font-size: 0.62rem;
-      }
+            height: 190px;
 
-      .tab {
-        padding: 12px 11px;
-        font-size: 0.74rem;
-      }
+            object-fit: cover;
 
-      .news-image-wrap {
-        height: 190px;
-      }
+            background: #0f172a;
+        }
 
-      .news-content {
-        padding: 15px;
-      }
+        .card-body {
 
-      .news-title {
-        font-size: 0.96rem;
-      }
+            padding: 18px;
+        }
 
-      .motivation-card {
-        padding: 17px 15px;
-      }
+        .category {
 
-      #motivation-text {
-        font-size: 0.78rem;
-      }
+            display: inline-block;
 
-      .quiz-card {
-        padding: 17px;
-      }
-    }
-  </style>
+            padding:
+                4px 9px;
+
+            border-radius: 999px;
+
+            background:
+                rgba(14,165,233,0.13);
+
+            color: #38bdf8;
+
+            font-size: 11px;
+
+            font-weight: 800;
+
+            margin-bottom: 9px;
+        }
+
+        .news-title {
+
+            font-size: 19px;
+
+            line-height: 1.35;
+
+            margin-bottom: 10px;
+
+            font-weight: 850;
+        }
+
+        .meta {
+
+            color: #94a3b8;
+
+            font-size: 12px;
+
+            margin-bottom: 12px;
+        }
+
+        .label {
+
+            color: #38bdf8;
+
+            font-weight: 800;
+        }
+
+        .detail {
+
+            margin-top: 10px;
+
+            color: #cbd5e1;
+
+            font-size: 14px;
+        }
+
+        .detail strong {
+
+            color: white;
+        }
+
+        .bookmark {
+
+            float: right;
+
+            border: none;
+
+            background: transparent;
+
+            color: #64748b;
+
+            font-size: 22px;
+
+            cursor: pointer;
+        }
+
+        .bookmark.saved {
+
+            color: #facc15;
+        }
+
+        .quiz-container {
+
+            display: grid;
+
+            gap: 18px;
+        }
+
+        .quiz-card {
+
+            padding: 20px;
+
+            background:
+                rgba(15,23,42,0.8);
+
+            border:
+                1px solid
+                rgba(148,163,184,0.15);
+
+            border-radius: 18px;
+        }
+
+        .quiz-number {
+
+            color: #38bdf8;
+
+            font-weight: 900;
+
+            margin-bottom: 7px;
+        }
+
+        .question {
+
+            font-size: 18px;
+
+            font-weight: 800;
+
+            margin-bottom: 14px;
+        }
+
+        .option {
+
+            display: block;
+
+            width: 100%;
+
+            text-align: left;
+
+            margin: 8px 0;
+
+            padding: 12px 14px;
+
+            border-radius: 10px;
+
+            border:
+                1px solid
+                rgba(148,163,184,0.2);
+
+            background:
+                rgba(2,6,23,0.7);
+
+            color: #e2e8f0;
+
+            cursor: pointer;
+
+            transition: 0.2s;
+        }
+
+        .option:hover {
+
+            border-color: #38bdf8;
+
+            background:
+                rgba(14,165,233,0.08);
+        }
+
+        .option.correct {
+
+            border-color: #22c55e;
+
+            background:
+                rgba(34,197,94,0.12);
+        }
+
+        .option.wrong {
+
+            border-color: #ef4444;
+
+            background:
+                rgba(239,68,68,0.12);
+        }
+
+        .explanation {
+
+            margin-top: 12px;
+
+            padding: 12px;
+
+            border-radius: 10px;
+
+            background:
+                rgba(56,189,248,0.07);
+
+            color: #cbd5e1;
+
+            font-size: 14px;
+        }
+
+        .empty {
+
+            text-align: center;
+
+            padding: 60px 20px;
+
+            color: #94a3b8;
+        }
+
+        .empty h3 {
+
+            color: #e2e8f0;
+
+            margin-bottom: 8px;
+        }
+
+        .loading {
+
+            text-align: center;
+
+            padding: 60px 20px;
+
+            color: #38bdf8;
+        }
+
+        footer {
+
+            text-align: center;
+
+            padding: 30px 15px;
+
+            color: #64748b;
+
+            font-size: 12px;
+
+            border-top:
+                1px solid
+                rgba(255,255,255,0.08);
+        }
+
+        .hidden {
+
+            display: none !important;
+        }
+
+        @media(max-width:600px) {
+
+            .logo {
+                font-size: 23px;
+            }
+
+            .section-title {
+                font-size: 21px;
+            }
+
+            .news-image {
+                height: 170px;
+            }
+
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
-  <!-- ================= HEADER ================= -->
 
-  <header>
-    <div class="header-inner">
+<header>
 
-      <div class="brand">
-
-        <div>
-          <div class="logo">AURA EXAM AI</div>
-          <div class="logo-subtitle">
-            CURRENT AFFAIRS • QUIZ • COMPETITIVE EXAMS
-          </div>
-        </div>
-
-        <div class="live-dot">
-          <span></span>
-          DAILY AI
-        </div>
-
-      </div>
-
-      <nav class="tabs">
-
-        <button
-          class="tab active"
-          id="news-tab"
-          onclick="showTab('news')"
-        >
-          📰 Daily News
-        </button>
-
-        <button
-          class="tab"
-          id="quiz-tab"
-          onclick="showTab('quiz')"
-        >
-          🧠 Daily Quiz
-        </button>
-
-        <button
-          class="tab"
-          id="saved-tab"
-          onclick="showTab('saved')"
-        >
-          ⭐ Bookmarks
-        </button>
-
-      </nav>
-
+    <div class="logo">
+        AURA EXAM AI
     </div>
-  </header>
+
+    <div class="subtitle">
+        Daily Current Affairs • Competitive Exam Preparation
+    </div>
+
+</header>
 
 
-  <!-- ================= MAIN ================= -->
+<nav class="tabs">
 
-  <main class="container">
-
-    <!-- MOTIVATION -->
-
-    <section
-      id="motivation-section"
-      class="motivation-card"
+    <button
+        class="tab active"
+        id="tab-news"
+        onclick="showTab('news')"
     >
+        Daily News
+    </button>
 
-      <div class="motivation-label">
-        DAILY MOTIVATION
-      </div>
+    <button
+        class="tab"
+        id="tab-quiz"
+        onclick="showTab('quiz')"
+    >
+        Daily Quiz
+    </button>
 
-      <div id="motivation-text">
-        Stay consistent. Every question solved today strengthens tomorrow's performance.
-      </div>
+    <button
+        class="tab"
+        id="tab-bookmarks"
+        onclick="showTab('bookmarks')"
+    >
+        Bookmarks ⭐
+    </button>
+
+</nav>
+
+
+<main>
+
+
+    <section class="motivation">
+
+        <div class="motivation-title">
+            DAILY MOTIVATION
+        </div>
+
+        <div id="motivation">
+            Loading...
+        </div>
 
     </section>
 
@@ -814,38 +614,31 @@
 
     <section id="news-section">
 
-      <div class="section-header">
+        <div class="section-header">
 
-        <div class="section-title">
-          Latest Current Affairs
+            <div class="section-title">
+                Latest Current Affairs
+            </div>
+
+            <div
+                class="news-count"
+                id="news-count"
+            >
+                Loading...
+            </div>
+
         </div>
 
         <div
-          class="count-badge"
-          id="news-count"
+            id="news-container"
+            class="news-grid"
         >
-          0 NEWS
-        </div>
 
-      </div>
-
-      <div id="news-list">
-
-        <div class="status-card">
-
-          <div class="loader"></div>
-
-          <div class="status-title">
-            Loading Current Affairs
-          </div>
-
-          <div class="status-text">
-            Fetching today's exam-focused current affairs...
-          </div>
+            <div class="loading">
+                Loading current affairs...
+            </div>
 
         </div>
-
-      </div>
 
     </section>
 
@@ -853,1130 +646,766 @@
     <!-- QUIZ -->
 
     <section
-      id="quiz-section"
-      style="display:none;"
+        id="quiz-section"
+        class="hidden"
     >
 
-      <div class="section-header">
+        <div class="section-header">
 
-        <div class="section-title">
-          Daily Exam Quiz
+            <div class="section-title">
+                Daily Current Affairs Quiz
+            </div>
+
         </div>
 
         <div
-          class="count-badge"
-          id="quiz-count"
+            id="quiz-container"
+            class="quiz-container"
         >
-          0 QUESTIONS
+
+            <div class="loading">
+                Loading quiz...
+            </div>
+
         </div>
-
-      </div>
-
-      <div
-        id="quiz-list"
-        class="quiz-container"
-      ></div>
 
     </section>
 
 
-    <!-- SAVED -->
+    <!-- BOOKMARKS -->
 
     <section
-      id="saved-section"
-      style="display:none;"
+        id="bookmarks-section"
+        class="hidden"
     >
 
-      <div class="section-header">
+        <div class="section-header">
 
-        <div class="section-title">
-          Saved Current Affairs
+            <div class="section-title">
+                Saved Current Affairs
+            </div>
+
         </div>
 
         <div
-          class="count-badge"
-          id="saved-count"
+            id="saved-container"
+            class="news-grid"
         >
-          0 SAVED
+
+            <div class="empty">
+                No saved current affairs.
+            </div>
+
         </div>
-
-      </div>
-
-      <div id="saved-list">
-
-      </div>
 
     </section>
 
-  </main>
+
+</main>
 
 
-  <!-- ================= FOOTER ================= -->
+<footer>
 
-  <footer>
     AURA EXAM AI • Daily Current Affairs & Competitive Exam Preparation
-  </footer>
+
+</footer>
 
 
-  <!-- ========================================================= -->
-  <!-- APP DATA - AUTOMATICALLY REPLACED BY update_news.py -->
-  <!-- ========================================================= -->
+<script>
 
-  <script>
 
-    const appData = {
-  "news": [
-    {
-      "id": "news-1",
-      "category": "National",
-      "title": "Investors rush into India’s National Stock Exchange IPO at valuation multiple above Nasdaq",
-      "image_url": "",
-      "date": "22 September 2026",
-      "place": "",
-      "persons_ministers": [],
-      "officers": [],
-      "countries_states": [
-        "India"
-      ],
-      "mission": "",
-      "reason": "Reflects strong investor confidence and valuation momentum in India's premier stock exchange compared to global counterparts like Nasdaq.",
-      "conclusion": "Important for economics and financial awareness sections in competitive exams regarding capital markets.",
-      "exam_relevance": "UPSC, Banking, and SSC examinations focusing on financial markets and IPOs."
-    },
-    {
-      "id": "news-2",
-      "category": "National",
-      "title": "Mumbai local body set for debut bond sale in early 2026",
-      "image_url": "",
-      "date": "22 September 2026",
-      "place": "Mumbai",
-      "persons_ministers": [],
-      "officers": [],
-      "countries_states": [
-        "Maharashtra",
-        "India"
-      ],
-      "mission": "",
-      "reason": "Highlights municipal financing and urban local bodies raising capital directly through municipal bonds.",
-      "conclusion": "Highlights trends in municipal bonds and urban governance financing.",
-      "exam_relevance": "Banking and Civil Services exams covering municipal finance and urban governance."
-    },
-    {
-      "id": "news-3",
-      "category": "National",
-      "title": "National Film Awards being taken to India’s best tourist destinations: Ashwini Vaishnaw",
-      "image_url": "",
-      "date": "22 September 2026",
-      "place": "",
-      "persons_ministers": [
-        "Ashwini Vaishnaw"
-      ],
-      "officers": [],
-      "countries_states": [
-        "India"
-      ],
-      "mission": "",
-      "reason": "Promotes cultural tourism by linking prestigious national cultural events with prime tourist locations across the country.",
-      "conclusion": "A useful current affairs point for culture and tourism initiatives.",
-      "exam_relevance": "SSC, NDA, and State PSCs focusing on arts, culture, and tourism."
-    },
-    {
-      "id": "news-4",
-      "category": "National",
-      "title": "FM Sitharaman Calls for Quality-Driven Growth in India",
-      "image_url": "",
-      "date": "22 September 2026",
-      "place": "",
-      "persons_ministers": [
-        "Nirmala Sitharaman"
-      ],
-      "officers": [],
-      "countries_states": [
-        "India"
-      ],
-      "mission": "",
-      "reason": "Emphasizes the shift from mere quantitative economic expansion to high-quality, sustainable growth standards.",
-      "conclusion": "Important for economic policy analysis in competitive exams.",
-      "exam_relevance": "UPSC Civil Services and Banking examinations focusing on economic development."
-    },
-    {
-      "id": "news-5",
-      "category": "National",
-      "title": "India vs Japan T20I: Vande Mataram Played Ahead of National Anthem in Japan",
-      "image_url": "",
-      "date": "22 September 2026",
-      "place": "Sano",
-      "persons_ministers": [],
-      "officers": [],
-      "countries_states": [
-        "India",
-        "Japan"
-      ],
-      "mission": "",
-      "reason": "Showcases cultural representation and protocol during international sporting events abroad.",
-      "conclusion": "A unique cultural current affairs event for general awareness.",
-      "exam_relevance": "Railway, SSC, and State examinations under general knowledge."
-    },
-    {
-      "id": "news-6",
-      "category": "National",
-      "title": "C P Radhakrishnan Opens India International Water Week Declaring Water Security as National Security",
-      "image_url": "",
-      "date": "22 September 2026",
-      "place": "",
-      "persons_ministers": [
-        "C P Radhakrishnan"
-      ],
-      "officers": [],
-      "countries_states": [
-        "India"
-      ],
-      "mission": "India International Water Week",
-      "reason": "Focuses attention on water conservation, management, and strategic security implications of water resources.",
-      "conclusion": "Key topic for environmental governance and sustainable development questions.",
-      "exam_relevance": "UPSC and State PCS exams focusing on environment, resources, and security."
-    },
-    {
-      "id": "news-7",
-      "category": "National",
-      "title": "States Working Together in 'Mission Mode' to Build a Drug-Free India: Amit Shah",
-      "image_url": "",
-      "date": "22 September 2026",
-      "place": "",
-      "persons_ministers": [
-        "Amit Shah"
-      ],
-      "officers": [],
-      "countries_states": [
-        "India"
-      ],
-      "mission": "Drug-Free India",
-      "reason": "Highlights cooperative federalism and concerted administrative efforts to tackle drug trafficking and substance abuse.",
-      "conclusion": "Important for internal security and social welfare updates.",
-      "exam_relevance": "UPSC Internal Security, SSC, and Police/State Services examinations."
-    },
-    {
-      "id": "news-8",
-      "category": "Defence",
-      "title": "Former DRDO Chief Confirms Akash Exports to Tajikistan and Turkmenistan",
-      "image_url": "",
-      "date": "21 September 2026",
-      "place": "",
-      "persons_ministers": [],
-      "officers": [],
-      "countries_states": [
-        "India",
-        "Tajikistan",
-        "Turkmenistan"
-      ],
-      "mission": "Akash Missile Export",
-      "reason": "Demonstrates India's growing footprint as a defence equipment exporter to Central Asian nations.",
-      "conclusion": "Crucial for India's defence diplomacy and Make in India defence export goals.",
-      "exam_relevance": "NDA, CDS, and UPSC examinations focussing on international relations and defence."
-    },
-    {
-      "id": "news-9",
-      "category": "Economy",
-      "title": "RBI Issues Final Basel III Market Risk Capital Rules for Banks",
-      "image_url": "",
-      "date": "21 September 2026",
-      "place": "",
-      "persons_ministers": [],
-      "officers": [],
-      "countries_states": [
-        "India"
-      ],
-      "mission": "Basel III Norms Implementation",
-      "reason": "Strengthens banking sector resilience and aligns Indian financial regulations with international standards.",
-      "conclusion": "Essential study area for banking aspirants regarding capital adequacy and risk management.",
-      "exam_relevance": "Banking (IBPS, RBI Grade B) and UPSC Economy sections."
-    },
-    {
-      "id": "news-10",
-      "category": "International",
-      "title": "India's Aviation Regulator Places SpiceJet Under Operational and Financial Scrutiny",
-      "image_url": "",
-      "date": "22 September 2026",
-      "place": "",
-      "persons_ministers": [],
-      "officers": [],
-      "countries_states": [
-        "India"
-      ],
-      "mission": "",
-      "reason": "Ensures passenger safety and fiscal accountability within the domestic commercial aviation sector.",
-      "conclusion": "Relevant for regulatory frameworks in aviation and transport management.",
-      "exam_relevance": "Banking, SSC, and Civil Services exams covering regulatory bodies."
-    },
-    {
-      "id": "news-11",
-      "category": "Science & Tech",
-      "title": "Assam CM Performs Bhumi Pujan for ISRO Advanced Radar Facility in Chandrapur",
-      "image_url": "",
-      "date": "22 September 2026",
-      "place": "Chandrapur",
-      "persons_ministers": [],
-      "officers": [],
-      "countries_states": [
-        "Assam",
-        "India"
-      ],
-      "mission": "ISRO Advanced Radar Facility",
-      "reason": "Expands India's domestic space research infrastructure and marks Assam's entry into advanced space tracking facilities.",
-      "conclusion": "Important for science and technology advancements and regional developments.",
-      "exam_relevance": "UPSC, State PSCs, and Science & Tech current affairs."
-    },
-    {
-      "id": "news-12",
-      "category": "Schemes",
-      "title": "Government Announces Launch of PM RAHAT Scheme for Cashless Treatment of Road Accident Victims",
-      "image_url": "",
-      "date": "21 September 2026",
-      "place": "",
-      "persons_ministers": [],
-      "officers": [],
-      "countries_states": [
-        "India"
-      ],
-      "mission": "PM RAHAT Scheme",
-      "reason": "Provides financial safety and immediate medical care support up to Rs 1.5 Lakh for road accident victims.",
-      "conclusion": "Major social sector welfare scheme important for objective questions.",
-      "exam_relevance": "UPSC, SSC, Banking, and Railway examinations covering government schemes."
-    }
-  ],
-  "quizzes": [
-    {
-      "question": "Which Central Asian countries were confirmed as recipients of India's Akash missile system exports?",
-      "options": [
-        "Kazakhstan and Uzbekistan",
-        "Tajikistan and Turkmenistan",
-        "Kyrgyzstan and Tajikistan",
-        "Turkmenistan and Kazakhstan"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "In which state is the new ISRO Advanced Radar Facility being established in Chandrapur?",
-      "options": [
-        "Maharashtra",
-        "Odisha",
-        "Assam",
-        "Karnataka"
-      ],
-      "answer": 2
-    },
-    {
-      "question": "What is the financial coverage limit for cashless treatment under the newly announced PM RAHAT Scheme for road accident victims?",
-      "options": [
-        "Rs 50,000",
-        "Rs 1 Lakh",
-        "Rs 1 Lakh 50 thousand",
-        "Rs 2 Lakhs"
-      ],
-      "answer": 2
-    },
-    {
-      "question": "Who stated that 'Water security is national security' while opening the India International Water Week?",
-      "options": [
-        "Narendra Modi",
-        "Amit Shah",
-        "C P Radhakrishnan",
-        "Ashwini Vaishnaw"
-      ],
-      "answer": 2
-    }
-  ],
-  "motivational": "Success in competitive examinations is not about studying harder every single day, but about staying consistent, trusting your preparation, and never giving up when the syllabus feels overwhelming. Keep pushing forward!"
+// ============================================================
+// GLOBAL DATA
+// ============================================================
+
+let appData = {
+
+    news: [],
+
+    quizzes: [],
+
+    motivational: ""
+
 };
 
 
-    /* =========================================================
-       SAFE TEXT HELPERS
-       ========================================================= */
+// ============================================================
+// SAFE HTML
+// ============================================================
 
-    function safeText(value) {
+function escapeHTML(value) {
 
-      if (value === null || value === undefined) {
+    if (
+        value === null ||
+        value === undefined
+    ) {
+
         return "";
-      }
 
-      if (Array.isArray(value)) {
-        return value.join(", ");
-      }
-
-      return String(value);
     }
 
+    return String(value)
 
-    function escapeHTML(value) {
+        .replace(
+            /&/g,
+            "&amp;"
+        )
 
-      const text = safeText(value);
+        .replace(
+            /</g,
+            "&lt;"
+        )
 
-      return text
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-    }
+        .replace(
+            />/g,
+            "&gt;"
+        )
 
+        .replace(
+            /"/g,
+            "&quot;"
+        )
 
-    function makeList(value) {
-
-      if (!value) {
-        return "";
-      }
-
-      if (Array.isArray(value)) {
-
-        return value
-          .filter(Boolean)
-          .map(item => escapeHTML(item))
-          .join(", ");
-
-      }
-
-      return escapeHTML(value);
-    }
+        .replace(
+            /'/g,
+            "&#039;"
+        );
+}
 
 
-    /* =========================================================
-       BOOKMARK SYSTEM
-       ========================================================= */
+// ============================================================
+// BOOKMARKS
+// ============================================================
 
-    function getBookmarks() {
+function getBookmarks() {
 
-      try {
+    try {
 
-        const saved =
-          JSON.parse(
-            localStorage.getItem("auraBookmarks") || "[]"
-          );
+        return JSON.parse(
+            localStorage.getItem(
+                "auraBookmarks"
+            ) || "[]"
+        );
 
-        return Array.isArray(saved) ? saved : [];
-
-      } catch (error) {
+    } catch {
 
         return [];
 
-      }
     }
 
+}
 
-    function saveBookmarks(bookmarks) {
 
-      localStorage.setItem(
+function saveBookmarks(ids) {
+
+    localStorage.setItem(
         "auraBookmarks",
-        JSON.stringify(bookmarks)
-      );
+        JSON.stringify(ids)
+    );
 
-    }
-
-
-    function isBookmarked(id) {
-
-      return getBookmarks().includes(String(id));
-
-    }
+}
 
 
-    function toggleBookmark(id) {
+function isBookmarked(id) {
 
-      id = String(id);
+    return getBookmarks()
+        .includes(String(id));
 
-      let bookmarks = getBookmarks();
+}
 
-      if (bookmarks.includes(id)) {
 
-        bookmarks = bookmarks.filter(
-          item => item !== id
-        );
+function toggleBookmark(id) {
 
-      } else {
+    id = String(id);
+
+    let bookmarks =
+        getBookmarks();
+
+    if (
+        bookmarks.includes(id)
+    ) {
+
+        bookmarks =
+            bookmarks.filter(
+                x => x !== id
+            );
+
+    } else {
 
         bookmarks.push(id);
 
-      }
-
-      saveBookmarks(bookmarks);
-
-      renderNews();
-      renderSaved();
-
     }
 
+    saveBookmarks(bookmarks);
 
-    /* =========================================================
-       NEWS CARD
-       ========================================================= */
+    renderNews();
 
-    function renderNewsCard(article) {
+    renderSaved();
 
-      const id =
-        article.id ||
-        `${article.category || "news"}-${article.title || Math.random()}`;
+}
 
-      const bookmarked = isBookmarked(id);
 
-      const image =
-        article.image_url ||
-        "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80";
+// ============================================================
+// NEWS CARD
+// ============================================================
 
-      return `
+function renderNewsCard(item) {
 
-        <article class="news-card">
+    const bookmarked =
+        isBookmarked(item.id);
 
-          <div class="news-image-wrap">
+    const image =
+        item.image_url &&
+        item.image_url.trim()
+            ? item.image_url
+            : "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80";
+
+    return `
+
+        <article class="card">
 
             <img
-              class="news-image"
-              src="${escapeHTML(image)}"
-              alt="${escapeHTML(article.title || "Current Affairs")}"
-              loading="lazy"
-              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80';"
+                class="news-image"
+                src="${escapeHTML(image)}"
+                alt="Current Affairs"
+                onerror="this.style.display='none'"
             >
 
-            <div class="image-overlay"></div>
+            <div class="card-body">
 
-            <div class="category">
-              ${escapeHTML(article.category || "Current Affairs")}
-            </div>
+                <button
+                    class="bookmark ${bookmarked ? "saved" : ""}"
+                    onclick="toggleBookmark('${escapeHTML(item.id)}')"
+                    title="Bookmark"
+                >
+                    ${bookmarked ? "★" : "☆"}
+                </button>
 
-            <button
-              class="bookmark-btn ${bookmarked ? "saved" : ""}"
-              onclick="toggleBookmark('${escapeHTML(id)}')"
-              title="${bookmarked ? "Remove bookmark" : "Save article"}"
-            >
-              ${bookmarked ? "★" : "☆"}
-            </button>
+                <div class="category">
+                    ${escapeHTML(item.category)}
+                </div>
 
-          </div>
+                <div class="news-title">
+                    ${escapeHTML(item.title)}
+                </div>
 
+                <div class="meta">
 
-          <div class="news-content">
-
-            <h2 class="news-title">
-              ${escapeHTML(article.title || "Current Affairs")}
-            </h2>
-
-
-            <div class="news-meta">
-
-              ${
-                article.date
-                  ? `
-                    <span class="meta-item">
-                      📅 ${escapeHTML(article.date)}
+                    <span class="label">
+                        Date:
                     </span>
-                  `
-                  : ""
-              }
 
-              ${
-                article.place
-                  ? `
-                    <span class="meta-item">
-                      📍 ${escapeHTML(article.place)}
-                    </span>
-                  `
-                  : ""
-              }
+                    ${escapeHTML(item.date)}
+
+                    ${
+                        item.place
+                        ? `
+                        <br>
+                        <span class="label">
+                            Place:
+                        </span>
+                        ${escapeHTML(item.place)}
+                        `
+                        : ""
+                    }
+
+                </div>
+
+                ${
+                    item.persons_ministers
+                    ? `
+                    <div class="detail">
+                        <strong>Persons / Ministers:</strong>
+                        ${escapeHTML(item.persons_ministers)}
+                    </div>
+                    `
+                    : ""
+                }
+
+                ${
+                    item.officers
+                    ? `
+                    <div class="detail">
+                        <strong>Officers:</strong>
+                        ${escapeHTML(item.officers)}
+                    </div>
+                    `
+                    : ""
+                }
+
+                ${
+                    item.countries_states
+                    ? `
+                    <div class="detail">
+                        <strong>Countries / States:</strong>
+                        ${escapeHTML(item.countries_states)}
+                    </div>
+                    `
+                    : ""
+                }
+
+                ${
+                    item.mission
+                    ? `
+                    <div class="detail">
+                        <strong>Mission / Scheme:</strong>
+                        ${escapeHTML(item.mission)}
+                    </div>
+                    `
+                    : ""
+                }
+
+                ${
+                    item.reason
+                    ? `
+                    <div class="detail">
+                        <strong>Why it matters:</strong>
+                        ${escapeHTML(item.reason)}
+                    </div>
+                    `
+                    : ""
+                }
+
+                ${
+                    item.conclusion
+                    ? `
+                    <div class="detail">
+                        <strong>Exam takeaway:</strong>
+                        ${escapeHTML(item.conclusion)}
+                    </div>
+                    `
+                    : ""
+                }
 
             </div>
-
-
-            ${
-              article.persons_ministers
-                ? `
-                  <div class="news-section">
-
-                    <div class="news-section-title">
-                      PEOPLE / MINISTERS
-                    </div>
-
-                    <div class="news-section-text">
-                      ${makeList(article.persons_ministers)}
-                    </div>
-
-                  </div>
-                `
-                : ""
-            }
-
-
-            ${
-              article.officers
-                ? `
-                  <div class="news-section">
-
-                    <div class="news-section-title">
-                      OFFICERS / INSTITUTIONS
-                    </div>
-
-                    <div class="news-section-text">
-                      ${makeList(article.officers)}
-                    </div>
-
-                  </div>
-                `
-                : ""
-            }
-
-
-            ${
-              article.countries_states
-                ? `
-                  <div class="news-section">
-
-                    <div class="news-section-title">
-                      COUNTRIES / STATES
-                    </div>
-
-                    <div class="news-section-text">
-                      ${makeList(article.countries_states)}
-                    </div>
-
-                  </div>
-                `
-                : ""
-            }
-
-
-            ${
-              article.mission
-                ? `
-                  <div class="news-section">
-
-                    <div class="news-section-title">
-                      MISSION / INITIATIVE
-                    </div>
-
-                    <div class="news-section-text">
-                      ${escapeHTML(article.mission)}
-                    </div>
-
-                  </div>
-                `
-                : ""
-            }
-
-
-            ${
-              article.reason
-                ? `
-                  <div class="news-section">
-
-                    <div class="news-section-title">
-                      WHY IT MATTERS
-                    </div>
-
-                    <div class="news-section-text">
-                      ${escapeHTML(article.reason)}
-                    </div>
-
-                  </div>
-                `
-                : ""
-            }
-
-
-            ${
-              article.conclusion
-                ? `
-                  <div class="news-section">
-
-                    <div class="news-section-title">
-                      CONCLUSION
-                    </div>
-
-                    <div class="news-section-text">
-                      ${escapeHTML(article.conclusion)}
-                    </div>
-
-                  </div>
-                `
-                : ""
-            }
-
-
-            ${
-              article.exam_relevance
-                ? `
-                  <div class="exam-box">
-
-                    <div class="exam-title">
-                      EXAM RELEVANCE
-                    </div>
-
-                    <div class="exam-text">
-                      ${escapeHTML(article.exam_relevance)}
-                    </div>
-
-                  </div>
-                `
-                : ""
-            }
-
-          </div>
 
         </article>
 
-      `;
+    `;
 
-    }
+}
 
 
-    /* =========================================================
-       RENDER NEWS
-       ========================================================= */
+// ============================================================
+// RENDER NEWS
+// ============================================================
 
-    function renderNews() {
+function renderNews() {
 
-      const container =
-        document.getElementById("news-list");
+    const container =
+        document.getElementById(
+            "news-container"
+        );
 
-      const count =
-        document.getElementById("news-count");
+    const count =
+        document.getElementById(
+            "news-count"
+        );
 
-      const news =
-        Array.isArray(appData.news)
-          ? appData.news
-          : [];
-
-
-      count.textContent =
-        `${news.length} NEWS`;
-
-
-      if (!news.length) {
-
-        container.innerHTML = `
-
-          <div class="status-card">
-
-            <div class="status-title">
-              No Current Affairs Available
-            </div>
-
-            <div class="status-text">
-              The daily update has not been generated yet.
-              Run the GitHub Action to fetch today's current affairs.
-            </div>
-
-          </div>
-
-        `;
-
-        return;
-
-      }
-
-
-      container.innerHTML =
-        news
-          .map(renderNewsCard)
-          .join("");
-
-    }
-
-
-    /* =========================================================
-       RENDER QUIZ
-       ========================================================= */
-
-    function renderQuiz() {
-
-      const container =
-        document.getElementById("quiz-list");
-
-      const count =
-        document.getElementById("quiz-count");
-
-      const quizzes =
-        Array.isArray(appData.quizzes)
-          ? appData.quizzes
-          : [];
-
-
-      count.textContent =
-        `${quizzes.length} QUESTIONS`;
-
-
-      if (!quizzes.length) {
-
-        container.innerHTML = `
-
-          <div class="status-card">
-
-            <div class="status-title">
-              No Quiz Available
-            </div>
-
-            <div class="status-text">
-              The daily quiz will appear after the automatic update.
-            </div>
-
-          </div>
-
-        `;
-
-        return;
-
-      }
-
-
-      container.innerHTML =
-        quizzes
-          .map((quiz, index) => {
-
-            const options =
-              Array.isArray(quiz.options)
-                ? quiz.options
-                : [];
-
-
-            const answer =
-              Number.isInteger(quiz.answer)
-                ? quiz.answer
-                : parseInt(quiz.answer, 10);
-
-
-            const questionId =
-              `quiz-${index}`;
-
-
-            return `
-
-              <div class="quiz-card">
-
-                <div class="quiz-number">
-                  QUESTION ${index + 1}
-                </div>
-
-                <div class="quiz-question">
-                  ${escapeHTML(quiz.question || "")}
-                </div>
-
-                <div class="options">
-
-                  ${options
-                    .map((option, optionIndex) => `
-
-                      <button
-                        class="option"
-                        data-question="${questionId}"
-                        onclick="checkAnswer(
-                          '${questionId}',
-                          ${optionIndex},
-                          ${answer},
-                          this
-                        )"
-                      >
-                        ${String.fromCharCode(65 + optionIndex)}.
-                        ${escapeHTML(option)}
-                      </button>
-
-                    `)
-                    .join("")}
-
-                </div>
-
-                <div
-                  id="${questionId}-result"
-                  class="quiz-result"
-                ></div>
-
-              </div>
-
-            `;
-
-          })
-          .join("");
-
-    }
-
-
-    /* =========================================================
-       QUIZ ANSWER
-       ========================================================= */
-
-    function checkAnswer(
-      questionId,
-      selected,
-      correct,
-      button
+    if (
+        !appData.news ||
+        !appData.news.length
     ) {
 
-      const buttons =
-        document.querySelectorAll(
-          `[data-question="${questionId}"]`
-        );
-
-
-      buttons.forEach(btn => {
-
-        btn.disabled = true;
-
-      });
-
-
-      const result =
-        document.getElementById(
-          `${questionId}-result`
-        );
-
-
-      if (selected === correct) {
-
-        button.classList.add("correct");
-
-        result.className =
-          "quiz-result show correct-result";
-
-        result.textContent =
-          "✓ Correct answer.";
-
-      } else {
-
-        button.classList.add("wrong");
-
-        if (buttons[correct]) {
-          buttons[correct].classList.add("correct");
-        }
-
-        result.className =
-          "quiz-result show wrong-result";
-
-        result.textContent =
-          "✗ Incorrect. The correct answer is highlighted.";
-
-      }
-
-    }
-
-
-    /* =========================================================
-       MOTIVATION
-       ========================================================= */
-
-    function renderMotivation() {
-
-      const element =
-        document.getElementById(
-          "motivation-text"
-        );
-
-
-      if (!element) {
-        return;
-      }
-
-
-      const message =
-        safeText(appData.motivational).trim();
-
-
-      if (message) {
-
-        element.textContent =
-          message;
-
-      } else {
-
-        element.textContent =
-          "Stay consistent. Every question solved today strengthens tomorrow's performance.";
-
-      }
-
-    }
-
-
-    /* =========================================================
-       SAVED ARTICLES
-       ========================================================= */
-
-    function renderSaved() {
-
-      const container =
-        document.getElementById(
-          "saved-list"
-        );
-
-      const count =
-        document.getElementById(
-          "saved-count"
-        );
-
-
-      const bookmarks =
-        getBookmarks();
-
-
-      const news =
-        Array.isArray(appData.news)
-          ? appData.news
-          : [];
-
-
-      const saved =
-        news.filter(article => {
-
-          const id =
-            String(
-              article.id ||
-              `${article.category || "news"}-${article.title || ""}`
-            );
-
-          return bookmarks.includes(id);
-
-        });
-
-
-      count.textContent =
-        `${saved.length} SAVED`;
-
-
-      if (!saved.length) {
+        count.textContent =
+            "0 NEWS";
 
         container.innerHTML = `
 
-          <div class="status-card">
+            <div class="empty">
 
-            <div class="status-title">
-              No Bookmarked Articles
+                <h3>
+                    No Current Affairs Available
+                </h3>
+
+                <p>
+                    The daily update has not been generated yet.
+                </p>
+
             </div>
-
-            <div class="status-text">
-              Tap ☆ on any current-affairs article to save it here.
-            </div>
-
-          </div>
 
         `;
 
         return;
 
-      }
+    }
 
 
-      container.innerHTML = `
+    count.textContent =
+        `${appData.news.length} NEWS`;
 
-        <div id="saved-news-grid"
-             style="
-               display:grid;
-               grid-template-columns:repeat(2,minmax(0,1fr));
-               gap:18px;
-             "
-        >
+    container.innerHTML =
+        appData.news
+            .map(
+                renderNewsCard
+            )
+            .join("");
 
-          ${saved
-            .map(renderNewsCard)
-            .join("")}
+}
 
-        </div>
 
-      `;
+// ============================================================
+// QUIZ
+// ============================================================
+
+function renderQuiz() {
+
+    const container =
+        document.getElementById(
+            "quiz-container"
+        );
+
+    if (
+        !appData.quizzes ||
+        !appData.quizzes.length
+    ) {
+
+        container.innerHTML = `
+
+            <div class="empty">
+
+                <h3>
+                    No Quiz Available
+                </h3>
+
+                <p>
+                    Quiz will appear after the current-affairs update.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
 
     }
 
 
-    /* =========================================================
-       TAB SWITCHING
-       ========================================================= */
+    container.innerHTML =
+        appData.quizzes
+            .map(
+                (quiz, index) => `
 
-    function showTab(tab) {
+                <article
+                    class="quiz-card"
+                    id="quiz-${escapeHTML(quiz.id)}"
+                >
 
-      const newsSection =
-        document.getElementById(
-          "news-section"
+                    <div class="quiz-number">
+                        Question ${index + 1}
+                    </div>
+
+                    <div class="question">
+                        ${escapeHTML(quiz.question)}
+                    </div>
+
+                    <div>
+
+                        ${
+                            quiz.options
+                                .map(
+                                    option => `
+
+                                    <button
+                                        class="option"
+                                        onclick="checkAnswer(
+                                            '${escapeHTML(quiz.id)}',
+                                            this,
+                                            '${escapeHTML(option)}'
+                                        )"
+                                    >
+                                        ${escapeHTML(option)}
+                                    </button>
+
+                                    `
+                                )
+                                .join("")
+                        }
+
+                    </div>
+
+                    <div
+                        class="explanation hidden"
+                        id="explanation-${escapeHTML(quiz.id)}"
+                    >
+                        <strong>
+                            Explanation:
+                        </strong>
+
+                        ${escapeHTML(quiz.explanation)}
+
+                    </div>
+
+                </article>
+
+            `
+            )
+            .join("");
+
+}
+
+
+// ============================================================
+// CHECK ANSWER
+// ============================================================
+
+function checkAnswer(
+    quizId,
+    button,
+    selected
+) {
+
+    const quiz =
+        appData.quizzes.find(
+            q =>
+                String(q.id) ===
+                String(quizId)
         );
 
-      const quizSection =
+    if (!quiz) {
+        return;
+    }
+
+
+    const card =
         document.getElementById(
-          "quiz-section"
+            `quiz-${quizId}`
         );
 
-      const savedSection =
-        document.getElementById(
-          "saved-section"
-        );
-
-      const motivation =
-        document.getElementById(
-          "motivation-section"
-        );
-
-
-      const newsTab =
-        document.getElementById(
-          "news-tab"
-        );
-
-      const quizTab =
-        document.getElementById(
-          "quiz-tab"
-        );
-
-      const savedTab =
-        document.getElementById(
-          "saved-tab"
+    const buttons =
+        card.querySelectorAll(
+            ".option"
         );
 
 
-      newsSection.style.display =
-        tab === "news"
-          ? "block"
-          : "none";
+    buttons.forEach(
+        btn => {
+
+            btn.disabled = true;
+
+            if (
+                btn.textContent.trim() ===
+                quiz.answer.trim()
+            ) {
+
+                btn.classList.add(
+                    "correct"
+                );
+
+            }
+
+        }
+    );
 
 
-      quizSection.style.display =
-        tab === "quiz"
-          ? "block"
-          : "none";
+    if (
+        selected.trim() !==
+        quiz.answer.trim()
+    ) {
 
-
-      savedSection.style.display =
-        tab === "saved"
-          ? "block"
-          : "none";
-
-
-      motivation.style.display =
-        tab === "news"
-          ? "block"
-          : "none";
-
-
-      newsTab.classList.toggle(
-        "active",
-        tab === "news"
-      );
-
-      quizTab.classList.toggle(
-        "active",
-        tab === "quiz"
-      );
-
-      savedTab.classList.toggle(
-        "active",
-        tab === "saved"
-      );
-
-
-      if (tab === "saved") {
-        renderSaved();
-      }
+        button.classList.add(
+            "wrong"
+        );
 
     }
 
 
-    /* =========================================================
-       INITIALIZE
-       ========================================================= */
+    const explanation =
+        document.getElementById(
+            `explanation-${quizId}`
+        );
 
-    document.addEventListener(
-      "DOMContentLoaded",
-      function () {
+    explanation.classList.remove(
+        "hidden"
+    );
+
+}
+
+
+// ============================================================
+// MOTIVATION
+// ============================================================
+
+function renderMotivation() {
+
+    const element =
+        document.getElementById(
+            "motivation"
+        );
+
+    element.textContent =
+        appData.motivational ||
+        "Stay consistent. Every question solved today strengthens tomorrow's performance.";
+
+}
+
+
+// ============================================================
+// SAVED NEWS
+// ============================================================
+
+function renderSaved() {
+
+    const container =
+        document.getElementById(
+            "saved-container"
+        );
+
+    const ids =
+        getBookmarks();
+
+    const saved =
+        (appData.news || [])
+            .filter(
+                item =>
+                    ids.includes(
+                        String(item.id)
+                    )
+            );
+
+
+    if (!saved.length) {
+
+        container.innerHTML = `
+
+            <div class="empty">
+
+                <h3>
+                    No Saved Current Affairs
+                </h3>
+
+                <p>
+                    Bookmark important news to see it here.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    container.innerHTML =
+        saved
+            .map(
+                renderNewsCard
+            )
+            .join("");
+
+}
+
+
+// ============================================================
+// TABS
+// ============================================================
+
+function showTab(tab) {
+
+    const sections = {
+
+        news:
+            document.getElementById(
+                "news-section"
+            ),
+
+        quiz:
+            document.getElementById(
+                "quiz-section"
+            ),
+
+        bookmarks:
+            document.getElementById(
+                "bookmarks-section"
+            )
+
+    };
+
+
+    Object.values(
+        sections
+    ).forEach(
+        section =>
+            section.classList.add(
+                "hidden"
+            )
+    );
+
+
+    sections[tab]
+        .classList.remove(
+            "hidden"
+        );
+
+
+    document
+        .querySelectorAll(
+            ".tab"
+        )
+        .forEach(
+            button =>
+                button.classList.remove(
+                    "active"
+                )
+        );
+
+
+    document
+        .getElementById(
+            `tab-${tab}`
+        )
+        .classList.add(
+            "active"
+        );
+
+}
+
+
+// ============================================================
+// LOAD DATA.JSON
+// ============================================================
+
+async function loadAppData() {
+
+    try {
+
+        console.log(
+            "Loading AURA Exam AI data..."
+        );
+
+
+        const response =
+            await fetch(
+                "./data.json?v=" +
+                Date.now(),
+                {
+                    cache: "no-store"
+                }
+            );
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                `data.json HTTP ${response.status}`
+            );
+
+        }
+
+
+        const data =
+            await response.json();
+
+
+        console.log(
+            "AURA data loaded:",
+            data
+        );
+
+
+        appData = data;
+
 
         renderNews();
 
@@ -1986,10 +1415,61 @@
 
         renderSaved();
 
-      }
-    );
 
-  </script>
+    } catch (error) {
+
+        console.error(
+            "Data loading error:",
+            error
+        );
+
+
+        document.getElementById(
+            "news-count"
+        ).textContent =
+            "ERROR";
+
+
+        document.getElementById(
+            "news-container"
+        ).innerHTML = `
+
+            <div class="empty">
+
+                <h3>
+                    Current Affairs Could Not Be Loaded
+                </h3>
+
+                <p>
+                    Please refresh the page after the next update.
+                </p>
+
+            </div>
+
+        `;
+
+    }
+
+}
+
+
+// ============================================================
+// START
+// ============================================================
+
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
+
+        loadAppData();
+
+    }
+);
+
+
+</script>
+
 
 </body>
+
 </html>
