@@ -1,38 +1,48 @@
-name: Daily Current Affairs Auto-Fetch
+name: Update Current Affairs
 
 on:
   schedule:
-    # Runs daily at 00:00 UTC (5:30 AM IST)
-    - cron: '0 0 * * *'
-  workflow_dispatch: # Allows manual trigger from GitHub UI
+    - cron: "15 */3 * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
-  update-and-deploy:
+  update-news:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: "3.11"
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install google-genai feedparser beautifulsoup4 requests
+          pip install feedparser requests beautifulsoup4 google-genai
 
-      - name: Run Auto-Fetch Script
+      - name: Update current affairs
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python update_news.py
 
-      - name: Commit and Push Updated Data
+      - name: Commit updated news
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add data/ data.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update daily current affairs [$(date +'%Y-%m-%d')]" && git push)
+          git config user.name "AURA EXAM AI Bot"
+          git config user.email "actions@github.com"
+
+          git add data.json data/
+
+          if git diff --cached --quiet; then
+            echo "No new news to commit."
+          else
+            git commit -m "Auto update current affairs"
+            git push
+          fi
