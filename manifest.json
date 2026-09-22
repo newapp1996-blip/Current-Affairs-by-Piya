@@ -1,10 +1,11 @@
 {
-  "name": "Current Affairs by ZerroRatta",
-  "short_name": "CurrentAffairs",
-  "start_url": "/Current-Affairs-by-Piya/",
+  "name": "AURA Exam AI",
+  "short_name": "AURA AI",
+  "description": "Daily Current Affairs and Competitive Exam Quizzes",
+  "start_url": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#007bff",
+  "background_color": "#030712",
+  "theme_color": "#030712",
   "icons": [
     {
       "src": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
