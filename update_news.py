@@ -4,12 +4,9 @@ import re
 import urllib.request
 import urllib.error
 import feedparser
+import time
 from html import unescape
 
-
-# ============================================================
-# AURA EXAM AI - DAILY CURRENT AFFAIRS UPDATE
-# ============================================================
 
 print("=" * 60)
 print("AURA EXAM AI - DAILY UPDATE")
@@ -29,12 +26,15 @@ if not API_KEY:
 
 MODEL = "gemini-3.6-flash"
 
+INDEX_FILE = "index.html"
+
 
 # ============================================================
 # GOOGLE NEWS RSS FEEDS
 # ============================================================
 
 GOOGLE_NEWS_FEEDS = {
+
     "National": (
         "https://news.google.com/rss/search?"
         "q=India+government+OR+India+national+when%3A2d"
@@ -74,7 +74,7 @@ GOOGLE_NEWS_FEEDS = {
 
 
 # ============================================================
-# FORBIDDEN PLACEHOLDER TEXT
+# FORBIDDEN PLACEHOLDER PHRASES
 # ============================================================
 
 FORBIDDEN_PHRASES = [
@@ -102,29 +102,40 @@ FORBIDDEN_PHRASES = [
 
 
 # ============================================================
-# CLEAN TEXT
+# TEXT CLEANING
 # ============================================================
 
 def clean_text(text):
+
     if not text:
         return ""
 
     text = unescape(str(text))
-    text = re.sub(r"<[^>]+>", " ", text)
-    text = re.sub(r"\s+", " ", text)
+
+    text = re.sub(
+        r"<[^>]+>",
+        " ",
+        text
+    )
+
+    text = re.sub(
+        r"\s+",
+        " ",
+        text
+    )
 
     return text.strip()
 
 
 # ============================================================
-# FETCH NEWS
+# FETCH REAL NEWS
 # ============================================================
 
 def fetch_news():
 
     print("Fetching current news from RSS feeds...")
 
-    articles = []
+    all_news = []
     seen_titles = set()
 
     for category, feed_url in GOOGLE_NEWS_FEEDS.items():
@@ -148,50 +159,60 @@ def fetch_news():
                     entry.get("summary", "")
                 )
 
-                link = clean_text(
-                    entry.get("link", "")
+                link = entry.get(
+                    "link",
+                    ""
                 )
 
                 published = clean_text(
-                    entry.get("published", "")
+                    entry.get(
+                        "published",
+                        ""
+                    )
                 )
 
                 if not title:
                     continue
 
-                key = title.lower()
+                title_key = title.lower()
 
-                if key in seen_titles:
+                if title_key in seen_titles:
                     continue
 
-                seen_titles.add(key)
+                seen_titles.add(title_key)
 
-                articles.append({
+                all_news.append({
+
                     "category": category,
+
                     "title": title,
+
                     "summary": summary,
+
                     "link": link,
+
                     "published": published
+
                 })
 
-        except Exception as error:
+        except Exception as e:
 
             print(
-                f"RSS error in {category}: {error}"
+                f"RSS error in {category}: {e}"
             )
 
     print(
         f"Total unique news articles collected: "
-        f"{len(articles)}"
+        f"{len(all_news)}"
     )
 
-    if len(articles) < 12:
+    if len(all_news) < 12:
+
         raise RuntimeError(
-            "Fewer than 12 real news articles were "
-            "collected from the RSS feeds."
+            "Not enough real news articles were collected."
         )
 
-    return articles
+    return all_news
 
 
 # ============================================================
@@ -200,115 +221,57 @@ def fetch_news():
 
 def build_prompt(news_items):
 
-    news_text = []
+    news_text = ""
 
-    for number, item in enumerate(
-        news_items,
+    for i, item in enumerate(
+        news_items[:52],
         start=1
     ):
 
-        news_text.append(
-            f"""
-NEWS ITEM {number}
-
-Category:
-{item["category"]}
-
-Headline:
-{item["title"]}
-
-Summary:
-{item["summary"]}
-
-Published:
-{item["published"]}
-
-Source:
-{item["link"]}
-"""
+        news_text += (
+            f"\nNEWS {i}\n"
+            f"Category: {item['category']}\n"
+            f"Title: {item['title']}\n"
+            f"Summary: {item['summary']}\n"
+            f"Published: {item['published']}\n"
+            f"Source URL: {item['link']}\n"
         )
 
-    joined_news = "\n".join(news_text)
+    prompt = f"""
+You are the current affairs editor for AURA EXAM AI.
 
-    return f"""
-You are the current-affairs editor for AURA EXAM AI.
+Create today's current affairs content for Indian competitive examinations.
 
-Convert the REAL news material below into exam-focused
-current affairs for Indian competitive examinations.
+TARGET EXAMS:
+- NDA
+- CDS
+- UPSC
+- SSC
+- Banking
+- Railway
+- State government exams
+- Other major Indian competitive examinations
 
-Target exams:
+IMPORTANT:
 
-NDA
-CDS
-UPSC
-SSC
-Banking
-Railway
-State PSC
-CTET
-KVS
-NVS
+Use ONLY real events contained in the supplied news data.
 
+Do NOT invent news.
 
-STRICT RULES:
+Do NOT create fictional people, places, schemes, missions,
+dates, organisations or events.
 
-1. Use ONLY real events contained in the supplied news.
+Select the most important and exam-relevant events.
 
-2. Do NOT invent news.
+Return EXACTLY:
 
-3. Do NOT create fictional events.
+12 current affairs articles
 
-4. Do NOT use template text.
+4 multiple-choice questions
 
-5. Do NOT use placeholders.
+1 motivational message
 
-6. Select exactly 12 DISTINCT important news events.
-
-7. Avoid duplicate events.
-
-8. Prefer important developments involving:
-   Government
-   Defence
-   Economy
-   RBI
-   International relations
-   Science
-   Space
-   Technology
-   Government schemes
-   Appointments
-   Summits
-   Agreements
-   Missions
-   Important reports
-
-9. Write clear English suitable for competitive exams.
-
-10. Return ONLY valid JSON.
-
-11. Do NOT use Markdown.
-
-12. Do NOT write anything outside the JSON.
-
-13. Never use these phrases:
-
-Actual current-affairs headline
-A concise summary
-What happened
-Where it happened
-Who or which institution is involved
-Why it matters
-Relevant exam concepts
-Sample Question
-Title here
-Headline here
-Summary here
-National#1 of 1
-
-
-NEWS FORMAT:
-
-Each news object must contain:
+Each current affairs article must contain:
 
 id
 category
@@ -324,60 +287,82 @@ reason
 conclusion
 exam_relevance
 
+Rules for current affairs:
 
-For image_url:
+- title must be the REAL headline/event
+- summary/details must describe the REAL event
+- place must be specific when available
+- persons_ministers should contain relevant people only
+- officers should contain relevant officers only
+- countries_states should contain relevant countries/states
+- mission should mention the relevant mission/programme if applicable
+- reason should explain why the event matters
+- conclusion should give the exam-oriented takeaway
+- exam_relevance should mention relevant examination concepts
+- Do not use placeholders
+- Do not repeat the same event
+- Do not fabricate information
 
-Return an empty string unless a reliable direct image
-URL is available from the supplied material.
+IMAGE RULE:
 
-Do NOT invent image URLs.
+image_url must be a valid publicly accessible image URL only if
+one is available from the supplied information.
 
+If no reliable image URL is available,
+use an empty string.
 
-Generate exactly 4 MCQs.
+MCQ RULES:
+
+Create exactly 4 MCQs.
 
 Each MCQ must have:
 
 question
 options
-answer
 
-There must be exactly 4 options.
+options must contain exactly 4 strings.
 
-answer must be:
+answer must be an integer:
 
-0 = option A
-1 = option B
-2 = option C
-3 = option D
+0 = first option
+1 = second option
+2 = third option
+3 = fourth option
 
+Questions must be based on the supplied current affairs.
 
-Also generate ONE short original motivational message.
+Avoid ambiguous questions.
 
+The motivational message must be short and suitable for
+students preparing for competitive examinations.
 
-FINAL JSON FORMAT:
+DO NOT return Markdown.
+
+DO NOT return explanations outside the JSON.
+
+Return ONLY valid JSON in this exact structure:
 
 {{
   "news": [
     {{
-      "id": "1",
+      "id": "news-1",
       "category": "National",
-      "title": "Real headline",
+      "title": "Real current affairs headline",
       "image_url": "",
-      "date": "date",
-      "place": "place",
-      "persons_ministers": "people involved",
-      "officers": "officers or institutions",
-      "countries_states": "countries or states",
-      "mission": "mission or scheme",
-      "reason": "why it matters",
-      "conclusion": "exam-focused conclusion",
-      "exam_relevance": "important exam fact"
+      "date": "22 September 2026",
+      "place": "",
+      "persons_ministers": [],
+      "officers": [],
+      "countries_states": [],
+      "mission": "",
+      "reason": "",
+      "conclusion": "",
+      "exam_relevance": ""
     }}
   ],
-
   "quizzes": [
     {{
-      "question": "Question",
+      "question": "Question?",
       "options": [
         "Option A",
         "Option B",
@@ -387,31 +372,19 @@ FINAL JSON FORMAT:
       "answer": 0
     }}
   ],
-
-  "motivational": "Daily motivational message"
+  "motivational": "Short motivational message."
 }}
 
+NEWS DATA:
 
-REQUIREMENTS:
-
-Exactly 12 news articles.
-Exactly 4 quizzes.
-Exactly 4 options per quiz.
-Answer must be 0, 1, 2 or 3.
-No placeholders.
-No duplicate news.
-No Markdown.
-No text outside JSON.
-
-
-REAL NEWS MATERIAL:
-
-{joined_news}
+{news_text}
 """
+
+    return prompt
 
 
 # ============================================================
-# CALL GEMINI
+# CALL GEMINI WITH AUTOMATIC RETRIES
 # ============================================================
 
 def call_gemini(news_items):
@@ -428,157 +401,327 @@ def call_gemini(news_items):
     )
 
     payload = {
+
         "contents": [
+
             {
+
                 "parts": [
+
                     {
                         "text": prompt
                     }
+
                 ]
+
             }
+
         ],
+
         "generationConfig": {
+
             "temperature": 0.2,
+
             "responseMimeType": "application/json"
+
         }
+
     }
 
-    data = json.dumps(payload).encode("utf-8")
+    data = json.dumps(
+        payload,
+        ensure_ascii=False
+    ).encode("utf-8")
 
-    request = urllib.request.Request(
-        url,
-        data=data,
-        headers={
-            "Content-Type": "application/json"
-        },
-        method="POST"
-    )
+    max_attempts = 5
 
-    try:
+    for attempt in range(
+        1,
+        max_attempts + 1
+    ):
 
-        with urllib.request.urlopen(
-            request,
-            timeout=120
-        ) as response:
+        print(
+            f"Gemini API attempt "
+            f"{attempt}/{max_attempts}..."
+        )
 
-            response_body = response.read().decode(
-                "utf-8"
-            )
+        request = urllib.request.Request(
 
-            result = json.loads(
-                response_body
-            )
+            url,
 
-    except urllib.error.HTTPError as error:
+            data=data,
 
-        error_body = ""
+            headers={
+                "Content-Type":
+                "application/json"
+            },
+
+            method="POST"
+        )
 
         try:
-            error_body = error.read().decode(
-                "utf-8"
+
+            with urllib.request.urlopen(
+                request,
+                timeout=180
+            ) as response:
+
+                response_body = (
+                    response
+                    .read()
+                    .decode("utf-8")
+                )
+
+                result = json.loads(
+                    response_body
+                )
+
+            text = (
+                result
+                ["candidates"][0]
+                ["content"]
+                ["parts"][0]
+                ["text"]
             )
-        except Exception:
-            pass
 
-        print("GEMINI HTTP ERROR:")
-        print(error_body)
+            text = text.strip()
 
-        raise RuntimeError(
-            f"Gemini API HTTP {error.code}\n"
-            f"Error: {error_body}"
-        )
+            # Remove accidental Markdown fences
+            if text.startswith(
+                "```json"
+            ):
 
-    except Exception as error:
+                text = text[7:]
 
-        raise RuntimeError(
-            f"Gemini request failed: {error}"
-        )
+            elif text.startswith(
+                "```"
+            ):
 
-    try:
+                text = text[3:]
 
-        text = (
-            result["candidates"][0]
-            ["content"]["parts"][0]["text"]
-        )
+            if text.endswith(
+                "```"
+            ):
 
-    except Exception:
+                text = text[:-3]
 
-        print("Unexpected Gemini response:")
-        print(
-            json.dumps(
-                result,
-                indent=2
+            text = text.strip()
+
+            parsed = json.loads(text)
+
+            print(
+                "Gemini generation successful."
             )
-        )
 
-        raise RuntimeError(
-            "Could not extract Gemini response."
-        )
+            return parsed
 
-    text = text.strip()
+        except urllib.error.HTTPError as e:
 
-    # Remove accidental Markdown fences
+            error_body = (
+                e.read()
+                .decode(
+                    "utf-8",
+                    errors="replace"
+                )
+            )
 
-    if text.startswith("```json"):
-        text = text[7:]
+            print(
+                "GEMINI HTTP ERROR:"
+            )
 
-    elif text.startswith("```"):
-        text = text[3:]
+            print(error_body)
 
-    if text.endswith("```"):
-        text = text[:-3]
+            # Temporary errors
+            if e.code in (
+                429,
+                500,
+                502,
+                503,
+                504
+            ):
 
-    text = text.strip()
+                if attempt < max_attempts:
 
-    try:
+                    wait_seconds = (
+                        10 *
+                        (2 ** (attempt - 1))
+                    )
 
-        parsed = json.loads(text)
+                    print(
+                        f"Temporary Gemini "
+                        f"error {e.code}."
+                    )
 
-    except json.JSONDecodeError as error:
+                    print(
+                        f"Retrying in "
+                        f"{wait_seconds} "
+                        f"seconds..."
+                    )
 
-        print("Gemini returned invalid JSON:")
-        print(text)
+                    time.sleep(
+                        wait_seconds
+                    )
 
-        raise RuntimeError(
-            f"Gemini JSON parsing failed: {error}"
-        )
+                    continue
 
-    return parsed
+                raise RuntimeError(
+                    f"Gemini API HTTP "
+                    f"{e.code} after "
+                    f"{max_attempts} "
+                    f"attempts\n"
+                    f"Error: "
+                    f"{error_body}"
+                )
+
+            # Permanent errors
+            raise RuntimeError(
+                f"Gemini API HTTP "
+                f"{e.code}\n"
+                f"Error: "
+                f"{error_body}"
+            )
+
+        except urllib.error.URLError as e:
+
+            print(
+                f"NETWORK ERROR: {e}"
+            )
+
+            if attempt < max_attempts:
+
+                wait_seconds = (
+                    10 *
+                    (2 ** (attempt - 1))
+                )
+
+                print(
+                    f"Retrying in "
+                    f"{wait_seconds} "
+                    f"seconds..."
+                )
+
+                time.sleep(
+                    wait_seconds
+                )
+
+                continue
+
+            raise RuntimeError(
+                f"Gemini network error "
+                f"after {max_attempts} "
+                f"attempts: {e}"
+            )
+
+        except (
+            json.JSONDecodeError,
+            KeyError,
+            IndexError
+        ) as e:
+
+            print(
+                f"Invalid Gemini response: {e}"
+            )
+
+            if attempt < max_attempts:
+
+                wait_seconds = (
+                    10 *
+                    (2 ** (attempt - 1))
+                )
+
+                print(
+                    f"Retrying in "
+                    f"{wait_seconds} "
+                    f"seconds..."
+                )
+
+                time.sleep(
+                    wait_seconds
+                )
+
+                continue
+
+            raise RuntimeError(
+                "Gemini returned an "
+                "invalid response after "
+                f"{max_attempts} attempts: "
+                f"{e}"
+            )
+
+    raise RuntimeError(
+        "Gemini generation failed unexpectedly."
+    )
 
 
 # ============================================================
-# VALIDATE OUTPUT
+# VALIDATE GENERATED DATA
 # ============================================================
 
 def validate_data(data):
 
-    print("Validating Gemini output...")
+    print("Validating generated data...")
 
-    if not isinstance(data, dict):
+    if not isinstance(
+        data,
+        dict
+    ):
+
         raise RuntimeError(
             "Gemini output is not a JSON object."
         )
 
-    news = data.get("news")
-    quizzes = data.get("quizzes")
-    motivational = data.get("motivational")
+    news = data.get(
+        "news"
+    )
 
-    # --------------------------------------------------------
-    # NEWS
-    # --------------------------------------------------------
+    quizzes = data.get(
+        "quizzes"
+    )
 
-    if not isinstance(news, list):
+    motivational = data.get(
+        "motivational"
+    )
+
+    if not isinstance(
+        news,
+        list
+    ):
+
         raise RuntimeError(
-            "The news field is not a list."
+            "News is not a list."
         )
 
     if len(news) != 12:
+
         raise RuntimeError(
             f"Expected 12 news articles, "
-            f"received {len(news)}."
+            f"got {len(news)}."
         )
 
-    required_fields = [
+    if not isinstance(
+        quizzes,
+        list
+    ):
+
+        raise RuntimeError(
+            "Quizzes is not a list."
+        )
+
+    if len(quizzes) != 4:
+
+        raise RuntimeError(
+            f"Expected 4 quizzes, "
+            f"got {len(quizzes)}."
+        )
+
+    if not motivational:
+
+        raise RuntimeError(
+            "Motivational message is empty."
+        )
+
+    required_news_fields = [
+
         "id",
         "category",
         "title",
@@ -592,118 +735,141 @@ def validate_data(data):
         "reason",
         "conclusion",
         "exam_relevance"
+
     ]
 
-    titles = []
+    titles = set()
 
-    for index, article in enumerate(news):
+    for index, item in enumerate(
+        news,
+        start=1
+    ):
 
-        if not isinstance(article, dict):
+        if not isinstance(
+            item,
+            dict
+        ):
+
             raise RuntimeError(
-                f"News item {index + 1} is invalid."
+                f"News item {index} "
+                f"is not an object."
             )
 
-        for field in required_fields:
+        for field in required_news_fields:
 
-            if field not in article:
+            if field not in item:
+
                 raise RuntimeError(
-                    f"News item {index + 1} "
-                    f"is missing: {field}"
+                    f"News item {index} "
+                    f"is missing field: "
+                    f"{field}"
                 )
 
         title = str(
-            article.get("title", "")
+            item["title"]
         ).strip()
 
         if not title:
+
             raise RuntimeError(
-                f"News item {index + 1} "
-                "has an empty title."
+                f"News item {index} "
+                f"has an empty title."
             )
 
-        titles.append(
-            title.lower()
+        title_key = title.lower()
+
+        if title_key in titles:
+
+            raise RuntimeError(
+                f"Duplicate news title: "
+                f"{title}"
+            )
+
+        titles.add(
+            title_key
         )
 
-        article_text = json.dumps(
-            article,
+        full_text = json.dumps(
+            item,
             ensure_ascii=False
         ).lower()
 
         for phrase in FORBIDDEN_PHRASES:
 
-            if phrase.lower() in article_text:
+            if phrase in full_text:
 
                 raise RuntimeError(
-                    f"Placeholder detected in "
-                    f"news item {index + 1}: "
+                    "Placeholder text detected "
+                    f"in news item {index}: "
                     f"{phrase}"
                 )
 
-    if len(set(titles)) != len(titles):
-        raise RuntimeError(
-            "Duplicate news titles detected."
-        )
+    for index, quiz in enumerate(
+        quizzes,
+        start=1
+    ):
 
-    # --------------------------------------------------------
-    # QUIZZES
-    # --------------------------------------------------------
+        if not isinstance(
+            quiz,
+            dict
+        ):
 
-    if not isinstance(quizzes, list):
-        raise RuntimeError(
-            "The quizzes field is not a list."
-        )
-
-    if len(quizzes) != 4:
-        raise RuntimeError(
-            f"Expected 4 quizzes, "
-            f"received {len(quizzes)}."
-        )
-
-    for index, quiz in enumerate(quizzes):
-
-        if not isinstance(quiz, dict):
             raise RuntimeError(
-                f"Quiz {index + 1} is invalid."
+                f"Quiz {index} "
+                f"is not an object."
             )
 
-        question = str(
-            quiz.get("question", "")
-        ).strip()
+        if "question" not in quiz:
 
-        options = quiz.get("options")
-        answer = quiz.get("answer")
-
-        if not question:
             raise RuntimeError(
-                f"Quiz {index + 1} "
-                "has an empty question."
+                f"Quiz {index} "
+                f"is missing question."
             )
 
-        if not isinstance(options, list):
+        if "options" not in quiz:
+
             raise RuntimeError(
-                f"Quiz {index + 1} "
-                "options are invalid."
+                f"Quiz {index} "
+                f"is missing options."
+            )
+
+        if "answer" not in quiz:
+
+            raise RuntimeError(
+                f"Quiz {index} "
+                f"is missing answer."
+            )
+
+        options = quiz["options"]
+
+        if not isinstance(
+            options,
+            list
+        ):
+
+            raise RuntimeError(
+                f"Quiz {index} "
+                f"options are not a list."
             )
 
         if len(options) != 4:
+
             raise RuntimeError(
-                f"Quiz {index + 1} "
-                "must have exactly 4 options."
+                f"Quiz {index} "
+                f"must have exactly "
+                f"4 options."
             )
 
-        try:
-            answer = int(answer)
-        except Exception:
-            raise RuntimeError(
-                f"Quiz {index + 1} "
-                "has an invalid answer."
-            )
+        answer = quiz["answer"]
 
-        if answer not in [0, 1, 2, 3]:
+        if not isinstance(
+            answer,
+            int
+        ) or answer not in range(4):
+
             raise RuntimeError(
-                f"Quiz {index + 1} "
-                "answer must be 0, 1, 2 or 3."
+                f"Quiz {index} "
+                f"has invalid answer index."
             )
 
         quiz_text = json.dumps(
@@ -713,31 +879,31 @@ def validate_data(data):
 
         for phrase in FORBIDDEN_PHRASES:
 
-            if phrase.lower() in quiz_text:
+            if phrase in quiz_text:
 
                 raise RuntimeError(
-                    f"Placeholder detected in "
-                    f"quiz {index + 1}: "
+                    "Placeholder text detected "
+                    f"in quiz {index}: "
                     f"{phrase}"
                 )
 
-    # --------------------------------------------------------
-    # MOTIVATION
-    # --------------------------------------------------------
+    print(
+        "Validation successful:"
+    )
 
-    if not isinstance(
-        motivational,
-        str
-    ) or not motivational.strip():
+    print(
+        "- 12 current affairs"
+    )
 
-        raise RuntimeError(
-            "Motivational message is empty."
-        )
+    print(
+        "- 4 MCQs"
+    )
 
-    print("Validation successful.")
-    print(f"News articles: {len(news)}")
-    print(f"Quiz questions: {len(quizzes)}")
-    print("Motivational message: available")
+    print(
+        "- 1 motivational message"
+    )
+
+    return True
 
 
 # ============================================================
@@ -746,17 +912,20 @@ def validate_data(data):
 
 def update_index(data):
 
-    print("Updating index.html...")
+    print(
+        "Updating index.html..."
+    )
 
-    index_file = "index.html"
+    if not os.path.exists(
+        INDEX_FILE
+    ):
 
-    if not os.path.exists(index_file):
         raise RuntimeError(
-            "index.html was not found."
+            "index.html not found."
         )
 
     with open(
-        index_file,
+        INDEX_FILE,
         "r",
         encoding="utf-8"
     ) as file:
@@ -776,8 +945,8 @@ def update_index(data):
     )
 
     pattern = (
-        r"const\s+appData\s*=\s*"
-        r"\{.*?\};"
+        r"const\s+appData\s*="
+        r"\s*\{.*?\};"
     )
 
     updated_html, count = re.subn(
@@ -791,18 +960,20 @@ def update_index(data):
     if count != 1:
 
         raise RuntimeError(
-            "Could not locate "
+            "Could not find the "
             "'const appData = {...};' "
-            "inside index.html."
+            "section in index.html."
         )
 
     with open(
-        index_file,
+        INDEX_FILE,
         "w",
         encoding="utf-8"
     ) as file:
 
-        file.write(updated_html)
+        file.write(
+            updated_html
+        )
 
     print(
         "index.html updated successfully."
@@ -815,32 +986,59 @@ def update_index(data):
 
 def main():
 
-    print("1. Fetching real news...")
+    print(
+        "1. Fetching real news..."
+    )
 
     news_items = fetch_news()
 
     print()
-    print("2. Generating current affairs with Gemini...")
 
-    data = call_gemini(news_items)
-
-    print()
-    print("3. Validating generated content...")
-
-    validate_data(data)
-
-    print()
-    print("4. Updating website...")
-
-    update_index(data)
-
-    print()
-    print("=" * 60)
     print(
-        "AURA EXAM AI UPDATE COMPLETED SUCCESSFULLY"
+        "2. Generating current "
+        "affairs with Gemini..."
     )
+
+    data = call_gemini(
+        news_items
+    )
+
+    print()
+
+    print(
+        "3. Validating generated data..."
+    )
+
+    validate_data(
+        data
+    )
+
+    print()
+
+    print(
+        "4. Updating website..."
+    )
+
+    update_index(
+        data
+    )
+
+    print()
+
     print("=" * 60)
 
+    print(
+        "AURA EXAM AI UPDATE "
+        "COMPLETED SUCCESSFULLY"
+    )
+
+    print("=" * 60)
+
+
+# ============================================================
+# RUN
+# ============================================================
 
 if __name__ == "__main__":
+
     main()
