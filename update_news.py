@@ -14,28 +14,28 @@ from google.genai import types
 
 
 # ============================================================
-# CONFIGURATION
+# SETTINGS
 # ============================================================
 
-TODAY_DATE = datetime.now().strftime("%Y-%m-%d")
+TODAY = datetime.now().strftime("%Y-%m-%d")
 
 DATA_DIR = "data"
 MASTER_FILE = "data.json"
 
-INITIAL_ARTICLES = 15
-ARTICLES_PER_UPDATE = 10
-MAX_ARTICLES_PER_DAY = 100
+FIRST_RUN_COUNT = 15
+UPDATE_COUNT = 10
+MAX_DAILY_COUNT = 100
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+API_KEY = os.environ.get("GEMINI_API_KEY")
 
-if not GEMINI_API_KEY:
-    raise RuntimeError("GEMINI_API_KEY GitHub Secret is missing.")
+if not API_KEY:
+    raise RuntimeError("GEMINI_API_KEY is missing.")
 
-client = genai.Client(api_key=GEMINI_API_KEY)
+gemini = genai.Client(api_key=API_KEY)
 
 
 # ============================================================
-# HTTP HEADERS
+# HTTP
 # ============================================================
 
 HEADERS = {
@@ -43,24 +43,15 @@ HEADERS = {
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/140.0.0.0 Safari/537.36"
-    ),
-    "Accept-Language": "en-US,en;q=0.9",
+    )
 }
 
 
 # ============================================================
-# RSS SOURCES
+# RSS FEEDS
 # ============================================================
 
-RSS_FEEDS = [
-    (
-        "Indian Express - India",
-        "https://indianexpress.com/section/india/feed/",
-    ),
-    (
-        "Indian Express - World",
-        "https://indianexpress.com/section/world/feed/",
-    ),
+FEEDS = [
     (
         "Hindustan Times",
         "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml",
@@ -82,19 +73,15 @@ RSS_FEEDS = [
         "https://feeds.bbci.co.uk/news/world/asia/india/rss.xml",
     ),
     (
-        "PIB",
-        "https://pib.gov.in/RssMain.aspx",
-    ),
-    (
-        "Google News - India",
+        "Google News India",
         "https://news.google.com/rss/search?q=India&hl=en-IN&gl=IN&ceid=IN:en",
     ),
     (
-        "Google News - World",
+        "Google News World",
         "https://news.google.com/rss/search?q=world&hl=en-IN&gl=IN&ceid=IN:en",
     ),
     (
-        "Google News - Science Technology",
+        "Google News Science Technology",
         "https://news.google.com/rss/search?q=science+technology&hl=en-IN&gl=IN&ceid=IN:en",
     ),
 ]
@@ -113,112 +100,77 @@ FALLBACK_IMAGES = [
 
 
 # ============================================================
-# TEXT FUNCTIONS
+# TEXT CLEANING
 # ============================================================
 
-def clean_text(value):
-    if not value:
+def clean(value):
+    if value is None:
         return ""
 
-    value = html.unescape(str(value))
-    value = re.sub(r"<[^>]+>", " ", value)
-    value = re.sub(r"\s+", " ", value)
+    text = html.unescape(str(value))
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"\s+", " ", text)
 
-    return value.strip()
-
-
-def normalize_title(title):
-    title = clean_text(title).lower()
-    title = re.sub(r"[^a-z0-9\s]", "", title)
-    title = re.sub(r"\s+", " ", title)
-
-    return title.strip()
-
-
-def article_hash(title, url):
-    raw = normalize_title(title) + "|" + str(url).strip()
-
-    return hashlib.sha256(
-        raw.encode("utf-8")
-    ).hexdigest()
+    return text.strip()
 
 
 def valid_title(title):
-    if not title:
-        return False
+    title = clean(title)
 
     if len(title) < 20:
         return False
 
-    bad_titles = [
+    blocked = [
         "actual current-affairs headline",
         "current affairs headline",
-        "breaking news headline",
-        "news headline",
         "sample headline",
         "test headline",
     ]
 
-    if title.lower().strip() in bad_titles:
+    if title.lower() in blocked:
         return False
 
     return True
 
 
-def safe_url(url):
-    if not url:
-        return ""
+def make_hash(title, url):
+    value = (
+        clean(title).lower()
+        + "|"
+        + clean(url)
+    )
 
-    url = str(url).strip()
-
-    if url.startswith("http://"):
-        return url
-
-    if url.startswith("https://"):
-        return url
-
-    return ""
+    return hashlib.sha256(
+        value.encode("utf-8")
+    ).hexdigest()
 
 
 # ============================================================
-# IMAGE FUNCTIONS
+# IMAGE
 # ============================================================
 
-def extract_rss_image(entry):
+def get_rss_image(entry):
+
     try:
-        media_content = entry.get("media_content")
+        media = entry.get("media_content")
 
-        if media_content:
-            for item in media_content:
+        if media:
+            for item in media:
                 if isinstance(item, dict):
-                    image_url = item.get("url")
+                    url = item.get("url")
 
-                    if image_url:
-                        return safe_url(image_url)
+                    if url:
+                        return url
 
-        media_thumbnail = entry.get("media_thumbnail")
+        media = entry.get("media_thumbnail")
 
-        if media_thumbnail:
-            for item in media_thumbnail:
+        if media:
+            for item in media:
                 if isinstance(item, dict):
-                    image_url = item.get("url")
+                    url = item.get("url")
 
-                    if image_url:
-                        return safe_url(image_url)
-
-        description = entry.get(
-            "description",
-            "",
-        )
-
-        match = re.search(
-            r'<img[^>]+src=["\']([^"\']+)["\']',
-            description,
-            re.IGNORECASE,
-        )
-
-        if match:
-            return safe_url(match.group(1))
+                    if url:
+                        return url
 
     except Exception:
         pass
@@ -226,15 +178,13 @@ def extract_rss_image(entry):
     return ""
 
 
-def extract_page_image(url):
-    if not url:
-        return ""
+def get_page_image(url):
 
     try:
         response = requests.get(
             url,
             headers=HEADERS,
-            timeout=12,
+            timeout=10,
         )
 
         if response.status_code != 200:
@@ -245,27 +195,16 @@ def extract_page_image(url):
             "html.parser",
         )
 
-        meta = soup.find(
+        tag = soup.find(
             "meta",
             attrs={"property": "og:image"},
         )
 
-        if meta:
-            image_url = meta.get("content")
+        if tag:
+            value = tag.get("content")
 
-            if image_url:
-                return safe_url(image_url)
-
-        meta = soup.find(
-            "meta",
-            attrs={"name": "twitter:image"},
-        )
-
-        if meta:
-            image_url = meta.get("content")
-
-            if image_url:
-                return safe_url(image_url)
+            if value:
+                return value
 
     except Exception:
         pass
@@ -273,98 +212,40 @@ def extract_page_image(url):
     return ""
 
 
-def get_image(entry, url, index):
-    image = extract_rss_image(entry)
+def get_image(entry, url, number):
+
+    image = get_rss_image(entry)
 
     if image:
         return image
 
-    image = extract_page_image(url)
+    image = get_page_image(url)
 
     if image:
         return image
 
     return FALLBACK_IMAGES[
-        index % len(FALLBACK_IMAGES)
+        number % len(FALLBACK_IMAGES)
     ]
-
-
-# ============================================================
-# ARTICLE PAGE TEXT
-# ============================================================
-
-def extract_article_text(url):
-    if not url:
-        return ""
-
-    try:
-        response = requests.get(
-            url,
-            headers=HEADERS,
-            timeout=15,
-        )
-
-        if response.status_code != 200:
-            return ""
-
-        soup = BeautifulSoup(
-            response.text,
-            "html.parser",
-        )
-
-        for element in soup(
-            [
-                "script",
-                "style",
-                "noscript",
-                "nav",
-                "footer",
-                "header",
-                "aside",
-                "form",
-            ]
-        ):
-            element.decompose()
-
-        paragraphs = []
-
-        for paragraph in soup.find_all("p"):
-            text = clean_text(
-                paragraph.get_text(
-                    " ",
-                    strip=True,
-                )
-            )
-
-            if len(text) >= 60:
-                paragraphs.append(text)
-
-        if not paragraphs:
-            return ""
-
-        return "\n\n".join(
-            paragraphs[:12]
-        )
-
-    except Exception:
-        return ""
 
 
 # ============================================================
 # RSS COLLECTION
 # ============================================================
 
-def collect_candidates():
-    candidates = []
+def collect_news():
+
+    results = []
     seen = set()
 
     print("Collecting RSS news...")
 
-    for source_name, feed_url in RSS_FEEDS:
+    for source_name, feed_url in FEEDS:
 
         print("SOURCE:", source_name)
 
         try:
+
             response = requests.get(
                 feed_url,
                 headers=HEADERS,
@@ -372,10 +253,12 @@ def collect_candidates():
             )
 
             if response.status_code != 200:
+
                 print(
                     "  RSS failed:",
                     response.status_code,
                 )
+
                 continue
 
             feed = feedparser.parse(
@@ -386,12 +269,18 @@ def collect_candidates():
 
             for entry in feed.entries[:30]:
 
-                title = clean_text(
-                    entry.get("title", "")
+                title = clean(
+                    entry.get(
+                        "title",
+                        "",
+                    )
                 )
 
-                url = safe_url(
-                    entry.get("link", "")
+                url = clean(
+                    entry.get(
+                        "link",
+                        "",
+                    )
                 )
 
                 if not valid_title(title):
@@ -400,39 +289,39 @@ def collect_candidates():
                 if not url:
                     continue
 
-                unique_key = article_hash(
+                key = make_hash(
                     title,
                     url,
                 )
 
-                if unique_key in seen:
+                if key in seen:
                     continue
 
-                seen.add(unique_key)
+                seen.add(key)
 
-                summary = clean_text(
+                summary = clean(
                     entry.get(
                         "summary",
                         "",
                     )
                 )
 
-                image_url = get_image(
+                image = get_image(
                     entry,
                     url,
-                    len(candidates),
+                    len(results),
                 )
 
-                candidates.append(
-                    {
-                        "source_id": len(candidates),
-                        "source_name": source_name,
-                        "title": title,
-                        "url": url,
-                        "summary": summary,
-                        "image_url": image_url,
-                    }
-                )
+                article = {
+                    "source_id": len(results),
+                    "source_name": source_name,
+                    "title": title,
+                    "url": url,
+                    "summary": summary,
+                    "image_url": image,
+                }
+
+                results.append(article)
 
                 source_count += 1
 
@@ -441,65 +330,68 @@ def collect_candidates():
                 source_count,
             )
 
-        except Exception as exc:
+        except Exception as error:
+
             print(
                 "  RSS ERROR:",
-                str(exc),
+                str(error),
             )
 
     print(
         "TOTAL CANDIDATES:",
-        len(candidates),
+        len(results),
     )
 
-    return candidates
+    return results
 
 
 # ============================================================
-# JSON FUNCTIONS
+# JSON
 # ============================================================
 
-def load_json(path, default=None):
-    if default is None:
-        default = {}
+def load_json(path):
 
     if not os.path.exists(path):
-        return default
+        return {}
 
     try:
+
         with open(
             path,
             "r",
             encoding="utf-8",
         ) as file:
+
             return json.load(file)
 
-    except Exception as exc:
+    except Exception as error:
+
         print(
-            "JSON LOAD ERROR:",
-            path,
-            str(exc),
+            "JSON ERROR:",
+            str(error),
         )
 
-        return default
+        return {}
 
 
 def save_json(path, data):
-    directory = os.path.dirname(path)
 
-    if directory:
+    folder = os.path.dirname(path)
+
+    if folder:
         os.makedirs(
-            directory,
+            folder,
             exist_ok=True,
         )
 
-    temporary_path = path + ".tmp"
+    temporary = path + ".tmp"
 
     with open(
-        temporary_path,
+        temporary,
         "w",
         encoding="utf-8",
     ) as file:
+
         json.dump(
             data,
             file,
@@ -508,235 +400,210 @@ def save_json(path, data):
         )
 
     os.replace(
-        temporary_path,
+        temporary,
         path,
     )
 
+
+# ============================================================
+# TODAY'S EXISTING NEWS
+# ============================================================
 
 def load_today():
+
     path = os.path.join(
         DATA_DIR,
-        TODAY_DATE + ".json",
+        TODAY + ".json",
     )
 
-    data = load_json(
-        path,
-        {},
-    )
+    data = load_json(path)
 
     if not isinstance(data, dict):
-        return {
-            "date": TODAY_DATE,
-            "news": [],
-        }
+        return []
 
-    news = data.get(
-        "news",
-        [],
-    )
+    news = data.get("news")
 
     if not isinstance(news, list):
-        news = []
+        return []
 
-    return {
-        "date": TODAY_DATE,
-        "news": news,
-    }
+    return news
 
 
 # ============================================================
 # GEMINI PROMPT
 # ============================================================
 
-def build_prompt(
-    candidates,
-    required_count,
+def make_prompt(
+    sources,
+    number,
 ):
-    source_parts = []
 
-    for index, item in enumerate(candidates):
+    lines = []
 
-        source_text = (
-            "SOURCE_ID: "
-            + str(index)
-            + "\n"
-            + "SOURCE: "
-            + item["source_name"]
-            + "\n"
-            + "HEADLINE: "
-            + item["title"]
-            + "\n"
-            + "URL: "
-            + item["url"]
-            + "\n"
-            + "SUMMARY: "
-            + item["summary"]
+    for source in sources:
+
+        line = (
+            "SOURCE_ID="
+            + str(source["source_id"])
+            + "\nSOURCE="
+            + source["source_name"]
+            + "\nHEADLINE="
+            + source["title"]
+            + "\nURL="
+            + source["url"]
+            + "\nSUMMARY="
+            + source["summary"]
         )
 
-        source_parts.append(
-            source_text
-        )
+        lines.append(line)
 
-    source_material = "\n\n---\n\n".join(
-        source_parts
-    )
+    source_text = "\n\n---\n\n".join(lines)
 
     prompt = (
-        "You are an expert current-affairs "
-        "editor for an Indian examination "
-        "website.\n\n"
-
-        "Today's date: "
-        + TODAY_DATE
-        + "\n\n"
-
+        "You are a professional current affairs "
+        "editor.\n\n"
+        "Today's date is "
+        + TODAY
+        + ".\n\n"
         "Select exactly "
-        + str(required_count)
-        + " important current-affairs "
-        "events from the supplied sources.\n\n"
+        + str(number)
+        + " important current-affairs events "
+        "from the supplied sources.\n\n"
 
-        "STRICT RULES:\n"
-        "1. Use only information present in "
-        "the supplied sources.\n"
-        "2. Never invent a news event.\n"
-        "3. Never invent statistics, dates, "
-        "names or quotations.\n"
-        "4. Do not create placeholder headlines.\n"
-        "5. Each article must describe a "
-        "different event.\n"
-        "6. Prefer important India and world "
-        "developments.\n"
-        "7. Make the content useful for "
-        "CBSE, UPSC, SSC, Banking, "
-        "NEET and JEE-level revision.\n"
-        "8. Keep the writing factual and neutral.\n"
-        "9. source_id must exactly match one "
-        "of the supplied source IDs.\n"
-        "10. Return JSON only.\n\n"
+        "IMPORTANT RULES:\n"
+        "- Use only supplied source information.\n"
+        "- Never invent an event.\n"
+        "- Never invent names, dates or statistics.\n"
+        "- Do not use placeholder headlines.\n"
+        "- Every article must be a different event.\n"
+        "- Prefer important Indian and world news.\n"
+        "- Make the articles useful for students.\n"
+        "- Keep the writing factual and neutral.\n"
+        "- source_id must match the supplied source.\n"
+        "- Return JSON only.\n\n"
 
-        "Return this structure:\n"
-
+        "JSON FORMAT:\n"
         "[\n"
-        "  {\n"
-        '    "source_id": 0,\n'
-        '    "category": "National",\n'
-        '    "headline": "Real specific headline",\n'
-        '    "story_lead": "Concise factual summary",\n'
-        '    "bullet_points": [\n'
-        '      "Fact 1",\n'
-        '      "Fact 2",\n'
-        '      "Fact 3",\n'
-        '      "Fact 4"\n'
-        "    ],\n"
-        '    "full_article_text": "Detailed factual '
-        'explanation of this exact event",\n'
-        '    "key_locations": "Relevant location",\n'
-        '    "important_dates": "Relevant date",\n'
-        '    "key_facts": "Important facts",\n'
-        '    "exam_relevance": "Exam relevance",\n'
-        '    "takeaway": "Revision takeaway"\n'
-        "  }\n"
+        "{\n"
+        '  "source_id": 0,\n'
+        '  "category": "National",\n'
+        '  "headline": "Real headline",\n'
+        '  "story_lead": "Short factual summary",\n'
+        '  "bullet_points": ["Fact 1", "Fact 2", "Fact 3", "Fact 4"],\n'
+        '  "full_article_text": "Detailed explanation",\n'
+        '  "key_locations": "Location",\n'
+        '  "important_dates": "Date",\n'
+        '  "key_facts": "Important facts",\n'
+        '  "exam_relevance": "Exam relevance",\n'
+        '  "takeaway": "Revision takeaway"\n'
+        "}\n"
         "]\n\n"
 
         "SOURCE MATERIAL:\n"
-        + source_material
+        + source_text
     )
 
     return prompt
 
 
 # ============================================================
-# GEMINI GENERATION
+# GEMINI
 # ============================================================
 
-def generate_articles(
-    candidates,
-    required_count,
+def generate_news(
+    sources,
+    number,
 ):
-    if not candidates:
-        print("No candidates available.")
+
+    if not sources:
         return []
 
-    candidates = candidates[:40]
+    sources = sources[:40]
 
-    prompt = build_prompt(
-        candidates,
-        required_count,
+    prompt = make_prompt(
+        sources,
+        number,
     )
 
+    # Current model first, then fallbacks
     models = [
         "gemini-3.6-flash",
         "gemini-3.5-flash",
         "gemini-3.5-flash-lite",
     ]
 
-    for model_name in models:
+    for model in models:
 
         print(
             "Trying Gemini model:",
-            model_name,
+            model,
         )
 
         try:
-            response = client.models.generate_content(
-                model=model_name,
+
+            response = gemini.models.generate_content(
+                model=model,
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
                 ),
             )
 
-            response_text = response.text
+            text = response.text
 
-            if not response_text:
-                print(
-                    "Gemini returned empty response."
-                )
+            if not text:
+                print("Empty Gemini response.")
                 continue
 
-            response_text = response_text.strip()
+            text = text.strip()
 
-            if response_text.startswith("```"):
-                response_text = re.sub(
-                    r"^```(?:json)?",
+            if text.startswith("```"):
+
+                text = re.sub(
+                    r"^```json",
                     "",
-                    response_text,
+                    text,
                     flags=re.IGNORECASE,
                 )
 
-                response_text = re.sub(
-                    r"```$",
+                text = re.sub(
+                    r"^```",
                     "",
-                    response_text,
+                    text,
                 )
 
-                response_text = response_text.strip()
+                text = re.sub(
+                    r"```$",
+                    "",
+                    text,
+                )
 
-            generated = json.loads(
-                response_text
-            )
+                text = text.strip()
+
+            result = json.loads(text)
 
             if not isinstance(
-                generated,
+                result,
                 list,
             ):
                 print(
-                    "Gemini response is not a list."
+                    "Gemini returned non-list JSON."
                 )
                 continue
 
             print(
                 "Gemini generated:",
-                len(generated),
+                len(result),
                 "articles",
             )
 
-            return generated
+            return result
 
-        except Exception as exc:
+        except Exception as error:
+
             print(
                 "Gemini ERROR:",
-                str(exc),
+                str(error),
             )
 
             time.sleep(2)
@@ -745,15 +612,16 @@ def generate_articles(
 
 
 # ============================================================
-# CONVERT GENERATED ARTICLES
+# CONVERT GEMINI RESULT
 # ============================================================
 
 def convert_articles(
     generated,
-    candidates,
+    sources,
     existing_hashes,
 ):
-    converted = []
+
+    articles = []
 
     for item in generated:
 
@@ -763,17 +631,13 @@ def convert_articles(
         ):
             continue
 
-        # ----------------------------------------------------
-        # SOURCE ID
-        # ----------------------------------------------------
-
-        source_id_value = item.get(
+        source_id = item.get(
             "source_id"
         )
 
         try:
             source_id = int(
-                source_id_value
+                source_id
             )
         except Exception:
             continue
@@ -781,18 +645,12 @@ def convert_articles(
         if source_id < 0:
             continue
 
-        if source_id >= len(candidates):
+        if source_id >= len(sources):
             continue
 
-        source = candidates[
-            source_id
-        ]
+        source = sources[source_id]
 
-        # ----------------------------------------------------
-        # HEADLINE
-        # ----------------------------------------------------
-
-        headline = clean_text(
+        headline = clean(
             item.get(
                 "headline",
                 "",
@@ -808,23 +666,22 @@ def convert_articles(
         ):
             continue
 
-        # ----------------------------------------------------
-        # DUPLICATE CHECK
-        # ----------------------------------------------------
-
-        unique_key = article_hash(
+        key = make_hash(
             headline,
             source["url"],
         )
 
-        if unique_key in existing_hashes:
+        if key in existing_hashes:
             continue
 
-        # ----------------------------------------------------
-        # STORY LEAD
-        # ----------------------------------------------------
+        category = clean(
+            item.get(
+                "category",
+                "National",
+            )
+        )
 
-        story_lead = clean_text(
+        story_lead = clean(
             item.get(
                 "story_lead",
                 "",
@@ -832,62 +689,302 @@ def convert_articles(
         )
 
         if not story_lead:
-            story_lead = source[
-                "summary"
-            ]
+            story_lead = source["summary"]
 
-        # ----------------------------------------------------
-        # BULLET POINTS
-        # ----------------------------------------------------
-
-        raw_bullets = item.get(
+        bullets_raw = item.get(
             "bullet_points",
             [],
         )
 
         if not isinstance(
-            raw_bullets,
+            bullets_raw,
             list,
         ):
-            raw_bullets = []
+            bullets_raw = []
 
-        bullet_points = []
+        bullets = []
 
-        for bullet in raw_bullets:
-            cleaned_bullet = clean_text(
-                bullet
-            )
+        for bullet in bullets_raw:
 
-            if cleaned_bullet:
-                bullet_points.append(
-                    cleaned_bullet
-                )
+            value = clean(bullet)
 
-        # ----------------------------------------------------
-        # FULL ARTICLE
-        # ----------------------------------------------------
+            if value:
+                bullets.append(value)
 
-        full_article_text = clean_text(
+        full_text = clean(
             item.get(
                 "full_article_text",
                 "",
             )
         )
 
-        if not full_article_text:
+        if not full_text:
 
-            full_article_text = (
-                extract_article_text(
-                    source["url"]
+            full_text = extract_article(
+                source["url"]
+            )
+
+        if not full_text:
+            full_text = story_lead
+
+        location = clean(
+            item.get(
+                "key_locations",
+                "",
+            )
+        )
+
+        important_date = clean(
+            item.get(
+                "important_dates",
+                "",
+            )
+        )
+
+        key_facts = clean(
+            item.get(
+                "key_facts",
+                "",
+            )
+        )
+
+        exam_relevance = clean(
+            item.get(
+                "exam_relevance",
+                "",
+            )
+        )
+
+        takeaway = clean(
+            item.get(
+                "takeaway",
+                "",
+            )
+        )
+
+        article = {
+            "id": 0,
+            "category": category or "National",
+            "headline": headline,
+            "story_lead": story_lead,
+            "bullet_points": bullets,
+            "full_article_text": full_text,
+            "key_locations": location,
+            "important_dates": important_date,
+            "key_facts": key_facts,
+            "exam_relevance": exam_relevance,
+            "takeaway": takeaway,
+            "source_name": source["source_name"],
+            "source_url": source["url"],
+            "image_url": source["image_url"],
+            "published_date": TODAY,
+        }
+
+        articles.append(article)
+
+        existing_hashes.add(key)
+
+    return articles
+
+
+# ============================================================
+# ARTICLE TEXT EXTRACTION
+# ============================================================
+
+def extract_article(url):
+
+    try:
+
+        response = requests.get(
+            url,
+            headers=HEADERS,
+            timeout=12,
+        )
+
+        if response.status_code != 200:
+            return ""
+
+        soup = BeautifulSoup(
+            response.text,
+            "html.parser",
+        )
+
+        for tag in soup(
+            [
+                "script",
+                "style",
+                "noscript",
+                "nav",
+                "footer",
+                "header",
+                "aside",
+                "form",
+            ]
+        ):
+            tag.decompose()
+
+        paragraphs = []
+
+        for paragraph in soup.find_all("p"):
+
+            text = clean(
+                paragraph.get_text(
+                    " ",
+                    strip=True,
                 )
             )
 
-        if not full_article_text:
-            full_article_text = story_lead
+            if len(text) >= 60:
+                paragraphs.append(text)
 
-        # ----------------------------------------------------
-        # OTHER FIELDS
-        # ----------------------------------------------------
+        if not paragraphs:
+            return ""
 
-        category = clean_text(
-            item.get(
+        return "\n\n".join(
+            paragraphs[:10]
+        )
+
+    except Exception:
+        return ""
+
+
+# ============================================================
+# UPDATE TODAY
+# ============================================================
+
+def update_today():
+
+    os.makedirs(
+        DATA_DIR,
+        exist_ok=True,
+    )
+
+    old_news = load_today()
+
+    print(
+        "Existing articles:",
+        len(old_news),
+    )
+
+    existing_hashes = set()
+
+    for article in old_news:
+
+        if not isinstance(
+            article,
+            dict,
+        ):
+            continue
+
+        old_title = article.get(
+            "headline",
+            "",
+        )
+
+        old_url = article.get(
+            "source_url",
+            "",
+        )
+
+        existing_hashes.add(
+            make_hash(
+                old_title,
+                old_url,
+            )
+        )
+
+    if len(old_news) >= MAX_DAILY_COUNT:
+
+        print(
+            "Daily maximum reached."
+        )
+
+        return old_news[
+            :MAX_DAILY_COUNT
+        ]
+
+    sources = collect_news()
+
+    if not sources:
+
+        if old_news:
+            return old_news
+
+        raise RuntimeError(
+            "No RSS news was collected."
+        )
+
+    if len(old_news) == 0:
+
+        number = FIRST_RUN_COUNT
+
+    else:
+
+        remaining = (
+            MAX_DAILY_COUNT
+            - len(old_news)
+        )
+
+        number = min(
+            UPDATE_COUNT,
+            remaining,
+        )
+
+    print(
+        "Articles requested from Gemini:",
+        number,
+    )
+
+    generated = generate_news(
+        sources,
+        number,
+    )
+
+    if not generated:
+
+        if old_news:
+
+            print(
+                "Gemini failed. "
+                "Keeping previous news."
+            )
+
+            return old_news
+
+        raise RuntimeError(
+            "Gemini generated no articles."
+        )
+
+    new_articles = convert_articles(
+        generated,
+        sources,
+        existing_hashes,
+    )
+
+    print(
+        "Valid new articles:",
+        len(new_articles),
+    )
+
+    all_news = old_news + new_articles
+
+    all_news = all_news[
+        :MAX_DAILY_COUNT
+    ]
+
+    for index, article in enumerate(
+        all_news,
+        start=1,
+    ):
+        article["id"] = index
+
+    if not all_news:
+
+        raise RuntimeError(
+            "Final article count is zero."
+        )
+
+    return all_news
+
+
+# ==============================================
