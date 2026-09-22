@@ -1,48 +1,115 @@
-name: Update Current Affairs
+name: AURA Exam AI - Auto Update
 
 on:
-  schedule:
-    - cron: "15 */3 * * *"
 
+  # Run every 3 hours
+  # 00:30, 03:30, 06:30, 09:30,
+  # 12:30, 15:30, 18:30, 21:30 UTC
+  schedule:
+    - cron: "30 0,3,6,9,12,15,18,21 * * *"
+
+  # Allows manual update from GitHub Actions
   workflow_dispatch:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
+
   update-news:
+
     runs-on: ubuntu-latest
 
     steps:
 
+      # -----------------------------------
+      # 1. Checkout repository
+      # -----------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Python
+      # -----------------------------------
+      # 2. Setup Python
+      # -----------------------------------
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      # -----------------------------------
+      # 3. Install dependencies
+      # -----------------------------------
+      - name: Install Dependencies
         run: |
-          pip install feedparser requests beautifulsoup4 google-genai
+          python -m pip install --upgrade pip
+          pip install feedparser
 
-      - name: Update current affairs
+      # -----------------------------------
+      # 4. Fetch news + generate AI content
+      # -----------------------------------
+      - name: Run Auto-Fetch Script
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python update_news.py
 
-      - name: Commit updated news
+      # -----------------------------------
+      # 5. Verify generated website
+      # -----------------------------------
+      - name: Verify generated index.html
         run: |
-          git config user.name "AURA EXAM AI Bot"
-          git config user.email "actions@github.com"
 
-          git add data.json data/
+          echo "Checking index.html..."
 
-          if git diff --cached --quiet; then
-            echo "No new news to commit."
-          else
-            git commit -m "Auto update current affairs"
-            git push
+          if [ ! -f index.html ]; then
+            echo "ERROR: index.html not found"
+            exit 1
           fi
+
+          if ! grep -q "const appData" index.html; then
+            echo "ERROR: appData not found in index.html"
+            exit 1
+          fi
+
+          echo "index.html generated successfully."
+
+      # -----------------------------------
+      # 6. Commit updated news
+      # -----------------------------------
+      - name: Commit and Push Updated Data
+        run: |
+
+          git config --global user.name "github-actions[bot]"
+
+          git config --global user.email \
+            "github-actions[bot]@users.noreply.github.com"
+
+          git add index.html
+
+          git diff --cached --quiet || \
+            git commit -m "Auto-updated current affairs"
+
+          git push
+
+      # -----------------------------------
+      # 7. Configure GitHub Pages
+      # -----------------------------------
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # -----------------------------------
+      # 8. Upload website
+      # -----------------------------------
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: "."
+
+      # -----------------------------------
+      # 9. Deploy website
+      # -----------------------------------
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
