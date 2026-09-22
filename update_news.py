@@ -3,505 +3,964 @@ import json
 import time
 import random
 import re
-from datetime import datetime
-import feedparser
+from datetime import datetime, timedelta
+
 import requests
+import feedparser
 from bs4 import BeautifulSoup
 from google import genai
-from google.genai import types
+
+
+# ============================================================
+# AURA EXAM AI
+# DAILY CURRENT AFFAIRS GENERATOR
+# ============================================================
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+
+os.makedirs(DATA_DIR, exist_ok=True)
+
+TODAY_DATE = datetime.now().strftime("%Y-%m-%d")
+
+TARGET_NEWS_COUNT = 15
+
 
 # ============================================================
 # GEMINI
 # ============================================================
 
-client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-TODAY_DATE = datetime.now().strftime("%Y-%m-%d")
+if not GEMINI_API_KEY:
+    raise RuntimeError(
+        "GEMINI_API_KEY environment variable is not set."
+    )
+
+client = genai.Client(
+    api_key=GEMINI_API_KEY
+)
+
+
+# ============================================================
+# HTTP SESSION
+# ============================================================
+
+session = requests.Session()
+
+session.headers.update({
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 "
+        "(KHTML, like Gecko) "
+        "Chrome/140.0 Safari/537.36"
+    ),
+    "Accept-Language": "en-IN,en;q=0.9"
+})
+
+
+# ============================================================
+# RSS SOURCES
+# ============================================================
+
+RSS_FEEDS = {
+
+    "PIB": [
+        "https://www.pib.gov.in/RssMain.aspx"
+    ],
+
+    "Indian Express": [
+        "https://indianexpress.com/section/india/feed/",
+        "https://indianexpress.com/section/world/feed/",
+        "https://indianexpress.com/section/sports/feed/",
+        "https://indianexpress.com/section/business/feed/"
+    ],
+
+    "BBC India": [
+        "https://feeds.bbci.co.uk/news/world/asia/india/rss.xml"
+    ],
+
+    "The Hindu": [
+        "https://www.thehindu.com/news/national/feeder/default.rss",
+        "https://www.thehindu.com/news/international/feeder/default.rss",
+        "https://www.thehindu.com/sport/feeder/default.rss",
+        "https://www.thehindu.com/business/feeder/default.rss"
+    ],
+
+    "Dainik Jagran": [
+        "https://www.jagran.com/rss/news-national.xml",
+        "https://www.jagran.com/rss/news-international.xml"
+    ],
+
+    "Punjab Kesari": [
+        "https://www.punjabkesari.in/rss/news.xml"
+    ]
+}
+
 
 # ============================================================
 # FALLBACK IMAGES
 # ============================================================
 
 FALLBACK_IMAGES = [
-    "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop",
-]
 
-# ============================================================
-# DAILY MOTIVATIONAL QUOTES
-# These rotate automatically according to the date.
-# ============================================================
+    "https://images.unsplash.com/photo-1504711434969-e33886168f5c"
+    "?auto=format&fit=crop&w=1200&q=80",
 
-MOTIVATIONAL_QUOTES = [
-    {
-        "quote": "Success is the sum of small efforts, repeated day in and day out.",
-        "author": "Robert Collier",
-        "image_url": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&auto=format&fit=crop"
-    },
-    {
-        "quote": "The secret of getting ahead is getting started.",
-        "author": "Mark Twain",
-        "image_url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=900&auto=format&fit=crop"
-    },
-    {
-        "quote": "Success is not final; keep learning, keep improving, and keep moving forward.",
-        "author": "AURA EXAM AI",
-        "image_url": "https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=900&auto=format&fit=crop"
-    },
-    {
-        "quote": "Great things are done by a series of small things brought together.",
-        "author": "Vincent van Gogh",
-        "image_url": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=900&auto=format&fit=crop"
-    },
-    {
-        "quote": "Discipline is choosing between what you want now and what you want most.",
-        "author": "Abraham Lincoln",
-        "image_url": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=900&auto=format&fit=crop"
-    },
-    {
-        "quote": "Do something today that your future self will thank you for.",
-        "author": "AURA EXAM AI",
-        "image_url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&auto=format&fit=crop"
-    },
-    {
-        "quote": "Your future depends on what you do today.",
-        "author": "Mahatma Gandhi",
-        "image_url": "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=900&auto=format&fit=crop"
-    },
-    {
-        "quote": "Focus on progress, not perfection.",
-        "author": "AURA EXAM AI",
-        "image_url": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&auto=format&fit=crop"
-    },
-    {
-        "quote": "The harder you work for something, the greater you will feel when you achieve it.",
-        "author": "AURA EXAM AI",
-        "image_url": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=900&auto=format&fit=crop"
-    },
-    {
-        "quote": "Believe you can and you're halfway there.",
-        "author": "Theodore Roosevelt",
-        "image_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&auto=format&fit=crop"
-    }
-]
+    "https://images.unsplash.com/photo-1495020689067-958852a7765e"
+    "?auto=format&fit=crop&w=1200&q=80",
 
-HINDI_MOTIVATIONAL_QUOTES = [
-    {
-        "quote": "सफलता छोटे-छोटे प्रयासों को लगातार दोहराने से मिलती है।",
-        "author": "AURA EXAM AI",
-        "image_url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900&auto=format&fit=crop"
-    },
-    {
-        "quote": "आज की मेहनत ही आने वाले कल की सफलता की नींव है।",
-        "author": "AURA EXAM AI",
-        "image_url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=900&auto=format&fit=crop"
-    },
-    {
-        "quote": "जो विद्यार्थी लगातार सीखता रहता है, वही आगे बढ़ता है।",
-        "author": "AURA EXAM AI",
-        "image_url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop"
-    },
-    {
-        "quote": "अनुशासन वह रास्ता है जो सपनों को वास्तविकता में बदलता है।",
-        "author": "AURA EXAM AI",
-        "image_url": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=900&auto=format&fit=crop"
-    },
-    {
-        "quote": "हार केवल तब होती है जब हम प्रयास करना छोड़ देते हैं।",
-        "author": "AURA EXAM AI",
-        "image_url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=900&auto=format&fit=crop"
-    }
+    "https://images.unsplash.com/photo-1521295121783-8a321d551ad2"
+    "?auto=format&fit=crop&w=1200&q=80",
+
+    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+    "?auto=format&fit=crop&w=1200&q=80"
 ]
 
 
-def get_daily_motivation():
-    """
-    Selects motivational content based on the date.
-    The quote automatically changes each day.
-    """
-
-    try:
-        day_number = datetime.now().timetuple().tm_yday
-
-        english_quote = MOTIVATIONAL_QUOTES[
-            day_number % len(MOTIVATIONAL_QUOTES)
-        ]
-
-        hindi_quote = HINDI_MOTIVATIONAL_QUOTES[
-            day_number % len(HINDI_MOTIVATIONAL_QUOTES)
-        ]
-
-        return {
-            "english": english_quote,
-            "hindi": hindi_quote
-        }
-
-    except Exception:
-        return {
-            "english": MOTIVATIONAL_QUOTES[0],
-            "hindi": HINDI_MOTIVATIONAL_QUOTES[0]
-        }
-
-
 # ============================================================
-# JUNK FILTER
+# JUNK TEXT FILTER
 # ============================================================
 
 JUNK_PATTERNS = [
-    r"subscribed with another email",
-    r"logout and login",
-    r"subscription benefits",
-    r"premium stories",
-    r"editorials, opinions",
-    r"unlock these with subscription",
-    r"the view from india",
-    r"first day first show",
-    r"today's cache",
-    r"science for all",
-    r"data point decoding",
-    r"theedge at the cutting edge",
-    r"health matters ramya kannan",
-    r"the hindu on books",
-    r"published - \w+ \d+, \d{4}",
-    r"photo credit:.*$",
-    r"download the app",
-    r"terms of use",
-    r"privacy policy",
+
+    r"subscribe",
+    r"sign in",
+    r"log in",
+    r"advertisement",
+    r"advertising",
+    r"cookie",
+    r"newsletter",
+    r"follow us",
+    r"read more",
+    r"share this",
+    r"related stories",
+    r"recommended",
+    r"trending",
+    r"comments?",
+    r"download app",
+    r"whatsapp",
+    r"instagram",
+    r"facebook",
+    r"twitter",
+    r"youtube",
+    r"all rights reserved",
     r"copyright",
-    r"all rights reserved"
+    r"terms of use",
+    r"privacy policy"
 ]
 
 
-def clean_extracted_text(text):
-    """Filters webpage junk and HTML artifacts."""
+# ============================================================
+# TEXT CLEANER
+# ============================================================
+
+def clean_text(text):
 
     if not text:
         return ""
 
-    # Remove HTML
-    text = BeautifulSoup(text, "html.parser").get_text(" ", strip=True)
+    text = BeautifulSoup(
+        str(text),
+        "html.parser"
+    ).get_text(" ", strip=True)
+
+    text = re.sub(
+        r"\s+",
+        " ",
+        text
+    ).strip()
+
+    return text
+
+
+def is_junk(text):
+
+    if not text:
+        return True
+
+    text_lower = text.lower()
 
     for pattern in JUNK_PATTERNS:
-        text = re.sub(pattern, "", text, flags=re.IGNORECASE)
 
-    # Remove excessive whitespace
-    text = re.sub(r"\s+", " ", text)
+        if re.search(
+            pattern,
+            text_lower
+        ):
+            return True
 
-    return text.strip()
+    if len(text) < 80:
+        return True
+
+    return False
 
 
 # ============================================================
 # IMAGE EXTRACTION
 # ============================================================
 
-def extract_image_from_entry(entry, article_html=None):
-    """
-    Attempts to extract an actual article image.
-    Falls back to a stable image if unavailable.
-    """
+def extract_image_from_entry(entry):
 
-    # 1. media_content
-    try:
-        media_content = entry.get("media_content", [])
-        if media_content:
-            for media in media_content:
-                url = media.get("url")
-                if url and url.startswith("http"):
-                    return url
-    except Exception:
-        pass
+    # media_content
+    media_content = entry.get(
+        "media_content",
+        []
+    )
 
-    # 2. media_thumbnail
-    try:
-        media_thumbnail = entry.get("media_thumbnail", [])
-        if media_thumbnail:
-            url = media_thumbnail[0].get("url")
-            if url and url.startswith("http"):
-                return url
-    except Exception:
-        pass
+    for media in media_content:
 
-    # 3. enclosure
-    try:
-        enclosures = entry.get("enclosures", [])
-        for enclosure in enclosures:
-            url = enclosure.get("href") or enclosure.get("url")
-            if url and url.startswith("http"):
-                return url
-    except Exception:
-        pass
+        url = media.get("url")
 
-    # 4. Article og:image
-    if article_html:
-        try:
-            soup = BeautifulSoup(article_html, "html.parser")
+        if url:
+            return url
 
-            og_image = soup.find(
-                "meta",
-                property="og:image"
-            )
 
-            if og_image and og_image.get("content"):
-                url = og_image["content"]
+    # media_thumbnail
+    thumbnails = entry.get(
+        "media_thumbnail",
+        []
+    )
 
-                if url.startswith("http"):
-                    return url
+    for thumb in thumbnails:
 
-        except Exception:
-            pass
+        url = thumb.get("url")
+
+        if url:
+            return url
+
+
+    # enclosure
+    enclosures = entry.get(
+        "enclosures",
+        []
+    )
+
+    for enclosure in enclosures:
+
+        url = enclosure.get("href")
+
+        if url:
+            return url
+
 
     return None
 
 
 # ============================================================
-# RSS FETCHING
+# OG IMAGE
+# ============================================================
+
+def extract_og_image(url):
+
+    if not url:
+        return None
+
+    try:
+
+        response = session.get(
+            url,
+            timeout=12
+        )
+
+        if response.status_code != 200:
+            return None
+
+        soup = BeautifulSoup(
+            response.text,
+            "html.parser"
+        )
+
+        meta = soup.find(
+            "meta",
+            property="og:image"
+        )
+
+        if meta:
+
+            image = meta.get("content")
+
+            if image:
+                return image
+
+    except Exception:
+        pass
+
+    return None
+
+
+# ============================================================
+# ARTICLE TEXT EXTRACTION
+# ============================================================
+
+def extract_article_text(url):
+
+    if not url:
+        return ""
+
+    try:
+
+        response = session.get(
+            url,
+            timeout=15
+        )
+
+        if response.status_code != 200:
+            return ""
+
+        soup = BeautifulSoup(
+            response.text,
+            "html.parser"
+        )
+
+
+        # Remove obvious junk sections
+
+        for tag in soup([
+            "script",
+            "style",
+            "nav",
+            "footer",
+            "header",
+            "aside",
+            "form",
+            "noscript"
+        ]):
+
+            tag.decompose()
+
+
+        # Prefer article tag
+
+        article = soup.find("article")
+
+        if article:
+
+            paragraphs = article.find_all("p")
+
+        else:
+
+            paragraphs = soup.find_all("p")
+
+
+        cleaned = []
+
+        for p in paragraphs:
+
+            text = clean_text(
+                p.get_text(" ", strip=True)
+            )
+
+            if is_junk(text):
+                continue
+
+            if len(text) < 80:
+                continue
+
+            cleaned.append(text)
+
+
+        # Remove duplicates
+
+        unique = []
+
+        seen = set()
+
+        for text in cleaned:
+
+            key = re.sub(
+                r"\W+",
+                "",
+                text.lower()
+            )
+
+            if key in seen:
+                continue
+
+            seen.add(key)
+
+            unique.append(text)
+
+
+        # Limit scraped material.
+        # Gemini will use it only as source context,
+        # NOT as the final article.
+
+        return "\n".join(
+            unique[:25]
+        )
+
+
+    except Exception as error:
+
+        print(
+            f"Article extraction failed: {error}"
+        )
+
+        return ""
+
+
+# ============================================================
+# RSS FETCH
 # ============================================================
 
 def fetch_rss_feeds():
-    """Fetches articles across multiple news sources."""
 
-    rss_sources = [
-        {
-            "name": "PIB India",
-            "url": "https://pib.gov.in/RssMain.aspx?ModId=6"
-        },
-        {
-            "name": "Indian Express",
-            "url": "https://indianexpress.com/section/india/feed/"
-        },
-        {
-            "name": "BBC News",
-            "url": "https://feeds.bbci.co.uk/news/world/asia/india/rss.xml"
-        },
-        {
-            "name": "The Hindu",
-            "url": "https://www.thehindu.com/news/national/feeder/default.rss"
-        },
-        {
-            "name": "Dainik Jagran",
-            "url": "https://www.jagran.com/rss/news/national.xml"
-        },
-        {
-            "name": "Punjab Kesari",
-            "url": "https://punjabkesari.in/rss/national.xml"
-        }
-    ]
+    collected = []
 
-    raw_articles = []
+    seen_urls = set()
 
-    headers = {
-        "User-Agent": (
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-            "AppleWebKit/537.36 Chrome/120 Safari/537.36"
-        }
-    }
-
-    for source in rss_sources:
-
-        try:
-            print(f"Fetching RSS: {source['name']}")
-
-            feed = feedparser.parse(source["url"])
-
-            if not feed.entries:
-                print(f"No RSS entries found: {source['name']}")
-                continue
-
-            for entry in feed.entries[:7]:
-
-                title = clean_extracted_text(
-                    entry.get("title", "")
-                )
-
-                link = entry.get("link", "")
-
-                summary = clean_extracted_text(
-                    entry.get("summary", "")
-                )
-
-                clean_paragraphs = []
-                article_html = None
-
-                if link:
-
-                    try:
-
-                        res = requests.get(
-                            link,
-                            headers=headers,
-                            timeout=10
-                        )
-
-                        if res.status_code == 200:
-
-                            article_html = res.text
-
-                            soup = BeautifulSoup(
-                                res.text,
-                                "html.parser"
-                            )
-
-                            for p in soup.find_all("p"):
-
-                                p_text = clean_extracted_text(
-                                    p.get_text(" ", strip=True)
-                                )
-
-                                if len(p_text.split()) > 10:
-
-                                    clean_paragraphs.append(
-                                        p_text
-                                    )
-
-                    except Exception as article_error:
-
-                        print(
-                            f"Article fetch failed "
-                            f"{source['name']}: {article_error}"
-                        )
-
-                full_body = (
-                    " ".join(clean_paragraphs[:7])
-                    if clean_paragraphs
-                    else summary
-                )
-
-                image_url = extract_image_from_entry(
-                    entry,
-                    article_html
-                )
-
-                if not image_url:
-
-                    image_url = (
-                        FALLBACK_IMAGES[
-                            len(raw_articles)
-                            % len(FALLBACK_IMAGES)
-                        ]
-                    )
-
-                if title and (summary or full_body):
-
-                    raw_articles.append({
-                        "title": title,
-                        "link": link,
-                        "summary": summary,
-                        "full_body": full_body,
-                        "source_name": source["name"],
-                        "image_url": image_url
-                    })
-
-        except Exception as e:
-
-            print(
-                f"Error reading source "
-                f"{source['name']}: {e}"
-            )
-
-    # Remove duplicate headlines
-    unique_articles = []
     seen_titles = set()
 
-    for article in raw_articles:
 
-        normalized_title = re.sub(
-            r"\s+",
-            " ",
-            article["title"].lower()
-        ).strip()
+    for source_name, feeds in RSS_FEEDS.items():
 
-        if normalized_title in seen_titles:
-            continue
+        for feed_url in feeds:
 
-        seen_titles.add(normalized_title)
-        unique_articles.append(article)
+            print(
+                f"Fetching RSS: {source_name} -> {feed_url}"
+            )
 
-    # Shuffle while retaining variety
-    random.shuffle(unique_articles)
+            try:
 
-    final_articles = unique_articles[:20]
+                response = session.get(
+                    feed_url,
+                    timeout=20
+                )
+
+                if response.status_code != 200:
+
+                    print(
+                        f"RSS HTTP {response.status_code}"
+                    )
+
+                    continue
+
+
+                feed = feedparser.parse(
+                    response.content
+                )
+
+
+                for entry in feed.entries[:10]:
+
+                    title = clean_text(
+                        entry.get(
+                            "title",
+                            ""
+                        )
+                    )
+
+                    link = (
+                        entry.get(
+                            "link",
+                            ""
+                        )
+                        or ""
+                    ).strip()
+
+
+                    if not title or not link:
+                        continue
+
+
+                    title_key = re.sub(
+                        r"\W+",
+                        "",
+                        title.lower()
+                    )
+
+
+                    if title_key in seen_titles:
+                        continue
+
+
+                    if link in seen_urls:
+                        continue
+
+
+                    seen_titles.add(
+                        title_key
+                    )
+
+                    seen_urls.add(
+                        link
+                    )
+
+
+                    summary = clean_text(
+                        entry.get(
+                            "summary",
+                            ""
+                        )
+                    )
+
+
+                    image_url = (
+                        extract_image_from_entry(
+                            entry
+                        )
+                    )
+
+
+                    # Try article page only for useful
+                    # supporting context.
+
+                    article_text = ""
+
+                    if len(summary) < 250:
+
+                        article_text = (
+                            extract_article_text(
+                                link
+                            )
+                        )
+
+
+                    if not image_url:
+
+                        image_url = (
+                            extract_og_image(
+                                link
+                            )
+                        )
+
+
+                    if not image_url:
+
+                        image_url = random.choice(
+                            FALLBACK_IMAGES
+                        )
+
+
+                    collected.append({
+
+                        "source_name":
+                            source_name,
+
+                        "title":
+                            title,
+
+                        "url":
+                            link,
+
+                        "summary":
+                            summary,
+
+                        "article_context":
+                            article_text,
+
+                        "image_url":
+                            image_url
+
+                    })
+
+
+                    print(
+                        f"  + {title}"
+                    )
+
+
+            except Exception as error:
+
+                print(
+                    f"RSS error: {error}"
+                )
+
 
     print(
-        f"Total usable news articles: "
-        f"{len(final_articles)}"
+        f"\nTotal unique source stories: "
+        f"{len(collected)}"
     )
 
-    return final_articles
+
+    return collected
 
 
 # ============================================================
-# GEMINI CONTENT GENERATION
+# SOURCE MATERIAL PREPARATION
 # ============================================================
 
-def generate_daily_content(raw_articles):
+def prepare_source_material(items):
 
-    if not raw_articles:
+    material = []
 
-        print("No raw news articles available.")
+    for index, item in enumerate(items):
 
-        return {
-            "date": TODAY_DATE,
-            "news": [],
-            "quizzes": []
-        }
+        context = (
+            item.get("article_context")
+            or item.get("summary")
+            or ""
+        )
+
+
+        # Keep context reasonably sized.
+
+        context = context[:5000]
+
+
+        material.append({
+
+            "source_id":
+                index + 1,
+
+            "source":
+                item["source_name"],
+
+            "headline":
+                item["title"],
+
+            "url":
+                item["url"],
+
+            "context":
+                context,
+
+            "image_url":
+                item["image_url"]
+
+        })
+
+
+    return material
+
+
+# ============================================================
+# GEMINI JSON CLEANER
+# ============================================================
+
+def clean_json_response(text):
+
+    if not text:
+        return ""
+
+    text = text.strip()
+
+
+    # Remove markdown code fences.
+
+    text = re.sub(
+        r"^```(?:json)?",
+        "",
+        text,
+        flags=re.IGNORECASE
+    )
+
+    text = re.sub(
+        r"```$",
+        "",
+        text
+    )
+
+
+    # Find JSON object.
+
+    start = text.find("{")
+
+    end = text.rfind("}")
+
+    if start >= 0 and end >= 0:
+
+        text = text[
+            start:end + 1
+        ]
+
+
+    return text.strip()
+
+
+# ============================================================
+# VALIDATE NEWS
+# ============================================================
+
+def validate_news_item(item):
+
+    if not isinstance(
+        item,
+        dict
+    ):
+        return False
+
+
+    required = [
+        "headline",
+        "story_lead",
+        "bullet_points",
+        "full_article_text",
+        "exam_relevance",
+        "source_url"
+    ]
+
+
+    for key in required:
+
+        if key not in item:
+            return False
+
+
+        if item[key] is None:
+            return False
+
+
+    headline = str(
+        item["headline"]
+    ).strip()
+
+
+    article = str(
+        item["full_article_text"]
+    ).strip()
+
+
+    if len(headline) < 15:
+        return False
+
+
+    if len(article) < 250:
+        return False
+
+
+    if not isinstance(
+        item["bullet_points"],
+        list
+    ):
+        return False
+
+
+    if len(item["bullet_points"]) < 2:
+        return False
+
+
+    return True
+
+
+# ============================================================
+# VALIDATE COMPLETE PAYLOAD
+# ============================================================
+
+def validate_generated_payload(data):
+
+    if not isinstance(
+        data,
+        dict
+    ):
+        return False
+
+
+    news = data.get(
+        "news"
+    )
+
+
+    if not isinstance(
+        news,
+        list
+    ):
+        return False
+
+
+    # CRITICAL:
+    # We require all 15.
+
+    if len(news) < TARGET_NEWS_COUNT:
+
+        print(
+            f"Gemini returned only "
+            f"{len(news)} news items. "
+            f"Need {TARGET_NEWS_COUNT}."
+        )
+
+        return False
+
+
+    valid_news = []
+
+    seen = set()
+
+
+    for item in news:
+
+        if not validate_news_item(
+            item
+        ):
+            continue
+
+
+        headline_key = re.sub(
+            r"\W+",
+            "",
+            item["headline"].lower()
+        )
+
+
+        if headline_key in seen:
+            continue
+
+
+        seen.add(
+            headline_key
+        )
+
+        valid_news.append(
+            item
+        )
+
+
+    if len(valid_news) < TARGET_NEWS_COUNT:
+
+        print(
+            f"Only {len(valid_news)} "
+            f"unique valid articles."
+        )
+
+        return False
+
+
+    data["news"] = (
+        valid_news[
+            :TARGET_NEWS_COUNT
+        ]
+    )
+
+
+    return True
+
+
+# ============================================================
+# GEMINI GENERATION
+# ============================================================
+
+def generate_daily_content(
+    source_items
+):
+
+    if len(source_items) < 20:
+
+        print(
+            "WARNING: fewer than 20 source "
+            "stories available."
+        )
+
+
+    source_material =
+        prepare_source_material(
+            source_items
+        )
+
+
+    source_json =
+        json.dumps(
+            source_material,
+            ensure_ascii=False,
+            indent=2
+        )
+
 
     prompt = f"""
-You are an expert Current Affairs Faculty for UPSC, SSC,
-State PCS and other Indian competitive examinations.
+You are the senior current-affairs editor
+for AURA EXAM AI.
 
-Synthesize the following raw news feeds into original,
-fact-focused study material.
+Today is {TODAY_DATE}.
 
-RAW NEWS:
-{json.dumps(raw_articles, ensure_ascii=False)}
+Create EXACTLY 15 high-quality current-affairs
+articles for Indian competitive-exam students.
 
-CRITICAL RULES:
+IMPORTANT:
+You MUST return exactly 15 articles.
 
-1. FACTUAL ACCURACY:
-   Use only information supported by the supplied news.
-   Do not invent facts, people, dates, locations or events.
+Do NOT return 8.
+Do NOT return 10.
+Do NOT return 12.
+Return EXACTLY 15.
 
-2. NO N/A:
-   Do not output "N/A" where meaningful information can be
-   extracted from the supplied article.
+Use the supplied source material as factual
+reference material.
 
-3. ORIGINAL WRITING:
-   Rewrite and synthesize the information into original
-   study notes. Do not copy article wording.
+Each article MUST correspond to one real
+source story supplied below.
 
-4. HTML HIGHLIGHTING:
-   In headline, full_article_text, important_locations,
-   important_facts and relevant fields, important people,
-   locations, ministries, government agencies and statutory
-   bodies may be highlighted using:
-   <b><u>ENTITY</u></b>
+Do NOT invent a news event.
 
-5. FULL ARTICLE:
-   Write approximately 350-500 words when enough source
-   information is available.
+Do NOT combine unrelated stories.
 
-6. EXAM RELEVANCE:
-   Clearly identify UPSC/SSC/State PCS relevance where
-   applicable.
+Do NOT mix paragraphs from different stories.
 
-7. SOURCE:
-   Preserve the original source URL and source name.
+Do NOT copy website navigation,
+advertisements, cookie notices,
+recommendation text, comments, or unrelated
+paragraphs.
 
-8. IMAGE:
-   Use the supplied article image_url whenever possible.
+The "full_article_text" must be newly written
+for THIS EXACT NEWS ITEM and must discuss
+only this news event.
 
-9. QUIZ:
-   Generate useful exam-oriented MCQs directly based on
-   the generated news.
-   Each question must have exactly four options.
-   "answer" must be the zero-based option index.
+Each full article should be approximately
+300-500 words.
 
-10. DO NOT GENERATE FAKE NEWS.
+The article should explain:
 
-JSON OUTPUT:
+1. What happened
+2. Who/which institution is involved
+3. Where it happened
+4. Important dates
+5. Important facts
+6. Why the development matters
+7. Relevant background where useful
+8. Exam relevance
+
+Use factual and neutral language.
+
+Prioritize:
+- India
+- Government and governance
+- Economy/business
+- International relations
+- Science and technology
+- Environment
+- Defence
+- Sports
+- Important legal/judicial developments
+- Important social developments
+- Important reports/indexes
+- Major international developments
+
+Avoid:
+- celebrity gossip
+- entertainment unless nationally important
+- trivial viral content
+- opinion pieces
+- duplicate stories
+- rumours
+- unverified claims
+
+CATEGORY DISTRIBUTION:
+
+Try to provide approximately:
+
+National/Governance: 4
+International: 3
+Economy/Business: 2
+Science/Environment/Defence: 2
+Sports: 2
+Other important current affairs: 2
+
+This distribution is flexible if today's
+important news requires adjustment.
+
+SOURCE RULE:
+
+Every article must use the correct source URL
+from the supplied material.
+
+Never assign the URL of one story to another story.
+
+IMAGE RULE:
+
+Use the image_url belonging to the selected
+source story.
+
+OUTPUT ONLY VALID JSON.
+
+Use this exact structure:
 
 {{
   "date": "{TODAY_DATE}",
@@ -509,224 +968,111 @@ JSON OUTPUT:
   "news": [
     {{
       "id": 1,
-      "category": "NATIONAL",
+      "category": "National",
 
-      "headline":
-        "Headline with <b><u>Important Entity</u></b>",
+      "headline": "...",
 
-      "story_lead":
-        "Concise key summary sentence.",
+      "story_lead": "...",
 
       "bullet_points": [
-        "Important point 1",
-        "Important point 2",
-        "Important point 3"
+        "...",
+        "...",
+        "...",
+        "..."
       ],
 
-      "full_article_text":
-        "Original 350-500 word study article.",
+      "full_article_text": "...",
 
-      "exam_relevance":
-        "UPSC GS Paper II / State PCS",
+      "key_locations": "...",
 
-      "takeaway":
-        "Core exam takeaway.",
+      "important_dates": "...",
 
-      "important_locations":
-        "<b><u>New Delhi</u></b>, India",
+      "key_facts": "...",
 
-      "important_dates":
-        "Relevant date or deadline from the source",
+      "exam_relevance": "...",
 
-      "source_url":
-        "Original source URL",
+      "takeaway": "...",
 
-      "source_name":
-        "Source Name",
-
-      "important_facts": [
-        "Important factual point",
-        "Important factual point"
-      ],
-
-      "vocabulary_words": [
+      "entities": [
         {{
-          "word": "Statutory",
-          "meaning":
-            "Authorized or defined by legislation."
+          "name": "...",
+          "role": "...",
+          "party_and_state": "...",
+          "bio_details": "..."
         }}
       ],
 
-      "image_url":
-        "Original supplied image URL"
+      "source_name": "...",
+
+      "source_url": "...",
+
+      "image_url": "..."
     }}
   ],
 
   "quizzes": [
     {{
-      "question": "Question?",
+      "question": "...",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D"
+        "...",
+        "...",
+        "..."
       ],
       "answer": 0
     }}
   ]
 }}
+
+IMPORTANT:
+The "answer" value must be the zero-based
+index of the correct option.
+
+Create at least 15 quiz questions.
+
+SOURCE MATERIAL:
+
+{source_json}
 """
 
-    for model_name in [
+
+    models = [
+
         "gemini-2.5-flash",
+
+        "gemini-2.0-flash",
+
         "gemini-1.5-flash"
-    ]:
 
-        for attempt in range(1, 4):
+    ]
 
-            try:
 
-                print(
-                    f"Generating content via "
-                    f"{model_name} "
-                    f"(Attempt {attempt})..."
+    for attempt in range(3):
+
+        model =
+            models[
+                min(
+                    attempt,
+                    len(models) - 1
+                )
+            ]
+
+
+        print(
+            f"\nGemini attempt "
+            f"{attempt + 1}/3 "
+            f"using {model}"
+        )
+
+
+        try:
+
+            response =
+                client.models.generate_content(
+                    model=model,
+                    contents=prompt
                 )
 
-                response = client.models.generate_content(
 
-                    model=model_name,
-
-                    contents=prompt,
-
-                    config=types.GenerateContentConfig(
-
-                        response_mime_type="application/json",
-
-                        temperature=0.3
-                    )
-                )
-
-                generated = json.loads(response.text)
-
-                # Basic validation
-                if not isinstance(generated, dict):
-                    raise ValueError(
-                        "Gemini returned invalid JSON structure."
-                    )
-
-                if "news" not in generated:
-                    raise ValueError(
-                        "Generated data has no news field."
-                    )
-
-                if "quizzes" not in generated:
-                    generated["quizzes"] = []
-
-                generated["date"] = TODAY_DATE
-
-                return generated
-
-            except Exception as e:
-
-                print(
-                    f"Attempt {attempt} failed: {e}"
-                )
-
-                time.sleep(5)
-
-    print("All Gemini attempts failed.")
-
-    return {
-        "date": TODAY_DATE,
-        "news": [],
-        "quizzes": []
-    }
-
-
-# ============================================================
-# ARCHIVE DATE MANAGEMENT
-# ============================================================
-
-def get_available_dates():
-
-    dates = set()
-
-    data_directory = "data"
-
-    if os.path.exists(data_directory):
-
-        for filename in os.listdir(data_directory):
-
-            if filename.endswith(".json"):
-
-                date_part = filename[:-5]
-
-                if re.fullmatch(
-                    r"\d{4}-\d{2}-\d{2}",
-                    date_part
-                ):
-                    dates.add(date_part)
-
-    dates.add(TODAY_DATE)
-
-    return sorted(
-        dates,
-        reverse=True
-    )
-
-
-# ============================================================
-# MAIN
-# ============================================================
-
-def main():
-
-    print("=" * 60)
-    print(
-        f"AURA EXAM AI DAILY UPDATE - {TODAY_DATE}"
-    )
-    print("=" * 60)
-
-    os.makedirs("data", exist_ok=True)
-
-    # --------------------------------------------------------
-    # FETCH NEWS
-    # --------------------------------------------------------
-
-    raw_news = fetch_rss_feeds()
-
-    # --------------------------------------------------------
-    # GENERATE AI CONTENT
-    # --------------------------------------------------------
-
-    data = generate_daily_content(raw_news)
-
-    # --------------------------------------------------------
-    # SAFETY CHECK
-    # Do not destroy a previously working daily file if
-    # Gemini/RSS temporarily fails.
-    # --------------------------------------------------------
-
-    today_file = f"data/{TODAY_DATE}.json"
-
-    if not data.get("news"):
-
-        if os.path.exists(today_file):
-
-            print(
-                "New generation returned no news. "
-                "Keeping existing today's file."
-            )
-
-            with open(
-                today_file,
-                "r",
-                encoding="utf-8"
-            ) as f:
-                data = json.load(f)
-
-        else:
-
-            print(
-                "WARNING: No news generated today."
-         
+            raw =
+                getattr(
+                    response
