@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>AURA EXAM AI - Daily Current Affairs & Quiz</title>
+  <title>AURA Exam AI | Daily Current Affairs & Quiz</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
+  <meta
+    name="description"
+    content="AURA Exam AI - Daily current affairs, competitive exam quizzes and exam-focused news."
+  >
 
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'en',
-        includedLanguages: 'en,hi,pa,bn,ta,te,mr,gu,kn,ml,ur',
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-      }, 'google_translate_element');
-    }
-  </script>
+  <meta name="theme-color" content="#030712">
 
-  <script
-    type="text/javascript"
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-  </script>
+  <link rel="manifest" href="manifest.json">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
     :root {
-      --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
-      --card-bg: rgba(255,255,255,0.97);
-      --primary-red: #e11d48;
-      --accent-blue: #0284c7;
-      --text-dark: #0f172a;
+      --bg: #030712;
+      --bg2: #0b1120;
+      --card: rgba(15, 23, 42, 0.78);
+      --card2: rgba(17, 24, 39, 0.9);
+
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+
+      --neon-cyan: #22d3ee;
+      --neon-purple: #a855f7;
+      --neon-blue: #3b82f6;
+      --neon-green: #22c55e;
+      --neon-red: #ef4444;
+      --neon-yellow: #facc15;
+
+      --border: rgba(148, 163, 184, 0.16);
+
+      --shadow:
+        0 10px 40px rgba(0, 0, 0, 0.35),
+        0 0 25px rgba(34, 211, 238, 0.04);
     }
 
     * {
@@ -38,2653 +53,1684 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: 'Poppins', sans-serif;
-      background: var(--bg-gradient);
+      background:
+        radial-gradient(
+          circle at 10% 10%,
+          rgba(34, 211, 238, 0.08),
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 90% 15%,
+          rgba(168, 85, 247, 0.08),
+          transparent 28%
+        ),
+        linear-gradient(
+          180deg,
+          #020617 0%,
+          #030712 45%,
+          #020617 100%
+        );
+
+      color: var(--text-main);
+      font-family: "Inter", sans-serif;
       min-height: 100vh;
-      color: #f8fafc;
-      padding-bottom: 50px;
+    }
+
+    button {
+      font-family: inherit;
     }
 
     /* ================= HEADER ================= */
 
     header {
-      text-align: center;
-      padding: 15px;
-      background: rgba(15,23,42,0.94);
-      backdrop-filter: blur(12px);
-      border-bottom: 2px solid rgba(255,255,255,0.1);
       position: sticky;
       top: 0;
       z-index: 100;
+
+      background: rgba(3, 7, 18, 0.82);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+
+      border-bottom: 1px solid rgba(34, 211, 238, 0.12);
     }
 
-    .header-top {
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
+    .header-inner {
+      max-width: 1250px;
+      margin: auto;
+      padding: 18px 20px 0;
+    }
+
+    .brand {
+      display: flex;
       align-items: center;
-      max-width: 1450px;
-      margin: 0 auto 10px;
+      justify-content: space-between;
       gap: 15px;
+      padding-bottom: 16px;
     }
 
-    .live-clock-box {
-      justify-self: start;
+    .logo {
+      font-family: "Orbitron", sans-serif;
+      font-size: clamp(1.15rem, 3vw, 1.65rem);
+      font-weight: 800;
+      letter-spacing: 2px;
+
       background: linear-gradient(
-        135deg,
-        rgba(56,189,248,0.15),
-        rgba(99,102,241,0.18)
+        90deg,
+        var(--neon-cyan),
+        #60a5fa,
+        var(--neon-purple)
       );
 
-      padding: 8px 15px;
-      border-radius: 14px;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
 
-      font-size: 0.9rem;
-      font-weight: 800;
+    .logo-subtitle {
+      color: var(--text-muted);
+      font-size: 0.72rem;
+      margin-top: 3px;
+      letter-spacing: 1px;
+    }
 
-      color: #7dd3fc;
-
-      border: 1px solid rgba(56,189,248,0.35);
-
+    .live-dot {
       display: flex;
       align-items: center;
       gap: 7px;
 
-      box-shadow:
-        0 0 15px rgba(56,189,248,0.08),
-        inset 0 0 10px rgba(255,255,255,0.03);
-    }
-
-    #liveClock {
-      font-variant-numeric: tabular-nums;
-      letter-spacing: 0.5px;
-    }
-
-    h1.brand {
-      font-size: 2.15rem;
-      font-weight: 800;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #86efac;
       letter-spacing: 1px;
-
-      background: linear-gradient(90deg,#38bdf8,#f43f5e);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-
-      text-transform: uppercase;
     }
 
-    .header-actions {
-      justify-self: end;
+    .live-dot span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 12px #22c55e;
+    }
+
+    /* ================= TABS ================= */
+
+    .tabs {
       display: flex;
-      align-items: center;
-      gap: 10px;
+      gap: 6px;
+      overflow-x: auto;
+      scrollbar-width: none;
     }
 
-    #google_translate_element select {
-      background: #1e293b;
-      color: #fff;
-      border: 1px solid var(--accent-blue);
-      border-radius: 12px;
-      padding: 5px 10px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      outline: none;
+    .tabs::-webkit-scrollbar {
+      display: none;
     }
 
-    .btn-share-app {
-      background: #10b981;
-      color: #fff;
+    .tab {
+      flex: 0 0 auto;
+
+      background: transparent;
       border: none;
+      color: var(--text-muted);
 
-      padding: 7px 14px;
-      border-radius: 20px;
+      padding: 13px 16px;
 
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       font-weight: 700;
 
       cursor: pointer;
 
-      display: flex;
-      align-items: center;
-      gap: 6px;
+      border-bottom: 2px solid transparent;
+      transition: 0.25s ease;
     }
 
-    .btn-share-app:hover {
-      background: #059669;
+    .tab:hover {
+      color: var(--text-main);
     }
 
-    .yt-banner {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-
-      margin-top: 4px;
-      padding: 8px 22px;
-
-      background: #ff0000;
-      color: #fff;
-
-      text-decoration: none;
-      border-radius: 30px;
-
-      font-weight: 700;
-      font-size: 0.92rem;
-
-      box-shadow: 0 4px 15px rgba(255,0,0,0.4);
+    .tab.active {
+      color: var(--neon-cyan);
+      border-bottom-color: var(--neon-cyan);
+      text-shadow: 0 0 15px rgba(34, 211, 238, 0.35);
     }
 
-    .yt-icon {
-      width: 22px;
-      height: 22px;
-      fill: currentColor;
-    }
+    /* ================= CONTAINER ================= */
 
-    /* ================= PAGE ================= */
-
-    .page-layout {
-      display: grid;
-      grid-template-columns: 240px 1fr 240px;
-
-      gap: 20px;
-
-      max-width: 1550px;
-
-      margin: 20px auto 0;
-
-      padding: 0 15px;
-    }
-
-    @media(max-width:1200px) {
-      .page-layout {
-        grid-template-columns: 1fr;
-      }
-
-      .side-banner {
-        display:none;
-      }
+    .container {
+      max-width: 1250px;
+      margin: auto;
+      padding: 24px 20px 60px;
     }
 
     /* ================= MOTIVATION ================= */
 
-    .side-banner {
-      background: rgba(255,255,255,0.05);
+    .motivation-card {
+      position: relative;
 
-      border: 1px solid rgba(255,255,255,0.1);
+      padding: 20px 22px;
+      margin-bottom: 22px;
 
-      border-radius: 16px;
+      border: 1px solid rgba(168, 85, 247, 0.35);
 
-      padding: 18px 15px;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(59, 130, 246, 0.12),
+          rgba(168, 85, 247, 0.12)
+        );
 
-      height: fit-content;
-
-      position: sticky;
-      top: 140px;
-
-      display: flex;
-      flex-direction: column;
-
-      gap: 15px;
-    }
-
-    .banner-title {
-      font-size: 1rem;
-      font-weight: 800;
-
-      text-transform: uppercase;
-      letter-spacing: 1px;
-
-      color: #38bdf8;
-
-      border-bottom: 1px solid rgba(255,255,255,0.15);
-
-      padding-bottom: 8px;
+      border-radius: 18px;
 
       text-align: center;
+
+      overflow: hidden;
+
+      box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.2),
+        0 0 30px rgba(168, 85, 247, 0.04);
     }
 
-    .quote-card {
-      background: rgba(15,23,42,0.65);
-
-      border-left: 3px solid var(--primary-red);
-
-      padding: 10px;
-
-      border-radius: 0 10px 10px 0;
-
-      font-size: 0.86rem;
-
-      line-height: 1.5;
-
-      color: #cbd5e1;
-    }
-
-    .quote-card img {
+    .motivation-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 120px;
+      height: 2px;
 
-      object-fit: cover;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        var(--neon-purple),
+        var(--neon-cyan),
+        transparent
+      );
+    }
 
-      border-radius: 8px;
-
+    .motivation-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: var(--neon-cyan);
       margin-bottom: 8px;
     }
 
-    .quote-author {
-      display: block;
-
-      margin-top: 7px;
-
-      font-size: 0.76rem;
-
-      color: #94a3b8;
-
-      font-weight: 700;
+    #motivation-text {
+      font-family: "Orbitron", sans-serif;
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: var(--text-main);
     }
 
-    /* ================= CONTROLS ================= */
+    /* ================= SECTION HEADER ================= */
 
-    .controls-bar {
+    .section-header {
       display: flex;
-      flex-direction: column;
-
-      margin-bottom: 15px;
-
-      gap: 10px;
-    }
-
-    .top-controls {
-      display: flex;
-
       align-items: center;
       justify-content: space-between;
-
       gap: 10px;
 
-      flex-wrap: wrap;
+      margin: 28px 0 16px;
     }
 
-    .nav-tabs {
-      display: flex;
-      gap: 10px;
-    }
-
-    .tab-btn {
-      padding: 9px 18px;
-
-      border: none;
-
-      border-radius: 20px;
-
-      background: rgba(255,255,255,0.15);
-
-      color: #fff;
-
-      font-weight: 600;
-
-      cursor: pointer;
-    }
-
-    .tab-btn.active {
-      background: var(--accent-blue);
-
-      box-shadow: 0 0 15px rgba(2,132,199,0.5);
-    }
-
-    /* ================= COMPACT DATE STRIP ================= */
-
-    .date-strip-wrapper {
-      width: 100%;
-
-      background: rgba(255,255,255,0.07);
-
-      border: 1px solid rgba(255,255,255,0.1);
-
-      border-radius: 14px;
-
-      padding: 7px;
-
-      overflow-x: auto;
-    }
-
-    .date-strip {
-      display: grid;
-
-      grid-template-columns: repeat(7,minmax(75px,1fr));
-
-      gap: 6px;
-
-      min-width: 540px;
-    }
-
-    .date-btn {
-      border: 1px solid rgba(255,255,255,0.12);
-
-      background: rgba(15,23,42,0.65);
-
-      color: #cbd5e1;
-
-      border-radius: 10px;
-
-      padding: 7px 4px;
-
-      cursor: pointer;
-
-      text-align: center;
-
-      transition: 0.2s;
-    }
-
-    .date-btn:hover {
-      border-color: #38bdf8;
-    }
-
-    .date-btn.active {
-      background: var(--accent-blue);
-
-      color: #fff;
-
-      border-color: #38bdf8;
-
-      box-shadow: 0 0 12px rgba(56,189,248,0.25);
-    }
-
-    .date-day {
-      display: block;
-
-      font-size: 0.68rem;
-
-      font-weight: 700;
-
-      text-transform: uppercase;
-    }
-
-    .date-number {
-      display: block;
-
+    .section-title {
+      font-family: "Orbitron", sans-serif;
       font-size: 1rem;
-
-      font-weight: 800;
-    }
-
-    .date-month {
-      display: block;
-
-      font-size: 0.62rem;
-
-      opacity: 0.8;
-    }
-
-    /* ================= NEWS ================= */
-
-    .news-grid {
-      display: flex;
-
-      flex-direction: column;
-
-      gap: 25px;
-    }
-
-    .info-card {
-      background: var(--card-bg);
-
-      color: var(--text-dark);
-
-      border-radius: 16px;
-
-      overflow: hidden;
-
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-
-      border-top: 5px solid var(--primary-red);
-    }
-
-    .card-header {
-      background: #1e293b;
-
-      color: #fff;
-
-      padding: 11px 18px;
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: space-between;
-    }
-
-    .badge-cat {
-      background: var(--primary-red);
-
-      font-family: 'Roboto Condensed',sans-serif;
-
-      text-transform: uppercase;
-
-      font-size: 0.8rem;
-
-      padding: 4px 9px;
-
-      border-radius: 4px;
-
       letter-spacing: 1px;
-
-      font-weight: 700;
     }
 
-    .card-id {
-      font-weight: 700;
+    .count-badge {
+      background: rgba(34, 211, 238, 0.08);
+      color: var(--neon-cyan);
 
-      color: #94a3b8;
-    }
+      border: 1px solid rgba(34, 211, 238, 0.18);
 
-    .card-body {
-      padding: 20px;
+      padding: 5px 10px;
+      border-radius: 999px;
 
-      display: grid;
-
-      grid-template-columns: 1fr 300px;
-
-      gap: 20px;
-    }
-
-    @media(max-width:768px) {
-      .card-body {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .card-headline-link {
-      text-decoration: none;
-
-      color: #0f172a;
-
-      display: block;
-    }
-
-    .card-headline {
-      font-size: 1.35rem;
-
+      font-size: 0.7rem;
       font-weight: 800;
-
-      line-height: 1.35;
-
-      margin-bottom: 12px;
-
-      cursor: pointer;
     }
 
-    .card-headline:hover {
-      color: var(--accent-blue);
+    /* ================= NEWS GRID ================= */
+
+    #news-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
     }
 
-    .story-lead {
-      font-size: 0.98rem;
-
-      color: #334155;
-
-      line-height: 1.6;
-
-      margin-bottom: 12px;
-    }
-
-    .bullet-list {
-      list-style: none;
-
-      margin-bottom: 15px;
-    }
-
-    .bullet-list li {
+    .news-card {
       position: relative;
 
-      padding-left: 20px;
-
-      font-size: 0.92rem;
-
-      color: #475569;
-
-      margin-bottom: 6px;
-
-      line-height: 1.5;
-    }
-
-    .bullet-list li::before {
-      content: "•";
-
-      color: var(--primary-red);
-
-      font-size: 1.4rem;
-
-      position: absolute;
-
-      left: 0;
-
-      top: -3px;
-    }
-
-    .entity-tag {
-      display: inline-flex;
-
-      align-items: center;
-
-      background: #e0f2fe;
-
-      color: #0369a1;
-
-      border: 1px solid #7dd3fc;
-
-      padding: 2px 8px;
-
-      border-radius: 12px;
-
-      font-size: 0.82rem;
-
-      font-weight: 700;
-
-      cursor: pointer;
-
-      margin: 2px 4px 2px 0;
-    }
-
-    .exam-box {
-      background: #f1f5f9;
-
-      border-left: 4px solid var(--accent-blue);
-
-      padding: 10px 14px;
-
-      border-radius: 0 8px 8px 0;
-
-      font-size: 0.88rem;
-
-      color: #1e293b;
-
-      margin-bottom: 15px;
-    }
-
-    .exam-box strong {
-      color: var(--accent-blue);
-    }
-
-    .card-footer-actions {
-      display: flex;
-
-      justify-content: space-between;
-
-      align-items: center;
-
-      margin-top: 10px;
-
-      gap: 8px;
-
-      flex-wrap: wrap;
-    }
-
-    .btn-read-more,
-    .btn-official-source,
-    .btn-share-item {
-      padding: 8px 13px;
-
-      border-radius: 8px;
-
-      font-weight: 700;
-
-      font-size: 0.82rem;
-
-      cursor: pointer;
-
-      border: none;
-
-      text-decoration: none;
-
-      display: inline-flex;
-
-      align-items: center;
-
-      gap: 5px;
-    }
-
-    .btn-read-more {
-      background: var(--accent-blue);
-
-      color: #fff;
-    }
-
-    .btn-official-source {
-      background: #475569;
-
-      color: #fff;
-    }
-
-    .btn-share-item {
-      background: #25d366;
-
-      color: #fff;
-    }
-
-    .card-img-container {
-      width: 100%;
-
-      height: 220px;
-
-      border-radius: 12px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
 
       overflow: hidden;
 
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      box-shadow: var(--shadow);
 
-      background: #e2e8f0;
+      transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
     }
 
-    .card-img-container img {
-      width: 100%;
+    .news-card:hover {
+      transform: translateY(-3px);
 
+      border-color: rgba(34, 211, 238, 0.28);
+
+      box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.4),
+        0 0 30px rgba(34, 211, 238, 0.05);
+    }
+
+    .news-image-wrap {
+      position: relative;
+      height: 210px;
+      background: #0f172a;
+      overflow: hidden;
+    }
+
+    .news-image {
+      width: 100%;
       height: 100%;
 
       object-fit: cover;
+
+      display: block;
+
+      transition: transform 0.4s ease;
+    }
+
+    .news-card:hover .news-image {
+      transform: scale(1.025);
+    }
+
+    .image-overlay {
+      position: absolute;
+      inset: 0;
+
+      background:
+        linear-gradient(
+          to top,
+          rgba(2, 6, 23, 0.8),
+          transparent 60%
+        );
+    }
+
+    .category {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+
+      background: rgba(2, 6, 23, 0.78);
+      backdrop-filter: blur(8px);
+
+      color: var(--neon-cyan);
+
+      border: 1px solid rgba(34, 211, 238, 0.25);
+
+      padding: 5px 9px;
+      border-radius: 999px;
+
+      font-size: 0.66rem;
+      font-weight: 800;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+    }
+
+    .bookmark-btn {
+      position: absolute;
+      top: 11px;
+      right: 11px;
+
+      width: 35px;
+      height: 35px;
+
+      border-radius: 50%;
+
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(2, 6, 23, 0.78);
+
+      color: #cbd5e1;
+
+      cursor: pointer;
+
+      font-size: 1rem;
+
+      backdrop-filter: blur(8px);
+
+      transition: 0.2s ease;
+    }
+
+    .bookmark-btn:hover,
+    .bookmark-btn.saved {
+      color: var(--neon-yellow);
+      border-color: rgba(250, 204, 21, 0.35);
+    }
+
+    .news-content {
+      padding: 18px;
+    }
+
+    .news-title {
+      font-size: 1.05rem;
+      line-height: 1.45;
+      font-weight: 800;
+
+      margin-bottom: 12px;
+    }
+
+    .news-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+
+      color: var(--text-muted);
+      font-size: 0.72rem;
+
+      margin-bottom: 14px;
+    }
+
+    .meta-item {
+      background: rgba(148, 163, 184, 0.06);
+      border: 1px solid rgba(148, 163, 184, 0.08);
+
+      padding: 4px 7px;
+      border-radius: 6px;
+    }
+
+    .news-section {
+      margin-top: 13px;
+    }
+
+    .news-section-title {
+      color: var(--neon-cyan);
+
+      font-size: 0.72rem;
+      font-weight: 800;
+
+      letter-spacing: 0.5px;
+
+      margin-bottom: 4px;
+    }
+
+    .news-section-text {
+      color: #cbd5e1;
+      font-size: 0.82rem;
+      line-height: 1.6;
+    }
+
+    .exam-box {
+      margin-top: 16px;
+
+      padding: 12px;
+
+      background: rgba(34, 211, 238, 0.05);
+
+      border-left: 2px solid var(--neon-cyan);
+
+      border-radius: 0 8px 8px 0;
+    }
+
+    .exam-title {
+      color: var(--neon-yellow);
+
+      font-size: 0.72rem;
+      font-weight: 800;
+
+      margin-bottom: 4px;
+    }
+
+    .exam-text {
+      color: #cbd5e1;
+      font-size: 0.8rem;
+      line-height: 1.5;
     }
 
     /* ================= QUIZ ================= */
 
-    .quiz-section {
-      display: none;
+    .quiz-container {
+      max-width: 850px;
+      margin: auto;
     }
 
     .quiz-card {
-      background: var(--card-bg);
+      background: var(--card);
+      border: 1px solid var(--border);
 
-      color: var(--text-dark);
+      border-radius: 18px;
 
-      border-radius: 16px;
+      padding: 22px;
 
-      padding: 20px;
+      margin-bottom: 18px;
 
-      margin-bottom: 20px;
-
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      box-shadow: var(--shadow);
     }
 
-    .quiz-q {
-      font-size: 1.1rem;
+    .quiz-number {
+      color: var(--neon-cyan);
 
+      font-size: 0.72rem;
+      font-weight: 800;
+
+      letter-spacing: 1px;
+
+      margin-bottom: 10px;
+    }
+
+    .quiz-question {
+      font-size: 1rem;
       font-weight: 700;
+      line-height: 1.6;
 
-      margin-bottom: 15px;
+      margin-bottom: 17px;
     }
 
-    .quiz-options {
-      display: flex;
-
-      flex-direction: column;
-
+    .options {
+      display: grid;
       gap: 10px;
     }
 
-    .opt-btn {
-      text-align: left;
-
-      padding: 12px 16px;
-
-      border: 2px solid #e2e8f0;
-
-      border-radius: 10px;
-
-      background: #fff;
-
-      font-weight: 600;
-
-      cursor: pointer;
-    }
-
-    .opt-btn.correct {
-      background: #dcfce7 !important;
-
-      border-color: #16a34a !important;
-
-      color: #15803d;
-    }
-
-    .opt-btn.wrong {
-      background: #ffe4e6 !important;
-
-      border-color: #e11d48 !important;
-
-      color: #be123c;
-    }
-
-    /* ================= MODAL ================= */
-
-    .modal-overlay {
-      position: fixed;
-
-      inset: 0;
-
-      background: rgba(15,23,42,0.88);
-
-      backdrop-filter: blur(8px);
-
-      z-index: 1000;
-
-      display: none;
-
-      justify-content: center;
-
-      align-items: center;
-
-      padding: 20px;
-    }
-
-    .modal-content {
-      background: #fff;
-
-      color: var(--text-dark);
-
-      max-width: 850px;
-
+    .option {
       width: 100%;
 
-      max-height: 90vh;
+      padding: 13px 15px;
 
-      overflow-y: auto;
+      text-align: left;
 
-      border-radius: 16px;
-
-      padding: 30px;
-
-      position: relative;
-
-      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
-    }
-
-    .close-modal {
-      position: absolute;
-
-      top: 12px;
-
-      right: 20px;
-
-      font-size: 1.8rem;
-
-      font-weight: 800;
-
-      cursor: pointer;
-
-      color: #64748b;
-
-      z-index: 5;
-    }
-
-    .profile-header {
-      display: flex;
-
-      align-items: center;
-
-      gap: 15px;
-
-      border-bottom: 2px solid #e2e8f0;
-
-      padding-bottom: 12px;
-
-      margin-bottom: 15px;
-    }
-
-    .profile-avatar {
-      width: 60px;
-
-      height: 60px;
-
-      background: #0284c7;
-
-      color: #fff;
-
-      border-radius: 50%;
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: center;
-
-      font-size: 1.5rem;
-
-      font-weight: 800;
-    }
-
-    .profile-title h3 {
-      font-size: 1.2rem;
-
-      font-weight: 800;
-    }
-
-    .profile-title p {
-      font-size: 0.88rem;
-
-      color: #0284c7;
-
-      font-weight: 700;
-    }
-
-    /* ================= LOADING ================= */
-
-    .loading-box {
-      background: rgba(255,255,255,0.08);
-
-      border: 1px solid rgba(255,255,255,0.1);
-
-      border-radius: 14px;
-
-      padding: 35px;
-
-      text-align: center;
+      background: rgba(15, 23, 42, 0.75);
 
       color: #cbd5e1;
 
-      font-weight: 600;
+      border: 1px solid rgba(148, 163, 184, 0.13);
+
+      border-radius: 10px;
+
+      cursor: pointer;
+
+      font-size: 0.84rem;
+
+      transition: 0.2s ease;
     }
 
-    .error-box {
-      background: rgba(244,63,94,0.12);
+    .option:hover {
+      border-color: rgba(34, 211, 238, 0.35);
+      color: white;
+    }
 
-      border: 1px solid rgba(244,63,94,0.3);
+    .option.correct {
+      background: rgba(34, 197, 94, 0.12);
+      border-color: rgba(34, 197, 94, 0.55);
+      color: #86efac;
+    }
 
-      border-radius: 14px;
+    .option.wrong {
+      background: rgba(239, 68, 68, 0.12);
+      border-color: rgba(239, 68, 68, 0.55);
+      color: #fca5a5;
+    }
 
-      padding: 25px;
+    .quiz-result {
+      margin-top: 12px;
+
+      padding: 10px 12px;
+
+      border-radius: 8px;
+
+      font-size: 0.78rem;
+      line-height: 1.5;
+
+      display: none;
+    }
+
+    .quiz-result.show {
+      display: block;
+    }
+
+    .quiz-result.correct-result {
+      background: rgba(34, 197, 94, 0.08);
+      color: #86efac;
+    }
+
+    .quiz-result.wrong-result {
+      background: rgba(239, 68, 68, 0.08);
+      color: #fca5a5;
+    }
+
+    /* ================= EMPTY / LOADING ================= */
+
+    .status-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+
+      border-radius: 18px;
+
+      padding: 40px 20px;
 
       text-align: center;
 
-      color: #fecdd3;
+      color: var(--text-muted);
+    }
+
+    .status-title {
+      font-family: "Orbitron", sans-serif;
+      color: var(--text-main);
+
+      font-size: 0.95rem;
+
+      margin-bottom: 8px;
+    }
+
+    .status-text {
+      font-size: 0.82rem;
+      line-height: 1.6;
+    }
+
+    .loader {
+      width: 32px;
+      height: 32px;
+
+      margin: 0 auto 15px;
+
+      border: 3px solid rgba(148, 163, 184, 0.15);
+      border-top-color: var(--neon-cyan);
+
+      border-radius: 50%;
+
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      max-width: 1250px;
+      margin: auto;
+
+      padding: 25px 20px 35px;
+
+      text-align: center;
+
+      color: #64748b;
+
+      font-size: 0.7rem;
+
+      border-top: 1px solid rgba(148, 163, 184, 0.08);
+    }
+
+    /* ================= RESPONSIVE ================= */
+
+    @media (max-width: 850px) {
+      #news-list {
+        grid-template-columns: 1fr;
+      }
+
+      .news-image-wrap {
+        height: 220px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .header-inner {
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+
+      .container {
+        padding: 18px 14px 45px;
+      }
+
+      .brand {
+        align-items: flex-start;
+      }
+
+      .live-dot {
+        font-size: 0.62rem;
+      }
+
+      .tab {
+        padding: 12px 11px;
+        font-size: 0.74rem;
+      }
+
+      .news-image-wrap {
+        height: 190px;
+      }
+
+      .news-content {
+        padding: 15px;
+      }
+
+      .news-title {
+        font-size: 0.96rem;
+      }
+
+      .motivation-card {
+        padding: 17px 15px;
+      }
+
+      #motivation-text {
+        font-size: 0.78rem;
+      }
+
+      .quiz-card {
+        padding: 17px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<header>
+  <!-- ================= HEADER ================= -->
 
-  <div class="header-top">
+  <header>
+    <div class="header-inner">
 
-    <div class="live-clock-box">
-      <span>⏰</span>
-      <span id="liveClock">00:00:00</span>
-    </div>
+      <div class="brand">
 
-    <h1 class="brand">AURA EXAM AI</h1>
+        <div>
+          <div class="logo">AURA EXAM AI</div>
+          <div class="logo-subtitle">
+            CURRENT AFFAIRS • QUIZ • COMPETITIVE EXAMS
+          </div>
+        </div>
 
-    <div class="header-actions">
+        <div class="live-dot">
+          <span></span>
+          DAILY AI
+        </div>
 
-      <div id="google_translate_element"></div>
-
-      <button class="btn-share-app" onclick="shareApp()">
-        🔗 Share App
-      </button>
-
-    </div>
-
-  </div>
-
-  <a
-    href="https://youtube.com/@zeroratta?si=dhJFjE1eOYCuIoGv"
-    target="_blank"
-    rel="noopener"
-    class="yt-banner"
-  >
-    <svg class="yt-icon" viewBox="0 0 24 24">
-      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505-.505 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-    </svg>
-
-    Subscribe on YouTube: Zerro Ratta
-  </a>
-
-</header>
-
-
-<div class="page-layout">
-
-  <!-- LEFT MOTIVATION -->
-
-  <aside class="side-banner">
-
-    <div class="banner-title">
-      ⚡ Daily Motivation
-    </div>
-
-    <div id="motivationEnglish">
-      <div class="quote-card">
-        Loading today's motivation...
       </div>
+
+      <nav class="tabs">
+
+        <button
+          class="tab active"
+          id="news-tab"
+          onclick="showTab('news')"
+        >
+          📰 Daily News
+        </button>
+
+        <button
+          class="tab"
+          id="quiz-tab"
+          onclick="showTab('quiz')"
+        >
+          🧠 Daily Quiz
+        </button>
+
+        <button
+          class="tab"
+          id="saved-tab"
+          onclick="showTab('saved')"
+        >
+          ⭐ Bookmarks
+        </button>
+
+      </nav>
+
     </div>
+  </header>
 
-  </aside>
+
+  <!-- ================= MAIN ================= -->
+
+  <main class="container">
+
+    <!-- MOTIVATION -->
+
+    <section
+      id="motivation-section"
+      class="motivation-card"
+    >
+
+      <div class="motivation-label">
+        DAILY MOTIVATION
+      </div>
+
+      <div id="motivation-text">
+        Stay consistent. Every question solved today strengthens tomorrow's performance.
+      </div>
+
+    </section>
 
 
-  <!-- MAIN -->
+    <!-- NEWS -->
 
-  <main>
+    <section id="news-section">
 
-    <div class="controls-bar">
+      <div class="section-header">
 
-      <div class="top-controls">
-
-        <div class="nav-tabs">
-
-          <button
-            class="tab-btn active"
-            id="btnNews"
-            onclick="switchTab('news')"
-          >
-            Daily News
-          </button>
-
-          <button
-            class="tab-btn"
-            id="btnQuiz"
-            onclick="switchTab('quiz')"
-          >
-            Daily Quiz
-          </button>
-
+        <div class="section-title">
+          Latest Current Affairs
         </div>
 
         <div
-          id="selectedDateLabel"
-          style="
-            font-size:0.82rem;
-            color:#cbd5e1;
-            font-weight:600;
-          "
+          class="count-badge"
+          id="news-count"
         >
+          0 NEWS
         </div>
 
       </div>
 
+      <div id="news-list">
 
-      <!-- COMPACT WEEK STRIP -->
+        <div class="status-card">
 
-      <div class="date-strip-wrapper">
+          <div class="loader"></div>
 
-        <div id="dateStrip" class="date-strip"></div>
+          <div class="status-title">
+            Loading Current Affairs
+          </div>
+
+          <div class="status-text">
+            Fetching today's exam-focused current affairs...
+          </div>
+
+        </div>
 
       </div>
 
-    </div>
+    </section>
 
 
-    <div id="newsSection" class="news-grid">
+    <!-- QUIZ -->
 
-      <div class="loading-box">
-        Loading today's current affairs...
+    <section
+      id="quiz-section"
+      style="display:none;"
+    >
+
+      <div class="section-header">
+
+        <div class="section-title">
+          Daily Exam Quiz
+        </div>
+
+        <div
+          class="count-badge"
+          id="quiz-count"
+        >
+          0 QUESTIONS
+        </div>
+
       </div>
 
-    </div>
+      <div
+        id="quiz-list"
+        class="quiz-container"
+      ></div>
+
+    </section>
 
 
-    <div id="quizSection" class="quiz-section"></div>
+    <!-- SAVED -->
+
+    <section
+      id="saved-section"
+      style="display:none;"
+    >
+
+      <div class="section-header">
+
+        <div class="section-title">
+          Saved Current Affairs
+        </div>
+
+        <div
+          class="count-badge"
+          id="saved-count"
+        >
+          0 SAVED
+        </div>
+
+      </div>
+
+      <div id="saved-list">
+
+      </div>
+
+    </section>
 
   </main>
 
 
-  <!-- RIGHT MOTIVATION -->
+  <!-- ================= FOOTER ================= -->
 
-  <aside class="side-banner">
-
-    <div class="banner-title">
-      🔥 आज का सुविचार
-    </div>
-
-    <div id="motivationHindi">
-
-      <div class="quote-card">
-        आज का सुविचार लोड हो रहा है...
-      </div>
-
-    </div>
-
-  </aside>
-
-</div>
+  <footer>
+    AURA EXAM AI • Daily Current Affairs & Competitive Exam Preparation
+  </footer>
 
 
-<!-- ARTICLE MODAL -->
+  <!-- ========================================================= -->
+  <!-- APP DATA - AUTOMATICALLY REPLACED BY update_news.py -->
+  <!-- ========================================================= -->
 
-<div class="modal-overlay" id="articleModal">
+  <script>
 
-  <div class="modal-content">
-
-    <span
-      class="close-modal"
-      onclick="closeModal('articleModal')"
-    >
-      &times;
-    </span>
-
-    <div id="modalContainer"></div>
-
-  </div>
-
-</div>
+    const appData = {
+      news: [],
+      quizzes: [],
+      motivational: ""
+    };
 
 
-<!-- PROFILE MODAL -->
+    /* =========================================================
+       SAFE TEXT HELPERS
+       ========================================================= */
 
-<div
-  class="modal-overlay"
-  id="profileModal"
-  style="z-index:1100;"
->
+    function safeText(value) {
 
-  <div
-    class="modal-content"
-    style="max-width:600px;"
-  >
-
-    <span
-      class="close-modal"
-      onclick="closeModal('profileModal')"
-    >
-      &times;
-    </span>
-
-    <div id="profileModalContainer"></div>
-
-  </div>
-
-</div>
-
-
-<script>
-
-  let globalPayload = null;
-  let currentData = null;
-
-
-  /* ================= CLOCK ================= */
-
-  function updateClock() {
-
-    const now = new Date();
-
-    const time = now.toLocaleTimeString(
-      'en-IN',
-      {
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        hour12: true
+      if (value === null || value === undefined) {
+        return "";
       }
-    );
 
-    document.getElementById('liveClock').textContent = time;
+      if (Array.isArray(value)) {
+        return value.join(", ");
+      }
 
-  }
-
-  setInterval(updateClock,1000);
-
-  updateClock();
+      return String(value);
+    }
 
 
-  /* ================= INITIAL LOAD ================= */
+    function escapeHTML(value) {
 
-  async function init() {
+      const text = safeText(value);
 
-    try {
+      return text
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
 
-      const response = await fetch(
-        'data.json?cache=' + Date.now()
+
+    function makeList(value) {
+
+      if (!value) {
+        return "";
+      }
+
+      if (Array.isArray(value)) {
+
+        return value
+          .filter(Boolean)
+          .map(item => escapeHTML(item))
+          .join(", ");
+
+      }
+
+      return escapeHTML(value);
+    }
+
+
+    /* =========================================================
+       BOOKMARK SYSTEM
+       ========================================================= */
+
+    function getBookmarks() {
+
+      try {
+
+        const saved =
+          JSON.parse(
+            localStorage.getItem("auraBookmarks") || "[]"
+          );
+
+        return Array.isArray(saved) ? saved : [];
+
+      } catch (error) {
+
+        return [];
+
+      }
+    }
+
+
+    function saveBookmarks(bookmarks) {
+
+      localStorage.setItem(
+        "auraBookmarks",
+        JSON.stringify(bookmarks)
       );
 
-      if(!response.ok) {
-        throw new Error(
-          `data.json HTTP ${response.status}`
+    }
+
+
+    function isBookmarked(id) {
+
+      return getBookmarks().includes(String(id));
+
+    }
+
+
+    function toggleBookmark(id) {
+
+      id = String(id);
+
+      let bookmarks = getBookmarks();
+
+      if (bookmarks.includes(id)) {
+
+        bookmarks = bookmarks.filter(
+          item => item !== id
         );
+
+      } else {
+
+        bookmarks.push(id);
+
       }
 
-      globalPayload = await response.json();
+      saveBookmarks(bookmarks);
 
-      if(!globalPayload) {
-        throw new Error('Empty data.json');
-      }
+      renderNews();
+      renderSaved();
+
+    }
 
 
-      /*
-       * If Python generated today's data,
-       * use it immediately.
-       */
+    /* =========================================================
+       NEWS CARD
+       ========================================================= */
 
-      if(
-        globalPayload.today &&
-        Array.isArray(globalPayload.today.news)
-      ) {
+    function renderNewsCard(article) {
 
-        currentData = globalPayload.today;
+      const id =
+        article.id ||
+        `${article.category || "news"}-${article.title || Math.random()}`;
 
-        renderDateStrip();
+      const bookmarked = isBookmarked(id);
 
-        renderAll();
+      const image =
+        article.image_url ||
+        "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80";
+
+      return `
+
+        <article class="news-card">
+
+          <div class="news-image-wrap">
+
+            <img
+              class="news-image"
+              src="${escapeHTML(image)}"
+              alt="${escapeHTML(article.title || "Current Affairs")}"
+              loading="lazy"
+              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80';"
+            >
+
+            <div class="image-overlay"></div>
+
+            <div class="category">
+              ${escapeHTML(article.category || "Current Affairs")}
+            </div>
+
+            <button
+              class="bookmark-btn ${bookmarked ? "saved" : ""}"
+              onclick="toggleBookmark('${escapeHTML(id)}')"
+              title="${bookmarked ? "Remove bookmark" : "Save article"}"
+            >
+              ${bookmarked ? "★" : "☆"}
+            </button>
+
+          </div>
+
+
+          <div class="news-content">
+
+            <h2 class="news-title">
+              ${escapeHTML(article.title || "Current Affairs")}
+            </h2>
+
+
+            <div class="news-meta">
+
+              ${
+                article.date
+                  ? `
+                    <span class="meta-item">
+                      📅 ${escapeHTML(article.date)}
+                    </span>
+                  `
+                  : ""
+              }
+
+              ${
+                article.place
+                  ? `
+                    <span class="meta-item">
+                      📍 ${escapeHTML(article.place)}
+                    </span>
+                  `
+                  : ""
+              }
+
+            </div>
+
+
+            ${
+              article.persons_ministers
+                ? `
+                  <div class="news-section">
+
+                    <div class="news-section-title">
+                      PEOPLE / MINISTERS
+                    </div>
+
+                    <div class="news-section-text">
+                      ${makeList(article.persons_ministers)}
+                    </div>
+
+                  </div>
+                `
+                : ""
+            }
+
+
+            ${
+              article.officers
+                ? `
+                  <div class="news-section">
+
+                    <div class="news-section-title">
+                      OFFICERS / INSTITUTIONS
+                    </div>
+
+                    <div class="news-section-text">
+                      ${makeList(article.officers)}
+                    </div>
+
+                  </div>
+                `
+                : ""
+            }
+
+
+            ${
+              article.countries_states
+                ? `
+                  <div class="news-section">
+
+                    <div class="news-section-title">
+                      COUNTRIES / STATES
+                    </div>
+
+                    <div class="news-section-text">
+                      ${makeList(article.countries_states)}
+                    </div>
+
+                  </div>
+                `
+                : ""
+            }
+
+
+            ${
+              article.mission
+                ? `
+                  <div class="news-section">
+
+                    <div class="news-section-title">
+                      MISSION / INITIATIVE
+                    </div>
+
+                    <div class="news-section-text">
+                      ${escapeHTML(article.mission)}
+                    </div>
+
+                  </div>
+                `
+                : ""
+            }
+
+
+            ${
+              article.reason
+                ? `
+                  <div class="news-section">
+
+                    <div class="news-section-title">
+                      WHY IT MATTERS
+                    </div>
+
+                    <div class="news-section-text">
+                      ${escapeHTML(article.reason)}
+                    </div>
+
+                  </div>
+                `
+                : ""
+            }
+
+
+            ${
+              article.conclusion
+                ? `
+                  <div class="news-section">
+
+                    <div class="news-section-title">
+                      CONCLUSION
+                    </div>
+
+                    <div class="news-section-text">
+                      ${escapeHTML(article.conclusion)}
+                    </div>
+
+                  </div>
+                `
+                : ""
+            }
+
+
+            ${
+              article.exam_relevance
+                ? `
+                  <div class="exam-box">
+
+                    <div class="exam-title">
+                      EXAM RELEVANCE
+                    </div>
+
+                    <div class="exam-text">
+                      ${escapeHTML(article.exam_relevance)}
+                    </div>
+
+                  </div>
+                `
+                : ""
+            }
+
+          </div>
+
+        </article>
+
+      `;
+
+    }
+
+
+    /* =========================================================
+       RENDER NEWS
+       ========================================================= */
+
+    function renderNews() {
+
+      const container =
+        document.getElementById("news-list");
+
+      const count =
+        document.getElementById("news-count");
+
+      const news =
+        Array.isArray(appData.news)
+          ? appData.news
+          : [];
+
+
+      count.textContent =
+        `${news.length} NEWS`;
+
+
+      if (!news.length) {
+
+        container.innerHTML = `
+
+          <div class="status-card">
+
+            <div class="status-title">
+              No Current Affairs Available
+            </div>
+
+            <div class="status-text">
+              The daily update has not been generated yet.
+              Run the GitHub Action to fetch today's current affairs.
+            </div>
+
+          </div>
+
+        `;
 
         return;
 
       }
 
 
-      /*
-       * Otherwise use current_date
-       */
-
-      const currentDate =
-        globalPayload.current_date ||
-        getLocalDate();
-
-      renderDateStrip();
-
-      await loadDateData(currentDate);
-
-    }
-
-    catch(error) {
-
-      console.error(
-        'AURA INIT ERROR:',
-        error
-      );
-
-      showError(
-        'Today\'s news could not be loaded. Please run the Python update script and refresh the page.'
-      );
-
-    }
-
-  }
-
-
-  /* ================= DATE STRIP ================= */
-
-  function renderDateStrip() {
-
-    const strip =
-      document.getElementById('dateStrip');
-
-    strip.innerHTML = '';
-
-    let dates =
-      Array.isArray(globalPayload.available_dates)
-        ? [...globalPayload.available_dates]
-        : [];
-
-
-    /*
-     * Always include current date if Python
-     * has today's data.
-     */
-
-    if(
-      globalPayload.current_date &&
-      !dates.includes(globalPayload.current_date)
-    ) {
-
-      dates.push(
-        globalPayload.current_date
-      );
+      container.innerHTML =
+        news
+          .map(renderNewsCard)
+          .join("");
 
     }
 
 
-    /*
-     * Sort newest first.
-     */
+    /* =========================================================
+       RENDER QUIZ
+       ========================================================= */
 
-    dates.sort(
-      (a,b) =>
-        new Date(b) - new Date(a)
-    );
+    function renderQuiz() {
 
+      const container =
+        document.getElementById("quiz-list");
 
-    /*
-     * Display the latest 7 dates.
-     */
+      const count =
+        document.getElementById("quiz-count");
 
-    dates =
-      dates.slice(0,7);
-
-
-    dates.forEach(date => {
-
-      const button =
-        document.createElement('button');
-
-      button.className =
-        'date-btn';
-
-      button.dataset.date =
-        date;
-
-      const d =
-        new Date(date + 'T00:00:00');
-
-      const weekday =
-        d.toLocaleDateString(
-          'en-IN',
-          {weekday:'short'}
-        );
-
-      const day =
-        d.toLocaleDateString(
-          'en-IN',
-          {day:'numeric'}
-        );
-
-      const month =
-        d.toLocaleDateString(
-          'en-IN',
-          {month:'short'}
-        );
-
-
-      button.innerHTML = `
-        <span class="date-day">
-          ${weekday}
-        </span>
-
-        <span class="date-number">
-          ${day}
-        </span>
-
-        <span class="date-month">
-          ${month}
-        </span>
-      `;
-
-
-      button.onclick =
-        () => loadDateData(date);
-
-
-      strip.appendChild(button);
-
-    });
-
-
-    /*
-     * If there are no archived dates,
-     * still show today's date.
-     */
-
-    if(!dates.length) {
-
-      const today =
-        globalPayload.current_date ||
-        getLocalDate();
-
-      const button =
-        document.createElement('button');
-
-      button.className =
-        'date-btn';
-
-      button.dataset.date =
-        today;
-
-      button.innerHTML = `
-        <span class="date-day">
-          ${new Date(today + 'T00:00:00')
-            .toLocaleDateString('en-IN',{weekday:'short'})}
-        </span>
-
-        <span class="date-number">
-          ${new Date(today + 'T00:00:00')
-            .getDate()}
-        </span>
-
-        <span class="date-month">
-          ${new Date(today + 'T00:00:00')
-            .toLocaleDateString('en-IN',{month:'short'})}
-        </span>
-      `;
-
-      button.onclick =
-        () => loadDateData(today);
-
-      strip.appendChild(button);
-
-    }
-
-  }
-
-
-  /* ================= LOAD DATE ================= */
-
-  async function loadDateData(selectedDate) {
-
-    try {
-
-      setActiveDate(selectedDate);
-
-
-      document.getElementById(
-        'selectedDateLabel'
-      ).textContent =
-        formatReadableDate(selectedDate);
-
-
-      /*
-       * IMPORTANT:
-       * Today's data comes directly from data.json.
-       */
-
-      if(
-        globalPayload.today &&
-        globalPayload.today.date === selectedDate
-      ) {
-
-        currentData =
-          globalPayload.today;
-
-      }
-
-      else {
-
-        const response =
-          await fetch(
-            `data/${selectedDate}.json?cache=${Date.now()}`
-          );
-
-
-        if(!response.ok) {
-
-          throw new Error(
-            `No data file found for ${selectedDate}`
-          );
-
-        }
-
-
-        currentData =
-          await response.json();
-
-      }
-
-
-      if(
-        !currentData ||
-        !Array.isArray(currentData.news)
-      ) {
-
-        throw new Error(
-          'News array missing from data'
-        );
-
-      }
-
-
-      renderAll();
-
-    }
-
-    catch(error) {
-
-      console.error(
-        'DATE LOAD ERROR:',
-        error
-      );
-
-      showError(
-        `No complete current-affairs file was found for ${formatReadableDate(selectedDate)}.`
-      );
-
-    }
-
-  }
-
-
-  function setActiveDate(date) {
-
-    document
-      .querySelectorAll('.date-btn')
-      .forEach(btn => {
-
-        btn.classList.toggle(
-          'active',
-          btn.dataset.date === date
-        );
-
-      });
-
-  }
-
-
-  function formatReadableDate(date) {
-
-    const d =
-      new Date(date + 'T00:00:00');
-
-    return d.toLocaleDateString(
-      'en-IN',
-      {
-        weekday:'long',
-        day:'numeric',
-        month:'long',
-        year:'numeric'
-      }
-    );
-
-  }
-
-
-  function getLocalDate() {
-
-    const d = new Date();
-
-    return [
-      d.getFullYear(),
-      String(d.getMonth()+1).padStart(2,'0'),
-      String(d.getDate()).padStart(2,'0')
-    ].join('-');
-
-  }
-
-
-  /* ================= RENDER EVERYTHING ================= */
-
-  function renderAll() {
-
-    renderMotivation();
-
-    renderNews();
-
-    renderQuiz();
-
-  }
-
-
-  /* ================= MOTIVATION ================= */
-
-  function renderMotivation() {
-
-    const motivation =
-      currentData.motivation ||
-      globalPayload.motivation;
-
-
-    if(!motivation) return;
-
-
-    const english =
-      motivation.english || {};
-
-    const hindi =
-      motivation.hindi || {};
-
-
-    document.getElementById(
-      'motivationEnglish'
-    ).innerHTML = `
-
-      <div class="quote-card">
-
-        ${
-          english.image_url
-          ?
-          `<img
-             src="${escapeAttr(english.image_url)}"
-             alt="Daily motivation"
-             loading="lazy"
-           />`
-          :
-          ''
-        }
-
-        "${escapeHtml(
-          english.quote || ''
-        )}"
-
-        ${
-          english.author
-          ?
-          `<span class="quote-author">
-             — ${escapeHtml(english.author)}
-           </span>`
-          :
-          ''
-        }
-
-      </div>
-
-    `;
-
-
-    document.getElementById(
-      'motivationHindi'
-    ).innerHTML = `
-
-      <div class="quote-card">
-
-        ${
-          hindi.image_url
-          ?
-          `<img
-             src="${escapeAttr(hindi.image_url)}"
-             alt="आज का सुविचार"
-             loading="lazy"
-           />`
-          :
-          ''
-        }
-
-        "${escapeHtml(
-          hindi.quote || ''
-        )}"
-
-        ${
-          hindi.author
-          ?
-          `<span class="quote-author">
-             — ${escapeHtml(hindi.author)}
-           </span>`
-          :
-          ''
-        }
-
-      </div>
-
-    `;
-
-  }
-
-
-  /* ================= NEWS ================= */
-
-  function renderNews() {
-
-    const container =
-      document.getElementById(
-        'newsSection'
-      );
-
-
-    if(
-      !currentData.news ||
-      !currentData.news.length
-    ) {
-
-      showError(
-        'No current-affairs articles were generated for this date.'
-      );
-
-      return;
-
-    }
-
-
-    const totalNews =
-      currentData.news.length;
-
-
-    container.innerHTML =
-      currentData.news
-      .map((item,index) => {
-
-        /*
-         * Use stable ID.
-         */
-
-        const newsId =
-          item.id || index + 1;
-
-
-        const entities =
-          Array.isArray(item.entities)
-          ? item.entities
+      const quizzes =
+        Array.isArray(appData.quizzes)
+          ? appData.quizzes
           : [];
 
 
-        const entityChips =
-          entities.map(entity => {
+      count.textContent =
+        `${quizzes.length} QUESTIONS`;
 
-            const name =
-              entity.name || '';
+
+      if (!quizzes.length) {
+
+        container.innerHTML = `
+
+          <div class="status-card">
+
+            <div class="status-title">
+              No Quiz Available
+            </div>
+
+            <div class="status-text">
+              The daily quiz will appear after the automatic update.
+            </div>
+
+          </div>
+
+        `;
+
+        return;
+
+      }
+
+
+      container.innerHTML =
+        quizzes
+          .map((quiz, index) => {
+
+            const options =
+              Array.isArray(quiz.options)
+                ? quiz.options
+                : [];
+
+
+            const answer =
+              Number.isInteger(quiz.answer)
+                ? quiz.answer
+                : parseInt(quiz.answer, 10);
+
+
+            const questionId =
+              `quiz-${index}`;
+
 
             return `
 
-              <span
-                class="entity-tag"
-                onclick="openProfileModal(
-                  ${newsId},
-                  '${escapeJs(name)}'
-                )"
-              >
-                👤 ${escapeHtml(name)}
-                ${
-                  entity.party_and_state
-                  ?
-                  ` [${escapeHtml(
-                      entity.party_and_state
-                    )}]`
-                  :
-                  ''
-                }
-              </span>
+              <div class="quiz-card">
+
+                <div class="quiz-number">
+                  QUESTION ${index + 1}
+                </div>
+
+                <div class="quiz-question">
+                  ${escapeHTML(quiz.question || "")}
+                </div>
+
+                <div class="options">
+
+                  ${options
+                    .map((option, optionIndex) => `
+
+                      <button
+                        class="option"
+                        data-question="${questionId}"
+                        onclick="checkAnswer(
+                          '${questionId}',
+                          ${optionIndex},
+                          ${answer},
+                          this
+                        )"
+                      >
+                        ${String.fromCharCode(65 + optionIndex)}.
+                        ${escapeHTML(option)}
+                      </button>
+
+                    `)
+                    .join("")}
+
+                </div>
+
+                <div
+                  id="${questionId}-result"
+                  class="quiz-result"
+                ></div>
+
+              </div>
 
             `;
 
-          }).join('');
+          })
+          .join("");
+
+    }
 
 
-        const bullets =
-          Array.isArray(item.bullet_points)
-          ? item.bullet_points
+    /* =========================================================
+       QUIZ ANSWER
+       ========================================================= */
+
+    function checkAnswer(
+      questionId,
+      selected,
+      correct,
+      button
+    ) {
+
+      const buttons =
+        document.querySelectorAll(
+          `[data-question="${questionId}"]`
+        );
+
+
+      buttons.forEach(btn => {
+
+        btn.disabled = true;
+
+      });
+
+
+      const result =
+        document.getElementById(
+          `${questionId}-result`
+        );
+
+
+      if (selected === correct) {
+
+        button.classList.add("correct");
+
+        result.className =
+          "quiz-result show correct-result";
+
+        result.textContent =
+          "✓ Correct answer.";
+
+      } else {
+
+        button.classList.add("wrong");
+
+        if (buttons[correct]) {
+          buttons[correct].classList.add("correct");
+        }
+
+        result.className =
+          "quiz-result show wrong-result";
+
+        result.textContent =
+          "✗ Incorrect. The correct answer is highlighted.";
+
+      }
+
+    }
+
+
+    /* =========================================================
+       MOTIVATION
+       ========================================================= */
+
+    function renderMotivation() {
+
+      const element =
+        document.getElementById(
+          "motivation-text"
+        );
+
+
+      if (!element) {
+        return;
+      }
+
+
+      const message =
+        safeText(appData.motivational).trim();
+
+
+      if (message) {
+
+        element.textContent =
+          message;
+
+      } else {
+
+        element.textContent =
+          "Stay consistent. Every question solved today strengthens tomorrow's performance.";
+
+      }
+
+    }
+
+
+    /* =========================================================
+       SAVED ARTICLES
+       ========================================================= */
+
+    function renderSaved() {
+
+      const container =
+        document.getElementById(
+          "saved-list"
+        );
+
+      const count =
+        document.getElementById(
+          "saved-count"
+        );
+
+
+      const bookmarks =
+        getBookmarks();
+
+
+      const news =
+        Array.isArray(appData.news)
+          ? appData.news
           : [];
 
 
-        const image =
-          item.image_url ||
-          'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=900&q=80';
+      const saved =
+        news.filter(article => {
+
+          const id =
+            String(
+              article.id ||
+              `${article.category || "news"}-${article.title || ""}`
+            );
+
+          return bookmarks.includes(id);
+
+        });
 
 
-        return `
+      count.textContent =
+        `${saved.length} SAVED`;
 
-          <div class="info-card">
 
-            <div class="card-header">
+      if (!saved.length) {
 
-              <span class="badge-cat">
-                ${escapeHtml(
-                  item.category || 'Current Affairs'
-                )}
-              </span>
+        container.innerHTML = `
 
-              <span class="card-id">
-                #${newsId} of ${totalNews}
-              </span>
+          <div class="status-card">
 
+            <div class="status-title">
+              No Bookmarked Articles
             </div>
 
-
-            <div class="card-body">
-
-              <div>
-
-                <a
-                  href="javascript:void(0)"
-                  class="card-headline-link"
-                  onclick="openFullArticle(${newsId})"
-                >
-
-                  <h2 class="card-headline">
-                    ${escapeHtml(
-                      item.headline || 'Untitled News'
-                    )}
-                  </h2>
-
-                </a>
-
-
-                <div class="story-lead">
-                  ${escapeHtml(
-                    item.story_lead ||
-                    item.summary ||
-                    'Detailed coverage is available below.'
-                  )}
-                </div>
-
-
-                ${
-                  entityChips
-                  ?
-                  `<div style="margin-bottom:12px;">
-                    ${entityChips}
-                  </div>`
-                  :
-                  ''
-                }
-
-
-                ${
-                  bullets.length
-                  ?
-                  `
-                  <ul class="bullet-list">
-
-                    ${bullets.map(
-                      bp =>
-                        `<li>${escapeHtml(bp)}</li>`
-                    ).join('')}
-
-                  </ul>
-                  `
-                  :
-                  ''
-                }
-
-
-                <div class="exam-box">
-
-                  <strong>
-                    Exam Relevance:
-                  </strong>
-
-                  ${escapeHtml(
-                    item.exam_relevance ||
-                    'Relevant current-affairs topic.'
-                  )}
-
-                </div>
-
-
-                <div class="card-footer-actions">
-
-                  <button
-                    class="btn-read-more"
-                    onclick="openFullArticle(${newsId})"
-                  >
-                    📖 Read Complete Coverage
-                  </button>
-
-
-                  ${
-                    item.source_url
-                    ?
-                    `
-                    <a
-                      href="${escapeAttr(item.source_url)}"
-                      target="_blank"
-                      rel="noopener"
-                      class="btn-official-source"
-                    >
-                      🌐 Original Source
-                    </a>
-                    `
-                    :
-                    ''
-                  }
-
-
-                  <button
-                    class="btn-share-item"
-                    onclick="shareArticle(
-                      '${encodeURIComponent(
-                        item.headline || ''
-                      )}'
-                    )"
-                  >
-                    📲 Share
-                  </button>
-
-                </div>
-
-              </div>
-
-
-              <div class="card-img-container">
-
-                <img
-                  src="${escapeAttr(image)}"
-                  alt="${escapeAttr(
-                    item.headline || 'Current affair'
-                  )}"
-                  loading="lazy"
-                  onerror="this.style.display='none';"
-                />
-
-              </div>
-
+            <div class="status-text">
+              Tap ☆ on any current-affairs article to save it here.
             </div>
 
           </div>
 
         `;
 
-      })
-      .join('');
+        return;
 
-  }
-
-
-  /* ================= COMPLETE ARTICLE ================= */
-
-  function openFullArticle(newsId) {
-
-    if(
-      !currentData ||
-      !Array.isArray(currentData.news)
-    ) return;
-
-
-    const item =
-      currentData.news.find(
-        n => Number(n.id) === Number(newsId)
-      );
-
-
-    if(!item) {
-
-      console.error(
-        'News item not found:',
-        newsId
-      );
-
-      return;
-
-    }
-
-
-    const modalContainer =
-      document.getElementById(
-        'modalContainer'
-      );
-
-
-    const entities =
-      Array.isArray(item.entities)
-      ? item.entities
-      : [];
-
-
-    const entityChips =
-      entities.map(entity => {
-
-        const name =
-          entity.name || '';
-
-        return `
-
-          <span
-            class="entity-tag"
-            onclick="openProfileModal(
-              ${item.id},
-              '${escapeJs(name)}'
-            )"
-          >
-            👤 ${escapeHtml(name)}
-            ${
-              entity.party_and_state
-              ?
-              ` [${escapeHtml(
-                  entity.party_and_state
-                )}]`
-              :
-              ''
-            }
-          </span>
-
-        `;
-
-      }).join('');
-
-
-    /*
-     * THIS IS THE IMPORTANT FIX.
-     *
-     * We do NOT display scraped webpage
-     * paragraphs here.
-     *
-     * We display the article generated
-     * specifically for this news item.
-     */
-
-    const articleText =
-      item.full_article_text ||
-      item.detailed_coverage ||
-      item.article_text ||
-      item.story_lead ||
-      'Detailed coverage is currently unavailable. Please open the original source below.';
-
-
-    const paragraphs =
-      String(articleText)
-        .split(/\n+/)
-        .filter(p => p.trim())
-        .map(
-          p =>
-            `<p style="
-              margin-bottom:14px;
-              line-height:1.8;
-              text-align:justify;
-            ">
-              ${escapeHtml(p)}
-            </p>`
-        )
-        .join('');
-
-
-    modalContainer.innerHTML = `
-
-      <span
-        style="
-          background:var(--primary-red);
-          color:#fff;
-          font-size:0.8rem;
-          font-weight:700;
-          padding:4px 10px;
-          border-radius:4px;
-          text-transform:uppercase;
-        "
-      >
-        ${escapeHtml(
-          item.category || 'Current Affairs'
-        )}
-      </span>
-
-
-      <h1
-        style="
-          font-size:1.8rem;
-          font-weight:800;
-          color:#0f172a;
-          margin:15px 0 10px;
-        "
-      >
-        ${escapeHtml(
-          item.headline || ''
-        )}
-      </h1>
-
-
-      <div
-        style="
-          display:flex;
-          justify-content:space-between;
-          align-items:center;
-          flex-wrap:wrap;
-          gap:10px;
-          margin-bottom:15px;
-          font-size:0.88rem;
-          color:#64748b;
-        "
-      >
-
-        <span>
-          Date:
-          ${escapeHtml(
-            currentData.date || ''
-          )}
-        </span>
-
-        ${
-          item.source_url
-          ?
-          `
-          <a
-            href="${escapeAttr(item.source_url)}"
-            target="_blank"
-            rel="noopener"
-            style="
-              color:var(--accent-blue);
-              font-weight:700;
-            "
-          >
-            Open Original Source ↗
-          </a>
-          `
-          :
-          ''
-        }
-
-      </div>
-
-
-      ${
-        item.image_url
-        ?
-        `
-        <img
-          src="${escapeAttr(item.image_url)}"
-          style="
-            width:100%;
-            max-height:360px;
-            object-fit:cover;
-            border-radius:12px;
-            margin-bottom:20px;
-          "
-          alt="News image"
-        />
-        `
-        :
-        ''
       }
 
-
-      ${
-        entityChips
-        ?
-        `
-        <div
-          style="
-            background:#f0f9ff;
-            border:1px solid #bae6fd;
-            padding:12px;
-            border-radius:10px;
-            margin-bottom:20px;
-          "
-        >
-
-          <strong
-            style="
-              color:#0369a1;
-              display:block;
-              margin-bottom:6px;
-            "
-          >
-            Key Personalities & Entities
-          </strong>
-
-          ${entityChips}
-
-        </div>
-        `
-        :
-        ''
-      }
-
-
-      <h3
-        style="
-          font-size:1.2rem;
-          font-weight:800;
-          color:#0f172a;
-          margin-bottom:12px;
-        "
-      >
-        Complete Current-Affairs Coverage
-      </h3>
-
-
-      <div
-        style="
-          font-size:1rem;
-          color:#334155;
-          margin-bottom:20px;
-        "
-      >
-        ${paragraphs}
-      </div>
-
-
-      <div
-        style="
-          background:#f8fafc;
-          border:1px solid #e2e8f0;
-          border-radius:10px;
-          padding:15px;
-          margin-bottom:20px;
-        "
-      >
-
-        <h4
-          style="
-            font-size:1rem;
-            font-weight:700;
-            color:#0f172a;
-            margin-bottom:8px;
-          "
-        >
-          📌 Quick Fact Sheet
-        </h4>
-
-
-        <p
-          style="
-            font-size:0.9rem;
-            color:#475569;
-            margin-bottom:7px;
-          "
-        >
-          <b>Important Locations:</b>
-          ${escapeHtml(
-            item.key_locations || 'N/A'
-          )}
-        </p>
-
-
-        <p
-          style="
-            font-size:0.9rem;
-            color:#475569;
-            margin-bottom:7px;
-          "
-        >
-          <b>Important Dates:</b>
-          ${escapeHtml(
-            item.important_dates || 'N/A'
-          )}
-        </p>
-
-
-        ${
-          item.key_facts
-          ?
-          `
-          <p
-            style="
-              font-size:0.9rem;
-              color:#475569;
-            "
-          >
-            <b>Key Facts:</b>
-            ${escapeHtml(item.key_facts)}
-          </p>
-          `
-          :
-          ''
-        }
-
-      </div>
-
-
-      <div
-        class="exam-box"
-        style="
-          font-size:0.95rem;
-          padding:14px 18px;
-          margin-bottom:20px;
-        "
-      >
-
-        <strong>
-          Exam Relevance & Syllabus Mapping
-        </strong>
-
-        <br/>
-
-        ${escapeHtml(
-          item.exam_relevance ||
-          'Relevant current-affairs topic.'
-        )}
-
-      </div>
-
-
-      ${
-        item.takeaway
-        ?
-        `
-        <div
-          style="
-            background:#eff6ff;
-            border:1px solid #bfdbfe;
-            padding:12px 16px;
-            border-radius:10px;
-            color:#1e40af;
-            font-size:0.95rem;
-            margin-bottom:20px;
-          "
-        >
-
-          <strong>
-            Key Takeaway:
-          </strong>
-
-          ${escapeHtml(
-            item.takeaway
-          )}
-
-        </div>
-        `
-        :
-        ''
-      }
-
-
-      <div
-        style="
-          display:flex;
-          gap:10px;
-          justify-content:flex-end;
-          flex-wrap:wrap;
-        "
-      >
-
-        ${
-          item.source_url
-          ?
-          `
-          <a
-            href="${escapeAttr(item.source_url)}"
-            target="_blank"
-            rel="noopener"
-            class="btn-official-source"
-          >
-            🌐 Read Original News
-          </a>
-          `
-          :
-          ''
-        }
-
-
-        <button
-          class="btn-share-item"
-          onclick="shareArticle(
-            '${encodeURIComponent(
-              item.headline || ''
-            )}'
-          )"
-        >
-          📲 Share Article
-        </button>
-
-      </div>
-
-    `;
-
-
-    document.getElementById(
-      'articleModal'
-    ).style.display = 'flex';
-
-  }
-
-
-  /* ================= PROFILE ================= */
-
-  function openProfileModal(newsId, entityName) {
-
-    if(!currentData) return;
-
-
-    const item =
-      currentData.news.find(
-        n => Number(n.id) === Number(newsId)
-      );
-
-
-    if(!item) return;
-
-
-    const entity =
-      (item.entities || []).find(
-        e => e.name === entityName
-      );
-
-
-    if(!entity) return;
-
-
-    const container =
-      document.getElementById(
-        'profileModalContainer'
-      );
-
-
-    container.innerHTML = `
-
-      <div class="profile-header">
-
-        <div class="profile-avatar">
-          ${escapeHtml(
-            entity.name.charAt(0)
-          )}
-        </div>
-
-        <div class="profile-title">
-
-          <h3>
-            ${escapeHtml(entity.name)}
-          </h3>
-
-          <p>
-            ${escapeHtml(
-              entity.role || ''
-            )}
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <p
-        style="
-          font-size:0.9rem;
-          color:#475569;
-          margin-bottom:10px;
-        "
-      >
-
-        <b>Party & Home State:</b>
-
-        ${escapeHtml(
-          entity.party_and_state || 'N/A'
-        )}
-
-      </p>
-
-
-      <div
-        style="
-          font-size:0.95rem;
-          line-height:1.6;
-          color:#334155;
-          background:#fff;
-          padding:15px;
-          border-radius:10px;
-          border:1px solid #e2e8f0;
-        "
-      >
-
-        <strong>
-          Profile & Background:
-        </strong>
-
-        <br/>
-
-        ${escapeHtml(
-          entity.bio_details ||
-          'Profile information is not available for this article.'
-        )}
-
-      </div>
-
-    `;
-
-
-    document.getElementById(
-      'profileModal'
-    ).style.display = 'flex';
-
-  }
-
-
-  /* ================= MODALS ================= */
-
-  function closeModal(id) {
-
-    document.getElementById(id)
-      .style.display = 'none';
-
-  }
-
-
-  /* ================= QUIZ ================= */
-
-  function renderQuiz() {
-
-    const container =
-      document.getElementById(
-        'quizSection'
-      );
-
-
-    const quizzes =
-      Array.isArray(currentData.quizzes)
-      ? currentData.quizzes
-      : [];
-
-
-    if(!quizzes.length) {
 
       container.innerHTML = `
-        <div class="quiz-card">
-          No quiz is available for this date.
-        </div>
-      `;
 
-      return;
+        <div id="saved-news-grid"
+             style="
+               display:grid;
+               grid-template-columns:repeat(2,minmax(0,1fr));
+               gap:18px;
+             "
+        >
+
+          ${saved
+            .map(renderNewsCard)
+            .join("")}
+
+        </div>
+
+      `;
 
     }
 
 
-    container.innerHTML =
-      quizzes.map(
-        (q,idx) => `
+    /* =========================================================
+       TAB SWITCHING
+       ========================================================= */
 
-        <div class="quiz-card">
+    function showTab(tab) {
 
-          <div class="quiz-q">
-            Q${idx+1}.
-            ${escapeHtml(
-              q.question || ''
-            )}
-          </div>
+      const newsSection =
+        document.getElementById(
+          "news-section"
+        );
 
-          <div class="quiz-options">
+      const quizSection =
+        document.getElementById(
+          "quiz-section"
+        );
 
-            ${(q.options || [])
-              .map(
-                (opt,i) => `
+      const savedSection =
+        document.getElementById(
+          "saved-section"
+        );
 
-                <button
-                  class="opt-btn"
-                  onclick="
-                    checkAnswer(
-                      this,
-                      ${i},
-                      ${Number(q.answer)}
-                    )
-                  "
-                >
-                  ${escapeHtml(opt)}
-                </button>
-
-              `
-              ).join('')
-            }
-
-          </div>
-
-        </div>
-
-      `
-      ).join('');
-
-  }
+      const motivation =
+        document.getElementById(
+          "motivation-section"
+        );
 
 
-  function checkAnswer(
-    btn,
-    chosen,
-    correct
-  ) {
+      const newsTab =
+        document.getElementById(
+          "news-tab"
+        );
 
-    const parent =
-      btn.parentElement;
+      const quizTab =
+        document.getElementById(
+          "quiz-tab"
+        );
 
-    const buttons =
-      parent.querySelectorAll(
-        '.opt-btn'
+      const savedTab =
+        document.getElementById(
+          "saved-tab"
+        );
+
+
+      newsSection.style.display =
+        tab === "news"
+          ? "block"
+          : "none";
+
+
+      quizSection.style.display =
+        tab === "quiz"
+          ? "block"
+          : "none";
+
+
+      savedSection.style.display =
+        tab === "saved"
+          ? "block"
+          : "none";
+
+
+      motivation.style.display =
+        tab === "news"
+          ? "block"
+          : "none";
+
+
+      newsTab.classList.toggle(
+        "active",
+        tab === "news"
+      );
+
+      quizTab.classList.toggle(
+        "active",
+        tab === "quiz"
+      );
+
+      savedTab.classList.toggle(
+        "active",
+        tab === "saved"
       );
 
 
-    buttons.forEach(
-      (b,idx) => {
+      if (tab === "saved") {
+        renderSaved();
+      }
 
-        b.disabled = true;
+    }
 
-        if(idx === correct) {
-          b.classList.add('correct');
-        }
 
-        if(
-          idx === chosen &&
-          chosen !== correct
-        ) {
-          b.classList.add('wrong');
-        }
+    /* =========================================================
+       INITIALIZE
+       ========================================================= */
+
+    document.addEventListener(
+      "DOMContentLoaded",
+      function () {
+
+        renderNews();
+
+        renderQuiz();
+
+        renderMotivation();
+
+        renderSaved();
 
       }
     );
 
-  }
-
-
-  /* ================= TABS ================= */
-
-  function switchTab(tab) {
-
-    document
-      .getElementById('btnNews')
-      .classList.toggle(
-        'active',
-        tab === 'news'
-      );
-
-
-    document
-      .getElementById('btnQuiz')
-      .classList.toggle(
-        'active',
-        tab === 'quiz'
-      );
-
-
-    document
-      .getElementById('newsSection')
-      .style.display =
-        tab === 'news'
-        ? 'flex'
-        : 'none';
-
-
-    document
-      .getElementById('quizSection')
-      .style.display =
-        tab === 'quiz'
-        ? 'block'
-        : 'none';
-
-  }
-
-
-  /* ================= SHARE ================= */
-
-  function shareArticle(title) {
-
-    const decodedTitle =
-      decodeURIComponent(title);
-
-
-    const shareData = {
-
-      title: decodedTitle,
-
-      text:
-        `📰 Current Affairs: ${decodedTitle}\n` +
-        `Read complete exam notes on AURA EXAM AI!`,
-
-      url: window.location.href
-
-    };
-
-
-    if(navigator.share) {
-
-      navigator
-        .share(shareData)
-        .catch(() => {});
-
-    }
-
-    else if(navigator.clipboard) {
-
-      navigator
-        .clipboard
-        .writeText(
-          `${shareData.text}\n${shareData.url}`
-        );
-
-      alert(
-        'Article link copied to clipboard!'
-      );
-
-    }
-
-  }
-
-
-  function shareApp() {
-
-    const shareData = {
-
-      title:
-        'AURA EXAM AI - Daily Current Affairs & Quiz',
-
-      text:
-        'Prepare with daily current affairs and quizzes on AURA EXAM AI!',
-
-      url:
-        window.location.href
-
-    };
-
-
-    if(navigator.share) {
-
-      navigator
-        .share(shareData)
-        .catch(() => {});
-
-    }
-
-    else if(navigator.clipboard) {
-
-      navigator
-        .clipboard
-        .writeText(
-          `${shareData.text}\n${shareData.url}`
-        );
-
-      alert(
-        'App link copied to clipboard!'
-      );
-
-    }
-
-  }
-
-
-  /* ================= ERROR ================= */
-
-  function showError(message) {
-
-    document.getElementById(
-      'newsSection'
-    ).innerHTML = `
-
-      <div class="error-box">
-
-        ⚠️ ${escapeHtml(message)}
-
-      </div>
-
-    `;
-
-  }
-
-
-  /* ================= SECURITY HELPERS ================= */
-
-  function escapeHtml(value) {
-
-    return String(value ?? '')
-      .replace(/&/g,'&amp;')
-      .replace(/</g,'&lt;')
-      .replace(/>/g,'&gt;')
-      .replace(/"/g,'&quot;')
-      .replace(/'/g,'&#039;');
-
-  }
-
-
-  function escapeAttr(value) {
-
-    return escapeHtml(value);
-
-  }
-
-
-  function escapeJs(value) {
-
-    return String(value ?? '')
-      .replace(/\\/g,'\\\\')
-      .replace(/'/g,"\\'")
-      .replace(/"/g,'\\"')
-      .replace(/\n/g,' ');
-
-  }
-
-
-  /* ================= START ================= */
-
-  init();
-
-</script>
+  </script>
 
 </body>
 </html>
