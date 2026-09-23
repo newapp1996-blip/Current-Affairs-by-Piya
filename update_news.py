@@ -1,13 +1,13 @@
 import os
 import re
 import json
-import time
 import hashlib
 import html
 from datetime import datetime
 
 import requests
 import feedparser
+
 from bs4 import BeautifulSoup
 
 from google import genai
@@ -20,19 +20,32 @@ from google import genai
 TODAY = datetime.now().strftime("%Y-%m-%d")
 
 DATA_DIR = "data"
+
 MASTER_FILE = "data.json"
 
-FIRST_RUN_COUNT = 15
+# FIRST RUN = 30 ARTICLES
+FIRST_RUN_COUNT = 30
+
+# EACH 3-HOUR UPDATE = 10 NEW ARTICLES
 UPDATE_COUNT = 10
+
+# MAXIMUM ARTICLES STORED PER DAY
 MAX_DAILY_COUNT = 100
 
-API_KEY = os.environ.get("GEMINI_API_KEY")
+API_KEY = os.environ.get(
+    "GEMINI_API_KEY"
+)
 
 if not API_KEY:
-    raise RuntimeError("GEMINI_API_KEY is missing.")
+
+    raise RuntimeError(
+        "GEMINI_API_KEY is missing."
+    )
 
 
-client = genai.Client(api_key=API_KEY)
+client = genai.Client(
+    api_key=API_KEY
+)
 
 
 # ============================================================
@@ -40,8 +53,10 @@ client = genai.Client(api_key=API_KEY)
 # ============================================================
 
 HEADERS = {
+
     "User-Agent":
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "Mozilla/5.0 "
+        "(Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 "
         "(KHTML, like Gecko) "
         "Chrome/140.0.0.0 Safari/537.36"
@@ -142,38 +157,62 @@ FALLBACK_IMAGES = {
 
 
 # ============================================================
-# HELPERS
+# CLEAN
 # ============================================================
 
 def clean(value):
 
     if value is None:
+
         return ""
 
-    value = html.unescape(str(value))
+    value = html.unescape(
+        str(value)
+    )
 
-    soup = BeautifulSoup(value, "html.parser")
+    soup = BeautifulSoup(
+        value,
+        "html.parser"
+    )
 
-    value = soup.get_text(" ", strip=True)
+    value = soup.get_text(
+        " ",
+        strip=True
+    )
 
-    value = re.sub(r"\s+", " ", value)
+    value = re.sub(
+        r"\s+",
+        " ",
+        value
+    )
 
     return value.strip()
 
+
+# ============================================================
+# VALID TITLE
+# ============================================================
 
 def valid_title(title):
 
     title = clean(title)
 
     if len(title) < 20:
+
         return False
 
     blocked = [
+
         "actual current-affairs headline",
+
         "current affairs headline",
+
         "sample headline",
+
         "test headline",
+
         "placeholder headline"
+
     ]
 
     low = title.lower()
@@ -181,17 +220,29 @@ def valid_title(title):
     for item in blocked:
 
         if item in low:
+
             return False
 
     return True
 
 
-def make_hash(title, url):
+# ============================================================
+# HASH
+# ============================================================
+
+def make_hash(
+    title,
+    url
+):
 
     text = (
+
         clean(title).lower()
+
         + "|"
+
         + clean(url).lower()
+
     )
 
     return hashlib.sha256(
@@ -199,9 +250,14 @@ def make_hash(title, url):
     ).hexdigest()
 
 
+# ============================================================
+# JSON
+# ============================================================
+
 def load_json(path):
 
     if not os.path.exists(path):
+
         return None
 
     try:
@@ -219,17 +275,26 @@ def load_json(path):
         return None
 
 
-def save_json(path, data):
+def save_json(
+    path,
+    data
+):
 
-    folder = os.path.dirname(path)
+    folder = os.path.dirname(
+        path
+    )
 
     if folder:
-        os.makedirs(folder, exist_ok=True)
 
-    temporary = path + ".tmp"
+        os.makedirs(
+            folder,
+            exist_ok=True
+        )
+
+    temp = path + ".tmp"
 
     with open(
-        temporary,
+        temp,
         "w",
         encoding="utf-8"
     ) as file:
@@ -241,57 +306,68 @@ def save_json(path, data):
             indent=2
         )
 
-    os.replace(temporary, path)
+    os.replace(
+        temp,
+        path
+    )
 
 
 # ============================================================
-# IMAGE EXTRACTION
+# IMAGE
 # ============================================================
 
 def get_rss_image(entry):
 
     try:
 
-        if hasattr(entry, "media_content"):
+        if hasattr(
+            entry,
+            "media_content"
+        ):
 
-            media = entry.media_content
-
-            if media:
-
-                for item in media:
-
-                    url = item.get("url", "")
-
-                    if url:
-                        return url
-
-        if hasattr(entry, "media_thumbnail"):
-
-            media = entry.media_thumbnail
+            media = (
+                entry.media_content
+            )
 
             if media:
 
                 for item in media:
 
-                    url = item.get("url", "")
+                    url = item.get(
+                        "url",
+                        ""
+                    )
 
                     if url:
+
                         return url
 
-        for link in entry.get("links", []):
 
-            link_type = link.get("type", "")
+        if hasattr(
+            entry,
+            "media_thumbnail"
+        ):
 
-            href = link.get("href", "")
+            media = (
+                entry.media_thumbnail
+            )
 
-            if (
-                "image" in link_type.lower()
-                and href
-            ):
+            if media:
 
-                return href
+                for item in media:
+
+                    url = item.get(
+                        "url",
+                        ""
+                    )
+
+                    if url:
+
+                        return url
+
 
     except Exception:
+
         pass
 
     return ""
@@ -300,77 +376,142 @@ def get_rss_image(entry):
 def get_page_image(url):
 
     if not url:
+
         return ""
 
     try:
 
         response = requests.get(
+
             url,
+
             headers=HEADERS,
+
             timeout=12
+
         )
 
         if response.status_code != 200:
+
             return ""
 
         soup = BeautifulSoup(
+
             response.text,
+
             "html.parser"
+
         )
 
-        meta_names = [
+
+        names = [
+
             "og:image",
+
             "twitter:image",
+
             "twitter:image:src"
+
         ]
 
-        for name in meta_names:
+
+        for name in names:
 
             tag = soup.find(
+
                 "meta",
-                attrs={"property": name}
+
+                attrs={
+                    "property": name
+                }
+
             )
 
-            if tag and tag.get("content"):
-                return tag.get("content")
+            if (
+                tag
+                and
+                tag.get("content")
+            ):
+
+                return tag.get(
+                    "content"
+                )
+
 
             tag = soup.find(
+
                 "meta",
-                attrs={"name": name}
+
+                attrs={
+                    "name": name
+                }
+
             )
 
-            if tag and tag.get("content"):
-                return tag.get("content")
+            if (
+                tag
+                and
+                tag.get("content")
+            ):
+
+                return tag.get(
+                    "content"
+                )
+
 
     except Exception:
+
         pass
 
     return ""
 
 
-def choose_fallback_image(category, index):
+def choose_fallback_image(
+    category,
+    index
+):
 
     if category in FALLBACK_IMAGES:
-        return FALLBACK_IMAGES[category]
 
-    keys = list(FALLBACK_IMAGES.keys())
+        return FALLBACK_IMAGES[
+            category
+        ]
+
+    keys = list(
+        FALLBACK_IMAGES.keys()
+    )
 
     return FALLBACK_IMAGES[
-        keys[index % len(keys)]
+        keys[
+            index % len(keys)
+        ]
     ]
 
 
-def get_image(entry, url, category, index):
+def get_image(
+    entry,
+    url,
+    category,
+    index
+):
 
-    image = get_rss_image(entry)
+    image = get_rss_image(
+        entry
+    )
 
     if image:
+
         return image
 
-    image = get_page_image(url)
+
+    image = get_page_image(
+        url
+    )
 
     if image:
+
         return image
+
 
     return choose_fallback_image(
         category,
@@ -382,17 +523,26 @@ def get_image(entry, url, category, index):
 # CATEGORY
 # ============================================================
 
-def guess_category(title, summary):
+def guess_category(
+    title,
+    summary
+):
 
     text = (
+
         clean(title)
         + " "
         + clean(summary)
+
     ).lower()
 
+
     if any(
+
         word in text
+
         for word in [
+
             "india",
             "delhi",
             "mumbai",
@@ -401,14 +551,20 @@ def guess_category(title, summary):
             "parliament",
             "supreme court",
             "isro"
+
         ]
+
     ):
+
         return "India"
 
+
     if any(
+
         word in text
+
         for word in [
-            "ai ",
+
             "artificial intelligence",
             "technology",
             "software",
@@ -417,26 +573,40 @@ def guess_category(title, summary):
             "google",
             "microsoft",
             "apple"
+
         ]
+
     ):
+
         return "Technology"
 
+
     if any(
+
         word in text
+
         for word in [
+
             "science",
             "space",
             "nasa",
             "research",
             "health",
             "climate"
+
         ]
+
     ):
+
         return "Science"
 
+
     if any(
+
         word in text
+
         for word in [
+
             "business",
             "economy",
             "market",
@@ -444,32 +614,50 @@ def guess_category(title, summary):
             "rupee",
             "trade",
             "company"
+
         ]
+
     ):
+
         return "Business"
 
+
     if any(
+
         word in text
+
         for word in [
+
             "sport",
             "cricket",
             "football",
             "tennis",
             "olympic"
+
         ]
+
     ):
+
         return "Sports"
 
+
     if any(
+
         word in text
+
         for word in [
+
             "environment",
             "forest",
             "wildlife",
             "pollution"
+
         ]
+
     ):
+
         return "Environment"
+
 
     return "World"
 
@@ -480,11 +668,14 @@ def guess_category(title, summary):
 
 def collect_news():
 
-    print("Collecting RSS news...")
+    print(
+        "Collecting RSS news..."
+    )
 
     all_items = []
 
     seen = set()
+
 
     for feed in FEEDS:
 
@@ -493,302 +684,552 @@ def collect_news():
             feed["name"]
         )
 
+
         try:
 
             response = requests.get(
+
                 feed["url"],
+
                 headers=HEADERS,
+
                 timeout=20
+
             )
+
 
             if response.status_code != 200:
 
                 print(
-                    "  HTTP:",
+                    "HTTP:",
                     response.status_code
                 )
 
                 continue
 
+
             parsed = feedparser.parse(
                 response.content
             )
 
+
             count = 0
+
 
             for entry in parsed.entries[:40]:
 
                 title = clean(
-                    entry.get("title", "")
-                )
-
-                url = clean(
-                    entry.get("link", "")
-                )
-
-                summary = clean(
                     entry.get(
-                        "summary",
-                        entry.get(
-                            "description",
-                            ""
-                        )
+                        "title",
+                        ""
                     )
                 )
 
-                if not valid_title(title):
+
+                url = clean(
+                    entry.get(
+                        "link",
+                        ""
+                    )
+                )
+
+
+                summary = clean(
+
+                    entry.get(
+
+                        "summary",
+
+                        entry.get(
+
+                            "description",
+
+                            ""
+
+                        )
+
+                    )
+
+                )
+
+
+                if not valid_title(
+                    title
+                ):
+
                     continue
+
 
                 if not url:
+
                     continue
 
-                article_hash = make_hash(
-                    title,
-                    url
-                )
+
+                article_hash =
+                    make_hash(
+                        title,
+                        url
+                    )
+
 
                 if article_hash in seen:
+
                     continue
 
-                seen.add(article_hash)
 
-                category = guess_category(
-                    title,
-                    summary
+                seen.add(
+                    article_hash
                 )
 
-                image = get_image(
-                    entry,
-                    url,
-                    category,
-                    len(all_items)
-                )
 
-                item = {
-                    "source_id":
-                        feed["id"],
-
-                    "source_name":
-                        feed["name"],
-
-                    "title":
+                category =
+                    guess_category(
                         title,
+                        summary
+                    )
 
-                    "url":
+
+                image =
+                    get_image(
+
+                        entry,
+
                         url,
 
-                    "summary":
-                        summary,
+                        category,
 
-                    "image_url":
-                        image,
+                        len(all_items)
 
-                    "category":
-                        category
-                }
+                    )
 
-                all_items.append(item)
+
+                all_items.append(
+
+                    {
+
+                        "source_id":
+                            feed["id"],
+
+                        "source_name":
+                            feed["name"],
+
+                        "title":
+                            title,
+
+                        "url":
+                            url,
+
+                        "summary":
+                            summary,
+
+                        "image_url":
+                            image,
+
+                        "category":
+                            category
+
+                    }
+
+                )
+
 
                 count += 1
 
+
             print(
-                "  Articles collected:",
+                "Articles collected:",
                 count
             )
+
 
         except Exception as error:
 
             print(
-                "  RSS failed:",
+                "RSS failed:",
                 error
             )
+
 
     print(
         "TOTAL CANDIDATES:",
         len(all_items)
     )
 
+
     return all_items
 
 
 # ============================================================
-# TODAY FILE
+# TODAY
 # ============================================================
 
 def today_file():
 
     return os.path.join(
+
         DATA_DIR,
+
         TODAY + ".json"
+
     )
 
 
 def load_today():
 
-    path = today_file()
+    data = load_json(
+        today_file()
+    )
 
-    data = load_json(path)
 
-    if not isinstance(data, dict):
+    if not isinstance(
+        data,
+        dict
+    ):
+
         return []
 
-    news = data.get("news", [])
 
-    if not isinstance(news, list):
+    news = data.get(
+        "news",
+        []
+    )
+
+
+    if not isinstance(
+        news,
+        list
+    ):
+
         return []
+
 
     return news
 
 
 # ============================================================
-# GEMINI ENRICHMENT
+# GEMINI PROMPT
 # ============================================================
 
-def build_prompt(items, number):
+def build_prompt(
+    items,
+    number
+):
 
-    source_text = []
+    source_blocks = []
 
-    for index, item in enumerate(items):
+
+    for index, item in enumerate(
+        items
+    ):
 
         block = (
+
             "SOURCE NUMBER: "
             + str(index)
             + "\n"
+
             + "SOURCE ID: "
             + item["source_id"]
             + "\n"
+
             + "SOURCE: "
             + item["source_name"]
             + "\n"
+
             + "HEADLINE: "
             + item["title"]
             + "\n"
+
             + "SUMMARY: "
             + item["summary"]
             + "\n"
+
             + "URL: "
             + item["url"]
             + "\n"
+
         )
 
-        source_text.append(block)
+        source_blocks.append(
+            block
+        )
+
 
     prompt = (
-        "You are the editor of a factual current-affairs website "
-        "for Indian students preparing for competitive and school examinations.\n\n"
 
-        "Select exactly "
+        "You are a senior UPSC current-affairs "
+        "editor and civil-services educator.\n\n"
+
+        "Prepare exactly "
         + str(number)
-        + " important and distinct current-affairs stories from "
-        "the supplied source material.\n\n"
+        + " distinct current-affairs study notes "
+        "from the supplied real news sources.\n\n"
 
-        "IMPORTANT RULES:\n"
+
+        "CRITICAL FACTUAL RULES:\n"
+
         "1. Use ONLY information supported by the supplied source material.\n"
-        "2. Do NOT invent facts, names, numbers, dates or quotations.\n"
-        "3. Do NOT create fictional stories.\n"
-        "4. Keep each story specific to its selected source.\n"
-        "5. Preserve the real source URL.\n"
-        "6. Write a coherent article for that particular story.\n"
-        "7. Do not mix facts from unrelated stories.\n"
-        "8. Return valid JSON only.\n\n"
 
-        "Return a JSON array with exactly these fields:\n"
+        "2. Never invent statistics, dates, names, schemes, quotations or events.\n"
+
+        "3. Do not mix unrelated news stories.\n"
+
+        "4. Each article must remain specifically about its selected source story.\n"
+
+        "5. Do not produce generic filler analysis.\n"
+
+        "6. Preserve the actual source URL.\n"
+
+        "7. If the supplied material does not support a claim, do not make the claim.\n\n"
+
+
+        "STYLE:\n"
+
+        "Write the result like high-quality UPSC classroom notes.\n"
+
+        "The student should be able to directly revise the article "
+        "and use the analytical points while writing a UPSC Mains answer.\n\n"
+
+
+        "DEPTH:\n"
+
+        "Give substantial UPSC-level analysis.\n"
+
+        "Explain the issue, its background, causes, implications, "
+        "stakeholders, challenges and possible way forward wherever "
+        "the supplied material supports them.\n\n"
+
+
+        "RETURN ONLY VALID JSON.\n\n"
+
+
+        "Each object MUST contain exactly these fields:\n\n"
+
         "source_number\n"
-        "category\n"
-        "headline\n"
-        "story_lead\n"
-        "bullet_points\n"
-        "full_article_text\n"
-        "key_locations\n"
-        "important_dates\n"
-        "key_facts\n"
-        "exam_relevance\n"
-        "takeaway\n\n"
 
-        "headline must be a real headline based on the source.\n"
-        "full_article_text should contain several coherent paragraphs.\n"
-        "bullet_points, key_locations, important_dates and key_facts "
-        "must be arrays of strings.\n\n"
+        "category\n"
+
+        "headline\n"
+
+        "story_lead\n"
+
+        "why_in_news\n"
+
+        "background\n"
+
+        "detailed_analysis\n"
+
+        "key_facts\n"
+
+        "causes\n"
+
+        "impact\n"
+
+        "challenges\n"
+
+        "government_response\n"
+
+        "way_forward\n"
+
+        "key_locations\n"
+
+        "important_dates\n"
+
+        "upsc_relevance\n"
+
+        "prelims_facts\n"
+
+        "mains_answer\n"
+
+        "takeaway\n"
+
+        "vocabulary\n\n"
+
+
+        "FIELD INSTRUCTIONS:\n\n"
+
+        "story_lead: Give a concise factual introduction.\n"
+
+        "why_in_news: Explain why this issue is currently in the news.\n"
+
+        "background: Give relevant background and context.\n"
+
+        "detailed_analysis: Provide deep UPSC-level analysis "
+        "of the issue and its significance.\n"
+
+        "key_facts: Important factual points as an array.\n"
+
+        "causes: Major causes/drivers as an analytical paragraph.\n"
+
+        "impact: Explain political, economic, social, environmental, "
+        "strategic or institutional impacts wherever relevant.\n"
+
+        "challenges: Explain major challenges and concerns.\n"
+
+        "government_response: Mention only responses supported by the source.\n"
+
+        "way_forward: Give balanced, practical analytical suggestions "
+        "based on the issue and supplied material. Do not invent government policies.\n"
+
+        "key_locations: Important places as an array.\n"
+
+        "important_dates: Important dates as an array.\n"
+
+        "upsc_relevance: Connect the topic with UPSC GS papers, "
+        "governance, economy, environment, science-tech, IR, society "
+        "or other relevant syllabus areas.\n"
+
+        "prelims_facts: Facts useful for Prelims revision as an array.\n"
+
+        "mains_answer: Write a concise Mains-ready answer framework "
+        "with introduction, body points and conclusion. It must be "
+        "directly usable by a student as notes.\n"
+
+        "takeaway: Give the central lesson/fact of the issue.\n"
+
+        "vocabulary: Return an array of objects. Each object must contain "
+        "word and hindi_meaning. Select 5 to 10 important English words "
+        "actually used or naturally relevant to the article and give "
+        "their accurate Hindi meanings.\n\n"
+
 
         "SOURCE MATERIAL:\n\n"
-        + "\n\n".join(source_text)
+
+        + "\n\n".join(
+            source_blocks
+        )
+
     )
+
 
     return prompt
 
 
-def generate_articles(items, number):
+# ============================================================
+# GEMINI
+# ============================================================
+
+def generate_articles(
+    items,
+    number
+):
 
     if not items:
+
         return []
 
-    selected_items = items[:80]
 
-    prompt = build_prompt(
-        selected_items,
-        number
-    )
+    prompt =
+        build_prompt(
+            items[:80],
+            number
+        )
+
 
     models = [
+
         "gemini-3.8-flash",
+
         "gemini-3.7-flash",
+
         "gemini-3.6-flash"
+
     ]
+
 
     for model in models:
 
         print(
-            "Trying Gemini model:",
+            "Trying Gemini:",
             model
         )
 
+
         try:
 
-            response = client.models.generate_content(
-                model=model,
-                contents=prompt
-            )
+            response =
+                client.models.generate_content(
 
-            text = response.text
+                    model=model,
+
+                    contents=prompt
+
+                )
+
+
+            text =
+                response.text
+
 
             if not text:
+
                 continue
 
-            text = text.strip()
 
-            if text.startswith("```"):
-                text = re.sub(
-                    r"^```(?:json)?",
-                    "",
-                    text
-                )
+            text =
+                text.strip()
 
-                text = re.sub(
-                    r"```$",
-                    "",
-                    text
-                )
 
-                text = text.strip()
+            if text.startswith(
+                "```"
+            ):
 
-            parsed = json.loads(text)
+                text =
+                    re.sub(
 
-            if isinstance(parsed, dict):
+                        r"^```(?:json)?",
 
-                parsed = parsed.get(
-                    "articles",
-                    []
-                )
+                        "",
 
-            if not isinstance(parsed, list):
+                        text
+
+                    )
+
+
+                text =
+                    re.sub(
+
+                        r"```$",
+
+                        "",
+
+                        text
+
+                    ).strip()
+
+
+            parsed =
+                json.loads(text)
+
+
+            if isinstance(
+                parsed,
+                dict
+            ):
+
+                parsed =
+                    parsed.get(
+                        "articles",
+                        []
+                    )
+
+
+            if not isinstance(
+                parsed,
+                list
+            ):
+
                 continue
+
 
             print(
                 "Gemini generated:",
                 len(parsed)
             )
 
+
             return parsed
+
 
         except Exception as error:
 
@@ -797,198 +1238,372 @@ def generate_articles(items, number):
                 error
             )
 
+
     return []
 
 
 # ============================================================
-# CONVERT GEMINI ARTICLES
+# LIST CLEAN
 # ============================================================
 
-def convert_articles(generated, candidates):
+def clean_list(value):
+
+    if not isinstance(
+        value,
+        list
+    ):
+
+        return []
+
+
+    result = []
+
+
+    for item in value:
+
+        cleaned =
+            clean(item)
+
+
+        if cleaned:
+
+            result.append(
+                cleaned
+            )
+
+
+    return result
+
+
+# ============================================================
+# VOCABULARY
+# ============================================================
+
+def clean_vocabulary(value):
+
+    if not isinstance(
+        value,
+        list
+    ):
+
+        return []
+
+
+    result = []
+
+
+    for item in value:
+
+        if not isinstance(
+            item,
+            dict
+        ):
+
+            continue
+
+
+        word =
+            clean(
+                item.get(
+                    "word",
+                    ""
+                )
+            )
+
+
+        meaning =
+            clean(
+
+                item.get(
+
+                    "hindi_meaning",
+
+                    item.get(
+                        "meaning_hindi",
+                        ""
+                    )
+
+                )
+
+            )
+
+
+        if word and meaning:
+
+            result.append(
+
+                {
+                    "word":
+                        word,
+
+                    "hindi_meaning":
+                        meaning
+                }
+
+            )
+
+
+    return result
+
+
+# ============================================================
+# CONVERT
+# ============================================================
+
+def convert_articles(
+    generated,
+    candidates
+):
 
     output = []
 
     used = set()
 
+
     for article in generated:
 
-        if not isinstance(article, dict):
+        if not isinstance(
+            article,
+            dict
+        ):
+
             continue
+
 
         try:
 
-            source_number = int(
-                article.get(
-                    "source_number",
-                    -1
+            source_number =
+                int(
+
+                    article.get(
+                        "source_number",
+                        -1
+                    )
+
                 )
-            )
 
         except Exception:
 
             continue
 
+
         if (
+
             source_number < 0
-            or source_number >= len(candidates)
+
+            or
+
+            source_number >=
+            len(candidates)
+
         ):
+
             continue
 
-        source = candidates[
-            source_number
-        ]
 
-        title = clean(
-            article.get(
-                "headline",
-                ""
+        source =
+            candidates[
+                source_number
+            ]
+
+
+        title =
+            clean(
+
+                article.get(
+                    "headline",
+                    ""
+                )
+
             )
-        )
 
-        if not valid_title(title):
+
+        if not valid_title(
+            title
+        ):
+
             continue
 
-        source_hash = make_hash(
-            title,
-            source["url"]
-        )
 
-        if source_hash in used:
-            continue
-
-        used.add(source_hash)
-
-        category = clean(
-            article.get(
-                "category",
-                source["category"]
+        article_hash =
+            make_hash(
+                title,
+                source["url"]
             )
+
+
+        if article_hash in used:
+
+            continue
+
+
+        used.add(
+            article_hash
         )
+
+
+        category =
+            clean(
+
+                article.get(
+                    "category",
+                    source["category"]
+                )
+
+            )
+
 
         if not category:
-            category = source["category"]
 
-        lead = clean(
-            article.get(
-                "story_lead",
-                source["summary"]
-            )
-        )
+            category =
+                source["category"]
 
-        full_text = clean(
-            article.get(
-                "full_article_text",
-                ""
-            )
-        )
-
-        if not full_text:
-            full_text = lead
-
-        bullet_points = article.get(
-            "bullet_points",
-            []
-        )
-
-        if not isinstance(
-            bullet_points,
-            list
-        ):
-            bullet_points = []
-
-        bullet_points = [
-            clean(x)
-            for x in bullet_points
-            if clean(x)
-        ]
-
-        key_locations = article.get(
-            "key_locations",
-            []
-        )
-
-        if not isinstance(
-            key_locations,
-            list
-        ):
-            key_locations = []
-
-        key_locations = [
-            clean(x)
-            for x in key_locations
-            if clean(x)
-        ]
-
-        important_dates = article.get(
-            "important_dates",
-            []
-        )
-
-        if not isinstance(
-            important_dates,
-            list
-        ):
-            important_dates = []
-
-        important_dates = [
-            clean(x)
-            for x in important_dates
-            if clean(x)
-        ]
-
-        key_facts = article.get(
-            "key_facts",
-            []
-        )
-
-        if not isinstance(
-            key_facts,
-            list
-        ):
-            key_facts = []
-
-        key_facts = [
-            clean(x)
-            for x in key_facts
-            if clean(x)
-        ]
-
-        exam_relevance = clean(
-            article.get(
-                "exam_relevance",
-                ""
-            )
-        )
-
-        takeaway = clean(
-            article.get(
-                "takeaway",
-                ""
-            )
-        )
 
         item = {
+
             "id": 0,
 
-            "category": category,
+            "category":
+                category,
 
-            "headline": title,
+            "headline":
+                title,
 
-            "story_lead": lead,
+            "story_lead":
+                clean(
+                    article.get(
+                        "story_lead",
+                        source["summary"]
+                    )
+                ),
 
-            "bullet_points": bullet_points,
+            "why_in_news":
+                clean(
+                    article.get(
+                        "why_in_news",
+                        ""
+                    )
+                ),
 
-            "full_article_text": full_text,
+            "background":
+                clean(
+                    article.get(
+                        "background",
+                        ""
+                    )
+                ),
 
-            "key_locations": key_locations,
+            "detailed_analysis":
+                clean(
+                    article.get(
+                        "detailed_analysis",
+                        ""
+                    )
+                ),
 
-            "important_dates": important_dates,
+            "key_facts":
+                clean_list(
+                    article.get(
+                        "key_facts",
+                        []
+                    )
+                ),
 
-            "key_facts": key_facts,
+            "causes":
+                clean(
+                    article.get(
+                        "causes",
+                        ""
+                    )
+                ),
 
-            "exam_relevance": exam_relevance,
+            "impact":
+                clean(
+                    article.get(
+                        "impact",
+                        ""
+                    )
+                ),
 
-            "takeaway": takeaway,
+            "challenges":
+                clean(
+                    article.get(
+                        "challenges",
+                        ""
+                    )
+                ),
+
+            "government_response":
+                clean(
+                    article.get(
+                        "government_response",
+                        ""
+                    )
+                ),
+
+            "way_forward":
+                clean(
+                    article.get(
+                        "way_forward",
+                        ""
+                    )
+                ),
+
+            "key_locations":
+                clean_list(
+                    article.get(
+                        "key_locations",
+                        []
+                    )
+                ),
+
+            "important_dates":
+                clean_list(
+                    article.get(
+                        "important_dates",
+                        []
+                    )
+                ),
+
+            "upsc_relevance":
+                clean(
+                    article.get(
+                        "upsc_relevance",
+                        ""
+                    )
+                ),
+
+            "prelims_facts":
+                clean_list(
+                    article.get(
+                        "prelims_facts",
+                        []
+                    )
+                ),
+
+            "mains_answer":
+                clean(
+                    article.get(
+                        "mains_answer",
+                        ""
+                    )
+                ),
+
+            "takeaway":
+                clean(
+                    article.get(
+                        "takeaway",
+                        ""
+                    )
+                ),
+
+            "vocabulary":
+                clean_vocabulary(
+                    article.get(
+                        "vocabulary",
+                        []
+                    )
+                ),
 
             "source_name":
                 source["source_name"],
@@ -1001,38 +1616,45 @@ def convert_articles(generated, candidates):
 
             "published_date":
                 TODAY
+
         }
 
-        output.append(item)
+
+        output.append(
+            item
+        )
+
 
     return output
 
 
 # ============================================================
-# FALLBACK ARTICLES
-#
-# If Gemini is temporarily unavailable, we still publish
-# genuine RSS stories instead of leaving the page empty.
+# RSS FALLBACK
 # ============================================================
 
-def fallback_articles(candidates, number):
+def fallback_articles(
+    candidates,
+    number
+):
 
     output = []
+
 
     for index, source in enumerate(
         candidates[:number]
     ):
 
-        title = source["title"]
+        summary =
+            source["summary"]
 
-        summary = source["summary"]
 
         if not summary:
-            summary = (
+
+            summary =
                 "This current-affairs story "
                 "is based on the latest report "
                 "published by the listed source."
-            )
+
 
         item = {
 
@@ -1042,18 +1664,37 @@ def fallback_articles(candidates, number):
                 source["category"],
 
             "headline":
-                title,
+                source["title"],
 
             "story_lead":
                 summary,
 
-            "bullet_points":
-                [
-                    summary
-                ],
-
-            "full_article_text":
+            "why_in_news":
                 summary,
+
+            "background":
+                "",
+
+            "detailed_analysis":
+                summary,
+
+            "key_facts":
+                [summary],
+
+            "causes":
+                "",
+
+            "impact":
+                "",
+
+            "challenges":
+                "",
+
+            "government_response":
+                "",
+
+            "way_forward":
+                "",
 
             "key_locations":
                 [],
@@ -1061,16 +1702,21 @@ def fallback_articles(candidates, number):
             "important_dates":
                 [],
 
-            "key_facts":
-                [],
+            "upsc_relevance":
+                "Read the main facts and developments "
+                "for current-affairs revision.",
 
-            "exam_relevance":
-                "Revise the main facts, "
-                "institutions, locations and "
-                "developments mentioned in this news story.",
+            "prelims_facts":
+                [summary],
+
+            "mains_answer":
+                summary,
 
             "takeaway":
                 summary,
+
+            "vocabulary":
+                [],
 
             "source_name":
                 source["source_name"],
@@ -1079,7 +1725,8 @@ def fallback_articles(candidates, number):
                 source["url"],
 
             "image_url":
-                source["image_url"] or
+                source["image_url"]
+                or
                 choose_fallback_image(
                     source["category"],
                     index
@@ -1087,99 +1734,159 @@ def fallback_articles(candidates, number):
 
             "published_date":
                 TODAY
+
         }
 
-        output.append(item)
+
+        output.append(
+            item
+        )
+
 
     return output
 
 
 # ============================================================
-# REMOVE DUPLICATES
+# MERGE
 # ============================================================
 
-def merge_news(old_news, new_news):
+def merge_news(
+    old_news,
+    new_news
+):
 
     combined = []
 
     seen = set()
 
-    for item in old_news + new_news:
 
-        title = clean(
-            item.get(
-                "headline",
-                ""
-            )
-        )
+    for item in (
+        old_news + new_news
+    ):
 
-        url = clean(
-            item.get(
-                "source_url",
-                ""
+        title =
+            clean(
+
+                item.get(
+                    "headline",
+                    ""
+                )
+
             )
-        )
+
+
+        url =
+            clean(
+
+                item.get(
+                    "source_url",
+                    ""
+                )
+
+            )
+
 
         if not title:
+
             continue
 
-        article_hash = make_hash(
-            title,
-            url
-        )
+
+        article_hash =
+            make_hash(
+                title,
+                url
+            )
+
 
         if article_hash in seen:
+
             continue
 
-        seen.add(article_hash)
 
-        item["id"] = len(combined)
+        seen.add(
+            article_hash
+        )
 
-        combined.append(item)
 
-        if len(combined) >= MAX_DAILY_COUNT:
+        item["id"] =
+            len(combined)
+
+
+        combined.append(
+            item
+        )
+
+
+        if (
+            len(combined)
+            >=
+            MAX_DAILY_COUNT
+        ):
+
             break
+
 
     return combined
 
 
 # ============================================================
-# ENSURE UNIQUE IMAGE ASSIGNMENT
+# DUPLICATE IMAGES
 # ============================================================
 
-def fix_duplicate_images(news):
+def fix_duplicate_images(
+    news
+):
 
-    used_images = set()
+    used = set()
 
-    for index, item in enumerate(news):
 
-        image = clean(
-            item.get(
-                "image_url",
-                ""
+    for index, item in enumerate(
+        news
+    ):
+
+        image =
+            clean(
+
+                item.get(
+                    "image_url",
+                    ""
+                )
+
             )
-        )
+
 
         if (
             not image
-            or image in used_images
+            or
+            image in used
         ):
 
-            category = clean(
-                item.get(
-                    "category",
-                    "World"
+            category =
+                clean(
+
+                    item.get(
+                        "category",
+                        "World"
+                    )
+
                 )
-            )
 
-            image = choose_fallback_image(
-                category,
-                index
-            )
 
-        used_images.add(image)
+            image =
+                choose_fallback_image(
+                    category,
+                    index
+                )
 
-        item["image_url"] = image
+
+        used.add(
+            image
+        )
+
+
+        item["image_url"] =
+            image
+
 
     return news
 
@@ -1190,134 +1897,182 @@ def fix_duplicate_images(news):
 
 def update_today():
 
-    old_news = load_today()
+    old_news =
+        load_today()
+
 
     print(
         "Existing articles:",
         len(old_news)
     )
 
-    if len(old_news) >= MAX_DAILY_COUNT:
 
-        print(
-            "Daily limit reached:",
-            MAX_DAILY_COUNT
-        )
+    if (
+        len(old_news)
+        >=
+        MAX_DAILY_COUNT
+    ):
 
-        return old_news[:MAX_DAILY_COUNT]
+        return old_news[
+            :MAX_DAILY_COUNT
+        ]
 
-    candidates = collect_news()
+
+    candidates =
+        collect_news()
+
 
     if not candidates:
 
-        print(
-            "No RSS candidates found."
-        )
-
         return old_news
 
-    old_hashes = set()
+
+    old_hashes =
+        set()
+
 
     for item in old_news:
 
         old_hashes.add(
+
             make_hash(
+
                 item.get(
                     "headline",
                     ""
                 ),
+
                 item.get(
                     "source_url",
                     ""
                 )
+
             )
+
         )
 
-    fresh_candidates = []
+
+    fresh = []
+
 
     for item in candidates:
 
-        item_hash = make_hash(
-            item["title"],
-            item["url"]
-        )
+        article_hash =
+            make_hash(
 
-        if item_hash in old_hashes:
+                item["title"],
+
+                item["url"]
+
+            )
+
+
+        if article_hash in old_hashes:
+
             continue
 
-        fresh_candidates.append(item)
+
+        fresh.append(
+            item
+        )
+
 
     print(
         "New candidates:",
-        len(fresh_candidates)
+        len(fresh)
     )
 
-    if not fresh_candidates:
 
-        print(
-            "No new stories found."
-        )
+    if not fresh:
 
         return old_news
 
+
     if old_news:
 
-        needed = min(
-            UPDATE_COUNT,
-            MAX_DAILY_COUNT - len(old_news)
-        )
+        needed =
+            min(
+
+                UPDATE_COUNT,
+
+                MAX_DAILY_COUNT
+                - len(old_news)
+
+            )
 
     else:
 
-        needed = min(
-            FIRST_RUN_COUNT,
-            MAX_DAILY_COUNT
+        needed =
+            min(
+
+                FIRST_RUN_COUNT,
+
+                MAX_DAILY_COUNT
+
+            )
+
+
+    generated =
+        generate_articles(
+            fresh,
+            needed
         )
 
-    fresh_candidates = fresh_candidates[:40]
 
-    generated = generate_articles(
-        fresh_candidates,
-        needed
-    )
+    new_articles =
+        convert_articles(
+            generated,
+            fresh
+        )
 
-    new_articles = convert_articles(
-        generated,
-        fresh_candidates
-    )
 
-    # If Gemini fails, use the genuine RSS stories.
     if not new_articles:
 
         print(
-            "Gemini did not produce valid articles."
+            "Gemini failed."
         )
 
         print(
             "Using RSS fallback."
         )
 
-        new_articles = fallback_articles(
-            fresh_candidates,
-            needed
+
+        new_articles =
+            fallback_articles(
+                fresh,
+                needed
+            )
+
+
+    final_news =
+        merge_news(
+
+            old_news,
+
+            new_articles
+
         )
 
-    final_news = merge_news(
-        old_news,
-        new_articles
-    )
 
-    final_news = fix_duplicate_images(
+    final_news =
+        fix_duplicate_images(
+            final_news
+        )
+
+
+    for index, item in enumerate(
         final_news
-    )
+    ):
 
-    for index, item in enumerate(final_news):
-        item["id"] = index
+        item["id"] =
+            index
+
 
     print(
         "FINAL DAILY COUNT:",
         len(final_news)
     )
+
 
     return final_news
 
@@ -1330,28 +2085,47 @@ def available_dates():
 
     dates = []
 
-    if os.path.exists(DATA_DIR):
 
-        for filename in os.listdir(DATA_DIR):
+    if os.path.exists(
+        DATA_DIR
+    ):
 
-            if not filename.endswith(".json"):
+        for filename in os.listdir(
+            DATA_DIR
+        ):
+
+            if not filename.endswith(
+                ".json"
+            ):
+
                 continue
 
-            name = filename[:-5]
+
+            name =
+                filename[:-5]
+
 
             if re.fullmatch(
                 r"\d{4}-\d{2}-\d{2}",
                 name
             ):
 
-                dates.append(name)
+                dates.append(
+                    name
+                )
+
 
     if TODAY not in dates:
-        dates.append(TODAY)
+
+        dates.append(
+            TODAY
+        )
+
 
     dates.sort(
         reverse=True
     )
+
 
     return dates
 
@@ -1375,12 +2149,22 @@ def get_motivation():
         "Discipline is built one productive session at a time.",
 
         "Your preparation today becomes your confidence tomorrow."
+
     ]
 
+
     index = (
-        datetime.now().timetuple().tm_yday
-        % len(quotes)
+
+        datetime.now()
+        .timetuple()
+        .tm_yday
+
+        %
+
+        len(quotes)
+
     )
+
 
     return quotes[index]
 
@@ -1396,13 +2180,17 @@ def main():
         exist_ok=True
     )
 
-    news = update_today()
+
+    news =
+        update_today()
+
 
     if not news:
 
         raise RuntimeError(
             "No current-affairs stories available."
         )
+
 
     daily_data = {
 
@@ -1411,14 +2199,22 @@ def main():
 
         "news":
             news
+
     }
 
+
     save_json(
+
         today_file(),
+
         daily_data
+
     )
 
-    dates = available_dates()
+
+    dates =
+        available_dates()
+
 
     master = {
 
@@ -1442,12 +2238,18 @@ def main():
 
         "last_updated":
             datetime.now().isoformat()
+
     }
 
+
     save_json(
+
         MASTER_FILE,
+
         master
+
     )
+
 
     print("")
     print(
@@ -1474,4 +2276,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
