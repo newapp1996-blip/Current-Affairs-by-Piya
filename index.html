@@ -1,1087 +1,1091 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="AURA EXAM AI - Daily Current Affairs, UPSC Analysis, Mains Notes, Sports News and Vocabulary"
+    >
+
+    <title>AURA EXAM AI - Daily Current Affairs & Quiz</title>
+
+    <!-- =====================================================
+         GOOGLE TRANSLATE
+         ===================================================== -->
+
+    <script
+        type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,hi,pa,bn,ta,te,mr,gu,kn,ml,ur',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+
+
+    <!-- =====================================================
+         STYLES
+         ===================================================== -->
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        button,
+        select,
+        input {
+            font-family: inherit;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* =================================================
+           HEADER
+           ================================================= */
+
+        header {
+            background: #b30000;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+
+        .header-inner {
+            max-width: 1400px;
+            margin: auto;
+            padding: 12px 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+
+            flex-wrap: wrap;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-<meta charset="UTF-8">
+        .brand-icon {
+            width: 42px;
+            height: 42px;
+
+            background: white;
+            color: #b30000;
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+            border-radius: 50%;
 
-<title>AURA EXAM AI - Daily Current Affairs</title>
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-<meta name="description"
-      content="Daily current affairs, UPSC analysis, Mains notes and exam vocabulary.">
+            font-size: 21px;
+            font-weight: 900;
+        }
 
-<meta name="theme-color"
-      content="#b5121b">
+        .brand-text h1 {
+            margin: 0;
+            font-size: 21px;
+            font-weight: 800;
+        }
 
+        .brand-text p {
+            margin: 2px 0 0;
+            font-size: 11px;
+            opacity: 0.9;
+        }
 
-<style>
 
-* {
-    box-sizing: border-box;
-}
+        /* =================================================
+           HEADER TOOLS
+           ================================================= */
 
-html {
-    scroll-behavior: smooth;
-}
+        .header-tools {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            flex-wrap: wrap;
+        }
 
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f5f5f3;
-    color: #202020;
-}
+        #liveClock {
+            background: rgba(255,255,255,0.13);
+            border: 1px solid rgba(255,255,255,0.25);
 
+            padding: 8px 12px;
+            border-radius: 7px;
 
-/* =========================================================
-   HEADER
-========================================================= */
+            font-size: 13px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
 
-header {
-    background: #ffffff;
-    border-bottom: 4px solid #b5121b;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-}
+        .youtube-btn {
+            background: white;
+            color: #c40000;
 
-.topbar {
-    max-width: 1400px;
-    margin: auto;
-    min-height: 72px;
-    padding: 10px 18px;
+            padding: 9px 13px;
+            border-radius: 7px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+            font-size: 13px;
+            font-weight: 800;
 
-    gap: 15px;
-}
+            transition: 0.2s;
+        }
 
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
+        .youtube-btn:hover {
+            background: #ffe9e9;
+            transform: translateY(-1px);
+        }
 
-.logo {
-    width: 46px;
-    height: 46px;
+        .share-btn {
+            background: rgba(255,255,255,0.15);
+            color: white;
 
-    border-radius: 50%;
+            border: 1px solid rgba(255,255,255,0.3);
 
-    background: #b5121b;
-    color: white;
+            padding: 8px 12px;
+            border-radius: 7px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+            cursor: pointer;
+            font-weight: 700;
+        }
 
-    font-weight: 900;
-    font-size: 19px;
-}
+        .share-btn:hover {
+            background: rgba(255,255,255,0.25);
+        }
 
-.brand-text h1 {
-    margin: 0;
+        #google_translate_element {
+            background: white;
+            border-radius: 6px;
+            overflow: hidden;
+            padding: 2px 5px;
+        }
 
-    font-family: Georgia, serif;
+        .goog-te-gadget {
+            font-size: 0 !important;
+        }
 
-    font-size: 24px;
+        .goog-te-gadget select {
+            font-size: 12px !important;
+            border: none;
+            outline: none;
+        }
 
-    color: #111;
-}
 
-.brand-text span {
-    font-size: 11px;
+        /* =================================================
+           MAIN WRAPPER
+           ================================================= */
 
-    color: #777;
+        .page-wrapper {
+            max-width: 1400px;
+            margin: auto;
+            padding: 18px;
+        }
 
-    letter-spacing: 1.4px;
 
-    text-transform: uppercase;
-}
+        /* =================================================
+           DATE / CONTROL BAR
+           ================================================= */
 
-.header-right {
+        .control-bar {
+            background: white;
 
-    display: flex;
+            border-radius: 10px;
 
-    align-items: center;
+            padding: 13px 15px;
 
-    gap: 12px;
+            margin-bottom: 18px;
 
-    flex-wrap: wrap;
-}
+            box-shadow:
+                0 2px 8px rgba(0,0,0,0.07);
 
-.clock {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-    font-weight: bold;
+            gap: 12px;
 
-    color: #b5121b;
+            flex-wrap: wrap;
+        }
 
-    white-space: nowrap;
+        .date-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
 
-    font-size: 14px;
-}
+        .control-label {
+            font-weight: 800;
+            color: #555;
+            font-size: 13px;
+        }
 
+        #dateSelect,
+        #calendarDate {
+            border: 1px solid #ccc;
+            border-radius: 6px;
 
-/* YOUTUBE */
+            padding: 8px 10px;
 
-.youtube-btn {
+            background: white;
+            outline: none;
 
-    display: inline-flex;
+            cursor: pointer;
+        }
 
-    align-items: center;
+        #dateSelect:focus,
+        #calendarDate:focus {
+            border-color: #b30000;
+        }
 
-    gap: 7px;
+        .today-btn {
+            border: none;
+            background: #b30000;
+            color: white;
 
-    background: #ff0000;
+            padding: 8px 12px;
 
-    color: white;
+            border-radius: 6px;
 
-    text-decoration: none;
+            cursor: pointer;
+            font-weight: 700;
+        }
 
-    padding: 9px 13px;
+        .today-btn:hover {
+            background: #8d0000;
+        }
 
-    border-radius: 4px;
+        .daily-count {
+            font-size: 13px;
+            color: #666;
+            font-weight: 700;
+        }
 
-    font-size: 12px;
 
-    font-weight: bold;
+        /* =================================================
+           MOTIVATION
+           ================================================= */
 
-    transition: 0.2s;
-}
+        .motivation {
+            background: linear-gradient(
+                135deg,
+                #8d0000,
+                #c40000
+            );
 
-.youtube-btn:hover {
+            color: white;
 
-    background: #cc0000;
+            border-radius: 10px;
 
-    transform: translateY(-1px);
-}
+            padding: 14px 18px;
 
+            margin-bottom: 18px;
 
-/* =========================================================
-   BREAKING BAR
-========================================================= */
+            text-align: center;
 
-.newsbar {
+            box-shadow:
+                0 2px 8px rgba(0,0,0,0.1);
+        }
 
-    background: #b5121b;
+        .motivation-title {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.8;
+            margin-bottom: 5px;
+        }
 
-    color: white;
+        #motivationQuote {
+            font-size: 16px;
+            font-weight: 700;
+        }
 
-    min-height: 36px;
 
-    display: flex;
+        /* =================================================
+           LAYOUT
+           ================================================= */
 
-    align-items: center;
-}
+        .content-layout {
+            display: grid;
 
-.newsbar-inner {
+            grid-template-columns:
+                180px
+                minmax(0, 1fr)
+                180px;
 
-    max-width: 1400px;
+            gap: 18px;
 
-    width: 100%;
+            align-items: start;
+        }
 
-    margin: auto;
+        .side-panel {
+            position: sticky;
+            top: 85px;
+        }
 
-    padding: 0 18px;
+        .side-card {
+            background: white;
+            border-radius: 10px;
 
-    display: flex;
+            padding: 16px;
 
-    align-items: center;
+            margin-bottom: 15px;
 
-    gap: 12px;
-}
+            box-shadow:
+                0 2px 8px rgba(0,0,0,0.07);
 
-.breaking {
+            text-align: center;
+        }
 
-    font-size: 11px;
+        .side-card h3 {
+            margin: 0 0 8px;
+            font-size: 14px;
+            color: #b30000;
+        }
 
-    font-weight: 900;
+        .side-card p {
+            margin: 0;
+            font-size: 12px;
+            line-height: 1.55;
+            color: #666;
+        }
 
-    background: #111;
 
-    padding: 5px 9px;
+        /* =================================================
+           NEWS AREA
+           ================================================= */
 
-    letter-spacing: 1px;
-}
+        .news-header {
+            background: white;
 
-#updateStatus {
+            border-radius: 10px 10px 0 0;
 
-    font-size: 13px;
-}
+            padding: 15px 18px;
 
+            border-bottom: 3px solid #b30000;
 
-/* =========================================================
-   DATE AREA
-========================================================= */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-.date-area {
+            gap: 10px;
+        }
 
-    max-width: 1400px;
+        .news-header h2 {
+            margin: 0;
+            font-size: 19px;
+        }
 
-    margin: 18px auto 10px;
+        .news-header span {
+            font-size: 12px;
+            color: #777;
+        }
 
-    padding: 0 18px;
-}
 
-.date-panel {
+        /* =================================================
+           CATEGORY FILTER
+           ================================================= */
 
-    background: white;
+        .category-bar {
+            background: white;
+            padding: 10px 15px;
 
-    border: 1px solid #ddd;
+            display: flex;
+            gap: 7px;
 
-    border-top: 3px solid #111;
+            flex-wrap: wrap;
 
-    padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
 
-    display: flex;
+        .category-btn {
+            border: 1px solid #ddd;
 
-    align-items: center;
+            background: white;
+            color: #555;
 
-    gap: 14px;
+            border-radius: 20px;
 
-    flex-wrap: wrap;
-}
+            padding: 6px 11px;
 
-.date-panel strong {
+            cursor: pointer;
 
-    font-family: Georgia, serif;
+            font-size: 11px;
+            font-weight: 700;
+        }
 
-    font-size: 18px;
-}
+        .category-btn:hover,
+        .category-btn.active {
+            background: #b30000;
+            border-color: #b30000;
+            color: white;
+        }
 
-.date-picker {
 
-    border: 1px solid #bbb;
+        /* =================================================
+           NEWS GRID
+           ================================================= */
 
-    background: white;
+        #newsContainer {
+            display: grid;
 
-    padding: 9px 12px;
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
 
-    border-radius: 4px;
+            gap: 14px;
 
-    font-size: 14px;
+            margin-top: 14px;
+        }
 
-    min-width: 190px;
-}
+        .news-card {
+            background: white;
 
-.archive-title {
+            border-radius: 10px;
 
-    margin-left: auto;
+            overflow: hidden;
 
-    color: #777;
+            box-shadow:
+                0 2px 8px rgba(0,0,0,0.07);
 
-    font-size: 13px;
-}
+            cursor: pointer;
 
+            transition:
+                transform 0.2s,
+                box-shadow 0.2s;
+        }
 
-/* =========================================================
-   MAIN
-========================================================= */
+        .news-card:hover {
+            transform: translateY(-2px);
 
-.layout {
+            box-shadow:
+                0 6px 18px rgba(0,0,0,0.12);
+        }
 
-    max-width: 1400px;
+        .news-image {
+            width: 100%;
+            height: 155px;
 
-    margin: auto;
+            object-fit: cover;
 
-    padding: 10px 18px 40px;
+            display: block;
 
-    display: grid;
+            background: #ddd;
+        }
 
-    grid-template-columns: 180px minmax(0, 1fr) 180px;
+        .news-body {
+            padding: 13px 14px 15px;
+        }
 
-    gap: 18px;
-}
+        .news-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-.side-box {
+            gap: 8px;
 
-    background: white;
+            margin-bottom: 7px;
+        }
 
-    border: 1px solid #ddd;
+        .category-badge {
+            display: inline-block;
 
-    height: fit-content;
+            background: #fff0f0;
+            color: #b30000;
 
-    position: sticky;
+            border: 1px solid #ffd2d2;
 
-    top: 120px;
-}
+            padding: 4px 8px;
 
-.side-title {
+            border-radius: 12px;
 
-    background: #111;
+            font-size: 10px;
+            font-weight: 800;
+        }
 
-    color: white;
+        .news-number {
+            color: #999;
+            font-size: 11px;
+            font-weight: 700;
+        }
 
-    padding: 9px 12px;
+        .news-title {
+            margin: 0 0 7px;
 
-    font-size: 12px;
+            font-size: 16px;
+            line-height: 1.35;
 
-    font-weight: bold;
+            color: #222;
+        }
 
-    text-transform: uppercase;
-}
+        .news-lead {
+            margin: 0;
 
-.side-content {
+            color: #666;
 
-    padding: 15px;
+            font-size: 12px;
+            line-height: 1.5;
+        }
 
-    font-family: Georgia, serif;
+        .news-source {
+            margin-top: 10px;
 
-    font-size: 16px;
+            font-size: 10px;
+            color: #999;
 
-    line-height: 1.6;
-}
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+        }
 
 
-/* =========================================================
-   NEWS HEADER
-========================================================= */
+        /* =================================================
+           PAGINATION
+           ================================================= */
 
-.section-heading {
+        .pagination {
+            background: white;
 
-    background: white;
+            margin-top: 14px;
 
-    border-top: 4px solid #b5121b;
+            padding: 14px;
 
-    border-bottom: 1px solid #ddd;
+            border-radius: 10px;
 
-    padding: 13px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-    margin-bottom: 12px;
+            gap: 12px;
+        }
 
-    display: flex;
+        .page-btn {
+            border: none;
 
-    align-items: center;
+            background: #b30000;
+            color: white;
 
-    justify-content: space-between;
-}
+            padding: 9px 17px;
 
-.section-heading h2 {
+            border-radius: 6px;
 
-    margin: 0;
+            cursor: pointer;
 
-    font-family: Georgia, serif;
+            font-size: 13px;
+            font-weight: 800;
+        }
 
-    font-size: 24px;
-}
+        .page-btn:hover:not(:disabled) {
+            background: #8d0000;
+        }
 
-.count {
+        .page-btn:disabled {
+            background: #ddd;
+            color: #999;
+            cursor: not-allowed;
+        }
 
-    color: #777;
+        #pageInfo {
+            font-size: 13px;
+            font-weight: 800;
+            color: #555;
+            min-width: 85px;
+            text-align: center;
+        }
 
-    font-size: 13px;
-}
 
+        /* =================================================
+           LOADING / ERROR
+           ================================================= */
 
-/* =========================================================
-   NEWS GRID
-========================================================= */
+        .status-box {
+            background: white;
 
-.news-grid {
+            padding: 35px 20px;
 
-    display: grid;
+            text-align: center;
 
-    grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+            border-radius: 10px;
 
-    gap: 14px;
-}
+            color: #777;
 
-.news-card {
+            grid-column: 1 / -1;
+        }
 
-    background: white;
+        .error-box {
+            color: #b30000;
+        }
 
-    border: 1px solid #ddd;
 
-    cursor: pointer;
+        /* =================================================
+           ARTICLE MODAL
+           ================================================= */
 
-    transition:
-        transform 0.15s ease,
-        box-shadow 0.15s ease;
+        .modal {
+            position: fixed;
 
-    overflow: hidden;
-}
+            inset: 0;
 
-.news-card:hover {
+            background:
+                rgba(0,0,0,0.68);
 
-    transform: translateY(-2px);
+            z-index: 2000;
 
-    box-shadow:
-        0 7px 20px rgba(0,0,0,0.10);
-}
+            display: none;
 
-.news-image-wrap {
+            overflow-y: auto;
 
-    position: relative;
+            padding: 25px 12px;
+        }
 
-    height: 205px;
+        .modal.show {
+            display: block;
+        }
 
-    overflow: hidden;
+        .article-modal {
+            max-width: 950px;
 
-    background: #ddd;
-}
+            margin: 0 auto;
 
-.news-image {
+            background: white;
 
-    width: 100%;
+            border-radius: 12px;
 
-    height: 100%;
+            overflow: hidden;
 
-    object-fit: cover;
+            box-shadow:
+                0 10px 50px rgba(0,0,0,0.3);
+        }
 
-    display: block;
-}
+        .article-hero {
+            position: relative;
+        }
 
-.category {
+        .article-hero img {
+            width: 100%;
+            height: 300px;
 
-    position: absolute;
+            object-fit: cover;
 
-    left: 10px;
+            display: block;
+        }
 
-    bottom: 10px;
+        .article-hero-overlay {
+            position: absolute;
 
-    background: #b5121b;
+            inset: 0;
 
-    color: white;
+            background:
+                linear-gradient(
+                    transparent 30%,
+                    rgba(0,0,0,0.8)
+                );
 
-    padding: 5px 8px;
+            display: flex;
+            align-items: flex-end;
 
-    font-size: 10px;
+            padding: 25px;
+        }
 
-    font-weight: bold;
+        .article-hero-title {
+            color: white;
 
-    text-transform: uppercase;
+            font-size: 29px;
+            line-height: 1.25;
 
-    letter-spacing: .7px;
-}
+            margin: 0;
 
-.news-body {
+            max-width: 850px;
+        }
 
-    padding: 14px;
-}
+        .close-modal {
+            position: absolute;
 
-.source-row {
+            top: 12px;
+            right: 12px;
 
-    display: flex;
+            width: 38px;
+            height: 38px;
 
-    justify-content: space-between;
+            border-radius: 50%;
 
-    gap: 10px;
+            border: none;
 
-    color: #777;
+            background:
+                rgba(0,0,0,0.65);
 
-    font-size: 11px;
+            color: white;
 
-    margin-bottom: 8px;
-}
+            cursor: pointer;
 
-.news-headline {
+            font-size: 22px;
 
-    margin: 0 0 9px;
+            z-index: 5;
+        }
 
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
+        .close-modal:hover {
+            background: #b30000;
+        }
 
-    font-size: 21px;
+        .article-content {
+            padding: 22px;
+        }
 
-    line-height: 1.22;
+        .article-source-row {
+            display: flex;
 
-    color: #111;
-}
+            justify-content: space-between;
+            align-items: center;
 
-.news-lead {
+            gap: 10px;
 
-    color: #555;
+            flex-wrap: wrap;
 
-    font-size: 14px;
+            color: #777;
 
-    line-height: 1.5;
-}
+            font-size: 12px;
 
-.read-more {
+            padding-bottom: 15px;
 
-    margin-top: 12px;
+            border-bottom: 1px solid #eee;
+        }
 
-    color: #b5121b;
+        .source-link {
+            color: #b30000;
+            font-weight: 800;
+        }
 
-    font-size: 12px;
 
-    font-weight: bold;
-}
+        /* =================================================
+           ARTICLE TABS
+           ================================================= */
 
+        .article-tabs {
+            display: flex;
 
-/* =========================================================
-   PAGINATION
-========================================================= */
+            gap: 5px;
 
-.pagination {
+            overflow-x: auto;
 
-    background: white;
+            margin-top: 18px;
 
-    border: 1px solid #ddd;
+            border-bottom: 2px solid #eee;
+        }
 
-    margin-top: 18px;
+        .article-tab {
+            border: none;
 
-    padding: 14px;
+            background: transparent;
 
-    display: flex;
+            padding: 11px 14px;
 
-    justify-content: center;
+            cursor: pointer;
 
-    align-items: center;
+            color: #666;
 
-    gap: 12px;
-}
+            font-weight: 800;
 
-.page-btn {
+            font-size: 12px;
 
-    border: 1px solid #bbb;
+            white-space: nowrap;
 
-    background: white;
+            border-bottom: 3px solid transparent;
+        }
 
-    color: #111;
+        .article-tab:hover {
+            color: #b30000;
+        }
 
-    padding: 9px 18px;
+        .article-tab.active {
+            color: #b30000;
+            border-bottom-color: #b30000;
+        }
 
-    border-radius: 4px;
+        .tab-panel {
+            display: none;
 
-    cursor: pointer;
+            padding-top: 20px;
+        }
 
-    font-weight: bold;
+        .tab-panel.active {
+            display: block;
+        }
 
-    font-size: 13px;
-}
 
-.page-btn:hover:not(:disabled) {
+        /* =================================================
+           ARTICLE CONTENT
+           ================================================= */
 
-    background: #b5121b;
+        .article-section {
+            margin-bottom: 23px;
+        }
 
-    color: white;
+        .article-section h3 {
+            margin: 0 0 10px;
 
-    border-color: #b5121b;
-}
+            color: #b30000;
 
-.page-btn:disabled {
+            font-size: 18px;
 
-    opacity: .4;
+            padding-bottom: 7px;
 
-    cursor: not-allowed;
-}
+            border-bottom: 1px solid #eee;
+        }
 
-.page-number {
+        .article-section h4 {
+            margin: 15px 0 7px;
 
-    font-size: 13px;
+            color: #333;
 
-    font-weight: bold;
+            font-size: 14px;
+        }
 
-    color: #555;
-}
+        .article-section p {
+            color: #444;
 
+            font-size: 14px;
 
-/* =========================================================
-   MESSAGE
-========================================================= */
+            line-height: 1.75;
 
-.message {
+            margin: 0 0 12px;
+        }
 
-    background: white;
+        .article-list {
+            margin: 0;
+            padding-left: 20px;
+        }
 
-    border: 1px solid #ddd;
+        .article-list li {
+            margin-bottom: 8px;
 
-    padding: 30px;
+            color: #444;
 
-    text-align: center;
+            font-size: 14px;
 
-    color: #777;
-}
+            line-height: 1.6;
+        }
 
+        .mains-box {
+            background: #fff8f8;
 
-/* =========================================================
-   ARTICLE MODAL
-========================================================= */
+            border-left: 4px solid #b30000;
 
-.modal {
+            padding: 15px;
 
-    display: none;
+            border-radius: 5px;
+        }
 
-    position: fixed;
+        .takeaway-box {
+            background: #f5f5f5;
 
-    inset: 0;
+            border-radius: 7px;
 
-    z-index: 3000;
+            padding: 15px;
 
-    background: rgba(0,0,0,0.72);
+            font-weight: 700;
 
-    overflow-y: auto;
+            line-height: 1.6;
+        }
 
-    padding: 25px 12px;
-}
 
-.modal.active {
+        /* =================================================
+           VOCABULARY
+           ================================================= */
 
-    display: block;
-}
+        .vocab-table-wrapper {
+            overflow-x: auto;
+        }
 
-.article-window {
+        .vocab-table {
+            width: 100%;
 
-    max-width: 980px;
+            border-collapse: collapse;
 
-    margin: auto;
+            font-size: 13px;
+        }
 
-    background: white;
+        .vocab-table th {
+            background: #b30000;
 
-    min-height: 80vh;
+            color: white;
 
-    box-shadow:
-        0 10px 50px rgba(0,0,0,.35);
-}
+            padding: 10px;
 
-.article-top {
+            text-align: left;
+        }
 
-    position: sticky;
+        .vocab-table td {
+            padding: 10px;
 
-    top: 0;
+            border-bottom: 1px solid #eee;
 
-    z-index: 2;
+            vertical-align: top;
+        }
 
-    background: white;
+        .vocab-table tr:nth-child(even) {
+            background: #fafafa;
+        }
 
-    border-bottom: 1px solid #ddd;
+        .vocab-word {
+            font-weight: 800;
+            color: #b30000;
+        }
 
-    padding: 10px 15px;
 
-    display: flex;
+        /* =================================================
+           FOOTER
+           ================================================= */
 
-    justify-content: space-between;
+        footer {
+            margin-top: 30px;
 
-    align-items: center;
-}
+            background: #222;
 
-.close-btn {
+            color: #bbb;
 
-    border: none;
+            padding: 22px;
 
-    background: #111;
+            text-align: center;
 
-    color: white;
+            font-size: 12px;
+        }
 
-    width: 38px;
+        footer strong {
+            color: white;
+        }
 
-    height: 38px;
 
-    border-radius: 50%;
+        /* =================================================
+           RESPONSIVE
+           ================================================= */
 
-    font-size: 22px;
+        @media (max-width: 1050px) {
 
-    cursor: pointer;
-}
+            .content-layout {
+                grid-template-columns: 1fr;
+            }
 
-.article-content {
+            .side-panel {
+                display: none;
+            }
 
-    padding: 28px 38px 50px;
-}
+        }
 
-.article-category {
+        @media (max-width: 750px) {
 
-    color: #b5121b;
+            .header-inner {
+                padding: 10px 12px;
+            }
 
-    font-size: 12px;
+            .brand-text h1 {
+                font-size: 17px;
+            }
 
-    font-weight: bold;
+            .brand-text p {
+                display: none;
+            }
 
-    text-transform: uppercase;
+            .header-tools {
+                width: 100%;
+                justify-content: flex-start;
+            }
 
-    letter-spacing: 1px;
-}
+            #newsContainer {
+                grid-template-columns: 1fr;
+            }
 
-.article-title {
+            .news-image {
+                height: 190px;
+            }
 
-    font-family: Georgia, serif;
+            .page-wrapper {
+                padding: 10px;
+            }
 
-    font-size: 38px;
+            .article-hero img {
+                height: 230px;
+            }
 
-    line-height: 1.13;
+            .article-hero-title {
+                font-size: 21px;
+            }
 
-    margin: 10px 0;
+            .article-content {
+                padding: 15px;
+            }
 
-    color: #111;
-}
+            .control-bar {
+                align-items: flex-start;
+            }
 
-.article-meta {
+        }
 
-    color: #777;
+        @media (max-width: 450px) {
 
-    font-size: 12px;
+            .youtube-btn {
+                padding: 7px 9px;
+                font-size: 11px;
+            }
 
-    border-bottom: 1px solid #ddd;
+            .share-btn {
+                padding: 7px 9px;
+                font-size: 11px;
+            }
 
-    padding-bottom: 15px;
+            #liveClock {
+                font-size: 11px;
+                padding: 7px 8px;
+            }
 
-    margin-bottom: 20px;
-}
+            .brand-icon {
+                width: 36px;
+                height: 36px;
+                font-size: 18px;
+            }
 
-.article-hero {
+        }
 
-    width: 100%;
-
-    max-height: 500px;
-
-    object-fit: cover;
-
-    margin-bottom: 25px;
-}
-
-.article-lead {
-
-    font-size: 19px;
-
-    line-height: 1.6;
-
-    font-weight: 500;
-
-    margin-bottom: 25px;
-}
-
-
-/* =========================================================
-   ANALYSIS SECTIONS
-========================================================= */
-
-.analysis-section {
-
-    margin: 30px 0;
-}
-
-.analysis-heading {
-
-    border-left: 4px solid #b5121b;
-
-    padding-left: 12px;
-
-    margin-bottom: 12px;
-
-    font-family: Georgia, serif;
-
-    font-size: 20px;
-
-    font-weight: bold;
-
-    color: #111;
-}
-
-.analysis-text {
-
-    font-family: Georgia, serif;
-
-    font-size: 17px;
-
-    line-height: 1.8;
-
-    color: #292929;
-}
-
-.analysis-text p {
-
-    margin: 0 0 15px;
-}
-
-.analysis-list {
-
-    font-family: Georgia, serif;
-
-    font-size: 16px;
-
-    line-height: 1.75;
-
-    padding-left: 24px;
-}
-
-.analysis-list li {
-
-    margin-bottom: 8px;
-}
-
-
-/* =========================================================
-   MAINS BOX
-========================================================= */
-
-.mains-box {
-
-    background: #fafafa;
-
-    border: 1px solid #d8d8d8;
-
-    border-left: 5px solid #111;
-
-    padding: 18px;
-
-    margin: 30px 0;
-}
-
-.mains-box-title {
-
-    font-family: Georgia, serif;
-
-    font-weight: bold;
-
-    font-size: 19px;
-
-    margin-bottom: 12px;
-}
-
-.mains-answer {
-
-    font-family: Georgia, serif;
-
-    font-size: 16px;
-
-    line-height: 1.8;
-}
-
-
-/* =========================================================
-   VOCABULARY
-========================================================= */
-
-.vocabulary-box {
-
-    margin-top: 35px;
-
-    border-top: 4px solid #b5121b;
-
-    background: #fafafa;
-
-    padding: 18px;
-}
-
-.vocabulary-title {
-
-    font-family: Georgia, serif;
-
-    font-size: 22px;
-
-    font-weight: bold;
-
-    margin-bottom: 15px;
-}
-
-.vocabulary-table {
-
-    width: 100%;
-
-    border-collapse: collapse;
-
-    background: white;
-}
-
-.vocabulary-table th {
-
-    background: #111;
-
-    color: white;
-
-    padding: 10px;
-
-    text-align: left;
-
-    font-size: 13px;
-}
-
-.vocabulary-table td {
-
-    border: 1px solid #ddd;
-
-    padding: 10px;
-
-    font-size: 14px;
-
-    line-height: 1.5;
-}
-
-.vocabulary-table td:first-child {
-
-    font-weight: bold;
-
-    color: #b5121b;
-}
-
-
-/* =========================================================
-   SOURCE BUTTON
-========================================================= */
-
-.source-button {
-
-    display: inline-block;
-
-    margin-top: 25px;
-
-    padding: 11px 16px;
-
-    background: #b5121b;
-
-    color: white;
-
-    text-decoration: none;
-
-    font-weight: bold;
-
-    border-radius: 3px;
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer {
-
-    background: #111;
-
-    color: #aaa;
-
-    text-align: center;
-
-    padding: 25px 15px;
-
-    font-size: 12px;
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 1050px) {
-
-    .layout {
-
-        grid-template-columns: 1fr;
-    }
-
-    .side-box {
-
-        display: none;
-    }
-}
-
-@media (max-width: 700px) {
-
-    .topbar {
-
-        align-items: flex-start;
-    }
-
-    .brand-text h1 {
-
-        font-size: 19px;
-    }
-
-    .clock {
-
-        display: block;
-
-        font-size: 11px;
-    }
-
-    .youtube-btn {
-
-        padding: 7px 9px;
-
-        font-size: 10px;
-    }
-
-    .news-grid {
-
-        grid-template-columns: 1fr;
-    }
-
-    .news-image-wrap {
-
-        height: 220px;
-    }
-
-    .article-content {
-
-        padding: 22px 18px 40px;
-    }
-
-    .article-title {
-
-        font-size: 29px;
-    }
-
-    .article-lead {
-
-        font-size: 17px;
-    }
-
-    .analysis-text {
-
-        font-size: 16px;
-    }
-
-    .archive-title {
-
-        width: 100%;
-
-        margin-left: 0;
-    }
-
-    .vocabulary-table th,
-    .vocabulary-table td {
-
-        padding: 8px;
-
-        font-size: 12px;
-    }
-
-}
-
-
-/* =========================================================
-   GOOGLE TRANSLATE
-========================================================= */
-
-.translate {
-
-    min-width: 130px;
-}
-
-</style>
-
-
-<script>
-
-function googleTranslateElementInit() {
-
-    new google.translate.TranslateElement(
-
-        {
-            pageLanguage: 'en',
-
-            includedLanguages:
-                'en,hi,pa,bn,ta,te,mr,gu,kn,ml,ur',
-
-            autoDisplay: false
-        },
-
-        'google_translate_element'
-    );
-}
-
-</script>
-
-<script
-src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-</script>
+    </style>
 
 </head>
 
@@ -1089,13 +1093,17 @@ src="https://translate.google.com/translate_a/element.js?cb=googleTranslateEleme
 <body>
 
 
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+
 <header>
 
-    <div class="topbar">
+    <div class="header-inner">
 
         <div class="brand">
 
-            <div class="logo">
+            <div class="brand-icon">
                 A
             </div>
 
@@ -1105,56 +1113,38 @@ src="https://translate.google.com/translate_a/element.js?cb=googleTranslateEleme
                     AURA EXAM AI
                 </h1>
 
-                <span>
-                    Daily Current Affairs & UPSC Analysis
-                </span>
+                <p>
+                    Daily Current Affairs • UPSC • Mains • Prelims
+                </p>
 
             </div>
 
         </div>
 
 
-        <div class="header-right">
+        <div class="header-tools">
 
-            <div
-                class="clock"
-                id="clock">
-                --:--:--
+            <div id="liveClock">
+                Loading time...
             </div>
 
+            <button
+                class="share-btn"
+                onclick="shareWebsite()"
+            >
+                ↗ Share
+            </button>
 
             <a
                 class="youtube-btn"
-                href="https://youtube.com/@zeroratta?si=aceDPURkGAoXCASM"
+                href="https://youtube.com/@zeroratta?sub_confirmation=1"
                 target="_blank"
-                rel="noopener noreferrer">
-
+                rel="noopener noreferrer"
+            >
                 ▶ Subscribe on YouTube
-
             </a>
 
-
-            <div
-                class="translate"
-                id="google_translate_element">
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <div class="newsbar">
-
-        <div class="newsbar-inner">
-
-            <span class="breaking">
-                LIVE
-            </span>
-
-            <span id="updateStatus">
-                Loading current affairs...
-            </span>
+            <div id="google_translate_element"></div>
 
         </div>
 
@@ -1163,480 +1153,1120 @@ src="https://translate.google.com/translate_a/element.js?cb=googleTranslateEleme
 </header>
 
 
+<!-- =========================================================
+     MAIN
+     ========================================================= -->
 
-<div class="date-area">
-
-    <div class="date-panel">
-
-        <strong>
-            Current Affairs Archive
-        </strong>
+<main class="page-wrapper">
 
 
-        <input
-            type="date"
-            id="calendarDate"
-            class="date-picker"
-            onchange="loadDateData(this.value)"
+    <!-- =====================================================
+         DATE CONTROL
+         ===================================================== -->
+
+    <div class="control-bar">
+
+        <div class="date-controls">
+
+            <span class="control-label">
+                📅 Current Affairs:
+            </span>
+
+            <select
+                id="dateSelect"
+                onchange="loadDateData(this.value)"
+            >
+                <option>
+                    Loading dates...
+                </option>
+            </select>
+
+            <input
+                type="date"
+                id="calendarDate"
+                title="Select a date"
+                onchange="calendarChanged(this.value)"
+            >
+
+            <button
+                class="today-btn"
+                onclick="goToToday()"
+            >
+                Today
+            </button>
+
+        </div>
+
+
+        <div
+            class="daily-count"
+            id="dailyCount"
         >
-
-
-        <select
-            id="dateSelect"
-            class="date-picker"
-            onchange="loadDateData(this.value)">
-
-            <option value="">
-                Select previous date
-            </option>
-
-        </select>
-
-
-        <span class="archive-title">
-
-            Select any date to read
-            its complete current affairs archive.
-
-        </span>
+            Loading...
+        </div>
 
     </div>
 
-</div>
 
+    <!-- =====================================================
+         MOTIVATION
+         ===================================================== -->
 
+    <div class="motivation">
 
-<main class="layout">
-
-
-    <aside class="side-box">
-
-        <div class="side-title">
-            Today's Thought
+        <div class="motivation-title">
+            AURA STUDY MOTIVATION
         </div>
 
-        <div
-            class="side-content"
-            id="leftQuote">
-
-            Stay consistent.
-            Small daily progress creates big results.
-
+        <div id="motivationQuote">
+            Stay focused. Stay consistent.
         </div>
 
-    </aside>
+    </div>
 
 
+    <!-- =====================================================
+         CONTENT LAYOUT
+         ===================================================== -->
 
-    <section>
-
-
-        <div class="section-heading">
-
-            <h2 id="pageTitle">
-                Today's Current Affairs
-            </h2>
-
-            <span
-                class="count"
-                id="newsCount">
-
-                0 articles
-
-            </span>
-
-        </div>
+    <div class="content-layout">
 
 
-        <div
-            id="newsContainer"
-            class="news-grid">
+        <!-- =================================================
+             LEFT SIDE
+             ================================================= -->
 
-            <div class="message">
+        <aside class="side-panel">
 
-                Loading today's news...
+            <div class="side-card">
+
+                <h3>
+                    PRELIMS
+                </h3>
+
+                <p>
+                    Focus on facts, institutions,
+                    locations, reports, indices,
+                    dates and important terms.
+                </p>
+
+            </div>
+
+            <div class="side-card">
+
+                <h3>
+                    MAINS
+                </h3>
+
+                <p>
+                    Understand causes, impacts,
+                    challenges, government measures
+                    and the way forward.
+                </p>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =================================================
+             CENTRAL NEWS
+             ================================================= -->
+
+        <section>
+
+
+            <div class="news-header">
+
+                <h2>
+                    📰 Daily Current Affairs
+                </h2>
+
+                <span id="newsDate">
+                    —
+                </span>
+
+            </div>
+
+
+            <!-- CATEGORY BUTTONS -->
+
+            <div class="category-bar">
+
+                <button
+                    class="category-btn active"
+                    data-category="All"
+                    onclick="filterCategory('All', this)"
+                >
+                    All
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="India"
+                    onclick="filterCategory('India', this)"
+                >
+                    🇮🇳 India
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="World"
+                    onclick="filterCategory('World', this)"
+                >
+                    🌍 World
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="Sports"
+                    onclick="filterCategory('Sports', this)"
+                >
+                    🏅 Sports
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="Science & Technology"
+                    onclick="filterCategory('Science & Technology', this)"
+                >
+                    🔬 Science & Tech
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="Economy"
+                    onclick="filterCategory('Economy', this)"
+                >
+                    💰 Economy
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="Environment"
+                    onclick="filterCategory('Environment', this)"
+                >
+                    🌱 Environment
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="Health"
+                    onclick="filterCategory('Health', this)"
+                >
+                    🏥 Health
+                </button>
+
+            </div>
+
+
+            <!-- NEWS -->
+
+            <div id="newsContainer">
+
+                <div class="status-box">
+                    Loading current affairs...
+                </div>
+
+            </div>
+
+
+            <!-- PAGINATION -->
+
+            <div class="pagination">
+
+                <button
+                    class="page-btn"
+                    id="previousBtn"
+                    onclick="previousPage()"
+                >
+                    ← Previous
+                </button>
+
+                <span id="pageInfo">
+                    Page 1
+                </span>
+
+                <button
+                    class="page-btn"
+                    id="nextBtn"
+                    onclick="nextPage()"
+                >
+                    Next →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             RIGHT SIDE
+             ================================================= -->
+
+        <aside class="side-panel">
+
+            <div class="side-card">
+
+                <h3>
+                    🏅 SPORTS
+                </h3>
+
+                <p>
+                    Important Indian and international
+                    sports developments with examination
+                    relevance.
+                </p>
+
+            </div>
+
+            <div class="side-card">
+
+                <h3>
+                    VOCABULARY
+                </h3>
+
+                <p>
+                    Important English words from each
+                    article with their Hindi meanings.
+                </p>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</main>
+
+
+<!-- =========================================================
+     ARTICLE MODAL
+     ========================================================= -->
+
+<div
+    class="modal"
+    id="articleModal"
+    onclick="outsideModalClick(event)"
+>
+
+    <div
+        class="article-modal"
+        onclick="event.stopPropagation()"
+    >
+
+        <button
+            class="close-modal"
+            onclick="closeArticle()"
+            aria-label="Close article"
+        >
+            ×
+        </button>
+
+
+        <!-- HERO -->
+
+        <div class="article-hero">
+
+            <img
+                id="articleImage"
+                src=""
+                alt="News"
+            >
+
+            <div class="article-hero-overlay">
+
+                <h1
+                    class="article-hero-title"
+                    id="articleHeadline"
+                >
+                    —
+                </h1>
 
             </div>
 
         </div>
 
 
-        <div
-            id="pagination"
-            class="pagination"
-            style="display:none;">
+        <!-- CONTENT -->
 
-            <button
-                class="page-btn"
-                id="previousBtn"
-                onclick="changePage(-1)">
-
-                ← Previous 15
-
-            </button>
+        <div class="article-content">
 
 
-            <span
-                class="page-number"
-                id="pageNumber">
+            <div class="article-source-row">
 
-                Page 1 of 1
+                <span id="articleMeta">
+                    —
+                </span>
 
-            </span>
+                <a
+                    id="sourceLink"
+                    class="source-link"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Read Original Source ↗
+                </a>
+
+            </div>
 
 
-            <button
-                class="page-btn"
-                id="nextBtn"
-                onclick="changePage(1)">
+            <!-- TABS -->
 
-                Next 15 →
+            <div class="article-tabs">
 
-            </button>
+                <button
+                    class="article-tab active"
+                    onclick="openArticleTab('overview', this)"
+                >
+                    Overview
+                </button>
+
+                <button
+                    class="article-tab"
+                    onclick="openArticleTab('upsc', this)"
+                >
+                    UPSC Analysis
+                </button>
+
+                <button
+                    class="article-tab"
+                    onclick="openArticleTab('mains', this)"
+                >
+                    Mains Notes
+                </button>
+
+                <button
+                    class="article-tab"
+                    onclick="openArticleTab('prelims', this)"
+                >
+                    Prelims
+                </button>
+
+                <button
+                    class="article-tab"
+                    onclick="openArticleTab('vocabulary', this)"
+                >
+                    Vocabulary
+                </button>
+
+            </div>
+
+
+            <!-- =================================================
+                 OVERVIEW TAB
+                 ================================================= -->
+
+            <div
+                class="tab-panel active"
+                id="tab-overview"
+            >
+
+                <div class="article-section">
+
+                    <h3>
+                        Story
+                    </h3>
+
+                    <p id="articleLead">
+                        —
+                    </p>
+
+                </div>
+
+
+                <div class="article-section">
+
+                    <h3>
+                        Article / Study Note
+                    </h3>
+
+                    <div id="articleText">
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="article-section">
+
+                    <h3>
+                        Background Context
+                    </h3>
+
+                    <p id="backgroundContext">
+                        —
+                    </p>
+
+                </div>
+
+
+                <div class="article-section">
+
+                    <h3>
+                        Key Points
+                    </h3>
+
+                    <ul
+                        class="article-list"
+                        id="overviewBullets"
+                    >
+                    </ul>
+
+                </div>
+
+
+                <div class="article-section">
+
+                    <h3>
+                        Key Facts
+                    </h3>
+
+                    <ul
+                        class="article-list"
+                        id="keyFacts"
+                    >
+                    </ul>
+
+                </div>
+
+
+                <div class="article-section">
+
+                    <h3>
+                        Key Locations
+                    </h3>
+
+                    <ul
+                        class="article-list"
+                        id="keyLocations"
+                    >
+                    </ul>
+
+                </div>
+
+
+                <div class="article-section">
+
+                    <h3>
+                        Important Dates
+                    </h3>
+
+                    <ul
+                        class="article-list"
+                        id="importantDates"
+                    >
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 UPSC TAB
+                 ================================================= -->
+
+            <div
+                class="tab-panel"
+                id="tab-upsc"
+            >
+
+                <div class="article-section">
+
+                    <h3>
+                        UPSC Examination Relevance
+                    </h3>
+
+                    <ul
+                        class="article-list"
+                        id="examRelevance"
+                    >
+                    </ul>
+
+                </div>
+
+
+                <div class="article-section">
+
+                    <h3>
+                        UPSC-Level Analysis
+                    </h3>
+
+                    <p id="upscAnalysis">
+                        —
+                    </p>
+
+                </div>
+
+
+                <div class="article-section">
+
+                    <h3>
+                        Causes / Drivers
+                    </h3>
+
+                    <ul
+                        class="article-list"
+                        id="causes"
+                    >
+                    </ul>
+
+                </div>
+
+
+                <div class="article-section">
+
+                    <h3>
+                        Impacts
+                    </h3>
+
+                    <ul
+                        class="article-list"
+                        id="impacts"
+                    >
+                    </ul>
+
+                </div>
+
+
+                <div class="article-section">
+
+                    <h3>
+                        Challenges
+                    </h3>
+
+                    <ul
+                        class="article-list"
+                        id="challenges"
+                    >
+                    </ul>
+
+                </div>
+
+
+                <div class="article-section">
+
+                    <h3>
+                        Government / Institutional Steps
+                    </h3>
+
+                    <ul
+                        class="article-list"
+                        id="governmentSteps"
+                    >
+                    </ul>
+
+                </div>
+
+
+                <div class="article-section">
+
+                    <h3>
+                        Constitutional / Policy Link
+                    </h3>
+
+                    <ul
+                        class="article-list"
+                        id="constitutionalLink"
+                    >
+                    </ul>
+
+                </div>
+
+
+                <div class="article-section">
+
+                    <h3>
+                        Way Forward
+                    </h3>
+
+                    <ul
+                        class="article-list"
+                        id="wayForward"
+                    >
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 MAINS TAB
+                 ================================================= -->
+
+            <div
+                class="tab-panel"
+                id="tab-mains"
+            >
+
+                <div class="article-section">
+
+                    <h3>
+                        Mains-Ready Notes
+                    </h3>
+
+                    <div class="mains-box">
+
+                        <p id="mainsNotes">
+                            —
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="article-section">
+
+                    <h3>
+                        Possible UPSC Mains Questions
+                    </h3>
+
+                    <ol
+                        class="article-list"
+                        id="mainsQuestions"
+                    >
+                    </ol>
+
+                </div>
+
+
+                <div class="article-section">
+
+                    <h3>
+                        One-Line Takeaway
+                    </h3>
+
+                    <div
+                        class="takeaway-box"
+                        id="takeaway"
+                    >
+                        —
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 PRELIMS TAB
+                 ================================================= -->
+
+            <div
+                class="tab-panel"
+                id="tab-prelims"
+            >
+
+                <div class="article-section">
+
+                    <h3>
+                        Prelims Facts
+                    </h3>
+
+                    <ul
+                        class="article-list"
+                        id="prelimsFacts"
+                    >
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 VOCABULARY TAB
+                 ================================================= -->
+
+            <div
+                class="tab-panel"
+                id="tab-vocabulary"
+            >
+
+                <div class="article-section">
+
+                    <h3>
+                        📚 Vocabulary
+                    </h3>
+
+                    <p>
+                        Important words used in this article
+                        with their Hindi meanings.
+                    </p>
+
+                    <div class="vocab-table-wrapper">
+
+                        <table class="vocab-table">
+
+                            <thead>
+
+                                <tr>
+                                    <th>
+                                        English Word
+                                    </th>
+
+                                    <th>
+                                        Hindi Meaning
+                                    </th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="vocabularyBody">
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
-
-
-    </section>
-
-
-
-    <aside class="side-box">
-
-        <div class="side-title">
-            UPSC Focus
-        </div>
-
-        <div class="side-content">
-
-            Read each story as a
-            structured note.
-
-            <br><br>
-
-            Focus on:
-
-            <br>
-            • Background
-            <br>
-            • Causes
-            <br>
-            • Impact
-            <br>
-            • Challenges
-            <br>
-            • Way Forward
-            <br>
-            • Mains relevance
-
-        </div>
-
-    </aside>
-
-</main>
-
-
-
-<footer>
-
-    © AURA EXAM AI ·
-    Daily Current Affairs ·
-    UPSC Analysis ·
-    Educational Use
-
-</footer>
-
-
-
-<!-- =====================================================
-     ARTICLE READER
-===================================================== -->
-
-<div
-    id="articleModal"
-    class="modal"
-    onclick="backgroundClose(event)">
-
-
-    <div class="article-window">
-
-
-        <div class="article-top">
-
-            <strong>
-                AURA EXAM AI
-            </strong>
-
-
-            <button
-                class="close-btn"
-                onclick="closeArticle()">
-
-                ×
-
-            </button>
-
-        </div>
-
-
-        <article
-            class="article-content"
-            id="articleContent">
-
-        </article>
-
 
     </div>
 
 </div>
 
 
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer>
+
+    <strong>
+        AURA EXAM AI
+    </strong>
+
+    <br>
+
+    Daily Current Affairs • UPSC • Mains • Prelims • Sports
+
+    <br><br>
+
+    Updated automatically through the AURA EXAM AI
+    current-affairs system.
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
 
 <script>
 
+    /* =======================================================
+       GLOBAL VARIABLES
+       ======================================================= */
 
-/* =========================================================
-   GLOBAL VARIABLES
-========================================================= */
+    let globalPayload = null;
 
-let masterData = null;
+    let currentData = null;
 
-let currentNews = [];
+    let currentPage = 1;
 
-let currentDate = "";
+    const NEWS_PER_PAGE = 15;
 
-let currentPage = 1;
+    let currentCategory = "All";
 
-const NEWS_PER_PAGE = 15;
+    let filteredNews = [];
 
-
-/* =========================================================
-   ESCAPE
-========================================================= */
-
-function escapeHTML(value) {
-
-    if (
-        value === null ||
-        value === undefined
-    ) {
-
-        return "";
-
-    }
-
-    return String(value)
-
-        .replace(/&/g, "&amp;")
-
-        .replace(/</g, "&lt;")
-
-        .replace(/>/g, "&gt;")
-
-        .replace(/"/g, "&quot;")
-
-        .replace(/'/g, "&#039;");
-}
+    let availableDates = [];
 
 
-/* =========================================================
-   DATE
-========================================================= */
+    /* =======================================================
+       HTML ESCAPE
+       ======================================================= */
 
-function formatDate(dateString) {
+    function escapeHTML(value) {
 
-    if (!dateString) {
-
-        return "";
-
-    }
-
-    const date =
-        new Date(
-            dateString + "T00:00:00"
-        );
-
-    return date.toLocaleDateString(
-
-        "en-IN",
-
-        {
-            day: "2-digit",
-            month: "long",
-            year: "numeric"
+        if (value === null || value === undefined) {
+            return "";
         }
 
+        return String(value)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+    }
+
+
+    /* =======================================================
+       TEXT TO HTML
+       ======================================================= */
+
+    function textToHTML(value) {
+
+        if (!value) {
+            return "";
+        }
+
+        return escapeHTML(value)
+            .replace(/\n\n+/g, "</p><p>")
+            .replace(/\n/g, "<br>");
+    }
+
+
+    /* =======================================================
+       ARRAY HTML
+       ======================================================= */
+
+    function arrayToList(items) {
+
+        if (!Array.isArray(items) || items.length === 0) {
+
+            return `
+                <li style="color:#999;">
+                    No additional information available.
+                </li>
+            `;
+
+        }
+
+        return items
+            .map(item => `
+                <li>
+                    ${escapeHTML(item)}
+                </li>
+            `)
+            .join("");
+
+    }
+
+
+    /* =======================================================
+       CLOCK
+       ======================================================= */
+
+    function updateClock() {
+
+        const clock =
+            document.getElementById(
+                "liveClock"
+            );
+
+        if (!clock) {
+            return;
+        }
+
+        const now = new Date();
+
+        const time =
+            now.toLocaleTimeString(
+                "en-IN",
+                {
+                    timeZone: "Asia/Kolkata",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    second: "2-digit",
+                    hour12: true
+                }
+            );
+
+        clock.textContent =
+            time + " IST";
+
+    }
+
+    updateClock();
+
+    setInterval(
+        updateClock,
+        1000
     );
 
-}
 
+    /* =======================================================
+       SHARE
+       ======================================================= */
 
-/* =========================================================
-   CLOCK
-========================================================= */
+    async function shareWebsite() {
 
-function updateClock() {
+        const shareData = {
+            title: "AURA EXAM AI",
+            text: "Daily Current Affairs, UPSC Analysis and Mains Notes",
+            url: window.location.href
+        };
 
-    const now =
-        new Date();
+        try {
 
-    document.getElementById(
-        "clock"
-    ).textContent =
+            if (
+                navigator.share
+            ) {
 
-        now.toLocaleTimeString(
+                await navigator.share(
+                    shareData
+                );
 
-            "en-IN",
+            } else {
 
-            {
-                hour: "2-digit",
-                minute: "2-digit",
-                second: "2-digit"
+                await navigator.clipboard.writeText(
+                    window.location.href
+                );
+
+                alert(
+                    "Website link copied!"
+                );
+
             }
 
-        );
+        } catch (error) {
+            console.log(
+                "Share cancelled."
+            );
+        }
 
-}
-
-setInterval(
-    updateClock,
-    1000
-);
-
-updateClock();
+    }
 
 
-/* =========================================================
-   INIT
-========================================================= */
+    /* =======================================================
+       INITIALIZATION
+       ======================================================= */
 
-async function init() {
+    async function init() {
 
-    try {
+        try {
 
-        const response =
-            await fetch(
+            const response =
+                await fetch(
+                    "data.json?cache=" +
+                    Date.now()
+                );
 
-                "data.json?v=" +
-                Date.now(),
+            if (!response.ok) {
+                throw new Error(
+                    "Could not load data.json"
+                );
+            }
 
-                {
-                    cache:
-                        "no-store"
-                }
+            globalPayload =
+                await response.json();
 
+            availableDates =
+                Array.isArray(
+                    globalPayload.available_dates
+                )
+                    ? globalPayload.available_dates
+                    : [];
+
+            populateDateSelector();
+
+            const today =
+                globalPayload.current_date ||
+                globalPayload.today?.date;
+
+            if (today) {
+
+                document
+                    .getElementById(
+                        "dateSelect"
+                    )
+                    .value = today;
+
+                document
+                    .getElementById(
+                        "calendarDate"
+                    )
+                    .value = today;
+
+                await loadDateData(
+                    today
+                );
+
+            } else {
+
+                await loadDateData(
+                    availableDates[0]
+                );
+
+            }
+
+            if (
+                globalPayload.motivation &&
+                globalPayload.motivation.quote
+            ) {
+
+                document
+                    .getElementById(
+                        "motivationQuote"
+                    )
+                    .textContent =
+                    globalPayload.motivation.quote;
+
+            }
+
+        } catch (error) {
+
+            console.error(
+                error
             );
 
-
-        if (!response.ok) {
-
-            throw new Error(
-                "Unable to load data.json"
+            showError(
+                "Unable to load current affairs. Please refresh the page."
             );
 
         }
 
-
-        masterData =
-            await response.json();
-
-
-        buildDateArchive();
-
-
-        const today =
-
-            masterData.current_date ||
-
-            (
-                masterData.today &&
-                masterData.today.date
-            ) ||
-
-            new Date()
-                .toISOString()
-                .slice(0, 10);
-
-
-        document.getElementById(
-            "calendarDate"
-        ).value = today;
-
-
-        await loadDateData(
-            today
-        );
-
-
-    } catch (error) {
-
-        console.error(error);
-
-
-        document.getElementById(
-            "newsContainer"
-        ).innerHTML =
-
-            '<div class="message">' +
-            'Unable to load current affairs.' +
-            '</div>';
-
-
     }
 
-}
 
+    /* =======================================================
+       DATE SELECTOR
+       ======================================================= */
 
-/* =========================================================
-   ARCHIVE
-========================================================= */
+    function populateDateSelector() {
 
-function buildDateArchive() {
+        const select =
+            document.getElementById(
+                "dateSelect"
+            );
 
-    const select =
-        document.getElementById(
-            "dateSelect"
-        );
+        select.innerHTML = "";
 
+        if (
+            !availableDates.length
+        ) {
 
-    select.innerHTML =
-        '<option value="">' +
-        'Select previous date' +
-        '</option>';
+            const option =
+                document.createElement(
+                    "option"
+                );
 
+            option.value = "";
 
-    const dates =
+            option.textContent =
+                "No archived dates";
 
-        Array.isArray(
-            masterData.available_dates
-        )
+            select.appendChild(
+                option
+            );
 
-        ? masterData.available_dates
+            return;
+        }
 
-        : [];
-
-
-    dates
-
-        .sort()
-        .reverse()
-
-        .forEach(
-            function(date) {
+        availableDates.forEach(
+            date => {
 
                 const option =
                     document.createElement(
                         "option"
                     );
 
-
-                option.value =
-                    date;
-
+                option.value = date;
 
                 option.textContent =
-                    formatDate(date);
-
+                    formatDate(
+                        date
+                    );
 
                 select.appendChild(
                     option
@@ -1645,1265 +2275,1151 @@ function buildDateArchive() {
             }
         );
 
-}
+    }
 
 
-/* =========================================================
-   LOAD DATE
-========================================================= */
+    /* =======================================================
+       FORMAT DATE
+       ======================================================= */
 
-async function loadDateData(date) {
+    function formatDate(dateString) {
 
-    if (!date) {
+        if (!dateString) {
+            return "";
+        }
 
-        return;
+        const date =
+            new Date(
+                dateString + "T00:00:00"
+            );
+
+        return date.toLocaleDateString(
+            "en-IN",
+            {
+                day: "2-digit",
+                month: "short",
+                year: "numeric"
+            }
+        );
 
     }
 
 
-    currentDate =
-        date;
+    /* =======================================================
+       CALENDAR CHANGE
+       ======================================================= */
 
+    async function calendarChanged(
+        date
+    ) {
 
-    currentPage =
-        1;
+        if (!date) {
+            return;
+        }
 
-
-    document.getElementById(
-        "calendarDate"
-    ).value = date;
-
-
-    document.getElementById(
-        "dateSelect"
-    ).value = date;
-
-
-    document.getElementById(
-        "newsContainer"
-    ).innerHTML =
-
-        '<div class="message">' +
-        'Loading news...' +
-        '</div>';
-
-
-    try {
-
-        let data;
-
+        const select =
+            document.getElementById(
+                "dateSelect"
+            );
 
         if (
-
-            masterData.today &&
-
-            masterData.today.date === date
-
+            availableDates.includes(
+                date
+            )
         ) {
 
-            data =
-                masterData.today;
+            select.value = date;
+
+            await loadDateData(
+                date
+            );
 
         } else {
 
-            const response =
-                await fetch(
-
-                    "data/" +
-                    encodeURIComponent(date) +
-                    ".json?v=" +
-                    Date.now(),
-
-                    {
-                        cache:
-                            "no-store"
-                    }
-
-                );
-
-
-            if (!response.ok) {
-
-                throw new Error(
-                    "Archive not found"
-                );
-
-            }
-
-
-            data =
-                await response.json();
+            alert(
+                "No archived current affairs are available for " +
+                formatDate(date) +
+                "."
+            );
 
         }
 
-
-        currentNews =
-
-            Array.isArray(data.news)
-
-            ? data.news
-
-            : [];
+    }
 
 
-        renderNews();
+    /* =======================================================
+       GO TO TODAY
+       ======================================================= */
 
+    async function goToToday() {
 
-        document.getElementById(
-            "pageTitle"
-        ).textContent =
+        const today =
+            globalPayload?.current_date;
 
-            date === masterData.current_date
-
-            ? "Today's Current Affairs"
-
-            : "Current Affairs — " +
-              formatDate(date);
-
-
-        document.getElementById(
-            "updateStatus"
-        ).textContent =
-
-            currentNews.length +
-            " articles available for " +
-            formatDate(date);
-
-
-        if (
-
-            masterData.motivation &&
-
-            masterData.motivation.quote
-
-        ) {
-
-            document.getElementById(
-                "leftQuote"
-            ).textContent =
-
-                masterData.motivation.quote;
-
+        if (!today) {
+            return;
         }
 
+        document
+            .getElementById(
+                "dateSelect"
+            )
+            .value = today;
 
-    } catch (error) {
+        document
+            .getElementById(
+                "calendarDate"
+            )
+            .value = today;
 
-        console.error(error);
-
-
-        currentNews = [];
-
-
-        document.getElementById(
-            "newsContainer"
-        ).innerHTML =
-
-            '<div class="message">' +
-            'No archive was found for ' +
-            escapeHTML(
-                formatDate(date)
-            ) +
-            '.</div>';
-
-
-    }
-
-}
-
-
-/* =========================================================
-   FALLBACK IMAGES
-========================================================= */
-
-function fallbackImage(
-    category,
-    index
-) {
-
-    const images = {
-
-        India:
-        "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=80",
-
-        World:
-        "https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1200&q=80",
-
-        Science:
-        "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80",
-
-        Technology:
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
-
-        Business:
-        "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
-
-        Sports:
-        "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80",
-
-        Environment:
-        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80"
-
-    };
-
-
-    if (images[category]) {
-
-        return images[category];
+        await loadDateData(
+            today
+        );
 
     }
 
 
-    const keys =
-        Object.keys(images);
+    /* =======================================================
+       LOAD DATE
+       ======================================================= */
 
-
-    return images[
-        keys[
-            index %
-            keys.length
-        ]
-    ];
-
-}
-
-
-/* =========================================================
-   RENDER CURRENT PAGE
-========================================================= */
-
-function renderNews() {
-
-    const container =
-        document.getElementById(
-            "newsContainer"
-        );
-
-
-    document.getElementById(
-        "newsCount"
-    ).textContent =
-
-        currentNews.length +
-        (
-            currentNews.length === 1
-            ? " article"
-            : " articles"
-        );
-
-
-    if (!currentNews.length) {
-
-        container.innerHTML =
-            '<div class="message">' +
-            'No news available for this date.' +
-            '</div>';
-
-        document.getElementById(
-            "pagination"
-        ).style.display =
-            "none";
-
-        return;
-
-    }
-
-
-    const totalPages =
-        Math.ceil(
-            currentNews.length /
-            NEWS_PER_PAGE
-        );
-
-
-    if (
-        currentPage >
-        totalPages
+    async function loadDateData(
+        date
     ) {
 
-        currentPage =
-            totalPages;
-
-    }
-
-
-    const start =
-        (
-            currentPage - 1
-        ) *
-        NEWS_PER_PAGE;
-
-
-    const end =
-        start +
-        NEWS_PER_PAGE;
-
-
-    const pageNews =
-        currentNews.slice(
-            start,
-            end
-        );
-
-
-    container.innerHTML =
-
-        pageNews.map(
-
-            function(news, index) {
-
-                const actualIndex =
-                    start + index;
-
-
-                const image =
-
-                    news.image_url ||
-
-                    fallbackImage(
-                        news.category,
-                        actualIndex
-                    );
-
-
-                const headline =
-
-                    news.headline ||
-
-                    "Current Affairs";
-
-
-                const lead =
-
-                    news.story_lead ||
-
-                    news.summary ||
-
-                    "Read the complete analysis.";
-
-
-                return `
-
-                    <article
-                        class="news-card"
-                        onclick="openArticle(${actualIndex})"
-                        tabindex="0"
-                        onkeydown="
-                            if(event.key==='Enter')
-                            openArticle(${actualIndex})
-                        ">
-
-
-                        <div
-                            class="news-image-wrap">
-
-
-                            <img
-                                class="news-image"
-                                src="${escapeHTML(image)}"
-                                alt="${escapeHTML(headline)}"
-                                loading="lazy"
-
-                                onerror="
-                                    this.onerror=null;
-                                    this.src='${escapeHTML(
-                                        fallbackImage(
-                                            news.category,
-                                            actualIndex
-                                        )
-                                    )}'
-                                "
-                            >
-
-
-                            <span
-                                class="category">
-
-                                ${escapeHTML(
-                                    news.category ||
-                                    "Current Affairs"
-                                )}
-
-                            </span>
-
-
-                        </div>
-
-
-                        <div
-                            class="news-body">
-
-
-                            <div
-                                class="source-row">
-
-                                <span>
-                                    ${escapeHTML(
-                                        news.source_name ||
-                                        "News Source"
-                                    )}
-                                </span>
-
-                                <span>
-                                    ${escapeHTML(
-                                        news.published_date ||
-                                        currentDate
-                                    )}
-                                </span>
-
-                            </div>
-
-
-                            <h3
-                                class="news-headline">
-
-                                ${escapeHTML(
-                                    headline
-                                )}
-
-                            </h3>
-
-
-                            <div
-                                class="news-lead">
-
-                                ${escapeHTML(
-                                    lead
-                                )}
-
-                            </div>
-
-
-                            <div
-                                class="read-more">
-
-                                READ FULL UPSC ANALYSIS →
-
-                            </div>
-
-
-                        </div>
-
-
-                    </article>
-
-                `;
-
-            }
-
-        ).join("");
-
-
-    updatePagination(
-        totalPages
-    );
-
-}
-
-
-/* =========================================================
-   PAGINATION
-========================================================= */
-
-function updatePagination(
-    totalPages
-) {
-
-    const pagination =
-        document.getElementById(
-            "pagination"
-        );
-
-
-    if (totalPages <= 1) {
-
-        pagination.style.display =
-            "none";
-
-        return;
-
-    }
-
-
-    pagination.style.display =
-        "flex";
-
-
-    document.getElementById(
-        "pageNumber"
-    ).textContent =
-
-        "Page " +
-        currentPage +
-        " of " +
-        totalPages;
-
-
-    document.getElementById(
-        "previousBtn"
-    ).disabled =
-
-        currentPage === 1;
-
-
-    document.getElementById(
-        "nextBtn"
-    ).disabled =
-
-        currentPage === totalPages;
-
-}
-
-
-/* =========================================================
-   CHANGE PAGE
-========================================================= */
-
-function changePage(
-    direction
-) {
-
-    const totalPages =
-        Math.ceil(
-            currentNews.length /
-            NEWS_PER_PAGE
-        );
-
-
-    currentPage +=
-        direction;
-
-
-    if (currentPage < 1) {
+        if (!date) {
+            return;
+        }
 
         currentPage = 1;
 
+        currentCategory = "All";
+
+        resetCategoryButtons();
+
+        const today =
+            globalPayload?.current_date;
+
+        let data = null;
+
+        try {
+
+            if (
+                date === today &&
+                globalPayload?.today
+            ) {
+
+                data =
+                    globalPayload.today;
+
+            } else {
+
+                const response =
+                    await fetch(
+                        "data/" +
+                        date +
+                        ".json?cache=" +
+                        Date.now()
+                    );
+
+                if (!response.ok) {
+                    throw new Error(
+                        "Historical data unavailable"
+                    );
+                }
+
+                data =
+                    await response.json();
+
+            }
+
+            currentData = data;
+
+            document
+                .getElementById(
+                    "calendarDate"
+                )
+                .value = date;
+
+            document
+                .getElementById(
+                    "dateSelect"
+                )
+                .value = date;
+
+            document
+                .getElementById(
+                    "newsDate"
+                )
+                .textContent =
+                formatDate(date);
+
+            renderNews();
+
+        } catch (error) {
+
+            console.error(
+                error
+            );
+
+            showError(
+                "No current-affairs data is available for this date."
+            );
+
+        }
+
     }
 
 
-    if (currentPage > totalPages) {
+    /* =======================================================
+       FILTER CATEGORY
+       ======================================================= */
 
-        currentPage =
+    function filterCategory(
+        category,
+        button
+    ) {
+
+        currentCategory =
+            category;
+
+        currentPage = 1;
+
+        document
+            .querySelectorAll(
+                ".category-btn"
+            )
+            .forEach(
+                btn =>
+                    btn.classList.remove(
+                        "active"
+                    )
+            );
+
+        if (button) {
+
+            button.classList.add(
+                "active"
+            );
+
+        }
+
+        renderNews();
+
+    }
+
+
+    /* =======================================================
+       RESET CATEGORY BUTTONS
+       ======================================================= */
+
+    function resetCategoryButtons() {
+
+        document
+            .querySelectorAll(
+                ".category-btn"
+            )
+            .forEach(
+                btn =>
+                    btn.classList.remove(
+                        "active"
+                    )
+            );
+
+        const allButton =
+            document.querySelector(
+                '[data-category="All"]'
+            );
+
+        if (allButton) {
+            allButton.classList.add(
+                "active"
+            );
+        }
+
+    }
+
+
+    /* =======================================================
+       CATEGORY MATCH
+       ======================================================= */
+
+    function categoryMatches(
+        article
+    ) {
+
+        if (
+            currentCategory ===
+            "All"
+        ) {
+
+            return true;
+
+        }
+
+        const articleCategory =
+            String(
+                article.category ||
+                ""
+            ).trim();
+
+        return (
+            articleCategory
+                .toLowerCase()
+                ===
+            currentCategory
+                .toLowerCase()
+        );
+
+    }
+
+
+    /* =======================================================
+       RENDER NEWS
+       ======================================================= */
+
+    function renderNews() {
+
+        const container =
+            document.getElementById(
+                "newsContainer"
+            );
+
+        if (!currentData) {
+
+            showError(
+                "No data available."
+            );
+
+            return;
+
+        }
+
+        const allNews =
+            Array.isArray(
+                currentData.news
+            )
+                ? currentData.news
+                : [];
+
+        filteredNews =
+            allNews.filter(
+                categoryMatches
+            );
+
+        const totalPages =
+            Math.max(
+                1,
+                Math.ceil(
+                    filteredNews.length /
+                    NEWS_PER_PAGE
+                )
+            );
+
+        if (
+            currentPage >
+            totalPages
+        ) {
+
+            currentPage =
+                totalPages;
+
+        }
+
+        const start =
+            (
+                currentPage - 1
+            ) *
+            NEWS_PER_PAGE;
+
+        const end =
+            start +
+            NEWS_PER_PAGE;
+
+        const pageNews =
+            filteredNews.slice(
+                start,
+                end
+            );
+
+        container.innerHTML = "";
+
+        if (!pageNews.length) {
+
+            container.innerHTML = `
+                <div class="status-box">
+                    No articles found in this category.
+                </div>
+            `;
+
+        } else {
+
+            pageNews.forEach(
+                article => {
+
+                    container.appendChild(
+                        createNewsCard(
+                            article
+                        )
+                    );
+
+                }
+            );
+
+        }
+
+        updatePagination(
+            totalPages
+        );
+
+        document
+            .getElementById(
+                "dailyCount"
+            )
+            .textContent =
+            allNews.length +
+            " articles • " +
+            filteredNews.length +
+            " shown";
+
+    }
+
+
+    /* =======================================================
+       CREATE NEWS CARD
+       ======================================================= */
+
+    function createNewsCard(
+        article
+    ) {
+
+        const card =
+            document.createElement(
+                "article"
+            );
+
+        card.className =
+            "news-card";
+
+        card.onclick =
+            function () {
+
+                openFullArticle(
+                    article.id
+                );
+
+            };
+
+
+        const image =
+            article.image_url ||
+            "https://images.unsplash.com/photo-1495020689067-958852a7765e";
+
+
+        const category =
+            article.category ||
+            "Current Affairs";
+
+
+        const headline =
+            article.headline ||
+            "Current Affairs";
+
+
+        const lead =
+            article.story_lead ||
+            article.full_article_text ||
+            "Click to read the complete analysis.";
+
+
+        card.innerHTML = `
+
+            <img
+                class="news-image"
+                src="${escapeHTML(image)}"
+                alt="${escapeHTML(headline)}"
+                loading="lazy"
+                onerror="this.style.display='none'"
+            >
+
+            <div class="news-body">
+
+                <div class="news-meta">
+
+                    <span class="category-badge">
+                        ${escapeHTML(category)}
+                    </span>
+
+                    <span class="news-number">
+                        #${escapeHTML(article.id)}
+                    </span>
+
+                </div>
+
+                <h3 class="news-title">
+                    ${escapeHTML(headline)}
+                </h3>
+
+                <p class="news-lead">
+                    ${escapeHTML(
+                        truncateText(
+                            lead,
+                            180
+                        )
+                    )}
+                </p>
+
+                <div class="news-source">
+
+                    <span>
+                        ${escapeHTML(
+                            article.source_name ||
+                            "News Source"
+                        )}
+                    </span>
+
+                    <span>
+                        Read analysis →
+                    </span>
+
+                </div>
+
+            </div>
+
+        `;
+
+        return card;
+
+    }
+
+
+    /* =======================================================
+       TRUNCATE
+       ======================================================= */
+
+    function truncateText(
+        text,
+        length
+    ) {
+
+        text =
+            String(
+                text || ""
+            );
+
+        if (
+            text.length <= length
+        ) {
+
+            return text;
+
+        }
+
+        return (
+            text.substring(
+                0,
+                length
+            ) +
+            "..."
+        );
+
+    }
+
+
+    /* =======================================================
+       PAGINATION
+       ======================================================= */
+
+    function updatePagination(
+        totalPages
+    ) {
+
+        const previous =
+            document.getElementById(
+                "previousBtn"
+            );
+
+        const next =
+            document.getElementById(
+                "nextBtn"
+            );
+
+        const info =
+            document.getElementById(
+                "pageInfo"
+            );
+
+        previous.disabled =
+            currentPage <= 1;
+
+        next.disabled =
+            currentPage >=
+            totalPages;
+
+        info.textContent =
+            "Page " +
+            currentPage +
+            " of " +
             totalPages;
 
     }
 
 
-    renderNews();
-
-
-    window.scrollTo(
-        {
-            top: 0,
-            behavior: "smooth"
-        }
-    );
-
-}
-
-
-/* =========================================================
-   ARRAY TO HTML LIST
-========================================================= */
-
-function makeList(
-    values
-) {
-
-    if (
-        !Array.isArray(values) ||
-        values.length === 0
-    ) {
-
-        return "";
-
-    }
-
-
-    return `
-
-        <ul class="analysis-list">
-
-            ${
-                values.map(
-                    function(value) {
-
-                        return `
-                            <li>
-                                ${escapeHTML(value)}
-                            </li>
-                        `;
-
-                    }
-                ).join("")
-            }
-
-        </ul>
-
-    `;
-
-}
-
-
-/* =========================================================
-   TEXT SECTION
-========================================================= */
-
-function makeTextSection(
-    title,
-    text
-) {
-
-    if (!text) {
-
-        return "";
-
-    }
-
-
-    return `
-
-        <div
-            class="analysis-section">
-
-
-            <div
-                class="analysis-heading">
-
-                ${escapeHTML(title)}
-
-            </div>
-
-
-            <div
-                class="analysis-text">
-
-                ${String(text)
-                    .split(/\n+/)
-                    .filter(
-                        function(x) {
-                            return x.trim();
-                        }
-                    )
-                    .map(
-                        function(x) {
-
-                            return `
-                                <p>
-                                    ${escapeHTML(x.trim())}
-                                </p>
-                            `;
-
-                        }
-                    )
-                    .join("")
-                }
-
-            </div>
-
-
-        </div>
-
-    `;
-
-}
-
-
-/* =========================================================
-   VOCABULARY
-========================================================= */
-
-function makeVocabulary(
-    vocabulary
-) {
-
-    if (
-        !Array.isArray(vocabulary) ||
-        vocabulary.length === 0
-    ) {
-
-        return "";
-
-    }
-
-
-    return `
-
-        <div
-            class="vocabulary-box">
-
-
-            <div
-                class="vocabulary-title">
-
-                📚 Vocabulary — शब्दावली
-
-            </div>
-
-
-            <table
-                class="vocabulary-table">
-
-
-                <thead>
-
-                    <tr>
-
-                        <th>
-                            English Word
-                        </th>
-
-                        <th>
-                            Meaning in Hindi
-                        </th>
-
-                    </tr>
-
-                </thead>
-
-
-                <tbody>
-
-                    ${
-                        vocabulary.map(
-                            function(item) {
-
-                                if (
-                                    typeof item ===
-                                    "string"
-                                ) {
-
-                                    return `
-                                        <tr>
-                                            <td>
-                                                ${escapeHTML(
-                                                    item
-                                                )}
-                                            </td>
-
-                                            <td>
-                                                —
-                                            </td>
-                                        </tr>
-                                    `;
-
-                                }
-
-
-                                return `
-
-                                    <tr>
-
-                                        <td>
-                                            ${escapeHTML(
-                                                item.word ||
-                                                ""
-                                            )}
-                                        </td>
-
-                                        <td>
-                                            ${escapeHTML(
-                                                item.hindi_meaning ||
-                                                item.meaning_hindi ||
-                                                ""
-                                            )}
-                                        </td>
-
-                                    </tr>
-
-                                `;
-
-                            }
-                        ).join("")
-                    }
-
-                </tbody>
-
-
-            </table>
-
-
-        </div>
-
-    `;
-
-}
-
-
-/* =========================================================
-   OPEN ARTICLE
-========================================================= */
-
-function openArticle(
-    index
-) {
-
-    const news =
-        currentNews[index];
-
-
-    if (!news) {
-
-        return;
-
-    }
-
-
-    const image =
-
-        news.image_url ||
-
-        fallbackImage(
-            news.category,
-            index
-        );
-
-
-    const lead =
-
-        news.story_lead ||
-
-        news.summary ||
-
-        "";
-
-
-    let articleHTML = "";
-
-
-    articleHTML += `
-
-        <div
-            class="article-category">
-
-            ${escapeHTML(
-                news.category ||
-                "Current Affairs"
-            )}
-
-        </div>
-
-
-        <h1
-            class="article-title">
-
-            ${escapeHTML(
-                news.headline ||
-                "Current Affairs"
-            )}
-
-        </h1>
-
-
-        <div
-            class="article-meta">
-
-            ${escapeHTML(
-                news.source_name ||
-                "News Source"
-            )}
-
-            ·
-
-            ${escapeHTML(
-                news.published_date ||
-                currentDate
-            )}
-
-        </div>
-
-
-        <img
-            class="article-hero"
-            src="${escapeHTML(image)}"
-            alt="${escapeHTML(
-                news.headline ||
-                "News"
-            )}"
-
-            onerror="
-                this.onerror=null;
-                this.src='${escapeHTML(
-                    fallbackImage(
-                        news.category,
-                        index
-                    )
-                )}'
-            "
-        >
-
-
-        <div
-            class="article-lead">
-
-            ${escapeHTML(lead)}
-
-        </div>
-
-    `;
-
-
-    /* WHY IN NEWS */
-
-    articleHTML +=
-        makeTextSection(
-            "Why in News?",
-            news.why_in_news
-        );
-
-
-    /* BACKGROUND */
-
-    articleHTML +=
-        makeTextSection(
-            "Background & Context",
-            news.background
-        );
-
-
-    /* WHAT HAPPENED */
-
-    articleHTML +=
-        makeTextSection(
-            "What Happened?",
-            news.detailed_analysis
-        );
-
-
-    /* KEY FACTS */
-
-    if (
-        Array.isArray(
-            news.key_facts
-        ) &&
-        news.key_facts.length
-    ) {
-
-        articleHTML += `
-
-            <div
-                class="analysis-section">
-
-
-                <div
-                    class="analysis-heading">
-
-                    Key Facts
-
-                </div>
-
-
-                ${makeList(
-                    news.key_facts
-                )}
-
-            </div>
-
-        `;
-
-    }
-
-
-    /* CAUSES */
-
-    articleHTML +=
-        makeTextSection(
-            "Causes / Drivers",
-            news.causes
-        );
-
-
-    /* IMPACT */
-
-    articleHTML +=
-        makeTextSection(
-            "Impact & Significance",
-            news.impact
-        );
-
-
-    /* CHALLENGES */
-
-    articleHTML +=
-        makeTextSection(
-            "Challenges / Concerns",
-            news.challenges
-        );
-
-
-    /* GOVERNMENT / INSTITUTION */
-
-    articleHTML +=
-        makeTextSection(
-            "Government / Institutional Response",
-            news.government_response
-        );
-
-
-    /* WAY FORWARD */
-
-    articleHTML +=
-        makeTextSection(
-            "Way Forward",
-            news.way_forward
-        );
-
-
-    /* LOCATIONS */
-
-    if (
-        Array.isArray(
-            news.key_locations
-        ) &&
-        news.key_locations.length
-    ) {
-
-        articleHTML += `
-
-            <div
-                class="analysis-section">
-
-
-                <div
-                    class="analysis-heading">
-
-                    Important Locations
-
-                </div>
-
-
-                ${makeList(
-                    news.key_locations
-                )}
-
-            </div>
-
-        `;
-
-    }
-
-
-    /* IMPORTANT DATES */
-
-    if (
-        Array.isArray(
-            news.important_dates
-        ) &&
-        news.important_dates.length
-    ) {
-
-        articleHTML += `
-
-            <div
-                class="analysis-section">
-
-
-                <div
-                    class="analysis-heading">
-
-                    Important Dates
-
-                </div>
-
-
-                ${makeList(
-                    news.important_dates
-                )}
-
-            </div>
-
-        `;
-
-    }
-
-
-    /* UPSC */
-
-    articleHTML +=
-        makeTextSection(
-            "UPSC Examination Relevance",
-            news.upsc_relevance ||
-            news.exam_relevance
-        );
-
-
-    /* PRELIMS */
-
-    articleHTML +=
-        makeTextSection(
-            "UPSC Prelims — What to Remember",
-            news.prelims_facts
-        );
-
-
-    /* MAINS */
-
-    if (
-        news.mains_answer
-    ) {
-
-        articleHTML += `
-
-            <div
-                class="mains-box">
-
-
-                <div
-                    class="mains-box-title">
-
-                    ✍️ UPSC Mains Answer Framework
-
-                </div>
-
-
-                <div
-                    class="mains-answer">
-
-                    ${String(
-                        news.mains_answer
-                    )
-                    .split(/\n+/)
-                    .filter(
-                        function(x) {
-                            return x.trim();
-                        }
-                    )
-                    .map(
-                        function(x) {
-
-                            return `
-                                <p>
-                                    ${escapeHTML(
-                                        x.trim()
-                                    )}
-                                </p>
-                            `;
-
-                        }
-                    )
-                    .join("")
-                    }
-
-                </div>
-
-
-            </div>
-
-        `;
-
-    }
-
-
-    /* TAKEAWAY */
-
-    articleHTML +=
-        makeTextSection(
-            "Key Takeaway",
-            news.takeaway
-        );
-
-
-    /* VOCABULARY */
-
-    articleHTML +=
-        makeVocabulary(
-            news.vocabulary
-        );
-
-
-    /* SOURCE */
-
-    if (
-        news.source_url
-    ) {
-
-        articleHTML += `
-
-            <a
-                class="source-button"
-                href="${escapeHTML(
-                    news.source_url
-                )}"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                VIEW ORIGINAL SOURCE →
-
-            </a>
-
-        `;
-
-    }
-
-
-    document.getElementById(
-        "articleContent"
-    ).innerHTML =
-        articleHTML;
-
-
-    document.getElementById(
-        "articleModal"
-    ).classList.add(
-        "active"
-    );
-
-
-    document.body.style.overflow =
-        "hidden";
-
-}
-
-
-/* =========================================================
-   CLOSE
-========================================================= */
-
-function closeArticle() {
-
-    document.getElementById(
-        "articleModal"
-    ).classList.remove(
-        "active"
-    );
-
-
-    document.body.style.overflow =
-        "";
-
-}
-
-
-/* =========================================================
-   BACKGROUND CLOSE
-========================================================= */
-
-function backgroundClose(
-    event
-) {
-
-    if (
-        event.target.id ===
-        "articleModal"
-    ) {
-
-        closeArticle();
-
-    }
-
-}
-
-
-/* =========================================================
-   ESC
-========================================================= */
-
-document.addEventListener(
-    "keydown",
-    function(event) {
+    function previousPage() {
 
         if (
-            event.key === "Escape"
+            currentPage <= 1
+        ) {
+
+            return;
+
+        }
+
+        currentPage--;
+
+        renderNews();
+
+        window.scrollTo(
+            {
+                top: 0,
+                behavior: "smooth"
+            }
+        );
+
+    }
+
+
+    function nextPage() {
+
+        const totalPages =
+            Math.max(
+                1,
+                Math.ceil(
+                    filteredNews.length /
+                    NEWS_PER_PAGE
+                )
+            );
+
+        if (
+            currentPage >=
+            totalPages
+        ) {
+
+            return;
+
+        }
+
+        currentPage++;
+
+        renderNews();
+
+        window.scrollTo(
+            {
+                top: 0,
+                behavior: "smooth"
+            }
+        );
+
+    }
+
+
+    /* =======================================================
+       OPEN ARTICLE
+       ======================================================= */
+
+    function openFullArticle(
+        newsId
+    ) {
+
+        if (!currentData) {
+            return;
+        }
+
+        const article =
+            currentData.news.find(
+                item =>
+                    Number(item.id) ===
+                    Number(newsId)
+            );
+
+        if (!article) {
+            return;
+        }
+
+
+        /* IMAGE */
+
+        document
+            .getElementById(
+                "articleImage"
+            )
+            .src =
+            article.image_url ||
+            "https://images.unsplash.com/photo-1495020689067-958852a7765e";
+
+
+        /* HEADLINE */
+
+        document
+            .getElementById(
+                "articleHeadline"
+            )
+            .textContent =
+            article.headline ||
+            "Current Affairs";
+
+
+        /* META */
+
+        document
+            .getElementById(
+                "articleMeta"
+            )
+            .textContent =
+            (
+                article.category ||
+                "Current Affairs"
+            ) +
+            " • " +
+            (
+                article.source_name ||
+                "News Source"
+            ) +
+            " • " +
+            formatDate(
+                article.published_date ||
+                currentData.date
+            );
+
+
+        /* SOURCE */
+
+        const sourceLink =
+            document.getElementById(
+                "sourceLink"
+            );
+
+        if (
+            article.source_url
+        ) {
+
+            sourceLink.href =
+                article.source_url;
+
+            sourceLink.style.display =
+                "inline";
+
+        } else {
+
+            sourceLink.style.display =
+                "none";
+
+        }
+
+
+        /* OVERVIEW */
+
+        document
+            .getElementById(
+                "articleLead"
+            )
+            .textContent =
+            article.story_lead ||
+            "";
+
+
+        document
+            .getElementById(
+                "articleText"
+            )
+            .innerHTML =
+            "<p>" +
+            textToHTML(
+                article.full_article_text ||
+                article.story_lead ||
+                ""
+            ) +
+            "</p>";
+
+
+        document
+            .getElementById(
+                "backgroundContext"
+            )
+            .textContent =
+            article.background_context ||
+            "Background context is not available.";
+
+
+        document
+            .getElementById(
+                "overviewBullets"
+            )
+            .innerHTML =
+            arrayToList(
+                article.bullet_points
+            );
+
+
+        document
+            .getElementById(
+                "keyFacts"
+            )
+            .innerHTML =
+            arrayToList(
+                article.key_facts
+            );
+
+
+        document
+            .getElementById(
+                "keyLocations"
+            )
+            .innerHTML =
+            arrayToList(
+                article.key_locations
+            );
+
+
+        document
+            .getElementById(
+                "importantDates"
+            )
+            .innerHTML =
+            arrayToList(
+                article.important_dates
+            );
+
+
+        /* UPSC */
+
+        document
+            .getElementById(
+                "examRelevance"
+            )
+            .innerHTML =
+            arrayToList(
+                article.exam_relevance
+            );
+
+
+        document
+            .getElementById(
+                "upscAnalysis"
+            )
+            .textContent =
+            article.upsc_analysis ||
+            "UPSC analysis is not available.";
+
+
+        document
+            .getElementById(
+                "causes"
+            )
+            .innerHTML =
+            arrayToList(
+                article.causes
+            );
+
+
+        document
+            .getElementById(
+                "impacts"
+            )
+            .innerHTML =
+            arrayToList(
+                article.impacts
+            );
+
+
+        document
+            .getElementById(
+                "challenges"
+            )
+            .innerHTML =
+            arrayToList(
+                article.challenges
+            );
+
+
+        document
+            .getElementById(
+                "governmentSteps"
+            )
+            .innerHTML =
+            arrayToList(
+                article.government_steps
+            );
+
+
+        document
+            .getElementById(
+                "constitutionalLink"
+            )
+            .innerHTML =
+            arrayToList(
+                article.constitutional_or_policy_link
+            );
+
+
+        document
+            .getElementById(
+                "wayForward"
+            )
+            .innerHTML =
+            arrayToList(
+                article.way_forward
+            );
+
+
+        /* MAINS */
+
+        document
+            .getElementById(
+                "mainsNotes"
+            )
+            .textContent =
+            article.mains_notes ||
+            "Mains-ready notes are not available.";
+
+
+        document
+            .getElementById(
+                "mainsQuestions"
+            )
+            .innerHTML =
+            arrayToList(
+                article.mains_questions
+            );
+
+
+        document
+            .getElementById(
+                "takeaway"
+            )
+            .textContent =
+            article.takeaway ||
+            "";
+
+
+        /* PRELIMS */
+
+        document
+            .getElementById(
+                "prelimsFacts"
+            )
+            .innerHTML =
+            arrayToList(
+                article.prelims_facts
+            );
+
+
+        /* VOCABULARY */
+
+        renderVocabulary(
+            article.vocabulary
+        );
+
+
+        /* RESET TAB */
+
+        openArticleTab(
+            "overview"
+        );
+
+
+        /* SHOW MODAL */
+
+        document
+            .getElementById(
+                "articleModal"
+            )
+            .classList.add(
+                "show"
+            );
+
+
+        document.body.style.overflow =
+            "hidden";
+
+    }
+
+
+    /* =======================================================
+       VOCABULARY
+       ======================================================= */
+
+    function renderVocabulary(
+        vocabulary
+    ) {
+
+        const body =
+            document.getElementById(
+                "vocabularyBody"
+            );
+
+        body.innerHTML = "";
+
+        if (
+            !Array.isArray(
+                vocabulary
+            ) ||
+            vocabulary.length === 0
+        ) {
+
+            body.innerHTML = `
+                <tr>
+                    <td colspan="2">
+                        No vocabulary available.
+                    </td>
+                </tr>
+            `;
+
+            return;
+
+        }
+
+        vocabulary.forEach(
+            item => {
+
+                const row =
+                    document.createElement(
+                        "tr"
+                    );
+
+                row.innerHTML = `
+
+                    <td class="vocab-word">
+                        ${escapeHTML(
+                            item.word || ""
+                        )}
+                    </td>
+
+                    <td>
+                        ${escapeHTML(
+                            item.meaning_hindi || ""
+                        )}
+                    </td>
+
+                `;
+
+                body.appendChild(
+                    row
+                );
+
+            }
+        );
+
+    }
+
+
+    /* =======================================================
+       ARTICLE TABS
+       ======================================================= */
+
+    function openArticleTab(
+        tabName,
+        button
+    ) {
+
+        document
+            .querySelectorAll(
+                ".tab-panel"
+            )
+            .forEach(
+                panel =>
+                    panel.classList.remove(
+                        "active"
+                    )
+            );
+
+
+        document
+            .querySelectorAll(
+                ".article-tab"
+            )
+            .forEach(
+                tab =>
+                    tab.classList.remove(
+                        "active"
+                    )
+            );
+
+
+        const target =
+            document.getElementById(
+                "tab-" +
+                tabName
+            );
+
+        if (target) {
+
+            target.classList.add(
+                "active"
+            );
+
+        }
+
+
+        if (button) {
+
+            button.classList.add(
+                "active"
+            );
+
+        } else {
+
+            const firstButton =
+                document.querySelector(
+                    '.article-tab[onclick*="' +
+                    tabName +
+                    '"]'
+                );
+
+            if (firstButton) {
+
+                firstButton.classList.add(
+                    "active"
+                );
+
+            }
+
+        }
+
+    }
+
+
+    /* =======================================================
+       CLOSE ARTICLE
+       ======================================================= */
+
+    function closeArticle() {
+
+        document
+            .getElementById(
+                "articleModal"
+            )
+            .classList.remove(
+                "show"
+            );
+
+        document.body.style.overflow =
+            "";
+
+    }
+
+
+    /* =======================================================
+       CLICK OUTSIDE MODAL
+       ======================================================= */
+
+    function outsideModalClick(
+        event
+    ) {
+
+        if (
+            event.target.id ===
+            "articleModal"
         ) {
 
             closeArticle();
@@ -2911,17 +3427,66 @@ document.addEventListener(
         }
 
     }
-);
 
 
-/* =========================================================
-   START
-========================================================= */
+    /* =======================================================
+       ESC KEY
+       ======================================================= */
 
-init();
+    document.addEventListener(
+        "keydown",
+        function(event) {
+
+            if (
+                event.key ===
+                "Escape"
+            ) {
+
+                closeArticle();
+
+            }
+
+        }
+    );
+
+
+    /* =======================================================
+       ERROR
+       ======================================================= */
+
+    function showError(
+        message
+    ) {
+
+        const container =
+            document.getElementById(
+                "newsContainer"
+            );
+
+        container.innerHTML = `
+            <div class="status-box error-box">
+                ${escapeHTML(message)}
+            </div>
+        `;
+
+        document
+            .getElementById(
+                "dailyCount"
+            )
+            .textContent =
+            "Data unavailable";
+
+    }
+
+
+    /* =======================================================
+       START
+       ======================================================= */
+
+    init();
 
 </script>
 
-
 </body>
+
 </html>
