@@ -1,819 +1,1388 @@
 import os
-import json
 import re
+import json
 import time
+import hashlib
 import html
-import urllib.request
-import urllib.error
+from datetime import datetime
+
+import requests
 import feedparser
-from datetime import datetime, timezone
+from bs4 import BeautifulSoup
+
+from google import genai
 
 
 # ============================================================
-# AURA EXAM AI - CONFIGURATION
+# SETTINGS
 # ============================================================
+
+TODAY = datetime.now().strftime("%Y-%m-%d")
+
+DATA_DIR = "data"
+MASTER_FILE = "data.json"
+
+FIRST_RUN_COUNT = 15
+UPDATE_COUNT = 10
+MAX_DAILY_COUNT = 100
 
 API_KEY = os.environ.get("GEMINI_API_KEY")
 
-# Current Gemini models confirmed in Google's API documentation.
-# We try the primary model first and fall back if necessary.
-GEMINI_MODELS = [
-    "gemini-3.8-flash",
-    "gemini-3.7-flash",
-    "gemini-3.6-flash",
-    "gemini-3.5-flash-lite",
-]
+if not API_KEY:
+    raise RuntimeError("GEMINI_API_KEY is missing.")
 
-OUTPUT_FILE = "data.json"
+
+client = genai.Client(api_key=API_KEY)
 
 
 # ============================================================
-# GOOGLE NEWS RSS FEEDS
+# HTTP
 # ============================================================
 
-GOOGLE_NEWS_FEEDS = {
-
-    "National": (
-        "https://news.google.com/rss/search?"
-        "q=India+government+OR+India+national+when%3A2d"
-        "&hl=en-IN&gl=IN&ceid=IN%3Aen"
-    ),
-
-    "Defence": (
-        "https://news.google.com/rss/search?"
-        "q=India+defence+military+DRDO+Army+Navy+Air+Force+when%3A2d"
-        "&hl=en-IN&gl=IN&ceid=IN%3Aen"
-    ),
-
-    "Economy": (
-        "https://news.google.com/rss/search?"
-        "q=India+economy+RBI+budget+banking+when%3A2d"
-        "&hl=en-IN&gl=IN&ceid=IN%3Aen"
-    ),
-
-    "International": (
-        "https://news.google.com/rss/search?"
-        "q=international+world+India+when%3A2d"
-        "&hl=en-IN&gl=IN&ceid=IN%3Aen"
-    ),
-
-    "Science & Tech": (
-        "https://news.google.com/rss/search?"
-        "q=India+science+technology+space+ISRO+when%3A2d"
-        "&hl=en-IN&gl=IN&ceid=IN%3Aen"
-    ),
-
-    "Schemes": (
-        "https://news.google.com/rss/search?"
-        "q=India+government+scheme+mission+yojana+when%3A2d"
-        "&hl=en-IN&gl=IN&ceid=IN%3Aen"
-    ),
+HEADERS = {
+    "User-Agent":
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 "
+        "(KHTML, like Gecko) "
+        "Chrome/140.0.0.0 Safari/537.36"
 }
 
 
 # ============================================================
-# PLACEHOLDER DETECTION
+# RSS SOURCES
 # ============================================================
 
-FORBIDDEN_PHRASES = [
-    "actual current-affairs headline",
-    "actual current affairs headline",
-    "a concise summary",
-    "what happened",
-    "where it happened",
-    "who or which institution is involved",
-    "why it matters",
-    "relevant exam concepts",
-    "relevant exam concept",
-    "sample question",
-    "sample answer",
-    "title here",
-    "headline here",
-    "summary here",
-    "insert headline",
-    "insert summary",
-    "your headline",
-    "your summary",
-    "national#1 of 1",
-    "national #1 of 1",
+FEEDS = [
+
+    {
+        "id": "ht_india",
+        "name": "Hindustan Times",
+        "url":
+            "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml"
+    },
+
+    {
+        "id": "toi",
+        "name": "Times of India",
+        "url":
+            "https://timesofindia.indiatimes.com/rssfeedstopstories.cms"
+    },
+
+    {
+        "id": "ndtv",
+        "name": "NDTV",
+        "url":
+            "https://feeds.feedburner.com/ndtvnews-top-stories"
+    },
+
+    {
+        "id": "bbc_world",
+        "name": "BBC World",
+        "url":
+            "https://feeds.bbci.co.uk/news/world/rss.xml"
+    },
+
+    {
+        "id": "bbc_india",
+        "name": "BBC India",
+        "url":
+            "https://feeds.bbci.co.uk/news/world/asia/india/rss.xml"
+    },
+
+    {
+        "id": "google_india",
+        "name": "Google News India",
+        "url":
+            "https://news.google.com/rss/search?q=India&hl=en-IN&gl=IN&ceid=IN:en"
+    },
+
+    {
+        "id": "google_world",
+        "name": "Google News World",
+        "url":
+            "https://news.google.com/rss/search?q=world&hl=en-IN&gl=IN&ceid=IN:en"
+    },
+
+    {
+        "id": "google_science",
+        "name": "Google News Science & Technology",
+        "url":
+            "https://news.google.com/rss/search?q=science+technology&hl=en-IN&gl=IN&ceid=IN:en"
+    }
 ]
 
 
 # ============================================================
-# TEXT CLEANING
+# FALLBACK IMAGES
 # ============================================================
 
-def clean_text(value):
-    if not value:
+FALLBACK_IMAGES = {
+
+    "India":
+        "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=80",
+
+    "World":
+        "https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1200&q=80",
+
+    "Science":
+        "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80",
+
+    "Technology":
+        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+
+    "Business":
+        "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
+
+    "Sports":
+        "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80",
+
+    "Environment":
+        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80"
+}
+
+
+# ============================================================
+# HELPERS
+# ============================================================
+
+def clean(value):
+
+    if value is None:
         return ""
 
-    value = html.unescape(value)
-    value = re.sub(r"<[^>]+>", " ", value)
+    value = html.unescape(str(value))
+
+    soup = BeautifulSoup(value, "html.parser")
+
+    value = soup.get_text(" ", strip=True)
+
     value = re.sub(r"\s+", " ", value)
+
     return value.strip()
 
 
+def valid_title(title):
+
+    title = clean(title)
+
+    if len(title) < 20:
+        return False
+
+    blocked = [
+        "actual current-affairs headline",
+        "current affairs headline",
+        "sample headline",
+        "test headline",
+        "placeholder headline"
+    ]
+
+    low = title.lower()
+
+    for item in blocked:
+
+        if item in low:
+            return False
+
+    return True
+
+
+def make_hash(title, url):
+
+    text = (
+        clean(title).lower()
+        + "|"
+        + clean(url).lower()
+    )
+
+    return hashlib.sha256(
+        text.encode("utf-8")
+    ).hexdigest()
+
+
+def load_json(path):
+
+    if not os.path.exists(path):
+        return None
+
+    try:
+
+        with open(
+            path,
+            "r",
+            encoding="utf-8"
+        ) as file:
+
+            return json.load(file)
+
+    except Exception:
+
+        return None
+
+
+def save_json(path, data):
+
+    folder = os.path.dirname(path)
+
+    if folder:
+        os.makedirs(folder, exist_ok=True)
+
+    temporary = path + ".tmp"
+
+    with open(
+        temporary,
+        "w",
+        encoding="utf-8"
+    ) as file:
+
+        json.dump(
+            data,
+            file,
+            ensure_ascii=False,
+            indent=2
+        )
+
+    os.replace(temporary, path)
+
+
 # ============================================================
-# FETCH NEWS
+# IMAGE EXTRACTION
 # ============================================================
 
-def fetch_news():
+def get_rss_image(entry):
+
+    try:
+
+        if hasattr(entry, "media_content"):
+
+            media = entry.media_content
+
+            if media:
+
+                for item in media:
+
+                    url = item.get("url", "")
+
+                    if url:
+                        return url
+
+        if hasattr(entry, "media_thumbnail"):
+
+            media = entry.media_thumbnail
+
+            if media:
+
+                for item in media:
+
+                    url = item.get("url", "")
+
+                    if url:
+                        return url
+
+        for link in entry.get("links", []):
+
+            link_type = link.get("type", "")
+
+            href = link.get("href", "")
+
+            if (
+                "image" in link_type.lower()
+                and href
+            ):
+
+                return href
+
+    except Exception:
+        pass
+
+    return ""
+
+
+def get_page_image(url):
+
+    if not url:
+        return ""
+
+    try:
+
+        response = requests.get(
+            url,
+            headers=HEADERS,
+            timeout=12
+        )
+
+        if response.status_code != 200:
+            return ""
+
+        soup = BeautifulSoup(
+            response.text,
+            "html.parser"
+        )
+
+        meta_names = [
+            "og:image",
+            "twitter:image",
+            "twitter:image:src"
+        ]
+
+        for name in meta_names:
+
+            tag = soup.find(
+                "meta",
+                attrs={"property": name}
+            )
+
+            if tag and tag.get("content"):
+                return tag.get("content")
+
+            tag = soup.find(
+                "meta",
+                attrs={"name": name}
+            )
+
+            if tag and tag.get("content"):
+                return tag.get("content")
+
+    except Exception:
+        pass
+
+    return ""
+
+
+def choose_fallback_image(category, index):
+
+    if category in FALLBACK_IMAGES:
+        return FALLBACK_IMAGES[category]
+
+    keys = list(FALLBACK_IMAGES.keys())
+
+    return FALLBACK_IMAGES[
+        keys[index % len(keys)]
+    ]
+
+
+def get_image(entry, url, category, index):
+
+    image = get_rss_image(entry)
+
+    if image:
+        return image
+
+    image = get_page_image(url)
+
+    if image:
+        return image
+
+    return choose_fallback_image(
+        category,
+        index
+    )
+
+
+# ============================================================
+# CATEGORY
+# ============================================================
+
+def guess_category(title, summary):
+
+    text = (
+        clean(title)
+        + " "
+        + clean(summary)
+    ).lower()
+
+    if any(
+        word in text
+        for word in [
+            "india",
+            "delhi",
+            "mumbai",
+            "government",
+            "minister",
+            "parliament",
+            "supreme court",
+            "isro"
+        ]
+    ):
+        return "India"
+
+    if any(
+        word in text
+        for word in [
+            "ai ",
+            "artificial intelligence",
+            "technology",
+            "software",
+            "chip",
+            "semiconductor",
+            "google",
+            "microsoft",
+            "apple"
+        ]
+    ):
+        return "Technology"
+
+    if any(
+        word in text
+        for word in [
+            "science",
+            "space",
+            "nasa",
+            "research",
+            "health",
+            "climate"
+        ]
+    ):
+        return "Science"
+
+    if any(
+        word in text
+        for word in [
+            "business",
+            "economy",
+            "market",
+            "bank",
+            "rupee",
+            "trade",
+            "company"
+        ]
+    ):
+        return "Business"
+
+    if any(
+        word in text
+        for word in [
+            "sport",
+            "cricket",
+            "football",
+            "tennis",
+            "olympic"
+        ]
+    ):
+        return "Sports"
+
+    if any(
+        word in text
+        for word in [
+            "environment",
+            "forest",
+            "wildlife",
+            "pollution"
+        ]
+    ):
+        return "Environment"
+
+    return "World"
+
+
+# ============================================================
+# COLLECT RSS
+# ============================================================
+
+def collect_news():
+
+    print("Collecting RSS news...")
+
     all_items = []
-    seen_titles = set()
 
-    for category, url in GOOGLE_NEWS_FEEDS.items():
+    seen = set()
 
-        print(f"Fetching {category} news...")
+    for feed in FEEDS:
+
+        print(
+            "SOURCE:",
+            feed["name"]
+        )
 
         try:
-            feed = feedparser.parse(url)
+
+            response = requests.get(
+                feed["url"],
+                headers=HEADERS,
+                timeout=20
+            )
+
+            if response.status_code != 200:
+
+                print(
+                    "  HTTP:",
+                    response.status_code
+                )
+
+                continue
+
+            parsed = feedparser.parse(
+                response.content
+            )
 
             count = 0
 
-            for entry in feed.entries[:10]:
+            for entry in parsed.entries[:40]:
 
-                title = clean_text(
-                    getattr(entry, "title", "")
+                title = clean(
+                    entry.get("title", "")
                 )
 
-                summary = clean_text(
-                    getattr(entry, "summary", "")
+                url = clean(
+                    entry.get("link", "")
                 )
 
-                link = getattr(entry, "link", "")
-
-                published = clean_text(
-                    getattr(entry, "published", "")
+                summary = clean(
+                    entry.get(
+                        "summary",
+                        entry.get(
+                            "description",
+                            ""
+                        )
+                    )
                 )
 
-                if not title:
+                if not valid_title(title):
                     continue
 
-                title_key = re.sub(
-                    r"[^a-z0-9]+",
-                    "",
-                    title.lower()
-                )
-
-                if title_key in seen_titles:
+                if not url:
                     continue
 
-                seen_titles.add(title_key)
+                article_hash = make_hash(
+                    title,
+                    url
+                )
 
-                all_items.append({
-                    "category": category,
-                    "title": title,
-                    "summary": summary,
-                    "link": link,
-                    "published": published,
-                })
+                if article_hash in seen:
+                    continue
+
+                seen.add(article_hash)
+
+                category = guess_category(
+                    title,
+                    summary
+                )
+
+                image = get_image(
+                    entry,
+                    url,
+                    category,
+                    len(all_items)
+                )
+
+                item = {
+                    "source_id":
+                        feed["id"],
+
+                    "source_name":
+                        feed["name"],
+
+                    "title":
+                        title,
+
+                    "url":
+                        url,
+
+                    "summary":
+                        summary,
+
+                    "image_url":
+                        image,
+
+                    "category":
+                        category
+                }
+
+                all_items.append(item)
 
                 count += 1
 
-            print(f"  {count} articles collected.")
-
-        except Exception as e:
             print(
-                f"  ERROR fetching {category}: {e}"
+                "  Articles collected:",
+                count
             )
 
-    print()
-    print(
-        f"TOTAL RSS ARTICLES COLLECTED: {len(all_items)}"
-    )
+        except Exception as error:
 
-    if len(all_items) < 12:
-        raise RuntimeError(
-            "Not enough real news articles were collected."
-        )
+            print(
+                "  RSS failed:",
+                error
+            )
+
+    print(
+        "TOTAL CANDIDATES:",
+        len(all_items)
+    )
 
     return all_items
 
 
 # ============================================================
-# GEMINI PROMPT
+# TODAY FILE
 # ============================================================
 
-def build_prompt(news_items):
+def today_file():
 
-    news_text = []
+    return os.path.join(
+        DATA_DIR,
+        TODAY + ".json"
+    )
 
-    for i, item in enumerate(news_items[:50], start=1):
 
-        news_text.append(
-            f"""
-ARTICLE {i}
-CATEGORY: {item["category"]}
-TITLE: {item["title"]}
-SUMMARY: {item["summary"]}
-PUBLISHED: {item["published"]}
-LINK: {item["link"]}
-""".strip()
+def load_today():
+
+    path = today_file()
+
+    data = load_json(path)
+
+    if not isinstance(data, dict):
+        return []
+
+    news = data.get("news", [])
+
+    if not isinstance(news, list):
+        return []
+
+    return news
+
+
+# ============================================================
+# GEMINI ENRICHMENT
+# ============================================================
+
+def build_prompt(items, number):
+
+    source_text = []
+
+    for index, item in enumerate(items):
+
+        block = (
+            "SOURCE NUMBER: "
+            + str(index)
+            + "\n"
+            + "SOURCE ID: "
+            + item["source_id"]
+            + "\n"
+            + "SOURCE: "
+            + item["source_name"]
+            + "\n"
+            + "HEADLINE: "
+            + item["title"]
+            + "\n"
+            + "SUMMARY: "
+            + item["summary"]
+            + "\n"
+            + "URL: "
+            + item["url"]
+            + "\n"
         )
 
-    joined_news = "\n\n".join(news_text)
+        source_text.append(block)
 
-    today = datetime.now(
-        timezone.utc
-    ).strftime("%Y-%m-%d")
+    prompt = (
+        "You are the editor of a factual current-affairs website "
+        "for Indian students preparing for competitive and school examinations.\n\n"
 
-    prompt = f"""
-You are the Current Affairs Editor for AURA EXAM AI.
+        "Select exactly "
+        + str(number)
+        + " important and distinct current-affairs stories from "
+        "the supplied source material.\n\n"
 
-Today: {today}
+        "IMPORTANT RULES:\n"
+        "1. Use ONLY information supported by the supplied source material.\n"
+        "2. Do NOT invent facts, names, numbers, dates or quotations.\n"
+        "3. Do NOT create fictional stories.\n"
+        "4. Keep each story specific to its selected source.\n"
+        "5. Preserve the real source URL.\n"
+        "6. Write a coherent article for that particular story.\n"
+        "7. Do not mix facts from unrelated stories.\n"
+        "8. Return valid JSON only.\n\n"
 
-You are given REAL recent news articles collected from Google News RSS.
+        "Return a JSON array with exactly these fields:\n"
+        "source_number\n"
+        "category\n"
+        "headline\n"
+        "story_lead\n"
+        "bullet_points\n"
+        "full_article_text\n"
+        "key_locations\n"
+        "important_dates\n"
+        "key_facts\n"
+        "exam_relevance\n"
+        "takeaway\n\n"
 
-Your job is to create a high-quality current-affairs package for Indian competitive-exam students.
+        "headline must be a real headline based on the source.\n"
+        "full_article_text should contain several coherent paragraphs.\n"
+        "bullet_points, key_locations, important_dates and key_facts "
+        "must be arrays of strings.\n\n"
 
-TARGET EXAMS:
-- NDA
-- CDS
-- UPSC
-- SSC
-- Banking
-- Railways
-- State government exams
-- Defence examinations
-
-IMPORTANT:
-Use ONLY facts supported by the supplied news articles.
-
-DO NOT invent events.
-DO NOT create fictional headlines.
-DO NOT create placeholder content.
-DO NOT write generic examples.
-DO NOT use phrases such as:
-"Actual current-affairs headline"
-"Sample question"
-"Headline here"
-"Summary here"
-
-Select the most important REAL current affairs.
-
-Create EXACTLY 12 news items.
-
-Each news item must contain:
-
-id
-category
-title
-image_url
-date
-place
-persons_ministers
-officers
-countries_states
-mission
-reason
-conclusion
-
-For image_url:
-Use an empty string if no reliable image URL is available.
-DO NOT invent image URLs.
-
-For date:
-Use the actual date from the supplied article when possible.
-
-For place:
-Mention the relevant city/state/country if supported.
-
-For persons_ministers:
-Mention important people actually involved.
-
-For officers:
-Mention relevant officers only if actually supported.
-
-For countries_states:
-Mention relevant countries/states.
-
-For mission:
-Mention the relevant mission, operation, scheme, programme, project or initiative if applicable.
-
-For reason:
-Explain why the event matters for exam preparation.
-
-For conclusion:
-Give a concise exam-oriented takeaway.
-
-Also create EXACTLY 4 multiple-choice questions.
-
-Each quiz object must contain:
-
-id
-question
-options
-answer
-explanation
-
-"options" must contain exactly 4 choices.
-
-"answer" must be the exact text of the correct option.
-
-Questions must be based on the generated current affairs.
-
-Also create one short motivational sentence.
-
-RETURN ONLY VALID JSON.
-
-Do not use Markdown.
-Do not use ```json.
-Do not add commentary outside JSON.
-
-Required JSON structure:
-
-{{
-  "news": [],
-  "quizzes": [],
-  "motivational": ""
-}}
-
-REAL NEWS ARTICLES:
-{joined_news}
-"""
+        "SOURCE MATERIAL:\n\n"
+        + "\n\n".join(source_text)
+    )
 
     return prompt
 
 
-# ============================================================
-# GEMINI REQUEST
-# ============================================================
+def generate_articles(items, number):
 
-def request_gemini(model, prompt):
+    if not items:
+        return []
 
-    url = (
-        "https://generativelanguage.googleapis.com/"
-        f"v1beta/models/{model}:generateContent"
-    )
-
-    payload = {
-        "contents": [
-            {
-                "parts": [
-                    {
-                        "text": prompt
-                    }
-                ]
-            }
-        ],
-        "generationConfig": {
-            "response_mime_type": "application/json",
-            "max_output_tokens": 20000
-        }
-    }
-
-    body = json.dumps(
-        payload
-    ).encode("utf-8")
-
-    request = urllib.request.Request(
-        url,
-        data=body,
-        headers={
-            "Content-Type": "application/json",
-            "x-goog-api-key": API_KEY
-        },
-        method="POST"
-    )
-
-    with urllib.request.urlopen(
-        request,
-        timeout=120
-    ) as response:
-
-        response_body = response.read().decode(
-            "utf-8"
-        )
-
-        return json.loads(
-            response_body
-        )
-
-
-# ============================================================
-# EXTRACT GEMINI TEXT
-# ============================================================
-
-def extract_gemini_text(response):
-
-    try:
-        candidates = response.get(
-            "candidates",
-            []
-        )
-
-        if not candidates:
-            raise RuntimeError(
-                "Gemini returned no candidates."
-            )
-
-        parts = candidates[0].get(
-            "content",
-            {}
-        ).get(
-            "parts",
-            []
-        )
-
-        text_parts = []
-
-        for part in parts:
-
-            if "text" in part:
-                text_parts.append(
-                    part["text"]
-                )
-
-        text = "".join(
-            text_parts
-        ).strip()
-
-        if not text:
-            raise RuntimeError(
-                "Gemini returned empty text."
-            )
-
-        return text
-
-    except Exception as e:
-        raise RuntimeError(
-            f"Unable to extract Gemini response: {e}"
-        )
-
-
-# ============================================================
-# CLEAN JSON RESPONSE
-# ============================================================
-
-def parse_json_response(text):
-
-    text = text.strip()
-
-    # Remove accidental Markdown fences.
-    text = re.sub(
-        r"^```json\s*",
-        "",
-        text,
-        flags=re.IGNORECASE
-    )
-
-    text = re.sub(
-        r"^```\s*",
-        "",
-        text
-    )
-
-    text = re.sub(
-        r"\s*```$",
-        "",
-        text
-    )
-
-    text = text.strip()
-
-    try:
-        return json.loads(text)
-
-    except json.JSONDecodeError:
-
-        start = text.find("{")
-        end = text.rfind("}")
-
-        if start == -1 or end == -1:
-            raise RuntimeError(
-                "Gemini did not return valid JSON."
-            )
-
-        try:
-            return json.loads(
-                text[start:end + 1]
-            )
-        except Exception as e:
-            raise RuntimeError(
-                f"Invalid Gemini JSON: {e}"
-            )
-
-
-# ============================================================
-# CALL GEMINI WITH FALLBACKS
-# ============================================================
-
-def call_gemini(news_items):
-
-    if not API_KEY:
-        raise RuntimeError(
-            "GEMINI_API_KEY is missing."
-        )
+    selected_items = items[:80]
 
     prompt = build_prompt(
-        news_items
+        selected_items,
+        number
     )
 
-    last_error = None
+    models = [
+        "gemini-3.8-flash",
+        "gemini-3.7-flash",
+        "gemini-3.6-flash"
+    ]
 
-    for model in GEMINI_MODELS:
+    for model in models:
 
-        print()
         print(
-            f"Trying Gemini model: {model}"
+            "Trying Gemini model:",
+            model
         )
 
-        for attempt in range(1, 4):
+        try:
 
-            try:
+            response = client.models.generate_content(
+                model=model,
+                contents=prompt
+            )
 
-                print(
-                    f"Attempt {attempt}/3..."
-                )
+            text = response.text
 
-                response = request_gemini(
-                    model,
-                    prompt
-                )
+            if not text:
+                continue
 
-                text = extract_gemini_text(
-                    response
-                )
+            text = text.strip()
 
-                data = parse_json_response(
+            if text.startswith("```"):
+                text = re.sub(
+                    r"^```(?:json)?",
+                    "",
                     text
                 )
 
-                print(
-                    f"Gemini generation successful using {model}"
+                text = re.sub(
+                    r"```$",
+                    "",
+                    text
                 )
 
-                return data
+                text = text.strip()
 
-            except urllib.error.HTTPError as e:
+            parsed = json.loads(text)
 
-                error_body = e.read().decode(
-                    "utf-8",
-                    errors="replace"
+            if isinstance(parsed, dict):
+
+                parsed = parsed.get(
+                    "articles",
+                    []
                 )
 
-                print(
-                    f"Gemini HTTP {e.code}: {error_body}"
+            if not isinstance(parsed, list):
+                continue
+
+            print(
+                "Gemini generated:",
+                len(parsed)
+            )
+
+            return parsed
+
+        except Exception as error:
+
+            print(
+                "Gemini ERROR:",
+                error
+            )
+
+    return []
+
+
+# ============================================================
+# CONVERT GEMINI ARTICLES
+# ============================================================
+
+def convert_articles(generated, candidates):
+
+    output = []
+
+    used = set()
+
+    for article in generated:
+
+        if not isinstance(article, dict):
+            continue
+
+        try:
+
+            source_number = int(
+                article.get(
+                    "source_number",
+                    -1
                 )
+            )
 
-                last_error = (
-                    f"HTTP {e.code}: {error_body}"
+        except Exception:
+
+            continue
+
+        if (
+            source_number < 0
+            or source_number >= len(candidates)
+        ):
+            continue
+
+        source = candidates[
+            source_number
+        ]
+
+        title = clean(
+            article.get(
+                "headline",
+                ""
+            )
+        )
+
+        if not valid_title(title):
+            continue
+
+        source_hash = make_hash(
+            title,
+            source["url"]
+        )
+
+        if source_hash in used:
+            continue
+
+        used.add(source_hash)
+
+        category = clean(
+            article.get(
+                "category",
+                source["category"]
+            )
+        )
+
+        if not category:
+            category = source["category"]
+
+        lead = clean(
+            article.get(
+                "story_lead",
+                source["summary"]
+            )
+        )
+
+        full_text = clean(
+            article.get(
+                "full_article_text",
+                ""
+            )
+        )
+
+        if not full_text:
+            full_text = lead
+
+        bullet_points = article.get(
+            "bullet_points",
+            []
+        )
+
+        if not isinstance(
+            bullet_points,
+            list
+        ):
+            bullet_points = []
+
+        bullet_points = [
+            clean(x)
+            for x in bullet_points
+            if clean(x)
+        ]
+
+        key_locations = article.get(
+            "key_locations",
+            []
+        )
+
+        if not isinstance(
+            key_locations,
+            list
+        ):
+            key_locations = []
+
+        key_locations = [
+            clean(x)
+            for x in key_locations
+            if clean(x)
+        ]
+
+        important_dates = article.get(
+            "important_dates",
+            []
+        )
+
+        if not isinstance(
+            important_dates,
+            list
+        ):
+            important_dates = []
+
+        important_dates = [
+            clean(x)
+            for x in important_dates
+            if clean(x)
+        ]
+
+        key_facts = article.get(
+            "key_facts",
+            []
+        )
+
+        if not isinstance(
+            key_facts,
+            list
+        ):
+            key_facts = []
+
+        key_facts = [
+            clean(x)
+            for x in key_facts
+            if clean(x)
+        ]
+
+        exam_relevance = clean(
+            article.get(
+                "exam_relevance",
+                ""
+            )
+        )
+
+        takeaway = clean(
+            article.get(
+                "takeaway",
+                ""
+            )
+        )
+
+        item = {
+            "id": 0,
+
+            "category": category,
+
+            "headline": title,
+
+            "story_lead": lead,
+
+            "bullet_points": bullet_points,
+
+            "full_article_text": full_text,
+
+            "key_locations": key_locations,
+
+            "important_dates": important_dates,
+
+            "key_facts": key_facts,
+
+            "exam_relevance": exam_relevance,
+
+            "takeaway": takeaway,
+
+            "source_name":
+                source["source_name"],
+
+            "source_url":
+                source["url"],
+
+            "image_url":
+                source["image_url"],
+
+            "published_date":
+                TODAY
+        }
+
+        output.append(item)
+
+    return output
+
+
+# ============================================================
+# FALLBACK ARTICLES
+#
+# If Gemini is temporarily unavailable, we still publish
+# genuine RSS stories instead of leaving the page empty.
+# ============================================================
+
+def fallback_articles(candidates, number):
+
+    output = []
+
+    for index, source in enumerate(
+        candidates[:number]
+    ):
+
+        title = source["title"]
+
+        summary = source["summary"]
+
+        if not summary:
+            summary = (
+                "This current-affairs story "
+                "is based on the latest report "
+                "published by the listed source."
+            )
+
+        item = {
+
+            "id": 0,
+
+            "category":
+                source["category"],
+
+            "headline":
+                title,
+
+            "story_lead":
+                summary,
+
+            "bullet_points":
+                [
+                    summary
+                ],
+
+            "full_article_text":
+                summary,
+
+            "key_locations":
+                [],
+
+            "important_dates":
+                [],
+
+            "key_facts":
+                [],
+
+            "exam_relevance":
+                "Revise the main facts, "
+                "institutions, locations and "
+                "developments mentioned in this news story.",
+
+            "takeaway":
+                summary,
+
+            "source_name":
+                source["source_name"],
+
+            "source_url":
+                source["url"],
+
+            "image_url":
+                source["image_url"] or
+                choose_fallback_image(
+                    source["category"],
+                    index
+                ),
+
+            "published_date":
+                TODAY
+        }
+
+        output.append(item)
+
+    return output
+
+
+# ============================================================
+# REMOVE DUPLICATES
+# ============================================================
+
+def merge_news(old_news, new_news):
+
+    combined = []
+
+    seen = set()
+
+    for item in old_news + new_news:
+
+        title = clean(
+            item.get(
+                "headline",
+                ""
+            )
+        )
+
+        url = clean(
+            item.get(
+                "source_url",
+                ""
+            )
+        )
+
+        if not title:
+            continue
+
+        article_hash = make_hash(
+            title,
+            url
+        )
+
+        if article_hash in seen:
+            continue
+
+        seen.add(article_hash)
+
+        item["id"] = len(combined)
+
+        combined.append(item)
+
+        if len(combined) >= MAX_DAILY_COUNT:
+            break
+
+    return combined
+
+
+# ============================================================
+# ENSURE UNIQUE IMAGE ASSIGNMENT
+# ============================================================
+
+def fix_duplicate_images(news):
+
+    used_images = set()
+
+    for index, item in enumerate(news):
+
+        image = clean(
+            item.get(
+                "image_url",
+                ""
+            )
+        )
+
+        if (
+            not image
+            or image in used_images
+        ):
+
+            category = clean(
+                item.get(
+                    "category",
+                    "World"
                 )
+            )
 
-                if e.code in {
-                    429,
-                    500,
-                    502,
-                    503,
-                    504
-                }:
+            image = choose_fallback_image(
+                category,
+                index
+            )
 
-                    if attempt < 3:
-                        wait_time = 15 * attempt
+        used_images.add(image)
 
-                        print(
-                            f"Retrying in {wait_time} seconds..."
-                        )
+        item["image_url"] = image
 
-                        time.sleep(
-                            wait_time
-                        )
+    return news
 
-                        continue
 
-                break
+# ============================================================
+# UPDATE TODAY
+# ============================================================
 
-            except Exception as e:
+def update_today():
 
-                print(
-                    f"Gemini error: {e}"
-                )
+    old_news = load_today()
 
-                last_error = str(e)
+    print(
+        "Existing articles:",
+        len(old_news)
+    )
 
-                if attempt < 3:
-
-                    wait_time = 10 * attempt
-
-                    print(
-                        f"Retrying in {wait_time} seconds..."
-                    )
-
-                    time.sleep(
-                        wait_time
-                    )
-
-                    continue
-
-                break
+    if len(old_news) >= MAX_DAILY_COUNT:
 
         print(
-            f"Model {model} failed. Trying next model..."
+            "Daily limit reached:",
+            MAX_DAILY_COUNT
         )
 
-    raise RuntimeError(
-        "All Gemini models failed.\n"
-        f"Last error: {last_error}"
+        return old_news[:MAX_DAILY_COUNT]
+
+    candidates = collect_news()
+
+    if not candidates:
+
+        print(
+            "No RSS candidates found."
+        )
+
+        return old_news
+
+    old_hashes = set()
+
+    for item in old_news:
+
+        old_hashes.add(
+            make_hash(
+                item.get(
+                    "headline",
+                    ""
+                ),
+                item.get(
+                    "source_url",
+                    ""
+                )
+            )
+        )
+
+    fresh_candidates = []
+
+    for item in candidates:
+
+        item_hash = make_hash(
+            item["title"],
+            item["url"]
+        )
+
+        if item_hash in old_hashes:
+            continue
+
+        fresh_candidates.append(item)
+
+    print(
+        "New candidates:",
+        len(fresh_candidates)
     )
+
+    if not fresh_candidates:
+
+        print(
+            "No new stories found."
+        )
+
+        return old_news
+
+    if old_news:
+
+        needed = min(
+            UPDATE_COUNT,
+            MAX_DAILY_COUNT - len(old_news)
+        )
+
+    else:
+
+        needed = min(
+            FIRST_RUN_COUNT,
+            MAX_DAILY_COUNT
+        )
+
+    fresh_candidates = fresh_candidates[:40]
+
+    generated = generate_articles(
+        fresh_candidates,
+        needed
+    )
+
+    new_articles = convert_articles(
+        generated,
+        fresh_candidates
+    )
+
+    # If Gemini fails, use the genuine RSS stories.
+    if not new_articles:
+
+        print(
+            "Gemini did not produce valid articles."
+        )
+
+        print(
+            "Using RSS fallback."
+        )
+
+        new_articles = fallback_articles(
+            fresh_candidates,
+            needed
+        )
+
+    final_news = merge_news(
+        old_news,
+        new_articles
+    )
+
+    final_news = fix_duplicate_images(
+        final_news
+    )
+
+    for index, item in enumerate(final_news):
+        item["id"] = index
+
+    print(
+        "FINAL DAILY COUNT:",
+        len(final_news)
+    )
+
+    return final_news
 
 
 # ============================================================
-# VALIDATE GENERATED DATA
+# AVAILABLE DATES
 # ============================================================
 
-def validate_data(data):
+def available_dates():
 
-    if not isinstance(data, dict):
-        raise RuntimeError(
-            "Generated data is not a JSON object."
-        )
+    dates = []
 
-    news = data.get(
-        "news"
+    if os.path.exists(DATA_DIR):
+
+        for filename in os.listdir(DATA_DIR):
+
+            if not filename.endswith(".json"):
+                continue
+
+            name = filename[:-5]
+
+            if re.fullmatch(
+                r"\d{4}-\d{2}-\d{2}",
+                name
+            ):
+
+                dates.append(name)
+
+    if TODAY not in dates:
+        dates.append(TODAY)
+
+    dates.sort(
+        reverse=True
     )
 
-    quizzes = data.get(
-        "quizzes"
-    )
+    return dates
 
-    motivational = data.get(
-        "motivational"
-    )
 
-    if not isinstance(news, list):
-        raise RuntimeError(
-            "news is not a list."
-        )
+# ============================================================
+# MOTIVATION
+# ============================================================
 
-    if not isinstance(quizzes, list):
-        raise RuntimeError(
-            "quizzes is not a list."
-        )
+def get_motivation():
 
-    if len(news) < 12:
-        raise RuntimeError(
-            f"Only {len(news)} news items generated. "
-            "At least 12 are required."
-        )
+    quotes = [
 
-    if len(quizzes) < 4:
-        raise RuntimeError(
-            f"Only {len(quizzes)} quizzes generated. "
-            "At least 4 are required."
-        )
+        "Consistency turns ordinary effort into extraordinary results.",
 
-    if not isinstance(
-        motivational,
-        str
-    ):
-        raise RuntimeError(
-            "Motivational message is invalid."
-        )
+        "Study today so tomorrow becomes easier.",
 
-    required_news_fields = [
-        "id",
-        "category",
-        "title",
-        "image_url",
-        "date",
-        "place",
-        "persons_ministers",
-        "officers",
-        "countries_states",
-        "mission",
-        "reason",
-        "conclusion",
+        "Small progress every day creates a strong foundation.",
+
+        "Focus on understanding, not just memorising.",
+
+        "Discipline is built one productive session at a time.",
+
+        "Your preparation today becomes your confidence tomorrow."
     ]
 
-    for index, item in enumerate(
-        news[:12],
-        start=1
-    ):
-
-        if not isinstance(item, dict):
-            raise RuntimeError(
-                f"News item {index} is invalid."
-            )
-
-        for field in required_news_fields:
-
-            if field not in item:
-                raise RuntimeError(
-                    f"News item {index} missing field: {field}"
-                )
-
-        title = str(
-            item.get("title", "")
-        ).lower()
-
-        for forbidden in FORBIDDEN_PHRASES:
-
-            if forbidden.lower() in title:
-
-                raise RuntimeError(
-                    "Placeholder headline detected: "
-                    f"{item.get('title')}"
-                )
-
-    required_quiz_fields = [
-        "id",
-        "question",
-        "options",
-        "answer",
-        "explanation",
-    ]
-
-    for index, quiz in enumerate(
-        quizzes[:4],
-        start=1
-    ):
-
-        if not isinstance(
-            quiz,
-            dict
-        ):
-            raise RuntimeError(
-                f"Quiz {index} is invalid."
-            )
-
-        for field in required_quiz_fields:
-
-            if field not in quiz:
-                raise RuntimeError(
-                    f"Quiz {index} missing field: {field}"
-                )
-
-        options = quiz.get(
-            "options"
-        )
-
-        if not isinstance(
-            options,
-            list
-        ) or len(options) != 4:
-
-            raise RuntimeError(
-                f"Quiz {index} must have exactly 4 options."
-            )
-
-        if quiz["answer"] not in options:
-
-            raise RuntimeError(
-                f"Quiz {index} answer does not match an option."
-            )
-
-    print(
-        f"Validation successful: "
-        f"{len(news[:12])} news + "
-        f"{len(quizzes[:4])} quizzes"
+    index = (
+        datetime.now().timetuple().tm_yday
+        % len(quotes)
     )
 
-
-# ============================================================
-# WRITE DATA.JSON
-# ============================================================
-
-def write_data_json(data):
-
-    output = {
-        "updated_at": datetime.now(
-            timezone.utc
-        ).isoformat(),
-
-        "news": data["news"][:12],
-
-        "quizzes": data["quizzes"][:4],
-
-        "motivational": data.get(
-            "motivational",
-            "Stay consistent. Every question solved today strengthens tomorrow's performance."
-        )
-    }
-
-    with open(
-        OUTPUT_FILE,
-        "w",
-        encoding="utf-8"
-    ) as f:
-
-        json.dump(
-            output,
-            f,
-            ensure_ascii=False,
-            indent=2
-        )
-
-    print(
-        "data.json updated successfully."
-    )
-
-    print(
-        f"News saved: {len(output['news'])}"
-    )
-
-    print(
-        f"Quizzes saved: {len(output['quizzes'])}"
-    )
+    return quotes[index]
 
 
 # ============================================================
@@ -822,36 +1391,86 @@ def write_data_json(data):
 
 def main():
 
-    print("=" * 70)
-    print("AURA EXAM AI - CURRENT AFFAIRS UPDATE")
-    print("=" * 70)
-
-    print()
-    print("1. Fetching real news...")
-    news_items = fetch_news()
-
-    print()
-    print("2. Generating current affairs with Gemini...")
-    data = call_gemini(
-        news_items
+    os.makedirs(
+        DATA_DIR,
+        exist_ok=True
     )
 
-    print()
-    print("3. Validating generated data...")
-    validate_data(
-        data
+    news = update_today()
+
+    if not news:
+
+        raise RuntimeError(
+            "No current-affairs stories available."
+        )
+
+    daily_data = {
+
+        "date":
+            TODAY,
+
+        "news":
+            news
+    }
+
+    save_json(
+        today_file(),
+        daily_data
     )
 
-    print()
-    print("4. Writing data.json...")
-    write_data_json(
-        data
+    dates = available_dates()
+
+    master = {
+
+        "current_date":
+            TODAY,
+
+        "available_dates":
+            dates,
+
+        "today":
+            daily_data,
+
+        "motivation":
+            {
+                "quote":
+                    get_motivation(),
+
+                "date":
+                    TODAY
+            },
+
+        "last_updated":
+            datetime.now().isoformat()
+    }
+
+    save_json(
+        MASTER_FILE,
+        master
     )
 
-    print()
-    print("=" * 70)
-    print("AURA EXAM AI UPDATE COMPLETED SUCCESSFULLY")
-    print("=" * 70)
+    print("")
+    print(
+        "========================================"
+    )
+    print(
+        "AURA EXAM AI UPDATE COMPLETE"
+    )
+    print(
+        "DATE:",
+        TODAY
+    )
+    print(
+        "ARTICLES:",
+        len(news)
+    )
+    print(
+        "ARCHIVE DATES:",
+        len(dates)
+    )
+    print(
+        "========================================"
+    )
 
 
 if __name__ == "__main__":
