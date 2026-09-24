@@ -2850,11 +2850,13 @@
         "published_date": "2026-09-24"
       }
     ],
-    "last_updated_ist": "2026-09-24 21:02:16"
+    "last_updated_ist": "2026-09-24 22:15:26"
   },
   "motivation": {
     "quote": "Knowledge becomes power when it is revised and applied.",
-    "date": "2026-09-24"
+    "date": "2026-09-24",
+    "image": "motivation/motivation_2026-09-24.svg",
+    "image_alt": "Daily motivational image for students focused on examination preparation, study and academic success"
   },
-  "last_updated_ist": "2026-09-24 21:02:16"
+  "last_updated_ist": "2026-09-24 22:15:26"
 }
