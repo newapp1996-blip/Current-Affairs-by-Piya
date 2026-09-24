@@ -306,7 +306,7 @@ def safe_vocabulary(value):
 
 
 # ============================================================
-# NEW: SAFE ENTITIES
+# SAFE ENTITIES
 # ============================================================
 
 def safe_entities(value):
@@ -355,7 +355,7 @@ def safe_entities(value):
 
 
 # ============================================================
-# NEW: SAFE TRANSLATIONS
+# SAFE TRANSLATIONS
 # ============================================================
 
 def safe_translations(value):
@@ -432,7 +432,7 @@ def make_id(url, title):
 
 
 # ============================================================
-# NEW: UNIQUE CANDIDATE ID
+# UNIQUE CANDIDATE ID
 # ============================================================
 
 def make_candidate_id(url, title):
@@ -514,10 +514,8 @@ def collect_news():
 
                 candidates.append({
 
-                    # Existing field retained
                     "source_id": source["id"],
 
-                    # NEW unique field
                     "candidate_id": candidate_id,
 
                     "source": source["name"],
@@ -914,9 +912,6 @@ def generate_articles(candidates):
 
         prepared.append({
 
-            # IMPORTANT:
-            # Unique ID prevents articles from the same
-            # RSS source being mixed up.
             "candidate_id": candidate[
                 "candidate_id"
             ],
@@ -952,10 +947,6 @@ def generate_articles(candidates):
         prepared,
         ensure_ascii=False
     )
-
-    # --------------------------------------------------------
-    # TRANSLATION INSTRUCTIONS
-    # --------------------------------------------------------
 
     language_instruction = """
 
@@ -1006,10 +997,6 @@ Do not invent information while translating.
 Preserve names, numbers, dates and factual meaning.
 """
 
-    # --------------------------------------------------------
-    # MAIN GEMINI PROMPT
-    # --------------------------------------------------------
-
     prompt = (
 
         "You are the editorial engine for AURA EXAM AI. "
@@ -1034,10 +1021,6 @@ Preserve names, numbers, dates and factual meaning.
         "correct_answer: the exact correct option text\n"
         "explanation\n\n"
 
-        # ----------------------------------------------------
-        # NEW INDIAN EXAM SPECIFIC CLASSIFICATION
-        # ----------------------------------------------------
-
         "For EVERY news item determine whether it is directly "
         "useful for Indian competitive examinations.\n\n"
 
@@ -1061,10 +1044,6 @@ Preserve names, numbers, dates and factual meaning.
         "Routine crime, celebrity gossip, trivial local incidents "
         "and ordinary entertainment news should normally be FALSE.\n\n"
 
-        # ----------------------------------------------------
-        # ENTITIES
-        # ----------------------------------------------------
-
         "Identify important entities appearing in the article.\n"
 
         "Return:\n"
@@ -1079,10 +1058,6 @@ Preserve names, numbers, dates and factual meaning.
 
         "If you are not confident about the exact Wikipedia "
         "URL, return an empty wikipedia_url. Do not invent URLs.\n\n"
-
-        # ----------------------------------------------------
-        # EXISTING ARTICLE FIELDS
-        # ----------------------------------------------------
 
         "Return these article fields:\n"
 
@@ -1230,12 +1205,6 @@ def convert_articles(
 
     converted = []
 
-    # --------------------------------------------------------
-    # NEW:
-    # Create direct lookup by candidate_id.
-    # This fixes the original source_id collision problem.
-    # --------------------------------------------------------
-
     candidate_lookup = {}
 
     for candidate in candidates:
@@ -1262,12 +1231,6 @@ def convert_articles(
         candidate = candidate_lookup.get(
             candidate_id
         )
-
-        # ----------------------------------------------------
-        # BACKWARD FALLBACK
-        # Keeps compatibility with responses that accidentally
-        # omit candidate_id.
-        # ----------------------------------------------------
 
         if candidate is None:
 
@@ -1321,10 +1284,6 @@ def convert_articles(
         if not headline:
             continue
 
-        # ----------------------------------------------------
-        # QUIZ VALIDATION
-        # ----------------------------------------------------
-
         quiz = item.get(
             "quiz",
             {}
@@ -1355,10 +1314,6 @@ def convert_articles(
         if correct_answer not in options:
             continue
 
-        # ----------------------------------------------------
-        # ENTITIES
-        # ----------------------------------------------------
-
         entities = enrich_entities_with_wikipedia(
             item.get(
                 "entities",
@@ -1366,21 +1321,12 @@ def convert_articles(
             )
         )
 
-        # ----------------------------------------------------
-        # TRANSLATIONS
-        # ----------------------------------------------------
-
         translations = safe_translations(
             item.get(
                 "translations",
                 {}
             )
         )
-
-        # ----------------------------------------------------
-        # ARTICLE
-        # Existing fields preserved
-        # ----------------------------------------------------
 
         article = {
 
@@ -1409,7 +1355,6 @@ def convert_articles(
                 )
             ),
 
-            # NEW
             "exam_specific": bool(
                 item.get(
                     "exam_specific",
@@ -1549,10 +1494,8 @@ def convert_articles(
                 )
             ),
 
-            # NEW
             "entities": entities,
 
-            # NEW
             "translations": translations,
 
             "quiz": {
@@ -1594,6 +1537,243 @@ def convert_articles(
 
 
 # ============================================================
+# AUTOMATIC DAILY MOTIVATIONAL IMAGE
+# ============================================================
+
+def escape_svg_text(value):
+    return (
+        str(value)
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace('"', "&quot;")
+        .replace("'", "&apos;")
+    )
+
+
+def create_daily_motivation_image():
+
+    motivation_dir = "motivation"
+
+    os.makedirs(
+        motivation_dir,
+        exist_ok=True
+    )
+
+    image_path = os.path.join(
+        motivation_dir,
+        f"motivation_{TODAY}.svg"
+    )
+
+    quotes = [
+        "CONSISTENCY BUILDS RESULTS",
+        "STUDY TODAY. SUCCEED TOMORROW.",
+        "YOUR PREPARATION DEFINES YOUR PERFORMANCE.",
+        "ONE FOCUSED SESSION AT A TIME.",
+        "REVISION TURNS KNOWLEDGE INTO MARKS.",
+        "DISCIPLINE BEATS LAST-MINUTE PREPARATION.",
+        "KEEP LEARNING. KEEP IMPROVING."
+    ]
+
+    day_number = (
+        datetime.now(IST)
+        .timetuple()
+        .tm_yday
+    )
+
+    quote = quotes[
+        day_number % len(quotes)
+    ]
+
+    # Different visual pattern every day
+    pattern = day_number % 5
+
+    if pattern == 0:
+        accent = "#2563eb"
+        accent2 = "#1e3a8a"
+    elif pattern == 1:
+        accent = "#16a34a"
+        accent2 = "#166534"
+    elif pattern == 2:
+        accent = "#7c3aed"
+        accent2 = "#4c1d95"
+    elif pattern == 3:
+        accent = "#ea580c"
+        accent2 = "#9a3412"
+    else:
+        accent = "#0891b2"
+        accent2 = "#164e63"
+
+    quote_safe = escape_svg_text(
+        quote
+    )
+
+    date_safe = escape_svg_text(
+        datetime.now(IST).strftime(
+            "%d %B %Y"
+        )
+    )
+
+    svg = f'''<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1600"
+    height="900"
+    viewBox="0 0 1600 900">
+
+    <defs>
+        <linearGradient
+            id="background"
+            x1="0"
+            y1="0"
+            x2="1"
+            y2="1">
+
+            <stop
+                offset="0%"
+                stop-color="{accent2}"/>
+
+            <stop
+                offset="100%"
+                stop-color="{accent}"/>
+        </linearGradient>
+
+        <filter
+            id="shadow"
+            x="-20%"
+            y="-20%"
+            width="140%"
+            height="140%">
+
+            <feDropShadow
+                dx="0"
+                dy="12"
+                stdDeviation="15"
+                flood-opacity="0.25"/>
+        </filter>
+    </defs>
+
+    <rect
+        width="1600"
+        height="900"
+        fill="url(#background)"/>
+
+    <circle
+        cx="1320"
+        cy="170"
+        r="260"
+        fill="#ffffff"
+        opacity="0.08"/>
+
+    <circle
+        cx="1450"
+        cy="700"
+        r="360"
+        fill="#ffffff"
+        opacity="0.06"/>
+
+    <circle
+        cx="160"
+        cy="760"
+        r="260"
+        fill="#ffffff"
+        opacity="0.05"/>
+
+    <rect
+        x="170"
+        y="150"
+        width="1260"
+        height="600"
+        rx="45"
+        fill="#ffffff"
+        opacity="0.96"
+        filter="url(#shadow)"/>
+
+    <text
+        x="800"
+        y="270"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="38"
+        font-weight="700"
+        fill="{accent2}">
+        AURA EXAM AI
+    </text>
+
+    <text
+        x="800"
+        y="390"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="68"
+        font-weight="800"
+        fill="#111827">
+        {quote_safe}
+    </text>
+
+    <line
+        x1="520"
+        y1="455"
+        x2="1080"
+        y2="455"
+        stroke="{accent}"
+        stroke-width="8"
+        stroke-linecap="round"/>
+
+    <text
+        x="800"
+        y="545"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="34"
+        font-weight="600"
+        fill="#374151">
+        CURRENT AFFAIRS • EXAM PREPARATION • SUCCESS
+    </text>
+
+    <text
+        x="800"
+        y="635"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="27"
+        fill="#6b7280">
+        {date_safe}
+    </text>
+
+    <text
+        x="800"
+        y="700"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="25"
+        fill="{accent2}">
+        Stay focused. Keep learning. Keep moving forward.
+    </text>
+
+</svg>
+'''
+
+    with open(
+        image_path,
+        "w",
+        encoding="utf-8"
+    ) as file:
+
+        file.write(svg)
+
+    print(
+        "Daily motivational image created:",
+        image_path
+    )
+
+    return image_path.replace(
+        os.sep,
+        "/"
+    )
+
+
+# ============================================================
 # MOTIVATION
 # ============================================================
 
@@ -1614,30 +1794,7 @@ def motivation():
         % len(quotes)
     )
 
-    # --------------------------------------------------------
-    # NEW:
-    # Daily image path.
-    #
-    # Add your actual images to:
-    # assets/motivation/
-    #
-    # motivation_01.jpg
-    # motivation_02.jpg
-    # ...
-    # motivation_07.jpg
-    # --------------------------------------------------------
-
-    image_number = (
-        datetime.now(
-            IST
-        ).timetuple().tm_yday
-        % 7
-    ) + 1
-
-    image_path = (
-        f"assets/motivation/"
-        f"motivation_{image_number:02d}.jpg"
-    )
+    image_path = create_daily_motivation_image()
 
     return {
 
@@ -1645,13 +1802,12 @@ def motivation():
 
         "date": TODAY,
 
-        # NEW
         "image": image_path,
 
-        # NEW
         "image_alt": (
-            "Student success, examination "
-            "preparation and academic achievement"
+            "Daily motivational image for students "
+            "focused on examination preparation, "
+            "study and academic success"
         )
     }
 
@@ -1775,13 +1931,9 @@ def main():
     )
 
     # --------------------------------------------------------
-    # IMPORTANT:
-    # This remains unlimited.
-    #
     # First run = 30
     # Every later run = +10
-    #
-    # There is NO 30 ARTICLE CAP.
+    # NO 30 ARTICLE CAP
     # --------------------------------------------------------
 
     target = (
@@ -1977,6 +2129,10 @@ def main():
     print(
         "Total quizzes:",
         len(existing)
+    )
+    print(
+        "Motivational image:",
+        f"motivation/motivation_{TODAY}.svg"
     )
     print("=" * 60)
 
