@@ -21,9 +21,11 @@ from google.genai import types
 DATA_DIR = "data"
 MASTER_FILE = "data.json"
 
+# Initial run
 FIRST_RUN_COUNT = 30
+
+# Every later 3-hour update
 UPDATE_COUNT = 10
-MAX_DAILY_COUNT = 30
 
 IST = ZoneInfo("Asia/Kolkata")
 
@@ -39,7 +41,7 @@ gemini = genai.Client(api_key=API_KEY)
 
 
 # ============================================================
-# HTTP SETTINGS
+# HTTP
 # ============================================================
 
 HEADERS = {
@@ -52,7 +54,7 @@ HEADERS = {
 
 
 # ============================================================
-# NEWS SOURCES
+# RSS SOURCES
 # ============================================================
 
 RSS_SOURCES = [
@@ -132,25 +134,11 @@ RSS_SOURCES = [
 
 
 # ============================================================
-# CATEGORY NORMALIZATION
+# CATEGORY
 # ============================================================
 
-VALID_CATEGORIES = [
-    "India",
-    "World",
-    "Sports",
-    "Science & Technology",
-    "Economy",
-    "Environment",
-    "Health"
-]
-
-
 def normalize_category(category):
-    if not category:
-        return "India"
-
-    value = str(category).strip().lower()
+    value = str(category or "").lower()
 
     if "sport" in value or "cricket" in value:
         return "Sports"
@@ -182,32 +170,23 @@ def clean_text(value):
         return ""
 
     value = html.unescape(str(value))
-    value = BeautifulSoup(value, "html.parser").get_text(" ", strip=True)
+    value = BeautifulSoup(
+        value,
+        "html.parser"
+    ).get_text(" ", strip=True)
+
     value = re.sub(r"\s+", " ", value)
 
     return value.strip()
 
 
-def clean_url(url):
-    if not url:
-        return ""
-
-    return str(url).strip()
-
-
-def make_id(url, title):
-    base = clean_url(url) or clean_text(title)
-
-    digest = hashlib.sha256(
-        base.encode("utf-8")
-    ).hexdigest()[:12]
-
-    return int(digest, 16) % 900000000 + 100000000
-
-
 def safe_list(value):
     if isinstance(value, list):
-        return [str(x).strip() for x in value if str(x).strip()]
+        return [
+            str(x).strip()
+            for x in value
+            if str(x).strip()
+        ]
 
     if isinstance(value, str) and value.strip():
         return [value.strip()]
@@ -222,31 +201,45 @@ def safe_vocabulary(value):
         return result
 
     for item in value:
-        if isinstance(item, dict):
-            word = clean_text(item.get("word", ""))
-            meaning = clean_text(
-                item.get("meaning_hindi", "")
-                or item.get("meaning", "")
-            )
+        if not isinstance(item, dict):
+            continue
 
-            if word:
-                result.append({
-                    "word": word,
-                    "meaning_hindi": meaning
-                })
+        word = clean_text(
+            item.get("word", "")
+        )
+
+        meaning = clean_text(
+            item.get("meaning_hindi", "")
+        )
+
+        if word:
+            result.append({
+                "word": word,
+                "meaning_hindi": meaning
+            })
 
     return result
 
 
+def make_id(url, title):
+    base = str(url or title)
+
+    digest = hashlib.sha256(
+        base.encode("utf-8")
+    ).hexdigest()[:12]
+
+    return int(digest, 16) % 900000000 + 100000000
+
+
 # ============================================================
-# RSS COLLECTION
+# RSS
 # ============================================================
 
 def collect_news():
     candidates = []
 
     for source in RSS_SOURCES:
-        print("Reading:", source["name"], source["url"])
+        print("Reading:", source["name"])
 
         try:
             response = requests.get(
@@ -257,9 +250,11 @@ def collect_news():
 
             response.raise_for_status()
 
-            feed = feedparser.parse(response.content)
+            feed = feedparser.parse(
+                response.content
+            )
 
-            for item in feed.entries[:40]:
+            for item in feed.entries[:50]:
                 title = clean_text(
                     item.get("title", "")
                 )
@@ -269,11 +264,11 @@ def collect_news():
                     or item.get("description", "")
                 )
 
-                link = clean_url(
+                url = str(
                     item.get("link", "")
-                )
+                ).strip()
 
-                if not title or not link:
+                if not title or not url:
                     continue
 
                 candidates.append({
@@ -282,7 +277,7 @@ def collect_news():
                     "category": source["category"],
                     "title": title,
                     "summary": summary,
-                    "url": link
+                    "url": url
                 })
 
         except Exception as exc:
@@ -292,15 +287,11 @@ def collect_news():
                 str(exc)
             )
 
-    return deduplicate_candidates(candidates)
+    return deduplicate(candidates)
 
 
-# ============================================================
-# DEDUPLICATION
-# ============================================================
-
-def deduplicate_candidates(items):
-    unique = []
+def deduplicate(items):
+    result = []
     seen_urls = set()
     seen_titles = set()
 
@@ -316,19 +307,19 @@ def deduplicate_candidates(items):
         if url in seen_urls:
             continue
 
-        if title_key and title_key in seen_titles:
+        if title_key in seen_titles:
             continue
 
         seen_urls.add(url)
         seen_titles.add(title_key)
 
-        unique.append(item)
+        result.append(item)
 
-    return unique
+    return result
 
 
 # ============================================================
-# LOAD EXISTING DATA
+# JSON
 # ============================================================
 
 def load_json(path, default):
@@ -343,13 +334,7 @@ def load_json(path, default):
         ) as file:
             return json.load(file)
 
-    except Exception as exc:
-        print(
-            "Could not read:",
-            path,
-            str(exc)
-        )
-
+    except Exception:
         return default
 
 
@@ -357,7 +342,10 @@ def save_json(path, data):
     directory = os.path.dirname(path)
 
     if directory:
-        os.makedirs(directory, exist_ok=True)
+        os.makedirs(
+            directory,
+            exist_ok=True
+        )
 
     with open(
         path,
@@ -372,7 +360,7 @@ def save_json(path, data):
         )
 
 
-def load_today_data():
+def load_today():
     path = os.path.join(
         DATA_DIR,
         TODAY + ".json"
@@ -392,7 +380,10 @@ def load_today_data():
             "news": []
         }
 
-    if not isinstance(data.get("news"), list):
+    if not isinstance(
+        data.get("news"),
+        list
+    ):
         data["news"] = []
 
     data["date"] = TODAY
@@ -401,31 +392,10 @@ def load_today_data():
 
 
 # ============================================================
-# EXISTING ARTICLE URLS
+# SOURCE ARTICLE
 # ============================================================
 
-def existing_urls(news):
-    urls = set()
-
-    for article in news:
-        url = clean_url(
-            article.get("url", "")
-        ).lower()
-
-        if url:
-            urls.add(url)
-
-    return urls
-
-
-# ============================================================
-# SOURCE PAGE FETCH
-# ============================================================
-
-def fetch_source_text(url):
-    if not url:
-        return ""
-
+def fetch_article_text(url):
     try:
         response = requests.get(
             url,
@@ -456,22 +426,22 @@ def fetch_source_text(url):
 
         for paragraph in soup.find_all("p"):
             text_value = clean_text(
-                paragraph.get_text(" ", strip=True)
+                paragraph.get_text(
+                    " ",
+                    strip=True
+                )
             )
 
             if len(text_value) >= 40:
                 paragraphs.append(text_value)
 
-        text_value = "\n\n".join(
+        return "\n\n".join(
             paragraphs[:35]
-        )
-
-        return text_value[:12000]
+        )[:12000]
 
     except Exception as exc:
         print(
-            "Could not fetch article page:",
-            url,
+            "Article fetch failed:",
             str(exc)
         )
 
@@ -479,10 +449,10 @@ def fetch_source_text(url):
 
 
 # ============================================================
-# GEMINI JSON CALL
+# GEMINI
 # ============================================================
 
-def call_gemini(prompt, retries=3):
+def call_gemini(prompt):
     models = [
         "gemini-3.6-flash",
         "gemini-3.5-flash",
@@ -492,17 +462,8 @@ def call_gemini(prompt, retries=3):
     last_error = None
 
     for model_name in models:
-
-        for attempt in range(retries):
-
+        for attempt in range(3):
             try:
-                print(
-                    "Calling Gemini:",
-                    model_name,
-                    "attempt",
-                    attempt + 1
-                )
-
                 response = gemini.models.generate_content(
                     model=model_name,
                     contents=prompt,
@@ -546,29 +507,18 @@ def call_gemini(prompt, retries=3):
 
 
 # ============================================================
-# GEMINI ARTICLE GENERATION
+# GENERATE ARTICLES + QUIZ
 # ============================================================
 
 def generate_articles(candidates):
-    if not candidates:
-        return []
-
     prepared = []
 
-    for index, candidate in enumerate(candidates):
-        print(
-            "Preparing source",
-            index + 1,
-            "of",
-            len(candidates)
-        )
-
-        source_text = fetch_source_text(
+    for candidate in candidates:
+        source_text = fetch_article_text(
             candidate["url"]
         )
 
         prepared.append({
-            "index": index,
             "source_id": candidate["source_id"],
             "source": candidate["source"],
             "category": candidate["category"],
@@ -578,41 +528,35 @@ def generate_articles(candidates):
             "source_text": source_text
         })
 
-        time.sleep(0.3)
-
     material = json.dumps(
         prepared,
         ensure_ascii=False
     )
 
     prompt = (
-        "You are the editorial engine for AURA EXAM AI, "
-        "an Indian competitive-exam current affairs platform. "
-        "Create original, factual, exam-oriented notes from the "
-        "supplied news sources.\n\n"
+        "You are the editorial engine for AURA EXAM AI. "
+        "Create factual current-affairs articles for Indian "
+        "competitive-exam students.\n\n"
 
-        "IMPORTANT RULES:\n"
-        "1. Use only facts supported by the supplied title, summary "
-        "and source text.\n"
-        "2. Do not invent statistics, quotations, dates, schemes, "
-        "organizations, events or statements.\n"
-        "3. Do not copy long passages from the source.\n"
-        "4. Write original summaries and analysis.\n"
-        "5. If the supplied material does not establish a fact, "
-        "do not manufacture it.\n"
-        "6. Political, governmental and policy stories must use "
-        "neutral factual language.\n"
-        "7. Attribute claims to the relevant person, organization "
-        "or source when necessary.\n"
-        "8. Do not endorse or oppose any political party, candidate, "
-        "government or policy.\n"
-        "9. Do not rank political actors or predict election outcomes.\n"
-        "10. Keep the article specifically connected to its supplied source.\n"
-        "11. Do not create placeholder articles.\n"
-        "12. Category must be one of: India, World, Sports, "
-        "Science & Technology, Economy, Environment, Health.\n\n"
+        "Use only the supplied source material. "
+        "Do not invent facts. "
+        "Do not copy long source passages. "
+        "Create original educational notes.\n\n"
 
-        "For every supplied news item return an object with these fields:\n"
+        "Political and government stories must remain neutral "
+        "and factual. Do not endorse or oppose political parties, "
+        "candidates or governments. Do not predict election results.\n\n"
+
+        "For EVERY news item create EXACTLY ONE quiz question "
+        "based specifically on that news item.\n\n"
+
+        "The quiz must contain:\n"
+        "question\n"
+        "options: exactly 4 options\n"
+        "correct_answer: the exact correct option text\n"
+        "explanation\n\n"
+
+        "Return these article fields:\n"
         "source_id\n"
         "source\n"
         "category\n"
@@ -636,35 +580,13 @@ def generate_articles(candidates):
         "mains_questions\n"
         "takeaway\n"
         "prelims_facts\n"
-        "vocabulary\n\n"
+        "vocabulary\n"
+        "quiz\n\n"
 
-        "Field requirements:\n"
-        "- headline: accurate and concise.\n"
-        "- story_lead: 2-3 sentences.\n"
-        "- full_article_text: 4-7 original paragraphs.\n"
-        "- background_context: useful context for understanding the story.\n"
-        "- bullet_points: 4-7 important points.\n"
-        "- key_facts: 4-8 factual points.\n"
-        "- key_locations: relevant places only.\n"
-        "- important_dates: dates explicitly supported by the material.\n"
-        "- exam_relevance: UPSC/competitive-exam relevance.\n"
-        "- upsc_analysis: structured analytical discussion.\n"
-        "- causes: relevant causes or drivers; use an empty array if not applicable.\n"
-        "- impacts: important consequences.\n"
-        "- challenges: important implementation or policy challenges.\n"
-        "- government_steps: documented steps mentioned or clearly supported.\n"
-        "- constitutional_or_policy_link: relevant constitutional article, law, "
-        "policy, institution or framework only when supported or clearly relevant. "
-        "Do not invent connections.\n"
-        "- way_forward: balanced, evidence-based suggestions.\n"
-        "- mains_notes: concise notes suitable for Mains answer preparation.\n"
-        "- mains_questions: 2-3 probable descriptive questions.\n"
-        "- takeaway: 2-4 sentence revision takeaway.\n"
-        "- prelims_facts: 5-8 concise factual points.\n"
-        "- vocabulary: 4-8 useful English words from the article with Hindi meanings. "
-        "Return objects containing word and meaning_hindi.\n\n"
+        "Vocabulary must contain objects with "
+        "word and meaning_hindi.\n\n"
 
-        "Return ONLY valid JSON in this structure:\n"
+        "Return ONLY valid JSON:\n"
         "{"
         "\"articles\":["
         "{"
@@ -696,12 +618,18 @@ def generate_articles(candidates):
         "\"word\":\"\","
         "\"meaning_hindi\":\"\""
         "}"
-        "]"
+        "],"
+        "\"quiz\":{"
+        "\"question\":\"\","
+        "\"options\":[],"
+        "\"correct_answer\":\"\","
+        "\"explanation\":\"\""
+        "}"
         "}"
         "]"
         "}\n\n"
 
-        "SUPPLIED NEWS MATERIAL:\n"
+        "SUPPLIED NEWS:\n"
         + material
     )
 
@@ -710,7 +638,10 @@ def generate_articles(candidates):
     if not isinstance(result, dict):
         return []
 
-    articles = result.get("articles", [])
+    articles = result.get(
+        "articles",
+        []
+    )
 
     if not isinstance(articles, list):
         return []
@@ -719,27 +650,29 @@ def generate_articles(candidates):
 
 
 # ============================================================
-# CONVERT GEMINI ARTICLES
+# CONVERT
 # ============================================================
 
 def convert_articles(generated, candidates):
-    candidate_map = {}
-
-    for candidate in candidates:
-        candidate_map[
-            candidate["source_id"] + "|" + candidate["url"]
-        ] = candidate
-
     converted = []
 
     for item in generated:
-
         if not isinstance(item, dict):
             continue
 
         source_id = clean_text(
             item.get("source_id", "")
         )
+
+        candidate = None
+
+        for current in candidates:
+            if current["source_id"] == source_id:
+                candidate = current
+                break
+
+        if candidate is None:
+            continue
 
         headline = clean_text(
             item.get("headline", "")
@@ -748,108 +681,150 @@ def convert_articles(generated, candidates):
         if not headline:
             continue
 
-        source = clean_text(
-            item.get("source", "")
+        quiz = item.get(
+            "quiz",
+            {}
         )
 
-        category = normalize_category(
-            item.get("category", "")
+        if not isinstance(quiz, dict):
+            quiz = {}
+
+        options = safe_list(
+            quiz.get("options")
         )
 
-        matching_candidate = None
+        correct_answer = clean_text(
+            quiz.get("correct_answer", "")
+        )
 
-        for candidate in candidates:
-            if candidate["source_id"] == source_id:
-                matching_candidate = candidate
-                break
-
-        if not matching_candidate:
-            for candidate in candidates:
-                if candidate["title"].lower() in headline.lower():
-                    matching_candidate = candidate
-                    break
-
-        if not matching_candidate:
+        if len(options) != 4:
             continue
 
-        url = matching_candidate["url"]
-
-        article_id = make_id(
-            url,
-            headline
-        )
+        if correct_answer not in options:
+            continue
 
         article = {
-            "id": article_id,
-            "source_id": source_id or matching_candidate["source_id"],
-            "source": source or matching_candidate["source"],
-            "category": category,
+            "id": make_id(
+                candidate["url"],
+                headline
+            ),
+
+            "source_id": source_id,
+
+            "source": clean_text(
+                item.get(
+                    "source",
+                    candidate["source"]
+                )
+            ),
+
+            "category": normalize_category(
+                item.get(
+                    "category",
+                    candidate["category"]
+                )
+            ),
+
             "headline": headline,
+
             "story_lead": clean_text(
                 item.get("story_lead", "")
             ),
+
             "full_article_text": clean_text(
                 item.get("full_article_text", "")
             ),
+
             "background_context": clean_text(
                 item.get("background_context", "")
             ),
+
             "bullet_points": safe_list(
                 item.get("bullet_points")
             ),
+
             "key_facts": safe_list(
                 item.get("key_facts")
             ),
+
             "key_locations": safe_list(
                 item.get("key_locations")
             ),
+
             "important_dates": safe_list(
                 item.get("important_dates")
             ),
+
             "exam_relevance": clean_text(
                 item.get("exam_relevance", "")
             ),
+
             "upsc_analysis": clean_text(
                 item.get("upsc_analysis", "")
             ),
+
             "causes": safe_list(
                 item.get("causes")
             ),
+
             "impacts": safe_list(
                 item.get("impacts")
             ),
+
             "challenges": safe_list(
                 item.get("challenges")
             ),
+
             "government_steps": safe_list(
                 item.get("government_steps")
             ),
+
             "constitutional_or_policy_link": clean_text(
                 item.get(
                     "constitutional_or_policy_link",
                     ""
                 )
             ),
+
             "way_forward": clean_text(
                 item.get("way_forward", "")
             ),
+
             "mains_notes": clean_text(
                 item.get("mains_notes", "")
             ),
+
             "mains_questions": safe_list(
                 item.get("mains_questions")
             ),
+
             "takeaway": clean_text(
                 item.get("takeaway", "")
             ),
+
             "prelims_facts": safe_list(
                 item.get("prelims_facts")
             ),
+
             "vocabulary": safe_vocabulary(
                 item.get("vocabulary")
             ),
+
+            "quiz": {
+                "question": clean_text(
+                    quiz.get("question", "")
+                ),
+                "options": options,
+                "correct_answer": correct_answer,
+                "explanation": clean_text(
+                    quiz.get("explanation", "")
+                )
+            },
+
+            "url": candidate["url"],
+
             "image_url": "",
-            "url": url,
+
             "published": TODAY
         }
 
@@ -862,14 +837,13 @@ def convert_articles(generated, candidates):
 # MOTIVATION
 # ============================================================
 
-def generate_motivation():
+def motivation():
     quotes = [
-        "Small improvements every day create extraordinary results.",
         "Consistency turns preparation into performance.",
         "Read today. Revise tomorrow. Remember on exam day.",
-        "Strong preparation is built one focused session at a time.",
         "Knowledge becomes power when it is revised and applied.",
-        "Every current affair can become a better answer in the exam."
+        "Every current affair can become a better answer in the exam.",
+        "Strong preparation is built one focused session at a time."
     ]
 
     index = (
@@ -884,53 +858,53 @@ def generate_motivation():
 
 
 # ============================================================
-# UPDATE MASTER DATA
+# AVAILABLE DATES
 # ============================================================
 
-def get_available_dates():
+def available_dates():
     if not os.path.exists(DATA_DIR):
         return []
 
-    dates = []
+    result = []
 
     for filename in os.listdir(DATA_DIR):
-
         if not filename.endswith(".json"):
             continue
 
-        date_part = filename[:-5]
+        date_value = filename[:-5]
 
         if re.fullmatch(
             r"\d{4}-\d{2}-\d{2}",
-            date_part
+            date_value
         ):
-            dates.append(date_part)
+            result.append(date_value)
 
     return sorted(
-        dates,
+        set(result),
         reverse=True
     )
 
 
+# ============================================================
+# MASTER FILE
+# ============================================================
+
 def update_master(today_data):
-    available_dates = get_available_dates()
+    dates = available_dates()
 
-    if TODAY not in available_dates:
-        available_dates.insert(
-            0,
-            TODAY
-        )
+    if TODAY not in dates:
+        dates.append(TODAY)
 
-    available_dates = sorted(
-        set(available_dates),
+    dates = sorted(
+        set(dates),
         reverse=True
     )
 
     master = {
         "current_date": TODAY,
-        "available_dates": available_dates,
+        "available_dates": dates,
         "today": today_data,
-        "motivation": generate_motivation(),
+        "motivation": motivation(),
         "last_updated_ist": CURRENT_TIME
     }
 
@@ -946,89 +920,75 @@ def update_master(today_data):
 
 def main():
     print("=" * 60)
-    print("AURA EXAM AI - CURRENT AFFAIRS UPDATE")
+    print("AURA EXAM AI CURRENT AFFAIRS")
     print("=" * 60)
 
-    print("IST time:", CURRENT_TIME)
-    print("IST date:", TODAY)
+    print("IST:", CURRENT_TIME)
+    print("DATE:", TODAY)
 
     os.makedirs(
         DATA_DIR,
         exist_ok=True
     )
 
-    today_data = load_today_data()
+    today_data = load_today()
 
-    old_news = today_data.get(
+    existing = today_data.get(
         "news",
         []
     )
 
     print(
-        "Existing articles today:",
-        len(old_news)
+        "Existing news:",
+        len(existing)
     )
 
-    if len(old_news) >= MAX_DAILY_COUNT:
-        print(
-            "Daily limit reached:",
-            MAX_DAILY_COUNT
-        )
-
-        update_master(today_data)
-
-        print(
-            "Master data refreshed."
-        )
-
-        return
-
-    target_count = (
+    target = (
         FIRST_RUN_COUNT
-        if len(old_news) == 0
-        else min(
-            UPDATE_COUNT,
-            MAX_DAILY_COUNT - len(old_news)
-        )
+        if len(existing) == 0
+        else UPDATE_COUNT
     )
 
     print(
-        "Target new articles:",
-        target_count
+        "New articles requested:",
+        target
     )
 
     candidates = collect_news()
 
-    print(
-        "RSS candidates found:",
-        len(candidates)
-    )
+    old_urls = set()
 
-    old_urls = existing_urls(
-        old_news
-    )
+    for article in existing:
+        url = str(
+            article.get("url", "")
+        ).lower().strip()
 
-    fresh_candidates = []
+        if url:
+            old_urls.add(url)
+
+    fresh = []
 
     for candidate in candidates:
-        url = candidate["url"].lower()
-
-        if url in old_urls:
+        if candidate["url"].lower() in old_urls:
             continue
 
-        fresh_candidates.append(
-            candidate
-        )
+        fresh.append(candidate)
+
+    fresh = fresh[:target]
 
     print(
         "Fresh candidates:",
-        len(fresh_candidates)
+        len(fresh)
     )
 
-    if not fresh_candidates:
+    if not fresh:
         print(
-            "No new RSS articles found."
+            "No new articles available right now."
         )
+
+        today_data[
+            "last_updated_ist"
+        ] = CURRENT_TIME
 
         save_json(
             os.path.join(
@@ -1044,42 +1004,31 @@ def main():
 
         return
 
-    fresh_candidates = fresh_candidates[
-        :target_count
-    ]
-
     generated = []
 
     batch_size = 10
 
     for start in range(
         0,
-        len(fresh_candidates),
+        len(fresh),
         batch_size
     ):
-        batch = fresh_candidates[
+        batch = fresh[
             start:start + batch_size
         ]
 
-        print(
-            "Generating batch:",
-            start + 1,
-            "to",
-            start + len(batch)
-        )
-
         try:
-            batch_generated = generate_articles(
+            result = generate_articles(
                 batch
             )
 
             generated.extend(
-                batch_generated
+                result
             )
 
         except Exception as exc:
             print(
-                "Generation batch failed:",
+                "Generation failed:",
                 str(exc)
             )
 
@@ -1087,56 +1036,44 @@ def main():
 
     new_articles = convert_articles(
         generated,
-        fresh_candidates
+        fresh
     )
 
-    print(
-        "Generated valid articles:",
-        len(new_articles)
-    )
+    existing_ids = set()
 
-    # Final duplicate protection
-    old_ids = set()
-
-    for article in old_news:
-        old_ids.add(
+    for article in existing:
+        existing_ids.add(
             str(article.get("id", ""))
         )
 
     added = 0
 
     for article in new_articles:
+        article_id = str(
+            article["id"]
+        )
 
-        if str(article["id"]) in old_ids:
+        if article_id in existing_ids:
             continue
 
-        old_news.append(
-            article
-        )
-
-        old_ids.add(
-            str(article["id"])
-        )
+        existing.append(article)
+        existing_ids.add(article_id)
 
         added += 1
 
-        if len(old_news) >= MAX_DAILY_COUNT:
-            break
+    today_data["news"] = existing
 
-    # Keep newest additions first
-    today_data["news"] = old_news
+    today_data[
+        "last_updated_ist"
+    ] = CURRENT_TIME
 
-    today_data["date"] = TODAY
-
-    today_data["last_updated_ist"] = CURRENT_TIME
-
-    daily_path = os.path.join(
+    daily_file = os.path.join(
         DATA_DIR,
         TODAY + ".json"
     )
 
     save_json(
-        daily_path,
+        daily_file,
         today_data
     )
 
@@ -1146,12 +1083,10 @@ def main():
 
     print("=" * 60)
     print("UPDATE COMPLETE")
-    print("=" * 60)
     print("Date:", TODAY)
-    print("New articles added:", added)
-    print("Total articles today:", len(old_news))
-    print("Daily file:", daily_path)
-    print("Master file:", MASTER_FILE)
+    print("Added:", added)
+    print("Total news:", len(existing))
+    print("Total quizzes:", len(existing))
     print("=" * 60)
 
 
