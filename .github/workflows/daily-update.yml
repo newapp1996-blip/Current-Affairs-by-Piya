@@ -12,6 +12,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: aura-current-affairs-update
@@ -56,3 +58,4 @@ jobs:
             git commit -m "Update current affairs"
             git push
           fi
+          
