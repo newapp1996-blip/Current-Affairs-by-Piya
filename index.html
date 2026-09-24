@@ -5965,6 +5965,39 @@
 
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("data.json?cache=" + Date.now())
+        .then(response => response.json())
+        .then(data => {
+            if (data.motivation && data.motivation.image) {
+
+                const mobileImage =
+                    document.getElementById("motivationImageMobile");
+
+                const sideImage =
+                    document.getElementById("motivationSideImage");
+
+                if (mobileImage) {
+                    mobileImage.src =
+                        data.motivation.image + "?v=" + Date.now();
+
+                    mobileImage.style.display = "block";
+                }
+
+                if (sideImage) {
+                    sideImage.src =
+                        data.motivation.image + "?v=" + Date.now();
+
+                    sideImage.style.display = "block";
+                }
+            }
+        })
+        .catch(error =>
+            console.log("Motivation image update:", error)
+        );
+});
+</script>
 </body>
 
 </html>
