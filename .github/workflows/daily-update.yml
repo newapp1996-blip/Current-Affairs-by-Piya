@@ -22,35 +22,73 @@ concurrency:
 jobs:
   update-news:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
 
     steps:
+      # --------------------------------------------------
+      # 1. Checkout latest repository
+      # --------------------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
+      # --------------------------------------------------
+      # 2. Setup Python
+      # --------------------------------------------------
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
+      # --------------------------------------------------
+      # 3. Install dependencies
+      # --------------------------------------------------
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install feedparser requests beautifulsoup4 google-genai
 
+      # --------------------------------------------------
+      # 4. Update current affairs
+      # --------------------------------------------------
       - name: Update news
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TZ: Asia/Kolkata
         run: |
+          echo "Starting AURA EXAM AI current affairs update..."
+          date
           python update_news.py
 
+      # --------------------------------------------------
+      # 5. Show generated data summary
+      # --------------------------------------------------
+      - name: Verify generated files
+        run: |
+          echo "Checking generated files..."
+
+          if [ ! -f "data.json" ]; then
+            echo "ERROR: data.json was not generated."
+            exit 1
+          fi
+
+          echo "data.json found."
+
+          if [ -d "data" ]; then
+            echo "Daily data directory found."
+            find data -maxdepth 1 -type f | sort
+          fi
+
+      # --------------------------------------------------
+      # 6. Commit updated news/data
+      # --------------------------------------------------
       - name: Commit updated news
         run: |
           git config user.name "AURA EXAM AI"
           git config user.email "actions@github.com"
 
-          git add data.json data/
+          git add data.json data/ assets/ 2>/dev/null || true
 
           if git diff --cached --quiet; then
             echo "No news changes to commit."
@@ -59,15 +97,23 @@ jobs:
             git push
           fi
 
+      # --------------------------------------------------
+      # 7. Configure GitHub Pages
+      # --------------------------------------------------
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      # --------------------------------------------------
+      # 8. Upload complete website
+      # --------------------------------------------------
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: "."
 
+      # --------------------------------------------------
+      # 9. Deploy to GitHub Pages
+      # --------------------------------------------------
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        
