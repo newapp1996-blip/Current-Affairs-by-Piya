@@ -11,6 +11,2224 @@
     "date": "2026-09-25",
     "news": [
       {
+        "headline": "Delhi HC Notice Over Morphed Image, Nationwide Congress Protests, and Key National Updates",
+        "story_lead": "The Delhi High Court has issued notices regarding AI-morphed images circulated during protests, while the Congress party launched nationwide demonstrations demanding the resignation of Chief Election Commissioner Gyanesh Kumar. Meanwhile, legal and sporting developments unfolded across Delhi and international sports arenas.",
+        "full_article_text": "Recent national developments highlight key legal, political, and sporting events. The Delhi High Court issued notices to Cockroach Janta Party convenor Abhijeet Dipke and spokespersons Saurav Das and Ashutosh Ranka in response to a plea by a woman alleging her morphed images with Prime Minister Narendra Modi were circulated during protests. The court directed Meta to remove the objectionable content. Concurrently, Congress workers staged nationwide protests across multiple states demanding the resignation of Chief Election Commissioner Gyanesh Kumar amid allegations that the Election Commission has been compromised. In law and order news, an FIR was registered regarding a gang rape in south Delhi's Aastha Kunj park involving suspects posing as police officers. In sports, Indian badminton players Satwiksairaj Rankireddy and Chirag Shetty were knocked out in the first round of the Aichi-Nagoya Asian Games.",
+        "background_context": "The news encompasses various domains including the functioning of the Election Commission of India, digital content regulation on social media platforms like Meta, law and order issues in Delhi, and international sporting events like the Asian Games.",
+        "bullet_points": [
+          "Delhi High Court issued notices to Cockroach Janta Party convenor Abhijeet Dipke and spokespersons over AI-morphed images.",
+          "Court directed Meta to remove the alleged objectionable content from its social media platforms.",
+          "Congress party launched nationwide protests across multiple states demanding the resignation of Chief Election Commissioner Gyanesh Kumar.",
+          "An FIR was registered regarding the alleged gang rape of a 17-year-old girl in south Delhi's Aastha Kunj park by men posing as police officers.",
+          "Defending champions Satwiksairaj Rankireddy and Chirag Shetty were knocked out in the first round of the Aichi-Nagoya Asian Games."
+        ],
+        "key_facts": [
+          "Delhi High Court issued notices to Abhijeet Dipke, Saurav Das, and Ashutosh Ranka.",
+          "Congress protests demanding Gyanesh Kumar's resignation occurred in Delhi, Bihar, Assam, Punjab, Arunachal Pradesh, Manipur, Uttar Pradesh, and West Bengal.",
+          "The incident at Aastha Kunj park involved a 17-year-old girl from Faridabad.",
+          "Satwiksairaj Rankireddy and Chirag Shetty are the fourth seeds and defending champions who exited in the first round at the Asian Games."
+        ],
+        "key_locations": [
+          "Delhi",
+          "Jantar Mantar",
+          "Aastha Kunj park",
+          "Kalkaji temple",
+          "Faridabad",
+          "Ichinomiya City Municipal Gymnasium"
+        ],
+        "important_dates": [
+          "Friday",
+          "September 25",
+          "Monday evening"
+        ],
+        "exam_relevance": [
+          "Prelims: Current events, ECI, High Court directives, Sports",
+          "Mains: GS Paper II (Polity, Governance, Election Commission), GS Paper III (Internal Security, Cyber safety/AI misuse)"
+        ],
+        "upsc_analysis": "The developments underline institutional oversight concerning election bodies, the rising challenge of AI-generated morphed media and intermediary liability (Meta), and critical law and order concerns regarding public safety.",
+        "causes": [
+          "Discontent regarding the Election Commission leading to political protests",
+          "Misuse of digital tools for creating and circulating AI-morphed images during protests",
+          "Criminal activities by individuals impersonating law enforcement officers"
+        ],
+        "impacts": [
+          "Heightened political tensions between opposition parties and election authorities",
+          "Legal scrutiny on social media intermediaries for content moderation",
+          "Setbacks for India's badminton contingent at international sporting events"
+        ],
+        "challenges": [
+          "Regulating AI-morphed deepfakes and objectionable digital content on social media platforms",
+          "Ensuring public safety and preventing crimes by fake law enforcement personnel",
+          "Maintaining institutional trust in independent constitutional bodies like the Election Commission"
+        ],
+        "government_steps": [
+          "Delhi High Court directive to Meta for removing objectionable AI-morphed content",
+          "Police registration of FIR and investigation into the Delhi park assault case"
+        ],
+        "constitutional_or_policy_link": [
+          "Article 324 of the Constitution relating to the Election Commission of India",
+          "Information Technology Act and intermediary liability guidelines regarding social media moderation"
+        ],
+        "way_forward": [
+          "Stricter implementation of intermediary guidelines to curb the spread of AI-morphed and morphed deepfake media.",
+          "Enhanced vigilance by law enforcement agencies against impersonators to protect citizens in public spaces."
+        ],
+        "mains_notes": "Recent events highlight intersectional challenges including the digital governance of AI-generated morphed content, institutional autonomy and controversies surrounding the Election Commission, and urban safety concerns regarding impersonation crimes.",
+        "mains_questions": [
+          "Discuss the challenges posed by AI-morphed images and deepfakes on social media platforms, and examine the legal mechanisms available for content moderation in India.",
+          "Analyze the role and independence of the Election Commission of India in upholding democratic integrity amidst rising political contentions."
+        ],
+        "takeaway": "Recent national news covers legal notices over AI-morphed images, nationwide political protests regarding the Election Commission, a serious crime investigation in Delhi, and developments in international sports.",
+        "prelims_facts": [
+          "Election Commission of India's Chief Election Commissioner is Gyanesh Kumar.",
+          "Satwiksairaj Rankireddy and Chirag Shetty compete in men's doubles badminton."
+        ],
+        "vocabulary": [
+          {
+            "word": "Morphed",
+            "meaning_hindi": "रूपांतरित / बदला हुआ"
+          },
+          {
+            "word": "Dissent",
+            "meaning_hindi": "असहमति"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Election Commission of India",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Election_Commission_of_India"
+          },
+          {
+            "name": "Delhi High Court",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Delhi_High_Court"
+          },
+          {
+            "name": "Satwiksairaj Rankireddy",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Satwiksairaj_Rankireddy"
+          },
+          {
+            "name": "Chirag Shetty",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Chirag_Shetty"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "दिल्ली उच्च न्यायालय का डिपके की तस्वीर पर नोटिस, मुख्य चुनाव आयुक्त के खिलाफ कांग्रेस का विरोध प्रदर्शन",
+          "story_lead": "दिल्ली उच्च न्यायालय ने एआई-मॉर्फ्ड तस्वीरों को लेकर नोटिस जारी किया है, जबकि कांग्रेस पार्टी ने मुख्य चुनाव आयुक्त ज्ञानेश कुमार के इस्तीफे की मांग को लेकर देशव्यापी प्रदर्शन शुरू किया है।",
+          "full_article_text": "हालिया राष्ट्रीय विकास में प्रमुख कानूनी, राजनीतिक और खेल घटनाएं शामिल हैं। दिल्ली उच्च न्यायालय ने कॉकरोच जनता पार्टी के संयोजक अभिजीत दिपके और प्रवक्ताओं को एक महिला की याचिका पर नोटिस जारी किया है। इसके साथ ही कांग्रेस कार्यकर्ताओं ने मुख्य चुनाव आयुक्त ज्ञानेश कुमार के इस्तीफे की मांग को लेकर विभिन्न राज्यों में प्रदर्शन किए।",
+          "background_context": "इस खबर में चुनाव आयोग, मेटा जैसे सोशल मीडिया प्लेटफार्मों और खेल स्पर्धाओं से जुड़े घटनाक्रम शामिल हैं।",
+          "bullet_points": [
+            "दिल्ली उच्च न्यायालय ने एआई-मॉर्फ्ड तस्वीरों के मामले में नोटिस जारी किया।",
+            "अदालत ने मेटा को सोशल मीडिया से आपत्तिजनक सामग्री हटाने का निर्देश दिया।",
+            "कांग्रेस ने मुख्य चुनाव आयुक्त ज्ञानेश कुमार के इस्तीफे की मांग को लेकर देशव्यापी प्रदर्शन किया।"
+          ],
+          "key_facts": [
+            "ज्ञानेश कुमार मुख्य चुनाव आयुक्त हैं।",
+            "सात्विकसाईराज रंकीरेड्डी और चिराग शेट्टी बैडमिंटन खिलाड़ी हैं।"
+          ],
+          "key_locations": [
+            "दिल्ली",
+            "जंतर-मंतर",
+            "फरीदाबाद"
+          ],
+          "important_dates": [
+            "शुक्रवार",
+            "सोमवार"
+          ]
+        },
+        "quiz": {
+          "question": "Which social media platform was directed by the Delhi High Court to remove the alleged objectionable AI-morphed content?",
+          "options": [
+            "Meta",
+            "X (Twitter)",
+            "Google",
+            "Telegram"
+          ],
+          "correct_answer": "Meta",
+          "explanation": "The Delhi High Court directed Meta to remove the alleged objectionable content from social media platforms managed by it after receiving relevant web links."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/ht-evening-news-brief-sept-25-delhi-hc-notice-to-dipke-congress-protest-against-cec-gyanesh-kumar-delhi-gangrape-latest-101790333681307.html",
+        "category": "India",
+        "published_date": "2026-09-25",
+        "id": 856093892,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/25/1600x900/logo/ANI-20260925123-0_1790333800673_FQcs_1790334187989_GZIt_5817ddb2-e6aa-4505-b528-7e17f0318f0c_ElpT.jpg",
+        "added_at": "2026-09-25T20:55:40.283237+05:30"
+      },
+      {
+        "headline": "Security Risks Flagged at Delhi's Aastha Kunj Park Following Gang-Rape Incident",
+        "story_lead": "Security concerns have intensified at southeast Delhi's Aastha Kunj Park following the alleged gang-rape of a 17-year-old girl. Visitors and vendors have highlighted issues including poor lighting, damaged boundary walls, and unattended entry points, questioning the adequacy of longstanding security measures.",
+        "full_article_text": "Following the alleged gang-rape of a 17-year-old girl at southeast Delhi's Aastha Kunj Park, visitors and vendors have raised serious security concerns regarding the sprawling facility. According to police reports, three men—identified as Asif, Hemant, and Manish—allegedly posed as policemen on a Monday evening, approached the victim and her 17-year-old male friend who were eating chips after visiting the nearby Kalkaji Mandir, separated them, and committed the crime in turns. Although police have increased patrolling and deployed security guards following the incident, regular visitors and vendors point out that these measures do not resolve longstanding vulnerabilities. The 142-acre park features 29 gates and is surrounded by residential colonies, markets, offices, and major religious sites. Visitors noted that numerous areas remain poorly lit, and broken sections of boundary walls allow unrestricted access even after the main gates close around 7 pm, making monitoring extremely difficult across isolated stretches.",
+        "background_context": "The incident occurred at Aastha Kunj Park in southeast Delhi, a 142-acre public space with 29 gates located near Kalkaji Mandir, surrounded by residential colonies, markets, and offices. The area has drawn scrutiny over infrastructure gaps such as damaged boundary walls and poor lighting.",
+        "bullet_points": [
+          "A 17-year-old girl was allegedly gang-raped by three men posing as policemen in Aastha Kunj Park.",
+          "The accused were identified by police as Asif, Hemant, and Manish.",
+          "Visitors and vendors raised concerns over poor lighting, damaged boundary walls, and unattended entry points.",
+          "The park spans 142 acres and has 29 gates, making movement monitoring difficult.",
+          "Police have increased patrolling and deployed security guards following the incident.",
+          "Locals noted that security measures tend to diminish after a short period once an incident fades from immediate attention."
+        ],
+        "key_facts": [
+          "Incident location: Aastha Kunj Park, southeast Delhi.",
+          "Victim and friend age: 17 years old.",
+          "Accused individuals: Asif, Hemant, and Manish.",
+          "Park dimensions: 142 acres with 29 gates.",
+          "Main gate closure time: Usually around 7 pm."
+        ],
+        "key_locations": [
+          "Aastha Kunj Park",
+          "Kalkaji Mandir",
+          "Delhi",
+          "Southeast Delhi"
+        ],
+        "important_dates": [
+          "Monday"
+        ],
+        "exam_relevance": [
+          "General Studies Paper I (Social Issues, Women's Safety)",
+          "General Studies Paper II (Governance, Law and Order)"
+        ],
+        "upsc_analysis": "The incident at Aastha Kunj Park highlights critical governance and urban planning challenges regarding public safety and women's security in metropolitan areas. Infrastructure deficiencies such as inadequate lighting, broken boundary walls, and porous entry points undermine public safety frameworks. Ensuring women's safety in public spaces requires proactive urban design, consistent administrative vigilance, and robust policing rather than reactive, short-term security enhancements.",
+        "causes": [
+          "Poor lighting and damaged boundary walls creating vulnerable, isolated areas.",
+          "Multiple porous entry points across a large 142-acre perimeter making monitoring difficult.",
+          "Inconsistent year-round security patrolling and surveillance in public spaces."
+        ],
+        "impacts": [
+          "Heightened fear and anxiety among regular visitors and local vendors regarding public safety.",
+          "Intensified public scrutiny on municipal and police authorities regarding security lapses in public parks."
+        ],
+        "challenges": [
+          "Monitoring vast public spaces spanning 142 acres with 29 gates and multiple informal entry points.",
+          "Sustaining heightened security arrangements beyond immediate post-incident crackdowns."
+        ],
+        "government_steps": [
+          "Increased police patrolling across different parts of the park.",
+          "Deployment of security guards following the incident."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 21 of the Constitution of India (Right to Life and Personal Liberty, encompassing the right to a safe environment)."
+        ],
+        "way_forward": [
+          "Fixing damaged boundary walls and sealing unauthorized entry points.",
+          "Upgrading illumination across all isolated stretches of public parks.",
+          "Ensuring round-the-clock, consistent police patrolling and surveillance rather than temporary post-incident deployments."
+        ],
+        "mains_notes": "Public safety in urban parks is a crucial governance indicator. Infrastructure deficits like broken boundaries, poor lighting, and porous boundaries enable criminal elements. Sustainable women's safety requires systemic institutional accountability, comprehensive urban design, and continuous monitoring.",
+        "mains_questions": [
+          "Discuss the urban planning and policing challenges in ensuring women's safety in large public spaces, drawing insights from recent security lapses in urban parks.",
+          "Examine how infrastructural deficiencies in public spaces contribute to security vulnerabilities and suggest remedial measures."
+        ],
+        "takeaway": "Proactive urban infrastructure management and consistent policing are essential to ensure safety and prevent crimes against women in public parks.",
+        "prelims_facts": [
+          "Aastha Kunj Park covers approximately 142 acres.",
+          "The park features 29 entry gates."
+        ],
+        "vocabulary": [
+          {
+            "word": "Sprawling",
+            "meaning_hindi": "फैला हुआ"
+          },
+          {
+            "word": "Vulnerability",
+            "meaning_hindi": "संवेदनशीलता / कमजोरी"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Delhi",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Delhi"
+          },
+          {
+            "name": "Kalkaji Mandir",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Kalkaji%20Mandir"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "दिल्ली के आस्था कुंज पार्क में नाबालिग से सामूहिक बलात्कार के बाद खराब रोशनी और टूटी दीवारों पर सुरक्षा चिंताएं बढ़ीं",
+          "story_lead": "दक्षिण-पूर्वी दिल्ली के आस्था कुंज पार्क में 17 वर्षीय लड़की के साथ कथित सामूहिक बलात्कार के कुछ दिनों बाद भी सुरक्षा को लेकर चिंताएं बनी हुई हैं। आगंतुकों और विक्रेताओं ने खराब रोशनी, क्षतिग्रस्त चारदीवारी और बिना निगरानी वाले प्रवेश बिंदुओं पर सवाल उठाए हैं।",
+          "full_article_text": "दक्षिण-पूर्वी दिल्ली के आस्था कुंज पार्क में 17 वर्षीय लड़की के साथ कथित सामूहिक बलात्कार के बाद आगंतुकों और विक्रेताओं ने सुरक्षा को लेकर चिंता जताई है। पुलिस के अनुसार, तीन लोगों (आसिफ, हेमंत और मनीष) ने कथित तौर पर पुलिसकर्मी बनकर एक नाबालिग लड़की और उसके 17 वर्षीय दोस्त को रोका और अपराध को अंजाम दिया। घटना के बाद से पुलिस ने गश्त बढ़ा दी है, लेकिन नियमित आगंतुकों का कहना है कि यह तैनाती सुरक्षा चिंताओं का स्थायी समाधान नहीं है। यह पार्क 142 एकड़ में फैला है और इसके 29 गेट हैं।",
+          "background_context": "यह घटना दक्षिण-पूर्वी दिल्ली के आस्था कुंज पार्क में हुई, जो कालकाजी मंदिर के पास स्थित 142 एकड़ का सार्वजनिक स्थान है।",
+          "bullet_points": [
+            "आस्था कुंज पार्क में 17 वर्षीय लड़की के साथ कथित सामूहिक बलात्कार।",
+            "आरोपियों की पहचान आसिफ, हेमंत और मनीष के रूप में हुई।",
+            "खराब रोशनी और टूटी दीवारों पर सुरक्षा चिंताएं।"
+          ],
+          "key_facts": [
+            "घटना स्थल: आस्था कुंज पार्क, दक्षिण-पूर्वी दिल्ली।",
+            "पार्क का क्षेत्रफल: 142 एकड़।"
+          ],
+          "key_locations": [
+            "आस्था कुंज पार्क",
+            "कालकाजी मंदिर",
+            "दिल्ली"
+          ],
+          "important_dates": [
+            "सोमवार"
+          ]
+        },
+        "quiz": {
+          "question": "Approximately how many acres does Aastha Kunj Park cover, as mentioned in the report?",
+          "options": [
+            "100 acres",
+            "142 acres",
+            "200 acres",
+            "50 acres"
+          ],
+          "correct_answer": "142 acres",
+          "explanation": "The report states that Aastha Kunj Park covers around 142 acres and has 29 gates."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/poor-lighting-broken-walls-security-risks-at-delhi-aastha-kunj-park-teen-girl-gang-rape-case-101790336855903.html",
+        "category": "India",
+        "published_date": "2026-09-25",
+        "id": 856093891,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/25/1600x900/logo/Pawan-Khera-12_1776671339460_1776671353544_1790337402603_Dmg4_9b849b30-0a8f-437d-81b1-15751b410cfa_AQ0q.jpg",
+        "added_at": "2026-09-25T20:55:40.283237+05:30"
+      },
+      {
+        "headline": "Protests at Jantar Mantar Seek Arrest and Resignation of CEC Gyanesh Kumar Over 'Dissent' Row",
+        "story_lead": "Protesters, opposition leaders, and student bodies held demonstrations at Jantar Mantar in New Delhi demanding the arrest and resignation of Chief Election Commissioner (CEC) Gyanesh Kumar. The protests follow a media investigation highlighting internal objections by Election Commissioners regarding decisions made during the Special Intensive Revision (SIR) of electoral rolls.",
+        "full_article_text": "Demonstrations took place at Jantar Mantar in New Delhi on Friday, where protesters, including political figures and student organizations, called for the arrest and resignation of Chief Election Commissioner (CEC) Gyanesh Kumar. Prominent figures joining the demonstration included Trinamool Congress (TMC) MP Mahua Moitra, CPI(ML) Liberation general secretary Dipankar Bhattacharya, and activist Yogendra Yadav, alongside members of the Indian Youth Congress (IYC) and the All India Students' Association (AISA). Several protesters, including AISA president Neha Bora, were reportedly detained by the Delhi Police.\n\nSimultaneously, nationwide protests organized by the Congress party took place across multiple states, including Delhi, Bihar, Assam, Punjab, Arunachal Pradesh, Manipur, Uttar Pradesh, and West Bengal. In Assam, state Congress president Gaurav Gogoi and other senior leaders were detained while crossing police barricades. The protests were triggered by an Indian Express investigation report stating that Election Commissioners Sukhbir Singh Sandhu and Vivek Joshi had raised objections on record 14 times over 10 months regarding decisions made without their knowledge during the Special Intensive Revision (SIR) of electoral rolls.\n\nThe objections reportedly involved changes to voter registration Form 6, the management of additions and deletions to electoral rolls, and centralised control of the database. In response, the Election Commission maintained that differences of opinion form a normal part of internal institutional deliberations and that all its orders possess full legal sanction and follow established statutory procedures. Additionally, the Cockroach Janta Party (CJP) announced plans to launch nationwide protests starting October 2 if CEC Kumar does not resign.",
+        "background_context": "The public protests stem from an investigative report by the Indian Express revealing internal dissents within the Election Commission of India. Election Commissioners Sukhbir Singh Sandhu and Vivek Joshi reportedly raised objections 14 times over 10 months concerning decisions made during the Special Intensive Revision (SIR) of electoral rolls without their direct knowledge.",
+        "bullet_points": [
+          "Protests held at Jantar Mantar in New Delhi demanding the resignation and arrest of CEC Gyanesh Kumar.",
+          "TMC MP Mahua Moitra, CPI(ML) leader Dipankar Bhattacharya, and activist Yogendra Yadav joined the demonstrations.",
+          "Congress party workers staged nationwide protests across states including Delhi, Bihar, Assam, Punjab, and West Bengal.",
+          "Assam Congress president Gaurav Gogoi and several leaders were detained by police during protests.",
+          "The 'dissent' row follows media reports of objections raised by Election Commissioners Sukhbir Singh Sandhu and Vivek Joshi during the SIR process.",
+          "The Election Commission stated that differences of opinion are normal and its orders have full legal sanction."
+        ],
+        "key_facts": [
+          "Protests occurred on Friday at Jantar Mantar, New Delhi.",
+          "Chief Election Commissioner (CEC) Gyanesh Kumar is the subject of the resignation demands.",
+          "An Indian Express investigation revealed Election Commissioners Sukhbir Singh Sandhu and Vivek Joshi raised objections 14 times over 10 months.",
+          "Cockroach Janta Party (CJP) announced nationwide protests starting October 2 if resignation demands are not met."
+        ],
+        "key_locations": [
+          "Jantar Mantar",
+          "New Delhi",
+          "Assam",
+          "Bihar",
+          "Punjab",
+          "Arunachal Pradesh",
+          "Manipur",
+          "Uttar Pradesh",
+          "West Bengal",
+          "Mumbai"
+        ],
+        "important_dates": [
+          "Friday",
+          "October 2"
+        ],
+        "exam_relevance": [
+          "UPSC Prelims: Polity and Governance - Constitutional Bodies, Election Commission of India",
+          "UPSC Mains GS Paper II: Statutory, regulatory and various quasi-judicial bodies, Functioning of democratic institutions"
+        ],
+        "upsc_analysis": "The ongoing protests and the reported internal dissent within the Election Commission of India raise important constitutional questions regarding transparency, institutional autonomy, and collective functioning of multi-member election bodies. Aspirants should study the powers, tenure, and operational mechanisms of the Election Commission under Article 324 of the Constitution, alongside the administrative procedures governing electoral roll revisions such as the Special Intensive Revision (SIR).",
+        "causes": [
+          "Media reports regarding recorded objections by Election Commissioners over administrative decisions taken during the Special Intensive Revision (SIR).",
+          "Concerns raised by opposition parties and activists over centralized database control and electoral roll modifications."
+        ],
+        "impacts": [
+          "Nationwide protests and political demonstrations across multiple Indian states.",
+          "Increased political scrutiny on the internal functioning and administrative transparency of the Election Commission of India."
+        ],
+        "challenges": [
+          "Maintaining institutional trust and neutrality of independent constitutional bodies like the Election Commission amidst political polarization.",
+          "Managing internal consensus and administrative cohesion within multi-member oversight bodies."
+        ],
+        "government_steps": [
+          "The Election Commission issued clarifications stating that differences of opinion are part of normal institutional deliberations and that orders carry full legal sanction."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 324 of the Constitution of India regarding the superintendence, direction, and control of elections vested in the Election Commission."
+        ],
+        "way_forward": [
+          "Fostering transparent internal dialogue and robust consultative mechanisms within multi-member statutory bodies to uphold public trust.",
+          "Adhering strictly to statutory procedures while addressing procedural grievances through institutional frameworks."
+        ],
+        "mains_notes": "The controversy surrounding the Election Commission highlights the operational dynamics of multi-member constitutional bodies in India. While internal discussions and differing viewpoints are natural in governance, transparency is crucial to preserving the sanctity of electoral administration and public trust in democratic institutions.",
+        "mains_questions": [
+          "Discuss the constitutional role of the Election Commission of India under Article 324 and examine the importance of institutional consensus in maintaining its credibility.",
+          "Analyze the implications of internal dissents within regulatory and constitutional bodies on democratic governance in India."
+        ],
+        "takeaway": "Protests demanding the resignation of CEC Gyanesh Kumar erupted across India following media reports of internal administrative objections during the electoral roll revision process.",
+        "prelims_facts": [
+          "Chief Election Commissioner of India: Gyanesh Kumar",
+          "Election Commissioners mentioned: Sukhbir Singh Sandhu, Vivek Joshi",
+          "Constitutional provision for Election Commission: Article 324"
+        ],
+        "vocabulary": [
+          {
+            "word": "Dissent",
+            "meaning_hindi": "असहमति"
+          },
+          {
+            "word": "Prosecution",
+            "meaning_hindi": "अभियोजन / मुकदमा"
+          },
+          {
+            "word": "Deliberation",
+            "meaning_hindi": "विचार-विमर्श"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Gyanesh Kumar",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Gyanesh%20Kumar"
+          },
+          {
+            "name": "Mahua Moitra",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Mahua%20Moitra"
+          },
+          {
+            "name": "Jantar Mantar",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Jantar%20Mantar"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "जंतर-मंतर पर प्रदर्शन: 'असंतोष' विवाद के बाद मुख्य चुनाव आयुक्त ज्ञानेश कुमार की गिरफ्तारी की मांग को लेकर कई प्रदर्शनकारी हिरासत में",
+          "story_lead": "शुक्रवार को नई दिल्ली के जंतर-मंतर पर मुख्य चुनाव आयुक्त (सीईसी) ज्ञानेश कुमार के इस्तीफे और गिरफ्तारी की मांग को लेकर प्रदर्शनकारियों को दिल्ली पुलिस ने हिरासत में ले लिया। राष्ट्रीय राजधानी में हुए इस प्रदर्शन में टीएमसी सांसद महुआ मोत्रा ने भी हिस्सा लिया।",
+          "full_article_text": "शुक्रवार को नई दिल्ली के जंतर-मंतर पर मुख्य चुनाव आयुक्त (CEC) ज्ञानेश कुमार की गिरफ्तारी और इस्तीफे की मांग को लेकर प्रदर्शन किए गए। इस प्रदर्शन में तृणमूल कांग्रेस (TMC) की सांसद महुआ मोइत्रा, सीपीआई (एमएल) लिबरेशन के महासचिव दीपांकर भट्टाचार्य, कार्यकर्ता योगेंद्र यादव, भारतीय युवा कांग्रेस (IYC) और अखिल भारतीय छात्र संघ (AISA) के कार्यकर्ता शामिल हुए। दिल्ली पुलिस ने कई प्रदर्शनकारियों को हिरासत में ले लिया।",
+          "background_context": "यह विरोध प्रदर्शन एक मीडिया रिपोर्ट के बाद शुरू हुआ जिसमें बताया गया कि चुनाव आयुक्तों सुखबीर सिंह संधू और विवेक जोशी ने मतदाता सूची के विशेष गहन पुनरीक्षण (SIR) के दौरान निर्णयों पर असहमति जताई थी।",
+          "bullet_points": [
+            "जंतर-मंतर पर सीईसी ज्ञानेश कुमार के इस्तीफे की मांग को लेकर प्रदर्शन।",
+            "टीएमसी सांसद महुआ मोइत्रा और अन्य नेताओं ने प्रदर्शन में भाग लिया।",
+            "देशभर में कांग्रेस कार्यकर्ताओं द्वारा विभिन्न राज्यों में प्रदर्शन किए गए।",
+            "चुनाव आयोग ने स्पष्ट किया कि आंतरिक चर्चाओं में मतभेद होना सामान्य प्रक्रिया है।"
+          ],
+          "key_facts": [
+            "शुक्रवार को जंतर-मंतर पर प्रदर्शन हुआ।",
+            "सीईसी ज्ञानेश कुमार के खिलाफ प्रदर्शनकारियों ने नारे लगाए।"
+          ],
+          "key_locations": [
+            "जंतर-मंतर",
+            "नई दिल्ली",
+            "असम"
+          ],
+          "important_dates": [
+            "शुक्रवार",
+            "2 अक्टूबर"
+          ]
+        },
+        "quiz": {
+          "question": "Which Chief Election Commissioner was the primary focus of the protests at Jantar Mantar described in the report?",
+          "options": [
+            "Rajiv Kumar",
+            "Gyanesh Kumar",
+            "Sukhbir Singh Sandhu",
+            "Vivek Joshi"
+          ],
+          "correct_answer": "Gyanesh Kumar",
+          "explanation": "Protesters and opposition leaders gathered at Jantar Mantar to demand the arrest and resignation of Chief Election Commissioner Gyanesh Kumar following reports of internal dissent."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/jantar-mantar-news-live-updates-delhi-protest-cec-gyanesh-kumar-election-commission-sir-row-congress-aisa-police-latest-101790340369310.html",
+        "category": "India",
+        "published_date": "2026-09-25",
+        "id": 856093890,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/25/1600x900/logo/ANI-20260925238-0_1790348604358_kjSc_1790348612773_ZiGY_ef915104-74db-427b-9677-dd84cdce0a6d_gzEn.jpg",
+        "added_at": "2026-09-25T20:55:40.283237+05:30"
+      },
+      {
+        "headline": "Centre Extends Manipur's 'Disturbed Area' Status Under AFSPA for Six More Months",
+        "story_lead": "The Ministry of Home Affairs has extended Manipur's 'disturbed area' status under the Armed Forces (Special Powers) Act (AFSPA) for another six months, effective from October 1, 2026. This decision follows a review of the ongoing law and order situation and continuing violence in the northeastern state. Meanwhile, recent attacks in districts like Kamjong have resulted in multiple casualties.",
+        "full_article_text": "The Ministry of Home Affairs has officially extended the 'disturbed area' status of Manipur under the Armed Forces Special Powers Act (AFSPA) for an additional six months. Taking effect from October 1, 2026, the notification follows a continuous review of the law and order situation in the region. Manipur was first designated as a disturbed area in April 2023 when ethnic and sectarian violence initially erupted, and the status has seen repeated extensions since then. Section 3 of the AFSPA, 1958, empowers the Central government to declare specified areas as disturbed regions to aid armed forces operations. Alongside Manipur, the Centre also extended AFSPA in specified areas of Nagaland and Arunachal Pradesh. However, specific police station jurisdictions across Imphal West, Imphal East, Thoubal, Bishnupur, and Kakching districts remain excluded from this categorisation. Concurrently, security concerns persist on the ground; officials confirmed that four villagers—Phami Jajo, Ningthem Kashak, Betterson Jajo, and Vareshim Jajo—were recently killed in an attack by suspected Myanmar-based militant groups at Pilong village in Kamjong district near the Indo-Myanmar border.",
+        "background_context": "Manipur has experienced persistent violence since April 2023, prompting the invocation and repeated extensions of the Armed Forces Special Powers Act (AFSPA) under Section 3 of the AFSPA, 1958. The Central government periodically reviews the security situation across northeastern states, including Manipur, Nagaland, and Arunachal Pradesh, to determine the necessity of maintaining disturbed area notifications.",
+        "bullet_points": [
+          "The Ministry of Home Affairs extended Manipur's 'disturbed area' status under AFSPA for six more months starting October 1, 2026.",
+          "Manipur was initially designated a disturbed area in April 2023 following the outbreak of violence.",
+          "The decision is based on a review of the law and order situation under Section 3 of the Armed Forces (Special Powers) Act, 1958.",
+          "Specific areas under several police stations in Imphal West, Imphal East, Thoubal, Bishnupur, and Kakching districts are excluded from the disturbed area notification.",
+          "Four villagers were recently killed in an attack by suspected Myanmar-based militants at Pilong village in Kamjong district.",
+          "The Centre also extended AFSPA in specified areas of Nagaland and Arunachal Pradesh."
+        ],
+        "key_facts": [
+          "Disturbed area status extension effective date: October 1, 2026",
+          "Duration of extension: Six months",
+          "Statutory basis: Section 3 of the Armed Forces (Special Powers) Act, 1958",
+          "Initial designation date: April 2023",
+          "Recent incident location: Pilong village, Kamjong district, near Indo-Myanmar border pillar number 95"
+        ],
+        "key_locations": [
+          "Manipur",
+          "Nagaland",
+          "Arunachal Pradesh",
+          "Kamjong district",
+          "Pilong village",
+          "Imphal West District",
+          "Imphal East District",
+          "Thoubal district",
+          "Bishnupur district",
+          "Kakching district"
+        ],
+        "important_dates": [
+          "April 2023",
+          "October 1, 2026"
+        ],
+        "exam_relevance": [
+          "UPSC Prelims: Current events of national importance, internal security, AFSPA, special powers of the Centre",
+          "UPSC Mains GS Paper III: Internal Security challenges in Northeast India, role of security forces, law and order governance"
+        ],
+        "upsc_analysis": "The regular extension of AFSPA under Section 3 of the Armed Forces (Special Powers) Act reflects ongoing internal security challenges in northeastern states like Manipur, Nagaland, and Arunachal Pradesh. While the central and state governments utilize these legal measures to maintain public order and counter insurgent or rebel threats, the balancing act between human rights, civilian governance, and special military powers remains a critical subject of debate in Indian polity and internal security management.",
+        "causes": [
+          "Ongoing violence and civil unrest in Manipur since April 2023",
+          "Activities of armed groups and suspected Myanmar-based militants near border areas"
+        ],
+        "impacts": [
+          "Continued imposition and extension of AFSPA in disturbed regions",
+          "Loss of civilian lives due to armed attacks",
+          "Heightened security measures and deployment of armed forces"
+        ],
+        "challenges": [
+          "Managing cross-border militant movements along the Indo-Myanmar border",
+          "Restoring lasting peace and ethnic harmony in Manipur",
+          "Balancing internal security requirements with civil liberties"
+        ],
+        "government_steps": [
+          "Reviewing the law and order situation periodically under Section 3 of AFSPA",
+          "Extending 'disturbed area' status and AFSPA in Manipur, Nagaland, and Arunachal Pradesh",
+          "Registering suo-moto cases under relevant sections of the Bharatiya Nyaya Sanhita, Unlawful Activities (Prevention) Act, and Arms Act following violent incidents"
+        ],
+        "constitutional_or_policy_link": [
+          "Armed Forces (Special Powers) Act (AFSPA), 1958",
+          "Bharatiya Nyaya Sanhita, 2023",
+          "Unlawful Activities (Prevention) Act, 1967",
+          "Arms Act, 1959"
+        ],
+        "way_forward": [
+          "Strengthening border surveillance and intelligence sharing to curb cross-border militant infiltration",
+          "Fostering inclusive dialogue and reconciliation among conflicting groups",
+          "Ensuring accountability and transparent investigation into violent crimes"
+        ],
+        "mains_notes": "The Ministry of Home Affairs extended Manipur's 'disturbed area' status under Section 3 of the AFSPA, 1958, for six months starting October 1, 2026, amid continuing violence. While certain urban and police station jurisdictions are excluded, the security framework highlights the persistent internal security vulnerabilities along border regions like Kamjong district involving external militant threats.",
+        "mains_questions": [
+          "Discuss the objectives and implications of declaring regions as 'disturbed areas' under the Armed Forces (Special Powers) Act (AFSPA).",
+          "Analyze the internal security challenges in northeastern India and the measures required to achieve sustainable peace."
+        ],
+        "takeaway": "The Centre has extended Manipur's 'disturbed area' status under AFSPA for six more months from October 2026 amid ongoing security challenges and localized violence.",
+        "prelims_facts": [
+          "AFSPA Section 3 empowers the Central government to declare areas disturbed.",
+          "Manipur's disturbed area status was first imposed in April 2023.",
+          "Kamjong district shares a border near Indo-Myanmar border pillar number 95."
+        ],
+        "vocabulary": [
+          {
+            "word": "Disturbed area",
+            "meaning_hindi": "अशांत क्षेत्र"
+          },
+          {
+            "word": "Gazette notification",
+            "meaning_hindi": "राजपत्र अधिसूचना"
+          },
+          {
+            "word": "Insurgent",
+            "meaning_hindi": "विद्रोही"
+          },
+          {
+            "word": "Culpable",
+            "meaning_hindi": "अपराधी / दोषी"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Manipur",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Manipur"
+          },
+          {
+            "name": "Armed Forces Special Powers Act",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Armed_Forces_Special_Powers_Act"
+          },
+          {
+            "name": "Kamjong district",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Kamjong_district"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "केंद्र ने हिंसा के बीच मणिपुर के 'अशांत क्षेत्र' का दर्जा छह महीने और बढ़ाया",
+          "story_lead": "गृह मंत्रालय ने पूर्वोत्तर राज्य में जारी हिंसा के बीच सशस्त्र बल (विशेष शक्तियां) अधिनियम (AFSPA) के तहत मणिपुर के 'अशांत क्षेत्र' के दर्जे को छह महीने के लिए बढ़ा दिया है, जो अक्टूबर 2026 से प्रभावी होगा।",
+          "full_article_text": "गृह मंत्रालय ने कानून व्यवस्था की स्थिति की समीक्षा के बाद AFSPA के तहत मणिपुर के 'अशांत क्षेत्र' के दर्जे को छह महीने के लिए बढ़ा दिया है। यह नई व्यवस्था अक्टूबर 2026 से प्रभावी होगी। मणिपुर को पहली बार अप्रैल 2023 में अशांत क्षेत्र घोषित किया गया था।",
+          "background_context": "मणिपुर में अप्रैल 2023 से हिंसा जारी है, जिसके बाद से AFSPA के तहत अशांत क्षेत्र के दर्जे को लगातार बढ़ाया जा रहा है।",
+          "bullet_points": [
+            "गृह मंत्रालय ने मणिपुर के 'अशांत क्षेत्र' का दर्जा छह महीने के लिए बढ़ाया।",
+            "यह निर्णय अक्टूबर 2026 से लागू होगा।",
+            "यह कार्रवाई AFSPA, 1958 की धारा 3 के तहत की गई है।"
+          ],
+          "key_facts": [
+            "विस्तार प्रभावी तिथि: 1 अक्टूबर 2026",
+            "कानूनी आधार: AFSPA, 1958 की धारा 3"
+          ],
+          "key_locations": [
+            "मणिपुर",
+            "नागालैंड",
+            "अरुणाचल प्रदेश",
+            "काम्जोंग जिला"
+          ],
+          "important_dates": [
+            "अप्रैल 2023",
+            "1 अक्टूबर 2026"
+          ]
+        },
+        "quiz": {
+          "question": "Under which section of the Armed Forces (Special Powers) Act, 1958, is the Central government empowered to declare specified areas as 'disturbed areas'?",
+          "options": [
+            "Section 2",
+            "Section 3",
+            "Section 5",
+            "Section 10"
+          ],
+          "correct_answer": "Section 3",
+          "explanation": "Section 3 of the Armed Forces (Special Powers) Act, 1958, empowers the Central government or the Governor of the State to declare the whole or part of the State or Union Territory as a disturbed area."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/centre-extends-manipurs-disturbed-area-status-for-six-more-months-afspa-violence-101790342140375.html",
+        "category": "India",
+        "published_date": "2026-09-25",
+        "id": 856093889,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/25/1600x900/logo/ANI-20260921248-0_1790342353004_G0sJ_1790342366889_lP2G_891d35ef-ecdf-4967-8708-2275aed6991a_atHj.jpg",
+        "added_at": "2026-09-25T20:55:40.283237+05:30"
+      },
+      {
+        "headline": "Six Killed and Seven Injured as Wheat Truck Rams Stationary Vehicle in Chhattisgarh",
+        "story_lead": "Six people were killed and seven others injured after a 16-wheeler truck carrying wheat rammed into a stationary mini goods vehicle on National Highway-30 in Chhattisgarh's Balod district. The victims were members of a dhumal music band travelling from Kabirdham district to Jagdalpur.",
+        "full_article_text": "A tragic road accident occurred on Friday around 11:30 am at Markatola Ghat on National Highway-30 in Chhattisgarh's Balod district. A 16-wheeler truck loaded with wheat, travelling from Raipur to Jagdalpur, rammed from behind into a stationary mini goods vehicle. The mini goods vehicle, which was carrying 15 people and their musical instruments, had broken down at the ghat. Two of its occupants had gone to Dhamtari to search for a mechanic when the collision took place. The impact of the crash dragged the stationary vehicle for about 30 metres before the truck overturned, trapping several occupants under heavy sacks of wheat. Two individuals died on the spot, while four others succumbed to injuries during treatment at the Dhamtari district hospital. Seven injured people were referred to Raipur for advanced medical care. Police reported that the truck driver fled the scene and search efforts were ongoing.",
+        "background_context": "The accident took place on National Highway-30 in Chhattisgarh's Balod district at Markatola Ghat. The victims were members of a dhumal music band travelling from Kabirdham district to Jagdalpur.",
+        "bullet_points": [
+          "Six people died and seven were injured in a road collision in Chhattisgarh's Balod district.",
+          "A 16-wheeler truck carrying wheat crashed into a stationary mini goods vehicle from behind.",
+          "The accident occurred around 11:30 am on Friday at Markatola Ghat on National Highway-30.",
+          "The victims were members of a dhumal music band travelling from Kabirdham district to Jagdalpur.",
+          "The mini goods vehicle had broken down, and two occupants had gone to Dhamtari to find a mechanic.",
+          "The truck dragged the vehicle for 30 metres before overturning, trapping occupants under wheat sacks.",
+          "The truck driver fled the scene and police initiated efforts to trace him."
+        ],
+        "key_facts": [
+          "Six fatalities and seven injuries reported.",
+          "Incident occurred on National Highway-30 at Markatola Ghat, Balod district, Chhattisgarh.",
+          "Vehicle involved: A 16-wheeler wheat-loaded truck and a stationary mini goods vehicle.",
+          "Victims were members of a dhumal music band.",
+          "Two people died on the spot, four died during treatment."
+        ],
+        "key_locations": [
+          "Markatola Ghat",
+          "Balod district",
+          "Chhattisgarh",
+          "National Highway-30",
+          "Jagdalpur",
+          "Kabirdham district",
+          "Dhamtari",
+          "Raipur"
+        ],
+        "important_dates": [
+          "Friday"
+        ],
+        "exam_relevance": [
+          "Prelims: Geography of Chhattisgarh, National Highways",
+          "Mains General Studies Paper III: Infrastructure, Road Safety, Disaster Management"
+        ],
+        "upsc_analysis": "Road accidents remain a major socio-economic and public health challenge in India, leading to massive loss of human lives and productivity. Incidents like the Balod district collision highlight persistent vulnerabilities in highway safety, vehicle breakdown management, and the enforcement of traffic regulations. Addressing such incidents requires improved highway patrolling, rapid emergency response systems, strict adherence to traffic norms, and better infrastructure maintenance to prevent rear-end collisions involving stationary vehicles.",
+        "causes": [
+          "Breakdown of the mini goods vehicle on a highway ghat section",
+          "Collision caused by a speeding or unobservant 16-wheeler truck ramming from behind",
+          "Hazardous conditions created by stationary vehicles on national highways without adequate early warning indicators"
+        ],
+        "impacts": [
+          "Six fatalities among members of a music band",
+          "Seven individuals seriously injured requiring referral to Raipur",
+          "Disruption of traffic on National Highway-30"
+        ],
+        "challenges": [
+          "Tracing drivers who flee the scene after accidents",
+          "Ensuring prompt emergency medical response and clearance of broken-down vehicles on ghat sections",
+          "Preventing reckless driving on national highways"
+        ],
+        "government_steps": [
+          "Dispatch of police and rescue operations to the accident site",
+          "Provision of medical treatment at Dhamtari district hospital and referral of critical patients to Raipur",
+          "Initiation of search efforts to trace the absconding truck driver"
+        ],
+        "constitutional_or_policy_link": [
+          "Right to Life under Article 21 of the Constitution includes the state's duty to ensure safe road infrastructure and emergency medical care."
+        ],
+        "way_forward": [
+          "Strengthening highway patrolling to promptly remove or secure broken-down vehicles.",
+          "Enforcing strict safety standards and speed management for heavy commercial vehicles on national highways.",
+          "Enhancing trauma care facilities along major highway corridors like National Highway-30."
+        ],
+        "mains_notes": "Road safety concerns are amplified by frequent accidents on national highways involving stationary and heavy vehicles. The Balod district accident underscores the urgent need for strict traffic enforcement, rapid response mechanisms for vehicle breakdowns on ghat sections, and comprehensive trauma care accessibility.",
+        "mains_questions": [
+          "Discuss the primary causes of road accidents on Indian national highways and suggest measures to enhance highway safety.",
+          "Examine the socio-economic impacts of rising road fatalities and evaluate the policy interventions required to mitigate them."
+        ],
+        "takeaway": "A collision between a wheat-loaded truck and a stationary vehicle in Chhattisgarh's Balod district claimed six lives and injured seven others, highlighting ongoing road safety concerns on national highways.",
+        "prelims_facts": [
+          "National Highway-30 passes through Chhattisgarh.",
+          "Balod and Dhamtari are districts in Chhattisgarh.",
+          "Markatola Ghat is a location in Chhattisgarh where the accident took place."
+        ],
+        "vocabulary": [
+          {
+            "word": "Stationary",
+            "meaning_hindi": "स्थिर / खड़ा हुआ"
+          },
+          {
+            "word": "Fatalities",
+            "meaning_hindi": "मौतें / हताहत"
+          },
+          {
+            "word": "Collison",
+            "meaning_hindi": "टक्कर"
+          },
+          {
+            "word": "Absconding",
+            "meaning_hindi": "फरार होना"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Chhattisgarh",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Chhattisgarh"
+          },
+          {
+            "name": "Balod district",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Balod_district"
+          },
+          {
+            "name": "National Highway 30 (India)",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=National_Highway_30_(India)"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "छत्तीसगढ़ में गेहूं से भरा ट्रक खड़े वाहन से टकराया, 6 की मौत, 7 घायल",
+          "story_lead": "छत्तीसगढ़ के बालोद जिले में राष्ट्रीय राजमार्ग-30 पर गेहूं से लड़े एक ट्रक के खड़े मिनी मालवाहक वाहन से टकरा जाने के कारण छह लोगों की मौत हो गई और सात अन्य घायल हो गए।",
+          "full_article_text": "यह दुर्घटना शुक्रवार को लगभग 11:30 बजे मरकाटोला घाट के पास हुई, जब धुमाल संगीत बैंड के सदस्य कबीरधाम जिले से जगदलपुर की यात्रा कर रहे थे। पुलिस के अनुसार, 15 लोगों और उनके संगीत वाद्ययंत्रों को ले जा रहा मिनी मालवाहक वाहन मरकाटोला घाट पर खराब हो गया था। जब यह दुर्घटना हुई, तब वाहन में सवार दो लोग मैकेनिक की तलाश में धमतरी गए हुए थे। रायपुर से जगदलपुर की ओर जा रहे गेहूं से लड़े 16-चक्का ट्रक ने पीछे से खड़े वाहन को टक्कर मार दी, जिससे वह करीब 30 मीटर तक घसीटता चला गया और बाद में पलट गया।",
+          "background_context": "यह दुर्घटना छत्तीसगढ़ के बालोद जिले में राष्ट्रीय राजमार्ग-30 पर मरकाटोला घाट के पास हुई।",
+          "bullet_points": [
+            "छत्तीसगढ़ के बालोद जिले में सड़क हादसे में छह लोगों की मौत और सात घायल।",
+            "गेहूं से लदे ट्रक ने खड़े मिनी मालवाहक वाहन को पीछे से टक्कर मारी।",
+            "दुर्घटना शुक्रवार को सुबह करीब 11:30 बजे हुई।"
+          ],
+          "key_facts": [
+            "छह लोगों की मौत और सात घायल।",
+            "घटना स्थल: बालोद जिला, छत्तीसगढ़।"
+          ],
+          "key_locations": [
+            "मरकाटोला घाट",
+            "बालोद जिला",
+            "छत्तीसगढ़",
+            "जगदलपुर",
+            "धमतरी",
+            "रायपुर"
+          ],
+          "important_dates": [
+            "शुक्रवार"
+          ]
+        },
+        "quiz": {
+          "question": "In which district of Chhattisgarh did the truck-mini goods vehicle collision occur on National Highway-30?",
+          "options": [
+            "Raipur district",
+            "Balod district",
+            "Dhamtari district",
+            "Kabirdham district"
+          ],
+          "correct_answer": "Balod district",
+          "explanation": "The accident occurred on National Highway-30 in Chhattisgarh's Balod district at Markatola Ghat when a wheat truck rammed into a stationary mini goods vehicle."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/6-killed-7-injured-as-wheat-truck-rams-stationary-vehicle-in-chhattisgarh-101790343019315.html",
+        "category": "India",
+        "published_date": "2026-09-25",
+        "id": 856093888,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/25/1600x900/logo/-p-6-killed--7-injured-as-wheat-truck-rams-station_1790343012973_r436.jpg",
+        "added_at": "2026-09-25T20:55:40.283237+05:30"
+      },
+      {
+        "headline": "Military Surgeons Perform First-Ever Eye Surgeries in Underground OT Near LoC in J&K",
+        "story_lead": "In a first, military surgeons performed 220 sight-restoring eye surgeries at an underground operating theatre near the Line of Control in Jammu and Kashmir. The two-day initiative was conducted under Operation Drishti in the shelling-prone Kupwara district. The camp brought advanced ophthalmic care to remote populations residing near the border.",
+        "full_article_text": "Military surgeons successfully performed 220 sight-restoring surgeries for the first time at an underground operating theatre near the Line of Control (LoC) in Jammu and Kashmir under Operation Drishti, according to the defence ministry. The two-day eye camp took place in Kupwara’s Tangdhar area, a shelling-prone zone, and was visited by Army chief General Dhiraj Seth. Led by Brigadier Sanjay Mishra, head of ophthalmology at the Army Hospital (Research & Referral) in Delhi Cantonment, the medical team transported advanced phacoemulsification, vitreoretinal, and glaucoma equipment across mountainous terrain. Patients from Khawarpora, Tangdhar, Tadd, Bagbela, Yangdar, and neighbouring hamlets attended the camp following prior screening and broadcasts on Radio Rooh-e-Karnah. The Indian Army guided patients through every step from arrival to recovery. Most interventions carried out were cataract surgeries, alongside selective retinal procedures and minimally invasive glaucoma surgery. Army chief General Dhiraj Seth interacted with patients and distributed medicines and gifts, while Air Marshal Sandeep Thareja, director general of the Armed Forces Medical Services (AFMS), visited and appreciated the team's efforts. This initiative marked the 10th camp under the AFMS series of mega surgical eye camps—a scheme envisaged by Defence Minister Rajnath Singh. Under this scheme, more than 1.50 lakh patients have been screened and over 3,500 surgeries have been conducted across 10 cities. The 11th camp in the series is scheduled to be held in Srinagar from September 27 to 29, with Jammu and Kashmir Lieutenant Governor Manoj Sinha slated to attend the closing ceremony.",
+        "background_context": "The initiative is part of the Armed Forces Medical Services' (AFMS) series of mega surgical eye camps envisaged by Defence Minister Rajnath Singh to provide advanced healthcare access to remote and vulnerable areas.",
+        "bullet_points": [
+          "Military surgeons performed 220 sight-restoring eye surgeries in an underground operating theatre near the LoC.",
+          "The two-day camp was conducted under Operation Drishti in Kupwara's Tangdhar area.",
+          "The team was led by Brigadier Sanjay Mishra and carried advanced equipment across mountainous terrain.",
+          "Patients from remote hamlets were reached through prior screening and announcements on Radio Rooh-e-Karnah.",
+          "Interventions primarily involved cataract surgeries, selective retinal procedures, and minimally invasive glaucoma surgery.",
+          "This marked the 10th camp under the AFMS series of mega surgical eye camps, with the 11th camp scheduled in Srinagar.",
+          "Over 1.50 lakh patients have been screened and 3,500+ surgeries conducted across 10 cities under the scheme."
+        ],
+        "key_facts": [
+          "220 eye surgeries were performed in an underground OT near the LoC.",
+          "The camp was held under Operation Drishti in Kupwara's Tangdhar area.",
+          "Led by Brigadier Sanjay Mishra, head of ophthalmology at Army Hospital (R&R), Delhi.",
+          "10th camp under the AFMS series of mega surgical eye camps envisaged by Defence Minister Rajnath Singh.",
+          "11th camp to be held in Srinagar from September 27 to 29."
+        ],
+        "key_locations": [
+          "Jammu and Kashmir",
+          "Line of Control (LoC)",
+          "Kupwara",
+          "Tangdhar",
+          "Khawarpora",
+          "Tadd",
+          "Bagbela",
+          "Yangdar",
+          "Delhi Cantonment",
+          "Srinagar"
+        ],
+        "important_dates": [
+          "Friday",
+          "September 27 to 29"
+        ],
+        "exam_relevance": [
+          "Prelims: Current affairs, Indian Army initiatives, Operation Drishti, AFMS schemes",
+          "Mains: Internal Security, Role of Armed Forces in welfare and healthcare delivery in remote/border regions"
+        ],
+        "upsc_analysis": "The successful execution of specialized medical procedures in a challenging terrain and shelling-prone underground facility highlights the multi-dimensional role of the Indian Armed Forces in border area development and public health outreach.",
+        "causes": [
+          "Lack of advanced ophthalmic healthcare infrastructure in remote, shelling-prone border areas near the LoC.",
+          "Need to extend specialized medical care to remote populations under welfare initiatives like Operation Drishti."
+        ],
+        "impacts": [
+          "Restoration of sight for 220 patients from remote hamlets near the LoC.",
+          "Strengthened civil-military cooperation and trust in border regions like Kupwara.",
+          "Successful deployment of advanced medical equipment in tactical underground infrastructure."
+        ],
+        "challenges": [
+          "Transporting advanced phacoemulsification, vitreoretinal, and glaucoma equipment across difficult mountainous terrain.",
+          "Operating in a shelling-prone zone near the Line of Control."
+        ],
+        "government_steps": [
+          "Implementation of Operation Drishti by the Armed Forces Medical Services.",
+          "Mega surgical eye camp scheme envisaged by Defence Minister Rajnath Singh.",
+          "Community outreach via Radio Rooh-e-Karnah and coordinated patient guidance by the Indian Army."
+        ],
+        "constitutional_or_policy_link": [
+          "Directive Principles of State Policy (DPSP) relating to public health and welfare of citizens in remote and backward regions."
+        ],
+        "way_forward": [
+          "Expanding similar specialized medical camp models to other remote border sectors across India.",
+          "Institutionalizing telemedicine support for continuous follow-up care in border hamlets."
+        ],
+        "mains_notes": "Operation Drishti highlights the integration of military capabilities with public welfare. By conducting 220 eye surgeries in an underground OT near the LoC in Kupwara, the Armed Forces Medical Services demonstrated operational versatility, ensuring specialized healthcare delivery in challenging terrain and conflict-prone zones.",
+        "mains_questions": [
+          "Discuss the role of the Indian Armed Forces in extending humanitarian and healthcare outreach to remote border areas.",
+          "How do initiatives like Operation Drishti bridge developmental and healthcare deficits in regions near the Line of Control?"
+        ],
+        "takeaway": "Military surgeons successfully conducted 220 eye surgeries in an underground operating theatre near the LoC in J&K under Operation Drishti.",
+        "prelims_facts": [
+          "Operation Drishti is associated with Armed Forces Medical Services eye surgery camps.",
+          "The 10th mega surgical eye camp took place in Tangdhar, Kupwara.",
+          "The 11th camp is scheduled for Srinagar."
+        ],
+        "vocabulary": [
+          {
+            "word": "Phacoemulsification",
+            "meaning_hindi": "फेकोइमल्सीफिकेशन (मोतियाबिंद की सर्जरी की आधुनिक तकनीक)"
+          },
+          {
+            "word": "Ophthalmology",
+            "meaning_hindi": "नेत्र विज्ञान (आंखों के रोगों का अध्ययन और चिकित्सा)"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Kupwara",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Kupwara"
+          },
+          {
+            "name": "Rajnath Singh",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Rajnath+Singh"
+          },
+          {
+            "name": "Armed Forces Medical Services",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Armed+Forces+Medical+Services"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "एक पहली: एलओसी के पास भूमिगत ऑपरेशन थिएटर में सैन्य सर्जनों ने की आंखों की सर्जरी",
+          "story_lead": "सेना के सर्जनों ने ऑपरेशन दृष्टि के तहत जम्मू-कश्मीर में नियंत्रण रेखा (एलओसी) के पास एक भूमिगत ऑपरेशन थिएटर में पहली बार 220 दृष्टि-बहाल करने वाली सर्जरी की।",
+          "full_article_text": "रक्षा मंत्रालय ने शुक्रवार को बताया कि सेना के सर्जनों ने ऑपरेशन दृष्टि के तहत जम्मू-कश्मीर में नियंत्रण रेखा (एलओसी) के पास एक भूमिगत ऑपरेशन थिएटर में पहली बार 220 दृष्टि-बहाल करने वाली सर्जरी की। यह दो दिवसीय नेत्र शिविर, जिसका दौरा सेना प्रमुख जनरल धीरज सेठ ने किया, कुपवाड़ा के तंगधार क्षेत्र में आयोजित किया गया था, जो एक गोलाबारी संभावित क्षेत्र है। मंत्रालय ने बताया कि शिविर का नेतृत्व दिल्ली छावनी स्थित आर्मी हॉस्पिटल (रिसर्च एंड रेफरल) में नेत्र विज्ञान के प्रमुख ब्रिगेडियर संजय मिश्रा ने किया। उनकी टीम ने पहाड़ी इलाकों में उन्नत फेकोइमल्सीफिकेशन, विट्रेओरेटिनल और ग्लूकोमा उपकरण पहुंचाए। खवारपोरा, तंगधार, तद्द्, बागमबेला, यांगदार और पड़ोसी बस्तियों के मरीजों ने रेडियो रूह-ए-करनाह पर प्रसारण और स्क्रीनिंग के बाद शिविर में भाग लिया, जिसमें भारतीय सेना ने आगमन से लेकर रिकवरी तक प्रत्येक मरीज का मार्गदर्शन किया।",
+          "background_context": "यह पहल सशस्त्र बल चिकित्सा सेवा (AFMS) की मेगा सर्जिकल नेत्र शिविर श्रृंखला का हिस्सा है, जिसकी परिकल्पना रक्षा मंत्री राजनाथ सिंह ने की थी।",
+          "bullet_points": [
+            "सैन्य सर्जनों ने एलओसी के पास भूमिगत ऑपरेशन थिएटर में 220 आंखों की सर्जरी की।",
+            "यह दो दिवसीय शिविर कुपवाड़ा के तंगधार क्षेत्र में ऑपरेशन दृष्टि के तहत आयोजित किया गया था।",
+            "नेतृत्व ब्रिगेडियर संजय मिश्रा ने किया।"
+          ],
+          "key_facts": [
+            "एलओसी के पास भूमिगत ओटी में 220 नेत्र सर्जरी की गईं।",
+            "यह शिविर ऑपरेशन दृष्टि के तहत आयोजित किया गया था।"
+          ],
+          "key_locations": [
+            "जम्मू-कश्मीर",
+            "कुपवाड़ा",
+            "तंगधार",
+            "श्रीनगर"
+          ],
+          "important_dates": [
+            "शुक्रवार",
+            "27 से 29 सितंबर"
+          ]
+        },
+        "quiz": {
+          "question": "Under which initiative did military surgeons perform 220 eye surgeries at an underground operating theatre near the LoC in J&K?",
+          "options": [
+            "Operation Vijay",
+            "Operation Drishti",
+            "Operation Sadbhavana",
+            "Operation Meghdoot"
+          ],
+          "correct_answer": "Operation Drishti",
+          "explanation": "Military surgeons performed sight-restoring surgeries at an underground operating theatre near the LoC in J&K under Operation Drishti."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/in-a-first-military-surgeons-perform-eye-surgeries-in-underground-ot-near-loc-101790343379111.html",
+        "category": "India",
+        "published_date": "2026-09-25",
+        "id": 856093887,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/25/1600x900/logo/In-a-first--military-surgeons-perform-220-sight-re_1790343373109_phuF.jpeg",
+        "added_at": "2026-09-25T20:55:40.283237+05:30"
+      },
+      {
+        "headline": "Madras HC Restrains Media from Publishing Explicit Videos in Veeramani POCSO Case",
+        "story_lead": "The Madras High Court has restrained media outlets from publishing or broadcasting explicit videos linked to the POCSO case against granite baron R Veeramani. The court emphasized the need to protect the identity and privacy of child victims and avoid premature publication that could deter other victims from reporting crimes.",
+        "full_article_text": "The Madras High Court on Friday restrained media outlets from publishing or broadcasting explicit videos in connection with the POCSO Act case against granite baron R Veeramani. Justice V Lakshminarayanan observed that premature publication of such material would have a chilling effect on other child victims, potentially deterring them from coming forward for investigation. While noting that the case can be debated, the court stressed that circulation of explicit videos must be avoided and that media trials must not replace judicial determination of guilt. The bench also pointed out that the investigation is at a crucial stage with police examining if there are more victims, and directed the Special Investigation Team (SIT) to issue weekly press releases on the investigation steps. The petition was filed by an NGO named Tulir seeking a John Doe order. Meanwhile, political reactions have emerged, with chief minister C Joseph Vijay accusing opposition parties of hiding the case.",
+        "background_context": "Granite baron R Veeramani and two of his aides, Mahendra Simhan and his wife Shanti, were arrested on August 28 following allegations that minor girls had been sexually assaulted at a private residence in Teynampet, Chennai. The police launched an investigation after receiving a USB drive containing video clips. The Tamil Nadu government subsequently formed an all-woman SIT to probe the matter.",
+        "bullet_points": [
+          "Madras High Court restrained media outlets from publishing or broadcasting explicit videos linked to the Veeramani POCSO case.",
+          "Court observed that premature publication creates a chilling effect and discourages victims from approaching authorities.",
+          "Justice V Lakshminarayanan stated that debates are permissible, but circulation of explicit victim footage and media trials are not.",
+          "An all-woman Special Investigation Team (SIT) was formed by the Tamil Nadu government to probe the case.",
+          "The High Court directed the SIT to issue a press release once every week detailing investigation updates.",
+          "Police approached Google and Meta to remove leaked videos already available online."
+        ],
+        "key_facts": [
+          "R Veeramani and two aides were arrested on August 28.",
+          "The case involves allegations of sexual assault of minor girls at a private residence in Teynampet, Chennai.",
+          "An all-woman SIT comprises P C Thenmozhi, Disha Mittal, J Mutharasi, and V V Geethanjali.",
+          "NGO Tulir filed the plea seeking a John Doe order."
+        ],
+        "key_locations": [
+          "Chennai",
+          "Teynampet",
+          "Tamil Nadu",
+          "Madurantakam"
+        ],
+        "important_dates": [
+          "August 28",
+          "September 30"
+        ],
+        "exam_relevance": [
+          "Prelims: POCSO Act provisions, SIT constitution, High Court writs.",
+          "Mains: GS Paper II (Child Rights, Judiciary, Media Ethics, Role of SIT)."
+        ],
+        "upsc_analysis": "The ruling highlights the delicate balance between freedom of the press and the fundamental rights of child victims to privacy, dignity, and protection under the POCSO Act. It underscores the dangers of media trials and the legal imperative to shield minors from secondary victimization and social stigma during criminal investigations.",
+        "causes": [
+          "Leak of a USB drive containing explicit video clips allegedly showing sexual assault of juvenile girls.",
+          "Widespread media circulation of sensitive footage violating victim privacy."
+        ],
+        "impacts": [
+          "Media outlets restricted from broadcasting explicit footage.",
+          "Enhanced protection of minor victims' identities and prevention of chilling effects on other potential complainants.",
+          "Weekly public updates mandated through SIT press releases."
+        ],
+        "challenges": [
+          "Containing the online spread of explicit material already uploaded on digital platforms.",
+          "Balancing public interest and media freedom with strict statutory child protection mandates."
+        ],
+        "government_steps": [
+          "Formation of an all-woman Special Investigation Team (SIT) by the Tamil Nadu government.",
+          "Police approaching Google and Meta to remove leaked videos.",
+          "Court-mandated weekly press releases by the SIT."
+        ],
+        "constitutional_or_policy_link": [
+          "Protection of Children from Sexual Offences (POCSO) Act",
+          "Right to Privacy under Article 21 of the Constitution"
+        ],
+        "way_forward": [
+          "Strict enforcement of takedown notices by tech platforms for sensitive child abuse material.",
+          "Adherence to self-regulatory guidelines by media houses regarding crime reporting involving minors.",
+          "Timely and transparent investigation by the SIT while maintaining victim confidentiality."
+        ],
+        "mains_notes": "The Madras High Court directive reinforces the primacy of child victim privacy under the POCSO Act over sensationalist media coverage. It reiterates that media trials undermine the judicial process and discourage reporting of crimes against children. Institutional mechanisms like SITs combined with strict oversight on digital leaks are critical for justice delivery in such sensitive cases.",
+        "mains_questions": [
+          "Examine the legal implications of media trials and circulation of explicit footage in child sexual abuse cases under the POCSO Act.",
+          "Discuss the role of Special Investigation Teams (SITs) and judicial oversight in ensuring fair and transparent investigations in high-profile crimes."
+        ],
+        "takeaway": "The Madras HC prioritized child victim privacy and prevented media trials by restraining the publication of explicit videos in the Veeramani POCSO case.",
+        "prelims_facts": [
+          "POCSO Act safeguards child victims from secondary victimization.",
+          "SITs are formed by state governments to handle sensitive multi-faceted criminal investigations."
+        ],
+        "vocabulary": [
+          {
+            "word": "Chilling effect",
+            "meaning_hindi": "डराने वाला प्रभाव"
+          },
+          {
+            "word": "Blanket order",
+            "meaning_hindi": "व्यापक आदेश"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Madras High Court",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Madras_High_Court"
+          },
+          {
+            "name": "POCSO Act",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=POCSO_Act"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "मद्रास हाईकोर्ट ने वीरमणि पोक्सो मामले में मीडिया को वीडियो प्रकाशित करने से रोका",
+          "story_lead": "मद्रास उच्च न्यायालय ने बाल पीड़ितों की सुरक्षा का हवाला देते हुए मीडिया घरानों को ग्रेनाइट व्यवसायी आर. वीरमणि से जुड़े पोक्सो मामले के स्पष्ट वीडियो प्रकाशित या प्रसारित करने से रोक दिया है।",
+          "full_article_text": "मद्रास उच्च न्यायालय ने शुक्रवार को बाल पीड़ितों की सुरक्षा का हवाला देते हुए मीडिया घरानों को ग्रेनाइट व्यवसायी आर. वीरमणि के खिलाफ पोक्सो अधिनियम मामले के संबंध में वीडियो प्रकाशित या प्रसारित करने से रोक दिया। न्यायमूर्ति वी. लक्ष्मीनारायणन ने कहा कि इस तरह की सामग्री के समयपूर्व प्रकाशन का अन्य पीड़ितों पर नकारात्मक प्रभाव पड़ सकता है।",
+          "background_context": "चेन्नई के तेनाम्पेट क्षेत्र में एक निजी आवास पर नाबालिग लड़कियों के यौन उत्पीड़न के आरोपों की जांच के बाद आर. वीरमणि और उनके दो सहायकों को 28 अगस्त को गिरफ्तार किया गया था।",
+          "bullet_points": [
+            "मद्रास हाईकोर्ट ने मीडिया को वीरमणि पोक्सो मामले में स्पष्ट वीडियो प्रसारित करने से रोका।",
+            "अदालत ने कहा कि समयपूर्व प्रकाशन से अन्य पीड़ितों में डर पैदा हो सकता है।"
+          ],
+          "key_facts": [
+            "आर. वीरमणि को 28 अगस्त को गिरफ्तार किया गया था।",
+            "तमिलनाडु सरकार ने मामले की जांच के लिए एक महिला विशेष जांच दल (SIT) का गठन किया है।"
+          ],
+          "key_locations": [
+            "चेन्नई",
+            "तमिलनाडु"
+          ],
+          "important_dates": [
+            "28 अगस्त",
+            "30 सितंबर"
+          ]
+        },
+        "quiz": {
+          "question": "Which NGO filed the plea seeking a John Doe order in the Veeramani POCSO case before the Madras High Court?",
+          "options": [
+            "Tulir",
+            "Bachpan Bachao Andolan",
+            "CRY",
+            "Pratham"
+          ],
+          "correct_answer": "Tulir",
+          "explanation": "The plea seeking a John Doe order against the circulation of explicit material was filed by an NGO named Tulir."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/madras-hc-restrains-media-from-publishing-videos-in-veeramani-pocso-case-101790343859973.html",
+        "category": "India",
+        "published_date": "2026-09-25",
+        "id": 856093886,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/25/1600x900/logo/The-Madras-high-court-on-Friday-restrained-media-o_1790343853317_3hYo.jpg",
+        "added_at": "2026-09-25T20:55:40.283237+05:30"
+      },
+      {
+        "headline": "Willy Naru, First Thai National Extradited to India, Convicted in Arms Case",
+        "story_lead": "A Delhi court has convicted Thai national Willy Naru for conspiring to procure sophisticated arms and ammunition from China through Bangladesh for the Naga insurgent group NSCN (IM). This marks a milestone as the first instance of a Thai citizen being extradited to India to stand trial. The 600-page judgment detailed Naru's involvement in an international arms procurement network.",
+        "full_article_text": "A special National Investigation Agency (NIA) judge at Rouse Avenue Courts convicted Thai national Willy Naru (also known as Wuthikorn Naruenartwanich) under Sections 120B and 122 of the Indian Penal Code (IPC) and Section 18 of the Unlawful Activities (Prevention) Act. The case dates back to an NIA investigation registered on December 18, 2020, following a chargesheet filed earlier against Naru and NSCN (IM) functionaries Anthony Shimray, TR Calvin, and Hangshi Ramson Tangkhul. The judgment established that Naru engaged in meetings, foreign travel, and communications to facilitate the procurement of approximately 800 weapons—including AK-series rifles, light machine guns, and pistols—along with one lakh rounds of ammunition from China through Bangladesh for the Naga insurgent group NSCN (IM). While the defence argued that no financial records, cash, or actual weapons were recovered and that the Chinese company TCL denied involvement, the court rejected these arguments, citing robust circumstantial evidence and communications.",
+        "background_context": "The National Investigation Agency registered the case on December 18, 2020, following an investigation into an international arms-procurement network linking the NSCN (IM), Chinese arms suppliers, Thailand, and a transit route through Bangladesh into India's Northeast. The procurement was reportedly triggered by a weapons shortage after a senior leader, Azetho Sumi, deserted the outfit in 2007. Naru was arrested by Thai authorities in Bangkok on August 30, 2013, following India's extradition request, and was handed over to the NIA on December 8, 2015, marking the first extradition of a Thai national to India.",
+        "bullet_points": [
+          "Willy Naru convicted by a Delhi court for conspiring to procure arms for NSCN (IM).",
+          "First Thai national to be extradited to India to stand trial.",
+          "Convicted under IPC Sections 120B, 122, and Section 18 of the UAPA.",
+          "The arms deal involved procuring weapons from China through Bangladesh, estimated at $1.2 million.",
+          "The NIA filed charges against Naru and NSCN (IM) functionaries including Anthony Shimray in connection with the international network.",
+          "Defence challenged the lack of physical weapons recovery and financial records, but the court rejected these contentions."
+        ],
+        "key_facts": [
+          "Willy Naru is formally known as Wuthikorn Naruenartwanich.",
+          "He was arrested in Bangkok on August 30, 2013, and transferred to India on December 8, 2015.",
+          "The arms consignment was planned to include around 800 weapons and one lakh rounds of ammunition.",
+          "Special NIA Judge Prashant Sharma delivered the 600-page judgment."
+        ],
+        "key_locations": [
+          "Delhi",
+          "Thailand",
+          "Bangkok",
+          "China",
+          "Bangladesh",
+          "Northeast India",
+          "Cox’s Bazar",
+          "Beihei port"
+        ],
+        "important_dates": [
+          "March 26, 2011",
+          "2011",
+          "August 30, 2013",
+          "2014",
+          "November 2015",
+          "December 8, 2015",
+          "December 18, 2020",
+          "September 29"
+        ],
+        "exam_relevance": [
+          "UPSC Prelims: International relations, India-Thailand extradition, UAPA, NIA, internal security.",
+          "UPSC Mains GS Paper III: Internal Security - Role of external state and non-state actors in creating challenges to internal security, insurgent groups in Northeast India, and cross-border arms smuggling."
+        ],
+        "upsc_analysis": "The conviction of Willy Naru highlights the complex nexus of cross-border insurgencies, international arms trafficking, and diplomatic cooperation on extradition. It underlines India's growing legal efficacy in utilizing instruments like Interpol Red Corner Notices, bilateral extradition treaties, and domestic anti-terror laws like the UAPA to prosecute transnational crime syndicates aiding domestic insurgencies.",
+        "causes": [
+          "Shortage of weapons faced by NSCN (IM) after the desertion of a senior leader in 2007.",
+          "Availability of international arms procurement networks involving Thailand-based brokers and Chinese suppliers."
+        ],
+        "impacts": [
+          "Strengthens the prosecution of international networks aiding domestic insurgent groups.",
+          "Highlights bilateral legal cooperation between India and Thailand regarding extradition."
+        ],
+        "challenges": [
+          "Proving cross-border financial trails and conspiracies where physical weapons or cash are not recovered.",
+          "Navigating prolonged extradition legal battles in foreign jurisdictions."
+        ],
+        "government_steps": [
+          "Extradition request processed through Thai courts resulting in the handover of Willy Naru in 2015.",
+          "Investigation and chargesheet filed by the National Investigation Agency (NIA)."
+        ],
+        "constitutional_or_policy_link": [
+          "Unlawful Activities (Prevention) Act (UAPA)",
+          "Indian Penal Code (IPC) Sections 120B and 122"
+        ],
+        "way_forward": [
+          "Enhancing international intelligence sharing to disrupt cross-border arms supply chains targeting Northeast insurgent groups.",
+          "Strengthening bilateral extradition frameworks with Southeast Asian nations."
+        ],
+        "mains_notes": "Willy Naru's conviction marks a historic milestone as the first extradition of a Thai national to India. It exposes the operational linkages between Northeast Indian insurgent groups like NSCN (IM), Thai-based arms brokers, and Chinese suppliers, moving weapons via transit routes through Bangladesh. The case reinforces the utility of domestic legal frameworks like UAPA and international cooperation in combating transnational terrorism and insurgency.",
+        "mains_questions": [
+          "Examine the challenges posed by cross-border arms smuggling to India's internal security with reference to insurgent networks in the Northeast.",
+          "Discuss the significance of extradition treaties and international legal cooperation in tackling transnational crimes and terrorism."
+        ],
+        "takeaway": "Willy Naru's conviction as the first extradited Thai national underscores India's legal capability to prosecute international arms networks linked to domestic insurgencies.",
+        "prelims_facts": [
+          "Willy Naru is the first Thai national extradited to India.",
+          "The case was investigated by the National Investigation Agency (NIA).",
+          "Weapons were allegedly procured for NSCN (IM)."
+        ],
+        "vocabulary": [
+          {
+            "word": "Extradition",
+            "meaning_hindi": "प्रत्यर्पण"
+          },
+          {
+            "word": "Conspiracy",
+            "meaning_hindi": "साजिश"
+          },
+          {
+            "word": "Insurgent",
+            "meaning_hindi": "विद्रोही"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "National Investigation Agency",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=National_Investigation_Agency"
+          },
+          {
+            "name": "NSCN-IM",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=National_Socialist_Council_of_Nagaland"
+          },
+          {
+            "name": "Thailand",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Thailand"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "भारत में प्रत्यर्पित होने वाले पहले थाई नागरिक विली नारू को हथियार मामले में दोषी ठहराया गया",
+          "story_lead": "दिल्ली की एक अदालत ने थाई नागरिक विली नारू को नागा विद्रोही समूह एनएससीएन (आईएम) के लिए चीन से बांग्लादेश के रास्ते अत्याधुनिक हथियार और गोला-बारूद खरीदने की साजिश रचने के दोषी ठहराया है। यह भारत में किसी थाई नागरिक के प्रत्यर्पण का पहला मामला है।",
+          "full_article_text": "राउज एवेन्यू कोर्ट्स के विशेष एनआईए जज प्रशांत शर्मा ने थाई नागरिक विली नारू (वुथिकोरन नारूएनातवानिच) को आईपीसी की धारा 120बी और 122 तथा यूएपीए की धारा 18 के तहत दोषी ठहराया। राष्ट्रीय जांच एजेंसी (एनआईए) ने इस मामले की जांच 18 दिसंबर 2020 को दर्ज की थी।",
+          "background_context": "एनआईए ने 18 दिसंबर 2020 को मामला दर्ज किया था। नारू को भारत के प्रत्यर्पण अनुरोध के बाद 30 अगस्त 2013 को बैंकॉक में गिरफ्तार किया गया था और 8 दिसंबर 2015 को भारत लाया गया था।",
+          "bullet_points": [
+            "विली नारू एनएससीएन (आईएम) के लिए हथियार खरीदने की साजिश में दोषी करार।",
+            "भारत में प्रत्यर्पित होने वाले पहले थाई नागरिक।",
+            "यूएपीए और आईपीसी की धाराओं के तहत सजा सुनाई गई।"
+          ],
+          "key_facts": [
+            "विली नारू को औपचारिक रूप से वुथिकोरन नारूएनातवानिच के रूप में जाना जाता है।",
+            "उन्हें 8 दिसंबर 2015 को भारत को सौंपा गया था।"
+          ],
+          "key_locations": [
+            "दिल्ली",
+            "थाईलैंड",
+            "बैंकॉक",
+            "चीन",
+            "बांग्लादेश"
+          ],
+          "important_dates": [
+            "18 दिसंबर 2020",
+            "8 दिसंबर 2015",
+            "30 अगस्त 2013"
+          ]
+        },
+        "quiz": {
+          "question": "Willy Naru, who was recently convicted in an arms case, holds the distinction of being what?",
+          "options": [
+            "The first Chinese arms supplier convicted by India",
+            "The first Thai national extradited to India to stand trial",
+            "The first leader of NSCN (IM) convicted under UAPA",
+            "The first Interpol chief to testify in an Indian court"
+          ],
+          "correct_answer": "The first Thai national extradited to India to stand trial",
+          "explanation": "Official records and news reports describe Willy Naru as the first Thai national extradited to India to stand trial."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/willy-naru-first-thai-national-extradited-to-india-convicted-in-arms-case-101790345000814.html",
+        "category": "India",
+        "published_date": "2026-09-25",
+        "id": 856093885,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/25/1600x900/logo/A-National-Investigation-Agency--NIA--team-brought_1790344993786_d5BT.jpg",
+        "added_at": "2026-09-25T20:55:40.283237+05:30"
+      },
+      {
+        "headline": "EAM S Jaishankar Delivers Strong Message at UNGA Over Attacks on Civilian Shipping and Seafarers",
+        "story_lead": "External Affairs Minister S Jaishankar expressed grave concern over repeated attacks targeting commercial ships and seafarers in key waterways during the 'Group of Friends on Safety and Security of Shipping and Seafarers' event at the United Nations General Assembly. Speaking alongside Liberia, he stated that these actions disrupt maritime commerce, claim innocent lives, and are indefensible.",
+        "full_article_text": "External Affairs Minister S Jaishankar addressed the 'Group of Friends on Safety and Security of Shipping and Seafarers' during the 81st session of the United Nations General Assembly, highlighting the rising threat to commercial shipping and mariners. India, a major source of seafarers, and Liberia, the largest shipping registry, joined hands at the session to draw attention to the urgent need for safety and security across vital maritime routes. Jaishankar pointed out that incidents involving attacks on civilian vessels in the Gulf, Red Sea, Black Sea, and surrounding areas are no longer isolated or exceptional occurrences. He cited specific incidents, including the attack on the Antigua and Barbuda-flagged bulk carrier MV Cape Dao in the Gulf of Oman which resulted in the death of an Indian sailor, and the attack on the Panama-flagged oil tanker El Gaia in the Strait of Hormuz where an Indian crew member went missing. Additionally, he highlighted attacks in the Black Sea involving MV Omorfi on July 18, where an Indian chief officer was killed, and MV Golden Leo on July 19, which led to the deaths of four Indian seafarers. Emphasizing that mariners of various nationalities have been affected, Jaishankar called on the international community to close ranks, deter such attacks, and protect maritime trade and civilian lives.",
+        "background_context": "India and Liberia have collaborated to highlight the safety and security of ships and seafarers at the United Nations General Assembly, drawing attention to repeated attacks on commercial shipping across key international waterways like the Gulf, Red Sea, and Black Sea.",
+        "bullet_points": [
+          "EAM S Jaishankar addressed the 'Group of Friends on Safety and Security of Shipping and Seafarers' at the 81st session of the UNGA.",
+          "India and Liberia collaborated to draw attention to the safety of ships and mariners, with India being a major source of seafarers and Liberia operating the largest shipping registry.",
+          "Jaishankar highlighted repeated attacks on commercial shipping in the Gulf, Red Sea, Black Sea, and their vicinity.",
+          "Specific casualties included Indian seafarers killed or missing in attacks on vessels such as MV Cape Dao, El Gaia, MV Omorfi, and MV Golden Leo.",
+          "The EAM stressed that disruptions to maritime commerce and the loss of civilian lives are indefensible and called on the international community to deter such acts."
+        ],
+        "key_facts": [
+          "India and Liberia joined hands at the UNGA regarding shipping safety.",
+          "An Indian sailor lost his life in an attack on the MV Cape Dao in the Gulf of Oman.",
+          "An Indian crew member was reported missing after an attack on the El Gaia in the Strait of Hormuz.",
+          "The chief officer of MV Omorfi, an Indian national, was killed on July 18 in Russian territorial waters.",
+          "Four Indian seafarers lost their lives when MV Golden Leo was struck after leaving Odessa on July 19."
+        ],
+        "key_locations": [
+          "Gulf",
+          "Red Sea",
+          "Black Sea",
+          "Gulf of Oman",
+          "Strait of Hormuz",
+          "Odessa"
+        ],
+        "important_dates": [
+          "18 July",
+          "19 July"
+        ],
+        "exam_relevance": [
+          "Prelims: International groupings, maritime security, important straits and water bodies.",
+          "Mains (GS Paper II/III): International relations, UN platforms, security challenges in maritime trade and protection of Indian nationals abroad."
+        ],
+        "upsc_analysis": "The statement by the External Affairs Minister at a multilateral platform like the UNGA underscores India's proactive diplomatic stance on maritime security and the protection of its diaspora workforce, particularly seafarers. It highlights the vulnerability of global supply chains and critical choke points such as the Red Sea, Gulf of Oman, and Strait of Hormuz, emphasizing the need for multilateral cooperation to secure global trade routes.",
+        "causes": [
+          "Geopolitical tensions and conflicts affecting critical international shipping lanes like the Red Sea, Gulf, and Black Sea.",
+          "Targeting of commercial vessels by hostile actors, leading to disruptions in maritime commerce."
+        ],
+        "impacts": [
+          "Loss of lives of Indian seafarers and mariners of other nationalities.",
+          "Disruption of global maritime trade and commerce across key waterways.",
+          "Heightened security risks for international shipping registries and crew members."
+        ],
+        "challenges": [
+          "Ensuring the safety of civilian crews operating in volatile geopolitical zones.",
+          "Coordinating international deterrence mechanisms to prevent attacks on commercial shipping."
+        ],
+        "government_steps": [
+          "Raising diplomatic awareness and advocating for maritime security at the United Nations General Assembly alongside Liberia."
+        ],
+        "constitutional_or_policy_link": [
+          "India's foreign policy commitment to protecting its citizens and diaspora overseas, alongside ensuring freedom of navigation and secure global maritime trade."
+        ],
+        "way_forward": [
+          "The international community must close ranks to deter attacks on civilian shipping.",
+          "Enhanced intelligence sharing and coordinated naval patrols across vulnerable trade routes.",
+          "Strengthening multilateral frameworks to protect seafarers regardless of nationality."
+        ],
+        "mains_notes": "EAM S Jaishankar's address at the UNGA highlights growing vulnerabilities in global maritime choke points. India and Liberia's joint initiative emphasizes the protection of seafarers. Repeated attacks on vessels like MV Cape Dao and MV Omorfi necessitate robust international cooperation and deterrence frameworks to safeguard maritime commerce and innocent lives.",
+        "mains_questions": [
+          "Discuss the security challenges confronting global maritime trade routes in the Gulf, Red Sea, and Black Sea, and examine India's diplomatic response at international forums.",
+          "Analyze the importance of safeguarding international shipping lanes and protecting seafarers in maintaining global supply chain resilience."
+        ],
+        "takeaway": "Attacks on civilian shipping and seafarers are indefensible, requiring the international community to unite and deter threats to global maritime commerce.",
+        "prelims_facts": [
+          "Liberia is noted as the largest shipping registry.",
+          "India is a major source of global seafarers.",
+          "Vessels mentioned include MV Cape Dao, El Gaia, MV Omorfi, and MV Golden Leo."
+        ],
+        "vocabulary": [
+          {
+            "word": "Indefensible",
+            "meaning_hindi": "असमर्थनीय / जिसका बचाव न किया जा सके"
+          },
+          {
+            "word": "Registry",
+            "meaning_hindi": "पंजीयन / रजिस्ट्री"
+          },
+          {
+            "word": "Mariner",
+            "meaning_hindi": "नाविक / समुद्री यात्री"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "S. Jaishankar",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=S._Jaishankar"
+          },
+          {
+            "name": "Liberia",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Liberia"
+          },
+          {
+            "name": "United Nations General Assembly",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=United_Nations_General_Assembly"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "यूएनजीए में जयशंकर का कड़ा संदेश: 'नागरिक जहाजरानी पर हमले पूरी तरह असमर्थनीय'",
+          "story_lead": "विदेश मंत्री एस जयशंकर ने संयुक्त राष्ट्र महासभा के 81वें सत्र के दौरान 'शिपिंग और नाविकों की सुरक्षा और संरक्षा पर मित्रों के समूह' में वाणिज्यिक जहाजों और नाविकों पर बार-बार होने वाले हमलों पर गहरी चिंता व्यक्त की।",
+          "full_article_text": "विदेश मंत्री एस जयशंकर ने शुक्रवार को संयुक्त राष्ट्र महासभा के 81वें सत्र के दौरान खाड़ी, लाल सागर और काला सागर में वाणिज्यिक जहाजों और नाविकों को निशाना बनाकर किए जा रहे हमलों पर चिंता जताई। उन्होंने कहा कि ऐसी घटनाएं चिंता का एक बढ़ता कारण बन गई हैं। 'शिपिंग और नाविकों की सुरक्षा और संरक्षा पर मित्रों के समूह' को संबोधित करते हुए जयशंकर ने कहा कि जहाजों और नाविकों की सुरक्षा पर ध्यान आकर्षित करने के लिए भारत और लाइबेरिया एक साथ आए हैं। उन्होंने खाड़ी के ओमान की खाड़ी में एमवी केप दाओ और होर्मुज जलडमरूमध्य में एल गैइया जैसे हमलों का जिक्र किया, जिनमें भारतीय नाविकों की जान गई या वे लापता हुए।",
+          "background_context": "भारत और लाइबेरिया ने संयुक्त राष्ट्र महासभा में जहाजों और नाविकों की सुरक्षा व संरक्षा की ओर ध्यान आकर्षित करने के लिए हाथ मिलाया है।",
+          "bullet_points": [
+            "विदेश मंत्री एस जयशंकर ने यूएनजीए के 81वें सत्र में बात रखी।",
+            "भारत और लाइबेरिया ने जहाजों और नाविकों की सुरक्षा पर प्रकाश डाला।",
+            "खाड़ी, लाल सागर और काला सागर में जहाजों पर बार-बार हमले हुए हैं।",
+            "एमवी केप दाओ, एमवी ओमोर्फी और एमवी गोल्डेन लियो जैसी घटनाओं में भारतीय नाविकों की जान गई।",
+            "अंतर्राष्ट्रीय समुदाय से इन हमलों को रोकने के लिए एकजुट होने का आह्वान किया गया।"
+          ],
+          "key_facts": [
+            "भारत और लाइबेरिया ने शिपिंग सुरक्षा पर संयुक्त रूप से बात की।",
+            "ओमान की खाड़ी में एमवी केप दाओ पर हमले में एक भारतीय नाविक की मौत हुई।"
+          ],
+          "key_locations": [
+            "खाड़ी",
+            "लाल सागर",
+            "काला सागर",
+            "ओमान की खाड़ी",
+            "होर्मुज जलडमरूमध्य"
+          ],
+          "important_dates": [
+            "18 जुलाई",
+            "19 जुलाई"
+          ]
+        },
+        "quiz": {
+          "question": "At which United Nations platform did EAM S Jaishankar deliver a strong message on the safety and security of shipping and seafarers alongside Liberia?",
+          "options": [
+            "UN Security Council",
+            "United Nations General Assembly",
+            "UN Human Rights Council",
+            "UNEP Climate Summit"
+          ],
+          "correct_answer": "United Nations General Assembly",
+          "explanation": "EAM S Jaishankar spoke at the 'Group of Friends on Safety and Security of Shipping and Seafarers' during the 81st session of the United Nations General Assembly."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/eam-s-jaishankar-strong-message-at-united-nations-general-assembly-civilian-shipping-attack-on-indians-liberia-gulf-101790344868920.html",
+        "category": "India",
+        "published_date": "2026-09-25",
+        "id": 856093884,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/25/1600x900/logo/PTI09-25-2026-000412B-0_1790344847583_pVTC_1790344864157_GTT3_3f2678c5-ccd5-4523-bb51-7bc0baece8de_p2tk.jpg",
+        "added_at": "2026-09-25T20:55:40.283237+05:30"
+      },
+      {
+        "headline": "Tarang Shakti: Indian Air Force's Largest Multilateral Air Combat Exercise Begins in Jodhpur",
+        "story_lead": "The Indian Air Force is hosting its largest multilateral air combat exercise, Tarang Shakti, in Jodhpur. The two-week-long drills feature more than 80 aircraft and around 1,500 personnel from India and multiple international partner nations. Notably, this marks the first time that US F-35 fifth-generation fighters are participating in an exercise within India.",
+        "full_article_text": "भारतीय वायुसेना के सबसे बड़े बहुपक्षीय हवाई युद्ध अभ्यास 'तरंग शक्ति' का शनिवार को जोधपुर में शुभारंभ हुआ। अधिकारियों के अनुसार, दो सप्ताह तक चलने वाले इस अभ्यास में भारत और विदेशी बलों के 80 से अधिक विमान तथा लगभग 1,500 कर्मी भाग ले रहे हैं। अमेरिका, फ्रांस, जर्मनी, यूएई, ऑस्ट्रेलिया, बांग्लादेश और श्रीलंका सहित आठ वायुसेनाएं इसमें अपने विमानों के साथ हिस्सा ले रही हैं।",
+        "background_context": "तरंग शक्ति का आयोजन भारतीय वायुसेना द्वारा सैन्य अंतर-संचालनीयता बढ़ाने और साझी सैन्य सीख प्राप्त करने के लिए किया गया है।",
+        "bullet_points": [
+          "तरंग शक्ति भारतीय वायुसेना का सबसे बड़ा बहुपक्षीय हवाई अभ्यास है।",
+          "यह जोधपुर में दो सप्ताह तक आयोजित किया जा रहा है।",
+          "इसमें अमेरिका के F-35 स्टील्थ फाइटर पहली बार भारत में किसी अभ्यास में हिस्सा ले रहे हैं।"
+        ],
+        "key_facts": [
+          "स्थान: जोधपुर",
+          "प्रतिभागी विमान: 80 से अधिक",
+          "कर्मी: लगभग 1,500"
+        ],
+        "key_locations": [
+          "जोधपुर",
+          "भारत"
+        ],
+        "important_dates": [
+          "शनिवार"
+        ],
+        "exam_relevance": [
+          "Prelims: Current events of national and international importance, defense exercises, military hardware (F-35, Tejas).",
+          "Mains (GS Paper II): Bilateral, regional and global groupings and agreements involving India and/or affecting India's interests."
+        ],
+        "upsc_analysis": "Multilateral defense exercises like Tarang Shakti highlight India's growing strategic outreach and defense diplomacy. Participation of major global air powers and advanced platforms like the F-35 alongside indigenous assets like the Tejas demonstrates India's capability to host large-scale complex drills. It reinforces interoperability, strengthens strategic partnerships in the Indo-Pacific, and aligns with India's goal of defense manufacturing and modernization.",
+        "causes": [
+          "Need to enhance military interoperability and operational coordination between India and partner nations.",
+          "Shared commitment to regional and global security, international law, and freedom of navigation in the Indo-Pacific."
+        ],
+        "impacts": [
+          "Strengthens bilateral and multilateral defense ties.",
+          "Provides realistic training and testing environments for air crews and ground staff.",
+          "Showcases India's capacity to host large-scale international military drills."
+        ],
+        "challenges": [
+          "Coordinating complex operations across diverse foreign air platforms and communication systems.",
+          "Logistical management of multiple international air assets and 1,500 personnel."
+        ],
+        "government_steps": [
+          "Hosting Tarang Shakti under the aegis of the Indian Air Force to integrate indigenous platforms like the Tejas with advanced global aircraft."
+        ],
+        "constitutional_or_policy_link": [
+          "Aligned with India's active foreign policy of strategic autonomy, multi-alignment, and defense cooperation in the Indo-Pacific."
+        ],
+        "way_forward": [
+          "Institutionalize multilateral exercises to continuously upgrade tactical doctrines and operational readiness.",
+          "Further leverage joint exercises for defense technology cooperation and indigenous capability building."
+        ],
+        "mains_notes": "Tarang Shakti represents a major milestone in India's defense diplomacy, bringing together diverse global air forces. By integrating advanced platforms like the F-35 with India's Tejas, the exercise underscores mutual learning, interoperability, and a shared vision for Indo-Pacific stability.",
+        "mains_questions": [
+          "Discuss the strategic significance of multilateral air exercises like Tarang Shakti in enhancing India's defense diplomacy and interoperability.",
+          "How do joint military exercises contribute to regional security and strategic partnerships in the Indo-Pacific region?"
+        ],
+        "takeaway": "Tarang Shakti highlights India's growing strategic partnerships and multilateral defense cooperation through large-scale air combat drills in Jodhpur.",
+        "prelims_facts": [
+          "Tarang Shakti is the IAF's largest multilateral air combat exercise.",
+          "F-35 fifth-generation fighters participated in an exercise in India for the first time.",
+          "Eight air forces and 32 observer nations participated in the Jodhpur drills."
+        ],
+        "vocabulary": [
+          {
+            "word": "Interoperability",
+            "meaning_hindi": "अंतर-संचालनीयता (विभिन्न सैन्य प्रणालियों का मिलकर काम करने की क्षमता)"
+          },
+          {
+            "word": "Multilateral",
+            "meaning_hindi": "बहुपक्षीय"
+          },
+          {
+            "word": "Stealth",
+            "meaning_hindi": "रडार से छिपने की क्षमता / गुप्त"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Jodhpur",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Jodhpur"
+          },
+          {
+            "name": "Tejas",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=HAL_Tejas"
+          }
+        ],
+        "hindi_headline": "तरंग शक्ति: जोधपुर में शुरू हुआ भारतीय वायुसेना का सबसे बड़ा बहुपक्षीय हवाई युद्ध अभ्यास",
+        "hindi_story_lead": "भारतीय वायुसेना का अब तक का सबसे बड़ा बहुपक्षीय हवाई युद्ध अभ्यास 'तरंग शक्ति' जोधपुर में शुरू हो गया है। इस दो सप्ताह लंबे अभ्यास में 80 से अधिक विमान और 1,500 से अधिक कर्मी हिस्सा ले रहे हैं।",
+        "quiz": {
+          "question": "Which fifth-generation fighter jet participated in an exercise in India for the first time during Tarang Shakti?",
+          "options": [
+            "F-16",
+            "F-35",
+            "Rafale",
+            "Tejas"
+          ],
+          "correct_answer": "F-35",
+          "explanation": "The US brought six F-35 fifth-generation stealth fighters to Jodhpur, marking their first participation in an exercise in India."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/more-than-80-aircraft-1-500-personnel-to-take-part-in-tarang-shakti-101790345540020.html",
+        "category": "India",
+        "published_date": "2026-09-25",
+        "hindi_translation": {
+          "headline": "Tarang Shakti: Indian Air Force's Largest Multilateral Air Combat Exercise Begins in Jodhpur",
+          "story_lead": "The Indian Air Force is hosting its largest multilateral air combat exercise, Tarang Shakti, in Jodhpur. The two-week-long drills feature more than 80 aircraft and around 1,500 personnel from India and multiple international partner nations. Notably, this marks the first time that US F-35 fifth-generation fighters are participating in an exercise within India.",
+          "full_article_text": "भारतीय वायुसेना के सबसे बड़े बहुपक्षीय हवाई युद्ध अभ्यास 'तरंग शक्ति' का शनिवार को जोधपुर में शुभारंभ हुआ। अधिकारियों के अनुसार, दो सप्ताह तक चलने वाले इस अभ्यास में भारत और विदेशी बलों के 80 से अधिक विमान तथा लगभग 1,500 कर्मी भाग ले रहे हैं। अमेरिका, फ्रांस, जर्मनी, यूएई, ऑस्ट्रेलिया, बांग्लादेश और श्रीलंका सहित आठ वायुसेनाएं इसमें अपने विमानों के साथ हिस्सा ले रही हैं।",
+          "background_context": "तरंग शक्ति का आयोजन भारतीय वायुसेना द्वारा सैन्य अंतर-संचालनीयता बढ़ाने और साझी सैन्य सीख प्राप्त करने के लिए किया गया है।",
+          "bullet_points": [
+            "तरंग शक्ति भारतीय वायुसेना का सबसे बड़ा बहुपक्षीय हवाई अभ्यास है।",
+            "यह जोधपुर में दो सप्ताह तक आयोजित किया जा रहा है।",
+            "इसमें अमेरिका के F-35 स्टील्थ फाइटर पहली बार भारत में किसी अभ्यास में हिस्सा ले रहे हैं।"
+          ],
+          "key_facts": [
+            "स्थान: जोधपुर",
+            "प्रतिभागी विमान: 80 से अधिक",
+            "कर्मी: लगभग 1,500"
+          ],
+          "key_locations": [
+            "जोधपुर",
+            "भारत"
+          ],
+          "important_dates": [
+            "शनिवार"
+          ]
+        },
+        "id": 856093883,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/25/1600x900/logo/The-US-Air-Force-s-F-35-fifth-generation-fighter-a_1790345533725_0BJ9.jpg",
+        "added_at": "2026-09-25T20:55:40.283237+05:30"
+      },
+      {
+        "headline": "NDA Allies Urge Election Commission to Issue Clarification on Dissent Row",
+        "story_lead": "Following an investigative report regarding reported internal dissent within the Election Commission of India (ECI), several BJP-led National Democratic Alliance (NDA) allies, including LJP(RV) chief Chirag Paswan, RLM chief Upendra Kushwaha, and the TDP, have urged the poll body to issue a clarification. The leaders emphasized that addressing public doubts is vital to maintaining trust in independent democratic institutions.",
+        "full_article_text": "Following an investigative report by The Indian Express newspaper which stated that Election Commissioners Sukhbir Singh Sandhu and Vivek Joshi recorded objections to decisions taken in the commission’s name 14 times over 10 months, several leaders of the BJP-led National Democratic Alliance (NDA) have urged the Election Commission of India (ECI) to issue a clarification. Lok Janshakti Party (Ram Vilas) chief Chirag Paswan, Rashtriya Lok Morcha chief Upendra Kushwaha, and the Telugu Desam Party (TDP) emphasized the need to dispel public doubts regarding the electoral process and the special intensive revision (SIR) exercise. Chirag Paswan stated that the Chief Election Commissioner and the poll body must provide a strong stance not to satisfy the Opposition, but to assure the public and preserve faith in the electoral process. RLM founder Upendra Kushwaha highlighted confusion among the public regarding the SIR exercise, while TDP's Lok Sabha floor leader Lavu Srikrishna Devarayalu noted that providing appropriate clarification maintains transparency and strengthens public confidence. In response, the Election Commission refuted the report, stating that internal checks and balances are standard in a multi-member constitutional body, all actions conform to laws, and final decisions are taken unanimously despite individual observations during deliberations. Meanwhile, opposition leaders including Rahul Gandhi, Akhilesh Yadav, and Arvind Kejriwal criticized the poll body and demanded actions ranging from resignations to the annulment of recent elections.",
+        "background_context": "The controversy follows an investigative report by The Indian Express newspaper indicating that two Election Commissioners recorded objections to decisions taken in the commission's name multiple times over a 10-month period, prompting reactions from both ruling alliance partners and opposition parties.",
+        "bullet_points": [
+          "NDA allies including LJP(RV), RLM, and TDP urged the ECI to clarify reports regarding internal dissent.",
+          "The controversy was triggered by an investigative media report concerning objections recorded by Election Commissioners.",
+          "Chirag Paswan stated that the CEC must answer to assure the public and uphold faith in the democratic process.",
+          "Upendra Kushwaha noted confusion among the public regarding the special intensive revision (SIR) exercise.",
+          "The ECI defended its functioning, stating that internal checks and balances are standard and all final decisions are unanimous.",
+          "Opposition leaders criticized the poll body and called for accountability, resignations, or annulment of recent polls."
+        ],
+        "key_facts": [
+          "The investigative report claimed Election Commissioners Sukhbir Singh Sandhu and Vivek Joshi recorded objections 14 times over 10 months.",
+          "Chirag Paswan, Upendra Kushwaha, and TDP called for ECI clarification.",
+          "The ECI stated that final decisions of the poll body are taken unanimously."
+        ],
+        "key_locations": [
+          "New Delhi",
+          "Haryana",
+          "Maharashtra",
+          "Uttar Pradesh",
+          "Bihar",
+          "West Bengal",
+          "Delhi"
+        ],
+        "important_dates": [
+          "Wednesday"
+        ],
+        "exam_relevance": [
+          "UPSC Prelims: Polity and Governance - Constitutional Bodies (Election Commission of India)",
+          "UPSC Mains GS Paper II: Statutory, regulatory and various quasi-judicial bodies; Elections and Representation of People's Act."
+        ],
+        "upsc_analysis": "The public demand by ruling alliance partners for transparency from an independent constitutional body like the Election Commission highlights the delicate balance between executive oversight, coalition dynamics, and institutional autonomy. From a governance perspective, maintaining the credibility of election management bodies is fundamental to Indian democracy, especially when internal procedures or multi-member dynamics become subjects of public discourse.",
+        "causes": [
+          "Publication of an investigative media report detailing alleged internal objections within the Election Commission.",
+          "Public and political concerns regarding the special intensive revision (SIR) exercise and electoral transparency."
+        ],
+        "impacts": [
+          "Political debate on the autonomy and internal functioning of the Election Commission.",
+          "Calls from both allies and opposition parties for institutional clarification to maintain public trust."
+        ],
+        "challenges": [
+          "Preserving public trust in constitutional institutions amid controversies.",
+          "Balancing internal multi-member deliberations with transparent public communication."
+        ],
+        "government_steps": [
+          "The Election Commission issued a formal statement defending its multi-member decision-making process and confirming that all final decisions are unanimous."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 324 of the Constitution of India provides for the superintendence, direction, and control of elections to be vested in an Election Commission."
+        ],
+        "way_forward": [
+          "Enhancing institutional transparency and proactive communication to resolve public misgivings regarding electoral exercises.",
+          "Strengthening adherence to established norms of multi-member consensus in constitutional bodies."
+        ],
+        "mains_notes": "The controversy surrounding internal dissent within the Election Commission underscores the critical importance of institutional credibility in a democracy. While the ECI maintains that internal checks and multi-member deliberations are standard, demands from political stakeholders for clarification emphasize that transparency remains paramount for upholding public faith in free and fair elections.",
+        "mains_questions": [
+          "Discuss the constitutional role of the Election Commission of India under Article 324 and examine the importance of institutional transparency in maintaining public trust.",
+          "Analyze the functioning of multi-member constitutional bodies in India with reference to recent debates on internal decision-making processes."
+        ],
+        "takeaway": "NDA allies have urged the Election Commission to clarify reports of internal dissent to reassure the public and uphold faith in the electoral process.",
+        "prelims_facts": [
+          "Article 324 relates to the Election Commission of India.",
+          "The ECI functions as a multi-member constitutional body."
+        ],
+        "vocabulary": [
+          {
+            "word": "Dissent",
+            "meaning_hindi": "असहमति"
+          },
+          {
+            "word": "Transparency",
+            "meaning_hindi": "पारदर्शिता"
+          },
+          {
+            "word": "Autonomous",
+            "meaning_hindi": "स्वायत्त"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Chirag Paswan",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Chirag%20Paswan"
+          },
+          {
+            "name": "Election Commission of India",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Election%20Commission%20of%20India"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "चिराग के बाद, अन्य भाजपा सहयोगियों ने 'असहमति' विवाद पर चुनाव आयोग से स्पष्टीकरण मांगा",
+          "story_lead": "चुनाव आयोग (ECI) के भीतर कथित आंतरिक असहमति से संबंधित एक खोजी रिपोर्ट के बाद, चिराग पासवान, उपेंद्र कुशवाहा और टीडीपी सहित भाजपा के नेतृत्व वाले राष्ट्रीय जनता दल (NDA) के कई नेताओं ने चुनाव आयोग से स्पष्टीकरण जारी करने का आग्रह किया है।",
+          "full_article_text": "द इंडियन एक्सप्रेस अखबार की एक खोजी रिपोर्ट के बाद, जिसमें कहा गया था कि चुनाव आयुक्तों सुखबीर सिंह संधू और विवेक आयोग ने 10 महीनों में आयोग के नाम पर लिए गए निर्णयों पर कम से कम 14 बार आपत्तियां दर्ज कीं, भाजपा के नेतृत्व वाले राष्ट्रीय जनता दल (NDA) के अन्य नेताओं ने भारत के चुनाव आयोग (ECI) से स्पष्टीकरण जारी करने का आग्रह किया है। लोक जनशक्ति पार्टी (राम विलास) के प्रमुख चिराग पासवान, राष्ट्रीय लोक मोर्चा और तेलुगू देशम पार्टी ने ईसीआई से इस मामले को संबोधित करने का आह्वान किया।",
+          "background_context": "यह विवाद एक खोजी मीडिया रिपोर्ट के बाद सामने आया है जिसमें चुनाव आयोग के भीतर आंतरिक असहमति का दावा किया गया था।",
+          "bullet_points": [
+            "एनडीए सहयोगियों ने चुनाव आयोग से आंतरिक असहमति पर स्पष्टीकरण मांगा है।",
+            "यह विवाद एक मीडिया रिपोर्ट के बाद शुरू हुआ।",
+            "चिराग पासवान ने कहा कि जनता के विश्वास को बनाए रखने के लिए स्पष्टीकरण आवश्यक है।"
+          ],
+          "key_facts": [
+            "चिराग पासवान, उपेंद्र कुशवाहा और टीडीपी ने चुनाव आयोग से स्पष्टीकरण की मांग की है।",
+            "चुनाव आयोग ने स्पष्ट किया है कि अंतिम निर्णय सर्वसम्मति से लिए जाते हैं।"
+          ],
+          "key_locations": [
+            "नई दिल्ली",
+            "बिहार"
+          ],
+          "important_dates": [
+            "बुधवार"
+          ]
+        },
+        "quiz": {
+          "question": "Which political alliance leaders recently urged the Election Commission to issue a clarification regarding reports of internal dissent?",
+          "options": [
+            "INDIA bloc",
+            "National Democratic Alliance (NDA)",
+            "Left Democratic Front",
+            "United Progressive Alliance"
+          ],
+          "correct_answer": "National Democratic Alliance (NDA)",
+          "explanation": "Leaders of the BJP-led National Democratic Alliance (NDA), including Chirag Paswan and Upendra Kushwaha, urged the ECI to clarify reports of internal dissent."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/bjp-nda-allies-election-commission-ec-clarification-on-dissent-row-chirag-paswan-upendra-kushwaha-101790340094080.html",
+        "category": "India",
+        "published_date": "2026-09-25",
+        "id": 856093882,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/25/1600x900/logo/chirag_upendra_1790342278860_fkOc_1790342289452_yb5a_dffec7ac-e0c1-4013-ace1-7d65879f195f_7EYF.jpg",
+        "added_at": "2026-09-25T20:55:40.283237+05:30"
+      },
+      {
+        "headline": "Uttarakhand Weather: IMD Issues Red and Orange Alerts Till September 28 Amid Heavy Rain Forecast",
+        "story_lead": "The India Meteorological Department (IMD) has issued red and orange alerts across several districts of Uttarakhand due to an intense spell of rain, thunderstorms, lightning, and gusty winds lasting until September 28. Authorities have advised pilgrims, tourists, and commuters to avoid non-essential travel amid risks of landslides, flash floods, and road disruptions.",
+        "full_article_text": "The India Meteorological Department (IMD) has issued red and orange alerts for multiple districts in Uttarakhand as a combined impact of two weather systems is forecast to bring intense rainfall, thunderstorms, lightning, and gusty winds from Friday night through September 28. Snowfall is also likely in areas situated at or above 4,000 metres. According to CS Tomar, Director of the Meteorological Centre in Dehradun, rainfall activity is expected to peak on September 26 and 27 with widespread light to moderate rain. On Saturday, districts including Bageshwar, Nainital, Pithoragarh, Champawat, and Udham Singh Nagar are under a red alert, while Dehradun, Pauri Garhwal, Chamoli, Rudraprayag, and Almora are under an orange alert. On Sunday, Tehri Garhwal, Haridwar, and Pauri Garhwal face a red alert for extremely heavy rainfall at isolated locations. The weather office has warned of landslides, rockfalls, and mudslides in vulnerable mountainous areas, which could block highways, link roads, and bridges. Rising water levels in rivers and streams increase the risk of flash floods in low-lying areas. Over 33 roads remained blocked across the state, including 14 in Chamoli and 10 in Dehradun, and continuous debris fall on the Pithoragarh-Tanakpur NH-9 has disrupted traffic. Authorities have recommended halting helicopter operations to Kedarnath Dham, closing schools, suspending construction and mountaineering expeditions, and exercising caution.",
+        "background_context": "The India Meteorological Department monitors regional weather patterns across Indian states. In mountainous regions like Uttarakhand, heavy spells of rain combined with vulnerable terrain frequently trigger landslides, road blockages, and rising river water levels during active weather systems.",
+        "bullet_points": [
+          "IMD issued red and orange alerts across several Uttarakhand districts from September 25 through September 28.",
+          "Snowfall is expected in areas at or above 4,000 metres.",
+          "Peak rainfall activity is forecast for September 26 and 27 with widespread light to moderate rain and thunderstorms.",
+          "Authorities advised pilgrims, tourists, and commuters to avoid non-essential travel due to landslide and flash flood risks.",
+          "Over 33 roads were reported blocked across the state, including sections of the Pithoragarh-Tanakpur NH-9.",
+          "Helicopter operations to Kedarnath Dham and school closures are among precautionary measures recommended."
+        ],
+        "key_facts": [
+          "Weather systems active from the night of September 25 to the forenoon of September 28.",
+          "Red alert districts for Saturday include Bageshwar, Nainital, Pithoragarh, Champawat, and Udham Singh Nagar.",
+          "Red alert districts for Sunday include Tehri Garhwal, Haridwar, and Pauri Garhwal.",
+          "Over 33 roads remained blocked across the state, including 14 in Chamoli and 10 in Dehradun.",
+          "State recorded 0.5 mm of rainfall against a normal of 4.6 mm during the 24 hours ending Friday morning."
+        ],
+        "key_locations": [
+          "Uttarakhand",
+          "Dehradun",
+          "Bageshwar",
+          "Nainital",
+          "Pithoragarh",
+          "Champawat",
+          "Udham Singh Nagar",
+          "Pauri Garhwal",
+          "Chamoli",
+          "Rudraprayag",
+          "Almora",
+          "Tehri Garhwal",
+          "Haridwar",
+          "Uttarkashi",
+          "Kedarnath Dham"
+        ],
+        "important_dates": [
+          "September 25",
+          "September 26",
+          "September 27",
+          "September 28"
+        ],
+        "exam_relevance": [
+          "UPSC Prelims: Geography (Indian Weather Systems, IMD Alerts)",
+          "UPSC Mains GS Paper 3: Disaster Management, Resilience, and Mitigation Strategies"
+        ],
+        "upsc_analysis": "Extreme weather events in ecologically fragile regions like Uttarakhand highlight the vulnerability of infrastructure and human settlements to climate volatility. Disaster management frameworks must focus on proactive early warning systems, resilient infrastructure design, and regulated tourist movement during peak monsoon and heavy precipitation cycles.",
+        "causes": [
+          "Combined impact of two active weather systems over the region.",
+          "Intense spells of rain, thunderstorms, lightning, and gusty winds."
+        ],
+        "impacts": [
+          "Landslides, rockfalls, and mudslides blocking highways and link roads.",
+          "Risk of flash floods due to rising water levels in rivers and streams.",
+          "Disruptions to electricity, drinking-water supplies, rail services, flights, and helicopter operations.",
+          "Travel delays for patients and commuters due to road blockages like on NH-9."
+        ],
+        "challenges": [
+          "Clearing continuous debris falls safely in mountainous terrains.",
+          "Managing safe movement of pilgrims and tourists along Char Dham routes.",
+          "Preventing disruptions in low-lying settlements and maintaining emergency services."
+        ],
+        "government_steps": [
+          "IMD issued timely red and orange warnings.",
+          "District administrations advised consideration of school closures, suspension of construction, and halting mountaineering expeditions.",
+          "Rudraprayag district tourism authorities planned halting helicopter operations to Kedarnath Dham.",
+          "National Highways officials engaged in restoration work on blocked roads."
+        ],
+        "constitutional_or_policy_link": [
+          "National Disaster Management Act, 2005"
+        ],
+        "way_forward": [
+          "Strengthening real-time weather monitoring and early dissemination to remote hill areas.",
+          "Upgrading disaster-resilient infrastructure along national highways and vulnerable pilgrimage routes.",
+          "Enforcing strict compliance with travel advisories during severe weather forecasts."
+        ],
+        "mains_notes": "The issuance of red and orange alerts by the IMD in Uttarakhand emphasizes the critical need for robust disaster preparedness. Mountainous regions face severe risks of landslides, flash floods, and road washouts. Institutional responses must integrate reliable weather forecasting with swift rescue mechanisms, strict regulation of pilgrimage traffic, and investment in slope-stabilization technologies.",
+        "mains_questions": [
+          "Discuss the challenges posed by extreme weather events in Himalayan states and evaluate the role of early warning systems in disaster mitigation.",
+          "How can India improve its disaster management response framework to minimize infrastructure disruptions and loss of life during cloudbursts and heavy rains in hilly terrain?"
+        ],
+        "takeaway": "IMD issued red and orange alerts across multiple Uttarakhand districts through September 28, urging caution against landslides and flash floods.",
+        "prelims_facts": [
+          "IMD issues red and orange weather alerts.",
+          "Snowfall expected in areas at or above 4,000 metres in Uttarakhand.",
+          "Pithoragarh-Tanakpur NH-9 experienced debris fall disrupting traffic."
+        ],
+        "vocabulary": [
+          {
+            "word": "Landslide",
+            "meaning_hindi": "भूस्खलन"
+          },
+          {
+            "word": "Flash flood",
+            "meaning_hindi": "अचानक बाढ़"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Uttarakhand",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Uttarakhand"
+          },
+          {
+            "name": "India Meteorological Department",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=India+Meteorological+Department"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "उत्तराखंड: IMD ने कई जिलों में 28 सितंबर तक रेड और ऑरेंज अलर्ट जारी किया",
+          "story_lead": "भारत मौसम विज्ञान विभाग (IMD) ने उत्तराखंड के कई जिलों में भारी बारिश, आंधी, बिजली और तेज हवाओं की भविष्यवाणी के चलते 28 सितंबर तक रेड और ऑरेंज अलर्ट जारी किया है। अधिकारियों ने भूस्खलन, अचानक बाढ़ और सड़कों के बाधित होने के जोखिम के बीच तीर्थयात्रियों, पर्यटकों और यात्रियों को गैर-जरूरी यात्रा से बचने की सलाह दी है।",
+          "full_article_text": "भारत मौसम विज्ञान विभाग (IMD) ने उत्तराखंड के कई जिलों के लिए रेड और ऑरेंज अलर्ट जारी किया है। राज्य में 28 सितंबर तक मूसलाधार बारिश, आंधी और बिजली चमकने की आशंका है।",
+          "background_context": "भारत मौसम विज्ञान विभाग देश भर में मौसम प्रणालियों की निगरानी करता है।",
+          "bullet_points": [
+            "IMD ने उत्तराखंड के कई जिलों में 28 सितंबर तक अलर्ट जारी किया है।",
+            "4,000 मीटर से अधिक ऊंचाई वाले क्षेत्रों में बर्फबारी की संभावना है।"
+          ],
+          "key_facts": [
+            "25 सितंबर की रात से 28 सितंबर तक मौसम प्रणाली सक्रिय रहेगी।"
+          ],
+          "key_locations": [
+            "उत्तराखंड",
+            "देहरादून",
+            "पिथौरागढ़"
+          ],
+          "important_dates": [
+            "25 सितंबर",
+            "28 सितंबर"
+          ]
+        },
+        "quiz": {
+          "question": "According to the IMD forecast, until which date are the red and orange alerts issued in several districts of Uttarakhand?",
+          "options": [
+            "September 26",
+            "September 28",
+            "September 30",
+            "October 2"
+          ],
+          "correct_answer": "September 28",
+          "explanation": "The IMD issued red and orange alerts across several districts of Uttarakhand till September 28 due to an intense spell of rain."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/uttarakhand-imd-issues-red-orange-alerts-till-september-28-in-several-districts-101790346980735.html",
+        "category": "India",
+        "published_date": "2026-09-25",
+        "id": 856093881,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/25/1600x900/logo/More-than-33-roads-remained-blocked-across-the-sta_1790346974161_9g3d.jpg",
+        "added_at": "2026-09-25T20:55:40.283237+05:30"
+      },
+      {
+        "headline": "MCD Demolishes 543 Properties in 17 Days Following Satya Niketan Building Collapse",
+        "story_lead": "The Municipal Corporation of Delhi (MCD) informed the Delhi High Court that it has demolished 543 properties and sealed 178 others over unauthorised construction in the 17 days following the Satya Niketan building collapse. The incident, which occurred on September 6, claimed seven lives and injured five others in a five-storey structure housing student paying guest (PG) accommodations. Authorities have initiated widespread inspections and formed a high-powered committee to regulate student housing in the capital.",
+        "full_article_text": "Following the tragic collapse of a five-storey building in Satya Niketan on September 6, the Municipal Corporation of Delhi (MCD) has undertaken extensive enforcement actions against unauthorised constructions. Solicitor General Tushar Mehta, representing the MCD before the Delhi High Court bench of Chief Justice DK Upadhyaya and Justice Tejas Karia, stated that 543 properties were demolished, 178 properties were sealed, 354 show-cause notices and 205 sealing notices were issued, and 98 demolition orders were passed within 17 days. Action was also taken at the executive level, resulting in the suspension of five supervisory officers. In compliance with the court's September 7 directions, the MCD inspected 2,453 buildings hosting PG accommodations across all 12 zones, finding 2,342 visibly safe, 91 requiring minor repairs, 30 requiring major repairs, and four in a dangerous condition. Meanwhile, the Delhi government approved an 18-member high-powered committee (HPC) on September 10 to review student accommodation safety and regulation. The HPC decided that Delhi University will develop a central student accommodation portal within 15 days, while the MCD will develop a registration and monitoring portal with technical assistance from Netaji Subhas University of Technology. The Delhi Police filed an affidavit stating that six arrested individuals—including the building owner, her husband, son, two operators, and a contractor—failed to take adequate safety precautions during renovation work on the ground floor and fled the site after the collapse. The petition was filed by Aniket Kumar Gupta seeking a thorough investigation, and the matter is scheduled for further hearing on October 14.",
+        "background_context": "The proceedings stem from a petition filed by Aniket Kumar Gupta seeking a comprehensive investigation into the Satya Niketan building collapse on September 6, which housed the 'Hostel Daze' paying guest accommodation for Delhi University students. The 40-50 year old structure collapsed during ground-floor renovation work, resulting in seven deaths and five injuries.",
+        "bullet_points": [
+          "MCD demolished 543 properties and sealed 178 others over unauthorised construction in 17 days following the Satya Niketan collapse.",
+          "Five supervisory officers across the MCD chain were suspended following the incident.",
+          "Inspections across 12 zones covered 2,453 buildings hosting PG accommodations, identifying 4 in dangerous conditions.",
+          "An 18-member high-powered committee was approved by LG Taranjit Singh Sandhu to regulate student accommodations.",
+          "Delhi University and MCD to develop central portals for student accommodation registration and monitoring.",
+          "Delhi Police arrested six individuals, including the building owner and contractor, for safety lapses and fleeing the site."
+        ],
+        "key_facts": [
+          "Satya Niketan building collapse occurred on September 6, killing at least 7 people and injuring 5.",
+          "MCD demolished 543 properties and sealed 178 properties in 17 days.",
+          "2,453 PG-hosting buildings inspected across 12 zones: 2,342 safe, 91 minor repairs, 30 major repairs, 4 dangerous.",
+          "18-member high-powered committee approved by Lieutenant Governor on September 10.",
+          "Six persons arrested by Delhi Police in connection with the collapse."
+        ],
+        "key_locations": [
+          "Satya Niketan",
+          "Delhi High Court",
+          "New Delhi"
+        ],
+        "important_dates": [
+          "September 6",
+          "September 7",
+          "September 10",
+          "September 14",
+          "September 15",
+          "September 21",
+          "October 14"
+        ],
+        "exam_relevance": [
+          "UPSC Prelims: Current events involving urban governance, municipal bodies, and safety regulations.",
+          "UPSC Mains GS Paper II & III: Urbanization challenges, municipal administration accountability, disaster management, and unauthorized construction."
+        ],
+        "upsc_analysis": "The Satya Niketan building collapse highlights systemic issues in urban governance, municipal oversight, and unauthorized construction in metropolitan areas like Delhi. The swift administrative response—involving mass demolitions, sealing drives, high-level suspensions, and the formation of a high-powered committee for student housing—underscores the reactive nature of urban management in India. For effective governance, municipal authorities must transition from reactive crackdowns to proactive regulatory enforcement, strict building code compliance, and systematic registration of paying guest accommodations to prevent structural failures and protect student safety.",
+        "causes": [
+          "Unauthorised construction and lack of adherence to safety standards during ground-floor renovation work.",
+          "Failure of building owners and operators to take adequate safety precautions in aging structures (40-50 years old).",
+          "Inadequate regulatory oversight of paying guest (PG) accommodations and private student hostels."
+        ],
+        "impacts": [
+          "Tragic loss of seven lives and injuries to five students residing in the 'Hostel Daze' PG accommodation.",
+          "Massive enforcement drive by MCD resulting in over 500 demolitions and numerous sealings.",
+          "Legal and police action leading to the arrest of six individuals involved in the construction and management."
+        ],
+        "challenges": [
+          "Widespread proliferation of unauthorised constructions and unmonitored PG accommodations across urban zones.",
+          "Ensuring rigorous, continuous municipal oversight without relying solely on post-disaster judicial and executive interventions.",
+          "Balancing affordable student housing availability with stringent safety regulations."
+        ],
+        "government_steps": [
+          "MCD conducted time-bound inspections of 2,453 buildings hosting PG accommodations across 12 zones.",
+          "Suspension of five supervisory-level MCD officers for administrative accountability.",
+          "Approval of an 18-member high-powered committee by the Lieutenant Governor to regulate student accommodations.",
+          "Plans by Delhi University and MCD to develop central portals for registering and monitoring student housing."
+        ],
+        "constitutional_or_policy_link": [
+          "Schedule XII of the Constitution of India (Municipal functions including urban planning and regulation of land use)."
+        ],
+        "way_forward": [
+          "Implementation of a robust regulatory framework and mandatory registration for all paying guest accommodations and student hostels.",
+          "Strengthening municipal inspection mechanisms to detect unauthorised construction and structural alterations proactively.",
+          "Leveraging technology, such as dedicated registration portals, to monitor building safety and compliance continuously.",
+          "Ensuring strict penal action against violators, including negligent owners, contractors, and complicit municipal officials."
+        ],
+        "mains_notes": "The Satya Niketan building collapse exemplifies the critical hazards of unregulated urban construction and unmonitored student housing in Indian cities. The incident prompted sweeping municipal actions including the demolition of 543 properties, sealing of 178 structures, and the suspension of supervisory officials. Key policy responses include establishing an 18-member high-powered committee and developing digital portals for PG registration by Delhi University and MCD. Addressing such urban disasters requires shifting from ad-hoc enforcement drives to institutionalized, proactive urban governance, strict building code enforcement, and rigorous accountability mechanisms.",
+        "mains_questions": [
+          "Discuss the systemic challenges in urban governance highlighted by incidents like the Satya Niketan building collapse. What measures are needed to ensure building safety and regulate student housing in metropolitan areas?",
+          "Examine the role of municipal bodies in curbing unauthorised constructions and enforcing safety standards under the constitutional framework."
+        ],
+        "takeaway": "Following the Satya Niketan building collapse, the MCD demolished 543 properties and authorities initiated comprehensive measures to regulate student PG accommodations and combat unauthorised construction.",
+        "prelims_facts": [
+          "Satya Niketan building collapse happened on September 6, 2024.",
+          "MCD inspected 2,453 PG-hosting buildings across 12 zones.",
+          "An 18-member high-powered committee was formed to review student accommodations.",
+          "Netaji Subhas University of Technology to provide technical assistance for the MCD PG registration portal."
+        ],
+        "vocabulary": [
+          {
+            "word": "Unauthorised",
+            "meaning_hindi": "अनधिकृत / बिना अनुमति के"
+          },
+          {
+            "word": "Demolition",
+            "meaning_hindi": "ध्वस्तीकरण / गिराना"
+          },
+          {
+            "word": "Supervisory",
+            "meaning_hindi": "पर्यवेක්ෂीय / देखरेख संबंधी"
+          },
+          {
+            "word": "Framework",
+            "meaning_hindi": "ढांचा / रूपरेखा"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Municipal Corporation of Delhi",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Municipal_Corporation_of_Delhi"
+          },
+          {
+            "name": "Satya Niketan",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Satya_Niketan"
+          },
+          {
+            "name": "Delhi High Court",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Delhi_High_Court"
+          },
+          {
+            "name": "Tushar Mehta",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Tushar_Mehta"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "सत्य निकेतन इमारत ढहने के बाद 17 दिनों में 543 संपत्तियां ध्वस्त: एमसीडी ने दिल्ली उच्च न्यायालय को बताया",
+          "story_lead": "सत्य निकेतन इमारत ढहने की घटना के बाद, नगर निगम (एमसीडी) ने 17 दिनों में अनधिकृत निर्माण के खिलाफ 543 संपत्तियों को ध्वस्त कर दिया है, 178 को सील कर दिया है और 559 अन्य को नोटिस जारी किए हैं।",
+          "full_article_text": "सत्य निकेतन इमारत ढहने के बाद, नगर निगम (एमसीडी) ने शुक्रवार को दिल्ली उच्च न्यायालय को बताया कि उसने 17 दिनों में 543 संपत्तियों को ध्वस्त किया है, 178 को सील किया है, अनधिकृत निर्माण के लिए 354 को कारण बताओ नोटिस और 205 को सीलिंग नोटिस जारी किए हैं, तथा 98 विध्वंस आदेश पारित किए हैं। एमसीडी की ओर से पेश सॉलिसिटर जनरल तुषार मेहता ने मुख्य न्यायाधीश डी.के. उपाध्याय और न्यायमूर्ति तेजस कारिया की पीठ के समक्ष प्रस्तुत किया कि घटना के तुरंत बाद शीर्ष कार्यकारी स्तर पर कार्रवाई की गई। मेहता ने बताया कि अदालत के 7 सितंबर के निर्देशों के तहत सभी 12 क्षेत्रों में पीजी आवासों का निरीक्षण किया गया, जिसमें 2,453 इमारतों में से 2,342 सुरक्षित पाई गईं। 6 सितंबर को सत्य निकेतन में एक पांच मंजिला इमारत ढहने से कम से कम सात लोगों की मौत हो गई थी और पांच घायल हो गए थे।",
+          "background_context": "यह मामला अनिकेत कुमार गुप्ता द्वारा दायर एक याचिका से संबंधित है, जिसमें सत्य निकेतन में इमारत ढहने की निष्पक्ष जांच और मालिकों व ठेकेदारों की भूमिका की जांच की मांग की गई है।",
+          "bullet_points": [
+            "एमसीडी ने 17 दिनों में 543 संपत्तियां ध्वस्त कीं और 178 सील कीं।",
+            "निरीक्षण के लिए 2,453 पीजी आवासों की जांच की गई।",
+            "छात्र आवास के नियमन के लिए 18 सदस्यीय उच्चाधिकार प्राप्त समिति का गठन किया गया।"
+          ],
+          "key_facts": [
+            "सत्य निकेतन इमारत ढहने की घटना 6 सितंबर को हुई।",
+            "इस घटना में 7 लोगों की मौत हुई।"
+          ],
+          "key_locations": [
+            "सत्य निकेतन",
+            "दिल्ली उच्च न्यायालय"
+          ],
+          "important_dates": [
+            "6 सितंबर",
+            "7 सितंबर",
+            "10 सितंबर",
+            "14 अक्टूबर"
+          ]
+        },
+        "quiz": {
+          "question": "How many properties did the Municipal Corporation of Delhi (MCD) report as demolished in 17 days since the Satya Niketan building collapse?",
+          "options": [
+            "178 properties",
+            "354 properties",
+            "543 properties",
+            "2,453 properties"
+          ],
+          "correct_answer": "543 properties",
+          "explanation": "The MCD informed the Delhi High Court that it demolished 543 properties over unauthorised construction in the 17 days following the Satya Niketan building collapse."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/demolished-543-properties-in-17-days-since-satya-niketan-collapse-mcd-to-delhi-hc-101790347401302.html",
+        "category": "India",
+        "published_date": "2026-09-25",
+        "id": 856093880,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/25/1600x900/logo/A-five-storey-building-in-Satya-Niketan--which-hou_1790347394252_xTky.jpg",
+        "added_at": "2026-09-25T20:55:40.283237+05:30"
+      },
+      {
+        "headline": "Bihar Harassment Case: Three Detained in Banka After Video Surfaces Online",
+        "story_lead": "Three youths have been detained by police in Bihar's Banka district after a viral video showed a young woman being harassed, assaulted with a slipper, and forced to transfer ₹1,500 online at Mandar Hill. The incident has drawn severe criticism from the opposition and NDA ally Chirag Paswan, putting the state's law-and-order situation under intense scrutiny following similar recent cases.",
+        "full_article_text": "A viral video circulating on social media depicting the harassment and assault of a young woman at Mandar Hill in Bihar's Banka district has led to the detention of three youths. According to the First Information Report (FIR) registered at Bounsi police station, the victim had visited the tourist site with two friends when three individuals abused, threatened, and behaved indecently with her. Footage of the incident showed the youths hitting the victim with a slipper and forcing her to transfer ₹1,500 online from her account via PhonePe before letting them go. Banka Superintendent of Police Amitesh Kumar stated that the video was brought to the attention of the local police on September 22. Following preliminary investigations, police identified and detained the three accused, who hail from the Barahat police station area, and initiated interrogation. This incident is the third such reported case of harassment in Bihar within a week, following similar incidents in Jamui and Samastipur. The developments have triggered a sharp political response. Rashtriya Janata Dal (RJD) leader Tejashwi Yadav targeted the state government, claiming that law and order is virtually dead in Bihar. Meanwhile, Union Minister and NDA ally Chirag Paswan called the incidents shameful, asserting that the government and officials cannot evade accountability for safety failures concerning women.",
+        "background_context": "The incident at Mandar Hill in Banka district follows a series of similar reported harassment cases involving young women and girls in other parts of Bihar, notably Jamui and Samastipur. These recurring incidents have brought questions surrounding women's safety, administrative accountability, and state law and order to the forefront of political discourse in Bihar.",
+        "bullet_points": [
+          "Three youths were detained by Bihar Police in connection with a viral harassment video at Mandar Hill in Banka district.",
+          "The victim was assaulted with a slipper and forced to make an online transfer of ₹1,500 via PhonePe from her account.",
+          "Police received the video via WhatsApp on September 22 and registered a case at the Bounsi police station.",
+          "The accused belong to the Barahat police station area and are currently being interrogated.",
+          "The incident marks the third such reported case of women harassment in Bihar within a week, following similar events in Jamui and Samastipur.",
+          "Opposition parties and NDA ally Union Minister Chirag Paswan expressed strong concern over law-and-order conditions and administrative accountability."
+        ],
+        "key_facts": [
+          "Location of incident: Mandar Hill, Banka district, Bihar.",
+          "Amount extorted: ₹1,500 transferred online via PhonePe.",
+          "Date police received video: September 22.",
+          "Number of youths detained: Three.",
+          "Police station involved: Bounsi police station (accused from Barahat police station area)."
+        ],
+        "key_locations": [
+          "Mandar Hill",
+          "Banka district",
+          "Bihar",
+          "Bounsi",
+          "Barahat",
+          "Jamui",
+          "Samastipur"
+        ],
+        "important_dates": [
+          "September 22"
+        ],
+        "exam_relevance": [
+          "Prelims: Current events related to state law and order, digital financial transactions safety.",
+          "Mains (GS Paper II / GS Paper I): Issues related to women's safety, crime against women, administrative accountability, and governance in states."
+        ],
+        "upsc_analysis": "The incident highlights critical governance and social issues concerning the safety of women in public spaces, digital financial extortion vulnerability, and administrative accountability. From a civil services perspective, repeated occurrences of crime against women underscore the necessity for proactive policing, swift institutional response, and stringent implementation of legal frameworks to deter harassment and ensure public safety.",
+        "causes": [
+          "Lapses in localized public safety and policing at tourist sites.",
+          "Impunity among perpetrators taking advantage of delayed reporting or social dynamics."
+        ],
+        "impacts": [
+          "Heightened political debate regarding law and order in Bihar.",
+          "Increased scrutiny on administrative and police accountability.",
+          "Growing safety concerns for women visiting public and tourist locations."
+        ],
+        "challenges": [
+          "Preventing crimes against women in public and tourist spots.",
+          "Ensuring swift identification and arrest of offenders in digitally recorded crimes.",
+          "Holding local administrative and police officials accountable for security lapses."
+        ],
+        "government_steps": [
+          "Registration of an FIR at Bounsi police station upon receiving video evidence.",
+          "Prompt identification and detention of the three accused youths by Banka Police.",
+          "Initiation of formal interrogation and investigation into the digital extortion."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 21 of the Constitution of India (Right to Life and Personal Liberty including dignity)",
+          "Provisions under the Bharatiya Nyaya Sanhita (BNS) relating to assault, criminal intimidation, and extortion."
+        ],
+        "way_forward": [
+          "Strengthening police patrolling and surveillance at tourist spots and public spaces.",
+          "Ensuring zero tolerance and fast-track legal action in cases of crime against women.",
+          "Fixing accountability at local administrative and police levels to deter negligence.",
+          "Enhancing digital financial safety awareness and cyber grievance redressal mechanisms."
+        ],
+        "mains_notes": "The Banka harassment incident underlines systemic concerns regarding women's safety in Bihar. Rapid police action resulting in the detention of suspects is crucial, but systemic reform requires enhanced ground-level policing, accountability of local authorities, and strict enforcement of penal laws to safeguard dignity and personal liberty.",
+        "mains_questions": [
+          "Analyze the challenges related to women's safety in public spaces and examine the role of administrative accountability in curbing such crimes.",
+          "Discuss the implications of rising crime rates on public trust in state law enforcement machinery."
+        ],
+        "takeaway": "The detention of three youths in Banka following a viral harassment video highlights ongoing challenges in women's safety and administrative accountability in Bihar.",
+        "prelims_facts": [
+          "Mandar Hill is located in Bihar's Banka district.",
+          "The cyber extortion involved a digital transfer via PhonePe amounting to ₹1,500."
+        ],
+        "vocabulary": [
+          {
+            "word": "Harassment",
+            "meaning_hindi": "उत्पीड़न"
+          },
+          {
+            "word": "Accountability",
+            "meaning_hindi": "जवाबदेही"
+          },
+          {
+            "word": "Extortion",
+            "meaning_hindi": "जबरन वसूली"
+          },
+          {
+            "word": "Detain",
+            "meaning_hindi": "हिरासत में लेना"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Banka district",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Banka_district"
+          },
+          {
+            "name": "Chirag Paswan",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Chirag_Paswan"
+          },
+          {
+            "name": "Tejashwi Yadav",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Tejashwi_Yadav"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "बिहार उत्पीड़न मामला: बांका में वीडियो सामने आने के बाद तीन युवक हिरासत में",
+          "story_lead": "बिहार के बांका जिले के मंदार Hill में एक युवती के साथ मारपीट और उत्पीड़न का वीडियो वायरल होने के बाद पुलिस ने तीन युवकों को हिरासत में लिया है। इस घटना के बाद विपक्ष और एनडीए के घटक दल के नेता चिराग पासवान ने राज्य की कानून-व्यवस्था पर गंभीर सवाल उठाए हैं।",
+          "full_article_text": "बिहार के बांका जिले के मंदार हिल में एक युवती के साथ कथित उत्पीड़न और मारपीट का वीडियो सोशल मीडिया पर वायरल होने के बाद तीन युवकों को हिरासत में लिया गया है। बाउंसी पुलिस स्टेशन में दर्ज एफआईआर के अनुसार, पीड़िता अपने दो दोस्तों के साथ मंदार हिल गई थी, जहां तीन युवकों ने कथित तौर पर उसके साथ दुर्व्यवहार किया और धमकी दी। वीडियो में युवकों को युवती पर चप्पल से हमला करते हुए देखा गया। पुलिस के अनुसार, आरोपियों ने छोड़ने से पहले उसके खाते से ऑनलाइन 1,500 रुपये भी ट्रांसफर करवाए। बांका के पुलिस अधीक्षक अमितेश कुमार ने बताया कि 22 सितंबर को व्हाट्सएप के जरिए वीडियो मिलने के बाद पुलिस ने कार्रवाई शुरू की और तीन युवकों को हिरासत में लेकर पूछताछ की जा रही है।",
+          "background_context": "बांका की यह घटना जमुई और समस्तीपुर में महिलाओं के उत्पीड़न से जुड़ी हालिया घटनाओं के बाद सामने आई है, जिससे राज्य में कानून-व्यवस्था पर गंभीर बहस छिड़ गई है।",
+          "bullet_points": [
+            "बांका जिले के मंदार हिल में वायरल वीडियो के बाद तीन युवक हिरासत में लिए गए।",
+            "पीड़िता के साथ मारपीट की गई और फोनपे के जरिए 1,500 रुपये जबरन ट्रांसफर कराए गए।",
+            "पुलिस को 22 सितंबर को व्हाट्सएप के माध्यम से वीडियो प्राप्त हुआ था।"
+          ],
+          "key_facts": [
+            "घटना स्थल: मंदार हिल, बांका जिला, बिहार।",
+            "हिरासत में लिए गए लोगों की संख्या: तीन।"
+          ],
+          "key_locations": [
+            "मंदार हिल",
+            "बांका",
+            "बिहार"
+          ],
+          "important_dates": [
+            "22 सितंबर"
+          ]
+        },
+        "quiz": {
+          "question": "In which district of Bihar did the incident involving the harassment of a woman at Mandar Hill take place?",
+          "options": [
+            "Jamui",
+            "Banka",
+            "Samastipur",
+            "Patna"
+          ],
+          "correct_answer": "Banka",
+          "explanation": "The incident of harassment and digital extortion took place at Mandar Hill located in Bihar's Banka district."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/banka-woman-hit-with-slipper-forced-to-transfer-rs-1-500-bihar-harassment-case-mandar-hill-101790339209803.html",
+        "category": "India",
+        "published_date": "2026-09-25",
+        "id": 856093879,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/25/1600x900/logo/bihar_banka_1790339464075_1yKO_1790339464243_SuDL_fbf1779f-3e56-49a1-97d2-9b29c98d4fc6_KrkV.png",
+        "added_at": "2026-09-25T20:55:40.283237+05:30"
+      },
+      {
+        "headline": "Greater Bengaluru Authority Notice Leads to Discovery of Decomposed Body and Arrest of Husband for Murder",
+        "story_lead": "A cleanup notice issued by the Greater Bengaluru Authority to owners of vacant sites led police to a decomposed woman's body wrapped in a bedsheet. Following a breakthrough from a clothing tag, Sampigehalli police arrested the victim's husband, who confessed to strangling her following a domestic quarrel.",
+        "full_article_text": "A routine municipal directive by the Greater Bengaluru Authority (GBA) instructing property owners to clean vacant sites inadvertently led to a major crime investigation. Sampigehalli police recovered the decomposed body of 28-year-old Anusuya Behera, which had been wrapped in a bedsheet and dumped on a vacant plot. Police subsequently arrested her 32-year-old husband, Sagar Chandra Rawat, for murder. Both individuals were natives of Udayapura village in Kakatpura, Odisha's Puri district. They had married against their families' wishes on September 9, 2025, and moved to Bengaluru about six months prior, working at different hotels. According to Deputy Commissioner of Police (DCP) G K Mithun, the couple frequently quarreled over financial matters, particularly Rawat's salary and household expenses. On August 11, following an argument, Rawat allegedly strangled his wife. Unable to dispose of the body immediately, he kept it inside their house for three days before dumping it at the vacant site around 3 am on August 14. Due to severe decomposition, the body initially remained unidentified for nearly a month. A breakthrough occurred when investigators examined the victim's clothing and found a specific tag. Tracing this tag to a shopping outlet allowed police to establish the woman's identity and trace the investigation to her husband. While family members have visually identified the deceased, police are pursuing a DNA examination to ensure conclusive scientific evidence.",
+        "background_context": "The case highlights urban municipal governance initiatives, such as vacant site cleanup notices issued by bodies like the Greater Bengaluru Authority, intersecting with local criminal investigations. It also highlights migration trends from rural areas like Odisha's Puri district to urban centers like Bengaluru for employment.",
+        "bullet_points": [
+          "A GBA notice instructing vacant site owners to clean their properties led to the discovery of a decomposed body.",
+          "The victim was identified as 28-year-old Anusuya Behera from Odisha's Puri district.",
+          "Her husband, Sagar Chandra Rawat, was arrested and charged with her murder after allegedly strangling her following a dispute over finances.",
+          "The accused kept the body in his house for three days before dumping it on a vacant plot on August 14.",
+          "A clothing tag found on the victim provided the key investigative breakthrough, leading police to the shopping outlet and the suspect.",
+          "Police plan to confirm the identity formally through a DNA examination due to the extent of body decomposition."
+        ],
+        "key_facts": [
+          "Victim: Anusuya Behera, 28 years old",
+          "Accused: Sagar Chandra Rawat, 32 years old",
+          "Incident Location: Bengaluru, Karnataka",
+          "Native Place: Udayapura village, Kakatpura, Puri district, Odisha",
+          "Date of Marriage: September 9, 2025",
+          "Date of Body Disposal: August 14, at around 3 am",
+          "Investigating Authority: Sampigehalli police, Bengaluru"
+        ],
+        "key_locations": [
+          "Bengaluru",
+          "Sampigehalli",
+          "Udayapura village",
+          "Kakatpura",
+          "Puri district",
+          "Odisha"
+        ],
+        "important_dates": [
+          "September 9, 2025",
+          "August 11",
+          "August 14"
+        ],
+        "exam_relevance": [
+          "Prelims: General awareness, municipal governance functions, urban administration.",
+          "Mains: Social issues, urban crime investigation techniques, domestic disputes, role of municipal administration in urban security."
+        ],
+        "upsc_analysis": "While primarily a local crime incident, this case underscores the unintended utility of municipal governance actions—such as vacant land maintenance mandates by urban local bodies—in uncovering hidden crimes. For civil services aspirants, it demonstrates how routine urban administration intersects with law enforcement, forensic science (DNA testing), and migration-led social dynamics.",
+        "causes": [
+          "Frequent quarrels between the couple over financial matters, salary, and household expenses.",
+          "Domestic altercation on August 11 leading to physical violence."
+        ],
+        "impacts": [
+          "Tragic loss of life of a young woman away from her native place.",
+          "Arrest and impending legal prosecution of the accused husband.",
+          "Uncovering of a concealed crime through municipal civic directives."
+        ],
+        "challenges": [
+          "Identifying a heavily decomposed body that remained unidentified for nearly a month.",
+          "Relying on forensic and scientific methods like DNA testing to legally establish identity."
+        ],
+        "government_steps": [
+          "Greater Bengaluru Authority (GBA) enforcement of vacant site cleanup notices.",
+          "Deployment of special police teams, forensic documentation, and clothing-tag tracing to crack the unidentified body case."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 21 (Right to Life and personal liberty, including investigation of crimes and justice delivery)."
+        ],
+        "way_forward": [
+          "Strengthening urban local body monitoring and vacant land surveillance to prevent illegal dumping and covert crimes.",
+          "Improving community policing and mental health/counseling support for migrant workers facing domestic and financial stress."
+        ],
+        "mains_notes": "Municipal notices for vacant sites in Bengaluru led to the discovery of a murdered woman's body, facilitating an arrest after forensic tracing of clothing tags. The incident highlights intersections between municipal governance, urban administration, forensic investigation, and socio-economic stress among migrant workers.",
+        "mains_questions": [
+          "Discuss how municipal urban governance measures can inadvertently aid law enforcement agencies in uncovering concealed crimes.",
+          "Analyze the socio-economic vulnerabilities faced by inter-state migrant workers in metropolitan cities, with reference to domestic disputes and urban policing challenges."
+        ],
+        "takeaway": "A municipal cleanup directive by the Greater Bengaluru Authority led to the unearthing of a hidden murder case and the eventual arrest of the perpetrator through forensic clothing-tag tracking.",
+        "prelims_facts": [
+          "Greater Bengaluru Authority issued vacant site cleanup notices.",
+          "The accused and victim migrated from Puri district, Odisha.",
+          "DNA examination is utilized for scientific identity verification in cases of extreme decomposition."
+        ],
+        "vocabulary": [
+          {
+            "word": "Decomposed",
+            "meaning_hindi": "सड़ा हुआ / विघटित"
+          },
+          {
+            "word": "Vacant",
+            "meaning_hindi": "खाली"
+          },
+          {
+            "word": "Strangle",
+            "meaning_hindi": "गला घोटना"
+          },
+          {
+            "word": "Breakthrough",
+            "meaning_hindi": "महत्वपूर्ण सफलता"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Bengaluru",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Bengaluru"
+          },
+          {
+            "name": "Puri district",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Puri_district"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "जीबीए के नोटिस से सड़े-गले शव का खुलासा, पति हत्या के आरोप में गिरफ्तार",
+          "story_lead": "ग्रेटर बेंगलुरु अथॉरिटी द्वारा खाली भूखंडों के मालिकों को अपने परिसरों को साफ रखने के लिए दिए गए नोटिस के कारण पुलिस एक सड़े-गले महिला के शव तक पहुँची और हफ़्तों बाद उसके पति को गिरफ्तार कर लिया गया।",
+          "full_article_text": "ग्रेटर बेंगलुरु अथॉरिटी (जीबीए) के एक निर्देश के तहत खाली भूखंडों की सफाई के दौरान संपिगेहल्ली पुलिस ने एक सड़े-गले शव का पता लगाया। पुलिस ने मृतका के पति सागर चंद्र रावत को हत्या के आरोप में गिरफ्तार किया है। ओडिशा के पुरी जिले के रहने वाले इस जोड़े ने परिवारों की मर्जी के खिलाफ शादी की थी और लगभग छह महीने पहले बेंगलुरु आकर होटलों में काम करने लगे थे। पुलिस के अनुसार, वित्तीय मामलों और घरेलू खर्चों को लेकर उनके बीच अक्सर झगड़े होते थे।",
+          "background_context": "यह घटना शहरी स्थानीय निकायों द्वारा जारी स्वच्छता निर्देशों और अपराध जांच के बीच के जुड़ाव को दर्शाती है।",
+          "bullet_points": [
+            "जीबीए के सफाई नोटिस से खाली भूखंड पर एक महिला का शव मिला।",
+            "मृतका की पहचान अनुसूया बेहरा के रूप में हुई।",
+            "उसके पति सागर चंद्र रावत को हत्या के आरोप में गिरफ्तार किया गया।"
+          ],
+          "key_facts": [
+            "मृतका: अनुसूया बेहरा (28 वर्ष)",
+            "आरोपी: सागर चंद्र रावत (32 वर्ष)",
+            "स्थान: बेंगलुरु, कर्नाटक"
+          ],
+          "key_locations": [
+            "बेंगलुरु",
+            "संपिगेहल्ली",
+            "ओडिशा"
+          ],
+          "important_dates": [
+            "9 सितंबर 2025"
+          ]
+        },
+        "quiz": {
+          "question": "Which municipal body's notice regarding vacant sites led police to discover the decomposed body in Bengaluru?",
+          "options": [
+            "Greater Bengaluru Authority",
+            "Bruhat Bengaluru Mahanagara Palike",
+            "Bengaluru Development Authority",
+            "Karnataka Urban Development Board"
+          ],
+          "correct_answer": "Greater Bengaluru Authority",
+          "explanation": "A Greater Bengaluru Authority notice to owners of vacant sites to keep properties clean led police to the decomposed body during a cleaning drive."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/gba-notice-leads-to-decomposed-body-discovery-husband-arrested-for-murder-101790348121299.html",
+        "category": "India",
+        "published_date": "2026-09-25",
+        "id": 856093878,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/25/1600x900/logo/The-body-of-Anusuya-Behera--28--was-found-wrapped-_1790348114458_XXbE.jpg",
+        "added_at": "2026-09-25T20:55:40.283237+05:30"
+      },
+      {
         "headline": "Mumbai Traffic Police Announce Extensive Restrictions and Diversions for Ganesh Visarjan",
         "story_lead": "The Mumbai Traffic Police have implemented comprehensive road closures, diversions, one-way arrangements, and no-parking restrictions across various traffic divisions. These measures are in place to manage heavy crowds and processions during the Ganesh Visarjan on Anant Chaturdashi. Motorists have been advised to avoid affected routes and utilize alternatives such as the Mumbai Coastal Road.",
         "full_article_text": "Extensive traffic restrictions are in place across Mumbai on Anant Chaturdashi for Ganesh Visarjan processions. The Mumbai Traffic Police have announced road closures, diversions, one-way arrangements, and no-parking restrictions across several traffic divisions spanning South Mumbai, Central Mumbai, and the city's western and eastern suburbs to manage the large movement of processions and crowds. In Colaba, restrictions affect Nathalal Parekh Marg, Captain Prakash Pethe Marg, and Rambhau Salgaonkar Marg, while Netaji Subhash Chandra Bose Marg around Marine Drive faces closures as required. Kalbadevi and Girgaon areas have restrictions on JSS Road, Vithalbhai Patel Marg, Raja Ram Mohan Roy Road, Cawasji Patel Tank Road, Sant Sena Marg, Nanubhai Desai Road, SVP Road, and Baba Saheb Jayakar Marg. Other affected zones include Pydhonie, DB Marg, Tardeo, Juhu-Andheri, Malad-Goregaon, Kandivali-Borivali, Bhandup, Mulund, and Chembur, alongside heavy-vehicle restrictions on parts of the Ghatkopar-Mankhurd Link Road and BPT Road. Motorists traveling between north and south Mumbai are advised to use the Mumbai Coastal Road where possible.",
@@ -12258,15 +14476,15 @@
       }
     ],
     "last_updated_ist": "2026-09-25 08:53:09",
-    "updated_at": "2026-09-25T17:59:42.543198+05:30",
-    "count": 80
+    "updated_at": "2026-09-25T20:55:40.283237+05:30",
+    "count": 95
   },
   "motivation": {
-    "quote": "One focused hour today can remove many doubts tomorrow.",
-    "image_url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=85",
-    "updated_at": "2026-09-25T17:59:42.543198+05:30"
+    "quote": "Small daily progress compounds into strong preparation.",
+    "image_url": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1600&q=85",
+    "updated_at": "2026-09-25T20:55:40.283237+05:30"
   },
   "last_updated_ist": "2026-09-25 08:53:09",
   "project": "AURA EXAM AI",
-  "last_updated": "2026-09-25T17:59:42.543198+05:30"
+  "last_updated": "2026-09-25T20:55:40.283237+05:30"
 }
