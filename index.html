@@ -338,8 +338,10 @@
         }
 
         #motivationQuote {
-            font-size: 16px;
-            font-weight: 700;
+            font-size: 21px;
+            line-height: 1.45;
+            font-weight: 800;
+            max-width: 900px;
         }
 
 
@@ -1009,15 +1011,34 @@
             overflow: hidden;
         }
 
+        .motivation {
+            position: relative;
+        }
+
         .motivation-image {
             width: 100%;
-            height: 210px;
+            height: 250px;
             object-fit: cover;
             display: block;
+            filter: brightness(0.62);
         }
 
         .motivation-content {
-            padding: 14px 16px 17px;
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 30px;
+            text-align: center;
+            color: white;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.75);
+        }
+
+        .motivation-content {
+            padding: 20px 30px;
             text-align: center;
         }
 
@@ -1435,11 +1456,16 @@
         </div>
 
 
-        <div
-            class="daily-count"
-            id="dailyCount"
-        >
-            Loading...
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+            <div
+                class="daily-count"
+                id="dailyCount"
+            >
+                Loading...
+            </div>
+            <div class="daily-count" id="lastUpdated">
+                Last refreshed: —
+            </div>
         </div>
 
     </div>
@@ -2496,6 +2522,61 @@
     }
 
 
+    function updateLastRefreshed(value) {
+
+        const target = document.getElementById("lastUpdated");
+        if (!target) return;
+
+        if (!value) {
+            target.textContent = "Last refreshed: —";
+            return;
+        }
+
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) {
+            target.textContent = "Last refreshed: —";
+            return;
+        }
+
+        target.textContent =
+            "Last refreshed: " +
+            date.toLocaleString("en-IN", {
+                timeZone: "Asia/Kolkata",
+                day: "2-digit",
+                month: "short",
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: true
+            }) + " IST";
+    }
+
+
+    async function checkForFreshData() {
+        try {
+            const response = await fetch(
+                "data.json?refresh=" + Date.now() + "-" + Math.random(),
+                { cache: "no-store" }
+            );
+            if (!response.ok) return;
+
+            const latest = await response.json();
+            updateLastRefreshed(latest.last_updated);
+
+            if (
+                latest.last_updated &&
+                globalPayload &&
+                latest.last_updated !== globalPayload.last_updated
+            ) {
+                // The GitHub Actions run has published new data. Reload once
+                // so the visitor immediately sees the new categories/news/quote.
+                window.location.reload();
+            }
+        } catch (error) {
+            console.log("Fresh-data check skipped.", error);
+        }
+    }
+
+
     /* =======================================================
        INITIALIZATION
        ======================================================= */
@@ -2507,7 +2588,7 @@
             const response =
                 await fetch(
                     "data.json?cache=" +
-                    Date.now()
+                    Date.now() + "-" + Math.random()
                 );
 
             if (!response.ok) {
@@ -2518,6 +2599,8 @@
 
             globalPayload =
                 await response.json();
+
+            updateLastRefreshed(globalPayload.last_updated);
 
             availableDates =
                 Array.isArray(
@@ -4471,6 +4554,9 @@
        ======================================================= */
 
     init();
+
+    // Check for a newly published GitHub Actions update every 5 minutes.
+    setInterval(checkForFreshData, 5 * 60 * 1000);
 
 </script>
 
