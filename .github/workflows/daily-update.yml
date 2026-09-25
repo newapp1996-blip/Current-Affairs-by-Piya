@@ -2,32 +2,28 @@ name: Update Current Affairs
 
 on:
   schedule:
-    # Runs every 3 hours at :30 UTC
-    # IST: 00:00, 03:00, 06:00, 09:00,
-    #      12:00, 15:00, 18:00, 21:00
+    # Every 3 hours at :30 UTC
     - cron: "30 */3 * * *"
 
-  # Allows manual "Run workflow" from GitHub Actions
   workflow_dispatch:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
-  group: aura-current-affairs-update
+  group: current-affairs-pages
   cancel-in-progress: false
 
 jobs:
-  update-news:
-
+  update-and-deploy:
     runs-on: ubuntu-latest
-
-    timeout-minutes: 20
+    timeout-minutes: 30
 
     steps:
-
       # --------------------------------------------------
-      # 1. CHECKOUT REPOSITORY
+      # 1. Checkout repository
       # --------------------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -35,7 +31,7 @@ jobs:
           fetch-depth: 0
 
       # --------------------------------------------------
-      # 2. SETUP PYTHON
+      # 2. Setup Python
       # --------------------------------------------------
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -43,7 +39,7 @@ jobs:
           python-version: "3.11"
 
       # --------------------------------------------------
-      # 3. INSTALL DEPENDENCIES
+      # 3. Install dependencies
       # --------------------------------------------------
       - name: Install dependencies
         run: |
@@ -51,7 +47,7 @@ jobs:
           pip install feedparser requests beautifulsoup4 google-genai
 
       # --------------------------------------------------
-      # 4. UPDATE NEWS
+      # 4. Update current affairs
       # --------------------------------------------------
       - name: Update current affairs
         env:
@@ -61,21 +57,18 @@ jobs:
           python update_news.py
 
       # --------------------------------------------------
-      # 5. FORCE A NEW SITE UPDATE
+      # 5. Always create a refresh marker
+      #    This guarantees a new commit on every run.
       # --------------------------------------------------
-      # This guarantees that every successful workflow run
-      # creates a repository change, even when there are
-      # no new news articles.
-      # --------------------------------------------------
-      - name: Mark site refresh
+      - name: Create refresh marker
         run: |
           mkdir -p .github
-          echo "Last successful AURA EXAM AI refresh: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" > .github/site-refresh.txt
+          echo "Last successful refresh: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" > .github/site-refresh.txt
 
       # --------------------------------------------------
-      # 6. COMMIT EVERYTHING
+      # 6. Commit updated data
       # --------------------------------------------------
-      - name: Commit updated current affairs and refresh marker
+      - name: Commit updated current affairs
         run: |
           git config user.name "AURA EXAM AI"
           git config user.email "actions@github.com"
@@ -85,6 +78,27 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes detected."
           else
-            git commit -m "Update current affairs and refresh site"
+            git commit -m "Update current affairs"
             git push
           fi
+
+      # --------------------------------------------------
+      # 7. Configure GitHub Pages
+      # --------------------------------------------------
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      # --------------------------------------------------
+      # 8. Upload the CURRENT repository as Pages artifact
+      # --------------------------------------------------
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: "."
+
+      # --------------------------------------------------
+      # 9. Deploy directly to GitHub Pages
+      # --------------------------------------------------
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
