@@ -343,30 +343,56 @@ def call_gemini(client, prompt):
 
 
 def classify_candidate(candidate, page_text=""):
-    """Keep broad RSS feeds from putting every story into India."""
+    """Classify by the actual story topic, not by the RSS feed label."""
     title = clean_text(candidate.get("headline", ""))
     text = clean_text(page_text)
-    blob = f"{title} {text}".lower()
+    # Give the headline extra weight because article bodies often mention many
+    # unrelated terms.
+    title_blob = title.lower()
+    blob = f"{title} {title} {text[:5000]}".lower()
     source_category = candidate.get("category", "India")
 
-    if any(k in blob for k in ("cricket", "football", "tennis", "olympics", "athlete", "match", "tournament", "fifa", "ipl")):
+    sports = ("cricket", "football", "tennis", "olympics", "athlete", "match", "tournament", "fifa", "ipl", "hockey", "badminton")
+    health = ("hospital", "disease", "virus", "vaccine", "health", "medical", "doctor", "cancer", "medicine", "outbreak", "public health", "mental health")
+    science = ("space", "isro", "nasa", "artificial intelligence", "technology", "tech", "quantum", "semiconductor", "robot", "research", "science", "satellite", "astronomy", "innovation")
+    economy = ("stock market", "inflation", "gdp", "economy", "rupee", "trade", "market", "finance", "budget", "rbi", "banking", "interest rate", "fiscal")
+    environment = ("climate", "pollution", "forest", "wildlife", "biodiversity", "carbon", "emission", "flood", "drought", "environment", "greenhouse", "conservation")
+    world = ("united states", "us president", "ukraine", "russia", "china", "europe", "middle east", "israel", "palestine", "iran", "pakistan", "bangladesh", "sri lanka", "nepal", "foreign", "global", "world", "un summit", "nato")
+
+    if any(k in title_blob for k in sports):
         category = "Sports"
-    elif any(k in blob for k in ("hospital", "disease", "virus", "vaccine", "health", "medical", "doctor", "cancer", "medicine", "outbreak")):
+    elif any(k in title_blob for k in health):
         category = "Health"
-    elif any(k in blob for k in ("space", "isro", " nasa ", "artificial intelligence", " ai ", "technology", "tech", "quantum", "semiconductor", "robot", "research", "science", "satellite")):
+    elif any(k in title_blob for k in science):
         category = "Science & Technology"
-    elif any(k in blob for k in ("stock market", "inflation", "gdp", "economy", "bank", "rupee", "trade", "market", "finance", "budget")):
+    elif any(k in title_blob for k in economy):
         category = "Economy"
-    elif any(k in blob for k in ("climate", "pollution", "forest", "wildlife", "biodiversity", "carbon", "emission", "flood", "drought", "environment")):
+    elif any(k in title_blob for k in environment):
         category = "Environment"
-    elif source_category == "World" or any(k in blob for k in ("united states", "ukraine", "russia", "china", "europe", "middle east", "israel", "palestine", "foreign", "global", "world")):
+    elif source_category == "World" or any(k in title_blob for k in world):
+        category = "World"
+    elif any(k in blob for k in sports):
+        category = "Sports"
+    elif any(k in blob for k in health):
+        category = "Health"
+    elif any(k in blob for k in science):
+        category = "Science & Technology"
+    elif any(k in blob for k in economy):
+        category = "Economy"
+    elif any(k in blob for k in environment):
+        category = "Environment"
+    elif source_category == "World" or any(k in blob for k in world):
         category = "World"
     else:
         category = "India"
 
-    exam_corner = any(k in blob for k in EXAM_KEYWORDS) or category in {"Environment", "Economy"}
+    exam_corner = (
+        any(k in blob for k in EXAM_KEYWORDS)
+        or category in {"Environment", "Economy"}
+        or any(k in title_blob for k in ("india", "indian", "government", "supreme court", "parliament", "cabinet", "ministry", "scheme", "yojana", "policy", "bill", "act", "defence", "defense"))
+    )
     candidate["category"] = category
-    candidate["exam_corner"] = exam_corner
+    candidate["exam_corner"] = bool(exam_corner)
     return candidate
 
 
@@ -646,6 +672,10 @@ def main():
         if len(page_text) < 250:
             page_text = candidate["headline"]
 
+        # Re-classify every candidate after reading the article itself.
+        # This prevents India-labelled RSS feeds from forcing all stories into India.
+        candidate = classify_candidate(candidate, page_text)
+
         try:
             generated = call_gemini(client, article_prompt(candidate, page_text))
             article = normalize_generated(generated, candidate)
@@ -682,6 +712,21 @@ def main():
         existing_keys.add(article_key(article))
         added += 1
         print(f"Added #{article['id']}: {article['headline']}")
+
+    # Re-classify existing articles too, so old incorrectly categorised stories
+    # are corrected on the next scheduled run without deleting their content.
+    for article in existing_news:
+        if not isinstance(article, dict):
+            continue
+        repaired = classify_candidate(
+            {
+                "category": article.get("category", "India"),
+                "headline": article.get("headline", ""),
+            },
+            article.get("full_article_text", "") or article.get("story_lead", "")
+        )
+        article["category"] = repaired["category"]
+        article["exam_corner"] = repaired["exam_corner"]
 
     # Ensure all old and new articles have an image and entity URL data.
     for index, article in enumerate(existing_news):
