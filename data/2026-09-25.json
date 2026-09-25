@@ -1083,7 +1083,561 @@
       "url": "https://www.hindustantimes.com/specials/chasing-the-caracal-india-s-race-to-save-the-wild-cate-ht-immersive-101790251676235/index.html",
       "image_url": "",
       "published": "2026-09-25"
+    },
+    {
+      "id": 821857144,
+      "candidate_id": "79ed36c914ced7775c17",
+      "source_id": "ht_india",
+      "source": "Hindustan Times",
+      "category": "India",
+      "exam_specific": false,
+      "headline": "Delhi court allows VanDyke, 6 Ukrainians to travel home after NIA charge sheet",
+      "story_lead": "A Delhi court has permitted US national Matthew Aaron VanDyke and six Ukrainian nationals to return to their home countries after the National Investigation Agency (NIA) filed a charge sheet against them under immigration offences while leaving out UAPA charges at this stage.",
+      "full_article_text": "A Delhi court allowed US national Matthew Aaron VanDyke and six Ukrainian nationals to travel back to their home countries after the NIA charged them only with immigration offences, dropping the Unlawful Activities (Prevention) Act (UAPA) from the current charge sheet. Special Judge Prashant Sharma of Rouse Avenue Courts granted the applications, giving them 30 days to fulfil travel requirements and 24 hours to inform the NIA of their foreign stay details. The court had earlier granted default bail to the accused, observing that the NIA's charge sheet filed on September 8 was piecemeal as it only pertained to sections 21 and 23 of the Immigration and Foreigners Act, 2025. The accused had paid ₹5.5 lakh as a penalty for the immigration offences and were released on personal bonds. The NIA had earlier arrested them alleging unauthorized entry into protected areas and involvement in drone warfare training intended for Myanmar-based groups, though further investigation into UAPA aspects continues.",
+      "background_context": "The case involves foreign nationals who entered India and allegedly traveled to restricted border areas near Myanmar without permits. They were arrested by the NIA under security and immigration laws, leading to a legal process regarding default bail and the scope of the investigation.",
+      "bullet_points": [
+        "Delhi court allows US national Matthew Aaron VanDyke and six Ukrainians to travel home.",
+        "NIA charge sheet invoked sections 21 and 23 of the Immigration and Foreigners Act, 2025.",
+        "Accused were granted default bail after the court termed the charge sheet piecemeal regarding UAPA.",
+        "The court granted 30 days to complete travel formalities after paying penalties and furnishing personal bonds."
+      ],
+      "key_facts": [
+        "Seven foreign nationals involved: one US national and six Ukrainians.",
+        "Charge sheet filed by NIA on September 8, 2026.",
+        "Immigration penalties of ₹5.5 lakh paid before discharge under immigration violations.",
+        "Arrests were originally made in March 2026."
+      ],
+      "key_locations": [
+        "Delhi",
+        "Kolkata",
+        "Guwahati",
+        "Mizoram",
+        "Myanmar"
+      ],
+      "important_dates": [
+        "March 13, 2026",
+        "September 8, 2026",
+        "September 2026"
+      ],
+      "exam_relevance": "The case touches upon provisions of the Unlawful Activities (Prevention) Act (UAPA), immigration laws, and legal principles surrounding default bail under Indian criminal jurisprudence.",
+      "upsc_analysis": "The judicial proceedings highlight the legal safeguards surrounding default bail when investigating agencies file piecemeal charge sheets, balancing national security investigations under UAPA with statutory rights of the accused.",
+      "causes": [
+        "Entry into India using valid travel documents followed by alleged unauthorized travel to protected northeastern areas and across the India-Myanmar border."
+      ],
+      "impacts": [
+        "Legal scrutiny over the scope of investigation and default bail applicability under anti-terror legislations."
+      ],
+      "challenges": [
+        "Balancing rigorous anti-terror investigations with statutory timelines and procedural rights of foreign nationals."
+      ],
+      "government_steps": [
+        "NIA investigation into alleged security threats and filing of charge sheets under immigration acts while continuing probe into broader conspiracies."
+      ],
+      "constitutional_or_policy_link": "Involves statutory interpretation of default bail under the Code of Criminal Procedure and the Unlawful Activities (Prevention) Act.",
+      "way_forward": "Ensuring thorough investigation within legal parameters while respecting judicial determinations on bail and personal liberty.",
+      "mains_notes": "Examine the legal nuances of default bail, incomplete charge sheets, and the application of security laws like UAPA versus routine immigration violations in India.",
+      "mains_questions": [
+        "Discuss the legal principles governing default bail in India when an investigating agency files a piecemeal charge sheet."
+      ],
+      "takeaway": "Courts protect statutory default bail rights when charge sheets omit major penal sections while permitting travel for discharged immigration offences.",
+      "prelims_facts": [
+        "Default bail accrues if an investigation is not completed within statutory timeframes.",
+        "Immigration and Foreigners Act governs unauthorized entry and visa overstays."
+      ],
+      "vocabulary": [
+        {
+          "word": "Piecemeal",
+          "meaning_hindi": "टुकड़ों में / अधूरा"
+        },
+        {
+          "word": "Default bail",
+          "meaning_hindi": "डिफ़ॉल्ट ज़मानत / वैधानिक ज़मानत"
+        }
+      ],
+      "entities": {
+        "people": [
+          {
+            "name": "Matthew Aaron VanDyke",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/National_Investigation_Agency"
+          },
+          {
+            "name": "Prashant Sharma",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Prashant_Sharma"
+          }
+        ],
+        "countries": [
+          {
+            "name": "India",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/India"
+          },
+          {
+            "name": "United States",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/United_States"
+          },
+          {
+            "name": "Ukraine",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Ukraine"
+          }
+        ],
+        "states": [
+          {
+            "name": "Delhi",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Delhi"
+          },
+          {
+            "name": "Mizoram",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Mizoram"
+          }
+        ],
+        "places": [
+          {
+            "name": "Rouse Avenue Courts",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Rouse_Avenue_Courts_Complex"
+          }
+        ]
+      },
+      "translations": {
+        "hi": {
+          "headline": "NIA चार्जशीट के बाद दिल्ली अदालत ने वैनडाइक और 6 Ukrainians को घर लौटने की अनुमति दी",
+          "story_lead": "दिल्ली की एक अदालत ने अमेरिकी नागरिक मैथ्यू आरोन वैनडाइक और छह यूक्रेनी नागरिकों को उनके गृह देश लौटने की अनुमति दे दी है, क्योंकि राष्ट्रीय जांच एजेंसी (NIA) ने वर्तमान चार्जशीट में UAPA आरोपों को हटाते हुए केवल अप्रवासन अपराधों के तहत आरोप लगाए हैं।",
+          "full_article_text": "दिल्ली की एक अदालत ने अमेरिकी नागरिक मैथ्यू आरोन वैनडाइक और छह यूक्रेनी नागरिकों को उनके गृह देशों में वापस जाने की अनुमति दे दी, क्योंकि एनआईए ने उन पर केवल आव्रजन अपराधों के तहत आरोप लगाए, और वर्तमान चार्जशीट से गैरकानूनी गतिविधि (रोकथाम) अधिनियम को हटा दिया। राउज एवेन्यू कोर्ट के विशेष न्यायाधीश प्रशांत शर्मा ने वैनडाइक और अन्य द्वारा दायर आवेदनों को स्वीकार कर लिया। अदालत ने आरोपी व्यक्तियों को यात्रा आवश्यकताओं को पूरा करने के लिए 30 दिन का समय दिया।",
+          "background_context": "यह मामला विदेशी नागरिकों से जुड़ा है जिन्होंने भारत में प्रवेश किया और कथित तौर पर परमिट के बिना म्यांमार के पास प्रतिबंधित सीमावर्ती क्षेत्रों की यात्रा की।",
+          "bullet_points": [
+            "दिल्ली अदालत ने अमेरिकी नागरिक मैथ्यू आरोन वैनडाइक और छह Ukrainians को घर लौटने की अनुमति दी।",
+            "एनआईए चार्जशीट में अप्रवासन और विदेशी अधिनियम, 2025 की धारा 21 और 23 लागू की गईं।",
+            "अदालत द्वारा चार्जशीट को आंशिक (piecemeal) माने जाने के बाद आरोपियों को डिफ़ॉल्ट ज़मानत दी गई।"
+          ],
+          "key_facts": [
+            "सात विदेशी नागरिक शामिल: एक अमेरिकी नागरिक और छह Ukrainians।",
+            "एनआईए द्वारा 8 सितंबर को चार्जशीट दायर की गई।"
+          ],
+          "key_locations": [
+            "दिल्ली",
+            "कोलकाता",
+            "गुवाहाटी",
+            "मिजोरम",
+            "म्यांमार"
+          ],
+          "important_dates": [
+            "13 मार्च 2026",
+            "8 सितंबर 2026"
+          ]
+        },
+        "bn": {
+          "headline": "NIA চার্জশিটের পর দিল্লি আদালত ভ্যানডাইক এবং ৬ ইউক্রেনীয়কে বাড়ি ফেরার অনুমতি দিয়েছে",
+          "story_lead": "দিল্লির একটি আদালত মার্কিন নাগরিক ম্যাথিউ অ্যারন ভ্যানডাইক এবং ছয় ইউক্রেনীয় নাগরিককে তাদের নিজ দেশে ফিরে যাওয়ার অনুমতি দিয়েছে, কারণ এনআইএ তাদের বিরুদ্ধে অভিবাসন অপরাধে চার্জশিট দাখিল করেছে।",
+          "full_article_text": "দিল্লির একটি আদালত মার্কিন নাগরিক ম্যাথিউ অ্যারন ভ্যানডাইক এবং ছয় ইউক্রেনীয় নাগরিককে তাদের নিজ দেশে ফিরে যাওয়ার অনুমতি দিয়েছে।",
+          "background_context": "এই মামলাটি এমন সব বিদেশী নাগরিকদের সাথে সম্পর্কিত যারা ভারতে প্রবেশ করেছিল এবং অনুমতি ছাড়া সীমাবদ্ধ এলাকায় ভ্রমণ করেছিল।",
+          "bullet_points": [
+            "দিল্লি আদালত ভ্যানডাইক এবং ৬ ইউক্রেনীয়কে বাড়ি ফেরার অনুমতি দিয়েছে।"
+          ],
+          "key_facts": [
+            "সাতজন বিদেশি নাগরিক জড়িত।"
+          ],
+          "key_locations": [
+            "দিল্লি",
+            "কলকাতা"
+          ],
+          "important_dates": [
+            "১৩ মার্চ ২০২৬"
+          ]
+        },
+        "te": {
+          "headline": "NIA చార్జ్ షీట్ తర్వాత వాన్ డైక్, 6 మంది ఉక్రెయిన్ వాసులు స్వదేశానికి వెళ్లేందుకు దిల్లీ కోర్టు అనుమతి",
+          "story_lead": "దిల్లీ కోర్టు అమెరికా జాతీయుడు మాథ్యూ ఆరోన్ వాన్ డైక్ మరియు ఆరుగురు ఉక్రెయిన్ జాతీయులను వారి స్వదేశాలకు వెళ్లేందుకు అనుమతించింది.",
+          "full_article_text": "దిల్లీ కోర్టు అమెరికా జాతీయుడు మాథ్యూ ఆరోన్ వాన్ డైక్ మరియు ఆరుగురు ఉక్రెయిన్ పౌరులు తమ స్వదేశాలకు తిరిగి వెళ్లేందుకు అనుమతిస్తూ ఉత్తర్వులు జారీ చేసింది.",
+          "background_context": "ఈ కేసుకు సంబంధించి విదేశీ జాతీయులు భారత్‌లోకి ప్రవేశించి నిషిద్ధ ప్రాంతాలకు వెళ్లారనే ఆరోపణలు ఉన్నాయి.",
+          "bullet_points": [
+            "దిల్లీ కోర్టు వాన్ డైక్ మరియు 6 ఉక్రెయిన్ వాసుల ప్రయాణానికి అనుమతిచ్చింది."
+          ],
+          "key_facts": [
+            "ఏడుగురు విదేశీ జాతీయులు ఈ కేసులో शामिल ఉన్నారు."
+          ],
+          "key_locations": [
+            "దిల్లీ",
+            "కోల్‌కతా"
+          ],
+          "important_dates": [
+            "మార్చి 13, 2026"
+          ]
+        },
+        "mr": {
+          "headline": "NIA च्या आरोपपत्रानांतर दिल्ली न्यायालयाने व्हॅनडाईक आणि ६ युक्रेनियन नागरिकांना घरी जाण्याची परवानगी दिली",
+          "story_lead": "दिल्ली न्यायालयाने अमेरिकन नागरिक मॅथ्यू आरोन व्हॅनडाईक आणि सहा युक्रेनियन नागरिकांना त्यांच्या मायदेशी परतण्याची परवानगी दिली आहे.",
+          "full_article_text": "दिल्ली न्यायालयाने अमेरिकन नागरिक मॅथ्यू आरोन व्हॅनडाईक आणि सहा युक्रेनियन नागरिकांना त्यांच्या मूळ देशात जाण्याची परवानगी दिली.",
+          "background_context": "हा खटला परदेशी नागरिकांशी संबंधित आहे ज्यांनी भारतात प्रवेश करून निर्बंधांचे उल्लंघन केले.",
+          "bullet_points": [
+            "दिल्ली न्यायालयाने व्हॅनडाईक आणि ६ युक्रेनियन नागरिकांना घरी जाण्याची परवानगी दिली."
+          ],
+          "key_facts": [
+            "सात परदेशी नागरिक या प्रकरणात गुंतले आहेत."
+          ],
+          "key_locations": [
+            "दिल्ली",
+            "कोलकाता"
+          ],
+          "important_dates": [
+            "१३ मार्च २०२६"
+          ]
+        },
+        "ta": {
+          "headline": "NIA குற்றப்பத்திரிகைக்குப் பிறகு வான்டை மற்றும் 6 உக்ரைன் நாட்டினர் ஊருக்குச் செல்ல தில்லி நீதிமன்றம் அனுமதி",
+          "story_lead": "தில்லி நீதிமன்றம் அமெரிக்க குடிமகனான மேத்யூ ஆரோன் வான்டை மற்றும் ஆறு உக்ரைன் நாட்டினரை தங்கள் சொந்த நாடுகளுக்குத் திரும்ப அனுமதிக்கப்பட்டுள்ளது.",
+          "full_article_text": "அமெரிக்க குடிமகனான மேத்யூ ஆரோன் வான்டை மற்றும் ஆறு உக்ரைன் நாட்டினரை தில்லி நீதிமன்றம் தங்களது சொந்த நாடுகளுக்குச் செல்ல அனுமதி அளித்துள்ளது.",
+          "background_context": "இந்த வழக்கு வெளிநாட்டு குடிமக்கள் இந்தியாவில் தடைசெய்யப்பட்ட பகுதிகளுக்குச் சென்ற குற்றச்சாட்டுடன் தொடர்புடையது.",
+          "bullet_points": [
+            "தில்லி நீதிமன்றம் வான்டை மற்றும் 6 உக்ரைன் நாட்டினரை ஊருக்குச் செல்ல அனுமதித்தது."
+          ],
+          "key_facts": [
+            "ஏழு வெளிநாட்டு குடிமக்கள் சம்பந்தப்பட்டுள்ளனர்."
+          ],
+          "key_locations": [
+            "தில்லி",
+            "கொல்கத்தா"
+          ],
+          "important_dates": [
+            "மார்ச் 13, 2026"
+          ]
+        },
+        "gu": {
+          "headline": "NIA ની ચાર્જશીટ બાદ દિલ્હી કોર્ટે વાનડાઇક અને 6 યુક્રેનિયનોને ઘરે જવાની મંજૂરી આપી",
+          "story_lead": "દિલ્હીની એક કોર્ટે યુએસ નાગરિક મેથ्यू એરોન વાનડાઇક અને છ યુક્રેનિયન નાગરિકોને તેમના વતન દેશોમાં પાછા ફરવાની મંજૂરી આપી છે.",
+          "full_article_text": "દિલ્હીની કોર્ટે યુએસ નાગરિક મેથ્યુ એરોન વાનડાઇક અને છ યુક્રેનિયન નાગરિકોને ઇમિગ્રેશન ગુનાઓ હેઠળ એનਆઈએ દ્વારા ચાર્જશીટ દાખલ કર્યા પછી તેમના વતન દેશોમાં પાછા જવાની મંજૂરી આપી છે.",
+          "background_context": "આ કેસમાં એવા વિદેશી નાગરિકો સામેલ છે જેમણે ભારતમાં પ્રવેશ કર્યો હતો અને કથિત રીતે પ્રતિબંધિત વિસ્તારોની મુલાકાત લીધી હતી.",
+          "bullet_points": [
+            "દિલ્હી કોર્ટે વાનડાઇક અને 6 યુક્રેનિયનોને ઘરે જવાની મંજૂરી આપી."
+          ],
+          "key_facts": [
+            "સાત વિદેશી નાગરિકો સંડોવાયેલા છે."
+          ],
+          "key_locations": [
+            "દિલ્હી",
+            "કોલકાતા"
+          ],
+          "important_dates": [
+            "૧૩ માર્ચ ૨૦૨૬"
+          ]
+        },
+        "kn": {
+          "headline": "ಎನ್‌ಐಎ ಚಾರ್ಜ್‌ಶೀಟ್ ಬಳಿಕ ವಾನ್‌ಡೈಕ್ ಮತ್ತು 6 ಉಕ್ರೇನಿಯನ್ನರಿಗೆ ಮನೆಗೆ ತೆರಳಲು ದೆಹಲಿ ಕೋರ್ಟ್ ಅನುಮತಿ",
+          "story_lead": "ದೆಹಲಿ ನ್ಯಾಯಾಲಯವು ಯುಎಸ್ ಪ್ರಜೆ ಮ್ಯಾಥ್ಯೂ ಆರನ್ ವಾನ್‌ಡೈಕ್ ಮತ್ತು ಆರು ಉಕ್ರೇನಿಯನ್ ಪ್ರಜೆಗಳು ತಮ್ಮ ಸ್ವದೇಶಕ್ಕೆ ಹಿಂತಿರುಗಲು ಅನುಮತಿ ನೀಡಿದೆ.",
+          "full_article_text": "ದೆಹಲಿ ನ್ಯಾಯಾಲಯವು ಯುಎಸ್ ಪ್ರಜೆ ಮ್ಯಾಥ್ಯೂ ಆರನ್ ವಾನ್‌ಡೈಕ್ ಮತ್ತು ಆರು ಉಕ್ರೇನಿಯನ್ ಪ್ರಜೆಗಳಿಗೆ ವಲಸೆ ಅಪರಾಧಗಳ ಅಡಿಯಲ್ಲಿ ಎನ್‌ಐಎ ಆರೋಪಪಟ್ಟಿ ಸಲ್ಲಿಸಿದ ನಂತರ ತಮ್ಮ ಸ್ವಂತ ದೇಶಗಳಿಗೆ ಪ್ರಯಾಣಿಸಲು ಅನುಮತಿ ನೀಡಿದೆ.",
+          "background_context": "ಈ ಪ್ರಕರಣವು ಭಾರತಕ್ಕೆ ಪ್ರವೇಶಿಸಿ ನಿರ್ಬಂಧಿತ ಪ್ರದೇಶಗಳಿಗೆ ಭೇಟಿ ನೀಡಿದ ವಿದೇಶಿ ಪ್ರಜೆಗಳನ್ನು ಒಳಗೊಂಡಿದೆ.",
+          "bullet_points": [
+            "ದೆಹಲಿ ನ್ಯಾಯಾಲಯವು ವಾನ್‌ಡೈಕ್ ಮತ್ತು 6 ಉಕ್ರೇನಿಯನ್ನರಿಗೆ ಮನೆಗೆ ತೆರಳಲು ಅನುಮತಿ ನೀಡಿದೆ."
+          ],
+          "key_facts": [
+            "ಏಳು ವಿದೇಶಿ ಪ್ರಜೆಗಳು ಶಾಮೀಲಾಗಿದ್ದಾರೆ."
+          ],
+          "key_locations": [
+            "ದೆಹಲಿ",
+            "ಕೊಲ್ಕತ್ತಾ"
+          ],
+          "important_dates": [
+            "ಮಾರ್ಚ್ 13, 2026"
+          ]
+        },
+        "ml": {
+          "headline": "എൻഐഎ കുറ്റപത്രത്തിന് ശേഷം വാൻഡൈക്കിനും 6 ഉക്രെയ്ൻ പൗരന്മാർക്കും നാട്ടിലേക്ക് മടങ്ങാൻ ഡൽഹി കോടതി അനുമതി നൽകി",
+          "story_lead": "ഡൽഹി കോടതി യുഎസ് പൗരൻ മാത്യു ആരോൺ വാൻഡൈക്കിനും ആറ് ഉക്രെയ്ൻ പൗരന്മാർക്കും അവരുടെ രാജ്യങ്ങളിലേക്ക് മടങ്ങാൻ അനുമതി നൽകി.",
+          "full_article_text": "ഇമിഗ്രേഷൻ കുറ്റകൃത്യങ്ങൾ ചുമത്തി എൻഐഎ കുറ്റപത്രം സമർപ്പിച്ചതിനെ തുടർന്ന് യുഎസ് പൗരൻ മാത്യു ആരോൺ വാൻഡൈക്കിനും ആറ് ഉക്രെയ്ൻ പൗരന്മാർക്കും സ്വന്തം രാജ്യങ്ങളിലേക്ക് മടങ്ങാൻ ഡൽഹി കോടതി അനുമതി നൽകി.",
+          "background_context": "ഇന്ത്യയിൽ പ്രവേശിച്ച് അനുമതിയില്ലാതെ നിയന്ത്രിത പ്രദേശങ്ങൾ സന്ദർശിച്ച വിദേശ പൗരന്മാരുമായി ബന്ധപ്പെട്ടതാണ് ഈ കേസ്.",
+          "bullet_points": [
+            "ഡൽഹി കോടതി വാൻഡൈക്കിനും 6 ഉക്രെയ്ൻ പൗരന്മാർക്കും നാട്ടിലേക്ക് മടങ്ങാൻ അനുമതി നൽകി."
+          ],
+          "key_facts": [
+            "ഏഴ് വിദേശ പൗരന്മാർ ഉൾപ്പെട്ടിരിക്കുന്നു."
+          ],
+          "key_locations": [
+            "ഡൽഹി",
+            "കൊൽക്കത്ത"
+          ],
+          "important_dates": [
+            "മാർച്ച് 13, 2026"
+          ]
+        },
+        "pa": {
+          "headline": "ਐਨਆਈਏ ਚਾਰਜਸ਼ੀਟ ਤੋਂ ਬਾਅਦ ਦਿੱਲੀ ਅਦਾਲਤ ਨੇ ਵੈਨਡਾਈਕ ਅਤੇ 6 ਯੂਕਰੇਨੀਅਨਾਂ ਨੂੰ ਘਰ ਜਾਣ ਦੀ ਦਿੱਤੀ ਇਜਾਜ਼ਤ",
+          "story_lead": "দিল্লি আদালত মার্কিন নাগরিক ম্যাথিউ অ্যারন ভ্যানডাইক এবং ছয় ইউক্রেনীয় নাগরিককে নিজ দেশে ফেরার অনুমতি দিয়েছে।",
+          "full_article_text": "দিল্লির একটি আদালত মার্কিন নাগরিক ম্যাথিউ অ্যারন ভ্যানডাইক এবং ছয় ইউক্রেনীয় নাগরিককে নিজ দেশে ফিরে যাওয়ার অনুমতি দিয়েছে।",
+          "background_context": "এই মামলার সাথে বিদেশী নাগরিকদের ভারতে প্রবেশ এবং নিষিদ্ধ এলাকায় ভ্রমণের সম্পর্ক রয়েছে।",
+          "bullet_points": [
+            "দিল্লি আদালত ভ্যানডাইক এবং ৬ ইউক্রেনীয়কে বাড়ি ফেরার অনুমতি দিয়েছে।"
+          ],
+          "key_facts": [
+            "সাতজন বিদেশী নাগরিক জড়িত।"
+          ],
+          "key_locations": [
+            "দিল্লি",
+            "কলকাতা"
+          ],
+          "important_dates": [
+            "১৩ মার্চ ২০২৬"
+          ]
+        },
+        "as": {
+          "headline": "NIA চাৰ্জশ্বীটৰ পিছত দিল্লী আদালতে ভেনডাইক আৰু ৬ গৰাকী ইউক্ৰেইনীয়ক ঘৰলৈ যাবলৈ অনুমতি দিয়ে",
+          "story_lead": "দিল্লী আদালতে আমেৰিকাৰ নাগৰিক মেথিউ এৰন ভেনডাইক আৰু ছগৰাকী ইউক্ৰেইনীয় নাগৰিকক নিজ দেশলৈ উভতি যাবলৈ অনুমতি প্ৰদান কৰিছে।",
+          "full_article_text": "দিল্লী আদালতে আমেৰিকাৰ নাগৰিক মেথিউ এৰন ভেনডাইক আৰু ছগৰাকী ইউক্ৰেইনীয় নাগৰিকক ইমিগ্ৰেচন অপৰাধৰ বাবে এনআইএয়ে চাৰ্জশ্বীট দাখিল কৰাৰ পিছত নিজ নিজ দেশলৈ যোৱাৰ অনুমতি দিয়ে।",
+          "background_context": "এই গোচৰটোত ভাৰতত প্ৰৱেশ কৰি অনুমতি অবিহনে সংৰক্ষিত সীমান্ত অঞ্চললৈ যোৱা বিদেশী নাগৰিকসকল অন্তৰ্ভুক্ত হৈ আছে।",
+          "bullet_points": [
+            "দিল্লী আদালতে ভেনডাইক আৰু ৬ ইউক্ৰেইনীয়ক ঘৰলৈ যাবলৈ অনুমতি দিয়ে।"
+          ],
+          "key_facts": [
+            "সাতজন বিদেশী নাগৰিক জড়িত।"
+          ],
+          "key_locations": [
+            "দিল্লী",
+            "কলকাতা"
+          ],
+          "important_dates": [
+            "১৩ মাৰ্চ, ২০২৬"
+          ]
+        },
+        "or": {
+          "headline": "NIA ଚାର୍ଜସିଟ୍ ପରେ ଦିଲ୍ଲୀ କୋର୍ଟ ଭ୍ୟାନ୍‌ଡାଇକ୍ ଏବଂ 6 ଜଣ ୟୁକ୍ରେନୀୟଙ୍କୁ ଘରକୁ ଫେରିବାକୁ ଦେଲେ ଅନୁମତି",
+          "story_lead": "ଦିଲ୍ଲୀର ଏକ କୋର୍ଟ ଆମେରିକୀୟ ନାଗରିକ ମ୍ୟାଥ୍ୟୁ ଆରୋନ୍ ଭ୍ୟାନ୍‌ଡାଇକ୍ ଏବଂ ଛଅଜଣ ୟୁକ୍ରେନୀୟ ନାଗରିକଙ୍କୁ ସେମାନଙ୍କର ଗୃହ ଦେଶକୁ ଫେରିବାକୁ ଅନୁମତି ଦେଇଛନ୍ତି।",
+          "full_article_text": "ଦିଲ୍ଲୀର ଏକ କୋର୍ଟ ଆମେରିକୀୟ ନାଗରିକ ମ୍ୟାଥ୍ୟୁ ଆରୋନ୍ ଭ୍ୟାନ୍‌ଡାଇକ୍ ଏବଂ ଛଅଜଣ ୟୁକ୍ରେନୀୟ ନାଗରିକଙ୍କୁ ସେମାନଙ୍କର ଗୃହ ଦେଶକୁ ଫେରିବାକୁ ଅନୁମତି ଦେଇଛନ୍ତି, ଯେତେବେଳେ ଏନଆଇଏ ସେମାନଙ୍କ ବିରୁଦ୍ଧରେ କେବଳ ଇମିଗ୍ରେସନ ଅପରାଧରେ ଚାର୍ଜସିଟ୍ ଦାଖଲ କରିଛି।",
+          "background_context": "ଏହି ମାମଲାଟି ବିଦେଶୀ ନାଗରିକମାନଙ୍କ ସହିତ ଜଡିତ ଯେଉଁମାନେ ଭାରତରେ ପ୍ରବେଶ କରିଥିଲେ ଏବଂ ଅନୁମତି ବିନା ସୀମା ଅଞ୍ଚଳକୁ ଯାଇଥିଲେ।",
+          "bullet_points": [
+            "ଦିଲ୍ଲୀ କୋର୍ଟ ଭ୍ୟାନ୍‌ଡାଇକ୍ ଏବଂ 6 ଜଣ ୟୁକ୍ରେନୀୟଙ୍କୁ ଘରକୁ ଫେରିବାକୁ ଦେଲେ ଅନୁମତି।"
+          ],
+          "key_facts": [
+            "ସାତଜଣ ବୈଦେଶିକ ନାଗରିକ ଏଥିରେ ସଂପୃକ୍ତ ଅଛନ୍ତି।"
+          ],
+          "key_locations": [
+            "ଦିଲ୍ଲୀ",
+            "କୋଲକାତା"
+          ],
+          "important_dates": [
+            "ମାର୍ଚ୍ଚ 13, 2026"
+          ]
+        },
+        "ur": {
+          "headline": "این آئی اے کی چارج شیٹ کے بعد دہلی عدالت نے وان ڈائک اور 6 یوکرینی باشندوں کو گھر جانے کی اجازت دے دی",
+          "story_lead": "دہلی کی ایک عدالت نے امریکی شہری میتھیو آرون وان ڈائک اور چھ یوکرینی شہریوں کو اپنے آبائی ممالک واپس جانے کی اجازت دے دی ہے۔",
+          "full_article_text": "دہلی کی ایک عدالت نے امریکی شہری میتھیو آرون وان ڈائک اور چھ یوکرینی شہریوں کو اپنے آبائی ممالک واپس جانے کی اجازت دی، کیونکہ این آئی اے نے ان پر صرف امیگریشن جرائم کے تحت چارج شیٹ داخل کی ہے۔",
+          "background_context": "اس معاملے میں غیر ملکی شہری شامل ہیں جنہوں نے مبینہ طور پر بھارت میں داخل ہو کر ممنوعہ علاقوں کا سفر کیا۔",
+          "bullet_points": [
+            "دہلی عدالت نے وان ڈائک اور 6 یوکرینی باشندوں کو گھر جانے کی اجازت دے دی۔"
+          ],
+          "key_facts": [
+            "سات غیر ملکی شہری اس مقدمے میں شامل ہیں۔"
+          ],
+          "key_locations": [
+            "دہلی",
+            "کولکتہ"
+          ],
+          "important_dates": [
+            "13 مارچ 2026"
+          ]
+        },
+        "sa": {
+          "headline": "NIA-आरोपपत्रस्य अनन्तरं देहली-न्यायालयः वानडाइक् इत्यस्मै षड्-यूक्रेनी-जनानाम् च गृहगमनाय अनुमतिम् दत्तवान्",
+          "story_lead": "देहली-न्यायालयः अमेरिकी-नागरिकं मैथ्यू एरोन् वानडाइक् षड् यूक्रेनी-नागरिकां च स्वदेशं प्रतिगन्तुम् अनुमतिम् दत्तवान् अस्ति।",
+          "full_article_text": "देहली-न्यायालयः अमेरिकी-नागरिकं मैथ्यू एरोन् वानडाइक् षड् यूक्रेनी-नागरिकां च स्वदेशं प्रतिगन्तुम् अनुमतिम् दत्तवान्, यतः NIA तानाम् उपरि केवलम् इमिग्रेशन्-अपराधानाम् आधारेण आरोपपत्रं दाखिलवान्।",
+          "background_context": "अस्मिन् विषये विदेशी-नागरिकाः सन्ति ये भारतं प्रविश्य प्रतिबन्धित-क्षेत्रेषु गताः आसन्।",
+          "bullet_points": [
+            "देहली-न्यायालयः वानडाइक् इत्यस्मै षड्-यूक्रेनी-जनानाम् च गृहगमनाय अनुमतिम् दत्तवान्।"
+          ],
+          "key_facts": [
+            "सप्त विदेशी नागरिकाः सम्मिलिताः सन्ति।"
+          ],
+          "key_locations": [
+            "देहली",
+            "कोलकाता"
+          ],
+          "important_dates": [
+            "१३ मार्च २०२६"
+          ]
+        },
+        "ne": {
+          "headline": "NIA को चार्जशीट पछि दिल्ली अदालतले भानडाइक र ६ युक्रेनीहरूलाई घर फर्कन अनुमति दियो",
+          "story_lead": "दिल्लीको एक अदालतले अमेरिकी नागरिक म्याथ्यू एरोन भानडाइक र छ जना युक्रेनी नागरिकहरूलाई उनीहरूको गृह देश फर्किन अनुमति दिएको छ।",
+          "full_article_text": "दिल्लीको एक अदालतले अमेरिकी नागरिक म्याथ्यू एरोन भानडाइक र छ जना युक्रेनी नागरिकहरूलाई उनीहरूको गृह देश फर्किन अनुमति दियो, किनभने एनआइएले उनीहरूविरुद्ध अध्यागमन कसुरमा मात्र आरोपपत्र दायर गरेको छ।",
+          "background_context": "यो मामिलामा विदेशी नागरिकहरू सामेल छन् जो भारत प्रवेश गरी अनुमति बिना प्रतिबन्धित क्षेत्रमा गएका थिए।",
+          "bullet_points": [
+            "दिल्ली अदालतले भानडाइक र ६ युक्रेनीहरूलाई घर फर्कन अनुमति दियो।"
+          ],
+          "key_facts": [
+            "सात जना विदेशी नागरिकहरू सामेल छन्।"
+          ],
+          "key_locations": [
+            "दिल्ली",
+            "कोलकाता"
+          ],
+          "important_dates": [
+            "मार्च १३, २०२६"
+          ]
+        },
+        "kok": {
+          "headline": "NIA चार्जशिट उपरान्त दिल्ली न्यायालयान व्हॅनडाइक आनी ६ युक्रेनियन नागरिकांक घर वचपाक दिली परवानगी",
+          "story_lead": "दिल्लीच्या एका न्यायालयान अमेरिकन नागरिक मॅथ्यू आरोन व्हॅनडाइक आनी सव युक्रेनियन नागरिकांक तांच्या देशांत परत वचपाक परवानगी दिल्या.",
+          "full_article_text": "दिल्ली न्यायालयान अमेरिकन नागरिक मॅथ्यू आरोन व्हॅनडाइक आनी युक्रेनियन नागरिकांक इमिग्रेशन गुन्यान्टा फाटरोवपी चार्जशिट दाखल केल्या उपरान्त परतीची परवानगी दिल्या.",
+          "background_context": "ह्या प्रकरणांत परदेशी नागरिकांच्या भारतांतल्या प्रवेशाची आनी निर्बंधीत मळांच्या प्रवासाची म्हायती आसा.",
+          "bullet_points": [
+            "दिल्ली न्यायालयान व्हॅनडाइक आनी ६ युक्रेनियनांक घर वचपाक दिली परवानगी."
+          ],
+          "key_facts": [
+            "सात परदेशी नागरिक सामील आसात."
+          ],
+          "key_locations": [
+            "दिल्ली",
+            "कोलकाता"
+          ],
+          "important_dates": [
+            "१३ मार्च २०२६"
+          ]
+        },
+        "mai": {
+          "headline": "NIA चार्जशीट के बाद दिल्ली कोर्ट वैनडाइक आ 6 रा यूक्रेनी नागरिक के घर जाए के अनुमति देलक",
+          "story_lead": "दिल्लीक एकटा कोर्ट अमेरिकी नागरिक मैथ्यू आरोन वैनडाइक आ छहटा यूक्रेनी नागरिक केँ अपन गृह देश में घुरे के अनुमति देलक अछि।",
+          "full_article_text": "दिल्ली कोर्ट अमेरिकी नागरिक मैथ्यू आरोन वैनडाइक आ छह यूक्रेनी नागरिक केँ इमिग्रेशन अपराधक तहत चार्जशीट दाखिल होय के बाद अपन देश जाए के अनुमति देलक अछि।",
+          "background_context": "इ मामला विदेशी नागरिकसँ जुड़ल अछि जे भारत में प्रवेश कए प्रतिबंधित क्षेत्रक यात्रा केने छलाह।",
+          "bullet_points": [
+            "दिल्ली कोर्ट वैनडाइक आ 6 यूक्रेनी नागरिक के घर जाए के अनुमति देलक।"
+          ],
+          "key_facts": [
+            "सातटा विदेशी नागरिक शामिल छथि।"
+          ],
+          "key_locations": [
+            "दिल्ली",
+            "कोलकाता"
+          ],
+          "important_dates": [
+            "13 मार्च 2026"
+          ]
+        },
+        "doi": {
+          "headline": "NIA दी चार्जशीट मग्ग दिल्ल्री अदालत कन्नै वैनडाइक ते 6 यूकेनीय नागरिकै जो घर परती कन्नै दी अनुमति दित्ती",
+          "story_lead": "दिल्ल्री दी अदालत अमरीकी नागरिक मैथ्यू आरोन वैनडाइक ते छह यूकेनीय नागरिकै जो अपने देश परतने दी अनुमति दित्ती ऐ।",
+          "full_article_text": "दिल्ल्री अदालत अमरीकी नागरिक मैथ्यू आरोन वैनडाइक ते छह यूकेनीय नागरिकै जो आव्रजन अपराधै तहत एनआईए चार्जशीट दायर होने बाद अपने देश परतने दी अनुमति दित्ती ऐ।",
+          "background_context": "एह मामले च ओ विदेशी नागरिक जुड़े दे न जे भारत च प्रवेश करी ते प्रतिबंधितेत्रै दी यात्रा कीती ही।",
+          "bullet_points": [
+            "दिल्ल्री अदालत वैनडाइक ते 6 यूकेनीय नागरिकै जो घर परती दी अनुमति दित्ती।"
+          ],
+          "key_facts": [
+            "सत्त विदेशी नागरिक शामिल न।"
+          ],
+          "key_locations": [
+            "दिल्ल्री",
+            "कोलकाता"
+          ],
+          "important_dates": [
+            "13 मार्च 2026"
+          ]
+        },
+        "mni": {
+          "headline": "NIAগী চার্জশীটগী মতুং ইন্না দিল্লী কোটনা ভেন্দাইক অমদি ৬ ইউক্রেনীয়িশিং লৈঙাক্কী মফমদা চঙথোকপগী অয়াবা পীরে",
+          "story_lead": "দিল্লী কোট অমনা আমেরিকান নাগরিক মেথ্যু অ্যারন ভেন্দাইক অমদি ইউক্রেনীয় ৬ কি মখোয়গী লৈবাক্কী মফমদা চৎথোকপগী অয়াবা পীরে।",
+          "full_article_text": "দিল্লী কোটনা আমেরিকান নাগরিক মেথ্যু অ্যারন ভেন্দাইক অমদি ইউক্রেনীয় নাগরিক ৬ কি ইমিগ্ৰেসন অপরাধকী মতাংদা এন.আই.এ.না চার্জশীট থোকখিবগী মতুংদা মখোয়গী লৈবাক্কী মফমদা চৎথোকপগী অয়াবা পীরে।",
+          "background_context": "মসিগী থৌওং অসি ভারত্তা লৈশিল্লবা অমদি মরুওইবা মফমশিংদা চঙথোকখিবা সহী ওইদবা বিদেশগী নাগরিকশিংগী মতাংদনি।",
+          "bullet_points": [
+            "দিল্লী কোটনা ভেন্দাইক অমদি ৬ ইউক্রেনীয়িশিং লৈঙাক্কী মফমদা চঙথোকপগী অয়াবা পীরে।"
+          ],
+          "key_facts": [
+            "বিদেশী নাগরিক ৭ telli য়াওরি।"
+          ],
+          "key_locations": [
+            "দিল্লী",
+            "কলকাতা"
+          ],
+          "important_dates": [
+            "১৩ মার্চ ২০২৬"
+          ]
+        },
+        "ks": {
+          "headline": "این آئی اے چارج شیٹ پتہٕ دہلی عدالتن چھِ وٕن ڈائیک تہٕ ۶ یوکرینی باشندن گھرٕ گژھਨچ اجازت دیتمژ",
+          "story_lead": "دہلی عدالتن چھِ امریکی شہری میتھیو آرون وٕن ڈائیک تہٕ ۶ یوکرینی باشندن پننہِ وطن گژھਨچ اجازت دیتمژ ییلہِ ان آئی اے این ہاون زِ تمن پؠٹھ چھِ امیگریشن جرم لگاونہٕ آمت۔",
+          "full_article_text": "دہلی عدالتن چھِ امریکی شہری میتھیو آرون وٕن ڈائیک تہٕ ۶ یوکرینی باشندن پننہِ وطن گژھنچ اجازت دیتمژ۔",
+          "background_context": "یہِ معاملہ چھُ غیر ملکی شہرین سٟتؠ وابستہٕ یਿ ბارٹس منٛز کورو سفر۔",
+          "bullet_points": [
+            "دہلی عدالتن چھِ وٕن ڈائیک تہٕ ۶ یوکرینی باشندن گھرٕ گژھنچ اجازت دیتمژ।"
+          ],
+          "key_facts": [
+            "ژور غیر ملکی شہری شٲمل چھِ۔"
+          ],
+          "key_locations": [
+            "দہلی",
+            "کولکتہ"
+          ],
+          "important_dates": [
+            "13 مارچ 2026"
+          ]
+        },
+        "sd": {
+          "headline": "این آءِ اي چارج شيٽ بعد دهلي عدالت وانڊائيڪ ۽ 6 يوڪرينين کي گهر وڃڻ جي اجازت ڏئي ڇڏي",
+          "story_lead": "دهلي جي هڪ عدالت آمريڪي شهري ميٿيو آرون وانڊائيڪ ۽ 6 يوڪرينين کي انهن جي ملڪ واپس وڃڻ جي اجازت ڏني آهي.",
+          "full_article_text": "دهلي عدالت آمريڪي شهري ميٿيو آرون وانڊائيڪ ۽ ڇهه يوڪرينين کي انهن جي گهر واپس وڃڻ جي اجازت ڏني جڏهن اين آءِ اي انهن مٿان صرف اميگريشن ڏوهن تحت چارج شيٽ داخل ڪئي.",
+          "background_context": "هيءُ ڪيس پرڏيهي شهرين سان لاڳاپيل آهي جيڪي هندستان ۾ داخل ٿيا ۽ ممنوع علائقن جو دورو ڪيو.",
+          "bullet_points": [
+            "دهلي عدالت وانڊائيڪ ۽ 6 يوڪرينين کي گهر وڃڻ جي اجازت ڏني."
+          ],
+          "key_facts": [
+            "ست پرڏيهي شهري شامل آهن."
+          ],
+          "key_locations": [
+            "دهلی",
+            "کلڪत्ता"
+          ],
+          "important_dates": [
+            "13 مارچ 2026"
+          ]
+        },
+        "sat": {
+          "headline": "এন.আই.এ. চার্জশিট ᱵᱟᱫᱽ ᱫᱤᱞᱞᱤ ᱠᱳᱨᱴ ᱵᱷᱮᱱᱰᱟᱭᱤᱠ ᱟᱨ ᱖ ᱜᱚᱴᱟᱝ ইউক্রেনীয় ᱠᱚ ᱚᱲᱟᱜ ᱨᱩᱣᱟᱹᱲ ᱨᱮᱭᱟᱜ অনুমতি ᱮᱢᱟᱫ ᱠᱤᱱᱟ",
+          "story_lead": "দিল্লির আদালত আমেরিকার নাগরিক ম্যাথিউ অ্যারন ভ্যানডাইক এবং ছয় জন ইউক্রেনীয় নাগরিককে নিজ দেশে ফিরে যাওয়ার অনুমতি দিয়েছে।",
+          "full_article_text": "দিল্লির একটি আদালত আমেরিকার নাগরিক ম্যাথিউ অ্যারন ভ্যানডাইক এবং ছয় ইউক্রেনীয় নাগরিককে তাদের নিজ দেশে ফিরে যাওয়ার অনুমতি দিয়েছে, কারণ এনআইএ তাদের বিরুদ্ধে শুধুমাত্র অভিবাসন অপরাধের অভিযোগ এনেছে।",
+          "background_context": "এই ঘটনার সাথে বিদেশীদের ভারতে প্রবেশ এবং নির্দিষ্ট সংরক্ষিত সীমান্ত এলাকায় ভ্রমণের বিষয়টি জড়িত।",
+          "bullet_points": [
+            "দিল্লি আদালত ভ্যানডাইক এবং ৬ ইউক্রেনীয়কে বাড়ি ফেরার অনুমতি দিয়েছে।"
+          ],
+          "key_facts": [
+            "সাতজন বিদেশি নাগরিক জড়িত।"
+          ],
+          "key_locations": [
+            "দিল্লি",
+            "কলকাতা"
+          ],
+          "important_dates": [
+            "১৩ মার্চ ২০২৬"
+          ]
+        },
+        "brx": {
+          "headline": "এন.আই.এ. চাৰ্জসিটनि उनाव दिल्ली கோৰ্টआ ভেনডাইক অমসুং ৬ ইউক্রেনীয় নাগৰিকক ঘৰ হাংথোকফিন্নগ্ৰা অনুমতি হ'ল",
+          "story_lead": "দিল্লির আদালত মার্কিন নাগরিক ম্যাথিউ অ্যারন ভ্যানডাইক এবং ছয় ইউক্রেনীয় নাগরিককে নিজ দেশে ফিরে যাওয়ার অনুমতি দিয়েছে।",
+          "full_article_text": "দিল্লির আদালত মার্কিন নাগরিক ম্যাথিউ অ্যারন ভ্যানডাইক এবং ছয় ইউক্রেনীয় নাগরিককে নিজ দেশে ফিরে যাওয়ার অনুমতি দিয়েছে, কারণ এনআইএ তাদের বিরুদ্ধে শুধুমাত্র অভিবাসন অপরাধের অভিযোগ এনেছে।",
+          "background_context": "এই ঘটনার সাথে বিদেশীদের ভারতে প্রবেশ এবং নির্দিষ্ট সংরক্ষিত সীমান্ত এলাকায় ভ্রমণের বিষয়টি জড়িত।",
+          "bullet_points": [
+            "দিল্লি আদালত ভ্যানডাইক এবং ৬ ইউক্রেনীয়কে বাড়ি ফেরার অনুমতি দিয়েছে।"
+          ],
+          "key_facts": [
+            "সাতজন বিদেশি নাগরিক জড়িত।"
+          ],
+          "key_locations": [
+            "দিল্লি",
+            "কলকাতা"
+          ],
+          "important_dates": [
+            "১৩ মার্চ ২০২৬"
+          ]
+        }
+      },
+      "quiz": {
+        "question": "Which specific act's sections 21 and 23 were cited by the NIA in its charge sheet against Matthew Aaron VanDyke and the six Ukrainian nationals?",
+        "options": [
+          "Immigration and Foreigners Act, 2025",
+          "Unlawful Activities (Prevention) Act, 1967",
+          "Foreigners Act, 1946",
+          "Passports Act, 1967"
+        ],
+        "correct_answer": "Immigration and Foreigners Act, 2025",
+        "explanation": "The NIA filed its charge sheet against the seven persons charging them under sections 21 and 23 of the Immigration and Foreigners Act, 2025, which cover illegal entry and visa conditions violations."
+      },
+      "url": "https://www.hindustantimes.com/india-news/delhi-court-allows-vandyke-6-ukrainians-to-travel-home-after-nia-charge-sheet-101790272980061.html",
+      "image_url": "",
+      "published": "2026-09-25"
     }
   ],
-  "last_updated_ist": "2026-09-25 02:53:21"
+  "last_updated_ist": "2026-09-25 06:01:54"
 }
