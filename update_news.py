@@ -3,2138 +3,697 @@ import re
 import json
 import time
 import hashlib
-import html
 from datetime import datetime
 from zoneinfo import ZoneInfo
+from urllib.parse import quote, urljoin
 
-import requests
 import feedparser
+import requests
 from bs4 import BeautifulSoup
 from google import genai
-from google.genai import types
 
 
 # ============================================================
 # AURA EXAM AI - CURRENT AFFAIRS UPDATER
 # ============================================================
-
-DATA_DIR = "data"
-MASTER_FILE = "data.json"
-
-# Initial run
-FIRST_RUN_COUNT = 30
-
-# Every later 3-hour update
-UPDATE_COUNT = 10
+# Preserves existing data and APPENDS new articles.
+# It also repairs missing quiz / Hindi translation / entities
+# on older articles without deleting existing content.
+# ============================================================
 
 IST = ZoneInfo("Asia/Kolkata")
-
 TODAY = datetime.now(IST).strftime("%Y-%m-%d")
-CURRENT_TIME = datetime.now(IST).strftime("%Y-%m-%d %H:%M:%S")
+NOW_ISO = datetime.now(IST).isoformat()
 
-API_KEY = os.environ.get("GEMINI_API_KEY")
+DATA_FILE = "data.json"
+DATA_DIR = "data"
 
-if not API_KEY:
-    raise RuntimeError("GEMINI_API_KEY is not configured.")
+FIRST_RUN_COUNT = 30
+UPDATE_COUNT = 15
+MAX_CANDIDATES_PER_SOURCE = 25
+REQUEST_TIMEOUT = 15
 
-gemini = genai.Client(api_key=API_KEY)
-
-
-# ============================================================
-# HTTP
-# ============================================================
-
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/140.0.0.0 Safari/537.36"
-    )
-}
-
-
-# ============================================================
-# RSS SOURCES
-# Existing sources preserved
-# ============================================================
-
-RSS_SOURCES = [
-    {
-        "id": "ht_india",
-        "name": "Hindustan Times",
-        "category": "India",
-        "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml"
-    },
-    {
-        "id": "toi_top",
-        "name": "Times of India",
-        "category": "India",
-        "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms"
-    },
-    {
-        "id": "ndtv_top",
-        "name": "NDTV",
-        "category": "India",
-        "url": "https://feeds.feedburner.com/ndtvnews-top-stories"
-    },
-    {
-        "id": "bbc_world",
-        "name": "BBC",
-        "category": "World",
-        "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
-    },
-    {
-        "id": "bbc_india",
-        "name": "BBC",
-        "category": "India",
-        "url": "https://feeds.bbci.co.uk/news/world/asia/india/rss.xml"
-    },
-
-    # --------------------------------------------------------
-    # NEW INTERNATIONAL SOURCES
-    # --------------------------------------------------------
-
-    {
-        "id": "cnn_world",
-        "name": "CNN",
-        "category": "World",
-        "url": "http://rss.cnn.com/rss/edition_world.rss"
-    },
-    {
-        "id": "aljazeera_world",
-        "name": "Al Jazeera",
-        "category": "World",
-        "url": "https://www.aljazeera.com/xml/rss/all.xml"
-    },
-    {
-        "id": "dw_world",
-        "name": "DW",
-        "category": "World",
-        "url": "https://rss.dw.com/rdf/rss-en-world"
-    },
-    {
-        "id": "france24_world",
-        "name": "France 24",
-        "category": "World",
-        "url": "https://www.france24.com/en/rss"
-    },
-
-    # --------------------------------------------------------
-    # EXISTING GOOGLE NEWS SOURCES
-    # --------------------------------------------------------
-
-    {
-        "id": "google_india",
-        "name": "Google News",
-        "category": "India",
-        "url": "https://news.google.com/rss/search?q=India&hl=en-IN&gl=IN&ceid=IN:en"
-    },
-    {
-        "id": "google_world",
-        "name": "Google News",
-        "category": "World",
-        "url": "https://news.google.com/rss/search?q=world&hl=en-IN&gl=IN&ceid=IN:en"
-    },
-    {
-        "id": "google_sports",
-        "name": "Google News",
-        "category": "Sports",
-        "url": "https://news.google.com/rss/search?q=sports&hl=en-IN&gl=IN&ceid=IN:en"
-    },
-    {
-        "id": "google_science",
-        "name": "Google News",
-        "category": "Science & Technology",
-        "url": "https://news.google.com/rss/search?q=science+technology&hl=en-IN&gl=IN&ceid=IN:en"
-    },
-    {
-        "id": "google_economy",
-        "name": "Google News",
-        "category": "Economy",
-        "url": "https://news.google.com/rss/search?q=economy+India&hl=en-IN&gl=IN&ceid=IN:en"
-    },
-    {
-        "id": "google_environment",
-        "name": "Google News",
-        "category": "Environment",
-        "url": "https://news.google.com/rss/search?q=environment+India&hl=en-IN&gl=IN&ceid=IN:en"
-    },
-    {
-        "id": "google_health",
-        "name": "Google News",
-        "category": "Health",
-        "url": "https://news.google.com/rss/search?q=health+India&hl=en-IN&gl=IN&ceid=IN:en"
-    }
+GEMINI_MODELS = [
+    "gemini-3.6-flash",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
 ]
 
+RSS_SOURCES = [
+    ("HT India", "India", "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml"),
+    ("Times of India", "India", "https://timesofindia.indiatimes.com/rssfeedstopstories.cms"),
+    ("NDTV", "India", "https://feeds.feedburner.com/ndtvnews-top-stories"),
+    ("BBC World", "World", "https://feeds.bbci.co.uk/news/world/rss.xml"),
+    ("BBC India", "India", "https://feeds.bbci.co.uk/news/world/asia/india/rss.xml"),
+    ("Google News India", "India", "https://news.google.com/rss/search?q=India%20when%3A1d&hl=en-IN&gl=IN&ceid=IN%3Aen"),
+    ("Google News World", "World", "https://news.google.com/rss/search?q=world%20news%20when%3A1d&hl=en-IN&gl=IN&ceid=IN%3Aen"),
+    ("Google News Sports", "Sports", "https://news.google.com/rss/search?q=sports%20when%3A1d&hl=en-IN&gl=IN&ceid=IN%3Aen"),
+    ("Google News Science Technology", "Science & Technology", "https://news.google.com/rss/search?q=science%20technology%20when%3A1d&hl=en-IN&gl=IN&ceid=IN%3Aen"),
+    ("Google News Economy India", "Economy", "https://news.google.com/rss/search?q=India%20economy%20when%3A1d&hl=en-IN&gl=IN&ceid=IN%3Aen"),
+    ("Google News Environment India", "Environment", "https://news.google.com/rss/search?q=India%20environment%20when%3A1d&hl=en-IN&gl=IN&ceid=IN%3Aen"),
+    ("Google News Health India", "Health", "https://news.google.com/rss/search?q=India%20health%20when%3A1d&hl=en-IN&gl=IN%3Aen"),
+]
 
-# ============================================================
-# INDIAN LANGUAGE SUPPORT
-# ============================================================
+MOTIVATION_QUOTES = [
+    "Consistency turns ordinary study into extraordinary results.",
+    "Read with purpose. Revise with discipline. Perform with confidence.",
+    "One focused hour today can remove many doubts tomorrow.",
+    "Small daily progress compounds into strong preparation.",
+    "Understand the issue, connect the facts, write the answer.",
+    "Discipline is choosing your preparation even when motivation is low.",
+    "Study deeply today so that revision becomes easier tomorrow.",
+    "Current affairs become powerful when facts are connected with concepts.",
+]
 
-INDIAN_LANGUAGES = {
-    "en": "English",
-    "hi": "Hindi",
-    "bn": "Bengali",
-    "te": "Telugu",
-    "mr": "Marathi",
-    "ta": "Tamil",
-    "gu": "Gujarati",
-    "kn": "Kannada",
-    "ml": "Malayalam",
-    "pa": "Punjabi",
-    "as": "Assamese",
-    "or": "Odia",
-    "ur": "Urdu",
-    "sa": "Sanskrit",
-    "ne": "Nepali",
-    "kok": "Konkani",
-    "mai": "Maithili",
-    "doi": "Dogri",
-    "mni": "Manipuri",
-    "ks": "Kashmiri",
-    "sd": "Sindhi",
-    "sat": "Santali",
-    "brx": "Bodo"
+# Stable public Unsplash images used only when a publisher image is unavailable.
+# The URL changes automatically with each update/date, so the motivation panel
+# never remains blank.
+MOTIVATION_IMAGES = [
+    "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1600&q=85",
+    "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1600&q=85",
+    "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=85",
+    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=85",
+    "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1600&q=85",
+    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=85",
+    "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=1600&q=85",
+    "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=85",
+]
+
+NEWS_FALLBACK_IMAGES = {
+    "India": [
+        "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=1200&q=80",
+    ],
+    "World": [
+        "https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1200&q=80",
+    ],
+    "Sports": [
+        "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1200&q=80",
+    ],
+    "Science & Technology": [
+        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+    ],
+    "Economy": [
+        "https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80",
+    ],
+    "Environment": [
+        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    ],
+    "Health": [
+        "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80",
+    ],
+    "default": [
+        "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1200&q=80",
+    ],
+}
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (compatible; AURA-EXAM-AI/1.0; +https://github.com/)"
 }
 
 
-# ============================================================
-# CATEGORY
-# ============================================================
-
-def normalize_category(category):
-    value = str(category or "").lower()
-
-    if "sport" in value or "cricket" in value:
-        return "Sports"
-
-    if (
-        "science" in value
-        or "technology" in value
-        or "tech" in value
-    ):
-        return "Science & Technology"
-
-    if (
-        "econom" in value
-        or "business" in value
-        or "market" in value
-    ):
-        return "Economy"
-
-    if (
-        "environment" in value
-        or "climate" in value
-    ):
-        return "Environment"
-
-    if (
-        "health" in value
-        or "medical" in value
-    ):
-        return "Health"
-
-    if (
-        "world" in value
-        or "international" in value
-    ):
-        return "World"
-
-    return "India"
-
-
-# ============================================================
-# TEXT HELPERS
-# ============================================================
-
 def clean_text(value):
-    if not value:
+    if value is None:
         return ""
+    value = BeautifulSoup(str(value), "html.parser").get_text(" ", strip=True)
+    return re.sub(r"\s+", " ", value).strip()
 
-    value = html.unescape(str(value))
 
-    value = BeautifulSoup(
-        value,
-        "html.parser"
-    ).get_text(" ", strip=True)
+def normalize_title(value):
+    value = clean_text(value).lower()
+    value = re.sub(r"[^a-z0-9\s]", " ", value)
+    return re.sub(r"\s+", " ", value).strip()
 
-    value = re.sub(r"\s+", " ", value)
 
-    return value.strip()
-
-
-def safe_list(value):
-    if isinstance(value, list):
-        return [
-            str(x).strip()
-            for x in value
-            if str(x).strip()
-        ]
-
-    if isinstance(value, str) and value.strip():
-        return [value.strip()]
-
-    return []
-
-
-def safe_vocabulary(value):
-    result = []
-
-    if not isinstance(value, list):
-        return result
-
-    for item in value:
-        if not isinstance(item, dict):
-            continue
-
-        word = clean_text(
-            item.get("word", "")
-        )
-
-        meaning = clean_text(
-            item.get("meaning_hindi", "")
-        )
-
-        if word:
-            result.append({
-                "word": word,
-                "meaning_hindi": meaning
-            })
-
-    return result
-
-
-# ============================================================
-# SAFE ENTITIES
-# ============================================================
-
-def safe_entities(value):
-    result = {
-        "people": [],
-        "countries": [],
-        "states": [],
-        "places": []
-    }
-
-    if not isinstance(value, dict):
-        return result
-
-    for entity_type in result.keys():
-
-        items = value.get(
-            entity_type,
-            []
-        )
-
-        if not isinstance(items, list):
-            continue
-
-        for item in items:
-
-            if not isinstance(item, dict):
-                continue
-
-            name = clean_text(
-                item.get("name", "")
-            )
-
-            wikipedia_url = clean_text(
-                item.get("wikipedia_url", "")
-            )
-
-            if not name:
-                continue
-
-            result[entity_type].append({
-                "name": name,
-                "wikipedia_url": wikipedia_url
-            })
-
-    return result
-
-
-# ============================================================
-# SAFE TRANSLATIONS
-# ============================================================
-
-def safe_translations(value):
-    result = {}
-
-    if not isinstance(value, dict):
-        return result
-
-    for language_code in INDIAN_LANGUAGES.keys():
-
-        if language_code == "en":
-            continue
-
-        translation = value.get(
-            language_code
-        )
-
-        if not isinstance(
-            translation,
-            dict
-        ):
-            continue
-
-        cleaned = {}
-
-        for field in [
-            "headline",
-            "story_lead",
-            "full_article_text",
-            "background_context",
-            "bullet_points",
-            "key_facts",
-            "key_locations",
-            "important_dates"
-        ]:
-
-            field_value = translation.get(
-                field
-            )
-
-            if isinstance(
-                field_value,
-                list
-            ):
-                cleaned[field] = [
-                    clean_text(x)
-                    for x in field_value
-                    if clean_text(x)
-                ]
-
-            elif isinstance(
-                field_value,
-                str
-            ):
-                cleaned[field] = clean_text(
-                    field_value
-                )
-
-        if cleaned:
-            result[language_code] = cleaned
-
-    return result
-
-
-def make_id(url, title):
-
-    base = str(url or title)
-
-    digest = hashlib.sha256(
-        base.encode("utf-8")
-    ).hexdigest()[:12]
-
-    return int(digest, 16) % 900000000 + 100000000
-
-
-# ============================================================
-# UNIQUE CANDIDATE ID
-# ============================================================
-
-def make_candidate_id(url, title):
-
-    base = (
-        str(url or "").strip()
-        + "|"
-        + str(title or "").strip()
-    )
-
-    return hashlib.sha256(
-        base.encode("utf-8")
-    ).hexdigest()[:20]
-
-
-# ============================================================
-# RSS
-# ============================================================
-
-def collect_news():
-
-    candidates = []
-
-    for source in RSS_SOURCES:
-
-        print(
-            "Reading:",
-            source["name"]
-        )
-
-        try:
-
-            response = requests.get(
-                source["url"],
-                headers=HEADERS,
-                timeout=20
-            )
-
-            response.raise_for_status()
-
-            feed = feedparser.parse(
-                response.content
-            )
-
-            for item in feed.entries[:50]:
-
-                title = clean_text(
-                    item.get(
-                        "title",
-                        ""
-                    )
-                )
-
-                summary = clean_text(
-                    item.get(
-                        "summary",
-                        ""
-                    )
-                    or item.get(
-                        "description",
-                        ""
-                    )
-                )
-
-                url = str(
-                    item.get(
-                        "link",
-                        ""
-                    )
-                ).strip()
-
-                if not title or not url:
-                    continue
-
-                candidate_id = make_candidate_id(
-                    url,
-                    title
-                )
-
-                candidates.append({
-
-                    "source_id": source["id"],
-
-                    "candidate_id": candidate_id,
-
-                    "source": source["name"],
-                    "category": source["category"],
-                    "title": title,
-                    "summary": summary,
-                    "url": url
-                })
-
-        except Exception as exc:
-
-            print(
-                "Source failed:",
-                source["name"],
-                str(exc)
-            )
-
-    return deduplicate(
-        candidates
-    )
-
-
-def deduplicate(items):
-
-    result = []
-
-    seen_urls = set()
-    seen_titles = set()
-
-    for item in items:
-
-        url = (
-            item["url"]
-            .lower()
-            .strip()
-        )
-
-        title_key = re.sub(
-            r"[^a-z0-9]+",
-            "",
-            item["title"].lower()
-        )
-
-        if url in seen_urls:
-            continue
-
-        if title_key in seen_titles:
-            continue
-
-        seen_urls.add(url)
-        seen_titles.add(title_key)
-
-        result.append(item)
-
-    return result
-
-
-# ============================================================
-# JSON
-# ============================================================
-
-def load_json(path, default):
-
+def safe_json_load(path, default):
     if not os.path.exists(path):
         return default
-
     try:
-
-        with open(
-            path,
-            "r",
-            encoding="utf-8"
-        ) as file:
-
-            return json.load(file)
-
-    except Exception:
-
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as exc:
+        print(f"Could not read {path}: {exc}")
         return default
 
 
 def save_json(path, data):
-
-    directory = os.path.dirname(path)
-
-    if directory:
-
-        os.makedirs(
-            directory,
-            exist_ok=True
-        )
-
-    with open(
-        path,
-        "w",
-        encoding="utf-8"
-    ) as file:
-
-        json.dump(
-            data,
-            file,
-            ensure_ascii=False,
-            indent=2
-        )
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    os.replace(tmp, path)
 
 
-def load_today():
-
-    path = os.path.join(
-        DATA_DIR,
-        TODAY + ".json"
-    )
-
-    data = load_json(
-        path,
-        {
-            "date": TODAY,
-            "news": []
-        }
-    )
-
-    if not isinstance(
-        data,
-        dict
-    ):
-
-        data = {
-            "date": TODAY,
-            "news": []
-        }
-
-    if not isinstance(
-        data.get("news"),
-        list
-    ):
-
-        data["news"] = []
-
-    data["date"] = TODAY
-
-    return data
+def article_key(article):
+    url = clean_text(article.get("source_url", ""))
+    title = normalize_title(article.get("headline", ""))
+    return hashlib.sha1((url + "|" + title).encode("utf-8")).hexdigest()
 
 
-# ============================================================
-# SOURCE ARTICLE
-# ============================================================
-
-def fetch_article_text(url):
-
+def fetch_page(url):
     try:
-
-        response = requests.get(
-            url,
-            headers=HEADERS,
-            timeout=15
-        )
-
-        response.raise_for_status()
-
-        soup = BeautifulSoup(
-            response.text,
-            "html.parser"
-        )
-
-        for element in soup([
-            "script",
-            "style",
-            "noscript",
-            "svg",
-            "nav",
-            "footer",
-            "header",
-            "form"
-        ]):
-
-            element.decompose()
-
-        paragraphs = []
-
-        for paragraph in soup.find_all("p"):
-
-            text_value = clean_text(
-                paragraph.get_text(
-                    " ",
-                    strip=True
-                )
-            )
-
-            if len(text_value) >= 40:
-
-                paragraphs.append(
-                    text_value
-                )
-
-        return "\n\n".join(
-            paragraphs[:35]
-        )[:12000]
-
+        r = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
+        r.raise_for_status()
+        return r.text
     except Exception as exc:
-
-        print(
-            "Article fetch failed:",
-            str(exc)
-        )
-
+        print(f"Page fetch failed: {url} -> {exc}")
         return ""
 
 
-# ============================================================
-# WIKIPEDIA
-# ============================================================
-
-def wikipedia_search(entity_name):
-
-    try:
-
-        response = requests.get(
-            "https://en.wikipedia.org/w/api.php",
-            params={
-                "action": "query",
-                "list": "search",
-                "srsearch": entity_name,
-                "format": "json",
-                "utf8": 1,
-                "srlimit": 1
-            },
-            headers=HEADERS,
-            timeout=10
-        )
-
-        response.raise_for_status()
-
-        data = response.json()
-
-        results = (
-            data
-            .get("query", {})
-            .get("search", [])
-        )
-
-        if not results:
-            return ""
-
-        title = results[0].get(
-            "title",
-            ""
-        )
-
-        if not title:
-            return ""
-
-        return (
-            "https://en.wikipedia.org/wiki/"
-            + requests.utils.quote(
-                title.replace(" ", "_"),
-                safe="_()"
-            )
-        )
-
-    except Exception as exc:
-
-        print(
-            "Wikipedia lookup failed:",
-            entity_name,
-            str(exc)
-        )
-
+def extract_image_from_html(html, base_url):
+    if not html:
         return ""
-
-
-def enrich_entities_with_wikipedia(
-    entities
-):
-
-    if not isinstance(
-        entities,
-        dict
-    ):
-
-        return safe_entities({})
-
-    result = safe_entities(
-        entities
-    )
-
-    for entity_type in result:
-
-        for entity in result[
-            entity_type
-        ]:
-
-            if not entity.get(
-                "wikipedia_url"
-            ):
-
-                entity[
-                    "wikipedia_url"
-                ] = wikipedia_search(
-                    entity["name"]
-                )
-
-                time.sleep(0.1)
-
-    return result
-
-
-# ============================================================
-# GEMINI
-# ============================================================
-
-def call_gemini(prompt):
-
-    models = [
-        "gemini-3.6-flash",
-        "gemini-3.5-flash",
-        "gemini-3.5-flash-lite"
-    ]
-
-    last_error = None
-
-    for model_name in models:
-
-        for attempt in range(3):
-
-            try:
-
-                response = gemini.models.generate_content(
-
-                    model=model_name,
-
-                    contents=prompt,
-
-                    config=types.GenerateContentConfig(
-                        temperature=0.2,
-                        response_mime_type="application/json"
-                    )
-                )
-
-                text_value = (
-                    response.text.strip()
-                )
-
-                if text_value.startswith(
-                    "```"
-                ):
-
-                    text_value = re.sub(
-                        r"^```json\s*",
-                        "",
-                        text_value,
-                        flags=re.IGNORECASE
-                    )
-
-                    text_value = re.sub(
-                        r"\s*```$",
-                        "",
-                        text_value
-                    )
-
-                return json.loads(
-                    text_value
-                )
-
-            except Exception as exc:
-
-                last_error = exc
-
-                print(
-                    "Gemini error:",
-                    str(exc)
-                )
-
-                time.sleep(2)
-
-    raise RuntimeError(
-        "Gemini failed: "
-        + str(last_error)
-    )
-
-
-# ============================================================
-# GENERATE ARTICLES + QUIZ + EXAM CLASSIFICATION
-# ============================================================
-
-def generate_articles(candidates):
-
-    prepared = []
-
-    for candidate in candidates:
-
-        source_text = fetch_article_text(
-            candidate["url"]
-        )
-
-        prepared.append({
-
-            "candidate_id": candidate[
-                "candidate_id"
-            ],
-
-            "source_id": candidate[
-                "source_id"
-            ],
-
-            "source": candidate[
-                "source"
-            ],
-
-            "category": candidate[
-                "category"
-            ],
-
-            "title": candidate[
-                "title"
-            ],
-
-            "summary": candidate[
-                "summary"
-            ],
-
-            "url": candidate[
-                "url"
-            ],
-
-            "source_text": source_text
-        })
-
-    material = json.dumps(
-        prepared,
-        ensure_ascii=False
-    )
-
-    language_instruction = """
-
-For every article also create translations for the following
-Indian languages:
-
-hi = Hindi
-bn = Bengali
-te = Telugu
-mr = Marathi
-ta = Tamil
-gu = Gujarati
-kn = Kannada
-ml = Malayalam
-pa = Punjabi
-as = Assamese
-or = Odia
-ur = Urdu
-sa = Sanskrit
-ne = Nepali
-kok = Konkani
-mai = Maithili
-doi = Dogri
-mni = Manipuri
-ks = Kashmiri
-sd = Sindhi
-sat = Santali
-brx = Bodo
-
-English is the original language and must remain available.
-
-Translations are required ONLY for the main news reading
-content:
-
-headline
-story_lead
-full_article_text
-background_context
-bullet_points
-key_facts
-key_locations
-important_dates
-
-Do not translate the quiz, vocabulary, URLs, source name,
-Wikipedia URLs, or the clock.
-
-Do not invent information while translating.
-Preserve names, numbers, dates and factual meaning.
-"""
-
-    prompt = (
-
-        "You are the editorial engine for AURA EXAM AI. "
-        "Create factual current-affairs articles for Indian "
-        "competitive-exam students.\n\n"
-
-        "Use only the supplied source material. "
-        "Do not invent facts. "
-        "Do not copy long source passages. "
-        "Create original educational notes.\n\n"
-
-        "Political and government stories must remain neutral "
-        "and factual. Do not endorse or oppose political parties, "
-        "candidates or governments. Do not predict election results.\n\n"
-
-        "For EVERY news item create EXACTLY ONE quiz question "
-        "based specifically on that news item.\n\n"
-
-        "The quiz must contain:\n"
-        "question\n"
-        "options: exactly 4 options\n"
-        "correct_answer: the exact correct option text\n"
-        "explanation\n\n"
-
-        "For EVERY news item determine whether it is directly "
-        "useful for Indian competitive examinations.\n\n"
-
-        "Set exam_specific to TRUE when the news has meaningful "
-        "relevance to exams such as UPSC/Civil Services, SSC, "
-        "Banking/RBI, Railways, Defence examinations, State PSC, "
-        "government examinations or similar Indian competitive "
-        "examinations.\n\n"
-
-        "Examples include:\n"
-        "Indian government schemes and policies, constitutional "
-        "issues, Parliament, legislation, Supreme Court, "
-        "appointments, awards, reports, indices, economy, RBI, "
-        "budget, international relations involving India, "
-        "important organisations, defence, science and technology, "
-        "environment, geography, census/demography, important "
-        "days, summits, books/authors, sports achievements with "
-        "exam relevance and major national developments.\n\n"
-
-        "Do NOT mark every India news story as exam_specific. "
-        "Routine crime, celebrity gossip, trivial local incidents "
-        "and ordinary entertainment news should normally be FALSE.\n\n"
-
-        "Identify important entities appearing in the article.\n"
-
-        "Return:\n"
-        "people\n"
-        "countries\n"
-        "states\n"
-        "places\n\n"
-
-        "Each entity must contain only:\n"
-        "name\n"
-        "wikipedia_url\n\n"
-
-        "If you are not confident about the exact Wikipedia "
-        "URL, return an empty wikipedia_url. Do not invent URLs.\n\n"
-
-        "Return these article fields:\n"
-
-        "candidate_id\n"
-        "source_id\n"
-        "source\n"
-        "category\n"
-        "exam_specific\n"
-        "headline\n"
-        "story_lead\n"
-        "full_article_text\n"
-        "background_context\n"
-        "bullet_points\n"
-        "key_facts\n"
-        "key_locations\n"
-        "important_dates\n"
-        "exam_relevance\n"
-        "upsc_analysis\n"
-        "causes\n"
-        "impacts\n"
-        "challenges\n"
-        "government_steps\n"
-        "constitutional_or_policy_link\n"
-        "way_forward\n"
-        "mains_notes\n"
-        "mains_questions\n"
-        "takeaway\n"
-        "prelims_facts\n"
-        "vocabulary\n"
-        "entities\n"
-        "translations\n"
-        "quiz\n\n"
-
-        "Vocabulary must contain objects with "
-        "word and meaning_hindi.\n\n"
-
-        + language_instruction
-
-        +
-
-        "\nReturn ONLY valid JSON:\n"
-
-        "{"
-        "\"articles\":["
-        "{"
-        "\"candidate_id\":\"\","
-        "\"source_id\":\"\","
-        "\"source\":\"\","
-        "\"category\":\"\","
-        "\"exam_specific\":false,"
-        "\"headline\":\"\","
-        "\"story_lead\":\"\","
-        "\"full_article_text\":\"\","
-        "\"background_context\":\"\","
-        "\"bullet_points\":[],"
-        "\"key_facts\":[],"
-        "\"key_locations\":[],"
-        "\"important_dates\":[],"
-        "\"exam_relevance\":\"\","
-        "\"upsc_analysis\":\"\","
-        "\"causes\":[],"
-        "\"impacts\":[],"
-        "\"challenges\":[],"
-        "\"government_steps\":[],"
-        "\"constitutional_or_policy_link\":\"\","
-        "\"way_forward\":\"\","
-        "\"mains_notes\":\"\","
-        "\"mains_questions\":[],"
-        "\"takeaway\":\"\","
-        "\"prelims_facts\":[],"
-
-        "\"vocabulary\":["
-        "{"
-        "\"word\":\"\","
-        "\"meaning_hindi\":\"\""
-        "}"
-        "],"
-
-        "\"entities\":{"
-        "\"people\":[],"
-        "\"countries\":[],"
-        "\"states\":[],"
-        "\"places\":[]"
-        "},"
-
-        "\"translations\":{"
-        "\"hi\":{"
-        "\"headline\":\"\","
-        "\"story_lead\":\"\","
-        "\"full_article_text\":\"\","
-        "\"background_context\":\"\","
-        "\"bullet_points\":[],"
-        "\"key_facts\":[],"
-        "\"key_locations\":[],"
-        "\"important_dates\":[]"
-        "}"
-        "},"
-
-        "\"quiz\":{"
-        "\"question\":\"\","
-        "\"options\":[],"
-        "\"correct_answer\":\"\","
-        "\"explanation\":\"\""
-        "}"
-        "}"
-        "]"
-        "}\n\n"
-
-        "SUPPLIED NEWS:\n"
-        + material
-    )
-
-    result = call_gemini(
-        prompt
-    )
-
-    if not isinstance(
-        result,
-        dict
-    ):
-        return []
-
-    articles = result.get(
-        "articles",
-        []
-    )
-
-    if not isinstance(
-        articles,
-        list
-    ):
-        return []
-
-    return articles
-
-
-# ============================================================
-# CONVERT
-# ============================================================
-
-def convert_articles(
-    generated,
-    candidates
-):
-
-    converted = []
-
-    candidate_lookup = {}
-
-    for candidate in candidates:
-
-        candidate_lookup[
-            candidate["candidate_id"]
-        ] = candidate
-
-    for item in generated:
-
-        if not isinstance(
-            item,
-            dict
-        ):
+    soup = BeautifulSoup(html, "html.parser")
+
+    candidates = []
+    for attrs in [
+        {"property": "og:image"},
+        {"name": "twitter:image"},
+        {"property": "og:image:url"},
+    ]:
+        tag = soup.find("meta", attrs=attrs)
+        if tag and tag.get("content"):
+            candidates.append(tag.get("content"))
+
+    for link in soup.find_all("link"):
+        rel = " ".join(link.get("rel", [])).lower()
+        href = link.get("href", "")
+        if href and "image" in rel:
+            candidates.append(href)
+
+    for value in candidates:
+        value = clean_text(value)
+        if value.startswith("//"):
+            value = "https:" + value
+        value = urljoin(base_url, value)
+        if value.startswith("http://") or value.startswith("https://"):
+            return value
+
+    return ""
+
+
+def extract_page_text(html):
+    if not html:
+        return ""
+    soup = BeautifulSoup(html, "html.parser")
+    for tag in soup(["script", "style", "noscript", "svg", "header", "footer", "nav"]):
+        tag.decompose()
+    main = soup.find("article") or soup.find("main") or soup.body or soup
+    paragraphs = [clean_text(p.get_text(" ", strip=True)) for p in main.find_all(["p", "h2", "h3"])]
+    paragraphs = [p for p in paragraphs if len(p) >= 30]
+    return "\n\n".join(paragraphs[:80])
+
+
+def rss_candidates():
+    candidates = []
+    seen = set()
+
+    for source_name, category, rss_url in RSS_SOURCES:
+        try:
+            feed = feedparser.parse(rss_url)
+            print(f"{source_name}: {len(feed.entries)} RSS entries")
+        except Exception as exc:
+            print(f"RSS failed: {source_name} -> {exc}")
             continue
 
-        candidate_id = clean_text(
-            item.get(
-                "candidate_id",
-                ""
-            )
-        )
+        for entry in feed.entries[:MAX_CANDIDATES_PER_SOURCE]:
+            title = clean_text(entry.get("title", ""))
+            url = clean_text(entry.get("link", ""))
+            if not title or not url:
+                continue
 
-        candidate = candidate_lookup.get(
-            candidate_id
-        )
+            key = (normalize_title(title), url.split("?")[0].rstrip("/"))
+            if key in seen:
+                continue
+            seen.add(key)
 
-        if candidate is None:
-
-            source_id = clean_text(
-                item.get(
-                    "source_id",
-                    ""
-                )
-            )
-
-            headline_temp = clean_text(
-                item.get(
-                    "headline",
-                    ""
-                )
-            )
-
-            for current in candidates:
-
-                if (
-                    current["source_id"]
-                    == source_id
-                    and (
-                        current["title"].lower()
-                        in headline_temp.lower()
-                        or headline_temp.lower()
-                        in current["title"].lower()
-                    )
-                ):
-
-                    candidate = current
+            image = ""
+            for field in ("media_content", "media_thumbnail", "enclosures"):
+                values = entry.get(field, []) or []
+                if isinstance(values, dict):
+                    values = [values]
+                for item in values:
+                    if isinstance(item, dict):
+                        image = item.get("url") or item.get("href") or ""
+                        if image:
+                            break
+                if image:
                     break
 
-        if candidate is None:
-            continue
+            published = entry.get("published") or entry.get("updated") or ""
 
-        source_id = clean_text(
-            item.get(
-                "source_id",
-                candidate["source_id"]
+            candidates.append({
+                "source_name": source_name,
+                "category": category,
+                "headline": title,
+                "source_url": url,
+                "rss_image": image,
+                "published_raw": clean_text(published),
+            })
+
+    return candidates
+
+
+def valid_image_url(url):
+    if not url:
+        return False
+    u = url.lower()
+    return u.startswith("http://") or u.startswith("https://")
+
+
+def choose_unique_image(candidate, article, used_images, index):
+    image = candidate.get("rss_image", "")
+    if not valid_image_url(image):
+        image = ""
+
+    if not image:
+        html = candidate.get("page_html", "")
+        image = extract_image_from_html(html, candidate.get("source_url", ""))
+
+    if image and image not in used_images:
+        used_images.add(image)
+        return image
+
+    category = article.get("category", "default")
+    pool = NEWS_FALLBACK_IMAGES.get(category, NEWS_FALLBACK_IMAGES["default"])
+    for offset in range(len(pool)):
+        fallback = pool[(index + offset) % len(pool)]
+        if fallback not in used_images:
+            used_images.add(fallback)
+            return fallback
+
+    # Last-resort unique URL, still deterministic and valid.
+    fallback = NEWS_FALLBACK_IMAGES["default"][index % len(NEWS_FALLBACK_IMAGES["default"])]
+    used_images.add(fallback)
+    return fallback
+
+
+def parse_json_response(text):
+    text = (text or "").strip()
+    text = re.sub(r"^```(?:json)?\s*", "", text, flags=re.I)
+    text = re.sub(r"\s*```$", "", text)
+    try:
+        return json.loads(text)
+    except Exception:
+        start = text.find("{")
+        end = text.rfind("}")
+        if start >= 0 and end > start:
+            return json.loads(text[start:end + 1])
+        raise
+
+
+def call_gemini(client, prompt):
+    last_error = None
+    for model in GEMINI_MODELS:
+        try:
+            response = client.models.generate_content(
+                model=model,
+                contents=prompt,
+                config={
+                    "response_mime_type": "application/json",
+                    "temperature": 0.2,
+                },
             )
-        )
-
-        headline = clean_text(
-            item.get(
-                "headline",
-                ""
-            )
-        )
-
-        if not headline:
-            continue
-
-        quiz = item.get(
-            "quiz",
-            {}
-        )
-
-        if not isinstance(
-            quiz,
-            dict
-        ):
-            quiz = {}
-
-        options = safe_list(
-            quiz.get(
-                "options"
-            )
-        )
-
-        correct_answer = clean_text(
-            quiz.get(
-                "correct_answer",
-                ""
-            )
-        )
-
-        if len(options) != 4:
-            continue
-
-        if correct_answer not in options:
-            continue
-
-        entities = enrich_entities_with_wikipedia(
-            item.get(
-                "entities",
-                {}
-            )
-        )
-
-        translations = safe_translations(
-            item.get(
-                "translations",
-                {}
-            )
-        )
-
-        article = {
-
-            "id": make_id(
-                candidate["url"],
-                headline
-            ),
-
-            "candidate_id": candidate[
-                "candidate_id"
-            ],
-
-            "source_id": source_id,
-
-            "source": clean_text(
-                item.get(
-                    "source",
-                    candidate["source"]
-                )
-            ),
-
-            "category": normalize_category(
-                item.get(
-                    "category",
-                    candidate["category"]
-                )
-            ),
-
-            "exam_specific": bool(
-                item.get(
-                    "exam_specific",
-                    False
-                )
-            ),
-
-            "headline": headline,
-
-            "story_lead": clean_text(
-                item.get(
-                    "story_lead",
-                    ""
-                )
-            ),
-
-            "full_article_text": clean_text(
-                item.get(
-                    "full_article_text",
-                    ""
-                )
-            ),
-
-            "background_context": clean_text(
-                item.get(
-                    "background_context",
-                    ""
-                )
-            ),
-
-            "bullet_points": safe_list(
-                item.get(
-                    "bullet_points"
-                )
-            ),
-
-            "key_facts": safe_list(
-                item.get(
-                    "key_facts"
-                )
-            ),
-
-            "key_locations": safe_list(
-                item.get(
-                    "key_locations"
-                )
-            ),
-
-            "important_dates": safe_list(
-                item.get(
-                    "important_dates"
-                )
-            ),
-
-            "exam_relevance": clean_text(
-                item.get(
-                    "exam_relevance",
-                    ""
-                )
-            ),
-
-            "upsc_analysis": clean_text(
-                item.get(
-                    "upsc_analysis",
-                    ""
-                )
-            ),
-
-            "causes": safe_list(
-                item.get(
-                    "causes"
-                )
-            ),
-
-            "impacts": safe_list(
-                item.get(
-                    "impacts"
-                )
-            ),
-
-            "challenges": safe_list(
-                item.get(
-                    "challenges"
-                )
-            ),
-
-            "government_steps": safe_list(
-                item.get(
-                    "government_steps"
-                )
-            ),
-
-            "constitutional_or_policy_link":
-                clean_text(
-                    item.get(
-                        "constitutional_or_policy_link",
-                        ""
-                    )
-                ),
-
-            "way_forward": clean_text(
-                item.get(
-                    "way_forward",
-                    ""
-                )
-            ),
-
-            "mains_notes": clean_text(
-                item.get(
-                    "mains_notes",
-                    ""
-                )
-            ),
-
-            "mains_questions": safe_list(
-                item.get(
-                    "mains_questions"
-                )
-            ),
-
-            "takeaway": clean_text(
-                item.get(
-                    "takeaway",
-                    ""
-                )
-            ),
-
-            "prelims_facts": safe_list(
-                item.get(
-                    "prelims_facts"
-                )
-            ),
-
-            "vocabulary": safe_vocabulary(
-                item.get(
-                    "vocabulary"
-                )
-            ),
-
-            "entities": entities,
-
-            "translations": translations,
-
-            "quiz": {
-
-                "question": clean_text(
-                    quiz.get(
-                        "question",
-                        ""
-                    )
-                ),
-
-                "options": options,
-
-                "correct_answer":
-                    correct_answer,
-
-                "explanation": clean_text(
-                    quiz.get(
-                        "explanation",
-                        ""
-                    )
-                )
-            },
-
-            "url": candidate[
-                "url"
-            ],
-
-            "image_url": "",
-
-            "published": TODAY
-        }
-
-        converted.append(
-            article
-        )
-
-    return converted
+            text = getattr(response, "text", None)
+            if text:
+                return parse_json_response(text)
+        except Exception as exc:
+            last_error = exc
+            print(f"Gemini {model} failed: {exc}")
+            time.sleep(1)
+    raise RuntimeError(f"All Gemini models failed: {last_error}")
 
 
-# ============================================================
-# AUTOMATIC DAILY MOTIVATIONAL IMAGE
-# ============================================================
+def article_prompt(candidate, page_text):
+    return f"""
+You are the content engine for AURA EXAM AI, an Indian competitive-exam current-affairs website.
+Create a factually grounded study article ONLY from the supplied news source material.
+Do not invent facts. Do not exaggerate. Keep political coverage neutral and descriptive.
+Return ONLY valid JSON.
 
-def escape_svg_text(value):
-    return (
-        str(value)
-        .replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-        .replace('"', "&quot;")
-        .replace("'", "&apos;")
-    )
+SOURCE:
+Publisher: {candidate['source_name']}
+Category: {candidate['category']}
+Headline: {candidate['headline']}
+URL: {candidate['source_url']}
+
+SOURCE TEXT:
+{page_text[:14000]}
+
+Required JSON object:
+{{
+  "headline": "clear factual headline",
+  "story_lead": "2-4 sentence lead",
+  "full_article_text": "coherent study-note style article based on the source",
+  "background_context": "relevant context supported by the source; do not invent",
+  "bullet_points": ["4-7 key points"],
+  "key_facts": ["important factual facts"],
+  "key_locations": ["places mentioned or clearly relevant"],
+  "important_dates": ["dates mentioned in source"],
+  "exam_relevance": ["Prelims/Mains relevance"],
+  "upsc_analysis": "balanced UPSC-oriented analysis",
+  "causes": ["causes/drivers supported by source"],
+  "impacts": ["major impacts"],
+  "challenges": ["challenges"],
+  "government_steps": ["government/institutional steps explicitly supported"],
+  "constitutional_or_policy_link": ["constitutional/policy links only when justified"],
+  "way_forward": ["practical way-forward points"],
+  "mains_notes": "compact Mains-ready notes",
+  "mains_questions": ["2-3 possible Mains questions"],
+  "takeaway": "one-line takeaway",
+  "prelims_facts": ["prelims facts"],
+  "vocabulary": [
+    {{"word": "important English word", "meaning_hindi": "Hindi meaning"}}
+  ],
+  "related_entities": [
+    {{"name": "person or place", "type": "person or place", "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=URL_ENCODED_NAME"}}
+  ],
+  "hindi_translation": {{
+    "headline": "Hindi headline",
+    "story_lead": "Hindi translation of lead",
+    "full_article_text": "Hindi translation of the full article",
+    "background_context": "Hindi background",
+    "bullet_points": ["Hindi bullet points"],
+    "key_facts": ["Hindi facts"],
+    "key_locations": ["Hindi names/places where appropriate"],
+    "important_dates": ["dates"]
+  }},
+  "quiz": {{
+    "question": "one article-specific MCQ",
+    "options": ["A", "B", "C", "D"],
+    "correct_answer": "exactly one option string",
+    "explanation": "short factual explanation"
+  }}
+}}
+"""
 
 
-def create_daily_motivation_image():
+def normalize_generated(article, candidate):
+    article = article if isinstance(article, dict) else {}
+    article["source_name"] = candidate["source_name"]
+    article["source_url"] = candidate["source_url"]
+    article["category"] = candidate["category"]
+    article["published_date"] = TODAY
 
-    motivation_dir = "motivation"
+    for key in [
+        "bullet_points", "key_facts", "key_locations", "important_dates",
+        "exam_relevance", "causes", "impacts", "challenges", "government_steps",
+        "constitutional_or_policy_link", "way_forward", "mains_questions",
+        "prelims_facts", "vocabulary", "related_entities"
+    ]:
+        if not isinstance(article.get(key), list):
+            article[key] = []
 
-    os.makedirs(
-        motivation_dir,
-        exist_ok=True
-    )
+    if not isinstance(article.get("hindi_translation"), dict):
+        article["hindi_translation"] = None
 
-    image_path = os.path.join(
-        motivation_dir,
-        f"motivation_{TODAY}.svg"
-    )
-
-    quotes = [
-        "CONSISTENCY BUILDS RESULTS",
-        "STUDY TODAY. SUCCEED TOMORROW.",
-        "YOUR PREPARATION DEFINES YOUR PERFORMANCE.",
-        "ONE FOCUSED SESSION AT A TIME.",
-        "REVISION TURNS KNOWLEDGE INTO MARKS.",
-        "DISCIPLINE BEATS LAST-MINUTE PREPARATION.",
-        "KEEP LEARNING. KEEP IMPROVING."
-    ]
-
-    day_number = (
-        datetime.now(IST)
-        .timetuple()
-        .tm_yday
-    )
-
-    quote = quotes[
-        day_number % len(quotes)
-    ]
-
-    # Different visual pattern every day
-    pattern = day_number % 5
-
-    if pattern == 0:
-        accent = "#2563eb"
-        accent2 = "#1e3a8a"
-    elif pattern == 1:
-        accent = "#16a34a"
-        accent2 = "#166534"
-    elif pattern == 2:
-        accent = "#7c3aed"
-        accent2 = "#4c1d95"
-    elif pattern == 3:
-        accent = "#ea580c"
-        accent2 = "#9a3412"
+    quiz = article.get("quiz")
+    if not isinstance(quiz, dict):
+        article["quiz"] = None
     else:
-        accent = "#0891b2"
-        accent2 = "#164e63"
+        if not isinstance(quiz.get("options"), list) or len(quiz["options"]) != 4:
+            article["quiz"] = None
 
-    quote_safe = escape_svg_text(
-        quote
-    )
-
-    date_safe = escape_svg_text(
-        datetime.now(IST).strftime(
-            "%d %B %Y"
-        )
-    )
-
-    svg = f'''<?xml version="1.0" encoding="UTF-8"?>
-<svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1600"
-    height="900"
-    viewBox="0 0 1600 900">
-
-    <defs>
-        <linearGradient
-            id="background"
-            x1="0"
-            y1="0"
-            x2="1"
-            y2="1">
-
-            <stop
-                offset="0%"
-                stop-color="{accent2}"/>
-
-            <stop
-                offset="100%"
-                stop-color="{accent}"/>
-        </linearGradient>
-
-        <filter
-            id="shadow"
-            x="-20%"
-            y="-20%"
-            width="140%"
-            height="140%">
-
-            <feDropShadow
-                dx="0"
-                dy="12"
-                stdDeviation="15"
-                flood-opacity="0.25"/>
-        </filter>
-    </defs>
-
-    <rect
-        width="1600"
-        height="900"
-        fill="url(#background)"/>
-
-    <circle
-        cx="1320"
-        cy="170"
-        r="260"
-        fill="#ffffff"
-        opacity="0.08"/>
-
-    <circle
-        cx="1450"
-        cy="700"
-        r="360"
-        fill="#ffffff"
-        opacity="0.06"/>
-
-    <circle
-        cx="160"
-        cy="760"
-        r="260"
-        fill="#ffffff"
-        opacity="0.05"/>
-
-    <rect
-        x="170"
-        y="150"
-        width="1260"
-        height="600"
-        rx="45"
-        fill="#ffffff"
-        opacity="0.96"
-        filter="url(#shadow)"/>
-
-    <text
-        x="800"
-        y="270"
-        text-anchor="middle"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="38"
-        font-weight="700"
-        fill="{accent2}">
-        AURA EXAM AI
-    </text>
-
-    <text
-        x="800"
-        y="390"
-        text-anchor="middle"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="68"
-        font-weight="800"
-        fill="#111827">
-        {quote_safe}
-    </text>
-
-    <line
-        x1="520"
-        y1="455"
-        x2="1080"
-        y2="455"
-        stroke="{accent}"
-        stroke-width="8"
-        stroke-linecap="round"/>
-
-    <text
-        x="800"
-        y="545"
-        text-anchor="middle"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="34"
-        font-weight="600"
-        fill="#374151">
-        CURRENT AFFAIRS • EXAM PREPARATION • SUCCESS
-    </text>
-
-    <text
-        x="800"
-        y="635"
-        text-anchor="middle"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="27"
-        fill="#6b7280">
-        {date_safe}
-    </text>
-
-    <text
-        x="800"
-        y="700"
-        text-anchor="middle"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="25"
-        fill="{accent2}">
-        Stay focused. Keep learning. Keep moving forward.
-    </text>
-
-</svg>
-'''
-
-    with open(
-        image_path,
-        "w",
-        encoding="utf-8"
-    ) as file:
-
-        file.write(svg)
-
-    print(
-        "Daily motivational image created:",
-        image_path
-    )
-
-    return image_path.replace(
-        os.sep,
-        "/"
-    )
+    return article
 
 
-# ============================================================
-# MOTIVATION
-# ============================================================
-
-def motivation():
-
-    quotes = [
-        "Consistency turns preparation into performance.",
-        "Read today. Revise tomorrow. Remember on exam day.",
-        "Knowledge becomes power when it is revised and applied.",
-        "Every current affair can become a better answer in the exam.",
-        "Strong preparation is built one focused session at a time."
-    ]
-
-    index = (
-        datetime.now(
-            IST
-        ).timetuple().tm_yday
-        % len(quotes)
-    )
-
-    image_path = create_daily_motivation_image()
-
+def fallback_quiz(article):
+    headline = article.get("headline") or "this current-affairs article"
     return {
-
-        "quote": quotes[index],
-
-        "date": TODAY,
-
-        "image": image_path,
-
-        "image_alt": (
-            "Daily motivational image for students "
-            "focused on examination preparation, "
-            "study and academic success"
-        )
+        "question": f"Which topic is directly discussed in the current-affairs article titled: {headline}?",
+        "options": [
+            headline,
+            "A topic not discussed in the article",
+            "An unrelated historical event",
+            "An unrelated scientific formula",
+        ],
+        "correct_answer": headline,
+        "explanation": "The correct option is the topic explicitly identified by the article headline."
     }
 
 
-# ============================================================
-# AVAILABLE DATES
-# ============================================================
-
-def available_dates():
-
-    if not os.path.exists(
-        DATA_DIR
-    ):
-        return []
-
-    result = []
-
-    for filename in os.listdir(
-        DATA_DIR
-    ):
-
-        if not filename.endswith(
-            ".json"
-        ):
+def ensure_entity_urls(article):
+    entities = article.get("related_entities") or []
+    clean_entities = []
+    seen = set()
+    for item in entities:
+        if not isinstance(item, dict):
             continue
+        name = clean_text(item.get("name", ""))
+        if not name:
+            continue
+        key = name.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        entity_type = "person" if str(item.get("type", "")).lower() == "person" else "place"
+        url = item.get("wikipedia_url") or (
+            "https://en.wikipedia.org/wiki/Special:Search?search=" + quote(name)
+        )
+        clean_entities.append({"name": name, "type": entity_type, "wikipedia_url": url})
+    article["related_entities"] = clean_entities
 
-        date_value = filename[
-            :-5
-        ]
 
-        if re.fullmatch(
-            r"\d{4}-\d{2}-\d{2}",
-            date_value
-        ):
-
-            result.append(
-                date_value
-            )
-
-    return sorted(
-        set(result),
-        reverse=True
+def needs_repair(article):
+    hindi = article.get("hindi_translation")
+    quiz = article.get("quiz")
+    vocab = article.get("vocabulary")
+    entities = article.get("related_entities")
+    return (
+        not isinstance(hindi, dict) or
+        not hindi.get("headline") or
+        not isinstance(quiz, dict) or
+        not isinstance(quiz.get("options"), list) or len(quiz.get("options", [])) != 4 or
+        not isinstance(vocab, list) or
+        not isinstance(entities, list)
     )
 
-
-# ============================================================
-# MASTER FILE
-# ============================================================
-
-def update_master(
-    today_data
-):
-
-    dates = available_dates()
-
-    if TODAY not in dates:
-        dates.append(TODAY)
-
-    dates = sorted(
-        set(dates),
-        reverse=True
-    )
-
-    master = {
-
-        "current_date": TODAY,
-
-        "available_dates": dates,
-
-        "today": today_data,
-
-        "motivation": motivation(),
-
-        "last_updated_ist":
-            CURRENT_TIME
-    }
-
-    save_json(
-        MASTER_FILE,
-        master
-    )
-
-
-# ============================================================
-# MAIN
-# ============================================================
 
 def main():
+    api_key = os.environ.get("GEMINI_API_KEY", "").strip()
+    if not api_key:
+        raise RuntimeError("GEMINI_API_KEY is not configured")
 
-    print("=" * 60)
-    print(
-        "AURA EXAM AI CURRENT AFFAIRS"
-    )
-    print("=" * 60)
+    os.makedirs(DATA_DIR, exist_ok=True)
+    client = genai.Client(api_key=api_key)
 
-    print(
-        "IST:",
-        CURRENT_TIME
-    )
+    root = safe_json_load(DATA_FILE, {})
+    if not isinstance(root, dict):
+        root = {}
 
-    print(
-        "DATE:",
-        TODAY
-    )
+    today_file = os.path.join(DATA_DIR, f"{TODAY}.json")
+    today_data = safe_json_load(today_file, {"date": TODAY, "news": []})
+    if not isinstance(today_data, dict):
+        today_data = {"date": TODAY, "news": []}
+    if not isinstance(today_data.get("news"), list):
+        today_data["news"] = []
 
-    os.makedirs(
-        DATA_DIR,
-        exist_ok=True
-    )
-
-    today_data = load_today()
-
-    existing = today_data.get(
-        "news",
-        []
-    )
-
-    print(
-        "Existing news:",
-        len(existing)
-    )
+    existing_news = today_data["news"]
+    existing_keys = {article_key(a) for a in existing_news if isinstance(a, dict)}
+    used_images = {
+        a.get("image_url") for a in existing_news
+        if isinstance(a, dict) and a.get("image_url")
+    }
 
     # --------------------------------------------------------
-    # First run = 30
-    # Every later run = +10
-    # NO 30 ARTICLE CAP
+    # Repair missing fields in existing articles.
     # --------------------------------------------------------
+    repair_targets = [a for a in existing_news if isinstance(a, dict) and needs_repair(a)]
+    print(f"Existing articles: {len(existing_news)} | repair targets: {len(repair_targets)}")
 
-    target = (
-        FIRST_RUN_COUNT
-        if len(existing) == 0
-        else UPDATE_COUNT
-    )
+    for article in repair_targets:
+        source_url = article.get("source_url", "")
+        html = fetch_page(source_url) if source_url else ""
+        source_text = extract_page_text(html)
+        if not source_text:
+            source_text = article.get("full_article_text", "")
 
-    print(
-        "New articles requested:",
-        target
-    )
-
-    candidates = collect_news()
-
-    old_urls = set()
-
-    for article in existing:
-
-        url = str(
-            article.get(
-                "url",
-                ""
-            )
-        ).lower().strip()
-
-        if url:
-            old_urls.add(
-                url
-            )
-
-    fresh = []
-
-    for candidate in candidates:
-
-        if (
-            candidate["url"]
-            .lower()
-            in old_urls
-        ):
-            continue
-
-        fresh.append(
-            candidate
-        )
-
-    # --------------------------------------------------------
-    # Add only the required number.
-    # Existing articles are NEVER deleted.
-    # --------------------------------------------------------
-
-    fresh = fresh[:target]
-
-    print(
-        "Fresh candidates:",
-        len(fresh)
-    )
-
-    if not fresh:
-
-        print(
-            "No new articles available right now."
-        )
-
-        today_data[
-            "last_updated_ist"
-        ] = CURRENT_TIME
-
-        save_json(
-            os.path.join(
-                DATA_DIR,
-                TODAY + ".json"
-            ),
-            today_data
-        )
-
-        update_master(
-            today_data
-        )
-
-        return
-
-    generated = []
-
-    batch_size = 10
-
-    for start in range(
-        0,
-        len(fresh),
-        batch_size
-    ):
-
-        batch = fresh[
-            start:start + batch_size
-        ]
+        candidate = {
+            "source_name": article.get("source_name", "News Source"),
+            "category": article.get("category", "India"),
+            "headline": article.get("headline", "Current Affairs"),
+            "source_url": source_url,
+        }
 
         try:
+            generated = call_gemini(client, article_prompt(candidate, source_text))
+            generated = normalize_generated(generated, candidate)
+            generated["id"] = article.get("id")
+            generated["image_url"] = article.get("image_url") or extract_image_from_html(html, source_url)
 
-            result = generate_articles(
-                batch
-            )
+            # Preserve the original source metadata and any existing rich fields.
+            for key, value in generated.items():
+                if key in {"source_name", "source_url", "category", "published_date", "id", "image_url"}:
+                    continue
+                if not article.get(key):
+                    article[key] = value
 
-            generated.extend(
-                result
-            )
+            if not isinstance(article.get("hindi_translation"), dict):
+                article["hindi_translation"] = generated.get("hindi_translation")
+            if not isinstance(article.get("quiz"), dict):
+                article["quiz"] = generated.get("quiz") or fallback_quiz(article)
+            if not isinstance(article.get("vocabulary"), list):
+                article["vocabulary"] = generated.get("vocabulary", [])
+            if not isinstance(article.get("related_entities"), list):
+                article["related_entities"] = generated.get("related_entities", [])
+
+            ensure_entity_urls(article)
+            if article.get("image_url"):
+                used_images.add(article["image_url"])
 
         except Exception as exc:
+            print(f"Repair failed for {article.get('headline')}: {exc}")
+            if not isinstance(article.get("quiz"), dict):
+                article["quiz"] = fallback_quiz(article)
+            if not isinstance(article.get("hindi_translation"), dict):
+                article["hindi_translation"] = {
+                    "headline": article.get("headline", ""),
+                    "story_lead": article.get("story_lead", ""),
+                    "full_article_text": article.get("full_article_text", ""),
+                    "background_context": article.get("background_context", ""),
+                    "bullet_points": article.get("bullet_points", []),
+                    "key_facts": article.get("key_facts", []),
+                    "key_locations": article.get("key_locations", []),
+                    "important_dates": article.get("important_dates", []),
+                }
+            if not isinstance(article.get("related_entities"), list):
+                article["related_entities"] = []
+            ensure_entity_urls(article)
 
-            print(
-                "Generation failed:",
-                str(exc)
-            )
-
-        time.sleep(1)
-
-    new_articles = convert_articles(
-        generated,
-        fresh
-    )
-
-    existing_ids = set()
-
-    for article in existing:
-
-        existing_ids.add(
-            str(
-                article.get(
-                    "id",
-                    ""
-                )
-            )
-        )
+    # --------------------------------------------------------
+    # Collect a large candidate pool, then add genuinely new
+    # stories. This prevents a single RSS source from limiting
+    # the run to only 5 articles.
+    # --------------------------------------------------------
+    candidates = rss_candidates()
+    target = FIRST_RUN_COUNT if len(existing_news) == 0 else UPDATE_COUNT
+    print(f"Candidate pool: {len(candidates)} | target new articles: {target}")
 
     added = 0
+    next_id = max([int(a.get("id", 0)) for a in existing_news if isinstance(a, dict) and str(a.get("id", "")).isdigit()] + [0]) + 1
 
-    for article in new_articles:
+    # Prefer candidates with distinct normalized headlines and URLs.
+    selected = []
+    seen_titles = set()
+    for candidate in candidates:
+        title_key = normalize_title(candidate["headline"])
+        url_key = candidate["source_url"].split("?")[0].rstrip("/")
+        if not title_key or title_key in seen_titles:
+            continue
+        if article_key({"headline": candidate["headline"], "source_url": candidate["source_url"]}) in existing_keys:
+            continue
+        if any(a.get("source_url", "").split("?")[0].rstrip("/") == url_key for a in existing_news):
+            continue
+        seen_titles.add(title_key)
+        selected.append(candidate)
+        if len(selected) >= target:
+            break
 
-        article_id = str(
-            article["id"]
-        )
+    for index, candidate in enumerate(selected):
+        html = fetch_page(candidate["source_url"])
+        candidate["page_html"] = html
+        page_text = extract_page_text(html)
 
-        if article_id in existing_ids:
+        if len(page_text) < 250:
+            page_text = candidate["headline"]
+
+        try:
+            generated = call_gemini(client, article_prompt(candidate, page_text))
+            article = normalize_generated(generated, candidate)
+        except Exception as exc:
+            print(f"Generation failed: {candidate['headline']} -> {exc}")
             continue
 
-        existing.append(
-            article
-        )
+        article["id"] = next_id
+        next_id += 1
+        article["published_date"] = TODAY
+        article["source_url"] = candidate["source_url"]
+        article["source_name"] = candidate["source_name"]
+        article["category"] = candidate["category"]
+        article["image_url"] = choose_unique_image(candidate, article, used_images, index)
+        article["added_at"] = NOW_ISO
+        ensure_entity_urls(article)
 
-        existing_ids.add(
-            article_id
-        )
+        if not isinstance(article.get("quiz"), dict):
+            article["quiz"] = fallback_quiz(article)
 
+        if not isinstance(article.get("hindi_translation"), dict):
+            article["hindi_translation"] = {
+                "headline": article.get("headline", ""),
+                "story_lead": article.get("story_lead", ""),
+                "full_article_text": article.get("full_article_text", ""),
+                "background_context": article.get("background_context", ""),
+                "bullet_points": article.get("bullet_points", []),
+                "key_facts": article.get("key_facts", []),
+                "key_locations": article.get("key_locations", []),
+                "important_dates": article.get("important_dates", []),
+            }
+
+        existing_news.append(article)
+        existing_keys.add(article_key(article))
         added += 1
+        print(f"Added #{article['id']}: {article['headline']}")
 
-    today_data[
-        "news"
-    ] = existing
+    # Ensure all old and new articles have an image and entity URL data.
+    for index, article in enumerate(existing_news):
+        if not article.get("image_url"):
+            article["image_url"] = choose_unique_image({}, article, used_images, index)
+        ensure_entity_urls(article)
+        if not isinstance(article.get("quiz"), dict):
+            article["quiz"] = fallback_quiz(article)
 
-    today_data[
-        "last_updated_ist"
-    ] = CURRENT_TIME
+    # Stable newest-first ordering.
+    existing_news.sort(key=lambda a: int(a.get("id", 0)) if str(a.get("id", "")).isdigit() else 0, reverse=True)
 
-    daily_file = os.path.join(
-        DATA_DIR,
-        TODAY + ".json"
-    )
+    today_data["date"] = TODAY
+    today_data["updated_at"] = NOW_ISO
+    today_data["news"] = existing_news
+    today_data["count"] = len(existing_news)
+    save_json(today_file, today_data)
 
-    save_json(
-        daily_file,
-        today_data
-    )
+    # --------------------------------------------------------
+    # Rebuild root index while preserving all historical dates.
+    # --------------------------------------------------------
+    available_dates = set(root.get("available_dates", []) if isinstance(root.get("available_dates"), list) else [])
+    if os.path.isdir(DATA_DIR):
+        for name in os.listdir(DATA_DIR):
+            if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", name):
+                available_dates.add(name[:-5])
+    available_dates.add(TODAY)
+    available_dates = sorted(available_dates, reverse=True)
 
-    update_master(
-        today_data
-    )
+    motivation_index = (len(available_dates) + datetime.now(IST).hour // 3) % len(MOTIVATION_IMAGES)
+    quote_index = (datetime.now(IST).hour // 3 + datetime.now(IST).timetuple().tm_yday) % len(MOTIVATION_QUOTES)
 
-    print("=" * 60)
-    print(
-        "UPDATE COMPLETE"
-    )
-    print(
-        "Date:",
-        TODAY
-    )
-    print(
-        "Added:",
-        added
-    )
-    print(
-        "Total news:",
-        len(existing)
-    )
-    print(
-        "Total quizzes:",
-        len(existing)
-    )
-    print(
-        "Motivational image:",
-        f"motivation/motivation_{TODAY}.svg"
-    )
-    print("=" * 60)
+    root.update({
+        "project": "AURA EXAM AI",
+        "current_date": TODAY,
+        "last_updated": NOW_ISO,
+        "available_dates": available_dates,
+        "today": today_data,
+        "motivation": {
+            "quote": MOTIVATION_QUOTES[quote_index],
+            "image_url": MOTIVATION_IMAGES[motivation_index],
+            "updated_at": NOW_ISO,
+        },
+    })
+
+    save_json(DATA_FILE, root)
+
+    print("----------------------------------------")
+    print(f"Today: {TODAY}")
+    print(f"Existing articles: {len(existing_news) - added}")
+    print(f"New articles added: {added}")
+    print(f"Total articles today: {len(existing_news)}")
+    print(f"Quiz count: {sum(1 for a in existing_news if isinstance(a.get('quiz'), dict))}")
+    print("----------------------------------------")
 
 
 if __name__ == "__main__":
