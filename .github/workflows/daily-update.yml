@@ -3,7 +3,8 @@ name: Update Current Affairs
 on:
   schedule:
     # Every 3 hours
-    # 06:00, 09:00, 12:00, 15:00, 18:00, 21:00, 00:00, 03:00 IST
+    # 06:00, 09:00, 12:00, 15:00, 18:00, 21:00,
+    # 00:00 and 03:00 IST
     - cron: "30 */3 * * *"
   workflow_dispatch:
 
