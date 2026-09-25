@@ -3,7 +3,6 @@ name: Update Current Affairs
 on:
   schedule:
     # Every 3 hours at :15 UTC
-    # 05:45, 08:45, 11:45, 14:45, 17:45, 20:45, 23:45 IST
     - cron: "15 */3 * * *"
   workflow_dispatch:
 
@@ -29,7 +28,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: "pip"
 
       - name: Install dependencies
         run: |
