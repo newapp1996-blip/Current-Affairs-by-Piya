@@ -1607,6 +1607,14 @@
                     🏥 Health
                 </button>
 
+                <button
+                    class="category-btn"
+                    data-category="Exam Corner"
+                    onclick="filterCategory('Exam Corner', this)"
+                >
+                    🎯 Exam Corner
+                </button>
+
             </div>
 
 
@@ -2554,12 +2562,11 @@
                 globalPayload.motivation
             ) {
 
-                if (globalPayload.motivation.quote) {
-                    document
-                        .getElementById("motivationQuote")
-                        .textContent =
-                        globalPayload.motivation.quote;
-                }
+                document
+                    .getElementById("motivationQuote")
+                    .textContent =
+                    globalPayload.motivation.quote ||
+                    "Consistency turns ordinary study into extraordinary results.";
 
                 if (globalPayload.motivation.image_url) {
                     const image = document.getElementById("motivationImage");
@@ -2927,6 +2934,12 @@
                 article.category ||
                 ""
             ).trim();
+
+        if (currentCategory === "Exam Corner") {
+            return articleCategory.toLowerCase() === "exam corner" ||
+                article.exam_corner === true ||
+                article.exam_corner === "true";
+        }
 
         return (
             articleCategory
