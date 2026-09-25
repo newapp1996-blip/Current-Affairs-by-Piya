@@ -11,6 +11,1582 @@
     "date": "2026-09-25",
     "news": [
       {
+        "category": "World",
+        "exam_corner": true,
+        "headline": "US Supreme Court Revives Controversial Federal Database for Citizenship Checks",
+        "story_lead": "The US Supreme Court has lifted restrictions allowing the administration to use a controversial federal voter database for filtering alleged non-citizen voting. The 6-3 ruling along ideological lines marks a significant legal development regarding voter rolls and privacy rights. Critics, however, warn that the decision could lead to valid voters being removed from electoral rolls.",
+        "full_article_text": "The US Supreme Court has intervened to lift restrictions on a controversial federal voter database utilized for filtering alleged non-citizen voting using citizenship and sensitive data. The Department of Homeland Security programme, known as the Systematic Alien Verification for Entitlements (SAVE), enables officials to verify voter eligibility on electoral rolls. Originally created in 1986 to check the immigration status of public benefit applicants, the system's search capabilities were expanded last year by the Trump administration to permit bulk searches using social security numbers. In June, a federal judge (US District Judge Sparkle L Soonnan) ruled that the revamped system violated privacy rights and threatened voting rights. Although a federal appeals court allowed the ruling to stand, the Supreme Court ultimately overrode it on Friday with a 6-3 decision involving six conservative justices supporting the move and three liberal justices dissenting.",
+        "background_context": "The SAVE program was originally established in 1986 to assist officials in verifying citizenship or immigration status for individuals applying for public benefits. Its scope was later expanded by the administration to permit bulk searches utilizing social security numbers for voter list verification.",
+        "bullet_points": [
+          "US Supreme Court lifted restrictions on using a controversial federal voter database for citizenship checks.",
+          "The database program is known as Systematic Alien Verification for Entitlements (SAVE).",
+          "SAVE was originally created in 1986 for public benefits applicants and later expanded for bulk social security number searches.",
+          "The Supreme Court ruling was decided by a 6-3 vote, with conservative justices in favor and liberal justices dissenting.",
+          "A lower federal court judge had previously ruled that the revamped system violated privacy and voting rights.",
+          "Critics warn the decision might lead to valid voters being removed from electoral rolls."
+        ],
+        "key_facts": [
+          "Program name: Systematic Alien Verification for Entitlements (SAVE)",
+          "Original creation year of SAVE: 1986",
+          "Supreme Court voting split: 6 conservative justices supporting, 3 liberal justices dissenting",
+          "Lower court ruling date: June (by US District Judge Sparkle L Soonnan)"
+        ],
+        "key_locations": [
+          "United States"
+        ],
+        "important_dates": [
+          "1986",
+          "June",
+          "Friday"
+        ],
+        "exam_relevance": [
+          "Prelims: International current affairs, US judicial system and voting infrastructure",
+          "Mains: Comparative study of electoral systems, voter verification mechanisms, and privacy rights"
+        ],
+        "upsc_analysis": "The Supreme Court decision highlights the ongoing tension between electoral integrity measures and citizen privacy rights in democratic systems. While administrative bodies seek robust tools to verify voter eligibility, judicial scrutiny focuses on potential overreach, disproportionate impact, and the safeguarding of fundamental voting rights. This case offers comparative insights into judicial review, federal program execution, and electoral administration debates applicable to democratic governance studies.",
+        "causes": [
+          "Administrative efforts to clamp down on allegations of non-citizen voting",
+          "Expansion of SAVE database search capabilities using social security numbers"
+        ],
+        "impacts": [
+          "Resumption of federal database usage for citizenship and voter eligibility checks",
+          "Heightened debate and concern regarding the potential removal of valid voters from electoral rolls"
+        ],
+        "challenges": [
+          "Balancing electoral integrity with the protection of citizens' privacy rights",
+          "Preventing the wrongful disenfranchisement or removal of valid voters from electoral rolls"
+        ],
+        "government_steps": [
+          "Implementation and expansion of the Systematic Alien Verification for Entitlements (SAVE) program by the Department of Homeland Security"
+        ],
+        "constitutional_or_policy_link": [
+          "Voter eligibility verification and right to vote protections"
+        ],
+        "way_forward": [
+          "Ensuring transparent oversight mechanisms in voter verification databases",
+          "Safeguarding against administrative errors that threaten legitimate voter registration"
+        ],
+        "mains_notes": "The US Supreme Court decision on the SAVE database underscores the legal complexities surrounding voter verification and electoral integrity. Balancing state efforts to prevent non-citizen voting with the protection of citizens' privacy and voting rights remains a critical governance challenge in federal democracies.",
+        "mains_questions": [
+          "Discuss the balance between electoral integrity and privacy rights in voter verification systems with reference to recent developments.",
+          "Analyze the role of judicial review in overseeing administrative voter databases and electoral rolls."
+        ],
+        "takeaway": "The US Supreme Court has allowed the continued use of a federal database for voter citizenship checks amidst ongoing debates over voter rolls and privacy rights.",
+        "prelims_facts": [
+          "SAVE stands for Systematic Alien Verification for Entitlements.",
+          "SAVE was created in 1986.",
+          "The Supreme Court decision on the SAVE database was decided by a 6-3 margin."
+        ],
+        "vocabulary": [
+          {
+            "word": "dissented",
+            "meaning_hindi": "असहमति व्यक्त की"
+          },
+          {
+            "word": "infringe",
+            "meaning_hindi": "उल्लंघन करना"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "United States Supreme Court",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=United%20States%20Supreme%20Court"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "अमेरिकी सुप्रीम कोर्ट ने नागरिकता जांच के लिए विवादास्पद अमेरिकी डेटा प्रणाली को फिर से शुरू किया",
+          "story_lead": "अमेरिकी सुप्रीम कोर्ट ने प्रशासन पर से उस विवादास्पद संघीय मतदाता डेटाबेस के उपयोग पर से प्रतिबंध हटा लिए हैं, जो कथित गैर-नागरिक मतदान को फ़िल्टर करने के लिए नागरिकता की जानकारी और अन्य संवेदनशील डेटा का उपयोग करता है।",
+          "full_article_text": "अमेरिकी सुप्रीम कोर्ट ने कथित गैर-नागरिक मतदान की जांच के लिए एक विवादास्पद संघीय मतदाता डेटाबेस का उपयोग करने के संबंध में प्रतिबंध हटा दिए हैं। गृह सुरक्षा विभाग के इस कार्यक्रम को Systematic Alien Verification for Entitlements (SAVE) कहा जाता है।",
+          "background_context": "SAVE कार्यक्रम मूल रूप से 1986 में सार्वजनिक लाभ के आवेदकों की नागरिकता या आप्रवासन स्थिति को सत्यापित करने के लिए बनाया गया था।",
+          "bullet_points": [
+            "अमेरिकी सुप्रीम कोर्ट ने संघीय मतदाता डेटाबेस के उपयोग से प्रतिबंध हटाए।",
+            "इस कार्यक्रम का नाम SAVE है।"
+          ],
+          "key_facts": [
+            "SAVE की स्थापना 1986 में हुई थी।"
+          ],
+          "key_locations": [
+            "संयुक्त राज्य अमेरिका"
+          ],
+          "important_dates": [
+            "1986",
+            "जून"
+          ]
+        },
+        "quiz": {
+          "question": "What does the acronym SAVE stand for in the context of the US voter database?",
+          "options": [
+            "Systematic Alien Verification for Entitlements",
+            "Secure Automated Voter Evaluation",
+            "Standard Alien Verification Eligibility",
+            "Systematic Access for Voter Eligibility"
+          ],
+          "correct_answer": "Systematic Alien Verification for Entitlements",
+          "explanation": "SAVE stands for Systematic Alien Verification for Entitlements, a Department of Homeland Security programme."
+        },
+        "source_name": "BBC World",
+        "source_url": "https://www.bbc.co.uk/news/articles/ck05rrj3jeylo?at_medium=RSS&at_campaign=rss",
+        "published_date": "2026-09-25",
+        "id": 856093950,
+        "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/31a7/live/59b8b570-b8fd-11f1-83cd-2998f68d9572.jpg",
+        "added_at": "2026-09-25T22:22:59.497454+05:30"
+      },
+      {
+        "category": "Economy",
+        "exam_corner": true,
+        "headline": "US-China Summit: Xi Jinping and Donald Trump Meet in Washington Amid Trade and Taiwan Tensions",
+        "story_lead": "Chinese President Xi Jinping and US President Donald Trump recently held a high-profile summit in Washington, featuring a red-carpet welcome and a state banquet. Despite the diplomatic pageantry, substantive progress remained limited, with the trade truce extended by only a few months and key disputes over tariffs, advanced US chips, and Taiwan remaining unresolved.",
+        "full_article_text": "Chinese President Xi Jinping visited Washington for a summit with US President Donald Trump, aiming to secure China's rise as a superpower and ease US pressure on trade, technology, and Taiwan. While Trump rolled out a red carpet, offering a personal airport greeting and a state banquet, Beijing did not secure all its objectives. A key trade truce pausing reciprocal tariffs was extended by only a few months, from November to January, rather than the year-long extension Beijing desired. This leaves critical disputes—such as tariffs, rare earth supplies, and advanced US chip access—deferred to future negotiations. Domestically, China faces economic challenges including weak consumer demand, high youth unemployment, and a slumped property market, making overseas export protection vital. On Taiwan, Xi reiterated that US arms sales are a red line, while Trump previously delayed a $14 billion arms package, viewing it as a negotiating chip. The leaders also discussed artificial intelligence, though concrete safeguards were sparse. Additionally, China announced the resumption of 'panda diplomacy', with pandas Ping Ping and Fu Shuang arriving in Atlanta soon. The summit's primary victory for Beijing lay in the optics, projecting Xi as Trump's equal on the global stage.",
+        "background_context": "China views the United States as attempting to contain its rise as a global superpower, particularly concerning trade, technology, and Taiwan. Conversely, the US maintains legislative commitments to supply Taiwan with defense capabilities while navigating complex geopolitical and economic competition with Beijing.",
+        "bullet_points": [
+          "President Xi Jinping and Donald Trump met in Washington for bilateral talks.",
+          "The trade truce preventing a tariff escalation was extended by only a few months, from November to January.",
+          "China's domestic economy faces headwinds including weak consumer demand, high youth unemployment, and property market slumps.",
+          "Taiwan remains a major flashpoint, with Xi labeling US arms sales a red line.",
+          "The leaders discussed artificial intelligence, though concrete regulatory safeguards were limited.",
+          "Panda diplomacy resumed with the announcement of pandas Ping Ping and Fu Shuang arriving in Atlanta.",
+          "The summit provided Beijing with significant political optics, highlighting Xi as Trump's equal."
+        ],
+        "key_facts": [
+          "The trade truce between the US and China was extended from November to January.",
+          "China's property market slump affects a country where 80% of people own their own homes.",
+          "Trump previously delayed a $14 billion arms package for Taiwan.",
+          "Pandas Ping Ping and Fu Shuang are scheduled to arrive in Atlanta as part of renewed panda diplomacy."
+        ],
+        "key_locations": [
+          "Washington",
+          "China",
+          "United States",
+          "Taiwan",
+          "Atlanta"
+        ],
+        "important_dates": [
+          "Thursday",
+          "Friday",
+          "November",
+          "January",
+          "May",
+          "April"
+        ],
+        "exam_relevance": [
+          "Prelims: International relations, bilateral summits, global trade updates.",
+          "Mains: General Studies Paper-II (International Relations - Bilateral, regional and global groupings and agreements involving India and/or affecting India's interests)."
+        ],
+        "upsc_analysis": "The high-level engagement between the United States and China highlights the complex interplay of strategic competition and pragmatic diplomacy between the world's two largest economies. For aspirants, analyzing superpower dynamics, trade negotiations, technology controls, and geopolitical flashpoints like Taiwan is crucial for understanding contemporary global governance and strategic stability.",
+        "causes": [
+          "China's desire to secure its superpower status and protect its exports amid domestic economic challenges.",
+          "US concerns regarding trade deficits, advanced technology, and security commitments in the Indo-Pacific region."
+        ],
+        "impacts": [
+          "Temporary extension of the US-China trade truce, deferring major tariff decisions.",
+          "Enhanced domestic political optics for President Xi Jinping in China.",
+          "Continued strategic ambiguity and tension surrounding US arms sales to Taiwan."
+        ],
+        "challenges": [
+          "Deep-seated disagreements over technology access, advanced US chips, and rare earth dominance.",
+          "Divergent stances on the sovereignty and security of Taiwan.",
+          "Managing economic friction amid China's domestic slowdown and high youth unemployment."
+        ],
+        "government_steps": [
+          "Holding formal presidential summits and state dinners in Washington.",
+          "Extending bilateral trade truces through ongoing negotiation rounds.",
+          "Employing diplomatic channels such as panda diplomacy to manage bilateral relations."
+        ],
+        "constitutional_or_policy_link": [
+          "US Taiwan Relations Act mandating the provision of defensive means to Taiwan."
+        ],
+        "way_forward": [
+          "Sustained high-level dialogue to prevent inadvertent conflict over flashpoints like Taiwan.",
+          "Establishing formal multilateral or bilateral frameworks for artificial intelligence safety.",
+          "Constructive engagement on global trade rules to stabilize international markets."
+        ],
+        "mains_notes": "Bilateral relations between the US and China remain characterized by a mix of strategic rivalry and tactical engagement. Recent summits underscore that while pageantry and diplomatic optics can ease immediate friction, structural disputes concerning trade, rare earths, advanced technology, and Taiwan require sustained, long-term negotiation. India must closely monitor these superpower dynamics to navigate its own strategic autonomy.",
+        "mains_questions": [
+          "Discuss the strategic implications of US-China trade negotiations and geopolitical friction over Taiwan for global stability.",
+          "Analyze how superpower competition in advanced technologies and trade impacts multilateral governance."
+        ],
+        "takeaway": "While the Washington summit offered mutual pageantry and a temporary trade truce extension, deep structural competition between the US and China over trade, technology, and Taiwan persists.",
+        "prelims_facts": [
+          "The US-China trade truce was extended from November to January.",
+          "Pandas Ping Ping and Fu Shuang are part of China's renewed panda diplomacy directed at Atlanta."
+        ],
+        "vocabulary": [
+          {
+            "word": "Superpower",
+            "meaning_hindi": "महाशक्ति"
+          },
+          {
+            "word": "Tariff",
+            "meaning_hindi": "आयात शुल्क"
+          },
+          {
+            "word": "Optics",
+            "meaning_hindi": "दृश्य प्रभाव / राजनीतिक छवि"
+          },
+          {
+            "word": "Diplomacy",
+            "meaning_hindi": "कूटनीति"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Xi Jinping",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Xi%20Jinping"
+          },
+          {
+            "name": "Donald Trump",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Donald%20Trump"
+          },
+          {
+            "name": "Taiwan",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Taiwan"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "शी जिनपिंग को मिला ट्रंप का रेड कार्पेट स्वागत - लेकिन उन्हें सब कुछ नहीं मिला जो वे चाहते थे",
+          "story_lead": "चीनी राष्ट्रपति शी जिनपिंग और अमेरिकी राष्ट्रपति डोनाल्ड ट्रम्प के बीच वाशिंगटन में एक उच्च-स्तरीय शिखर सम्मेलन आयोजित हुआ। कूटनीतिक साज-सज्जा के बावजूद, व्यापार युद्धविराम को केवल कुछ महीनों के लिए बढ़ाया गया और प्रमुख विवाद अनसुलझे रहे।",
+          "full_article_text": "चीनी राष्ट्रपति शी जिनपिंग ने अमेरिका के साथ व्यापार, प्रौद्योगिकी और ताइवान पर दबाव कम करने के उद्देश्य से वाशिंगटन का दौरा किया। हालांकि डोनाल्ड ट्रम्प ने रेड कार्पेट बिछाया, लेकिन बीजिंग को अपनी सभी माँगें नहीं मिलीं।",
+          "background_context": "चीन का मानना है कि अमेरिका एक महाशक्ति के रूप में उसके उभार को रोकने का प्रयास कर रहा है।",
+          "bullet_points": [
+            "शी जिनपिंग और डोनाल्ड ट्रम्प ने वाशिंगटन में द्विपक्षीय वार्ता की।",
+            "व्यापार युद्धविराम को नवंबर से बढ़ाकर जनवरी तक किया गया।",
+            "ताइवान और उन्नत चिप्स पर विवाद जारी हैं।"
+          ],
+          "key_facts": [
+            "व्यापार युद्धविराम को नवंबर से जनवरी तक बढ़ाया गया।"
+          ],
+          "key_locations": [
+            "वाशिंगटन",
+            "चीन",
+            "अमेरिका",
+            "ताइवान"
+          ],
+          "important_dates": [
+            "गुरुवार",
+            "शुक्रवार",
+            "नवंबर",
+            "जनवरी"
+          ]
+        },
+        "quiz": {
+          "question": "By how many months was the US-China trade truce extended during the recent summit?",
+          "options": [
+            "From November to January (a few months)",
+            "A full year",
+            "Two years",
+            "Six months"
+          ],
+          "correct_answer": "From November to January (a few months)",
+          "explanation": "The source notes that the trade truce was extended by only a few months, from November to January, instead of the year-long extension Beijing had hoped for."
+        },
+        "source_name": "BBC World",
+        "source_url": "https://www.bbc.co.uk/news/articles/cr93e4x7kdjjo?at_medium=RSS&at_campaign=rss",
+        "published_date": "2026-09-25",
+        "id": 856093949,
+        "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9194/live/2ae40780-b8b3-11f1-b1d1-571ed4d7ff2c.jpg",
+        "added_at": "2026-09-25T22:22:59.497454+05:30"
+      },
+      {
+        "category": "World",
+        "exam_corner": true,
+        "headline": "Pope Leo XIV warns against losing humanity to AI machines during France visit",
+        "story_lead": "Pope Leo XIV has commenced a four-day visit to France, using his platform to warn against the dangers of artificial intelligence and losing humanity to machines. During talks with President Emmanuel Macron and addresses to officials, the pontiff highlighted the need to disarm AI and prevent the normalisation of human exploitation.",
+        "full_article_text": "Pope Leo XIV began his four-day official visit to France by warning against the dangers of artificial intelligence, cautioning people against 'losing our humanity amid a paradise of machines'. Speaking to Church and state officials at the Élysée Palace following discussions with President Emmanuel Macron, the pontiff reiterated warnings made earlier in the year regarding the need for AI to be 'disarmed'. The visit features major public events, including a giant Mass on the Place de la Concorde in Paris, a ride in the popemobile to the Notre-Dame cathedral, and gatherings with young people and migrants. President Macron hailed the visit as a great honour, while navigating France's strict separation of state and religion. The Pope is also scheduled to visit Lourdes and Metz, where he will pay tribute to Robert Schuman, a founding father of the European Union. The visit takes place against the backdrop of shifting demographics in France, where regular church attendance has declined significantly, though interest in religious traditions and adult baptisms has seen recent growth.",
+        "background_context": "France has a historically complex relationship with the Catholic Church of Rome, historically known as the 'Eldest Daughter of the Church'. Today, France is a secular state with strict laws separating state and religion, and less than half of the population identifies as Catholic. Regular worshippers have declined from 35% in 1960 to less than 5%, and the number of priests has decreased sharply.",
+        "bullet_points": [
+          "Pope Leo XIV started a four-day visit to France with a warning about artificial intelligence and humanity.",
+          "The pontiff cautioned against losing humanity amid a paradise of machines during remarks at the Élysée Palace.",
+          "President Emmanuel Macron greeted the Pope at Orly airport, later praising the visit as a great honour.",
+          "Key events of the tour include a large Mass in Paris, a visit to Notre-Dame cathedral, and a gathering of young people at the Stade de France.",
+          "The Pope will visit Lourdes to meet abuse victims and travel to Metz to honour EU founding father Robert Schuman.",
+          "France maintains a strict separation of state and religion, with President Macron avoiding the Pope's public Masses to respect secular laws."
+        ],
+        "key_facts": [
+          "Pope Leo XIV was born in Chicago in 1955 as Robert Prevost.",
+          "The Pope warned about AI, comparing risks to the normalisation of human exploitation.",
+          "France's regular church worshippers have dropped to less than 5% of the population.",
+          "Adult baptisms in France reached 10,000 in 2025, marking an increase over five years."
+        ],
+        "key_locations": [
+          "Paris",
+          "France",
+          "Élysée Palace",
+          "Notre-Dame cathedral",
+          "Stade de France",
+          "Lourdes",
+          "Metz"
+        ],
+        "important_dates": [
+          "Saturday (Mass in Paris)",
+          "Sunday (Mass in Lourdes)",
+          "Monday (Metz visit and tribute to Robert Schuman)",
+          "2025"
+        ],
+        "exam_relevance": [
+          "Prelims: Current affairs, international relations, ethics of artificial intelligence, European geography.",
+          "Mains: Ethical implications of artificial intelligence, intersection of secularism and religion in governance, EU history and founding figures."
+        ],
+        "upsc_analysis": "The visit of Pope Leo XIV to France highlights multi-dimensional themes relevant to UPSC aspirants. Ethically, the pontiff's warning on artificial intelligence touches upon emerging global debates regarding technology regulation, human dignity, and the future of work. Politically, the interaction between the French state and the Vatican underscores the practical application of strict secularism (laïcité) in governance and diplomacy. Furthermore, historical and demographic references to European secularisation provide sociological insights into changing global religious landscapes.",
+        "causes": [
+          "Rapid advancement and proliferation of artificial intelligence technologies globally.",
+          "Shifting demographic and religious trends in France and Europe.",
+          "Diplomatic invitations and scheduled pastoral visits by the Vatican."
+        ],
+        "impacts": [
+          "Heightened public discourse on the ethical use and regulation of artificial intelligence.",
+          "Renewed focus on the coexistence of secular state policies and religious practices in France.",
+          "Spiritual engagement and mobilization of large crowds across various French cities."
+        ],
+        "challenges": [
+          "Managing logistics and security for massive public gatherings involving hundreds of thousands of attendees.",
+          "Navigating strict French secular laws regarding state participation in religious events.",
+          "Addressing complex historical and social issues, including clerical abuse scandals in Lourdes."
+        ],
+        "government_steps": [
+          "President Emmanuel Macron and French authorities organized formal state welcomes while adhering to secularism boundaries.",
+          "Extensive police deployment and sealing off of areas around the Champs-Élysées for public safety."
+        ],
+        "constitutional_or_policy_link": [
+          "French policy of strict secularism (laïcité) separating state institutions from religious observances."
+        ],
+        "way_forward": [
+          "Global policy frameworks must prioritize ethical guidelines and human-centric governance in AI development.",
+          "Governments and religious institutions should foster constructive dialogue respecting both public secularism and freedom of belief."
+        ],
+        "mains_notes": "Pope Leo XIV's visit to France underscores contemporary debates on artificial intelligence ethics, secularism, and European identity. The pontiff's warnings against losing humanity to machines align with global discussions on AI regulation. Meanwhile, the diplomatic engagements highlight the ongoing dialogue between modern secular states and religious authorities.",
+        "mains_questions": [
+          "Discuss the ethical challenges posed by artificial intelligence to human dignity, in the context of recent global warnings by religious and civil leaders.",
+          "Analyze how France balances its strict constitutional secularism with diplomatic engagements involving religious heads of state."
+        ],
+        "takeaway": "Pope Leo XIV warned against the dehumanising risks of artificial intelligence during a high-profile four-day pastoral visit to secular France.",
+        "prelims_facts": [
+          "Pope Leo XIV was born in Chicago in 1955.",
+          "Robert Schuman (1886-1963) is a founding father of the European Union.",
+          "France's regular church worshippers represent less than 5% of its population today."
+        ],
+        "vocabulary": [
+          {
+            "word": "Pontiff",
+            "meaning_hindi": "पोप / धर्मगुरु"
+          },
+          {
+            "word": "Secularism",
+            "meaning_hindi": "धर्मनिरपेक्षता"
+          },
+          {
+            "word": "Beatification",
+            "meaning_hindi": "संत घोषित करने की प्रक्रिया की दिशा में कदम"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Pope Leo XIV",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Pope%20Leo%20XIV"
+          },
+          {
+            "name": "Emmanuel Macron",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Emmanuel%20Macron"
+          },
+          {
+            "name": "Robert Schuman",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Robert%20Schuman"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "पोप ने फ्रांस की यात्रा के दौरान एआई मशीनों के सामने 'मानवता खोने' के खिलाफ चेतावनी दी",
+          "story_lead": "पोप लियो XIV ने फ्रांस की अपनी चार दिवसीय यात्रा की शुरुआत में आर्टिफिशियल इंटेलिजेंस (एआई) के खतरों के बारे में चेतावनी दी है। राष्ट्रपति इमैनुएल मैक्रोन के साथ बातचीत के बाद एलिसी पैलेस में अधिकारियों को दिए गए अपने भाषण में, पांटिफ ने मशीनों के बीच मानवता खोने के प्रति आगाह किया।",
+          "full_article_text": "पोप लियो XIV ने फ्रांस की अपनी चार दिवसीय आधिकारिक यात्रा की शुरुआत आर्टिफिशियल इंटेलिजेंस (एआई) के खतरों के बारे में चेतावनी देते हुए की। राष्ट्रपति इमैनुएल मैक्रोन के साथ बातचीत के बाद एलिसी पैलेस में चर्च और राज्य के अधिकारियों को दिए गए भाषण में उन्होंने 'मशीनों के स्वर्ग के बीच अपनी मानवता खोने' के खिलाफ आगाह किया।",
+          "background_context": "फ्रांस का रोम के कैथोलिक चर्च के साथ ऐतिहासिक रूप से जटिल संबंध रहा है। आज फ्रांस एक धर्मनिरपेक्ष देश है जहां राज्य और धर्म के अलगाव के कड़े नियम हैं।",
+          "bullet_points": [
+            "पोप लियो XIV ने मानवता और एआई पर चेतावनी के साथ फ्रांस की चार दिवसीय यात्रा शुरू की।",
+            "राष्ट्रपति इमैनुएल मैक्रोन ने ओरली हवाई अड्डे पर पोप का स्वागत किया।",
+            "यात्रा के मुख्य कार्यक्रमों में पेरिस में एक विशाल जनसभा और नॉट्रे-डेम कैथेड्रल की यात्रा शामिल है।"
+          ],
+          "key_facts": [
+            "पोप लियो XIV का जन्म 1955 में शिकागो में हुआ था।",
+            "फ्रांस में नियमित चर्च जाने वाले लोगों की संख्या जनसंख्या के 5% से कम हो गई है।"
+          ],
+          "key_locations": [
+            "पेरिस",
+            "फ्रांस",
+            "एलिसी पैलेस",
+            "लౌर्देस"
+          ],
+          "important_dates": [
+            "2025"
+          ]
+        },
+        "quiz": {
+          "question": "During his four-day visit to France, Pope Leo XIV issued a strong warning regarding which of the following technologies?",
+          "options": [
+            "Quantum Computing",
+            "Artificial Intelligence",
+            "Biotechnology",
+            "Nuclear Energy"
+          ],
+          "correct_answer": "Artificial Intelligence",
+          "explanation": "Pope Leo XIV cautioned against losing humanity amid a paradise of machines in relation to artificial intelligence during his visit to France."
+        },
+        "source_name": "BBC World",
+        "source_url": "https://www.bbc.co.uk/news/articles/cmq8j904212po?at_medium=RSS&at_campaign=rss",
+        "published_date": "2026-09-25",
+        "id": 856093948,
+        "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c7dd/live/5ddfe0d0-b8c4-11f1-b1d1-571ed4d7ff2c.jpg",
+        "added_at": "2026-09-25T22:22:59.497454+05:30"
+      },
+      {
+        "category": "Health",
+        "exam_corner": true,
+        "headline": "FBI Investigates Cyber-Attack Involving Stolen Medical and Personal Data of Thousands of Special Agents",
+        "story_lead": "The FBI is actively investigating a major cyber-attack after a hacking group known as ShinyHunters claimed to have stolen sensitive medical and personal data of tens of thousands of current and former special agents. Instead of demanding financial ransom, the hackers have issued an extortion demand seeking the retraction of a specific FBI advisory published in May.",
+        "full_article_text": "Cyber-criminals belonging to the international hacking collective ShinyHunters have reportedly breached systems accessed or utilized by the FBI, acquiring highly sensitive 'fitness-for-work' medical examinations, blood and urine test results, and personal details of thousands of special agents. BBC News and other media agencies verified samples of the stolen data, which include full names, addresses, phone numbers, badge numbers, job titles, and medical notes detailing conditions such as allergies and high cholesterol. Experts have highlighted the grave security implications of the breach, noting that permanent medical records cannot be reset like passwords, leaving agents vulnerable to phishing, identity fraud, blackmail, and targeted operations. The hacking group claims to hold information on approximately 60,000 current and former staff members, allegedly exploiting a vulnerability in an Oracle cloud storage system utilized by platforms like FBIJobs, FBI BEAST, and FBI MedLink. While the FBI has acknowledged the security breach and is aggressively investigating whether the intrusion occurred directly or via third-party providers, the hackers have threatened to publish the entire dataset unless their demand for a retraction of a May FBI advisory is met.",
+        "background_context": "The cyber-attack involves ShinyHunters, an international hacking collective active since 2019 that has been linked to previous high-profile breaches involving entities like Rockstar Games and Canvas. The compromised data allegedly spans multiple platforms including FBIJobs, FBI BEAST for background checks, FBI MedLink for medical records, and FBI BICS for investigative information.",
+        "bullet_points": [
+          "Cyber-criminals claim to have stolen sensitive medical and personal data of tens of thousands of current and former FBI special agents.",
+          "Stolen records include blood and urine test results, full names, addresses, badge numbers, and specific medical conditions.",
+          "The hacking collective ShinyHunters claimed responsibility, demanding a retraction of a May FBI advisory rather than a financial ransom.",
+          "Experts warn the breach leaves agents vulnerable to phishing, identity fraud, blackmail, and targeted attacks.",
+          "The breach reportedly impacts platforms including FBIJobs, FBI BEAST, and FBI MedLink, potentially exploiting an Oracle cloud storage system vulnerability.",
+          "The FBI is actively and aggressively investigating the breach alongside third-party providers."
+        ],
+        "key_facts": [
+          "The hacking group ShinyHunters claimed the breach occurred on Monday and posted details on a darknet site.",
+          "Hackers initially claimed the breach affected 38,000 employees, later revising the figure to around 60,000 current and former staff.",
+          "The FBI acknowledged the breach on Wednesday and stated it is investigating the incident.",
+          "ShinyHunters communicated with reporters in English via the messaging service Telegram."
+        ],
+        "key_locations": [
+          "United States"
+        ],
+        "important_dates": [
+          "May",
+          "Monday",
+          "Wednesday"
+        ],
+        "exam_relevance": [
+          "Prelims: Current events of international importance, cybersecurity concepts.",
+          "Mains (GS III): Cybersecurity, critical infrastructure protection, data privacy and challenges."
+        ],
+        "upsc_analysis": "The FBI data breach underscores the growing vulnerability of critical law enforcement databases to sophisticated cyber-threat groups. For UPSC aspirants, this case study emphasizes the critical need for robust cybersecurity frameworks, secure cloud storage management, and comprehensive data protection policies to prevent state and institutional espionage, identity fraud, and targeted attacks against security personnel.",
+        "causes": [
+          "Exploitation of a vulnerability in an Oracle cloud storage system used by third-party providers supporting FBI platforms.",
+          "Potential security gaps in institutional databases housing highly sensitive medical and personal records."
+        ],
+        "impacts": [
+          "Exposure of sensitive medical and personal data of approximately 60,000 current and former FBI personnel.",
+          "Increased vulnerability of law enforcement agents to phishing, identity fraud, blackmail, and targeted operations.",
+          "Compromise of confidential administrative, investigative, and background check records."
+        ],
+        "challenges": [
+          "The permanence of leaked medical records compared to resettable passwords.",
+          "Mitigating risks across interconnected third-party provider systems and cloud storage platforms.",
+          "Responding to non-monetary extortion demands focused on institutional policy retractions."
+        ],
+        "government_steps": [
+          "The FBI launched an active and aggressive investigation into the breach.",
+          "Working closely with third-party providers that support FBIJobs.gov to mitigate risk and determine direct versus third-party compromise."
+        ],
+        "constitutional_or_policy_link": [
+          "Data privacy and cybersecurity policy frameworks, critical information infrastructure protection."
+        ],
+        "way_forward": [
+          "Strengthening third-party vendor risk management and cloud storage security audits.",
+          "Implementing zero-trust architecture and multi-layered encryption for sensitive medical and personnel databases.",
+          "Enhancing international intelligence sharing to counter transnational cyber-criminal syndicates."
+        ],
+        "mains_notes": "The FBI data breach by ShinyHunters highlights the vulnerability of law enforcement agencies to advanced cyber-attacks. With stolen records including permanent medical data and personal identifiers of nearly 60,000 personnel, the incident stresses the importance of stringent cloud security, third-party vendor vetting, and robust institutional data protection protocols.",
+        "mains_questions": [
+          "Discuss the implications of large-scale cybersecurity breaches in law enforcement agencies on national security.",
+          "Examine the challenges posed by third-party cloud vulnerabilities in securing critical government and institutional databases."
+        ],
+        "takeaway": "The FBI data breach exposes the severe national security risks posed by compromised law enforcement medical and personal records.",
+        "prelims_facts": [
+          "ShinyHunters is an international hacking collective active since 2019.",
+          "Platforms affected or associated with the breach include FBIJobs, FBI BEAST, and FBI MedLink."
+        ],
+        "vocabulary": [
+          {
+            "word": "Extortion",
+            "meaning_hindi": "फिरौती / जबरन वसूली"
+          },
+          {
+            "word": "Phishing",
+            "meaning_hindi": "फ़िशिंग (धोखे से गोपनीय जानकारी प्राप्त करना)"
+          },
+          {
+            "word": "Vulnerability",
+            "meaning_hindi": "संवेदनशीलता / कमजोरी"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Federal Bureau of Investigation",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Federal_Bureau_of_Investigation"
+          },
+          {
+            "name": "ShinyHunters",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=ShinyHunters"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "एफबीआई हैक में विशेष एजेंटों के रक्त और मूत्र परीक्षण के परिणाम चोरी",
+          "story_lead": "साइबर अपराधियों, जिन्होंने एफबीआई को हैक किया है, का दावा है कि उनके पास इसके हजारों विशेष एजेंटों का अत्यंत संवेदनशील चिकित्सीय डेटा है।",
+          "full_article_text": "साइबर अपराधियों ने एफबीआई को हैक करने के बाद इसके हजारों विशेष एजेंटों के चिकित्सा रिकॉर्ड चुरा लिए हैं। बीबीसी न्यूज ने चुराए गए 'फिटनेस-फॉर-वर्क' मेडिकल परीक्षाओं के नमूनों को देखा है, जिनमें रक्त और मूत्र परीक्षण के परिणाम शामिल हैं।",
+          "background_context": "यह साइबर हमला शाइनीहंटर्स नामक अंतरराष्ट्रीय हैकिंग कलेक्टिव से जुड़ा है।",
+          "bullet_points": [
+            "साइबर अपराधियों ने हजारों एफबीआई एजेंटों के चिकित्सा रिकॉर्ड चुराने का दावा किया है।",
+            "चोरी किए गए डेटा में रक्त और मूत्र परीक्षण के परिणाम शामिल हैं।",
+            "शाइनीहंटर्स ने वित्तीय फिरौती के बजाय एक मई के एफबीआई सलाहकार को वापस लेने की मांग की है।"
+          ],
+          "key_facts": [
+            "एफबीआई ने सुरक्षा उल्लंघन को स्वीकार किया है और जांच शुरू कर दी है।"
+          ],
+          "key_locations": [
+            "संयुक्त राज्य अमेरिका"
+          ],
+          "important_dates": [
+            "मई",
+            "सोमवार",
+            "बुधवार"
+          ]
+        },
+        "quiz": {
+          "question": "Which hacking group claimed responsibility for the cyber-attack on FBI systems involving stolen medical and personal data?",
+          "options": [
+            "Lapsus$",
+            "ShinyHunters",
+            "DarkSide",
+            "REvil"
+          ],
+          "correct_answer": "ShinyHunters",
+          "explanation": "The cyber-criminal group ShinyHunters claimed it breached FBI systems and posted details of the attack on its darknet site, holding sensitive data of current and former FBI staff."
+        },
+        "source_name": "BBC World",
+        "source_url": "https://www.bbc.co.uk/news/articles/cw62me2vlj07o?at_medium=RSS&at_campaign=rss",
+        "published_date": "2026-09-25",
+        "id": 856093947,
+        "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6dff/live/04222c60-b793-11f1-a7dc-51a9fb487fda.jpg",
+        "added_at": "2026-09-25T22:22:59.497454+05:30"
+      },
+      {
+        "category": "Science & Technology",
+        "exam_corner": true,
+        "headline": "Project Suncatcher: Google's Plan to Place AI Data Centers in Space",
+        "story_lead": "Google has introduced an initiative named Project Suncatcher to explore moving artificial intelligence data centers into space. This emerging concept aims to address the growing energy and infrastructure demands of heavy AI workloads. The project marks a novel intersection between space exploration and advanced computing technology.",
+        "full_article_text": "Project Suncatcher represents Google's exploratory initiative to take the artificial intelligence data center race into space. As AI models require unprecedented amounts of computational power and electricity, tech companies are looking beyond traditional terrestrial infrastructure. By potentially utilizing space-based environments, data centers could tap into continuous solar energy and bypass terrestrial constraints. This development highlights the escalating resource intensity of modern AI technologies and the innovative engineering solutions being contemplated by industry leaders.",
+        "background_context": "The rapid expansion of artificial intelligence applications has led to a massive surge in global demand for computational power and electricity, straining terrestrial power grids and data center capacities.",
+        "bullet_points": [
+          "Google has initiated Project Suncatcher to explore space-based AI data centers.",
+          "The initiative addresses the growing energy and infrastructure limitations of terrestrial AI computing.",
+          "Space-based data centers aim to leverage continuous solar power availability.",
+          "The project highlights the intersection of aerospace engineering and artificial intelligence."
+        ],
+        "key_facts": [
+          "Project Suncatcher is an initiative by Google.",
+          "The project focuses on moving AI data centers to space.",
+          "The initiative addresses the heavy energy demands of AI infrastructure."
+        ],
+        "key_locations": [
+          "Space"
+        ],
+        "important_dates": [],
+        "exam_relevance": [
+          "UPSC Prelims: Science & Technology - Space technology, Artificial Intelligence, Energy resources.",
+          "UPSC Mains GS Paper III: Awareness in the fields of IT, Space, Computers, and related issues."
+        ],
+        "upsc_analysis": "Project Suncatcher illustrates the evolving convergence of space technology and digital infrastructure. As AI computational demands outstrip terrestrial resources, exploring space-based solutions presents both groundbreaking opportunities and significant engineering and regulatory challenges.",
+        "causes": [
+          "Surging computational and energy demands of artificial intelligence workloads.",
+          "Constraints and limitations of terrestrial data center infrastructure and power grids."
+        ],
+        "impacts": [
+          "Potential paradigm shift in how high-performance computing infrastructure is deployed.",
+          "Increased focus on renewable and continuous energy access for tech operations."
+        ],
+        "challenges": [
+          "High costs and technical complexities of launching and maintaining hardware in space.",
+          "Data transmission latency and maintenance difficulties in extraterrestrial environments."
+        ],
+        "government_steps": [],
+        "constitutional_or_policy_link": [],
+        "way_forward": [
+          "Encouraging international cooperation and regulatory frameworks for commercial space use.",
+          "Fostering research into energy-efficient computing alongside exploration of alternative locations."
+        ],
+        "mains_notes": "Project Suncatcher by Google explores placing AI data centers in space to mitigate terrestrial energy and infrastructure bottlenecks. While innovative, it poses severe engineering, cost, and orbital management challenges.",
+        "mains_questions": [
+          "Discuss the implications of moving AI data centers to space in the context of growing computational and energy demands.",
+          "What are the major technological and logistical challenges associated with space-based digital infrastructure?"
+        ],
+        "takeaway": "Google's Project Suncatcher explores shifting energy-intensive AI data centers into space to overcome terrestrial limitations.",
+        "prelims_facts": [
+          "Project Suncatcher is associated with Google.",
+          "The project explores space-based AI data centers."
+        ],
+        "vocabulary": [
+          {
+            "word": "Initiative",
+            "meaning_hindi": "पहल"
+          },
+          {
+            "word": "Infrastructure",
+            "meaning_hindi": "बुनियादी ढांचा"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Google",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Google"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "प्रोजेक्ट सनकैचर: स्पेस में एआई डेटा सेंटर ले जाने की गूगल की योजना",
+          "story_lead": "गूगल ने अंतरिक्ष में कृत्रिम बुद्धिमत्ता (AI) डेटा सेंटर स्थापित करने की संभावना तलाशने के लिए 'प्रोजेक्ट सनकैचर' नामक पहल की शुरुआत की है।",
+          "full_article_text": "प्रोजेक्ट सनकैचर अंतरिक्ष में एआई डेटा सेंटर की दौड़ को आगे बढ़ाने की गूगल की एक खोजपूर्ण पहल है। जैसे-जैसे एआई मॉडल को अभूतपूर्व मात्रा में कम्प्यूटेशनल शक्ति और बिजली की आवश्यकता होती है, तकनीकी कंपनियां पारंपरिक स्थलीय बुनियादी ढांचे से आगे देख रही हैं।",
+          "background_context": "एआई अनुप्रयोगों के तेजी से विस्तार से कम्प्यूटेशनल शक्ति और बिजली की वैश्विक मांग में भारी वृद्धि हुई है।",
+          "bullet_points": [
+            "गूगल ने अंतरिक्ष आधारित एआई डेटा केंद्रों का पता लगाने के लिए प्रोजेक्ट सनकैचर की शुरुआत की है।",
+            "यह पहल स्थलीय एआई कंप्यूटिंग की बढ़ती ऊर्जा और बुनियादी ढांचे की सीमाओं को संबोधित करती है।"
+          ],
+          "key_facts": [
+            "प्रोजेक्ट सनकैचर गूगल की एक पहल है।"
+          ],
+          "key_locations": [
+            "अंतरिक्ष"
+          ],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "What is the primary focus of Google's 'Project Suncatcher'?",
+          "options": [
+            "Building undersea internet cables",
+            "Exploring space-based AI data centers",
+            "Launching solar observation satellites exclusively",
+            "Developing quantum computers on Earth"
+          ],
+          "correct_answer": "Exploring space-based AI data centers",
+          "explanation": "Project Suncatcher is Google's exploratory initiative to examine taking AI data centers into space to manage heavy computational and energy demands."
+        },
+        "source_name": "NDTV",
+        "source_url": "https://www.ndtv.com/world-news/project-suncatche-how-google-plans-to-take-ai-data-center-race-to-space-12096616#publisher=newsstand",
+        "published_date": "2026-09-25",
+        "id": 856093946,
+        "image_url": "https://c.ndtvimg.com/2026-09/qs97h7ek_google-logo_625x300_25_September_26.jpeg",
+        "added_at": "2026-09-25T22:22:59.497454+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "Will Insurance Premiums Get Cheaper? 5 Proposed Changes Buyers Should Know",
+        "story_lead": "The Insurance Regulatory and Development Authority of India (IRDAI) has proposed significant changes aimed at modifying the insurance landscape for buyers. These five proposed changes focus on whether insurance premiums could become more affordable and what buyers need to know.",
+        "full_article_text": "The Insurance Regulatory and Development Authority of India (IRDAI) has introduced several proposed changes in the insurance sector. These reforms aim to evaluate whether insurance premiums will get cheaper and how policyholders will be impacted. The proposed regulatory modifications are designed to bring transparency, ease of access, and potential cost relief for insurance buyers in India.",
+        "background_context": "The Insurance Regulatory and Development Authority of India (IRDAI) periodically reviews and proposes regulatory changes to protect policyholder interests, enhance insurance penetration, and ensure the financial stability of the insurance sector in India.",
+        "bullet_points": [
+          "IRDAI has introduced 5 proposed changes for insurance buyers.",
+          "The proposals aim to examine if insurance premiums will get cheaper.",
+          "Regulatory focus is on buyer-friendly insurance reforms.",
+          "Changes affect how insurance policies are structured and priced."
+        ],
+        "key_facts": [
+          "IRDAI proposed 5 key changes for insurance buyers.",
+          "The primary focus is on premium pricing and consumer benefits."
+        ],
+        "key_locations": [
+          "India"
+        ],
+        "important_dates": [],
+        "exam_relevance": [
+          "Prelims: Economy and Government Schemes/Regulatory Bodies (IRDAI)",
+          "Mains: Indian Economy - Growth, Development, and Regulation of Financial Sectors"
+        ],
+        "upsc_analysis": "Regulatory bodies like IRDAI play a crucial role in balancing consumer protection with the growth of the financial sector. Understanding insurance sector reforms is important for evaluating the inclusivity and depth of India's financial markets.",
+        "causes": [
+          "Need to review insurance pricing structures.",
+          "Efforts by IRDAI to enhance insurance penetration and consumer welfare."
+        ],
+        "impacts": [
+          "Potential changes in insurance premium costs for buyers.",
+          "Greater awareness among policyholders regarding regulatory reforms."
+        ],
+        "challenges": [
+          "Balancing affordability for consumers with the financial viability of insurance companies."
+        ],
+        "government_steps": [
+          "IRDAI proposed 5 major changes concerning insurance policies and premiums."
+        ],
+        "constitutional_or_policy_link": [
+          "Insurance Regulatory and Development Authority of India (IRDAI) Act"
+        ],
+        "way_forward": [
+          "Streamlining regulations to ensure transparent pricing and wider insurance coverage across demographics."
+        ],
+        "mains_notes": "IRDAI's proposed changes highlight the ongoing regulatory efforts to make insurance more accessible and affordable in India, directly impacting consumer financial security.",
+        "mains_questions": [
+          "Discuss the role of IRDAI in regulating the insurance sector and protecting consumer interests in India.",
+          "How do regulatory reforms in the insurance sector impact insurance penetration and financial inclusion?"
+        ],
+        "takeaway": "IRDAI's 5 proposed changes aim to evaluate premium affordability and enhance the insurance buying experience in India.",
+        "prelims_facts": [
+          "IRDAI regulates the insurance sector in India."
+        ],
+        "vocabulary": [
+          {
+            "word": "Premium",
+            "meaning_hindi": "बीमा प्रीमियम"
+          },
+          {
+            "word": "Regulator",
+            "meaning_hindi": "नियामक"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Insurance Regulatory and Development Authority of India",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Insurance_Regulatory_and_Development_Authority_of_India"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "क्या बीमा प्रीमियम सस्ते होंगे? खरीदारों को पता होनी चाहिए 5 प्रस्तावित बदलाव",
+          "story_lead": "भारतीय बीमा नियामक and विकास प्राधिकरण (IRDAI) ने खरीदारों के लिए बीमा के परिदृश्य को संशोधित करने के उद्देश्य से महत्वपूर्ण बदलाव प्रस्तावित किए हैं।",
+          "full_article_text": "भारतीय बीमा नियामक and विकास प्राधिकरण (IRDAI) ने बीमा क्षेत्र में कई प्रस्तावित बदलाव पेश किए हैं। इन सुधारों का उद्देश्य यह मूल्यांकन करना है कि क्या बीमा प्रीमियम सस्ते होंगे और पॉलिसीधारकों पर इसका क्या प्रभाव पड़ेगा।",
+          "background_context": "भारतीय बीमा नियामक and विकास प्राधिकरण (IRDAI) पॉलिसीधारकों के हितों की रक्षा के लिए समय-समय पर नियामक बदलावों का प्रस्ताव करता है।",
+          "bullet_points": [
+            "IRDAI ने बीमा खरीदारों के लिए 5 प्रस्तावित बदलाव पेश किए हैं।",
+            "इन प्रस्तावों का उद्देश्य यह जांचना है कि क्या बीमा प्रीमियम सस्ते होंगे।"
+          ],
+          "key_facts": [
+            "IRDAI ने बीमा खरीदारों के लिए 5 प्रमुख बदलाव प्रस्तावित किए।"
+          ],
+          "key_locations": [
+            "भारत"
+          ],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "Which regulatory body has proposed 5 key changes regarding insurance premiums for buyers?",
+          "options": [
+            "RBI",
+            "SEBI",
+            "IRDAI",
+            "PFRDA"
+          ],
+          "correct_answer": "IRDAI",
+          "explanation": "The Insurance Regulatory and Development Authority of India (IRDAI) proposed 5 changes concerning insurance buyers and premiums."
+        },
+        "source_name": "NDTV",
+        "source_url": "https://www.ndtv.com/business-news/will-insurance-premiums-get-cheaper-5-proposed-irdai-changes-buyers-should-know-12096665#publisher=newsstand",
+        "published_date": "2026-09-25",
+        "id": 856093945,
+        "image_url": "https://c.ndtvimg.com/2026-09/9u8831fk_public-insurance-registry_625x300_08_September_26.png?im=FaceCrop,algorithm=dnn,width=1280,height=720",
+        "added_at": "2026-09-25T22:22:59.497454+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "Omar Abdullah Moves J&K Statehood Resolution Stating They Don't Need BJP Certificate",
+        "story_lead": "Jammu and Kashmir Chief Minister Omar Abdullah has moved a resolution regarding the restoration of statehood for the region. During the proceedings, he remarked that they do not need a certificate from the BJP.",
+        "full_article_text": "Jammu and Kashmir Chief Minister Omar Abdullah has moved a resolution concerning the statehood of Jammu and Kashmir. Addressing the political discourse surrounding the move, Abdullah asserted that they do not need a certificate from the Bharatiya Janata Party (BJP). The development highlights ongoing political dynamics and legislative steps in the union territory regarding its administrative status and the demand for the restoration of statehood.",
+        "background_context": "The political discourse in Jammu and Kashmir frequently centers around the status of statehood following the constitutional changes of August 2019, when the erstwhile state was bifurcated into Union Territories.",
+        "bullet_points": [
+          "Jammu and Kashmir Chief Minister Omar Abdullah moved a resolution on statehood.",
+          "Abdullah stated that they do not need a certificate from the BJP.",
+          "The resolution addresses the ongoing political demand for the restoration of statehood to J&K.",
+          "The development was reported by NDTV from India."
+        ],
+        "key_facts": [
+          "Omar Abdullah moved the J&K statehood resolution.",
+          "The statement 'Don't Need BJP Certificate' was made by Omar Abdullah."
+        ],
+        "key_locations": [
+          "Jammu and Kashmir"
+        ],
+        "important_dates": [],
+        "exam_relevance": [
+          "Mains: GS Paper II - Governance, Constitution, Polity - Centre-State relations, reorganization of states."
+        ],
+        "upsc_analysis": "The resolution moved by the Jammu and Kashmir Chief Minister regarding statehood brings attention to federal dynamics, union territory administration, and legislative initiatives within the region.",
+        "causes": [
+          "Political demand for the restoration of statehood to Jammu and Kashmir."
+        ],
+        "impacts": [
+          "Heightened political discussions on the legislative and constitutional status of Jammu and Kashmir."
+        ],
+        "challenges": [
+          "Navigating inter-party relations and political disagreements between regional parties and the central ruling party."
+        ],
+        "government_steps": [
+          "Moving a formal resolution regarding statehood in the Jammu and Kashmir legislative framework."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 3 of the Indian Constitution concerning the formation of new States and alteration of areas, boundaries or names of existing States."
+        ],
+        "way_forward": [
+          "Fostering constructive dialogue between regional political actors and central authorities regarding administrative governance."
+        ],
+        "mains_notes": "Jammu and Kashmir Chief Minister Omar Abdullah moved a resolution for statehood, emphasizing regional autonomy and political standing vis-a-vis national parties like the BJP.",
+        "mains_questions": [
+          "Discuss the constitutional provisions regarding the creation and reorganization of States and Union Territories in India with reference to recent developments in Jammu and Kashmir.",
+          "Analyze the political and administrative implications of the restoration of statehood for Union Territories."
+        ],
+        "takeaway": "Omar Abdullah moved a resolution for J&K statehood, asserting that they do not require a BJP certificate.",
+        "prelims_facts": [
+          "Omar Abdullah serves as the Chief Minister of Jammu and Kashmir."
+        ],
+        "vocabulary": [
+          {
+            "word": "Statehood",
+            "meaning_hindi": "राज्य का दर्जा"
+          },
+          {
+            "word": "Resolution",
+            "meaning_hindi": "संकल्प / प्रस्ताव"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Omar Abdullah",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Omar%20Abdullah"
+          },
+          {
+            "name": "Jammu and Kashmir",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Jammu%20and%20Kashmir"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "ओमर अब्दुल्ला ने पेश किया जेएंडके राज्य का प्रस्ताव, कहा- 'बीजेपी के सर्टिफिकेट की जरूरत नहीं'",
+          "story_lead": "जम्मू-कश्मीर के मुख्यमंत्री ओमर अब्दुल्ला ने क्षेत्र के राज्य के दर्जे से संबंधित एक प्रस्ताव पेश किया है। इस दौरान उन्होंने टिप्पणी की कि उन्हें बीजेपी से किसी सर्टिफिकेट की जरूरत नहीं है।",
+          "full_article_text": "जम्मू-कश्मीर के मुख्यमंत्री ओमर अब्दुल्ला ने जम्मू-कश्मीर के राज्य के दर्जे को लेकर एक प्रस्ताव पेश किया है। इस कदम के इर्द-गिर्द चल रही राजनीतिक चर्चा को संबोधित करते हुए, अब्दुल्ला ने जोर देकर कहा कि उन्हें भारतीय जनता पार्टी (बीजेपी) से किसी प्रमाण पत्र की आवश्यकता नहीं है। यह घटनाक्रम केंद्र शासित प्रदेश की प्रशासनिक स्थिति और राज्य का दर्जा बहाल करने की मांग को लेकर चल रही राजनीतिक गतिशीलता को उजागर करता है।",
+          "background_context": "अगस्त 2019 के संवैधानिक परिवर्तनों के बाद, जब पूर्ववर्ती राज्य को केंद्र शासित प्रदेशों में विभाजित किया गया था, जम्मू-कश्मीर में राजनीतिक चर्चा अक्सर राज्य के दर्जे की स्थिति पर केंद्रित होती है।",
+          "bullet_points": [
+            "जम्मू-कश्मीर के मुख्यमंत्री ओमर अब्दुल्ला ने राज्य के दर्जे पर एक प्रस्ताव पेश किया।",
+            "अब्दुल ने कहा कि उन्हें बीजेपी के सर्टिफिकेट की जरूरत नहीं है।",
+            "यह प्रस्ताव जेएंडके को राज्य का दर्जा बहाल करने की चल रही राजनीतिक मांग को संबोधित करता है।"
+          ],
+          "key_facts": [
+            "ओमर अब्दुल्ला ने जेएंडके राज्य का प्रस्ताव पेश किया।"
+          ],
+          "key_locations": [
+            "जम्मू और कश्मीर"
+          ],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "Who moved the resolution regarding J&K statehood as reported in the news?",
+          "options": [
+            "A) Omar Abdullah",
+            "B) Amit Shah",
+            "C) Manoj Sinha",
+            "D) Rahul Gandhi"
+          ],
+          "correct_answer": "A) Omar Abdullah",
+          "explanation": "Jammu and Kashmir Chief Minister Omar Abdullah moved the resolution concerning statehood."
+        },
+        "source_name": "NDTV",
+        "source_url": "https://www.ndtv.com/india-news/dont-need-bjp-certificate-omar-abdullah-moves-j-k-statehood-resolution-12096722#publisher=newsstand",
+        "published_date": "2026-09-25",
+        "id": 856093944,
+        "image_url": "https://c.ndtvimg.com/2026-09/d7p24bus_abdullah-assembly-_625x300_25_September_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
+        "added_at": "2026-09-25T22:22:59.497454+05:30"
+      },
+      {
+        "category": "World",
+        "exam_corner": true,
+        "headline": "Explained: The 2024 Pager Attacks On Hezbollah Referred To By Netanyahu At UN",
+        "story_lead": "The 2024 pager attacks targeting Hezbollah in Lebanon gained renewed attention following references made at the United Nations. The sophisticated supply chain operation involved explosive devices embedded within communication equipment.",
+        "full_article_text": "The 2024 pager attacks against the group Hezbollah in Lebanon became a subject of international discussion after Israeli Prime Minister Benjamin Netanyahu referenced them during a UN address. The incident highlights the vulnerabilities in modern supply chains and the integration of electronic devices as vectors for targeted kinetic operations. Based on the provided source material, the attacks utilized tampered communication devices to inflict casualties and disrupt command structures among the targeted faction.",
+        "background_context": "The context revolves around the ongoing conflict involving Israel and the Lebanon-based group Hezbollah, which drew international attention during UN proceedings.",
+        "bullet_points": [
+          "Reference to the 2024 pager attacks was made at the United Nations.",
+          "The target of the operation was the group Hezbollah.",
+          "The incident underscores risks associated with modern electronic supply chains.",
+          "Details of the event were highlighted by Israeli Prime Minister Benjamin Netanyahu."
+        ],
+        "key_facts": [
+          "The 2024 pager attacks targeted Hezbollah.",
+          "The incident was referenced at the UN by Benjamin Netanyahu."
+        ],
+        "key_locations": [
+          "Lebanon",
+          "United Nations"
+        ],
+        "important_dates": [
+          "2024"
+        ],
+        "exam_relevance": [
+          "Mains: International Relations, Security challenges, and supply chain warfare."
+        ],
+        "upsc_analysis": "From a civil services perspective, the incident demonstrates the evolving nature of hybrid warfare, supply chain vulnerabilities, and the intersection of technology and national security.",
+        "causes": [
+          "Ongoing conflict between Israel and Hezbollah"
+        ],
+        "impacts": [
+          "Disruption of communication networks",
+          "Casualties among the targeted group"
+        ],
+        "challenges": [
+          "Securing global technology supply chains against infiltration"
+        ],
+        "government_steps": [],
+        "constitutional_or_policy_link": [],
+        "way_forward": [
+          "Enhancing cybersecurity and hardware vetting protocols globally."
+        ],
+        "mains_notes": "The 2024 pager attacks on Hezbollah illustrate how everyday communication devices can be weaponized through supply chain interception, posing novel challenges to international security and technology regulation.",
+        "mains_questions": [
+          "Discuss the implications of modern supply chain warfare on international security with reference to recent electronic attacks.",
+          "How does the integration of technology in asymmetric warfare alter traditional security paradigms?"
+        ],
+        "takeaway": "The 2024 pager attacks on Hezbollah represent a major milestone in supply chain-based electronic warfare.",
+        "prelims_facts": [
+          "The 2024 pager attacks were directed against Hezbollah."
+        ],
+        "vocabulary": [
+          {
+            "word": "Pager",
+            "meaning_hindi": "पेजर (एक प्रकार का संदेश उपकरण)"
+          },
+          {
+            "word": "Supply Chain",
+            "meaning_hindi": "आपूर्ति श्रृंखला"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Hezbollah",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Hezbollah"
+          },
+          {
+            "name": "Benjamin Netanyahu",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Benjamin+Netanyahu"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "स्पष्टीकरण: 2024 के हिजबुल्लाह पर पेजर हमले जिनका नेतन्याहू ने संयुक्त राष्ट्र में उल्लेख किया",
+          "story_lead": "लेबनान में हिजबुल्लाह को निशाना बनाने वाले 2024 के पेजर हमलों ने संयुक्त राष्ट्र में किए गए उल्लेखों के बाद नए सिरे से ध्यान आकर्षित किया है। इस परिष्कृत आपूर्ति श्रृंखला अभियान में संचार उपकरणों के भीतर विस्फोटक उपकरण शामिल थे।",
+          "full_article_text": "लेबनान में हिजबुल्लाह समूह के खिलाफ 2024 के पेजर हमले इजरायली प्रधानमंत्री बेंजामिन नेतन्याहू द्वारा संयुक्त राष्ट्र के भाषण में उल्लेख किए जाने के बाद अंतर्राष्ट्रीय चर्चा का विषय बन गए। यह घटना आधुनिक आपूर्ति श्रृंखलाओं में कमजोरियों और लक्षित अभियानों के लिए इलेक्ट्रॉनिक उपकरणों के उपयोग को उजागर करती है।",
+          "background_context": "यह संदर्भ इज़राइल और लेबनान स्थित समूह हिज़बुल्लाह से जुड़े चल रहे संघर्ष के इर्द-गिर्द घूमता है।",
+          "bullet_points": [
+            "संयुक्त राष्ट्र में 2024 के पेजर हमलों का संदर्भ दिया गया।",
+            "इस अभियान का लक्ष्य हिजबुल्लाह समूह था।",
+            "यह घटना आधुनिक इलेक्ट्रॉनिक आपूर्ति श्रृंखलाओं से जुड़े जोखिमों को रेखांकित करती है।"
+          ],
+          "key_facts": [
+            "2024 के पेजर हमलों ने हिजबुल्लाह को निशाना बनाया।"
+          ],
+          "key_locations": [
+            "लेबनान",
+            "संयुक्त राष्ट्र"
+          ],
+          "important_dates": [
+            "2024"
+          ]
+        },
+        "quiz": {
+          "question": "Which group was the target of the 2024 pager attacks referenced at the UN?",
+          "options": [
+            "A. Hamas",
+            "B. Hezbollah",
+            "C. Houthis",
+            "D. Taliban"
+          ],
+          "correct_answer": "B. Hezbollah",
+          "explanation": "The 2024 pager attacks specifically targeted the group Hezbollah in Lebanon."
+        },
+        "source_name": "NDTV",
+        "source_url": "https://www.ndtv.com/world-news/explained-the-2024-pager-attacks-on-hezbollah-netanyahu-referred-to-at-un-12096445#publisher=newsstand",
+        "published_date": "2026-09-25",
+        "id": 856093943,
+        "image_url": "https://c.ndtvimg.com/2026-09/1pg9d8rs_netanyahu-_625x300_25_September_26.jpeg",
+        "added_at": "2026-09-25T22:22:59.497454+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "Supreme Court Issues Notice to Goa Police and Tarun Tejpal in 2013 Rape Case",
+        "story_lead": "The Supreme Court has issued notices to the Goa Police and Tarun Tejpal in connection with the 2013 rape case. The legal proceedings continue to unfold in the high-profile matter involving the former journalist.",
+        "full_article_text": "The Supreme Court of India has issued formal notices to the Goa Police and Tarun Tejpal regarding the 2013 rape case. Tarun Tejpal, the former editor-in-chief of Tehelka magazine, has been central to this long-running legal case stemming from an alleged incident in Goa in 2013. The issuance of the notice by the apex court marks a continuation of judicial scrutiny in the matter as legal avenues are pursued by the concerned parties.",
+        "background_context": "The case relates to allegations of sexual assault dating back to 2013 involving Tarun Tejpal in Goa, leading to police investigation and subsequent judicial proceedings.",
+        "bullet_points": [
+          "Supreme Court issues notice to Goa Police and Tarun Tejpal.",
+          "The case pertains to allegations dating back to 2013.",
+          "Legal proceedings have involved judicial scrutiny in courts.",
+          "The matter concerns jurisdiction and ongoing legal challenges."
+        ],
+        "key_facts": [
+          "Case year: 2013",
+          "Respondents mentioned: Goa Police, Tarun Tejpal",
+          "Court: Supreme Court of India"
+        ],
+        "key_locations": [
+          "Goa",
+          "India"
+        ],
+        "important_dates": [
+          "2013"
+        ],
+        "exam_relevance": [
+          "Prelims: Current affairs related to Supreme Court notices and legal updates.",
+          "Mains (GS II): Issues relating to the criminal justice system, judiciary, and legal procedures."
+        ],
+        "upsc_analysis": "The Supreme Court's intervention in high-profile criminal cases highlights the functioning of the apex court as the final court of appeal and its role in overseeing judicial and investigative processes in India.",
+        "causes": [
+          "Legal appeals and petitions filed in the Supreme Court regarding the 2013 case."
+        ],
+        "impacts": [
+          "Continuation of legal proceedings in the apex court."
+        ],
+        "challenges": [
+          "Ensuring timely delivery of justice in sensitive criminal cases."
+        ],
+        "government_steps": [
+          "Investigation by Goa Police and subsequent judicial proceedings through the courts."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 136 of the Constitution of India pertaining to Special Leave Petitions to the Supreme Court."
+        ],
+        "way_forward": [
+          "Expeditious and fair adjudication of the case by the judiciary upholding the principles of natural justice."
+        ],
+        "mains_notes": "The Supreme Court has issued notices to the Goa Police and Tarun Tejpal in the 2013 criminal case. Such legal developments emphasize the role of higher judiciary in examining petitions related to criminal trials and investigations.",
+        "mains_questions": [
+          "Discuss the role of the Supreme Court in overseeing criminal investigations and trials through appellate jurisdiction.",
+          "Examine the procedural mechanisms available in the Indian criminal justice system for high-profile cases."
+        ],
+        "takeaway": "The Supreme Court has issued notices to Goa Police and Tarun Tejpal in the 2013 case.",
+        "prelims_facts": [
+          "Supreme Court issued notice in the 2013 Tarun Tejpal case involving Goa Police."
+        ],
+        "vocabulary": [
+          {
+            "word": "Notice",
+            "meaning_hindi": "नोटिस / सूचना"
+          },
+          {
+            "word": "Police",
+            "meaning_hindi": "पुलिस"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Tarun Tejpal",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Tarun_Tejpal"
+          },
+          {
+            "name": "Goa Police",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Goa_Police"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "सुप्रीम कोर्ट ने 2013 के बलात्कार मामले में गोवा पुलिस और तरुण तेजपाल को नोटिस जारी किया",
+          "story_lead": "सुप्रीम कोर्ट ने 2013 के बलात्कार मामले के संबंध में गोवा पुलिस और तरुण तेजपाल को नोटिस जारी किया है।",
+          "full_article_text": "भारत के सर्वोच्च न्यायालय ने 2013 के बलात्कार मामले में गोवा पुलिस और तरुण तेजपाल को औपचारिक नोटिस जारी किया है। यह मामला 2013 में गोवा में हुई एक कथित घटना से जुड़ा है।",
+          "background_context": "यह मामला 2013 में गोवा में तरुण तेजपाल से जुड़े यौन उत्पीड़न के आरोपों से संबंधित है।",
+          "bullet_points": [
+            "सुप्रीम कोर्ट ने गोवा पुलिस और तरुण तेजपाल को नोटिस जारी किया।",
+            "यह मामला 2013 की घटना से संबंधित है।"
+          ],
+          "key_facts": [
+            "मामले का वर्ष: 2013"
+          ],
+          "key_locations": [
+            "गोवा"
+          ],
+          "important_dates": [
+            "2013"
+          ]
+        },
+        "quiz": {
+          "question": "In which year did the case involving Tarun Tejpal and Goa Police originate, as mentioned in the report?",
+          "options": [
+            "2011",
+            "2013",
+            "2015",
+            "2018"
+          ],
+          "correct_answer": "2013",
+          "explanation": "The report specifically notes that the case dates back to 2013."
+        },
+        "source_name": "NDTV",
+        "source_url": "https://www.ndtv.com/india-news/supreme-court-notice-to-goa-police-tarun-tejpal-in-2013-rape-case-12096167#publisher=newsstand",
+        "published_date": "2026-09-25",
+        "id": 856093942,
+        "image_url": "https://c.ndtvimg.com/2026-09/0joil1hs_tarun-tejpal_625x300_14_September_26.jpg?im=FitAndFill,algorithm=dnn,width=1280,height=720",
+        "added_at": "2026-09-25T22:22:59.497454+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "Kerala Chief Minister VD Satheesan Sidesteps Questions On Chopper Row",
+        "story_lead": "Kerala Chief Minister VD Satheesan avoided questions from the media regarding the ongoing chopper controversy. The Chief Minister briefly stated that he would not speak on the matter on that particular day.",
+        "full_article_text": "In recent developments in Kerala, Chief Minister VD Satheesan sidestepped media queries concerning the chopper row. When approached by reporters for comments on the controversy, he explicitly stated that he would not speak on the issue that day, effectively dodging further inquiries from the press.",
+        "background_context": "The news pertains to the media interactions involving Kerala Chief Minister VD Satheesan regarding an ongoing controversy involving a helicopter (chopper row) in the state.",
+        "bullet_points": [
+          "Kerala Chief Minister VD Satheesan addressed the media amid the chopper row.",
+          "He sidestepped questions posed by reporters regarding the controversy.",
+          "He stated 'Won't Speak Today' when asked about the issue.",
+          "The incident highlights ongoing political and media scrutiny in Kerala."
+        ],
+        "key_facts": [
+          "VD Satheesan is the Chief Minister of Kerala according to the source report.",
+          "The subject of evasion by the Chief Minister is the chopper row."
+        ],
+        "key_locations": [
+          "Kerala",
+          "Idukki",
+          "Malappuram"
+        ],
+        "important_dates": [],
+        "exam_relevance": [
+          "Prelims: General awareness of current political events and state leadership in India.",
+          "Mains: Ethics in public life, media relations, and political accountability."
+        ],
+        "upsc_analysis": "While the incident is a routine political news item, questions concerning transparency, executive accountability, and media interaction form part of democratic governance discussions.",
+        "causes": [
+          "Ongoing controversy related to a chopper in Kerala.",
+          "Media inquiries directed at the Chief Minister for official comments."
+        ],
+        "impacts": [
+          "Continued media speculation surrounding the chopper row.",
+          "Delay in official clarification from the Chief Minister's office on the specific day."
+        ],
+        "challenges": [
+          "Maintaining transparency and political accountability in the face of controversies."
+        ],
+        "government_steps": [],
+        "constitutional_or_policy_link": [
+          "Principles of democratic accountability and executive responsiveness."
+        ],
+        "way_forward": [
+          "Encouraging transparent communication between elected representatives and the media to maintain public trust."
+        ],
+        "mains_notes": "Political controversies involving executive transport often attract media scrutiny. Leaders facing such inquiries must balance legal, political, and communication strategies, though avoidance can sometimes amplify public speculation.",
+        "mains_questions": [
+          "Discuss the role of media scrutiny in ensuring political accountability in Indian states.",
+          "How do controversies involving public resources impact governance and executive transparency?"
+        ],
+        "takeaway": "Kerala Chief Minister VD Satheesan avoided addressing media queries regarding the ongoing chopper row.",
+        "prelims_facts": [
+          "VD Satheesan is mentioned as the Chief Minister of Kerala in the context of the chopper row."
+        ],
+        "vocabulary": [
+          {
+            "word": "Sidestep",
+            "meaning_hindi": "बचना या टालना"
+          },
+          {
+            "word": "Controversy",
+            "meaning_hindi": "विवाद"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "VD Satheesan",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=VD_Satheesan"
+          },
+          {
+            "name": "Kerala",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Kerala"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "केरल के मुख्यमंत्री वी. डी. सतीसन ने चॉपर विवाद पर सवालों से दूरी बनाई",
+          "story_lead": "केरल के मुख्यमंत्री वी. डी. सतीसन ने चल रहे चॉपर विवाद के संबंध में मीडिया के सवालों से किनारा कर लिया। मुख्यमंत्री ने संक्षेप में कहा कि वह इस मामले पर उस दिन कुछ नहीं बोलेंगे।",
+          "full_article_text": "केरल में हालिया घटनाक्रम के तहत, मुख्यमंत्री वी. डी. सतीसन ने चॉपर विवाद से जुड़े मीडिया के सवालों को टाल दिया। जब संवाददाताओं ने उनसे इस विवाद पर टिप्पणी के लिए संपर्क किया, तो उन्होंने स्पष्ट रूप से कहा कि वह उस दिन इस मुद्दे पर बात नहीं करेंगे।",
+          "background_context": "यह समाचार केरल में एक हेलीकॉप्टर से जुड़े चल रहे विवाद के बीच मुख्यमंत्री वी. डी. सतीसन की मीडिया बातचीत से संबंधित है।",
+          "bullet_points": [
+            "चॉपर विवाद के बीच केरल के मुख्यमंत्री वी. डी. सतीसन ने मीडिया को संबोधित किया।",
+            "उन्होंने विवाद के संबंध में संवाददाताओं द्वारा पूछे गए सवालों को टाल दिया।",
+            "इस मुद्दे के बारे में पूछे जाने पर उन्होंने कहा 'आज नहीं बोलूंगा'।",
+            "यह घटना केरल में चल रही राजनीतिक और मीडिया जांच को उजागर करती है।"
+          ],
+          "key_facts": [
+            "स्रोत रिपोर्ट के अनुसार वी. डी. सतीसन केरल के मुख्यमंत्री हैं।",
+            "मुख्यमंत्री द्वारा टाला गया विषय चॉपर विवाद है।"
+          ],
+          "key_locations": [
+            "केरल",
+            "इडुक्की",
+            "मलप्पुरम"
+          ],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "Which state's Chief Minister sidestepped media questions regarding a chopper row?",
+          "options": [
+            "Tamil Nadu",
+            "Kerala",
+            "Karnataka",
+            "Maharashtra"
+          ],
+          "correct_answer": "Kerala",
+          "explanation": "According to the report, Kerala Chief Minister VD Satheesan sidestepped questions on the chopper row."
+        },
+        "source_name": "NDTV",
+        "source_url": "https://www.ndtv.com/india-news/vd-satheesan-idukki-malappuram-wont-speak-today-kerala-chief-minister-dodges-media-amid-chopper-row-12097120#publisher=newsstand",
+        "published_date": "2026-09-25",
+        "id": 856093941,
+        "image_url": "https://c.ndtvimg.com/2026-09/i8hp4g2o_vd-satheesan_625x300_25_September_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
+        "added_at": "2026-09-25T22:22:59.497454+05:30"
+      },
+      {
+        "category": "World",
+        "exam_corner": true,
+        "headline": "Finland and Sweden Deploy Jets in First Joint Operation to Intercept Russian Aircraft",
+        "story_lead": "Finland and Sweden have carried out their first joint operation by deploying fighter jets to intercept a Russian aircraft. This collaborative defense mission highlights the deepening military cooperation between the two newly integrated regional nations.",
+        "full_article_text": "In a notable demonstration of regional defense collaboration, Finland and Sweden conducted their first joint operation involving the deployment of fighter jets to intercept a Russian aircraft. This coordinated action marks a significant milestone in bilateral military integration between the two Nordic countries as they navigate evolving security dynamics in the region.",
+        "background_context": "The operation represents a practical step in defense cooperation between Finland and Sweden as they coordinate their air defense capabilities in response to regional airspace activities involving Russian aircraft.",
+        "bullet_points": [
+          "Finland and Sweden deployed jets in their first joint military operation.",
+          "The mission involved intercepting a Russian aircraft.",
+          "The operation signifies closer military coordination between the two Nordic nations.",
+          "Air defense cooperation remains a key priority for regional security."
+        ],
+        "key_facts": [
+          "Finland and Sweden conducted their first joint operation.",
+          "Fighter jets were deployed to intercept a Russian aircraft."
+        ],
+        "key_locations": [
+          "Finland",
+          "Sweden"
+        ],
+        "important_dates": [],
+        "exam_relevance": [
+          "Prelims: International relations, defense cooperation, and Nordic security developments.",
+          "Mains (GS Paper II): Bilateral and regional groupings involving India's partners, changing security architecture in Europe."
+        ],
+        "upsc_analysis": "The joint operation by Finland and Sweden underscores the changing geopolitical and security architecture in Northern Europe. For UPSC aspirants, understanding shifts in European security alliances, NATO expansion contexts, and regional defense integration is critical for questions related to international relations and geopolitics.",
+        "causes": [
+          "Detection of Russian aircraft operating in proximity to regional airspace requiring coordinated interception."
+        ],
+        "impacts": [
+          "Enhanced military interoperability and joint operational capability between Finland and Sweden.",
+          "Heightened coordination in Nordic air defense monitoring."
+        ],
+        "challenges": [
+          "Managing regional escalations and maintaining stable communications amidst increased military signaling."
+        ],
+        "government_steps": [
+          "Deployment of joint air defense assets by Finnish and Swedish authorities."
+        ],
+        "constitutional_or_policy_link": [
+          "Bilateral defense agreements and regional security policies."
+        ],
+        "way_forward": [
+          "Strengthening intelligence sharing, joint training exercises, and interoperability protocols among regional partner nations."
+        ],
+        "mains_notes": "Finland and Sweden's first joint jet deployment to intercept a Russian aircraft marks a pivotal shift toward deeper bilateral and regional defense integration in Northern Europe, reflecting new imperatives in European air defense.",
+        "mains_questions": [
+          "Discuss the significance of deepening defense cooperation between Nordic nations in the context of contemporary European security.",
+          "How do joint military operations among regional European states impact the broader geopolitical security framework?"
+        ],
+        "takeaway": "Finland and Sweden executed their first joint operation by deploying jets to intercept a Russian aircraft, signaling closer bilateral defense cooperation.",
+        "prelims_facts": [
+          "Countries involved in the joint operation: Finland and Sweden.",
+          "Target of interception: Russian aircraft."
+        ],
+        "vocabulary": [
+          {
+            "word": "Intercept",
+            "meaning_hindi": "रोकना / बीच में रोकना"
+          },
+          {
+            "word": "Joint Operation",
+            "meaning_hindi": "संयुक्त अभियान"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Finland",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Finland"
+          },
+          {
+            "name": "Sweden",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Sweden"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "फ़िनलैंड और स्वीडन ने रूसी विमान को रोकने के लिए पहले संयुक्त अभियान में जेट तैनात किए",
+          "story_lead": "फ़िनलैंड और स्वीडन ने एक रूसी विमान को रोकने के लिए लड़ाकू विमान तैनात करके अपना पहला संयुक्त अभियान चलाया है। यह सहयोगात्मक रक्षा मिशन दोनों नए क्षेत्रीय देशों के बीच गहरे होते सैन्य सहयोग को रेखांकित करता है।",
+          "full_article_text": "क्षेत्रीय रक्षा सहयोग के एक उल्लेखनीय प्रदर्शन में, फ़िनलैंड और स्वीडन ने एक रूसी विमान को रोकने के लिए लड़ाकू विमानों की तैनाती से जुड़ा अपना पहला संयुक्त अभियान चलाया। यह समन्वित कार्रवाई दोनों नॉर्डिक देशों के बीच द्विपक्षीय सैन्य एकीकरण में एक महत्वपूर्ण मील का पत्थर है।",
+          "background_context": "यह अभियान फ़िनलैंड और स्वीडन के बीच रक्षा सहयोग में एक व्यावहारिक कदम का प्रतिनिधित्व करता है क्योंकि वे क्षेत्रीय हवाई क्षेत्र की गतिविधियों के जवाब में अपनी वायु रक्षा क्षमताओं का समन्वय कर रहे हैं।",
+          "bullet_points": [
+            "फ़िनलैंड और स्वीडन ने अपने पहले संयुक्त सैन्य अभियान में जेट तैनात किए।",
+            "इस मिशन में एक रूसी विमान को रोकना शामिल था।",
+            "यह अभियान दोनों नॉर्डिक देशों के बीच करीबी सैन्य समन्वय को दर्शाता है।",
+            "क्षेत्रीय सुरक्षा के लिए वायु रक्षा सहयोग एक मुख्य प्राथमिकता बना हुआ है।"
+          ],
+          "key_facts": [
+            "फ़िनलैंड और स्वीडन ने अपना पहला संयुक्त अभियान चलाया।",
+            "एक रूसी विमान को रोकने के लिए लड़ाकू विमान तैनात किए गए।"
+          ],
+          "key_locations": [
+            "फ़िनलैंड",
+            "स्वीडन"
+          ],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "Which two countries conducted their first joint operation involving the deployment of jets to intercept a Russian aircraft?",
+          "options": [
+            "A) Norway and Denmark",
+            "B) Finland and Sweden",
+            "C) Estonia and Latvia",
+            "D) Poland and Germany"
+          ],
+          "correct_answer": "B) Finland and Sweden",
+          "explanation": "Finland and Sweden carried out their first joint operation by deploying jets to intercept a Russian aircraft."
+        },
+        "source_name": "NDTV",
+        "source_url": "https://www.ndtv.com/world-news/in-1st-joint-op-finland-sweden-deploy-jets-to-intercept-russian-aircraft-12097132#publisher=newsstand",
+        "published_date": "2026-09-25",
+        "id": 856093940,
+        "image_url": "https://c.ndtvimg.com/2026-09/t370chk4_-russian-mig31-fighter-jet-_625x300_25_September_26.jpeg",
+        "added_at": "2026-09-25T22:22:59.497454+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": false,
+        "headline": "Women Wrestlers Challenge BJP Leader Brij Bhushan's Acquittal in Sexual Assault Case",
+        "story_lead": "Women wrestlers have officially challenged the acquittal of BJP leader Brij Bhushan in a sexual assault case. The legal challenge brings renewed attention to the high-profile case involving allegations of sexual harassment within Indian wrestling administration.",
+        "full_article_text": "Women wrestlers have initiated legal moves to challenge the acquittal of Bharatiya Janata Party (BJP) leader Brij Bhushan in a sexual assault case. The development marks a continuation of the legal battles stemming from earlier protests and allegations levelled by prominent Indian wrestlers against the former wrestling federation chief regarding sexual harassment.",
+        "background_context": "The case involves allegations of sexual assault and harassment brought forward by women wrestlers against Brij Bhushan, a BJP leader and former head of the wrestling administration. The recent legal filing challenges his earlier acquittal in the matter.",
+        "bullet_points": [
+          "Women wrestlers have challenged the acquittal of BJP's Brij Bhushan.",
+          "The case pertains to allegations of sexual assault and harassment.",
+          "Brij Bhushan is a political figure affiliated with the BJP.",
+          "The legal challenge keeps the high-profile sports administration controversy active in the judicial system."
+        ],
+        "key_facts": [
+          "Women wrestlers have challenged Brij Bhushan's acquittal.",
+          "The case involves sexual assault allegations."
+        ],
+        "key_locations": [
+          "India"
+        ],
+        "important_dates": [],
+        "exam_relevance": [
+          "Mains GS Paper II: Governance, Judiciary, Women's Rights, and Institutional Accountability"
+        ],
+        "upsc_analysis": "The legal challenge by women wrestlers highlights issues regarding women's safety, the efficacy of grievance redressal mechanisms in sports bodies, and the judicial recourse available to victims against individuals in positions of political and institutional power.",
+        "causes": [
+          "Dissatisfaction with the previous acquittal in the sexual assault case.",
+          "Persistence of women wrestlers in pursuing legal remedies for alleged harassment."
+        ],
+        "impacts": [
+          "Keeps the discourse on athlete welfare, governance in sports bodies, and women's safety in public focus.",
+          "Triggers further legal proceedings in the judicial system."
+        ],
+        "challenges": [
+          "Ensuring a fair, transparent, and timely judicial process.",
+          "Balancing institutional power dynamics with the rights of complainants."
+        ],
+        "government_steps": [],
+        "constitutional_or_policy_link": [
+          "Article 21 (Right to Life and Personal Liberty including dignity)",
+          "Prevention of Sexual Harassment (POSH) framework"
+        ],
+        "way_forward": [
+          "Allowing the judicial process to run its course fairly and transparently.",
+          "Strengthening internal complaints committees and grievance redressal systems in national sports federations."
+        ],
+        "mains_notes": "The legal challenge by women wrestlers against the acquittal of Brij Bhushan underscores ongoing concerns about accountability in sports administration, women's safety, and access to justice in cases involving influential figures.",
+        "mains_questions": [
+          "Discuss the significance of robust grievance redressal mechanisms in national sports federations in light of recent controversies involving women wrestlers.",
+          "Examine the legal and institutional challenges involved in addressing allegations of sexual harassment against individuals holding positions of power."
+        ],
+        "takeaway": "Women wrestlers have legally challenged the acquittal of BJP's Brij Bhushan in a sexual assault case.",
+        "prelims_facts": [
+          "Women wrestlers challenged Brij Bhushan's acquittal in a sexual assault case."
+        ],
+        "vocabulary": [
+          {
+            "word": "Acquittal",
+            "meaning_hindi": "दोषमुक्ति"
+          },
+          {
+            "word": "Assault",
+            "meaning_hindi": "हमला / उत्पीड़न"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Brij Bhushan",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Brij%20Bhushan"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "महिला पहलवानों ने यौन उत्पीड़न मामले में भाजपा के बृजभूषण की बरी होने को दी चुनौती",
+          "story_lead": "महिला पहलवानों ने यौन उत्पीड़न के एक मामले में भाजपा नेता बृजभूषण के बरी होने को आधिकारिक रूप से चुनौती दी है।",
+          "full_article_text": "महिला पहलवानों ने यौन उत्पीड़न के मामले में भारतीय जनता पार्टी (भाजपा) के नेता बृजभूषण की दोषमुक्ति को चुनौती दी है।",
+          "background_context": "यह मामला महिला पहलवानों द्वारा यौन उत्पीड़न और प्रताड़ना के आरोपों से जुड़ा है।",
+          "bullet_points": [
+            "महिला पहलवानों ने भाजपा नेता बृजभूषण की दोषमुक्ति को चुनौती दी।",
+            "यह मामला यौन उत्पीड़न के आरोपों से संबंधित है।"
+          ],
+          "key_facts": [
+            "महिला पहलवानों ने बृजभूषण की बरी होने के खिलाफ अपील की।"
+          ],
+          "key_locations": [
+            "भारत"
+          ],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "Who recently challenged the acquittal of BJP's Brij Bhushan in a sexual assault case?",
+          "options": [
+            "Women wrestlers",
+            "Sports Ministry",
+            "WFI officials",
+            "Delhi Police"
+          ],
+          "correct_answer": "Women wrestlers",
+          "explanation": "Women wrestlers have challenged the acquittal of BJP leader Brij Bhushan in a sexual assault case."
+        },
+        "source_name": "NDTV",
+        "source_url": "https://www.ndtv.com/india-news/women-wrestlers-challenge-bjps-brij-bhushans-acquittal-in-sexual-assault-case-12097032#publisher=newsstand",
+        "published_date": "2026-09-25",
+        "id": 856093939,
+        "image_url": "https://c.ndtvimg.com/2026-09/f5o9jb6k_brij-bhushan-_625x300_25_September_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
+        "added_at": "2026-09-25T22:22:59.497454+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "Punjab Man Who Consumed Poison in Anti-Drugs Protest Faces 9 Cases Himself",
+        "story_lead": "A man in Punjab who recently consumed poison during an anti-drugs protest has been revealed to be facing nine criminal cases himself. The incident highlights the complex ground realities surrounding anti-drug agitations and law enforcement in the state.",
+        "full_article_text": "According to reports from NDTV, a man in Punjab who took poison during an anti-drugs protest has been found to have nine criminal cases registered against him. The development brings to light the personal backgrounds and legal complexities often intertwined with civil protests and anti-drug movements in the region. Anti-drug protests remain a sensitive and prominent socio-political issue in Punjab, reflecting public anxiety over the drug menace and the challenges of policing and law enforcement.",
+        "background_context": "The incident occurred in Punjab during an anti-drugs protest, a context marked by continuous civil agitation against the widespread availability and abuse of narcotics in the state.",
+        "bullet_points": [
+          "A man in Punjab consumed poison during an anti-drugs protest.",
+          "Investigations or police records revealed that the same individual faces nine criminal cases.",
+          "The report was published by NDTV.",
+          "The incident underscores the complex dynamics of anti-drug agitations in Punjab."
+        ],
+        "key_facts": [
+          "The individual participated in an anti-drugs protest in Punjab.",
+          "The individual consumed poison during the protest.",
+          "The individual is facing nine criminal cases."
+        ],
+        "key_locations": [
+          "Punjab"
+        ],
+        "important_dates": [],
+        "exam_relevance": [
+          "Prelims: General issues relating to social security and law enforcement in India",
+          "Mains (GS II/III): Social issues, drug menace in border states like Punjab, and policing challenges"
+        ],
+        "upsc_analysis": "From a civil services perspective, the incident illustrates the socio-legal complexities surrounding grassroots protests and law enforcement in regions heavily affected by substance abuse. It emphasizes the need for a holistic approach that combines public health interventions, strict legal enforcement against traffickers, and transparent handling of civil agitations.",
+        "causes": [
+          "Public frustration and protests regarding the drug menace in Punjab",
+          "Individual grievances or involvement in criminal cases"
+        ],
+        "impacts": [
+          "Brings public attention to the intersection of civil protests and criminal backgrounds of participants",
+          "Highlights the ongoing tensions surrounding anti-drug campaigns in Punjab"
+        ],
+        "challenges": [
+          "Addressing the deep-rooted drug crisis in Punjab while maintaining public order",
+          "Ensuring fair investigation and handling of protesters with criminal records"
+        ],
+        "government_steps": [
+          "Enforcing law and order regarding registered criminal cases",
+          "Monitoring anti-drug agitations and maintaining public safety"
+        ],
+        "constitutional_or_policy_link": [
+          "Right to peaceful protest under Article 19, balanced with the enforcement of criminal law under the Bharatiya Nagarik Suraksha Sanhita and Indian Penal Code."
+        ],
+        "way_forward": [
+          "Strengthening institutional rehabilitation programs for drug victims alongside stringent action against drug syndicates",
+          "Maintaining clear channels of dialogue between civil society protesters and law enforcement agencies"
+        ],
+        "mains_notes": "The case of a Punjab protester consuming poison while facing nine criminal cases sheds light on the multi-faceted challenges of the drug crisis in northern India. It requires policymakers to look beyond mere rhetoric and address the socio-economic vulnerabilities, criminal nexus, and law enforcement realities on the ground.",
+        "mains_questions": [
+          "Discuss the socio-legal challenges involved in addressing the drug menace through public protests and law enforcement in border states like Punjab.",
+          "Analyze the importance of balancing the right to peaceful protest with the enforcement of criminal law in India."
+        ],
+        "takeaway": "An anti-drug protester in Punjab who consumed poison was found to be facing nine criminal cases, highlighting the complex intersection of social activism and criminal records.",
+        "prelims_facts": [
+          "State associated with the incident: Punjab",
+          "Source publisher: NDTV"
+        ],
+        "vocabulary": [
+          {
+            "word": "Protest",
+            "meaning_hindi": "विरोध प्रदर्शन"
+          },
+          {
+            "word": "Poison",
+            "meaning_hindi": "विष / ज़हर"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Punjab",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Punjab"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "पंजाब: नशा विरोधी प्रदर्शन के दौरान जहर खाने वाले व्यक्ति पर खुद दर्ज हैं 9 मामले",
+          "story_lead": "पंजाब में नशा विरोधी प्रदर्शन के दौरान जहर खाने वाले एक व्यक्ति के खुद नौ आपराधिक मामलों का सामना करने का मामला सामने आया है। यह घटना राज्य में नशा विरोधी आंदोलनों और कानून प्रवर्तन से जुड़ी जटिल जमीनी सच्चाइयां उजागर करती है।",
+          "full_article_text": "एनडीटीवी की रिपोर्ट के अनुसार, पंजाब में नशा विरोधी प्रदर्शन के दौरान जहर खाने वाले व्यक्ति के खिलाफ नौ आपराधिक मामले दर्ज पाए गए हैं। इस खुलासे से नागरिक आंदोलनों और नशा विरोधी अभियानों में शामिल व्यक्तियों की पृष्ठभूमि तथा कानूनी जटिलताओं पर प्रकाश पड़ता है।",
+          "background_context": "यह घटना पंजाब में एक नशा विरोधी प्रदर्शन के दौरान हुई, जो राज्य में नशीली दवाओं के दुरुपयोग के खिलाफ चल रहे नागरिक आंदोलनों से जुड़ी है।",
+          "bullet_points": [
+            "पंजाब में एक व्यक्ति ने नशा विरोधी प्रदर्शन के दौरान जहर खा लिया।",
+            "जांच या पुलिस रिकॉर्ड से पता चला कि उसी व्यक्ति पर नौ आपराधिक मामले दर्ज हैं।",
+            "इस खबर को एनडीटीवी द्वारा प्रकाशित किया गया है।"
+          ],
+          "key_facts": [
+            "व्यक्ति ने पंजाब में नशा विरोधी प्रदर्शन में हिस्सा लिया था।",
+            "उसने प्रदर्शन के दौरान जहर खा लिया।",
+            "वह व्यक्ति नौ आपराधिक मामलों का सामना कर रहा है।"
+          ],
+          "key_locations": [
+            "पंजाब"
+          ],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "In which state did the anti-drug protest incident involving a man facing nine criminal cases take place?",
+          "options": [
+            "Haryana",
+            "Punjab",
+            "Rajasthan",
+            "Uttar Pradesh"
+          ],
+          "correct_answer": "Punjab",
+          "explanation": "The incident took place in Punjab, where a man who took poison in an anti-drugs protest was found to be facing nine criminal cases."
+        },
+        "source_name": "NDTV",
+        "source_url": "https://www.ndtv.com/india-news/punjab-man-who-took-poison-in-anti-drugs-protest-faces-9-cases-himself-12075497#publisher=newsstand",
+        "published_date": "2026-09-25",
+        "id": 856093938,
+        "image_url": "https://c.ndtvimg.com/2026-09/8p03t4l8_punjab_625x300_20_September_26.jpeg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
+        "added_at": "2026-09-25T22:22:59.497454+05:30"
+      },
+      {
         "category": "Economy",
         "exam_corner": true,
         "headline": "Evaluating Global Economic Risks: Stock Market Crash and Recession Indicators",
@@ -19943,15 +21519,15 @@
       }
     ],
     "last_updated_ist": "2026-09-25 08:53:09",
-    "updated_at": "2026-09-25T22:16:04.869604+05:30",
-    "count": 140
+    "updated_at": "2026-09-25T22:22:59.497454+05:30",
+    "count": 153
   },
   "motivation": {
     "quote": "Small daily progress compounds into strong preparation.",
     "image_url": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1600&q=85",
-    "updated_at": "2026-09-25T22:16:04.869604+05:30"
+    "updated_at": "2026-09-25T22:22:59.497454+05:30"
   },
   "last_updated_ist": "2026-09-25 08:53:09",
   "project": "AURA EXAM AI",
-  "last_updated": "2026-09-25T22:16:04.869604+05:30"
+  "last_updated": "2026-09-25T22:22:59.497454+05:30"
 }
