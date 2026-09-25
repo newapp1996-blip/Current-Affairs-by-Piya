@@ -33,6 +33,17 @@ UPDATE_COUNT = 15
 MAX_CANDIDATES_PER_SOURCE = 25
 REQUEST_TIMEOUT = 15
 
+EXAM_KEYWORDS = (
+    "upsc", "civil services", "ssc", "banking", "ibps", "rbi",
+    "sebi", "niti aayog", "supreme court", "parliament", "cabinet",
+    "government scheme", "yojana", "policy", "act", "bill",
+    "constitution", "constitutional", "committee", "report",
+    "international relations", "defence", "military exercise",
+    "summit", "treaty", "index", "ranking", "census", "budget",
+    "economic survey", "environment agreement", "cop30", "g20",
+    "brics", "sco", "asean", "un", "world bank", "imf",
+)
+
 GEMINI_MODELS = [
     "gemini-3.6-flash",
     "gemini-3.5-flash",
@@ -331,6 +342,34 @@ def call_gemini(client, prompt):
     raise RuntimeError(f"All Gemini models failed: {last_error}")
 
 
+def classify_candidate(candidate, page_text=""):
+    """Keep broad RSS feeds from putting every story into India."""
+    title = clean_text(candidate.get("headline", ""))
+    text = clean_text(page_text)
+    blob = f"{title} {text}".lower()
+    source_category = candidate.get("category", "India")
+
+    if any(k in blob for k in ("cricket", "football", "tennis", "olympics", "athlete", "match", "tournament", "fifa", "ipl")):
+        category = "Sports"
+    elif any(k in blob for k in ("hospital", "disease", "virus", "vaccine", "health", "medical", "doctor", "cancer", "medicine", "outbreak")):
+        category = "Health"
+    elif any(k in blob for k in ("space", "isro", " nasa ", "artificial intelligence", " ai ", "technology", "tech", "quantum", "semiconductor", "robot", "research", "science", "satellite")):
+        category = "Science & Technology"
+    elif any(k in blob for k in ("stock market", "inflation", "gdp", "economy", "bank", "rupee", "trade", "market", "finance", "budget")):
+        category = "Economy"
+    elif any(k in blob for k in ("climate", "pollution", "forest", "wildlife", "biodiversity", "carbon", "emission", "flood", "drought", "environment")):
+        category = "Environment"
+    elif source_category == "World" or any(k in blob for k in ("united states", "ukraine", "russia", "china", "europe", "middle east", "israel", "palestine", "foreign", "global", "world")):
+        category = "World"
+    else:
+        category = "India"
+
+    exam_corner = any(k in blob for k in EXAM_KEYWORDS) or category in {"Environment", "Economy"}
+    candidate["category"] = category
+    candidate["exam_corner"] = exam_corner
+    return candidate
+
+
 def article_prompt(candidate, page_text):
     return f"""
 You are the content engine for AURA EXAM AI, an Indian competitive-exam current-affairs website.
@@ -349,6 +388,8 @@ SOURCE TEXT:
 
 Required JSON object:
 {{
+  "category": "one of India, World, Sports, Science & Technology, Economy, Environment, Health, Exam Corner",
+  "exam_corner": true or false,
   "headline": "clear factual headline",
   "story_lead": "2-4 sentence lead",
   "full_article_text": "coherent study-note style article based on the source",
@@ -400,6 +441,7 @@ def normalize_generated(article, candidate):
     article["source_name"] = candidate["source_name"]
     article["source_url"] = candidate["source_url"]
     article["category"] = candidate["category"]
+    article["exam_corner"] = bool(candidate.get("exam_corner", False))
     article["published_date"] = TODAY
 
     for key in [
