@@ -1,4 +1,4 @@
-```html
+```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,10 +31,8 @@
             new google.translate.TranslateElement(
                 {
                     pageLanguage: 'en',
-                    includedLanguages:
-                        'en,hi,pa,bn,ta,te,mr,gu,kn,ml,ur,as,or,sa,mai,ne,kok,doi,mni,ks,sd,sat,brx',
-                    layout:
-                        google.translate.TranslateElement.InlineLayout.SIMPLE
+                    includedLanguages: 'en,hi,pa,bn,ta,te,mr,gu,kn,ml,ur',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
                 },
                 'google_translate_element'
             );
@@ -74,11 +72,6 @@
 
         a {
             text-decoration: none;
-        }
-
-        /* Prevent Google Translate from altering the IST clock */
-        .notranslate {
-            unicode-bidi: isolate;
         }
 
 
@@ -349,15 +342,6 @@
             font-weight: 700;
         }
 
-        #motivationImageMobile {
-            display: none;
-            width: 100%;
-            max-height: 220px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-top: 12px;
-        }
-
 
         /* =================================================
            LAYOUT
@@ -406,14 +390,6 @@
             font-size: 12px;
             line-height: 1.55;
             color: #666;
-        }
-
-        .motivation-side-image {
-            width: 100%;
-            border-radius: 7px;
-            display: none;
-            object-fit: cover;
-            max-height: 220px;
         }
 
 
@@ -568,18 +544,6 @@
             font-weight: 800;
         }
 
-        .exam-badge {
-            display: inline-block;
-            background: #f2f2f2;
-            color: #555;
-            border: 1px solid #ddd;
-            padding: 4px 7px;
-            border-radius: 12px;
-            font-size: 9px;
-            font-weight: 800;
-            margin-left: 4px;
-        }
-
         .news-number {
             color: #999;
             font-size: 11px;
@@ -613,13 +577,6 @@
             display: flex;
             justify-content: space-between;
             gap: 8px;
-
-            flex-wrap: wrap;
-        }
-
-        .news-publication-time {
-            color: #777;
-            font-weight: 700;
         }
 
 
@@ -841,25 +798,6 @@
 
 
         /* =================================================
-           ARTICLE PUBLICATION TIME
-           ================================================= */
-
-        .publication-time-box {
-            margin-top: 10px;
-            padding: 9px 11px;
-            background: #fafafa;
-            border-left: 3px solid #b30000;
-            border-radius: 5px;
-            color: #666;
-            font-size: 12px;
-        }
-
-        .publication-time-box strong {
-            color: #333;
-        }
-
-
-        /* =================================================
            ARTICLE TABS
            ================================================= */
 
@@ -992,31 +930,6 @@
 
 
         /* =================================================
-           ENTITY / VOCABULARY HIGHLIGHTING
-           ================================================= */
-
-        .vocabulary-highlight {
-            text-decoration: underline;
-            text-decoration-style: dotted;
-            text-decoration-color: #b30000;
-            text-underline-offset: 3px;
-            cursor: help;
-        }
-
-        .entity-link {
-            color: #b30000;
-            text-decoration: underline;
-            text-decoration-style: dotted;
-            text-underline-offset: 3px;
-            font-weight: 700;
-        }
-
-        .entity-link:hover {
-            text-decoration-style: solid;
-        }
-
-
-        /* =================================================
            VOCABULARY
            ================================================= */
 
@@ -1059,6 +972,55 @@
             color: #b30000;
         }
 
+        .vocab-word-link {
+            color: #b30000;
+            font-weight: 800;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+            cursor: pointer;
+        }
+
+        .related-entities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .wiki-entity-link {
+            color: #b30000;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            font-weight: 700;
+        }
+
+        .entity-chip {
+            display: inline-block;
+            background: #fff8f8;
+            border: 1px solid #ffd6d6;
+            border-radius: 15px;
+            padding: 6px 10px;
+            font-size: 12px;
+        }
+
+        .motivation {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .motivation-image {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .motivation-content {
+            padding: 14px 16px 17px;
+            text-align: center;
+        }
+
 
         /* =================================================
            ARTICLE TOOLS
@@ -1096,27 +1058,6 @@
             color: #999;
             cursor: not-allowed;
         }
-
-        .article-language-select {
-            border: 1px solid #ddd;
-            background: white;
-            color: #555;
-            padding: 7px 10px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 11px;
-            font-weight: 800;
-            outline: none;
-        }
-
-        .article-language-select:focus {
-            border-color: #b30000;
-        }
-
-
-        /* =================================================
-           QUIZ
-           ================================================= */
 
         .quiz-modal {
             position: fixed;
@@ -1268,7 +1209,6 @@
             color: #b30000;
         }
 
-
         /* =================================================
            FOOTER
            ================================================= */
@@ -1304,10 +1244,6 @@
 
             .side-panel {
                 display: none;
-            }
-
-            #motivationImageMobile {
-                display: block;
             }
 
         }
@@ -1425,11 +1361,7 @@
 
         <div class="header-tools">
 
-            <div
-                id="liveClock"
-                class="notranslate"
-                translate="no"
-            >
+            <div id="liveClock" class="notranslate" translate="no">
                 Loading time...
             </div>
 
@@ -1519,18 +1451,23 @@
 
     <div class="motivation">
 
-        <div class="motivation-title">
-            AURA STUDY MOTIVATION
-        </div>
-
-        <div id="motivationQuote">
-            Stay focused. Stay consistent.
-        </div>
-
         <img
-            id="motivationImageMobile"
-            alt="Daily study motivation"
+            id="motivationImage"
+            class="motivation-image"
+            src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1600&q=85"
+            alt="Study motivation"
+            loading="eager"
         >
+
+        <div class="motivation-content">
+            <div class="motivation-title">
+                AURA STUDY MOTIVATION
+            </div>
+
+            <div id="motivationQuote">
+                Stay focused. Stay consistent.
+            </div>
+        </div>
 
     </div>
 
@@ -1547,24 +1484,6 @@
              ================================================= -->
 
         <aside class="side-panel">
-
-            <div class="side-card">
-
-                <img
-                    id="motivationSideImage"
-                    class="motivation-side-image"
-                    alt="Daily student motivation"
-                >
-
-                <h3 id="motivationSideTitle">
-                    DAILY MOTIVATION
-                </h3>
-
-                <p id="motivationSideText">
-                    Stay disciplined. Study consistently.
-                </p>
-
-            </div>
 
             <div class="side-card">
 
@@ -1614,12 +1533,7 @@
                     <span id="newsDate">
                         —
                     </span>
-                    <button
-                        class="today-btn"
-                        onclick="openQuiz()"
-                    >
-                        📝 Quiz
-                    </button>
+                    <button class="today-btn" onclick="openQuiz()">📝 Quiz</button>
                 </div>
 
             </div>
@@ -1691,16 +1605,6 @@
                     onclick="filterCategory('Health', this)"
                 >
                     🏥 Health
-                </button>
-
-                <!-- NEW TAB -->
-
-                <button
-                    class="category-btn"
-                    data-category="Indian Exam Specific"
-                    onclick="filterCategory('Indian Exam Specific', this)"
-                >
-                    🇮🇳 Indian Exam Specific
                 </button>
 
             </div>
@@ -1775,20 +1679,6 @@
                 <p>
                     Important English words from each
                     article with their Hindi meanings.
-                </p>
-
-            </div>
-
-            <div class="side-card">
-
-                <h3>
-                    EXAM FOCUS
-                </h3>
-
-                <p>
-                    UPSC • SSC • Banking • RBI • Railways
-                    • Defence • State PSC • Other Indian
-                    competitive examinations.
                 </p>
 
             </div>
@@ -1871,171 +1761,13 @@
 
             </div>
 
-            <!-- PUBLICATION TIME -->
-
-            <div
-                class="publication-time-box notranslate"
-                translate="no"
-                id="articlePublicationTime"
-            >
-                <strong>Published:</strong> —
-            </div>
-
-
             <div class="article-tools">
-
-                <button
-                    class="article-tool-btn active"
-                    id="englishBtn"
-                    onclick="setArticleLanguage('en')"
-                >
-                    English
-                </button>
-
-                <button
-                    class="article-tool-btn"
-                    id="hindiBtn"
-                    onclick="setArticleLanguage('hi')"
-                >
-                    हिंदी
-                </button>
-
-                <!-- NEW INDIAN LANGUAGE SELECTOR -->
-
-                <select
-                    id="articleLanguageSelect"
-                    class="article-language-select"
-                    onchange="setArticleLanguage(this.value)"
-                    title="Select news language"
-                >
-                    <option value="en">
-                        English
-                    </option>
-
-                    <option value="hi">
-                        हिन्दी
-                    </option>
-
-                    <option value="as">
-                        অসমীয়া
-                    </option>
-
-                    <option value="bn">
-                        বাংলা
-                    </option>
-
-                    <option value="brx">
-                        बड़ो
-                    </option>
-
-                    <option value="doi">
-                        डोगरी
-                    </option>
-
-                    <option value="gu">
-                        ગુજરાતી
-                    </option>
-
-                    <option value="kn">
-                        ಕನ್ನಡ
-                    </option>
-
-                    <option value="ks">
-                        کٲشُر
-                    </option>
-
-                    <option value="kok">
-                        कोंकणी
-                    </option>
-
-                    <option value="mai">
-                        मैथिली
-                    </option>
-
-                    <option value="ml">
-                        മലയാളം
-                    </option>
-
-                    <option value="mni">
-                        মেইতেই
-                    </option>
-
-                    <option value="mr">
-                        मराठी
-                    </option>
-
-                    <option value="ne">
-                        नेपाली
-                    </option>
-
-                    <option value="or">
-                        ଓଡ଼ିଆ
-                    </option>
-
-                    <option value="pa">
-                        ਪੰਜਾਬੀ
-                    </option>
-
-                    <option value="sa">
-                        संस्कृतम्
-                    </option>
-
-                    <option value="sat">
-                        संताली
-                    </option>
-
-                    <option value="sd">
-                        سنڌي
-                    </option>
-
-                    <option value="ta">
-                        தமிழ்
-                    </option>
-
-                    <option value="te">
-                        తెలుగు
-                    </option>
-
-                    <option value="ur">
-                        اردو
-                    </option>
-                </select>
-
-                <button
-                    class="article-tool-btn"
-                    id="listenBtn"
-                    onclick="listenArticle()"
-                >
-                    🔊 Listen
-                </button>
-
-                <button
-                    class="article-tool-btn"
-                    id="pauseBtn"
-                    onclick="pauseArticle()"
-                    disabled
-                >
-                    ⏸ Pause
-                </button>
-
-                <button
-                    class="article-tool-btn"
-                    id="resumeBtn"
-                    onclick="resumeArticle()"
-                    disabled
-                >
-                    ▶ Resume
-                </button>
-
-                <button
-                    class="article-tool-btn"
-                    id="stopBtn"
-                    onclick="stopArticle()"
-                    disabled
-                >
-                    ⏹ Stop
-                </button>
-
+                <button class="article-tool-btn active" id="englishBtn" onclick="setArticleLanguage('en')">English</button>
+                <button class="article-tool-btn" id="hindiBtn" onclick="setArticleLanguage('hi')">हिंदी</button>
+                <button class="article-tool-btn" id="listenBtn" onclick="listenArticle()">🔊 Listen</button>
+                <button class="article-tool-btn" id="pauseBtn" onclick="pauseArticle()" disabled>⏸ Pause</button>
+                <button class="article-tool-btn" id="resumeBtn" onclick="resumeArticle()" disabled>▶ Resume</button>
+                <button class="article-tool-btn" id="stopBtn" onclick="stopArticle()" disabled>⏹ Stop</button>
             </div>
 
 
@@ -2170,6 +1902,21 @@
                         id="keyLocations"
                     >
                     </ul>
+
+                </div>
+
+
+                <div class="article-section">
+
+                    <h3>
+                        People & Places
+                    </h3>
+
+                    <div
+                        id="relatedEntities"
+                        class="related-entities"
+                    >
+                    </div>
 
                 </div>
 
@@ -2465,62 +2212,20 @@
      QUIZ MODAL
      ========================================================= -->
 
-<div
-    class="quiz-modal"
-    id="quizModal"
-    onclick="outsideQuizClick(event)"
->
-    <div
-        class="quiz-box"
-        onclick="event.stopPropagation()"
-    >
-
+<div class="quiz-modal" id="quizModal" onclick="outsideQuizClick(event)">
+    <div class="quiz-box" onclick="event.stopPropagation()">
         <div class="quiz-header">
-
-            <h2>
-                📝 Current Affairs Quiz
-            </h2>
-
-            <button
-                class="quiz-close"
-                onclick="closeQuiz()"
-                aria-label="Close quiz"
-            >
-                ×
-            </button>
-
+            <h2>📝 Current Affairs Quiz</h2>
+            <button class="quiz-close" onclick="closeQuiz()" aria-label="Close quiz">×</button>
         </div>
-
         <div class="quiz-content">
-
-            <div
-                class="quiz-summary"
-                id="quizSummary"
-            >
-                Loading quiz...
-            </div>
-
+            <div class="quiz-summary" id="quizSummary">Loading quiz...</div>
             <div id="quizContainer"></div>
-
             <div class="quiz-actions">
-
-                <button
-                    class="quiz-submit"
-                    onclick="submitQuiz()"
-                >
-                    Submit Quiz
-                </button>
-
+                <button class="quiz-submit" onclick="submitQuiz()">Submit Quiz</button>
             </div>
-
-            <div
-                class="quiz-result"
-                id="quizResult"
-            >
-            </div>
-
+            <div class="quiz-result" id="quizResult"></div>
         </div>
-
     </div>
 </div>
 
@@ -2570,16 +2275,12 @@
     let filteredNews = [];
 
     let availableDates = [];
-
     let currentArticleForModal = null;
-
     let currentArticleLanguage = "en";
-
     let speechUtterance = null;
-
     let quizQuestions = [];
-
     let quizSubmitted = false;
+    let currentVocabulary = [];
 
 
     /* =======================================================
@@ -2588,10 +2289,7 @@
 
     function escapeHTML(value) {
 
-        if (
-            value === null ||
-            value === undefined
-        ) {
+        if (value === null || value === undefined) {
             return "";
         }
 
@@ -2601,7 +2299,64 @@
             .replace(/>/g, "&gt;")
             .replace(/"/g, "&quot;")
             .replace(/'/g, "&#039;");
+    }
 
+
+    /* =======================================================
+       VOCABULARY LINKED TEXT
+       ======================================================= */
+
+    function vocabularyRegex(word) {
+
+        const escaped = String(word || "")
+            .replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+        return new RegExp("\\b(" + escaped + ")\\b", "gi");
+    }
+
+
+    function richTextToHTML(value, vocabulary) {
+
+        let html = textToHTML(value || "");
+
+        if (!Array.isArray(vocabulary)) {
+            return html;
+        }
+
+        vocabulary
+            .filter(item => item && item.word)
+            .sort((a, b) => String(b.word).length - String(a.word).length)
+            .forEach(item => {
+
+                const word = escapeHTML(item.word);
+                if (!word) return;
+
+                const regex = vocabularyRegex(word);
+                html = html.replace(regex, match =>
+                    `<a href="#" class="vocab-word-link" onclick="openVocabularyFromWord(event)">${match}</a>`
+                );
+            });
+
+        return html;
+    }
+
+
+    function openVocabularyFromWord(event) {
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        openArticleTab("vocabulary");
+
+        const panel = document.getElementById("tab-vocabulary");
+        if (panel) {
+            setTimeout(() => {
+                panel.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }, 50);
+        }
     }
 
 
@@ -2618,251 +2373,6 @@
         return escapeHTML(value)
             .replace(/\n\n+/g, "</p><p>")
             .replace(/\n/g, "<br>");
-
-    }
-
-
-    /* =======================================================
-       SAFE RICH TEXT
-       Vocabulary + Wikipedia Entities
-       ======================================================= */
-
-    function richTextHTML(
-        value,
-        article
-    ) {
-
-        if (!value) {
-            return "";
-        }
-
-        let html =
-            escapeHTML(value)
-                .replace(/\n\n+/g, "</p><p>")
-                .replace(/\n/g, "<br>");
-
-        const replacements = [];
-
-        /*
-         * Vocabulary
-         */
-
-        if (
-            Array.isArray(article?.vocabulary)
-        ) {
-
-            article.vocabulary.forEach(
-                item => {
-
-                    const word =
-                        String(
-                            item?.word || ""
-                        ).trim();
-
-                    if (word) {
-
-                        replacements.push({
-                            text: word,
-                            html:
-                                '<span class="vocabulary-highlight" title="Vocabulary word">' +
-                                escapeHTML(word) +
-                                "</span>",
-                            priority: 1
-                        });
-
-                    }
-
-                }
-            );
-
-        }
-
-
-        /*
-         * Entities
-         */
-
-        const entityGroups = [
-            "people",
-            "persons",
-            "countries",
-            "states",
-            "places",
-            "locations"
-        ];
-
-        entityGroups.forEach(
-            group => {
-
-                const entities =
-                    article?.entities?.[group];
-
-                if (!Array.isArray(entities)) {
-                    return;
-                }
-
-                entities.forEach(
-                    entity => {
-
-                        let name = "";
-                        let url = "";
-
-                        if (
-                            typeof entity ===
-                            "string"
-                        ) {
-
-                            name = entity;
-
-                        } else {
-
-                            name =
-                                String(
-                                    entity?.name ||
-                                    entity?.title ||
-                                    ""
-                                ).trim();
-
-                            url =
-                                String(
-                                    entity?.wikipedia_url ||
-                                    entity?.wiki_url ||
-                                    entity?.url ||
-                                    ""
-                                ).trim();
-
-                        }
-
-                        if (!name) {
-                            return;
-                        }
-
-                        if (
-                            !url &&
-                            entity?.wikipedia_title
-                        ) {
-
-                            url =
-                                "https://en.wikipedia.org/wiki/" +
-                                encodeURIComponent(
-                                    String(
-                                        entity.wikipedia_title
-                                    )
-                                    .trim()
-                                    .replace(/\s+/g, "_")
-                                );
-
-                        }
-
-                        if (url) {
-
-                            replacements.push({
-                                text: name,
-                                html:
-                                    '<a class="entity-link" href="' +
-                                    escapeHTML(url) +
-                                    '" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">' +
-                                    escapeHTML(name) +
-                                    "</a>",
-                                priority: 2
-                            });
-
-                        }
-
-                    }
-                );
-
-            }
-        );
-
-
-        /*
-         * Longest terms first.
-         * This reduces partial replacement problems.
-         */
-
-        replacements.sort(
-            (a, b) =>
-                b.text.length -
-                a.text.length
-        );
-
-
-        /*
-         * Use placeholders so HTML inserted
-         * by one replacement cannot be replaced again.
-         */
-
-        const placeholders = [];
-
-        replacements.forEach(
-            (replacement, index) => {
-
-                const token =
-                    "___AURA_ENTITY_" +
-                    index +
-                    "___";
-
-                const regex =
-                    new RegExp(
-                        "\\b" +
-                        escapeRegExp(
-                            replacement.text
-                        ) +
-                        "\\b",
-                        "gi"
-                    );
-
-                if (
-                    regex.test(html)
-                ) {
-
-                    html =
-                        html.replace(
-                            regex,
-                            token
-                        );
-
-                    placeholders.push({
-                        token,
-                        html:
-                            replacement.html
-                    });
-
-                }
-
-            }
-        );
-
-
-        placeholders.forEach(
-            item => {
-
-                html =
-                    html.replaceAll(
-                        item.token,
-                        item.html
-                    );
-
-            }
-        );
-
-
-        return html;
-
-    }
-
-
-    function escapeRegExp(
-        value
-    ) {
-
-        return String(value)
-            .replace(
-                /[.*+?^${}()|[\]\\]/g,
-                "\\$&"
-            );
-
     }
 
 
@@ -2870,15 +2380,9 @@
        ARRAY HTML
        ======================================================= */
 
-    function arrayToList(
-        items,
-        article = null
-    ) {
+    function arrayToList(items) {
 
-        if (
-            !Array.isArray(items) ||
-            items.length === 0
-        ) {
+        if (!Array.isArray(items) || items.length === 0) {
 
             return `
                 <li style="color:#999;">
@@ -2889,60 +2393,11 @@
         }
 
         return items
-            .map(
-                item => {
-
-                    if (
-                        typeof item === "object" &&
-                        item !== null
-                    ) {
-
-                        const text =
-                            item.text ||
-                            item.name ||
-                            item.title ||
-                            "";
-
-                        const url =
-                            item.wikipedia_url ||
-                            item.wiki_url ||
-                            item.url ||
-                            "";
-
-                        if (url) {
-
-                            return `
-                                <li>
-                                    <a
-                                        class="entity-link"
-                                        href="${escapeHTML(url)}"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        onclick="event.stopPropagation()"
-                                    >
-                                        ${escapeHTML(text)}
-                                    </a>
-                                </li>
-                            `;
-
-                        }
-
-                        return `
-                            <li>
-                                ${escapeHTML(text)}
-                            </li>
-                        `;
-
-                    }
-
-                    return `
-                        <li>
-                            ${escapeHTML(item)}
-                        </li>
-                    `;
-
-                }
-            )
+            .map(item => `
+                <li>
+                    ${escapeHTML(item)}
+                </li>
+            `)
             .join("");
 
     }
@@ -2998,8 +2453,7 @@
 
         const shareData = {
             title: "AURA EXAM AI",
-            text:
-                "Daily Current Affairs, UPSC Analysis and Mains Notes",
+            text: "Daily Current Affairs, UPSC Analysis and Mains Notes",
             url: window.location.href
         };
 
@@ -3026,11 +2480,9 @@
             }
 
         } catch (error) {
-
             console.log(
                 "Share cancelled."
             );
-
         }
 
     }
@@ -3051,11 +2503,9 @@
                 );
 
             if (!response.ok) {
-
                 throw new Error(
                     "Could not load data.json"
                 );
-
             }
 
             globalPayload =
@@ -3100,9 +2550,24 @@
 
             }
 
-            applyMotivation(
-                globalPayload?.motivation
-            );
+            if (
+                globalPayload.motivation
+            ) {
+
+                if (globalPayload.motivation.quote) {
+                    document
+                        .getElementById("motivationQuote")
+                        .textContent =
+                        globalPayload.motivation.quote;
+                }
+
+                if (globalPayload.motivation.image_url) {
+                    const image = document.getElementById("motivationImage");
+                    if (image) {
+                        image.src = globalPayload.motivation.image_url;
+                    }
+                }
+            }
 
         } catch (error) {
 
@@ -3113,82 +2578,6 @@
             showError(
                 "Unable to load current affairs. Please refresh the page."
             );
-
-        }
-
-    }
-
-
-    /* =======================================================
-       MOTIVATION
-       ======================================================= */
-
-    function applyMotivation(
-        motivation
-    ) {
-
-        if (!motivation) {
-            return;
-        }
-
-        const quote =
-            motivation.quote ||
-            motivation.text ||
-            "";
-
-        if (quote) {
-
-            document
-                .getElementById(
-                    "motivationQuote"
-                )
-                .textContent =
-                quote;
-
-        }
-
-
-        const image =
-            motivation.image_url ||
-            motivation.image ||
-            motivation.imageUrl ||
-            "";
-
-
-        if (image) {
-
-            const sideImage =
-                document.getElementById(
-                    "motivationSideImage"
-                );
-
-            const mobileImage =
-                document.getElementById(
-                    "motivationImageMobile"
-                );
-
-            sideImage.src = image;
-            sideImage.style.display = "block";
-
-            mobileImage.src = image;
-            mobileImage.style.display = "block";
-
-        }
-
-
-        const sideText =
-            motivation.caption ||
-            motivation.message ||
-            "";
-
-        if (sideText) {
-
-            document
-                .getElementById(
-                    "motivationSideText"
-                )
-                .textContent =
-                sideText;
 
         }
 
@@ -3258,9 +2647,7 @@
        FORMAT DATE
        ======================================================= */
 
-    function formatDate(
-        dateString
-    ) {
+    function formatDate(dateString) {
 
         if (!dateString) {
             return "";
@@ -3271,14 +2658,6 @@
                 dateString + "T00:00:00"
             );
 
-        if (
-            Number.isNaN(
-                date.getTime()
-            )
-        ) {
-            return String(dateString);
-        }
-
         return date.toLocaleDateString(
             "en-IN",
             {
@@ -3287,76 +2666,6 @@
                 year: "numeric"
             }
         );
-
-    }
-
-
-    /* =======================================================
-       FORMAT PUBLICATION TIME
-       ======================================================= */
-
-    function formatPublicationTime(
-        article
-    ) {
-
-        const raw =
-            article?.published_time ||
-            article?.publication_time ||
-            article?.published_at ||
-            article?.published_datetime ||
-            article?.publication_datetime ||
-            article?.source_published_at ||
-            "";
-
-        if (!raw) {
-
-            return "Time unavailable";
-
-        }
-
-
-        /*
-         * If backend already provides a readable
-         * IST string, use it directly.
-         */
-
-        if (
-            /IST/i.test(
-                String(raw)
-            )
-        ) {
-
-            return String(raw);
-
-        }
-
-
-        const date =
-            new Date(raw);
-
-        if (
-            Number.isNaN(
-                date.getTime()
-            )
-        ) {
-
-            return String(raw);
-
-        }
-
-
-        return date.toLocaleString(
-            "en-IN",
-            {
-                timeZone: "Asia/Kolkata",
-                day: "2-digit",
-                month: "short",
-                year: "numeric",
-                hour: "2-digit",
-                minute: "2-digit",
-                hour12: true
-            }
-        ) + " IST";
 
     }
 
@@ -3479,11 +2788,9 @@
                     );
 
                 if (!response.ok) {
-
                     throw new Error(
                         "Historical data unavailable"
                     );
-
                 }
 
                 data =
@@ -3511,27 +2818,6 @@
                 )
                 .textContent =
                 formatDate(date);
-
-            /*
-             * Apply date-specific motivation
-             * if available.
-             */
-
-            if (
-                data.motivation
-            ) {
-
-                applyMotivation(
-                    data.motivation
-                );
-
-            } else {
-
-                applyMotivation(
-                    globalPayload?.motivation
-                );
-
-            }
 
             renderNews();
 
@@ -3611,11 +2897,9 @@
             );
 
         if (allButton) {
-
             allButton.classList.add(
                 "active"
             );
-
         }
 
     }
@@ -3637,38 +2921,6 @@
             return true;
 
         }
-
-
-        /*
-         * NEW:
-         * Indian Exam Specific is based on
-         * backend exam_specific classification.
-         *
-         * Multiple possible field names are
-         * supported for compatibility.
-         */
-
-        if (
-            currentCategory ===
-            "Indian Exam Specific"
-        ) {
-
-            return (
-                article.exam_specific === true ||
-                article.indian_exam_specific === true ||
-                article.is_exam_specific === true ||
-                String(
-                    article.exam_category ||
-                    ""
-                )
-                .trim()
-                .toLowerCase()
-                ===
-                "indian exam specific"
-            );
-
-        }
-
 
         const articleCategory =
             String(
@@ -3845,26 +3097,6 @@
             "Click to read the complete analysis.";
 
 
-        const examBadge =
-            (
-                article.exam_specific === true ||
-                article.indian_exam_specific === true ||
-                article.is_exam_specific === true
-            )
-                ? `
-                    <span class="exam-badge">
-                        EXAM FOCUS
-                    </span>
-                `
-                : "";
-
-
-        const publicationTime =
-            getShortPublicationTime(
-                article
-            );
-
-
         card.innerHTML = `
 
             <img
@@ -3879,13 +3111,8 @@
 
                 <div class="news-meta">
 
-                    <span>
-                        <span class="category-badge">
-                            ${escapeHTML(category)}
-                        </span>
-
-                        ${examBadge}
-
+                    <span class="category-badge">
+                        ${escapeHTML(category)}
                     </span>
 
                     <span class="news-number">
@@ -3912,14 +3139,7 @@
                     <span>
                         ${escapeHTML(
                             article.source_name ||
-                            article.source ||
                             "News Source"
-                        )}
-                    </span>
-
-                    <span class="news-publication-time">
-                        ${escapeHTML(
-                            publicationTime
                         )}
                     </span>
 
@@ -3934,63 +3154,6 @@
         `;
 
         return card;
-
-    }
-
-
-    /* =======================================================
-       SHORT PUBLICATION TIME
-       ======================================================= */
-
-    function getShortPublicationTime(
-        article
-    ) {
-
-        const raw =
-            article?.published_time ||
-            article?.publication_time ||
-            article?.published_at ||
-            article?.published_datetime ||
-            article?.publication_datetime ||
-            article?.source_published_at ||
-            "";
-
-        if (!raw) {
-            return "Time unavailable";
-        }
-
-        if (
-            /IST/i.test(
-                String(raw)
-            )
-        ) {
-
-            return String(raw);
-
-        }
-
-        const date =
-            new Date(raw);
-
-        if (
-            Number.isNaN(
-                date.getTime()
-            )
-        ) {
-
-            return String(raw);
-
-        }
-
-        return date.toLocaleTimeString(
-            "en-IN",
-            {
-                timeZone: "Asia/Kolkata",
-                hour: "2-digit",
-                minute: "2-digit",
-                hour12: true
-            }
-        ) + " IST";
 
     }
 
@@ -4126,452 +3289,180 @@
 
 
     /* =======================================================
-       ARTICLE TRANSLATIONS
+       ARTICLE LANGUAGE + VOICE
        ======================================================= */
 
-    function getArticleTranslation(
-        article,
-        language
-    ) {
+    function getHindiTranslation(article) {
+        const t = article?.hindi_translation;
 
-        if (
-            !article ||
-            language === "en"
-        ) {
-
-            return article;
-
+        if (!t) {
+            return null;
         }
 
-
-        /*
-         * New structure:
-         *
-         * translations: {
-         *   hi: {...},
-         *   pa: {...},
-         *   ...
-         * }
-         */
-
-        if (
-            article.translations &&
-            article.translations[language]
-        ) {
-
-            return article.translations[
-                language
-            ];
-
+        if (typeof t === "string") {
+            return {
+                headline: article.headline || "",
+                story_lead: "",
+                full_article_text: t,
+                background_context: "",
+                bullet_points: [],
+                key_facts: [],
+                key_locations: [],
+                important_dates: []
+            };
         }
 
-
-        /*
-         * Existing Hindi structure.
-         */
-
-        if (
-            language === "hi" &&
-            article.hindi_translation
-        ) {
-
-            const t =
-                article.hindi_translation;
-
-            if (
-                typeof t === "string"
-            ) {
-
-                return {
-                    headline:
-                        article.headline || "",
-                    story_lead: "",
-                    full_article_text: t,
-                    background_context: "",
-                    bullet_points: [],
-                    key_facts: [],
-                    key_locations: [],
-                    important_dates: []
-                };
-
-            }
-
-            return t;
-
-        }
-
-        return null;
-
+        return t;
     }
 
 
-    /* =======================================================
-       ARTICLE LANGUAGE
-       ======================================================= */
+    function setArticleLanguage(language) {
 
-    function setArticleLanguage(
-        language
-    ) {
-
-        if (
-            !currentArticleForModal
-        ) {
-
+        if (!currentArticleForModal) {
             return;
-
         }
 
+        if (language === "hi") {
 
-        if (
-            !language
-        ) {
+            const hindi = getHindiTranslation(
+                currentArticleForModal
+            );
 
-            language = "en";
+            if (!hindi) {
+                alert(
+                    "Hindi translation is not available for this article yet."
+                );
+                return;
+            }
 
-        }
+            currentArticleLanguage = "hi";
 
+            document.getElementById("articleHeadline").textContent =
+                hindi.headline ||
+                currentArticleForModal.headline ||
+                "Current Affairs";
 
-        if (
-            language === "en"
-        ) {
+            document.getElementById("articleLead").textContent =
+                hindi.story_lead ||
+                currentArticleForModal.story_lead ||
+                "";
 
-            currentArticleLanguage =
-                "en";
+            document.getElementById("articleText").innerHTML =
+                "<p>" +
+                textToHTML(
+                    hindi.full_article_text ||
+                    currentArticleForModal.full_article_text ||
+                    ""
+                ) +
+                "</p>";
+
+            document.getElementById("backgroundContext").textContent =
+                hindi.background_context ||
+                currentArticleForModal.background_context ||
+                "Background context is not available.";
+
+            document.getElementById("overviewBullets").innerHTML =
+                arrayToList(hindi.bullet_points);
+
+            document.getElementById("keyFacts").innerHTML =
+                arrayToList(hindi.key_facts);
+
+            document.getElementById("keyLocations").innerHTML =
+                arrayToList(hindi.key_locations);
+
+            document.getElementById("importantDates").innerHTML =
+                arrayToList(hindi.important_dates);
+
+            renderRelatedEntities(
+                currentArticleForModal.related_entities || []
+            );
+
+            document.getElementById("hindiBtn").classList.add("active");
+            document.getElementById("englishBtn").classList.remove("active");
+
+        } else {
+
+            currentArticleLanguage = "en";
 
             renderEnglishArticleOverview(
                 currentArticleForModal
             );
 
-            updateLanguageControls(
-                "en"
-            );
-
-            stopArticle();
-
-            return;
-
+            document.getElementById("englishBtn").classList.add("active");
+            document.getElementById("hindiBtn").classList.remove("active");
         }
-
-
-        const translation =
-            getArticleTranslation(
-                currentArticleForModal,
-                language
-            );
-
-
-        if (!translation) {
-
-            /*
-             * Do not replace the English article
-             * if a translation has not been generated.
-             */
-
-            document
-                .getElementById(
-                    "articleLanguageSelect"
-                )
-                .value =
-                currentArticleLanguage;
-
-            alert(
-                "This language translation is not available for this article yet."
-            );
-
-            return;
-
-        }
-
-
-        currentArticleLanguage =
-            language;
-
-
-        document
-            .getElementById(
-                "articleHeadline"
-            )
-            .textContent =
-            translation.headline ||
-            currentArticleForModal.headline ||
-            "Current Affairs";
-
-
-        document
-            .getElementById(
-                "articleLead"
-            )
-            .textContent =
-            translation.story_lead ||
-            currentArticleForModal.story_lead ||
-            "";
-
-
-        document
-            .getElementById(
-                "articleText"
-            )
-            .innerHTML =
-            "<p>" +
-            richTextHTML(
-                translation.full_article_text ||
-                currentArticleForModal.full_article_text ||
-                "",
-                currentArticleForModal
-            ) +
-            "</p>";
-
-
-        document
-            .getElementById(
-                "backgroundContext"
-            )
-            .textContent =
-            translation.background_context ||
-            currentArticleForModal.background_context ||
-            "Background context is not available.";
-
-
-        document
-            .getElementById(
-                "overviewBullets"
-            )
-            .innerHTML =
-            arrayToList(
-                translation.bullet_points
-            );
-
-
-        document
-            .getElementById(
-                "keyFacts"
-            )
-            .innerHTML =
-            arrayToList(
-                translation.key_facts
-            );
-
-
-        document
-            .getElementById(
-                "keyLocations"
-            )
-            .innerHTML =
-            arrayToList(
-                translation.key_locations
-            );
-
-
-        document
-            .getElementById(
-                "importantDates"
-            )
-            .innerHTML =
-            arrayToList(
-                translation.important_dates
-            );
-
-
-        updateLanguageControls(
-            language
-        );
 
         stopArticle();
-
     }
 
 
-    /* =======================================================
-       LANGUAGE BUTTON STATE
-       ======================================================= */
+    function renderEnglishArticleOverview(article) {
 
-    function updateLanguageControls(
-        language
-    ) {
+        currentVocabulary = Array.isArray(article.vocabulary) ? article.vocabulary : [];
 
-        const englishBtn =
-            document.getElementById(
-                "englishBtn"
-            );
+        document.getElementById("articleHeadline").textContent =
+            article.headline ||
+            "Current Affairs";
 
-        const hindiBtn =
-            document.getElementById(
-                "hindiBtn"
-            );
+        document.getElementById("articleLead").textContent =
+            article.story_lead ||
+            "";
 
-        const select =
-            document.getElementById(
-                "articleLanguageSelect"
-            );
-
-
-        englishBtn.classList.toggle(
-            "active",
-            language === "en"
-        );
-
-        hindiBtn.classList.toggle(
-            "active",
-            language === "hi"
-        );
-
-
-        if (select) {
-
-            select.value =
-                language;
-
-        }
-
-    }
-
-
-    /* =======================================================
-       ENGLISH ARTICLE OVERVIEW
-       ======================================================= */
-
-    function renderEnglishArticleOverview(
-        article
-    ) {
-
-        document
-            .getElementById(
-                "articleHeadline"
-            )
-            .innerHTML =
-            richTextHTML(
-                article.headline ||
-                "Current Affairs",
-                article
-            );
-
-
-        document
-            .getElementById(
-                "articleLead"
-            )
-            .innerHTML =
-            richTextHTML(
-                article.story_lead ||
-                "",
-                article
-            );
-
-
-        document
-            .getElementById(
-                "articleText"
-            )
-            .innerHTML =
+        document.getElementById("articleText").innerHTML =
             "<p>" +
-            richTextHTML(
+            richTextToHTML(
                 article.full_article_text ||
                 article.story_lead ||
                 "",
-                article
+                currentVocabulary
             ) +
             "</p>";
 
+        document.getElementById("backgroundContext").textContent =
+            article.background_context ||
+            "Background context is not available.";
 
-        document
-            .getElementById(
-                "backgroundContext"
-            )
-            .innerHTML =
-            richTextHTML(
-                article.background_context ||
-                "Background context is not available.",
-                article
-            );
+        document.getElementById("overviewBullets").innerHTML =
+            arrayToList(article.bullet_points);
 
+        document.getElementById("keyFacts").innerHTML =
+            arrayToList(article.key_facts);
 
-        document
-            .getElementById(
-                "overviewBullets"
-            )
-            .innerHTML =
-            arrayToList(
-                article.bullet_points,
-                article
-            );
+        document.getElementById("keyLocations").innerHTML =
+            arrayToList(article.key_locations);
 
+        document.getElementById("importantDates").innerHTML =
+            arrayToList(article.important_dates);
 
-        document
-            .getElementById(
-                "keyFacts"
-            )
-            .innerHTML =
-            arrayToList(
-                article.key_facts,
-                article
-            );
-
-
-        document
-            .getElementById(
-                "keyLocations"
-            )
-            .innerHTML =
-            arrayToList(
-                article.key_locations,
-                article
-            );
-
-
-        document
-            .getElementById(
-                "importantDates"
-            )
-            .innerHTML =
-            arrayToList(
-                article.important_dates,
-                article
-            );
-
+        renderRelatedEntities(
+            article.related_entities || []
+        );
     }
 
 
-    /* =======================================================
-       SPEECH TEXT
-       ======================================================= */
-
     function getSpeechText() {
 
-        if (
-            !currentArticleForModal
-        ) {
-
+        if (!currentArticleForModal) {
             return "";
-
         }
 
+        if (currentArticleLanguage === "hi") {
 
-        if (
-            currentArticleLanguage !==
-            "en"
-        ) {
+            const hindi = getHindiTranslation(
+                currentArticleForModal
+            );
 
-            const translation =
-                getArticleTranslation(
-                    currentArticleForModal,
-                    currentArticleLanguage
-                );
-
-            if (translation) {
-
+            if (hindi) {
                 return [
-                    translation.headline,
-                    translation.story_lead,
-                    translation.full_article_text,
-                    translation.background_context
+                    hindi.headline,
+                    hindi.story_lead,
+                    hindi.full_article_text,
+                    hindi.background_context
                 ]
                 .filter(Boolean)
                 .join(". ");
-
             }
-
         }
-
 
         return [
             currentArticleForModal.headline,
@@ -4581,115 +3472,40 @@
         ]
         .filter(Boolean)
         .join(". ");
-
     }
 
 
-    /* =======================================================
-       SPEECH LANGUAGE
-       ======================================================= */
-
-    function getSpeechLanguageCode(
-        language
-    ) {
-
-        const map = {
-
-            en: "en-IN",
-            hi: "hi-IN",
-            as: "as-IN",
-            bn: "bn-IN",
-            brx: "brx-IN",
-            doi: "doi-IN",
-            gu: "gu-IN",
-            kn: "kn-IN",
-            ks: "ks-IN",
-            kok: "kok-IN",
-            mai: "mai-IN",
-            ml: "ml-IN",
-            mni: "mni-IN",
-            mr: "mr-IN",
-            ne: "ne-IN",
-            or: "or-IN",
-            pa: "pa-IN",
-            sa: "sa-IN",
-            sat: "sat-IN",
-            sd: "sd-IN",
-            ta: "ta-IN",
-            te: "te-IN",
-            ur: "ur-IN"
-
-        };
-
-        return (
-            map[language] ||
-            "en-IN"
-        );
-
-    }
-
-
-    /* =======================================================
-       CHOOSE SPEECH VOICE
-       ======================================================= */
-
-    function chooseSpeechVoice(
-        language
-    ) {
+    function chooseSpeechVoice(language) {
 
         const voices =
             window.speechSynthesis
                 ? window.speechSynthesis.getVoices()
                 : [];
 
-
         const lang =
-            getSpeechLanguageCode(
-                language
-            );
-
-
-        const baseLanguage =
-            lang
-                .toLowerCase()
-                .split("-")[0];
-
+            language === "hi"
+                ? "hi-IN"
+                : "en-IN";
 
         const matching =
             voices.filter(
                 voice =>
                     voice.lang &&
-                    voice.lang
-                        .toLowerCase()
-                        .startsWith(
-                            baseLanguage
-                        )
+                    voice.lang.toLowerCase().startsWith(
+                        lang.toLowerCase().split("-")[0]
+                    )
             );
-
 
         const femaleNamed =
             matching.find(
                 voice =>
                     /female|woman|samantha|zira|google.*female|heera|kalpana/i
-                        .test(
-                            voice.name
-                        )
+                        .test(voice.name)
             );
 
-
-        return (
-            femaleNamed ||
-            matching[0] ||
-            voices[0] ||
-            null
-        );
-
+        return femaleNamed || matching[0] || voices[0] || null;
     }
 
-
-    /* =======================================================
-       SPEECH BUTTONS
-       ======================================================= */
 
     function updateSpeechButtons(
         speaking,
@@ -4697,175 +3513,89 @@
     ) {
 
         const listen =
-            document.getElementById(
-                "listenBtn"
-            );
+            document.getElementById("listenBtn");
 
         const pause =
-            document.getElementById(
-                "pauseBtn"
-            );
+            document.getElementById("pauseBtn");
 
         const resume =
-            document.getElementById(
-                "resumeBtn"
-            );
+            document.getElementById("resumeBtn");
 
         const stop =
-            document.getElementById(
-                "stopBtn"
-            );
+            document.getElementById("stopBtn");
 
-
-        if (
-            !listen ||
-            !pause ||
-            !resume ||
-            !stop
-        ) {
-
+        if (!listen || !pause || !resume || !stop) {
             return;
-
         }
 
-
-        listen.disabled =
-            speaking &&
-            !paused;
-
-        pause.disabled =
-            !speaking ||
-            paused;
-
-        resume.disabled =
-            !speaking ||
-            !paused;
-
-        stop.disabled =
-            !speaking;
-
+        listen.disabled = speaking && !paused;
+        pause.disabled = !speaking || paused;
+        resume.disabled = !speaking || !paused;
+        stop.disabled = !speaking;
     }
 
 
-    /* =======================================================
-       LISTEN ARTICLE
-       ======================================================= */
-
     function listenArticle() {
 
-        if (
-            !("speechSynthesis" in window)
-        ) {
-
+        if (!("speechSynthesis" in window)) {
             alert(
                 "Voice playback is not supported by this browser."
             );
-
             return;
-
         }
-
 
         stopArticle();
 
-
-        const text =
-            getSpeechText();
-
+        const text = getSpeechText();
 
         if (!text) {
             return;
         }
 
-
         speechUtterance =
-            new SpeechSynthesisUtterance(
-                text
-            );
-
+            new SpeechSynthesisUtterance(text);
 
         speechUtterance.lang =
-            getSpeechLanguageCode(
-                currentArticleLanguage
-            );
+            currentArticleLanguage === "hi"
+                ? "hi-IN"
+                : "en-IN";
 
-
-        speechUtterance.rate =
-            0.95;
-
-        speechUtterance.pitch =
-            1;
-
+        speechUtterance.rate = 0.95;
+        speechUtterance.pitch = 1;
 
         const voice =
             chooseSpeechVoice(
                 currentArticleLanguage
             );
 
-
         if (voice) {
-
-            speechUtterance.voice =
-                voice;
-
+            speechUtterance.voice = voice;
         }
-
 
         speechUtterance.onstart =
             function() {
-
-                updateSpeechButtons(
-                    true,
-                    false
-                );
-
+                updateSpeechButtons(true, false);
             };
-
 
         speechUtterance.onend =
             function() {
-
-                speechUtterance =
-                    null;
-
-                updateSpeechButtons(
-                    false,
-                    false
-                );
-
+                speechUtterance = null;
+                updateSpeechButtons(false, false);
             };
-
 
         speechUtterance.onerror =
             function() {
-
-                speechUtterance =
-                    null;
-
-                updateSpeechButtons(
-                    false,
-                    false
-                );
-
+                speechUtterance = null;
+                updateSpeechButtons(false, false);
             };
-
 
         window.speechSynthesis.speak(
             speechUtterance
         );
 
-
-        updateSpeechButtons(
-            true,
-            false
-        );
-
+        updateSpeechButtons(true, false);
     }
 
-
-    /* =======================================================
-       PAUSE
-       ======================================================= */
 
     function pauseArticle() {
 
@@ -4875,20 +3605,10 @@
         ) {
 
             window.speechSynthesis.pause();
-
-            updateSpeechButtons(
-                true,
-                true
-            );
-
+            updateSpeechButtons(true, true);
         }
-
     }
 
-
-    /* =======================================================
-       RESUME
-       ======================================================= */
 
     function resumeArticle() {
 
@@ -4898,39 +3618,19 @@
         ) {
 
             window.speechSynthesis.resume();
-
-            updateSpeechButtons(
-                true,
-                false
-            );
-
+            updateSpeechButtons(true, false);
         }
-
     }
 
 
-    /* =======================================================
-       STOP
-       ======================================================= */
-
     function stopArticle() {
 
-        if (
-            "speechSynthesis" in window
-        ) {
-
+        if ("speechSynthesis" in window) {
             window.speechSynthesis.cancel();
-
         }
 
-        speechUtterance =
-            null;
-
-        updateSpeechButtons(
-            false,
-            false
-        );
-
+        speechUtterance = null;
+        updateSpeechButtons(false, false);
     }
 
 
@@ -4946,32 +3646,24 @@
             return;
         }
 
-
         const article =
             currentData.news.find(
                 item =>
-                    String(item.id) ===
-                    String(newsId)
+                    Number(item.id) ===
+                    Number(newsId)
             );
-
 
         if (!article) {
             return;
         }
 
-
         stopArticle();
+        currentArticleForModal = article;
+        currentArticleLanguage = "en";
+        currentVocabulary = Array.isArray(article.vocabulary) ? article.vocabulary : [];
 
-        currentArticleForModal =
-            article;
-
-        currentArticleLanguage =
-            "en";
-
-
-        updateLanguageControls(
-            "en"
-        );
+        document.getElementById("englishBtn").classList.add("active");
+        document.getElementById("hindiBtn").classList.remove("active");
 
 
         /* IMAGE */
@@ -4998,11 +3690,6 @@
 
         /* META */
 
-        const articleDate =
-            article.published_date ||
-            currentData.date;
-
-
         document
             .getElementById(
                 "articleMeta"
@@ -5015,27 +3702,12 @@
             " • " +
             (
                 article.source_name ||
-                article.source ||
                 "News Source"
             ) +
             " • " +
             formatDate(
-                articleDate
-            );
-
-
-        /* PUBLICATION TIME */
-
-        document
-            .getElementById(
-                "articlePublicationTime"
-            )
-            .innerHTML =
-            "<strong>Published on official source:</strong> " +
-            escapeHTML(
-                formatPublicationTime(
-                    article
-                )
+                article.published_date ||
+                currentData.date
             );
 
 
@@ -5046,15 +3718,12 @@
                 "sourceLink"
             );
 
-
         if (
-            article.source_url ||
-            article.url
+            article.source_url
         ) {
 
             sourceLink.href =
-                article.source_url ||
-                article.url;
+                article.source_url;
 
             sourceLink.style.display =
                 "inline";
@@ -5069,9 +3738,7 @@
 
         /* OVERVIEW */
 
-        renderEnglishArticleOverview(
-            article
-        );
+        renderEnglishArticleOverview(article);
 
 
         /* UPSC */
@@ -5082,8 +3749,7 @@
             )
             .innerHTML =
             arrayToList(
-                article.exam_relevance,
-                article
+                article.exam_relevance
             );
 
 
@@ -5102,8 +3768,7 @@
             )
             .innerHTML =
             arrayToList(
-                article.causes,
-                article
+                article.causes
             );
 
 
@@ -5113,8 +3778,7 @@
             )
             .innerHTML =
             arrayToList(
-                article.impacts,
-                article
+                article.impacts
             );
 
 
@@ -5124,8 +3788,7 @@
             )
             .innerHTML =
             arrayToList(
-                article.challenges,
-                article
+                article.challenges
             );
 
 
@@ -5135,8 +3798,7 @@
             )
             .innerHTML =
             arrayToList(
-                article.government_steps,
-                article
+                article.government_steps
             );
 
 
@@ -5146,8 +3808,7 @@
             )
             .innerHTML =
             arrayToList(
-                article.constitutional_or_policy_link,
-                article
+                article.constitutional_or_policy_link
             );
 
 
@@ -5157,8 +3818,7 @@
             )
             .innerHTML =
             arrayToList(
-                article.way_forward,
-                article
+                article.way_forward
             );
 
 
@@ -5179,8 +3839,7 @@
             )
             .innerHTML =
             arrayToList(
-                article.mains_questions,
-                article
+                article.mains_questions
             );
 
 
@@ -5201,8 +3860,7 @@
             )
             .innerHTML =
             arrayToList(
-                article.prelims_facts,
-                article
+                article.prelims_facts
             );
 
 
@@ -5238,6 +3896,40 @@
 
 
     /* =======================================================
+       WIKIPEDIA PEOPLE / PLACES
+       ======================================================= */
+
+    function renderRelatedEntities(entities) {
+
+        const container = document.getElementById("relatedEntities");
+        if (!container) return;
+
+        container.innerHTML = "";
+
+        if (!Array.isArray(entities) || entities.length === 0) {
+            container.innerHTML = `<span style="color:#999;font-size:12px;">No people or places identified.</span>`;
+            return;
+        }
+
+        entities.forEach(entity => {
+            const name = entity?.name || "";
+            const url = entity?.wikipedia_url ||
+                (name ? "https://en.wikipedia.org/wiki/Special:Search?search=" + encodeURIComponent(name) : "#");
+
+            if (!name) return;
+
+            const chip = document.createElement("span");
+            chip.className = "entity-chip";
+            chip.innerHTML = `
+                ${escapeHTML(entity.type === "person" ? "👤" : "📍")} 
+                <a class="wiki-entity-link" href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(name)}</a>
+            `;
+            container.appendChild(chip);
+        });
+    }
+
+
+    /* =======================================================
        VOCABULARY
        ======================================================= */
 
@@ -5251,7 +3943,6 @@
             );
 
         body.innerHTML = "";
-
 
         if (
             !Array.isArray(
@@ -5272,7 +3963,6 @@
 
         }
 
-
         vocabulary.forEach(
             item => {
 
@@ -5281,13 +3971,18 @@
                         "tr"
                     );
 
-
                 row.innerHTML = `
 
                     <td class="vocab-word">
-                        ${escapeHTML(
-                            item.word || ""
-                        )}
+                        <a
+                            href="#"
+                            class="vocab-word-link"
+                            onclick="openVocabularyFromWord(event)"
+                        >
+                            ${escapeHTML(
+                                item.word || ""
+                            )}
+                        </a>
                     </td>
 
                     <td>
@@ -5297,7 +3992,6 @@
                     </td>
 
                 `;
-
 
                 body.appendChild(
                     row
@@ -5348,7 +4042,6 @@
                 tabName
             );
 
-
         if (target) {
 
             target.classList.add(
@@ -5373,7 +4066,6 @@
                     '"]'
                 );
 
-
             if (firstButton) {
 
                 firstButton.classList.add(
@@ -5394,9 +4086,7 @@
     function closeArticle() {
 
         stopArticle();
-
-        currentArticleForModal =
-            null;
+        currentArticleForModal = null;
 
         document
             .getElementById(
@@ -5446,7 +4136,6 @@
             ) {
 
                 closeArticle();
-
                 closeQuiz();
 
             }
@@ -5465,95 +4154,51 @@
             return;
         }
 
-
         const allNews =
-            Array.isArray(
-                currentData.news
-            )
+            Array.isArray(currentData.news)
                 ? currentData.news
                 : [];
-
-
-        /*
-         * Every article that has a valid quiz
-         * gets exactly one quiz question.
-         */
 
         quizQuestions =
             allNews
                 .map(
                     article => ({
-                        articleId:
-                            article.id,
-
-                        headline:
-                            article.headline ||
-                            "Current Affairs",
-
-                        quiz:
-                            article.quiz
+                        articleId: article.id,
+                        headline: article.headline || "Current Affairs",
+                        quiz: article.quiz
                     })
                 )
                 .filter(
                     item =>
                         item.quiz &&
-                        Array.isArray(
-                            item.quiz.options
-                        ) &&
+                        Array.isArray(item.quiz.options) &&
                         item.quiz.options.length === 4 &&
                         item.quiz.question
                 );
 
-
-        quizSubmitted =
-            false;
-
+        quizSubmitted = false;
 
         const modal =
-            document.getElementById(
-                "quizModal"
-            );
-
+            document.getElementById("quizModal");
 
         const container =
-            document.getElementById(
-                "quizContainer"
-            );
-
+            document.getElementById("quizContainer");
 
         const result =
-            document.getElementById(
-                "quizResult"
-            );
+            document.getElementById("quizResult");
 
+        result.style.display = "none";
+        result.textContent = "";
 
-        result.style.display =
-            "none";
-
-        result.textContent =
-            "";
-
-
-        document
-            .getElementById(
-                "quizSummary"
-            )
-            .textContent =
+        document.getElementById("quizSummary").textContent =
             quizQuestions.length +
             " quiz questions available for " +
-            formatDate(
-                currentData.date
-            ) +
+            formatDate(currentData.date) +
             ". Each question corresponds to one current-affairs article.";
 
+        container.innerHTML = "";
 
-        container.innerHTML =
-            "";
-
-
-        if (
-            !quizQuestions.length
-        ) {
+        if (!quizQuestions.length) {
 
             container.innerHTML = `
                 <div class="status-box">
@@ -5567,100 +4212,52 @@
             quizQuestions.forEach(
                 (item, index) => {
 
-                    const q =
-                        item.quiz;
-
+                    const q = item.quiz;
 
                     const question =
-                        document.createElement(
-                            "div"
-                        );
-
+                        document.createElement("div");
 
                     question.className =
                         "quiz-question";
 
-
                     question.dataset.index =
                         index;
 
-
                     question.innerHTML = `
-
                         <h3>
-                            ${index + 1}.
-                            ${escapeHTML(
-                                q.question
-                            )}
+                            ${index + 1}. ${escapeHTML(q.question)}
                         </h3>
 
                         <div class="quiz-options">
-
                             ${q.options.map(
-                                (
-                                    option,
-                                    optionIndex
-                                ) => `
-
+                                (option, optionIndex) => `
                                     <button
                                         type="button"
                                         class="quiz-option"
                                         data-option="${optionIndex}"
                                         onclick="selectQuizOption(${index}, ${optionIndex}, this)"
                                     >
-
-                                        ${String.fromCharCode(
-                                            65 +
-                                            optionIndex
-                                        )}.
-
-                                        ${escapeHTML(
-                                            option
-                                        )}
-
+                                        ${String.fromCharCode(65 + optionIndex)}.
+                                        ${escapeHTML(option)}
                                     </button>
-
                                 `
                             ).join("")}
-
                         </div>
 
-                        <div
-                            class="quiz-explanation"
-                            id="quizExplanation${index}"
-                        >
-                            ${escapeHTML(
-                                q.explanation || ""
-                            )}
+                        <div class="quiz-explanation" id="quizExplanation${index}">
+                            ${escapeHTML(q.explanation || "")}
                         </div>
-
                     `;
 
-
-                    container.appendChild(
-                        question
-                    );
-
+                    container.appendChild(question);
                 }
             );
-
         }
 
-
-        modal.classList.add(
-            "show"
-        );
-
-
-        document.body.style.overflow =
-            "hidden";
-
+        modal.classList.add("show");
+        document.body.style.overflow = "hidden";
     }
 
-
-    /* =======================================================
-       SELECT QUIZ OPTION
-       ======================================================= */
 
     function selectQuizOption(
         questionIndex,
@@ -5672,7 +4269,6 @@
             return;
         }
 
-
         const question =
             document.querySelector(
                 '.quiz-question[data-index="' +
@@ -5680,59 +4276,32 @@
                 '"]'
             );
 
-
         if (!question) {
             return;
         }
 
-
         question
-            .querySelectorAll(
-                ".quiz-option"
-            )
+            .querySelectorAll(".quiz-option")
             .forEach(
                 option =>
-                    option.classList.remove(
-                        "selected"
-                    )
+                    option.classList.remove("selected")
             );
 
-
-        button.classList.add(
-            "selected"
-        );
-
-
-        button.dataset.selected =
-            "true";
-
+        button.classList.add("selected");
+        button.dataset.selected = "true";
     }
 
 
-    /* =======================================================
-       SUBMIT QUIZ
-       ======================================================= */
-
     function submitQuiz() {
 
-        if (
-            quizSubmitted ||
-            !quizQuestions.length
-        ) {
-
+        if (quizSubmitted || !quizQuestions.length) {
             return;
-
         }
-
 
         let score = 0;
 
-
         quizQuestions.forEach(
-            (
-                item,
-                index
-            ) => {
+            (item, index) => {
 
                 const question =
                     document.querySelector(
@@ -5741,128 +4310,78 @@
                         '"]'
                     );
 
-
                 if (!question) {
                     return;
                 }
-
 
                 const selected =
                     question.querySelector(
                         ".quiz-option.selected"
                     );
 
-
                 const correctAnswer =
                     String(
-                        item.quiz.correct_answer ||
-                        ""
+                        item.quiz.correct_answer || ""
                     ).trim();
 
-
                 question
-                    .querySelectorAll(
-                        ".quiz-option"
-                    )
+                    .querySelectorAll(".quiz-option")
                     .forEach(
-                        (
-                            option,
-                            optionIndex
-                        ) => {
+                        (option, optionIndex) => {
 
                             const optionText =
-                                item.quiz.options[
-                                    optionIndex
-                                ];
-
+                                item.quiz.options[optionIndex];
 
                             if (
-                                String(
-                                    optionText
-                                ).trim() ===
+                                String(optionText).trim() ===
                                 correctAnswer
                             ) {
 
-                                option.classList.add(
-                                    "correct"
-                                );
-
+                                option.classList.add("correct");
                             }
 
-
                             if (
-                                selected ===
-                                option &&
-                                String(
-                                    optionText
-                                ).trim() !==
+                                selected === option &&
+                                String(optionText).trim() !==
                                 correctAnswer
                             ) {
 
-                                option.classList.add(
-                                    "wrong"
-                                );
-
+                                option.classList.add("wrong");
                             }
-
                         }
                     );
-
 
                 if (
                     selected &&
                     String(
                         item.quiz.options[
-                            Number(
-                                selected.dataset.option
-                            )
+                            Number(selected.dataset.option)
                         ]
-                    ).trim() ===
-                    correctAnswer
+                    ).trim() === correctAnswer
                 ) {
-
                     score++;
-
                 }
-
 
                 const explanation =
                     document.getElementById(
-                        "quizExplanation" +
-                        index
+                        "quizExplanation" + index
                     );
 
-
                 if (explanation) {
-
-                    explanation.style.display =
-                        "block";
-
+                    explanation.style.display = "block";
                 }
-
             }
         );
 
-
-        quizSubmitted =
-            true;
-
+        quizSubmitted = true;
 
         const percentage =
             Math.round(
-                (
-                    score /
-                    quizQuestions.length
-                ) *
-                100
+                (score / quizQuestions.length) * 100
             );
-
 
         const result =
-            document.getElementById(
-                "quizResult"
-            );
-
+            document.getElementById("quizResult");
 
         result.textContent =
             "Your Score: " +
@@ -5873,46 +4392,26 @@
             percentage +
             "%)";
 
-
-        result.style.display =
-            "block";
-
+        result.style.display = "block";
 
         window.scrollTo({
             top: 0,
             behavior: "smooth"
         });
-
     }
 
-
-    /* =======================================================
-       CLOSE QUIZ
-       ======================================================= */
 
     function closeQuiz() {
 
         document
-            .getElementById(
-                "quizModal"
-            )
-            .classList.remove(
-                "show"
-            );
+            .getElementById("quizModal")
+            .classList.remove("show");
 
-        document.body.style.overflow =
-            "";
-
+        document.body.style.overflow = "";
     }
 
 
-    /* =======================================================
-       OUTSIDE QUIZ CLICK
-       ======================================================= */
-
-    function outsideQuizClick(
-        event
-    ) {
+    function outsideQuizClick(event) {
 
         if (
             event.target.id ===
@@ -5922,7 +4421,6 @@
             closeQuiz();
 
         }
-
     }
 
 
@@ -5939,13 +4437,11 @@
                 "newsContainer"
             );
 
-
         container.innerHTML = `
             <div class="status-box error-box">
                 ${escapeHTML(message)}
             </div>
         `;
-
 
         document
             .getElementById(
@@ -5965,39 +4461,6 @@
 
 </script>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    fetch("data.json?cache=" + Date.now())
-        .then(response => response.json())
-        .then(data => {
-            if (data.motivation && data.motivation.image) {
-
-                const mobileImage =
-                    document.getElementById("motivationImageMobile");
-
-                const sideImage =
-                    document.getElementById("motivationSideImage");
-
-                if (mobileImage) {
-                    mobileImage.src =
-                        data.motivation.image + "?v=" + Date.now();
-
-                    mobileImage.style.display = "block";
-                }
-
-                if (sideImage) {
-                    sideImage.src =
-                        data.motivation.image + "?v=" + Date.now();
-
-                    sideImage.style.display = "block";
-                }
-            }
-        })
-        .catch(error =>
-            console.log("Motivation image update:", error)
-        );
-});
-</script>
 </body>
 
 </html>
