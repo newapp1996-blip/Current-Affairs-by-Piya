@@ -1637,7 +1637,174 @@
       "url": "https://www.hindustantimes.com/india-news/delhi-court-allows-vandyke-6-ukrainians-to-travel-home-after-nia-charge-sheet-101790272980061.html",
       "image_url": "",
       "published": "2026-09-25"
+    },
+    {
+      "id": 856093802,
+      "candidate_id": "1d91e8472a7001098fe0",
+      "source_id": "ht_india",
+      "source": "Hindustan Times",
+      "category": "India",
+      "exam_specific": true,
+      "headline": "Deep depression and heavy rain grip Odisha and Andhra Pradesh, thousands evacuated",
+      "story_lead": "Thousands of people have been evacuated as a deep depression brought heavy rains, triggering landslides, waterlogging, and flooding in parts of Odisha and Andhra Pradesh.",
+      "full_article_text": "A deep depression that made landfall near Kalingapatnam in Andhra Pradesh moved north-northwestwards, bringing heavy rainfall, landslides, and waterlogging to Odisha and Andhra Pradesh, with effects also felt in West Bengal and Jharkhand. The India Meteorological Department (IMD) monitored the system continuously. Over 8,000 people were evacuated from vulnerable and low-lying areas in Odisha. Train services were disrupted due to landslides, and educational institutions were closed in multiple districts as chief ministers of the affected states reviewed safety measures.",
+      "background_context": "Monsoon depressions and tropical systems frequently affect the eastern coastal states of India during the monsoon and post-monsoon transition periods, leading to heavy precipitation and administrative mobilization.",
+      "bullet_points": [
+        "Deep depression crossed the Andhra Pradesh coast near Kalingapatnam.",
+        "Over 8,000 people evacuated in Odisha due to flood risks.",
+        "IMD issued red and orange alerts for multiple districts across Odisha, Andhra Pradesh, and Jharkhand.",
+        "Train services and school operations disrupted in affected regions."
+      ],
+      "key_facts": [
+        "The deep depression crossed the coast close to Kalingapatnam between late Wednesday and early Thursday.",
+        "Visakhapatnam registered the highest rainfall at 28 cm in Andhra Pradesh.",
+        "Over 8,000 individuals were evacuated in Odisha by district authorities."
+      ],
+      "key_locations": [
+        "Odisha",
+        "Andhra Pradesh",
+        "Kalingapatnam",
+        "Visakhapatnam",
+        "Jharkhand",
+        "West Bengal"
+      ],
+      "important_dates": [
+        "September 23, 2024",
+        "September 24, 2024"
+      ],
+      "exam_relevance": "Important for UPSC, State PSC, and general competitive exams under Geography (Indian Monsoons, Weather Systems) and Disaster Management.",
+      "upsc_analysis": "This event highlights India's institutional disaster preparedness, the role of the India Meteorological Department in issuing timely warnings, and the vulnerability of eastern coastal states to extreme weather events.",
+      "causes": [
+        "Active monsoon conditions interacting with a deep depression formed over the Bay of Bengal."
+      ],
+      "impacts": [
+        "Disruption of rail and road transport",
+        "Evacuation of thousands of residents",
+        "Inundation of agricultural fields and urban waterlogging"
+      ],
+      "challenges": [
+        "Preventing loss of life during sudden floods",
+        "Restoring damaged infrastructure quickly",
+        "Ensuring safe rehabilitation of evacuated populations"
+      ],
+      "government_steps": [
+        "Deployment of rescue teams",
+        "Evacuation of low-lying areas under 'zero casualty' directives",
+        "Issuance of weather alerts by the IMD"
+      ],
+      "constitutional_or_policy_link": "National Disaster Management Act, 2005",
+      "way_forward": "Enhancing weather radar networks, improving urban drainage systems, and strengthening community-based disaster response mechanisms.",
+      "mains_notes": "Discuss the vulnerability of India's eastern coast to deep depressions and tropical weather systems, examining the role of early warning systems in disaster mitigation.",
+      "mains_questions": [
+        "Examine the mechanism of deep depressions originating in the Bay of Bengal and their impact on India's eastern coastal states."
+      ],
+      "takeaway": "Proactive evacuation and robust meteorological surveillance are crucial for minimizing casualties during severe weather disturbances.",
+      "prelims_facts": [
+        "A deep depression is stronger than a depression but weaker than a cyclonic storm.",
+        "The IMD uses Doppler Weather Radars for continuous tracking of atmospheric systems."
+      ],
+      "vocabulary": [
+        {
+          "word": "Depression",
+          "meaning_hindi": "अवसाद / कम दबाव का क्षेत्र"
+        },
+        {
+          "word": "Landfall",
+          "meaning_hindi": "तट से टकराना"
+        }
+      ],
+      "entities": {
+        "people": [
+          {
+            "name": "Mohan Charan Majhi",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Mohan_Charan_Majhi"
+          },
+          {
+            "name": "N Chandrababu Naidu",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/N._Chandrababu_Naidu"
+          }
+        ],
+        "countries": [
+          {
+            "name": "India",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/India"
+          }
+        ],
+        "states": [
+          {
+            "name": "Odisha",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Odisha"
+          },
+          {
+            "name": "Andhra Pradesh",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Andhra_Pradesh"
+          },
+          {
+            "name": "Jharkhand",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Jharkhand"
+          },
+          {
+            "name": "West Bengal",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/West_Bengal"
+          }
+        ],
+        "places": [
+          {
+            "name": "Kalingapatnam",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Kalingapatnam"
+          },
+          {
+            "name": "Visakhapatnam",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Visakhapatnam"
+          }
+        ]
+      },
+      "translations": {
+        "hi": {
+          "headline": "गहरे दबाव और भारी बारिश से ओडिशा और आंध्र प्रदेश प्रभावित, हजारों लोग निकाले गए",
+          "story_lead": "ओडिशा और आंध्र प्रदेश के कुछ हिस्सों में भारी बारिश, भूस्खलन और जलभराव के कारण हजारों लोगों को सुरक्षित स्थानों पर पहुंचाया गया है।",
+          "full_article_text": "आंध्र प्रदेश में कलिंगपट्टनम के पास तट से टकराने वाला एक गहरा दबाव उत्तर-पश्चिम की ओर बढ़ा, जिससे ओडिशा और आंध्र प्रदेश में भारी बारिश, भूस्खलन और जलभराव की स्थिति उत्पन्न हो गई। पश्चिम बंगाल और झारखंड में भी इसका असर देखा गया। भारत मौसम विज्ञान विभाग (IMD) ने इस प्रणाली पर लगातार नजर रखी। ओडिशा के संवेदनशील और निचले इलाकों से 8,000 से अधिक लोगों को सुरक्षित निकाला गया। भूस्खलन के कारण ट्रेन सेवाएं बाधित हुईं और प्रभावित राज्यों के मुख्यमंत्रियों ने सुरक्षा उपायों की समीक्षा की।",
+          "background_context": "मानसून और मानसून के बाद के संक्रमण काल के दौरान बंगाल की खाड़ी में बनने वाले मौसम संबंधी दबाव अक्सर भारत के पूर्वी तटीय राज्यों को प्रभावित करते हैं, जिससे भारी वर्षा होती है।",
+          "bullet_points": [
+            "गहरा दबाव आंध्र प्रदेश तट पर कलिंगपट्टनम के पास पहुंचा।",
+            "बाढ़ के जोखिम के कारण ओडिशा में 8,000 से अधिक लोग निकाले गए।",
+            "आईएमडी ने ओडिशा, आंध्र प्रदेश और झारखंड के कई जिलों के लिए रेड और ऑरेंज अलर्ट जारी किए।",
+            "प्रभावित क्षेत्रों में ट्रेन सेवाओं और स्कूलों के संचालन में बाधा उत्पन्न हुई।"
+          ],
+          "key_facts": [
+            "गहरा दबाव बुधवार और गुरुवार की दरमियानी रात कलिंगपट्टनम के पास तट को पार कर गया।",
+            "आंध्र प्रदेश के विशाखापत्तनम में सबसे अधिक 28 सेमी वर्षा दर्ज की गई।",
+            "जिला प्रशासन द्वारा ओडिशा में 8,000 से अधिक व्यक्तियों को सुरक्षित निकाला गया।"
+          ],
+          "key_locations": [
+            "ओडिशा",
+            "आंध्र प्रदेश",
+            "कलिंगपट्टनम",
+            "विशाखापत्तनम",
+            "झारखंड",
+            "पश्चिम बंगाल"
+          ],
+          "important_dates": [
+            "23 सितंबर 2024",
+            "24 सितंबर 2024"
+          ]
+        }
+      },
+      "quiz": {
+        "question": "Where did the deep depression cross the coast in Andhra Pradesh as reported by the IMD?",
+        "options": [
+          "Near Visakhapatnam",
+          "Near Kalingapatnam",
+          "Near Nellore",
+          "Near Kakinada"
+        ],
+        "correct_answer": "Near Kalingapatnam",
+        "explanation": "According to the India Meteorological Department (IMD), the deep depression crossed the coast close to southwest of Kalingapatnam."
+      },
+      "url": "https://www.hindustantimes.com/india-news/schools-closed-train-deep-depression-heavy-rain-odisha-andhra-pradesh-today-weather-imd-cyclone-arnab-101790304946859.html",
+      "image_url": "",
+      "published": "2026-09-25"
     }
   ],
-  "last_updated_ist": "2026-09-25 06:01:54"
+  "last_updated_ist": "2026-09-25 08:53:09"
 }
