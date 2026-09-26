@@ -2,6 +2,1765 @@
   "date": "2026-09-26",
   "news": [
     {
+      "category": "Economy",
+      "exam_corner": true,
+      "headline": "Amazon, Flipkart, and JioMart Fined for Illegal Herbicide Sale",
+      "story_lead": "Major e-commerce platforms Amazon, Flipkart, and JioMart have faced penalties for the illegal sale of herbicides on their portals. The regulatory action highlights growing scrutiny over online retail compliance regarding restricted agricultural and chemical products in India.",
+      "full_article_text": "Major e-commerce platforms including Amazon, Flipkart, and JioMart have been penalized for facilitating the illegal sale of herbicides through their online marketplaces. The enforcement action underscores regulatory concerns regarding unauthorized chemical distributions and adherence to safety and trade norms governing hazardous or restricted substances in the country. Online retail platforms are increasingly being held accountable for third-party listings and sales of regulated items, emphasizing the need for robust compliance mechanisms in digital commerce.",
+      "background_context": "The sale of agricultural chemicals and herbicides in India is regulated to prevent unauthorized distribution and ensure environmental and public safety. E-commerce marketplaces operating in India are subject to various consumer protection and product safety laws.",
+      "bullet_points": [
+        "Amazon, Flipkart, and JioMart fined for illegal herbicide sale.",
+        "Action targets unauthorized online distribution of herbicides.",
+        "Highlights regulatory enforcement on e-commerce platforms.",
+        "Emphasizes vendor compliance and product safety in digital retail."
+      ],
+      "key_facts": [
+        "Platforms fined: Amazon, Flipkart, JioMart",
+        "Offense: Illegal sale of herbicides"
+      ],
+      "key_locations": [
+        "India"
+      ],
+      "important_dates": [],
+      "exam_relevance": [
+        "UPSC Prelims: Consumer Protection, E-commerce regulations, Agricultural inputs.",
+        "UPSC Mains GS Paper III: Effects of liberalization on the economy, IT/e-commerce rules, regulatory frameworks."
+      ],
+      "upsc_analysis": "The incident brings to light the regulatory challenges posed by digital commerce platforms in monitoring third-party sellers and enforcing compliance with national laws governing restricted goods such as agricultural chemicals.",
+      "causes": [
+        "Inadequate oversight of third-party vendor listings by e-commerce platforms.",
+        "Availability of restricted agricultural chemicals through online retail channels."
+      ],
+      "impacts": [
+        "Increased scrutiny on e-commerce giants operating in India.",
+        "Stricter enforcement of regulations regarding the online sale of hazardous or regulated substances."
+      ],
+      "challenges": [
+        "Monitoring vast volumes of third-party listings on digital marketplaces.",
+        "Ensuring seamless coordination between regulatory bodies and e-commerce entities."
+      ],
+      "government_steps": [
+        "Imposing fines on non-compliant e-commerce platforms for illegal product sales."
+      ],
+      "constitutional_or_policy_link": [
+        "Consumer Protection Act, Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules."
+      ],
+      "way_forward": [
+        "Strengthening automated screening tools on e-commerce platforms to detect prohibited items.",
+        "Enhancing regulatory oversight and penalties for platforms failing to vet sellers."
+      ],
+      "mains_notes": "The penalization of major e-commerce platforms like Amazon, Flipkart, and JioMart for illegal herbicide sales highlights the critical need for stricter due diligence and compliance in digital marketplaces regarding regulated agricultural inputs.",
+      "mains_questions": [
+        "Discuss the regulatory challenges associated with monitoring third-party listings on e-commerce platforms in India.",
+        "Analyze the liability of digital intermediaries in the illegal sale of restricted goods."
+      ],
+      "takeaway": "Amazon, Flipkart, and JioMart penalized for illegal herbicide sales, signaling stricter regulatory oversight on e-commerce platforms.",
+      "prelims_facts": [
+        "Major e-commerce entities penalized: Amazon, Flipkart, JioMart.",
+        "Violation category: Illegal sale of herbicides."
+      ],
+      "vocabulary": [
+        {
+          "word": "Herbicide",
+          "meaning_hindi": "खरपतवार नाशक"
+        },
+        {
+          "word": "Intermediary",
+          "meaning_hindi": "मध्यस्थ"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Amazon",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Amazon"
+        },
+        {
+          "name": "Flipkart",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Flipkart"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "अमेज़ॅन, फ्लिपकार्ट और जियोमार्ट पर अवैध शा-नाशक की बिक्री के लिए जुर्माना",
+        "story_lead": "प्रमुख ई-कॉमर्स प्लेटफॉर्म अमेज़ॅन, फ्लिपकार्ट और जियोमार्ट पर उनके पोर्टलों पर अवैध रूप से शाकनाशी (हर्बिसाइड) बेचने के लिए जुर्माना लगाया गया है।",
+        "full_article_text": "अमेज़ॅन, फ्लिपकार्ट और जियोमार्ट सहित प्रमुख ई-कॉमर्स प्लेटफॉर्मों पर अपने ऑनलाइन बाजारों के माध्यम से अवैध रूप से शाकनाशियों की बिक्री की सुविधा प्रदान करने के लिए जुर्माना लगाया गया है। यह प्रवर्तन कार्रवाई डिजिटल वाणिज्य में विनियमित पदार्थों को नियंत्रित करने वाले सुरक्षा मानदंडों के अनुपालन पर चिंता को रेखांकित करती है।",
+        "background_context": "भारत में कृषि रसायनों और शाकनाशियों की बिक्री को विनियमित किया जाता है ताकि अनधिकृत वितरण को रोका जा सके।",
+        "bullet_points": [
+          "अमेज़ॅन, फ्लिपकार्ट और जियोमार्ट पर अवैध शाकनाशी बिक्री के लिए जुर्माना।",
+          "कार्रवाई का उद्देश्य शाकनाशियों के अनधिकृत ऑनलाइन वितरण को रोकना है।"
+        ],
+        "key_facts": [
+          "जुर्माना झेलने वाले प्लेटफॉर्म: अमेज़ॅन, फ्लिपकार्ट, जियोमार्ट"
+        ],
+        "key_locations": [
+          "भारत"
+        ],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which e-commerce platforms were recently fined for the illegal sale of herbicides according to the report?",
+        "options": [
+          "Amazon, Flipkart, and JioMart",
+          "Myntra, Ajio, and Tata Cliq",
+          "Snapdeal, Amazon, and Meesho",
+          "Paytm Mall, Flipkart, and Snapdeal"
+        ],
+        "correct_answer": "Amazon, Flipkart, and JioMart",
+        "explanation": "Amazon, Flipkart, and JioMart were fined for the illegal sale of herbicides on their portals."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/india/amazon-flipkart-jiomart-fined-for-illegal-herbicide-sale/articleshow/134492480.cms",
+      "published_date": "2026-09-26",
+      "id": 59,
+      "image_url": "https://static.toiimg.com/photo/msid-134493127,imgsize-174696.cms",
+      "added_at": "2026-09-26T06:12:04.526399+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": true,
+      "headline": "PM Modi participates in 'bhajan clubbing' event with Gen Z",
+      "story_lead": "Prime Minister Narendra Modi recently engaged with members of Generation Z at a unique 'bhajan clubbing' event. The event highlighted a modern approach to traditional devotional music.",
+      "full_article_text": "Prime Minister Narendra Modi participated in a 'bhajan clubbing' event alongside members of Gen Z, as reported by the Times of India. The event brought together traditional devotional bhajans and modern youth culture, showcasing a contemporary method of engaging younger demographics with cultural traditions.",
+      "background_context": "The event reflects cultural engagement initiatives aimed at connecting traditional Indian devotional practices with younger generations through innovative formats like 'bhajan clubbing'.",
+      "bullet_points": [
+        "Prime Minister Narendra Modi attended a 'bhajan clubbing' event.",
+        "The event saw participation from Gen Z individuals.",
+        "It combined traditional devotional bhajans with modern clubbing formats.",
+        "The news was reported by the Times of India."
+      ],
+      "key_facts": [
+        "PM Modi grooved with Gen Z at a 'bhajan clubbing' event.",
+        "The event was reported by Times of India."
+      ],
+      "key_locations": [
+        "India"
+      ],
+      "important_dates": [],
+      "exam_relevance": [
+        "Prelims: General awareness of cultural trends and events involving leadership."
+      ],
+      "upsc_analysis": "Cultural engagement events involving youth demographics reflect changing social trends in India, blending traditional heritage with contemporary youth culture.",
+      "causes": [
+        "Efforts to engage younger generations with traditional cultural practices through innovative formats."
+      ],
+      "impacts": [
+        "Highlights the adaptation of traditional devotional music into contemporary social spaces for youth."
+      ],
+      "challenges": [
+        "Balancing traditional sanctity with modern entertainment formats."
+      ],
+      "government_steps": [
+        "Encouraging youth participation in cultural and traditional events."
+      ],
+      "constitutional_or_policy_link": [
+        "Article 51A(f) - To value and preserve the rich heritage of our composite culture."
+      ],
+      "way_forward": [
+        "Promoting cultural awareness among youth while respecting traditional values."
+      ],
+      "mains_notes": "The blending of traditional bhajans with modern youth culture through 'bhajan clubbing' represents a shift in how cultural heritage is transmitted to Gen Z in India.",
+      "mains_questions": [
+        "How do modern fusion events like 'bhajan clubbing' help in preserving cultural traditions among Gen Z?"
+      ],
+      "takeaway": "PM Modi's participation in the 'bhajan clubbing' event highlights innovative ways of connecting traditional devotional music with India's youth.",
+      "prelims_facts": [
+        "PM Modi participated in a 'bhajan clubbing' event with Gen Z."
+      ],
+      "vocabulary": [
+        {
+          "word": "Bhajan",
+          "meaning_hindi": "भजन"
+        },
+        {
+          "word": "Gen Z",
+          "meaning_hindi": "जेन जी (नवीन पीढ़ी)"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Narendra Modi",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Narendra%20Modi"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "पीएम मोदी ने 'भजन क्लबिंग' कार्यक्रम में जेन जेड के साथ भाग लिया",
+        "story_lead": "प्रधान मंत्री नरेंद्र मोदी ने हाल ہی में एक अनूठे 'भजन क्लबिंग' कार्यक्रम में जेन जेड के सदस्यों के साथ बातचीत की।",
+        "full_article_text": "प्रधान मंत्री नरेंद्र मोदी ने टाइम्स ऑफ इंडिया की रिपोर्ट के अनुसार, जेन जेड के सदस्यों के साथ एक 'भजन क्लबिंग' कार्यक्रम में भाग लिया। इस कार्यक्रम ने पारंपरिक भक्ति भजनों और आधुनिक युवा संस्कृति को एक साथ जोड़ा।",
+        "background_context": "यह कार्यक्रम युवा पीढ़ियों को नवीन स्वरूपों के माध्यम से पारंपरिक सांस्कृतिक प्रथाओं से जोड़ने की पहल को दर्शाता है।",
+        "bullet_points": [
+          "पीएम मोदी ने 'भजन क्लबिंग' कार्यक्रम में भाग लिया।",
+          "इस कार्यक्रम में जेन जेड के सदस्यों ने हिस्सा लिया।",
+          "यह पारंपरिक भजनों को आधुनिक क्लबिंग प्रारूप के साथ जोड़ता है।"
+        ],
+        "key_facts": [
+          "पीएम मोदी ने जेन जेड के साथ 'भजन क्लबिंग' कार्यक्रम में शिरकत की।"
+        ],
+        "key_locations": [
+          "भारत"
+        ],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which event did PM Modi recently attend with Gen Z as reported by the Times of India?",
+        "options": [
+          "Traditional Classical Concert",
+          "Bhajan clubbing event",
+          "Youth Tech Summit",
+          "National Folk Festival"
+        ],
+        "correct_answer": "Bhajan clubbing event",
+        "explanation": "PM Modi participated in a 'bhajan clubbing' event with Gen Z, blending devotional music with modern youth culture."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/india/pm-modi-grooves-with-gen-z-at-bhajan-clubbing-event/articleshow/134494949.cms",
+      "published_date": "2026-09-26",
+      "id": 58,
+      "image_url": "https://static.toiimg.com/photo/msid-134494953,imgsize-173244.cms",
+      "added_at": "2026-09-26T06:12:04.526399+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": true,
+      "headline": "Three BJP Allies Express Concern Over Election Commission's Transparency and Public Trust",
+      "story_lead": "Three political allies of the BJP have stated that the Election Commission of India (EC) must clear the air regarding concerns to prevent the loss of public trust. The statements highlight political scrutiny concerning institutional credibility.",
+      "full_article_text": "Three Bharatiya Janata Party (BJP) allies have publicly emphasized the necessity for the Election Commission (EC) to clear the air regarding ongoing concerns, warning that the institution cannot afford to lose the trust of the people. This development reflects growing demands from political parties, including ruling coalition partners, for institutional transparency and accountability in electoral processes within India.",
+      "background_context": "The Election Commission of India is a constitutional body responsible for administering election processes in India. Demands for transparency and clearing the air regarding public doubts form a crucial part of maintaining democratic integrity and institutional trust.",
+      "bullet_points": [
+        "Three BJP allies have called upon the Election Commission to clear the air.",
+        "The allies stressed that the EC cannot afford to lose people's trust.",
+        "The statements underscore the importance of institutional transparency in Indian democracy.",
+        "The issue highlights the role of political stakeholders in demanding accountability from constitutional bodies."
+      ],
+      "key_facts": [
+        "Three BJP allies voiced concerns regarding the Election Commission.",
+        "The central theme of the demand is maintaining public trust in the EC."
+      ],
+      "key_locations": [
+        "India"
+      ],
+      "important_dates": [],
+      "exam_relevance": [
+        "Prelims: Polity and Governance - Election Commission of India, Constitutional Bodies",
+        "Mains: General Studies Paper II - Statutory, regulatory and various quasi-judicial bodies; Accountability and transparency"
+      ],
+      "upsc_analysis": "The public stance taken by ruling coalition allies regarding an independent constitutional body like the Election Commission underlines the complex dynamics of democratic accountability in India. For UPSC aspirants, it is vital to analyze the constitutional status, independence, and accountability mechanisms of the Election Commission under Article 324, alongside the broader discourse on maintaining institutional credibility.",
+      "causes": [
+        "Concerns or controversies necessitating clarification from the Election Commission.",
+        "Political pressure from allies to uphold public confidence in electoral institutions."
+      ],
+      "impacts": [
+        "Increased scrutiny on the functioning and transparency of the Election Commission.",
+        "Heightened political discourse surrounding the independence and credibility of constitutional bodies."
+      ],
+      "challenges": [
+        "Maintaining public trust in the face of political criticism.",
+        "Balancing institutional independence with demands for transparency from political stakeholders."
+      ],
+      "government_steps": [
+        "Institutional mechanisms under constitutional provisions governing the Election Commission of India."
+      ],
+      "constitutional_or_policy_link": [
+        "Article 324 of the Constitution of India regarding the superintendence, direction, and control of elections vested in an Election Commission."
+      ],
+      "way_forward": [
+        "Enhancing proactive communication and transparency by the Election Commission to address public and political concerns.",
+        "Reinforcing the autonomous and impartial functioning of constitutional bodies to sustain public trust."
+      ],
+      "mains_notes": "The demand by three BJP allies for the Election Commission to clear the air and preserve public trust highlights the significance of institutional credibility in a democracy. While constitutional bodies like the EC derive their authority from Article 324 to ensure free and fair elections, maintaining perceived and actual neutrality is essential for democratic legitimacy.",
+      "mains_questions": [
+        "Discuss the constitutional role of the Election Commission of India in ensuring free and fair elections. How does institutional transparency impact public trust?",
+        "Examine the relationship between political parties and independent constitutional bodies in India's democratic framework."
+      ],
+      "takeaway": "Three BJP allies have urged the Election Commission to clear the air and safeguard public trust in electoral institutions.",
+      "prelims_facts": [
+        "The Election Commission of India is established under Article 324 of the Constitution."
+      ],
+      "vocabulary": [
+        {
+          "word": "Allies",
+          "meaning_hindi": "सहयोगी"
+        },
+        {
+          "word": "Transparency",
+          "meaning_hindi": "पारदर्शिता"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Election Commission of India",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Election_Commission_of_India"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "भाजपा के 3 सहयोगियों ने कहा कि चुनाव आयोग को स्थिति स्पष्ट करनी चाहिए, जनता का विश्वास नहीं खोया जा सकता",
+        "story_lead": "भारतीय जनता पार्टी के तीन सहयोगियों ने कहा है कि चुनाव आयोग को चिंताओं पर स्थिति स्पष्ट करनी चाहिए ताकि जनता का विश्वास न खोए।",
+        "full_article_text": "भारतीय जनता पार्टी (भाजपा) के तीन सहयोगियों ने सार्वजनिक रूप से जोर देकर कहा है कि चुनाव आयोग को वर्तमान चिंताओं पर स्थिति स्पष्ट करनी चाहिए, यह चेतावनी देते हुए कि यह संस्था जनता का विश्वास नहीं खो सकती।",
+        "background_context": "भारत का चुनाव आयोग एक संवैधानिक निकाय है जो भारत में चुनाव प्रक्रियाओं का संचालन करता है।",
+        "bullet_points": [
+          "भाजपा के तीन सहयोगियों ने चुनाव आयोग से स्थिति स्पष्ट करने की मांग की है।",
+          "सहयोगियों ने जोर दिया कि ईसी जनता का विश्वास नहीं खो सकता है।"
+        ],
+        "key_facts": [
+          "तीन भाजपा सहयोगियों ने चुनाव आयोग के संबंध में चिंता व्यक्त की।"
+        ],
+        "key_locations": [
+          "भारत"
+        ],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which political grouping recently stated that the Election Commission must clear the air to maintain people's trust?",
+        "options": [
+          "Three BJP allies",
+          "The ruling party alone",
+          "The judiciary",
+          "International observers"
+        ],
+        "correct_answer": "Three BJP allies",
+        "explanation": "Three BJP allies publicly stated that the Election Commission must clear the air and ensure people's trust is maintained."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/india/3-bjp-allies-say-ec-must-clear-air-cant-lose-peoples-trust/articleshow/134495064.cms",
+      "published_date": "2026-09-26",
+      "id": 57,
+      "image_url": "https://static.toiimg.com/photo/msid-134495099,imgsize-109542.cms",
+      "added_at": "2026-09-26T06:12:04.526399+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": true,
+      "headline": "Prime Minister Modi emphasizes blending social reforms with political work",
+      "story_lead": "Prime Minister Narendra Modi has highlighted the importance of integrating social reforms with political activities. The call encourages a holistic approach toward national development through grassroots engagement and societal transformation.",
+      "full_article_text": "Prime Minister Narendra Modi recently addressed the linkage between social reforms and political work. Emphasizing a dual focus, the directive encourages political workers and leaders to actively participate in and promote social welfare alongside their conventional political duties. This approach aims to address deep-seated societal issues while engaging in public service, bridging the gap between political governance and grassroots social upliftment.",
+      "background_context": "The integration of social reform movements with political action has historical significance in India, dating back to the freedom struggle where leaders combined political independence with social emancipation.",
+      "bullet_points": [
+        "Prime Minister Narendra Modi urged the blending of social reforms with political work.",
+        "The directive emphasizes combining societal welfare with routine political responsibilities.",
+        "Aims to foster holistic national development through grassroots societal transformation.",
+        "Highlights the role of political workers in addressing social issues."
+      ],
+      "key_facts": [
+        "PM Modi advocated for blending social reforms with political work."
+      ],
+      "key_locations": [
+        "India"
+      ],
+      "important_dates": [],
+      "exam_relevance": [
+        "UPSC Prelims: Polity and Governance",
+        "UPSC Mains GS Paper II: Governance, Constitution, Polity, Social Justice and International Relations"
+      ],
+      "upsc_analysis": "From a UPSC perspective, the integration of social reform with political engagement underscores the Gandhian ideal of constructive work alongside political struggle. It highlights the importance of ethical governance and people-centric administration.",
+      "causes": [
+        "Need for holistic societal development alongside political participation."
+      ],
+      "impacts": [
+        "Encourages political workers to engage more deeply with grassroots social issues.",
+        "Promotes inclusive growth and social harmony."
+      ],
+      "challenges": [
+        "Balancing rigorous political activities with sustained social reform initiatives.",
+        "Ensuring genuine grassroots implementation without political tokenism."
+      ],
+      "government_steps": [
+        "Emphasizing public welfare and societal integration through leadership messaging."
+      ],
+      "constitutional_or_policy_link": [
+        "Directive Principles of State Policy (DPSP) relating to social welfare and justice."
+      ],
+      "way_forward": [
+        "Institutionalizing social welfare training within political frameworks.",
+        "Fostering active collaboration between civil society organizations and political entities."
+      ],
+      "mains_notes": "Blending social reforms with political work is essential for bridging political agendas with real-world social upliftment, ensuring that governance addresses both structural and developmental challenges.",
+      "mains_questions": [
+        "Discuss the significance of integrating social reforms with political work in strengthening grassroots democracy in India.",
+        "How does the convergence of social welfare and political engagement contribute to inclusive national development?"
+      ],
+      "takeaway": "Prime Minister Narendra Modi called for the integration of social reforms with political work to drive holistic national progress.",
+      "prelims_facts": [
+        "PM Modi advocated for blending social reforms with political work."
+      ],
+      "vocabulary": [
+        {
+          "word": "Reform",
+          "meaning_hindi": "सुधार"
+        },
+        {
+          "word": "Integration",
+          "meaning_hindi": "एकीकरण"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Narendra Modi",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Narendra_Modi"
+        },
+        {
+          "name": "India",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=India"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "सामाजिक सुधारों को राजनीतिक कार्य के साथ मिलाएं: पीएम मोदी",
+        "story_lead": "प्रधानमंत्री नरेंद्र मोदी ने राजनीतिक गतिविधियों के साथ सामाजिक सुधारों को एकीकृत करने के महत्व पर प्रकाश डाला है।",
+        "full_article_text": "प्रधानमंत्री नरेंद्र मोदी ने हाल ही में राजनीतिक कार्य और सामाजिक सुधारों के बीच जुड़ाव पर जोर दिया है।",
+        "background_context": "भारतीय संदर्भ में सामाजिक सुधारों और राजनीतिक कार्रवाई का गहरा ऐतिहासिक महत्व रहा है।",
+        "bullet_points": [
+          "प्रधानमंत्री नरेंद्र मोदी ने सामाजिक सुधारों को राजनीतिक कार्य के साथ मिलाने का आग्रह किया।"
+        ],
+        "key_facts": [
+          "पीएम मोदी ने सामाजिक सुधारों को राजनीतिक कार्य के साथ जोड़ने की वकालत की।"
+        ],
+        "key_locations": [
+          "भारत"
+        ],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Who recently emphasized blending social reforms with political work?",
+        "options": [
+          "A) Prime Minister Narendra Modi",
+          "B) President of India",
+          "C) Finance Minister",
+          "D) Home Minister"
+        ],
+        "correct_answer": "A) Prime Minister Narendra Modi",
+        "explanation": "Prime Minister Narendra Modi emphasized blending social reforms with political work."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/india/blend-social-reforms-with-political-work-pm-modi/articleshow/134494366.cms",
+      "published_date": "2026-09-26",
+      "id": 56,
+      "image_url": "https://static.toiimg.com/photo/msid-134494362,imgsize-160844.cms",
+      "added_at": "2026-09-26T06:12:04.526399+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": true,
+      "headline": "AFSPA Extended in Three Northeast States and Kuki Group Chief Arrested in Aizawl",
+      "story_lead": "The Armed Forces (Special Powers) Act (AFSPA) has been officially extended in three northeastern states. Meanwhile, law enforcement agencies arrested a Kuki group chief in Aizawl.",
+      "full_article_text": "The government has announced the extension of the Armed Forces (Special Powers) Act (AFSPA) across three northeastern states. In a parallel development concerning security operations in the region, the chief of a Kuki militant group was apprehended by authorities in Aizawl, Mizoram. These developments highlight ongoing security measures and law enforcement actions in India's northeastern region.",
+      "background_context": "The Armed Forces (Special Powers) Act (AFSPA) is a legislation that grants special powers to the Indian Armed Forces in disturbed areas. Its application and extension in northeastern states are periodically reviewed based on the prevailing security situation.",
+      "bullet_points": [
+        "AFSPA has been extended in three northeastern states.",
+        "A Kuki group chief was arrested in Aizawl.",
+        "The actions reflect ongoing security and law enforcement measures in the Northeast.",
+        "The developments involve multiple states and regional authorities in Northeast India."
+      ],
+      "key_facts": [
+        "AFSPA extended in three northeastern states",
+        "Kuki group chief arrested in Aizawl"
+      ],
+      "key_locations": [
+        "Aizawl",
+        "Northeast India"
+      ],
+      "important_dates": [],
+      "exam_relevance": [
+        "UPSC Prelims: Current events of national and international importance, Internal Security",
+        "UPSC Mains GS Paper III: Internal Security challenges and role of security forces"
+      ],
+      "upsc_analysis": "The extension of AFSPA and the arrest of militant group leadership in the Northeast highlight the continuous balancing act between maintaining internal security and addressing human rights and regional aspirations. Aspirants should understand the provisions, debates, and periodic reviews associated with AFSPA.",
+      "causes": [
+        "Security considerations leading to the extension of AFSPA",
+        "Law enforcement operations targeting militant leadership"
+      ],
+      "impacts": [
+        "Continued special security powers for armed forces in designated regions",
+        "Disruption of militant group leadership through key arrests"
+      ],
+      "challenges": [
+        "Balancing internal security requirements with civil liberties",
+        "Addressing regional conflicts and ensuring lasting peace in the Northeast"
+      ],
+      "government_steps": [
+        "Extension of AFSPA in three northeastern states",
+        "Apprehension of the Kuki group chief in Aizawl by authorities"
+      ],
+      "constitutional_or_policy_link": [
+        "Armed Forces (Special Powers) Act (AFSPA)",
+        "Internal security management under the Seventh Schedule of the Constitution"
+      ],
+      "way_forward": [
+        "Periodic review of AFSPA implementation based on ground security assessments",
+        "Strengthening intelligence-based operations and political dialogue for long-term resolution"
+      ],
+      "mains_notes": "The recent extension of AFSPA in three northeastern states alongside the arrest of a Kuki group chief in Aizawl underscores the complex internal security landscape of Northeast India. While AFSPA provides necessary legal cover for security forces in disturbed areas, its application remains a subject of careful calibration between state authority and civil rights.",
+      "mains_questions": [
+        "Discuss the rationale behind the periodic extension of AFSPA in northeastern states and the challenges involved in balancing security with human rights.",
+        "Examine the role of targeted law enforcement operations in managing internal security in Northeast India."
+      ],
+      "takeaway": "AFSPA has been extended in three northeastern states, accompanied by the arrest of a Kuki group chief in Aizawl.",
+      "prelims_facts": [
+        "AFSPA extended in 3 northeastern states",
+        "Kuki group chief held in Aizawl"
+      ],
+      "vocabulary": [
+        {
+          "word": "Extended",
+          "meaning_hindi": "बढ़ाया गया"
+        },
+        {
+          "word": "Arrest",
+          "meaning_hindi": "गिरफ्तारी"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Aizawl",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Aizawl"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "तीन पूर्वोत्तर राज्यों में AFSPA बढ़ाया गया; आइजोल में कुकी समूह का प्रमुख गिरफ्तार",
+        "story_lead": "पूर्वोत्तर के तीन राज्यों में सशस्त्र बल (विशेष शक्तियां) अधिनियम (AFSPA) को बढ़ा दिया गया है। इस बीच, कानून प्रवर्तन एजेंसियों ने आइजोल में एक कुकी समूह के प्रमुख को गिरफ्तार किया है।",
+        "full_article_text": "सरकार ने पूर्वोत्तर के तीन राज्यों में सशस्त्र बल (विशेष शक्तियां) अधिनियम (AFSPA) के विस्तार की घोषणा की है। क्षेत्र में सुरक्षा अभियानों से जुड़े एक अन्य घटनाक्रम में, अधिकारियों ने मिजोरम के आइजोल में एक कुकी उग्रवादी समूह के प्रमुख को पकड़ लिया। ये घटनाक्रम भारत के पूर्वोत्तर क्षेत्र में चल रहे सुरक्षा उपायों और कानून प्रवर्तन कार्रवाइयों को रेखांकित करते हैं।",
+        "background_context": "सशस्त्र बल (विशेष शक्तियां) अधिनियम (AFSPA) एक ऐसा कानून है जो अशांत क्षेत्रों में भारतीय सशस्त्र बलों को विशेष शक्तियां प्रदान करता है। पूर्वोत्तर राज्यों में इसके कार्यान्वयन और विस्तार की समीक्षा प्रचलित सुरक्षा स्थिति के आधार पर समय-समय पर की जाती है।",
+        "bullet_points": [
+          "पूर्वोत्तर के तीन राज्यों में AFSPA बढ़ाया गया है।",
+          "आइजोल में एक कुकी समूह के प्रमुख को गिरफ्तार किया गया।",
+          "ये कार्रवाइयां पूर्वोत्तर में चल रहे सुरक्षा और कानून प्रवर्तन उपायों को दर्शाती हैं।",
+          "इन घटनाक्रमों में पूर्वोत्तर भारत के कई राज्य और क्षेत्रीय अधिकारी शामिल हैं।"
+        ],
+        "key_facts": [
+          "पूर्वोत्तर के तीन राज्यों में AFSPA का विस्तार",
+          "आइजोल में कुकी समूह के प्रमुख की गिरफ्तारी"
+        ],
+        "key_locations": [
+          "आइजोल",
+          "पूर्वोत्तर भारत"
+        ],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "In which city was the Kuki group chief recently apprehended by authorities?",
+        "options": [
+          "Aizawl",
+          "Imphal",
+          "Guwahati",
+          "Shillong"
+        ],
+        "correct_answer": "Aizawl",
+        "explanation": "According to the report, the Kuki group chief was held in Aizawl."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/india/afspa-extended-in-3-ne-states-kuki-group-chief-held-in-aizawl/articleshow/134492482.cms",
+      "published_date": "2026-09-26",
+      "id": 55,
+      "image_url": "https://static.toiimg.com/photo/msid-134492485,imgsize-91060.cms",
+      "added_at": "2026-09-26T06:12:04.526399+05:30"
+    },
+    {
+      "category": "World",
+      "exam_corner": true,
+      "headline": "External Affairs Minister S Jaishankar Responds to Pakistani Journalist's Query",
+      "story_lead": "External Affairs Minister S Jaishankar gave a sharp reply to a Pakistani journalist during an interaction, stating that a terrorist country is asking him. The exchange highlights the ongoing diplomatic tensions between India and Pakistan.",
+      "full_article_text": "External Affairs Minister S Jaishankar responded sharply to a question posed by a Pakistani journalist. During the interaction, S Jaishankar remarked, 'A terrorist country is asking me.' This exchange underscores the persistent diplomatic friction and the firm stance maintained by India regarding cross-border terrorism and bilateral engagements.",
+      "background_context": "India and Pakistan have long-standing bilateral tensions, particularly centered around the issue of cross-border terrorism emanating from Pakistan and the status of Jammu and Kashmir.",
+      "bullet_points": [
+        "External Affairs Minister S Jaishankar interacted with media representatives.",
+        "A Pakistani journalist posed a question during the interaction.",
+        "Jaishankar responded sharply with the statement, 'A terrorist country is asking me.'",
+        "The remark reflects India's official stance on cross-border terrorism."
+      ],
+      "key_facts": [
+        "S Jaishankar is India's External Affairs Minister.",
+        "The interaction involved a query from a Pakistani journalist."
+      ],
+      "key_locations": [
+        "India",
+        "Pakistan"
+      ],
+      "important_dates": [],
+      "exam_relevance": [
+        "Prelims: Current events of national and international importance.",
+        "Mains: India's foreign policy, neighborhood relations, and issues relating to cross-border terrorism."
+      ],
+      "upsc_analysis": "The statement by the External Affairs Minister reflects India's consistent diplomatic posture concerning security concerns and state-sponsored terrorism from the neighborhood. For UPSC aspirants, understanding India-Pakistan relations requires analyzing both bilateral diplomatic exchanges and broader security imperatives.",
+      "causes": [
+        "Persistent cross-border terrorism concerns from Pakistan",
+        "Strained bilateral diplomatic relations"
+      ],
+      "impacts": [
+        "Reinforcement of India's firm diplomatic stance against terrorism on international platforms"
+      ],
+      "challenges": [
+        "Navigating hostile bilateral relations and maintaining regional security"
+      ],
+      "government_steps": [
+        "Maintaining a clear and firm diplomatic posture against terrorism"
+      ],
+      "constitutional_or_policy_link": [
+        "Article 51 of the Indian Constitution: Promotion of international peace and security, alongside national interest protection."
+      ],
+      "way_forward": [
+        "Continued adherence to India's foreign policy objectives prioritizing national security and zero tolerance for terrorism."
+      ],
+      "mains_notes": "India's foreign policy vis-à-vis Pakistan remains anchored on the premise that talks and terror cannot go together, a stance repeatedly emphasized by the country's leadership.",
+      "mains_questions": [
+        "Discuss the key determinants of India's foreign policy towards its western neighbor in the context of cross-border security challenges.",
+        "How does India balance diplomatic engagement and national security concerns in South Asia?"
+      ],
+      "takeaway": "External Affairs Minister S Jaishankar firmly underscored India's stance on cross-border terrorism during a media interaction involving a Pakistani journalist.",
+      "prelims_facts": [
+        "S Jaishankar holds the portfolio of the External Affairs Minister of India."
+      ],
+      "vocabulary": [
+        {
+          "word": "Terrorist",
+          "meaning_hindi": "आतंकवादी"
+        },
+        {
+          "word": "Diplomatic",
+          "meaning_hindi": "कूटनीतिक"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "S Jaishankar",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=S_Jaishankar"
+        },
+        {
+          "name": "Pakistan",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Pakistan"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "'आतंकवादी देश मुझसे पूछ रहा है': पाकिस्तानी पत्रकार के सवाल पर एस जयशंकर का कड़ा जवाब",
+        "story_lead": "विदेश मंत्री एस जयशंकर ने एक पाकिस्तानी पत्रकार के सवाल का कड़ा जवाब देते हुए कहा कि एक आतंकवादी देश उनसे सवाल पूछ रहा है। यह टिप्पणी भारत और पाकिस्तान के बीच चल रहे कूटनीतिक तनाव को दर्शाती है।",
+        "full_article_text": "विदेश मंत्री एस जयशंकर ने एक पाकिस्तानी पत्रकार द्वारा पूछे गए सवाल का तीखा जवाब दिया। बातचीत के दौरान, एस जयशंकर ने टिप्पणी की, 'एक आतंकवादी देश मुझसे पूछ रहा है।' यह आदान-प्रदान सीमा पार आतंकवाद और द्विपक्षीय संबंधों के संबंध में भारत के दृढ़ रुख को रेखांकित करता है।",
+        "background_context": "भारत और पाकिस्तान के बीच लंबे समय से द्विपक्षीय तनाव है, जो मुख्य रूप से पाकिस्तान से उत्पन्न होने वाले सीमा पार आतंकवाद और जम्मू-कश्मीर के मुद्दों पर केंद्रित है।",
+        "bullet_points": [
+          "विदेश मंत्री एस जयशंकर ने मीडिया प्रतिनिधियों के साथ बातचीत की।",
+          "एक पाकिस्तानी पत्रकार ने बातचीत के दौरान सवाल पूछा।",
+          "जयशंकर ने 'एक आतंकवादी देश मुझसे पूछ रहा है' बयान के साथ कड़ा जवाब दिया।",
+          "यह टिप्पणी आतंकवाद पर भारत के आधिकारिक रुख को दर्शाती है।"
+        ],
+        "key_facts": [
+          "एस जयशंकर भारत के विदेश मंत्री हैं।",
+          "इस बातचीत में एक पाकिस्तानी पत्रकार का सवाल शामिल था।"
+        ],
+        "key_locations": [
+          "भारत",
+          "पाकिस्तान"
+        ],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which Indian minister gave the sharp reply regarding a terrorist country to a Pakistani journalist as per the report?",
+        "options": [
+          "A) Narendra Modi",
+          "B) S Jaishankar",
+          "C) Amit Shah",
+          "D) Rajnath Singh"
+        ],
+        "correct_answer": "B) S Jaishankar",
+        "explanation": "External Affairs Minister S Jaishankar gave the sharp reply to a Pakistani journalist during an interaction."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/india/a-terrorist-country-is-asking-me-jaishankars-sharp-reply-to-pak-journalist/articleshow/134488558.cms",
+      "published_date": "2026-09-26",
+      "id": 54,
+      "image_url": "https://static.toiimg.com/photo/msid-134488609,imgsize-817887.cms",
+      "added_at": "2026-09-26T06:12:04.526399+05:30"
+    },
+    {
+      "category": "World",
+      "exam_corner": true,
+      "headline": "US Supreme Court Steps In After Michigan Family Loses $194,400 Home Over $2,242 Tax Bill",
+      "story_lead": "A Michigan family lost their home assessed at $194,400 over a disputed $2,242 property tax bill, after which the county sold the property for $76,008 and the subsequent buyer resold it for $195,000. The US Supreme Court intervened in the case by vacating a lower court ruling.",
+      "full_article_text": "In a significant property rights case originating from the United States, a Michigan family faced the loss of their home valued at $194,400 due to an unpaid property tax bill amounting to $2,242. Following the tax default, the county proceeded to sell the property for $76,008. The private buyer who acquired the property subsequently resold it for $195,000, raising critical questions regarding property equity retention and surplus seizure during tax foreclosures. The legal battle escalated to the highest judicial level, resulting in the US Supreme Court stepping in to vacate a lower court ruling.",
+      "background_context": "The case revolves around property tax foreclosures where local governments sell properties for tax debts and historically retained the surplus value exceeding the tax debt, a practice challenged under constitutional property rights.",
+      "bullet_points": [
+        "A Michigan family lost a home assessed at $194,400.",
+        "The dispute arose over an unpaid property tax bill of $2,242.",
+        "The county sold the property for $76,008.",
+        "A subsequent buyer resold the property for $195,000.",
+        "The US Supreme Court intervened by vacating a lower court ruling in 2026."
+      ],
+      "key_facts": [
+        "Initial property value: $194,400",
+        "Tax debt amount: $2,242",
+        "County sale price: $76,008",
+        "Resale price: $195,000",
+        "Judicial action: US Supreme Court vacated lower ruling"
+      ],
+      "key_locations": [
+        "Michigan",
+        "United States"
+      ],
+      "important_dates": [
+        "2026"
+      ],
+      "exam_relevance": [
+        "Prelims: Current events involving international judicial developments and property rights.",
+        "Mains: Comparative study of constitutional rights, right to property, and administrative fairness."
+      ],
+      "upsc_analysis": "This case highlights issues relating to eminent domain, administrative overreach, and the protection of citizen property rights against state-backed seizures. While originating in the US judicial system, it offers comparative perspectives on administrative law, proportionality in tax enforcement, and the protection of private property.",
+      "causes": [
+        "Unpaid property tax bill of $2,242",
+        "County tax foreclosure procedures"
+      ],
+      "impacts": [
+        "Loss of family home assessed at $194,400",
+        "Subsequent resale of property for $195,000 by private buyer",
+        "Intervention by the US Supreme Court"
+      ],
+      "challenges": [
+        "Balancing local government tax collection needs with citizen property rights",
+        "Addressing fairness in the retention of surplus funds from tax foreclosure sales"
+      ],
+      "government_steps": [
+        "County execution of property tax sale",
+        "US Supreme Court intervention and vacation of lower court ruling"
+      ],
+      "constitutional_or_policy_link": [
+        "Protection of private property rights and avoidance of excessive fines or uncompensated takings."
+      ],
+      "way_forward": [
+        "Ensuring legal safeguards for property owners during tax foreclosure proceedings.",
+        "Reforming local government policies regarding the treatment of surplus proceeds from property sales."
+      ],
+      "mains_notes": "A Michigan family lost a $194,400 home over a $2,242 tax debt. The county sold it for $76,008, and the buyer resold it for $195,000. The US Supreme Court vacated a lower court ruling in 2026, underlining crucial judicial oversight on property rights and tax foreclosure excesses.",
+      "mains_questions": [
+        "Discuss the implications of property tax foreclosures on constitutional property rights with reference to recent judicial interventions.",
+        "How do administrative processes balance state revenue collection with the protection of individual asset equity?"
+      ],
+      "takeaway": "The US Supreme Court vacated a lower court ruling after a Michigan family lost their $194,400 home over a $2,242 tax bill.",
+      "prelims_facts": [
+        "The tax bill in dispute was $2,242.",
+        "The assessed home value was $194,400.",
+        "The US Supreme Court acted on the case in 2026."
+      ],
+      "vocabulary": [
+        {
+          "word": "Foreclosure",
+          "meaning_hindi": "कुर्की / बंधक जब्ती"
+        },
+        {
+          "word": "Vacate",
+          "meaning_hindi": "रद्द करना"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Michigan",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Michigan"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "मिशिगन परिवार ने $2,242 के कर बिल पर $194,400 का घर खोया; सुप्रीम कोर्ट ने हस्तक्षेप किया",
+        "story_lead": "मिशिगन के एक परिवार ने $2,242 के विवादित संपत्ति कर बिल के कारण $194,400 मूल्य का अपना घर खो दिया, जिसके बाद काउंटी ने इसे $76,008 में बेच दिया और बाद के खरीदार ने इसे $195,000 में बेच दिया। अमेरिकी सुप्रीम कोर्ट ने निचले अदालत के फैसले को खारिज करते हुए मामले में हस्तक्षेप किया।",
+        "full_article_text": "संयुक्त राज्य अमेरिका से जुड़े एक महत्वपूर्ण संपत्ति अधिकार मामले में, मिशिगन के एक परिवार को $2,242 के अवैतनिक संपत्ति कर बिल के कारण $194,400 मूल्य के अपने घर से हाथ धोना पड़ा। कर डिफ़ॉल्ट के बाद, काउंटी ने संपत्ति को $76,008 में बेच दिया। जिस निजी खरीदार ने संपत्ति हासिल की थी, उसने बाद में इसे $195,000 में फिर से बेच दिया, जिससे कर जप्ती के दौरान संपत्ति की इक्विटी और अधिशेष जब्ती पर गंभीर सवाल खड़े हो गए। यह कानूनी लड़ाई शीर्ष न्यायिक स्तर तक पहुँची, जिसके परिणामस्वरूप अमेरिकी सुप्रीम कोर्ट ने निचले अदालत के फैसले को रद्द कर दिया।",
+        "background_context": "यह मामला संपत्ति कर जप्ती से जुड़ा है जहाँ स्थानीय सरकारें कर बकाया के लिए संपत्तियों को बेचती हैं और ऐतिहासिक रूप से कर ऋण से अधिक के अधिशेष मूल्य को अपने पास रख लेती हैं।",
+        "bullet_points": [
+          "मिशिगन के एक परिवार ने $194,400 मूल्यांकित घर खोया।",
+          "$2,242 के अवैतनिक संपत्ति कर बिल पर विवाद उत्पन्न हुआ।",
+          "काउंटी ने संपत्ति को $76,008 में बेचा।",
+          "बाद के खरीदार ने संपत्ति को $195,000 में फिर से बेचा।",
+          "अमेरिकी सुप्रीम कोर्ट ने 2026 में निचले अदालत के फैसले को खारिज कर दिया।"
+        ],
+        "key_facts": [
+          "प्रारंभिक संपत्ति मूल्य: $194,400",
+          "कर बकाया राशि: $2,242",
+          "काउंटी बिक्री मूल्य: $76,008",
+          "पुनर्बिक्री मूल्य: $195,000",
+          "न्यायिक कार्रवाई: अमेरिकी सुप्रीम कोर्ट द्वारा निचला फैसला रद्द"
+        ],
+        "key_locations": [
+          "मिशिगन",
+          "संयुक्त राज्य अमेरिका"
+        ],
+        "important_dates": [
+          "2026"
+        ]
+      },
+      "quiz": {
+        "question": "What was the amount of the property tax bill over which the Michigan family's home was initially lost?",
+        "options": [
+          "$1,500",
+          "$2,242",
+          "$5,000",
+          "$7,600"
+        ],
+        "correct_answer": "$2,242",
+        "explanation": "The dispute involved an unpaid property tax bill amounting to $2,242."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/world/us/a-michigan-family-lost-a-home-assessed-at-194400-over-a-disputed-2242-property-tax-bill-the-county-sold-it-for-76008-the-buyer-resold-it-for-195000-and-the-supreme-court-vacated-the-lower-ruling-in-2026/articleshow/134487034.cms",
+      "published_date": "2026-09-26",
+      "id": 53,
+      "image_url": "https://static.toiimg.com/photo/msid-134487609,imgsize-1882044.cms",
+      "added_at": "2026-09-26T06:12:04.526399+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": true,
+      "headline": "Wyoming Storage Shed Identified as 140-Year-Old Chinese Laundry",
+      "story_lead": "A weathered cabin in Wyoming, previously used as a storage shed, has been identified as a 140-year-old Chinese laundry structure. Following an eight-year rescue effort, the historic building has been moved to a museum for restoration.",
+      "full_article_text": "An old weather-beaten structure in Wyoming that served as a simple storage shed has been discovered to be a 140-year-old historic Chinese laundry. The identification and subsequent preservation effort culminated after an eight-year rescue initiative. The building has now been successfully relocated to a museum facility for proper restoration and preservation as a historical artifact.",
+      "background_context": "The structure served as a storage shed in Wyoming before its historical significance as a 140-year-old Chinese laundry was uncovered through an eight-year rescue and preservation effort.",
+      "bullet_points": [
+        "A weathered cabin in Wyoming used as a storage shed was identified as a historic building.",
+        "The structure is a 140-year-old Chinese laundry.",
+        "The discovery followed an eight-year rescue effort.",
+        "The building has been relocated to a museum for preservation and restoration."
+      ],
+      "key_facts": [
+        "The structure is 140 years old.",
+        "It was originally functioning as a Chinese laundry.",
+        "An eight-year rescue effort preceded its move to a museum.",
+        "It was located in Wyoming as a storage shed."
+      ],
+      "key_locations": [
+        "Wyoming"
+      ],
+      "important_dates": [
+        "140 years ago (origin timeframe)"
+      ],
+      "exam_relevance": [
+        "Prelims: General awareness regarding historical discoveries and heritage preservation."
+      ],
+      "upsc_analysis": "Heritage conservation and the preservation of lesser-known historical narratives of immigrant communities form an important part of cultural history studies.",
+      "causes": [
+        "Long-term use of a historical building as a common storage shed, obscuring its original identity until a rescue effort was undertaken."
+      ],
+      "impacts": [
+        "Successful relocation and upcoming restoration of a 140-year-old heritage structure in a museum."
+      ],
+      "challenges": [
+        "Rescuing and preserving a weathered structure over an eight-year period."
+      ],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [
+        "Ensuring comprehensive documentation and museum restoration of newly discovered historical artifacts."
+      ],
+      "mains_notes": "A 140-year-old structure in Wyoming, previously misidentified as a storage shed, was recognized as a historic Chinese laundry after an eight-year rescue effort and moved to a museum for restoration.",
+      "mains_questions": [
+        "Discuss the significance of heritage preservation in safeguarding immigrant history and architectural artifacts."
+      ],
+      "takeaway": "An eight-year rescue effort successfully identified and moved a 140-year-old Wyoming storage shed, confirming it as a historic Chinese laundry now destined for museum restoration.",
+      "prelims_facts": [
+        "The structure is a 140-year-old Chinese laundry found in Wyoming."
+      ],
+      "vocabulary": [
+        {
+          "word": "Weathered",
+          "meaning_hindi": "मौसम से प्रभावित / पुराना"
+        },
+        {
+          "word": "Restoration",
+          "meaning_hindi": "पुनर्स्थापना"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Wyoming",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Wyoming"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "व्योमिंग का स्टोरेज शेड निकला 140 साल पुराना चीनी लॉन्ड्रू",
+        "story_lead": "व्योमिंग में स्टोरेज शेड के रूप में इस्तेमाल होने वाला एक पुराना केबिन 140 साल पुराना चीनी लॉन्ड्रू निकला। आठ साल के बचाव प्रयास के बाद, इस इमारत को जीर्णोद्धार के लिए एक संग्रहालय में ले जाया गया है।",
+        "full_article_text": "व्योमिंग में एक पुराना मौसम-प्रभावित ढांचा, जिसका उपयोग साधारण स्टोरेज शेड के रूप में किया जाता था, 140 साल पुराना ऐतिहासिक चीनी लॉन्ड्रू पाया गया है। आठ साल के बचाव अभियान के बाद इसकी पहचान हुई और इसे संग्रहालय में स्थानांतरित कर दिया गया है।",
+        "background_context": "इस ढांचे का उपयोग व्योमिंग में स्टोरेज शेड के रूप में किया जा रहा था, जब तक कि आठ साल के बचाव प्रयास के बाद इसके ऐतिहासिक महत्व का खुलासा नहीं हुआ।",
+        "bullet_points": [
+          "व्योमिंग में स्टोरेज शेड के रूप में प्रयुक्त केबिन की ऐतिहासिक पहचान हुई।",
+          "यह संरचना 140 साल पुरानी चीनी लॉन्ड्रू है।",
+          "यह खोज आठ साल के बचाव प्रयास के बाद सामने आई।",
+          "संरक्षण के लिए इमारत को संग्रहालय में स्थानांतरित किया गया है।"
+        ],
+        "key_facts": [
+          "यह ढांचा 140 साल पुराना है।",
+          "यह मूल रूप से चीनी लॉन्ड्रू के रूप में संचालित था।",
+          "संग्रहालय में ले जाने से पहले आठ साल तक बचाव प्रयास चला।"
+        ],
+        "key_locations": [
+          "व्योमिंग"
+        ],
+        "important_dates": [
+          "140 वर्ष पूर्व"
+        ]
+      },
+      "quiz": {
+        "question": "A 140-year-old structure recently identified and moved to a museum for restoration after an eight-year rescue effort was originally used as what in Wyoming?",
+        "options": [
+          "A Chinese laundry disguised as a storage shed",
+          "An old government archive",
+          "A railway station waiting room",
+          "A military outpost"
+        ],
+        "correct_answer": "A Chinese laundry disguised as a storage shed",
+        "explanation": "A weathered cabin in Wyoming used as a storage shed was discovered to be a 140-year-old Chinese laundry following an eight-year rescue effort."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/world/us/a-weathered-wyoming-cabin-used-as-a-storage-shed-turned-out-to-be-a-140-year-old-chinese-laundry-after-an-eight-year-rescue-effort-the-building-has-been-moved-to-a-museum-for-restoration/articleshow/134407889.cms",
+      "published_date": "2026-09-26",
+      "id": 52,
+      "image_url": "https://static.toiimg.com/photo/msid-134408271,imgsize-255042.cms",
+      "added_at": "2026-09-26T06:12:04.526399+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": true,
+      "headline": "US Army ring missing since 2006 returned to owner 20 years later",
+      "story_lead": "A silver US Army ring that went missing in 2006 has been successfully returned to its original owner after nearly two decades. The ring was discovered in another soldier's footlocker following a three-year search.",
+      "full_article_text": "According to reports from the Times of India, a silver US Army ring that had been missing since 2006 was finally reunited with its original owner after 20 years. The ring was initially found inside another soldier's footlocker. Following a three-year search effort, a woman from Fort Worth successfully tracked down and returned the ring to its rightful owner, closing a two-decade-long chapter for the missing item.",
+      "background_context": "The incident involves the recovery and return of a personal military item, a silver US Army ring missing since 2006, which was located in another soldier's footlocker and returned after a three-year search.",
+      "bullet_points": [
+        "A silver US Army ring missing since 2006 was returned to its original owner.",
+        "The return happened 20 years after the ring initially went missing.",
+        "The item was discovered inside another soldier's footlocker.",
+        "A three-year search preceded the successful return.",
+        "A Fort Worth woman facilitated the return to the original owner."
+      ],
+      "key_facts": [
+        "Item: Silver US Army ring",
+        "Missing since: 2006",
+        "Time elapsed until return: 20 years",
+        "Discovery location: Another soldier's footlocker",
+        "Search duration: Three years",
+        "Involved party: A Fort Worth woman"
+      ],
+      "key_locations": [
+        "Fort Worth",
+        "United States"
+      ],
+      "important_dates": [
+        "2006"
+      ],
+      "exam_relevance": [
+        "General Awareness",
+        "International Current Events"
+      ],
+      "upsc_analysis": "This is a human-interest news item regarding the return of a lost personal item in the United States. It holds no direct relevance to UPSC civil services syllabus requirements regarding Indian administration, polity, economy, or international relations.",
+      "causes": [
+        "Misplacement or loss of the silver US Army ring in 2006",
+        "Discovery of the ring in another soldier's footlocker"
+      ],
+      "impacts": [
+        "Successful reunion of a personal military artifact with its original owner after 20 years"
+      ],
+      "challenges": [
+        "Tracing the original owner over a span of nearly two decades"
+      ],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [
+        "Not applicable for this human-interest news story."
+      ],
+      "mains_notes": "A silver US Army ring missing since 2006 was recovered from another soldier's footlocker and returned to its owner after a three-year search facilitated by a Fort Worth woman.",
+      "mains_questions": [
+        "Not applicable for current affairs of this nature."
+      ],
+      "takeaway": "A US Army ring missing since 2006 was returned to its owner after 20 years.",
+      "prelims_facts": [
+        "A silver US Army ring missing since 2006 was found in another soldier's footlocker."
+      ],
+      "vocabulary": [
+        {
+          "word": "Footlocker",
+          "meaning_hindi": "छोटा संदूक"
+        },
+        {
+          "word": "Reunited",
+          "meaning_hindi": "पुनः मिला हुआ"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Fort Worth",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Fort+Worth"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "2006 से गायब अमेरिकी सेना की अंगूठी 20 साल बाद मालिक को लौटाई गई",
+        "story_lead": "2006 से गायब एक चांदी की अमेरिकी सेना की अंगूठी को लगभग दो दशकों के बाद आखिरकार उसके मूल मालिक को वापस लौटा दिया गया है।",
+        "full_article_text": "टाइम्स ऑफ इंडिया की रिपोर्ट के अनुसार, 2006 से गायब अमेरिकी सेना की एक चांदी की अंगूठी को 20 साल बाद उसके मालिक को वापस कर दिया गया। यह अंगूठी एक अन्य सैनिक के फुटलकर में मिली थी। तीन साल की तलाश के बाद फोर्ट वर्थ की एक महिला ने इसे सफलतापूर्वक ढूंढ निकाला और इसके असली मालिक को लौटा दिया।",
+        "background_context": "यह मामला 2006 से गायब एक व्यक्तिगत सैन्य वस्तु की बरामदगी और वापसी से जुड़ा है।",
+        "bullet_points": [
+          "2006 से गायब अमेरिकी सेना की अंगूठी वापस लौटाई गई।",
+          "यह घटना अंगूठी खोने के 20 साल बाद हुई।",
+          "यह वस्तु एक अन्य सैनिक के फुटलकर में मिली थी।",
+          "तीन साल की खोज के बाद इसे वापस किया गया।"
+        ],
+        "key_facts": [
+          "वस्तु: अमेरिकी सेना की चांदी की अंगूठी",
+          "गायब होने का वर्ष: 2006",
+          "खोज की अवधि: तीन वर्ष"
+        ],
+        "key_locations": [
+          "फोर्ट वर्थ"
+        ],
+        "important_dates": [
+          "2006"
+        ]
+      },
+      "quiz": {
+        "question": "In which year did the US Army ring go missing before being returned 20 years later?",
+        "options": [
+          "2000",
+          "2004",
+          "2006",
+          "2010"
+        ],
+        "correct_answer": "2006",
+        "explanation": "The article states that the silver US Army ring had been missing since 2006 before being returned 20 years later."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/world/us/a-silver-us-army-ring-missing-since-2006-was-found-in-another-soldiers-footlocker-after-a-three-year-search-a-fort-worth-woman-finally-returned-it-to-its-original-owner-20-years-later/articleshow/134475950.cms",
+      "published_date": "2026-09-26",
+      "id": 51,
+      "image_url": "https://static.toiimg.com/photo/msid-134475968,imgsize-516980.cms",
+      "added_at": "2026-09-26T06:12:04.526399+05:30"
+    },
+    {
+      "category": "World",
+      "exam_corner": true,
+      "headline": "US Supreme Court rejects Trump-backed Missouri congressional map for third time",
+      "story_lead": "The United States Supreme Court has rejected a Trump-backed Missouri congressional map for the third time. The decision marks a significant development regarding electoral boundaries in the United States.",
+      "full_article_text": "In recent developments concerning US electoral processes, the US Supreme Court has rejected the Trump-backed Missouri congressional map for the third time. This ongoing judicial scrutiny highlights the complexities and legal battles surrounding congressional redistricting and political map-drawing in the United States.",
+      "background_context": "The case involves ongoing judicial review of Missouri's congressional map, which has faced multiple rejections by the US Supreme Court, despite backing from Donald Trump.",
+      "bullet_points": [
+        "US Supreme Court rejected the Missouri congressional map.",
+        "This is the third time the map has been rejected.",
+        "The map had backing from Donald Trump.",
+        "The decision underscores the legal oversight of US electoral boundaries."
+      ],
+      "key_facts": [
+        "The US Supreme Court rejected the Missouri congressional map for the third time.",
+        "The map was backed by Donald Trump."
+      ],
+      "key_locations": [
+        "United States",
+        "Missouri"
+      ],
+      "important_dates": [],
+      "exam_relevance": [
+        "Prelims: International current events and judicial systems.",
+        "Mains: Comparative study of constitutional bodies and judicial review in democratic nations."
+      ],
+      "upsc_analysis": "Understanding the role of the judiciary in reviewing electoral boundaries and legislative districting provides comparative insights into federal democracies and the separation of powers.",
+      "causes": [
+        "Legal challenges and disputes over the drawing of congressional boundaries in Missouri."
+      ],
+      "impacts": [
+        "Requires revision or judicial intervention regarding Missouri's congressional voting districts."
+      ],
+      "challenges": [
+        "Navigating partisan redistricting and ensuring compliance with federal legal standards."
+      ],
+      "government_steps": [
+        "Judicial intervention by the US Supreme Court to review and reject disputed congressional maps."
+      ],
+      "constitutional_or_policy_link": [
+        "Judicial review and federal oversight of electoral processes."
+      ],
+      "way_forward": [
+        "Adherence to judicial rulings in formulating legally sound and equitable electoral boundaries."
+      ],
+      "mains_notes": "The US Supreme Court's third rejection of the Trump-backed Missouri congressional map highlights the active role of the judiciary in monitoring redistricting and electoral map formulations in the United States.",
+      "mains_questions": [
+        "Discuss the significance of judicial review in overseeing electoral boundaries in federal democracies.",
+        "Analyze the implications of repeated judicial rejections of congressional maps on political representation."
+      ],
+      "takeaway": "The US Supreme Court rejected the Trump-backed Missouri congressional map for the third time, highlighting ongoing judicial scrutiny of electoral boundaries.",
+      "prelims_facts": [
+        "The US Supreme Court rejected the Missouri congressional map for the third time."
+      ],
+      "vocabulary": [
+        {
+          "word": "Congressional",
+          "meaning_hindi": "संसदीय"
+        },
+        {
+          "word": "Redistricting",
+          "meaning_hindi": "क्षेत्रीय सीमाओं का पुनर्निर्धारण"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Missouri",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Missouri"
+        },
+        {
+          "name": "Supreme Court of the United States",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Supreme_Court_of_the_United_States"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "अमेरिकी सुप्रीम कोर्ट ने तीसरी बार ट्रंप समर्थित मिसौरी के चुनावी मानचित्र को खारिज किया",
+        "story_lead": "संयुक्त राष्ट्र सुप्रीम कोर्ट ने तीसरी बार ट्रंप समर्थित मिसौरी के कांग्रेसनल मैप को खारिज कर दिया है। यह निर्णय संयुक्त राज्य अमेरिका में चुनावी सीमाओं से संबंधित एक महत्वपूर्ण विकास को रेखांकित करता है।",
+        "full_article_text": "अमेरिकी चुनावी प्रक्रियाओं से संबंधित हालिया विकास में, यूएस सुप्रीम कोर्ट ने तीसरी बार ट्रंप समर्थित मिसौरी के कांग्रेसनल मैप को खारिज कर दिया है। यह चल रही न्यायिक जांच संयुक्त राज्य अमेरिका में कांग्रेसनल पुनर्वितरण और राजनीतिक मानचित्र-निर्माण से जुड़ी जटिलताओं और कानूनी लड़ाइयों को उजागर करती है।",
+        "background_context": "इस मामले में मिसौरी के कांग्रेसनल मैप की चल रही न्यायिक समीक्षा शामिल है, जिसे डोनाल्ड ट्रंप के समर्थन के बावजूद यूएस सुप्रीम कोर्ट द्वारा कई बार खारिज किया जा चुका है।",
+        "bullet_points": [
+          "यूएस सुप्रीम कोर्ट ने मिसौरी के कांग्रेसनल मैप को खारिज किया।",
+          "मैप को तीसरी बार खारिज किया गया है।",
+          "इस मानचित्र को डोनाल्ड ट्रंप का समर्थन प्राप्त था।",
+          "यह निर्णय अमेरिकी चुनावी सीमाओं की कानूनी निगरानी को रेखांकित करता है।"
+        ],
+        "key_facts": [
+          "यूएस सुप्रीम कोर्ट ने तीसरी बार मिसौरी के कांग्रेसनल मैप को खारिज किया।",
+          "इस मानचित्र को डोनाल्ड ट्रंप का समर्थन प्राप्त था।"
+        ],
+        "key_locations": [
+          "संयुक्त राज्य अमेरिका",
+          "मिसौरी"
+        ],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "How many times has the US Supreme Court rejected the Trump-backed Missouri congressional map according to the report?",
+        "options": [
+          "First time",
+          "Second time",
+          "Third time",
+          "Fourth time"
+        ],
+        "correct_answer": "Third time",
+        "explanation": "The report states that the US Supreme Court rejected the Trump-backed Missouri congressional map for the third time."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/world/us/us-supreme-court-rejects-trump-backed-missouri-congressional-map-for-third-time/articleshow/134495273.cms",
+      "published_date": "2026-09-26",
+      "id": 50,
+      "image_url": "https://static.toiimg.com/photo/msid-134495284,imgsize-160888.cms",
+      "added_at": "2026-09-26T06:12:04.526399+05:30"
+    },
+    {
+      "category": "World",
+      "exam_corner": true,
+      "headline": "US Supreme Court Allows Trump Administration Voter Citizenship Checks Before Midterms",
+      "story_lead": "The United States Supreme Court has granted permission to the Trump administration to use a controversial voter citizenship database just weeks before the midterm elections. The ruling permits the implementation of these checks despite ongoing legal challenges and debates over voter access.",
+      "full_article_text": "The United States Supreme Court has cleared the way for the Trump administration to utilize a controversial voter citizenship database ahead of the upcoming midterm elections. This decision arrives mere weeks before voters head to the polls, giving a significant procedural victory to the administration's push for stricter voter verification measures. Critics and voting rights advocates have raised concerns regarding the database's implementation and potential impact on eligible voters, while supporters maintain that such measures are vital for ensuring election integrity.",
+      "background_context": "The deployment of voter citizenship databases and verification processes ahead of major elections remains a contentious issue in United States politics, balancing election security measures with voting rights access.",
+      "bullet_points": [
+        "The US Supreme Court granted permission to use a voter citizenship database.",
+        "The approval comes weeks before the midterm elections.",
+        "The measure has been a subject of controversy and legal scrutiny.",
+        "The decision impacts voter verification processes ahead of the polls."
+      ],
+      "key_facts": [
+        "The US Supreme Court authorized the use of the voter citizenship database.",
+        "The decision was issued weeks prior to the midterm elections."
+      ],
+      "key_locations": [
+        "United States"
+      ],
+      "important_dates": [
+        "Weeks before midterms"
+      ],
+      "exam_relevance": [
+        "Prelims/Mains: Relevant for comparative study of democratic processes, electoral reforms, and judicial oversight in foreign democracies."
+      ],
+      "upsc_analysis": "An understanding of comparative electoral administration and judicial review in federal democracies like the United States aids aspirants in evaluating global best practices and challenges in election management.",
+      "causes": [
+        "Administration efforts to implement stricter voter verification.",
+        "Legal disputes between federal authorities and voting rights advocates."
+      ],
+      "impacts": [
+        "Implementation of citizenship checks prior to midterm elections.",
+        "Heightened debate over election integrity versus voter access."
+      ],
+      "challenges": [
+        "Balancing security measures with the protection of eligible voters' rights.",
+        "Addressing controversies surrounding database accuracy."
+      ],
+      "government_steps": [
+        "Utilization of the voter citizenship database by the administration following Supreme Court clearance."
+      ],
+      "constitutional_or_policy_link": [
+        "Separation of powers and judicial review regarding election administration."
+      ],
+      "way_forward": [
+        "Ensuring transparent and error-free administration of voter databases to protect democratic participation."
+      ],
+      "mains_notes": "The US Supreme Court's decision allowing the Trump administration to use a voter citizenship database before midterms highlights the ongoing legal and political debate surrounding election security and voter accessibility in federal systems.",
+      "mains_questions": [
+        "Discuss the implications of judicial interventions in electoral processes with reference to the recent US Supreme Court ruling on voter databases.",
+        "Examine the balance between election security and voter rights in modern democracies."
+      ],
+      "takeaway": "The US Supreme Court permitted the Trump administration to use a controversial voter citizenship database shortly before the midterm elections.",
+      "prelims_facts": [
+        "The US Supreme Court authorized pre-midterm voter citizenship checks."
+      ],
+      "vocabulary": [
+        {
+          "word": "Database",
+          "meaning_hindi": "डेटाबेस (आँकड़ों का संग्रह)"
+        },
+        {
+          "word": "Midterm",
+          "meaning_hindi": "मध्यावधि"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "United States Supreme Court",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=United%20States%20Supreme%20Court"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "ट्रम्प को मध्यावधि चुनाव से कुछ हफ्ते पहले मतदाता नागरिकता जांच के लिए सुप्रीम कोर्ट की मंजूरी मिली",
+        "story_lead": "अमेरिकी सुप्रीम कोर्ट ने ट्रंप प्रशासन को मध्यावधि चुनाव से कुछ हफ्ते पहले एक विवादास्पद मतदाता नागरिकता डेटाबेस का उपयोग करने की अनुमति दे दी है।",
+        "full_article_text": "अमेरिकी सुप्रीम कोर्ट ने ट्रंप प्रशासन को आगामी मध्यावधि चुनावों से पहले एक विवादास्पद मतदाता नागरिकता डेटाबेस का उपयोग करने की हरी झंडी दे दी है। यह निर्णय मतदान से कुछ सप्ताह पहले आया है।",
+        "background_context": "प्रमुख चुनावों से पहले मतदाता नागरिकता डेटाबेस का उपयोग करना अमेरिकी राजनीति में एक विवादास्पद मुद्दा बना हुआ है।",
+        "bullet_points": [
+          "अमेरिकी सुप्रीम कोर्ट ने मतदाता नागरिकता डेटाबेस के उपयोग की अनुमति दी।",
+          "यह निर्णय मध्यावधि चुनावों से कुछ सप्ताह पहले आया है।",
+          "इस उपाय को लेकर कानूनी जांच और विवाद रहे हैं।"
+        ],
+        "key_facts": [
+          "अमेरिकी सुप्रीम कोर्ट ने मतदाता नागरिकता डेटाबेस के उपयोग को अधिकृत किया।"
+        ],
+        "key_locations": [
+          "संयुक्त राज्य अमेरिका"
+        ],
+        "important_dates": [
+          "मध्यावधि चुनाव से कुछ हफ्ते पहले"
+        ]
+      },
+      "quiz": {
+        "question": "Which institution recently permitted the Trump administration to use a voter citizenship database before midterms?",
+        "options": [
+          "US Supreme Court",
+          "United States Congress",
+          "Federal Election Commission",
+          "Department of Justice"
+        ],
+        "correct_answer": "US Supreme Court",
+        "explanation": "The US Supreme Court granted the administration nod to use the voter citizenship database weeks before the midterms."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/world/us/supreme-court-allows-trump-administration-to-use-controversial-voter-citizenship-database-before-midterms/articleshow/134495290.cms",
+      "published_date": "2026-09-26",
+      "id": 49,
+      "image_url": "https://static.toiimg.com/photo/msid-134495300,imgsize-705006.cms",
+      "added_at": "2026-09-26T06:12:04.526399+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": true,
+      "headline": "14 Killed in Congo Plane Crash, Including Two Senior Military Officials",
+      "story_lead": "A tragic plane crash in the Democratic Republic of Congo has resulted in the deaths of 14 people. Among the casualties were two senior military officials.",
+      "full_article_text": "According to reports from the Times of India, a plane crash in Congo claimed the lives of 14 individuals. The incident involved the deaths of two senior military officials among the passengers and crew. Further details regarding the exact cause of the crash and the flight's route were documented in the initial news report.",
+      "background_context": "The incident occurred in the Democratic Republic of Congo and involved a fatal aviation accident resulting in 14 fatalities, including military leadership.",
+      "bullet_points": [
+        "A plane crash in Congo resulted in 14 deaths.",
+        "Two senior military officials were among the deceased.",
+        "The incident was reported by the Times of India.",
+        "Aviation safety and military transport remain critical issues in regions experiencing conflicts or infrastructural challenges."
+      ],
+      "key_facts": [
+        "14 people were killed in the crash.",
+        "Two senior military officials were among the victims.",
+        "The incident took place in Congo."
+      ],
+      "key_locations": [
+        "Congo"
+      ],
+      "important_dates": [],
+      "exam_relevance": [
+        "Prelims: General awareness of international current events.",
+        "Mains: International relations and African regional security."
+      ],
+      "upsc_analysis": "While primarily a factual news event, incidents involving the loss of senior military personnel in developing nations highlight ongoing logistical, infrastructural, and security challenges relevant to international current affairs.",
+      "causes": [
+        "Plane crash (specific technical or environmental causes not detailed in the source)"
+      ],
+      "impacts": [
+        "Loss of 14 lives.",
+        "Fatality of two senior military officials affecting institutional leadership."
+      ],
+      "challenges": [
+        "Ensuring aviation safety and secure transport for military and civilian personnel in challenging terrains."
+      ],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [
+        "Enhancing aviation safety regulations and conducting thorough investigations into aircraft accidents."
+      ],
+      "mains_notes": "A plane crash in Congo resulted in 14 fatalities, including two senior military officials, highlighting risks in regional transport and military logistics.",
+      "mains_questions": [
+        "Discuss the significance of transport safety and security protocols for military personnel in conflict-prone regions."
+      ],
+      "takeaway": "A plane crash in Congo resulted in 14 deaths, including two senior military officials.",
+      "prelims_facts": [
+        "14 fatalities were reported in the Congo plane crash.",
+        "Two senior military officials died in the incident."
+      ],
+      "vocabulary": [
+        {
+          "word": "Crash",
+          "meaning_hindi": "दुर्ghatna / विमान दुर्घटना"
+        },
+        {
+          "word": "Casualty",
+          "meaning_hindi": "हताहत"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Democratic Republic of the Congo",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Democratic_Republic_of_the_Congo"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "कांगो विमान दुर्घटना में 14 लोगों की मौत, दो वरिष्ठ सैन्य अधिकारी भी शामिल",
+        "story_lead": "कांगो में हुए एक विमान हादसे में 14 लोगों की मौत हो गई है। मरने वालों में दो वरिष्ठ सैन्य अधिकारी भी शामिल हैं।",
+        "full_article_text": "टाइम्स ऑफ इंडिया की रिपोर्ट के अनुसार, कांगो में एक विमान दुर्घटना में 14 लोगों की जान चली गई। इस दुर्घटना में दो वरिष्ठ सैन्य अधिकारियों की भी मौत हुई है।",
+        "background_context": "यह घटना कांगो लोकतांत्रिक गणराज्य में हुई, जिसमें 14 लोगों की जान चली गई।",
+        "bullet_points": [
+          "कांगो में विमान दुर्घटना में 14 लोगों की मौत हुई।",
+          "मृतकों में दो वरिष्ठ सैन्य अधिकारी शामिल थे।",
+          "इस घटना की रिपोर्ट टाइम्स ऑफ इंडिया द्वारा दी गई।"
+        ],
+        "key_facts": [
+          "दुर्घटना में 14 लोग मारे गए।",
+          "दो वरिष्ठ सैन्य अधिकारी हताहत हुए।"
+        ],
+        "key_locations": [
+          "कांगो"
+        ],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "How many people were reported killed in the Congo plane crash?",
+        "options": [
+          "10",
+          "12",
+          "14",
+          "20"
+        ],
+        "correct_answer": "14",
+        "explanation": "The source states that 14 people were killed in the Congo plane crash, including two senior military officials."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/world/rest-of-world/14-killed-in-congo-plane-crash-two-senior-military-officials-among-dead/articleshow/134495193.cms",
+      "published_date": "2026-09-26",
+      "id": 48,
+      "image_url": "https://static.toiimg.com/photo/msid-134495205,imgsize-95002.cms",
+      "added_at": "2026-09-26T06:12:04.526399+05:30"
+    },
+    {
+      "category": "World",
+      "exam_corner": true,
+      "headline": "Russian Drones Hit Warehouse in Ukraine, Resulting in Five Casualties",
+      "story_lead": "A recent wave of Russian drone strikes in Ukraine targeted a warehouse linked to McDonald's, resulting in the deaths of five people. The incident underscores the ongoing conflict and its impact on civilian and commercial infrastructure.",
+      "full_article_text": "According to reports from the Times of India, Russian drone strikes recently hit a warehouse in Ukraine connected to McDonald's. The attack resulted in five fatalities. Such incidents highlight the continuous escalation of hostilities and the severe implications for commercial facilities and civilian safety within the region. The event forms part of the broader ongoing conflict between Russia and Ukraine.",
+      "background_context": "The incident is part of the ongoing military conflict between Russia and Ukraine, which has frequently involved aerial drone strikes targeting various infrastructure assets across Ukrainian territory.",
+      "bullet_points": [
+        "Russian drones targeted a warehouse in Ukraine.",
+        "The targeted warehouse was linked to McDonald's.",
+        "The attack resulted in five fatalities.",
+        "The incident was reported by the Times of India."
+      ],
+      "key_facts": [
+        "Five people were killed in the drone strikes.",
+        "The target was a McDonald's-linked warehouse in Ukraine.",
+        "The strikes were carried out using Russian drones."
+      ],
+      "key_locations": [
+        "Ukraine",
+        "Russia"
+      ],
+      "important_dates": [],
+      "exam_relevance": [
+        "Prelims: Current events of international importance.",
+        "Mains (GS Paper II): Effect of policies and politics of developed and developing countries on India's interests, international relations."
+      ],
+      "upsc_analysis": "The ongoing conflict between Russia and Ukraine continues to affect global supply chains, international security, and geopolitical stability. Incidents involving strikes on commercial and warehouse infrastructure demonstrate the high human and economic cost of the war, reinforcing the need for diplomatic resolutions and adherence to international humanitarian law.",
+      "causes": [
+        "Ongoing military conflict between Russia and Ukraine."
+      ],
+      "impacts": [
+        "Loss of five lives.",
+        "Damage to commercial warehouse infrastructure."
+      ],
+      "challenges": [
+        "Protecting civilian and commercial infrastructure from aerial attacks in conflict zones.",
+        "Ensuring humanitarian safety amidst escalating hostilities."
+      ],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [
+        "Immediate cessation of hostilities and resumption of diplomatic dialogue.",
+        "Enhanced protection of non-military and commercial infrastructure under international law."
+      ],
+      "mains_notes": "The recent drone strike on a McDonald's-linked warehouse in Ukraine, causing five deaths, exemplifies the severe collateral damage and destruction of commercial assets in the Russia-Ukraine war. Such events emphasize the urgency for international mediation and adherence to norms protecting civilian infrastructure.",
+      "mains_questions": [
+        "Discuss the implications of the ongoing Russia-Ukraine conflict on global supply chains and civilian infrastructure.",
+        "Evaluate the role of international organizations in mitigating humanitarian crises in active conflict zones."
+      ],
+      "takeaway": "Russian drone strikes on a McDonald's-linked warehouse in Ukraine resulted in five deaths, highlighting the persistent human toll of the ongoing conflict.",
+      "prelims_facts": [
+        "Five fatalities were reported in the drone attack on a warehouse in Ukraine linked to McDonald's."
+      ],
+      "vocabulary": [
+        {
+          "word": "Warehouse",
+          "meaning_hindi": "गोदाम"
+        },
+        {
+          "word": "Casualties",
+          "meaning_hindi": "हताहतों"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Ukraine",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Ukraine"
+        },
+        {
+          "name": "Russia",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Russia"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "रूस के ड्रोन हमलों से यूक्रेन में मैकडॉनल्ड्स से जुड़ा गोदाम तबाह, 5 लोगों की मौत",
+        "story_lead": "रूस के हालिया ड्रोन हमलों ने यूक्रेन में मैकडॉनल्ड्स से जुड़े एक गोदाम को निशाना बनाया, जिससे पांच लोगों की मौत हो गई।",
+        "full_article_text": "टाइम्स ऑफ इंडिया की रिपोर्ट के अनुसार, रूसी ड्रोन हमलों ने यूक्रेन में मैकडॉनल्ड्स से जुड़े एक गोदाम को निशाना बनाया। इस हमले में पांच लोगों की जान चली गई। इस तरह की घटनाएं चल रहे संघर्ष और उसके परिणामों को दर्शाती हैं।",
+        "background_context": "यह घटना रूस और यूक्रेन के बीच चल रहे सैन्य संघर्ष का हिस्सा है।",
+        "bullet_points": [
+          "रूसी ड्रोनों ने यूक्रेन में एक गोदाम को निशाना बनाया।",
+          "निशाना बनाया गया गोदाम मैकडॉनल्ड्स से जुड़ा था।",
+          "इस हमले में पांच लोगों की मौत हो गई।"
+        ],
+        "key_facts": [
+          "ड्रोन हमले में पांच लोग मारे गए।",
+          "यूक्रेन में मैकडॉनल्ड्स से जुड़े गोदाम को निशाना बनाया गया।"
+        ],
+        "key_locations": [
+          "यूक्रेन",
+          "रूस"
+        ],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "How many casualties were reported following the Russian drone strike on the warehouse in Ukraine?",
+        "options": [
+          "2",
+          "3",
+          "5",
+          "10"
+        ],
+        "correct_answer": "5",
+        "explanation": "The report states that five people were killed in the Russian drone strikes hitting the warehouse linked to McDonald's in Ukraine."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/world/europe/ukraine-russia-strikes-mcdonalds-linked-warehouse-in-kyiv-as-5-killed-video/articleshow/134495142.cms",
+      "published_date": "2026-09-26",
+      "id": 47,
+      "image_url": "https://static.toiimg.com/photo/msid-134495211,imgsize-4423422.cms",
+      "added_at": "2026-09-26T06:12:04.526399+05:30"
+    },
+    {
+      "category": "World",
+      "exam_corner": true,
+      "headline": "Iran offers America a 7-day plan to reopen the Strait of Hormuz, stating the choice rests with the US",
+      "story_lead": "Iran has proposed a seven-day plan to the United States aimed at reopening the strategically vital Strait of Hormuz. Iranian officials stated that the ultimate choice now rests with the US government.",
+      "full_article_text": "According to reports from the Times of India, Iran has offered the United States a 7-day plan directed at reopening the Strait of Hormuz. The diplomatic and strategic proposal places the decision squarely on Washington, noting that the choice now rests with the US. The Strait of Hormuz is a critical global maritime choke point for international energy supplies and trade, making any developments regarding its operational status a matter of significant international concern.",
+      "background_context": "The Strait of Hormuz is one of the world's most critical oil transit chokepoints, connecting the Persian Gulf with the Gulf of Oman and the Arabian Sea. Any disruptions or proposals concerning its closure and reopening carry immense weight for global energy security and international geopolitics.",
+      "bullet_points": [
+        "Iran has presented a 7-day plan to the United States.",
+        "The plan's objective is to reopen the Strait of Hormuz.",
+        "Iranian authorities stated that the choice now rests with the US.",
+        "The development was reported by the Times of India.",
+        "The Strait of Hormuz remains a vital global maritime trade and energy route."
+      ],
+      "key_facts": [
+        "Iran offered a 7-day plan to the US.",
+        "The plan concerns the reopening of the Strait of Hormuz.",
+        "Reported by the Times of India under World news."
+      ],
+      "key_locations": [
+        "Strait of Hormuz",
+        "Iran",
+        "United States"
+      ],
+      "important_dates": [],
+      "exam_relevance": [
+        "Prelims: Geography of International Trade Routes, Choke Points, Strait of Hormuz",
+        "Mains (GS Paper II): International Relations - Bilateral and regional groupings involving India and major powers like the US and Iran, Critical maritime security."
+      ],
+      "upsc_analysis": "The development concerning the Strait of Hormuz highlights the fragility of global energy corridors and geopolitical flashpoints involving Iran and the United States. For UPSC aspirants, understanding the strategic significance of maritime chokepoints like the Strait of Hormuz is essential for questions related to international trade security, energy security, and West Asian geopolitics.",
+      "causes": [
+        "Geopolitical tensions between Iran and the United States affecting maritime navigation in the Persian Gulf region."
+      ],
+      "impacts": [
+        "Potential normalization or reopening of maritime traffic through the Strait of Hormuz if the proposal is accepted.",
+        "Implications for global crude oil supply stability and international shipping."
+      ],
+      "challenges": [
+        "Bridging diplomatic and strategic distrust between Iran and the United States.",
+        "Securing consensus and compliance on the proposed 7-day plan."
+      ],
+      "government_steps": [
+        "Diplomatic engagement through proposed operational plans regarding maritime passage."
+      ],
+      "constitutional_or_policy_link": [
+        "India's Energy Security Policy and Foreign Policy approach towards West Asia."
+      ],
+      "way_forward": [
+        "Encouraging constructive dialogue between the concerned nations to ensure unhindered maritime commerce and energy security in the region."
+      ],
+      "mains_notes": "Iran's proposal of a 7-day plan to the US for reopening the Strait of Hormuz underscores the critical nature of West Asian maritime chokepoints. Stability in this region directly impacts India's energy imports, diaspora, and economic interests. Diplomatic resolutions are vital to prevent global supply chain shocks.",
+      "mains_questions": [
+        "Discuss the strategic significance of the Strait of Hormuz in global trade and energy security.",
+        "Analyze the implications of US-Iran geopolitical dynamics on India's energy security and foreign policy in West Asia."
+      ],
+      "takeaway": "Iran has proposed a 7-day plan to the US to reopen the Strait of Hormuz, leaving the final decision to Washington.",
+      "prelims_facts": [
+        "The Strait of Hormuz connects the Persian Gulf with the Gulf of Oman."
+      ],
+      "vocabulary": [
+        {
+          "word": "Strait",
+          "meaning_hindi": "जल डमरूमध्य (जलसंधि)"
+        },
+        {
+          "word": "Proposal",
+          "meaning_hindi": "प्रस्ताव"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Strait of Hormuz",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Strait%20of%20Hormuz"
+        },
+        {
+          "name": "Iran",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Iran"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "‘विक अब अमेरिका पर है’: ईरान ने होर्मुज जलडमरूमध्य को फिर से खोलने के लिए अमेरिका को 7 दिन की योजना की पेशकश की",
+        "story_lead": "ईरान ने अमेरिका को होर्मुज जलडमरूमध्य को फिर से खोलने के उद्देश्य से सात दिन की योजना का प्रस्ताव दिया है। ईरानी अधिकारियों ने कहा है कि अब अंतिम निर्णय अमेरिकी सरकार पर निर्भर करता है।",
+        "full_article_text": "टाइम्स ऑफ इंडिया की रिपोर्ट के अनुसार, ईरान ने संयुक्त राज्य अमेरिका को होर्मुज जलडमरूमध्य को फिर से खोलने के लिए 7 दिन की योजना की पेशकश की है। इस कूटनीतिक और रणनीतिक प्रस्ताव ने निर्णय को सीधे वाशिंगटन पर छोड़ दिया है, यह नोट करते हुए कि अब विकल्प अमेरिका के पास है। होर्मुज जलडमरूमध्य अंतर्राष्ट्रीय ऊर्जा आपूर्ति और व्यापार के लिए एक महत्वपूर्ण समुद्री मार्ग है।",
+        "background_context": "होर्मुज जलडमरूमध्य फारस की खाड़ी को ओमान की खाड़ी और अरब सागर से जोड़ने वाले दुनिया के सबसे महत्वपूर्ण तेल पारगमन चोकपॉइंट्स में से एक है।",
+        "bullet_points": [
+          "ईरान ने अमेरिका को 7 दिन की योजना प्रस्तुत की है।",
+          "इस योजना का उद्देश्य होर्मुज जलडमरूमध्य को फिर से खोलना है।",
+          "ईरानी अधिकारियों ने कहा कि अब विकल्प अमेरिका के पास है।",
+          "इस विकास की रिपोर्ट टाइम्स ऑफ इंडिया द्वारा दी गई है।"
+        ],
+        "key_facts": [
+          "ईरान ने अमेरिका को 7 दिन की योजना पेश की।",
+          "यह योजना होर्मुज जलडमरूमध्य को फिर से खोलने से संबंधित है।"
+        ],
+        "key_locations": [
+          "होर्मुज जलडमरूमध्य",
+          "ईरान",
+          "संयुक्त राज्य अमेरिका"
+        ],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "What is the duration of the plan offered by Iran to the US regarding the Strait of Hormuz?",
+        "options": [
+          "A) 3-day plan",
+          "B) 5-day plan",
+          "C) 7-day plan",
+          "D) 10-day plan"
+        ],
+        "correct_answer": "C) 7-day plan",
+        "explanation": "Iran offered a 7-day plan to the United States to reopen the Strait of Hormuz."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/world/middle-east/choice-now-rests-with-us-iran-offers-america-7-day-plan-to-reopen-strait-of-hormuz/articleshow/134495234.cms",
+      "published_date": "2026-09-26",
+      "id": 46,
+      "image_url": "https://static.toiimg.com/photo/msid-134495265,imgsize-104888.cms",
+      "added_at": "2026-09-26T06:12:04.526399+05:30"
+    },
+    {
+      "category": "Health",
+      "exam_corner": true,
+      "headline": "Super El Niño Report: Methodology Behind the 451,000 Excess Deaths Estimate and Implications for India",
+      "story_lead": "A report by the University of Chicago's Energy Policy Institute projects that the upcoming 'super El Niño' could cause approximately 15,800 additional heat-related deaths in India over the next six months. Co-author Emily Grover-Kopec explained that the study utilizes seasonal temperature forecasts and temperature-mortality relationships to estimate these figures. While experts urge caution regarding the model-based projections, they emphasize the urgent need to scale up India's Heat Action Plans (HAPs).",
+      "full_article_text": "A recent report by the University of Chicago's Energy Policy Institute (EPIC) has warned that the 'super El Niño' climate phenomenon could lead to around 15,800 additional heat-related deaths in India over the next six months. Globally, the phenomenon could push land temperatures 1.2 degrees Celsius above normal, mimicking the higher temperatures projected under climate change over the next 20 years.\n\nEmily Grover-Kopec, a co-author of the study and director at the climate and energy practice at the Rhodium Group, explained that the study's methodology relies on two primary components: seasonal temperature forecasts and temperature-mortality relationships. The temperature forecasts were sourced from the European Centre for Medium-Range Weather Forecasts (ECMWF) SEAS model, which presents a moderate view among available seasonal forecasts. The temperature-mortality relationships were based on a peer-reviewed study published in the Quarterly Journal of Economics in November 2022. To ensure relevance for current policy-making and resource planning, the researchers used the most recent 30-year period (1996-2025) as their baseline.\n\nIndian experts have reacted to the findings by highlighting both the utility and the limitations of the report. Abhiyant Tiwari, lead of the climate resilience and health team at the Natural Resources Defense Council (NRDC) in India, noted that while the study serves as a useful early warning, its mortality estimates should be treated cautiously as model-based projections that have yet to undergo full peer review. However, he emphasized that India's existing Heat Action Plans (HAPs) and institutional frameworks provide a strong foundation to scale up preparedness. Harshal Ramesh Salve, a public health professional and faculty member at the All India Institute of Medical Sciences (AIIMS), added that the report cements existing knowledge on heat-related mortality and morbidity, presenting an opportunity to implement mitigation strategies, data-driven policy making, and equity-driven approaches targeting vulnerable groups such as the elderly, children, pregnant women, and occupational workers.",
+      "background_context": "The 'super El Niño' is a climate phenomenon capable of temporarily driving global land temperatures significantly above normal levels. The Energy Policy Institute's report attempts to quantify the immediate human cost of this temperature spike by applying established economic models of temperature-mortality relationships to short-term seasonal weather forecasts.",
+      "bullet_points": [
+        "The University of Chicago's Energy Policy Institute report estimates 15,800 additional heat-related deaths in India over the next six months due to 'super El Niño'.",
+        "The study's methodology combines seasonal temperature forecasts from the ECMWF SEAS model with peer-reviewed temperature-mortality relationships.",
+        "A 30-year baseline period from 1996 to 2025 was selected to keep the projections relevant for active policy planning and early action.",
+        "The climate phenomenon could push global land temperatures 1.2 degrees Celsius above normal, resembling projected climate change impacts of the next 20 years.",
+        "Indian experts advise treating the model-based mortality estimates cautiously but urge immediate scaling of Heat Action Plans (HAPs) at all levels."
+      ],
+      "key_facts": [
+        "Estimated additional heat-related deaths in India: 15,800 over six months.",
+        "Projected global land temperature rise: 1.2 degrees Celsius above normal.",
+        "Baseline period used: 1996-2025 (30 years).",
+        "Temperature-mortality data source: Quarterly Journal of Economics (November 2022).",
+        "Forecast model used: European Centre for Medium-Range Weather Forecasts (ECMWF) SEAS."
+      ],
+      "key_locations": [
+        "India",
+        "New Delhi",
+        "South Asia"
+      ],
+      "important_dates": [
+        "November, 2022",
+        "1996-2025"
+      ],
+      "exam_relevance": [
+        "GS Paper I: Geography (Climatology - El Niño and its global impacts)",
+        "GS Paper III: Environment and Disaster Management (Climate Change, Heatwaves, and Mitigation)",
+        "GS Paper II: Social Justice and Governance (Public Health and Vulnerable Sections)"
+      ],
+      "upsc_analysis": "The projected impact of the 'super El Niño' highlights the intersection of global climate phenomena and public health vulnerabilities in South Asia. While model-based projections require cautious interpretation, they serve as vital early warning systems. India's existing institutional frameworks, such as Heat Action Plans (HAPs), provide a solid foundation but must be scaled up with an equity-driven focus on vulnerable populations to mitigate climate-induced mortality.",
+      "causes": [
+        "Super El Niño climate phenomenon pushing global land temperatures 1.2 degrees Celsius above normal.",
+        "Short-term seasonal temperature anomalies combined with historical temperature-mortality vulnerabilities."
+      ],
+      "impacts": [
+        "Estimated 15,800 excess heat-related deaths in India over a six-month period.",
+        "Increased vulnerability and health risks for the elderly, children, pregnant women, and occupational workers.",
+        "Severe mortality and morbidity pressures on the South Asia region, which is projected to receive some of the worst estimates."
+      ],
+      "challenges": [
+        "Model-based mortality projections have yet to undergo full peer review for this specific seasonal application.",
+        "Need for swift implementation of Heat Action Plans (HAPs) across all administrative levels.",
+        "Developing robust data-sharing and data-driven policy-making mechanisms at national and local levels."
+      ],
+      "government_steps": [
+        "Implementation of Heat Action Plans (HAPs) and stronger institutional frameworks to scale sustained preparedness."
+      ],
+      "constitutional_or_policy_link": [
+        "Article 21 (Right to Life, which encompasses the right to health and a safe environment)",
+        "National Disaster Management Act, 2005 (under which heatwaves are managed as disasters)"
+      ],
+      "way_forward": [
+        "Swiftly implement Heat Action Plans (HAPs) at all levels (national, state, and local).",
+        "Adopt an equity-driven approach focusing on vulnerable groups like the elderly, children, pregnant women, and occupational workers.",
+        "Develop robust data-sharing mechanisms and data-driven policy making.",
+        "Share lessons and preparedness strategies with the Global South and the wider world."
+      ],
+      "mains_notes": "The 'super El Niño' report underscores the critical need for climate-resilient healthcare infrastructure. Key focus areas include: 1. Methodology: Combining ECMWF SEAS forecasts with historical temperature-mortality relationships (Quarterly Journal of Economics, 2022). 2. Policy Response: Scaling up Heat Action Plans (HAPs) with a focus on equity. 3. Vulnerable Demographics: Prioritizing occupational workers, children, pregnant women, and those with comorbidities.",
+      "mains_questions": [
+        "Discuss the potential socio-economic and public health impacts of extreme climate events like 'Super El Niño' on South Asia, with special reference to India. Suggest mitigation strategies.",
+        "Evaluate the role of Heat Action Plans (HAPs) in India as an institutional framework to combat rising temperatures. How can these plans be made more equity-driven?"
+      ],
+      "takeaway": "The 'super El Niño' report serves as a critical early warning, urging India to scale up its Heat Action Plans and protect vulnerable populations from projected temperature spikes.",
+      "prelims_facts": [
+        "The Energy Policy Institute is part of the University of Chicago.",
+        "ECMWF stands for European Centre for Medium-Range Weather Forecasts.",
+        "A 30-year baseline (1996-2025) is standard practice in climate science for establishing temperature anomalies.",
+        "El Niño can temporarily push global land temperatures significantly above normal (projected 1.2°C in this report)."
+      ],
+      "vocabulary": [
+        {
+          "word": "anomaly",
+          "meaning_hindi": "असंगति / विसंगति"
+        },
+        {
+          "word": "mortality",
+          "meaning_hindi": "मृत्यु दर"
+        },
+        {
+          "word": "morbidity",
+          "meaning_hindi": "रुग्णता / बीमारी की अवस्था"
+        },
+        {
+          "word": "mitigation",
+          "meaning_hindi": "शमन / तीव्रता कम करना"
+        },
+        {
+          "word": "baseline",
+          "meaning_hindi": "आधार रेखा"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "University of Chicago",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/University_of_Chicago"
+        },
+        {
+          "name": "European Centre for Medium-Range Weather Forecasts",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/European_Centre_for_Medium-Range_Weather_Forecasts"
+        },
+        {
+          "name": "All India Institute of Medical Sciences",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/All_India_Institute_of_Medical_Sciences"
+        },
+        {
+          "name": "Natural Resources Defense Council",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Natural_Resources_Defense_Council"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "सुपर अल नीनो रिपोर्ट: 451,000 अतिरिक्त मौतों के अनुमान के पीछे की कार्यप्रणाली और भारत पर इसके प्रभाव",
+        "story_lead": "शिकागो विश्वविद्यालय के ऊर्जा नीति संस्थान की एक रिपोर्ट में अनुमान लगाया गया है कि आगामी 'सुपर अल नीनो' के कारण अगले छह महीनों में भारत में लगभग 15,800 अतिरिक्त गर्मी से संबंधित मौतें हो सकती हैं। सह-लेखक एमिली ग्रोवर-कोपेक ने स्पष्ट किया कि अध्ययन इन आंकड़ों का अनुमान लगाने के लिए मौसमी तापमान पूर्वानुमानों और तापमान-मृत्यु दर संबंधों का उपयोग करता है। हालांकि विशेषज्ञ मॉडल-आधारित अनुमानों के प्रति सावधानी बरतने का आग्रह करते हैं, लेकिन वे भारत की हीट एक्शन प्लान (HAPs) को बढ़ाने की तत्काल आवश्यकता पर जोर देते हैं।",
+        "full_article_text": "शिकागो विश्वविद्यालय के ऊर्जा नीति संस्थान (EPIC) की एक हालिया रिपोर्ट में चेतावनी दी गई है कि 'सुपर अल नीनो' जलवायु घटना के कारण अगले छह महीनों में भारत में लगभग 15,800 अतिरिक्त गर्मी से संबंधित मौतें हो सकती हैं। वैश्विक स्तर पर, यह घटना भूमि के तापमान को सामान्य से 1.2 डिग्री सेल्सियस ऊपर धकेल सकती है, जो अगले 20 वर्षों में जलवायु परिवर्तन से होने वाले उच्च तापमान के समान है।\n\nअध्ययन की सह-लेखक और रोडियम ग्रुप में जलवायु और ऊर्जा अभ्यास की निदेशक एमिली ग्रोवर-कोपेक ने स्पष्ट किया कि अध्ययन की कार्यप्रणाली दो प्राथमिक घटकों पर निर्भर करती है: मौसमी तापमान पूर्वानुमान और तापमान-मृत्यु दर संबंध। तापमान पूर्वानुमान यूरोपीय मध्यम-अवधि मौसम पूर्वानुमान केंद्र (ECMWF) SEAS मॉडल से प्राप्त किए गए थे, जो उपलब्ध मौसमी पूर्वानुमानों के बीच एक मध्यम दृष्टिकोण प्रस्तुत करता है। तापमान-मृत्यु दर संबंध नवंबर 2022 में 'क्वार्टरली जर्नल ऑफ इकोनॉमिक्स' में प्रकाशित एक सहकर्मी-समीक्षित (peer-reviewed) अध्ययन पर आधारित थे। वर्तमान नीति-निर्माण और संसाधन योजना के लिए प्रासंगिकता सुनिश्चित करने के लिए, शोधकर्ताओं ने अपने आधार रेखा (baseline) के रूप में सबसे हाल की 30-वर्षीय अवधि (1996-2025) का उपयोग किया।\n\nभारतीय विशेषज्ञों ने रिपोर्ट के निष्कर्षों पर प्रतिक्रिया देते हुए इसके उपयोग और सीमाओं दोनों पर प्रकाश डाला है। भारत में नेचुरल रिसोर्सेज डिफेंस काउंसिल (NRDC) में जलवायु लचीलापन और स्वास्थ्य टीम के प्रमुख अभिंयत तिवारी ने कहा कि हालांकि यह अध्ययन एक उपयोगी प्रारंभिक चेतावनी के रूप में कार्य करता है, लेकिन इसके मृत्यु दर के अनुमानों को मॉडल-आधारित अनुमानों के रूप में सावधानी से लिया जाना चाहिए क्योंकि इसकी पूरी कार्यप्रणाली की अभी तक सहकर्मी-समीक्षा नहीं हुई है। हालांकि, उन्होंने जोर देकर कहा कि भारत की मौजूदा हीट एक्शन प्लान (HAPs) और संस्थागत ढांचे तैयारी को बढ़ाने के लिए एक मजबूत आधार प्रदान करते हैं। अखिल भारतीय आयुर्विज्ञान संस्थान (AIIMS) के संकाय और सार्वजनिक स्वास्थ्य पेशेवर हर्षल रमेश साल्वे ने कहा कि यह रिपोर्ट गर्मी के कारण होने वाली मृत्यु दर और रुग्णता के बारे में मौजूदा ज्ञान को मजबूत करती है, जो सभी स्तरों पर शमन रणनीतियों को लागू करने, डेटा-संचालित नीति निर्माण और बुजुर्गों, बच्चों, गर्भवती महिलाओं और कामकाजी लोगों जैसे कमजोर समूहों को लक्षित करने वाले समता-संचालित दृष्टिकोण विकसित करने का अवसर प्रदान करती है।",
+        "background_context": "'सुपर अल नीनो' एक ऐसी जलवायु घटना है जो अस्थायी रूप से वैश्विक भूमि तापमान को सामान्य स्तर से काफी ऊपर ले जाने में सक्षम है। ऊर्जा नीति संस्थान की रिपोर्ट अल्पकालिक मौसमी मौसम पूर्वानुमानों पर तापमान-मृत्यु दर संबंधों के स्थापित आर्थिक मॉडल को लागू करके इस तापमान वृद्धि की तत्काल मानवीय लागत को मापने का प्रयास करती है।",
+        "bullet_points": [
+          "शिकागो विश्वविद्यालय के ऊर्जा नीति संस्थान की रिपोर्ट का अनुमान है कि 'सुपर अल नीनो' के कारण अगले छह महीनों में भारत में 15,800 अतिरिक्त गर्मी से संबंधित मौतें हो सकती हैं।",
+          "अध्ययन की कार्यप्रणाली ECMWF SEAS मॉडल के मौसमी तापमान पूर्वानुमानों को स्थापित तापमान-मृत्यु दर संबंधों के साथ जोड़ती है।",
+          "सक्रिय नीति नियोजन और त्वरित कार्रवाई के लिए अनुमानों को प्रासंगिक बनाए रखने के लिए 1996 से 2025 तक की 30-वर्षीय आधार रेखा अवधि का चयन किया गया था।",
+          "यह जलवायु घटना वैश्विक भूमि तापमान को सामान्य से 1.2 डिग्री सेल्सियस ऊपर धकेल सकती है, जो अगले दो दशकों के अनुमानित जलवायु परिवर्तन प्रभावों के समान है।",
+          "भारतीय विशेषज्ञ मॉडल-आधारित मृत्यु दर अनुमानों को सावधानी से लेने की सलाह देते हैं लेकिन सभी स्तरों पर हीट एक्शन प्लान (HAPs) को तत्काल बढ़ाने का आग्रह करते हैं।"
+        ],
+        "key_facts": [
+          "भारत में अनुमानित अतिरिक्त गर्मी से संबंधित मौतें: छह महीनों में 15,800।",
+          "अनुमानित वैश्विक भूमि तापमान वृद्धि: सामान्य से 1.2 डिग्री सेल्सियस अधिक।",
+          "उपयोग की गई आधार रेखा अवधि: 1996-2025 (30 वर्ष)।",
+          "तापमान-मृत्यु दर डेटा स्रोत: क्वार्टरली जर्नल ऑफ इकोनॉमिक्स (नवंबर 2022)।",
+          "उपयोग किया गया पूर्वानुमान मॉडल: यूरोपीय मध्यम-अवधि मौसम पूर्वानुमान केंद्र (ECMWF) SEAS।"
+        ],
+        "key_locations": [
+          "भारत",
+          "नई दिल्ली",
+          "दक्षिण एशिया"
+        ],
+        "important_dates": [
+          "नवंबर, 2022",
+          "1996-2025"
+        ]
+      },
+      "quiz": {
+        "question": "Which organization's seasonal forecasts were utilized as a key component in the 'super El Niño' excess deaths report?",
+        "options": [
+          "A) India Meteorological Department (IMD)",
+          "B) European Centre for Medium-Range Weather Forecasts (ECMWF)",
+          "C) National Oceanic and Atmospheric Administration (NOAA)",
+          "D) World Meteorological Organization (WMO)"
+        ],
+        "correct_answer": "B) European Centre for Medium-Range Weather Forecasts (ECMWF)",
+        "explanation": "According to the study's co-author Emily Grover-Kopec, the temperature-mortality relationships were assessed using seasonal forecasts from the European Centre for Medium-Range Weather Forecasts (ECMWF)."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/super-el-nino-report-co-author-explains-methodology-behind-451-000-excess-deaths-estimate-101790381285702.html",
+      "published_date": "2026-09-26",
+      "id": 45,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2025/06/30/1600x900/logo/ht-generic_india3_1751287297962_1751287304722.jpg",
+      "added_at": "2026-09-26T06:12:04.526399+05:30"
+    },
+    {
       "category": "Sports",
       "exam_corner": true,
       "headline": "Travis and Jason Kelce’s $200M Brand Reaches New Milestone Amid Revenue Growth",
@@ -5827,6 +7586,6 @@
       "added_at": "2026-09-26T00:09:40.244813+05:30"
     }
   ],
-  "updated_at": "2026-09-26T03:08:26.753910+05:30",
-  "count": 44
+  "updated_at": "2026-09-26T06:12:04.526399+05:30",
+  "count": 59
 }
