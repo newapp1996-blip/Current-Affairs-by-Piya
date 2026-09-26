@@ -13,6 +13,1741 @@
     "date": "2026-09-27",
     "news": [
       {
+        "category": "Environment",
+        "exam_corner": true,
+        "headline": "Bangkok Submerged Under Water Following Heavy Rains and Severe Flooding",
+        "story_lead": "Bangkok faced severe waterlogging and disruption of normal life as torrential rainfall battered the city, inundating roads and forcing hundreds of residents to evacuate. Authorities have issued warnings for more storms in the forecast.",
+        "full_article_text": "Heavy rainfall has led to severe flooding in Bangkok, submerging key roads and disrupting daily life. The torrential downpours forced hundreds of residents to evacuate from affected areas. With weather forecasts predicting more storms, local administrations and emergency services remain on high alert to handle potential crises and manage relief operations.",
+        "background_context": "Urban flooding in major metropolitan cities like Bangkok is frequently triggered by heavy seasonal or torrential rains, overwhelming drainage systems and displacing vulnerable populations.",
+        "bullet_points": [
+          "Bangkok experienced severe waterlogging due to heavy rainfall.",
+          "Torrential rains flooded multiple roads, severely disrupting daily life.",
+          "Hundreds of residents were forced to evacuate affected zones.",
+          "Weather forecasts indicate more storms are expected in the region.",
+          "Emergency response systems were activated to assist stranded and displaced individuals."
+        ],
+        "key_facts": [
+          "Location affected: Bangkok",
+          "Primary trigger: Heavy rain and storms",
+          "Immediate consequence: Flooded roads and hundreds of evacuations"
+        ],
+        "key_locations": [
+          "Bangkok"
+        ],
+        "important_dates": [],
+        "exam_relevance": [
+          "Prelims: Geography and current events relating to natural disasters and urban flooding.",
+          "Mains (GS Paper I/III): Urbanization, challenges of urban flooding, disaster management, and resilience."
+        ],
+        "upsc_analysis": "The flooding in Bangkok highlights the growing vulnerability of urban centers to extreme weather events. For civil services aspirants, such events underscore the critical need for climate-resilient urban planning, robust drainage infrastructure, and proactive disaster management frameworks.",
+        "causes": [
+          "Torrential and heavy rainfall",
+          "Severe storms"
+        ],
+        "impacts": [
+          "Inundation of roads",
+          "Disruption of daily life",
+          "Evacuation of hundreds of people"
+        ],
+        "challenges": [
+          "Managing sudden evacuations during heavy storms",
+          "Mitigating urban waterlogging",
+          "Coping with forecasts of impending additional storms"
+        ],
+        "government_steps": [
+          "Executing emergency evacuations",
+          "Monitoring weather patterns and issuing storm forecasts"
+        ],
+        "constitutional_or_policy_link": [
+          "Disaster Management framework and urban climate resilience policies"
+        ],
+        "way_forward": [
+          "Upgrading urban drainage systems to handle high-intensity rainfall",
+          "Improving early warning systems for rapid response",
+          "Enhancing disaster preparedness and community evacuation drills"
+        ],
+        "mains_notes": "Urban flooding in cities like Bangkok demonstrates the inadequacy of traditional infrastructure against extreme weather. Sustainable urban planning must incorporate climate adaptation strategies, resilient drainage, and decentralized disaster management.",
+        "mains_questions": [
+          "Discuss the challenges posed by urban flooding in major metropolitan areas and suggest measures to build climate-resilient cities.",
+          "How do extreme weather events impact urban infrastructure and displace populations? Illustrate with recent examples."
+        ],
+        "takeaway": "Heavy rainfall and severe storms submerged parts of Bangkok, leading to road inundation, hundreds of evacuations, and alerts for further adverse weather.",
+        "prelims_facts": [
+          "Bangkok faced severe flooding caused by torrential rains."
+        ],
+        "vocabulary": [
+          {
+            "word": "Torrential",
+            "meaning_hindi": "मूसलाधार"
+          },
+          {
+            "word": "Inundate",
+            "meaning_hindi": "जलमग्न करना / डुबो देना"
+          },
+          {
+            "word": "Evacuate",
+            "meaning_hindi": "सुरक्षित स्थान पर पहुँचाना / खाली करना"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Bangkok",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Bangkok"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "भारी बारिश और जलभराव से बैंकॉक डूबा, और तूफानों की चेतावनी जारी",
+          "story_lead": "मूसलाधार बारिश के कारण बैंकॉक में जनजीवन अस्त-व्यस्त हो गया, सड़कें जलमग्न हो गईं और सैकड़ों लोगों को सुरक्षित स्थानों पर जाने के लिए मजबूर होना पड़ा।",
+          "full_article_text": "भारी बारिश के चलते बैंकॉक में गंभीर बाढ़ आ गई है, जिससे प्रमुख सड़कें पानी में डूब गई हैं और सामान्य जीवन प्रभावित हुआ है। मूसलाधार बारिश के कारण प्रभावित क्षेत्रों से सैकड़ों निवासियों को बाहर निकाला गया। मौसम के पूर्वानुमान के अनुसार और अधिक तूफान आने की आशंका है, जिससे स्थानीय प्रशासन हाई अलर्ट पर है।",
+          "background_context": "बैंकॉक जैसे प्रमुख महानगरीय शहरों में शहरी बाढ़ अक्सर भारी या मूसलाधार बारिश के कारण होती है, जिससे जल निकासी प्रणालियाँ प्रभावित होती हैं।",
+          "bullet_points": [
+            "भारी बारिश के कारण बैंकॉक में गंभीर जलभराव हुआ।",
+            "मूसलाधार बारिश से कई सड़कें डूब गईं, जिससे दैनिक जीवन बाधित हुआ।",
+            "सैकड़ों निवासियों को प्रभावित क्षेत्रों से बाहर निकलना पड़ा।",
+            "मौसम के पूर्वानुमान से क्षेत्र में और अधिक तूफानों की संभावना है।",
+            "प्रभावित लोगों की सहायता के लिए आपातकालीन प्रतिक्रिया प्रणालियों को सक्रिय किया गया।"
+          ],
+          "key_facts": [
+            "प्रभावित स्थान: बैंकॉक",
+            "मुख्य कारण: भारी बारिश और तूफान",
+            "तत्कालिक परिणाम: सड़कों पर जलभराव और सैकड़ों लोगों का विस्थापन"
+          ],
+          "key_locations": [
+            "बैंकॉक"
+          ],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "Which city recently faced severe flooding and road inundation due to torrential rain and storms?",
+          "options": [
+            "A) Bangkok",
+            "B) Singapore",
+            "C) Tokyo",
+            "D) Jakarta"
+          ],
+          "correct_answer": "A) Bangkok",
+          "explanation": "According to the news report, heavy rain caused severe flooding and disruptions in Bangkok, forcing hundreds to evacuate."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/world/rest-of-world/bangkok-under-water-torrential-rain-floods-roads-forcing-hundreds-to-evacuate-videos-emerge/articleshow/134502186.cms",
+        "published_date": "2026-09-27",
+        "id": 42,
+        "image_url": "https://static.toiimg.com/photo/msid-134502796,imgsize-169850.cms",
+        "added_at": "2026-09-27T03:06:17.411044+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "US Immigration Authority Imposes 10-Day Deadline for Home Address Updates",
+        "story_lead": "The US immigration authority has reiterated a strict 10-day deadline for individuals to update their home addresses. The authority has emphasized that individuals are solely responsible for keeping their address information current within the stipulated timeframe.",
+        "full_article_text": "According to reports from the Times of India, the US immigration authority has enforced a mandatory 10-day deadline regarding the reporting of home address changes. Under this regulatory guideline, individuals subject to immigration requirements are held entirely responsible for ensuring that their current residential addresses are accurately maintained and updated with the authorities within ten days of any relocation.",
+        "background_context": "US immigration regulations historically require non-citizens and residents under specific visa or immigration categories to notify authorities of any change of address to maintain legal status and receive official correspondence.",
+        "bullet_points": [
+          "US immigration authority mandates a strict 10-day deadline for home address updates.",
+          "Individuals are held personally responsible for maintaining accurate address records.",
+          "The regulation applies to immigration compliance and official communication.",
+          "Failure to update address details can impact legal status or official notices.",
+          "The guideline was highlighted in recent tech and immigration news coverage."
+        ],
+        "key_facts": [
+          "Deadline for updating home address: 10 days",
+          "Authority involved: US immigration authority",
+          "Individual responsibility: Mandatory for keeping address current"
+        ],
+        "key_locations": [
+          "United States"
+        ],
+        "important_dates": [
+          "10-day timeframe"
+        ],
+        "exam_relevance": [
+          "Prelims: General awareness regarding international immigration policies and US administrative rules.",
+          "Mains: Understanding international mobility, diaspora compliance, and administrative regulations."
+        ],
+        "upsc_analysis": "For Indian aspirants and students tracking global developments, understanding the administrative compliance and legal frameworks of destination countries like the United States is crucial, especially concerning diaspora welfare and legal status maintenance.",
+        "causes": [
+          "Need for accurate tracking and communication by US immigration authorities.",
+          "Individual relocation without timely reporting."
+        ],
+        "impacts": [
+          "Ensures legal compliance for immigrants.",
+          "Prevents missing critical official correspondence or legal notices."
+        ],
+        "challenges": [
+          "Ensuring awareness among foreign nationals and immigrants regarding the strict 10-day window.",
+          "Managing timely administrative filings during relocation."
+        ],
+        "government_steps": [
+          "Enforcement of the 10-day reporting rule by US immigration authorities."
+        ],
+        "constitutional_or_policy_link": [
+          "US Immigration and Nationality Act compliance policies."
+        ],
+        "way_forward": [
+          "Immigrants must promptly update their addresses online or through designated forms immediately upon moving.",
+          "Awareness campaigns should be promoted among student and worker diaspora communities."
+        ],
+        "mains_notes": "US immigration policies mandate a strict 10-day deadline for reporting changes in home address. Individuals bear full responsibility for compliance, failure of which can result in administrative complications regarding their legal status.",
+        "mains_questions": [
+          "Discuss the significance of administrative compliance for foreign nationals residing in the United States.",
+          "Analyze the importance of timely address reporting under US immigration laws."
+        ],
+        "takeaway": "US immigration authorities enforce a mandatory 10-day deadline for individuals to update their home addresses.",
+        "prelims_facts": [
+          "The US immigration authority mandates a 10-day deadline for home address updates."
+        ],
+        "vocabulary": [
+          {
+            "word": "Immigration",
+            "meaning_hindi": "प्रवास / आप्रवासन"
+          },
+          {
+            "word": "Authority",
+            "meaning_hindi": "प्राधिकरण"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "United States",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=United_States"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "यूएस इमग्रेशन अथॉरिटी का घर के पते पर 10 दिन का डेडलाइन",
+          "story_lead": "यूएस इमग्रेशन अथॉरिटी ने घर का पता अपडेट करने के लिए 10 दिन की सख्त समय सीमा तय की है। अथॉरिटी ने इस बात पर जोर दिया है कि व्यक्ति अपने पते की जानकारी को अपडेट रखने के लिए खुद जिम्मेदार हैं।",
+          "full_article_text": "टाइम्स ऑफ इंडिया की रिपोर्ट के अनुसार, यूएस इमग्रेशन अथॉरिटी ने घर के पते में बदलाव की जानकारी देने के लिए 10 दिन का अनिवार्य डेडलाइन लागू किया है। इस नियम के तहत, व्यक्तियों की यह जिम्मेदारी है कि वे किसी भी स्थान परिवर्तन के दस दिनों के भीतर अपने वर्तमान आवासीय पते को अधिकारियों के पास सटीक रूप से अपडेट रखें।",
+          "background_context": "अमेरिकी आव्रजन नियमों के अनुसार, गैर-नागरिकों और वीजा श्रेणियों के तहत रहने वाले व्यक्तियों को कानूनी स्थिति बनाए रखने के लिए पते में बदलाव की सूचना देना आवश्यक होता है।",
+          "bullet_points": [
+            "यूएस इमग्रेशन अथॉरिटी घर का पता अपडेट करने के लिए 10 दिन का डेडलाइन तय करती है।",
+            "व्यक्ति अपने पते के रिकॉर्ड को सही रखने के लिए व्यक्तिगत रूप से जिम्मेदार हैं।",
+            "यह नियम आव्रजन अनुपालन और आधिकारिक संचार पर लागू होता है।"
+          ],
+          "key_facts": [
+            "घर का पता अपडेट करने की समय सीमा: 10 दिन",
+            "संबंधित प्राधिकरण: यूएस इमग्रेशन अथॉरिटी"
+          ],
+          "key_locations": [
+            "संयुक्त राज्य अमेरिका"
+          ],
+          "important_dates": [
+            "10 दिन की समय सीमा"
+          ]
+        },
+        "quiz": {
+          "question": "What is the deadline set by the US immigration authority for updating a home address?",
+          "options": [
+            "5 days",
+            "10 days",
+            "30 days",
+            "60 days"
+          ],
+          "correct_answer": "10 days",
+          "explanation": "The US immigration authority has a strict 10-day deadline for individuals to update their home address and maintain current records."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/technology/tech-news/us-immigration-authority-has-10-day-deadline-on-home-address-says-you-are-responsible-for-keeping-your-/articleshow/134499307.cms",
+        "published_date": "2026-09-27",
+        "id": 41,
+        "image_url": "https://static.toiimg.com/photo/msid-134499340,imgsize-45808.cms",
+        "added_at": "2026-09-27T03:06:17.411044+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "Sisters Raise $55,000 Through Lemonade Stand Project Over Seven Summers",
+        "story_lead": "What began as a small lemonade stand with a modest $10 goal at age 6 has culminated in a remarkable philanthropic effort. Seven summers later, Grace Hendrian and her sister June successfully closed their project after raising approximately $55,000.",
+        "full_article_text": "A charitable initiative started by a young girl named Grace Hendrian at the age of 6 has officially concluded after seven summers. Initially opening a lemonade stand with the humble goal of raising $10 for the Salvation Army, Grace was eventually joined by her sister, June. Over the course of seven years, the sisters expanded their grassroots project and collectively raised about $55,000 for charitable causes. The project highlights the profound impact of community-driven philanthropic efforts starting from small, individual initiatives.",
+        "background_context": "The initiative originated as a simple childhood lemonade stand intended to raise a small amount of money for a charitable organization, which steadily grew over several years into a major fundraising effort.",
+        "bullet_points": [
+          "Grace Hendrian started the lemonade stand at age 6.",
+          "The initial fundraising goal was a modest $10.",
+          "The intended recipient of the initial funds was the Salvation Army.",
+          "Grace's sister, June, later joined the project.",
+          "The project ran for a total of seven summers before closing.",
+          "Over seven years, the sisters raised approximately $55,000."
+        ],
+        "key_facts": [
+          "Initial goal: $10",
+          "Final amount raised: Approximately $55,000",
+          "Duration: 7 summers",
+          "Key individuals: Grace Hendrian and her sister June",
+          "Beneficiary of initial goal: The Salvation Army"
+        ],
+        "key_locations": [
+          "US"
+        ],
+        "important_dates": [
+          "Seven summers duration"
+        ],
+        "exam_relevance": [
+          "General awareness and human interest topics."
+        ],
+        "upsc_analysis": "While primarily a human-interest story rather than a core administrative topic, initiatives highlighting grassroots philanthropy and community service demonstrate the potential of individual civic engagement.",
+        "causes": [
+          "Childhood initiative to raise funds for charity",
+          "Community support and sustained engagement over multiple summers"
+        ],
+        "impacts": [
+          "Successfully raised approximately $55,000 for charitable causes",
+          "Demonstrated the long-term potential of grassroots community projects"
+        ],
+        "challenges": [
+          "Sustaining a community project over multiple summers"
+        ],
+        "government_steps": [],
+        "constitutional_or_policy_link": [],
+        "way_forward": [
+          "Encouraging youth participation in community service and philanthropy from an early age."
+        ],
+        "mains_notes": "Grassroots philanthropic efforts, exemplified by children engaging in long-term community service, showcase the power of sustained individual initiatives in fostering social welfare and community participation.",
+        "mains_questions": [
+          "How can grassroots initiatives and youth-led philanthropy contribute to community development?",
+          "Examine the role of individual civic engagement in supporting charitable organizations."
+        ],
+        "takeaway": "A lemonade stand started with a $10 goal by a 6-year-old grew into a $55,000 fundraising project over seven summers.",
+        "prelims_facts": [
+          "Grace Hendrian and her sister June raised $55,000 through a lemonade stand project over seven summers."
+        ],
+        "vocabulary": [
+          {
+            "word": "Philanthropy",
+            "meaning_hindi": "परोपकार"
+          },
+          {
+            "word": "Grassroots",
+            "meaning_hindi": "तृणमूल / जमीनी स्तर"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "The Salvation Army",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=The+Salvation+Army"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "सात गर्मियों में बहनों ने lemonade stand से 55,000 डॉलर जुटाए",
+          "story_lead": "6 साल की उम्र में 10 डॉलर के लक्ष्य के साथ शुरू हुआ एक छोटा सा lemonade stand सात गर्मियों के बाद लगभग 55,000 डॉलर जुटाने में सफल रहा।",
+          "full_article_text": "ग्रेस हेंड्रियन द्वारा 6 साल की उम्र में शुरू की गई एक परोपकारी पहल सात गर्मियों के बाद समाप्त हो गई है। द साल्वेशन आर्मी के लिए 10 डॉलर जुटाने के मामूली लक्ष्य के साथ एक lemonade stand खोलने के बाद, ग्रेस के साथ उनकी बहन जून भी जुड़ गईं। सात वर्षों के दौरान, बहनों ने अपनी इस परियोजना का विस्तार किया और कुल मिलाकर दान के लिए लगभग 55,000 डॉलर जुटाए।",
+          "background_context": "यह पहल एक साधारण बचपन के lemonade stand के रूप में शुरू हुई थी।",
+          "bullet_points": [
+            "ग्रेस हेंड्रियन ने 6 साल की उम्र में lemonade stand शुरू किया।",
+            "प्रारंभिक लक्ष्य 10 डॉलर था।",
+            "शुरुआती फंड द साल्वेशन आर्मी के लिए था।",
+            "बाद में ग्रेस की बहन जून भी इस प्रोजेक्ट से जुड़ीं।",
+            "यह प्रोजेक्ट सात गर्मियों तक चला।",
+            "बहनों ने लगभग 55,000 डॉलर जुटाए।"
+          ],
+          "key_facts": [
+            "प्रारंभिक लक्ष्य: 10 डॉलर",
+            "कुल जुटाई गई राशि: लगभग 55,000 डॉलर",
+            "अवधि: 7 गर्मियां"
+          ],
+          "key_locations": [
+            "अमेरिका"
+          ],
+          "important_dates": [
+            "सात गर्मियों की अवधि"
+          ]
+        },
+        "quiz": {
+          "question": "How much money did Grace Hendrian and her sister June raise in total over seven summers?",
+          "options": [
+            "$10",
+            "$5,000",
+            "$55,000",
+            "$100,000"
+          ],
+          "correct_answer": "$55,000",
+          "explanation": "Over seven summers, Grace and her sister June turned their tiny $10 goal into about $55,000 through their lemonade stand project."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/world/us/at-age-6-grace-hendrian-opened-a-lemonade-stand-hoping-to-raise-10-for-the-salvation-army-seven-summers-later-she-and-sister-june-closed-the-project-after-turning-that-tiny-goal-into-about-55000/articleshow/134489553.cms",
+        "published_date": "2026-09-27",
+        "id": 40,
+        "image_url": "https://static.toiimg.com/photo/msid-134490336,imgsize-1088465.cms",
+        "added_at": "2026-09-27T03:06:17.411044+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "Daunte Wright's $1.04M GoFundMe Led to Lawsuit Over Son's Support",
+        "story_lead": "Following the 2021 death of Daunte Wright, a GoFundMe campaign raised approximately $1.04 million. A year later, the mother of his only child filed a lawsuit against his parents and attorney Ben Crump, alleging that the child received none of the promised financial support.",
+        "full_article_text": "Following the 2021 death of Daunte Wright, a GoFundMe fundraising campaign was established which successfully raised about $1.04 million. Approximately a year later, a legal dispute emerged when the mother of Wright's only child filed a lawsuit. The suit targeted Wright's parents and attorney Ben Crump, alleging that the young boy did not receive any of the funds that had been publicly promised for his long-term support and upbringing.",
+        "background_context": "Daunte Wright died in 2021, leading to widespread public attention and subsequent fundraising efforts via GoFundMe to support his family and young child.",
+        "bullet_points": [
+          "Daunte Wright passed away in the year 2021.",
+          "A GoFundMe campaign raised approximately $1.04 million following his death.",
+          "A lawsuit was filed a year later by the mother of his only child.",
+          "The lawsuit named Daunte Wright's parents and attorney Ben Crump as defendants.",
+          "The core allegation is that the child received none of the funds promised for his support."
+        ],
+        "key_facts": [
+          "Fundraising amount: Approximately $1.04 million",
+          "Platform used: GoFundMe",
+          "Year of death: 2021",
+          "Parties sued: Wright's parents and Ben Crump"
+        ],
+        "key_locations": [
+          "United States"
+        ],
+        "important_dates": [
+          "2021",
+          "One year after 2021"
+        ],
+        "exam_relevance": [
+          "General awareness regarding international legal disputes, accountability in crowdfunding, and civil litigation."
+        ],
+        "upsc_analysis": "This case highlights issues surrounding crowd-sourced fundraising transparency, fiduciary responsibility, and legal disputes regarding beneficiary rights in civil jurisdictions.",
+        "causes": [
+          "Disputes over the distribution and management of crowd-funded financial contributions.",
+          "Allegations of unfulfilled financial promises made to the dependent child of the deceased."
+        ],
+        "impacts": [
+          "Legal scrutiny on high-profile crowdfunding campaigns and the distribution of beneficiary funds.",
+          "Litigation involving family members and legal representatives of the deceased."
+        ],
+        "challenges": [
+          "Ensuring transparency and accountability in large-scale online fundraising platforms.",
+          "Resolving family and legal disputes over the allocation of donated funds."
+        ],
+        "government_steps": [
+          "Not explicitly mentioned in the source material."
+        ],
+        "constitutional_or_policy_link": [
+          "Not applicable based on the source material."
+        ],
+        "way_forward": [
+          "Establishing clearer legal guidelines and platform policies for verifying beneficiary distribution in major crowdfunding campaigns."
+        ],
+        "mains_notes": "A GoFundMe campaign raising $1.04 million following the 2021 death of Daunte Wright resulted in a lawsuit by the mother of his child against his parents and attorney Ben Crump over unreceived financial support.",
+        "mains_questions": [
+          "Discuss the challenges and accountability issues associated with large-scale crowd-sourced fundraising campaigns."
+        ],
+        "takeaway": "A lawsuit was filed over the distribution of a $1.04 million GoFundMe fund raised after Daunte Wright's 2021 death.",
+        "prelims_facts": [
+          "The GoFundMe campaign raised about $1.04 million after Daunte Wright's death in 2021."
+        ],
+        "vocabulary": [
+          {
+            "word": "Lawsuit",
+            "meaning_hindi": "मुकदमा"
+          },
+          {
+            "word": "Alleging",
+            "meaning_hindi": "आरोप लगाना"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Daunte Wright",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Daunte%20Wright"
+          },
+          {
+            "name": "Ben Crump",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Ben%20Crump"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "डोंटे राइट के 1.04 मिलियन डॉलर के गोटफंडमी फंड को लेकर बेटे के भरण-पोषण पर मुकदमा दर्ज",
+          "story_lead": "2021 में डोंटे राइट की मृत्यु के बाद, एक गोटफंडमी अभियान ने लगभग 1.04 मिलियन डॉलर जुटाए। एक साल बाद, उनके इकलौते बच्चे की माँ ने उनके माता-पिता और वकील बेन क्रम्प के खिलाफ मुकदमा दायर किया, जिसमें आरोप लगाया गया कि बच्चे को उसके भरण-पोषण के लिए वादा किया गया कोई पैसा नहीं मिला।",
+          "full_article_text": "2021 में डोंटे राइट की मृत्यु के बाद, एक गोटफंडमी फंडरेज़िंग अभियान स्थापित किया गया था जिसने लगभग 1.04 मिलियन डॉलर जुटाए। लगभग एक वर्ष बाद, एक कानूनी विवाद तब सामने आया जब राइट के इकलौते बच्चे की माँ ने मुकदमा दायर किया। इस मुकदमे में राइट के माता-पिता और वकील बेन क्रम्प को निशाना बनाया गया, जिसमें आरोप लगाया गया कि युवा लड़के को उसके भरण-पोषण के लिए सार्वजनिक रूप से वादा किए गए फंड में से एक भी हिस्सा नहीं मिला।",
+          "background_context": "डोंटे राइट की 2021 में मृत्यु हो गई थी, जिसके कारण व्यापक सार्वजनिक ध्यान आकर्षित हुआ और उनके परिवार तथा छोटे बच्चे का समर्थन करने के लिए गोटफंडमी के माध्यम से धन जुटाने के प्रयास किए गए।",
+          "bullet_points": [
+            "डोंटे राइट का निधन वर्ष 2021 में हुआ था।",
+            "उनकी मृत्यु के बाद एक गोटफंडमी अभियान ने लगभग 1.04 मिलियन डॉलर जुटाए।",
+            "एक साल बाद उनके इकलौते बच्चे की माँ द्वारा एक मुकदमा दायर किया गया।",
+            "मुकदमे में डोंटे राइट के माता-पिता और वकील बेन क्रम्प को प्रतिवादी बनाया गया।",
+            "मुख्य आरोप यह है कि बच्चे को उसके भरण-पोषण के लिए वादा किया गया कोई फंड नहीं मिला।"
+          ],
+          "key_facts": [
+            "धनराशि: लगभग 1.04 मिलियन डॉलर",
+            "मंच: गोटफंडमी",
+            "मृत्यु का वर्ष: 2021",
+            "मुकदमे में पक्ष: राइट के माता-पिता और बेन क्रम्प"
+          ],
+          "key_locations": [
+            "संयुक्त राज्य अमेरिका"
+          ],
+          "important_dates": [
+            "2021"
+          ]
+        },
+        "quiz": {
+          "question": "How much money was approximately raised by the GoFundMe campaign following Daunte Wright's death in 2021?",
+          "options": [
+            "A) $500,000",
+            "B) $1.04 million",
+            "C) $2.5 million",
+            "D) $100,000"
+          ],
+          "correct_answer": "B) $1.04 million",
+          "explanation": "The GoFundMe campaign raised about $1.04 million following Daunte Wright's 2021 death, which subsequently led to a lawsuit regarding the distribution of funds."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/world/us/after-daunte-wrights-2021-death-a-gofundme-raised-about-1-04-million-a-year-later-the-mother-of-his-only-child-sued-his-parents-and-ben-crump-alleging-the-boy-received-none-of-the-money-promised-for-his-support/articleshow/134484579.cms",
+        "published_date": "2026-09-27",
+        "id": 39,
+        "image_url": "https://static.toiimg.com/photo/msid-134484744,imgsize-1824531.cms",
+        "added_at": "2026-09-27T03:06:17.411044+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "Election Commission Backs Form 6 for SIR, Cites Supreme Court Approval",
+        "story_lead": "The Election Commission of India has defended the use of Form 6 for Special Intensive Revision (SIR), stating that the Supreme Court has previously upheld its use. Furthermore, the panel clarified that new Form 6 enrolments in areas where no SIR is underway will not require mapping.",
+        "full_article_text": "The Election panel has officially backed the utilization of Form 6 for Special Intensive Revision (SIR) procedures, noting that the Supreme Court has previously upheld its implementation. In related clarifications, authorities stated that new Form 6 enrolments conducted in regions where SIR is currently not underway will not necessitate mapping. This procedural update aims to streamline voter registration and clarify administrative requirements under the electoral framework.",
+        "background_context": "The Election Commission of India handles voter registration processes, including the use of Form 6 for new enrolments and revisions like the Special Intensive Revision (SIR), operating under judicial oversight and statutory frameworks.",
+        "bullet_points": [
+          "Election panel backs the use of Form 6 for Special Intensive Revision (SIR).",
+          "The panel stated that the Supreme Court has previously upheld the use of Form 6.",
+          "New Form 6 enrolments where no SIR is underway do not require mapping.",
+          "The clarification helps streamline electoral registration processes."
+        ],
+        "key_facts": [
+          "Election panel supports Form 6 for SIR.",
+          "Supreme Court has upheld the use of Form 6.",
+          "No mapping required for new Form 6 enrolments in non-SIR areas."
+        ],
+        "key_locations": [
+          "India"
+        ],
+        "important_dates": [],
+        "exam_relevance": [
+          "UPSC Prelims: Indian Polity and Governance - Electoral Process and Election Commission of India.",
+          "UPSC Mains GS Paper II: Salient features of the Representation of the People Act, Appointments to various Constitutional posts, powers, functions and responsibilities of various Constitutional Bodies."
+        ],
+        "upsc_analysis": "Understanding the electoral registration processes, the role of the Election Commission of India, and judicial pronouncements regarding electoral forms like Form 6 is crucial for Indian Polity and Governance syllabus components.",
+        "causes": [
+          "Need for administrative clarity on voter enrolment forms and mapping requirements.",
+          "Questions or procedures surrounding Special Intensive Revision (SIR)."
+        ],
+        "impacts": [
+          "Streamlined voter registration procedures in non-SIR areas.",
+          "Reinforcement of the legal and administrative standing of Form 6."
+        ],
+        "challenges": [
+          "Ensuring seamless execution of electoral roll revisions across different jurisdictions without administrative confusion."
+        ],
+        "government_steps": [
+          "Election Commission clarified guidelines regarding Form 6 enrolments and mapping requirements."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 324 of the Constitution of India (Superintendence, direction and control of elections to be vested in an Election Commission)."
+        ],
+        "way_forward": [
+          "Ensure transparent communication of electoral roll revision guidelines to booth-level officers and the public to avoid administrative ambiguities."
+        ],
+        "mains_notes": "The Election Commission's recent stance on Form 6 for Special Intensive Revision (SIR) highlights the interplay between electoral administration and judicial validation by the Supreme Court. Clarifications on mapping exemptions for new enrolments in non-SIR regions contribute to procedural ease in voter registration.",
+        "mains_questions": [
+          "Discuss the role of the Election Commission of India in maintaining electoral rolls and the significance of procedural forms like Form 6.",
+          "Examine how judicial oversight strengthens the electoral administration framework in India."
+        ],
+        "takeaway": "The Election Commission has reaffirmed the use of Form 6 for SIR, backed by Supreme Court approval, while exempting new enrolments in non-SIR areas from mandatory mapping.",
+        "prelims_facts": [
+          "Form 6 is used for new voter enrolments.",
+          "Supreme Court has upheld the use of Form 6 for SIR."
+        ],
+        "vocabulary": [
+          {
+            "word": "Enrolment",
+            "meaning_hindi": "नामांकन"
+          },
+          {
+            "word": "Mapping",
+            "meaning_hindi": "मैपिंग / मानचित्रण"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Supreme Court of India",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Supreme_Court_of_India"
+          },
+          {
+            "name": "Election Commission of India",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Election_Commission_of_India"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "चुनाव आयोग ने एसआईआर के लिए फॉर्म 6 का समर्थन किया, कहा सुप्रीम कोर्ट ने इसके इस्तेमाल को बरकरार रखा है",
+          "story_lead": "भारतीय चुनाव आयोग ने स्पेशल इंटेंसिव रिवीजन (SIR) के लिए फॉर्म 6 के इस्तेमाल का समर्थन किया है और कहा है कि सुप्रीम कोर्ट ने पहले इसके इस्तेमाल को सही ठहराया है। इसके अलावा, आयोग ने स्पष्ट किया है कि जिन क्षेत्रों में एसआईआर नहीं चल रहा है, वहां नए फॉर्म 6 नामांकन के लिए मैपिंग की आवश्यकता नहीं होगी।",
+          "full_article_text": "चुनाव पैनल ने स्पेशल इंटेंसिव रिवीजन (SIR) के लिए फॉर्म 6 के उपयोग का आधिकारिक समर्थन किया है, यह उल्लेख करते हुए कि सुप्रीम कोर्ट ने पहले इसके कार्यान्वयन को बरकरार रखा है। संबंधित स्पष्टीकरणों में, अधिकारियों ने कहा कि जिन क्षेत्रों में एसआईआर वर्तमान में नहीं चल रहा है, वहां किए गए नए फॉर्म 6 नामांकनों के लिए मैपिंग की आवश्यकता नहीं होगी। इस प्रक्रियात्मक अपडेट का उद्देश्य मतदाता पंजीकरण को सुव्यवस्थित करना और चुनावी ढांचे के तहत प्रशासनिक आवश्यकताओं को स्पष्ट करना है।",
+          "background_context": "भारत के चुनाव आयोग ने न्यायिक oversight और वैधानिक ढांचे के तहत नए नामांकनों और विशेष गहन संशोधन (SIR) जैसे संशोधनों के लिए फॉर्म 6 के उपयोग सहित मतदाता पंजीकरण प्रक्रियाओं को संभाला है।",
+          "bullet_points": [
+            "चुनाव पैनल ने एसआईआर के लिए फॉर्म 6 के उपयोग का समर्थन किया।",
+            "पैनल ने कहा कि सुप्रीम कोर्ट ने पहले फॉर्म 6 के उपयोग को बरकरार रखा है।",
+            "जिन क्षेत्रों में एसआईआर नहीं चल रहा है, वहां नए फॉर्म 6 नामांकन के लिए मैपिंग की आवश्यकता नहीं है।",
+            "यह स्पष्टीकरण चुनावी पंजीकरण प्रक्रियाओं को सुव्यवस्थित करने में मदद करता है।"
+          ],
+          "key_facts": [
+            "चुनाव पैनल एसआईआर के लिए फॉर्म 6 का समर्थन करता है।",
+            "सुप्रीम कोर्ट ने फॉर्म 6 के उपयोग को बरकरार रखा है।",
+            "गैर-एसआईआर क्षेत्रों में नए फॉर्म 6 नामांकनों के लिए कोई मैपिंग आवश्यक नहीं है।"
+          ],
+          "key_locations": [
+            "भारत"
+          ],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "According to the Election Commission, new Form 6 enrolments in areas where no SIR is underway will require what?",
+          "options": [
+            "Mandatory mapping",
+            "No mapping",
+            "Physical verification by Supreme Court",
+            "Re-application"
+          ],
+          "correct_answer": "No mapping",
+          "explanation": "The Election Commission clarified that new Form 6 enrolments in areas where no SIR is underway will not need mapping."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/india/new-form-6-enrolments-where-no-sir-is-under-way-wont-need-mapping/articleshow/134510074.cms",
+        "published_date": "2026-09-27",
+        "id": 38,
+        "image_url": "https://static.toiimg.com/photo/msid-134510112,imgsize-140296.cms",
+        "added_at": "2026-09-27T03:06:17.411044+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "INDIA bloc to meet on September 30, Chief Election Commissioner's ouster on top of agenda",
+        "story_lead": "The opposition INDIA bloc has scheduled a meeting for September 30 to discuss key political strategies, with the removal of the Chief Election Commissioner (CEC) placed at the top of their agenda. The meeting brings together leaders of the alliance to deliberate on institutional and electoral matters.",
+        "full_article_text": "The opposition INDIA bloc is set to hold a crucial meeting on September 30. According to reports from the Times of India, the primary agenda for this high-level meeting is the discussion regarding the ouster of the Chief Election Commissioner (CEC). Such deliberations by the opposition coalition highlight ongoing political discourse surrounding India's electoral machinery, institutional autonomy, and accountability mechanisms.",
+        "background_context": "The INDIA bloc is an alliance of opposition political parties in India formed to take on the ruling coalition. Discussions regarding constitutional authorities like the Chief Election Commissioner form a part of broader parliamentary and political debates on election management bodies in the country.",
+        "bullet_points": [
+          "INDIA bloc scheduled a meeting for September 30.",
+          "The ouster of the Chief Election Commissioner (CEC) is the top agenda item.",
+          "The meeting involves leaders of the opposition coalition.",
+          "Discussions center around electoral oversight bodies and institutional procedures."
+        ],
+        "key_facts": [
+          "Meeting date: September 30",
+          "Main agenda: CEC's ouster",
+          "Organizing group: INDIA bloc"
+        ],
+        "key_locations": [
+          "India"
+        ],
+        "important_dates": [
+          "September 30"
+        ],
+        "exam_relevance": [
+          "Prelims: Election Commission of India and removal of Chief Election Commissioner",
+          "Mains (GS II): Role of opposition in a democracy, constitutional bodies, and electoral reforms"
+        ],
+        "upsc_analysis": "For UPSC aspirants, political developments involving the opposition bloc and constitutional authorities touch upon GS Paper II under the sections relating to the structure, organization, and functioning of the Election Commission, as well as the role of political parties and opposition in the Indian democratic framework.",
+        "causes": [
+          "Political opposition concerns regarding the functioning or decisions of the election machinery.",
+          "Efforts by the INDIA bloc to coordinate a unified stance on institutional matters."
+        ],
+        "impacts": [
+          "Heightened political debate regarding the independence and removal procedures of constitutional functionaries.",
+          "Increased coordination among opposition parties on parliamentary and public strategy."
+        ],
+        "challenges": [
+          "Navigating complex constitutional provisions regarding the removal of the Chief Election Commissioner.",
+          "Maintaining consensus among diverse opposition allies on policy and institutional actions."
+        ],
+        "government_steps": [
+          "Adherence to established constitutional provisions and statutory acts governing the appointment and removal of election commissioners."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 324 of the Constitution of India relating to the Election Commission."
+        ],
+        "way_forward": [
+          "Fostering constructive dialogue between the ruling administration, opposition, and independent institutions to uphold democratic integrity."
+        ],
+        "mains_notes": "The planned meeting of the INDIA bloc focusing on the CEC's removal underscores the intersection of active politics and constitutional office oversight. Aspirants must understand the rigorous constitutional safeguards, such as impeachment-like grounds for the CEC, to evaluate such political demands objectively.",
+        "mains_questions": [
+          "Discuss the constitutional provisions regarding the removal of the Chief Election Commissioner of India.",
+          "Analyze the role of opposition coalitions in raising accountability issues concerning constitutional bodies."
+        ],
+        "takeaway": "The INDIA bloc's upcoming September 30 meeting places the ouster of the CEC at the forefront of national political discussions.",
+        "prelims_facts": [
+          "The Chief Election Commissioner can be removed from office only through a process similar to the removal of a Supreme Court judge."
+        ],
+        "vocabulary": [
+          {
+            "word": "Ouster",
+            "meaning_hindi": "निष्कासन या पद से हटाना"
+          },
+          {
+            "word": "Agenda",
+            "meaning_hindi": "कार्यसूची"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Election Commission of India",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Election_Commission_of_India"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "इंडिया ब्लॉक की बैठक 30 सितंबर को, मुख्य चुनाव आयुक्त को हटाना एजेंडे में सबसे ऊपर",
+          "story_lead": "विपक्षी इंडिया गठबंधन ने प्रमुख राजनीतिक रणनीतियों पर चर्चा के लिए 30 सितंबर को एक बैठक बुलाई है, जिसमें मुख्य चुनाव आयुक्त (सीईसी) को हटाए जाने के मुद्दे को एजेंडे में सबसे ऊपर रखा गया है।",
+          "full_article_text": "विपक्षी इंडिया गठबंधन 30 सितंबर को एक महत्वपूर्ण बैठक करने जा रहा है। टाइम्स ऑफ इंडिया की रिपोर्ट के अनुसार, इस उच्च स्तरीय बैठक का मुख्य एजेंडा मुख्य चुनाव आयुक्त (सीईसी) को हटाने के संबंध में चर्चा करना है।",
+          "background_context": "इंडिया गठबंधन भारत में विपक्षी राजनीतिक दलों का एक समूह है।",
+          "bullet_points": [
+            "इंडिया ब्लॉक की बैठक 30 सितंबर को निर्धारित है।",
+            "मुख्य चुनाव आयुक्त (सीईसी) को हटाना मुख्य एजेंडा है।"
+          ],
+          "key_facts": [
+            "बैठक की तिथि: 30 सितंबर"
+          ],
+          "key_locations": [
+            "भारत"
+          ],
+          "important_dates": [
+            "30 सितंबर"
+          ]
+        },
+        "quiz": {
+          "question": "What is the primary agenda item for the INDIA bloc meeting scheduled on September 30?",
+          "options": [
+            "Economic policy review",
+            "Chief Election Commissioner's ouster",
+            "New educational reforms",
+            "Foreign policy strategy"
+          ],
+          "correct_answer": "Chief Election Commissioner's ouster",
+          "explanation": "According to the news report, the INDIA bloc meeting on September 30 has the ouster of the CEC on top of its agenda."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/india/india-bloc-to-meet-on-sept-30-cecs-ouster-on-top-of-agenda/articleshow/134510117.cms",
+        "published_date": "2026-09-27",
+        "id": 37,
+        "image_url": "https://static.toiimg.com/photo/msid-134510125,imgsize-129138.cms",
+        "added_at": "2026-09-27T03:06:17.411044+05:30"
+      },
+      {
+        "category": "World",
+        "exam_corner": true,
+        "headline": "India and Bangladesh Look Towards Rahman Visit in November",
+        "story_lead": "India and Bangladesh are preparing for a potential visit by Rahman in November. The diplomatic engagement highlights ongoing bilateral discussions between the two neighboring nations.",
+        "full_article_text": "According to reports from the Times of India, India and Bangladesh are looking forward to a scheduled or anticipated visit by Rahman in November. This diplomatic development signifies continuous bilateral dialogue and engagement between New Delhi and Dhaka, focusing on strengthening mutual relations and addressing areas of common interest.",
+        "background_context": "Bilateral relations between India and Bangladesh encompass various diplomatic, economic, and strategic dimensions, with high-level visits serving as a mechanism to review and advance cooperative ties.",
+        "bullet_points": [
+          "India and Bangladesh are anticipating a visit by Rahman in November.",
+          "The development was reported by the Times of India.",
+          "High-level diplomatic visits remain crucial for bilateral ties.",
+          "Discussions are expected to cover mutual interests between the two nations."
+        ],
+        "key_facts": [
+          "Rahman's visit is anticipated in November.",
+          "The source of the report is the Times of India."
+        ],
+        "key_locations": [
+          "India",
+          "Bangladesh"
+        ],
+        "important_dates": [
+          "November"
+        ],
+        "exam_relevance": [
+          "Prelims: Current events involving India's neighbors.",
+          "Mains (GS Paper II): India-Bangladesh bilateral relations, regional diplomacy."
+        ],
+        "upsc_analysis": "High-level bilateral visits between India and its neighbors are critical for maintaining regional stability, addressing security concerns, and fostering economic cooperation. Aspirants should understand the broader framework of India's Neighborhood First policy.",
+        "causes": [
+          "Need for continued diplomatic engagement and bilateral talks between India and Bangladesh."
+        ],
+        "impacts": [
+          "Strengthening of diplomatic channels and mutual understanding between the two countries."
+        ],
+        "challenges": [
+          "Navigating complex regional geopolitics and bilateral issues."
+        ],
+        "government_steps": [
+          "Facilitating high-level diplomatic visits and maintaining continuous dialogue."
+        ],
+        "constitutional_or_policy_link": [
+          "India's Neighborhood First Policy"
+        ],
+        "way_forward": [
+          "Enhancing bilateral cooperation through sustained dialogue, trade, and cultural exchanges."
+        ],
+        "mains_notes": "Bilateral engagements, such as the anticipated visit of Rahman to India in November, underline the importance of diplomatic channels in resolving issues and enhancing regional cooperation between India and Bangladesh.",
+        "mains_questions": [
+          "Discuss the significance of high-level bilateral visits in strengthening India-Bangladesh relations.",
+          "Analyze the role of India's 'Neighborhood First' policy in stabilizing regional diplomacy."
+        ],
+        "takeaway": "India and Bangladesh are preparing for Rahman's visit in November, marking a key moment in bilateral diplomatic engagement.",
+        "prelims_facts": [
+          "Anticipated visit month: November",
+          "Countries involved: India and Bangladesh"
+        ],
+        "vocabulary": [
+          {
+            "word": "Diplomatic",
+            "meaning_hindi": "रानैतिक"
+          },
+          {
+            "word": "Bilateral",
+            "meaning_hindi": "द्विपक्षीय"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "India",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=India"
+          },
+          {
+            "name": "Bangladesh",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Bangladesh"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "भारत और बांग्लादेश नवंबर में रहमान की यात्रा की उम्मीद कर रहे हैं",
+          "story_lead": "भारत और बांग्लादेश नवंबर में रहमान की संभावित यात्रा की तैयारी कर रहे हैं। यह कूटनीतिक जुड़ाव दोनों पड़ोसी देशों के बीच चल रही द्विपक्षीय चर्चाओं को उजागर करता है।",
+          "full_article_text": "टाइम्स ऑफ इंडिया की रिपोर्ट के अनुसार, भारत और बांग्लादेश नवंबर में रहमान के निर्धारित या प्रत्याशित दौरे की प्रतीक्षा कर रहे हैं। यह कूटनीतिक विकास नई दिल्ली और ढाका के बीच निरंतर द्विपक्षीय बातचीत और जुड़ाव को रेखांकित करता है।",
+          "background_context": "भारत और बांग्लादेश के बीच द्विपक्षीय संबंधों में विभिन्न कूटनीतिक, आर्थिक और रणनीतिक आयाम शामिल हैं।",
+          "bullet_points": [
+            "भारत और बांग्लादेश नवंबर में रहमान की यात्रा की उम्मीद कर रहे हैं।",
+            "इस खबर की रिपोर्ट टाइम्स ऑफ इंडिया ने दी है।",
+            "द्विपक्षीय संबंधों के लिए उच्च स्तरीय कूटनीतिक दौरे महत्वपूर्ण हैं।"
+          ],
+          "key_facts": [
+            "रहमान की यात्रा नवंबर में संभावित है।"
+          ],
+          "key_locations": [
+            "भारत",
+            "बांग्लादेश"
+          ],
+          "important_dates": [
+            "नवंबर"
+          ]
+        },
+        "quiz": {
+          "question": "In which month is the visit of Rahman to India/Bangladesh anticipated according to the report?",
+          "options": [
+            "October",
+            "November",
+            "December",
+            "January"
+          ],
+          "correct_answer": "November",
+          "explanation": "The report specifies that India and Bangladesh are looking towards Rahman's visit in November."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/india/india-bangladesh-look-towards-rahman-visit-in-nov/articleshow/134510003.cms",
+        "published_date": "2026-09-27",
+        "id": 36,
+        "image_url": "https://static.toiimg.com/photo/msid-134510020,imgsize-78524.cms",
+        "added_at": "2026-09-27T03:06:17.411044+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "Madras High Court Cites Attestation of Sale Deed as Evidence of Oral Partition in Ancestral Land Dispute",
+        "story_lead": "The Madras High Court has dismissed a family's claim over 3.5 acres of ancestral land, ruling that the act of a family member attesting his brother's sale deed decades ago serves as valid evidence of an oral partition. The court upheld that such active participation in transferring property implies prior division among family members.",
+        "full_article_text": "In a recent legal development reported by the Times of India, the Madras High Court adjudicated a property dispute concerning 3.5 acres of ancestral land. The court ruled against a family's claim to the property after establishing that one of the family members had previously attested a sale deed executed by his brother decades ago. According to the High Court, this attestation acts as substantive evidence of an oral partition having taken place within the family in the past. Consequently, the family's legal challenge staking a claim to the 3.5 acres was rejected.",
+        "background_context": "Disputes over ancestral properties and oral partitions frequently reach Indian courts. The recognition of oral partitions requires corroborative evidence, such as subsequent conduct of parties, mutation entries, or property transactions like attestation of sale deeds by co-sharers.",
+        "bullet_points": [
+          "The Madras High Court heard the property dispute regarding 3.5 acres of ancestral land.",
+          "A family member had attested his brother's sale deed decades prior to the litigation.",
+          "The court cited this attestation as key evidence proving an oral partition.",
+          "The family's claim to the disputed 3.5 acres was ultimately rejected.",
+          "The ruling highlights the legal significance of property document attestation in family partition cases."
+        ],
+        "key_facts": [
+          "Disputed land area: 3.5 acres",
+          "Court involved: Madras High Court",
+          "Core evidence: Attestation of a brother's sale deed decades ago",
+          "Legal principle established: Attestation can serve as evidence of oral partition"
+        ],
+        "key_locations": [
+          "Madras"
+        ],
+        "important_dates": [],
+        "exam_relevance": [
+          "UPSC Prelims: Indian Judiciary, Civil Law concepts",
+          "UPSC Mains GS Paper II & III: Polity, Governance, and Land/Property Laws"
+        ],
+        "upsc_analysis": "This ruling provides important jurisprudential insight into how Indian courts interpret oral partitions and the conduct of co-parceners or family members in civil property disputes. For civil law students and aspirants, it demonstrates how actions like attesting sale deeds can estop individuals from claiming joint ownership in ancestral property later.",
+        "causes": [
+          "Family members contesting ownership of ancestral land after a long duration",
+          "Previous property transactions involving family members without formal written partition deeds"
+        ],
+        "impacts": [
+          "Reinforces the evidentiary value of document attestation in civil property suits",
+          "Provides clarity on how courts assess oral partitions based on the conduct of parties"
+        ],
+        "challenges": [
+          "Proving oral partitions in the absence of registered partition deeds",
+          "Resolving long-standing intra-family property disputes"
+        ],
+        "government_steps": [],
+        "constitutional_or_policy_link": [
+          "Civil Procedure Code and Hindu Succession/Property Laws relating to partition"
+        ],
+        "way_forward": [
+          "Encouraging formal, registered partition deeds among family members to avoid prolonged litigation."
+        ],
+        "mains_notes": "The Madras High Court judgment emphasizes that the conduct of family members, such as attesting a sibling's sale deed, can be treated by courts as implicit acknowledgment of an oral partition. This impacts civil litigation standards regarding ancestral property claims.",
+        "mains_questions": [
+          "Discuss the legal evidentiary value of oral partitions and document attestation in ancestral property disputes in India.",
+          "How do Indian courts determine the validity of property division among family members in the absence of registered deeds?"
+        ],
+        "takeaway": "The Madras High Court ruled that attesting a brother's sale deed decades ago serves as evidence of an oral partition, leading to the dismissal of a family's claim over 3.5 acres of ancestral land.",
+        "prelims_facts": [
+          "Madras High Court handled the ancestral land dispute involving 3.5 acres."
+        ],
+        "vocabulary": [
+          {
+            "word": "Attestation",
+            "meaning_hindi": "साक्ष्यांकन / तस्दीक"
+          },
+          {
+            "word": "Oral Partition",
+            "meaning_hindi": "मौखिक बटवारा"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Madras High Court",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Madras%20High%20Court"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "मद्रास हाईकोर्ट ने भाई के विक्रय विलेख के साक्ष्यांकन को मौखिक बँटवारे का प्रमाण माना, परिवार ने 3.5 एकड़ ज़मीन का दावा खोया",
+          "story_lead": "मद्रास उच्च न्यायालय ने 3.5 एकड़ पैतृक भूमि पर एक परिवार के दावे को खारिज कर दिया है, यह फैसला देते हुए कि दशकों पहले भाई के विक्रय विलेख (सेल डीड) पर गवाही देना मौखिक बँटवारे का वैध प्रमाण है। अदालत ने माना कि संपत्ति हस्तांतरण में इस तरह की सक्रिय भागीदारी परिवार के भीतर पूर्व विभाजन को दर्शाती है।",
+          "full_article_text": "टाइम्स ऑफ इंडिया द्वारा रिपोर्ट किए गए एक हालिया कानूनी घटनाक्रम में, मद्रास उच्च न्यायालय ने 3.5 एकड़ पैतृक भूमि से संबंधित संपत्ति विवाद का adjudication किया। अदालत ने परिवार के दावे को खारिज कर दिया, यह स्थापित करने के बाद कि परिवार के एक सदस्य ने दशकों पहले अपने भाई द्वारा निष्पादित विक्रय विलेख पर हस्ताक्षर किए थे। उच्च न्यायालय के अनुसार, यह साक्ष्यांकन अतीत में परिवार के भीतर हुए मौखिक बँटवारे के ठोस प्रमाण के रूप में कार्य करता है।",
+          "background_context": "पैतृक संपत्तियों और मौखिक बँटवारे से संबंधित विवाद अक्सर भारतीय अदालतों में पहुँचते हैं।",
+          "bullet_points": [
+            "मद्रास उच्च न्यायालय ने 3.5 एकड़ पैतृक भूमि के विवाद की सुनवाई की।",
+            "परिवार के एक सदस्य ने दशकों पहले अपने भाई के सेल डीड पर हस्ताक्षर किए थे।",
+            "अदालत ने इस साक्ष्यांकन को मौखिक बँटवारे का प्रमुख प्रमाण माना।",
+            "परिवार का 3.5 एकड़ भूमि पर दावा खारिज कर दिया गया।"
+          ],
+          "key_facts": [
+            "विवादित भूमि: 3.5 एकड़",
+            "अदालत: मद्रास उच्च न्यायालय"
+          ],
+          "key_locations": [
+            "मद्रास"
+          ],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "Which court recently ruled that a family member attesting a brother's sale deed serves as evidence of oral partition?",
+          "options": [
+            "Supreme Court of India",
+            "Madras High Court",
+            "Delhi High Court",
+            "Bombay High Court"
+          ],
+          "correct_answer": "Madras High Court",
+          "explanation": "The Madras High Court cited the attestation of a sale deed as evidence of an oral partition while rejecting a family's claim to 3.5 acres of ancestral land."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/business/india-business/he-attested-brothers-sale-deed-decades-ago-madras-hc-cites-it-as-evidence-of-oral-partition-rejects-familys-claim-to-3-5-acres-of-ancestral-land/articleshow/134507211.cms",
+        "published_date": "2026-09-27",
+        "id": 35,
+        "image_url": "https://static.toiimg.com/photo/msid-134507551,imgsize-359205.cms",
+        "added_at": "2026-09-27T03:06:17.411044+05:30"
+      },
+      {
+        "category": "World",
+        "exam_corner": true,
+        "headline": "IAF’s Tarang Shakti Air Exercise Kicks Off in Jodhpur",
+        "story_lead": "The Indian Air Force (IAF) has commenced its multinational air exercise, Tarang Shakti, in Jodhpur. The large-scale military drill brings together significant global participation, featuring 80 aircraft and representatives from 40 countries.",
+        "full_article_text": "The Indian Air Force (IAF) has officially commenced Tarang Shakti, its multinational air exercise, hosted in Jodhpur. The exercise witnesses substantial international participation, with around 80 aircraft and representation from 40 countries, including envoys from the United States and France who hailed the multinational drill. The exercise serves as a major platform for enhancing interoperability, tactical understanding, and defense cooperation between the Indian Air Force and participating friendly foreign nations.",
+        "background_context": "Tarang Shakti is a multinational air exercise organized by the Indian Air Force to foster military cooperation and interoperability among global air forces.",
+        "bullet_points": [
+          "Tarang Shakti is hosted by the Indian Air Force in Jodhpur.",
+          "The exercise features participation from 40 countries.",
+          "Approximately 80 aircraft are involved in the drill.",
+          "Envoys from the United States and France hailed the multinational exercise.",
+          "The drill aims to enhance operational synergy and mutual cooperation among participating nations."
+        ],
+        "key_facts": [
+          "Exercise Name: Tarang Shakti",
+          "Organizer: Indian Air Force (IAF)",
+          "Host Location: Jodhpur",
+          "Scale: 80 aircraft and 40 countries participating"
+        ],
+        "key_locations": [
+          "Jodhpur"
+        ],
+        "important_dates": [],
+        "exam_relevance": [
+          "Prelims: Important for current events related to defense exercises and international relations.",
+          "Mains: Relevant for GS Paper II (International Relations - Bilateral, regional and global groupings involving India) and GS Paper III (Security challenges and defense preparedness)."
+        ],
+        "upsc_analysis": "Multinational exercises like Tarang Shakti highlight India's growing defense diplomacy and strategic partnership with various global powers. They reflect the Indian Air Force's capability to host large-scale multilateral drills, thereby strengthening India's position as a net security provider in the region and enhancing strategic interoperability.",
+        "causes": [
+          "Need to enhance interoperability and tactical cooperation among global air forces.",
+          "Strengthening defense diplomacy and strategic partnerships with friendly foreign nations."
+        ],
+        "impacts": [
+          "Improves joint operational capabilities between the IAF and foreign air forces.",
+          "Fosters closer diplomatic and defense ties with participating nations."
+        ],
+        "challenges": [
+          "Logistical coordination among diverse aircraft and multi-national personnel.",
+          "Managing complex multi-domain operational scenarios."
+        ],
+        "government_steps": [
+          "Organization of Tarang Shakti by the Indian Air Force to project defense capabilities and foster strategic alliances."
+        ],
+        "constitutional_or_policy_link": [
+          "Aligned with India's foreign policy objectives of strategic autonomy and expanding defense cooperation."
+        ],
+        "way_forward": [
+          "Institutionalizing the exercise as a regular multilateral platform.",
+          "Deepening technical and tactical exchanges during subsequent editions."
+        ],
+        "mains_notes": "Tarang Shakti is a landmark multinational air exercise hosted by the IAF in Jodhpur involving 80 aircraft and 40 countries. It underscores India's rising defense stature and commitment to collaborative global security.",
+        "mains_questions": [
+          "Discuss the strategic significance of multinational defense exercises like Tarang Shakti in enhancing India's defense diplomacy.",
+          "How do joint military exercises contribute to interoperability and regional security?"
+        ],
+        "takeaway": "The IAF's Tarang Shakti exercise in Jodhpur brings together 80 aircraft from 40 countries to boost global defense cooperation and tactical synergy.",
+        "prelims_facts": [
+          "Tarang Shakti is a multinational air exercise hosted by the Indian Air Force.",
+          "The exercise took place in Jodhpur with participation from 40 countries and 80 aircraft."
+        ],
+        "vocabulary": [
+          {
+            "word": "Interoperability",
+            "meaning_hindi": "अंतर-संचालनीयता (विभिन्न प्रणालियों या बलों का एक साथ मिलकर काम करने की क्षमता)"
+          },
+          {
+            "word": "Multinational",
+            "meaning_hindi": "बहुराष्ट्रीय"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Jodhpur",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Jodhpur"
+          },
+          {
+            "name": "Indian Air Force",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Indian_Air_Force"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "जोधपुर में शुरू हुआ भारतीय वायुसेना का बहुराष्ट्रीय युद्धाभ्यास 'तरंग शक्ति'",
+          "story_lead": "भारतीय वायुसेना (IAF) ने जोधपुर में अपने बहुराष्ट्रीय वायु अभ्यास 'तरंग शक्ति' की शुरुआत कर दी है। इस बड़े पैमाने पर आयोजित सैन्य अभ्यास में 40 देशों की भागीदारी और 80 विमान शामिल हैं।",
+          "full_article_text": "भारतीय वायुसेना (IAF) ने जोधपुर में अपने बहुराष्ट्रीय वायु अभ्यास 'तरंग शक्ति' का आधिकारिक शुभारंभ कर दिया है। इस अभ्यास में भारी अंतर्राष्ट्रीय भागीदारी देखी जा रही है, जिसमें लगभग 80 विमान और 40 देशों के प्रतिनिधि शामिल हैं। अमेरिका और फ्रांस के दूतों ने इस बहुराष्ट्रीय अभ्यास की सराहना की है। यह अभ्यास भारतीय वायुसेना और भाग लेने वाले मित्र देशों के बीच अंतर-संचालनीयता, सामरिक समझ और रक्षा सहयोग को बढ़ाने के लिए एक प्रमुख मंच के रूप में कार्य करता है।",
+          "background_context": "तरंग शक्ति वैश्विक वायु सेनाओं के बीच सैन्य सहयोग और अंतर-संचालनीयता को बढ़ावा देने के लिए भारतीय वायुसेना द्वारा आयोजित एक बहुराष्ट्रीय वायु अभ्यास है।",
+          "bullet_points": [
+            "तरंग शक्ति का आयोजन भारतीय वायुसेना द्वारा जोधपुर में किया जा रहा है।",
+            "इस अभ्यास में 40 देश भाग ले रहे हैं।",
+            "ड्रिल में लगभग 80 विमान शामिल हैं।",
+            "अमेरिका और फ्रांस के दूतों ने इस बहुराष्ट्रीय अभ्यास की सराहना की।",
+            "इस अभ्यास का उद्देश्य भाग लेने वाले देशों के बीच परिचालन तालमेल और आपसी सहयोग को बढ़ाना है।"
+          ],
+          "key_facts": [
+            "अभ्यास का नाम: तरंग शक्ति",
+            "आयोजक: भारतीय वायुसेना (IAF)",
+            "मेजबान स्थल: जोधपुर",
+            "पैमाना: 80 विमान और 40 देश भाग ले रहे हैं"
+          ],
+          "key_locations": [
+            "जोधपुर"
+          ],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "Where is the IAF's multinational air exercise 'Tarang Shakti' being hosted?",
+          "options": [
+            "New Delhi",
+            "Jodhpur",
+            "Bengaluru",
+            "Jaipur"
+          ],
+          "correct_answer": "Jodhpur",
+          "explanation": "Tarang Shakti, the multinational air exercise organized by the Indian Air Force involving 80 aircraft and 40 countries, kicked off in Jodhpur."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/defence/news/80-aircraft-40-countries-1500-personnel-iafs-biggest-air-exercise-tarang-shakti-kicks-off-in-jodhpur-us-france-envoys-hail-multinational-drill/articleshow/134510091.cms",
+        "published_date": "2026-09-27",
+        "id": 34,
+        "image_url": "https://static.toiimg.com/photo/msid-134510103,imgsize-149184.cms",
+        "added_at": "2026-09-27T03:06:17.411044+05:30"
+      },
+      {
+        "category": "Science & Technology",
+        "exam_corner": true,
+        "headline": "Florida Used Robot Rabbits to Hunt Burmese Pythons Threatening the Everglades",
+        "story_lead": "A district in Florida deployed robotic rabbits to help eliminate the growing population of invasive Burmese pythons. These pythons pose a significant threat to the ecosystem of the Everglades.",
+        "full_article_text": "In an effort to manage and control the growing population of invasive Burmese pythons, a district in Florida utilized robotic rabbits as a tactical approach. The Burmese pythons have been threatening the native ecosystem and wildlife of the Everglades. Utilizing technology such as robot rabbits highlights innovative wildlife management and conservation strategies to mitigate ecological disruption caused by invasive species.",
+        "background_context": "Burmese pythons are an invasive species in Florida's Everglades, where they pose a severe threat to native wildlife populations due to a lack of natural predators in the region.",
+        "bullet_points": [
+          "Florida district deployed robot rabbits for wildlife management.",
+          "The target was the growing population of Burmese pythons.",
+          "Burmese pythons threaten the ecosystem of the Everglades.",
+          "The initiative represents an innovative technological approach to invasive species control."
+        ],
+        "key_facts": [
+          "Robot rabbits were used in Florida.",
+          "The target species is the Burmese python.",
+          "The affected region is the Everglades."
+        ],
+        "key_locations": [
+          "Florida",
+          "Everglades"
+        ],
+        "important_dates": [],
+        "exam_relevance": [
+          "Prelims: Environment and Ecology, Invasive Species, Technology in Conservation",
+          "Mains: General Studies Paper III - Environment, Conservation, Biodiversity"
+        ],
+        "upsc_analysis": "The use of robotics in managing invasive species underscores the intersection of technology and environmental conservation. For UPSC aspirants, understanding the impact of invasive species on native biodiversity, such as the Burmese pythons in the Everglades, is crucial for questions related to environmental degradation and innovative conservation techniques.",
+        "causes": [
+          "Introduction and proliferation of invasive Burmese pythons in the Everglades.",
+          "Absence of natural predators for Burmese pythons in the region."
+        ],
+        "impacts": [
+          "Threat to the native ecosystem and biodiversity of the Everglades.",
+          "Growth of the invasive python population."
+        ],
+        "challenges": [
+          "Controlling invasive species populations in vast and complex ecosystems like wetlands.",
+          "Protecting native wildlife from apex invasive predators."
+        ],
+        "government_steps": [
+          "Deployment of technological tools such as robot rabbits by local districts in Florida to manage the python population."
+        ],
+        "constitutional_or_policy_link": [],
+        "way_forward": [
+          "Continued integration of innovative technology and robotics in wildlife conservation.",
+          "Enhanced monitoring and removal programs for invasive species globally."
+        ],
+        "mains_notes": "Invasive species like the Burmese python in Florida's Everglades pose severe ecological challenges. Innovative methods, such as utilizing robotic decoys (robot rabbits), demonstrate modern technological interventions in wildlife management and biodiversity conservation.",
+        "mains_questions": [
+          "Discuss the ecological impacts of invasive species on native ecosystems with reference to the Burmese pythons in the Everglades.",
+          "How can emerging technologies and robotics assist in modern environmental conservation and wildlife management?"
+        ],
+        "takeaway": "Florida districts utilized robot rabbits to help manage the growing threat of invasive Burmese pythons in the Everglades.",
+        "prelims_facts": [
+          "Burmese pythons are an invasive species in the Florida Everglades.",
+          "Robot rabbits were used as a method to hunt or manage the pythons."
+        ],
+        "vocabulary": [
+          {
+            "word": "Invasive",
+            "meaning_hindi": "आक्रामक / बाहरी प्रजाति जो नुकसान पहुँचाए"
+          },
+          {
+            "word": "Ecosystem",
+            "meaning_hindi": "पारिस्थितिकी तंत्र"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Florida",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Florida"
+          },
+          {
+            "name": "Everglades",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Everglades"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "फ्लोरिडा ने एवरग्लेड्स को खतरे में डालने वाले बर्मी अजगरों के शिकार के लिए रोबोट खरगोशों का उपयोग किया",
+          "story_lead": "फ्लोरिडा के एक जिले ने बर्मी अजगरों की बढ़ती आबादी को समाप्त करने में मदद के लिए रोबोट खरगोशों को तैनात किया। ये अजगर एवरग्लेड्स की पारिस्थितिकी के लिए एक महत्वपूर्ण खतरा पैदा कर रहे हैं।",
+          "full_article_text": "आक्रामक बर्मी अजगरों की बढ़ती आबादी को नियंत्रित करने और प्रबंधित करने के प्रयास में, फ्लोरिडा के एक जिले ने एक सामरिक दृष्टिकोण के रूप में रोबोट खरगोशों का उपयोग किया। बर्मी अजगर एवरग्लेड्स की मूल पारिस्थितिकी तंत्र और वन्य जीवन के लिए खतरा पैदा कर रहे हैं।",
+          "background_context": "बर्मी अजगर फ्लोरिडा के एवरग्लेड्स में एक आक्रामक प्रजाति हैं, जहाँ क्षेत्र में प्राकृतिक शिकारियों की कमी के कारण वे मूल वन्यजीवों के लिए गंभीर खतरा पैदा करते हैं।",
+          "bullet_points": [
+            "फ्लोरिडा जिले ने वन्यजीव प्रबंधन के लिए रोबोट खरगोश तैनात किए।",
+            "लक्षित जीव बर्मी अजगर थे।",
+            "बर्मी अजगर एवरग्लेड्स की पारिस्थितिकी को खतरे में डालते हैं।"
+          ],
+          "key_facts": [
+            "फ्लोरिडा में रोबोट खरगोशों का उपयोग किया गया।",
+            "लक्षित प्रजाति बर्मी अजगर है।"
+          ],
+          "key_locations": [
+            "फ्लोरिडा",
+            "एवरग्लेड्स"
+          ],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "Which invasive species was targeted using robot rabbits in Florida's Everglades?",
+          "options": [
+            "A) Burmese pythons",
+            "B) Alligators",
+            "C) Cane toads",
+            "D) Wild boars"
+          ],
+          "correct_answer": "A) Burmese pythons",
+          "explanation": "A district in Florida used robot rabbits to help manage and eliminate the growing population of invasive Burmese pythons threatening the Everglades."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/technology/tech-news/when-a-district-in-florida-used-robot-rabbits-to-eliminate-growing-population-of-burmese-pythons-and-protect-everglades/articleshow/134385404.cms",
+        "published_date": "2026-09-27",
+        "id": 33,
+        "image_url": "https://static.toiimg.com/photo/msid-134385541,imgsize-1998728.cms",
+        "added_at": "2026-09-27T03:06:17.411044+05:30"
+      },
+      {
+        "category": "Sports",
+        "exam_corner": true,
+        "headline": "PM Modi and Shah put CEC in charge of match-fixing elections, alleges Rahul Gandhi",
+        "story_lead": "Congress leader Rahul Gandhi has made allegations against Prime Minister Narendra Modi and Union Home Minister Amit Shah, accusing them of placing the Chief Election Commissioner (CEC) in charge of conducting what he termed as 'match-fixing elections'. The statement brings focus to ongoing political discourse regarding the election machinery in India.",
+        "full_article_text": "In recent political developments, Congress leader Rahul Gandhi alleged that Prime Minister Narendra Modi and Home Minister Amit Shah have put the Chief Election Commissioner (CEC) in charge of what he described as 'match-fixing elections'. The remarks highlight ongoing debates surrounding the independence, functioning, and perception of constitutional bodies in India, particularly the Election Commission of India, during the electoral process. Such allegations form part of the broader political friction between the ruling government and the opposition parties concerning electoral integrity and administrative neutrality.",
+        "background_context": "The allegations form part of ongoing political controversies in India concerning the autonomy of constitutional institutions, specifically the Election Commission of India, and the appointment processes or conduct of top election officials.",
+        "bullet_points": [
+          "Congress leader Rahul Gandhi targeted PM Narendra Modi and Home Minister Amit Shah.",
+          "He alleged that the CEC was put in charge of 'match-fixing elections'.",
+          "The statement highlights debates surrounding the neutrality of constitutional bodies.",
+          "Political friction continues over the management and integrity of Indian elections."
+        ],
+        "key_facts": [
+          "Rahul Gandhi made allegations against PM Modi and Amit Shah.",
+          "The allegations involve the Chief Election Commissioner (CEC).",
+          "The term 'match-fixing elections' was used by the opposition leader."
+        ],
+        "key_locations": [
+          "India"
+        ],
+        "important_dates": [],
+        "exam_relevance": [
+          "UPSC Prelims: Indian Polity and Governance - Constitutional Bodies (Election Commission of India).",
+          "UPSC Mains GS Paper II: Appointments to various Constitutional posts, powers, functions and responsibilities of various Constitutional Bodies."
+        ],
+        "upsc_analysis": "The independence and perceived neutrality of constitutional bodies like the Election Commission of India are crucial for upholding democratic values and ensuring free and fair elections. Allegations by political figures against institutional heads underline the debate on electoral reforms, the appointment mechanism of election commissioners, and the checks and balances required in a parliamentary democracy.",
+        "causes": [
+          "Intense political competition between the ruling coalition and opposition parties.",
+          "Concerns raised by opposition parties regarding the autonomy and functioning of electoral authorities."
+        ],
+        "impacts": [
+          "Heightened political debate over the neutrality of constitutional bodies.",
+          "Increased public scrutiny on the process of elections and institutional integrity in India."
+        ],
+        "challenges": [
+          "Maintaining public trust in independent constitutional institutions amidst polarizing political rhetoric.",
+          "Balancing freedom of political speech with the institutional dignity of constitutional authorities."
+        ],
+        "government_steps": [
+          "The government has previously enacted legislative frameworks concerning the appointment and service conditions of the Chief Election Commissioner and other Election Commissioners."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 324 of the Constitution of India provides for the superintendence, direction, and control of elections to be vested in an Election Commission."
+        ],
+        "way_forward": [
+          "Ensuring absolute transparency in the appointment and functioning of election authorities to reinforce public confidence.",
+          "Constructive political dialogue to address institutional concerns without undermining democratic pillars."
+        ],
+        "mains_notes": "The debate surrounding the independence of the Election Commission of India highlights the tension between political entities and constitutional watchdogs. Upholding the sanctity of Article 324 is essential for credible democratic exercises. Reforms must focus on insulating constitutional offices from political controversies while ensuring accountability.",
+        "mains_questions": [
+          "Discuss the constitutional role of the Election Commission of India under Article 324 in ensuring free and fair elections.",
+          "Examine the challenges to the perceived neutrality of constitutional bodies in India's contemporary political landscape."
+        ],
+        "takeaway": "Political allegations regarding constitutional bodies underline the critical need for institutional autonomy and public trust in India's electoral democracy.",
+        "prelims_facts": [
+          "Article 324 pertains to the Election Commission of India."
+        ],
+        "vocabulary": [
+          {
+            "word": "Match-fixing",
+            "meaning_hindi": "मैच फिक्सिंग (यहाँ चुनावी प्रक्रिया में हेरफेर के अर्थ में प्रयुक्त)"
+          },
+          {
+            "word": "Allegation",
+            "meaning_hindi": "आरोप"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Rahul Gandhi",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Rahul+Gandhi"
+          },
+          {
+            "name": "Narendra Modi",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Narendra+Modi"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "पीएम मोदी और शाह ने सीईसी को मैच-फिक्सिंग चुनावों की जिम्मेदारी सौंपी: राहुल",
+          "story_lead": "कांग्रेस नेता राहुल गांधी ने प्रधानमंत्री नरेंद्र मोदी और केंद्रीय गृह मंत्री अमित शाह पर आरोप लगाया है कि उन्होंने मुख्य चुनाव आयुक्त (सीईसी) को 'मैच-फिक्सिंग चुनावों' को कराने की जिम्मेदारी सौंपी है।",
+          "full_article_text": "हालिया राजनीतिक घटनाक्रम में, कांग्रेस नेता राहुल गांधी ने आरोप लगाया कि प्रधानमंत्री नरेंद्र मोदी और गृह मंत्री अमित शाह ने मुख्य चुनाव आयुक्त (सीईसी) को 'मैच-फिक्सिंग चुनाव' कराने की जिम्मेदारी सौंपी है। यह बयान चुनावी प्रक्रिया के दौरान भारत में संवैधानिक निकायों की स्वतंत्रता, कार्यप्रणाली और उनकी छवि को लेकर चल रही राजनीतिक बहस को उजागर करता है।",
+          "background_context": "यह आरोप भारत में संवैधानिक संस्थानों, विशेष रूप से भारत के चुनाव आयोग की स्वायत्तता और शीर्ष चुनाव अधिकारियों के आचरण को लेकर चल रहे राजनीतिक विवादों का हिस्सा है।",
+          "bullet_points": [
+            "कांग्रेस नेता राहुल गांधी ने पीएम नरेंद्र मोदी और गृह मंत्री अमित शाह को निशाना बनाया।",
+            "उन्होंने आरोप लगाया कि सीईसी को 'मैच-फिक्सिंग चुनावों' का प्रभारी बनाया गया है।",
+            "यह बयान संवैधानिक निकायों की निष्पक्षता से जुड़े विवादों को उजागर करता है।"
+          ],
+          "key_facts": [
+            "राहुल गांधी ने पीएम मोदी और अमित शाह पर आरोप लगाए।",
+            "यह मामला मुख्य चुनाव आयुक्त (सीईसी) से संबंधित है।"
+          ],
+          "key_locations": [
+            "भारत"
+          ],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "Which political leader recently alleged that PM Modi and Amit Shah put the CEC in charge of match-fixing elections?",
+          "options": [
+            "Rahul Gandhi",
+            "Mallikarjun Kharge",
+            "Arvind Kejriwal",
+            "Akhilesh Yadav"
+          ],
+          "correct_answer": "Rahul Gandhi",
+          "explanation": "Congress leader Rahul Gandhi made the allegation that PM Modi and Amit Shah put the CEC in charge of match-fixing elections."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/india/modi-shah-put-cec-in-charge-of-match-fixing-elections-rahul/articleshow/134510130.cms",
+        "published_date": "2026-09-27",
+        "id": 32,
+        "image_url": "https://static.toiimg.com/photo/msid-134510143,imgsize-45866.cms",
+        "added_at": "2026-09-27T03:06:17.411044+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "BJP Allies Express Support for Election Commission, Criticize Opposition Attacks",
+        "story_lead": "The allies of the Bharatiya Janata Party (BJP) have closed ranks to back the Election Commission of India (EC). They stated that the ongoing attacks by the opposition on the poll panel undermine democratic institutions.",
+        "full_article_text": "In recent political developments concerning the electoral framework in India, the allies of the ruling Bharatiya Janata Party (BJP) have come forward to strongly support the Election Commission (EC). The coalition partners asserted that the criticism and attacks directed at the poll body by opposition parties are detrimental to democratic norms and undermine the credibility of independent constitutional institutions. The development highlights ongoing political friction regarding the functioning and perceived neutrality of India's electoral administration.",
+        "background_context": "The Election Commission of India is a constitutional body responsible for administering election processes in India under Article 324 of the Constitution. Debates involving the poll panel's autonomy and opposition scrutiny are recurrent themes in Indian polity.",
+        "bullet_points": [
+          "BJP allies closed ranks to extend support to the Election Commission.",
+          "Ally leaders criticized opposition attacks on the poll panel.",
+          "The supporting parties stated that such attacks undermine democracy.",
+          "The issue highlights tensions between ruling coalition partners and opposition parties over election administration."
+        ],
+        "key_facts": [
+          "BJP allies publicly backed the Election Commission.",
+          "Opposition attacks were termed as detrimental to democracy by ruling allies."
+        ],
+        "key_locations": [
+          "India"
+        ],
+        "important_dates": [],
+        "exam_relevance": [
+          "UPSC Prelims: Indian Polity and Governance - Constitutional Bodies (Election Commission)",
+          "UPSC Mains GS Paper II: Salient features of the Representation of People's Act, Appointment to various Constitutional posts, powers, functions and responsibilities of various Constitutional Bodies."
+        ],
+        "upsc_analysis": "The debate over the neutrality and functioning of the Election Commission is crucial for Indian democracy. While opposition scrutiny is vital for accountability, systematic criticism of constitutional authorities can erode public trust in democratic institutions. A balanced perspective requires strengthening institutional autonomy while upholding the right to constructive political critique.",
+        "causes": [
+          "Political friction between the ruling coalition and opposition parties.",
+          "Disagreements over the electoral process and functioning of the Election Commission."
+        ],
+        "impacts": [
+          "Heightened political polarization regarding constitutional bodies.",
+          "Public debate on the autonomy and credibility of the Election Commission of India."
+        ],
+        "challenges": [
+          "Maintaining the perceived neutrality of independent constitutional bodies amidst intense political rivalry.",
+          "Balancing legitimate political opposition with institutional integrity."
+        ],
+        "government_steps": [
+          "Defense of institutional integrity by ruling coalition allies."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 324 of the Constitution of India regarding the superintendence, direction, and control of elections vested in an Election Commission."
+        ],
+        "way_forward": [
+          "Constructive engagement between political parties and election authorities.",
+          "Safeguarding the autonomy and credibility of constitutional bodies like the Election Commission to maintain public trust in democracy."
+        ],
+        "mains_notes": "The public backing of the Election Commission by BJP allies underscores the political discourse surrounding institutional neutrality in India. For Mains, aspirants should analyze the role of constitutional bodies, challenges to their autonomy, and the necessity of maintaining a balance between political accountability and institutional respect.",
+        "mains_questions": [
+          "Discuss the constitutional role of the Election Commission of India in ensuring free and fair elections. How does political friction impact institutional credibility?",
+          "Examine the significance of maintaining the neutrality of constitutional bodies in a parliamentary democracy."
+        ],
+        "takeaway": "BJP allies have strongly backed the Election Commission, asserting that opposition attacks undermine democratic institutions.",
+        "prelims_facts": [
+          "The Election Commission is established under Article 324 of the Indian Constitution."
+        ],
+        "vocabulary": [
+          {
+            "word": "Undermine",
+            "meaning_hindi": "कमजोर करना"
+          },
+          {
+            "word": "Allies",
+            "meaning_hindi": "सहयोगी"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Election Commission of India",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Election_Commission_of_India"
+          },
+          {
+            "name": "Bharatiya Janata Party",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Bharatiya_Janata_Party"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "भाजपा सहयोगियों ने चुनाव आयोग का समर्थन किया, कहा विपक्षी हमले लोकतंत्र को कमजोर करते हैं",
+          "story_lead": "भारतीय जनता पार्टी (भाजपा) के सहयोगियों ने चुनाव आयोग (ईसी) का समर्थन करने के लिए एकजुटता दिखाई है। उन्होंने कहा कि चुनाव निकाय पर विपक्ष के निरंतर हमले लोकतांत्रिक संस्थाओं को कमजोर करते हैं।",
+          "full_article_text": "भारत में चुनावी ढांचे से जुड़े हालिया राजनीतिक घटनाक्रम में, सत्तारूढ़ भारतीय जनता पार्टी (भाजपा) के सहयोगी दल चुनाव आयोग (ईसी) के समर्थन में खुलकर सामने आए हैं। गठबंधन के साझीदारों ने दावा किया कि विपक्षी दलों द्वारा चुनाव निकाय पर की जाने वाली आलोचना और हमले लोकतांत्रिक मानदंडों के लिए हानिकारक हैं और स्वतंत्र संवैधानिक संस्थाओं की विश्वसनीयता को कमजोर करते हैं। यह घटनाक्रम भारत के चुनावी प्रशासन के कामकाज और उसकी कथित निष्पक्षता को लेकर चल रहे राजनीतिक टकराव को उजागर करता है।",
+          "background_context": "भारत का चुनाव आयोग भारतीय संविधान के अनुच्छेद 324 के तहत भारत में चुनाव प्रक्रियाओं का प्रशासन करने के लिए जिम्मेदार एक संवैधानिक निकाय है। चुनाव आयोग की स्वायत्तता और विपक्ष की संलिप्तता से जुड़े विवाद भारतीय राजनीति में आवर्ती विषय रहे हैं।",
+          "bullet_points": [
+            "भाजपा सहयोगियों ने चुनाव आयोग को समर्थन देने के लिए एकजुटता दिखाई।",
+            "सहयोगी नेताओं ने चुनाव निकाय पर विपक्षी हमलों की आलोचना की।",
+            "समर्थन करने वाले दलों ने कहा कि ऐसे हमले लोकतंत्र को कमजोर करते हैं।",
+            "यह मुद्दा चुनाव प्रशासन पर सत्तारूढ़ गठबंधन के सहयोगियों और विपक्षी दलों के बीच तनाव को उजागर करता है।"
+          ],
+          "key_facts": [
+            "भाजपा सहयोगियों ने सार्वजनिक रूप से चुनाव आयोग का समर्थन किया।",
+            "सत्तारूढ़ सहयोगियों द्वारा विपक्षी हमलों को लोकतंत्र के लिए हानिकारक करार दिया गया।"
+          ],
+          "key_locations": [
+            "भारत"
+          ],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "Which political grouping recently expressed support for the Election Commission, stating that opposition attacks undermine democracy?",
+          "options": [
+            "BJP allies",
+            "Opposition parties",
+            "Independent candidates",
+            "Judicial panels"
+          ],
+          "correct_answer": "BJP allies",
+          "explanation": "BJP allies closed ranks to back the Election Commission, stating that opposition attacks undermine democracy."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/india/bjp-allies-close-ranks-flay-oppn-for-undermining-democracy/articleshow/134510147.cms",
+        "published_date": "2026-09-27",
+        "id": 31,
+        "image_url": "https://static.toiimg.com/photo/msid-134510150,imgsize-89790.cms",
+        "added_at": "2026-09-27T03:06:17.411044+05:30"
+      },
+      {
+        "category": "World",
+        "exam_corner": true,
+        "headline": "India Secures Double Kabaddi Gold at Asian Games; Other Major Global and National Updates",
+        "story_lead": "India clinched double gold medals in kabaddi at the Asian Games held in Japan, with both the men's and women's teams defeating Iran in their respective finals. Meanwhile, significant developments unfolded regarding the Air India AI-171 crash probe, the Election Commission's Special Intensive Revision (SIR) in Delhi, and international news including a blast in Pakistan and weather cancellations in the US.",
+        "full_article_text": "Recent news highlights key developments across sports, aviation safety, election administration, and international events. At the Asian Games in Japan, the Indian men's kabaddi team triumphed over Iran with a score of 40-34 in the final, marking the country's fourth gold medal at the Games and the men's team's ninth gold since the sport was introduced to the roster in 1990. Earlier, the Indian women's kabaddi team secured a 37-34 victory against Iran, claiming their fourth Asian Games gold since 2010. In aviation news, the Federation of Indian Pilots (FIP) has approached Union Civil Aviation Minister Kinjarapu Ram Mohan Naidu to seek representation in an independent committee expected to review the draft final investigation report on the Air India AI-171 Boeing 787 Dreamliner crash that occurred in Ahmedabad in June 2025, claiming 260 lives. Additionally, Chief Election Commissioner Gyanesh Kumar chaired a key Election Commission meeting addressing concerns over voter list deletions during the Special Intensive Revision (SIR) in Delhi, announcing procedural changes including the removal of mandatory ERO hearings and a review of the ECINet portal. Internationally, a blast at a roadside police checkpoint in Dera Ismail Khan, Pakistan, resulted in 11 fatalities and 30 injuries, while severe weather forecasts led to the cancellation of Ed Sheeran's concerts at Gillette Stadium in Massachusetts.",
+        "background_context": "The Asian Games feature kabaddi as a prominent discipline, where Indian teams have historically maintained a strong winning record. The Election Commission of India conducts periodic electoral roll revisions such as the Special Intensive Revision (SIR). The Air India AI-171 crash involved a Boeing 787 Dreamliner that crashed in Ahmedabad in June 2025, leading to ongoing investigations and calls for transparent reviews.",
+        "bullet_points": [
+          "India won both men's and women's kabaddi gold medals by defeating Iran at the Asian Games in Japan.",
+          "The Indian men's team won 40-34 in the final, securing their ninth gold since kabaddi's inclusion in 1990.",
+          "The Indian women's team defeated Iran 37-34 to claim their fourth Asian Games gold since 2010.",
+          "The Federation of Indian Pilots (FIP) sought representation on the panel reviewing the draft final probe report for the Air India AI-171 crash.",
+          "The Election Commission of India announced modifications to the Special Intensive Revision (SIR) in Delhi, dropping mandatory ERO hearings and reviewing the ECINet portal.",
+          "An explosion at a police checkpoint in Dera Ismail Khan, Pakistan, killed 11 people and injured 30.",
+          "Severe weather in Massachusetts prompted the cancellation of Ed Sheeran's concerts at Gillette Stadium."
+        ],
+        "key_facts": [
+          "Men's kabaddi final score: India 40, Iran 34 at the Asian Games.",
+          "Women's kabaddi final score: India 37, Iran 34 at the Asian Games.",
+          "Air India AI-171 was a Boeing 787 Dreamliner that crashed in Ahmedabad on June 12, 2025, killing 260 people.",
+          "11 people were killed and 30 injured in a blast in Dera Ismail Khan, Pakistan.",
+          "Chief Election Commissioner: Gyanesh Kumar."
+        ],
+        "key_locations": [
+          "Japan",
+          "Ahmedabad",
+          "Delhi",
+          "Dera Ismail Khan",
+          "Pakistan",
+          "Gillette Stadium",
+          "Foxborough",
+          "Massachusetts"
+        ],
+        "important_dates": [
+          "June 12, 2025",
+          "September 25 and 26",
+          "September 26"
+        ],
+        "exam_relevance": [
+          "Prelims: Sports events (Asian Games kabaddi), Election Commission procedures (SIR), geographical locations (Dera Ismail Khan).",
+          "Mains: Aviation safety and regulatory oversight, electoral reforms and administrative transparency."
+        ],
+        "upsc_analysis": "The news encompasses multi-sectoral updates relevant to administrative governance, election management, and international sports representation. The Election Commission's handling of electoral rolls under the Special Intensive Revision highlights the continuous evolution of democratic processes and administrative accountability in India. Furthermore, aviation safety investigations underscore the importance of stakeholder representation, such as pilot bodies, in ensuring rigorous safety protocols.",
+        "causes": [
+          "Severe weather warnings of a nor'easter across New England led to concert cancellations.",
+          "Security incidents at roadside checkpoints in Pakistan caused fatalities."
+        ],
+        "impacts": [
+          "India reinforced its dominance in international kabaddi by securing double gold medals.",
+          "Administrative adjustments to Delhi's electoral roll revision process aimed to address public and political concerns."
+        ],
+        "challenges": [
+          "Ensuring transparent and inclusive procedures during electoral roll revisions without causing public grievance.",
+          "Managing aviation safety inquiries and maintaining stakeholder confidence in probe findings."
+        ],
+        "government_steps": [
+          "The Election Commission of India announced a review of the ECINet portal and removed mandatory ERO hearings during the Delhi SIR.",
+          "Union Civil Aviation Minister Kinjarapu Ram Mohan Naidu received representations from pilot bodies regarding the Air India crash investigation panel."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 324 of the Constitution of India regarding the superintendence, direction, and control of elections vested in the Election Commission."
+        ],
+        "way_forward": [
+          "Enhancing transparency in electoral roll revision processes through robust technological infrastructure and stakeholder consultations.",
+          "Strengthening independent aviation safety oversight mechanisms with adequate representation from aviation professionals."
+        ],
+        "mains_notes": "Recent developments highlight key administrative and sports achievements, including India's double kabaddi gold at the Asian Games and the Election Commission's procedural updates for the Special Intensive Revision in Delhi. Transparent institutional mechanisms and stakeholder engagement remain crucial for addressing governance and safety concerns.",
+        "mains_questions": [
+          "Discuss the role and powers of the Election Commission of India in conducting electoral roll revisions and addressing administrative concerns.",
+          "Examine the significance of stakeholder representation in independent aviation crash investigations with reference to recent institutional demands in India."
+        ],
+        "takeaway": "India secured double kabaddi gold at the Asian Games while key institutional and administrative updates unfolded across aviation safety and election management.",
+        "prelims_facts": [
+          "India won its ninth men's kabaddi gold at the Asian Games since 1990.",
+          "The Air India AI-171 flight involved a Boeing 787 Dreamliner.",
+          "Dera Ismail Khan is located in Khyber Pakhtunkhwa province, Pakistan."
+        ],
+        "vocabulary": [
+          {
+            "word": "Representation",
+            "meaning_hindi": "प्रतिनिधित्व"
+          },
+          {
+            "word": "Revision",
+            "meaning_hindi": "संशोधन"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Gyanesh Kumar",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Gyanesh+Kumar"
+          },
+          {
+            "name": "Kinjarapu Ram Mohan Naidu",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Kinjarapu+Ram+Mohan+Naidu"
+          },
+          {
+            "name": "Ed Sheeran",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Ed+Sheeran"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "एचटी शाम की संक्षिप्त जानकारी: चुनाव निकाय ने एसआईआर चिंताओं पर स्पष्टीकरण जारी किया; एशियाई खेलों में भारत के लिए डबल कबड्डी स्वर्ण",
+          "story_lead": "भारत ने जापान में आयोजित एशियाई खेलों में कबड्डी में दो स्वर्ण पदक जीते, जिसमें पुरुष और महिला दोनों टीमों ने अपने-अपने फाइनल में ईरान को हराया। इस बीच, एयर इंडिया AI-171 दुर्घटना की जांच, दिल्ली में चुनाव आयोग के विशेष गहन पुनरीक्षण (SIR), और पाकिस्तान में हुए विस्फोट तथा अमेरिका में मौसम के कारण रद्द हुए कार्यक्रमों से संबंधित महत्वपूर्ण विकास सामने आए।",
+          "full_article_text": "हालिया समाचार खेल, विमानन सुरक्षा, चुनाव प्रशासन और अंतर्राष्ट्रीय घटनाओं से जुड़े प्रमुख घटनाक्रमों को उजागर करते हैं। जापान में एशियाई खेलों में, भारतीय पुरुष कबड्डी टीम ने फाइनल में ईरान को 40-34 से हराकर जीत हासिल की, जो इस संस्करण में देश का चौथा स्वर्ण पदक था और 1990 में खेल को शामिल किए जाने के बाद से पुरुष टीम का नौवां स्वर्ण था। इससे पहले, भारतीय महिला कबड्डी टीम ने ईरान के खिलाफ 37-34 से रोमांचक जीत दर्ज कर 2010 के बाद से चौथी बार एशियाई खेलों में स्वर्ण पदक जीता। विमानन समाचार में, फेडरेशन ऑफ इंडियन पायलट्स (FIP) ने केंद्रीय नागरिक उड्डयन मंत्री किंजरापु राम मोहन नायडू से मुलाकात कर एयर इंडिया AI-171 दुर्घटना की मसौदा अंतिम जांच रिपोर्ट की समीक्षा करने वाली स्वतंत्र समिति में प्रतिनिधित्व की मांग की है। इसके अतिरिक्त, मुख्य चुनाव आयुक्त ज्ञानेश कुमार ने दिल्ली में चल रहे विशेष गहन पुनरीक्षण (SIR) के दौरान मतदाता सूची से नाम हटाने को लेकर चिंताओं को दूर करने के लिए चुनाव आयोग की एक बैठक की अध्यक्षता की। अंतरराष्ट्रीय स्तर पर, पाकिस्तान के डेरा इस्माइल खान में एक पुलिस चौकी पर हुए विस्फोट में 11 लोग मारे गए और 30 घायल हो गए।",
+          "background_context": "एशियाई खेलों में कबड्डी एक प्रमुख स्पर्धा है, जिसमें भारतीय टीमों ने ऐतिहासिक रूप से मजबूत रिकॉर्ड बनाए रखा है। भारत का चुनाव आयोग विशेष गहन पुनरीक्षण (SIR) जैसे आवधिक मतदाता सूची संशोधन आयोजित करता है।",
+          "bullet_points": [
+            "भारत ने एशियाई खेलों में ईरान को हराकर पुरुष और दोनों कबड्डी स्वर्ण पदक जीते।",
+            "भारतीय पुरुष टीम ने फाइनल में 40-34 से जीत दर्ज की।",
+            "भारतीय महिला टीम ने ईरान को 37-34 से हराया।",
+            "फेडरेशन ऑफ इंडियन पायलट्स ने एयर इंडिया AI-171 दुर्घटना जांच रिपोर्ट पैनल में प्रतिनिधित्व मांगा।",
+            "चुनाव आयोग ने दिल्ली में एसआईआर प्रक्रिया में संशोधन की घोषणा की।",
+            "पाकिस्तान के डेरा इस्माइल खान में विस्फोट में 11 लोग मारे गए।"
+          ],
+          "key_facts": [
+            "पुरुष कबड्डी फाइनल स्कोर: भारत 40, ईरान 34।",
+            "महिला कबड्डी फाइनल स्कोर: भारत 37, ईरान 34।"
+          ],
+          "key_locations": [
+            "जापान",
+            "अहमदाबाद",
+            "दिल्ली",
+            "डेरा इस्माइल खान"
+          ],
+          "important_dates": [
+            "12 जून 2025"
+          ]
+        },
+        "quiz": {
+          "question": "Which teams did India defeat in the men's and women's kabaddi finals at the Asian Games mentioned in the news?",
+          "options": [
+            "Pakistan",
+            "Iran",
+            "Bangladesh",
+            "South Korea"
+          ],
+          "correct_answer": "Iran",
+          "explanation": "Both the Indian men's and women's kabaddi teams defeated Iran in their respective finals to win gold medals at the Asian Games."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/ht-evening-brief-sept-26-poll-body-issues-clarification-on-sir-concerns-double-kabaddi-gold-for-india-at-asian-games-101790423651232.html",
+        "published_date": "2026-09-27",
+        "id": 30,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/26/1600x900/logo/gygkg_1790426277477_noUj_1790426284398_fZ5U_3e7abdb4-3890-4511-8519-30db8c40a725_GMW3.jpg",
+        "added_at": "2026-09-27T03:06:17.411044+05:30"
+      },
+      {
+        "category": "Environment",
+        "exam_corner": true,
+        "headline": "Telangana Orders Removal of Eligible Private Properties from Section 22-A Prohibited Registration List",
+        "story_lead": "The Telangana government has ordered the removal of eligible private properties from the prohibited registration list under Section 22-A of the Registration Act, 1908. The decision will enable the registration of around 1.41 lakh houses, plots, and flats across the state. The move addresses widespread public grievances and issues arising from previous land portal updates.",
+        "full_article_text": "The Telangana government has officially ordered the removal of all eligible private properties from the prohibited registration list under Section 22-A of the Registration Act, 1908. Following a meeting led by Deputy Chief Minister Mallu Bhatti Vikramarka, Principal Secretary (Revenue) Lokesh Kumar issued the relevant orders. The decision targets private properties, including residential layouts, apartments, and lands that possess valid statutory approvals from competent government bodies such as the Greater Hyderabad Municipal Corporation (GHMC), Hyderabad Metropolitan Development Authority (HMDA), Directorate of Town and Country Planning (DTCP), municipal bodies, and panchayats.\n\nSection 22-A of the Registration Act empowers state governments to restrict registrations on specific land categories, including government waste lands, assigned lands, Wakf and endowment properties, forest lands, tribal lands under Regulation 1 of 1970, surplus lands under the Urban Land Ceiling Act, and lands under litigation. However, during updates to the Dharani portal (since replaced by Bhu Bharati), over 3.72 lakh acres were inadvertently classified under the prohibited list without adequate verification. To resolve this, owners must now present valid statutory layout/building permissions along with at least one link document showing a previous registration post-approval. Furthermore, the government has set up district-level committees chaired by district collectors to verify title documents, statutory clearances, and revenue records for individual property cases.",
+        "background_context": "Thousands of genuine private property owners in Telangana, particularly in districts surrounding Hyderabad such as Medchal-Malkajgiri, Rangareddy, Sangareddy, and Hyderabad, faced registration blocks due to erroneous inclusion under Section 22-A during Dharani portal updates. The issue raised severe political controversy and thousands of public complaints. Chief Minister A Revanth Reddy had assured the Telangana State Legislative Assembly on September 16 that these administrative blocks would be resolved.",
+        "bullet_points": [
+          "Telangana government orders removal of eligible private properties from Section 22-A prohibited list.",
+          "The move directly benefits around 1.41 lakh houses, plots, and flats across the state.",
+          "Over 3.72 lakh acres were inadvertently included in the prohibited list during Dharani portal changes.",
+          "Properties with valid layout or building permissions from GHMC, HMDA, DTCP, municipalities, or panchayats are eligible.",
+          "Property owners must show valid statutory approvals and at least one post-approval registration link document.",
+          "District-level committees headed by Collectors will scrutinise individual land title and revenue records.",
+          "Bhu Bharati portal has replaced the previous Dharani land registration portal."
+        ],
+        "key_facts": [
+          "Beneficiaries: 1.41 lakh homes, plots, and flats.",
+          "Land area mistakenly included earlier: Over 3.72 lakh acres.",
+          "Governing Law: Section 22-A of the Registration Act, 1908.",
+          "New land portal: Bhu Bharati (replacing Dharani).",
+          "Committee setup: District-level committees headed by District Collectors."
+        ],
+        "key_locations": [
+          "Telangana",
+          "Hyderabad",
+          "Medchal-Malkajgiri",
+          "Rangareddy",
+          "Sangareddy"
+        ],
+        "important_dates": [
+          "September 16 (Assembly assurance by CM A Revanth Reddy)"
+        ],
+        "exam_relevance": [
+          "UPSC Mains General Studies Paper II: Governance, land administrative reforms, and public service delivery.",
+          "UPSC Mains General Studies Paper III: Land reforms and real estate regulatory mechanisms.",
+          "State PSC Examinations: State-specific land laws, revenue administration, and local governance issues."
+        ],
+        "upsc_analysis": "Land records management and registration integrity are critical pillars of economic governance and public trust. The inclusion of genuine private properties under Section 22-A restrictions highlights administrative gaps during digital transition processes (Dharani portal). Corrective policy measures, including decentralized scrutiny through collector-led district committees and validation via statutory clearances (HMDA/GHMC/DTCP), reflect an integrated framework combining digitisation with manual verification. It reinforces rights to property transactions while safeguarding government, forest, Wakf, and tribal lands from unlawful alienations under the Registration Act, 1908.",
+        "causes": [
+          "Inadvertent inclusion of over 3.72 lakh acres of land into the Section 22-A prohibited list during portal updates.",
+          "Lack of adequate verification of decades-old approved layouts and title clearances before digitisation.",
+          "Public grievances and political controversy over blocked property transactions."
+        ],
+        "impacts": [
+          "Unblocks property sale and registration for approximately 1.41 lakh property owners.",
+          "Restores smooth real estate and property transactions in key urban and suburban hubs like Hyderabad, Rangareddy, and Medchal-Malkajgiri.",
+          "Provides a systematic, committee-based verification protocol for resolving disputed land records."
+        ],
+        "challenges": [
+          "Verifying old title deeds and link documents across complex multi-decade paper records.",
+          "Ensuring district-level committees clear cases rapidly without creating new administrative delays.",
+          "Preventing ineligible or disputed lands from exploiting relaxation mechanisms."
+        ],
+        "government_steps": [
+          "Issued official orders under Principal Secretary (Revenue) Lokesh Kumar to unblock eligible properties.",
+          "Replaced Dharani portal with the Bhu Bharati land portal.",
+          "Constituted Collector-headed district-level committees to scrutinise revenue and legal documents.",
+          "Mandated submission of statutory permissions (GHMC, HMDA, DTCP, Panchayats) and post-approval link documents."
+        ],
+        "constitutional_or_policy_link": [
+          "Section 22-A of the Registration Act, 1908 (prohibition of registration of certain documents).",
+          "Regulation 1 of 1970 (protection of tribal lands).",
+          "Urban Land (Ceiling and Regulation) Act, 1976."
+        ],
+        "way_forward": [
+          "Expedite district committee reviews through time-bound disposal mechanisms.",
+          "Ensure complete database alignment in the new Bhu Bharati portal to prevent future misclassifications.",
+          "Strengthen inter-departmental co-ordination between revenue authorities and urban development bodies (HMDA/GHMC)."
+        ],
+        "mains_notes": "Section 22-A of the Registration Act, 1908 grants governments authority to restrict registration of public, forest, endowment, and disputed lands. In Telangana, administrative errors during the Dharani portal roll-out resulted in 3.72 lakh acres of land, including approved private layouts, being erroneously listed under Section 22-A. The government has transitioned to Bhu Bharati and established Collector-led district verification committees. Property owners with statutory permissions (GHMC, HMDA, DTCP, Panchayats) and valid link documents can now register their properties, benefitting 1.41 lakh property owners.",
+        "mains_questions": [
+          "Examine the challenges associated with digital land record integration in India with reference to administrative errors in property registration bans under Section 22-A of the Registration Act, 1908.",
+          "How can district-level decentralised scrutiny committees improve revenue administration and resolve land title disputes effectively?"
+        ],
+        "takeaway": "Telangana has streamlined property registrations by removing eligible private properties with valid statutory approvals from the Section 22-A prohibited list.",
+        "prelims_facts": [
+          "Section 22-A of the Registration Act, 1908 allows state governments to specify categories of properties prohibited from registration.",
+          "Bhu Bharati is the land portal introduced in Telangana, replacing the earlier Dharani portal.",
+          "Statutory bodies responsible for layout approvals in Telangana include GHMC, HMDA, DTCP, municipal bodies, and panchayats."
+        ],
+        "vocabulary": [
+          {
+            "word": "Inadvertently",
+            "meaning_hindi": "अनजाने में / भूलवश"
+          },
+          {
+            "word": "Statutory",
+            "meaning_hindi": "वैधानिक / कानून द्वारा निर्धारित"
+          },
+          {
+            "word": "Scrutinise",
+            "meaning_hindi": "जांच करना / सूक्ष्मता से देखना"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Telangana",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Telangana"
+          },
+          {
+            "name": "Hyderabad",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Hyderabad"
+          },
+          {
+            "name": "A Revanth Reddy",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=A_Revanth_Reddy"
+          },
+          {
+            "name": "Mallu Bhatti Vikramarka",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Mallu_Bhatti_Vikramarka"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "तेलंगाना ने धारा 22-ए की प्रतिबंधित पंजीकरण सूची से पात्र निजी संपत्तियों को हटाने का दिया आदेश",
+          "story_lead": "तेलंगाना सरकार ने पंजीकरण अधिनियम, 1908 की धारा 22-ए के तहत प्रतिबंधित सूची से सभी पात्र निजी संपत्तियों को हटाने का आदेश जारी किया है। इस फैसले से राज्य भर में लगभग 1.41 लाख घरों, भूखंडों और फ्लैटों के पंजीकरण का रास्ता साफ होगा।",
+          "full_article_text": "तेलंगाना सरकार ने पंजीकरण अधिनियम, 1908 की धारा 22-ए के तहत प्रतिबंधित पंजीकरण सूची से सभी पात्र निजी संपत्तियों को हटाने का आदेश दिया है। उप मुख्यमंत्री मल्लु भट्टी विक्रमार्क की अध्यक्षता में हुई बैठक के बाद प्रमुख सचिव (राजस्व) लोकेश कुमार ने इस संबंध में आदेश जारी किए। यह निर्णय उन निजी संपत्तियों के पंजीकरण की अनुमति देगा, जिनके पास सक्षम सरकारी अधिकारियों जैसे जीएचएमसी (GHMC), एचएमडीए (HMDA), डीटीसीपी (DTCP), नगर निकायों और पंचायतों से वैध लेआउट, भवन या अपार्टमेंट स्वीकृतियां हैं।\n\nपंजीकरण अधिनियम की धारा 22-ए सरकार को उन श्रेणियों की संपत्तियों को चिन्हित करने का अधिकार देती है जिनका पंजीकरण प्रतिबंधित किया जाना चाहिए, जिनमें सरकारी बंजर भूमि, बंदोबस्ती और वक्फ संपत्तियां, वन भूमि, और अदालती विवादों के तहत संपत्तियां शामिल हैं। हालांकि, पिछले पोर्टल धरणी (जिसे अब भू भारती से बदल दिया गया है) में बदलाव के दौरान 3.72 लाख एकड़ से अधिक भूमि को गलती से प्रतिबंधित सूची में शामिल कर दिया गया था। इसे हल करने के लिए, संपत्ति मालिकों को अब वैध स्वीकृतियां और कम से कम एक लिंक दस्तावेज प्रस्तुत करना होगा। इसके अलावा, सरकार ने व्यक्तिगत मामलों की जांच के लिए जिला कलेक्टरों की अध्यक्षता में जिला स्तरीय समितियों का गठन किया है।",
+          "background_context": "तेलंगाना, विशेषकर हैदराबाद और आसपास के जिलों जैसे मेडचल-मलकाजगिरि, रंगारेड्डी और संगारेड्डी में हजारों निजी संपत्ति मालिकों को धरणी पोर्टल अपडेट के दौरान धारा 22-ए के तहत गलत तरीके से शामिल किए जाने के कारण समस्याओं का सामना करना पड़ा था। इस मुद्दे को लेकर राजनीतिक विवाद हुआ और हजारों शिकायतें मिलीं, जिसके बाद मुख्यमंत्री ए रेवंत रेड्डी ने विधानसभा में इसके समाधान का आश्वासन दिया था।",
+          "bullet_points": [
+            "तेलंगाना सरकार ने पात्र निजी संपत्तियों को धारा 22-ए की प्रतिबंधित सूची से हटाने का आदेश दिया।",
+            "इस कदम से राज्य भर के लगभग 1.41 लाख घरों और भूखंडों को सीधा लाभ मिलेगा।",
+            "धरणी पोर्टल में बदलाव के दौरान 3.72 लाख एकड़ से अधिक भूमि अनजाने में प्रतिबंधित सूची में आ गई थी।",
+            "जीएचएमसी, एचएमडीए, डीटीसीपी या पंचायतों से स्वीकृत लेआउट वाली संपत्तियां इसके पात्र होंगी।",
+            "मालिकों को वैध सरकारी स्वीकृति और कम से कम एक लिंक दस्तावेज दिखाना होगा।",
+            "जिला कलेक्टरों की अध्यक्षता वाली समितियां मामलों की जांच करेंगी।",
+            "पुराने धरणी पोर्टल का स्थान अब भू भारती पोर्टल ने ले लिया है।"
+          ],
+          "key_facts": [
+            "लाभार्थी: 1.41 लाख घर, भूखंड और फ्लैट।",
+            "गलती से शामिल क्षेत्र: 3.72 लाख एकड़ से अधिक।",
+            "प्रासंगिक कानून: पंजीकरण अधिनियम, 1908 की धारा 22-ए।",
+            "नया पोर्टल: भू भारती (धरणी पोर्टल के स्थान पर)।"
+          ],
+          "key_locations": [
+            "तेलंगाना",
+            "हैदराबाद",
+            "मेडचल-मलकाजगिरि",
+            "रंगारेड्डी",
+            "संगारेड्डी"
+          ],
+          "important_dates": [
+            "16 सितंबर (मुख्यमंत्री ए रेवंत रेड्डी द्वारा विधानसभा में दिया गया आश्वासन)"
+          ]
+        },
+        "quiz": {
+          "question": "Which section of the Registration Act, 1908 empowers state governments in India to identify categories of properties whose registration should be prohibited?",
+          "options": [
+            "Section 12-B",
+            "Section 22-A",
+            "Section 35-C",
+            "Section 44-D"
+          ],
+          "correct_answer": "Section 22-A",
+          "explanation": "Section 22-A of the Registration Act, 1908 empowers the government to prohibit registration of specific categories of lands such as government waste lands, assigned lands, Wakf/endowment properties, and forest lands."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/telangana-to-remove-eligible-private-properties-from-banned-list-for-registration-101790451040938.html",
+        "published_date": "2026-09-27",
+        "id": 29,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2025/08/06/1600x900/logo/Untitled_design_1754465014585_1754465103581.png",
+        "added_at": "2026-09-27T03:06:17.411044+05:30"
+      },
+      {
         "category": "Sports",
         "exam_corner": true,
         "headline": "India Faces Diplomatic Squeeze Amid US-China Interactions and Pakistan References",
@@ -3884,15 +5619,15 @@
         "added_at": "2026-09-27T00:10:11.641122+05:30"
       }
     ],
-    "updated_at": "2026-09-27T00:10:11.641122+05:30",
-    "count": 28
+    "updated_at": "2026-09-27T03:06:17.411044+05:30",
+    "count": 42
   },
   "motivation": {
-    "quote": "Study deeply today so that revision becomes easier tomorrow.",
-    "image_url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=85",
-    "updated_at": "2026-09-27T00:10:11.641122+05:30"
+    "quote": "Current affairs become powerful when facts are connected with concepts.",
+    "image_url": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1600&q=85",
+    "updated_at": "2026-09-27T03:06:17.411044+05:30"
   },
   "last_updated_ist": "2026-09-25 08:53:09",
   "project": "AURA EXAM AI",
-  "last_updated": "2026-09-27T00:10:11.641122+05:30"
+  "last_updated": "2026-09-27T03:06:17.411044+05:30"
 }
