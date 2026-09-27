@@ -2,6 +2,2037 @@
   "date": "2026-09-27",
   "news": [
     {
+      "category": "Science & Technology",
+      "exam_corner": true,
+      "headline": "Ukraine turns to machines for its most dangerous missions with an 'Army of Robots'",
+      "story_lead": "Ukraine is increasingly deploying machines and robots to handle its most dangerous military missions. Journalist Aryan Singh reports on how unmanned systems are shaping modern global conflicts and military affairs.",
+      "full_article_text": "According to reports by journalist Aryan Singh of The Times of India, Ukraine has increasingly turned to machines and an 'army of robots' to execute its most dangerous missions. Covering global conflicts, defence, and military affairs, the reporting highlights the evolving integration of advanced unmanned technologies in modern warfare. This shift towards robotics reflects how militaries are adapting to high-risk environments by minimizing direct human exposure to hazardous combat scenarios.",
+      "background_context": "The deployment of robotic systems in modern warfare is part of a broader global trend towards automation in military affairs, where nations seek to leverage technology for surveillance, logistics, and combat operations in high-risk zones.",
+      "bullet_points": [
+        "Ukraine is deploying machines and an 'army of robots' for dangerous missions.",
+        "The development highlights the role of unmanned systems in modern global conflicts.",
+        "The reporting is led by defence journalist Aryan Singh.",
+        "The focus remains on how technology shapes contemporary military affairs and geopolitics."
+      ],
+      "key_facts": [
+        "Ukraine is utilizing an army of robots for hazardous missions.",
+        "The report is authored by Aryan Singh, a journalist with The Times of India."
+      ],
+      "key_locations": [
+        "Ukraine"
+      ],
+      "important_dates": [],
+      "exam_relevance": [
+        "Mains: General Studies Paper III - Science and Technology, Security and Defence",
+        "Prelims: Current events involving emerging military technologies and robotics"
+      ],
+      "upsc_analysis": "The increasing reliance on autonomous and robotic systems in modern conflict zones underscores the critical intersection of emerging technologies and national security. For aspirants, understanding military automation helps analyze future warfare doctrines, asymmetric capabilities, and the ethical implications of autonomous weapon systems.",
+      "causes": [
+        "The need to minimize human casualties in high-risk combat environments.",
+        "Advancements in robotics and unmanned system technologies."
+      ],
+      "impacts": [
+        "Shift towards automated and remote-controlled military operations.",
+        "Transformation of traditional battlefield tactics and risk assessment."
+      ],
+      "challenges": [
+        "Managing the technical reliability of robots in harsh combat conditions.",
+        "Ethical and strategic implications of increased automation in warfare."
+      ],
+      "government_steps": [],
+      "constitutional_or_policy_link": [
+        "Implications for national security policies and future defence technology frameworks."
+      ],
+      "way_forward": [
+        "Establish clear international guidelines and norms for the deployment of autonomous military systems.",
+        "Invest in indigenous robotics research and development for national defense readiness."
+      ],
+      "mains_notes": "Modern conflicts increasingly rely on robotics and unmanned machines to handle hazardous missions, reducing direct human risk. This trend highlights the strategic importance of defense technology innovation in shaping future security landscapes.",
+      "mains_questions": [
+        "Discuss the implications of incorporating robotics and unmanned systems in modern military conflicts.",
+        "How does the rise of military automation impact traditional defence strategies and national security?"
+      ],
+      "takeaway": "Ukraine's deployment of an 'army of robots' marks a significant step toward automation in high-risk military missions.",
+      "prelims_facts": [
+        "Ukraine utilizes robotic systems for dangerous military missions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Robotics",
+          "meaning_hindi": "रोबोटिक्स (रोबोट विज्ञान)"
+        },
+        {
+          "word": "Unmanned",
+          "meaning_hindi": "मानवरहित"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Ukraine",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Ukraine"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "‘रोबोट की सेना’: यूक्रेन अपने सबसे खतरनाक अभियानों के लिए मशीनों का ले रहा है सहारा",
+        "story_lead": "यूक्रेन अपने सबसे खतरनाक सैन्य अभियानों को पूरा करने के लिए तेजी से मशीनों और रोबोटों को तैनात कर रहा है। पत्रकार आर्यन सिंह की रिपोर्ट बताती है कि कैसे मानवरहित प्रणालियाँ आधुनिक वैश्विक संघर्षों और सैन्य मामलों को आकार दे रही हैं।",
+        "full_article_text": "टाइम्स ऑफ इंडिया के पत्रकार आर्यन सिंह की रिपोर्ट के अनुसार, यूक्रेन ने अपने सबसे खतरनाक अभियानों को अंजाम देने के लिए मशीनों और 'रोबोट की सेना' का सहारा लिया है। वैश्विक संघर्षों, रक्षा और सैन्य मामलों को कवर करते हुए यह रिपोर्ट आधुनिक युद्ध में उन्नत मानवरहित तकनीकों के बढ़ते एकीकरण को उजागर करती है।",
+        "background_context": "आधुनिक युद्ध में रोबोटिक प्रणालियों की तैनाती सैन्य मामलों में स्वचालन की ओर एक व्यापक वैश्विक रुझान का हिस्सा है।",
+        "bullet_points": [
+          "यूक्रेन खतरनाक अभियानों के लिए मशीनों और रोबोटों की सेना तैनात कर रहा है।",
+          "यह विकास आधुनिक वैश्विक संघर्षों में मानवरहित प्रणालियों की भूमिका को उजागर करता है।",
+          "इस रिपोर्ट के लेखक रक्षा पत्रकार आर्यन सिंह हैं।"
+        ],
+        "key_facts": [
+          "यूक्रेन खतरनाक मिशनों के लिए रोबोट की सेना का उपयोग कर रहा है।"
+        ],
+        "key_locations": [
+          "यूक्रेन"
+        ],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "According to the report, what is Ukraine increasingly turning to for its most dangerous missions?",
+        "options": [
+          "A) Traditional infantry units exclusively",
+          "B) An army of robots and machines",
+          "C) Naval blockades",
+          "D) Diplomatic negotiations"
+        ],
+        "correct_answer": "B) An army of robots and machines",
+        "explanation": "The report highlights that Ukraine is turning to machines and an army of robots to handle its most dangerous missions."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/defence/international/army-of-robots-ukraine-turns-to-machines-for-its-most-dangerous-missions/articleshow/134514241.cms",
+      "published_date": "2026-09-27",
+      "id": 72,
+      "image_url": "https://static.toiimg.com/photo/msid-134514263,imgsize-124998.cms",
+      "added_at": "2026-09-27T09:09:02.868881+05:30"
+    },
+    {
+      "category": "Science & Technology",
+      "exam_corner": true,
+      "headline": "Boeing Discovers Software Glitch Affecting Landing Guidance on 737 MAX Jets",
+      "story_lead": "Aviation giant Boeing has identified a software glitch in its 737 MAX aircraft series that has the potential to disable landing guidance systems. The technical issue highlights ongoing software reliability and safety monitoring processes within modern commercial aviation manufacturing.",
+      "full_article_text": "Boeing has reported finding a software glitch that may disable landing guidance on 737 MAX jets. The discovery impacts the technological systems governing precision landing assistance on these aircraft models. As safety is a paramount concern in commercial aviation, identifying and rectifying software-related vulnerabilities in flight control and guidance systems remains critical for regulatory compliance and operational safety.",
+      "background_context": "The 737 MAX aircraft family has historically faced heightened regulatory scrutiny and safety evaluations concerning software systems and flight control components.",
+      "bullet_points": [
+        "Boeing identified a software glitch in 737 MAX jets.",
+        "The glitch may potentially disable landing guidance systems.",
+        "The issue pertains to aircraft software and avionics safety.",
+        "Commercial aviation manufacturing requires stringent software validation."
+      ],
+      "key_facts": [
+        "Entity: Boeing",
+        "Affected Aircraft: 737 MAX jets",
+        "Issue: Software glitch potentially disabling landing guidance"
+      ],
+      "key_locations": [
+        "United States"
+      ],
+      "important_dates": [],
+      "exam_relevance": [
+        "Prelims: General Science and Technology, Aviation Safety",
+        "Mains: Science and Technology - Awareness in the fields of IT, Space, Computers, robotics, nano-technology, biotechnology and issues relating to intellectual property rights"
+      ],
+      "upsc_analysis": "From a civil aviation and technology perspective, software reliability in critical infrastructure and transport systems is vital for public safety. Incidents involving major aerospace manufacturers underline the importance of robust regulatory oversight by bodies like the Directorate General of Civil Aviation (DGCA) in India and the Federal Aviation Administration (FAA) globally.",
+      "causes": [
+        "Software anomalies or bugs within the 737 MAX flight guidance architecture."
+      ],
+      "impacts": [
+        "Potential risk to automated landing guidance capabilities.",
+        "Need for software patches, updates, and regulatory recertification."
+      ],
+      "challenges": [
+        "Ensuring seamless software updates across global airline fleets without causing major operational disruptions."
+      ],
+      "government_steps": [
+        "Aviation regulators monitor software disclosures and mandate necessary safety directives."
+      ],
+      "constitutional_or_policy_link": [
+        "Aircraft Act, 1934 and Aircraft Rules, 1937 governing civil aviation safety in India."
+      ],
+      "way_forward": [
+        "Rigorous software testing, transparent reporting, and swift deployment of validated software fixes by the manufacturer under regulatory supervision."
+      ],
+      "mains_notes": "Software reliability in modern aviation is critical. The recent Boeing 737 MAX software glitch affecting landing guidance reiterates the necessity of rigorous testing, independent safety audits, and strict regulatory oversight to safeguard passenger lives.",
+      "mains_questions": [
+        "Discuss the challenges of software integration and safety in modern commercial aviation with recent examples.",
+        "Examine the role of regulatory bodies in ensuring aircraft safety standards."
+      ],
+      "takeaway": "Boeing has identified a software glitch that can potentially disable landing guidance on 737 MAX aircraft.",
+      "prelims_facts": [
+        "Boeing manufactures the 737 MAX jet series.",
+        "The reported glitch affects landing guidance systems."
+      ],
+      "vocabulary": [
+        {
+          "word": "Glitch",
+          "meaning_hindi": "तकनीकी खराबी"
+        },
+        {
+          "word": "Avionics",
+          "meaning_hindi": "विमानन इलेक्ट्रॉनिकी"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Boeing",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Boeing"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "बोइंग ने 737 मैक्स विमानों पर लैंडिंग मार्गदर्शन को अक्षम करने वाले सॉफ्टवेयर गड़बड़ी का पता लगाया",
+        "story_lead": "विमानन दिग्गज बोइंग ने अपने 737 मैक्स विमान श्रृंखला में एक सॉफ्टवेयर गड़बड़ी की पहचान की है, जिसमें लैंडिंग मार्गदर्शन प्रणालियों को अक्षम करने की क्षमता है।",
+        "full_article_text": "बोइंग ने एक सॉफ्टवेयर गड़बड़ी का पता लगाया है जो 737 मैक्स जेट पर लैंडिंग मार्गदर्शन को अक्षम कर सकती है। यह तकनीकी मुद्दा इन विमान मॉडलों पर सटीक लैंडिंग सहायता को नियंत्रित करने वाली तकनीकी प्रणालियों को प्रभावित करता है।",
+        "background_context": "737 MAX विमान परिवार को विमानन सुरक्षा और सॉफ्टवेयर प्रणालियों के संबंध में नियामक जांच का सामना करना पड़ा है।",
+        "bullet_points": [
+          "बोइंग ने 737 मैक्स जेट में सॉफ्टवेयर गड़बड़ी की पहचान की।",
+          "इस गड़बड़ी से लैंडिंग मार्गदर्शन प्रणाली प्रभावित हो सकती है।"
+        ],
+        "key_facts": [
+          "प्रभावित विमान: 737 मैक्स जेट"
+        ],
+        "key_locations": [
+          "संयुक्त राज्य अमेरिका"
+        ],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which aircraft model was recently reported to have a software glitch affecting landing guidance?",
+        "options": [
+          "Airbus A320",
+          "Boeing 737 MAX",
+          "Boeing 787 Dreamliner",
+          "ATR 72"
+        ],
+        "correct_answer": "Boeing 737 MAX",
+        "explanation": "Boeing identified a software glitch that may disable landing guidance on 737 MAX jets."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/world/us/boeing-finds-software-glitch-that-may-disable-landing-guidance-on-some-737-max-jets/articleshow/134514231.cms",
+      "published_date": "2026-09-27",
+      "id": 71,
+      "image_url": "https://static.toiimg.com/photo/msid-134514293,imgsize-54412.cms",
+      "added_at": "2026-09-27T09:09:02.868881+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": true,
+      "headline": "Rumours of Ghost and 'Missing Girls' Spark Night-Long Protest at University in Punjab",
+      "story_lead": "Unfounded rumours regarding a ghost and missing female students triggered a night-long protest at a university campus in Punjab. The incident highlights the rapid spread of misinformation and panic among students in higher educational institutions.",
+      "full_article_text": "A night-long protest broke out at a university in Punjab following widespread rumours concerning a ghost and 'missing girls'. The unverified claims quickly escalated tension on the campus, leading students to gather and demonstrate through the night. Incidents of this nature underscore the psychological vulnerability of student communities to misinformation and the critical need for prompt, transparent communication from university authorities to dispel panic and maintain law and order on campuses.",
+      "background_context": "The incident occurred at a university in Punjab, where unverified social media or word-of-mouth rumours regarding paranormal activities and missing students led to student agitation and a prolonged night-time protest.",
+      "bullet_points": [
+        "Rumours of a ghost and 'missing girls' sparked a night-long protest.",
+        "The incident took place at a university in Punjab.",
+        "Unverified claims rapidly escalated tension among the student body.",
+        "Students gathered in large numbers to demonstrate through the night.",
+        "The event highlights the challenges of misinformation management on university campuses."
+      ],
+      "key_facts": [
+        "Location: A university in Punjab",
+        "Nature of incident: Night-long student protest",
+        "Trigger: Rumours of ghost and 'missing girls'"
+      ],
+      "key_locations": [
+        "Punjab"
+      ],
+      "important_dates": [],
+      "exam_relevance": [
+        "Prelims: General awareness of current events",
+        "Mains (General Studies Paper I/IV): Social issues, spread of misinformation, and institutional management"
+      ],
+      "upsc_analysis": "While the incident is localized, it serves as a case study for understanding the sociology of rumors, crowd psychology, and the rapid dissemination of unverified information in institutional spaces. Administrative preparedness and effective grievance redressal mechanisms are essential to prevent panic.",
+      "causes": [
+        "Spread of unverified rumours regarding a ghost and missing students",
+        "Lack of immediate official communication to counter misinformation"
+      ],
+      "impacts": [
+        "Night-long student protests on campus",
+        "Disruption of campus peace and creation of widespread panic"
+      ],
+      "challenges": [
+        "Combating the rapid spread of fake news and rumours among youth",
+        "Ensuring prompt administrative transparency during crises"
+      ],
+      "government_steps": [],
+      "constitutional_or_policy_link": [
+        "Right to peaceful assembly under Article 19(1)(b) of the Constitution of India, balanced with maintenance of public order."
+      ],
+      "way_forward": [
+        "Establishment of swift institutional communication channels to debunk false rumours.",
+        "Conducting awareness programs on digital literacy and critical thinking among students."
+      ],
+      "mains_notes": "Campus protests driven by rumors reflect the broader socio-psychological vulnerability to misinformation. Educational institutions must adopt proactive communication strategies, robust grievance redressal, and digital literacy initiatives to mitigate panic and maintain institutional harmony.",
+      "mains_questions": [
+        "Discuss the socio-psychological factors behind the rapid spread of rumours in academic institutions and suggest measures to manage campus crises effectively.",
+        "Examine the challenges posed by unverified information on public order and institutional stability."
+      ],
+      "takeaway": "Rumours regarding a ghost and missing girls led to a night-long student protest at a university in Punjab, emphasizing the need for effective institutional communication against misinformation.",
+      "prelims_facts": [
+        "A night-long protest occurred at a university in Punjab due to rumours of a ghost and missing girls."
+      ],
+      "vocabulary": [
+        {
+          "word": "Rumours",
+          "meaning_hindi": "अफवाहें"
+        },
+        {
+          "word": "Protest",
+          "meaning_hindi": "विरोध प्रदर्शन"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Punjab",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Punjab"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "पंजाब के एक विश्वविद्यालय में भूत और 'लापता लड़कियों' की अफवाहों को लेकर रात भर विरोध प्रदर्शन हुआ",
+        "story_lead": "पंजाब के एक विश्वविद्यालय परिसर में भूत और लापता छात्राओं से जुड़ी आधारभूत अफवाहों के कारण रात भर विरोध प्रदर्शन हुआ। यह घटना उच्च शिक्षण संस्थानों में छात्रों के बीच गलत सूचनाओं और घबराहट के तेजी से फैलने को उजागर करती है.",
+        "full_article_text": "पंजाब के एक विश्वविद्यालय में भूत और 'लापता लड़कियों' से संबंधित व्यापक अफवाहों के बाद रात भर विरोध प्रदर्शन हुआ। इन असत्यापित दावों ने परिसर में तनाव को तेजी से बढ़ा दिया, जिसके कारण छात्र रात भर एकत्र होकर प्रदर्शन करते रहे। इस तरह की घटनाएं छात्र समुदायों की गलत सूचनाओं के प्रति मनोवैज्ञानिक संवेदनशीलता और घबराहट को दूर करने तथा परिसरों में कानून व्यवस्था बनाए रखने के लिए विश्वविद्यालय अधिकारियों द्वारा त्वरित और पारदर्शी संचार की महत्वपूर्ण आवश्यकता को रेखांकित करती हैं।",
+        "background_context": "यह घटना पंजाब के एक विश्वविद्यालय में हुई, जहां अलौकिक गतिविधियों और लापता छात्रों के बारे में असत्यापित सोशल मीडिया या मौखिक अफवाहों के कारण छात्रों में आक्रोश फैल गया और रात भर विरोध प्रदर्शन हुआ।",
+        "bullet_points": [
+          "भूत और 'लापता लड़कियों' की अफवाहों ने रात भर विरोध प्रदर्शन को जन्म दिया।",
+          "यह घटना पंजाब के एक विश्वविद्यालय में हुई।",
+          "असत्यापित दावों ने छात्र निकाय के बीच तनाव को तेजी से बढ़ाया।",
+          "छात्र रात भर प्रदर्शन करने के लिए बड़ी संख्या में एकत्र हुए।",
+          "यह घटना विश्वविद्यालय परिसरों में गलत सूचना प्रबंधन की चुनौतियों को उजागर करती है।"
+        ],
+        "key_facts": [
+          "स्थान: पंजाब का एक विश्वविद्यालय",
+          "घटना की प्रकृति: रात भर छात्र विरोध प्रदर्शन",
+          "कारण: भूत और 'लापता लड़कियों' की अफवाहें"
+        ],
+        "key_locations": [
+          "पंजाब"
+        ],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "What sparked the night-long protest at a university in Punjab?",
+        "options": [
+          "Fee hike protests",
+          "Rumours of ghost & 'missing girls'",
+          "Sports facility disputes",
+          "Hostel food quality issues"
+        ],
+        "correct_answer": "Rumours of ghost & 'missing girls'",
+        "explanation": "According to the news report, rumours regarding a ghost and missing girls sparked a night-long protest at a university in Punjab."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/city/chandigarh/rumours-of-ghost-missing-girls-spark-night-long-protest-at-varsity/articleshow/134508640.cms",
+      "published_date": "2026-09-27",
+      "id": 70,
+      "image_url": "https://static.toiimg.com/photo/msid-134513536,imgsize-86448.cms",
+      "added_at": "2026-09-27T09:09:02.868881+05:30"
+    },
+    {
+      "category": "Science & Technology",
+      "exam_corner": true,
+      "headline": "Election Commission to Independently Audit ECINET Following Access Issue Allegations",
+      "story_lead": "The Election Commission (EC) has announced plans to conduct an independent audit of ECINET. This decision follows allegations regarding access issues and related concerns raised during official discussions.",
+      "full_article_text": "The Election Commission of India has decided to undertake an independent audit of its internal portal or network, ECINET. The move comes in the wake of allegations and complaints regarding access issues associated with the system. Additionally, discussions highlighted procedural steps such as officials visiting the homes of individuals who have been issued official notices. The independent audit aims to thoroughly examine these operational and technical concerns to ensure transparency and proper functioning.",
+      "background_context": "The development follows meetings where stakeholders raised concerns regarding access issues within ECINET, prompting the Election Commission to initiate an independent audit and administrative measures like home visits for notice recipients.",
+      "bullet_points": [
+        "The Election Commission announced an independent audit of ECINET.",
+        "The audit comes after allegations and complaints concerning access issues.",
+        "Officials are scheduled to visit the homes of individuals sent notices.",
+        "The initiative aims to address technical and operational grievances.",
+        "The announcement follows formal meetings held by the election body."
+      ],
+      "key_facts": [
+        "The Election Commission is conducting an independent audit of ECINET.",
+        "The audit is a response to allegations of access issues.",
+        "Officials will visit the homes of those who have been sent notices."
+      ],
+      "key_locations": [
+        "India"
+      ],
+      "important_dates": [],
+      "exam_relevance": [
+        "Prelims: Current events involving constitutional bodies like the Election Commission of India.",
+        "Mains: Governance, transparency in electoral processes, and administrative accountability."
+      ],
+      "upsc_analysis": "The independent audit of ECINET by the Election Commission underscores the importance of technological resilience and transparency in digital infrastructure used by constitutional bodies. Ensuring seamless access and addressing grievances related to official communications are vital for maintaining public trust in the electoral administration.",
+      "causes": [
+        "Allegations of access issues regarding ECINET.",
+        "Concerns raised during meetings regarding notices and communication."
+      ],
+      "impacts": [
+        "Initiation of an independent audit of ECINET.",
+        "Administrative action involving officials visiting homes of notice recipients."
+      ],
+      "challenges": [
+        "Ensuring uninterrupted technical access and cybersecurity for electoral portals.",
+        "Maintaining transparency and addressing grievances effectively."
+      ],
+      "government_steps": [
+        "Decision by the Election Commission to independently audit ECINET.",
+        "Arranging for officials to visit the homes of individuals who received notices."
+      ],
+      "constitutional_or_policy_link": [
+        "Article 324 of the Constitution of India (Superintendence, direction, and control of elections vested in an Election Commission)."
+      ],
+      "way_forward": [
+        "Implementing robust technical audits regularly to prevent system access barriers.",
+        "Enhancing grievance redressal mechanisms for individuals receiving official notices."
+      ],
+      "mains_notes": "The Election Commission's decision to audit ECINET independently highlights the operational challenges faced by digital electoral infrastructures. Addressing technical glitches and ensuring fair communication channels are essential for upholding democratic standards.",
+      "mains_questions": [
+        "Discuss the role of digital infrastructure in electoral governance and the significance of independent audits in addressing technical challenges.",
+        "How do administrative measures by the Election Commission help in bridging communication gaps with citizens during electoral processes?"
+      ],
+      "takeaway": "The Election Commission has ordered an independent audit of ECINET following complaints regarding access issues.",
+      "prelims_facts": [
+        "ECINET is associated with the Election Commission of India.",
+        "An independent audit of ECINET was announced following access issue allegations."
+      ],
+      "vocabulary": [
+        {
+          "word": "Audit",
+          "meaning_hindi": "ऑडिट / लेखापरीक्षा"
+        },
+        {
+          "word": "Allegations",
+          "meaning_hindi": "आरोप"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Election Commission of India",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Election_Commission_of_India"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "एक्सेस संबंधी शिकायतों के बाद चुनाव आयोग ECINET का स्वतंत्र ऑडिट कराएगा",
+        "story_lead": "भारत निर्वाचन आयोग (EC) ने ECINET का स्वतंत्र ऑडिट कराने की घोषणा की है। यह निर्णय सिस्टम में एक्सेस से जुड़ी शिकायतों और आधिकारिक बैठकों में उठे मुद्दों के बाद लिया गया है।",
+        "full_article_text": "भारत निर्वाचन आयोग ने अपने पोर्टल या नेटवर्क ECINET का स्वतंत्र ऑडिट कराने का निर्णय लिया है। यह कदम सिस्टम से जुड़ी एक्सेस समस्याओं के आरोपों और शिकायतों के बाद उठाया गया है। इसके अलावा, चर्चा के दौरान यह भी सामने आया कि जिन लोगों को नोटिस भेजे गए हैं, उनके घरों पर अधिकारी जाएंगे। स्वतंत्र ऑडिट का उद्देश्य तकनीकी और परिचालन संबंधी चिंताओं की निष्पक्ष जांच करना है।",
+        "background_context": "यह विकास उन बैठकों के बाद सामने आया है जहाँ ECINET में एक्सेस संबंधी चिंताएं उठाई गईं, जिसके बाद चुनाव आयोग ने स्वतंत्र ऑडिट और प्रशासनिक कदम उठाने का निर्णय लिया।",
+        "bullet_points": [
+          "चुनाव आयोग ने ECINET के स्वतंत्र ऑडिट की घोषणा की।",
+          "यह ऑडिट एक्सेस संबंधी शिकायतों के बाद किया जा रहा है।",
+          "नोटिस प्राप्त करने वाले व्यक्तियों के घरों पर अधिकारी जाएंगे।",
+          "इस पहल का उद्देश्य तकनीकी और परिचालन संबंधी शिकायतों का समाधान करना है।",
+          "यह घोषणा चुनाव निकाय द्वारा आयोजित बैठकों के बाद की गई है।"
+        ],
+        "key_facts": [
+          "चुनाव आयोग ECINET का स्वतंत्र ऑडिट कर रहा है।",
+          "यह ऑडिट एक्सेस समस्याओं के आरोपों की प्रतिक्रिया में है।"
+        ],
+        "key_locations": [
+          "भारत"
+        ],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which body announced an independent audit of ECINET following access issue allegations?",
+        "options": [
+          "Supreme Court of India",
+          "Election Commission of India",
+          "Ministry of Electronics and Information Technology",
+          "NITI Aayog"
+        ],
+        "correct_answer": "Election Commission of India",
+        "explanation": "The Election Commission announced an independent audit of ECINET following allegations of access issues."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/india/after-meeting-ec-says-officials-will-visit-homes-of-those-sent-notices/articleshow/134513237.cms",
+      "published_date": "2026-09-27",
+      "id": 69,
+      "image_url": "https://static.toiimg.com/photo/msid-134514114,imgsize-299008.cms",
+      "added_at": "2026-09-27T09:09:02.868881+05:30"
+    },
+    {
+      "category": "Sports",
+      "exam_corner": true,
+      "headline": "At least 21 Opposition parties to meet in New Delhi on September 30 to push for CEC Gyanesh Kumar's removal",
+      "story_lead": "At least 21 Opposition parties are scheduled to meet in New Delhi on September 30 to devise a joint strategy against Chief Election Commissioner Gyanesh Kumar. The leaders plan to push for his removal and discuss moving another impeachment notice following controversies surrounding the special intensive revision of electoral rolls.",
+      "full_article_text": "At least 21 Opposition parties have decided to convene in New Delhi on September 30 to formulate a joint strategy seeking the removal of Chief Election Commissioner (CEC) Gyanesh Kumar. Key leaders, including Rahul Gandhi, Mamata Banerjee, Mallikarjun Kharge, Akhilesh Yadav, Tejaswi Yadav, Omar Abdullah, and MA Baby, are expected to participate. The meeting follows a political row over the functioning of the Election Commission of India (ECI), which intensified after a report claimed that Election Commissioners Sukhbir Singh Sandhu and Vivek Joshi had raised objections multiple times regarding decisions and procedures concerning the special intensive revision (SIR) of electoral rolls. While parties like AAP and DMK will not attend the physical meeting due to regional political dynamics, both are expected to sign the joint declaration. Meanwhile, the Congress Working Committee has called a meeting for September 29 to discuss the issues surrounding the CEC and the conduct of the SIR.",
+      "background_context": "The political controversy surrounds the Election Commission's special intensive revision (SIR) of electoral rolls. A national daily reported that Election Commissioners Sukhbir Singh Sandhu and Vivek Joshi raised objections at least 14 times over 10 months regarding procedures related to the SIR exercise. Additionally, in June, 23 Opposition parties had met to write to Chief Justice Surya Kant regarding electoral fairness.",
+      "bullet_points": [
+        "At least 21 Opposition parties are meeting in New Delhi on September 30 to seek the removal of CEC Gyanesh Kumar.",
+        "The Congress Working Committee scheduled a meeting on September 29 to discuss the CEC and the SIR exercise.",
+        "AAP and DMK will not attend the physical meeting but will sign the joint declaration against the CEC.",
+        "Demands to be raised include the suspension of the ongoing SIR and the inclusion of the Chief Justice of India in the three-member panel selecting the CEC.",
+        "The Left parties are set to suggest a petition to President Droupadi Murmu, who appoints election commissioners."
+      ],
+      "key_facts": [
+        "At least 21 Opposition parties are participating in the September 30 meeting.",
+        "The meeting will discuss moving an impeachment notice against CEC Gyanesh Kumar.",
+        "Sukhbir Singh Sandhu and Vivek Joshi are the other Election Commissioners mentioned in reports regarding objections to SIR procedures.",
+        "President Droupadi Murmu appoints the election commissioners."
+      ],
+      "key_locations": [
+        "New Delhi",
+        "Punjab",
+        "Serampore",
+        "Hooghly district",
+        "Kolkata"
+      ],
+      "important_dates": [
+        "September 29",
+        "September 30",
+        "June"
+      ],
+      "exam_relevance": [
+        "UPSC Prelims: Election Commission of India, appointment of CEC, constitutional bodies",
+        "UPSC Mains GS Paper II: Appointments to various Constitutional posts, powers, functions and responsibilities of various Bodies"
+      ],
+      "upsc_analysis": "The ongoing tensions between political parties and the Election Commission highlight debates surrounding the autonomy, neutrality, and appointment mechanisms of constitutional bodies in India. Such developments provide context for examining the legal framework governing election commissioners and proposals for reform in appointment panels.",
+      "causes": [
+        "Discontent over the special intensive revision (SIR) of electoral rolls",
+        "Reports of internal objections raised by fellow election commissioners regarding ECI procedures"
+      ],
+      "impacts": [
+        "Heightened political friction between the Opposition and the election administration",
+        "Coordinated joint action and strategy formulation among 21 opposition parties"
+      ],
+      "challenges": [
+        "Maintaining institutional credibility and public trust in the Election Commission of India amid political controversies"
+      ],
+      "government_steps": [
+        "Conducting the special intensive revision (SIR) of electoral rolls across the country through the ECI"
+      ],
+      "constitutional_or_policy_link": [
+        "Article 324 of the Constitution of India regarding the superintendence, direction, and control of elections vested in an Election Commission"
+      ],
+      "way_forward": [
+        "Ensuring transparency in electoral roll revisions and fostering constructive dialogue between election authorities and political stakeholders to uphold democratic integrity."
+      ],
+      "mains_notes": "The controversy surrounding the Election Commission and demands for the removal of the CEC underscore debates on the independence of India's electoral machinery. Key issues involve the appointment mechanism of election commissioners and the need for procedural transparency during electoral roll revisions like the SIR.",
+      "mains_questions": [
+        "Discuss the constitutional provisions governing the appointment and removal of the Chief Election Commissioner in India.",
+        "Examine the role of the Election Commission in maintaining electoral integrity and the challenges it faces in balancing administrative procedures with political consensus."
+      ],
+      "takeaway": "Opposition parties are mobilizing to demand the removal of CEC Gyanesh Kumar and the suspension of the SIR exercise amidst mounting institutional and political friction.",
+      "prelims_facts": [
+        "The Election Commission of India is established under Article 324 of the Constitution.",
+        "President Droupadi Murmu appoints the election commissioners.",
+        "Chief Election Commissioner: Gyanesh Kumar."
+      ],
+      "vocabulary": [
+        {
+          "word": "Impeachment",
+          "meaning_hindi": "महाभियोग"
+        },
+        {
+          "word": "Disenfranchisement",
+          "meaning_hindi": "मताधिकार से वंचित करना"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Gyanesh Kumar",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Gyanesh_Kumar"
+        },
+        {
+          "name": "Rahul Gandhi",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Rahul_Gandhi"
+        },
+        {
+          "name": "Mamata Banerjee",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Mamata_Banerjee"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "मुख्य चुनाव आयुक्त ज्ञानेश कुमार को हटाने की मांग को लेकर 30 सितंबर को बैठक करेंगे विपक्षी दल",
+        "story_lead": "चुनाव आयोग के हालिया कदमों की आलोचना के बीच मुख्य चुनाव आयुक्त ज्ञानेश कुमार के खिलाफ संयुक्त रणनीति बनाने के लिए कम से कम 21 विपक्षी दल 30 सितंबर को नई दिल्ली में बैठक करने जा रहे हैं।",
+        "full_article_text": "कम से कम 21 विपक्षी दलों ने मुख्य चुनाव आयुक्त (सीईसी) ज्ञानेश कुमार को हटाने की मांग और उनके खिलाफ महाभियोग नोटिस लाने पर विचार करने के लिए 30 सितंबर को नई दिल्ली में बैठक करने का फैसला किया है। राहुल गांधी और ममता बनर्जी सहित प्रमुख नेताओं के इस बैठक में शामिल होने की उम्मीद है।",
+        "background_context": "यह घटनाक्रम चुनाव आयोग के कामकाज और मतदाता सूचियों के विशेष गहन पुनरीक्षण (SIR) को लेकर चल रहे राजनीतिक विवाद के बीच सामने आया है।",
+        "bullet_points": [
+          "कम से कम 21 विपक्षी दल 30 सितंबर को नई दिल्ली में बैठक करेंगे।",
+          "बैठक में सीईसी ज्ञानेश कुमार को हटाने और महाभियोग प्रस्ताव पर चर्चा होगी।"
+        ],
+        "key_facts": [
+          "30 सितंबर को नई दिल्ली में होगी बैठक।"
+        ],
+        "key_locations": [
+          "नई दिल्ली"
+        ],
+        "important_dates": [
+          "30 सितंबर"
+        ]
+      },
+      "quiz": {
+        "question": "When are at least 21 Opposition parties scheduled to meet in New Delhi to discuss a joint strategy against CEC Gyanesh Kumar?",
+        "options": [
+          "September 25",
+          "September 29",
+          "September 30",
+          "October 2"
+        ],
+        "correct_answer": "September 30",
+        "explanation": "At least 21 Opposition parties decided to meet in New Delhi on September 30 to seek the removal of CEC Gyanesh Kumar."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/election-commission-sir-gyanesh-kumar-bjp-congress-voter-list-101790449779896.html",
+      "published_date": "2026-09-27",
+      "id": 68,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/gyanesh_kumar_1790473728423_Znt7_1790473728550_QW4p_4b049683-d642-4b17-af09-01a7f3dd9311_hEus.jpg",
+      "added_at": "2026-09-27T09:09:02.868881+05:30"
+    },
+    {
+      "category": "World",
+      "exam_corner": true,
+      "headline": "Jaishankar at UN General Assembly warns of 'weaponisation of everything' and calls for global stability",
+      "story_lead": "External Affairs Minister S Jaishankar addressed the 81st session of the UN General Assembly in New York, stating that the world is witnessing the 'weaponisation of everything' where finance, market access, supply chains, and technology are used as leverage. He emphasized the urgent need for stability, accountability for state-sponsored terrorism, and reformed multilateralism to address the crises facing the Global South.",
+      "full_article_text": "External Affairs Minister S Jaishankar addressed the general debate of the UN General Assembly's 81st session in New York, stating that the world is 'living on the edge of an abyss' and witnessing a 'weaponisation of everything.' He pointed out that finance, market access, supply chains, and technology are being leveraged, pushing nations toward de-risking and diversifying in an atmosphere lacking trust and goodwill.\n\nHighlighting the acute predicament of the Global South, Jaishankar described a '4F crisis' involving food, fuel, fertiliser, and finance, which is exacerbated by a super El Niño, fertilizer shortages, and impediments to grain movements. He criticized non-market practices and market denial that undermine the Global South's right to industrialize. \n\nWithout naming Pakistan, Jaishankar delivered a sharp critique of cross-border and state-sponsored terrorism, calling it a direct affront to the global order and stating that friendship cannot coexist with terrorism. On conflicts in the Gulf and Ukraine, he termed the targeting of commercial shipping and seafarers unacceptable, reiterated India's support for peace initiatives and energy/food security, and reaffirmed a two-state solution for West Asia.\n\nFurthermore, Jaishankar addressed the misuse of artificial intelligence, advocating for nations to develop their own models consistent with national goals. He highlighted India's developmental partnerships, including 600 major development projects across 78 nations, the International Solar Alliance, and disaster response initiatives, while stressing the critical need for reformed multilateralism to manage a multipolar world.",
+      "background_context": "The address took place during the high-level week of the 81st session of the UN General Assembly in New York, amid ongoing global geopolitical tensions, conflicts in Ukraine and the Gulf, and economic pressures affecting developing nations.",
+      "bullet_points": [
+        "EAM S Jaishankar stated at the UNGA that the world is witnessing the 'weaponisation of everything' including finance, supply chains, and technology.",
+        "Described the '4F crisis' (food, fuel, fertiliser, and finance) affecting the Global South, aggravated by El Niño and supply chain disruptions.",
+        "Strongly condemned state-sponsored cross-border terrorism without naming Pakistan, asserting India's right to defend itself.",
+        "Called out the unacceptable targeting of commercial shipping and seafarers in international waterways spanning from the Red Sea to the Black Sea.",
+        "Reiterated India's stance on the Russia-Ukraine conflict, supporting peace efforts and food and energy security.",
+        "Advocated for reformed multilateralism, economic and cultural rebalancing, and national autonomy in artificial intelligence development."
+      ],
+      "key_facts": [
+        "Jaishankar addressed the 81st session of the UN General Assembly in New York.",
+        "The World Meteorological Organization forecast on September 3 that El Niño would intensify to 'very strong' through February 2027.",
+        "The Brics New Delhi Declaration was adopted under India's chairship on September 12.",
+        "At least 15 Indian seafarers have been killed in West Asia and the Black Sea this year.",
+        "India has contributed to 600 major development projects in 78 nations."
+      ],
+      "key_locations": [
+        "New York",
+        "India",
+        "Pakistan",
+        "Gulf",
+        "Red Sea",
+        "Black Sea",
+        "Ukraine",
+        "West Asia",
+        "Nepal"
+      ],
+      "important_dates": [
+        "September 3",
+        "September 12",
+        "February 2027"
+      ],
+      "exam_relevance": [
+        "Prelims: Current events of international importance, UN bodies, Global South challenges.",
+        "Mains (GS Paper II): India and its neighborhood- bilateral, regional and global groupings and agreements involving India and/or affecting India's interests; Effect of policies and politics of developed and developing countries on India's interests."
+      ],
+      "upsc_analysis": "Jaishankar's UNGA speech reflects India's proactive diplomatic posture in articulating the concerns of the Global South, such as equitable access to resources, food security, and reformed multilateralism. By highlighting supply chain weaponization, non-market practices, and cross-border terrorism, India sets clear boundaries for its international engagements while promoting itself as a reliable first responder and development partner.",
+      "causes": [
+        "Geopolitical tensions and conflicts in Ukraine and the Gulf affecting global supply chains.",
+        "Super El Niño and fertilizer shortages causing severe stress on food and agricultural systems in the Global South.",
+        "Unilateral tariff and non-tariff measures along with non-market practices denying fair market access to developing nations."
+      ],
+      "impacts": [
+        "Developing nations caught in a severe '4F crisis' (food, fuel, fertiliser, finance).",
+        "Loss of lives among international seafarers, including Indian nationals, due to shipping attacks in the Red Sea and Black Sea.",
+        "Erosion of trust and goodwill in international trade and resource sharing, prompting global de-risking and diversification."
+      ],
+      "challenges": [
+        "Addressing persistent state-sponsored cross-border terrorism that undermines regional stability.",
+        "Navigating disruptions to energy, food, and fertilizer supplies amid prolonged global conflicts.",
+        "Ensuring equitable technological advancement and regulation of artificial intelligence without deepening biases."
+      ],
+      "government_steps": [
+        "India joined Liberia and 23 other partners in an initiative to rally global public opinion against the targeting of commercial shipping.",
+        "Executing 600 major development projects across 78 nations spanning infrastructure, manufacturing, agriculture, and IT.",
+        "Spearheading initiatives like the International Solar Alliance, the Coalition for Disaster Resilient Infrastructure, and the Global Biofuels Alliance."
+      ],
+      "constitutional_or_policy_link": [
+        "Directive Principles of State Policy (Article 51) - Promotion of international peace and security."
+      ],
+      "way_forward": [
+        "Pursue comprehensive structural reforms in multilateral institutions like the United Nations to reflect contemporary multipolar realities.",
+        "Strengthen international cooperation on maritime security to protect commercial shipping and seafarers.",
+        "Promote sustainable developmental partnerships and technology sharing to support the resilience of the Global South."
+      ],
+      "mains_notes": "S Jaishankar's UNGA address underscored three primary themes: the systemic vulnerabilities faced by the Global South due to weaponised supply chains and the '4F crisis', a strong rejection of state-sponsored terrorism, and the imperative for reformed multilateralism. India continues to position itself as a voice for developing nations through disaster relief, developmental projects, and advocacy for equitable economic and technological frameworks.",
+      "mains_questions": [
+        "Analyze the implications of the 'weaponisation of everything' on the economic and developmental security of the Global South.",
+        "Discuss India's evolving stance on multilateralism and its efforts to represent the interests of developing nations at global forums like the UN."
+      ],
+      "takeaway": "India at the UNGA highlighted the weaponisation of global systems, championed the concerns of the Global South, and called for accountability in countering cross-border terrorism and achieving reformed multilateralism.",
+      "prelims_facts": [
+        "The UN General Assembly general debate took place during its 81st session.",
+        "The World Meteorological Organization forecast El Niño to intensify through February 2027.",
+        "The Brics New Delhi Declaration was adopted under India's chairship."
+      ],
+      "vocabulary": [
+        {
+          "word": "Weaponisation",
+          "meaning_hindi": "हथियारीकरण / किसी वस्तु या नीति को हथियार के रूप में उपयोग करना"
+        },
+        {
+          "word": "Multilateralism",
+          "meaning_hindi": "बहुपक्षीयता"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "S. Jaishankar",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=S._Jaishankar"
+        },
+        {
+          "name": "United Nations General Assembly",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=United_Nations_General_Assembly"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "जयशंकर ने संयुक्त राष्ट्र में 'हर चीज़ के हथियारीकरण' पर चेतावनी दी और वैश्विक स्थिरता की मांग की",
+        "story_lead": "विदेश मंत्री एस. जयशंकर ने न्यूयॉर्क में संयुक्त राष्ट्र महासभा को संबोधित करते हुए कहा कि दुनिया 'हर चीज़ के हथियारीकरण' की गवाह बन रही है, जहाँ वित्त, बाज़ार पहुंच, आपूर्ति श्रृंखला और तकनीक का इस्तेमाल दबाव बनाने के लिए किया जा रहा है।",
+        "full_article_text": "विदेश मंत्री एस. जयशंकर ने न्यूयॉर्क में संयुक्त राष्ट्र महासभा के 81वें सत्र की सामान्य बहस को संबोधित करते हुए कहा कि दुनिया 'खाई के मुहाने पर जी रही है' और 'हर चीज़ के हथियारीकरण' को देख रही है। उन्होंने कहा कि वित्त, बाज़ार पहुंच, आपूर्ति श्रृंखला और प्रौद्योगिकी का लाभ उठाया जा रहा है। विकासशील देश भोजन, ईंधन, उर्वरक और वित्त के '4F संकट' से जूझ रहे हैं, जिसे अल नीनो और बढ़ा रहा है। उन्होंने आतंकवाद के खिलाफ जवाबदेही और सुधारित बहुपक्षीयता की आवश्यकता पर भी ज़ोर दिया।",
+        "background_context": "यह संबोधन न्यूयॉर्क में संयुक्त राष्ट्र महासभा के 81वें सत्र के उच्च-स्तरीय सप्ताह के दौरान दिया गया।",
+        "bullet_points": [
+          "विदेश मंत्री एस. जयशंकर ने यूएनजीए में 'हर चीज़ के हथियारीकरण' का जिक्र किया।",
+          "ग्लोबल साउथ के सामने '4F संकट' (भोजन, ईंधन, उर्वरक और वित्त) का मुद्दा उठाया।",
+          "पाकिस्तान का नाम लिए बिना आतंकवाद और सीमा पार आतंकवाद की कड़ी निंदा की।",
+          "लाल सागर से काले सागर तक वाणिज्यिक नौवहन और नाविकों को निशाना बनाए जाने की निंदा की।"
+        ],
+        "key_facts": [
+          "जयशंकर ने न्यूयॉर्क में संयुक्त राष्ट्र महासभा के 81वें सत्र को संबोधित किया।",
+          "भारत की अध्यक्षता में ब्रिक्स नई दिल्ली घोषणा को अपनाया गया था।"
+        ],
+        "key_locations": [
+          "न्यूयॉर्क",
+          "भारत",
+          "पाकिस्तान",
+          "यूक्रेन"
+        ],
+        "important_dates": [
+          "3 सितंबर",
+          "12 सितंबर"
+        ]
+      },
+      "quiz": {
+        "question": "At which session of the UN General Assembly did External Affairs Minister S Jaishankar deliver his address warning of the 'weaponisation of everything'?",
+        "options": [
+          "79th session",
+          "80th session",
+          "81st session",
+          "82nd session"
+        ],
+        "correct_answer": "81st session",
+        "explanation": "External Affairs Minister S Jaishankar addressed the general debate of the UN General Assembly's 81st session in New York."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/india-un-speech-jaishankar-global-south-conflicts-latest-news-101790469399990.html",
+      "published_date": "2026-09-27",
+      "id": 67,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/UN-ASSEMBLY--178_1790469464613_K9kg_1790469484239_tGEj_43bca1dd-e82c-472b-9687-223aff1dd3cc_pylT.JPG",
+      "added_at": "2026-09-27T09:09:02.868881+05:30"
+    },
+    {
+      "category": "World",
+      "exam_corner": true,
+      "headline": "Russia Backs India's Bid for Permanent UN Security Council Seat at UNGA",
+      "story_lead": "During his address to the UN General Assembly, Russian Foreign Minister Sergey Lavrov explicitly backed India and Brazil for permanent seats on the United Nations Security Council (UNSC). Lavrov emphasized broader representation for Asia, Africa, and Latin America while opposing any additional seats for Western nations.",
+      "full_article_text": "At the United Nations General Assembly, Russian Foreign Minister Sergey Lavrov voiced strong support for India's candidature for a permanent seat on the United Nations Security Council (UNSC). Lavrov stated that Russia favors broader representation of Asia, Africa, and Latin America in the Council, specifically endorsing the bids of India and Brazil. He stressed that any reform of the Security Council should preserve the prerogatives of its permanent members and should not result in additional seats for Western nations, particularly Germany and Japan, which Russia criticized as being on the path to militarism and revanchism. The current permanent members of the UNSC are China, France, Russia, the United Kingdom, and the United States, all holding veto powers, alongside 10 non-permanent members serving two-year terms. Structural change requires a two-thirds majority in the General Assembly, ratification by two-thirds of UN member states, and explicit concurrence of all five permanent members. Apart from Russia, other countries including Mauritius and Portugal expressed backing for India's candidature and Council reform, while the G4 alliance received support from the Marshall Islands.",
+      "background_context": "The United Nations Security Council consists of five permanent members with veto power and ten non-permanent members. Calls for structural reform to better reflect modern geopolitical and economic realities have been ongoing, with India, Brazil, Germany, and Japan forming the G4 alliance to pursue permanent seats.",
+      "bullet_points": [
+        "Russian Foreign Minister Sergey Lavrov backed India and Brazil for permanent UNSC seats at the UN General Assembly.",
+        "Russia supports broader representation for Asia, Africa, and Latin America in the Council.",
+        "Russia opposed allocating additional seats to Western nations like Germany and Japan.",
+        "Mauritius and Portugal also voiced support for India's candidature and Council reform during the UN debate.",
+        "Structural changes to the UNSC require a two-thirds majority in the General Assembly, ratification by two-thirds of member states, and the concurrence of all five permanent members."
+      ],
+      "key_facts": [
+        "Sergey Lavrov is the Russian Foreign Minister.",
+        "Current permanent members of the UNSC are China, France, Russia, the United Kingdom, and the United States.",
+        "Mauritius and Portugal backed India's bid for a permanent UNSC seat at the UNGA.",
+        "UNSC structural reforms require concurrence of all five permanent members."
+      ],
+      "key_locations": [
+        "India",
+        "Russia",
+        "Brazil",
+        "Mauritius",
+        "Portugal",
+        "Marshall Islands",
+        "United Nations"
+      ],
+      "important_dates": [
+        "2025-26"
+      ],
+      "exam_relevance": [
+        "Prelims: International organizations, UN reforms, UNSC composition.",
+        "Mains: GS Paper II - Bilateral, regional and global groupings and agreements involving India and/or affecting India's interests; Important International institutions, agencies and fora, their structure, mandate."
+      ],
+      "upsc_analysis": "Russia's official endorsement of India's permanent membership in the UNSC strengthens India's multilateral diplomatic outreach. For UPSC aspirants, understanding the dynamics of UNSC reform, the positions of the P5 nations, and groupings like the G4 and BRICS is crucial for international relations questions.",
+      "causes": [
+        "Geopolitical shifts demanding better representation of contemporary economic and political realities in top global security bodies.",
+        "Continuous diplomatic efforts by India and other Global South nations for UNSC expansion."
+      ],
+      "impacts": [
+        "Boosts India's diplomatic standing and multilateral engagement at the UN.",
+        "Highlights divisions among major global powers regarding which nations deserve permanent representation."
+      ],
+      "challenges": [
+        "Requirement of concurrence from all five permanent members of the UNSC for any structural reform.",
+        "Geopolitical opposition from certain quarters, including resistance to Western or specific G4 bids."
+      ],
+      "government_steps": [
+        "Continuous diplomatic engagement at multilateral forums like the UNGA, BRICS, and G4 to build consensus for UNSC reforms."
+      ],
+      "constitutional_or_policy_link": [
+        "India's foreign policy objective of achieving a greater leadership role in global governance institutions."
+      ],
+      "way_forward": [
+        "Sustained diplomatic coalition-building with the Global South and key allies to overcome procedural and political hurdles in UN reform."
+      ],
+      "mains_notes": "Russia's backing of India's UNSC permanent seat bid at the UN General Assembly underscores the evolving dynamics of multilateral diplomacy. Reforms must address the representation of Asia, Africa, and Latin America while navigating the complex requirement of P5 concurrence and two-thirds majorities.",
+      "mains_questions": [
+        "Analyze the geopolitical significance of Russia's support for India's permanent membership in the United Nations Security Council.",
+        "What are the major structural and political hurdles in reforming the UN Security Council to reflect contemporary global realities?"
+      ],
+      "takeaway": "Russia has officially endorsed India's bid for a permanent seat on the UN Security Council at the UN General Assembly.",
+      "prelims_facts": [
+        "UNSC has 5 permanent members and 10 non-permanent members.",
+        "UNSC reform requires a two-thirds majority in the General Assembly, ratification by two-thirds of member states, and concurrence of all five permanent members."
+      ],
+      "vocabulary": [
+        {
+          "word": "Revanchism",
+          "meaning_hindi": "प्रतिशोध की भावना / क्षेत्र पुनः प्राप्त करने की नीति"
+        },
+        {
+          "word": "Candidature",
+          "meaning_hindi": "उम्मीदवारी"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Sergey Lavrov",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Sergey%20Lavrov"
+        },
+        {
+          "name": "United Nations Security Council",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=United%20Nations%20Security%20Council"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "संयुक्त राष्ट्र में रूस ने UNSC में भारत की स्थायी सीट की उम्मीदवारी का समर्थन किया",
+        "story_lead": "संयुक्त राष्ट्र महासभा में अपने संबोधन के दौरान, रूसी विदेश मंत्री सर्गेई लावरोव ने संयुक्त राष्ट्र सुरक्षा परिषद (UNSC) में स्थायी सीट के लिए भारत और ब्राजील का स्पष्ट समर्थन किया। लावरोव ने परिषद में एशिया, अफ्रीका और लैटिन अमेरिका के व्यापक प्रतिनिधित्व का समर्थन किया।",
+        "full_article_text": "संयुक्त राष्ट्र महासभा में रूसी विदेश मंत्री सर्गेई लावरोव ने संयुक्त राष्ट्र सुरक्षा परिषद (UNSC) में स्थायी सीट के लिए भारत की उम्मीदवारी का समर्थन किया। लावरोव ने कहा कि रूस परिषद में एशिया, अफ्रीका और लैटिन अमेरिका के व्यापक प्रतिनिधित्व के पक्ष में है और विशेष रूप से भारत और ब्राजील की उम्मीदवारी का समर्थन करता है।",
+        "background_context": "संयुक्त राष्ट्र सुरक्षा परिषद में वीटो पावर वाले पाँच स्थायी सदस्य और दस अस्थायी सदस्य शामिल हैं।",
+        "bullet_points": [
+          "रूसी विदेश मंत्री सर्गेई लावरोव ने संयुक्त राष्ट्र महासभा में भारत और ब्राजील का समर्थन किया।",
+          "रूस एशिया, अफ्रीका और लैटिन अमेरिका के व्यापक प्रतिनिधित्व का समर्थन करता है।"
+        ],
+        "key_facts": [
+          "सर्गेई लावरोव रूस के विदेश मंत्री हैं।"
+        ],
+        "key_locations": [
+          "भारत",
+          "रूस",
+          "ब्राजील",
+          "संयुक्त राष्ट्र"
+        ],
+        "important_dates": [
+          "2025-26"
+        ]
+      },
+      "quiz": {
+        "question": "Which country recently backed India's bid for a permanent seat on the UN Security Council during the UN General Assembly?",
+        "options": [
+          "Russia",
+          "Germany",
+          "Japan",
+          "China"
+        ],
+        "correct_answer": "Russia",
+        "explanation": "During his address to the UN General Assembly, Russian Foreign Minister Sergey Lavrov backed India's candidature for a permanent seat on the United Nations Security Council."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/at-un-russia-backs-indias-bid-for-permanent-security-council-seat-101790471089996.html",
+      "published_date": "2026-09-27",
+      "id": 66,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/Putin_Modi_1754658414213_1754658414449_1790471710235_L9Kj_61239734-25eb-4277-95c4-bf504f66a76a_DDcn.jpg",
+      "added_at": "2026-09-27T09:09:02.868881+05:30"
+    },
+    {
+      "category": "World",
+      "exam_corner": true,
+      "headline": "Election Commission Presents United Front Amid Criticism Over Special Intensive Revision and Digital Software",
+      "story_lead": "The Election Commission of India (ECI) has asserted a united front in response to recent criticisms regarding its functioning and software access. In a joint statement, Chief Election Commissioner Gyanesh Kumar and Election Commissioners SS Sandhu and Vivek Joshi clarified that all decisions on the special intensive revision (SIR) were unanimous.",
+      "full_article_text": "The Election Commission of India (ECI) held its first public meeting with Chief Election Commissioner Gyanesh Kumar and election commissioners SS Sandhu and Vivek Joshi to address mounting criticism concerning its operations, backend software, and the special intensive revision (SIR). The commission emphasized that all decisions regarding the SIR were unanimous and clarified questions raised by the government and the opposition. Recent media reports had alleged written dissents and access curtailment to ECI software. The commission clarified that differing views are a normal part of deliberations and that its digital platforms operate under strict data security protocols. Furthermore, a committee headed by a senior deputy election commissioner, including an independent expert, will review the ECINET system to ensure statutory compliance.",
+      "background_context": "The controversy arose following media reports indicating written dissents and objections by election commissioners between November 2025 and August 2026, alongside discussions over backend software access and the special intensive revision (SIR) initiated across states and union territories starting with Bihar and West Bengal.",
+      "bullet_points": [
+        "ECI asserted a united front with a joint public appearance by the CEC and election commissioners.",
+        "The commission clarified that decisions on the special intensive revision (SIR) were unanimous.",
+        "A review committee will examine the ECINET backend software and oversight mechanisms.",
+        "ECI stated that letters to the cabinet secretary were related to an officer on deputation, not policy matters.",
+        "Additional steps were announced to ensure advance circulation of agendas, meeting minutes, and timely APAR completions."
+      ],
+      "key_facts": [
+        "The ECI meeting was held following media reports of written dissents among commissioners.",
+        "SIR for various states was initiated starting 24.6.2025 and upheld by the Supreme Court on 27.5.2026.",
+        "In Goa, 81 out of 97 left-out voters filled Form 6 following house-to-house verification.",
+        "A review committee will include an independent expert from IIT or IIIT."
+      ],
+      "key_locations": [
+        "India",
+        "Goa",
+        "Bihar",
+        "West Bengal"
+      ],
+      "important_dates": [
+        "24.6.2025",
+        "27.10.2025",
+        "27.5.2026",
+        "14.05.2026",
+        "26.09.2026"
+      ],
+      "exam_relevance": [
+        "UPSC Prelims: Indian Polity and Governance, Election Commission of India, Constitutional Bodies.",
+        "UPSC Mains GS Paper II: Salient features of the Representation of People's Act, functions and responsibilities of various Constitutional Bodies."
+      ],
+      "upsc_analysis": "The functioning and administrative autonomy of the Election Commission of India are crucial for upholding democratic integrity. Institutional transparency, internal cohesion among commissioners, and the security of digital electoral systems are vital areas of governance relevant to UPSC aspirants studying constitutional bodies.",
+      "causes": [
+        "Public debate and media reports concerning internal dissents and backend software access within the ECI.",
+        "Discrepancies noted in voter lists during the Special Intensive Revision (SIR) in states like Goa."
+      ],
+      "impacts": [
+        "Prompted the ECI to issue a detailed clarifying press note to maintain institutional credibility.",
+        "Initiation of a review committee for digital portals and stricter administrative protocols."
+      ],
+      "challenges": [
+        "Managing internal deliberations transparently while preserving institutional credibility.",
+        "Ensuring data security and operational flexibility in electoral IT systems."
+      ],
+      "government_steps": [
+        "Unanimous approval and Supreme Court upholding of the SIR process.",
+        "Establishment of a review committee headed by a senior Deputy Election Commissioner.",
+        "Implementation of advance agenda circulation and timely processing of annual performance reports."
+      ],
+      "constitutional_or_policy_link": [
+        "Article 324 of the Constitution of India regarding the superintendence, direction, and control of elections vested in an Election Commission."
+      ],
+      "way_forward": [
+        "Strengthening transparency in institutional decision-making and digital infrastructure.",
+        "Ensuring robust communication channels between field officers and central IT teams."
+      ],
+      "mains_notes": "The Election Commission of India remains a foundational pillar of Indian democracy. Recent clarifications regarding unanimous SIR decisions and internal administrative protocols highlight the importance of internal cohesion, technological audits, and transparency in conducting free and fair elections.",
+      "mains_questions": [
+        "Discuss the constitutional role of the Election Commission of India in ensuring free and fair elections, examining recent measures taken to enhance institutional transparency.",
+        "Analyze the significance of digital security and administrative coordination in managing electoral rolls in India."
+      ],
+      "takeaway": "The Election Commission reaffirmed its institutional unity and announced digital platform reviews amidst recent administrative controversies.",
+      "prelims_facts": [
+        "Article 324 establishes the Election Commission of India.",
+        "Special Intensive Revision (SIR) of electoral rolls is undertaken as per statutory provisions."
+      ],
+      "vocabulary": [
+        {
+          "word": "Unanimous",
+          "meaning_hindi": "सर्वसम्मति से"
+        },
+        {
+          "word": "Dissents",
+          "meaning_hindi": "असहमतियाँ"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Gyanesh Kumar",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Gyanesh%20Kumar"
+        },
+        {
+          "name": "Election Commission of India",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Election%20Commission%20of%20India"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "चुनाव आयोग ने बढ़ते आलोचनाओं के बीच एकजुट रुख प्रस्तुत किया",
+        "story_lead": "भारत निर्वाचन आयोग (ECI) ने अपनी कार्यप्रणाली और सॉफ्टवेयर को लेकर हो रही आलोचनाओं के बीच एकजुट रुख दिखाने का प्रयास किया है।",
+        "full_article_text": "भारत निर्वाचन आयोग (ECI) ने मुख्य चुनाव आयुक्त ज्ञानेश कुमार और चुनाव आयुक्तों एसएस संधू और विवेक जोशी की उपस्थिति में एक प्रेस नोट जारी कर स्पष्ट किया कि विशेष गहन संशोधन (SIR) पर सभी निर्णय सर्वसम्मति से लिए गए थे।",
+        "background_context": "यह विवाद चुनाव आयुक्तों के बीच कथित लिखित असहमतियों और सॉफ्टवेयर तक पहुंच से जुड़ी मीडिया रिपोर्टों के बाद सामने आया।",
+        "bullet_points": [
+          "चुनाव आयोग ने मुख्य चुनाव आयुक्त और आयुक्तों की संयुक्त तस्वीर के साथ एकजुट रुख प्रस्तुत किया।",
+          "SIR से जुड़े सभी निर्णय सर्वसम्मति से लिए जाने की पुष्टि की गई।",
+          "ECINET सॉफ्टवेयर की समीक्षा के लिए एक समिति गठित की जाएगी।"
+        ],
+        "key_facts": [
+          "SIR आदेश को भारत के सर्वोच्च न्यायालय द्वारा 27.5.2026 को बरकरार रखा गया था।"
+        ],
+        "key_locations": [
+          "भारत",
+          "गोवा",
+          "बिहार"
+        ],
+        "important_dates": [
+          "24.6.2025",
+          "27.5.2026",
+          "26.09.2026"
+        ]
+      },
+      "quiz": {
+        "question": "Who heads the Election Commission of India as Chief Election Commissioner mentioned in the context?",
+        "options": [
+          "Gyanesh Kumar",
+          "SS Sandhu",
+          "Vivek Joshi",
+          "TV Somanathan"
+        ],
+        "correct_answer": "Gyanesh Kumar",
+        "explanation": "The text identifies Gyanesh Kumar as the Chief Election Commissioner of India."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/election-commission-row-voter-list-sir-special-intensive-revision-cec-gyanesh-kumar-congress-bjp-101790470006457.html",
+      "published_date": "2026-09-27",
+      "id": 65,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/HTI-MjxbQAA3QtM_1790470260451_gqXb_1790470272385_CL2J_bcdbab4f-2c52-4b24-be94-f55b6f777b2f_m842.jpg",
+      "added_at": "2026-09-27T09:09:02.868881+05:30"
+    },
+    {
+      "category": "Health",
+      "exam_corner": true,
+      "headline": "Delhi High Court Rules Personal Laws Cannot Grant Immunity from POCSO for Sex with Minor Wife",
+      "story_lead": "The Delhi High Court has held that personal laws cannot be used as a ground to seek exemption from criminal liability under penal statutes. The court directed a Muslim man to face trial under the POCSO Act and BNS for establishing sexual relations with his underage wife, stating that statutory protections for children cannot be overridden by personal law marriages.",
+      "full_article_text": "The Delhi High Court delivered a significant judgment regarding the intersection of personal laws and criminal statutes, ruling that personal law validity does not grant immunity from criminal liability under the Protection of Children from Sexual Offences (POCSO) Act or the Bharatiya Nyaya Sanhita (BNS). A bench of Justice Sanjeev Narula held that while personal law may determine whether a marriage has been contracted and the civil consequences that follow, it cannot supply an exception to criminal law when Parliament has provided none. The ruling came while the court was hearing a plea by a couple seeking to quash an FIR registered against a 28-year-old Muslim man. The couple had married in 2024 when the wife was a little over 16 years of age, with the consent of their families. The matter came to light when the woman, who was eight months pregnant, visited a government hospital in Delhi for treatment, prompting police registration of a case under Section 64(1) of the BNS and Section 6 of the POCSO Act. The petitioners argued that under Muslim personal law, a girl who has attained puberty is competent to marry, and the validity of the marriage should exempt them from criminal liability for subsequent sexual relations. Rejecting this argument, the court emphasized that a marriage does not advance a child's age, and 18 remains the threshold for sexual consent under both POCSO and the BNS, which explicitly withholds the marital exception when the wife is below 18. Furthermore, the court noted that the Prohibition of Child Marriage Act, 2006, defines a female below 18 as a child and attaches penal consequences to an adult male contracting a child marriage. The court concluded that allowing personal law to override statutory protections would undermine child protection legislation.",
+      "background_context": "The case arose from an FIR filed after an underage married girl visited a government hospital in Delhi for treatment during her eighth month of pregnancy. The couple approached the high court seeking to quash the criminal case, contending that their marriage was valid under Muslim personal law since the bride had attained puberty and consented voluntarily.",
+      "bullet_points": [
+        "Delhi High Court ruled personal laws cannot exempt individuals from criminal liability under penal statutes like POCSO and BNS.",
+        "The court directed a Muslim man to face trial for sexual relations with his underage wife, who was 16 at the time of marriage in 2024.",
+        "The couple sought to quash the FIR, arguing their marriage was valid under Muslim personal law as the bride had attained puberty.",
+        "Justice Sanjeev Narula stated that a marriage does not advance a child's age or change the legal capacity to consent to sexual acts.",
+        "POCSO and the BNS fix 18 as the threshold for sexual consent and withhold the marital exception if the wife is below 18.",
+        "The Prohibition of Child Marriage Act, 2006, penalizes adult males contracting child marriages with females below 18.",
+        "The court noted that allowing personal law immunity would turn child protection legislation on its head."
+      ],
+      "key_facts": [
+        "The Delhi High Court order was issued by Justice Sanjeev Narula on September 23 and released on Saturday.",
+        "The case involved a 28-year-old man and a girl who was a little over 16 years old when they married in 2024.",
+        "The case came to light when the girl visited a government hospital in Delhi while eight months pregnant.",
+        "The FIR was registered under Section 64(1) of the BNS and Section 6 of the POCSO Act."
+      ],
+      "key_locations": [
+        "Delhi"
+      ],
+      "important_dates": [
+        "2024",
+        "September 23"
+      ],
+      "exam_relevance": [
+        "Mains: General Studies Paper-II (Governance, Constitution, Polity, Social Justice)",
+        "Prelims: Current events involving legal judgments, POCSO Act, BNS, and personal laws"
+      ],
+      "upsc_analysis": "This judgment addresses the complex interface between personal laws and secular criminal statutes in India. From a constitutional and governance perspective, it reinforces the primacy of parliamentary legislation enacted for the protection of children over personal law provisions. It highlights judicial interpretation on child rights, bodily autonomy, and the strict statutory threshold for sexual consent, balancing secular penal provisions with personal law practices.",
+      "causes": [
+        "Marriage of a minor female under Muslim personal law following the attainment of puberty.",
+        "Subsequent pregnancy of the minor wife leading to medical attention at a government hospital and police intervention."
+      ],
+      "impacts": [
+        "Reinforcement of the POCSO Act and BNS over personal law exemptions in cases involving minors.",
+        "Legal certainty that child marriage validation under personal law does not absolve adults from criminal prosecution for statutory rape."
+      ],
+      "challenges": [
+        "Reconciling diverse religious personal laws with uniform secular criminal statutes protecting children.",
+        "Addressing social acceptance of early marriages and puberty-based marriage rules under specific personal laws."
+      ],
+      "government_steps": [
+        "Registration of criminal cases and enforcement of the POCSO Act, BNS, and the Prohibition of Child Marriage Act by statutory authorities."
+      ],
+      "constitutional_or_policy_link": [
+        "Protection of Children from Sexual Offences (POCSO) Act",
+        "Bharatiya Nyaya Sanhita (BNS)",
+        "Prohibition of Child Marriage Act, 2006"
+      ],
+      "way_forward": [
+        "Stricter enforcement of child marriage prohibition laws across communities.",
+        "Legal awareness campaigns regarding the statutory age of consent and protection laws overriding personal law exemptions for minors."
+      ],
+      "mains_notes": "The Delhi High Court held that personal laws cannot provide immunity from criminal liability under statutes like POCSO and BNS for sexual relations with an underage wife. The court emphasized that Parliament fixed 18 as the threshold for sexual consent, and a marriage valid under personal law does not alter a child's age or legal capacity to consent.",
+      "mains_questions": [
+        "Examine the interplay between personal laws and secular criminal statutes in India with reference to recent judicial rulings on the POCSO Act.",
+        "Do personal laws override statutory protections provided to children under penal laws? Critically analyze."
+      ],
+      "takeaway": "Personal laws cannot grant immunity from criminal liability under the POCSO Act and BNS for sexual relations with a minor wife.",
+      "prelims_facts": [
+        "POCSO and BNS fix 18 years as the threshold for sexual consent.",
+        "The Prohibition of Child Marriage Act, 2006, defines a female below 18 as a child."
+      ],
+      "vocabulary": [
+        {
+          "word": "Immunity",
+          "meaning_hindi": "उन्मुक्ति / छूट"
+        },
+        {
+          "word": "Statutory",
+          "meaning_hindi": "वैधानिक / कानूनी"
+        },
+        {
+          "word": "Consent",
+          "meaning_hindi": "सहमति"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Delhi High Court",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Delhi%20High%20Court"
+        },
+        {
+          "name": "Sanjeev Narula",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Sanjeev%20Narula"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "नाबालिग पत्नी के साथ शारीरिक संबंध पर पॉक्सो मामले में पर्सनल लॉ से कोई छूट नहीं: दिल्ली उच्च न्यायालय",
+        "story_lead": "दिल्ली उच्च न्यायालय ने फैसला सुनाया है कि व्यक्तिगत कानून दंडात्मक कानूनों के तहत आपराधिक दायित्व से छूट पाने का आधार नहीं हो सकते हैं। अदालत ने एक मुस्लिम व्यक्ति को अपनी नाबालिग पत्नी के साथ शारीरिक संबंध बनाने के लिए पॉक्सो अधिनियम और बीएनएस के तहत मुकदमे का सामना करने का निर्देश दिया है।",
+        "full_article_text": "दिल्ली उच्च न्यायालय ने व्यक्तिगत कानूनों और आपराधिक कानूनों के बीच के संबंध पर एक महत्वपूर्ण फैसला सुनाया है, जिसमें कहा गया है कि व्यक्तिगत कानूनों की वैधता बच्चों के यौन अपराध संरक्षण (पॉक्सो) अधिनियम या भारतीय न्याय संहिता (बीएनएस) के तहत आपराधिक दायित्व से छूट नहीं देती है। न्यायमूर्ति संजीव नरूला की पीठ ने माना कि व्यक्तिगत कानून यह निर्धारित कर सकता है कि विवाह हुआ है या नहीं और इसके नागरिक परिणाम क्या हैं, लेकिन जब संसद ने कोई अपवाद प्रदान नहीं किया है, तो यह आपराधिक कानून का अपवाद नहीं बन सकता।",
+        "background_context": "यह मामला तब सामने आया जब एक नाबालिग विवाहित लड़की गर्भावस्था के आठवें महीने के दौरान इलाज के लिए दिल्ली के एक सरकारी अस्पताल में गई, जिसके बाद पुलिस ने मामला दर्ज किया।",
+        "bullet_points": [
+          "दिल्ली उच्च न्यायालय ने फैसला दिया कि पर्सनल लॉ पॉक्सो और बीएनएस जैसे दंड कानूनों से छूट नहीं दे सकते।",
+          "अदालत ने एक मुस्लिम व्यक्ति को 2024 में 16 वर्ष से कम उम्र की अपनी पत्नी के साथ संबंध बनाने पर मुकदमे का आदेश दिया।",
+          "युगल ने मुस्लिम पर्सनल लॉ के तहत विवाह की वैधता का हवाला देते हुए एफआईआर रद्द करने की मांग की थी।",
+          "न्यायमूर्ति संजीव नरूला ने कहा कि विवाह किसी बच्चे की उम्र नहीं बढ़ाता है और सहमति की कानूनी क्षमता को नहीं बदलता है।"
+        ],
+        "key_facts": [
+          "दिल्ली उच्च न्यायालय का यह आदेश न्यायमूर्ति संजीव नरूला द्वारा दिया गया।",
+          "मामले में 2024 में विवाह के समय लड़की की आयु 16 वर्ष से थोड़ी अधिक थी।"
+        ],
+        "key_locations": [
+          "दिल्ली"
+        ],
+        "important_dates": [
+          "2024",
+          "23 सितंबर"
+        ]
+      },
+      "quiz": {
+        "question": "What is the statutory threshold for sexual consent under the POCSO Act and the BNS as highlighted by the Delhi High Court?",
+        "options": [
+          "16 years",
+          "18 years",
+          "21 years",
+          "14 years"
+        ],
+        "correct_answer": "18 years",
+        "explanation": "The Delhi High Court noted that the POCSO Act and the BNS fix 18 years as the threshold for sexual consent and withhold the marital exception if the wife is below 18."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/no-personal-law-immunity-from-pocso-case-for-sex-with-minor-wife-delhi-hc-101790449839959.html",
+      "published_date": "2026-09-27",
+      "id": 64,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2025/06/30/1600x900/ht-generic_india3_1751287297962_1751287304722.jpg",
+      "added_at": "2026-09-27T09:09:02.868881+05:30"
+    },
+    {
+      "category": "Health",
+      "exam_corner": true,
+      "headline": "Andhra Pradesh Government's Rushikonda Palace Project Fails to Attract Bidders",
+      "story_lead": "The Andhra Pradesh government's proposal to convert the controversial Rushikonda palatial complex in Visakhapatnam into an international-standard hospitality destination through a public-private partnership has hit a roadblock. State tourism minister Kandula Durgesh announced that no private players or major hospitality chains expressed interest in taking over the project.",
+      "full_article_text": "The Andhra Pradesh government’s initiative to transform the Rushikonda palatial complex in Visakhapatnam into a luxury hospitality destination has encountered a major setback with zero bids received from private entities. State tourism minister Kandula Durgesh stated that major hospitality brands are unwilling to take over the buildings because the large room sizes do not suit standard hotel operations. The ₹452-crore hilltop complex was originally built as a residence-cum-camp office for former chief minister Y S Jagan Mohan Reddy during the previous YSRCP regime. According to the minister, the complex has remained vacant for two years, incurring an annual maintenance loss of ₹7 crore to the state exchequer. On July 3, the Andhra Pradesh Tourism Development Corporation (APTDC) had invited expressions of interest (EOI) for the operation, maintenance, and commercial utilization of the building complex, following recommendations from a cabinet sub-committee headed by finance minister Payyavula Kesav. Despite preliminary inspections by brands like Taj, Atmosphere Core, Leela, and Fema, no final bids were submitted. The government maintains that it will resolve these challenges to bring the complex into practical public or tourism use.",
+      "background_context": "The Rushikonda palatial complex in Visakhapatnam was constructed during the YSRCP regime as a residence-cum-camp office for former chief minister Y S Jagan Mohan Reddy. The current government formed a cabinet sub-committee headed by finance minister Payyavula Kesav, which recommended converting the ₹452-crore hilltop complex into a luxury resort through a public-private partnership while maintaining public access to parts of the property.",
+      "bullet_points": [
+        "The AP government's proposal to convert the Rushikonda palace into an international hospitality destination received no bids.",
+        "State tourism minister Kandula Durgesh stated that large room sizes do not suit standard hotel operations.",
+        "The ₹452-crore hilltop complex was built during the previous YSRCP regime as a residence-cum-camp office for former CM Y S Jagan Mohan Reddy.",
+        "The vacant complex has reportedly cost the state exchequer an annual maintenance sum of ₹7 crore over two years.",
+        "APTDC invited expressions of interest on July 3 for operation, maintenance, and commercial utilization.",
+        "Brands like Taj, Atmosphere Core, Leela, and Fema inspected the property but did not submit final bids."
+      ],
+      "key_facts": [
+        "Project cost: ₹452 crore",
+        "Annual maintenance loss: ₹7 crore",
+        "Complex area: Spread across 9.8 acres with five G+1 building blocks spanning 13,542.21 square metres",
+        "EOI invitation date: July 3 by APTDC"
+      ],
+      "key_locations": [
+        "Visakhapatnam",
+        "Rushikonda",
+        "Rajahmundry",
+        "Andhra Pradesh"
+      ],
+      "important_dates": [
+        "July 3"
+      ],
+      "exam_relevance": [
+        "Prelims: Current affairs related to state government projects, tourism development, and public-private partnerships.",
+        "Mains (GS Paper III): Infrastructure, Public-Private Partnerships (PPP), challenges in asset monetization and tourism sector growth in India."
+      ],
+      "upsc_analysis": "The failure to attract bidders for the Rushikonda palace project highlights the practical challenges in asset monetization and public-private partnerships (PPP) when public infrastructure is designed for specific personalized use rather than standardized commercial viability. It underscores the importance of pre-feasibility studies and market alignment before heavy capital investments are made in public assets.",
+      "causes": [
+        "Large room sizes of the palatial complex do not suit standard commercial hotel operations.",
+        "Lack of commercial viability as perceived by private hospitality players."
+      ],
+      "impacts": [
+        "Continued vacancy of the Rushikonda complex.",
+        "Persistent annual maintenance loss of ₹7 crore to the state exchequer."
+      ],
+      "challenges": [
+        "Adapting personalized residential architecture to international hospitality standards.",
+        "Attracting private sector participation for high-value government assets."
+      ],
+      "government_steps": [
+        "Formed a cabinet sub-committee headed by finance minister Payyavula Kesav.",
+        "APTDC invited expressions of interest (EOI) from hospitality operators, hotel chains, and resort developers on July 3."
+      ],
+      "constitutional_or_policy_link": [
+        "Public-Private Partnership (PPP) policy framework in state infrastructure and asset monetization."
+      ],
+      "way_forward": [
+        "Redesign or modify internal layouts to suit standard hotel operations.",
+        "Re-evaluate commercial terms or explore alternative public utility models to utilize the infrastructure."
+      ],
+      "mains_notes": "Asset monetization of government-owned properties requires careful alignment with commercial viability. The Rushikonda palace case demonstrates that converting specialized residential infrastructure into standard hospitality units faces hurdles due to structural design incompatibilities, necessitating flexible policy frameworks and thorough stakeholder consultations.",
+      "mains_questions": [
+        "Discuss the challenges involved in the public-private partnership (PPP) model for monetizing specialized government infrastructure assets with reference to recent examples.",
+        "What are the major structural and economic hurdles faced by state governments in converting luxury official residences into commercial tourism destinations?"
+      ],
+      "takeaway": "The Andhra Pradesh government's plan to convert the Rushikonda palace into a luxury resort through PPP hit a roadblock after receiving zero bids from private hospitality players due to structural design incompatibilities.",
+      "prelims_facts": [
+        "Rushikonda palace complex is located in Visakhapatnam, Andhra Pradesh.",
+        "The complex was built as a residence-cum-camp office for former CM Y S Jagan Mohan Reddy.",
+        "APTDC stands for Andhra Pradesh Tourism Development Corporation."
+      ],
+      "vocabulary": [
+        {
+          "word": "Palatial",
+          "meaning_hindi": "राजमहल जैसा / आलीशान"
+        },
+        {
+          "word": "Exchequer",
+          "meaning_hindi": "राजकोष"
+        },
+        {
+          "word": "Viability",
+          "meaning_hindi": "व्यवहार्यता / कार्यसाधकता"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Visakhapatnam",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Visakhapatnam"
+        },
+        {
+          "name": "Y S Jagan Mohan Reddy",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Y_S_Jagan_Mohan_Reddy"
+        },
+        {
+          "name": "Kandula Durgesh",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Kandula_Durgesh"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "रुषिकोंडा पैलेस प्रोजेक्ट के लिए कोई बोली लगाने वाला नहीं मिला",
+        "story_lead": "आंध्र प्रदेश सरकार के विशाखापत्तनम में विवादास्पद बीच-फ्रंट रुषिकोंडा पैलेस कॉम्प्लेक्स को पब्लिक-प्राइवेट पार्टनरशिप के माध्यम से अंतरराष्ट्रीय स्तर के आतिथ्य गंतव्य में बदलने के प्रस्ताव को बड़ा झटका लगा है। राज्य के पर्यटन मंत्री कंधूला दुर्गेश ने शनिवार को कहा कि किसी भी निजी खिलाड़ी ने इस परियोजना में रुचि नहीं दिखाई है।",
+        "full_article_text": "आंध्र प्रदेश सरकार के विशाखापत्तनम में रुषिकोंडा पैलेस कॉम्प्लेक्स को निजी-सार्वजनिक साझेदारी के तहत लक्जरी होटल गंतव्य में बदलने के प्रस्ताव को कोई बोलीदाता नहीं मिलने से झटका लगा है। राज्य के पर्यटन मंत्री कंधूला दुर्गेश ने कहा कि बड़े होटल समूहों ने इसके कमरे के बड़े आकार मानक होटल संचालन के अनुकूल न होने के कारण इसे लेने से इनकार कर दिया है। यह 452 करोड़ रुपये का परिसर पिछली वाईएसआरसीपी सरकार के दौरान पूर्व मुख्यमंत्री वाई.एस. जगन मोहन రెడ్డి के आवास-सह-शिविर कार्यालय के रूप में बनाया गया था। मंत्री ने बताया कि दो साल से खाली पड़े इस परिसर के रखरखाव पर प्रति वर्ष 7 करोड़ रुपये का नुकसान हो रहा है।",
+        "background_context": "रुषिकोंडा पैलेस कॉम्प्लेक्स का निर्माण पिछली वाईएसआरसीपी सरकार के दौरान पूर्व मुख्यमंत्री वाई.एस. जगन मोहन రెడ్డి के लिए किया गया था। वर्तमान सरकार ने वित्त मंत्री पाय्यावुला केशव की अध्यक्षता में एक कैबिनेट उप-समिति बनाई थी, जिसने इस परिसर को लक्जरी रिसॉर्ट में बदलने की सिफारिश की थी।",
+        "bullet_points": [
+          "रुषिकोंडा पैलेस को आतिथ्य गंतव्य में बदलने के प्रस्ताव पर कोई बोली नहीं आई।",
+          "मंत्री कंधूला दुर्गेश ने कहा कि बड़े कमरे मानक होटल संचालन के अनुकूल नहीं हैं।",
+          "452 करोड़ रुपये की इस इमारत का निर्माण पूर्व सीएम वाई.एस. जगन मोहन రెడ్డి के लिए हुआ था।",
+          "परिसर के रखरखाव पर प्रति वर्ष 7 करोड़ रुपये खर्च हो रहे हैं।"
+        ],
+        "key_facts": [
+          "परियोजना लागत: 452 करोड़ रुपये",
+          "वार्षिक रखरखाव घाटा: 7 करोड़ रुपये"
+        ],
+        "key_locations": [
+          "विशाखापत्तनम",
+          "रुषिकोंडा",
+          "आंध्र प्रदेश"
+        ],
+        "important_dates": [
+          "3 जुलाई"
+        ]
+      },
+      "quiz": {
+        "question": "Which organization invited the expressions of interest (EOI) for the operation and commercial utilization of the Rushikonda building complex?",
+        "options": [
+          "Andhra Pradesh Tourism Development Corporation (APTDC)",
+          "India Tourism Development Corporation (ITDC)",
+          "Visakhapatnam Urban Development Authority",
+          "Andhra Pradesh Industrial Infrastructure Corporation"
+        ],
+        "correct_answer": "Andhra Pradesh Tourism Development Corporation (APTDC)",
+        "explanation": "On July 3, the Andhra Pradesh Tourism Development Corporation (APTDC) invited expressions of interest from hospitality operators and hotel chains for the Rushikonda building complex."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/no-bidders-for-rushikonda-palace-project-101790450754580.html",
+      "published_date": "2026-09-27",
+      "id": 63,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/26/1600x900/logo/The-plan-followed-a-cabinet-sub-committee-recommen_1790450747368_Dhl2.jpg",
+      "added_at": "2026-09-27T09:09:02.868881+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": true,
+      "headline": "Andhra Pradesh High Court Rules Petitions on Three-Capital Plan Infructuous Following Parliament's Statutory Status to Amaravati",
+      "story_lead": "The Andhra Pradesh High Court has observed that all petitions challenging the previous YSRCP government's three-capital plan have become infructuous. This development follows Parliament granting statutory status to Amaravati as the state capital. Meanwhile, the court adjourned remaining matters to November 20, pending the Supreme Court's consideration of the special leave petition.",
+      "full_article_text": "The Andhra Pradesh High Court observed on Friday that all petitions challenging the previous YSR Congress Party (YSRCP) government's decision to establish three capitals for the state have become infructuous. This observation by a three-member bench—comprising Chief Justice Lisa Gill, Justice Nainala Jaya Surya, and Justice B S Bhanumathi—comes in the wake of Parliament granting statutory status to Amaravati as the state capital. Because Amaravati has been declared the state capital by an Act of Parliament, any pending court petitions challenging the three-capitals proposal are rendered infructuous. The bench adjourned the remaining matters relating to Amaravati to November 20, awaiting the Supreme Court's expected call on September 29 regarding the special leave petition filed by the former YSRCP government. That petition challenges the high court's March 3, 2022 verdict which declared Amaravati as the sole capital of Andhra Pradesh. Background to the legal dispute includes July 2020 legislation passed by then Chief Minister Y.S. Jagan Mohan Reddy, which repealed the APCRDA Act and enacted a decentralisation of administration law providing for three capitals. Farmers from Amaravati challenged these laws in August 2020, leading to the 2022 high court judgment directing the government to honour land pooling agreements and develop Amaravati. On September 17, 2022, the Jagan government filed a special leave petition in the Supreme Court, which subsequently stayed execution deadlines set by the high court. In the current proceedings, the high court refused to set new deadlines for the present TDP-led coalition government to complete infrastructure works, citing the apex court's stay on similar previous deadlines. While counsel for farmers raised concerns about incomplete infrastructure and unhanded developed plots, the Advocate General informed the bench that infrastructure works are progressing rapidly and the government submitted an affidavit on December 10, 2024, promising completion within three years.",
+      "background_context": "In July 2020, the then YSRCP government passed two laws: one repealing the APCRDA Act and another introducing decentralisation of administration for three capitals. Amaravati farmers challenged these laws in August 2020. On March 3, 2022, the Andhra Pradesh High Court ruled Amaravati as the sole capital and directed the government to fulfill land pooling agreements and infrastructure timelines. The Jagan Mohan Reddy government challenged this in the Supreme Court on September 17, 2022, which stayed the high court's execution deadlines.",
+      "bullet_points": [
+        "AP High Court observed that petitions challenging the three-capital plan have become infructuous.",
+        "The ruling follows Parliament granting statutory status to Amaravati as the state capital.",
+        "The three-member bench was led by Chief Justice Lisa Gill, alongside Justice Nainala Jaya Surya and Justice B S Bhanumathi.",
+        "Hearing of remaining matters was adjourned to November 20, awaiting a Supreme Court decision.",
+        "The Advocate General stated that the state government filed an affidavit on December 10, 2024, committing to complete Amaravati infrastructure within three years.",
+        "The high court refused to fix new deadlines for infrastructure completion, respecting an earlier Supreme Court stay."
+      ],
+      "key_facts": [
+        "Parliament granted statutory status to Amaravati as the state capital.",
+        "The AP High Court bench comprised Chief Justice Lisa Gill, Justice Nainala Jaya Surya, and Justice B S Bhanumathi.",
+        "The previous YSRCP government had passed two laws in July 2020 to repeal the APCRDA Act and decentralize administration into three capitals.",
+        "The AP High Court previously delivered a judgment on March 3, 2022, declaring Amaravati as the sole capital.",
+        "The state government filed an affidavit in the Supreme Court on December 10, 2024, promising to finish infrastructure within three years."
+      ],
+      "key_locations": [
+        "Andhra Pradesh",
+        "Amaravati",
+        "Hyderabad"
+      ],
+      "important_dates": [
+        "July 2020",
+        "August 2, 2020",
+        "March 3, 2022",
+        "September 17, 2022",
+        "December 10, 2024"
+      ],
+      "exam_relevance": [
+        "Mains: Polity and Governance - Separation of powers, judicial review, federalism, legislative enactments vs. judicial pronouncements.",
+        "Prelims: Legal developments regarding state capitals, statutory status of capitals, Supreme Court and High Court jurisdictions."
+      ],
+      "upsc_analysis": "The judicial proceedings in Andhra Pradesh highlight the complex interplay between legislative supremacy (Parliament granting statutory status to a capital) and judicial review over state-level administrative decisions (the three-capital proposal). It underscores questions of executive policy versus commitments made to citizens under land pooling schemes, as well as the sub-judice nature of matters pending before the Supreme Court.",
+      "causes": [
+        "Enactment of laws by the previous YSRCP government in July 2020 for administrative decentralization and repeal of the APCRDA Act.",
+        "Grant of statutory status to Amaravati as the state capital by the Indian Parliament.",
+        "Legal challenges mounted by Amaravati farmers and subsequent judicial verdicts."
+      ],
+      "impacts": [
+        "Rendering of pending high court petitions challenging the three-capital plan as infructuous.",
+        "Continued legal scrutiny as the Supreme Court considers the special leave petition filed by the former state government.",
+        "Assurances of accelerated infrastructure development in Amaravati by the current state government."
+      ],
+      "challenges": [
+        "Fulfilling commitments made to landowners and farmers under the land pooling scheme.",
+        "Completing long-delayed basic infrastructure projects including roads, water supply, and drainage.",
+        "Navigating ongoing litigation and legal timelines pending before the Supreme Court."
+      ],
+      "government_steps": [
+        "Parliamentary action granting statutory status to Amaravati as the state capital.",
+        "Filing an affidavit in the Supreme Court on December 10, 2024, committing to complete infrastructure within three years.",
+        "Advocate General assuring the high court that infrastructure development works are progressing rapidly."
+      ],
+      "constitutional_or_policy_link": [
+        "Separation of powers and legislative competence regarding state capital formation.",
+        "Land pooling schemes and administrative accountability towards citizen contributors."
+      ],
+      "way_forward": [
+        "A definitive resolution by the Supreme Court on pending matters to bring administrative and legal certainty to the state capital.",
+        "Timely execution of infrastructure projects and fulfillment of agreements with land-pooling farmers as per government affidavits.",
+        "Balanced development ensuring administrative efficiency and adherence to statutory mandates."
+      ],
+      "mains_notes": "The Andhra Pradesh High Court's observation that petitions against the three-capital plan are infructuous stems from Parliament granting statutory status to Amaravati. This judicial development balances ongoing Supreme Court deliberations with legislative actions, addressing historical land pooling agreements and timelines for capital infrastructure development.",
+      "mains_questions": [
+        "Discuss the implications of legislative enactments by Parliament on pending judicial proceedings regarding state capital formation in India.",
+        "Analyze the challenges involved in balancing administrative decentralization policies with contractual commitments made to landowners under land pooling schemes."
+      ],
+      "takeaway": "Andhra Pradesh High Court noted that challenges to the three-capital plan are infructuous following Parliament's statutory recognition of Amaravati as the state capital.",
+      "prelims_facts": [
+        "Amaravati received statutory status as the state capital by an Act of Parliament.",
+        "The AP High Court bench was led by Chief Justice Lisa Gill.",
+        "The APCRDA Act was repealed in July 2020 by the then state assembly."
+      ],
+      "vocabulary": [
+        {
+          "word": "Infructuous",
+          "meaning_hindi": "व्यर्थ या निष्प्रयोजन (जिसका अब कोई कानूनी प्रभाव या उद्देश्य न बचा हो)"
+        },
+        {
+          "word": "Decentralisation",
+          "meaning_hindi": "सत्ता का विकेंद्रीकरण"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Amaravati",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Amaravati"
+        },
+        {
+          "name": "Andhra Pradesh High Court",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Andhra_Pradesh_High_Court"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "आंध्र प्रदेश उच्च न्यायालय: संसद द्वारा अमरवती को वैधानिक दर्जा मिलने के बाद तीन राजधानियों की योजना को चुनौती देने वाली सभी याचिकाएं निष्प्रयोजन हुईं",
+        "story_lead": "आंध्र प्रदेश उच्च न्यायालय ने शुक्रवार को टिप्पणी की कि राज्य में तीन राजधानियों की स्थापना के पिछले वाईएसआर कांग्रेस पार्टी सरकार के फैसले को चुनौती देने वाली सभी याचिकाएं संसद द्वारा अमरवती को राज्य की राजधानी का वैधानिक दर्जा दिए जाने के बाद निष्प्रयोजन हो गई हैं।",
+        "full_article_text": "आंध्र प्रदेश उच्च न्यायालय ने शुक्रवार को कहा कि संसद द्वारा अमरवती को राज्य की राजधानी का वैधानिक दर्जा दिए जाने के बाद पिछली वाईएसआर कांग्रेस पार्टी सरकार के तीन राजधानियों के फैसले को चुनौती देने वाली सभी याचिकाएं निष्प्रयोजन हो गई हैं। मुख्य न्यायाधीश लीसा गिल, न्यायमूर्ति नैनला जया सूर्या और न्यायमूर्ति बी.एस. भानुमती की तीन सदस्यीय पीठ ने कहा कि चूंकि संसद के अधिनियम द्वारा अमरवती को राज्य की राजधानी घोषित कर दिया गया है, इसलिए तीन राजधानियों के प्रस्ताव को चुनौती देने वाली कोई भी लंबित याचिका निष्प्रयोजन हो जाएगी।",
+        "background_context": "जुलाई 2020 में, तत्कालीन वाईएसआरसीपी सरकार ने दो कानून पारित किए - एक एपीसीआरडीए अधिनियम को निरूपित करने और दूसरा तीन राजधानियों के लिए प्रशासन के विकेंद्रीकरण से संबंधित। अगस्त 2020 में किसानों ने उच्च न्यायालय का रुख किया। 3 मार्च 2022 के फैसले में उच्च न्यायालय ने अमरवती को एकमात्र राजधानी घोषित किया।",
+        "bullet_points": [
+          "आंध्र प्रदेश उच्च न्यायालय ने माना कि तीन राजधानियों के खिलाफ याचिकाएं निष्प्रयोजन हो गई हैं।",
+          "यह फैसला संसद द्वारा अमरवती को वैधानिक दर्जा दिए जाने के बाद आया है।",
+          "पीठ का नेतृत्व मुख्य न्यायाधीश लीसा गिल ने किया।",
+          "मामले की अगली सुनवाई 20 नवंबर तक टाल दी गई है।"
+        ],
+        "key_facts": [
+          "संसद ने अमरवती को राज्य की राजधानी का वैधानिक दर्जा दिया है।",
+          "उच्च न्यायालय की पीठ में मुख्य न्यायाधीश लीसा गिल शामिल थीं।"
+        ],
+        "key_locations": [
+          "आंध्र प्रदेश",
+          "अमरवती"
+        ],
+        "important_dates": [
+          "जुलाई 2020",
+          "3 मार्च 2022",
+          "10 दिसंबर 2024"
+        ]
+      },
+      "quiz": {
+        "question": "Why did the Andhra Pradesh High Court observe that petitions challenging the three-capital plan have become infructuous?",
+        "options": [
+          "Because the Supreme Court dismissed all cases permanently",
+          "Because Parliament granted statutory status to Amaravati as the state capital",
+          "Because the state government withdrew all infrastructure projects",
+          "Because farmers surrendered their lands voluntarily"
+        ],
+        "correct_answer": "Because Parliament granted statutory status to Amaravati as the state capital",
+        "explanation": "The high court noted that since Parliament granted statutory status to Amaravati as the state capital, any pending petitions challenging the three-capital proposal have become infructuous."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/all-challenges-to-3-capital-plan-infructuous-andhra-hc-101790450860627.html",
+      "published_date": "2026-09-27",
+      "id": 62,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2025/08/06/1600x900/Untitled_design_1754465014585_1754465103581.png",
+      "added_at": "2026-09-27T09:09:02.868881+05:30"
+    },
+    {
+      "category": "Health",
+      "exam_corner": true,
+      "headline": "Supreme Court Directs Reinstatement of Former Woman Air Force Officer and War Widow After 14 Years",
+      "story_lead": "The Supreme Court has ordered the reinstatement of former short service commission woman Air Force officer Priyanka Saxena after a gap of nearly 14 years. Exercising extraordinary constitutional powers under Article 142, the bench made a one-time exception recognizing her status as a war widow and an ex-Air Force officer.",
+      "full_article_text": "The Supreme Court delivered a notable judgment directing the re-induction and reinstatement of former Air Force officer Priyanka Saxena after a nearly 14-year hiatus. A bench headed by Chief Justice of India (CJI) Surya Kant, alongside justices Joymalya Bagchi and V Mohana, exercised extraordinary constitutional powers under Article 142 of the Constitution of India. The bench termed the case 'peculiar' and noted that it warranted sympathetic treatment given her status as a war widow with two school-going daughters. Saxena originally joined the Air Force Academy in Hyderabad in January 2002 and served until May 2012, when she left service in her 10th year of short service commission (SSC) following childbirth and to support her fighter-pilot husband, late Wing Commander Harshit Sinha. Tragedy struck in 2021 when her husband lost his life in a MiG-21 Bison aircraft crash near Jaisalmer. Subsequent applications for reinstatement were rejected in April 2022 because she crossed the age of 35 years under a November 2017 policy. After exhausting her plea before the Armed Forces Tribunal, the Supreme Court stepped in, ordering her to undergo a one-year refresher training and clear medical requirements before being reinstated as a Squadron Leader in the eleventh year of service, with her past service given due weightage.",
+      "background_context": "Priyanka Saxena joined the Air Force Academy, Hyderabad, in January 2002 and served with distinction, receiving an award of Commendation from the Commanding-in-Chief of the Western Air Command. She left the service in May 2012 following the birth of her first daughter and family commitments to support her husband, a fighter pilot. In 2021, her husband, Wing Commander Harshit Sinha, died in a MiG-21 Bison aircraft crash near Jaisalmer. Her subsequent applications for reinstatement were denied in April 2022 on the grounds that she had crossed the age threshold of 35 years set by a November 30, 2017 policy.",
+      "bullet_points": [
+        "Supreme Court directed the reinstatement of former short service commission woman Air Force officer Priyanka Saxena after nearly 14 years.",
+        "The ruling was delivered by a bench headed by CJI Surya Kant, exercising extraordinary powers under Article 142 of the Constitution.",
+        "Saxena is an ex-Air Force officer and the widow of late Wing Commander Harshit Sinha, who died in a MiG-21 Bison crash in 2021.",
+        "Her earlier applications for reinstatement were rejected in April 2022 as she had crossed the age of 35 years under a 2017 policy.",
+        "The court directed her to undergo a one-year refresher training and clear medical requirements before reinstatement as a Squadron Leader.",
+        "The judgment grants her a four-year extension after her short service commission and fixes her inter-se seniority with her peer group."
+      ],
+      "key_facts": [
+        "Priyanka Saxena joined the Air Force Academy, Hyderabad, in January 2002.",
+        "She left service in May 2012 in her 10th year of short service commission.",
+        "Her husband, Wing Commander Harshit Sinha, died in a MiG-21 Bison aircraft crash in 2021 near Jaisalmer.",
+        "The Supreme Court order was passed on September 21 and made public later.",
+        "The court exercised powers under Article 142 of the Constitution of India."
+      ],
+      "key_locations": [
+        "Hyderabad",
+        "Jaisalmer"
+      ],
+      "important_dates": [
+        "January 2002",
+        "May 2012",
+        "2016",
+        "2021",
+        "November 30, 2017",
+        "April 2022",
+        "September 21"
+      ],
+      "exam_relevance": [
+        "UPSC Prelims: Article 142 of the Constitution of India, Armed Forces policies.",
+        "UPSC Mains GS Paper II: Judiciary, executive policies, gender justice, and welfare of armed forces families."
+      ],
+      "upsc_analysis": "The Supreme Court's invocation of Article 142 in this case highlights the judiciary's role in delivering complete justice where existing administrative frameworks fall short. While policy frameworks like the 2017 age threshold serve general administrative purposes, this judgment underscores the necessity of judicial empathy and equitable consideration for exceptional cases involving war widows from the armed forces. It sets a singular precedent without dismantling established recruitment and service guidelines.",
+      "causes": [
+        "Priyanka Saxena left service in 2012 due to childbirth and family commitments to support her fighter-pilot husband.",
+        "The tragic death of her husband, Wing Commander Harshit Sinha, in a 2021 MiG-21 crash left her a war widow with two children.",
+        "Existing Union of India rehabilitation policies did not adequately cover her specific scenario, and she was barred by the 35-year age limit in April 2022."
+      ],
+      "impacts": [
+        "Re-induction and reinstatement of the ex-IAF officer as a Squadron Leader after completing training.",
+        "Fixation of inter-se seniority along with her current peer group, making her eligible for permanent commission and promotion benefits.",
+        "Judicial acknowledgment of gaps in rehabilitation policies for war widows of armed forces personnel."
+      ],
+      "challenges": [
+        "Rigid application of administrative age thresholds (35 years) under the November 2017 policy.",
+        "Lack of specific coverage for war widows of service personnel within existing government rehabilitation policies at the time."
+      ],
+      "government_steps": [
+        "Maintenance of a short service commission framework and general rehabilitation policies for war widows, which the Supreme Court noted left out officers like Saxena."
+      ],
+      "constitutional_or_policy_link": [
+        "Article 142 of the Constitution of India (Supreme Court's power to pass decrees and orders for doing complete justice)"
+      ],
+      "way_forward": [
+        "The Union government should review and update rehabilitation and reinstatement policies for former service personnel, particularly war widows, to prevent prolonged legal battles in exceptional circumstances.",
+        "Administrative frameworks can incorporate discretionary clauses for past service weightage."
+      ],
+      "mains_notes": "The Supreme Court's intervention under Article 142 to reinstate former IAF officer and war widow Priyanka Saxena highlights the balance between rigid administrative rules and equitable judicial relief. The case emphasizes the need for nuanced policy frameworks that account for armed forces personnel and war widows seeking re-induction after career pauses due to family obligations or tragedy.",
+      "mains_questions": [
+        "Examine the significance of Article 142 of the Constitution of India in delivering complete justice, with reference to recent judicial interventions in armed forces service matters.",
+        "Discuss the challenges faced by women officers and war widows in the armed forces regarding career continuity and policy gaps."
+      ],
+      "takeaway": "The Supreme Court used Article 142 to order the reinstatement of a former woman Air Force officer and war widow after 14 years, citing exceptional circumstances.",
+      "prelims_facts": [
+        "Article 142 grants the Supreme Court extraordinary powers to pass orders for complete justice.",
+        "Priyanka Saxena served in the Indian Air Force under a Short Service Commission (SSC) starting from 2002 until 2012.",
+        "Wing Commander Harshit Sinha lost his life in a MiG-21 Bison aircraft crash near Jaisalmer in 2021."
+      ],
+      "vocabulary": [
+        {
+          "word": "Reinstatement",
+          "meaning_hindi": "पुनर्स्थापना (पुनर्नियुक्ति)"
+        },
+        {
+          "word": "Peculiar",
+          "meaning_hindi": "विशिष्ट / अजीब"
+        },
+        {
+          "word": "Precedent",
+          "meaning_hindi": "दृष्टांत / मिसाल"
+        },
+        {
+          "word": "Refresher",
+          "meaning_hindi": "पुनश्चर्या (प्रशिक्षण)"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Supreme Court of India",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Supreme_Court_of_India"
+        },
+        {
+          "name": "Indian Air Force",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Indian_Air_Force"
+        },
+        {
+          "name": "Jaisalmer",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Jaisalmer"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "सुप्रीम कोर्ट ने 'युद्ध विधवा' पूर्व IAF अधिकारी को बहाल करने का दिया निर्देश",
+        "story_lead": "सुप्रीम कोर्ट ने लगभग 14 साल के अंतराल के बाद एक पूर्व शॉर्ट सर्विस कमीशन महिला वायु सेना अधिकारी को बहाल करने का निर्देश दिया है। उनकी 'युद्ध विधवा' स्थिति को देखते हुए अदालत ने अपने असाधारण संवैधानिक अधिकारों का उपयोग किया।",
+        "full_article_text": "सुप्रीम कोर्ट ने एक महत्वपूर्ण फैसले में पूर्व वायु सेना अधिकारी प्रियंका सक्सेना को लगभग 14 साल के अंतराल के बाद पुनः सेवा में बहाल करने का निर्देश दिया है। भारत के मुख्य न्यायाधीश (CJI) सूर्यकांत की अगुवाई वाली पीठ ने संविधान के अनुच्छेद 142 के तहत अपनी असाधारण शक्तियों का उपयोग किया। पीठ ने इस मामले को 'विशिष्ट' बताया और दो स्कूली बेटियों वाली युद्ध विधवा के प्रति सहानुभूतिपूर्ण विचार करने की बात कही। प्रियंका सक्सेना ने जनवरी 2002 में हैदराबाद स्थित वायु सेना अकादमी में ज्वाइन किया था और मई 2012 तक सेवा दी। वर्ष 2021 में जैसलमेर के पास मिग-21 बाइसन विमान दुर्घटना में उनके पति विंग कमांडर हर्षित सिन्हा का निधन हो गया था। इसके बाद उम्र सीमा (35 वर्ष) के कारण उनकी पुनर्स्थापना याचिका खारिज कर दी गई थी। सुप्रीम कोर्ट ने उन्हें एक साल का रिफ्रेशर प्रशिक्षण पूरा करने के बाद स्क्वाड्रन लीडर के रूप में बहाल करने का आदेश दिया है।",
+        "background_context": "प्रियंका सक्सेना ने जनवरी 2002 में हैदराबाद में वायु सेना अकादमी ज्वाइन की थी और मई 2012 में परिवार की जिम्मेदारियों के चलते सेवा छोड़ दी थी। 2021 में उनके पति विंग कमांडर हर्षित सिन्हा का मिग-21 दुर्घटना में निधन हो गया था।",
+        "bullet_points": [
+          "सुप्रीम कोर्ट ने पूर्व महिला वायु सेना अधिकारी प्रियंका सक्सेना को 14 साल बाद बहाल करने का आदेश दिया।",
+          "यह फैसला सीजेआई सूर्यकांत की अध्यक्षता वाली पीठ द्वारा अनुच्छेद 142 के तहत दिया गया।",
+          "सक्सेना दिवंगत विंग कमांडर हर्षित सिन्हा की पत्नी हैं, जिनकी 2021 में विमान दुर्घटना में मृत्यु हो गई थी।",
+          "अदालत ने उन्हें प्रशिक्षण और चिकित्सा आवश्यकताओं को पूरा करने के बाद स्क्वाड्रन लीडर के रूप में बहाल करने को कहा है।"
+        ],
+        "key_facts": [
+          "प्रियंका सक्सेना ने जनवरी 2002 में वायु सेना अकादमी, हैदराबाद में प्रवेश लिया था।",
+          "उनके पति विंग कमांडर हर्षित सिन्हा 2021 में एक विमान दुर्घटना में शहीद हो गए थे।"
+        ],
+        "key_locations": [
+          "हैदराबाद",
+          "जैसलमेर"
+        ],
+        "important_dates": [
+          "जनवरी 2002",
+          "मई 2012",
+          "2021",
+          "अप्रैल 2022"
+        ]
+      },
+      "quiz": {
+        "question": "भारतीय संविधान के किस अनुच्छेद के तहत सुप्रीम कोर्ट ने पूर्व IAF अधिकारी प्रियंका सक्सेना की बहाली का आदेश दिया?",
+        "options": [
+          "Article 32",
+          "Article 142",
+          "Article 226",
+          "Article 136"
+        ],
+        "correct_answer": "Article 142",
+        "explanation": "सुप्रीम कोर्ट ने अद्वितीय तथ्यों और परिस्थितियों के तहत 'पूर्ण न्याय' करने के लिए संविधान के अनुच्छेद 142 के तहत अपनी शक्तियों का उपयोग किया।"
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/reinstate-war-widow-ex-iaf-officer-rules-supreme-court-101790451281415.html",
+      "published_date": "2026-09-27",
+      "id": 61,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/New-Delhi--Feb-05--ANI---A-view-of-the-Supreme-Cou_1708109292666_1790478337031_ZpSE_74cc61d4-fdd9-4b73-b473-f8dbf916feb1_1gHg.jpg",
+      "added_at": "2026-09-27T09:09:02.868881+05:30"
+    },
+    {
+      "category": "Environment",
+      "exam_corner": true,
+      "headline": "17 Judicial Officers Recuse from Cases Involving Uttarakhand IFS Officer Sanjiv Chaturvedi",
+      "story_lead": "Seventeen judicial officers across various levels of the Indian judiciary have recused themselves from cases involving Uttarakhand-cadre Indian Forest Service (IFS) officer Sanjiv Chaturvedi since 2013. The most recent recusal occurred on September 21, when CAT Delhi bench judge Rajveer Singh Verma stepped down from hearing a petition filed by Chaturvedi.",
+      "full_article_text": "Over the years, a total of 17 judicial officers have recused themselves from cases involving Uttarakhand-cadre Indian Forest Service (IFS) officer Sanjiv Chaturvedi due to varying circumstances. This total includes two Supreme Court judges, four judges of the Uttarakhand High Court, nine Central Administrative Tribunal (CAT) judges, and two judges from the district judiciary. The latest recusal took place on September 21, when CAT Delhi bench judge Rajveer Singh Verma recused himself from hearing Chaturvedi's petition challenging a November 2021 Uttarakhand government order related to the Appraisal Report Channel of IFS officers. Prior to this, several other judges withdrew from his cases, including Justice Alok Verma and Justice Ravindra Maithani of the Uttarakhand High Court in September-October 2025 in a contempt case, Justice Manoj Tiwari in February 2024 regarding documents concerning central deputation, and Supreme Court judges Justice Ranjan Gogoi in November 2013 and Justice UU Lalit in August 2016.",
+      "background_context": "The string of judicial recusals in cases involving IFS officer Sanjiv Chaturvedi spans over a decade, starting from November 2013 when then Supreme Court judge Justice Ranjan Gogoi recused himself from a case seeking a CBI investigation into allegations of corruption and harassment raised by Chaturvedi.",
+      "bullet_points": [
+        "Seventeen judicial officers have recused themselves from cases involving Uttarakhand-cadre IFS officer Sanjiv Chaturvedi since 2013.",
+        "The group of recusing officers includes 2 Supreme Court judges, 4 Uttarakhand High Court judges, 9 CAT judges, and 2 district judiciary judges.",
+        "The latest recusal was by CAT Delhi bench judge Rajveer Singh Verma on September 21.",
+        "The September 21 petition challenged a November 2021 Uttarakhand government order related to the Appraisal Report Channel of IFS officers.",
+        "Previous recusals involve Uttarakhand High Court judges Justice Alok Verma, Justice Ravindra Maithani, and Justice Manoj Tiwari, as well as former Supreme Court judges Justice Ranjan Gogoi and Justice UU Lalit."
+      ],
+      "key_facts": [
+        "17 judicial officers have recused from Sanjiv Chaturvedi's cases.",
+        "Sanjiv Chaturvedi is an Uttarakhand-cadre Indian Forest Service (IFS) officer.",
+        "The latest recusal was by CAT Delhi bench judge Rajveer Singh Verma on September 21.",
+        "Recusals span from November 2013 to September 2025."
+      ],
+      "key_locations": [
+        "Uttarakhand",
+        "Delhi"
+      ],
+      "important_dates": [
+        "November 2013",
+        "August 2016",
+        "February 2024",
+        "September-October 2025",
+        "September 21"
+      ],
+      "exam_relevance": [
+        "UPSC Prelims: Indian judiciary and judicial recusal norms",
+        "UPSC Mains GS Paper II: Structure, organization and functioning of the Judiciary and Executive"
+      ],
+      "upsc_analysis": "Judicial recusal is a voluntary withdrawal by a judge from a case to prevent any potential conflict of interest or bias, upholding the principle of natural justice that 'justice must not only be done, but manifestly and undoubtedly be seen to be done.' The frequent recusal of multiple judges across various judicial tiers in a single petitioner's cases presents unique administrative and institutional questions regarding docket management, judicial availability, and the smooth functioning of tribunals and courts.",
+      "causes": [
+        "Varying circumstances and potential conflicts of interest necessitating judicial recusal by individual officers."
+      ],
+      "impacts": [
+        "Transfer of cases to alternative benches and registries for appropriate listing and adjudication."
+      ],
+      "challenges": [
+        "Administrative delays in case hearings and redistribution across different benches."
+      ],
+      "government_steps": [
+        "Registry direction to list matters before appropriate benches following recusals."
+      ],
+      "constitutional_or_policy_link": [
+        "Principles of Natural Justice and Judicial Independence under the Indian Constitution."
+      ],
+      "way_forward": [
+        "Ensuring transparent administrative allocation of cases and strengthening institutional mechanisms for handling recurrent recusals efficiently."
+      ],
+      "mains_notes": "Judicial recusal safeguards the impartiality of the judiciary. However, multiple recusals in cases involving a single litigant across various judicial tiers from the Supreme Court to tribunals highlight administrative challenges in case management while reaffirming the judiciary's adherence to ethical standards of avoiding bias.",
+      "mains_questions": [
+        "What is judicial recusal, and what are the constitutional and ethical principles underlying it?",
+        "Examine the administrative challenges posed by multiple judicial recusals in protracted litigation involving public servants."
+      ],
+      "takeaway": "Seventeen judicial officers have recused themselves from cases involving IFS officer Sanjiv Chaturvedi since 2013, with the latest instance occurring in September 2025.",
+      "prelims_facts": [
+        "17 judicial officers have recused from Sanjiv Chaturvedi's cases since 2013.",
+        "Recusals span the Supreme Court, Uttarakhand High Court, Central Administrative Tribunal (CAT), and district judiciary."
+      ],
+      "vocabulary": [
+        {
+          "word": "Recusal",
+          "meaning_hindi": "न्यायाधीश का खुद को मामले से अलग करना"
+        },
+        {
+          "word": "Tribunal",
+          "meaning_hindi": "अधिकरण"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Sanjiv Chaturvedi",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Sanjiv_Chaturvedi"
+        },
+        {
+          "name": "Ranjan Gogoi",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Ranjan_Gogoi"
+        },
+        {
+          "name": "U. U. Lalit",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=U._U._Lalit"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "उत्तराखंड के आईएफएस अधिकारी संजीव चतुर्वेदी से जुड़े मामलों से 17 न्यायिक अधिकारियों ने खुद को अलग किया",
+        "story_lead": "नवीनतम घटनाक्रम में 21 सितंबर को राजवीर सिंह वर्मा ने खुद को अलग किया, जो 2013 से विभिन्न परिस्थितियों के कारण न्यायाधीशों द्वारा मामलों से हटने के इतिहास में एक और नाम है।",
+        "full_article_text": "उत्तराखंड कैडर के भारतीय वन सेवा (आईएफएस) अधिकारी संजीव चतुर्वेदी से जुड़े मामलों से पिछले कुछ वर्षों में 17 न्यायिक अधिकारियों — दो उच्चतम न्यायालय के न्यायाधीशों, उत्तराखंड उच्च न्यायालय के चार न्यायाधीशों, नौ केंद्रीय प्रशासनिक न्यायाधिकरण (CAT) के न्यायाधीशों और जिला न्यायपालिका के दो न्यायाधीशों — ने खुद को अलग कर लिया है।",
+        "background_context": "चतुर्वेदी के मामलों में न्यायिक अधिकारियों के खुद को अलग करने का सिलसिला नवंबर 2013 से शुरू हुआ था।",
+        "bullet_points": [
+          "2013 से संजीव चतुर्वेदी के मामलों से 17 न्यायिक अधिकारी अलग हो चुके हैं।",
+          "इसमें उच्चतम न्यायालय और उच्च न्यायालय के न्यायाधीश शामिल हैं।",
+          "नवीनतम मामला 21 सितंबर का है।"
+        ],
+        "key_facts": [
+          "17 न्यायिक अधिकारियों ने खुद को अलग किया।"
+        ],
+        "key_locations": [
+          "उत्तराखंड",
+          "दिल्ली"
+        ],
+        "important_dates": [
+          "नवंबर 2013",
+          "अगस्त 2016",
+          "फरवरी 2024",
+          "21 सितंबर"
+        ]
+      },
+      "quiz": {
+        "question": "How many judicial officers have recused themselves from cases involving IFS officer Sanjiv Chaturvedi over the years according to the report?",
+        "options": [
+          "12",
+          "15",
+          "17",
+          "21"
+        ],
+        "correct_answer": "17",
+        "explanation": "Seventeen judicial officers across the Supreme Court, High Court, CAT, and district judiciary have recused themselves from cases involving IFS officer Sanjiv Chaturvedi over the years."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/17-judicial-officers-recuse-from-cases-involving-uttarakhand-ifs-officer-sanjiv-chaturvedi-101790474410719.html",
+      "published_date": "2026-09-27",
+      "id": 60,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/The-Uttarakhand-high-court--while-closing-a-public_1768055355098_1790474721841_i5TT_88d7d725-6237-4ee0-a31b-bcb6524276b6_us0n.jpg",
+      "added_at": "2026-09-27T09:09:02.868881+05:30"
+    },
+    {
+      "category": "World",
+      "exam_corner": true,
+      "headline": "India Advocates for Two-State Solution to Israel-Palestine Conflict at UN General Assembly",
+      "story_lead": "External Affairs Minister S. Jaishankar has reiterated India's strong support for a two-state solution to resolve the Israel-Palestine conflict, emphasizing that a durable peace in West Asia requires separate Israeli and Palestinian states. Addressing the UN General Assembly, Jaishankar also highlighted India's ongoing humanitarian aid to Palestine and called for an end to global conflicts, while strongly criticizing cross-border terrorism.",
+      "full_article_text": "During his address to the United Nations General Assembly, India's External Affairs Minister S. Jaishankar reaffirmed New Delhi's long-standing stance on the Israel-Palestine conflict, stating that a durable and lasting peace in West Asia is impossible without a two-state solution. He emphasized the establishment of separate, sovereign, independent, and viable Israeli and Palestinian states living side by side in peace within secure and recognized borders.\n\nAlongside diplomatic advocacy, India has actively contributed to humanitarian assistance for the Palestinian people. According to the Ministry of External Affairs (MEA), India has provided approximately 70 metric tonnes (MT) of humanitarian aid since the beginning of the conflict, which included 16.5 MT of medicines and medical supplies sent in late 2023. Furthermore, India dispatched 65 MT of medicines to the UN Relief and Works Agency (UNRWA) and the Palestine Ministry of Health in October and November 2024. Over the past five years, India has completed development projects worth $26 million in Palestine.\n\nIn addition to the West Asian crisis, Jaishankar addressed other global security concerns, calling for an end to hostilities in Ukraine and the Gulf, and condemning attacks on commercial shipping in international waterways. He also delivered a sharp, veiled criticism of Pakistan, describing it as a 'serial practitioner of terrorism' attempting to normalize terror activities and claim immunity from their consequences.",
+      "background_context": "India has historically supported a two-state solution to the Israel-Palestine conflict. While condemning the October 7, 2023 terror attacks on Israel and the subsequent loss of civilian lives, India backed Palestine's membership in the United Nations and has consistently provided developmental and humanitarian aid to the Palestinian population.",
+      "bullet_points": [
+        "External Affairs Minister S. Jaishankar reiterated India's support for a two-state solution at the UN General Assembly.",
+        "India advocates for a sovereign, independent, and viable State of Palestine living in peace alongside Israel.",
+        "India has provided around 70 MT of humanitarian aid to Palestinians since the start of the conflict, including 16.5 MT of medical supplies in late 2023.",
+        "In October and November 2024, India sent 65 MT of medicines to UNRWA and the Palestine Ministry of Health.",
+        "India has completed developmental projects worth $26 million in Palestine over the last five years.",
+        "Jaishankar called for an end to global conflicts in Ukraine and the Gulf, and condemned attacks on commercial shipping.",
+        "The minister criticized Pakistan at the UNGA, calling it a 'serial practitioner of terrorism' trying to normalize terror."
+      ],
+      "key_facts": [
+        "India has completed projects worth $26 million in Palestine over the last five years.",
+        "India sent 65 MT of medicines to UNRWA and the Palestine Ministry of Health in October and November 2024.",
+        "India has provided approximately 70 MT of humanitarian aid to Palestinians since the conflict began.",
+        "Ambassador Parvathaneni Harish is India's Permanent Representative to the UN."
+      ],
+      "key_locations": [
+        "West Asia",
+        "Palestine",
+        "Israel",
+        "Ukraine",
+        "Gulf"
+      ],
+      "important_dates": [
+        "October 7, 2023",
+        "October 2023",
+        "November 2023",
+        "October 2024",
+        "November 2024"
+      ],
+      "exam_relevance": [
+        "UPSC Civil Services Examination - GS Paper II: Bilateral, regional and global groupings and agreements involving India and/or affecting India's interests.",
+        "UPSC GS Paper II: India's Foreign Policy, International Relations, and Important International Institutions."
+      ],
+      "upsc_analysis": "India's foreign policy in West Asia demonstrates a balanced approach that combines historical solidarity with Palestine and strategic partnerships with Israel. By reiterating support for a sovereign, independent, and viable State of Palestine at the UNGA, India maintains its principled stand on the two-state solution. Simultaneously, India's condemnation of the October 7 terror attacks and its strong stance against state-sponsored terrorism (with reference to Pakistan) highlight its zero-tolerance policy toward terrorism. This dual approach of humanitarian diplomacy and firm counter-terrorism advocacy positions India as a responsible global power seeking regional stability.",
+      "causes": [
+        "Ongoing Israel-Hamas conflict causing severe humanitarian distress in Palestine.",
+        "The need for a durable and lasting peace framework in the West Asian region.",
+        "Attempts by neighboring states to raise bilateral issues like Kashmir and normalize terrorism at international forums."
+      ],
+      "impacts": [
+        "Reaffirmation of India's diplomatic commitment to the two-state solution on the global stage.",
+        "Continued delivery of essential medical and humanitarian aid to Palestinian civilians through UNRWA.",
+        "Strong diplomatic counter-narrative against Pakistan's attempts to misrepresent facts at the UN."
+      ],
+      "challenges": [
+        "Achieving concrete, actionable steps toward a two-state solution amidst active hostilities.",
+        "Ensuring safe and uninterrupted delivery of humanitarian assistance to affected populations.",
+        "Securing international maritime trade routes against unacceptable attacks on commercial shipping."
+      ],
+      "government_steps": [
+        "Providing 70 MT of humanitarian aid, including critical medical supplies, to Palestine.",
+        "Completing $26 million worth of development projects in Palestine over the last five years.",
+        "Backing Palestine's membership of the United Nations while condemning terror attacks on Israel."
+      ],
+      "constitutional_or_policy_link": [
+        "Article 51 of the Indian Constitution (Promotion of international peace and security)",
+        "India's traditional de-hyphenated foreign policy in the Middle East"
+      ],
+      "way_forward": [
+        "Translating global support for the two-state solution into actionable and concrete steps.",
+        "Strengthening international cooperation to protect commercial shipping and seafarers in global waterways.",
+        "Maintaining robust humanitarian channels to support civilian populations in conflict zones."
+      ],
+      "mains_notes": "India's policy on the Israel-Palestine conflict is anchored in three pillars: 1. Support for a two-state solution leading to a sovereign, independent, and viable State of Palestine living side-by-side in peace with Israel. 2. Consistent humanitarian and developmental assistance, as evidenced by $26 million in completed projects and over 135 MT of medical and relief aid. 3. Uncompromising opposition to terrorism in all its forms, alongside calls for peaceful resolution of global conflicts in Ukraine and the Gulf.",
+      "mains_questions": [
+        "Examine India's policy towards the Israel-Palestine conflict. How does India balance its historical support for a sovereign Palestinian state with its growing strategic ties with Israel?",
+        "Analyze the role of humanitarian diplomacy in India's foreign policy, with special reference to its recent aid contributions to Palestine."
+      ],
+      "takeaway": "India firmly advocates for a two-state solution as the only path to durable peace in West Asia while continuing its robust humanitarian support to Palestine.",
+      "prelims_facts": [
+        "India completed projects worth $26 million in Palestine over the last five years.",
+        "India sent 65 MT of medicines to UNRWA and the Palestine Ministry of Health in late 2024.",
+        "Parvathaneni Harish is India's Permanent Representative to the United Nations."
+      ],
+      "vocabulary": [
+        {
+          "word": "Durable",
+          "meaning_hindi": "स्थायी / टिकाऊ"
+        },
+        {
+          "word": "Reiterated",
+          "meaning_hindi": "दोहराया"
+        },
+        {
+          "word": "Sovereign",
+          "meaning_hindi": "संप्रभु"
+        },
+        {
+          "word": "Viable",
+          "meaning_hindi": "व्यवहार्य / सक्षम"
+        },
+        {
+          "word": "Hostilities",
+          "meaning_hindi": "शत्रुता / युद्ध"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "S. Jaishankar",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/S._Jaishankar"
+        },
+        {
+          "name": "Parvathaneni Harish",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Parvathaneni_Harish"
+        },
+        {
+          "name": "Palestine",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/State_of_Palestine"
+        },
+        {
+          "name": "Israel",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Israel"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "भारत ने संयुक्त राष्ट्र महासभा में इजरायल-फिलिस्तीन संघर्ष के लिए दो-राज्य समाधान का समर्थन किया",
+        "story_lead": "विदेश मंत्री एस. जयशंकर ने इजरायल-फिलिस्तीन संघर्ष के दो-राज्य समाधान के लिए भारत के मजबूत समर्थन को दोहराया है, और कहा है कि पश्चिम एशिया में स्थायी शांति के लिए अलग इजरायली और फिलिस्तीनी राज्यों की स्थापना आवश्यक है। संयुक्त राष्ट्र महासभा को संबोधित करते हुए, जयशंकर ने फिलिस्तीन को भारत की निरंतर मानवीय सहायता पर भी प्रकाश डाला और वैश्विक संघर्षों को समाप्त करने का आह्वान किया।",
+        "full_article_text": "संयुक्त राष्ट्र महासभा में अपने संबोधन के दौरान, भारत के विदेश मंत्री एस. जयशंकर ने इजरायल-फिलिस्तीन संघर्ष पर नई दिल्ली के दीर्घकालिक रुख की पुष्टि की और कहा कि पश्चिम एशिया में स्थायी शांति दो-राज्य समाधान के बिना असंभव है। उन्होंने सुरक्षित और मान्यता प्राप्त सीमाओं के भीतर इजरायल के साथ शांति से रहने वाले एक संप्रभु, स्वतंत्र और व्यवहार्य फिलिस्तीन राज्य की स्थापना पर जोर दिया।\n\nराजनयिक वकालत के साथ-साथ, भारत फिलिस्तीनी लोगों के लिए मानवीय सहायता में सक्रिय रूप से योगदान दे रहा है। विदेश मंत्रालय (MEA) के अनुसार, भारत ने संघर्ष की शुरुआत से अब तक लगभग 70 मीट्रिक टन (MT) मानवीय सहायता प्रदान की है, जिसमें 2023 के अंत में भेजी गई 16.5 मीट्रिक टन दवाएं और चिकित्सा आपूर्ति शामिल थी। इसके अलावा, भारत ने अक्टूबर और नवंबर 2024 में संयुक्त राष्ट्र राहत और कार्य एजेंसी (UNRWA) और फिलिस्तीन स्वास्थ्य मंत्रालय को 65 मीट्रिक टन दवाएं भेजीं। पिछले पांच वर्षों में, भारत ने फिलिस्तीन में 26 मिलियन डॉलर मूल्य की विकास परियोजनाएं पूरी की हैं।\n\nपश्चिम एशियाई संकट के अलावा, जयशंकर ने अन्य वैश्विक सुरक्षा चिंताओं को भी संबोधित किया, जिसमें यूक्रेन और खाड़ी में शत्रुता को समाप्त करने का आह्वान किया गया और अंतरराष्ट्रीय जलमार्गों में वाणिज्यिक जहाजों पर हमलों की निंदा की गई। उन्होंने पाकिस्तान की भी तीखी आलोचना की और उसे 'आतंकवाद का आदतन अपराधी' बताया जो आतंकवाद को सामान्य बनाने और उसके परिणामों से छूट का दावा करने का प्रयास कर रहा है।",
+        "background_context": "भारत ने ऐतिहासिक रूप से इजरायल-फिलिस्तीन संघर्ष के दो-राज्य समाधान का समर्थन किया है। 7 अक्टूबर, 2023 को इजरायल पर हुए आतंकवादी हमलों और उसके बाद नागरिकों की जान जाने की निंदा करते हुए, भारत ने संयुक्त राष्ट्र में फिलिस्तीन की सदस्यता का समर्थन किया और फिलिस्तीनी आबादी को लगातार विकासात्मक और मानवीय सहायता प्रदान की है।",
+        "bullet_points": [
+          "विदेश मंत्री एस. जयशंकर ने संयुक्त राष्ट्र महासभा में दो-राज्य समाधान के लिए भारत के समर्थन को दोहराया।",
+          "भारत इजरायल के साथ शांति से रहने वाले एक संप्रभु, स्वतंत्र और व्यवहार्य फिलिस्तीन राज्य की वकालत करता है।",
+          "भारत ने संघर्ष की शुरुआत से फिलिस्तीनियों को लगभग 70 मीट्रिक टन मानवीय सहायता प्रदान की है, जिसमें 2023 के अंत में 16.5 मीट्रिक टन चिकित्सा आपूर्ति शामिल है।",
+          "अक्टूबर और नवंबर 2024 में, भारत ने UNRWA और फिलिस्तीन स्वास्थ्य मंत्रालय को 65 मीट्रिक टन दवाएं भेजीं।",
+          "भारत ने पिछले पांच वर्षों में फिलिस्तीन में 26 मिलियन डॉलर मूल्य की विकास परियोजनाएं पूरी की हैं।",
+          "जयशंकर ने यूक्रेन और खाड़ी में वैश्विक संघर्षों को समाप्त करने का आह्वान किया और वाणिज्यिक जहाजों पर हमलों की निंदा की।",
+          "मंत्री ने संयुक्त राष्ट्र महासभा में पाकिस्तान की आलोचना की और उसे आतंकवाद को सामान्य बनाने की कोशिश करने वाला 'आतंकवाद का आदतन अपराधी' कहा।"
+        ],
+        "key_facts": [
+          "भारत ने पिछले पांच वर्षों में फिलिस्तीन में 26 मिलियन डॉलर मूल्य की परियोजनाएं पूरी की हैं।",
+          "भारत ने अक्टूबर और नवंबर 2024 में UNRWA और फिलिस्तीन स्वास्थ्य मंत्रालय को 65 मीट्रिक टन दवाएं भेजीं।",
+          "संघर्ष की शुरुआत से भारत ने फिलिस्तीनियों को लगभग 70 मीट्रिक टन मानवीय सहायता प्रदान की है।",
+          "राजदूत पार्वथनेनी हरीश संयुक्त राष्ट्र में भारत के स्थायी प्रतिनिधि हैं।"
+        ],
+        "key_locations": [
+          "पश्चिम एशिया",
+          "फिलिस्तीन",
+          "इजरायल",
+          "यूक्रेन",
+          "खाड़ी"
+        ],
+        "important_dates": [
+          "7 अक्टूबर, 2023",
+          "अक्टूबर 2023",
+          "नवंबर 2023",
+          "अक्टूबर 2024",
+          "नवंबर 2024"
+        ]
+      },
+      "quiz": {
+        "question": "According to the official data mentioned in the source, what is the total value of development projects completed by India in Palestine over the last five years?",
+        "options": [
+          "$10 million",
+          "$15 million",
+          "$26 million",
+          "$50 million"
+        ],
+        "correct_answer": "$26 million",
+        "explanation": "The source text explicitly states that over the last five years, India has completed projects worth $26 million in Palestine."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/india-un-speech-jaishankar-israel-palestine-pakistan-global-wars-101790474949882.html",
+      "published_date": "2026-09-27",
+      "id": 59,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/UNGA-2026-3_1790474926702_UeWL_1790474946675_4uUk_689f1281-d7ef-40f0-ae02-08e46d270357_LbqY.jpg",
+      "added_at": "2026-09-27T09:09:02.868881+05:30"
+    },
+    {
+      "category": "World",
+      "exam_corner": true,
+      "headline": "Jaishankar Addresses UNGA on Global Crises; Russia Backs India's UNSC Seat Bid",
+      "story_lead": "External Affairs Minister S Jaishankar addressed the 81st session of the UN General Assembly, highlighting the 'weaponisation of everything' including finance, technology, and supply chains. Concurrently, Russian Foreign Minister Sergey Lavrov publicly backed India and Brazil for permanent seats in the UN Security Council.",
+      "full_article_text": "During the general debate of the United Nations General Assembly's 81st session in New York, India's External Affairs Minister S Jaishankar stated that the world stands on the edge of an abyss due to the leverage and weaponisation of financial systems, market access, supply chains, and technology. He emphasized that developing nations are bearing the brunt of interconnected crises regarding food, fuel, fertiliser, and finance, with a looming El Nino phenomenon threatening to further aggravate the situation.\n\nIn another significant development at the UN, Russian Foreign Minister Sergey Lavrov reaffirmed Russia's support for expanding the United Nations Security Council (UNSC) to enhance the representation of Asia, Africa, and Latin America, explicitly supporting permanent candidatures for India and Brazil.\n\nDomestically, the Election Commission of India (ECI), led by Chief Election Commissioner Gyanesh Kumar alongside Election Commissioners SS Sandhu and Vivek Joshi, addressed recent criticisms concerning its functioning. The Commission asserted that all decisions regarding the special intensive revision were unanimous, initiated a review of its backend software, and assured that future digital initiatives would undergo comprehensive checks and discussions.",
+      "background_context": "Developing nations face compounding economic stresses alongside emerging geopolitical strains, prompting calls for global financial and governance structural reforms, including expanding the UN Security Council representation for global south nations.",
+      "bullet_points": [
+        "EAM S Jaishankar addressed the 81st UN General Assembly session in New York.",
+        "Highlighted the weaponisation of technology, markets, finance, and supply chains.",
+        "Noted that developing nations face critical shortages in food, fuel, fertiliser, and finance.",
+        "Russian FM Sergey Lavrov supported permanent UNSC seats for India and Brazil.",
+        "ECI panel confirmed all decisions regarding special intensive revision were unanimous.",
+        "ECI initiated a software review and mandated checks for future digital projects."
+      ],
+      "key_facts": [
+        "S Jaishankar spoke at the UN General Assembly's 81st session.",
+        "Developing countries are suffering from food, fuel, fertiliser, and finance crises.",
+        "Sergey Lavrov backed expanding UNSC permanent representation to include Asia, Africa, and Latin America.",
+        "ECI leadership consists of Chief Election Commissioner Gyanesh Kumar and Election Commissioners SS Sandhu and Vivek Joshi."
+      ],
+      "key_locations": [
+        "New York",
+        "India",
+        "Russia",
+        "Brazil"
+      ],
+      "important_dates": [
+        "September 27"
+      ],
+      "exam_relevance": [
+        "UPSC Prelims: UN General Assembly sessions, UNSC expansion, ECI institutional framework.",
+        "UPSC Mains GS Paper II: Bilateral, regional and global groupings; India's foreign policy and UN reform demands."
+      ],
+      "upsc_analysis": "The UNGA addresses underscore growing vulnerabilities in international trade and global supply chains due to non-military leverage ('weaponisation of everything'). Support from permanent members like Russia for India's UNSC candidacy highlights ongoing diplomatic momentum for multilateral institutional reforms, while institutional transparency in constitutional bodies like the ECI remains vital for domestic democratic credibility.",
+      "causes": [
+        "Leveraging of technology, finance, and supply chains for geopolitical purposes.",
+        "Escalating supply bottlenecks affecting essential goods like food, fuel, and fertilisers.",
+        "Controversy and public scrutiny regarding ECI backend software and operational decisions."
+      ],
+      "impacts": [
+        "Heightened economic vulnerability for developing nations.",
+        "Increased pressure for UN Security Council reforms to include developing regions.",
+        "Review and regulatory checks on institutional digital infrastructure within the ECI."
+      ],
+      "challenges": [
+        "Mitigating the compounding effects of climate phenomena like El Nino on global food security.",
+        "Achieving consensus among P5 members on structural UNSC expansion.",
+        "Ensuring transparent and universally trusted digital initiatives in electoral management."
+      ],
+      "government_steps": [
+        "EAM Jaishankar advocated at the UNGA against the weaponisation of essential economic systems.",
+        "ECI established a software review mechanism and pledged further checks on digital initiatives."
+      ],
+      "constitutional_or_policy_link": [
+        "Article 324 of the Indian Constitution governing the powers of the Election Commission of India.",
+        "UN Charter frameworks regarding international security and UNSC membership."
+      ],
+      "way_forward": [
+        "Promote equitable international supply chain frameworks to protect developing economies.",
+        "Pursue diplomatic channels to translate support from UN members into structural UNSC reforms.",
+        "Maintain institutional transparency and rigorous stakeholder consultation in electoral tech deployments."
+      ],
+      "mains_notes": "Key issues highlighted: 1. 'Weaponisation of everything' affects developing countries primarily across 4 Fs (Food, Fuel, Fertiliser, Finance). 2. UNSC reform momentum backed by Russian support for India and Brazil. 3. ECI's unanimous decision-making framework and software review process under CEC Gyanesh Kumar.",
+      "mains_questions": [
+        "Discuss the implications of the 'weaponisation' of global supply chains and financial networks on developing nations, as highlighted in recent multilateral forums.",
+        "Examine the rationale and challenges behind reforming the United Nations Security Council to better reflect contemporary global realities."
+      ],
+      "takeaway": "India continues to champion the concerns of developing nations while pushing for structural reforms in global bodies like the UN Security Council.",
+      "prelims_facts": [
+        "The 81st UNGA general debate was held in New York.",
+        "Russian FM Sergey Lavrov supported permanent UNSC seats for India and Brazil.",
+        "The ECI leadership includes CEC Gyanesh Kumar and ECs SS Sandhu and Vivek Joshi."
+      ],
+      "vocabulary": [
+        {
+          "word": "Weaponisation",
+          "meaning_hindi": "शस्त्रीकरण / किसी साधन का हथियार के रूप में उपयोग"
+        },
+        {
+          "word": "Unanimous",
+          "meaning_hindi": "सर्वसम्मत / सर्वसम्मति से"
+        },
+        {
+          "word": "Exacerbate",
+          "meaning_hindi": "स्थिति को और बिगाड़ना या गंभीर बनाना"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "S Jaishankar",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=S_Jaishankar"
+        },
+        {
+          "name": "Sergey Lavrov",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Sergey_Lavrov"
+        },
+        {
+          "name": "Election Commission of India",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Election_Commission_of_India"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "जयशंकर ने संयुक्त राष्ट्र महासभा में वैश्विक संकटों पर बात की; रूस ने UNSC की स्थायी सीट के लिए भारत का समर्थन किया",
+        "story_lead": "संयुक्त राष्ट्र महासभा के 81वें सत्र को संबोधित करते हुए विदेश मंत्री एस जयशंकर ने वित्त, प्रौद्योगिकी और आपूर्ति श्रृंखलाओं के 'शस्त्रीकरण' पर चेतावनी दी। वहीं, रूसी विदेश मंत्री सर्गेई लावरोव ने संयुक्त राष्ट्र सुरक्षा परिषद में स्थायी सीटों के लिए भारत और ब्राजील का सार्वजनिक रूप से समर्थन किया।",
+        "full_article_text": "न्यू यॉर्क में संयुक्त राष्ट्र महासभा के 81वें सत्र की सामान्य चर्चा के दौरान भारत के विदेश मंत्री एस जयशंकर ने कहा कि वित्तीय प्रणालियों, बाजार तक पहुंच, आपूर्ति श्रृंखलाओं और प्रौद्योगिकी के अनुचित उपयोग के कारण दुनिया आज संकट के मुहाने पर खड़ी है। उन्होंने जोर देकर कहा कि विकासशील देश भोजन, ईंधन, उर्वरक और वित्त से जुड़े परस्पर जुड़े संकटों का सामना कर रहे हैं, जिन्हें अल नीनो जैसी स्थितियां और बढ़ा सकती हैं।\n\nसंयुक्त राष्ट्र में एक अन्य महत्वपूर्ण घटनाक्रम में, रूसी विदेश मंत्री सर्गेई लावरोव ने एशिया, अफ्रीका और लैटिन अमेरिका के प्रतिनिधित्व को बढ़ाने के लिए संयुक्त राष्ट्र सुरक्षा परिषद (UNSC) के विस्तार का समर्थन किया और भारत तथा ब्राजील की स्थायी सदस्यता की उम्मीदवारी का स्पष्ट रूप से समर्थन किया।\n\nअंतरराष्ट्रीय मंच के साथ-साथ, घरेलू स्तर पर मुख्य चुनाव आयुक्त ज्ञानेश कुमार और चुनाव आयुक्त एसएस संधु तथा विवेक जोशी की उपस्थिति में भारत के निर्वाचन आयोग (ECI) ने स्पष्ट किया कि विशेष गहन समीक्षा पर सभी फैसले सर्वसम्मति से लिए गए थे। आयोग ने अपने बैकएंड सॉफ्टवेयर की समीक्षा शुरू की है और भविष्य की डिजिटल पहलों के लिए समीक्षा प्रक्रिया का आश्वासन दिया है।",
+        "background_context": "विकासशील देशों को भू-राजनीतिक तनावों के साथ-साथ आर्थिक दबाव का सामना करना पड़ रहा है, जिससे वैश्विक निकायों में संरचनात्मक सुधारों की मांग बढ़ रही है।",
+        "bullet_points": [
+          "विदेश मंत्री एस जयशंकर ने न्यू यॉर्क में संयुक्त राष्ट्र महासभा के 81वें सत्र को संबोधित किया।",
+          "प्रौद्योगिकी, बाजार, वित्त और आपूर्ति श्रृंखलाओं के शस्त्रीकरण पर चिंता जताई।",
+          "विकासशील देशों में भोजन, ईंधन, उर्वरक और वित्त संकट का उल्लेख किया।",
+          "रूसी विदेश मंत्री सर्गेई लावरोव ने भारत और ब्राजील के लिए स्थायी UNSC सीट का समर्थन किया।",
+          "ECI ने पुष्टि की कि विशेष गहन समीक्षा संबंधी सभी निर्णय सर्वसम्मत थे।",
+          "ECI ने अपने सॉफ्टवेयर समीक्षा और डिजिटल पहलों की जांच का आश्वासन दिया।"
+        ],
+        "key_facts": [
+          "एस जयशंकर ने संयुक्त राष्ट्र महासभा के 81वें सत्र में भाषण दिया।",
+          "विकासशील देश 4F (फूड, फ्यूल, फर्टिलाइजर, फाइनेंस) संकट से प्रभावित हैं।",
+          "सर्गेई लावरोव ने भारत और ब्राजील की स्थायी UNSC सदस्यता का समर्थन किया।",
+          "ECI के नेतृत्व में मुख्य चुनाव आयुक्त ज्ञानेश कुमार और चुनाव आयुक्त एसएस संधु व विवेक जोशी शामिल हैं।"
+        ],
+        "key_locations": [
+          "न्यू यॉर्क",
+          "भारत",
+          "रूस",
+          "ब्राजील"
+        ],
+        "important_dates": [
+          "27 सितंबर"
+        ]
+      },
+      "quiz": {
+        "question": "Which foreign minister explicitly backed India's candidature for a permanent seat on the UN Security Council during the UN General Assembly session?",
+        "options": [
+          "A) Russian Foreign Minister Sergey Lavrov",
+          "B) US Secretary of State Antony Blinken",
+          "C) UK Foreign Secretary David Cameron",
+          "D) French Foreign Minister Jean-Yves Le Drian"
+        ],
+        "correct_answer": "A) Russian Foreign Minister Sergey Lavrov",
+        "explanation": "Russian Foreign Minister Sergey Lavrov explicitly backed India's and Brazil's candidatures for a permanent seat on the United Nations Security Council during his UNGA address."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/india-un-speech-jaishankar-pakistan-russia-unsc-seat-asian-games-avengers-endgame-encore-latest-news-101790478062149.html",
+      "published_date": "2026-09-27",
+      "id": 58,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/UN_1790478195998_LavI_1790478196180_Bt6z_c78b0131-4c53-4a18-9dc3-7fe6aea8f56a_x3fg.JPG",
+      "added_at": "2026-09-27T09:09:02.868881+05:30"
+    },
+    {
       "category": "World",
       "exam_corner": true,
       "headline": "External Affairs Minister S Jaishankar Criticizes Pakistan at UNGA, Emphasizes India's Right to Defend Against Terrorism",
@@ -7343,6 +9374,6 @@
       "added_at": "2026-09-27T00:10:11.641122+05:30"
     }
   ],
-  "updated_at": "2026-09-27T06:13:47.165187+05:30",
-  "count": 57
+  "updated_at": "2026-09-27T09:09:02.868881+05:30",
+  "count": 72
 }
