@@ -15,6 +15,2019 @@
       {
         "category": "India",
         "exam_corner": true,
+        "headline": "Boeing identifies software glitch in B737 MAX planes, issues advisory to airlines",
+        "story_lead": "Plane maker Boeing has identified a software issue in its B737 MAX aircraft that could lead to the disengagement of the automated flight guidance system during a second landing attempt. Following this, Boeing has issued an advisory to all 737 operators instructing them to reset the system as a precautionary measure. The issue affects Indian carriers like Air India Express and Akasa Air, which operate these aircraft.",
+        "full_article_text": "Plane manufacturer Boeing has detected a software issue in its B737 MAX planes that may cause a reduction in automation during a landing scenario, specifically resulting in the disengagement of the automated flight guidance system in a second attempt to land at an airport. To address the issue, Boeing informed all 737 operators last month and shared information reinforcing existing pilot procedures for safely handling such cases. As a precautionary measure, the OEM has advised airline partners to reset the system once a MAX lands in a second attempt. In India, two airlines—Air India Express (53 aircraft) and Akasa Air (43 aircraft)—operate around 96 of these planes. Akasa Air confirmed it is coordinating closely with Boeing and that its operations remain safe. This development follows a separate recent incident where Airbus detected a quality issue with the surface protection coating on the fuselage of many of its A321Neo narrow-body planes, which are operated by Air India and IndiGo in India.",
+        "background_context": "The aviation sector has recently witnessed technical and quality scrutiny involving major original equipment manufacturers (OEMs). Prior to Boeing's advisory regarding B737 MAX planes, Airbus detected a quality issue with the surface protection coating on the fuselage of its A321Neo planes, which are operated in India by Air India and IndiGo.",
+        "bullet_points": [
+          "Boeing identified a software issue in B737 MAX planes causing potential disengagement of the automated flight guidance system during a second landing attempt.",
+          "Boeing issued a bulletin and advisory to all 737 operators to reset the system upon landing as a precaution.",
+          "In India, Air India Express operates 53 and Akasa Air operates 43 B737 MAX aircraft, totaling 96 planes.",
+          "Akasa Air confirmed that its operations remain safe and that it is closely coordinating with Boeing.",
+          "The incident follows a recent quality issue reported by Airbus regarding the surface protection coating on A321Neo narrow-body planes."
+        ],
+        "key_facts": [
+          "Boeing identified a software glitch in B737 MAX planes affecting second landing attempts.",
+          "Air India Express operates 53 B737 MAX aircraft in India.",
+          "Akasa Air operates 43 B737 MAX aircraft in India.",
+          "Airbus recently detected a quality issue with surface protection coating on A321Neo planes."
+        ],
+        "key_locations": [
+          "India"
+        ],
+        "important_dates": [
+          "Last month"
+        ],
+        "exam_relevance": [
+          "Prelims: Current events involving transport, aviation safety, and aviation regulators like DGCA.",
+          "Mains (GS III): Infrastructure, aviation safety standards, technological issues in critical transport sectors."
+        ],
+        "upsc_analysis": "Aviation safety is a critical component of national infrastructure and transportation logistics. Incidents involving major global aerospace manufacturers like Boeing and Airbus highlight the importance of rigorous regulatory oversight by bodies such as the Directorate General of Civil Aviation (DGCA) in India. Ensuring passenger safety requires continuous monitoring, prompt advisory compliance by airlines, and robust maintenance protocols.",
+        "causes": [
+          "A software glitch in Boeing B737 MAX aircraft affecting automated flight guidance systems during second landing attempts."
+        ],
+        "impacts": [
+          "Issuance of safety bulletins and advisories to global operators including Indian airlines.",
+          "Call for precautionary system resets by pilots during landing scenarios."
+        ],
+        "challenges": [
+          "Maintaining passenger confidence and operational safety amidst technical glitches in commercial aircraft fleets."
+        ],
+        "government_steps": [
+          "Queries sent to the civil aviation ministry regarding DGCA advisories (no official response elicited at the time of report)."
+        ],
+        "constitutional_or_policy_link": [
+          "National Civil Aviation Policy and regulatory oversight by the Directorate General of Civil Aviation (DGCA)."
+        ],
+        "way_forward": [
+          "Strict adherence to OEM advisories and standard operating procedures by commercial airlines.",
+          "Enhanced proactive monitoring and safety audits by aviation regulators like the DGCA."
+        ],
+        "mains_notes": "Global aircraft manufacturers like Boeing and Airbus have recently reported technical and quality issues, including a software glitch in Boeing B737 MAX planes and surface coating issues in Airbus A321Neo aircraft. Indian carriers operating these fleets, such as Air India Express, Akasa Air, Air India, and IndiGo, must strictly implement safety advisories and regulatory guidelines to ensure passenger safety.",
+        "mains_questions": [
+          "Discuss the significance of regulatory oversight in ensuring aviation safety in light of recent technical glitches reported by major aircraft manufacturers.",
+          "Analyze the operational implications of aircraft software and manufacturing issues for Indian commercial airlines."
+        ],
+        "takeaway": "Boeing has issued an advisory to B737 MAX operators, including Indian carriers Akasa Air and Air India Express, to address a software glitch affecting landing automation.",
+        "prelims_facts": [
+          "Air India Express operates 53 B737 MAX aircraft.",
+          "Akasa Air operates 43 B737 MAX aircraft.",
+          "Boeing B737 MAX planes experienced a software issue affecting the automated flight guidance system during second landing attempts."
+        ],
+        "vocabulary": [
+          {
+            "word": "Glitch",
+            "meaning_hindi": "तकनीकी खराबी"
+          },
+          {
+            "word": "Advisory",
+            "meaning_hindi": "सलाह या चेतावनी"
+          },
+          {
+            "word": "Precautionary",
+            "meaning_hindi": "एहतियाती"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Boeing",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Boeing"
+          },
+          {
+            "name": "Airbus",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Airbus"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "बोइंग ने सॉफ्टवेयर गड़बड़ी की पहचान की, एयरलाइंस को बुलेटिन जारी किया",
+          "story_lead": "विमान निर्माता बोइंग ने अपने B737 MAX विमानों में एक सॉफ्टवेयर समस्या का पता लगाया है, जिसके कारण हवाई अड्डे पर लैंडिंग के दूसरे प्रयास में स्वचालित उड़ान मार्गदर्शन प्रणाली (automated flight guidance system) बंद हो सकती है। इसके बाद, बोइंग ने एयरलाइंस के लिए एक सलाह जारी की है।",
+          "full_article_text": "विमान निर्माता बोइंग ने अपने B737 MAX विमानों में एक सॉफ्टवेयर समस्या का पता लगाया है, जिससे लैंडिंग के दौरान ऑटोमेशन में कमी आ सकती है। इसे दूर करने के लिए बोइंग ने सभी ऑपरेटरों को एहतियाती उपाय के रूप में सिस्टम को रीसेट करने की सलाह दी है। भारत में एयर इंडिया एक्सप्रेस और अकासा एयर के पास ऐसे विमान हैं।",
+          "background_context": "विमानन क्षेत्र में हाल ही में बोइंग और एयरबैस जैसे निर्माताओं द्वारा तकनीकी और गुणवत्ता संबंधी मुद्दों की पहचान की गई है।",
+          "bullet_points": [
+            "बोइंग ने B737 MAX विमानों में सॉफ्टवेयर समस्या की पहचान की।",
+            "एयरलाइंस को सिस्टम रीसेट करने के लिए सलाह जारी की गई।",
+            "भारत में एयर इंडिया एक्सप्रेस और अकासा एयर B737 MAX का संचालन करती हैं।"
+          ],
+          "key_facts": [
+            "बोइंग ने B737 MAX विमानों के लिए सलाह जारी की है।"
+          ],
+          "key_locations": [
+            "भारत"
+          ],
+          "important_dates": [
+            "पिछले महीने"
+          ]
+        },
+        "quiz": {
+          "question": "Which aircraft model was recently found to have a software glitch by Boeing regarding the automated flight guidance system during a second landing attempt?",
+          "options": [
+            "Airbus A321Neo",
+            "Boeing B737 MAX",
+            "Boeing 787 Dreamliner",
+            "Airbus A350"
+          ],
+          "correct_answer": "Boeing B737 MAX",
+          "explanation": "Plane maker Boeing detected a software issue in its B737 MAX planes that may result in the disengagement of the automated flight guidance system in a second attempt to land."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/boeing-identifies-software-glitch-issues-a-bulletin-to-airlines-101790512492436.html",
+        "published_date": "2026-09-27",
+        "id": 131,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/The-original-equipment-manufacturer--OEM--has-been_1790512486574_Cq4L.jpg",
+        "added_at": "2026-09-27T21:07:21.061890+05:30"
+      },
+      {
+        "category": "Sports",
+        "exam_corner": false,
+        "headline": "Asian Games 2026 Day 9: Ancy Sojan Wins Silver in Women's Long Jump",
+        "story_lead": "Ancy Sojan won a silver medal for India in athletics after finishing second in the women's long jump event at the Asian Games 2026. Additionally, Abhay Singh and Ananat Singh secured silver medals in squash, while Tejaswin Shankar clinched bronze in the men's decathlon event.",
+        "full_article_text": "On Day 9 of the Asian Games 2026, Indian athletes delivered notable performances across athletics, squash, and decathlon events. Ancy Sojan brought home a silver medal for India in athletics by finishing second in the women's long jump event. In squash, Abhay Singh and Ananat Singh both secured silver medals after going down in their respective finals. Meanwhile, Tejaswin Shankar finished third to clinch a bronze medal in the men's decathlon event, adding to India's medal tally at the continental multi-sport event.",
+        "background_context": "The Asian Games serve as a major continental multi-sport event where athletes from across Asia compete in various disciplines, providing crucial international exposure and representing national sporting achievements.",
+        "bullet_points": [
+          "Ancy Sojan won silver in the women's long jump event at the Asian Games 2026.",
+          "Abhay Singh and Ananat Singh secured silver medals in their respective squash finals.",
+          "Tejaswin Shankar clinched a bronze medal in the men's decathlon event.",
+          "The events took place on Day 9 of the Asian Games."
+        ],
+        "key_facts": [
+          "Ancy Sojan won silver in women's long jump.",
+          "Abhay Singh and Ananat Singh won silver in squash finals.",
+          "Tejaswin Shankar won bronze in men's decathlon."
+        ],
+        "key_locations": [
+          "India"
+        ],
+        "important_dates": [
+          "Sept 27"
+        ],
+        "exam_relevance": [
+          "Prelims: Current affairs involving international sports events and Indian medal winners at the Asian Games."
+        ],
+        "upsc_analysis": "Performances in international sporting events like the Asian Games reflect the state of sports infrastructure, athlete training programs, and sports diplomacy, which are relevant for analyzing India's progress in sports administration and youth development under governance frameworks.",
+        "causes": [
+          "Athletic training and competitive participation at the Asian Games 2026."
+        ],
+        "impacts": [
+          "Enhancement of India's medal tally and international sporting recognition."
+        ],
+        "challenges": [
+          "Maintaining sustained high-performance training regimens for international multi-sport competitions."
+        ],
+        "government_steps": [
+          "Support for athletes participating in international events through national sports bodies."
+        ],
+        "constitutional_or_policy_link": [
+          "Promotion of sports and physical culture as part of national development and youth welfare."
+        ],
+        "way_forward": [
+          "Continuous investment in grassroots sports infrastructure and specialized coaching facilities to nurture medal prospects."
+        ],
+        "mains_notes": "Indian athletes secured multiple medals on Day 9 of the Asian Games 2026, highlighting competitive performances in athletics (Ancy Sojan - silver in long jump), squash (Abhay Singh and Ananat Singh - silver), and decathlon (Tejaswin Shankar - bronze).",
+        "mains_questions": [
+          "Discuss the significance of international multi-sport events like the Asian Games in promoting sports culture and athlete development in India."
+        ],
+        "takeaway": "Indian athletes won multiple medals including silver in women's long jump, squash, and bronze in men's decathlon on Day 9 of the Asian Games 2026.",
+        "prelims_facts": [
+          "Ancy Sojan won silver in women's long jump at Asian Games 2026.",
+          "Tejaswin Shankar won bronze in men's decathlon."
+        ],
+        "vocabulary": [
+          {
+            "word": "Decathlon",
+            "meaning_hindi": "दस खेलों की प्रतियोगिता"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Ancy Sojan",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Ancy_Sojan"
+          },
+          {
+            "name": "Tejaswin Shankar",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Tejaswin_Shankar"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "एशियाई खेल 2026 दिन 9: एंसी सोजन ने महिला लंबी कूद में रजत पदक जीता",
+          "story_lead": "एंसी सोजन ने एशियाई खेलों में महिला लंबी कूद स्पर्धा में दूसरा स्थान हासिल कर भारत के लिए एथलेटिक्स में रजत पदक जीता। इसके अलावा, अभय सिंह और अननत सिंह ने स्क्वैश में रजत पदक जीते, जबकि तेजस्विन शंकर ने पुरुषों की डेकाथलन स्पर्धा में कांस्य पदक हासिल किया।",
+          "full_article_text": "एशियाई खेल 2026 के नौवें दिन भारतीय एथलीटों ने एथलेटिक्स, स्क्वैश और डेकाथलन स्पर्धाओं में उल्लेखनीय प्रदर्शन किया। एंसी सोजन ने महिला लंबी कूद स्पर्धा में दूसरा स्थान प्राप्त कर भारत के लिए रजत पदक जीता। स्क्वैश में, अभय सिंह और अननत सिंह दोनों ने अपने-अपने फाइनल मुकाबलों में रजत पदक हासिल किए। इस बीच, तेजस्विन शंकर ने पुरुषों की डेकाथलन स्पर्धा में तीसरा स्थान प्राप्त कर कांस्य पदक जीता।",
+          "background_context": "एशियाई खेल एक प्रमुख महाद्वीपीय बहु-खेल आयोजन के रूप में कार्य करते हैं जहां पूरे एशिया के एथलीट विभिन्न स्पर्धाओं में प्रतिस्पर्धा करते हैं।",
+          "bullet_points": [
+            "एंसी सोजन ने एशियाई खेल 2026 में महिला लंबी कूद में रजत पदक जीता।",
+            "अभय सिंह और अननत सिंह ने अपने स्क्वैश फाइनल्स में रजत पदक हासिल किए।",
+            "तेजस्विन शंकर ने पुरुषों की डेकाथलन स्पर्धा में कांस्य पदक जीता।"
+          ],
+          "key_facts": [
+            "एंसी सोजन ने लंबी कूद में रजत जीता।",
+            "तेजस्विन शंकर ने डेकाथलन में कांस्य जीता।"
+          ],
+          "key_locations": [
+            "भारत"
+          ],
+          "important_dates": [
+            "सितंबर 27"
+          ]
+        },
+        "quiz": {
+          "question": "Which medal did Ancy Sojan win in the women's long jump event at the Asian Games 2026?",
+          "options": [
+            "Gold",
+            "Silver",
+            "Bronze",
+            "None"
+          ],
+          "correct_answer": "Silver",
+          "explanation": "Ancy Sojan finished second in the women's long jump event to win a silver medal for India."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/ht-evening-brief-september-27-parvesh-verma-slapgate-delhi-vijay-rti-asian-games-actors-smoking-ads-top-news-101790511900253.html",
+        "published_date": "2026-09-27",
+        "id": 130,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/HT_evening_news_brief__1790512904949_6v2U_1790512905146_hh9m_36526080-06c9-4dcf-8e95-892e0b9eab1b_HGKj.jpg",
+        "added_at": "2026-09-27T21:07:21.061890+05:30"
+      },
+      {
+        "category": "Sports",
+        "exam_corner": true,
+        "headline": "Jharkhand Congress to Protest and Demand Resignation of Chief Election Commissioner Gyanesh Kumar",
+        "story_lead": "The Jharkhand Congress has announced state-wide protests and plans to gherao the Chief Electoral Officer's office in Ranchi. The party is demanding the resignation of Chief Election Commissioner Gyanesh Kumar, alleging bias and misuse of electoral processes.",
+        "full_article_text": "The Jharkhand Congress has announced plans to stage demonstrations across all district headquarters and gherao the office of the Chief Electoral Officer (CEO) in Ranchi. State Congress president Keshav Mahto Kamlesh stated that the protests aim to protect democracy and the voting rights of citizens while demanding the resignation of Chief Election Commissioner (CEC) Gyanesh Kumar. The decision follows a media report revealing that Election Commissioners Sukhbir Singh Sandhu and Vivek Joshi had objected on record multiple times over ten months to decisions allegedly issued without their knowledge during the national rollout of the SIR. Congress leaders further alleged that the Election Commission functioned to provide unfair advantages to the BJP in assembly polls in Bihar and West Bengal, and claimed that traditional voters such as Dalits and minorities are being targeted through alterations in voter registration processes like Form 6.",
+        "background_context": "The protests were prompted by media reports indicating internal dissent within the Election Commission, where other election commissioners reportedly objected to decisions made without their knowledge during the national rollout of the SIR and modifications to statutory voter registration forms.",
+        "bullet_points": [
+          "Jharkhand Congress announced statewide protests across all district headquarters.",
+          "Party plans to gherao the Chief Electoral Officer's office in Ranchi.",
+          "Demand raised for the resignation of Chief Election Commissioner Gyanesh Kumar.",
+          "Allegations made regarding the misuse of the SIR and alterations to Form 6 for voter registration.",
+          "State leaders claimed traditional Congress voters like Dalits and minorities are being targeted."
+        ],
+        "key_facts": [
+          "Jharkhand Congress announced protests scheduled for September 28.",
+          "State Congress president Keshav Mahto Kamlesh led the press conference in Ranchi.",
+          "Election Commissioners Sukhbir Singh Sandhu and Vivek Joshi reportedly objected on record 14 times over 10 months.",
+          "Form 6 is the statutory voter registration form cited by party leaders."
+        ],
+        "key_locations": [
+          "Jharkhand",
+          "Ranchi",
+          "Bihar",
+          "West Bengal"
+        ],
+        "important_dates": [
+          "September 28"
+        ],
+        "exam_relevance": [
+          "Prelims: Election Commission of India, statutory forms like Form 6.",
+          "Mains: GS Paper II - Governance, Constitution, Polity, Role of Independent Constitutional Bodies."
+        ],
+        "upsc_analysis": "The friction highlighted within the Election Commission brings focus to the institutional integrity, internal checks and balances, and administrative transparency of independent constitutional bodies in India. For UPSC aspirants, understanding the powers, functioning, and statutory processes governing the Election Commission of India is critical for polity sections.",
+        "causes": [
+          "Media reports regarding internal objections by fellow Election Commissioners over decision-making processes.",
+          "Allegations of voter list manipulation and modifications to Form 6 affecting voter registration."
+        ],
+        "impacts": [
+          "Political mobilization and state-wide protests across Jharkhand districts.",
+          "Heightened public debate regarding the institutional autonomy and transparency of the Election Commission."
+        ],
+        "challenges": [
+          "Maintaining public trust in the neutrality and autonomy of independent constitutional institutions like the Election Commission.",
+          "Addressing administrative concerns regarding electoral rolls and voter registration transparency."
+        ],
+        "government_steps": [
+          "National rollout of the SIR under the supervision of the full commission as reported in media sources."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 324 of the Constitution of India regarding the superintendence, direction, and control of elections vested in an Election Commission."
+        ],
+        "way_forward": [
+          "Enhancing internal transparency, consensus, and institutional communication within multi-member constitutional bodies like the Election Commission to reinforce public trust."
+        ],
+        "mains_notes": "The controversy surrounding internal disagreements within the Election Commission highlights the importance of institutional integrity and transparency. Independent bodies must operate with clear consensus and openness to uphold democratic credibility.",
+        "mains_questions": [
+          "Discuss the constitutional role and autonomy of the Election Commission of India in ensuring free and fair elections.",
+          "Examine the significance of maintaining institutional transparency and internal consensus within multi-member constitutional bodies."
+        ],
+        "takeaway": "Jharkhand Congress announced state-wide protests and demanded the resignation of CEC Gyanesh Kumar following reports of internal objections regarding poll panel decisions.",
+        "prelims_facts": [
+          "Form 6 is the statutory voter registration form.",
+          "The Chief Election Commissioner heads the Election Commission of India."
+        ],
+        "vocabulary": [
+          {
+            "word": "Gherao",
+            "meaning_hindi": "घेराव"
+          },
+          {
+            "word": "Resignation",
+            "meaning_hindi": "इस्तीफा"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Gyanesh Kumar",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Gyanesh_Kumar"
+          },
+          {
+            "name": "Jharkhand",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Jharkhand"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "झारखंड में कांग्रेस 28 सितंबर को करेगी विरोध प्रदर्शन, मुख्य चुनाव आयुक्त ज्ञानेश कुमार के इस्तीफे की मांग",
+          "story_lead": "झारखंड कांग्रेस ने रांची में मुख्य निर्वाचन अधिकारी के कार्यालय का घेराव करने और राज्य के सभी जिला मुख्यालयों पर प्रदर्शन करने की घोषणा की है। पार्टी मुख्य चुनाव आयुक्त ज्ञानेश कुमार के इस्तीफे की मांग कर रही है।",
+          "full_article_text": "झारखंड कांग्रेस ने राज्य के सभी जिला मुख्यालयों पर प्रदर्शन करने और रांची में मुख्य निर्वाचन अधिकारी (सीईओ) के कार्यालय का घेराव करने का निर्णय लिया है। पार्टी का यह कदम मुख्य चुनाव आयुक्त (सीईसी) ज्ञानेश कुमार के इस्तीफे की मांग को लेकर है।",
+          "background_context": "यह विरोध प्रदर्शन मीडिया रिपोर्टों के बाद शुरू हुआ जिनमें चुनाव आयुक्तों द्वारा आयोग के निर्णयों पर आपत्ति जताए जाने का दावा किया गया था।",
+          "bullet_points": [
+            "झारखंड कांग्रेस राज्यभर में विरोध प्रदर्शन करेगी।",
+            "रांची में सीईओ कार्यालय का घेराव किया जाएगा।",
+            "मुख्य चुनाव आयुक्त ज्ञानेश कुमार के इस्तीफे की मांग की गई है।"
+          ],
+          "key_facts": [
+            "झारखंड कांग्रेस द्वारा 28 सितंबर को विरोध प्रदर्शन तय किया गया है।"
+          ],
+          "key_locations": [
+            "झारखंड",
+            "रांची"
+          ],
+          "important_dates": [
+            "28 सितंबर"
+          ]
+        },
+        "quiz": {
+          "question": "Which state's Congress unit announced protests and demanded the resignation of CEC Gyanesh Kumar?",
+          "options": [
+            "Bihar",
+            "Jharkhand",
+            "West Bengal",
+            "Uttar Pradesh"
+          ],
+          "correct_answer": "Jharkhand",
+          "explanation": "The Jharkhand Congress announced protests across district headquarters in the state demanding the resignation of the Chief Election Commissioner."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/congress-to-hold-protest-across-jharkhand-on-september-28-seek-resignation-of-cec-gyanesh-kumar-101790513785477.html",
+        "published_date": "2026-09-27",
+        "id": 129,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/congress_protest_1790513976018_oRhH_1790513976501_iUCC_ff179438-3528-4d12-affa-d767cdb6cd7d_HJRt.jpg",
+        "added_at": "2026-09-27T21:07:21.061890+05:30"
+      },
+      {
+        "category": "Health",
+        "exam_corner": true,
+        "headline": "UP woman murdered and buried in Jaipur garden; live-in partner absconding",
+        "story_lead": "A 32-year-old woman was allegedly murdered by her 22-year-old live-in partner, who subsequently buried her body in the garden of their rented house in Jaipur. The crime was uncovered when the landlord visited the property and noticed a hand protruding from freshly dug soil. Police have launched a manhunt to trace the absconding partner and are investigating the motive.",
+        "full_article_text": "In a grim incident reported from Jaipur, Rajasthan, a 32-year-old woman named Kiran was allegedly murdered by her live-in partner, Pravesh (22), both of whom hailed from Uttar Pradesh. The accused had rented a house in the Prestige Colony within the Bindayaka area approximately two months prior, introducing the victim as his wife. According to preliminary police assessments, Pravesh allegedly killed the woman two to three days before the discovery, dug a pit in the garden at night to bury the body, locked the premises, and fled. The matter came to light on Sunday morning when the landlord visited the property for an inspection. Finding the house locked and noticing freshly dug soil with a woman's hand protruding from it, the landlord alerted the local authorities. Bindayaka Station House Officer (SHO) Anil Kumar stated that police and a forensics team exhumed the body and sent it to Kanwatia Hospital for a post-mortem examination. Police teams have been formed to track down the accused, who worked at a local factory in Bindayaka, and efforts are underway to contact the victim's family in Uttar Pradesh. The precise motive and surrounding circumstances remain under active investigation.",
+        "background_context": "The incident occurred in the Prestige Colony of the Bindayaka area in Jaipur, Rajasthan, involving individuals who migrated from Uttar Pradesh.",
+        "bullet_points": [
+          "A 32-year-old woman named Kiran was allegedly murdered by her live-in partner in Jaipur.",
+          "The accused, 22-year-old Pravesh, had rented a house in Prestige Colony, Bindayaka area, about two months before the incident.",
+          "The crime was discovered by the landlord who noticed a woman's hand protruding from freshly dug soil in the garden.",
+          "Police and a forensics team exhumed the body and sent it to Kanwatia Hospital for post-mortem.",
+          "The accused worked at a local factory in Bindayaka and is currently absconding.",
+          "Police are actively investigating the motive and attempting to contact the victim's family in Uttar Pradesh."
+        ],
+        "key_facts": [
+          "Victim: Kiran, 32 years old.",
+          "Accused: Pravesh, 22 years old.",
+          "Location: Prestige Colony, Bindayaka area, Jaipur, Rajasthan.",
+          "Discovery method: Landlord inspected the locked rented house and found a hand protruding from the garden soil."
+        ],
+        "key_locations": [
+          "Jaipur",
+          "Prestige Colony",
+          "Bindayaka area",
+          "Kanwatia Hospital",
+          "Uttar Pradesh"
+        ],
+        "important_dates": [
+          "Sunday"
+        ],
+        "exam_relevance": [
+          "Prelims: General awareness of current law and order incidents.",
+          "Mains (General Studies Paper I/II/IV): Social issues, crime reporting, law enforcement, and domestic safety."
+        ],
+        "upsc_analysis": "While local criminal incidents do not directly form core UPSC syllabus topics, they highlight systemic issues concerning urban rental verifications, domestic security, and law enforcement responses. Analyzing such cases helps aspirants understand the administrative and police mechanisms involved in crime detection, forensic investigation, and inter-state coordination for victim identification.",
+        "causes": [
+          "Disputes or motives currently under police investigation between the live-in partners."
+        ],
+        "impacts": [
+          "Loss of human life.",
+          "Heightened security and verification concerns among landlords and residential colonies."
+        ],
+        "challenges": [
+          "Tracing the absconding accused.",
+          "Establishing the exact motive behind the murder due to lack of immediate witnesses."
+        ],
+        "government_steps": [
+          "Prompt police intervention, exhumation of the body with forensic teams, formation of specialized tracking teams, and medical examination at Kanwatia Hospital."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 21 of the Constitution of India guarantees the right to life and personal liberty, emphasizing the state's duty to maintain law and order and protect citizens from crime."
+        ],
+        "way_forward": [
+          "Strengthening tenant verification processes by local landlords and police authorities.",
+          "Enhancing community policing and quick reporting mechanisms in residential areas."
+        ],
+        "mains_notes": "A crime incident in Jaipur highlights challenges in domestic safety and tenant verification. Local police swiftly utilized forensic teams and formed tracking teams to apprehend the absconding suspect, underscoring the importance of rigorous investigation and community vigilance.",
+        "mains_questions": [
+          "Discuss the role of police and forensic investigation in unearthing concealed crimes in urban residential areas.",
+          "Analyze the importance of proper tenant verification protocols for enhancing residential safety in Indian cities."
+        ],
+        "takeaway": "Jaipur police launched a manhunt for a man accused of murdering his live-in partner and burying her body in a rented house garden.",
+        "prelims_facts": [
+          "The incident took place in the Bindayaka area of Jaipur.",
+          "The post-mortem of the victim was conducted at Kanwatia Hospital."
+        ],
+        "vocabulary": [
+          {
+            "word": "Exhume",
+            "meaning_hindi": "शव को जमीन से निकालना"
+          },
+          {
+            "word": "Absconding",
+            "meaning_hindi": "फरार होना"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Jaipur",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Jaipur"
+          },
+          {
+            "name": "Uttar Pradesh",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Uttar_Pradesh"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "जयपुर के एक बगीचे में उत्तर प्रदेश की महिला की हत्या कर दफनाया गया; लिव-इन पार्टनर की तलाश जारी",
+          "story_lead": "जयपुर में एक किराए के मकान के बगीचे में 32 वर्षीय महिला की कथित तौर पर हत्या कर उसका शव दफनाने का मामला सामने आया है, जिसके बाद उसका लिव-इन पार्टनर फरार हो गया। मकान मालिक द्वारा परिसर का निरीक्षण करने और ताज़ा खुदी हुई मिट्टी से महिला का हाथ बाहर निकलते देखने पर इस मामले का खुलासा हुआ। पुलिस फरार साथी की तलाश कर रही है और हत्या के कारणों की जांच में जुटी है।",
+          "full_article_text": "राजस्थान के जयपुर में एक सनसनीखेज मामले में, 32 वर्षीय महिला किरण की उसके लिव-इन पार्टनर प्रवेश (22) द्वारा कथित तौर पर हत्या कर दी गई। दोनों उत्तर प्रदेश के रहने वाले थे। आरोपी ने लगभग दो महीने पहले बिंदायाका इलाके की प्रेस्टीज कॉलोनी में एक मकान किराए पर लिया था और महिला को अपनी पत्नी बताया था। पुलिस के प्रारंभिक आकलन के अनुसार, प्रवेश ने कथित तौर पर दो-तीन दिन पहले महिला की हत्या कर दी थी, रात में बगीचे में गड्ढा खोदकर उसका शव दफनाया और मकान में ताला लगाकर फरार हो गया। रविवार सुबह जब मकान मालिक संपत्ति की जांच करने पहुंचे तो उन्होंने घर पर ताला पाया। पड़ोसियों से पूछताछ के बाद उन्होंने परिसर की जांच की और देखा कि बगीचे में मिट्टी की खुदाई की गई है। मौके का मुआयना करने पर उन्होंने जमीन से एक महिला का हाथ बाहर निकलते देखा और तुरंत पुलिस को सूचना दी। बिंदायाका के एसएचओ अनिल कुमार ने बताया कि पुलिस और फोरेंसिक टीम की मदद से शव को बाहर निकालकर कांवटिया अस्पताल में पोस्टमार्टम के लिए भेज दिया गया है। पुलिस ने आरोपी की तलाश के लिए टीमें गठित कर दी हैं, जो बिंदायाका की एक फैक्ट्री में काम करता था, और उत्तर प्रदेश में मृतका के परिवार से संपर्क करने का प्रयास भी किया जा रहा है।",
+          "background_context": "यह घटना जयपुर, राजस्थान के बिंदायाका क्षेत्र की प्रेस्टीज कॉलोनी में हुई, जिसमें उत्तर प्रदेश के मूल निवासी शामिल थे।",
+          "bullet_points": [
+            "जयपुर में 32 वर्षीय महिला किरण की उसके लिव-इन पार्टनर द्वारा कथित हत्या।",
+            "आरोपी प्रवेश ने बिंदायाका इलाके में दो महीने पहले किराए पर मकान लिया था।",
+            "मकान मालिक को बगीचे में खुदी हुई मिट्टी से महिला का हाथ बाहर दिखाई देने पर मामले का खुलासा हुआ।",
+            "पुलिस और फोरेंसिक टीम ने शव को बाहर निकालकर कांवटिया अस्पताल भेजा।",
+            "आरोपी स्थानीय फैक्ट्री में काम करता था और फिलहाल फरार है।"
+          ],
+          "key_facts": [
+            "पीड़ित: किरण (32 वर्ष)",
+            "आरोपी: प्रवेश (22 वर्ष)",
+            "स्थान: प्रेस्टीज कॉलोनी, बिंदायाका, जयपुर"
+          ],
+          "key_locations": [
+            "जयपुर",
+            "बिंदायाका",
+            "कांवटिया अस्पताल",
+            "उत्तर प्रदेश"
+          ],
+          "important_dates": [
+            "रविवार"
+          ]
+        },
+        "quiz": {
+          "question": "In which area of Jaipur was the woman's body discovered buried in a garden?",
+          "options": [
+            "Prestige Colony, Bindayaka area",
+            "Malviya Nagar",
+            "Mansarovar",
+            "Vaishali Nagar"
+          ],
+          "correct_answer": "Prestige Colony, Bindayaka area",
+          "explanation": "The source states that the rented house is located at Prestige Colony in the Bindayaka area of Jaipur, where the landlord discovered the body in the garden."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/up-woman-murdered-buried-in-garden-in-jaipur-search-on-for-live-in-partner-cops-101790514165452.html",
+        "published_date": "2026-09-27",
+        "id": 128,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/Pawan-Khera-12_1776671339460_1776671353544_1790514260009_kZqG_043ccee7-84f7-4591-803d-419120606039_W5dp.jpg",
+        "added_at": "2026-09-27T21:07:21.061890+05:30"
+      },
+      {
+        "category": "Sports",
+        "exam_corner": true,
+        "headline": "Political controversy in Uttar Pradesh's Gorakhpur over leaked phone conversation on waterlogging",
+        "story_lead": "A leaked phone conversation between BJP councillor Vishwajit Tripathi and Gorakhpur MP Ravi Kishan concerning severe waterlogging triggered a political controversy in Uttar Pradesh. The exchange, which occurred during heavy rainfall, featured discussions on malfunctioning floodwater regulators and lighthearted political jabs.",
+        "full_article_text": "A viral phone conversation between BJP councillor Vishwajit Tripathi and Gorakhpur MP Ravi Kishan has brought civic governance and political accountability into focus following heavy rainfall and waterlogging in Gorakhpur, Uttar Pradesh. Tripathi reached out to Kishan while sitting with local residents, citing unresponsiveness from irrigation department officials regarding malfunctioning floodwater regulators at Tarkulahi and near Palm Paradise. During the call, Kishan asked about his location, monitored the situation from Taramandal, and the interaction took a lighter turn with banter about political affiliations. While Tripathi stated he did not know how the call was leaked, the Samajwadi Party reacted by noting its doors are open for dissatisfied members, mentioning Tripathi's past association with the SP. Meanwhile, BJP regional general secretary Satendra Sinha stated that disciplinary matters would be handled internally while highlighting that party workers and agencies worked overnight to pump out water and clear waterlogging.",
+        "background_context": "Heavy rainfall in Gorakhpur, described by MP Ravi Kishan as unprecedented over nearly two decades, led to severe waterlogging across several parts of Uttar Pradesh, prompting civic concerns and coordination challenges between municipal representatives and irrigation department officials.",
+        "bullet_points": [
+          "A leaked phone conversation between BJP councillor Vishwajit Tripathi and Gorakhpur MP Ravi Kishan triggered a political controversy over waterlogging in Gorakhpur.",
+          "Tripathi raised concerns regarding malfunctioning floodwater regulators at Tarkulahi and near Palm Paradise.",
+          "The conversation featured lighthearted banter regarding political affiliations between the councillor and the MP.",
+          "Tripathi stated he called Kishan because irrigation department officials were unresponsive to municipal representatives.",
+          "Samajwadi Party district president Brijesh Gautam noted Tripathi's prior association with the SP.",
+          "BJP regional general secretary Satendra Sinha stated that party agencies worked overnight to pump out water and clear affected areas."
+        ],
+        "key_facts": [
+          "The controversy arose from a leaked phone call between Gorakhpur MP Ravi Kishan and BJP councillor Vishwajit Tripathi.",
+          "Gorakhpur experienced exceptionally heavy rainfall described as unprecedented in nearly two decades.",
+          "Malfunctioning floodwater regulators were reported at Tarkulahi and near Palm Paradise.",
+          "BJP leadership stated that water was pumped out overnight and most areas were free of waterlogging by Sunday morning."
+        ],
+        "key_locations": [
+          "Gorakhpur",
+          "Uttar Pradesh",
+          "Tarkulahi",
+          "Palm Paradise",
+          "Taramandal"
+        ],
+        "important_dates": [
+          "Sunday morning"
+        ],
+        "exam_relevance": [
+          "Prelims: Current events involving regional civic issues, administrative coordination, and disaster management in Uttar Pradesh.",
+          "Mains (GS Paper II/III): Urban governance, urban flooding, disaster management, and administrative accountability."
+        ],
+        "upsc_analysis": "The incident highlights critical challenges in urban governance, specifically urban flooding, municipal-departmental coordination breakdown, and the interface between elected representatives and local bureaucracy during extreme weather events. It underscores the necessity of robust urban planning, resilient drainage infrastructure, and institutionalized grievance redressal mechanisms to prevent administrative delays during natural calamities.",
+        "causes": [
+          "Unprecedented heavy rainfall in Gorakhpur and surrounding parts of Uttar Pradesh.",
+          "Alleged malfunctioning of floodwater regulators at Tarkulahi and near Palm Paradise.",
+          "Communication gap and lack of accessibility from irrigation department officials towards municipal representatives."
+        ],
+        "impacts": [
+          "Severe waterlogging in various parts of Gorakhpur affecting residents during heavy downpours.",
+          "Political friction and public debate circulated via social media regarding civic management and party discipline."
+        ],
+        "challenges": [
+          "Managing sudden, unprecedented urban precipitation and maintaining functional drainage regulators.",
+          "Ensuring seamless coordination between municipal representatives, elected MPs, and line departments like the irrigation department."
+        ],
+        "government_steps": [
+          "MP Ravi Kishan personally monitored the situation on the streets and coordinated with the administration.",
+          "BJP workers and government agencies worked overnight to pump water out of affected localities, clearing most areas by Sunday morning."
+        ],
+        "constitutional_or_policy_link": [
+          "Local Government and Urban Governance frameworks under the 74th Constitutional Amendment Act."
+        ],
+        "way_forward": [
+          "Strengthening inter-departmental synergy between municipal bodies and irrigation departments to address civic grievances swiftly.",
+          "Upgrading urban drainage infrastructure and floodwater regulators to handle extreme weather events caused by climate variability.",
+          "Establishing institutional grievance channels to prevent administrative delays during emergencies."
+        ],
+        "mains_notes": "Urban flooding in cities like Gorakhpur underscores systemic vulnerabilities in urban drainage infrastructure and administrative coordination. Effective disaster response requires proactive maintenance of flood regulators, robust bureaucratic responsiveness, and depoliticization of civic grievances to ensure prompt relief for citizens.",
+        "mains_questions": [
+          "Discuss the structural and administrative challenges underlying urban waterlogging during extreme weather events in Indian cities.",
+          "Examine the role of inter-departmental coordination between municipal bodies and line departments in effective urban disaster management."
+        ],
+        "takeaway": "Unprecedented rainfall and waterlogging in Gorakhpur sparked administrative concerns and political debate over civic infrastructure and inter-departmental coordination.",
+        "prelims_facts": [
+          "Gorakhpur is an urban center and parliamentary constituency in Uttar Pradesh.",
+          "Floodwater regulators were mentioned at Tarkulahi and Palm Paradise."
+        ],
+        "vocabulary": [
+          {
+            "word": "Waterlogging",
+            "meaning_hindi": "जलभराव"
+          },
+          {
+            "word": "Regulator",
+            "meaning_hindi": "नियामक"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Gorakhpur",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Gorakhpur"
+          },
+          {
+            "name": "Ravi Kishan",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Ravi%20Kishan"
+          },
+          {
+            "name": "Samajwadi Party",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Samajwadi%20Party"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "उत्तर प्रदेश के गोरखपुर में जलभराव पर बीजेपी पार्षद और रवि किशन के बीच हुई बातचीत को लेकर राजनीतिक विवाद",
+          "story_lead": "भारी बारिश और जलभराव के दौरान बीजेपी पार्षद विश्वजीत त्रिपाठी और गोरखपुर के सांसद रवि किशन के बीच हुई फोन बातचीत का वीडियो सोशल मीडिया पर वायरल होने के बाद राजनीतिक विवाद खड़ा हो गया।",
+          "full_article_text": "उत्तर प्रदेश के गोरखपुर में भारी बारिश के बाद जलभराव की स्थिति पर बीजेपी पार्षद विश्वजीत त्रिपाठी और सांसद रवि किशन के बीच हुई फोन बातचीत को लेकर राजनीतिक हलचल तेज हो गई है। यह बातचीत तरकुलही और पाम पैराडाइज के पास बाढ़ जल नियामकों (फ्लडवाटर रेगुलेटर्स) के काम न करने के आरोपों और सांसद के हस्तक्षेप को लेकर हुई। वीडियो सामने आने के बाद विभिन्न राजनीतिक दलों की प्रतिक्रियाएं भी सामने आई हैं।",
+          "background_context": "गोरखपुर में पिछले दो दशकों में पहली बार इतनी भारी बारिश दर्ज की गई, जिसके कारण शहर के कई हिस्सों में गंभीर जलभराव की समस्या उत्पन्न हुई।",
+          "bullet_points": [
+            "गोरखपुर में जलभराव को लेकर बीजेपी पार्षद और सांसद के बीच बातचीत का वीडियो वायरल हुआ।",
+            "पार्षद ने तरकुलही और पाम पैराडाइज के पास रेगुलेटर्स के खराब होने की शिकायत की।",
+            "सिंचाई विभाग के अधिकारियों के संपर्क में न आने के कारण पार्षद ने सांसद को फोन किया था।"
+          ],
+          "key_facts": [
+            "घटना उत्तर प्रदेश के गोरखपुर से संबंधित है।",
+            "प्रशासन और पार्टी कार्यकर्ताओं ने रातभर काम कर पानी की निकासी की।"
+          ],
+          "key_locations": [
+            "गोरखपुर",
+            "उत्तर प्रदेश"
+          ],
+          "important_dates": [
+            "रविवार सुबह"
+          ]
+        },
+        "quiz": {
+          "question": "Which city experienced heavy waterlogging following unprecedented rainfall that led to a viral conversation between an MP and a councillor?",
+          "options": [
+            "Lucknow",
+            "Gorakhpur",
+            "Varanasi",
+            "Kanpur"
+          ],
+          "correct_answer": "Gorakhpur",
+          "explanation": "The news report centers around waterlogging and a political conversation between Gorakhpur MP Ravi Kishan and BJP councillor Vishwajit Tripathi in Gorakhpur, Uttar Pradesh."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/bjp-councillor-ravi-kishan-spar-after-heavy-waterlogging-up-gorakhpur-brahaman-devta-samajwadi-party-join-karliya-101790511099481.html",
+        "published_date": "2026-09-27",
+        "id": 127,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/jnkkk_1790513369035_L5Bm_1790513398115_mWEV_1d16409d-1461-454c-b1cb-f7e3c4cbb9a9_JDlP.jpg",
+        "added_at": "2026-09-27T21:07:21.061890+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "Political Row Erupts in Delhi Over Alleged Incident During PWD Road Inspection in Tilak Nagar",
+        "story_lead": "A political controversy has emerged in Delhi after the Aam Aadmi Party alleged that Public Works Department minister Parvesh Verma slapped a man recording a road inspection in Tilak Nagar. The minister rejected the allegations, claiming the inspection followed years of neglect and that people accompanying the local MLA abused his family.",
+        "full_article_text": "A political dispute broke out in Delhi following allegations by the Aam Aadmi Party (AAP) that PWD minister Parvesh Verma slapped a man who was recording a road inspection in the Tilak Nagar assembly constituency. AAP leaders shared a video on social media showing a heated exchange at the site. AAP MLA Jarnail Singh alleged the confrontation occurred after questions were raised regarding the quality of road construction and a cameraman recorded the proceedings. Arvind Kejriwal and other political figures called for action. Conversely, minister Parvesh Verma rejected the accusations, stating he visited the area for an inspection after learning the road had not been repaired for 15 years. Verma alleged that the local MLA was upset with development work, sought commission, and that individuals accompanying the MLA abused his family during the inspection. AAP leaders stated that a formal complaint has been filed, though police have not registered an FIR yet.",
+        "background_context": "The incident took place during a Public Works Department (PWD) road inspection in the Tilak Nagar assembly constituency of Delhi, involving local political representatives, government ministers, and citizens.",
+        "bullet_points": [
+          "AAP alleged PWD minister Parvesh Verma slapped a man recording a road inspection in Tilak Nagar.",
+          "A video of the heated exchange was widely shared on social media by AAP leaders.",
+          "AAP MLA Jarnail Singh questioned the quality of the newly laid road during the inspection.",
+          "Former Delhi CM Arvind Kejriwal demanded action against the minister.",
+          "Minister Parvesh Verma stated the inspection was for a road unrepaired for 15 years and claimed his family was abused.",
+          "AAP stated a complaint has been filed with the police."
+        ],
+        "key_facts": [
+          "Location: Tilak Nagar assembly constituency, Delhi",
+          "Key figures involved: Parvesh Verma (PWD Minister), Jarnail Singh (AAP MLA), Arvind Kejriwal",
+          "Controversy: Allegations of physical altercation and corruption in road construction"
+        ],
+        "key_locations": [
+          "Tilak Nagar",
+          "Delhi"
+        ],
+        "important_dates": [
+          "Sunday"
+        ],
+        "exam_relevance": [
+          "Polity and Governance: Ethics in public life, conduct of public servants, and political discourse in India."
+        ],
+        "upsc_analysis": "The incident highlights the importance of public ethics, institutional conduct, and accountability in governance. For civil services aspirants, such events underline the friction points between elected representatives and administrative functions, demanding adherence to constitutional morality and public decorum.",
+        "causes": [
+          "Political rivalry over urban infrastructure development and road construction quality.",
+          "Disputes arising during official inspections involving rival political parties."
+        ],
+        "impacts": [
+          "Escalation of political tensions between the ruling governance framework and opposition parties in Delhi.",
+          "Public debate regarding the ethics and conduct of public officials."
+        ],
+        "challenges": [
+          "Maintaining administrative neutrality and decorum during public governance activities.",
+          "Addressing allegations of corruption and misconduct transparently."
+        ],
+        "government_steps": [
+          "Filing of a police complaint by local political actors regarding the incident."
+        ],
+        "constitutional_or_policy_link": [
+          "Public accountability and adherence to the Model Code of Conduct or norms of public behavior for ministers."
+        ],
+        "way_forward": [
+          "Ensuring independent and impartial police investigation into complaints filed by stakeholders.",
+          "Promoting constructive dialogue and adherence to decorum during public infrastructure inspections."
+        ],
+        "mains_notes": "The Tilak Nagar road inspection controversy underscores the intersection of local governance, political confrontation, and public ethics. It highlights the need for institutional mechanisms to resolve disputes amicably and maintain public trust in administrative machinery.",
+        "mains_questions": [
+          "Discuss the ethical challenges faced by public representatives during infrastructure inspections and governance tasks.",
+          "How does political friction impact urban infrastructure execution and governance in metropolitan areas?"
+        ],
+        "takeaway": "An alleged altercation during a PWD road inspection in Tilak Nagar sparked a major political standoff between AAP and government ministers in Delhi.",
+        "prelims_facts": [
+          "Tilak Nagar is an assembly constituency in Delhi.",
+          "Public Works Department (PWD) handles certain road infrastructure works in Delhi."
+        ],
+        "vocabulary": [
+          {
+            "word": "Inspection",
+            "meaning_hindi": "निरीक्षण"
+          },
+          {
+            "word": "Allegation",
+            "meaning_hindi": "आरोप"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Parvesh Verma",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Parvesh%20Verma"
+          },
+          {
+            "name": "Tilak Nagar",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Tilak%20Nagar%20Delhi"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "दिल्ली में सड़क निरीक्षण के दौरान कथित घटना को लेकर राजनीतिक विवाद",
+          "story_lead": "दिल्ली में आम आदमी पार्टी के उस आरोप के बाद राजनीतिक विवाद खड़ा हो गया जिसमें कहा गया कि लोक निर्माण विभाग के मंत्री प्रवेश वर्मा ने तिलकनगर में सड़क निरीक्षण का वीडियो बना रहे एक व्यक्ति को थप्पड़ मार दिया। मंत्री ने इन आरोपों को खारिज करते हुए कहा कि निरीक्षण किया गया था क्योंकि सड़क 15 साल से मरम्मत नहीं की गई थी।",
+          "full_article_text": "आम आदमी पार्टी द्वारा यह आरोप लगाए जाने के बाद कि पीडब्ल्यूडी मंत्री प्रवेश वर्मा ने तिलक नगर विधानसभा क्षेत्र में सड़क निरीक्षण के दौरान एक व्यक्ति को थप्पड़ मारा, दिल्ली में राजनीतिक विवाद शुरू हो गया। आप नेताओं ने सोशल मीडिया पर एक वीडियो साझा किया। आप विधायक जरनैल सिंह ने आरोप लगाया कि यह घटना सड़क निर्माण की गुणवत्ता पर सवाल उठाए जाने के बाद हुई। मंत्री प्रवेश वर्मा ने आरोपों को खारिज करते हुए कहा कि उन्होंने सड़क के निरीक्षण के लिए दौरा किया था।",
+          "background_context": "यह घटना दिल्ली के तिलक नगर विधानसभा क्षेत्र में पीडब्ल्यूडी सड़क निरीक्षण के दौरान हुई।",
+          "bullet_points": [
+            "आप ने आरोप लगाया कि मंत्री ने तिलक नगर में एक व्यक्ति को थप्पड़ मारा।",
+            "घटना का वीडियो सोशल मीडिया पर साझा किया गया।",
+            "मंत्री प्रवेश वर्मा ने आरोपों का खंडन किया।"
+          ],
+          "key_facts": [
+            "स्थान: तिलक नगर, दिल्ली",
+            "प्रमुख व्यक्ति: प्रवेश वर्मा, जरनैल सिंह"
+          ],
+          "key_locations": [
+            "तिलक नगर",
+            "दिल्ली"
+          ],
+          "important_dates": [
+            "रविवार"
+          ]
+        },
+        "quiz": {
+          "question": "In which Delhi assembly constituency did the alleged road inspection incident take place?",
+          "options": [
+            "Tilak Nagar",
+            "Karol Bagh",
+            "Rohini",
+            "Dwarka"
+          ],
+          "correct_answer": "Tilak Nagar",
+          "explanation": "The incident occurred during a PWD road inspection in the Tilak Nagar assembly constituency."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/aap-alleges-parvesh-verma-slapped-man-during-delhi-road-inspection-minister-blames-provocation-101790514661629.html",
+        "published_date": "2026-09-27",
+        "id": 126,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/PTI09-27-2026-000341B-0_1790514960863_1bbz_1790514977334_Fsmv_a1427286-84d1-47e8-bba5-37f442a6cd49_9lXE.jpg",
+        "added_at": "2026-09-27T21:07:21.061890+05:30"
+      },
+      {
+        "category": "World",
+        "exam_corner": true,
+        "headline": "Social Media Reshaping Media Landscape in India: Statistics, Challenges, and Transition",
+        "story_lead": "The media landscape is undergoing a monumental transformation, shifting power from traditional newsrooms to smartphones and social networks. With over a billion internet users in India, platforms like YouTube, Instagram, and X are redefining how news is consumed, produced, and shared.",
+        "full_article_text": "The contemporary media transformation is fundamentally a redistribution of power, shifting the authority to decide what millions see, hear, and discuss from traditional newsrooms to smartphones. By the end of 2025, India recorded about 1.03 billion internet users and roughly 500 million social media user identities, with TRAI recording over 1.09 billion internet subscribers by March 2026. While television remains vast—reaching an estimated 900 million viewers across 230 million households as of 2025—it is no longer the undisputed centre of the media universe. Digital platforms have seen massive engagement, with YouTube reporting over 650 million monthly logged-in viewers of Shorts alone in 2025, and 75 million adults reached through connected television. According to the Reuters Institute's 2026 Digital News Report, social and video networks have globally become the most widely used source of news at 54%. In India, survey respondents indicated platform usage for news as 55% for YouTube, 37% for Instagram, 36% for Facebook, and 16% for X, though these figures derive from an online, predominantly English-speaking sample. This shift marks an extraordinary democratisation of communication where citizens and independent reporters can publish directly. However, it introduces critical challenges such as algorithmic biases favoring outrage and anger over nuance, the spread of AI-generated misinformation, and the risk that immediacy may override verification.",
+        "background_context": "India's internet penetration reached approximately 70 percent with 1.03 billion internet users by the end of 2025, creating fertile ground for a digital media revolution alongside massive television reach.",
+        "bullet_points": [
+          "India recorded about 1.03 billion internet users and 500 million social media user identities by the end of 2025.",
+          "TRAI recorded over 1.09 billion internet subscribers by March 2026.",
+          "Indian television reached an estimated 900 million viewers across 230 million households in 2025.",
+          "YouTube reported over 650 million monthly logged-in viewers of Shorts alone in India in 2025.",
+          "The Reuters Institute's 2026 Digital News Report noted social and video networks became the most widely used global news source at 54%.",
+          "Survey data for Indian respondents showed news usage as 55% on YouTube, 37% on Instagram, 36% on Facebook, and 16% on X.",
+          "Meta's advertising data estimated Instagram users in India at 414 million in early 2025, with X's reach at about 24.1 million."
+        ],
+        "key_facts": [
+          "India internet users by end of 2025: ~1.03 billion (70% penetration).",
+          "TRAI internet subscribers by March 2026: >1.09 billion.",
+          "Television reach in India (2025 estimate): 900 million viewers across 230 million households.",
+          "YouTube Shorts monthly logged-in viewers in India (2025): >650 million.",
+          "Reuters Institute 2026 Digital News Report global social/video news source share: 54%.",
+          "Instagram users in India in early 2025: ~414 million.",
+          "X advertising reach in India: ~24.1 million."
+        ],
+        "key_locations": [
+          "India"
+        ],
+        "important_dates": [
+          "End of 2025",
+          "March 2026",
+          "Early 2025"
+        ],
+        "exam_relevance": [
+          "Prelims: Current affairs, internet penetration data, TRAI subscriber statistics, digital media reports.",
+          "Mains (GS Paper II/III): Social media impact on governance, democratisation of information, fake news, algorithmic challenges, and ethics in communication."
+        ],
+        "upsc_analysis": "The shift from traditional broadcast to digital and social media platforms presents a dichotomy of democratic empowerment and systemic vulnerabilities. While it breaks media monopolies and amplifies marginalized or independent voices, it simultaneously creates challenges related to information verification, algorithmic amplification of sensationalism, and the proliferation of deepfakes and misinformation. Policymakers face the complex task of balancing freedom of speech with necessary digital accountability.",
+        "causes": [
+          "Rapid rise in internet penetration and smartphone usage in India.",
+          "Expansion of affordable broadband and mobile data services.",
+          "Democratisation of content creation tools enabling citizens to bypass traditional media gatekeepers."
+        ],
+        "impacts": [
+          "Decentralization of news distribution and redistribution of public discourse power.",
+          "Shift in revenue models and multi-platform adoption by legacy media organisations.",
+          "Faster dissemination of real-time ground realities via citizen journalism and mobile recordings."
+        ],
+        "challenges": [
+          "Proliferation of AI-generated fictitious content, manipulated media, and unverified falsehoods.",
+          "Algorithmic design favoring outrage, anger, and emotional engagement over nuance and truth.",
+          "Erosion of institutional memory and verification standards in fast-paced digital feeds."
+        ],
+        "government_steps": [
+          "TRAI tracking and releasing periodic telecommunication and internet subscriber data."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 19(1)(a) - Freedom of Speech and Expression"
+        ],
+        "way_forward": [
+          "Promoting digital literacy and critical media evaluation among citizens.",
+          "Encouraging robust institutional verification protocols within digital-first media platforms.",
+          "Addressing algorithmic transparency to curb the spread of hate speech and unverified falsehoods."
+        ],
+        "mains_notes": "The transition of media from traditional print and television to smartphone-driven social networks marks a structural shift in communication. While empowering individual voices and democratizing information, it demands a regulatory and societal framework to prevent the weaponization of algorithms and the erosion of truth.",
+        "mains_questions": [
+          "Discuss the implications of the shift from traditional media gatekeepers to smartphone-based social networks on public discourse and democracy in India.",
+          "Examine the paradox of the digital media revolution where technology simultaneously democratises truth and falsehood."
+        ],
+        "takeaway": "The media revolution has democratized communication and news distribution, but its abundance of voices must be balanced with rigorous verification to prevent misinformation.",
+        "prelims_facts": [
+          "India had 1.03 billion internet users by the end of 2025.",
+          "TRAI recorded over 1.09 billion internet subscribers by March 2026.",
+          "Reuters Institute 2026 Digital News Report indicates 54% global news usage via social/video networks."
+        ],
+        "vocabulary": [
+          {
+            "word": "Democratisation",
+            "meaning_hindi": "लोकद्रीकरण / लोकतांत्रिकरण"
+          },
+          {
+            "word": "Monopoly",
+            "meaning_hindi": "एकाधिकार"
+          },
+          {
+            "word": "Algorithmic",
+            "meaning_hindi": "एल्गोरिथम संबंधी"
+          },
+          {
+            "word": "Verification",
+            "meaning_hindi": "सत्यापन"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "TRAI",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=TRAI"
+          },
+          {
+            "name": "YouTube",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=YouTube"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "भारत में मीडिया परिदृश्य को कैसे बदल रहा है सोशल मीडिया: आंकड़े, चुनौतियां और बदलाव",
+          "story_lead": "मीडिया में हो रहा महान परिवर्तन केवल तकनीकी नहीं है, बल्कि यह सत्ता का पुनर्वितरण है। भारत में एक अरब से अधिक इंटरनेट उपयोगकर्ताओं के साथ, स्मार्टफोन और सोशल मीडिया प्लेटफॉर्म समाचार उपभोग और निर्माण के तरीके को फिर से परिभाषित कर रहे हैं।",
+          "full_article_text": "समकालीन मीडिया परिवर्तन मुख्य रूप से सत्ता का पुनर्वितरण है, जिसमें लाखों लोगों को देखने, सुनने और चर्चा करने का अधिकार पारंपरिक समाचार कक्षों से स्मार्टफोन की ओर स्थानांतरित हो रहा है। 2025 के अंत तक भारत में लगभग 1.03 अरब इंटरनेट उपयोगकर्ता थे और मार्च 2026 तक TRAI ने 1.09 अरब से अधिक इंटरनेट ग्राहकों दर्ज किए।",
+          "background_context": "2025 के अंत तक भारत में लगभग 70 प्रतिशत इंटरनेट पहुंच और 1.03 अरब इंटरनेट उपयोगकर्ता थे।",
+          "bullet_points": [
+            "2025 के अंत तक भारत में लगभग 1.03 अरब इंटरनेट उपयोगकर्ता थे।",
+            "मार्च 2026 तक TRAI ने 1.09 अरब से अधिक इंटरनेट ग्राहकों दर्ज किए।",
+            "2025 में भारतीय टेलीविज़न ने 230 मिलियन घरों में लगभग 900 मिलियन दर्शकों तक पहुंच बनाई।",
+            "2025 में YouTube ने अकेले भारत में शॉर्ट्स के 650 मिलियन से अधिक मासिक लॉग-इन दर्शक दर्ज किए।"
+          ],
+          "key_facts": [
+            "2025 के अंत तक भारत में इंटरनेट उपयोगकर्ता: ~1.03 अरब।"
+          ],
+          "key_locations": [
+            "भारत"
+          ],
+          "important_dates": [
+            "2025 का अंत",
+            "मार्च 2026",
+            "आरंभिक 2025"
+          ]
+        },
+        "quiz": {
+          "question": "According to the Reuters Institute's 2026 Digital News Report cited in the text, what percentage of respondents globally consumed online news video during the preceding week?",
+          "options": [
+            "54 per cent",
+            "77 per cent",
+            "65 per cent",
+            "70 per cent"
+          ],
+          "correct_answer": "77 per cent",
+          "explanation": "The Reuters Institute's 2026 Digital News Report found that 77 per cent of respondents globally consumed online news video during the preceding week."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/just-like-that-how-social-media-is-reshaping-news-tv-and-the-media-landscape-101790477037969.html",
+        "published_date": "2026-09-27",
+        "id": 125,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/photo-1689421755150-9c3b8dc3a45b_1790515320859_zdJe_1790515332060_bLiG_c47671ea-49fd-4009-afbf-a9f3c563c43d_tYPO.jpg",
+        "added_at": "2026-09-27T21:07:21.061890+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "Mumbai Police denies permission for Cockroach Janta Party's October 2 protest against CEC Gyanesh Kumar",
+        "story_lead": "The Mumbai Police has denied permission for the Cockroach Janta Party's (CJP) planned October 2 protest against Chief Election Commissioner Gyanesh Kumar. CJP co-founder Abhijeet Dipke warned that the party will launch a Jail Bharo Andolan on Gandhi Jayanti if their right to protest is denied.",
+        "full_article_text": "The Cockroach Janta Party (CJP) co-founder Abhijeet Dipke announced that the Mumbai Police denied permission to hold a protest against Chief Election Commissioner (CEC) Gyanesh Kumar in Mumbai on October 2. Dipke criticized the decision, stating that tactics to suppress citizens' voices are unacceptable, and warned that CJP would launch a Jail Bharo Andolan on Gandhi Jayanti if denied the right to protest. The CJP had previously called for nationwide protests on October 2 if the CEC did not step down by September 26, following allegations of dissent within the Election Commission over its practices and decisions. Explaining the denial, the Mumbai Police stated they lack the power to grant permission for gatherings at Shivaji Park and advised the applicant to seek alternate venues. Meanwhile, the Election Commission has rejected claims of internal dissent, asserting that key decisions, including the Special Intensive Revision (SIR) of voter rolls, were taken unanimously by the full commission.",
+        "background_context": "The controversy follows an investigative report by The Indian Express alleging differences between the two election commissioners and CEC Gyanesh Kumar. The Election Commission rejected these claims, stating that key decisions, such as the Special Intensive Revision (SIR) of voter rolls, were taken unanimously by the full commission and that differing views are a normal part of institutional deliberations.",
+        "bullet_points": [
+          "Mumbai Police denied permission for the Cockroach Janta Party's (CJP) protest against CEC Gyanesh Kumar scheduled for October 2.",
+          "CJP co-founder Abhijeet Dipke warned of a Jail Bharo Andolan in Mumbai on Gandhi Jayanti if the protest permission continues to be denied.",
+          "The police stated they do not have the power to grant gatherings at Shivaji Park and advised seeking alternate venues.",
+          "The CJP had demanded the resignation of CEC Gyanesh Kumar by September 26 following allegations of internal dissent within the Election Commission.",
+          "The Election Commission rejected claims of dissent, maintaining that key decisions like the Special Intensive Revision (SIR) of voter rolls were taken unanimously."
+        ],
+        "key_facts": [
+          "Protest organizers: Cockroach Janta Party (CJP)",
+          "Target of protest: Chief Election Commissioner (CEC) Gyanesh Kumar",
+          "Proposed date of protest: October 2 (Gandhi Jayanti)",
+          "Police rationale: No power to grant gathering permission at Shivaji Park"
+        ],
+        "key_locations": [
+          "Mumbai",
+          "Shivaji Park"
+        ],
+        "important_dates": [
+          "September 26",
+          "September 25",
+          "October 2"
+        ],
+        "exam_relevance": [
+          "GS Paper II - Polity and Governance: Constitutional Bodies, Election Commission of India, and democratic rights."
+        ],
+        "upsc_analysis": "The incident highlights the intersection of citizens' democratic rights to protest and public order management by local law enforcement. It also touches upon institutional transparency and internal deliberations within constitutional bodies like the Election Commission of India.",
+        "causes": [
+          "Allegations of dissent within the Election Commission regarding practices and decisions.",
+          "Demand by the Cockroach Janta Party for the resignation of CEC Gyanesh Kumar."
+        ],
+        "impacts": [
+          "Tensions between political groups and local law enforcement regarding public demonstrations.",
+          "Heightened public discourse on institutional functioning and internal deliberations of the Election Commission."
+        ],
+        "challenges": [
+          "Balancing the fundamental right to peaceful protest with public order and security regulations.",
+          "Maintaining institutional trust in independent constitutional bodies amidst public controversies."
+        ],
+        "government_steps": [
+          "Mumbai Police advised applicants to seek alternate venues for protests where jurisdiction permits.",
+          "Election Commission publicly clarified its decision-making processes and unity."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 19 of the Constitution of India (Freedom of speech and expression, and assembly peaceably and without arms)."
+        ],
+        "way_forward": [
+          "Clear, transparent guidelines for public demonstrations while ensuring law and order.",
+          "Strengthening institutional communication to address public concerns regarding the functioning of constitutional bodies."
+        ],
+        "mains_notes": "The denial of permission for protests against the CEC highlights debates around the right to protest versus public order regulations. While constitutional bodies like the Election Commission must maintain transparency and institutional integrity, law enforcement agencies must facilitate peaceful democratic expression within the framework of the law.",
+        "mains_questions": [
+          "Discuss the constitutional provisions regarding the right to freedom of speech and peaceful assembly in India in the context of regulating public protests.",
+          "Examine the role and functioning of the Election Commission of India in upholding democratic integrity amidst public controversies."
+        ],
+        "takeaway": "Mumbai Police denied permission for CJP's October 2 protest against CEC Gyanesh Kumar, citing venue jurisdiction constraints, while the EC maintained institutional unity.",
+        "prelims_facts": [
+          "Chief Election Commissioner of India: Gyanesh Kumar",
+          "Special Intensive Revision (SIR) pertains to voter rolls."
+        ],
+        "vocabulary": [
+          {
+            "word": "Dissent",
+            "meaning_hindi": "असहमति"
+          },
+          {
+            "word": "Unanimous",
+            "meaning_hindi": "सर्वसम्मति से"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Gyanesh Kumar",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Gyanesh+Kumar"
+          },
+          {
+            "name": "Mumbai Police",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Mumbai+Police"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "मुंबई पुलिस ने मुख्य चुनाव आयुक्त ज्ञानेश कुमार के खिलाफ सीजेपी के 2 अक्टूबर के प्रदर्शन की अनुमति से इनकार किया",
+          "story_lead": "ककरोच जनता पार्टी के सह-संस्थापक अभिजीत दिपके ने कहा कि मुंबई पुलिस ने मुख्य चुनाव आयुक्त ज्ञानेश कुमार के खिलाफ प्रदर्शन की अनुमति देने से इनकार कर दिया है। दिपके ने चेतावनी दी कि यदि उनके विरोध करने के अधिकार से इनकार किया गया तो सीजेपी गांधी जयंती पर मुंबई में जेल भरो आंदोलन शुरू करेगी।",
+          "full_article_text": "ककरोच जनता पार्टी के सह-संस्थापक अभिजीत दिपके ने कहा कि मुंबई पुलिस ने शहर में मुख्य चुनाव आयुक्त ज्ञानेश कुमार के खिलाफ 2 अक्टूबर को होने वाले प्रदर्शन की अनुमति देने से इनकार कर दिया है। दिपके ने पोस्ट कर कहा कि नागरिकों की आवाज दबाने के ऐसे तरीके अस्वीकार्य हैं और चेतावनी दी कि यदि अधिकार छीना गया तो जेल भरो आंदोलन किया जाएगा।",
+          "background_context": "यह विवाद चुनाव आयोग के भीतर मतभेदों के आरोपों वाली मीडिया रिपोर्ट के बाद सामने आया है। चुनाव आयोग ने इन दावों को खारिज करते हुए कहा है कि विशेष गहन पुनरीक्षण (SIR) सहित सभी महत्वपूर्ण निर्णय पूर्ण आयोग द्वारा सर्वसम्मति से लिए गए थे।",
+          "bullet_points": [
+            "मुंबई पुलिस ने 2 अक्टूबर को सीजेपी के प्रदर्शन की अनुमति देने से इनकार किया।",
+            "अभिजीत दिपके ने गांधी जयंती पर जेल भरो आंदोलन की चेतावनी दी।",
+            "पुलिस ने शिवाजी पार्क में सभा की अनुमति न होने का हवाला दिया।",
+            "चुनाव आयोग ने आंतरिक मतभेदों के दावों को खारिज किया।"
+          ],
+          "key_facts": [
+            "आयोजक: ककरोच जनता पार्टी (CJP)",
+            "लक्ष्य: मुख्य चुनाव आयुक्त (CEC) ज्ञानेश कुमार",
+            "प्रस्तावित तिथि: 2 अक्टूबर"
+          ],
+          "key_locations": [
+            "मुंबई",
+            "शिवाजी पार्क"
+          ],
+          "important_dates": [
+            "2 अक्टूबर",
+            "26 सितंबर"
+          ]
+        },
+        "quiz": {
+          "question": "Which political entity announced a protest against CEC Gyanesh Kumar scheduled for October 2?",
+          "options": [
+            "Cockroach Janta Party",
+            "Aam Aadmi Party",
+            "Rashtriya Janata Dal",
+            "Lok Janshakti Party"
+          ],
+          "correct_answer": "Cockroach Janta Party",
+          "explanation": "Cockroach Janta Party (CJP) co-founder Abhijeet Dipke announced the planned protest against CEC Gyanesh Kumar."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/mumbai-police-denied-permission-for-cjp-october-2-protest-against-cec-gyanesh-kumar-says-abhijeet-dipke-101790517624615.html",
+        "published_date": "2026-09-27",
+        "id": 124,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/Abhijeet_Dipke_CJP_protest_1790517934271_R4w0_1790517934456_dkY1_55af7518-85a5-4024-ba1e-1d3e9eea8be7_sMNx.jpg",
+        "added_at": "2026-09-27T21:07:21.061890+05:30"
+      },
+      {
+        "category": "World",
+        "exam_corner": true,
+        "headline": "US will not let India become next China, claims Russian envoy Denis Alipov",
+        "story_lead": "Russia's ambassador to India, Denis Alipov, stated that a senior US official made a 'Freudian slip' at the Raisina Dialogue by remarking that Washington would never allow India to become a competing superpower like China. The remarks come amid US pressure over India's purchase of Russian crude oil and the recent signing of the Lindsey O Graham Sanctioning Russia and Iran Act of 2026.",
+        "full_article_text": "Speaking at the NDTV Defence Summit, Russian envoy to India Denis Alipov claimed that a senior US official publicly revealed during this year's Raisina Dialogue that the United States would not permit India to emerge as another competing superpower, describing the statement as a 'Freudian slip'. Alipov asserted that as India grows stronger and inevitably becomes a superpower, the US will attempt to contain it, pointing to the Lindsey O Graham Sanctioning Russia and Iran Act as a measure of such pressure. The Graham Act, signed into law by Trump, provides Congress-backed authority to impose tariffs of up to 100% on goods from the top five buyers of Russian oil, which includes both India and China. Alipov defended India's stance, noting that India purchases Russian crude oil for its own economy, people, and competitive pricing, while commending India's strategic autonomy. In response to the legislation, the Indian Ministry of External Affairs stated that India is firmly committed to meeting the energy needs of its 1.4 billion population, will protect its trade and economic interests, and will continue diversifying its energy sourcing.",
+        "background_context": "India faces US scrutiny and legislative pressure regarding its purchase of discounted Russian crude oil following the conflict in Ukraine. The recent enactment of the Lindsey O Graham Sanctioning Russia and Iran Act of 2026 grants authority to levy high tariffs on top buyers of Russian oil, impacting major importers like India and China, who maintain that these energy purchases are driven by economic necessity and national energy security.",
+        "bullet_points": [
+          "Russian envoy Denis Alipov claimed a top US official made a 'Freudian slip' at the Raisina Dialogue regarding US intentions to contain India.",
+          "Alipov stated that Washington aims to prevent India from becoming a competing superpower like China.",
+          "The remarks coincided with the enactment of the Lindsey O Graham Sanctioning Russia and Iran Act of 2026.",
+          "The Graham Act permits tariffs of up to 100% on goods from the top five importers of Russian oil, including India and China.",
+          "India maintains that its purchase of Russian oil is intended to safeguard its domestic economy and meet the energy demands of its 1.4 billion citizens.",
+          "The Indian Ministry of External Affairs asserted its determination to protect national trade and economic interests through diversified energy sourcing."
+        ],
+        "key_facts": [
+          "Denis Alipov is Russia's envoy to India.",
+          "The Graham Act authorizes tariffs of up to 100% on the five biggest buyers of Russian oil.",
+          "India imports Russian oil based on competitive offers to support its domestic economy and energy security.",
+          "India's population stands at 1.4 billion according to official statements."
+        ],
+        "key_locations": [
+          "India",
+          "United States",
+          "Russia",
+          "China"
+        ],
+        "important_dates": [
+          "2026"
+        ],
+        "exam_relevance": [
+          "UPSC Prelims: International Relations, Bilateral ties between India-US and India-Russia, Global trade policies.",
+          "UPSC Mains GS Paper II: Bilateral, regional and global groupings and agreements involving India and/or affecting India's interests; Effect of policies and politics of developed and developing countries on India's interests."
+        ],
+        "upsc_analysis": "The statement by the Russian envoy highlights the complex geopolitical dynamics surrounding India's pursuit of strategic autonomy. As India deepens its multi-alignment strategy—maintaining traditional defense and energy ties with Russia while expanding comprehensive global partnerships with the US and Western nations—it faces external pressures from major powers. The US legislation targeting Russian oil imports tests India's diplomatic capacity to balance energy security with foreign policy independence, underscoring the challenges of rising as an independent global pole in a multipolar world.",
+        "causes": [
+          "India's continued purchase of discounted Russian crude oil to secure domestic energy needs and economic stability.",
+          "Geopolitical competition and strategic realignments among major global powers including the US, Russia, and China."
+        ],
+        "impacts": [
+          "Increased diplomatic tension and legislative pressure from the United States regarding India's energy trade policies.",
+          "Need for India to navigate trade risks arising from US sanction acts such as the Lindsey O Graham Act."
+        ],
+        "challenges": [
+          "Balancing strategic autonomy and multi-alignment without alienating key economic and strategic partners like the US.",
+          "Safeguarding domestic energy security and trade interests against external tariff threats."
+        ],
+        "government_steps": [
+          "The Indian Ministry of External Affairs affirmed commitment to protecting national trade and economic interests.",
+          "Emphasized meeting the energy needs of 1.4 billion citizens through diversified energy sourcing based on market dynamics.",
+          "Planning to work closely with Indian trade and industry bodies to address the implications of new US legislation."
+        ],
+        "constitutional_or_policy_link": [
+          "India's foreign policy principle of strategic autonomy and independent decision-making."
+        ],
+        "way_forward": [
+          "Continue pursuing a diversified energy basket to insulate the domestic economy from geopolitical shocks.",
+          "Engage diplomatically with the United States to articulate India's energy security imperatives and economic compulsions.",
+          "Reinforce strategic autonomy by strengthening resilient trade partnerships across multiple global forums."
+        ],
+        "mains_notes": "India's foreign policy is anchored in strategic autonomy, allowing it to maintain independent relations with traditional partners like Russia while building robust ties with Western democracies like the US. However, unilateral US legislative measures such as the Lindsey O Graham Act—aimed at penalizing top buyers of Russian oil—pose challenges to India's energy security and economic interests. India's official stance emphasizes safeguarding its 1.4 billion citizens' energy needs through diversified sourcing, demonstrating that national interest remains the primary driver of its foreign economic policy.",
+        "mains_questions": [
+          "Analyze the challenges to India's strategic autonomy in the context of mounting Western pressure over its energy trade with Russia.",
+          "How does India balance its multi-alignment foreign policy approach amidst shifting geopolitical dynamics between major global powers?"
+        ],
+        "takeaway": "India remains committed to protecting its energy security and strategic autonomy through diversified sourcing despite external legislative pressures.",
+        "prelims_facts": [
+          "Denis Alipov is the Russian envoy to India.",
+          "The Lindsey O Graham Sanctioning Russia and Iran Act of 2026 allows tariffs of up to 100% on top buyers of Russian oil.",
+          "India maintains a population of 1.4 billion people."
+        ],
+        "vocabulary": [
+          {
+            "word": "Freudian slip",
+            "meaning_hindi": "मुख से निकला अनजाने में सत्य (अवचेतन मन की बात)"
+          },
+          {
+            "word": "Strategic autonomy",
+            "meaning_hindi": "रणनीतिक स्वायत्तता (स्वतंत्र निर्णय लेने की क्षमता)"
+          },
+          {
+            "word": "Tariffs",
+            "meaning_hindi": "आयात शुल्क"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Denis Alipov",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Denis_Alipov"
+          },
+          {
+            "name": "Raisina Dialogue",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Raisina_Dialogue"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "अमेरिका भारत को अगला चीन नहीं बनने देगा: रूसी दूत ने किया दावा",
+          "story_lead": "रूस के दूत डेनिस अलीपोव ने रविवार को दावा किया कि एक वरिष्ठ अमेरिकी अधिकारी ने रायसीना डायलॉग के दौरान सार्वजनिक रूप से स्वीकार किया कि वाशिंगटन भारत को दूसरा चीन नहीं बनने देगा।",
+          "full_article_text": "एनडीटीवी डिफेंस समिट में बोलते हुए, रूस के दूत डेनिस अलीपोव ने कहा कि अमेरिकी अधिकारी की टिप्पणी एक 'फ्रायडियन स्लिप' थी। उन्होंने कहा कि जैसे-जैसे भारत मजबूत होगा, अमेरिका उसे रोकने के लिए हरसंभव प्रयास करेगा।",
+          "background_context": "भारत रूस से कच्चे तेल की खरीद कर रहा है, जिससे अमेरिका का दबाव बढ़ रहा है। हाल ही में लिंडसे ओ ग्राहम अधिनियम को कानून का रूप दिया गया है।",
+          "bullet_points": [
+            "रूसी दूत डेनिस अलीपोव का बयान सामने आया है।",
+            "अमेरिका द्वारा भारत को रोकने के प्रयासों पर चर्चा की गई।",
+            "ग्राहम अधिनियम के तहत रूसी तेल के खरीदारों पर शुल्क का प्रावधान है।"
+          ],
+          "key_facts": [
+            "डेनिस अलीपोव रूस के दूत हैं।",
+            "भारत अपनी ऊर्जा जरूरतों के लिए रूसी तेल खरीदता है।"
+          ],
+          "key_locations": [
+            "भारत",
+            "अमेरिका",
+            "रूस",
+            "चीन"
+          ],
+          "important_dates": [
+            "2026"
+          ]
+        },
+        "quiz": {
+          "question": "According to Russian envoy Denis Alipov, which US legislation was pointed out as a measure to contain India's growth?",
+          "options": [
+            "Lindsey O Graham Sanctioning Russia and Iran Act",
+            "CAATSA Act",
+            "CHIPS and Science Act",
+            "National Security Defense Act"
+          ],
+          "correct_answer": "Lindsey O Graham Sanctioning Russia and Iran Act",
+          "explanation": "Denis Alipov pointed to the Lindsey O Graham Sanctioning Russia and Iran Act of 2026 as a measure used by the US to apply pressure over Russian oil purchases and contain India's rise."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/us-will-not-let-india-become-next-china-russian-envoy-denis-alipov-says-freudian-slip-revealed-washington-concerns-101790517637417.html",
+        "published_date": "2026-09-27",
+        "id": 123,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/ANI-20260904048-0_1790517804516_GU4Y_1790517811771_1tFr_a971210a-523a-4833-848d-07b19ed77dec_UZPA.jpg",
+        "added_at": "2026-09-27T21:07:21.061890+05:30"
+      },
+      {
+        "category": "Economy",
+        "exam_corner": true,
+        "headline": "Maharashtra CM Devendra Fadnavis Rejects Vote Theft Allegations, Accuses Rahul Gandhi of Anarchy",
+        "story_lead": "Maharashtra Chief Minister Devendra Fadnavis has strongly dismissed opposition allegations of vote theft regarding the Special Intensive Revision (SIR) of electoral rolls. He accused Lok Sabha Leader of Opposition Rahul Gandhi of attempting to spark anarchy and undermine public trust in key national institutions.",
+        "full_article_text": "Maharashtra Chief Minister Devendra Fadnavis launched a sharp critique against Lok Sabha Leader of Opposition Rahul Gandhi over ongoing questions raised regarding the Election Commission of India (ECI) and the Special Intensive Revision (SIR) process. Fadnavis dismissed opposition allegations of vote theft as baseless and asserted that all decisions concerning the electoral roll revision were taken unanimously by all three election commissioners with no dissent on record. Fadnavis accused Gandhi of brandishing the Constitution while simultaneously trying to discredit key national bodies, including the ECI, Supreme Court, Comptroller and Auditor General (CAG), and Reserve Bank of India (RBI). He claimed that the opposition strategy aims to create confusion and distrust against the democratic and constitutional systems of India. Furthermore, Fadnavis addressed queries from NDA allies, stating that it is natural for the poll body to offer clarifications amidst constant accusations. He also referenced past West Bengal elections to dismiss concerns over voter number drops during the SIR process, emphasizing that constitutional and democratic institutions remain robust.",
+        "background_context": "The controversy stems from discussions surrounding the Special Intensive Revision (SIR) of electoral rolls, questions raised about internal communications of the Election Commission of India, and allegations made by opposition parties regarding vote integrity.",
+        "bullet_points": [
+          "Maharashtra CM Devendra Fadnavis rejected allegations of vote theft made by the opposition.",
+          "Fadnavis accused Rahul Gandhi of attempting to spark anarchy and undermine trust in constitutional bodies.",
+          "The ECI clarified that communication regarding a letter to the Cabinet Secretary was not related to policy matters.",
+          "Fadnavis asserted that all decisions regarding the SIR of electoral rolls were taken unanimously by the election commissioners.",
+          "NDA allies sought clarification, prompting explanations from the poll body.",
+          "Fadnavis cited West Bengal elections to counter concerns over voter number drops during the SIR process."
+        ],
+        "key_facts": [
+          "Devendra Fadnavis is the Chief Minister of Maharashtra.",
+          "Rahul Gandhi is the Leader of Opposition in the Lok Sabha.",
+          "The Election Commission of India handles the Special Intensive Revision (SIR) of electoral rolls."
+        ],
+        "key_locations": [
+          "Maharashtra",
+          "West Bengal"
+        ],
+        "important_dates": [
+          "Sunday"
+        ],
+        "exam_relevance": [
+          "Prelims: Constitution of India, Election Commission of India, Electoral Reforms",
+          "Mains: GS Paper II - Statutory, regulatory and various quasi-judicial bodies; Role of opposition in a democracy"
+        ],
+        "upsc_analysis": "The discourse highlights the friction between the executive/ruling coalition and the opposition regarding the credibility of constitutional bodies such as the Election Commission of India. From a UPSC perspective, it emphasizes the importance of institutional integrity, electoral reforms, and the constitutional mandate of the ECI under Article 324.",
+        "causes": [
+          "Disagreements and allegations concerning the Special Intensive Revision (SIR) of electoral rolls",
+          "Questions raised by opposition leaders regarding internal ECI communications and procedures"
+        ],
+        "impacts": [
+          "Heightened political debate over the credibility of constitutional institutions",
+          "Public discussions regarding electoral rolls and voter turnout revisions"
+        ],
+        "challenges": [
+          "Maintaining public trust in independent statutory bodies like the ECI amidst intense political polarization",
+          "Addressing concerns raised by political parties and allies transparently"
+        ],
+        "government_steps": [
+          "Election Commission of India issued press notes clarifying communications and confirming unanimous decision-making"
+        ],
+        "constitutional_or_policy_link": [
+          "Article 324 of the Constitution of India regarding the superintendence, direction, and control of elections vested in the Election Commission."
+        ],
+        "way_forward": [
+          "Ensuring transparent communication by electoral bodies to clear political doubts",
+          "Upholding the constitutional sanctity and independence of institutional bodies in India"
+        ],
+        "mains_notes": "The debate surrounding institutional autonomy and electoral integrity underscores the need for constructive dialogue between political stakeholders and constitutional authorities. Maintaining the neutrality and credibility of bodies like the ECI is paramount for Indian democracy.",
+        "mains_questions": [
+          "Examine the role of the Election Commission of India in conducting electoral roll revisions and maintaining institutional credibility in a parliamentary democracy.",
+          "Discuss the challenges faced by constitutional bodies in managing political scrutiny and public trust."
+        ],
+        "takeaway": "Devendra Fadnavis defended the Election Commission against opposition allegations, asserting that institutional integrity remains strong amidst political disputes.",
+        "prelims_facts": [
+          "The Election Commission of India conducts the Special Intensive Revision (SIR) of electoral rolls.",
+          "Article 324 relates to the Election Commission."
+        ],
+        "vocabulary": [
+          {
+            "word": "Anarchy",
+            "meaning_hindi": "अराजकता"
+          },
+          {
+            "word": "Unanimous",
+            "meaning_hindi": "सर्वसम्मति से"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Devendra Fadnavis",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Devendra_Fadnavis"
+          },
+          {
+            "name": "Rahul Gandhi",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Rahul_Gandhi"
+          },
+          {
+            "name": "Election Commission of India",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Election_Commission_of_India"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "महाराष्ट्र के सीएम देवेंद्र फडणवीस ने 'वोट चोरी' के दावों को नकारा, राहुल गांधी पर 'अराजकता' का आरोप लगाया",
+          "story_lead": "महाराष्ट्र के मुख्यमंत्री देवेंद्र फडणवीस ने मतदाता सूची के विशेष गहन पुनरीक्षण (SIR) को लेकर चुनाव आयोग पर सवाल उठाने के लिए राहुल गांधी की तीखी आलोचना की है। उन्होंने कहा कि कांग्रेस नेता संवैधानिक संस्थाओं में जनता के भरोसे को कमजोर कर रहे हैं।",
+          "full_article_text": "महाराष्ट्र के मुख्यमंत्री देवेंद्र फडणवीस ने रविवार को लोकसभा में विपक्ष के नेता राहुल गांधी पर चुनाव आयोग की कार्यप्रणाली पर सवाल उठाने को लेकर निशाना साधा। फडणवीस ने 'वोट चोरी' के आरोपों को पूरी तरह खारिज किया और कहा कि SIR के सभी फैसले चुनाव आयुक्तों द्वारा सर्वसम्मति से लिए गए थे।",
+          "background_context": "यह विवाद मतदाता सूचियों के विशेष गहन पुनरीक्षण (SIR) और चुनाव आयोग की कार्यप्रणाली पर विपक्षी दलों द्वारा उठाए गए सवालों के बाद सामने आया है।",
+          "bullet_points": [
+            "देवेंद्र फडणवीस ने विपक्ष के वोट चोरी के आरोपों को खारिज किया।",
+            "उन्होंने राहुल गांधी पर संवैधानिक संस्थाओं के प्रति अविश्वास पैदा करने का आरोप लगाया।",
+            "चुनाव आयोग ने स्पष्ट किया कि कैबिनेट सचिव को भेजा गया पत्र नीतिगत मामलों से संबंधित नहीं था।"
+          ],
+          "key_facts": [
+            "देवेंद्र फडणवीस महाराष्ट्र के मुख्यमंत्री हैं।",
+            "राहुल गांधी लोकसभा में विपक्ष के नेता हैं।"
+          ],
+          "key_locations": [
+            "महाराष्ट्र",
+            "पश्चिम बंगाल"
+          ],
+          "important_dates": [
+            "रविवार"
+          ]
+        },
+        "quiz": {
+          "question": "According to Devendra Fadnavis, how were decisions regarding the Special Intensive Revision (SIR) of electoral rolls taken by the Election Commission?",
+          "options": [
+            "By majority vote",
+            "Unanimously by all election commissioners",
+            "Through executive intervention",
+            "By cabinet directive"
+          ],
+          "correct_answer": "Unanimously by all election commissioners",
+          "explanation": "Devendra Fadnavis asserted that all decisions regarding the SIR of electoral rolls were taken unanimously by all three election commissioners with no dissent on record."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/fadnavis-rejects-vote-theft-claims-accuses-rahul-gandhi-of-anarchy-101790520116836.html",
+        "published_date": "2026-09-27",
+        "id": 122,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/CM-dismissed-the-opposition-s-allegations-of-vote-_1790520108058_Q7YC.jpg",
+        "added_at": "2026-09-27T21:07:21.061890+05:30"
+      },
+      {
+        "category": "Sports",
+        "exam_corner": true,
+        "headline": "Protests and Violence Erupt at Lovely Professional University (LPU) Over Alleged Incidents",
+        "story_lead": "Tension and violent protests escalated at Lovely Professional University (LPU) in Jalandhar, Punjab, following social media reports of an alleged rape and suicide case. The unrest led to police intervention, damage to university property, and the registration of an FIR by law enforcement authorities.",
+        "full_article_text": "Protests broke out at Lovely Professional University (LPU) in Jalandhar, Punjab, following reports of an alleged rape and suicide circulating on social media. The situation escalated into violence on Sunday, with explosions heard inside the campus, multiple police personnel injured, and three police SUVs set ablaze by a mob. Students reportedly hurled glass bottles at security personnel, prompting police to use a lathicharge. Protesters had earlier damaged property, smashed window panes, set parts of buildings on fire, and blocked the Delhi-Amritsar National Highway demanding an FIR. While university management dismissed the claims and blamed anti-social elements for creating confusion, police confirmed that an FIR has been registered. DIG Jalandhar Range Naveen Singla stated that preliminary investigations indicate a girl student staying at the G-3 hostel was allegedly raped three days prior and has since returned home. Additionally, students raised concerns regarding the death of a Telangana student who died by suicide a fortnight earlier, prompting police to look into the matter alongside security and hostel management issues.",
+        "background_context": "The protests at LPU follow similar unrest at Chitkara University in Patiala a day earlier, stemming from social media reports regarding alleged rape and suicide cases.",
+        "bullet_points": [
+          "Protests erupted at Lovely Professional University (LPU) in Jalandhar, Punjab, over alleged rape and suicide incidents.",
+          "Violence on Sunday led to explosions, police personnel injuries, and three police SUVs set ablaze.",
+          "Students blocked the Delhi-Amritsar National Highway and demanded the registration of an FIR.",
+          "The university dismissed the claims as rumors spread by anti-social elements.",
+          "An FIR was registered by police after recording the statement of the victim, who had returned home.",
+          "Authorities also initiated a probe into a separate suicide case involving a Telangana student from a fortnight ago."
+        ],
+        "key_facts": [
+          "Location: Lovely Professional University (LPU), Jalandhar, Punjab.",
+          "Incident: Protests and violence over alleged rape and suicide cases.",
+          "Police Action: FIR registered, lathicharge deployed after glass bottles were hurled.",
+          "Official Statement: DIG Jalandhar Range Naveen Singla confirmed the preliminary investigation of the alleged rape case and probe into a separate student suicide."
+        ],
+        "key_locations": [
+          "Lovely Professional University",
+          "Jalandhar",
+          "Punjab",
+          "Delhi-Amritsar National Highway",
+          "Telangana",
+          "Patiala",
+          "Chitkara University"
+        ],
+        "important_dates": [
+          "Saturday",
+          "Sunday"
+        ],
+        "exam_relevance": [
+          "Mains: General Studies Paper I (Social issues, role of women and women's safety) and General Studies Paper II (Governance, law and order, policing).",
+          "Prelims: Current events of national and regional importance."
+        ],
+        "upsc_analysis": "The incident at LPU highlights broader systemic concerns regarding campus safety, student grievances management, and law and order maintenance during student agitations. It underlines the challenges law enforcement faces in balancing public order with transparent investigations into sensitive crimes, as well as the rapid spread of information and misinformation on social media.",
+        "causes": [
+          "Social media circulation of reports regarding an alleged rape and suicide case on campus.",
+          "Student grievances regarding campus safety, hostel management, and previous unresolved incidents.",
+          "Delays in initial communication or registration of formal complaints as perceived by students."
+        ],
+        "impacts": [
+          "Escalation of campus violence, resulting in damage to university infrastructure and police vehicles.",
+          "Injuries to police personnel and disruption of traffic on the Delhi-Amritsar National Highway.",
+          "Initiation of a formal police investigation, registration of an FIR, and planned coordinated meetings between students and management."
+        ],
+        "challenges": [
+          "Managing large-scale student protests and preventing property damage without disproportionate use of force.",
+          "Combating unverified rumors and misinformation on social media platforms.",
+          "Ensuring transparent, scientific investigations while restoring campus peace and trust."
+        ],
+        "government_steps": [
+          "Registration of an FIR under required sections following preliminary investigation.",
+          "Deployment of police force to restore law and order.",
+          "Commitment by DIG Jalandhar Range to conduct a scientific probe involving student union representatives and address hostel security concerns through coordinated meetings."
+        ],
+        "constitutional_or_policy_link": [
+          "Right to life and personal liberty (Article 21), ensuring safety and security within educational institutions.",
+          "Criminal Procedure codes and Bharatiya Nagarik Suraksha Sanhita (BNSS) provisions regarding inquest proceedings and FIR registration."
+        ],
+        "way_forward": [
+          "Establishing robust, transparent grievance redressal mechanisms inside universities to prevent student unrest.",
+          "Promoting responsible social media usage and rapid official communication to curb rumors.",
+          "Enhancing campus security protocols and fostering regular dialogue between student representatives and university management."
+        ],
+        "mains_notes": "Campus unrest at LPU underscores the critical need for robust grievance redressal mechanisms and robust security protocols in higher educational institutions. Timely police action, scientific investigations, and transparent communication are vital to address sensitive allegations and prevent escalation into public violence.",
+        "mains_questions": [
+          "Analyze the factors contributing to student unrest in higher educational institutions and suggest measures to improve campus security and grievance redressal.",
+          "Discuss the challenges faced by law enforcement agencies in managing campus agitations driven by social media reports."
+        ],
+        "takeaway": "Protests and violence at LPU over alleged safety violations highlight the necessity for transparent institutional grievance handling and effective campus security management.",
+        "prelims_facts": [
+          "LPU is located in Jalandhar, Punjab.",
+          "Inquest proceedings in previous suicide cases are handled under Section 174 of the Bharatiya Nagarik Suraksha Sanhita (BNSS)."
+        ],
+        "vocabulary": [
+          {
+            "word": "Lathicharge",
+            "meaning_hindi": "लाठीचार्ज"
+          },
+          {
+            "word": "Inquest",
+            "meaning_hindi": "मृत्यु की छानबीन"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Lovely Professional University",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Lovely_Professional_University"
+          },
+          {
+            "name": "Jalandhar",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Jalandhar"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "पंजाब के एलपीयू में कथित घटनाओं को लेकर कैंपस के भीतर विस्फोट और पुलिस वाहनों में आगजनी",
+          "story_lead": "सोशल मीडिया पर कथित दुष्कर्म और आत्महत्या के मामले सामने आने के बाद शनिवार को लवली प्रोफेशनल यूनिवर्सिटी (एलपीयू) में प्रदर्शन शुरू हो गया। पंजाब के जालंधर स्थित इस विश्वविद्यालय में रविवार को हिंसा और बढ़ गई, जिससे तनाव की स्थिति उत्पन्न हो गई।",
+          "full_article_text": "सोशल मीडिया पर कथित दुष्कर्म और आत्महत्या के मामले सामने आने के बाद शनिवार को एलपीयू में प्रदर्शन शुरू हो गया था। रविवार को जालंधर, पंजाब स्थित लवली प्रोफेशनल यूनिवर्सिटी में हिंसा और बढ़ गई, जिसके बाद परिसर के भीतर विस्फोट सुने गए और कई पुलिसकर्मी घायल हो गए। भीड़ द्वारा तीन पुलिस वाहनों को भी आग के हवाले कर दिया गया। एलपीयू परिसर के बाहर छात्रों द्वारा पुलिसकर्मियों पर कांच की बोतलें फेंके जाने के बाद पुलिस को लाठीचार्ज करना पड़ा। विश्वविद्यालय प्रबंधन ने दुष्कर्म और आत्महत्या के दावों को खारिज करते हुए ' असामाजिक तत्वों ' पर छात्रों के बीच भ्रम पैदा करने का आरोप लगाया है। रविवार को इस मामले में एक एफआईआर दर्ज की गई।",
+          "background_context": "एलपीयू में यह विरोध प्रदर्शन पटियाला की चित्राकारा यूनिवर्सिटी में एक दिन पहले हुए इसी तरह के प्रदर्शनों के बाद सामने आया।",
+          "bullet_points": [
+            "पंजाब के एलपीयू में कथित दुष्कर्म और आत्महत्या के मामलों पर विरोध प्रदर्शन भड़का।",
+            "रविवार को हुई हिंसा में पुलिस वाहनों को आग के हवाले किया गया और पुलिसकर्मी घायल हुए।",
+            "पुलिस ने मामले में एफआईआर दर्ज कर ली है और जांच शुरू कर दी है।"
+          ],
+          "key_facts": [
+            "स्थान: लवली प्रोफेशनल यूनिवर्सिटी, जालंधर, पंजाब।",
+            "घटना: कथित दुष्कर्म और आत्महत्या के मामलों पर छात्र प्रदर्शन।"
+          ],
+          "key_locations": [
+            "लवली प्रोफेशनल यूनिवर्सिटी",
+            "जालंधर",
+            "पंजाब"
+          ],
+          "important_dates": [
+            "शनिवार",
+            "रविवार"
+          ]
+        },
+        "quiz": {
+          "question": "In which district of Punjab is Lovely Professional University (LPU) located, where recent protests and violence broke out?",
+          "options": [
+            "Patiala",
+            "Jalandhar",
+            "Amritsar",
+            "Ludhiana"
+          ],
+          "correct_answer": "Jalandhar",
+          "explanation": "The protests and violence took place at Lovely Professional University (LPU) located in Jalandhar, Punjab."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/blasts-heard-inside-campus-police-suvs-set-on-fire-by-mob-why-punjabs-lpu-is-growing-tense-101790520295607.html",
+        "published_date": "2026-09-27",
+        "id": 121,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/lpu_violence_1790520542323_9zFf_1790520548567_0sOI_4412dd2b-2484-4de4-9e9f-bf3437027d19_Psxr.jpeg",
+        "added_at": "2026-09-27T21:07:21.061890+05:30"
+      },
+      {
+        "category": "Sports",
+        "exam_corner": true,
+        "headline": "Guwahati Homestay Death Case: Father Alleges Assault, Police Arrest Accused",
+        "story_lead": "A 22-year-old Gauhati University student was found dead at a homestay on the outskirts of Guwahati after allegedly making a distress call to her mother. Her father has accused the male companion of severe physical assault and gang rape, prompting a police investigation and the arrest of the prime accused.",
+        "full_article_text": "A 22-year-old female student of Gauhati University was found dead under suspicious circumstances at a homestay on the outskirts of Guwahati on Saturday morning. The victim had gone to spend the night at the homestay with a male friend on Friday. According to police, the victim was brought unconscious to a local health facility in the early hours of Saturday and subsequently referred to Gauhati Medical College and Hospital (GMCH), where doctors declared her dead. The victim's family has raised serious allegations, stating that the student called her mother around 2:00 AM on the night of the incident to report that she was being tortured and asking for help. The father claimed that there were multiple injuries on his daughter's body, ranging from her lips to other parts, and alleged that she was subjected to severe physical assault and gang rape by multiple men. Guwahati West Deputy Commissioner of Police (DCP) Bolin Deori stated that a preliminary inquiry points to murder and that the prime accused, suspected to be her boyfriend, has been arrested while others have been detained for questioning. Police confirmed that multiple injuries were found on the body, though no blood was detected at the scene or on the body, and the exact cause of death awaits the final post-mortem report. The mother of the accused acknowledged that the two had been in a relationship for several months and stated that she supports a thorough investigation and punishment if her son is found guilty.",
+        "background_context": "The incident took place at a homestay on the outskirts of Guwahati involving a student from Gauhati University and her male friend, leading to police intervention, arrests, and medical examination at Gauhati Medical College and Hospital (GMCH).",
+        "bullet_points": [
+          "A 22-year-old Gauhati University student was found dead at a Guwahati homestay on Saturday morning.",
+          "The victim had visited the homestay with a male friend on Friday.",
+          "The father alleged that his daughter called her mother around 2 AM stating she was being tortured.",
+          "Police stated the victim was brought unconscious to a local health facility and later declared dead at GMCH.",
+          "The prime accused, suspected to be the boyfriend, has been arrested by Guwahati police.",
+          "DCP Bolin Deori confirmed that a preliminary inquiry indicates murder and a post-mortem examination has been ordered."
+        ],
+        "key_facts": [
+          "Victim: 22-year-old Gauhati University student",
+          "Location: Homestay on the outskirts of Guwahati, Assam",
+          "Key Officials: Bolin Deori, Guwahati West Deputy Commissioner of Police (DCP)",
+          "Hospital: Gauhati Medical College and Hospital (GMCH)"
+        ],
+        "key_locations": [
+          "Guwahati",
+          "Gauhati University",
+          "Gauhati Medical College and Hospital"
+        ],
+        "important_dates": [
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "exam_relevance": [
+          "Prelims: General awareness of current affairs and law enforcement updates in Assam.",
+          "Mains: General Studies Paper II / Paper IV - Issues relating to women safety, crime investigation, and administration of justice."
+        ],
+        "upsc_analysis": "Incidents highlighting crimes against women test the efficacy of the criminal justice system, forensic investigation standards, and police responsiveness. From a governance perspective, ensuring women's safety in private commercial accommodations like homestays calls for regulatory frameworks and timely police intervention.",
+        "causes": [
+          "Interpersonal disputes leading to physical assault and alleged murder",
+          "Alleged severe physical torture and crime reported by the victim's family"
+        ],
+        "impacts": [
+          "Public concern regarding safety in homestays and private accommodations",
+          "Demands by family and community for a thorough investigation and strict punishment"
+        ],
+        "challenges": [
+          "Determining the exact cause of death prior to the final post-mortem report",
+          "Verifying conflicting claims regarding gang rape allegations versus preliminary police findings"
+        ],
+        "government_steps": [
+          "Immediate arrest of the prime accused by Guwahati police",
+          "Detention of additional individuals for questioning",
+          "Dispatch of the body for post-mortem examination at GMCH"
+        ],
+        "constitutional_or_policy_link": [
+          "Article 21 of the Constitution of India (Right to Life and Personal Liberty)"
+        ],
+        "way_forward": [
+          "Expeditious completion of forensic and post-mortem analyses",
+          "Transparent and thorough police investigation into all allegations raised by the victim's family",
+          "Strengthening safety regulations and monitoring of homestays and private rentals"
+        ],
+        "mains_notes": "The Guwahati homestay case underscores critical issues concerning women's safety, speedy criminal investigation, and regulatory oversight of hospitality spaces. Timely medical evaluation, transparent police reporting, and adherence to due process are paramount to ensuring justice.",
+        "mains_questions": [
+          "Discuss the challenges in investigating crimes against women in private spaces and the role of police and forensic science in ensuring speedy justice.",
+          "Examine the need for stricter regulatory frameworks for homestays and alternative accommodations from the perspective of public safety."
+        ],
+        "takeaway": "Guwahati police have arrested the prime accused in the death of a 22-year-old university student at a homestay, while investigations and post-mortem procedures continue.",
+        "prelims_facts": [
+          "Gauhati Medical College and Hospital (GMCH) conducted the post-mortem process.",
+          "Guwahati West DCP Bolin Deori is leading the preliminary inquiry."
+        ],
+        "vocabulary": [
+          {
+            "word": "Homestay",
+            "meaning_hindi": "होमस्टे / पारिवारिक आवास"
+          },
+          {
+            "word": "Post-mortem",
+            "meaning_hindi": "शसव परीक्षण / पोस्टमार्टम"
+          },
+          {
+            "word": "Preliminary",
+            "meaning_hindi": "प्राथमिक"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Guwahati",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Guwahati"
+          },
+          {
+            "name": "Gauhati University",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Gauhati_University"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "गुवाहाटी होमस्टे छात्र मौत मामला: पिता ने गैंगरेप और हत्या का आरोप लगाया, आरोपी गिरफ्तार",
+          "story_lead": "गुवाहाटी के बाहरी इलाके में एक होमस्टे में मृत पाई गई 22 वर्षीय गौहाटी विश्वविद्यालय की छात्रा के पिता ने अपनी बेटी की बेरहमी से हत्या और गैंगरेप का आरोप लगाया है। पुलिस ने मामले की जांच शुरू कर दी है और मुख्य आरोपी को गिरफ्तार कर लिया है।",
+          "full_article_text": "शनिवार सुबह गुवाहाटी के बाहरी इलाके में एक होमस्टे में गौहाटी विश्वविद्यालय की 22 वर्षीय छात्रा संदिग्ग्ध परिस्थितियों में मृत पाई गई। वह शुक्रवार को एक पुरुष मित्र के साथ वहां रुकी थी। पुलिस के अनुसार, शनिवार तड़के उसे अचेत अवस्था में स्थानीय स्वास्थ्य केंद्र लाया गया और बाद में गुवाहाटी मेडिकल कॉलेज अस्पताल (जीएमसीएच) भेजा गया, जहां डॉक्टरों ने उसे मृत घोषित कर दिया। पीड़िता के परिवार ने आरोप लगाया कि उसने रात करीब 2 बजे अपनी मां को फोन कर बताया था कि उसे प्रताड़ित किया जा रहा है। पिता ने शरीर पर कई चोटों के निशान होने का दावा करते हुए गंभीर मारपीट और गैंगरेप का आरोप लगाया है। गुवाहाटी पश्चिम के पुलिस उपायुक्त बोलिन देओरी ने बताया कि प्रारंभिक जांच में यह हत्या का मामला प्रतीत होता है और मुख्य आरोपी को गिरफ्तार कर लिया गया है।",
+          "background_context": "यह घटना गुवाहाटी के बाहरी इलाके में स्थित एक होमस्टे में हुई, जिसमें पुलिस कार्रवाई और जीएमसीएच में चिकित्सा परीक्षण शामिल है।",
+          "bullet_points": [
+            "गुवाहाटी के होमस्टे में 22 वर्षीय छात्रा मृत पाई गई।",
+            "पीड़िता शुक्रवार को एक पुरुष मित्र के साथ वहां गई थी।",
+            "पिता ने आरोप लगाया कि उसने मां को फोन कर प्रताड़ित किए जाने की बात कही थी।",
+            "मुख्य आरोपी को पुलिस ने गिरफ्तार कर लिया है।",
+            "शव को पोस्टमार्टम के लिए जीएमसीएच भेजा गया है।"
+          ],
+          "key_facts": [
+            "पीड़िता: 22 वर्षीय गौहाटी विश्वविद्यालय की छात्रा",
+            "स्थान: गुवाहाटी, असम",
+            "अधिकारी: बोलिन देओरी, डीसीपी (गुवाहाटी पश्चिम)"
+          ],
+          "key_locations": [
+            "गुवाहाटी",
+            "गौहाटी विश्वविद्यालय"
+          ],
+          "important_dates": [
+            "शनिवार",
+            "शुक्रवार"
+          ]
+        },
+        "quiz": {
+          "question": "In which city did the student's death at a homestay prompt police investigation and arrest of the prime accused as reported in the source?",
+          "options": [
+            "Shillong",
+            "Guwahati",
+            "Dibrugarh",
+            "Silchar"
+          ],
+          "correct_answer": "Guwahati",
+          "explanation": "The incident took place at a homestay on the outskirts of Guwahati, where police arrested the prime accused following the student's death."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/student-found-dead-at-guwahati-homestay-father-alleges-gang-rape-murder-101790521015158.html",
+        "published_date": "2026-09-27",
+        "id": 120,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/Police--however--have-not-confirmed-the-allegation_1790521008329_LCq8.jpg",
+        "added_at": "2026-09-27T21:07:21.061890+05:30"
+      },
+      {
+        "category": "Economy",
+        "exam_corner": true,
+        "headline": "Nationwide Bank Strike: Impact on Services, Open Banks, and Union Demands",
+        "story_lead": "A three-day nationwide bank strike called by the United Forum of Bank Unions (UFBU) is set to impact banking services, particularly across public sector banks, old generation private sector banks, and regional rural banks. The unions are pressing for a five-day working week and other pending service issues. Meanwhile, new generation private sector banks like ICICI Bank, HDFC Bank, and Axis Bank will remain open.",
+        "full_article_text": "Branches of public sector banks, old generation private sector banks, and regional rural banks are expected to face disruptions during the three-day nationwide bank strike called by the United Forum of Bank Unions (UFBU). The strike has been organized due to demands for a five-day working week and several pending service-related issues, including changes to pension benefits and a uniform dearness allowance formula. Digital banking services, online channels, UPI, and ATMs are expected to remain available for customers. New generation private sector banks, including ICICI Bank, HDFC Bank, and Axis Bank, will keep their branches open. The finance ministry has urged bank employees to refrain from the strike and resolve demands through dialogue, noting that major concerns such as the performance-linked incentive (PLI) scheme have already been addressed or kept in abeyance.",
+        "background_context": "The United Forum of Bank Unions (UFBU), an umbrella body of seven bank employees' and officers' unions, organized a one-day nationwide strike on September 11 prior to the current three-day strike. The unions have also threatened an indefinite strike starting October 26, 2026, if their demands are not met. The demand for a five-day work week has been pending for several years, with unions noting that a five-day work week is already implemented in central and state government offices, the RBI, LIC, GIC, NABARD, and financial markets.",
+        "bullet_points": [
+          "A three-day nationwide bank strike has been called by the United Forum of Bank Unions (UFBU).",
+          "Services such as cheque clearance, cash deposits, and withdrawals are likely to be affected at public sector banks and regional rural banks.",
+          "New generation private sector banks like ICICI Bank, HDFC Bank, and Axis Bank will remain open during the strike.",
+          "Digital banking, UPI, internet banking, mobile banking, and ATMs will continue to function normally.",
+          "The primary demands include a five-day working week, pension benefit changes, and a uniform dearness allowance formula for pensioners.",
+          "The finance ministry has urged employees to resolve issues through dialogue and noted that the performance-linked incentive (PLI) scheme demand was put in abeyance."
+        ],
+        "key_facts": [
+          "The strike is called by the United Forum of Bank Unions (UFBU).",
+          "The strike duration is three days, starting from Monday.",
+          "A previous one-day nationwide strike was held on September 11.",
+          "An indefinite strike has been threatened by UFBU from October 26, 2026, if demands are unmet."
+        ],
+        "key_locations": [
+          "India"
+        ],
+        "important_dates": [
+          "September 11",
+          "October 26, 2026"
+        ],
+        "exam_relevance": [
+          "Prelims: Banking services, digital payment channels, industrial disputes.",
+          "Mains (GS III): Indian Economy, Banking sector reforms, labor unions, and employee demands."
+        ],
+        "upsc_analysis": "The bank strike highlights the ongoing friction between employee unions and institutional management regarding work culture, service conditions, and retirement benefits in India's banking sector. From an administrative and economic perspective, balancing workforce welfare with the continuity of essential public financial services remains a key challenge for policymakers.",
+        "causes": [
+          "Unresolved demand for a five-day working week in the banking sector.",
+          "Pending issues related to pension benefits, dearness allowance formula, and options to shift to the Old Pension Scheme (OPS)."
+        ],
+        "impacts": [
+          "Disruptions in branch-based banking services, cheque clearances, and cash deposits/withdrawals at public sector and regional rural banks.",
+          "Increased reliance on digital banking channels, ATMs, UPI, and internet banking by customers."
+        ],
+        "challenges": [
+          "Inconvenience caused to bank customers due to branch closures and delayed banking transactions.",
+          "Deadlock between bank union demands and government/management positions regarding work hours and pension structures."
+        ],
+        "government_steps": [
+          "The finance ministry urged bank employees to refrain from the strike and resolve demands through dialogue.",
+          "Putting the withdrawal of the performance-linked incentive (PLI) scheme in abeyance following detailed discussions."
+        ],
+        "constitutional_or_policy_link": [
+          "Industrial Disputes Act and labor welfare policies."
+        ],
+        "way_forward": [
+          "Fostering structured bilateral dialogue between the finance ministry, management, and bank unions to reach an amicable consensus.",
+          "Enhancing digital infrastructure resilience to handle increased transaction loads during physical branch strikes."
+        ],
+        "mains_notes": "Bank strikes underscore systemic demands by employee federations regarding modern work-life balance policies (such as a five-day work week) and pension reforms. While digital channels mitigate immediate customer inconvenience, sustainable resolutions require active conciliation between institutional managements and unions to protect economic stability and public trust.",
+        "mains_questions": [
+          "Discuss the implications of nationwide bank strikes on financial service delivery and the evolving role of digital banking channels.",
+          "Analyze the key demands raised by bank employee unions in India regarding work hours and pension schemes."
+        ],
+        "takeaway": "While the three-day bank strike disrupts branch services at public sector banks, digital channels and select private banks remain operational.",
+        "prelims_facts": [
+          "UFBU represents seven bank employees' and officers' unions.",
+          "New generation private banks like HDFC, ICICI, and Axis remain open during the strike.",
+          "RBI, LIC, GIC, and NABARD already follow a five-day work week."
+        ],
+        "vocabulary": [
+          {
+            "word": "Conciliation",
+            "meaning_hindi": "समझौता / सुलह"
+          },
+          {
+            "word": "Abeyance",
+            "meaning_hindi": "स्थगन / निलंबित रखना"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "State Bank of India",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=State%20Bank%20of%20India"
+          },
+          {
+            "name": "Reserve Bank of India",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Reserve%20Bank%20of%20India"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "राष्ट्रव्यापी बैंक हड़ताल: क्या ऑनलाइन सेवाएं काम करेंगी? कौन से बैंक खुले रहेंगे?",
+          "story_lead": "यूनाइटेड फोरम ऑफ बैंक यूनियन (UFBU) द्वारा बुलाई गई तीन दिवसीय राष्ट्रव्यापी बैंक हड़ताल के कारण बैंकिंग सेवाओं पर असर पड़ने की संभावना है। यूनियनें पांच दिवसीय कार्य सप्ताह और अन्य लंबित मुद्दों की मांग कर रही हैं। इस बीच, आईसीआईसीआई बैंक, एचडीएफसी बैंक और एक्सिस बैंक जैसे नए दौर के निजी बैंक खुले रहेंगे।",
+          "full_article_text": "सार्वजनिक क्षेत्र के बैंकों, पुराने निजी बैंकों और क्षेत्रीय ग्रामीण बैंकों की शाखाएं तीन दिवसीय राष्ट्रव्यापी बैंक हड़ताल के दौरान प्रभावित हो सकती हैं। यह हड़ताल पांच दिवसीय कार्य सप्ताह और अन्य लंबित मुद्दों की मांग को लेकर बुलाई गई है। हालांकि, डिजिटल बैंकिंग और अन्य ऑनलाइन सेवाएं उपलब्ध रहने की उम्मीद है। आईसीआईसीआई, एचडीएफसी और एक्सिस बैंक जैसी निजी बैंकों की शाखाएं खुली रहेंगी।",
+          "background_context": "यह हड़ताल यूनाइटेड फोरम ऑफ बैंक यूनियन (UFBU) द्वारा बुलाई गई है, जो सात कर्मचारी और अधिकारी यूनियनों का एक निकाय है। यूनियनें पांच दिवसीय कार्य सप्ताह और पेंशन लाभों में बदलाव की मांग कर रही हैं।",
+          "bullet_points": [
+            "यूनाइटेड फोरम ऑफ बैंक यूनियन (UFBU) द्वारा तीन दिवसीय राष्ट्रव्यापी बैंक हड़ताल बुलाई गई है।",
+            "सार्वजनिक क्षेत्र के बैंकों में चेक क्लीयरेंस और नकद निकासी प्रभावित हो सकती है।",
+            "आईसीआईसीआई, एचडीएफसी और एक्सिस बैंक जैसे निजी बैंक खुले रहेंगे।",
+            "डिजिटल बैंकिंग, यूपीआई और एटीएम सेवाएं सामान्य रूप से उपलब्ध रहेंगी।"
+          ],
+          "key_facts": [
+            "हड़ताल UFBU द्वारा बुलाई गई है।",
+            "हड़ताल तीन दिनों की है।"
+          ],
+          "key_locations": [
+            "भारत"
+          ],
+          "important_dates": [
+            "11 सितंबर",
+            "26 अक्टूबर, 2026"
+          ]
+        },
+        "quiz": {
+          "question": "Which umbrella body called the nationwide bank strike over the demand for a five-day working week?",
+          "options": [
+            "Indian Banks' Association (IBA)",
+            "United Forum of Bank Unions (UFBU)",
+            "National Bank Employees Federation",
+            "Reserve Bank Officers Association"
+          ],
+          "correct_answer": "United Forum of Bank Unions (UFBU)",
+          "explanation": "The strike has been called by the United Forum of Bank Unions (UFBU), an umbrella body representing seven bank employees' and officers' unions."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/bank-strike-tomorrow-nationwide-will-online-services-work-which-banks-open-hdfc-icici-axis-bank-ufbu-latest-news-101790519555537.html",
+        "published_date": "2026-09-27",
+        "id": 119,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/ANI-20260927098-0_1790520154325_s8Bp_1790520162211_ZKbk_968d17f7-c43c-42e2-a78e-1c0e36b7c1ee_uquo.jpg",
+        "added_at": "2026-09-27T21:07:21.061890+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "Political Row Erupts in Delhi Over Alleged Assault by Minister Parvesh Verma During Road Inspection",
+        "story_lead": "A political controversy has emerged in Delhi after a video went viral showing Delhi minister Parvesh Verma slapping a young man during a road inspection. The victim, Saheb Singh, and AAP MLA Jarnail Singh alleged assault, manhandling, and threats by BJP workers, while Minister Parvesh Verma rejected the allegations and made counter-allegations of abuse.",
+        "full_article_text": "A political row erupted in Delhi following the circulation of a video on social media by Aam Aadmi Party (AAP) leaders. The footage purportedly shows Delhi minister Parvesh Verma slapping a young man, identified as Saheb Singh, during a road inspection. According to the victim, he was recording a video when Parvesh Verma snatched his phone and slapped him. Saheb Singh further alleged that the minister's security personnel grabbed him by the neck and that accompanying BJP workers threatened to kill him. AAP MLA Jarnail Singh, who was present at the site, stated that he had been called by Verma to show damaged roads. Jarnail Singh claimed that the minister grew agitated during the inspection and assaulted their colleague before fleeing. In response, Parvesh Verma rejected the allegations, stating that the entire truth was not being presented. Verma claimed that he went for the inspection after learning a road remained unrepaired for 15 years, and counter-alleged that the local MLA's supporters abused his family during the visit. According to AAP leaders, a police complaint has been filed, though an FIR has not yet been registered.",
+        "background_context": "The incident unfolded during a public infrastructure inspection involving elected representatives and local officials in Delhi, highlighting friction between political parties regarding development work and road repairs.",
+        "bullet_points": [
+          "A viral video shared by AAP leaders shows Delhi minister Parvesh Verma slapping a young man during a road inspection.",
+          "The victim, Saheb Singh, alleged that Verma snatched his phone, security personnel grabbed him by the neck, and BJP workers threatened him.",
+          "AAP MLA Jarnail Singh stated that Verma became agitated over the poor road condition and assaulted their colleague before leaving the scene.",
+          "Parvesh Verma rejected the allegations, claiming the full truth was omitted and that people accompanying the MLA abused his family.",
+          "AAP leaders stated that a formal complaint has been filed with the police, but an FIR is yet to be registered."
+        ],
+        "key_facts": [
+          "The incident occurred during a road inspection in Delhi.",
+          "The victim was identified as Saheb Singh, an associate of AAP MLA Jarnail Singh.",
+          "Parvesh Verma is a BJP PWD minister in Delhi.",
+          "A video of the incident was widely shared by AAP leaders on social media."
+        ],
+        "key_locations": [
+          "Delhi"
+        ],
+        "important_dates": [
+          "15 years (duration cited regarding road repair delay)"
+        ],
+        "exam_relevance": [
+          "Prelims: Current events related to Indian polity and governance",
+          "Mains (GS II): Issues relating to political conduct, accountability, and governance in India"
+        ],
+        "upsc_analysis": "Incidents involving altercations between political functionaries highlight concerns regarding public conduct, political discourse, and institutional accountability. While administrative friction is common in multi-tiered governance setups, adherence to constitutional decorum and legal recourse is vital for maintaining public trust.",
+        "causes": [
+          "Disagreements and friction during public infrastructure and road inspections involving rival political parties.",
+          "Accusations regarding delayed developmental projects and local governance issues."
+        ],
+        "impacts": [
+          "Escalation of political tensions between the ruling and opposition parties in Delhi.",
+          "Public debate regarding the conduct of elected representatives and public officials."
+        ],
+        "challenges": [
+          "Ensuring neutral and unbiased investigation into allegations involving high-profile political figures.",
+          "Maintaining civil political discourse and public safety during site inspections."
+        ],
+        "government_steps": [
+          "Filing of a police complaint by the affected party for official investigation."
+        ],
+        "constitutional_or_policy_link": [
+          "Rule of law and accountability of public servants under Indian penal and administrative frameworks."
+        ],
+        "way_forward": [
+          "Ensuring impartial police investigation into the complaints filed by both sides without political interference.",
+          "Promoting adherence to ethical standards and code of conduct among political representatives during public interactions."
+        ],
+        "mains_notes": "The altercation during a road inspection in Delhi highlights the challenges of political friction and the necessity of maintaining decorum by public figures. Legal mechanisms must operate transparently to address allegations of assault and misconduct, ensuring that political disagreements do not undermine democratic standards.",
+        "mains_questions": [
+          "Examine the ethical and legal implications of misconduct by public representatives during official duties.",
+          "Discuss the impact of political polarization on local governance and infrastructure inspections in urban centers."
+        ],
+        "takeaway": "An alleged assault during a road inspection in Delhi has sparked a political clash between AAP and BJP, leading to police complaints and public debate.",
+        "prelims_facts": [
+          "Parvesh Verma is associated with the BJP.",
+          "Jarnail Singh is an AAP MLA."
+        ],
+        "vocabulary": [
+          {
+            "word": "Agitated",
+            "meaning_hindi": "उत्तेजित या परेशान"
+          },
+          {
+            "word": "Allegation",
+            "meaning_hindi": "आरोप"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Parvesh Verma",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Parvesh_Verma"
+          },
+          {
+            "name": "Delhi",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Delhi"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "दिल्ली में सड़क निरीक्षण के दौरान प्रवेश वर्मा द्वारा कथित मारपीट को लेकर राजनीतिक विवाद",
+          "story_lead": "दिल्ली के मंत्री प्रवेश वर्मा द्वारा एक युवक को थप्पड़ मारने का वीडियो वायरल होने के बाद एक नया राजनीतिक विवाद खड़ा हो गया है। पीड़ित साहिब सिंह और आप विधायक जरनैल सिंह ने मारपीट और धमकियों का आरोप लगाया है, जबकि मंत्री प्रवेश वर्मा ने इन आरोपों को खारिज करते हुए जवाबी आरोप लगाए हैं।",
+          "full_article_text": "आम आदमी पार्टी (आप) के नेताओं द्वारा सोशल मीडिया पर वीडियो साझा किए जाने के बाद दिल्ली में राजनीतिक सरगर्मी बढ़ गई है। वीडियो में दिल्ली के मंत्री प्रवेश वर्मा एक सड़क निरीक्षण के दौरान एक युवक को थप्पड़ मारते नजर आ रहे हैं। पीड़ित साहिब सिंह ने आरोप लगाया कि जब वह वीडियो रिकॉर्ड कर रहे थे, तब प्रवेश वर्मा ने उनका फोन छीन लिया और उन्हें थप्पड़ मारा। साहिब सिंह ने यह भी आरोप लगाया कि सुरक्षाकर्मियों ने उनकी गर्दन दबोची और भाजपा कार्यकर्ताओं ने उन्हें जान से मारने की धमकी दी। आप विधायक जरनैल सिंह ने कहा कि मंत्री ने खराब सड़क दिखाने के लिए उन्हें बुलाया था, लेकिन निरीक्षण के दौरान वे उत्तेजित हो गए और वीडियो बना रहे उनके साथी के साथ मारपीट की। वहीं, प्रवेश वर्मा ने आरोपों को खारिज करते हुए कहा कि पूरी सच्चाई नहीं बताई जा रही है और उनके परिवार के खिलाफ अपमानजनक भाषा का इस्तेमाल किया गया। आप नेताओं के अनुसार इस मामले में पुलिस में शिकायत दर्ज कराई गई है।",
+          "background_context": "यह घटना दिल्ली में निर्वाचित प्रतिनिधियों और स्थानीय अधिकारियों से जुड़े सड़क निरीक्षण के दौरान हुई।",
+          "bullet_points": [
+            "आप नेताओं द्वारा साझा किए गए वीडियो में मंत्री प्रवेश वर्मा एक युवक को थप्पड़ मारते नजर आ रहे हैं।",
+            "पीड़ित साहिब सिंह ने फोन छीनने और मारपीट का आरोप लगाया है।",
+            "आप विधायक जरनैल सिंह ने कहा कि मंत्री ने गुस्से में आकर उनके साथी के साथ मारपीट की।",
+            "प्रवेश वर्मा ने आरोपों को खारिज किया और काउंटर आरोप लगाए।",
+            "मामले में पुलिस शिकायत दर्ज कराई गई है।"
+          ],
+          "key_facts": [
+            "घटना दिल्ली में सड़क निरीक्षण के दौरान हुई।",
+            "पीड़ित का नाम साहिब सिंह है।"
+          ],
+          "key_locations": [
+            "दिल्ली"
+          ],
+          "important_dates": [
+            "15 वर्ष"
+          ]
+        },
+        "quiz": {
+          "question": "Which political party leaders shared the viral video of the incident on social media?",
+          "options": [
+            "BJP leaders",
+            "AAP leaders",
+            "Congress leaders",
+            "Independent leaders"
+          ],
+          "correct_answer": "AAP leaders",
+          "explanation": "The source text states that the video of the incident was shared by AAP leaders on social media, sparking a political row."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/grabbed-by-neck-threatened-to-kill-me-man-slapped-by-parvesh-verma-alleges-assault-by-bjp-workers-aap-viral-video-101790517293780.html",
+        "published_date": "2026-09-27",
+        "id": 118,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/Saheb_Singh_slapped_by_Parvesh_Verma_1790521100624_nTA3_1790521100894_n9i3_f523e9d5-c2bb-4c1e-904e-422aba17a86f_8ajX.jpg",
+        "added_at": "2026-09-27T21:07:21.061890+05:30"
+      },
+      {
+        "category": "Health",
+        "exam_corner": true,
+        "headline": "71-Year-Old Woman Survives 22-km Drift in Odisha's Crocodile-Infested Birupa River",
+        "story_lead": "A 71-year-old woman, Keshi Dalai, miraculously survived after being swept 22 kilometers downstream in the swollen, crocodile-infested Birupa river in Odisha. The incident highlights the critical role of community-level first responders and the severe challenges posed by seasonal riverine floods.",
+        "full_article_text": "In a remarkable survival story from Odisha, 71-year-old Keshi Dalai from Kalamatiya village in Jajpur district's Bari block survived being swept nearly 22 kilometers downstream in the swollen Birupa river. The incident occurred on a Sunday morning when Dalai went to the riverbank, experienced a moment of dizziness, lost her footing, and fell into the fast-moving current. \n\nFor nearly two hours, Dalai drifted downstream through waters known to be inhabited by crocodiles. She was eventually spotted by local residents at Balipatana in Kendrapara district, who noticed her repeatedly sinking and reappearing in the strong current. Local rescuers, including Abhijit Sahu, launched a boat to pull her to safety. \n\nUpon bringing her ashore, the villagers administered immediate first aid, pressing her stomach to expel swallowed water, rubbing her limbs, and trying to warm her up before she was transported to Pattamundai hospital via emergency ambulance services. She was reported to be recovering well. \n\nThis incident follows another dramatic survival story in the state from August, where 35-year-old Sunanda Behera of Bhadrak district survived for five days in floodwaters by clinging to a palm tree. Behera, who went missing on August 14 after being caught in strong currents, was eventually rescued by a team from the Odisha Disaster Rapid Action Force (ODRAF).",
+        "background_context": "The Birupa river in Odisha is known for its strong currents during flood seasons and its population of crocodiles. Odisha is highly vulnerable to natural disasters, including seasonal floods, which frequently pose severe safety hazards to riverbank communities.",
+        "bullet_points": [
+          "Keshi Dalai (71) fell into the swollen Birupa river in Jajpur district due to dizziness.",
+          "She was swept 22 kilometers downstream over a period of nearly two hours.",
+          "The Birupa river is known for being inhabited by crocodiles, making her survival highly unusual.",
+          "Local villagers in Kendrapara district spotted her, rescued her using a boat, and administered first aid.",
+          "She was treated at Pattamundai hospital and reported to be doing well.",
+          "In a separate incident in August, a man survived five days clinging to a palm tree in Bhadrak district before being rescued by the Odisha Disaster Rapid Action Force (ODRAF)."
+        ],
+        "key_facts": [
+          "Distance swept: 22 kilometers",
+          "Duration in water: Approximately 2 hours",
+          "Victim's age: 71 years old",
+          "River involved: Birupa River",
+          "Rescuing agency for the Bhadrak incident: Odisha Disaster Rapid Action Force (ODRAF)"
+        ],
+        "key_locations": [
+          "Birupa River",
+          "Jajpur district",
+          "Kendrapara district",
+          "Bhadrak district",
+          "Balipatana",
+          "Pattamundai hospital",
+          "Odisha"
+        ],
+        "important_dates": [
+          "August 14"
+        ],
+        "exam_relevance": [
+          "UPSC GS Paper I: Geography (River systems of Odisha and natural hazards)",
+          "UPSC GS Paper III: Disaster Management (Flood mitigation, community-level first response, and role of state disaster forces like ODRAF)"
+        ],
+        "upsc_analysis": "The survival incidents in Odisha's swollen rivers underscore the dual importance of community resilience and institutional disaster response. While the rescue of the elderly woman highlights the vital role of local citizens as immediate first responders, the rescue of Sunanda Behera by the Odisha Disaster Rapid Action Force (ODRAF) demonstrates the necessity of specialized state-level disaster response units. Strengthening local capacity alongside institutional mechanisms is crucial for minimizing casualties during seasonal floods.",
+        "causes": [
+          "Dizziness leading to loss of footing near the riverbank",
+          "Swollen river conditions due to seasonal flooding and strong currents"
+        ],
+        "impacts": [
+          "Physical exhaustion and hypothermia from prolonged water exposure",
+          "Risk of wildlife encounters (crocodiles) in flooded river systems"
+        ],
+        "challenges": [
+          "Fast-moving, swollen river currents during floods",
+          "Presence of dangerous aquatic wildlife (crocodiles) in regional rivers",
+          "Lack of immediate professional medical help in remote riverbank areas, necessitating local first-aid intervention"
+        ],
+        "government_steps": [
+          "Deployment of the Odisha Disaster Rapid Action Force (ODRAF) for flood rescue operations",
+          "Provision of emergency ambulance services and public healthcare facilities like Pattamundai hospital"
+        ],
+        "constitutional_or_policy_link": [
+          "Disaster Management Act, 2005 (framework for state and local disaster response)",
+          "Article 21 of the Constitution (Right to Life, encompassing state duty in disaster safety)"
+        ],
+        "way_forward": [
+          "Enhancing community-level disaster response training for riverbank villages",
+          "Installing safety barriers or warning signs near swollen rivers during monsoon seasons",
+          "Equipping local panchayats with basic rescue gear like boats and life jackets"
+        ],
+        "mains_notes": "Focus on the role of community participation in disaster management (CBDRM) and the coordination between local rescuers and state agencies like ODRAF during extreme weather events.",
+        "mains_questions": [
+          "Discuss the significance of Community-Based Disaster Risk Management (CBDRM) in the context of frequent flood disasters in states like Odisha.",
+          "Evaluate the role of specialized state forces like the Odisha Disaster Rapid Action Force (ODRAF) in mitigating the impacts of natural disasters."
+        ],
+        "takeaway": "Community alertness and swift local action remain the first line of defense in riverine disaster situations.",
+        "prelims_facts": [
+          "Birupa River is a river in Odisha known for crocodile habitats.",
+          "ODRAF stands for Odisha Disaster Rapid Action Force, a specialized state disaster response unit."
+        ],
+        "vocabulary": [
+          {
+            "word": "Swollen",
+            "meaning_hindi": "बाढ़ के कारण उफनती हुई / बढ़ी हुई"
+          },
+          {
+            "word": "Ordeal",
+            "meaning_hindi": "कठिन परीक्षा / अग्निपरीक्षा"
+          },
+          {
+            "word": "Infested",
+            "meaning_hindi": "पीड़ित या भरा हुआ (जैसे मगरमच्छों से)"
+          },
+          {
+            "word": "Rescuers",
+            "meaning_hindi": "बचावकर्ता"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Birupa River",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Birupa_River"
+          },
+          {
+            "name": "Odisha Disaster Rapid Action Force",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Odisha_Disaster_Rapid_Action_Force"
+          },
+          {
+            "name": "Jajpur district",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Jajpur_district"
+          },
+          {
+            "name": "Kendrapara district",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Kendrapara_district"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "मगरमच्छों से भरी बीरूपा नदी में 22 किमी बहने के बाद भी जीवित बची 71 वर्षीय महिला",
+          "story_lead": "ओडिशा में एक 71 वर्षीय महिला, केशी दलाई, उफनती और मगरमच्छों से भरी बीरूपा नदी में 22 किलोमीटर बह जाने के बाद भी चमत्कारिक रूप से जीवित बच गईं। यह घटना स्थानीय स्तर पर तुरंत प्रतिक्रिया देने वालों की भूमिका और बाढ़ से उत्पन्न चुनौतियों को रेखांकित करती है।",
+          "full_article_text": "ओडिशा से सामने आई एक चमत्कारिक घटना में, जाजपुर जिले के बारी ब्लॉक के कलामटिया गांव की 71 वर्षीय केशी दलाई उफनती बीरूपा नदी में लगभग 22 किलोमीटर बहने के बाद भी जीवित बच गईं। यह घटना रविवार सुबह की है जब दलाई नदी किनारे गई थीं, जहां चक्कर आने के कारण उनका पैर फिसल गया और वह तेज धारा में बह गईं।\n\nलगभग दो घंटे तक दलाई मगरमच्छों के लिए जानी जाने वाली नदी की धारा में बहती रहीं। आखिरकार केंद्रपाड़ा जिले के बालीपाटना में स्थानीय निवासियों ने उन्हें देखा, जो तेज धारा में बार-बार डूब और उबर रही थीं। अभिजीत साहू सहित स्थानीय बचावकर्मियों ने नाव के सहारे उन्हें सुरक्षित बाहर निकाला।\n\nकिनारे लाने के बाद ग्रामीणों ने उन्हें प्राथमिक उपचार दिया, पेट दबाकर पानी निकाला, हाथ-पैर मले और शरीर को गर्म करने का प्रयास किया। इसके बाद उन्हें एम्बुलेंस से पट्टामुंडई अस्पताल ले जाया गया, जहां उनकी स्थिति में सुधार बताया गया है।\n\nयह घटना राज्य में अगस्त महीने की एक अन्य घटना की याद दिलाती है, जहां भद्रक जिले के 35 वर्षीय सुनंदा बेहरा बाढ़ के पानी में एक ताड़ के पेड़ को पकड़कर पांच दिनों तक जीवित रहे थे। 14 अगस्त को लापता हुए बेहरा को अंततः ओडिशा आपदा त्वरित कार्रवाई बल (ODRAF) की टीम ने बचाया था।",
+          "background_context": "ओडिशा की बीरूपा नदी मानसून के दौरान अपनी तेज धाराओं और मगरमच्छों की आबादी के लिए जानी जाती है। ओडिशा प्राकृतिक आपदाओं, विशेष रूप से बाढ़ के प्रति अत्यधिक संवेदनशील है, जो नदी तटीय समुदायों के लिए गंभीर सुरक्षा खतरे पैदा करती है।",
+          "bullet_points": [
+            "जाजपुर जिले में चक्कर आने के कारण 71 वर्षीय केशी दलाई उफनती बीरूपा नदी में गिर गईं।",
+            "वह लगभग दो घंटे में 22 किलोमीटर दूर बह गईं।",
+            "बीरूपा नदी मगरमच्छों के लिए जानी जाती है, जिससे उनका बचना एक चमत्कार माना जा रहा है।",
+            "केंद्रपाड़ा जिले के ग्रामीणों ने उन्हें देखा, नाव से बचाया और प्राथमिक उपचार दिया।",
+            "उन्हें पट्टामुंडई अस्पताल में भर्ती कराया गया जहां वे स्वस्थ हैं।",
+            "अगस्त में भद्रक जिले में एक व्यक्ति ताड़ के पेड़ के सहारे पांच दिनों तक बाढ़ में जीवित रहा, जिसे ODRAF ने बचाया था।"
+          ],
+          "key_facts": [
+            "बहाव की दूरी: 22 किलोमीटर",
+            "पानी में बिताया समय: लगभग 2 घंटे",
+            "पीड़िता की आयु: 71 वर्ष",
+            "संबंधित नदी: बीरूपा नदी",
+            "भद्रक घटना में बचाव दल: ओडिशा आपदा त्वरित कार्रवाई बल (ODRAF)"
+          ],
+          "key_locations": [
+            "बीरूपा नदी",
+            "जाजपुर जिला",
+            "केंद्रपाड़ा जिला",
+            "भद्रक जिला",
+            "बालीपाटना",
+            "पट्टामुंडई अस्पताल",
+            "ओडिशा"
+          ],
+          "important_dates": [
+            "14 अगस्त"
+          ]
+        },
+        "quiz": {
+          "question": "Which specialized state disaster response force rescued Sunanda Behera after he survived five days in floodwaters?",
+          "options": [
+            "A) National Disaster Response Force (NDRF)",
+            "B) Odisha Disaster Rapid Action Force (ODRAF)",
+            "C) State Disaster Response Force (SDRF) West Bengal",
+            "D) Odisha Fire Services"
+          ],
+          "correct_answer": "B) Odisha Disaster Rapid Action Force (ODRAF)",
+          "explanation": "According to the text, Sunanda Behera was rescued by a team from the Odisha Disaster Rapid Action Force (ODRAF) after being found clinging to a palm tree in Bhadrak district."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/71yearold-woman-swept-22-km-by-swollen-river-survives-crocodile-infested-waters-101790522694795.html",
+        "published_date": "2026-09-27",
+        "id": 117,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/27/1600x900/logo/When-word-spread-that-someone-was-being-swept-down_1790522688579_xAhP.jpg",
+        "added_at": "2026-09-27T21:07:21.061890+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
         "headline": "Man Recounts Being Slapped and Threatened by Parvesh Verma's Aides During Road Inspection Row",
         "story_lead": "A man in Delhi has accused Parvesh Verma and his aides of physical assault and death threats during a road inspection dispute. The incident, captured in connection with a viral video, has sparked discussions regarding public conduct and accountability.",
         "full_article_text": "According to reports from the Times of India, a local resident has come forward recounting an incident where he was allegedly slapped by Parvesh Verma during a road inspection row. The victim further alleged that the minister's aides threatened to kill him following the altercation. The event drew public attention after visuals surfaced showing the youth being slapped, leading to widespread discussion over political conduct, civil-police interactions, and public safety during official or inspection visits.",
@@ -15525,15 +17538,15 @@
         "added_at": "2026-09-27T00:10:11.641122+05:30"
       }
     ],
-    "updated_at": "2026-09-27T18:11:21.167230+05:30",
-    "count": 116
+    "updated_at": "2026-09-27T21:07:21.061890+05:30",
+    "count": 131
   },
   "motivation": {
-    "quote": "Understand the issue, connect the facts, write the answer.",
-    "image_url": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=85",
-    "updated_at": "2026-09-27T18:11:21.167230+05:30"
+    "quote": "Discipline is choosing your preparation even when motivation is low.",
+    "image_url": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=1600&q=85",
+    "updated_at": "2026-09-27T21:07:21.061890+05:30"
   },
   "last_updated_ist": "2026-09-25 08:53:09",
   "project": "AURA EXAM AI",
-  "last_updated": "2026-09-27T18:11:21.167230+05:30"
+  "last_updated": "2026-09-27T21:07:21.061890+05:30"
 }
