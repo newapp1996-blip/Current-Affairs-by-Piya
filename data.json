@@ -14,6 +14,128 @@
     "date": "2026-09-28",
     "news": [
       {
+        "category": "Environment",
+        "exam_corner": true,
+        "headline": "Delhi Government Announces 'No PUC, No Fuel' Rule and Additional E-Buses to Curb Winter Pollution",
+        "story_lead": "As part of its winter action plan to control pollution levels in Delhi-NCR, the Delhi government has announced a series of measures, including the 'No PUC, No fuel' rule and the deployment of 150 additional electric buses. The decisions were finalized following a high-level meeting involving state and central government leaders.",
+        "full_article_text": "The Delhi government has initiated preparations to tackle anticipated winter air pollution spikes in the Delhi-NCR region. Environment Minister Manjinder Singh Sirsa announced several mitigation measures following a comprehensive review meeting. Key participants in the meeting included Union Environment Minister Bhupender Yadav, Delhi Chief Minister Rekha Gupta, and Delhi PWD Minister Parvesh Verma. Among the primary operational directives is the 'No PUC (Pollution Under Control), No fuel' regulation to restrict vehicular emissions, alongside the introduction of 150 more e-buses to augment public transport and reduce reliance on personal internal combustion engine vehicles.",
+        "background_context": "Winter pollution in the National Capital Region (NCR) remains a recurring environmental challenge due to meteorological factors and vehicular and stubble emissions, prompting concerted inter-governmental strategy meetings between central and state authorities.",
+        "bullet_points": [
+          "Delhi government introduced the 'No PUC, no fuel' rule to curb winter vehicular pollution.",
+          "An additional 150 e-buses will be deployed on Delhi roads.",
+          "A high-level meeting was held involving state and central leaders.",
+          "Participants included Union Environment Minister Bhupender Yadav and Delhi Environment Minister Manjinder Singh Sirsa."
+        ],
+        "key_facts": [
+          "Measures were announced by Delhi environment minister Manjinder Singh Sirsa.",
+          "The meeting included Union environment minister Bhupender Yadav and Delhi CM Rekha Gupta."
+        ],
+        "key_locations": [
+          "Delhi",
+          "Delhi-NCR"
+        ],
+        "important_dates": [
+          "Sept 28"
+        ],
+        "exam_relevance": [
+          "Prelims: Environment pollution control measures, Government schemes",
+          "Mains: GS Paper III - Conservation, environmental pollution and degradation"
+        ],
+        "upsc_analysis": "The coordination between central and state authorities for Delhi-NCR pollution mitigation highlights cooperative federalism and the necessity of targeted administrative enforcement like emission certification compliance for vehicles.",
+        "causes": [
+          "Worsening air quality during the approaching winter season in Delhi-NCR",
+          "Vehicular emissions contributing to particulate pollution"
+        ],
+        "impacts": [
+          "Enhanced checks on vehicle emission compliance at fuel stations",
+          "Expansion of zero-emission public transport fleet"
+        ],
+        "challenges": [
+          "Effective ground-level implementation and enforcement of the PUC compliance rule at fuel outlets"
+        ],
+        "government_steps": [
+          "Implementation of 'No PUC, no fuel' rule",
+          "Deployment of 150 more electric buses",
+          "High-level inter-governmental review meetings involving union and state ministers"
+        ],
+        "constitutional_or_policy_link": [
+          "Article 21 (Right to a clean environment)",
+          "National Clean Air Programme (NCAP) objectives"
+        ],
+        "way_forward": [
+          "Strict monitoring of fuel stations for PUC verification",
+          "Continuous expansion of EV infrastructure and public transit options"
+        ],
+        "mains_notes": "Delhi's winter pollution mitigation strategy emphasizes proactive administrative interventions, including strict enforcement of Pollution Under Control (PUC) norms at fuel retail points and scaling up electric mobility alternatives.",
+        "mains_questions": [
+          "Discuss the efficacy of administrative measures like the 'No PUC, no fuel' rule in controlling vehicular pollution in metropolitan regions.",
+          "Evaluate the role of inter-governmental coordination between the Centre and state governments in tackling the annual winter smog in Delhi-NCR."
+        ],
+        "takeaway": "Delhi has rolled out a targeted winter pollution action plan featuring the 'No PUC, no fuel' mandate and increased e-bus deployment.",
+        "prelims_facts": [
+          "Union Environment Minister: Bhupender Yadav",
+          "Delhi Environment Minister: Manjinder Singh Sirsa"
+        ],
+        "vocabulary": [
+          {
+            "word": "Mitigation",
+            "meaning_hindi": "शमन / बचाव"
+          },
+          {
+            "word": "Augment",
+            "meaning_hindi": "बढ़ाना"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Delhi",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Delhi"
+          },
+          {
+            "name": "Bhupender Yadav",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Bhupender%20Yadav"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "दिल्ली में सर्दियों के प्रदूषण को रोकने के लिए 'नो पीयूसी, नो फ्यूल' नियम की घोषणा",
+          "story_lead": "दिल्ली-एनसीआर में प्रदूषण के स्तर को नियंत्रित करने के लिए दिल्ली सरकार ने सर्दियों की कार्ययोजना के तहत 'नो पीयूसी, नो फ्यूल' नियम और 150 अतिरिक्त ई-बसों को शामिल करने सहित कई उपायों की घोषणा की है।",
+          "full_article_text": "दिल्ली सरकार ने सर्दियों के मौसम में प्रदूषण से निपटने के लिए तैयारी शुरू कर दी है। पर्यावरण मंत्री मनजिंदर सिंह सिरसा ने केंद्रीय पर्यावरण मंत्री भूपेंद्र यादव और मुख्यमंत्री रेखा गुप्ता सहित अन्य प्रमुख नेताओं के साथ बैठक के बाद प्रदूषण नियंत्रण के उपायों की घोषणा की।",
+          "background_context": "सर्दियों के दौरान दिल्ली-एनसीआर में वायु प्रदूषण एक आवर्ती चुनौती बनी हुई है।",
+          "bullet_points": [
+            "दिल्ली सरकार ने 'नो पीयूसी, नो फ्यूल' नियम पेश किया।",
+            "सड़क पर 150 अतिरिक्त ई-बसें उतारी जाएंगी।"
+          ],
+          "key_facts": [
+            "इन उपायों की घोषणा पर्यावरण मंत्री मनजिंदर सिंह सिरसा ने की।"
+          ],
+          "key_locations": [
+            "दिल्ली"
+          ],
+          "important_dates": [
+            "28 सितंबर"
+          ]
+        },
+        "quiz": {
+          "question": "Which new fuel-related rule was announced by the Delhi government to curb winter pollution?",
+          "options": [
+            "No PUC, no fuel",
+            "No helmet, no fuel",
+            "Odd-even fuel rationing",
+            "EV-only fuel stations"
+          ],
+          "correct_answer": "No PUC, no fuel",
+          "explanation": "The Delhi government announced the 'No PUC, no fuel' rule as part of its measures to curb winter pollution in Delhi-NCR."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/ht-evening-brief-sept-28-delhi-curb-pollution-rules-asian-games-pv-sindhu-upi-charges-supreme-court-jennifer-winget-news-101790596274135.html",
+        "published_date": "2026-09-28",
+        "id": 99,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/28/1600x900/logo/rekhasindhu_1790597489988_iQcl_1790597495406_I4bs_4e75060e-ba64-4802-9bb2-145997ac754b_i6rR.jpg",
+        "added_at": "2026-09-28T21:10:35.185746+05:30"
+      },
+      {
         "category": "India",
         "exam_corner": true,
         "headline": "Delhi Road Inspection Controversy: FIR Pending Following Slapping Incident in Vikaspuri",
@@ -12959,15 +13081,15 @@
         "added_at": "2026-09-28T00:10:27.857099+05:30"
       }
     ],
-    "updated_at": "2026-09-28T15:10:32.390536+05:30",
-    "count": 98
+    "updated_at": "2026-09-28T21:10:35.185746+05:30",
+    "count": 99
   },
   "motivation": {
-    "quote": "Understand the issue, connect the facts, write the answer.",
-    "image_url": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=85",
-    "updated_at": "2026-09-28T15:10:32.390536+05:30"
+    "quote": "Study deeply today so that revision becomes easier tomorrow.",
+    "image_url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=85",
+    "updated_at": "2026-09-28T21:10:35.185746+05:30"
   },
   "last_updated_ist": "2026-09-25 08:53:09",
   "project": "AURA EXAM AI",
-  "last_updated": "2026-09-28T15:10:32.390536+05:30"
+  "last_updated": "2026-09-28T21:10:35.185746+05:30"
 }
