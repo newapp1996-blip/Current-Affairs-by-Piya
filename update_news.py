@@ -390,7 +390,9 @@ MOTIVATION_QUOTES = [
     "Current affairs become powerful when facts are connected with concepts.",
 ]
 
-
+# Stable public Unsplash images used only when a publisher image is unavailable.
+# The URL changes automatically with each update/date, so the motivation panel
+# never remains blank.
 MOTIVATION_IMAGES = [
     "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1600&q=85",
     "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1600&q=85",
