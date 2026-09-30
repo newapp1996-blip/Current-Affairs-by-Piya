@@ -16,6 +16,2138 @@
     "date": "2026-09-30",
     "news": [
       {
+        "category": "Science & Technology",
+        "exam_corner": false,
+        "headline": "Delhi Police Busts Fake Apple Tech Support Call Centre Operating from Naraina",
+        "story_lead": "Delhi Police dismantled an illegal call centre operating in west Delhi's Naraina Industrial Area that allegedly defrauded residents of the United States. Operating under the name 'Veptra', the accused posed as Apple technical support staff to convince US citizens that their devices were compromised. Seven individuals have been arrested in connection with the cyber fraud operation.",
+        "full_article_text": "Delhi Police has raided and busted a fraudulent tech support call centre located in Naraina Industrial Area Phase-2, west Delhi. The operation was being run under the firm name 'Veptra' and primarily targeted individuals residing in the United States.\n\nAccording to law enforcement authorities, the callers impersonated Apple technical support executives and contacted US citizens, falsely informing them that their personal devices contained viruses or pornographic content. The fraudsters then coerced the victims into purchasing gift cards to resolve these nonexistent technical issues.\n\nDuring the raid following specific intelligence received on September 25, police arrested seven persons: Arun (29, alleged owner), Salim (28, alleged partner), Nikhil (30), Karan (28), Vishal (29), Montu Singh (34), and an unidentified 26-year-old man. Investigators seized an Audi A3 vehicle, five laptops, 12 mobile phones, 10 credit/debit cards, five cheque books, two routers, and six headphones.\n\nAn FIR was registered at Naraina police station on September 26 under Sections 318(4) (cheating), 319(2) (cheating by impersonation), 61(2) (criminal conspiracy), and 3(5) (common intention) of the Bharatiya Nyaya Sanhita (BNS), along with Section 66D of the Information Technology (IT) Act. Examination of seized digital devices revealed the use of remote desktop and communication software such as Eyebeam, UltraViewer, and AnyDesk, along with call logs containing US-based phone numbers.",
+        "background_context": "Transnational tech-support scams frequently target citizens in developed countries by exploiting brand names of major technology companies. Scammers utilize VoIP technology, remote desktop software, and gift card redemption channels to bypass traditional banking protocols.",
+        "bullet_points": [
+          "Delhi Police dismantled a fake Apple support call centre running under the name 'Veptra' in Naraina Industrial Area Phase-2.",
+          "Seven persons were arrested, including the alleged owner Arun and partner Salim.",
+          "The scammers duped US residents by alleging device virus infection and demanding payment via gift card codes.",
+          "Digital tools used included Eyebeam, UltraViewer, and AnyDesk software.",
+          "Recovered items include an Audi A3, 5 laptops, 12 mobile phones, 10 credit/debit cards, and 2 routers.",
+          "An FIR was registered under various sections of Bharatiya Nyaya Sanhita (BNS) and Section 66D of the IT Act."
+        ],
+        "key_facts": [
+          "Location of raid: Naraina Industrial Area Phase-2, West Delhi",
+          "Firm Name: Veptra",
+          "Targeted audience: Citizens in the United States",
+          "Software recovered: Eyebeam, UltraViewer, AnyDesk",
+          "Legal provisions applied: BNS Sections 318(4), 319(2), 61(2), 3(5) and IT Act Section 66D"
+        ],
+        "key_locations": [
+          "Naraina Industrial Area, West Delhi",
+          "Delhi",
+          "United States"
+        ],
+        "important_dates": [
+          "September 25",
+          "September 26"
+        ],
+        "exam_relevance": [
+          "Relevant for discussions on cybercrime mechanisms, digital law enforcement, and legal frameworks including the Information Technology Act and Bharatiya Nyaya Sanhita."
+        ],
+        "upsc_analysis": "Transnational cyber fraud poses severe challenges to international law enforcement and national reputation. The reliance on remote access software (AnyDesk, UltraViewer) and non-traceable transaction methods (gift cards) highlights regulatory gaps in VoIP routing, payment systems, and cross-border cyber policing.",
+        "causes": [
+          "Exploitation of brand trust by impersonating well-known technology corporations.",
+          "Anonymity offered by gift card redemption mechanisms.",
+          "Availability of unverified VoIP and toll-free masking services."
+        ],
+        "impacts": [
+          "Financial losses for international victims.",
+          "Reputational risks for India's IT and legitimate BPO sector.",
+          "Increased burden on cyber police units to investigate cross-border digital financial crimes."
+        ],
+        "challenges": [
+          "Tracing money trails mediated through multi-tiered gift card resellers.",
+          "Identifying providers of spoofed toll-free numbers used by cyber criminals.",
+          "Coordinating cross-border evidence gathering and victim statements."
+        ],
+        "government_steps": [
+          "Targeted intelligence-led raids by local police departments.",
+          "Invocation of updated criminal jurisprudence under Bharatiya Nyaya Sanhita (BNS) alongside the IT Act.",
+          "Forensic examination of seized hardware and digital evidence."
+        ],
+        "constitutional_or_policy_link": [
+          "Information Technology Act, 2000 - Section 66D (Punishment for cheating by personation by using computer resource)",
+          "Bharatiya Nyaya Sanhita (BNS) - Sections 318(4), 319(2), 61(2), and 3(5)"
+        ],
+        "way_forward": [
+          "Enhance regulatory oversight on telecom service providers issuing international toll-free numbers.",
+          "Implement stricter KYC norms for online gift card issuance and resale platforms.",
+          "Strengthen international cyber law enforcement coordination for swift evidence sharing."
+        ],
+        "mains_notes": "Cybercrime modules operating as fake BPOs undermine domestic cyber security metrics and international standing. Effective enforcement requires combining statutory provisions of the IT Act and BNS with specialized digital forensic capabilities.",
+        "mains_questions": [
+          "Analyze the structural and technological challenges in curbing transnational tech support fraud operating from Indian jurisdictions.",
+          "How do modern cyber security law provisions under the IT Act and Bharatiya Nyaya Sanhita address identity theft and impersonation in digital networks?"
+        ],
+        "takeaway": "The dismantling of the Naraina fake call centre underscores active enforcement against cyber fraud networks utilizing remote access tools and gift card mechanisms under the IT Act and BNS.",
+        "prelims_facts": [
+          "Section 66D of the IT Act penalizes cheating by personation using computer resources.",
+          "Bharatiya Nyaya Sanhita (BNS) contains provisions for cheating by impersonation (319(2)) and criminal conspiracy (61(2)).",
+          "UltraViewer, AnyDesk, and Eyebeam are remote desktop and VoIP communication tools often misused in technical support scams."
+        ],
+        "vocabulary": [
+          {
+            "word": "Impersonation",
+            "meaning_hindi": "छद्मवेष / प्रतिरूपण (दूसरे का रूप धारण करना)"
+          },
+          {
+            "word": "Conspiracy",
+            "meaning_hindi": "षड्यंत्र / साज़िश"
+          },
+          {
+            "word": "Dismantled",
+            "meaning_hindi": "भंग किया / नष्ट किया"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Delhi Police",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Delhi_Police"
+          },
+          {
+            "name": "Information Technology Act, 2000",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Information_Technology_Act,_2000"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "दिल्ली पुलिस ने नरायणा में चल रहे फर्जी एप्पल टेक सपोर्ट कॉल सेंटर का भंडाफोड़ किया",
+          "story_lead": "दिल्ली पुलिस ने पश्चिम दिल्ली के नरायणा औद्योगिक क्षेत्र में चल रहे एक अवैध कॉल सेंटर का भंडाफोड़ किया, जो कथित तौर पर अमरीकी नागरिकों से धोखाधड़ी कर रहा था। 'वेप्ट्रा' नाम से चलाए जा रहे इस केंद्र में आरोपी खुद को एप्पल का तकनीकी विशेषज्ञ बताकर अमरीकी नागरिकों के उपकरणों में वायरस होने का झांसा देकर उनसे गिफ्ट कार्ड खरीदते थे। इस मामले में मुख्य संचालक सहित सात लोगों को गिरफ्तार किया गया है।",
+          "full_article_text": "दिल्ली पुलिस ने पश्चिम दिल्ली के नरायणा इंडस्ट्रियल एरिया फेज-2 में चल रहे एक फर्जी तकनीकी सहायता कॉल सेंटर का भंडाफोड़ किया है। यह कॉल सेंटर 'वेप्ट्रा' नाम से चलाया जा रहा था और मुख्य रूप से संयुक्त राज्य अमेरिका के निवासियों को निशाना बना रहा था।\n\nपुलिस के अनुसार, आरोपी एप्पल के तकनीकी सहायता अधिकारी बनकर अमरीकी नागरिकों को फोन करते थे और झूठा दावा करते थे कि उनके उपकरणों में वायरस या अश्लील सामग्री है। इसके बाद वे समस्या निवारण के नाम पर पीड़ितों से गिफ्ट कार्ड खरीदने के लिए कहते थे।\n\n25 सितंबर को मिली गुप्त सूचना के आधार पर की गई छापेमारी के दौरान पुलिस ने सात लोगों को गिरफ्तार किया: अरुण (29, कथित मालिक), सलीम (28, कथित साझेदार), निखिल (30), करण (28), विशाल (29), मोंटू सिंह (34) और एक अन्य 26 वर्षीय व्यक्ति। पुलिस ने मौके से एक ऑडी ए3 कार, 5 लैपटॉप, 12 मोबाइल फोन, 10 क्रेडिट/डेबिट कार्ड, 5 चेक बुक, 2 राउटर और 6 हेडफोन जब्त किए।\n\n26 सितंबर को नरायणा थाने में भारतीय न्याय संहिता (BNS) की धारा 318(4), 319(2), 61(2), 3(5) और आईटी अधिनियम की धारा 66D के तहत प्राथमिकी दर्ज की गई। जब्त डिजिटल उपकरणों की जांच से आईबीम, अल्ट्राव्यूअर और एनीडेस्क जैसे सॉफ्टवेयर का उपयोग सामने आया है।",
+          "background_context": "अंतरराष्ट्रीय टेक-सपोर्ट घोटाले बहुराष्ट्रीय कंपनियों के नाम का दुरुपयोग कर विदेशों में रहने वाले लोगों को ठगते हैं। ये अपराधी पहचान छिपाने के लिए वीओआईपी (VoIP) तकनीक, रिमोट डेस्कटॉप सॉफ्टवेयर और गिफ्ट कार्ड भुनाने के तरीकों का इस्तेमाल करते हैं।",
+          "bullet_points": [
+            "दिल्ली पुलिस ने नरायणा इंडस्ट्रियल एरिया फेज-2 में 'वेप्ट्रा' नाम से चल रहे फर्जी एप्पल सपोर्ट कॉल सेंटर का भंडाफोड़ किया।",
+            "कथित मालिक अरुण और साझेदार सलीम समेत सात लोगों को गिरफ्तार किया गया।",
+            "ठगों ने अमरीकी नागरिकों के उपकरणों में वायरस होने का डर दिखाकर गिफ्ट कार्ड कोड के जरिए ठगी की।",
+            "जांच में आईबीम, अल्ट्राव्यूअर और एनीडेस्क सॉफ्टवेयर के इस्तेमाल का पता चला।",
+            "ऑडी ए3, 5 लैपटॉप, 12 मोबाइल, 10 कार्ड और 2 राउटर बरामद किए गए।",
+            "भारतीय न्याय संहिता (BNS) और आईटी एक्ट की धारा 66D के तहत प्राथमिकी दर्ज की गई।"
+          ],
+          "key_facts": [
+            "छापेमारी का स्थान: नरायणा औद्योगिक क्षेत्र फेज-2, पश्चिम दिल्ली",
+            "कंपनी का नाम: वेप्ट्रा",
+            "लक्षित वर्ग: संयुक्त राज्य अमेरिका के नागरिक",
+            "बरामद सॉफ्टवेयर: आईबीम (Eyebeam), अल्ट्राव्यूअर (UltraViewer), एनीडेस्क (AnyDesk)",
+            "लागू कानूनी धाराएं: बीएनएस धारा 318(4), 319(2), 61(2), 3(5) और आईटी अधिनियम धारा 66D"
+          ],
+          "key_locations": [
+            "नरायणा औद्योगिक क्षेत्र, पश्चिम दिल्ली",
+            "दिल्ली",
+            "संयुक्त राज्य अमेरिका"
+          ],
+          "important_dates": [
+            "25 सितंबर",
+            "26 सितंबर"
+          ]
+        },
+        "quiz": {
+          "question": "Which legal provision specifically deals with punishment for cheating by personation by using a computer resource under Indian law?",
+          "options": [
+            "Section 66D of the IT Act",
+            "Section 302 of the IPC",
+            "Section 144 of the CrPC",
+            "Section 43 of the Reserve Bank of India Act"
+          ],
+          "correct_answer": "Section 66D of the IT Act",
+          "explanation": "Section 66D of the Information Technology Act penalizes cheating by personation using computer resources or communication devices."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/fake-apple-tech-support-call-centre-that-duped-us-residents-busted-in-delhi-101790752780777.html",
+        "published_date": "2026-09-30",
+        "id": 117,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/Seven-people--including-the-alleged-owner-and-his-_1790752774738_uVhP.jpg",
+        "added_at": "2026-09-30T15:11:31.375395+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": false,
+        "headline": "Supreme Court Settles Un-Relied-Documents Row: Accused Can Use Them in Trial",
+        "story_lead": "The Supreme Court has ruled that an accused person can inspect documents seized during an investigation but not relied upon by the prosecution, and can also have specific documents brought before witnesses during the trial if relevant to the defence. A bench of justices JB Pardiwala and K Vinod Chandran delivered the judgment, settling a contentious procedural issue in criminal jurisprudence.",
+        "full_article_text": "The Supreme Court has clarified that an accused person is entitled to not only inspect documents seized during an investigation but not relied upon by the prosecution, but can also request the production of specific documents before witnesses during the trial if they are relevant to shaping the defence. The ruling emerged from a case involving an alleged conspiracy between 2010 and 2014 to award consultancy work for the permanent campus of the Central University of Jharkhand, Ranchi, using allegedly fake documents, causing a loss of nearly ₹1.92 crore. The CBI had challenged orders directing it to produce several documents sought by accused Anil Dixit under Section 91 of the Code of Criminal Procedure (CrPC). The apex court accepted the CBI's offer of inspection for voluminous documents, but emphasized that inspection is not the end of the matter and specific documents required can be sought at the appropriate time when witnesses are examined. The judgment establishes a practical bridge between the accused's right to inspect unrelied material and its eventual use in the trial, balancing fair trial guarantees under Article 21 with procedural management.",
+        "background_context": "The dispute arose from an investigation into alleged irregularities in awarding consultancy work for the Central University of Jharkhand, Ranchi, between 2010 and 2014. The CBI challenged lower orders requiring the production of unrelied documents under Section 91 of the CrPC. The issue of unrelied-upon documents has been the subject of several previous Supreme Court rulings, including VK Sasikala Vs State (2012), Manu Sharma (2010), Manoj Vs State of Madhya Pradesh (2022), P Ponnusamy Vs State of Tamil Nadu (2022), Sarla Gupta Vs Directorate of Enforcement (2025), and ongoing deliberations concerning the 2020 Delhi riots conspiracy case involving Devangana Kalita.",
+        "bullet_points": [
+          "Accused persons can inspect documents seized during an investigation but not relied upon by the prosecution.",
+          "Specific relevant documents can be brought before witnesses during the trial to aid the defence.",
+          "The ruling arose from a case involving an alleged conspiracy for the Central University of Jharkhand, Ranchi.",
+          "Voluminous unrelied documents can be inspected, with specific items recorded in writing and produced before the trial court.",
+          "The judgment connects fair trial rights under Article 21 with the practical disclosure of investigative material."
+        ],
+        "key_facts": [
+          "Ruling delivered by a bench of justices JB Pardiwala and K Vinod Chandran.",
+          "Involves an alleged conspiracy between 2010 and 2014 regarding the Central University of Jharkhand, Ranchi.",
+          "Financial loss alleged in the primary case is nearly ₹1.92 crore.",
+          "Addresses powers under Section 91 of the Code of Criminal Procedure (CrPC)."
+        ],
+        "key_locations": [
+          "Ranchi",
+          "Jharkhand",
+          "Delhi"
+        ],
+        "important_dates": [
+          "2010-2014",
+          "2012",
+          "2020",
+          "2022",
+          "2025"
+        ],
+        "exam_relevance": [
+          "UPSC Prelims: Criminal Procedure Code provisions, Supreme Court judgments on fair trial.",
+          "UPSC Mains GS Paper II: Indian Judiciary, Constitutional rights (Article 21), Separation of powers, Criminal justice system reforms."
+        ],
+        "upsc_analysis": "The Supreme Court's ruling reinforces the constitutional guarantee of a fair trial under Article 21 by ensuring that an accused is not unfairly barred from utilizing exculpatory or defence-relevant material collected during an investigation. By providing a structured pathway for the inspection and subsequent production of unrelied-upon documents during witness examination, the judgment addresses a persistent procedural grey area in Indian criminal jurisprudence, balancing the state's investigative privilege with the accused's right to a robust defence.",
+        "causes": [
+          "Ambiguity regarding the handling and disclosure of documents collected during investigation but not relied upon in the chargesheet.",
+          "Disputes over whether an accused can access or use unrelied-upon material before or during a criminal trial."
+        ],
+        "impacts": [
+          "Provides legal clarity for trial courts handling requests for unrelied-upon documents under Section 91 CrPC.",
+          "Strengthens the accused's ability to build a comprehensive defence using the investigative agency's own records."
+        ],
+        "challenges": [
+          "Managing voluminous unrelied documents without overburdening investigative agencies or delaying trial proceedings.",
+          "Determining the exact stage and evidentiary relevance of specific documents during witness examination."
+        ],
+        "government_steps": [
+          "Investigative agencies like the CBI offering document inspection mechanisms and maintaining records of requested files."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 21 of the Constitution of India (Right to Life and Personal Liberty, encompassing the right to a fair trial)."
+        ],
+        "way_forward": [
+          "Establish standardized protocols for investigative agencies to catalogue and permit structured inspection of unrelied-upon documents.",
+          "Ensure trial courts actively manage document production requests to prevent procedural delays while safeguarding defence rights."
+        ],
+        "mains_notes": "The Supreme Court has held that an accused can inspect unrelied documents and seek their production during trial when relevant to the defence. This links the right to a fair trial under Article 21 with disclosure obligations, bridging the gap between investigation records and trial evidence.",
+        "mains_questions": [
+          "Discuss the constitutional and procedural implications of the Supreme Court's ruling on the use of unrelied-upon documents by an accused in a criminal trial.",
+          "How does the right to access investigation records balance the principles of fair trial and effective criminal prosecution in India?"
+        ],
+        "takeaway": "The Supreme Court ruled that an accused can inspect unrelied investigation documents and seek their production during trial if relevant to the defence.",
+        "prelims_facts": [
+          "Section 91 of the Code of Criminal Procedure (CrPC) deals with summons to produce documents or other things.",
+          "Article 21 guarantees the right to a fair trial as part of personal liberty."
+        ],
+        "vocabulary": [
+          {
+            "word": "Unrelied",
+            "meaning_hindi": "जिस पर भरोसा नहीं किया गया"
+          },
+          {
+            "word": "Exculpatory",
+            "meaning_hindi": "दोषमुक्ति से संबंधित"
+          },
+          {
+            "word": "Jurisprudence",
+            "meaning_hindi": "न्यायशास्त्र"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Supreme Court of India",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Supreme%20Court%20of%20India"
+          },
+          {
+            "name": "Central Bureau of Investigation",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Central%20Bureau%20of%20Investigation"
+          },
+          {
+            "name": "Central University of Jharkhand",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Central%20University%20of%20Jharkhand"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "सुप्रीम कोर्ट का फैसला: आरोपी मुकदमे में बिना-भरोसे वाले दस्तावेजों का उपयोग कर सकते हैं",
+          "story_lead": "सुप्रीम कोर्ट ने फैसला सुनाया है कि एक आरोपी न केवल जांच के दौरान जब्त किए गए लेकिन अभियोजन पक्ष द्वारा उपयोग नहीं किए गए दस्तावेजों का निरीक्षण कर सकता है, बल्कि बचाव पक्ष के लिए प्रासंगिक होने पर गवाहों के सामने विशिष्ट दस्तावेज भी पेश करवा सकता है।",
+          "full_article_text": "सुप्रीम कोर्ट ने यह स्पष्ट किया है कि एक आरोपी अपने बचाव को मजबूत करने के लिए जांच एजेंसी के पास उपलब्ध दस्तावेजों का निरीक्षण कर सकता है और गवाहों की जांच के दौरान विशिष्ट दस्तावेजों को पेश करने की मांग कर सकता है। यह फैसला झारखंड केंद्रीय विश्वविद्यालय के स्थायी परिसर के निर्माण कार्य में कथित अनियमितताओं से जुड़े मामले में आया है।",
+          "background_context": "यह विवाद 2010 और 2014 के बीच झारखंड केंद्रीय विश्वविद्यालय, रांची के परिसर के लिए परामर्श कार्य के आवंटन में कथित साजिश से उपजा था।",
+          "bullet_points": [
+            "आरोपी जांच के दौरान जब्त दस्तावेजों का निरीक्षण कर सकते हैं।",
+            "मुकदमे के दौरान गवाहों के सामने विशिष्ट प्रासंगिक दस्तावेज प्रस्तुत किए जा सकते हैं।"
+          ],
+          "key_facts": [
+            "फैसला न्यायमूर्ति जे.बी. पारदीवाला और न्यायमूर्ति के. विनोद चंद्रन की पीठ ने सुनाया।",
+            "मामला झारखंड केंद्रीय विश्वविद्यालय के परामर्श कार्य से जुड़ा है।"
+          ],
+          "key_locations": [
+            "रांची",
+            "झारखंड",
+            "दिल्ली"
+          ],
+          "important_dates": [
+            "2010-2014",
+            "2012"
+          ]
+        },
+        "quiz": {
+          "question": "According to the recent Supreme Court ruling, what can an accused do with documents seized during an investigation but not relied upon by the prosecution?",
+          "options": [
+            "Ignore them completely",
+            "Inspect them and seek their production during trial if relevant to the defence",
+            "Destroy them after trial",
+            "Publish them publicly without court permission"
+          ],
+          "correct_answer": "Inspect them and seek their production during trial if relevant to the defence",
+          "explanation": "The Supreme Court held that an accused can inspect unrelied-upon documents and seek their production at the appropriate stage of the trial when relevant to the defence."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/sc-settles-un-relied-documents-row-accused-can-use-them-in-trial-101790752841217.html",
+        "published_date": "2026-09-30",
+        "id": 116,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/The-CBI-had-challenged-orders-directing-it-to-prod_1790752834893_DMmj.jpg",
+        "added_at": "2026-09-30T15:11:31.375395+05:30"
+      },
+      {
+        "category": "Science & Technology",
+        "exam_corner": false,
+        "headline": "Varanasi temple dance video goes viral, police call it AI-generated",
+        "story_lead": "A viral video purporting to show a dance performance at the Lat Bhairav temple complex in Varanasi has been clarified by the Varanasi Police as entirely artificial intelligence (AI)-generated. The video, which triggered social media criticism and political debate, was circulated with the alleged intention of tarnishing the police's image.",
+        "full_article_text": "A video showing women performing a dance at the Lat Bhairav temple complex in Varanasi during a traditional festival went viral on social media, drawing criticism over the alleged presence and conduct of police personnel. However, the Varanasi Police stated that the video was entirely AI-generated and circulated to tarnish the image of the police. DCP Kashi Zone Gaurav Banswal noted that crowd-recorded mobile videos examined by authorities did not show the police personnel visible in the viral clip. An FIR has been registered at the Adampur police station against unidentified persons regarding the circulation of the misleading video. The video was linked to the five-day Baba Lat Bhairav Barat celebrations held from September 23 to 27, marking the divine wedding of Baba Lat Bhairav with Goddess Bhairavi.",
+        "background_context": "The incident centers around the five-day Baba Lat Bhairav Barat celebrations held from September 23 to 27, which involve traditional processions and rituals in Varanasi. The festival includes events such as the Tilak ceremony and aarti visits to the Kaal Bhairav and Lat Bhairav temples.",
+        "bullet_points": [
+          "A viral video allegedly showing a dance performance at the Lat Bhairav temple in Varanasi drew widespread criticism.",
+          "Varanasi Police clarified that the video was entirely AI-generated and aimed at tarnishing the police's image.",
+          "Crowd-recorded mobile videos verified by authorities did not show the police personnel who appeared in the viral clip.",
+          "An FIR was registered at the Adampur police station against unidentified persons for circulating the misleading video.",
+          "The video was linked to the Baba Lat Bhairav Barat celebrations held from September 23 to 27."
+        ],
+        "key_facts": [
+          "The viral video was declared AI-generated by Varanasi Police.",
+          "The incident led to an FIR registered at Adampur police station.",
+          "The Baba Lat Bhairav Barat celebrations took place from September 23 to 27."
+        ],
+        "key_locations": [
+          "Varanasi",
+          "Lat Bhairav temple complex",
+          "Adampur police station",
+          "Kazzakpura",
+          "Visheshwarganj Sabzi Mandi",
+          "Kaal Bhairav temple"
+        ],
+        "important_dates": [
+          "September 23 to 27"
+        ],
+        "exam_relevance": [
+          "General Studies Paper III - Science and Technology (AI developments, deepfakes, and misinformations)",
+          "General Studies Paper II - Governance and Social Media Regulation"
+        ],
+        "upsc_analysis": "The incident highlights the growing challenge of generative artificial intelligence and deepfakes being used to circulate misinformation and manufacture controversies. It underscores the need for robust verification mechanisms by law enforcement and regulatory frameworks to address digital manipulation.",
+        "causes": [
+          "Use of generative artificial intelligence to create misleading synthetic media.",
+          "Intention to tarnish the image of law enforcement agencies."
+        ],
+        "impacts": [
+          "Triggered social media criticism and political debate regarding temple events and police conduct.",
+          "Prompted legal action through an FIR for circulating misleading content."
+        ],
+        "challenges": [
+          "Difficulty in instantly verifying the authenticity of high-quality AI-generated videos.",
+          "Potential for synthetic media to incite public outrage and damage institutional reputations."
+        ],
+        "government_steps": [
+          "Varanasi Police issued official clarifications based on examination of actual crowd-recorded videos.",
+          "Registration of an FIR at Adampur police station against unidentified persons."
+        ],
+        "constitutional_or_policy_link": [
+          "Regulation of digital content, cyber laws, and measures against deepfakes under Indian legal provisions."
+        ],
+        "way_forward": [
+          "Implementation of advanced forensic tools to detect AI-generated deepfakes quickly.",
+          "Public awareness campaigns regarding the verification of digital content before sharing."
+        ],
+        "mains_notes": "The rapid advancement of generative AI poses severe challenges to public order and institutional integrity through the creation of deepfakes. The Varanasi temple video case demonstrates how synthetic media can be weaponized to manufacture controversies, requiring proactive technological and legal responses from law enforcement.",
+        "mains_questions": [
+          "Discuss the challenges posed by AI-generated deepfakes to law enforcement and public discourse with reference to recent incidents.",
+          "Analyze the regulatory and technological measures required to combat the spread of misinformation via synthetic media in India."
+        ],
+        "takeaway": "The Varanasi police clarified that a viral temple dance video causing public debate was an AI-generated fabrication meant to tarnish their image.",
+        "prelims_facts": [
+          "Baba Lat Bhairav Barat celebrations are held over a five-day period.",
+          "The festival marks the divine wedding of Baba Lat Bhairav with Goddess Bhairavi."
+        ],
+        "vocabulary": [
+          {
+            "word": "Artificial Intelligence",
+            "meaning_hindi": "कृत्रिम बुद्धिमत्ता"
+          },
+          {
+            "word": "Misleading",
+            "meaning_hindi": "भ्रामक"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Varanasi",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Varanasi"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "वाराणसी मंदिर का डांस वीडियो हुआ वायरल, पुलिस ने बताया एआई-जनरेटेड",
+          "story_lead": "वाराणसी के लाट भैरव मंदिर परिसर में एक नृत्य प्रदर्शन का दावा करने वाला वायरल वीडियो वाराणसी पुलिस द्वारा पूरी तरह से कृत्रिम बुद्धिमत्ता (एआई) निर्मित बताया गया है। इस वीडियो को पुलिस की छवि को धूमिल करने के इरादे से प्रसारित किया गया था।",
+          "full_article_text": "वाराणसी के लाट भैरव मंदिर परिसर में एक पारंपरिक त्योहार के दौरान नृत्य प्रदर्शन का दावा करने वाला वीडियो सोशल मीडिया पर वायरल हो गया। हालांकि, वाराणसी पुलिस ने मंगलवार को स्पष्ट किया कि यह वीडियो एआई-जनरेटेड था। डीसीपी काशी जोन गौरव बंसल ने बताया कि पुलिस की छवि खराब करने के लिए इस भ्रामक वीडियो को फैलाया गया था और आदमपुर थाने में अज्ञात लोगों के खिलाफ एफआईआर दर्ज की गई है।",
+          "background_context": "यह घटना 23 से 27 सितंबर तक आयोजित पांच दिवसीय बाबा लाट भैरव बारात समारोह से जुड़ी है।",
+          "bullet_points": [
+            "वाराणसी के मंदिर में नृत्य का वायरल वीडियो एआई-जनरेटेड पाया गया।",
+            "पुलिस ने छवि धूमिल करने के आरोप में मामला दर्ज किया।",
+            "घटना बाबा लाट भैरव बारात उत्सव से जुड़ी है।"
+          ],
+          "key_facts": [
+            "वायरल वीडियो एआई-जनरेटेड था।",
+            "आदमपुर थाने में एफआईआर दर्ज की गई।"
+          ],
+          "key_locations": [
+            "वाराणसी",
+            "लाट भैरव मंदिर"
+          ],
+          "important_dates": [
+            "23 से 27 सितंबर"
+          ]
+        },
+        "quiz": {
+          "question": "What did the Varanasi Police declare about the viral video showing a dance performance at the Lat Bhairav temple?",
+          "options": [
+            "It was authentic and recorded by devotees.",
+            "It was entirely AI-generated.",
+            "It was captured by official CCTV cameras.",
+            "It was an old video from the previous year."
+          ],
+          "correct_answer": "It was entirely AI-generated.",
+          "explanation": "Varanasi Police clarified that the viral video was completely AI-generated and circulated with the intent to tarnish the police's image."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/varanasi-temple-dance-video-goes-viral-police-call-it-aigenerated-101790750121291.html",
+        "published_date": "2026-09-30",
+        "id": 115,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/Kerala_Police_1784965949460_1784965958613_716a7241-2631-476c-9c5a-587a4a8a7506_1790753024458_QlaI_e0ff2c46-a6b8-44c2-a079-49b6dd872ba3_8uJA.jpeg",
+        "added_at": "2026-09-30T15:11:31.375395+05:30"
+      },
+      {
+        "category": "Health",
+        "exam_corner": false,
+        "headline": "Retired IAS Officer Rakesh Agarwal Found Murdered in Bhopal; Caretaker Main Suspect",
+        "story_lead": "A 70-year-old retired Indian Administrative Service officer, Rakesh Agarwal, was killed at his residence in Bhopal's Surajnagar area on Wednesday morning. Police have named his newly hired caretaker as the prime suspect after he went missing following the attack.",
+        "full_article_text": "A 70-year-old retired Indian Administrative Service (IAS) officer, Rakesh Agarwal, was murdered at his residence in Bhopal’s Surajnagar area, Madhya Pradesh. The victim was attacked with a sharp-edged weapon on the neck.\n\nAccording to Shailendra Chauhan, Additional Commissioner of Police (Addl CP) Bhopal, the prime suspect is Agarwal's caretaker, Varun Kumar. Kumar had been hired on September 28 through a Punjab-based placement agency, just two days prior to the incident. He has been missing since the attack, and his personal belongings were removed from the premises.\n\nInvestigators discovered that an attempt had been made to set the house on fire. The LPG cylinder pipe in the kitchen was disconnected, leaving the residence filled with gas when police arrived. Additionally, several almirahs were found open, indicating robbery as a potential motive.\n\nThe incident was discovered around 5:30 am when Agarwal's wife woke up to go for a morning walk and found the main door locked from the outside. She alerted another domestic help, Rajan Thapa, and subsequently discovered her husband's body in his room. Multiple police teams have been deployed to trace the missing caretaker, and authorities are contacting the Punjab-based agency that facilitated his placement.",
+        "background_context": "The incident occurred in the Surajnagar area of Bhopal, Madhya Pradesh. The victim, Rakesh Agarwal, was a retired 70-year-old IAS officer living with his wife and domestic helps.",
+        "bullet_points": [
+          "Retired IAS officer Rakesh Agarwal (70) was murdered at his Bhopal residence.",
+          "The attack was carried out with a sharp-edged weapon on the neck.",
+          "Prime suspect Varun Kumar, a caretaker hired on September 28, is missing.",
+          "The suspect was placed through a Punjab-based placement agency two days before the crime.",
+          "An LPG cylinder pipe was disconnected in an apparent attempt to ignite the premises.",
+          "Open almirahs at the scene suggest robbery as a key motive.",
+          "Multiple police teams are currently attempting to locate the suspect."
+        ],
+        "key_facts": [
+          "Victim: Rakesh Agarwal, 70-year-old retired IAS officer.",
+          "Location: Surajnagar area, Bhopal, Madhya Pradesh.",
+          "Prime Suspect: Caretaker Varun Kumar.",
+          "Hiring Date: September 28 through a Punjab placement agency.",
+          "Key Police Official: Shailendra Chauhan, Addl CP Bhopal."
+        ],
+        "key_locations": [
+          "Bhopal",
+          "Surajnagar",
+          "Madhya Pradesh",
+          "Punjab"
+        ],
+        "important_dates": [
+          "September 28"
+        ],
+        "exam_relevance": [
+          "Relevant for general awareness regarding law enforcement investigations and domestic verification protocols."
+        ],
+        "upsc_analysis": "The incident highlights administrative and security concerns regarding domestic help background verifications and interstate coordination between law enforcement agencies and placement firms.",
+        "causes": [
+          "Suspected robbery attempt leading to violent assault",
+          "Unverified or malicious intent by a newly appointed domestic caretaker"
+        ],
+        "impacts": [
+          "Initiation of an interstate police investigation targeting the placement agency in Punjab",
+          "Deployment of multiple police teams across Bhopal to capture the suspect"
+        ],
+        "challenges": [
+          "Tracking domestic workers placed by out-of-state private placement agencies",
+          "Ensuring timely police verification for newly hired domestic staff"
+        ],
+        "government_steps": [
+          "Multiple police teams deployed by Bhopal Police to track down the suspect",
+          "Communication established with the Punjab placement agency involved in hiring"
+        ],
+        "constitutional_or_policy_link": [
+          "State list responsibility: Public order and Police under Seventh Schedule of the Constitution of India"
+        ],
+        "way_forward": [
+          "Strict enforcement of mandatory police verification for domestic staff",
+          "Streamlining regulations for private staffing and placement agencies operating across state lines"
+        ],
+        "mains_notes": "Case study on law enforcement challenges regarding unverified domestic staff hired via external agencies and subsequent multi-jurisdictional investigation.",
+        "mains_questions": [
+          "Examine the challenges associated with regulating private placement agencies and ensuring mandatory police verification for domestic workers in urban areas."
+        ],
+        "takeaway": "A retired IAS officer was killed in Bhopal in a suspected robbery attempt, triggering an interstate investigation for a missing caretaker.",
+        "prelims_facts": [
+          "Rakesh Agarwal was a retired IAS officer aged 70.",
+          "The crime scene in Bhopal showed signs of an attempted arson using a disconnected LPG gas line."
+        ],
+        "vocabulary": [
+          {
+            "word": "Care-taker",
+            "meaning_hindi": "देखभाल करने वाला / केयरटेकर"
+          },
+          {
+            "word": "Suspect",
+            "meaning_hindi": "संदिग्ध"
+          },
+          {
+            "word": "Arson",
+            "meaning_hindi": "आगजनी"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Bhopal",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Bhopal"
+          },
+          {
+            "name": "Madhya Pradesh",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Madhya_Pradesh"
+          },
+          {
+            "name": "Punjab",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Punjab"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "भोपाल में सेवानिवृत्त आईएएस अधिकारी राकेश अग्रवाल की हत्या; केयरटेकर मुख्य संदिग्ध",
+          "story_lead": "भोपाल के सूरजनगर इलाके में बुधवार सुबह 70 वर्षीय सेवानिवृत्त आईएएस अधिकारी राकेश अग्रवाल की उनके आवास पर हत्या कर दी गई। पुलिस ने हमले के बाद से लापता नए केयरटेकर को मुख्य संदिग्ध बनाया है।",
+          "full_article_text": "मध्य प्रदेश की राजधानी भोपाल के सूरजनगर इलाके में 70 वर्षीय सेवानिवृत्त भारतीय प्रशासनिक सेवा (आईएएस) अधिकारी राकेश अग्रवाल की उनके घर में हत्या कर दी गई। पीड़ित की गर्दन पर धारदार हथियार से हमला किया गया था।\n\nभोपाल के अतिरिक्त पुलिस आयुक्त (अपर पुलिस आयुक्त) शैलेंद्र चौहान के अनुसार, मुख्य संदिग्ध अग्रवाल का केयरटेकर वरुण कुमार है। कुमार को घटना से ठीक दो दिन पहले 28 सितंबर को पंजाब स्थित एक प्लेसमेंट एजेंसी के माध्यम से रखा गया था। घटना के बाद से वह लापता है और उसका सामान भी घर में नहीं मिला।\n\nजांचकर्ताओं को घर में आग लगाने के प्रयास के निशान भी मिले। रसोई में एलपीजी सिलेंडर का पाइप काट दिया गया था और जब पुलिस पहुंची तो परिसर में गैस भरी हुई थी। इसके अलावा, कई अलमारियां खुली पाई गईं, जिससे चोरी का अंदेशा जताया जा रहा है।\n\nघटना का पता सुबह करीब 5.30 बजे चला जब अग्रवाल की पत्नी सुबह की सैर के लिए निकलीं और मुख्य दरवाजा बाहर से बंद पाया। उन्होंने दूसरे घरेलू नौकर राजन थापा को बुलाया और फिर अग्रवाल के कमरे में गईं, जहां उनका शव मिला। पुलिस की कई टीमों को संदिग्ध की तलाश में लगाया गया है और पंजाब की प्लेसमेंट एजेंसी से संपर्क किया जा रहा है।",
+          "background_context": "यह घटना भोपाल के सूरजनगर इलाके में हुई। पीड़ित राकेश अग्रवाल 70 वर्षीय सेवानिवृत्त आईएएस अधिकारी थे, जो अपनी पत्नी और घरेलू सहायकों के साथ रहते थे।",
+          "bullet_points": [
+            "भोपाल स्थित आवास पर सेवानिवृत्त आईएएस अधिकारी राकेश अग्रवाल (70) की हत्या।",
+            "गर्दन पर धारदार हथियार से हमला किया गया।",
+            "28 सितंबर को रखा गया नया केयरटेकर वरुण कुमार घटना के बाद से लापता।",
+            "केयरटेकर को पंजाब की एक प्लेसमेंट एजेंसी के माध्यम से रखा गया था।",
+            "आगजनी के प्रयास में एलपीजी सिलेंडर का पाइप निकाला गया।",
+            "अलमारियां खुली मिलने से चोरी की आशंका।",
+            "पुलिस की कई टीमें संदिग्ध की तलाश में जुटीं।"
+          ],
+          "key_facts": [
+            "पीड़ित: राकेश अग्रवाल, 70 वर्षीय सेवानिवृत्त आईएएस अधिकारी।",
+            "स्थान: सूरजनगर, भोपाल, मध्य प्रदेश।",
+            "मुख्य संदिग्ध: केयरटेकर वरुण कुमार।",
+            "नियुक्ति तिथि: 28 सितंबर (पंजाब की एजेंसी के माध्यम से)।",
+            "पुलिस अधिकारी: शैलेंद्र चौहान, अतिरिक्त पुलिस आयुक्त, भोपाल।"
+          ],
+          "key_locations": [
+            "भोपाल",
+            "सूरजनगर",
+            "मध्य प्रदेश",
+            "पंजाब"
+          ],
+          "important_dates": [
+            "28 सितंबर"
+          ]
+        },
+        "quiz": {
+          "question": "In which city was retired IAS officer Rakesh Agarwal killed at his residence?",
+          "options": [
+            "Bhopal",
+            "Bengaluru",
+            "Lucknow",
+            "Chandigarh"
+          ],
+          "correct_answer": "Bhopal",
+          "explanation": "Retired IAS officer Rakesh Agarwal was murdered at his residence in the Surajnagar area of Bhopal, Madhya Pradesh."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/retd-ias-officer-murdered-at-bhopal-home-missing-caretaker-is-prime-suspect-101790754041335.html",
+        "published_date": "2026-09-30",
+        "id": 114,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/Rakesh-Agarwal--a-1982-batch-IAS-officer--was-atta_1790754035076_UMGA.jpg",
+        "added_at": "2026-09-30T15:11:31.375395+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "CAG finds financial irregularities in previous Odisha govt's high school transformation prog",
+        "story_lead": "The Comptroller and Auditor General (CAG) of India has flagged several financial irregularities and deficiencies in the implementation of the 5T High School Transformation Programme (HSTP) by the previous BJD government in Odisha. The audit revealed issues such as suspected misappropriation of funds, fraudulent payments, and procurements made without following guidelines across multiple districts.",
+        "full_article_text": "The Comptroller and Auditor General (CAG) of India has highlighted multiple financial irregularities, procedural lapses, and deficiencies in the execution of the 5T High School Transformation Programme (HSTP). Initiated in 2021 by the erstwhile BJD government's School and Mass Education Department, the scheme was designed to upgrade school infrastructure and improve learning environments. The implementation of the programme was handled by entities including Mo School Abhiyan Parichalana Sangathan, the Odisha School Education Programme Authority (OSEPA), and various district collectors. Based on an audit of records from six districts—Balasore, Cuttack, Ganjam, Jajpur, Keonjhar, and Sundargarh—the CAG noted gross irregularities such as suspected fund misappropriation and fraudulent transactions. Notably, funds amounting to ₹57.95 lakh were spent on a private educational institution ineligible for assistance, and suspected misappropriation was flagged in specific schools in Cuttack and Jajpur districts. Furthermore, the audit uncovered a fraudulent payment of ₹4.95 lakh for fictitious desk repairs, along with a wasteful expenditure of ₹7.39 crore due to duplicate procurement of e-content. Operational deficiencies were also observed, including non-functional smart classrooms and science laboratories lacking essential utilities like water, gas, internet access, and required equipment across 54 schools.",
+        "background_context": "The 5T High School Transformation Programme was introduced in 2021 by the previous BJD government in Odisha through its School and Mass Education Department to revamp school infrastructure. The implementation involved Mo School Abhiyan Parichalana Sangathan, the Odisha School Education Programme Authority, and district collectors.",
+        "bullet_points": [
+          "CAG flagged financial irregularities in Odisha's 5T High School Transformation Programme.",
+          "Programme was introduced in 2021 by the previous BJD government.",
+          "Audit covered six districts: Balasore, Cuttack, Ganjam, Jajpur, Keonjhar, and Sundargarh.",
+          "Irregularities include suspected fund misappropriation, fraudulent payments, and non-adherence to guidelines.",
+          "₹57.95 lakh was spent on an ineligible private school, Badachana Women's Higher Secondary School.",
+          "Duplicate procurement led to a wasteful expenditure of ₹7.39 crore.",
+          "Smart classrooms and science laboratories were found non-functional in 54 schools due to lack of basic utilities."
+        ],
+        "key_facts": [
+          "Programme introduced in 2021 by the School and Mass Education Department of Odisha.",
+          "CAG audited six districts: Balasore, Cuttack, Ganjam, Jajpur, Keonjhar, and Sundargarh.",
+          "₹57.95 lakh spent on ineligible Badachana Women's Higher Secondary School.",
+          "Suspected misappropriation of ₹12.48 lakh in Ranihat High School (Cuttack) and ₹30 lakh in Nandipur High School (Jajpur).",
+          "Fraudulent payment of ₹4.95 lakh made by Jaleswar BDO for false desk repairs.",
+          "Wasteful expenditure of ₹7.39 crore due to duplicate procurement of e-content for 430 schools.",
+          "54 schools reported non-functional smart classrooms and science laboratories due to lack of water, gas, equipment, and internet."
+        ],
+        "key_locations": [
+          "Odisha",
+          "Bhubaneswar",
+          "Balasore",
+          "Cuttack",
+          "Ganjam",
+          "Jajpur",
+          "Keonjhar",
+          "Sundargarh"
+        ],
+        "important_dates": [
+          "2021"
+        ],
+        "exam_relevance": [
+          "UPSC Prelims: Comptroller and Auditor General of India (CAG), Government schemes and audits",
+          "UPSC Mains GS Paper II: Statutory bodies, accountability, transparency, and governance in public welfare schemes"
+        ],
+        "upsc_analysis": "The CAG report on Odisha's school transformation programme highlights critical governance challenges regarding public fund management, institutional coordination, and scheme implementation at the grassroots level. It underscores the vital role of statutory audit bodies in ensuring transparency, accountability, and optimal utilization of taxpayer money in social sector schemes.",
+        "causes": [
+          "Lack of coordination between OSEPA and district administrations",
+          "Non-adherence to established guidelines for fund disbursement and procurement",
+          "Inadequate monitoring and oversight during the execution phase"
+        ],
+        "impacts": [
+          "Misappropriation and fraudulent diversion of public welfare funds",
+          "Wasteful public expenditure on duplicate procurements and ineligible institutions",
+          "Non-functional educational infrastructure, depriving students of intended learning benefits"
+        ],
+        "challenges": [
+          "Ensuring rigorous monitoring of localized project implementation",
+          "Preventing diversion of funds to ineligible private entities",
+          "Addressing infrastructural gaps like internet connectivity and utility connections in rural or semi-urban schools"
+        ],
+        "government_steps": [
+          "Implementation of the High School Transformation Programme by OSEPA, Mo School Abhiyan, and district collectors",
+          "Submission of audit findings by the Comptroller and Auditor General of India"
+        ],
+        "constitutional_or_policy_link": [
+          "Article 148 of the Constitution of India regarding the Comptroller and Auditor General of India"
+        ],
+        "way_forward": [
+          "Strengthening inter-departmental coordination to prevent duplicate procurement and administrative oversights",
+          "Enforcing strict penal action against officials involved in fraudulent payments and fund misappropriation",
+          "Ensuring regular physical verification and provision of basic utilities before declaring school infrastructure projects complete"
+        ],
+        "mains_notes": "The CAG report on Odisha's 5T High School Transformation Programme brings to light systemic deficiencies in public expenditure and scheme execution. Key issues include fund diversion to private institutions, fraudulent payments for repairs, and wasteful duplicate procurements. Effective governance requires robust internal audits, inter-agency coordination, and strict adherence to implementation guidelines to achieve desired educational outcomes.",
+        "mains_questions": [
+          "Discuss the role of the Comptroller and Auditor General (CAG) in ensuring financial accountability and transparency in state-level public welfare schemes.",
+          "Examine the systemic challenges in social sector infrastructure delivery highlighted by audit reports, suggesting measures for better resource utilization."
+        ],
+        "takeaway": "The CAG report on Odisha's school transformation programme underscores the necessity for stringent fund monitoring and inter-agency coordination to prevent financial irregularities in public welfare projects.",
+        "prelims_facts": [
+          "CAG audits are conducted under constitutional provisions to ensure financial accountability.",
+          "The 5T High School Transformation Programme was launched in Odisha in 2021."
+        ],
+        "vocabulary": [
+          {
+            "word": "Irregularities",
+            "meaning_hindi": "अनिमित्तताएं"
+          },
+          {
+            "word": "Misappropriation",
+            "meaning_hindi": "धन का गबन"
+          },
+          {
+            "word": "Procurement",
+            "meaning_hindi": "खरीद"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Odisha",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Odisha"
+          },
+          {
+            "name": "Comptroller and Auditor General of India",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Comptroller_and_Auditor_General_of_India"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "CAG ने पिछली ओडिशा सरकार के हाई स्कूल परिवर्तन कार्यक्रम में वित्तीय अनियमितताओं का पता लगाया",
+          "story_lead": "भारत के नियंत्रक एवं महालेखा परीक्षक (CAG) ने ओडिशा में पिछली बीजद सरकार के 5T हाई स्कूल ट्रांसफॉर्मेशन प्रोग्राम (HSTP) के कार्यान्वयन में कई वित्तीय अनियमितताओं और कमियों को उजागर किया है।",
+          "full_article_text": "भारत के नियंत्रक एवं महालेखा परीक्षक (CAG) ने 5T हाई स्कूल ट्रांसफॉर्मेशन प्रोग्राम (HSTP) के क्रियान्वयन में कई वित्तीय अनियमितताओं और कमियों को रेखांकित किया है। बीजद सरकार के स्कूल और जन शिक्षा विभाग द्वारा 2021 में शुरू किए गए इस कार्यक्रम का उद्देश्य स्कूलों में बुनियादी ढांचे को बदलना था। छह जिलों के रिकॉर्ड के ऑडिट के दौरान, CAG ने धन के गबन और धोखाधड़ी वाले भुगतानों सहित भारी अनियमितताएं देखीं।",
+          "background_context": "5T हाई स्कूल ट्रांसफॉर्मेशन प्रोग्राम को 2021 में ओडिशा में पिछली बीजद सरकार द्वारा स्कूल और जन शिक्षा विभाग के माध्यम से शुरू किया गया था।",
+          "bullet_points": [
+            "CAG ने ओडिशा के स्कूल परिवर्तन कार्यक्रम में वित्तीय अनियमितताओं का पता लगाया।",
+            "कार्यक्रम की शुरुआत 2021 में पिछली बीजद सरकार द्वारा की गई थी।",
+            "ऑudit में छह जिले शामिल थे: बालासोर, कटक, गंजाम, जाजपुर, क्योंझर और सुंदरगढ़।",
+            "अनियमितताओं में फंड का गबन और धोखाधड़ी वाले भुगतान शामिल हैं।"
+          ],
+          "key_facts": [
+            "कार्यक्रम 2021 में शुरू किया गया था।",
+            "CAG ने छह जिलों के रिकॉर्ड की जांच की।"
+          ],
+          "key_locations": [
+            "ओडिशा",
+            "भुवनेश्वर"
+          ],
+          "important_dates": [
+            "2021"
+          ]
+        },
+        "quiz": {
+          "question": "In which year was the High School Transformation Programme introduced by the previous BJD government in Odisha?",
+          "options": [
+            "2019",
+            "2020",
+            "2021",
+            "2022"
+          ],
+          "correct_answer": "2021",
+          "explanation": "The BJD government's School and Mass Education Department introduced the High School Transformation Programme in 2021."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/cag-finds-financial-irregularities-in-previous-odisha-govt-s-high-school-transformation-prog-101790754260237.html",
+        "published_date": "2026-09-30",
+        "id": 113,
+        "image_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80",
+        "added_at": "2026-09-30T15:11:31.375395+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "Two more detained in Secunderabad military arms theft case",
+        "story_lead": "Telangana police have detained two armoury in-charges in connection with the theft of arms and ammunition from the Indian Army’s Madras Regiment in Secunderabad. The detentions follow the earlier arrest of retired havildar Upputholla Mallesh, who allegedly stole the cache out of disgruntlement over early retirement.",
+        "full_article_text": "Telangana police detained two armoury in-charges, identified as Vinod and Sheshu, for allegedly assisting retired havildar Upputholla Mallesh in a major theft of arms and ammunition from the Indian Army's Madras Regiment in Secunderabad. The incident occurred on the intervening night of August 30 and 31 at the Bell of Arms at the 20 battalion Madras Regiment's headquarters located at Bolarum in Secunderabad Cantonment. Mallesh, who served in the Army for 16 years before being compulsorily retired on June 30 due to discipline and health issues, allegedly committed the theft out of disgruntlement. Police investigations revealed financial transactions between Mallesh and the detained armoury in-charges, and authorities are probing potential involvement of at least three others who reportedly helped transport the weapons. Law enforcement has recovered multiple firearms including AK-203 rifles, INSAS rifles, 9 mm pistols, a civilian 6.35-bore pistol, and large quantities of ammunition from residences in Rangareddy and Nagarkurnool districts.",
+        "background_context": "The investigation centers around a security breach at the Madras Regiment headquarters in Secunderabad Cantonment where arms and ammunition were stolen from the Bell of Arms. The primary accused, a retired army havildar, had completed 16 years of service before facing compulsory retirement over discipline and health concerns.",
+        "bullet_points": [
+          "Telangana police detained two armoury in-charges, Vinod and Sheshu, linked to the Secunderabad military arms theft.",
+          "The primary accused is retired havildar Upputholla Mallesh, who was arrested on September 11.",
+          "The theft took place on the intervening night of August 30 and 31 at the 20 battalion Madras Regiment headquarters in Bolarum.",
+          "Stolen items recovered include AK-203 rifles, an INSAS rifle, 9 mm pistols, a 6.35-bore pistol, and extensive rounds of ammunition.",
+          "Recoveries were made from residences in Kowkoor village (Rangareddy district) and Jangam Reddy Pally (Nagarkurnool district).",
+          "Police found evidence of financial transactions between Mallesh and the detained armoury in-charges."
+        ],
+        "key_facts": [
+          "Primary accused: Retired havildar Upputholla Mallesh, 37",
+          "Detained armoury in-charges: Vinod and Sheshu",
+          "Date of theft: Intervening night of August 30 and 31",
+          "Location of theft: Bell of Arms at 20 battalion Madras Regiment's headquarters, Bolarum, Secunderabad Cantonment",
+          "Date of primary accused arrest: September 11",
+          "Recovered weapons: Four AK-203 rifles, one 5.56 mm INSAS rifle, six 9 mm pistols, one civilian 6.35-bore pistol, alongside thousands of rounds of ammunition"
+        ],
+        "key_locations": [
+          "Secunderabad",
+          "Secunderabad Cantonment",
+          "Bolarum",
+          "Kowkoor village",
+          "Yapral mandal",
+          "Rangareddy district",
+          "Jangam Reddy Pally",
+          "Amrabad mandal",
+          "Nagarkurnool",
+          "Telangana"
+        ],
+        "important_dates": [
+          "June 30",
+          "August 30",
+          "August 31",
+          "September 11",
+          "September 22",
+          "Tuesday",
+          "Wednesday"
+        ],
+        "exam_relevance": [
+          "Prelims: Current events of national importance, internal security implications.",
+          "Mains (General Studies III): Internal Security, challenges to internal security through communication and arms smuggling, institutional security lapses, and border/cantonment management."
+        ],
+        "upsc_analysis": "The incident highlights critical vulnerabilities in military installation security and armoury management. While handled swiftly by state and military law enforcement coordination, such breaches pose severe internal security concerns regarding the proliferation of illicit firearms and the vetting/post-retirement tracking of defence personnel.",
+        "causes": [
+          "Disgruntlement of the primary accused over being forced into early retirement due to discipline and health issues.",
+          "Collusion between the primary accused and internal armoury in-charges."
+        ],
+        "impacts": [
+          "Recovery of high-grade military weapons and ammunition from civilian hideouts.",
+          "Heightened scrutiny on security protocols and inventory management within military cantonments and armouries."
+        ],
+        "challenges": [
+          "Tracking all accomplices involved in transporting the stolen weapons.",
+          "Ensuring robust post-retirement monitoring and psychological support for discharged personnel to prevent retaliatory criminal acts."
+        ],
+        "government_steps": [
+          "Prompt police investigation and joint interrogation resulting in the detention of accomplices.",
+          "Scene reconstruction by police to determine the exact method of theft and identify further vulnerabilities.",
+          "Recovery of stolen caches across multiple hideouts through targeted raids."
+        ],
+        "constitutional_or_policy_link": [
+          "Arms Act regulations and military internal security frameworks."
+        ],
+        "way_forward": [
+          "Enhance biometric and digital surveillance systems within military armouries.",
+          "Implement rigorous audit mechanisms for ammunition and weapon inventories.",
+          "Strengthen post-retirement rehabilitation and grievance redressal mechanisms for discharged military personnel."
+        ],
+        "mains_notes": "The Secunderabad military arms theft case underscores the imperative for stringent internal security audits within defence establishments. Incidents involving insider collusion highlight the need for technological interventions in armoury access control and comprehensive monitoring of service personnel grievances.",
+        "mains_questions": [
+          "Discuss the security implications of military armoury breaches and suggest measures to fortify institutional internal security protocols in India.",
+          "Examine the socio-psychological factors contributing to crimes by former defense personnel and the institutional mechanisms required to address them."
+        ],
+        "takeaway": "Telangana police detained two armoury in-charges in connection with the Secunderabad military arms theft, expanding the probe into the heist orchestrated by a disaffected retired soldier.",
+        "prelims_facts": [
+          "Madras Regiment headquarters at Bolarum is located in Secunderabad Cantonment.",
+          "Recovered weaponry includes AK-203 rifles and INSAS rifles."
+        ],
+        "vocabulary": [
+          {
+            "word": "Armoury",
+            "meaning_hindi": "शस्त्रागार (Shastraagar)"
+          },
+          {
+            "word": "Disgruntlement",
+            "meaning_hindi": "असंतोष (Asantosh)"
+          },
+          {
+            "word": "Intervening",
+            "meaning_hindi": "बीच की रात / अंतराल की"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Secunderabad",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Secunderabad"
+          },
+          {
+            "name": "Madras Regiment",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Madras_Regiment"
+          },
+          {
+            "name": "Telangana",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Telangana"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "सिकंदराबाद सैन्य हथियार चोरी मामले में दो और हिरासत में",
+          "story_lead": "तेलंगाना पुलिस ने भारतीय सेना की मद्रास रेजिमेंट के शस्त्रागार से हथियारों की चोरी के सिलसिले में दो शस्त्रागार प्रभारियों को हिरासत में लिया है। यह कार्रवाई पहले गिरफ्तार किए गए सेवानिवृत्त हवलदार मल्लेश से पूछताछ के बाद की गई है।",
+          "full_article_text": "तेलंगाना पुलिस ने सिकंदराबाद में भारतीय सेना की मद्रास रेजिमेंट के शस्त्रागार से हथियार और गोला-बारूद चुराने में मदद करने के आरोप में दो शस्त्रागार प्रभारियों, विनोद और शेषु को हिरासत में लिया है। यह चोरी 30 और 31 अगस्त की दरमियानी रात को सिकंदराबाद छावनी के बोलारम स्थित मद्रास रेजिमेंट के मुख्यालय में हुई थी। मुख्य आरोपी, सेवानिवृत्त हवलदार मल्लेश को पुलिस पहले ही गिरफ्तार कर चुकी है। पुलिस जांच के अनुसार, मल्लेश ने अपने सेवाकाल के शुरुआती सेवानिवृत्ति से असंतुष्ट होकर इस चोरी को अंजाम दिया था।",
+          "background_context": "यह मामला सिकंदराबाद छावनी में सैन्य शस्त्रागार से हथियारों की चोरी की घटना से संबंधित है।",
+          "bullet_points": [
+            "तेलंगाना पुलिस ने दो शस्त्रागार प्रभारियों को हिरासत में लिया।",
+            "मुख्य आरोपी सेवानिवृत्त हवलदार उपुथोल मल्लेश है।",
+            "चोरी 30 और 31 अगस्त की रात को हुई थी।"
+          ],
+          "key_facts": [
+            "मुख्य आरोपी: सेवानिवृत्त हवलदार मल्लेश",
+            "हिरासत में लिए गए प्रभारी: विनोद और शेषु",
+            "बरामद हथियार: AK-203 राइफल, INSAS राइफल और पिस्तौल"
+          ],
+          "key_locations": [
+            "सिकंदराबाद",
+            "तेलंगाना",
+            "रंगारेड्डी जिला"
+          ],
+          "important_dates": [
+            "30 अगस्त",
+            "31 अगस्त",
+            "11 सितंबर"
+          ]
+        },
+        "quiz": {
+          "question": "Which military regiment's armoury in Secunderabad was targeted in the arms theft case?",
+          "options": [
+            "Madras Regiment",
+            "Sikh Regiment",
+            "Rajputana Rifles",
+            "Gorkha Regiment"
+          ],
+          "correct_answer": "Madras Regiment",
+          "explanation": "The arms and ammunition were stolen from the Bell of Arms at the 20 battalion Madras Regiment's headquarters at Bolarum in Secunderabad Cantonment."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/two-more-detained-in-secunderabad-military-arms-theft-case-101790754281093.html",
+        "published_date": "2026-09-30",
+        "id": 112,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/The-two-were-identified-as-armoury-in-charges-Vino_1790754275076_muXl.jpg",
+        "added_at": "2026-09-30T15:11:31.375395+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "Supreme Court Quashes NSA Detention of Sambhal Violence Accused Mulla Afroz, Imposes ₹10 Lakh Cost on UP Government",
+        "story_lead": "The Supreme Court of India has quashed the preventive detention of Mulla Afroz under the National Security Act (NSA) in connection with the November 2024 Sambhal violence. Setting aside the Allahabad High Court order, the apex court ruled that a police confession without independent supporting material cannot form the basis for preventive detention and imposed a ₹10 lakh cost on the Uttar Pradesh government.",
+        "full_article_text": "The Supreme Court of India has quashed the preventive detention under the National Security Act (NSA) of Mulla Afroz, who was accused of inciting violence in Sambhal, Uttar Pradesh, in November 2024. The apex court set aside a June 2026 decision of the Allahabad High Court that had upheld his detention.\n\nIn its order, the Supreme Court held that a confession allegedly made before the police cannot, by itself and in the absence of independent supporting material, serve as the legal foundation for preventive detention. Consequently, the court imposed a cost of ₹10 lakh on the Uttar Pradesh government. The apex court also observed that Afroz had suffered a considerable loss of liberty despite securing bail in all six criminal cases registered against him related to the incident.\n\nAccording to court records, violent clashes occurred on November 24, 2024, during a court-ordered survey of the Shahi Jama Masjid in Sambhal, leaving four people dead and dozens injured. Afroz was arrested on January 17, 2025, and the NSA detention order was passed against him on October 13, 2025. Speaking after the verdict, Afroz's brother Shahroz welcomed the ruling, emphasizing that no electronic or audio-video evidence was found against his brother and appealing to the chief minister and administration for an impartial investigation.",
+        "background_context": "On November 24, 2024, violent clashes broke out in Sambhal during a court-ordered survey of the Shahi Jama Masjid, resulting in four fatalities and dozens of injuries. Mulla Afroz was subsequently arrested in January 2025 and placed under preventive detention under the National Security Act in October 2025.",
+        "bullet_points": [
+          "Supreme Court quashes the NSA preventive detention of Sambhal violence accused Mulla Afroz.",
+          "Court sets aside the June 2026 judgment of the Allahabad High Court.",
+          "Apex court rules that police confessions without independent supporting material cannot justify preventive detention.",
+          "Uttar Pradesh government penalized with a cost of ₹10 lakh by the Supreme Court.",
+          "Afroz had already secured bail in all six criminal cases linked to the November 2024 incident.",
+          "Family members appeal for an impartial investigation into the Sambhal violence cases."
+        ],
+        "key_facts": [
+          "Violence occurred on November 24, 2024, during a court-ordered survey of Shahi Jama Masjid in Sambhal.",
+          "Four people were killed and dozens injured in the clashes.",
+          "Mulla Afroz was arrested on January 17, 2025, and NSA detention order was issued on October 13, 2025.",
+          "Allahabad High Court upheld the NSA detention in June 2026.",
+          "Supreme Court imposed a cost of ₹10 lakh on the Uttar Pradesh state government."
+        ],
+        "key_locations": [
+          "Sambhal, Uttar Pradesh",
+          "Shahi Jama Masjid, Sambhal"
+        ],
+        "important_dates": [
+          "November 24, 2024",
+          "January 17, 2025",
+          "October 13, 2025",
+          "June 2026"
+        ],
+        "exam_relevance": [
+          "Preventive Detention laws in India and National Security Act (NSA)",
+          "Judicial standards regarding admissibility and weight of police confessions",
+          "Protection of life and personal liberty under Article 21"
+        ],
+        "upsc_analysis": "The Supreme Court's decision highlights the critical distinction between penal prosecution and preventive detention. By holding that an uncorroborated police confession cannot form the sole basis for invocation of preventive detention statutes like the NSA, the court reinforced executive accountability and protected individual liberty against arbitrary state action.",
+        "causes": [
+          "Violent clashes during a court-ordered survey of Shahi Jama Masjid in Sambhal on November 24, 2024.",
+          "Executive order imposing preventive detention under NSA based primarily on alleged police confessions without independent supporting evidence."
+        ],
+        "impacts": [
+          "Quashing of preventive detention order under NSA against Mulla Afroz.",
+          "Imposition of ₹10 lakh financial penalty on the Uttar Pradesh government.",
+          "Setting aside of the Allahabad High Court's earlier order upholding the detention."
+        ],
+        "challenges": [
+          "Ensuring preventive detention laws are not used without adequate independent evidentiary material.",
+          "Maintaining public order while respecting fundamental rights and legal procedure.",
+          "Conducting timely and impartial investigations in cases involving communal or public clashes."
+        ],
+        "government_steps": [
+          "Court-ordered survey of the Shahi Jama Masjid conducted in November 2024.",
+          "NSA detention order issued by state authorities against the accused in October 2025."
+        ],
+        "constitutional_or_policy_link": [
+          "National Security Act (NSA)",
+          "Article 21 - Protection of Life and Personal Liberty",
+          "Article 22 - Safeguards against Arrest and Preventive Detention"
+        ],
+        "way_forward": [
+          "Adherence to strict evidentiary standards before executing preventive detention orders.",
+          "Relying on independent physical, digital, or material evidence rather than police confessions alone.",
+          "Ensuring state compliance with judicial directives regarding procedural safeguards in preventive detention."
+        ],
+        "mains_notes": "The Supreme Court quashed the NSA detention of Mulla Afroz related to the 2024 Sambhal violence, setting aside the Allahabad High Court's decision. The Court clarified that a confession made before police cannot independently justify preventive detention without corroborating material, imposing a ₹10 lakh cost on the UP government to emphasize adherence to procedural safeguards.",
+        "mains_questions": [
+          "Discuss the legal safeguards against arbitrary preventive detention under the Indian Constitution in light of recent Supreme Court rulings.",
+          "Analyze the evidentiary standards required for invoking preventive detention laws such as the National Security Act (NSA)."
+        ],
+        "takeaway": "The Supreme Court ruled that police confessions without independent supporting evidence cannot form the basis for preventive detention under the NSA.",
+        "prelims_facts": [
+          "Preventive detention under NSA requires independent supporting evidence beyond police confessions.",
+          "The Supreme Court imposed a ₹10 lakh cost on the UP government for arbitrary preventive detention.",
+          "Afroz was granted bail in all six criminal cases prior to the quashing of his NSA detention."
+        ],
+        "vocabulary": [
+          {
+            "word": "Quash",
+            "meaning_hindi": "रद्द करना"
+          },
+          {
+            "word": "Preventive Detention",
+            "meaning_hindi": "निवारक निरोध"
+          },
+          {
+            "word": "Confession",
+            "meaning_hindi": "स्वीकारोक्ति / इक़बाल-ए-जुर्म"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Supreme Court of India",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Supreme_Court_of_India"
+          },
+          {
+            "name": "Sambhal",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Sambhal"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "सुप्रीम कोर्ट ने संभल हिंसा के आरोपी मुल्ला अफ़रोज़ की NSA हिरासत को रद्द किया, यूपी सरकार पर ₹10 लाख का जुर्माना लगाया",
+          "story_lead": "भारत के सर्वोच्च न्यायालय ने नवंबर 2024 की संभल हिंसा के आरोपी मुल्ला अफ़रोज़ की राष्ट्रीय सुरक्षा कानून (NSA) के तहत निवारक हिरासत को रद्द कर दिया है। इलाहाबाद उच्च न्यायालय के आदेश को दरकिनार करते हुए शीर्ष अदालत ने फैसला सुनाया कि स्वतंत्र सहायक सामग्री के बिना पुलिस के सामने दिया गया बयान निवारक निरोध का आधार नहीं बन सकता और यूपी सरकार पर ₹10 लाख का जुर्माना लगाया।",
+          "full_article_text": "सर्वोच्च न्यायालय ने नवंबर 2024 में उत्तर प्रदेश के संभल में हिंसा भड़काने के आरोपी मुल्ला अफ़रोज़ की राष्ट्रीय सुरक्षा कानून (NSA) के तहत निवारक हिरासत को रद्द कर दिया है। शीर्ष अदालत ने जून 2026 के इलाहाबाद उच्च न्यायालय के उस फैसले को खारिज कर दिया जिसमें उनकी हिरासत को सही ठहराया गया था।\n\nअपने आदेश में शीर्ष अदालत ने माना कि पुलिस के समक्ष दिया गया कथित बयान, स्वतंत्र सहायक सामग्री के बिना, निवारक हिरासत का कानूनी आधार नहीं बन सकता। नतीजतन, अदालत ने उत्तर प्रदेश सरकार पर ₹10 लाख का जुर्माना लगाया। सर्वोच्च न्यायालय ने यह भी टिप्पणी की कि इस घटना से संबंधित सभी छह आपराधिक मामलों में जमानत मिलने के बावजूद अफ़रोज़ को अपनी स्वतंत्रता का काफी नुकसान उठाना पड़ा।\n\nअदालती रिकॉर्ड के अनुसार, 24 नवंबर, 2024 को संभल में शाही जामा मस्जिद के अदालती आदेश पर किए गए सर्वेक्षण के दौरान हिंसक झड़पें हुई थीं, जिसमें चार लोग मारे गए थे और दर्जनों घायल हुए थे। अफ़रोज़ को 17 जनवरी, 2025 को गिरफ्तार किया गया था और 13 अक्टूबर, 2025 को उनके खिलाफ NSA हिरासत का आदेश पारित किया गया था। निर्णय के बाद अफ़रोज़ के भाई शहरोज़ ने फैसले का स्वागत किया और निष्पक्ष जांच की मांग की।",
+          "background_context": "24 नवंबर, 2024 को संभल में शाही जामा मस्जिद के सर्वे के दौरान हिंसा भड़क उठी थी, जिसमें चार लोगों की मौत हो गई थी। इस मामले में आरोपी मुल्ला अफ़रोज़ को जनवरी 2025 में गिरफ्तार किया गया था और अक्टूबर 2025 में उन पर NSA लगाया गया था।",
+          "bullet_points": [
+            "सुप्रीम कोर्ट ने संभल हिंसा के आरोपी मुल्ला अफ़रोज़ की NSA हिरासत रद्द की।",
+            "अदालत ने इलाहाबाद उच्च न्यायालय के जून 2026 के आदेश को निरस्त किया।",
+            "बिना स्वतंत्र साक्ष्य के केवल पुलिस बयान को निवारक निरोध का आधार नहीं माना जा सकता।",
+            "उत्तर प्रदेश सरकार पर ₹10 लाख का जुर्माना लगाया गया।",
+            "आरोपी को घटना से जुड़े सभी 6 आपराधिक मामलों में पहले ही जमानत मिल चुकी थी।"
+          ],
+          "key_facts": [
+            "24 नवंबर 2024 को संभल में हिंसा हुई थी।",
+            "17 जनवरी 2025 को आरोपी की गिरफ्तारी हुई।",
+            "13 अक्टूबर 2025 को NSA आदेश जारी किया गया।",
+            "जून 2026 में इलाहाबाद हाईकोर्ट ने हिरासत को बरकरार रखा था जिसे सुप्रीम कोर्ट ने रद्द कर दिया।",
+            "यूपी सरकार पर ₹10 लाख का जुर्माना लगाया गया।"
+          ],
+          "key_locations": [
+            "संभल, उत्तर प्रदेश",
+            "शाही जामा मस्जिद, संभल"
+          ],
+          "important_dates": [
+            "24 नवंबर 2024",
+            "17 जनवरी 2025",
+            "13 अक्टूबर 2025",
+            "जून 2026"
+          ]
+        },
+        "quiz": {
+          "question": "Which principle was reaffirmed by the Supreme Court while quashing the NSA detention in the Sambhal violence case?",
+          "options": [
+            "A police confession alone without independent supporting material cannot form the basis for preventive detention.",
+            "Preventive detention orders are automatically void if bail is granted in associated criminal cases.",
+            "High Courts have no jurisdiction to review preventive detention orders passed under the NSA.",
+            "Electronic evidence is strictly required to register any criminal case."
+          ],
+          "correct_answer": "A police confession alone without independent supporting material cannot form the basis for preventive detention.",
+          "explanation": "The Supreme Court held that a confession allegedly made before police cannot, by itself and in the absence of independent supporting material, form the basis for preventive detention under the NSA."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/we-are-happy-after-a-long-time-sambhal-accused-s-brother-after-sc-quashes-detention-under-nsa-101790757709278.html",
+        "published_date": "2026-09-30",
+        "id": 111,
+        "image_url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=80",
+        "added_at": "2026-09-30T15:11:31.375395+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "Lucknow Police Arrest Murder Accused Following Encounter in Krishna Nagar",
+        "story_lead": "A 22-year-old murder suspect, Bhola Rajput, was arrested by the Krishna Nagar police in Lucknow following an encounter on Tuesday. Rajput is accused of killing his 32-year-old live-in partner, Radha, after an argument over marriage pressure.",
+        "full_article_text": "In Lucknow, Uttar Pradesh, the Krishna Nagar police arrested 22-year-old Bhola Rajput following an encounter in the Vijaynagar area. Rajput, a resident of Nandauha village in Unnao who carried a reward of ₹25,000, was injured in the leg during the exchange of fire. The arrest relates to the murder of his 32-year-old live-in partner, Radha, whose body was discovered on Kanpur Road on September 16. According to police reports, the victim was attacked with bricks and stones on her head on the night of September 15 in Narayanpuri. The police stated that the accused committed the crime following an argument regarding marriage pressure and threats of legal action. During the arrest attempt, the accused allegedly fired at the police team using a .315-bore country-made pistol, prompting retaliatory fire in self-defence. The police recovered the weapon, cartridges, and a scooter from the spot, and the accused was admitted to Lok Bandhu Hospital for treatment.",
+        "background_context": "The victim's mother had lodged a complaint following the discovery of the body, leading to the registration of a murder case. Three police teams were formed to trace the accused, who had been evading arrest and carried a cash reward.",
+        "bullet_points": [
+          "Accused Bhola Rajput (22) arrested after a police encounter in Lucknow's Vijaynagar area.",
+          "The accused carried a ₹25,000 reward and is charged with the murder of his live-in partner, Radha (32).",
+          "The victim's body was found on Kanpur Road on September 16, showing signs of head injuries from bricks and stones.",
+          "Police recovered a .315-bore country-made pistol, cartridges, and a scooter from the encounter site.",
+          "The accused was injured in the leg during retaliatory firing by the police and was admitted to Lok Bandhu Hospital."
+        ],
+        "key_facts": [
+          "The accused, Bhola Rajput, is a resident of Nandauha village in Unnao district.",
+          "The victim was identified as 32-year-old Radha.",
+          "The incident occurred in the jurisdiction of Krishna Nagar police station in Lucknow.",
+          "A reward of ₹25,000 was active on the accused prior to his arrest."
+        ],
+        "key_locations": [
+          "Lucknow",
+          "Kanpur road",
+          "Nandauha village",
+          "Unnao",
+          "Vijaynagar",
+          "Duda Colony",
+          "Narayanpuri",
+          "Krishna Nagar",
+          "Lok Bandhu Hospital"
+        ],
+        "important_dates": [
+          "September 15",
+          "September 16"
+        ],
+        "exam_relevance": [
+          "Relevance to law and order administration, police reforms, and criminal justice system in India under GS Paper II."
+        ],
+        "upsc_analysis": "The incident highlights critical challenges in urban policing, the management of law and order, and the protocols surrounding police encounters. It underscores the necessity of swift investigation mechanisms and the legal frameworks governing domestic disputes and violent crimes in live-in relationships.",
+        "causes": [
+          "Argument over marriage pressure and threats of filing a rape case",
+          "Alcohol consumption during the argument"
+        ],
+        "impacts": [
+          "Apprehension of a wanted criminal carrying a reward",
+          "Recovery of an illegal firearm (.315-bore country-made pistol)"
+        ],
+        "challenges": [
+          "Preventing violent crimes in domestic and live-in setups",
+          "Managing armed resistance during police interception operations"
+        ],
+        "government_steps": [
+          "Formation of three specialized police teams to trace the accused",
+          "Interception and checking operations in Duda Colony area by Krishna Nagar police"
+        ],
+        "constitutional_or_policy_link": [
+          "Article 21 (Right to Life and Personal Liberty)",
+          "Indian Penal Code / Bharatiya Nyaya Sanhita provisions on murder and armed assault on police"
+        ],
+        "way_forward": [
+          "Strengthening community policing and dispute resolution mechanisms",
+          "Strict enforcement of laws against illegal firearms",
+          "Ensuring adherence to standard operating procedures during police encounters"
+        ],
+        "mains_notes": "Analyze the socio-legal challenges surrounding live-in relationships and domestic violence in India. Discuss the role of police encounters and the legal safeguards required to balance law enforcement with human rights.",
+        "mains_questions": [
+          "Discuss the legal and social challenges associated with live-in relationships in India, particularly concerning domestic disputes and violence.",
+          "Examine the guidelines laid down by the judiciary regarding police encounters and self-defence during criminal apprehensions."
+        ],
+        "takeaway": "A murder accused carrying a ₹25,000 reward was arrested after a police encounter in Lucknow.",
+        "prelims_facts": [
+          "Krishna Nagar police station is located in Lucknow, Uttar Pradesh.",
+          "A .315-bore country-made pistol was recovered during the operation."
+        ],
+        "vocabulary": [
+          {
+            "word": "Encounter",
+            "meaning_hindi": "मुठभेड़"
+          },
+          {
+            "word": "Accused",
+            "meaning_hindi": "आरोपी"
+          },
+          {
+            "word": "Retaliatory",
+            "meaning_hindi": "जवाबी"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Lucknow",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Lucknow"
+          },
+          {
+            "name": "Unnao",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Unnao"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "लखनऊ में लिव-इन पार्टनर की हत्या के आरोप में मुठभेड़ के बाद 22 वर्षीय युवक गिरफ्तार",
+          "story_lead": "लखनऊ की कृष्णा नगर पुलिस ने मंगलवार को एक मुठभेड़ के बाद 22 वर्षीय हत्या के आरोपी भोला राजपूत को गिरफ्तार कर लिया। राजपूत पर अपनी 32 वर्षीय लिव-इन पार्टनर राधा की हत्या का आरोप है, जिसके बाद दोनों के बीच शादी के दबाव को लेकर विवाद हुआ था।",
+          "full_article_text": "उत्तर प्रदेश के लखनऊ में कृष्णा नगर पुलिस ने विजयनगर इलाके में एक मुठभेड़ के बाद 22 वर्षीय भोला राजपूत को गिरफ्तार किया है। उन्नाव के नंदौहा गांव के निवासी भोला पर ₹25,000 का इनाम था, और पुलिस के साथ हुई गोलीबारी में उसके पैर में गोली लगी है। यह गिरफ्तारी उसकी 32 वर्षीय लिव-इन पार्टनर राधा की हत्या के मामले में हुई है, जिसका शव 16 सितंबर को कानपुर रोड पर मिला था। पुलिस के अनुसार, 15 सितंबर की रात को नारायणपुरी में पीड़िता के सिर पर ईंटों और पत्थरों से हमला किया गया था। पुलिस ने बताया कि आरोपी ने शादी के दबाव और कानूनी कार्रवाई की धमकी को लेकर हुए विवाद के बाद इस अपराध को अंजाम दिया। गिरफ्तारी के प्रयास के दौरान, आरोपी ने कथित तौर पर .315-बोर के देसी कट्टे से पुलिस टीम पर गोली चलाई, जिसके जवाब में पुलिस ने आत्मरक्षा में गोलीबारी की। पुलिस ने मौके से हथियार, कारतूस और एक स्कूटर बरामद किया है, और आरोपी को इलाज के लिए लोक बंधु अस्पताल में भर्ती कराया गया है।",
+          "background_context": "शव मिलने के बाद पीड़िता की मां ने शिकायत दर्ज कराई थी, जिसके बाद हत्या का मामला दर्ज किया गया और आरोपी का पता लगाने के लिए तीन पुलिस टीमों का गठन किया गया था।",
+          "bullet_points": [
+            "आरोपी भोला राजपूत (22) को लखनऊ के विजयनगर इलाके में पुलिस मुठभेड़ के बाद गिरफ्तार किया गया।",
+            "आरोपी पर ₹25,000 का इनाम था और उस पर अपनी लिव-इन पार्टनर राधा (32) की हत्या का आरोप है।",
+            "पीड़िता का शव 16 सितंबर को कानपुर रोड पर मिला था, जिसके सिर पर ईंटों और पत्थरों से चोट के निशान थे।",
+            "पुलिस ने मुठभेड़ स्थल से एक .315-बोर का देसी कट्टा, कारतूस और एक स्कूटर बरामद किया है।",
+            "पुलिस की जवाबी कार्रवाई में आरोपी के पैर में गोली लगी और उसे लोक बंधु अस्पताल में भर्ती कराया गया।"
+          ],
+          "key_facts": [
+            "आरोपी भोला राजपूत उन्नाव जिले के नंदौहा गांव का रहने वाला है।",
+            "पीड़िता की पहचान 32 वर्षीय राधा के रूप में हुई है।",
+            "यह घटना लखनऊ के कृष्णा नगर थाना क्षेत्र में हुई।",
+            "गिरफ्तारी से पहले आरोपी पर ₹25,000 का इनाम घोषित था।"
+          ],
+          "key_locations": [
+            "लखनऊ",
+            "कानपुर रोड",
+            "नंदौहा गांव",
+            "उन्नाव",
+            "विजयनगर",
+            "दूदा कॉलोनी",
+            "नारायणपुरी",
+            "कृष्णा नगर",
+            "लोक बंधु अस्पताल"
+          ],
+          "important_dates": [
+            "15 सितंबर",
+            "16 सितंबर"
+          ]
+        },
+        "quiz": {
+          "question": "In which district of Uttar Pradesh is Nandauha village, the residence of the accused Bhola Rajput, located?",
+          "options": [
+            "Lucknow",
+            "Unnao",
+            "Kanpur",
+            "Varanasi"
+          ],
+          "correct_answer": "Unnao",
+          "explanation": "According to the police statement, the accused Bhola Rajput is a resident of Nandauha village in Unnao district."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/man-held-encounter-lucknow-live-in-partner-murder-case-bhola-rajput-radha-101790746895685.html",
+        "published_date": "2026-09-30",
+        "id": 110,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/Lucknow-Police-reviewing-security-arrangement-in-a_1691863988425_1790747337626_iv0B_0d914a13-8fdd-42e5-8601-66e3c55a7bfc_It14.jpeg",
+        "added_at": "2026-09-30T15:11:31.375395+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": false,
+        "headline": "Bombay High Court Stays NIA Court Order Granting Bail to Sachin Waze in Antilia Bomb Scare Case",
+        "story_lead": "The Bombay High Court has temporarily stayed an order passed by a special National Investigation Agency (NIA) court granting bail to former Mumbai police officer Sachin Waze. The case pertains to the 2021 Antilia explosives scare and the related murder of Thane trader Mansukh Hiren. The stay was granted by a division bench after two earlier benches recused themselves from hearing the appeal.",
+        "full_article_text": "The Bombay High Court on Wednesday issued a temporary stay on a special NIA court's order granting bail to former police officer Sachin Waze in connection with the 2021 Antilia explosives case and the murder of Thane trader Mansukh Hiren. A division bench comprising Justices Girish Kulkarni and Dr. Neela Gokhale heard the urgent appeal filed by the National Investigation Agency (NIA) challenging the bail order.\n\nPrior to the hearing by Justice Kulkarni's bench, two separate division benches recused themselves from the matter. The bench of Justices Sarang Kotwal and Ranjitsinha Bhonsale recused itself because Justice Kotwal was previously associated with senior advocate Manoj Mohite, who had represented Waze. Later, the bench of Justices Bharati Dangre and Ashish Chavan also recused itself after Justice Dangre noted her involvement in an order concerning Waze and former Maharashtra Home Minister Anil Deshmukh in another criminal matter.\n\nThe special NIA court judge Chakor Bawiskar had granted bail to Waze observing that the prosecution failed to establish that any terror was created or that the Ambani family was terrorized. However, the NIA immediately moved the High Court to contest the order. The case involves three interconnected FIRs registered in February and March 2021 following the recovery of an SUV laden with gelatine sticks outside the residence of businessman Mukesh Ambani.",
+        "background_context": "On February 18, 2021, a Mahindra Scorpio SUV was reported stolen by Thane auto parts dealer Mansukh Hiran. On February 25, 2021, the vehicle was found abandoned outside Antilia, the residence of Mukesh Ambani, containing 20 gelatine sticks and a threatening letter. The NIA subsequently arrested Sachin Waze on March 13, 2021, alleging that Waze parked the vehicle and later conspired with former police officer Pradip Sharma and inspector Sunil Mane to murder Hiran after he refused to take responsibility for planting the vehicle.",
+        "bullet_points": [
+          "Bombay High Court stayed the special NIA court's bail order for Sachin Waze.",
+          "The case involves the 2021 Antilia explosives scare and the murder of Mansukh Hiren.",
+          "A division bench of Justices Girish Kulkarni and Dr. Neela Gokhale granted the stay.",
+          "Two High Court division benches recused themselves prior to the hearing due to prior associations.",
+          "Special NIA court had granted bail stating there was no material showing terror created under the allegations.",
+          "Waze was arrested by the NIA on March 13, 2021."
+        ],
+        "key_facts": [
+          "Vehicle found outside Antilia contained 20 gelatine sticks and a threat note.",
+          "First FIR registered on February 18, 2021 regarding stolen SUV.",
+          "Second FIR registered on February 25, 2021 after vehicle discovery.",
+          "Special court judge Chakor Bawiskar noted day-to-day business of the Ambanis was not disturbed.",
+          "Sachin Waze was arrested on March 13, 2021."
+        ],
+        "key_locations": [
+          "Antilia, Altamount Road, Mumbai",
+          "Thane Central Prison",
+          "Vikhroli, Mumbai"
+        ],
+        "important_dates": [
+          "February 18, 2021",
+          "February 25, 2021",
+          "March 13, 2021"
+        ],
+        "exam_relevance": [
+          "Judicial Recusal practice and ethics in Indian Judiciary",
+          "Role and jurisdiction of Special Courts under the National Investigation Agency (NIA) Act",
+          "Provisions related to bail under special criminal legislations"
+        ],
+        "upsc_analysis": "The judicial proceedings highlight key procedural aspects of the Indian legal system, including judicial recusals to prevent conflict of interest, the appellate jurisdiction of High Courts over Special NIA Courts, and judicial interpretation of terror offenses under special acts during bail hearings.",
+        "causes": [
+          "NIA filed an urgent appeal in the Bombay High Court against the special court's decision to grant bail to Sachin Waze."
+        ],
+        "impacts": [
+          "Sachin Waze remains in custody at Thane Central Prison following the High Court stay order."
+        ],
+        "challenges": [
+          "Multiple judicial recusals led to re-listing the urgent appeal before different benches of the High Court."
+        ],
+        "government_steps": [
+          "National Investigation Agency (NIA) moved the High Court immediately to challenge the trial court's bail order."
+        ],
+        "constitutional_or_policy_link": [
+          "Principles of Natural Justice and Judicial Ethics (Recusal of Judges)",
+          "National Investigation Agency (NIA) Act, 2008 provisions on Special Courts and Appeals"
+        ],
+        "way_forward": [
+          "The Bombay High Court scheduled the matter for a full hearing next week to decide on the NIA appeal."
+        ],
+        "mains_notes": "Judicial recusal ensures impartial justice when potential conflict of interest arises. Appeals against orders of Special NIA courts are governed by specialized statutory provisions, requiring High Courts to examine both factual findings and legal standards applied by trial courts regarding bail.",
+        "mains_questions": [
+          "Discuss the constitutional and ethical significance of judicial recusal in the Indian judicial framework.",
+          "Examine the statutory powers and appellate mechanisms associated with Special Courts under the National Investigation Agency (NIA) Act."
+        ],
+        "takeaway": "The Bombay High Court has stayed the bail granted to Sachin Waze in the 2021 Antilia bomb scare case following an immediate appeal by the NIA.",
+        "prelims_facts": [
+          "Sachin Waze was arrested on March 13, 2021 by the NIA.",
+          "Special NIA court judge in the case was Chakor Bawiskar.",
+          "Antilia incident involved 20 gelatine sticks inside a Mahindra Scorpio SUV."
+        ],
+        "vocabulary": [
+          {
+            "word": "recused",
+            "meaning_hindi": "न्यायाधीश द्वारा स्वयं को किसी मामले की सुनवाई से अलग करना"
+          },
+          {
+            "word": "prosecution",
+            "meaning_hindi": "अभियोजन पक्ष"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Bombay High Court",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Bombay_High_Court"
+          },
+          {
+            "name": "National Investigation Agency",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=National_Investigation_Agency"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "एंटीलिया बम कांड: बॉम्बे हाईकोर्ट ने सचिन वाजे को जमानत देने के विशेष एनआईए कोर्ट के आदेश पर रोक लगाई",
+          "story_lead": "बॉम्बे हाईकोर्ट ने 2021 के एंटीलिया विस्फोटक मामले और ठाणे के व्यापारी मनसुख हिरेन की हत्या के मामले में पूर्व पुलिस अधिकारी सचिन वाजे को जमानत देने के विशेष एनआईए कोर्ट के आदेश पर अंतरिम रोक लगा दी है। दो अलग-अलग पीठों द्वारा खुद को सुनवाई से अलग करने के बाद एक खंडपीठ ने यह रोक जारी की।",
+          "full_article_text": "बॉम्बे हाईकोर्ट ने 2021 के एंटीलिया विस्फोटक मामले और मनसुख हिरेन हत्याकांड में पूर्व पुलिस अधिकारी सचिन वाजे को जमानत देने के विशेष एनआईए अदालत के आदेश पर अस्थायी रोक लगा दी है। न्यायमूर्ति गिरीश कुलकर्णी और न्यायमूर्ति डॉ. नीला गोखले की खंडपीठ ने राष्ट्रीय जांच एजेंसी (एनआईए) द्वारा दायर याचिका पर सुनवाई करते हुए यह आदेश दिया।\n\nइससे पहले दो अलग-अलग खंडपीठों ने इस मामले की सुनवाई से खुद को अलग कर लिया था। न्यायमूर्ति सारंग कोतवाल और न्यायमूर्ति रणजीतसिंहा भोंसले की पीठ ने इसलिए हटने का फैसला लिया क्योंकि न्यायमूर्ति कोतवाल पहले वरिष्ठ अधिवक्ता मनोज मोहित के साथ जुड़े थे, जिन्होंने वाजे का प्रतिनिधित्व किया था। इसके बाद न्यायमूर्ति भारती डांगरे और न्यायमूर्ति आशीष चव्हाण की पीठ ने भी सुनवाई से खुद को अलग किया।\n\nविशेष एनआईए अदालत के न्यायाधीश चकोर बाविस्कर ने यह कहते हुए वाजे को जमानत दी थी कि अभियोजन पक्ष यह साबित करने में विफल रहा कि इससे कोई आतंक फैला था। हालांकि, एनआईए ने तुरंत हाईकोर्ट का रुख किया। यह मामला फरवरी और मार्च 2021 में दर्ज एफआईआर से जुड़ा है।",
+          "background_context": "18 फरवरी 2021 को ठाणे के ऑटो पार्ट्स डीलर मनसुख हिरेन ने महिंद्रा स्कॉर्पियो एसयूवी चोरी होने की सूचना दी थी। 25 फरवरी को वह गाड़ी मुकेश अंबानी के घर एंटीलिया के बाहर 20 जिलेटिन की छड़ों और धमकी भरे पत्र के साथ मिली थी। इसके बाद एनआईए ने 13 मार्च 2021 को सचिन वाजे को गिरफ्तार किया था।",
+          "bullet_points": [
+            "बॉम्बे हाईकोर्ट ने सचिन वाजे की जमानत पर रोक लगा दी।",
+            "यह मामला 2021 के एंटीलिया विस्फोटक और मनसुख हिरेन हत्याकांड से संबंधित है।",
+            "न्यायमूर्ति गिरीश कुलकर्णी और न्यायमूर्ति डॉ. नीला गोखले की पीठ ने रोक का आदेश दिया।",
+            "दो उच्च न्यायालय पीठों ने व्यक्तिगत/पूर्व संबंधों के कारण सुनवाई से खुद को अलग कर लिया था।",
+            "विशेष अदालत ने कहा था कि प्रथम दृष्टया आतंक का कोई साक्ष्य नहीं है।",
+            "वाजे को 13 मार्च 2021 को एनआईए ने गिरफ्तार किया था।"
+          ],
+          "key_facts": [
+            "एंटीलिया के बाहर मिली एसयूवी में 20 जिलेटिन की छड़ें थीं।",
+            "पहली एफआईआर 18 फरवरी 2021 को दर्ज की गई थी।",
+            "दूसरी एफआईआर 25 फरवरी 2021 को दर्ज की गई थी।",
+            "सचिन वाजे को 13 मार्च 2021 को गिरफ्तार किया गया था।"
+          ],
+          "key_locations": [
+            "एंटीलिया, मुंबई",
+            "ठाणे सेंट्रल जेल",
+            "विक्रोली, मुंबई"
+          ],
+          "important_dates": [
+            "18 फरवरी 2021",
+            "25 फरवरी 2021",
+            "13 मार्च 2021"
+          ]
+        },
+        "quiz": {
+          "question": "On which date was former police officer Sachin Waze arrested by the National Investigation Agency (NIA) in connection with the Antilia case?",
+          "options": [
+            "February 18, 2021",
+            "February 25, 2021",
+            "March 13, 2021",
+            "April 1, 2021"
+          ],
+          "correct_answer": "March 13, 2021",
+          "explanation": "According to the source, Sachin Waze was arrested by the NIA on March 13, 2021, for his alleged involvement in planting the explosives-laden SUV outside Antilia."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/antilia-bomb-scare-bombay-hc-stays-nia-court-order-granting-bail-to-sachin-waze-101790758182607.html",
+        "published_date": "2026-09-30",
+        "id": 109,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/The-matter-has-been-adjourned-for-hearing-next-wee_1790758175913_425o.jpg",
+        "added_at": "2026-09-30T15:11:31.375395+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "Delhi High Court Rejects PIL Seeking Indian National Army Memorial at Red Fort",
+        "story_lead": "The Delhi High Court has dismissed a public interest litigation (PIL) seeking directions to establish a dedicated memorial for the martyrs of the Indian National Army (INA) at the Red Fort. A bench comprising Chief Justice D K Upadhyaya and Justice Tejas Karia held that the establishment of a memorial is not linked to any enforceable legal right or duty.",
+        "full_article_text": "The Delhi High Court dismissed a petition filed by the Mahan Swatantrata Senani Lalti Ram Trust, which sought directions to the Centre to establish a memorial for the martyrs of the Indian National Army (INA) at the Red Fort. The bench of Chief Justice D K Upadhyaya and Justice Tejas Karia noted that establishing a memorial is not a justiciable issue and cannot be linked to an enforceable duty or legal right. The trust argued that the Centre had approved proposals related to Netaji Subhas Chandra Bose, including constructing the memorial, as per a written reply in the Lok Sabha on August 2, 2021, and that the failure to do so violated fundamental rights. However, the court ruled that press releases and PIB announcements do not form the basis for claiming a legal right or issuing a mandamus to the government. The court granted liberty to the trust to approach the relevant government ministry through a representation, directing the government to pass a reasoned order if such a representation is filed.",
+        "background_context": "The petitioner trust relied on a written reply given by the Centre in the Lok Sabha on August 2, 2021, which stated that proposals related to Netaji Subhas Chandra Bose, including the construction of a memorial to INA martyrs at the Red Fort, had been approved. The petitioner argued that the delay or failure to construct the memorial violated fundamental rights to equality and life under the Constitution.",
+        "bullet_points": [
+          "Delhi HC dismissed a PIL seeking an INA martyrs' memorial at the Red Fort.",
+          "The bench ruled that establishing a memorial is not tied to any enforceable legal right or duty.",
+          "The court stated that PIB press releases cannot form the basis of claiming a legal right.",
+          "The petition was filed by the Mahan Swatantrata Senani Lalti Ram Trust.",
+          "The trust cited a Lok Sabha written reply from August 2, 2021, regarding approved proposals for Netaji Subhas Chandra Bose.",
+          "The HC granted liberty to the trust to approach the relevant ministry with a representation for a reasoned order."
+        ],
+        "key_facts": [
+          "The Delhi HC bench consisted of Chief Justice D K Upadhyaya and Justice Tejas Karia.",
+          "The petition was filed by Mahan Swatantrata Senani Lalti Ram Trust.",
+          "The Centre's written reply in the Lok Sabha regarding Netaji proposals was given on August 2, 2021.",
+          "The court noted that setting up a memorial cannot be enforced through a writ petition."
+        ],
+        "key_locations": [
+          "Delhi",
+          "Red Fort"
+        ],
+        "important_dates": [
+          "August 2, 2021"
+        ],
+        "exam_relevance": [
+          "UPSC Mains: Indian Polity - Judiciary, Judicial Review, Public Interest Litigation (PIL), Fundamental Rights.",
+          "UPSC Prelims: Indian National Army (INA), Netaji Subhas Chandra Bose, Red Fort."
+        ],
+        "upsc_analysis": "The Delhi High Court's ruling reinforces the boundaries of judicial activism and judicial review under Article 226. It highlights that policy implementation, executive announcements, and commemorative projects that lack statutory backing or enforceable legal obligations cannot be mandated by courts through writs. For aspirants, this underscores the distinction between moral/historical respect and legally enforceable justiciable rights.",
+        "causes": [
+          "Filing of a PIL by a trust seeking judicial intervention for constructing an INA memorial at the Red Fort based on past government replies in Parliament."
+        ],
+        "impacts": [
+          "Clarification by the judiciary on the limits of using writ petitions to compel the government to build memorials based on press releases or parliamentary replies."
+        ],
+        "challenges": [
+          "Balancing historical commemoration of freedom fighters with judicial limitations on policy and land allocation."
+        ],
+        "government_steps": [
+          "Previously informed the Lok Sabha on August 2, 2021, about approved proposals related to Netaji Subhas Chandra Bose and the INA memorial."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 226 of the Constitution of India regarding the writ jurisdiction of High Courts."
+        ],
+        "way_forward": [
+          "The petitioner trust can submit a formal representation to the concerned ministry, prompting a reasoned administrative decision."
+        ],
+        "mains_notes": "The Delhi HC ruled that building a memorial is not a justiciable issue linked to enforceable legal rights. While acknowledging the respect due to freedom fighters, the court stated that writs cannot direct land allocation or memorial construction based on PIB releases or parliamentary replies, maintaining the separation of powers.",
+        "mains_questions": [
+          "Examine the scope of judicial review in matters concerning policy announcements and commemorative projects by the government.",
+          "Discuss the principles governing the maintainability of Public Interest Litigation (PIL) regarding executive policy execution."
+        ],
+        "takeaway": "The Delhi HC held that establishing memorials is a policy matter not linked to enforceable legal rights and cannot be mandated via writ petitions.",
+        "prelims_facts": [
+          "The Indian National Army (INA) was associated with Netaji Subhas Chandra Bose.",
+          "Writ jurisdiction of High Courts is derived under Article 226."
+        ],
+        "vocabulary": [
+          {
+            "word": "Justiciable",
+            "meaning_hindi": "न्यायसंगत / जिस पर अदालत में विचार किया जा सके"
+          },
+          {
+            "word": "Writ Petition",
+            "meaning_hindi": "रिट याचिका"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Netaji Subhas Chandra Bose",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Netaji%20Subhas%20Chandra%20Bose"
+          },
+          {
+            "name": "Red Fort",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Red%20Fort"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "दिल्ली उच्च न्यायालय ने लाल किले पर आजाद हिंद फौज के स्मारक की मांग वाली जनहित याचिका खारिज की",
+          "story_lead": "दिल्ली उच्च न्यायालय ने लाल किले पर भारतीय राष्ट्रीय सेना (INA) के शहीदों के लिए एक समर्पित स्मारक स्थापित करने की मांग करने वाली याचिका को खारिज कर दिया है। मुख्य न्यायाधीश डी.के. उपाध्याय और न्यायमूर्ति तेजस कारिया की पीठ ने कहा कि स्मारक की स्थापना किसी लागू करने योग्य कानूनी अधिकार या कर्तव्य से जुड़ी नहीं है।",
+          "full_article_text": "दिल्ली उच्च न्यायालय ने महान स्वतंत्रता सेनानी ललती राम ट्रस्ट द्वारा दायर उस याचिका को खारिज कर दिया जिसमें केंद्र को लाल किले में आईएनए शहीदों के लिए स्मारक स्थापित करने के लिए कदम उठाने का निर्देश देने की मांग की गई थी। मुख्य न्यायाधीश डी.के. उपाध्याय और न्यायमूर्ति तेजस कारिया की पीठ ने कहा कि स्मारक की स्थापना कोई न्यायसंगत मुद्दा नहीं है और न ही यह किसी कानूनी अधिकार से जुड़ा है। अदालत ने स्पष्ट किया कि पीआईबी प्रेस विज्ञप्तियों के माध्यम से की गई घोषणाएं अपने आप में कानूनी अधिकार का दावा करने का आधार नहीं बन सकतीं।",
+          "background_context": "याचिकाकर्ता ट्रस्ट ने 2 अगस्त 2021 को लोकसभा में सरकार के एक लिखित उत्तर का हवाला दिया था जिसमें नेताजी सुभाष चंद्र बोस से संबंधित विभिन्न प्रस्तावों को मंजूरी देने की बात कही गई थी।",
+          "bullet_points": [
+            "दिल्ली उच्च न्यायालय ने लाल किले पर INA स्मारक की मांग वाली PIL खारिज की।",
+            "पीठ ने कहा कि स्मारक बनाना किसी कानूनी अधिकार या कर्तव्य से जुड़ा नहीं है।",
+            "अदालत के अनुसार पीआईबी प्रेस विज्ञप्तियां कानूनी अधिकार का आधार नहीं हो सकतीं।",
+            "यह याचिका महान स्वतंत्रता सेनानी ललती राम ट्रस्ट द्वारा दायर की गई थी।"
+          ],
+          "key_facts": [
+            "याचिकाकर्ता: महान स्वतंत्रता सेनानी ललती राम ट्रस्ट",
+            "न्यायालय: दिल्ली उच्च न्यायालय"
+          ],
+          "key_locations": [
+            "दिल्ली",
+            "लाल किला"
+          ],
+          "important_dates": [
+            "2 अगस्त 2021"
+          ]
+        },
+        "quiz": {
+          "question": "What was the primary ground on which the Delhi High Court dismissed the PIL seeking an INA memorial at the Red Fort?",
+          "options": [
+            "The Red Fort is a protected UNESCO World Heritage site where construction is permanently banned.",
+            "Establishing a memorial is not linked to any enforceable legal right or duty, making it a non-justiciable issue.",
+            "The Indian National Army is not recognized by the central government.",
+            "The petitioner trust lacked the financial capacity to build a memorial."
+          ],
+          "correct_answer": "Establishing a memorial is not linked to any enforceable legal right or duty, making it a non-justiciable issue.",
+          "explanation": "The Delhi High Court observed that setting up a memorial does not involve any enforceable legal right or duty and cannot be mandated through a writ petition."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/delhi-hc-rejects-pil-seeking-indian-national-army-memorial-at-red-fort-101790758662182.html",
+        "published_date": "2026-09-30",
+        "id": 108,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/The-court-issued-the-direction-seeking-directions-_1790758655980_qjgj.jpg",
+        "added_at": "2026-09-30T15:11:31.375395+05:30"
+      },
+      {
+        "category": "Science & Technology",
+        "exam_corner": false,
+        "headline": "Contact lost with 5 trekkers on Uttarakhand's Vasukital trek, search operations underway",
+        "story_lead": "Authorities have launched helicopter and foot searches in the high Himalayan region of Uttarakhand after losing contact with five trekkers on the Vasukital trek. The group had started their journey on September 25 without obtaining prior permission from the administration. The incident follows heavy rainfall and snowfall across higher elevations in the state.",
+        "full_article_text": "Five trekkers have gone missing on the Vasukital trek in Uttarakhand's Rudraprayag district, prompting authorities to launch helicopter and foot searches in the high Himalayan region. The group had set out on the Kedarnath-Vasukital trek on September 25, but contact with them was lost after heavy rainfall in lower areas and heavy snowfall at higher elevations on September 26 and 27. Rudraprayag District Disaster Management Officer Nandan Singh Rajwar stated that the brother of one of the trekkers informed the district office about the situation. A helicopter search was deployed on Tuesday, followed by foot search teams. Officials noted that the trekking group had not obtained prior permission before undertaking the trek, which usually takes 10-12 days to complete and return. This incident occurs alongside wider rescue operations in the state's high-altitude regions, where the State Disaster Response Force (SDRF), Army, paramilitary forces, and police successfully evacuated 67 stranded trekkers and porters from routes including Kalindi Khal, Auden Kol, and Vasukital following improved weather conditions.",
+        "background_context": "Uttarakhand recently experienced severe weather conditions, including heavy rainfall in lower areas and heavy snowfall at higher elevations on September 26 and 27, for which the Meteorological Department had issued warnings. Rain, snow, and landslides affected several parts of the state, stranding multiple trekking groups in high-altitude regions.",
+        "bullet_points": [
+          "Five trekkers went missing on the Vasukital trek in Uttarakhand's Rudraprayag district.",
+          "The group began their Kedarnath-Vasukital trek on September 25 without obtaining prior administrative permission.",
+          "Contact was lost following heavy rainfall and snowfall on September 26 and 27.",
+          "Authorities deployed a helicopter and a foot search team to locate the missing group.",
+          "A broader rescue operation successfully evacuated 67 stranded trekkers and porters from high-altitude routes like Kalindi Khal, Auden Kol, and Vasukital.",
+          "Chief Minister Pushkar Singh Dhami directed officials to remain vigilant and advised people to avoid unnecessary travel."
+        ],
+        "key_facts": [
+          "Five trekkers are missing on the Vasukital trek.",
+          "The group started their journey on September 25.",
+          "Heavy rainfall and snowfall occurred on September 26 and 27.",
+          "The trekking group did not obtain prior permission from the administration.",
+          "A total of 67 stranded trekkers and porters were safely evacuated from various high-altitude routes in recent operations."
+        ],
+        "key_locations": [
+          "Uttarakhand",
+          "Rudraprayag district",
+          "Vasukital",
+          "Kedarnath",
+          "Kalindi Khal",
+          "Auden Kol",
+          "Mount Jogin",
+          "Harsil helipad",
+          "Uttarkashi district"
+        ],
+        "important_dates": [
+          "September 25",
+          "September 26",
+          "September 27"
+        ],
+        "exam_relevance": [
+          "Prelims: Geography of Uttarakhand, Himalayan trekking routes, Disaster Management in India",
+          "Mains: Disaster Management, role of SDRF and armed forces in disaster response, safety protocols in high-altitude adventure tourism"
+        ],
+        "upsc_analysis": "The incident highlights vulnerabilities associated with unmonitored adventure tourism in fragile Himalayan ecosystems during extreme weather events. It underscores the critical need for strict enforcement of trekking regulations, mandatory prior permissions, real-time meteorological advisories, and swift multi-agency disaster response coordination involving the SDRF, military, and local administration.",
+        "causes": [
+          "Adverse weather conditions including heavy rainfall and snowfall on September 26 and 27.",
+          "Undertaking high-altitude treks without prior administrative permission or monitoring."
+        ],
+        "impacts": [
+          "Five trekkers missing on the Vasukital trek.",
+          "Stranding of 67 trekkers and porters across various high-altitude routes in Uttarakhand due to rain, snow, and landslides."
+        ],
+        "challenges": [
+          "Locating trekkers in high Himalayan regions during adverse weather conditions.",
+          "Lack of tracking or advance information on unauthorized trekking groups."
+        ],
+        "government_steps": [
+          "Deployment of helicopters and foot search teams by district authorities.",
+          "Rescue operations coordinated by the State Disaster Response Force (SDRF) alongside the Army, paramilitary forces, and police.",
+          "Evacuation of 67 stranded individuals through 20 helicopter sorties and medical checkups at Harsil helipad.",
+          "Directive by Chief Minister Pushkar Singh Dhami urging officials to remain vigilant and advising against unnecessary travel."
+        ],
+        "constitutional_or_policy_link": [
+          "National Disaster Management Act, 2005"
+        ],
+        "way_forward": [
+          "Strict enforcement of mandatory registration and permission protocols for all high-altitude treks.",
+          "Integration of real-time weather forecasting with local tourism and trekking management.",
+          "Establishment of checkpoint mechanisms along popular Himalayan trekking routes to track group movements."
+        ],
+        "mains_notes": "High-altitude Himalayan regions remain prone to sudden weather aberrations like heavy snowfall and unseasonal rains, leading to stranded trekkers and rescue challenges. Unauthorized trekking and lack of prior registration exacerbate rescue risks. Effective disaster mitigation requires strict regulatory compliance, coordination between civil administration and specialized forces like SDRF, and robust early warning systems.",
+        "mains_questions": [
+          "Discuss the challenges involved in disaster response and rescue operations in high-altitude Himalayan regions. Suggest measures to regulate adventure tourism.",
+          "Examine the role of institutional coordination in mitigating natural disaster impacts in ecologically fragile states like Uttarakhand."
+        ],
+        "takeaway": "Authorities have launched search operations for five missing trekkers on Uttarakhand's Vasukital trek following adverse weather conditions and unpermitted travel.",
+        "prelims_facts": [
+          "Vasukital trek is located in Uttarakhand's Rudraprayag district.",
+          "State Disaster Response Force (SDRF) coordinates rescue efforts in Uttarakhand alongside security forces.",
+          "A normal Kedarnath-Vasukital trek takes around 10-12 days."
+        ],
+        "vocabulary": [
+          {
+            "word": "Evacuate",
+            "meaning_hindi": "सुरक्षित स्थान पर पहुँचाना"
+          },
+          {
+            "word": "Vigilant",
+            "meaning_hindi": "सतर्क"
+          },
+          {
+            "word": "Sortie",
+            "meaning_hindi": "विमान का उड़ान अभियान"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Uttarakhand",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Uttarakhand"
+          },
+          {
+            "name": "Rudraprayag district",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Rudraprayag_district"
+          },
+          {
+            "name": "Pushkar Singh Dhami",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Pushkar_Singh_Dhami"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "उत्तराखंड के वासुकीताल ट्रेक पर 5 ट्रेकर्स से संपर्क टूटा, तलाश जारी",
+          "story_lead": "उत्तराखंड के वासुकीताल ट्रेक पर पांच ट्रेकर्स के लापता होने के बाद अधिकारियों ने उच्च हिमालयी क्षेत्र में हेलीकॉप्टर और पैदल तलाशी अभियान शुरू किया है। यह समूह बिना प्रशासनिक अनुमति के अपनी यात्रा पर निकला था।",
+          "full_article_text": "उत्तराखंड के रुद्रप्रयाग जिले में वासुकीताल ट्रेक पर पांच ट्रेकर्स लापता हो गए हैं, जिसके बाद अधिकारियों ने उच्च हिमालयी क्षेत्र में हेलीकॉप्टर और पैदल खोज अभियान शुरू किया है। अधिकारियों ने बुधवार को यह जानकारी दी।",
+          "background_context": "उत्तराखंड में 26 और 27 सितंबर को निचले इलाकों में भारी बारिश और उच्च ऊंचाई वाले क्षेत्रों में भारी बर्फबारी हुई थी, जिसके बाद यह स्थिति सामने आई है।",
+          "bullet_points": [
+            "उत्तराखंड के रुद्रप्रयाग जिले में वासुकीताल ट्रेक पर पांच ट्रेकर्स लापता हैं।",
+            "समूह ने बिना अनुमति के केदारनाथ-वासुकीताल ट्रेक शुरू किया था।",
+            "भारी बारिश और बर्फबारी के बाद संपर्क टूट गया।",
+            "अधिकारियों ने ट्रेकर्स की तलाश के लिए हेलीकॉप्टर और पैदल दल भेजा है।"
+          ],
+          "key_facts": [
+            "वासुकीताल ट्रेक पर पांच ट्रेकर्स लापता हुए।",
+            "यात्रा 25 सितंबर को शुरू हुई थी।"
+          ],
+          "key_locations": [
+            "उत्तराखंड",
+            "रुद्रप्रयाग",
+            "वासुकीताल"
+          ],
+          "important_dates": [
+            "25 सितंबर",
+            "26 सितंबर",
+            "27 सितंबर"
+          ]
+        },
+        "quiz": {
+          "question": "In which district of Uttarakhand is the Vasukital trek located, where recent missing trekker incidents and rescue operations took place?",
+          "options": [
+            "Chamoli district",
+            "Rudraprayag district",
+            "Nainital district",
+            "Almora district"
+          ],
+          "correct_answer": "Rudraprayag district",
+          "explanation": "The Vasukital trek is located in Uttarakhand's Rudraprayag district, where five trekkers went missing and rescue operations were conducted."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/contact-lost-with-5-trekkers-on-uttarakhands-vasukital-trek-journey-began-five-days-ago-missing-rescue-101790755847815.html",
+        "published_date": "2026-09-30",
+        "id": 107,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/ANI-20260915296-0_1790756017655_8ptE_1790756027599_AR3n_33855ba6-431d-4182-962d-ab2b1dfa15a1_cbSk.jpg",
+        "added_at": "2026-09-30T15:11:31.375395+05:30"
+      },
+      {
+        "category": "Science & Technology",
+        "exam_corner": false,
+        "headline": "Instagram Restricts Access to Cartoonist Satish Acharya's Account in India Under IT Rules",
+        "story_lead": "Social media platform Instagram has temporarily restricted access to the account of cartoonist Satish Acharya in India, citing legal requirements under the country's Information Technology Rules. The action has drawn protests from fellow cartoonists and the Kerala Cartoon Academy, who have demanded an immediate withdrawal of the restrictions.",
+        "full_article_text": "Instagram has temporarily restricted access to the account of popular cartoonist Satish Acharya within India. A notice displayed on his page stated that the restriction was executed pursuant to legal requirements under India's Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules. Parent company Meta has not issued a separate public statement regarding the action.\n\nIn response, Acharya noted on social media platform X that several of his cartoons published in 2023 were also being blocked. He shared a December 2018 report featuring Prime Minister Narendra Modi's comments praising the work of the late cartoonist R K Laxman. Additionally, cartoonist Manjul reported that access to one of his cartoons regarding the Election Commission had similarly been restricted on Instagram in India, though it remained visible outside the country.\n\nThe Kerala Cartoon Academy, through its chairman Sudhir Nath, expressed solidarity with both cartoonists and voiced deep concern over the trend of curbing critical art. Recalling an exchange between India's first Prime Minister Jawaharlal Nehru and pioneer cartoonist Shankar, the Academy urged the immediate removal of these bans, highlighting cartooning as an essential art form of constructive criticism.",
+        "background_context": "The restriction was implemented under India's Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, which empower authorities to issue compliance orders to digital intermediaries regarding content access within the national jurisdiction.",
+        "bullet_points": [
+          "Instagram restricted cartoonist Satish Acharya's account access in India under IT Intermediary Guidelines.",
+          "Notice on the account cited compliance with legal requirements under India's IT Rules.",
+          "Satish Acharya indicated that previously published cartoons from 2023 were also targeted.",
+          "Cartoonist Manjul reported similar restriction in India for a cartoon related to the Election Commission.",
+          "Kerala Cartoon Academy protested the move, emphasizing political cartooning as an art form of criticism.",
+          "Meta has not issued an independent statement on the specific account restriction."
+        ],
+        "key_facts": [
+          "Legal basis cited: Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules.",
+          "Affected accounts/content: Satish Acharya's Instagram account and a cartoon by Manjul on the Election Commission.",
+          "Entity raising protest: Kerala Cartoon Academy led by Chairman Sudhir Nath."
+        ],
+        "key_locations": [
+          "India",
+          "Kerala"
+        ],
+        "important_dates": [
+          "September 27"
+        ],
+        "exam_relevance": [
+          "GS Paper II: Freedom of speech and expression, regulatory framework for digital media and intermediaries.",
+          "GS Paper III: Cyber laws, Information Technology Rules, and governance of social media platforms in India."
+        ],
+        "upsc_analysis": "The enforcement of IT Rules on social media content highlights the delicate balance between digital platform regulation and the constitutional right to freedom of speech and expression under Article 19(1)(a). While state regulations aim to ensure legal compliance and public order, blocking editorial cartoons raises discussions on reasonable restrictions and the preservation of political satire in a democratic society.",
+        "causes": [
+          "Legal notices or requirements enforced under India's Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules."
+        ],
+        "impacts": [
+          "Geographic restriction of specific political cartoons and social media accounts within India.",
+          "Protests and concerns expressed by artist bodies like the Kerala Cartoon Academy regarding freedom of political satire."
+        ],
+        "challenges": [
+          "Balancing intermediary legal compliance with free expression rights of political satirists.",
+          "Lack of public detail or explicit independent statements from intermediary platforms regarding specific blocking requests."
+        ],
+        "government_steps": [
+          "Enactment and implementation of the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules to govern digital intermediaries."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 19(1)(a) of the Constitution of India (Freedom of Speech and Expression)",
+          "Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules"
+        ],
+        "way_forward": [
+          "Ensuring transparent procedural checks and balances while issuing legal directives under IT Rules.",
+          "Maintaining clear channels for grievance redressal and appeals for content creators affected by geo-blocking actions."
+        ],
+        "mains_notes": "The temporary restriction of social media accounts under the IT Intermediary Rules underscores debates around digital content governance and freedom of expression. Satirical art forms like political cartooning have historically served as vital democratic commentary. Regulatory frameworks must maintain transparency and adhere strictly to constitutional safeguards under reasonable restrictions.",
+        "mains_questions": [
+          "Examine the regulatory framework governing digital intermediaries in India. How do the Information Technology Rules balance state compliance requirements with fundamental freedom of expression?",
+          "Political cartoons have long played a role in democratic discourse. Discuss the impact of digital content moderation and legal blocking orders on creative expression in India."
+        ],
+        "takeaway": "Instagram restricted cartoonist Satish Acharya's account in India under IT Rules provisions, sparking debate on freedom of artistic expression.",
+        "prelims_facts": [
+          "The regulatory framework governing social media intermediaries in India is the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules.",
+          "Geo-blocking allows digital platforms to restrict access to specific content within a particular geographic jurisdiction while keeping it visible elsewhere."
+        ],
+        "vocabulary": [
+          {
+            "word": "Intermediary",
+            "meaning_hindi": "मध्यस्थ / मध्यवर्ती मंच"
+          },
+          {
+            "word": "Solidarity",
+            "meaning_hindi": "एकजुटता"
+          },
+          {
+            "word": "Pursuant",
+            "meaning_hindi": "के अनुसार / के अनुपालन में"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Satish Acharya",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Satish_Acharya"
+          },
+          {
+            "name": "Kerala Cartoon Academy",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Kerala_Cartoon_Academy"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "आईटी नियमों के तहत इंस्टाग्राम ने भारत में कार्टूनिस्ट सतीश आचार्य का अकाउंट अस्थायी रूप से प्रतिबंधित किया",
+          "story_lead": "सोशल मीडिया प्लेटफॉर्म इंस्टाग्राम ने भारत के सूचना प्रौद्योगिकी नियमों के तहत कानूनी आवश्यकताओं का हवाला देते हुए भारत में कार्टूनिस्ट सतीश आचार्य के अकाउंट तक पहुंच को अस्थायी रूप से प्रतिबंधित कर दिया है। इस कार्रवाई का साथी कार्टूनिस्टों और केरल कार्टून अकादमी ने विरोध किया है और प्रतिबंध को तुरंत वापस लेने की मांग की है।",
+          "full_article_text": "इन्स्टाग्राम ने भारत के भीतर लोकप्रिय कार्टूनिस्ट सतीश आचार्य के अकाउंट तक पहुंच को अस्थायी रूप से प्रतिबंधित कर दिया है। उनके पेज पर प्रदर्शित एक नोटिस में कहा गया कि यह प्रतिबंध भारत के सूचना प्रौद्योगिकी (मध्यवर्ती दिशा-निर्देश और डिजिटल मीडिया आचार संहिता) नियमों के तहत कानूनी आवश्यकताओं के अनुपालन में लगाया गया है। मूल कंपनी मेटा ने इस मामले पर कोई अलग सार्वजनिक बयान जारी नहीं किया है।\n\nजवाब में, आचार्य ने सोशल मीडिया प्लेटफॉर्म एक्स पर उल्लेख किया कि 2023 में प्रकाशित उनके कई कार्टून भी ब्लॉक किए जा रहे हैं। उन्होंने दिसंबर 2018 की एक रिपोर्ट साझा की जिसमें प्रधानमंत्री नरेंद्र मोदी द्वारा दिवंगत कार्टूनिस्ट आर के लक्ष्मण के काम की प्रशंसा की गई थी। इसके अतिरिक्त, कार्टूनिस्ट मंजुल ने बताया कि चुनाव आयोग पर उनके एक कार्टून तक पहुंच को भी भारत में इंस्टाग्राम पर प्रतिबंधित कर दिया गया था, हालांकि यह भारत के बाहर दिखाई दे रहा था।\n\nकेरल कार्टून अकादमी ने अपने अध्यक्ष सुधीर नाथ के माध्यम से दोनों कार्टूनिस्टों के साथ एकजुटता व्यक्त की और आलोचनात्मक कला को दबाने की प्रवृत्ति पर गहरी चिंता व्यक्त की। भारत के पहले प्रधानमंत्री जवाहरलाल नेहरू और अग्रणी कार्टूनिस्ट शंकर के बीच हुए संवाद को याद करते हुए, अकादमी ने इन प्रतिबंधों को तुरंत हटाने का आग्रह किया और कार्टूनिंग को रचनात्मक आलोचना का एक आवश्यक रूप बताया।",
+          "background_context": "यह प्रतिबंध भारत के सूचना प्रौद्योगिकी (मध्यवर्ती दिशा-निर्देश और डिजिटल मीडिया आचार संहिता) नियमों के तहत लागू किया गया था, जो अधिकारियों को राष्ट्रीय अधिकार क्षेत्र के भीतर सामग्री पहुंच के संबंध में डिजिटल मध्यस्थों को अनुपालन आदेश जारी करने का अधिकार देते हैं।",
+          "bullet_points": [
+            "इंस्टाग्राम ने आईटी मध्यवर्ती नियमों के तहत भारत में कार्टूनिस्ट सतीश आचार्य के अकाउंट एक्सेस को प्रतिबंधित कर दिया।",
+            "अकाउंट पर नोटिस में भारत के आईटी नियमों के तहत कानूनी आवश्यकताओं के अनुपालन का हवाला दिया गया।",
+            "सतीश आचार्य ने संकेत दिया कि 2023 में पहले प्रकाशित कार्टूनों को भी निशाना बनाया गया था।",
+            "कार्टूनिस्ट मंजुल ने चुनाव आयोग से संबंधित एक कार्टून के लिए भारत में इसी तरह के प्रतिबंध की सूचना दी।",
+            "केरल कार्टून अकादमी ने इस कदम का विरोध किया और राजनीतिक कार्टूनिंग को आलोचना की एक कला शैली के रूप में रेखांकित किया।",
+            "मेटा ने विशिष्ट अकाउंट प्रतिबंध के संबंध में कोई स्वतंत्र बयान जारी नहीं किया है।"
+          ],
+          "key_facts": [
+            "उल्लिखित कानूनी आधार: सूचना प्रौद्योगिकी (मध्यवर्ती दिशा-निर्देश और डिजिटल मीडिया आचार संहिता) नियम।",
+            "प्रभावित अकाउंट/सामग्री: सतीश आचार्य का इंस्टाग्राम अकाउंट और चुनाव आयोग पर मंजुल का एक कार्टून।",
+            "विरोध जताने वाली संस्था: अध्यक्ष सुधीर नाथ के नेतृत्व में केरल कार्टून अकादमी।"
+          ],
+          "key_locations": [
+            "भारत",
+            "केरल"
+          ],
+          "important_dates": [
+            "27 सितंबर"
+          ]
+        },
+        "quiz": {
+          "question": "Which set of regulations was cited on Instagram's page regarding the restriction of access to the cartoonist's account in India?",
+          "options": [
+            "The Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules",
+            "The Press Council of India Regulations",
+            "The Cable Television Networks Regulation Act",
+            "The Digital Personal Data Protection Rules"
+          ],
+          "correct_answer": "The Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules",
+          "explanation": "The notice displayed on Satish Acharya's Instagram page explicitly stated that access was temporarily restricted pursuant to legal requirements under India's Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/instagram-temporarily-restricts-popular-cartoonist-satish-acharyas-account-in-india-101790741282339.html",
+        "published_date": "2026-09-30",
+        "id": 106,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/photo-1595039838779-f3780873afdd_1790741342688_jqc5_1790741359973_xyqQ_ddb30750-d15c-4dab-abc9-ff9d09ce8931_WW8J.jpg",
+        "added_at": "2026-09-30T15:11:31.375395+05:30"
+      },
+      {
+        "category": "World",
+        "exam_corner": false,
+        "headline": "Actionable intelligence led to killing of most-wanted LeT terrorist Hashim Moosa",
+        "story_lead": "Most-wanted Lashkar-e-Taiba (LeT) terrorist Mohammad Asif alias Hashim Moosa was killed by the Army's 15 Chinar Corps in an encounter in Jammu and Kashmir's Budgam district. Moosa, a Pakistani national and former Special Service Group commando, was involved in several major attacks on security forces.",
+        "full_article_text": "Mohammad Asif, alias Hashim Moosa alias Asif Fauji alias Suleiman, was a Pakistani national and a high-value Lashkar-e-Taiba (LeT) operative who had infiltrated into India in 2023. Intelligence inputs indicated he was a former Special Service Group (SSG) commando. Actionable intelligence about his presence in Budgam prompted the Army's 15 Chinar Corps to launch an operation, culminating in his killing in the general area of Gurweth Kalan at around 10.30pm on September 29. Moosa had been on the radar of security agencies for over 18 months and was linked to multiple attacks on security forces in Jammu and Kashmir, including incidents in Halan (Kulgam), the DKG ambush, the IAF convoy attack in Poonch, and Botapathri (Gulmarg). He was also in regular contact with senior LeT commander Sajid Jatt, a key figure in the Pahalgam attack conspiracy. Security forces recovered an AK-47 rifle, two AK magazines, a LoRa/Ultra device handset, a LoRa/Ultra mobile device, and a mobile phone from the encounter site.",
+        "background_context": "Moosa was a foreign terrorist who infiltrated into India in 2023 and remained a high-value target for security agencies for more than 18 months. Intelligence inputs established his constant communication with LeT commander Sajid Jatt, linking him to the broader terror network operating in Jammu and Kashmir.",
+        "bullet_points": [
+          "Most-wanted LeT terrorist Hashim Moosa was killed in an operation by the Army's 15 Chinar Corps in Budgam.",
+          "Moosa was a Pakistani national and believed to be a former Special Service Group (SSG) commando who infiltrated India in 2023.",
+          "He was allegedly involved in multiple attacks on security forces including in Kulgam, DKG, Poonch, and Gulmarg.",
+          "Intelligence inputs established his constant contact with LeT commander Sajid Jatt.",
+          "Weoapons and equipment including an AK-47 rifle, magazines, and LoRa/Ultra communication devices were recovered from the site."
+        ],
+        "key_facts": [
+          "Target: Mohammad Asif alias Hashim Moosa alias Asif Fauji alias Suleiman",
+          "Affiliation: Lashkar-e-Taiba (LeT)",
+          "Location of encounter: Gurweth Kalan, Budgam, Jammu and Kashmir",
+          "Date and time of killing: September 29, approximately 10.30pm",
+          "Executing unit: Army's 15 Chinar Corps"
+        ],
+        "key_locations": [
+          "Budgam",
+          "Gurweth Kalan",
+          "Jammu and Kashmir",
+          "Kulgam",
+          "Poonch",
+          "Gulmarg"
+        ],
+        "important_dates": [
+          "2023",
+          "August 4, 2023",
+          "December 21, 2023",
+          "May 4, 2024",
+          "October 24, 2024",
+          "September 29"
+        ],
+        "exam_relevance": [
+          "Internal Security",
+          "Role of external state and non-state actors in cross-border terrorism"
+        ],
+        "upsc_analysis": "The successful operation highlights the efficacy of actionable intelligence in neutralizing high-value foreign terrorists operating in Jammu and Kashmir. Coordination between intelligence agencies and operational forces like the 15 Chinar Corps remains critical in dismantling cross-border terror networks and addressing internal security challenges.",
+        "causes": [
+          "Infiltration of foreign terrorists across the border",
+          "Cross-border terror sponsorship and networks operated by groups like Lashkar-e-Taiba"
+        ],
+        "impacts": [
+          "Disruption of the wider LeT terror network in Jammu and Kashmir",
+          "Elimination of a high-value threat involved in multiple attacks on security forces"
+        ],
+        "challenges": [
+          "Infiltration of trained personnel such as former SSG commandos",
+          "Tracking high-value targets operating covertly in difficult terrain"
+        ],
+        "government_steps": [
+          "Prompt deployment and operations by the Army's 15 Chinar Corps based on actionable intelligence",
+          "Continuous surveillance and tracking by security agencies over 18 months"
+        ],
+        "constitutional_or_policy_link": [
+          "Maintenance of internal security and national sovereignty under constitutional frameworks"
+        ],
+        "way_forward": [
+          "Enhancing real-time intelligence sharing between intelligence agencies and ground forces",
+          "Strengthening border grid and counter-infiltration measures to prevent illegal entry"
+        ],
+        "mains_notes": "The neutralization of Hashim Moosa underlines the importance of intelligence-led counter-terrorism operations in Jammu and Kashmir. Coordinated actions by the armed forces and intelligence apparatus are vital to counter cross-border infiltration and dismantle terror networks.",
+        "mains_questions": [
+          "Discuss the role of actionable intelligence in neutralizing high-value terror operatives in Jammu and Kashmir.",
+          "Examine the challenges posed by cross-border infiltration and the measures required to secure India's internal security."
+        ],
+        "takeaway": "Actionable intelligence and swift coordination by the Army's 15 Chinar Corps led to the elimination of top LeT terrorist Hashim Moosa in Budgam.",
+        "prelims_facts": [
+          "Hashim Moosa was a Pakistani national and LeT operative.",
+          "The operation took place in Gurweth Kalan, Budgam.",
+          "Recovered items included an AK-47 rifle and LoRa/Ultra communication devices."
+        ],
+        "vocabulary": [
+          {
+            "word": "Infiltrated",
+            "meaning_hindi": "घुसपैठ की"
+          },
+          {
+            "word": "Actionable",
+            "meaning_hindi": "कार्रवाई योग्य"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Budgam",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Budgam"
+          },
+          {
+            "name": "Lashkar-e-Taiba",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Lashkar-e-Taiba"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "कार्रवाई योग्य खुफिया जानकारी के बाद सबसे वांछित लश्कर आतंकवादी हाशिम मूसा ढेर",
+          "story_lead": "सबसे वांछित लश्कर-ए-तैयेबा (LeT) आतंकवादी मोहम्मद आसिफ उर्फ ​​हाशिम मूसा को जम्मू-कश्मीर के बडगाम जिले में सेना की 15 चिनार कोर द्वारा एक मुठभेड़ में मार गिराया गया। मूसा एक पाकिस्तानी नागरिक और पूर्व स्पेशल सर्विस ग्रुप कमांडो था, जो सुरक्षा बलों पर कई बड़े हमलों में शामिल था।",
+          "full_article_text": "मोहम्मद आसिफ उर्फ ​​हाशिम मूसा उर्फ ​​आसिफ फौजी उर्फ ​​सुलेमान एक पाकिस्तानी नागरिक और उच्च मूल्य का लश्कर-ए-तैयेबा (LeT) ऑपरेटिव था, जो 2023 में भारत में घुसपैठ कर चुका था। खुफिया इनपुट से संकेत मिला कि वह एक पूर्व स्पेशल सर्विस ग्रुप (SSG) कमांडो था। बडगाम में उसकी उपस्थिति के बारे में कार्रवाई योग्य खुफिया जानकारी ने सेना की 15 चिनार कोर को एक अभियान शुरू करने के लिए प्रेरित किया, जिसके परिणामस्वरूप 29 सितंबर को रात करीब 10:30 बजे गुरुवेथ कलन के सामान्य क्षेत्र में उसे मार गिराया गया। मूसा डेढ़ साल से अधिक समय से सुरक्षा एजेंसियों के रडार पर था और जम्मू-कश्मीर में सुरक्षा बलों पर कई हमलों से जुड़ा था।",
+          "background_context": "मूसा एक विदेशी आतंकवादी था जिसने 2023 में भारत में घुसपैठ की थी और 18 महीने से अधिक समय तक सुरक्षा एजेंसियों के लिए एक उच्च मूल्य का लक्ष्य बना रहा था।",
+          "bullet_points": [
+            "सेना की 15 चिनार कोर द्वारा बडगाम में चलाए गए अभियान में शीर्ष लश्कर आतंकवादी हाशिम मूसा मारा गया।",
+            "मूसा एक पाकिस्तानी नागरिक और पूर्व एसएसजी कमांडो था जिसने 2023 में घुसपैठ की थी।",
+            "वह सुरक्षा बलों पर कई हमलों में शामिल था।"
+          ],
+          "key_facts": [
+            "लक्ष्य: मोहम्मद आसिफ उर्फ हाशिम मूसा",
+            "संगठन: लश्कर-ए-तैयेबा",
+            "स्थान: बडगाम, जम्मू-कश्मीर"
+          ],
+          "key_locations": [
+            "बडगाम",
+            "गुरुवेथ कलन",
+            "जम्मू और कश्मीर"
+          ],
+          "important_dates": [
+            "2023",
+            "29 सितंबर"
+          ]
+        },
+        "quiz": {
+          "question": "Which security formation carried out the operation that resulted in the killing of LeT terrorist Hashim Moosa in Budgam?",
+          "options": [
+            "Army's 15 Chinar Corps",
+            "Border Security Force",
+            "Central Reserve Police Force",
+            "National Security Guard"
+          ],
+          "correct_answer": "Army's 15 Chinar Corps",
+          "explanation": "The operation in Budgam was launched and executed by the Army's 15 Chinar Corps based on actionable intelligence."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/actionable-intelligence-led-to-killing-of-most-wanted-let-terrorist-hashim-moosa-101790758611552.html",
+        "published_date": "2026-09-30",
+        "id": 105,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/okooioii_1790759915193_oUrS_1790759936956_IjEC_7797517c-e705-4642-90e6-bc68869ce9cd_vYrg.png",
+        "added_at": "2026-09-30T15:11:31.375395+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "Calcutta High Court Dismisses ISF Plea; Democratic TMC to Contest Nandigram Bypoll with Envelope Symbol",
+        "story_lead": "The Calcutta High Court has dismissed a petition filed by the Indian Secular Front challenging the Election Commission's allotment of the 'envelope' symbol to the Ritabrata Banerjee-led Democratic Trinamool Congress. Consequently, the Democratic Trinamool Congress will contest the upcoming Nandigram Assembly by-election with the 'envelope' symbol, while the ISF has been allotted the 'almirah' symbol.",
+        "full_article_text": "The Calcutta High Court on Wednesday dismissed a petition filed by the Indian Secular Front (ISF) challenging the Election Commission of India's (ECI) decision to allot the \"envelope\" symbol to the Ritabrata Banerjee-led Democratic Trinamool Congress (DTMC) for the Nandigram Assembly by-election in West Bengal. With this ruling, the DTMC will contest the by-poll scheduled for October 6 using the \"envelope\" symbol, whereas the ISF will contest using the \"almirah\" symbol. A bench comprising Justice Krishna Rao dismissed the ISF petition. The ISF had argued in its petition that the \"envelope\" symbol was previously allotted to them in March during the Assembly elections, but the poll body re-allocated it to the DTMC for the upcoming by-polls. The ECI counsel maintained that both are free symbols allotted to Registered Unrecognised Political Parties for specific elections from a pool of available free symbols. The byelection in Nandigram was necessitated after the seat was vacated following the May assembly polls. The ECI announced bypolls in Nandigram and Rejinagar for October 6, with results to be declared on October 9 and campaigning concluding on October 4. During earlier hearings, the High Court bench had criticised the ECI for allotting a disputed symbol despite having numerous free symbols available, observing that such administrative choices burden the judiciary with avoidable legal proceedings once elections commence.",
+        "background_context": "The controversy arose over the allotment of a free election symbol by the Election Commission of India to Registered Unrecognised Political Parties for the Nandigram Assembly by-election in West Bengal, leading to a legal challenge by the Indian Secular Front which was subsequently dismissed by the Calcutta High Court.",
+        "bullet_points": [
+          "Calcutta High Court dismissed the Indian Secular Front's petition challenging symbol allotment.",
+          "Democratic Trinamool Congress led by Ritabrata Banerjee to contest Nandigram bypoll with the 'envelope' symbol.",
+          "ISF allotted the 'almirah' symbol for the upcoming election.",
+          "Election Commission of India stated that both are free symbols allocated to Registered Unrecognised Political Parties for specific elections.",
+          "Nandigram and Rejinagar bypolls scheduled for October 6, with results on October 9."
+        ],
+        "key_facts": [
+          "Court bench: Justice Krishna Rao",
+          "DTMC leader: Ritabrata Banerjee",
+          "Bypoll date: October 6",
+          "Result date: October 9",
+          "ISF allotted symbol: Almirah",
+          "DTMC allotted symbol: Envelope"
+        ],
+        "key_locations": [
+          "Nandigram",
+          "West Bengal",
+          "Rejinagar"
+        ],
+        "important_dates": [
+          "March 2021",
+          "September 24",
+          "October 4",
+          "October 6",
+          "October 9"
+        ],
+        "exam_relevance": [
+          "Prelims: Election Commission of India, Free Symbols, Registered Unrecognised Political Parties (RUPPs), High Court jurisdiction.",
+          "Mains (GS II): Salient features of the Representation of the People Act, powers and functioning of the Election Commission, judicial scrutiny of electoral administration."
+        ],
+        "upsc_analysis": "The case highlights administrative and judicial dimensions regarding the role of the Election Commission of India in allotting symbols to Registered Unrecognised Political Parties under election laws. It underscores the challenges of election management, judicial oversight on administrative actions, and the mechanisms of dispute resolution in electoral processes.",
+        "causes": [
+          "Re-allotment of the 'envelope' free symbol by the ECI to DTMC which was previously given to ISF in March assembly elections.",
+          "Nandigram assembly by-election requirement."
+        ],
+        "impacts": [
+          "DTMC confirmed to contest with the envelope symbol on October 6.",
+          "ISF to contest with the almirah symbol.",
+          "Judicial observations regarding ECI's administrative choices in symbol allotment."
+        ],
+        "challenges": [
+          "Avoiding legal disputes regarding symbol allocation among unregistered or recognized political parties.",
+          "Ensuring administrative impartiality and minimizing avoidable burdens on the judiciary during election periods."
+        ],
+        "government_steps": [
+          "Election Commission of India conducted the symbol allotment process and defended its policy regarding free symbols for Registered Unrecognised Political Parties before the Calcutta High Court."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 324 of the Constitution of India (Superintendence, direction and control of elections to be vested in an Election Commission)."
+        ],
+        "way_forward": [
+          "The Election Commission may streamline symbol allocation protocols to prevent overlapping claims and pre-empt avoidable litigation during election cycles."
+        ],
+        "mains_notes": "The Calcutta High Court dismissed a petition by the ISF regarding the allotment of the 'envelope' symbol for the Nandigram by-poll to the Democratic Trinamool Congress. The ECI defended the allotment as a free symbol for Registered Unrecognised Political Parties. The court previously criticized administrative choices in symbol distribution that trigger unnecessary legal interventions.",
+        "mains_questions": [
+          "Discuss the constitutional role and powers of the Election Commission of India in conducting free and fair elections and managing political party symbols.",
+          "Examine the scope of judicial review over administrative decisions taken by the Election Commission during active electoral processes."
+        ],
+        "takeaway": "The Calcutta High Court upheld the ECI's symbol allotment for the Nandigram by-poll, allowing the Democratic Trinamool Congress to use the envelope symbol.",
+        "prelims_facts": [
+          "The Election Commission allots free symbols to Registered Unrecognised Political Parties for specific elections.",
+          "Bypolls in Nandigram and Rejinagar were scheduled for October 6."
+        ],
+        "vocabulary": [
+          {
+            "word": "Dismiss",
+            "meaning_hindi": "खारिज करना"
+          },
+          {
+            "word": "Allotment",
+            "meaning_hindi": "आवंटन"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Calcutta High Court",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Calcutta_High_Court"
+          },
+          {
+            "name": "Nandigram",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Nandigram"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "कलकत्ता उच्च न्यायालय ने ISF की याचिका खारिज की, डेमोक्रेटिक TMC 'लिफाफा' चुनाव चिह्न के साथ लड़ेगी उपचुनाव",
+          "story_lead": "कलकत्ता उच्च न्यायालय ने रितब्रत बनर्जी के नेतृत्व वाली डेमोक्रेटिक तृणमूल कांग्रेस को 'लिफाफा' चुनाव चिह्न आवंटित करने के निर्वाचन आयोग के फैसले को चुनौती देने वाली इंडियन सेक्युलर फ्रंट की याचिका को खारिज कर दिया है। इसके परिणामस्वरूप, डेमोक्रेटिक तृणमूल कांग्रेस आगामी नंदग्राम विधानसभा उपचुनाव 'लिफाफा' प्रतीक के साथ लड़ेगी।",
+          "full_article_text": "कलकत्ता उच्च न्यायालय ने बुधवार को पश्चिम बंगाल में नंदग्राम विधानसभा उपचुनाव के लिए रितब्रत बनर्जी के नेतृत्व वाली डेमोक्रेटिक तृणमूल कांग्रेस (DTMC) को 'लिफाफा' प्रतीक के आवंटन को चुनौती देने वाली इंडियन सेक्युलर फ्रंट (ISF) की याचिका को खारिज कर दिया। इस फैसले के साथ, DTMC अब 6 अक्टूबर को होने वाले उपचुनाव 'लिफाफा' चुनाव चिह्न के साथ लड़ेगी, जबकि ISF को 'अलमारी' प्रतीक मिला है। न्यायमूर्ति कृष्ण राव की पीठ ने याचिका खारिज की।",
+          "background_context": "यह विवाद पश्चिम बंगाल में नंदग्राम विधानसभा उपचुनाव के लिए पंजीकृत गैर-मान्यता प्राप्त राजनीतिक दलों को स्वतंत्र चुनाव चिह्न के आवंटन से जुड़ा था।",
+          "bullet_points": [
+            "कलकत्ता उच्च न्यायालय ने ISF की याचिका खारिज की।",
+            "डेमोक्रेटिक TMC 'लिफाफा' प्रतीक के साथ चुनाव लड़ेगी।",
+            "ISF को 'अलमारी' प्रतीक आवंटित किया गया।",
+            "नंदग्राम और रेजीनगर में उपचुनाव 6 अक्टूबर को निर्धारित हैं।"
+          ],
+          "key_facts": [
+            "न्यायाधीश: न्यायमूर्ति कृष्ण राव",
+            "उपचुनाव की तिथि: 6 अक्टूबर"
+          ],
+          "key_locations": [
+            "नंदग्राम",
+            "पश्चिम बंगाल"
+          ],
+          "important_dates": [
+            "6 अक्टूबर",
+            "9 अक्टूबर"
+          ]
+        },
+        "quiz": {
+          "question": "Which symbol was allotted to the Democratic Trinamool Congress for the Nandigram Assembly by-election by the Election Commission?",
+          "options": [
+            "Almirah",
+            "Envelope",
+            "Flower and Grass",
+            "Broom"
+          ],
+          "correct_answer": "Envelope",
+          "explanation": "The ECI allotted the 'envelope' symbol to the Democratic Trinamool Congress for the Nandigram by-poll, which was upheld by the Calcutta High Court."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/cal-hc-dismisses-isf-plea-democratic-tmc-to-contest-bypoll-with-envelope-symbol-101790760403037.html",
+        "published_date": "2026-09-30",
+        "id": 104,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/Ritabrata-Banerjee-led-Democratic-Trinamool-Congre_1790760396360_RcjW.jpg",
+        "added_at": "2026-09-30T15:11:31.375395+05:30"
+      },
+      {
+        "category": "Science & Technology",
+        "exam_corner": false,
+        "headline": "Supreme Court Rejects Total Firecracker Ban, Advocates Time Limits and Next-Gen Green Crackers",
+        "story_lead": "The Supreme Court of India stated that it will neither enforce a complete ban on firecrackers nor permit round-the-clock fireworks, emphasizing the need for a balanced approach with specified time windows. The court is considering conditional relaxation for 'next-generation joined green crackers' developed by CSIR-NEERI to address health and environmental concerns while respecting public sentiments.",
+        "full_article_text": "A Supreme Court bench comprising Justices MM Sundresh and PB Varale observed that a complete ban on firecrackers affects public sentiments, whereas continuous fireworks severely impact the elderly, children, the sick, and animals. The court emphasized finding a middle ground by restricting fireworks to designated hours.\n\nDuring the hearing, Additional Solicitor General Aishwarya Bhati submitted a note recommending conditional relaxation for 'next-generation joined green crackers'. These fireworks, developed by the Council of Scientific and Industrial Research - National Environmental Engineering Research Institute (CSIR-NEERI), are designed with reduced barium salts to significantly lower harmful emissions.\n\nThe proposal mandates that such firecrackers must be manufactured solely by licensed entities, adhere to noise limits of 125 dB / 145 dB peak, and strictly exclude banned chemical substances. The Supreme Court scheduled October 15 to specifically address the issue concerning the use of barium salts in firecrackers.",
+        "background_context": "Ahead of Diwali last year, the Supreme Court permitted the sale and use of green firecrackers in Delhi and the National Capital Region (NCR) under strict conditions. The permission was restricted to specific hours during the day to balance traditional celebrations with public health and air quality concerns.",
+        "bullet_points": [
+          "Supreme Court bench ruled against both total firecracker bans and 24-hour fireworks.",
+          "Court recommended specifying fixed hours for firecracker usage as a middle ground.",
+          "CSIR-NEERI developed 'next-generation joined green crackers' featuring reduced barium salts.",
+          "Proposed conditions require manufacture by licensed producers and a noise ceiling of 125 dB / 145 dB peak.",
+          "Hearing regarding barium use in firecrackers is set for October 15."
+        ],
+        "key_facts": [
+          "Bench Justices: Justice MM Sundresh and Justice PB Varale.",
+          "Developing agency: Council of Scientific and Industrial Research - National Environmental Engineering Research Institute (CSIR-NEERI).",
+          "Permitted noise threshold proposed: 125 dB / 145 dB peak.",
+          "Key formulation modification: Reduced barium salts in joined green crackers."
+        ],
+        "key_locations": [
+          "New Delhi",
+          "Delhi NCR"
+        ],
+        "important_dates": [
+          "October 15"
+        ],
+        "exam_relevance": [
+          "GS Paper 3: Environment and Pollution Control (Green Crackers, Air and Noise Pollution).",
+          "GS Paper 3: Science & Technology (CSIR-NEERI innovations).",
+          "GS Paper 2: Judiciary and Regulatory Frameworks."
+        ],
+        "upsc_analysis": "The Supreme Court's stance reflects an emphasis on sustainable regulation rather than outright prohibition. By utilizing scientific solutions such as CSIR-NEERI's low-emission green crackers, judicial oversight seeks to balance environmental protection (Article 21) with cultural practices, highlighting the importance of technology-driven policy solutions.",
+        "causes": [
+          "Adverse health impacts of continuous firecracker usage on vulnerable populations.",
+          "High emission levels and noise pollution caused by traditional fireworks containing chemicals like barium."
+        ],
+        "impacts": [
+          "Lowering atmospheric emissions and noise levels through standardized green crackers.",
+          "Protection of public health alongside respecting religious and cultural traditions."
+        ],
+        "challenges": [
+          "Ensuring strict compliance and preventing unauthorized manufacturing of non-certified fireworks.",
+          "Monitoring adherence to prescribed time limits and noise levels during festive periods."
+        ],
+        "government_steps": [
+          "Development of low-emission next-generation green crackers by CSIR-NEERI.",
+          "Submission of conditional relaxation frameworks and safety norms by the Additional Solicitor General to the apex court."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 21: Right to a clean and healthy environment as part of the Right to Life.",
+          "Article 25: Freedom to practice religion subject to public order, morality, and health."
+        ],
+        "way_forward": [
+          "Enforcing strict oversight on firecracker manufacturing licenses and chemical compositions.",
+          "Promoting community awareness regarding time limits and certified green firecracker usage."
+        ],
+        "mains_notes": "The firecracker regulation debate highlights the role of judicial balance between environmental rights and cultural freedoms. Incorporating scientific advancements from CSIR-NEERI offers a practical model for managing pollution while permitting regulated celebrations.",
+        "mains_questions": [
+          "Examine how technological innovations like green crackers can help reconcile environmental protection with cultural celebrations in India.",
+          "Analyze the Supreme Court's approach to environmental regulation through the lens of balancing fundamental rights."
+        ],
+        "takeaway": "The Supreme Court advocates a balanced policy permitting low-emission green crackers during specified hours rather than enforcing an absolute ban.",
+        "prelims_facts": [
+          "CSIR-NEERI formulated next-generation joined green crackers with reduced barium salts to lower air emissions.",
+          "Noise level limits for permitted green firecrackers are set at 125 dB / 145 dB peak."
+        ],
+        "vocabulary": [
+          {
+            "word": "Prohibition",
+            "meaning_hindi": "पूर्ण प्रतिबंध / मनाही"
+          },
+          {
+            "word": "Emissions",
+            "meaning_hindi": "उत्सर्जन"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Supreme Court of India",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Supreme_Court_of_India"
+          },
+          {
+            "name": "CSIR-NEERI",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=CSIR-NEERI"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "सुप्रीम कोर्ट ने पटाखों पर पूर्ण प्रतिबंध से किया इनकार, समय सीमा और नेक्स्ट-जेन ग्रीन क्रैकर्स की वकालत की",
+          "story_lead": "उच्चतम न्यायालय ने स्पष्ट किया है कि वह पटाखों पर न तो पूर्ण प्रतिबंध लगाएगा और न ही 24 घंटे आतिशबाजी की अनुमति देगा। अदालत ने जनभावनाओं और स्वास्थ्य-पर्यावरण संबंधी चिंताओं के बीच संतुलन बनाने के लिए निश्चित समय तय करने की बात कही है। कोर्ट सीएसआईआर-नीरी (CSIR-NEERI) द्वारा विकसित 'नेक्स्ट-जनरेशन जॉइन्ड ग्रीन क्रैकर्स' को सशर्त छूट देने पर विचार कर रहा है।",
+          "full_article_text": "जस्टिस एमएम सुंदरेश और जस्टिस पीबी वराले की पीठ ने सुनवाई के दौरान कहा कि पटाखों पर पूर्ण प्रतिबंध लगाने से लोगों की भावनाएं आहत होंगी, जबकि 24 घंटे आतिशबाजी की अनुमति देने से बुजुर्गों, बच्चों, बीमारों और पशु-पक्षियों पर गंभीर प्रभाव पड़ेगा। पीठ ने कहा कि आतिशबाजी के लिए एक निश्चित समय सीमा तय करके बीच का रास्ता निकालना जरूरी है।\n\nसुनवाई के दौरान अपर सॉलिसिटर जनरल ऐश्वर्या भाटी ने 'नेक्स्ट-जनरेशन जॉइन्ड ग्रीन क्रैकर्स' के संबंध में एक नोट प्रस्तुत किया। सीएसआईआर-राष्ट्रीय पर्यावरण अभियांत्रिकी अनुसंधान संस्थान (CSIR-NEERI) द्वारा विकसित इन पटाखों में बेरियम साल्ट की मात्रा कम की गई है ताकि उत्सर्जन को घटाया जा सके।\n\nप्रस्ताव के अनुसार, इन पटाखों के निर्माण की अनुमति केवल लाइसेंस प्राप्त निर्माताओं को होगी, और इन्हें 125 dB / 145 dB पीक की शोर सीमा तथा प्रतिबंधित रसायनों के निषेध का पालन करना होगा। शीर्ष अदालत पटाखों में बेरियम के उपयोग से जुड़े मुद्दे पर 15 अक्टूबर को विचार करेगी।",
+          "background_context": "पिछले साल दिवाली से पहले सुप्रीम कोर्ट ने दिल्ली और राष्ट्रीय राजधानी क्षेत्र (NCR) में शर्तों के साथ ग्रीन पटाखों की बिक्री और उपयोग की अनुमति दी थी। कोर्ट ने पर्यावरण और स्वास्थ्य चिंताओं को ध्यान में रखते हुए केवल विशिष्ट घंटों के दौरान ही इनके उपयोग की अनुमति दी थी।",
+          "bullet_points": [
+            "सुप्रीम कोर्ट ने पूर्ण प्रतिबंध और 24 घंटे पटाखे जलाने दोनों विकल्पों को खारिज किया।",
+            "अदालत ने निश्चित समय सीमा तय करके बीच का रास्ता निकालने का सुझाव दिया।",
+            "सीएसआईआर-नीरी ने कम बेरियम साल्ट वाले 'नेक्स्ट-जनरेशन जॉइन्ड ग्रीन क्रैकर्स' विकसित किए हैं।",
+            "प्रस्तावित शर्तों में केवल लाइसेंस प्राप्त निर्माताओं द्वारा उत्पादन और 125 dB / 145 dB पीक की शोर सीमा शामिल है।",
+            "पटाखों में बेरियम के उपयोग पर अगली सुनवाई 15 अक्टूबर को निर्धारित की गई है।"
+          ],
+          "key_facts": [
+            "पीठ के न्यायाधीश: जस्टिस एमएम सुंदरेश और जस्टिस पीबी वराले।",
+            "विकासकर्ता संस्थान: सीएसआईआर-राष्ट्रीय पर्यावरण अभियांत्रिकी अनुसंधान संस्थान (CSIR-NEERI)।",
+            "प्रस्तावित शोर सीमा: 125 dB / 145 dB पीक।",
+            "प्रमुख रासायनिक संशोधन: जॉइन्ड ग्रीन क्रैकर्स में बेरियम साल्ट की मात्रा में कमी।"
+          ],
+          "key_locations": [
+            "नई दिल्ली",
+            "दिल्ली एनसीआर"
+          ],
+          "important_dates": [
+            "15 अक्टूबर"
+          ]
+        },
+        "quiz": {
+          "question": "Which institution developed the 'next-generation joined green crackers' with reduced barium salts mentioned in the Supreme Court proceedings?",
+          "options": [
+            "DRDO",
+            "CSIR-NEERI",
+            "ISRO",
+            "IIT Delhi"
+          ],
+          "correct_answer": "CSIR-NEERI",
+          "explanation": "The 'next-generation joined green crackers' designed with reduced barium salts to lower emissions were developed by the Council of Scientific and Industrial Research - National Environmental Engineering Research Institute (CSIR-NEERI)."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/wont-impose-complete-ban-won-t-allow-incessant-fireworks-either-sc-101790760524459.html",
+        "published_date": "2026-09-30",
+        "id": 103,
+        "image_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80",
+        "added_at": "2026-09-30T15:11:31.375395+05:30"
+      },
+      {
         "category": "India",
         "exam_corner": false,
         "headline": "Why British India Shifted Its Capital from Calcutta to Delhi in 1911",
@@ -12947,15 +15079,15 @@
         "added_at": "2026-09-30T00:12:47.040026+05:30"
       }
     ],
-    "updated_at": "2026-09-30T12:14:45.906155+05:30",
-    "count": 102
+    "updated_at": "2026-09-30T15:11:31.375395+05:30",
+    "count": 117
   },
   "motivation": {
-    "quote": "Discipline is choosing your preparation even when motivation is low.",
-    "image_url": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=1600&q=85",
-    "updated_at": "2026-09-30T12:14:45.906155+05:30"
+    "quote": "Study deeply today so that revision becomes easier tomorrow.",
+    "image_url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=85",
+    "updated_at": "2026-09-30T15:11:31.375395+05:30"
   },
   "last_updated_ist": "2026-09-25 08:53:09",
   "project": "AURA EXAM AI",
-  "last_updated": "2026-09-30T12:14:45.906155+05:30"
+  "last_updated": "2026-09-30T15:11:31.375395+05:30"
 }
