@@ -423,20 +423,6 @@
             color: #777;
         }
 
-        .last-updated {
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-            margin-left: 8px;
-            font-size: 11px;
-            color: #666;
-            font-weight: 600;
-        }
-
-        .last-updated strong {
-            color: #444;
-        }
-
 
         /* =================================================
            CATEGORY FILTER
@@ -1336,6 +1322,14 @@
 
         }
 
+    
+        .last-updated {
+            margin: 8px 0 14px;
+            font-size: 13px;
+            color: #666;
+            text-align: right;
+        }
+
     </style>
 
 </head>
@@ -1414,6 +1408,8 @@
     <!-- =====================================================
          DATE CONTROL
          ===================================================== -->
+
+    <div id="lastUpdated" class="last-updated" aria-live="polite">Last updated: Loading...</div>
 
     <div class="control-bar">
 
@@ -1546,13 +1542,6 @@
                 <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
                     <span id="newsDate">
                         —
-                    </span>
-                    <span
-                        id="lastUpdatedNews"
-                        class="last-updated"
-                        title="Time when the current-affairs data was last updated"
-                    >
-                        Last updated: —
                     </span>
                     <button class="today-btn" onclick="openQuiz()">📝 Quiz</button>
                 </div>
@@ -2292,7 +2281,6 @@
        ======================================================= */
 
     let globalPayload = null;
-    let dataFileLastModified = null;
 
     let currentData = null;
 
@@ -2518,162 +2506,46 @@
     }
 
 
-    /* =======================================================
-       MOTIVATION
-       ======================================================= */
+    function renderLastUpdated(payload) {
 
-    const MOTIVATION_FALLBACKS = [
-        {
-            image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1600&q=85",
-            quote: "Consistency turns ordinary study into extraordinary results."
-        },
-        {
-            image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1600&q=85",
-            quote: "Read with purpose. Revise with discipline. Perform with confidence."
-        },
-        {
-            image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=85",
-            quote: "One focused hour today can remove many doubts tomorrow."
-        },
-        {
-            image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=85",
-            quote: "Small daily progress compounds into strong preparation."
-        },
-        {
-            image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1600&q=85",
-            quote: "Understand the issue, connect the facts, write the answer."
-        },
-        {
-            image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=85",
-            quote: "Discipline is choosing your preparation even when motivation is low."
-        },
-        {
-            image: "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=1600&q=85",
-            quote: "Study deeply today so that revision becomes easier tomorrow."
-        },
-        {
-            image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=85",
-            quote: "Current affairs become powerful when facts are connected with concepts."
-        }
-    ];
+        const el = document.getElementById("lastUpdated");
 
-
-    function motivationFallbackIndex(payload) {
-
-        const seed = String(
-            payload?.last_updated ||
-            payload?.today?.updated_at ||
-            payload?.current_date ||
-            new Date().toISOString()
-        );
-
-        let hash = 0;
-
-        for (let i = 0; i < seed.length; i++) {
-            hash = ((hash << 5) - hash) + seed.charCodeAt(i);
-            hash |= 0;
-        }
-
-        return Math.abs(hash) % MOTIVATION_FALLBACKS.length;
-    }
-
-
-    function addImageCacheBuster(url, updatedAt) {
-
-        if (!url) {
-            return "";
-        }
-
-        if (!updatedAt) {
-            return url;
-        }
-
-        const separator = url.includes("?") ? "&" : "?";
-        return url + separator + "aura_update=" + encodeURIComponent(updatedAt);
-    }
-
-
-    /* =======================================================
-       MOTIVATION ROTATION
-       The news updater changes data.json's last_updated every 3 hours.
-       We use that timestamp to deterministically select a new image + quote.
-       This makes the motivation panel update even if the motivation object
-       is missing from an older data.json.
-       ======================================================= */
-
-    const MOTIVATION_ROTATION = [
-        {
-            image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1600&q=85",
-            quote: "Consistency turns ordinary study into extraordinary results."
-        },
-        {
-            image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1600&q=85",
-            quote: "Read with purpose. Revise with discipline. Perform with confidence."
-        },
-        {
-            image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=85",
-            quote: "One focused hour today can remove many doubts tomorrow."
-        },
-        {
-            image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=85",
-            quote: "Small daily progress compounds into strong preparation."
-        },
-        {
-            image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1600&q=85",
-            quote: "Understand the issue, connect the facts, write the answer."
-        },
-        {
-            image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=85",
-            quote: "Discipline is choosing your preparation even when motivation is low."
-        },
-        {
-            image: "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=1600&q=85",
-            quote: "Study deeply today so that revision becomes easier tomorrow."
-        },
-        {
-            image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=85",
-            quote: "Current affairs become powerful when facts are connected with concepts."
-        }
-    ];
-
-    function getMotivationSlot(payload) {
-        const stamp = payload?.last_updated || payload?.today?.updated_at || "";
-        const parsed = stamp ? new Date(stamp) : new Date();
-        const valid = !Number.isNaN(parsed.getTime());
-        const d = valid ? parsed : new Date();
-        // 3-hour slot in IST; changes exactly with each 3-hour updater cycle.
-        const istText = d.toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
-        const ist = new Date(istText);
-        const slot = Math.floor((ist.getHours() * 60 + ist.getMinutes()) / 180);
-        const day = Math.floor(Date.UTC(ist.getFullYear(), ist.getMonth(), ist.getDate()) / 86400000);
-        return Math.abs(day * 8 + slot) % MOTIVATION_ROTATION.length;
-    }
-
-    function renderMotivation(payload) {
-
-        const image = document.getElementById("motivationImage");
-        const quote = document.getElementById("motivationQuote");
-
-        if (!image || !quote) {
+        if (!el) {
             return;
         }
 
-        const slot = MOTIVATION_ROTATION[getMotivationSlot(payload)];
-        const motivation =
-            payload && typeof payload.motivation === "object"
-                ? payload.motivation
-                : null;
+        const stamp =
+            payload?.last_updated ||
+            payload?.today?.updated_at ||
+            payload?.motivation?.updated_at;
 
-        // If update_news.py has supplied motivation data, use it.
-        // Otherwise use the same 3-hour slot rotation locally.
-        const imageUrl = motivation?.image_url || motivation?.image || slot.image;
-        const quoteText = motivation?.quote || motivation?.text || slot.quote;
-        const updatedAt = motivation?.updated_at || payload?.last_updated || payload?.today?.updated_at || Date.now();
+        if (!stamp) {
+            el.textContent = "Last updated: Not available";
+            return;
+        }
 
-        quote.textContent = quoteText;
-        image.src = addImageCacheBuster(imageUrl, updatedAt);
-        image.alt = "AURA study motivation";
+        const date = new Date(stamp);
+
+        if (Number.isNaN(date.getTime())) {
+            el.textContent = "Last updated: Not available";
+            return;
+        }
+
+        el.textContent =
+            "Last updated: " +
+            date.toLocaleString("en-IN", {
+                timeZone: "Asia/Kolkata",
+                day: "2-digit",
+                month: "short",
+                year: "numeric",
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: true
+            }) +
+            " IST";
+
     }
+
 
     /* =======================================================
        INITIALIZATION
@@ -2695,16 +2567,10 @@
                 );
             }
 
-            // GitHub Pages normally exposes the Last-Modified header for
-            // data.json. Use it as a fallback when the JSON does not carry
-            // its own update timestamp.
-            dataFileLastModified =
-                response.headers.get("Last-Modified");
-
             globalPayload =
                 await response.json();
 
-            updateLastUpdatedNewsTime(globalPayload?.today || globalPayload);
+            renderLastUpdated(globalPayload);
 
             availableDates =
                 Array.isArray(
@@ -2745,14 +2611,23 @@
 
             }
 
-            // --------------------------------------------------------
-            // MOTIVATION PANEL
-            // The updater writes a new motivation image + quote to
-            // data.json every 3-hour update. Render that value here.
-            // A deterministic fallback is also kept so the panel never
-            // becomes blank if an older data.json has no motivation object.
-            // --------------------------------------------------------
-            renderMotivation(globalPayload);
+            if (
+                globalPayload.motivation
+            ) {
+
+                document
+                    .getElementById("motivationQuote")
+                    .textContent =
+                    globalPayload.motivation.quote ||
+                    "Consistency turns ordinary study into extraordinary results.";
+
+                if (globalPayload.motivation.image_url) {
+                    const image = document.getElementById("motivationImage");
+                    if (image) {
+                        image.src = globalPayload.motivation.image_url;
+                    }
+                }
+            }
 
         } catch (error) {
 
@@ -2933,83 +2808,6 @@
        LOAD DATE
        ======================================================= */
 
-    function formatLastUpdatedTime(value) {
-
-        if (!value) return null;
-
-        const raw = String(value).trim();
-        if (!raw) return null;
-
-        let parsedDate = null;
-
-        if (/^\d+$/.test(raw)) {
-            const numericValue = Number(raw);
-            parsedDate = new Date(
-                numericValue < 100000000000
-                    ? numericValue * 1000
-                    : numericValue
-            );
-        } else {
-            parsedDate = new Date(raw);
-        }
-
-        if (!Number.isNaN(parsedDate.getTime())) {
-            return parsedDate.toLocaleString("en-IN", {
-                timeZone: "Asia/Kolkata",
-                day: "2-digit",
-                month: "short",
-                year: "numeric",
-                hour: "2-digit",
-                minute: "2-digit",
-                hour12: true
-            }) + " IST";
-        }
-
-        return raw;
-    }
-
-
-    function updateLastUpdatedNewsTime(data) {
-
-        const element = document.getElementById("lastUpdatedNews");
-        if (!element) return;
-
-        const candidates = [
-            data?.last_updated,
-            data?.lastUpdated,
-            data?.updated_at,
-            data?.updatedAt,
-            data?.generated_at,
-            data?.generatedAt,
-            data?.update_time,
-            data?.updateTime,
-            data?.timestamp,
-            globalPayload?.last_updated,
-            globalPayload?.lastUpdated,
-            globalPayload?.updated_at,
-            globalPayload?.updatedAt,
-            globalPayload?.generated_at,
-            globalPayload?.generatedAt,
-            globalPayload?.update_time,
-            globalPayload?.updateTime,
-            globalPayload?.timestamp,
-            dataFileLastModified
-        ];
-
-        const value = candidates.find(item =>
-            item !== null &&
-            item !== undefined &&
-            String(item).trim() !== ""
-        );
-
-        const formatted = formatLastUpdatedTime(value);
-
-        element.innerHTML = formatted
-            ? "Last updated: <strong>" + escapeHTML(formatted) + "</strong>"
-            : "Last updated: <strong>Unavailable</strong>";
-    }
-
-
     async function loadDateData(
         date
     ) {
@@ -3061,8 +2859,6 @@
             }
 
             currentData = data;
-
-            updateLastUpdatedNewsTime(currentData);
 
             document
                 .getElementById(
@@ -3193,11 +2989,9 @@
             ).trim();
 
         if (currentCategory === "Exam Corner") {
-            // Exam Corner is a curated exam-relevance filter.
-            // It must NEVER include an article merely because its
-            // main category is Economy, Environment, India, etc.
-            return article.exam_corner === true ||
-                String(article.exam_corner).toLowerCase() === "true";
+            return articleCategory.toLowerCase() === "exam corner" ||
+                article.exam_corner === true ||
+                article.exam_corner === "true";
         }
 
         return (
