@@ -2,6 +2,1785 @@
   "date": "2026-10-01",
   "news": [
     {
+      "category": "India",
+      "exam_corner": false,
+      "headline": "Captain Machchhar: The pilot from Mumbai who proved to be the hero",
+      "story_lead": "Captain Machchhar, a pilot from Mumbai, emerged as a hero in a significant event. The report highlights the commendable role played by the Mumbai-based pilot.",
+      "full_article_text": "Captain Machchhar, a pilot hailing from Mumbai, has been recognized for proving to be a hero in an unspecified operational context as detailed in recent reports. While detailed technical specifics of the event remain limited in the immediate source text, the account brings to light the individual's crucial role and contribution as a pilot from Mumbai.",
+      "background_context": "The report focuses on Captain Machchhar, a pilot based in Mumbai, who successfully acted as a hero during an event highlighted by the Times of India.",
+      "bullet_points": [
+        "Captain Machchhar is a pilot based in Mumbai.",
+        "He was reported to have proved to be a hero in a notable incident.",
+        "The news was published by the Times of India.",
+        "The account highlights individual heroism within the aviation sector."
+      ],
+      "key_facts": [
+        "Captain Machchhar is a pilot.",
+        "He is from Mumbai."
+      ],
+      "key_locations": [
+        "Mumbai"
+      ],
+      "important_dates": [],
+      "exam_relevance": [
+        "General awareness regarding national personalities and news."
+      ],
+      "upsc_analysis": "The report highlights a personal achievement and heroism by an individual from Mumbai in the aviation sector, serving as a point of general current affairs interest without direct policy implications.",
+      "causes": [
+        "Actions taken by Captain Machchhar during a critical situation."
+      ],
+      "impacts": [
+        "Recognition of the pilot's heroic efforts."
+      ],
+      "challenges": [
+        "Limited source details regarding the specific nature of the operation."
+      ],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [
+        "Further detailed documentation of individual contributions in aviation."
+      ],
+      "mains_notes": "Captain Machchhar, a Mumbai-based pilot, gained recognition as a hero according to reports by the Times of India.",
+      "mains_questions": [
+        "Discuss the role of individual professionals in emergency and critical responses."
+      ],
+      "takeaway": "Captain Machchhar from Mumbai was recognized as a hero pilot in recent news reports.",
+      "prelims_facts": [
+        "Captain Machchhar is a pilot from Mumbai."
+      ],
+      "vocabulary": [
+        {
+          "word": "Hero",
+          "meaning_hindi": "नायक"
+        },
+        {
+          "word": "Pilot",
+          "meaning_hindi": "विमान चालक"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Mumbai",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Mumbai"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "कैप्टन मच्छर: मुंबई के वह पायलट जिन्होंने खुद को हीरो साबित किया",
+        "story_lead": "मुंबई के एक पायलट कैप्टन मच्छर एक महत्वपूर्ण घटना में हीरो के रूप में उभरे। रिपोर्ट मुंबई के इस पायलट की सराहनीय भूमिका को उजागर करती है।",
+        "full_article_text": "मुंबई के रहने वाले पायलट कैप्टन मच्छर को हालिया रिपोर्टों के अनुसार एक घटना में हीरो साबित होने के लिए पहचाना गया है। हालांकि घटना के विस्तृत तकनीकी विवरण तत्काल स्रोत पाठ में सीमित हैं, यह विवरण एक मुंबई के पायलट के रूप में उनकी महत्वपूर्ण भूमिका और योगदान को सामने लाता है।",
+        "background_context": "यह रिपोर्ट मुंबई के एक पायलट कैप्टन मच्छर पर केंद्रित है, जिन्होंने टाइम्स ऑफ इंडिया द्वारा हाइलाइट की गई घटना के दौरान सफलतापूर्वक एक हीरो की भूमिका निभाई।",
+        "bullet_points": [
+          "कैप्टन मच्छर मुंबई के एक पायलट हैं।",
+          "उन्हें एक उल्लेखनीय घटना में हीरो साबित होने के रूप में रिपोर्ट किया गया।",
+          "यह खबर टाइम्स ऑफ इंडिया द्वारा प्रकाशित की गई थी।",
+          "यह विवरण विमानन क्षेत्र के भीतर व्यक्तिगत वीरता को उजागर करता है।"
+        ],
+        "key_facts": [
+          "कैप्टन मच्छर एक पायलट हैं।",
+          "वह मुंबई से हैं।"
+        ],
+        "key_locations": [
+          "मुंबई"
+        ],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "From which city is Captain Machchhar, the pilot highlighted in the report, from?",
+        "options": [
+          "Delhi",
+          "Mumbai",
+          "Chennai",
+          "Kolkata"
+        ],
+        "correct_answer": "Mumbai",
+        "explanation": "The source text explicitly states that Captain Machchhar is a pilot from Mumbai."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/india/captain-machchhar-the-pilot-from-mumbai-who-proved-to-be-the-hero/articleshow/134602233.cms",
+      "published_date": "2026-10-01",
+      "id": 35,
+      "image_url": "https://static.toiimg.com/photo/msid-134602280,imgsize-840195.cms",
+      "added_at": "2026-10-01T03:10:55.091712+05:30"
+    },
+    {
+      "category": "Health",
+      "exam_corner": false,
+      "headline": "Indian Embassy Updates on Medical Attention for Flydubai Pilot",
+      "story_lead": "The Indian Embassy has provided an update regarding an Indian Flydubai pilot who is currently receiving necessary medical attention. The update comes in the context of recent developments involving a Flydubai flight incident and related security updates.",
+      "full_article_text": "The Indian Embassy has issued an update concerning an Indian Flydubai pilot, confirming that the individual is receiving the necessary medical attention. This update follows developments surrounding a Flydubai flight incident, which also prompted statements from officials such as Israeli Prime Minister Benjamin Netanyahu regarding preparedness for other potential threats. The situation highlights the ongoing monitoring and support provided by diplomatic missions to Indian nationals abroad during unforeseen operational or health incidents.",
+      "background_context": "Diplomatic missions routinely monitor and extend support to citizens, including working professionals and crew members, who encounter medical or operational emergencies while abroad.",
+      "bullet_points": [
+        "Indian Embassy provides an update on an Indian Flydubai pilot.",
+        "The pilot is confirmed to be receiving necessary medical attention.",
+        "The update is linked to wider developments involving a Flydubai flight incident.",
+        "Israeli leadership noted preparations for potential threats in related reports.",
+        "Diplomatic channels continue to oversee the welfare of the Indian national."
+      ],
+      "key_facts": [
+        "An Indian Flydubai pilot is receiving necessary medical attention.",
+        "The Indian Embassy is managing the diplomatic and welfare update."
+      ],
+      "key_locations": [
+        "India",
+        "Middle East"
+      ],
+      "important_dates": [],
+      "exam_relevance": [
+        "General awareness regarding consular services and citizen welfare abroad."
+      ],
+      "upsc_analysis": "Consular jurisdiction and the welfare of the Indian diaspora and working professionals overseas form an essential part of India's foreign policy and diplomatic outreach.",
+      "causes": [
+        "An incident involving a Flydubai flight requiring medical or administrative intervention."
+      ],
+      "impacts": [
+        "Ensures timely medical assistance and consular support for the affected pilot."
+      ],
+      "challenges": [
+        "Managing welfare and medical emergencies of Indian nationals in complex regional environments."
+      ],
+      "government_steps": [
+        "Indian Embassy intervention to ensure necessary medical attention is provided."
+      ],
+      "constitutional_or_policy_link": [
+        "Consular services under Indian diplomatic missions."
+      ],
+      "way_forward": [
+        "Continued monitoring and healthcare support by diplomatic authorities."
+      ],
+      "mains_notes": "Consular access and welfare management for Indian citizens abroad, exemplified by the Indian Embassy's intervention for a Flydubai pilot receiving medical care.",
+      "mains_questions": [
+        "Discuss the role of Indian diplomatic missions in ensuring the welfare and safety of Indian nationals and professionals abroad."
+      ],
+      "takeaway": "The Indian Embassy confirmed that an Indian Flydubai pilot is receiving necessary medical attention following a flight incident.",
+      "prelims_facts": [
+        "The Indian Embassy provided updates regarding an Indian Flydubai pilot receiving medical care."
+      ],
+      "vocabulary": [
+        {
+          "word": "Embassy",
+          "meaning_hindi": "दूतावास"
+        },
+        {
+          "word": "Medical",
+          "meaning_hindi": "चिकित्सा संबंधी"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Flydubai",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Flydubai"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "भारतीय फ्लाईदुबई पायलट के स्वास्थ्य पर भारतीय दूतावास का अपडेट",
+        "story_lead": "भारतीय दूतावास ने एक भारतीय फ्लाईदुबई पायलट के संबंध में अपडेट दिया है जो वर्तमान में आवश्यक चिकित्सा सहायता प्राप्त कर रहा है।",
+        "full_article_text": "भारतीय दूतावास ने एक भारतीय फ्लाईदुबई पायलट को लेकर अपडेट जारी किया है, जिसमें पुष्टि की गई है कि संबंधित व्यक्ति को आवश्यक चिकित्सा मिल रही है। यह अपडेट फ्लाईदुबई उड़ान की घटना और उससे जुड़े घटनाक्रम के बीच आया है।",
+        "background_context": "विदेशी धरती पर कार्यरत भारतीय नागरिकों और चालक दल के सदस्यों को आपातकालीन चिकित्सा और कांसुलर सहायता प्रदान की जाती है।",
+        "bullet_points": [
+          "भारतीय दूतावास ने फ्लाईदुबई पायलट पर अपडेट दिया।",
+          "पायलट को आवश्यक चिकित्सा सहायता मिल रही है।",
+          "यह मामला एक उड़ान घटना से जुड़ा है।"
+        ],
+        "key_facts": [
+          "भारतीय फ्लाईदुबई पायलट को चिकित्सा सहायता मिल रही है।"
+        ],
+        "key_locations": [
+          "भारत",
+          "मध्य पूर्व"
+        ],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which diplomatic body provided the update regarding the Indian Flydubai pilot receiving medical attention?",
+        "options": [
+          "Indian Embassy",
+          "UNICEF",
+          "World Health Organization",
+          "Interpol"
+        ],
+        "correct_answer": "Indian Embassy",
+        "explanation": "The Indian Embassy provided the update confirming that the Indian Flydubai pilot is receiving necessary medical attention."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/world/middle-east/flydubai-flight-incident-netanyahu-says-israel-preparing-for-other-potential-threats-top-developments/articleshow/134595815.cms",
+      "published_date": "2026-10-01",
+      "id": 34,
+      "image_url": "https://static.toiimg.com/photo/msid-134596161,imgsize-192440.cms",
+      "added_at": "2026-10-01T03:10:55.091712+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": false,
+      "headline": "Netanyahu salutes Indian pilot for stopping co-pilot from crashing Flydubai plane",
+      "story_lead": "Israeli Prime Minister Benjamin Netanyahu has saluted an Indian pilot as a 'true hero' for stopping an Omani co-pilot from crashing a Flydubai aircraft. The incident highlights a critical intervention in aviation safety.",
+      "full_article_text": "Israeli Prime Minister Benjamin Netanyahu praised an Indian pilot, calling him a 'true hero' after the pilot successfully stopped an Omani co-pilot from crashing a Flydubai plane. The incident involved quick thinking and decisive action by the Indian captain to avert a potential aviation disaster.",
+      "background_context": "The event involves a Flydubai flight where an Indian pilot intervened to prevent the Omani co-pilot from crashing the aircraft, drawing international recognition including from Israeli PM Benjamin Netanyahu.",
+      "bullet_points": [
+        "Israeli Prime Minister Benjamin Netanyahu saluted an Indian pilot.",
+        "The Indian pilot was designated a 'true hero' for his actions.",
+        "The pilot stopped an Omani co-pilot from crashing a Flydubai plane.",
+        "The incident underscores the critical importance of cockpit crew intervention in aviation safety."
+      ],
+      "key_facts": [
+        "An Indian pilot prevented an Omani co-pilot from crashing a Flydubai plane.",
+        "Benjamin Netanyahu publicly praised the Indian pilot."
+      ],
+      "key_locations": [
+        "India",
+        "Oman"
+      ],
+      "important_dates": [],
+      "exam_relevance": [
+        "General current affairs regarding international recognition of Indian nationals."
+      ],
+      "upsc_analysis": "This is a factual current affairs event involving international appreciation of an Indian national's presence of mind in aviation safety.",
+      "causes": [
+        "An emergency cockpit situation involving an Omani co-pilot attempting to crash the Flydubai plane."
+      ],
+      "impacts": [
+        "A potential aviation disaster was averted.",
+        "The Indian pilot received high praise from international leaders like Benjamin Netanyahu."
+      ],
+      "challenges": [
+        "Managing critical in-flight emergencies and ensuring cockpit security."
+      ],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [
+        "Enhancing global aviation safety protocols and rigorous psychological and professional screening for cockpit crew."
+      ],
+      "mains_notes": "An Indian pilot was praised by Israeli PM Benjamin Netanyahu for stopping an Omani co-pilot from crashing a Flydubai aircraft, highlighting individual bravery and aviation safety.",
+      "mains_questions": [
+        "Discuss the significance of crew resource management and prompt interventions in preventing aviation disasters."
+      ],
+      "takeaway": "An Indian pilot was lauded as a hero by Israeli PM Benjamin Netanyahu for preventing a Flydubai plane crash.",
+      "prelims_facts": [
+        "An Indian pilot stopped an Omani co-pilot from crashing a Flydubai plane."
+      ],
+      "vocabulary": [
+        {
+          "word": "Salute",
+          "meaning_hindi": "सलाम करना / प्रशंसा करना"
+        },
+        {
+          "word": "Hero",
+          "meaning_hindi": "नायक / वीर"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Benjamin Netanyahu",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Benjamin_Netanyahu"
+        },
+        {
+          "name": "Flydubai",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Flydubai"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "नेतन्याहू ने भारतीय पायलट को किया सलाम, जिसने फ्लाईदुबई के विमान को क्रैश होने से बचाया",
+        "story_lead": "इजराइल के प्रधानमंत्री बेंजामिन नेतन्याहू ने एक भारतीय पायलट को 'सच्चा हीरो' बताते हुए सलाम किया है, क्योंकि उसने ओमान के सह-पायलट को फ्लाईदुबई के विमान को दुर्घटनाग्रस्त करने से रोका।",
+        "full_article_text": "इजराइल के प्रधानमंत्री बेंजामिन नेतन्याहू ने एक भारतीय पायलट की प्रशंसा की है और उसे 'सच्चा हीरो' कहा है। इस पायलट ने एक फ्लाईदुबई उड़ान में ओमान के सह-पायलट को विमान को दुर्घटनाग्रस्त करने से बचाया था।",
+        "background_context": "यह घटना एक फ्लाईदुबई उड़ान से जुड़ी है, जहां एक भारतीय पायलट ने ओमान के सह-पायलट को विमान क्रैश करने से रोका, जिसकी अंतरराष्ट्रीय स्तर पर सराहना हुई है।",
+        "bullet_points": [
+          "इजराइली प्रधानमंत्री बेंजामिन नेतन्याहू ने भारतीय पायलट की सराहना की।",
+          "भारतीय पायलट को 'सच्चा हीरो' कहा गया।",
+          "पायलट ने फ्लाईदुबई विमान को क्रैश होने से बचाया।"
+        ],
+        "key_facts": [
+          "एक भारतीय पायलट ने ओमान के सह-पायलट को फ्लाईदुबई विमान क्रैश करने से रोका।"
+        ],
+        "key_locations": [
+          "भारत",
+          "ओमान"
+        ],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which international leader praised an Indian pilot for stopping a co-pilot from crashing a Flydubai plane?",
+        "options": [
+          "Joe Biden",
+          "Benjamin Netanyahu",
+          "Emmanuel Macron",
+          "Rishi Sunak"
+        ],
+        "correct_answer": "Benjamin Netanyahu",
+        "explanation": "Israeli Prime Minister Benjamin Netanyahu saluted the Indian pilot as a 'true hero' for preventing the crash of a Flydubai plane."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/india/a-true-hero-netanyahu-salutes-indian-pilot-who-stopped-omani-co-pilot-from-crashing-flydubai-plane/articleshow/134601907.cms",
+      "published_date": "2026-10-01",
+      "id": 33,
+      "image_url": "https://static.toiimg.com/photo/msid-134602009,imgsize-1807006.cms",
+      "added_at": "2026-10-01T03:10:55.091712+05:30"
+    },
+    {
+      "category": "World",
+      "exam_corner": false,
+      "headline": "India Issues Fresh Advisory for Citizens Following Recruitment Reports in Russian Armed Forces",
+      "story_lead": "The Ministry of External Affairs has issued a fresh advisory urging Indian nationals to exercise caution and avoid unverified job offers abroad. The advisory comes in the backdrop of 51 Indian deaths while serving with the Russian military on the frontlines of the conflict in Ukraine.",
+      "full_article_text": "The Ministry of External Affairs (MEA) issued a fresh advisory for Indian nationals travelling to Russia, highlighting the severe dangers faced by citizens recruited into Russia's armed forces, including hiring by non-public entities. The government stated it is actively engaged with the Russian side to secure the early discharge of remaining Indian citizens. According to recent figures shared by authorities, a total of 227 Indians have been recruited into the Russian military, out of which 139 have been discharged, 51 have died, and efforts continue for the remaining individuals. The advisory also cautioned against individuals willingly seeking out offers for monetary benefits or giving up Indian citizenship for Russian passports without consulting authorities, noting that the Central Bureau of Investigation (CBI) is currently probing fraudulent recruitment cases.",
+      "background_context": "Reports of Indian nationals being recruited into Russia's military began to emerge about two years after the Russian invasion of Ukraine. Some individuals on tourist or student visas were reportedly lured with promises of large salaries and Russian citizenship, while others were illegally recruited through unscrupulous agents.",
+      "bullet_points": [
+        "MEA issued a fresh advisory cautioning Indians against unverified job offers in Russia.",
+        "A total of 51 Indian nationals have died while serving with the Russian military on the frontlines in Ukraine.",
+        "Out of 227 Indians recruited into the Russian armed forces, 139 have been discharged so far.",
+        "The Central Bureau of Investigation (CBI) is probing fraudulent recruitment cases.",
+        "The Indian government remains engaged with Russian authorities to secure the early discharge of remaining citizens."
+      ],
+      "key_facts": [
+        "51 Indian nationals have died while serving in the Russian military.",
+        "227 Indians have been recruited into the Russian military in total.",
+        "139 Indians have been successfully discharged.",
+        "The CBI is probing fraudulent recruitment cases."
+      ],
+      "key_locations": [
+        "India",
+        "Russia",
+        "Ukraine",
+        "Bishkek"
+      ],
+      "important_dates": [
+        "August"
+      ],
+      "exam_relevance": [
+        "General Studies Paper II: Bilateral, regional and global groupings and agreements involving India and/or affecting India's interests."
+      ],
+      "upsc_analysis": "The situation highlights the complex consular and geopolitical challenges faced by India regarding its citizens abroad, particularly in conflict zones. It underscores the need for robust regulatory mechanisms to monitor international recruitment agencies and protect diaspora welfare.",
+      "causes": [
+        "Unscrupulous recruitment agents luring individuals with promises of large salaries and Russian citizenship.",
+        "Voluntary seeking of offers by individuals for temporary monetary benefits."
+      ],
+      "impacts": [
+        "Deaths and injuries of Indian nationals on foreign frontlines.",
+        "Consular challenges and diplomatic engagements between India and Russia."
+      ],
+      "challenges": [
+        "Identifying and tracking Indian nationals recruited through non-public entities or voluntary groups.",
+        "Ensuring the timely discharge and safe return of citizens from active conflict zones."
+      ],
+      "government_steps": [
+        "Issuing advisories urging due diligence and avoiding unverified agents.",
+        "Engaging with Russian authorities at diplomatic and leadership levels for early discharge of citizens.",
+        "CBI probing fraudulent recruitment cases and making arrests."
+      ],
+      "constitutional_or_policy_link": [
+        "Protection of Indian citizens abroad under consular access and international law."
+      ],
+      "way_forward": [
+        "Strengthening domestic regulations and monitoring of overseas recruitment agents.",
+        "Increasing awareness among citizens regarding the risks of unverified foreign job offers."
+      ],
+      "mains_notes": "The MEA advisory regarding Indian nationals in the Russian armed forces highlights concerns over illegal recruitment, consular safety, and diplomatic engagement. India continues to push for the discharge of its citizens while investigating fraudulent agents.",
+      "mains_questions": [
+        "Discuss the challenges related to the unauthorized recruitment of Indian nationals in foreign military forces and evaluate the government's response.",
+        "Analyze the consular and diplomatic implications of Indian citizens getting caught in active international conflicts."
+      ],
+      "takeaway": "India has issued a strict advisory against unverified foreign military recruitments following 51 deaths of Indian nationals in the Russia-Ukraine conflict.",
+      "prelims_facts": [
+        "MEA issues advisories for international travelers.",
+        "CBI investigates cases of fraudulent recruitment."
+      ],
+      "vocabulary": [
+        {
+          "word": "Advisory",
+          "meaning_hindi": "परामर्श"
+        },
+        {
+          "word": "Discharge",
+          "meaning_hindi": "अवमुक्त करना / छुट्टी"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Ministry of External Affairs",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Ministry_of_External_Affairs_%28India%29"
+        },
+        {
+          "name": "Central Bureau of Investigation",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Central_Bureau_of_Investigation"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "रूस के सशस्त्र बलों में भर्ती की खबरों के बाद भारत ने नागरिकों के लिए जारी की एडवाइजरी",
+        "story_lead": "विदेश मंत्रालय ने रूस की यात्रा करने वाले भारतीयों के लिए एक नई एडवाइजरी जारी की है, जिसमें नागरिकों से विदेश में असत्यापित नौकरी के प्रस्तावों से बचने का आग्रह किया गया है। यह एडवाइजरी यूक्रेन संघर्ष के मोर्चे पर रूसी सेना के साथ सेवा करते समय 51 भारतीयों की मौत की पृष्ठभूमि में जारी की गई है।",
+        "full_article_text": "विदेश मंत्रालय (MEA) ने रूस की यात्रा करने वाले भारतीय नागरिकों के लिए एक नई एडवाइजरी जारी की है, जिसमें गैर-सार्वजनिक संस्थाओं द्वारा भर्ती सहित रूस के सशस्त्र बलों में भर्ती किए गए भारतीयों के सामने आने वाले गंभीर खतरों पर प्रकाश डाला गया है।",
+        "background_context": "यूक्रेन में रूसी आक्रमण के लगभग दो साल बाद रूसी सेना में भारतीय नागरिकों की भर्ती की खबरें सामने आने लगीं।",
+        "bullet_points": [
+          "विदेश मंत्रालय ने रूस में असत्यापित नौकरियों के खिलाफ चेतावनी जारी की है।",
+          "रूसी सेना में सेवा के दौरान 51 भारतीयों की मौत हुई है।"
+        ],
+        "key_facts": [
+          "रूसी सेना में सेवा के दौरान 51 भारतीयों की मौत हुई।"
+        ],
+        "key_locations": [
+          "भारत",
+          "रूस",
+          "यूक्रेन"
+        ],
+        "important_dates": [
+          "अगस्त"
+        ]
+      },
+      "quiz": {
+        "question": "How many Indian nationals were reported dead while serving with the Russian military according to the recent reports?",
+        "options": [
+          "39",
+          "51",
+          "139",
+          "227"
+        ],
+        "correct_answer": "51",
+        "explanation": "As per the report, a total of 51 Indians died while serving with the Russian military on the frontlines of the conflict in Ukraine."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/india-advisory-nationals-recruitments-russian-armed-forces-jobs-abroad-dangerous-path-mea-russia-travel-101790774759165.html",
+      "published_date": "2026-10-01",
+      "id": 32,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/Russia-Ukraine-2_1790776131830_2pYB_1790776147619_DHt1_835fa8de-15dd-468e-bef7-65df5b1523c9_LRoQ.jpg",
+      "added_at": "2026-10-01T03:10:55.091712+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": false,
+      "headline": "Goa nightclub fire: Luthra brothers offer to compensate victims’ families ₹15 lakh each",
+      "story_lead": "The co-owners of Birch by Romeo Lane, a Goa nightclub where a tragic fire claimed 25 lives, have informed the Bombay High Court at Goa of their willingness to offer ₹15 lakh compensation to each victim's family. The high court is reviewing the offer in a suo motu writ petition following the illegal operation of the club and subsequent safety lapses.",
+      "full_article_text": "The Luthra brothers, co-owners of Birch by Romeo Lane where a devastating fire claimed 25 lives last year, have told the Bombay High Court at Goa that they are willing to compensate the family of each victim with ₹15 lakh. The high court, which instituted a suo motu writ petition after the fire at the illegally operating club, has given the families until October 12 to reply to the offer before a final decision is taken. Advocate General Devidas Pangam noted that this proposed compensation is over and above the financial assistance paid by the government to the affected families. Of the 25 victims, 20 were employees of Being G S Hospitality Arpora LLP, who were working in the basement kitchen when the fire broke out, leaving them trapped without an escape route, while five were guest tourists. Following the incident, the brothers had fled to Phuket in Thailand but were subsequently deported after their passports were suspended and an Interpol notice was issued. They were arrested on December 16 and remain in judicial custody. A chargesheet highlights gross criminal negligence, lack of statutory and safety norms, and a second FIR has been registered against the Luthras and Ajay Gupta for alleged cheating and forgery relating to fabricated documents.",
+      "background_context": "The incident occurred on the intervening night of December 6 and 7, 2025, at an illegally operating nightclub named Birch by Romeo Lane in Arpora, Goa. The fire resulted in 25 fatalities, predominantly employees working in the basement kitchen. The co-owners fled the country immediately after the blaze but were repatriated through international cooperation and law enforcement action.",
+      "bullet_points": [
+        "Luthra brothers offered ₹15 lakh compensation to each of the 25 victims' families.",
+        "The offer was submitted to the Bombay High Court at Goa during a suo motu hearing.",
+        "Families have until October 12 to respond to the compensation proposal.",
+        "The tragedy occurred on December 6-7, 2025, at the Birch by Romeo Lane nightclub in Arpora, Goa.",
+        "Twenty of the deceased were employees working in the basement kitchen, and five were tourists.",
+        "The nightclub was operating illegally and lacked proper safety norms and escape routes."
+      ],
+      "key_facts": [
+        "25 people lost their lives in the Goa nightclub fire.",
+        "The proposed compensation is ₹15 lakh per victim family.",
+        "The incident happened at Birch by Romeo Lane in Arpora, Goa.",
+        "The Luthra brothers were arrested on December 16, 2025, after being deported from Thailand."
+      ],
+      "key_locations": [
+        "Goa",
+        "Arpora",
+        "Phuket"
+      ],
+      "important_dates": [
+        "December 6-7, 2025",
+        "December 16, 2025",
+        "October 12"
+      ],
+      "exam_relevance": [
+        "Mains: General Studies Paper II (Governance, Judiciary, Executive actions)",
+        "Mains: General Studies Paper IV (Ethics, Integrity, and Aptitude - Corporate negligence and safety ethics)",
+        "Prelims: Current events of national importance and legal/judicial proceedings"
+      ],
+      "upsc_analysis": "The incident highlights critical governance gaps regarding commercial safety regulations, illegal operations, and enforcement of building and fire safety norms in tourism hubs like Goa. From an administrative and judicial perspective, the suo motu cognizance taken by the Bombay High Court underlines judicial activism in protecting citizen rights and enforcing accountability in cases of mass casualties due to criminal negligence.",
+      "causes": [
+        "Illegal operation of the nightclub without proper clearances.",
+        "Gross criminal negligence and utter disregard for human life and statutory safety norms.",
+        "Absence of safe exit routes, particularly in the basement kitchen where employees were trapped."
+      ],
+      "impacts": [
+        "Loss of 25 innocent lives, shattering families and dependents.",
+        "Initiation of strict legal proceedings, including chargesheets for culpable homicide and forgery.",
+        "Heightened scrutiny of commercial establishments and nightclubs operating without statutory safety compliances in Goa."
+      ],
+      "challenges": [
+        "Ensuring adequate and timely compensation and justice for victims' families.",
+        "Crackdown on illegal commercial establishments operating in tourist zones without adherence to building and fire safety laws.",
+        "Preventing regulatory lapses by local administrative bodies."
+      ],
+      "government_steps": [
+        "Institution of a suo motu writ petition by the Bombay High Court at Goa.",
+        "Issuance of Interpol notices and suspension of passports to repatriate the fleeing accused.",
+        "Filing of chargesheets citing criminal negligence and additional FIRs for forgery and cheating."
+      ],
+      "constitutional_or_policy_link": [
+        "Right to Life under Article 21 of the Constitution of India, which includes the right to live with human dignity and safety."
+      ],
+      "way_forward": [
+        "Strict enforcement of fire safety and building bylaws across all commercial and tourism establishments.",
+        "Accountability and punitive action against complicit local authorities permitting illegal operations.",
+        "Expeditious judicial trials to ensure timely justice for victims of corporate and administrative negligence."
+      ],
+      "mains_notes": "The Goa nightclub fire incident emphasizes the critical nexus between regulatory corruption, illegal commercial operations, and corporate negligence. Judicial intervention through suo motu petitions acts as a vital check against administrative apathy, while ensuring compensatory justice is a key facet of victim rehabilitation.",
+      "mains_questions": [
+        "Discuss the implications of institutional and regulatory lapses in urban and commercial safety with reference to recent mass casualty incidents in India.",
+        "Examine the role of the judiciary in taking suo motu cognizance of public safety violations and ensuring accountability."
+      ],
+      "takeaway": "The Bombay High Court is reviewing a ₹15 lakh per family compensation offer from the co-owners of an illegally operated Goa nightclub where a fire claimed 25 lives.",
+      "prelims_facts": [
+        "Birch by Romeo Lane nightclub is located in Arpora, Goa.",
+        "The fire incident occurred in December 2025."
+      ],
+      "vocabulary": [
+        {
+          "word": "Compensation",
+          "meaning_hindi": "मुआवजा"
+        },
+        {
+          "word": "Negligence",
+          "meaning_hindi": "लापरवाही"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Bombay High Court",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Bombay%20High%20Court"
+        },
+        {
+          "name": "Goa",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Goa"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "गोवा नाइटक्लब आग: लूथरा बंधुओं ने पीड़ितों के परिवारों को ₹15-15 लाख मुआवजा देने की पेशकश की",
+        "story_lead": "बर्च बाय रोमियो लेन के सह-स्वामियों, जहां पिछले साल एक भीषण आग में 25 लोगों की जान चली गई थी, ने बॉम्बे हाईकोर्ट की गोवा पीठ को बताया है कि वे प्रत्येक पीड़ित के परिवार को ₹15 लाख मुआवजा देने को तैयार हैं।",
+        "full_article_text": "बर्च बाय रोमियो लेन के सह-स्वामियों ने, जहां पिछले साल दिसंबर में एक नाइटक्लब में लगी आग में 25 लोगों की जान चली गई थी, बॉम्बे हाईकोर्ट की गोवा पीठ को बताया है कि वे प्रत्येक पीड़ित के परिवार को ₹15 लाख का मुआवजा देने को तैयार हैं। उच्च न्यायालय, जिसने अवैध रूप से संचालित क्लब में लगी आग के बाद स्वतः संज्ञान रिट याचिका शुरू की है, ने परिवारों को अंतिम निर्णय से पहले इस प्रस्ताव का जवाब देने के लिए 12 अक्टूबर तक का समय दिया है।",
+        "background_context": "यह घटना 6 और 7 दिसंबर 2025 की दरमियानी रात को गोवा के अर्पोरा में अवैध रूप से संचालित बर्च बाय रोमियो लेन नाइटक्लब में हुई थी, जिसमें 25 लोगों की मौत हो गई थी।",
+        "bullet_points": [
+          "लूथरा बंधुओं ने प्रत्येक पीड़ित परिवार को ₹15 लाख मुआवजा देने की पेशकश की।",
+          "यह प्रस्ताव बॉम्बे हाईकोर्ट में एक स्वतः संज्ञान सुनवाई के दौरान दिया गया।",
+          "घटना दिसंबर 2025 में अर्पोरा, गोवा में हुई थी।"
+        ],
+        "key_facts": [
+          "गोवा नाइटक्लब आग में 25 लोगों की मौत हुई थी।",
+          "लूथरा बंधुओं को दिसंबर 2025 में गिरफ्तार किया गया था।"
+        ],
+        "key_locations": [
+          "गोवा",
+          "अर्पोरा"
+        ],
+        "important_dates": [
+          "6-7 दिसंबर 2025",
+          "16 दिसंबर 2025"
+        ]
+      },
+      "quiz": {
+        "question": "The fire incident at the Birch by Romeo Lane nightclub, which claimed 25 lives, occurred in which of the following places?",
+        "options": [
+          "Arpora, Goa",
+          "Panaji, Goa",
+          "Anjuna, Goa",
+          "Calangute, Goa"
+        ],
+        "correct_answer": "Arpora, Goa",
+        "explanation": "The fire tragedy occurred at the Birch by Romeo Lane nightclub located in Arpora, Goa, on the intervening night of December 6 and 7, 2025."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/goa-nightclub-fire-luthra-brothers-offer-to-compensate-victims-families-15-lakh-each-101790775046567.html",
+      "published_date": "2026-10-01",
+      "id": 31,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/The-Arpora-fire-tragedy-at-Birch-by-Romeo-Lane--an_1790775039258_Tqcx.jpg",
+      "added_at": "2026-10-01T03:10:55.091712+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": false,
+      "headline": "Stabbed flydubai Pilot Smit Machchhar is Indian National and Former SpiceJet Employee",
+      "story_lead": "Smit Machchhar, an Indian national and captain on flydubai's Boeing 737 fleet, was stabbed during a flight from Dubai to Tel Aviv. The Boeing 737 MAX 8 was diverted to Tabuk in north-western Saudi Arabia, where the pilot underwent surgery and is reported to be stable.",
+      "full_article_text": "Captain Smit Machchhar, an Indian national and pilot for flydubai, was injured in a stabbing incident aboard flydubai flight FZ1073 travelling from Dubai to Tel Aviv. The aircraft, a Boeing 737 MAX 8, transmitted a transponder code for unlawful interference and was diverted to Tabuk Airport in north-western Saudi Arabia. Machchhar and his co-pilot were taken to hospital following the incident, where Machchhar underwent surgery and was subsequently reported to be stable. According to his professional background, Machchhar had been a captain on flydubai's Boeing 737 fleet since June 2022, following an 11-year tenure at SpiceJet in Mumbai where he served as a senior commander and line training captain. The flight was secured by on-duty flydubai crew and additional personnel on board, allowing it to land safely at Tabuk Airport. Authorities and the airline have stated that the underlying reasons and motives are subject to a formal investigation.",
+      "background_context": "Smit Machchhar has logged extensive flying hours, including experience on the 737-800 and 737 MAX 8 and 9 models, and previously worked for 11 years at SpiceJet in Mumbai before joining flydubai as a direct-entry captain in June 2022. His brother also works as a pilot with Akasa Air.",
+      "bullet_points": [
+        "Smit Machchhar, an Indian national and flydubai captain, was stabbed aboard flight FZ1073 from Dubai to Tel Aviv.",
+        "The Boeing 737 MAX 8 aircraft was diverted to Tabuk Airport in Saudi Arabia following a distress call and unlawful interference signal.",
+        "Machchhar underwent surgery in Tabuk and was reported to be stable by sources.",
+        "He previously spent 11 years at SpiceJet in Mumbai before joining flydubai as a direct-entry captain in June 2022.",
+        "The aircraft was secured by on-duty crew members and additional personnel travelling on the flight, ensuring a safe landing with no fatalities among passengers and crew.",
+        "Israeli and flydubai authorities launched investigations into the incident, with Israel's defence minister characterising it as an attempted terror attack."
+      ],
+      "key_facts": [
+        "Victim: Smit Machchhar (Indian national, flydubai captain)",
+        "Flight: flydubai FZ1073 from Dubai to Tel Aviv",
+        "Aircraft: Boeing 737 MAX 8",
+        "Diversion Location: Tabuk Airport, Saudi Arabia",
+        "Previous Experience: 11 years at SpiceJet in Mumbai"
+      ],
+      "key_locations": [
+        "Dubai",
+        "Tel Aviv",
+        "Tabuk",
+        "Saudi Arabia",
+        "Mumbai"
+      ],
+      "important_dates": [
+        "Wednesday"
+      ],
+      "exam_relevance": [
+        "Prelims: Current affairs involving Indian nationals abroad and international aviation incidents.",
+        "Mains: International relations, aviation security, and cross-border safety protocols."
+      ],
+      "upsc_analysis": "The incident highlights critical aspects of international civil aviation security, emergency response protocols during cross-border flights, and the safety of Indian diaspora and nationals working abroad. It underscores the importance of stringent cockpit security and international cooperation during mid-air security crises.",
+      "causes": [
+        "An onboard security breach on flydubai flight FZ1073 leading to a stabbing incident and subsequent emergency diversion."
+      ],
+      "impacts": [
+        "Emergency diversion of flight FZ1073 to Tabuk Airport in Saudi Arabia.",
+        "Hospitalisation and surgery of Indian national Captain Smit Machchhar.",
+        "Deployment of replacement aircraft by flydubai to transport passengers and crew."
+      ],
+      "challenges": [
+        "Ensuring robust mid-air security and protecting flight crews from unprovoked attacks.",
+        "Managing emergency protocols and swift medical intervention in foreign jurisdictions."
+      ],
+      "government_steps": [
+        "Formal investigation initiated by relevant authorities to determine motives and underlying causes."
+      ],
+      "constitutional_or_policy_link": [
+        "Adherence to international civil aviation conventions regarding unlawful interference and passenger safety."
+      ],
+      "way_forward": [
+        "Strengthening global aviation security screening and cockpit access controls.",
+        "Enhancing international intelligence sharing to preempt threats against commercial aircraft."
+      ],
+      "mains_notes": "An Indian national and flydubai pilot, Smit Machchhar, was stabbed during a flight from Dubai to Tel Aviv, leading to an emergency diversion to Saudi Arabia. The incident underscores vulnerabilities in international aviation security and tests standard emergency response and crew safety mechanisms under cross-border conditions.",
+      "mains_questions": [
+        "Discuss the challenges related to international aviation security in the context of recent mid-air security incidents involving commercial flights.",
+        "Evaluate the protocols followed during in-flight emergencies and emergency diversions to foreign airports."
+      ],
+      "takeaway": "An Indian pilot working for flydubai was injured in an onboard security incident that forced an emergency landing in Saudi Arabia, prompting international investigations.",
+      "prelims_facts": [
+        "Smit Machchhar is an Indian national and former SpiceJet employee who became a flydubai captain in June 2022.",
+        "Flight FZ1073 was operating between Dubai and Tel Aviv before diverting to Tabuk, Saudi Arabia."
+      ],
+      "vocabulary": [
+        {
+          "word": "Diversion",
+          "meaning_hindi": "मार्ग बदलना"
+        },
+        {
+          "word": "Interference",
+          "meaning_hindi": "हस्तक्षेप"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Smit Machchhar",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Smit+Machchhar"
+        },
+        {
+          "name": "Tabuk",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Tabuk"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "दुबई-तेल अवीव उड़ान के दौरान घायल हुए फ्लाईदुबई के पायलट स्मीत मच्छड़ भारतीय नागरिक हैं",
+        "story_lead": "दुबई से तेल अवीव जा रही फ्लाईदुबई की उड़ान के दौरान चाकू से हमले का शिकार हुए पायलट स्मीत मच्छड़ एक भारतीय नागरिक हैं। बोइंग 737 मैक्स 8 विमान को उत्तर-पश्चिम सऊदी अरब के तबुक में डायवर्ट किया गया, जहां पायलटों को अस्पताल ले जाया गया।",
+        "full_article_text": "फ्लाईदुबई के पायलट स्मीत मच्छड़ दुबई से तेल अवीव जाने वाली उड़ान FZ1073 के दौरान हुई एक घटना में घायल हो गए। विमान को सऊदी अरब के तबुक में उतारा गया, जहां मच्छड़ की सर्जरी हुई और उनकी हालत स्थिर बताई गई है।",
+        "background_context": "स्मीत मच्छड़ जून 2022 से फ्लाईदुबई के बेड़े में कैप्टन के रूप में कार्यरत हैं और इससे पहले उन्होंने मुंबई में स्पाइसजेट के साथ 11 वर्षों तक काम किया था।",
+        "bullet_points": [
+          "भारतीय नागरिक और फ्लाईदुबई के कैप्टन स्मीत मच्छड़ पर उड़ान के दौरान हमला हुआ।",
+          "विमान को आपातकालीन स्थिति में सऊदी अरब के तबुक हवाई अड्डे पर डायवर्ट किया गया।",
+          "पायलट की सर्जरी हुई और वह अब स्थिर हैं।"
+        ],
+        "key_facts": [
+          "पीड़ित: स्मीत मच्छड़ (भारतीय नागरिक)",
+          "विमान: फ्लाईदुबई FZ1073",
+          "स्थान: तबुक, सऊदी अरब"
+        ],
+        "key_locations": [
+          "दुबई",
+          "तेल अवीव",
+          "तबुक",
+          "मुंबई"
+        ],
+        "important_dates": [
+          "बुधवार"
+        ]
+      },
+      "quiz": {
+        "question": "Which airline was Captain Smit Machchhar previously associated with for 11 years before joining flydubai?",
+        "options": [
+          "Air India",
+          "SpiceJet",
+          "IndiGo",
+          "Akasa Air"
+        ],
+        "correct_answer": "SpiceJet",
+        "explanation": "Before joining flydubai as a direct-entry captain in June 2022, Smit Machchhar spent 11 years at SpiceJet in Mumbai."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/stabbed-flydubai-pilot-indian-national-smit-machchhar-was-former-spicejet-employee-dubai-tel-aviv-saudi-101790775056727.html",
+      "published_date": "2026-10-01",
+      "id": 30,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/flybai_indian_pilot_smit_1790776324456_PTY1_1790776332012_5PyH_1e2bb44b-1a27-4c0e-add5-b2e45b6459af_bhJB.jpg",
+      "added_at": "2026-10-01T03:10:55.091712+05:30"
+    },
+    {
+      "category": "World",
+      "exam_corner": false,
+      "headline": "Flydubai flight FZ1073 incident: Indian pilot Smit Machchhar praised for bravery after cockpit attack",
+      "story_lead": "An Indian pilot-in-command, Smit Machchhar, was stabbed during a Flydubai flight from Dubai to Tel Aviv, leading to an emergency diversion to Saudi Arabia. Israeli Prime Minister Benjamin Netanyahu praised Captain Machchhar and passengers for their bravery in preventing a major disaster.",
+      "full_article_text": "A freak security incident occurred aboard Flydubai flight FZ1073 traveling from Dubai in the United Arab Emirates to Tel Aviv, Israel. The pilot-in-command, identified as Indian national Smit Machchhar, was reportedly stabbed by the first officer during the flight. Following an emergency alert, the Boeing 737 MAX 8 aircraft sharply descended from 33,000 feet and made an erratic turn near the Jordanian border, prompting Israel to scramble warplanes fearing a hijacking. The aircraft ultimately landed safely in Tabuk, northwestern Saudi Arabia, about an hour after the distress call. Passengers and crew members, including Assaf Rajuan and Shota Musaev, intervened to restrain the attacker using zip ties and headphone cords after the cockpit door was opened. Israeli Prime Minister Benjamin Netanyahu saluted Captain Machchhar for his extraordinary bravery, stating that despite being seriously injured, he fought back, opened the cockpit door, and enabled passengers and crew to overpower the attacker, thereby saving 174 lives and preventing a catastrophic mid-air disaster. Saudi authorities arrested the pilot who carried out the stabbing, and investigations are currently underway.",
+      "background_context": "The incident involved Flydubai flight FZ1073 operating from Dubai to Tel Aviv, which was diverted to Tabuk in Saudi Arabia following a violent altercation in the cockpit between the pilot and co-pilot.",
+      "bullet_points": [
+        "Flydubai flight FZ1073 from Dubai to Tel Aviv encountered a violent cockpit incident involving its pilots.",
+        "Indian national Smit Machchhar, the pilot-in-command, was stabbed by the first officer during the flight.",
+        "The Boeing 737 MAX 8 made a sharp descent from 33,000 feet to 17,000 feet and was diverted to Tabuk, Saudi Arabia.",
+        "Israel scrambled warplanes near the Jordanian border amid fears of a potential hijacking.",
+        "Passengers and crew members quickly intervened, neutralized the attacker, and restrained him using zip ties and headphone cords.",
+        "Israeli PM Benjamin Netanyahu praised Captain Machchhar's extraordinary bravery for helping prevent a major disaster.",
+        "Saudi authorities arrested the attacker and launched an investigation into the incident."
+      ],
+      "key_facts": [
+        "Flight Number: Flydubai flight FZ1073",
+        "Route: Dubai to Tel Aviv",
+        "Aircraft: Boeing 737 MAX 8",
+        "Injured Indian Pilot: Smit Machchhar",
+        "Landing Location: Tabuk, Saudi Arabia",
+        "Passenger Count Mentioned: 174 people"
+      ],
+      "key_locations": [
+        "Dubai",
+        "Tel Aviv",
+        "Tabuk",
+        "Saudi Arabia",
+        "Jordanian border"
+      ],
+      "important_dates": [
+        "Wednesday"
+      ],
+      "exam_relevance": [
+        "Not applicable as exam_corner is false for general international news."
+      ],
+      "upsc_analysis": "The event highlights international aviation security protocols, geopolitical dimensions in the Middle East involving regional flight diversions, and bilateral cooperation in managing emergency situations.",
+      "causes": [
+        "An unexpected violent altercation and stabbing inside the cockpit by the first officer."
+      ],
+      "impacts": [
+        "Emergency diversion of the aircraft to Saudi Arabia.",
+        "Scrambling of Israeli warplanes.",
+        "Hospitalization of the injured pilots.",
+        "Arrest of the attacker by Saudi authorities."
+      ],
+      "challenges": [
+        "Ensuring aviation safety and cockpit security against insider threats.",
+        "Managing international emergency flight diversions across geopolitical boundaries."
+      ],
+      "government_steps": [
+        "Saudi authorities arrested the offending pilot and launched a probe.",
+        "Authorities are working to assist passengers and bring them home."
+      ],
+      "constitutional_or_policy_link": [
+        "International aviation safety conventions and protocols."
+      ],
+      "way_forward": [
+        "Strengthening cockpit security protocols and psychological screening for flight crew globally."
+      ],
+      "mains_notes": "Flight FZ1073 incident underscores the critical importance of crew resource management, cockpit security, and international cooperation during in-flight emergencies.",
+      "mains_questions": [
+        "Analyze the security implications of in-flight cockpit incidents for international aviation."
+      ],
+      "takeaway": "Indian pilot Smit Machchhar was praised for his bravery after surviving a cockpit attack on a Flydubai flight that safely diverted to Saudi Arabia.",
+      "prelims_facts": [
+        "Flight FZ1073 operated between Dubai and Tel Aviv.",
+        "The aircraft involved was a Boeing 737 MAX 8."
+      ],
+      "vocabulary": [
+        {
+          "word": "Hijacking",
+          "meaning_hindi": "अपहरण"
+        },
+        {
+          "word": "Scuffle",
+          "meaning_hindi": "हाथापाई"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Smit Machchhar",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Smit_Machchhar"
+        },
+        {
+          "name": "Benjamin Netanyahu",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Benjamin_Netanyahu"
+        },
+        {
+          "name": "Tabuk",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Tabuk"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "फ्लाईदुबई उड़ान घटना: इजरायल के नेतन्याहू ने भारतीय पायलट स्मित मच्छर की बहादुरी को सराहा",
+        "story_lead": "दुबई से तेल अवीव जा रही फ्लाईदुबई की उड़ान के दौरान भारतीय पायलट-इन-कमांड स्मित मच्छर को चाकू मार दिए जाने के बाद विमान को सऊदी अरब में आपातकालीन लैंडिंग करनी पड़ी। इजरायली प्रधानमंत्री बेंजामिन नेतन्याहू ने बड़ी आपदा टालने में कैप्टन मच्छर और यात्रियों के साहस की प्रशंसा की है।",
+        "full_article_text": "दुबई से इजरायल के तेल अवीव जाने वाली फ्लाईदुबई की उड़ान FZ1073 में एक गंभीर सुरक्षा घटना घटी। उड़ान के दौरान सह-पायलट द्वारा भारतीय नागरिक और पायलट-इन-कमांड स्मित मच्छर पर कथित तौर पर चाकू से हमला किया गया। आपातकालीन चेतावनी के बाद बोइंग 737 मैक्स 8 विमान 33,000 फीट से नीचे उतरा और जॉर्डन सीमा के पास मुड़ गया, जिससे अपहरण की आशंका के कारण इजरायल ने अपने लड़ाकू विमान भेजे। अंततः विमान ने संकट कॉल के लगभग एक घंटे बाद उत्तरपश्चिमी सऊदी अरब के तबूक में सुरक्षित लैंडिंग की। यात्रियों और चालक दल के सदस्यों ने कॉकपिट का दरवाजा खुलने के बाद हमलावर को काबू में किया। इजरायली प्रधानमंत्री बेंजामिन नेतन्याहू ने कैप्टन मच्छर की असाधारण बहादुरी को सलाम किया और कहा कि गंभीर रूप से घायल होने के बावजूद उन्होंने लड़ाई लड़ी, कॉकपिट का दरवाजा खोला और यात्रियों को हमलावर पर काबू पाने में मदद की। सऊदी अधिकारियों ने हमलावर पायलट को गिरफ्तार कर लिया है और जांच जारी है।",
+        "background_context": "यह घटना फ्लाईदुबई की उड़ान FZ1073 से संबंधित है जो दुबई से तेल अवीव जा रही थी और कॉकपिट में विवाद के बाद सऊदी अरब के तबूक में उतारी गई।",
+        "bullet_points": [
+          "फ्लाईदुबई उड़ान FZ1073 के कॉकपिट में पायलटों के बीच हिंसक झड़प हुई।",
+          "भारतीय नागरिक स्मित मच्छर को सह-पायलट ने चाकू मारा।",
+          "विमान को सऊदी अरब के तबूक में सुरक्षित उतारा गया।",
+          "इजरायल ने अपहरण के डर से लड़ाकू विमान भेजे थे।",
+          "यात्रियों और चालक दल ने हमलावर को तुरंत काबू में किया।",
+          "प्रधानमंत्री नेतन्याहू ने कैप्टन मच्छर के साहस की सराहना की।"
+        ],
+        "key_facts": [
+          "उड़ान संख्या: फ्लाईदुबई FZ1073",
+          "मार्ग: दुबई से तेल अवीव",
+          "घायल भारतीय पायलट: स्मित मच्छर",
+          "लैंडिंग स्थल: तबूक, सऊदी अरब"
+        ],
+        "key_locations": [
+          "दुबई",
+          "तेल अवीव",
+          "तबूक",
+          "सऊदी अरब"
+        ],
+        "important_dates": [
+          "बुधवार"
+        ]
+      },
+      "quiz": {
+        "question": "Which Indian pilot was reportedly stabbed during the Flydubai flight FZ1073 incident?",
+        "options": [
+          "Smit Machchhar",
+          "Rajesh Sharma",
+          "Amit Kumar",
+          "Vikram Batra"
+        ],
+        "correct_answer": "Smit Machchhar",
+        "explanation": "The pilot-in-command stabbed during the Flydubai flight FZ1073 incident was identified as Indian national Smit Machchhar."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/flydubai-flight-fz1073-emergency-landing-live-updates-hijacking-indian-pilot-smit-machchhar-israel-tel-aviv-saudi-101790775740291.html",
+      "published_date": "2026-10-01",
+      "id": 29,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/flydubai_incident_1790778585555_kxVx_1790778608144_moNY_96da0bb1-3aff-4a42-9665-a932b563113f_11cZ.jpg",
+      "added_at": "2026-10-01T03:10:55.091712+05:30"
+    },
+    {
+      "category": "World",
+      "exam_corner": false,
+      "headline": "PM Modi and US President Trump Review Bilateral Ties and Global Peace",
+      "story_lead": "Prime Minister Narendra Modi recently had a productive conversation with US President Donald Trump to review bilateral cooperation across trade, defence, energy, and critical technologies. Both leaders agreed to maintain close engagement to advance their Comprehensive Global Strategic Partnership. Meanwhile, External Affairs Minister S Jaishankar noted a shift toward a multipolar world where countries engage with multiple partners.",
+      "full_article_text": "Prime Minister Narendra Modi and US President Donald Trump reviewed bilateral cooperation in areas such as trade, defence, energy, and critical technologies during a recent conversation. In a post on X, PM Modi stated that the two sides agreed to maintain close engagement to advance their Comprehensive Global Strategic Partnership. The leaders also exchanged views on regional and international issues, including ongoing efforts to advance global peace and security. This interaction followed remarks by External Affairs Minister S Jaishankar at an event organized by the Asia Society in New York, where he discussed global diplomatic shifts. Jaishankar remarked that the United States previously expected India to limit its diplomatic options and focus primarily on Washington. However, he noted that this expectation has given way to a more open approach where countries are openly dealing with multiple partners, reflecting a broader movement toward a multipolar world.",
+      "background_context": "External Affairs Minister S Jaishankar spoke at an event organized by the Asia Society in New York alongside Daniel Russel, former US Assistant Secretary of State for East Asian and Pacific Affairs, addressing shifts in global diplomacy and the transition toward a multipolar world.",
+      "bullet_points": [
+        "Prime Minister Narendra Modi held a conversation with US President Donald Trump.",
+        "Both leaders reviewed cooperation in trade, defence, energy, and critical technologies.",
+        "The leaders agreed to maintain close engagement to take their Comprehensive Global Strategic Partnership forward.",
+        "Discussions included regional and international issues focused on global peace and security.",
+        "External Affairs Minister S Jaishankar commented on global diplomatic shifts toward multipolarity at an Asia Society event in New York."
+      ],
+      "key_facts": [
+        "PM Modi and US President Donald Trump discussed bilateral cooperation in trade, defence, energy, and critical technologies.",
+        "External Affairs Minister S Jaishankar spoke at the Asia Society in New York.",
+        "Daniel Russel is a former US Assistant Secretary of State for East Asian and Pacific Affairs."
+      ],
+      "key_locations": [
+        "India",
+        "United States",
+        "New York"
+      ],
+      "important_dates": [
+        "Wednesday"
+      ],
+      "exam_relevance": [
+        "UPSC Mains Paper II - Bilateral, regional and global groupings and agreements involving India and/or affecting India's interests."
+      ],
+      "upsc_analysis": "The interaction between the leadership of India and the United States highlights the ongoing evolution of the Comprehensive Global Strategic Partnership. EAM S Jaishankar's remarks regarding multipolarity reflect India's strategic autonomy and independent foreign policy stance in dealing with multiple global partners rather than being confined to a single bloc.",
+      "causes": [
+        "Evolving global geopolitical dynamics and a shift toward a multipolar world order.",
+        "Need for continued bilateral cooperation in trade, defence, energy, and critical technologies between India and the US."
+      ],
+      "impacts": [
+        "Strengthening of the Comprehensive Global Strategic Partnership between India and the United States.",
+        "Greater strategic flexibility for India in engaging with multiple global partners."
+      ],
+      "challenges": [
+        "Navigating diverse diplomatic expectations and global security issues."
+      ],
+      "government_steps": [
+        "Maintaining high-level communication between the Indian Prime Minister and the US President to review strategic and bilateral ties."
+      ],
+      "constitutional_or_policy_link": [
+        "India's foreign policy principle of strategic autonomy."
+      ],
+      "way_forward": [
+        "Continuing close diplomatic engagement and expanding cooperation in trade, defence, and critical technologies."
+      ],
+      "mains_notes": "India-US relations continue to develop through the Comprehensive Global Strategic Partnership, covering trade, defence, and critical technologies. Recent high-level reviews underscore mutual cooperation on global peace. Concurrently, India's articulation of a multipolar world highlights its commitment to strategic autonomy and diversified diplomatic engagements.",
+      "mains_questions": [
+        "Discuss the significance of the Comprehensive Global Strategic Partnership in India-US relations.",
+        "How does India's foreign policy reflect the transition toward a multipolar world order?"
+      ],
+      "takeaway": "PM Modi and US President Donald Trump reviewed bilateral ties and global security, while EAM Jaishankar highlighted the global shift toward multipolarity.",
+      "prelims_facts": [
+        "Comprehensive Global Strategic Partnership exists between India and the United States."
+      ],
+      "vocabulary": [
+        {
+          "word": "Multipolarity",
+          "meaning_hindi": "बहुध्रुवीयता"
+        },
+        {
+          "word": "Bilateral",
+          "meaning_hindi": "द्विपक्षीय"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Narendra Modi",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Narendra_Modi"
+        },
+        {
+          "name": "Donald Trump",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Donald_Trump"
+        },
+        {
+          "name": "S. Jaishankar",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=S._Jaishankar"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "पीएम मोदी और राष्ट्रपति ट्रंप ने द्विपक्षीय संबंधों और वैश्विक शांति की समीक्षा की",
+        "story_lead": "प्रधान मंत्री नरेंद्र मोदी ने हाल ही में अमेरिकी राष्ट्रपति डोनाल्ड ट्रम्प के साथ व्यापार, रक्षा, ऊर्जा और महत्वपूर्ण प्रौद्योगिकियों में द्विपक्षीय सहयोग की समीक्षा के लिए बातचीत की। दोनों नेता अपनी व्यापक वैश्विक रणनीतिक साझेदारी को आगे बढ़ाने के लिए घनिष्ठ जुड़ाव बनाए रखने पर सहमत हुए।",
+        "full_article_text": "प्रधान मंत्री नरेंद्र मोदी और अमेरिकी राष्ट्रपति डोनाल्ड ट्रम्प ने व्यापार, रक्षा, ऊर्जा और महत्वपूर्ण प्रौद्योगिकियों जैसे क्षेत्रों में द्विपक्षीय सहयोग की समीक्षा की। एक्स पर एक पोस्ट में, पीएम मोदी ने कहा कि दोनों पक्ष व्यापक वैश्विक रणनीतिक साझेदारी को आगे बढ़ाने के लिए घनिष्ठ जुड़ाव बनाए रखने पर सहमत हुए हैं।",
+        "background_context": "विदेश मंत्री एस जयशंकर ने न्यूयॉर्क में एशिया सोसाइटी द्वारा आयोजित एक कार्यक्रम में वैश्विक कूटनीति में बदलाव के बारे में बात की।",
+        "bullet_points": [
+          "प्रधान मंत्री नरेंद्र मोदी ने अमेरिकी राष्ट्रपति डोनाल्ड ट्रम्प से बातचीत की।",
+          "दोनों नेताओं ने व्यापार, रक्षा और ऊर्जा पर सहयोग की समीक्षा की।",
+          "विदेश मंत्री एस जयशंकर ने न्यूयॉर्क में बयान दिया।"
+        ],
+        "key_facts": [
+          "पीएम मोदी और डोनाल्ड ट्रंप ने द्विपक्षीय सहयोग पर चर्चा की।"
+        ],
+        "key_locations": [
+          "भारत",
+          "संयुक्त राज्य अमेरिका",
+          "न्यूयॉर्क"
+        ],
+        "important_dates": [
+          "बुधवार"
+        ]
+      },
+      "quiz": {
+        "question": "Which of the following areas were reviewed during the conversation between PM Modi and US President Donald Trump?",
+        "options": [
+          "Trade, defence, energy, and critical technologies",
+          "Space exploration only",
+          "Agricultural exports exclusively",
+          "Cultural exchanges only"
+        ],
+        "correct_answer": "Trade, defence, energy, and critical technologies",
+        "explanation": "PM Modi and US President Donald Trump reviewed bilateral cooperation in trade, defence, energy, critical technologies, and other areas during their conversation."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/pm-modi-speaks-to-trump-review-bilateral-ties-discuss-global-peace-trade-defence-101790776549926.html",
+      "published_date": "2026-10-01",
+      "id": 28,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/modi_trump_1790786040808_1gf1_1790786040937_aP7Y_1a06a095-0b94-473a-859b-5a2e9cd1c250_vyTW.jpg",
+      "added_at": "2026-10-01T03:10:55.091712+05:30"
+    },
+    {
+      "category": "Science & Technology",
+      "exam_corner": false,
+      "headline": "Arunachal: Vehicles torched, MLA’s residence vandalised during Siang dam project protests",
+      "story_lead": "Protests against Arunachal Pradesh's proposed Siang Upper Multipurpose Project intensified as demonstrators clashed with security forces, vandalised a local MLA's residence, and set vehicles on fire. The agitation centers around opposition to survey activities for the over 10,000-MW hydropower project on the Siang river. Chief Minister Pema Khandu maintained that the pre-feasibility report is intended only to establish technical feasibility.",
+      "full_article_text": "Protests against the deployment of central paramilitary forces for surveys regarding the proposed over 10,000-MW Siang Upper Multipurpose Project (SUMP) on the Siang river at Beging in Arunachal Pradesh’s East Siang district intensified. Demonstrators blocked roads, clashed with security personnel, and allegedly vandalised the residence of Tuting-Yingkiong MLA Alo Libang during Chief Minister Pema Khandu’s visit to Yingkiong. The agitation disrupted traffic along the Yingkiong-Komkar-Geku stretch and towards Dite Dime. Protesters erected blockades, resulting in the vandalisation of the MLA's premises, damage to government vehicles, and a police vehicle being set ablaze near Dite Dime. Security personnel intercepted protest rallies, leading to scuffles. Protesters also restricted movement outside a hotel where Deputy Chief Minister Chowna Mein and other ministers were staying. Upper Siang deputy commissioner Ashok Tajo confirmed that Khandu completed his official meeting before leaving the district by helicopter. Opposition to the PFR has continued in Geku, Komkar, and adjoining areas, driven by concerns over potential displacement of at least 100,000 residents, loss of ancestral and customary land, livelihoods, cultural identity, and environmental consequences. The Siang Indigenous Farmers’ Forum (SIFF) declined an invitation for talks during Khandu's visit. Chief Minister Khandu maintained that the pre-feasibility report (PFR) does not amount to approving construction and is meant to establish technical feasibility over an expected three-month period. The state government has constituted an Empowered High-Level Committee to oversee the process. Meanwhile, in December 2024, China approved a massive hydropower dam on the Tibetan plateau, raising downstream concerns.",
+      "background_context": "The protests involve local communities, notably sections of the indigenous Adi community opposing the Siang Upper Multipurpose Project (SUMP) in Arunachal Pradesh. The project involves pre-feasibility report (PFR) surveys for a 10,000-MW hydropower initiative on the Siang river. Additionally, international context includes China's December 2024 approval of a massive hydropower dam on the lower reaches of the Yarlung Tsangpo on the Tibetan plateau.",
+      "bullet_points": [
+        "Protests intensified in Arunachal Pradesh against the proposed over 10,000-MW Siang Upper Multipurpose Project (SUMP).",
+        "Demonstrators blocked roads, clashed with security forces, vandalised MLA Alo Libang's residence, and set a police vehicle ablaze.",
+        "Chief Minister Pema Khandu stated that the PFR survey is only to check technical feasibility, not to approve construction.",
+        "Locals and organisations like the Siang Indigenous Farmers’ Forum (SIFF) fear displacement of 100,000 residents and loss of cultural identity.",
+        "An Empowered High-Level Committee has been formed to oversee the PFR process.",
+        "China's December 2024 approval of a massive dam on the Yarlung Tsangpo adds to regional water and infrastructure concerns."
+      ],
+      "key_facts": [
+        "Project involved: Siang Upper Multipurpose Project (SUMP)",
+        "Capacity: Over 10,000-MW",
+        "Estimated affected residents: At least 100,000",
+        "Key locations mentioned: Yingkiong, Beging, Geku, Komkar, Dite Dime, East Siang district",
+        "Chief Minister of Arunachal Pradesh: Pema Khandu",
+        "MLA whose residence was vandalised: Alo Libang"
+      ],
+      "key_locations": [
+        "Arunachal Pradesh",
+        "Siang river",
+        "Beging",
+        "East Siang district",
+        "Yingkiong",
+        "Dite Dime",
+        "Geku",
+        "Komkar",
+        "Tibetan plateau"
+      ],
+      "important_dates": [
+        "December 2024",
+        "September 28",
+        "September 29-30"
+      ],
+      "exam_relevance": [
+        "Prelims: Geography of Arunachal Pradesh, Siang river (Brahmaputra system), hydropower projects in Northeast India.",
+        "Mains: General Studies Paper III (Infrastructure: Energy, Environmental Impact Assessment, Internal Security/Protests, Border Area Development)."
+      ],
+      "upsc_analysis": "The tensions in Arunachal Pradesh highlight the complex trade-offs between large-scale infrastructure and hydropower development for national energy security versus localized environmental concerns, displacement risks, and indigenous rights. From a policy perspective, engaging local stakeholders through transparent dialogue and comprehensive social impact assessments is crucial to mitigating conflict.",
+      "causes": [
+        "Opposition to survey activities for the Siang Upper Multipurpose Project (SUMP).",
+        "Deployment of central paramilitary forces for pre-feasibility report surveys.",
+        "Fears regarding the displacement of at least 100,000 residents.",
+        "Concerns over loss of ancestral land, livelihoods, cultural identity, and environmental degradation."
+      ],
+      "impacts": [
+        "Vandalism of a local MLA's residence and government property.",
+        "Disruption of traffic and road blockades in East Siang district.",
+        "Clashes between protesters and security personnel.",
+        "Restriction of movement for state ministers and officials."
+      ],
+      "challenges": [
+        "Bridging the trust deficit between the state government and indigenous communities.",
+        "Balancing energy requirements with environmental and social sustainability.",
+        "Managing local protests and law-and-order issues in border regions."
+      ],
+      "government_steps": [
+        "Chief Minister Pema Khandu visited Yingkiong to engage and clarify that PFR is only for technical feasibility.",
+        "Constitution of an Empowered High-Level Committee headed by minister Ojing Tasing to coordinate the PFR process.",
+        "Deployment of security forces and administration response via Deputy Commissioner Ashok Tajo."
+      ],
+      "constitutional_or_policy_link": [
+        "Protection of tribal rights, customary lands, and indigenous heritage under constitutional provisions and regional administrative frameworks."
+      ],
+      "way_forward": [
+        "Initiating structured, transparent dialogues with bodies like the Siang Indigenous Farmers’ Forum (SIFF).",
+        "Ensuring rigorous environmental and social impact assessments with public consultations.",
+        "Addressing rehabilitation and resettlement concerns transparently before advancing project stages."
+      ],
+      "mains_notes": "Large-scale hydropower projects in ecologically sensitive regions like Arunachal Pradesh require balancing national energy goals with local socio-environmental concerns. Protests against the Siang Upper Multipurpose Project underscore the necessity of inclusive stakeholder consultation and transparent communication regarding pre-feasibility studies.",
+      "mains_questions": [
+        "Examine the socio-environmental challenges associated with large hydropower projects in Northeast India with reference to the recent protests in Arunachal Pradesh.",
+        "Discuss the importance of transparent public consultations and impact assessments in managing infrastructure-related agitations."
+      ],
+      "takeaway": "Protests against the Siang hydropower project in Arunachal Pradesh highlight local concerns over displacement and environmental impact, prompting calls for transparent dialogue.",
+      "prelims_facts": [
+        "The Siang river is a major tributary of the Brahmaputra river system.",
+        "The Siang Upper Multipurpose Project (SUMP) is estimated to have a capacity of over 10,000-MW.",
+        "Yingkiong is the headquarters of the Upper Siang district in Arunachal Pradesh."
+      ],
+      "vocabulary": [
+        {
+          "word": "Vandalised",
+          "meaning_hindi": "तोड़फोड़ करना"
+        },
+        {
+          "word": "Feasibility",
+          "meaning_hindi": "व्यावहार्यता"
+        },
+        {
+          "word": "Displacement",
+          "meaning_hindi": "विस्थापन"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Pema Khandu",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Pema+Khandu"
+        },
+        {
+          "name": "Siang river",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Siang+river"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "अरुणाचल: सियांग बांध परियोजना के विरोध प्रदर्शन के दौरान वाहन फूंके गए, विधायक का आवास तोड़ा गया",
+        "story_lead": "अरुणाचल प्रदेश की प्रस्तावित 10,000-मेगावाट से अधिक क्षमता वाली सियांग बांध परियोजना के खिलाफ विरोध प्रदर्शन तेज हो गए हैं। इस दौरान प्रदर्शनकारियों ने सुरक्षा बलों के साथ झड़प की, एक स्थानीय विधायक के आवास में तोड़फोड़ की और वाहनों में आग लगा दी।",
+        "full_article_text": "अरुणाचल प्रदेश के पूर्वी सियांग जिले के बेगिंग में सियांग नदी पर एक पनबिजली परियोजना के लिए केंद्रीय अर्धसैनिक बलों की तैनाती के खिलाफ विरोध प्रदर्शन तेज हो गए हैं। मुख्यमंत्री पेमा खांडू की यिंगकियोंग यात्रा के दौरान प्रदर्शनकारियों ने सड़कें जाम कीं, सुरक्षा कर्मियों के साथ झड़प की और स्थानीय विधायक के आवास में कथित तौर पर तोड़फोड़ की।",
+        "background_context": "इस विरोध प्रदर्शन में स्थानीय समुदाय, विशेषकर स्वदेशी आदि समुदाय के लोग शामिल हैं, जो सियांग अपर बहुउद्देश्यीय परियोजना (SUMP) का विरोध कर रहे हैं।",
+        "bullet_points": [
+          "अरुणाचल प्रदेश में सियांग अपर बहुउद्देश्यीय परियोजना के खिलाफ विरोध प्रदर्शन तेज हो गए हैं।",
+          "प्रदर्शनकारियों ने सड़क जाम की, सुरक्षा बलों से झड़प की और विधायक एलो लिबांग के आवास में तोड़फोड़ की।",
+          "मुख्यमंत्री पेमा खांडू ने स्पष्ट किया कि प्री-फिजिबिलिटी रिपोर्ट सर्वेक्षण का उद्देश्य केवल तकनीकी व्यावहार्यता जांचना है।",
+          "चीन द्वारा तिब्बती पठार पर विशाल बांध को मंजूरी दिए जाने से भी क्षेत्रीय चिंताएं बढ़ी हैं।"
+        ],
+        "key_facts": [
+          "प्रस्तावित परियोजना: सियांग अपर बहुउद्देश्यीय परियोजना (SUMP)",
+          "क्षमता: 10,000-MW से अधिक",
+          "अरुणाचल प्रदेश के मुख्यमंत्री: पेमा खांडू"
+        ],
+        "key_locations": [
+          "अरुणाचल प्रदेश",
+          "सियांग नदी",
+          "यिंगकियोंग",
+          "पूर्वी सियांग जिला"
+        ],
+        "important_dates": [
+          "दिसंबर 2024",
+          "28 सितंबर"
+        ]
+      },
+      "quiz": {
+        "question": "Which proposed hydropower project in Arunachal Pradesh recently witnessed intense protests and clashes?",
+        "options": [
+          "Siang Upper Multipurpose Project (SUMP)",
+          "Lower Subansiri Hydroelectric Project",
+          "Dibang Multipurpose Project",
+          "Kameng Hydroelectric Project"
+        ],
+        "correct_answer": "Siang Upper Multipurpose Project (SUMP)",
+        "explanation": "The recent protests, road blockades, and clashes in East Siang district are against the proposed over 10,000-MW Siang Upper Multipurpose Project (SUMP) and survey activities."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/arunachal-vehicles-torched-mla-s-residence-vandalised-during-siang-dam-project-protests-101790778587864.html",
+      "published_date": "2026-10-01",
+      "id": 27,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/Wednesday-s-unrest-came-two-days-after-villagers-c_1790778580104_rr5c.jpg",
+      "added_at": "2026-10-01T03:10:55.091712+05:30"
+    },
+    {
+      "category": "Sports",
+      "exam_corner": false,
+      "headline": "Gola Leads Googoo in Exit Poll Projection for 'Fattest Dog of Delhi' Election",
+      "story_lead": "An exit poll conducted during the finals of the 'Fattest Dog of Delhi' contest showed Gola leading against competitor Googoo. The informal online and offline voting event has captured significant public attention across various voting stations in Delhi.",
+      "full_article_text": "The 'Fattest Dog of Delhi' election reached its finale stage with voting booths opening from 3 pm to 7 pm across designated stations, supplementing an extensive online poll conducted on Instagram. An exit poll conducted by Hindustan Times at the Vasant Vihar voting station indicated a strong lead for the late Gola (also known as Kebab or Rajpal Singh) over competitor Googoo. Out of 49 voters surveyed at the station, a significant majority cast their weight behind Gola, while online polling figures similarly reflected a strong lead for Gola against Googoo. The competition, which featured numerous canine contenders from across the national capital, drew considerable crowds, protests from supporters of other contenders, and active participation from residents.",
+      "background_context": "The 'Fattest Dog of Delhi' competition is an informal public engagement event hosted via social media and physical voting stations across various localities in Delhi, drawing widespread participation and debate among residents and dog enthusiasts.",
+      "bullet_points": [
+        "Voting for the finals of the 'Fattest Dog of Delhi' contest took place between 3 pm and 7 pm.",
+        "An exit poll at the Vasant Vihar voting station showed Gola leading significantly over Googoo.",
+        "Online polling on Instagram also showed Gola leading with a substantial percentage of votes.",
+        "Gola competed posthumously after passing away ahead of the finale, following previous rounds against other local contenders.",
+        "Supporters of various other contenders staged protests or expressed preferences for alternative canine participants."
+      ],
+      "key_facts": [
+        "Voting booths for the final round were open from 3 pm to 7 pm.",
+        "An exit poll surveying 49 voters at Vasant Vihar showed 38 backing Gola and 11 backing Googoo.",
+        "Online voting figures at 7 pm indicated 71% of votes for Gola and 29% for Googoo.",
+        "Gola competed posthumously following success in previous rounds against other contestants like Hero."
+      ],
+      "key_locations": [
+        "Delhi",
+        "Vasant Vihar",
+        "SDA Market",
+        "Saket",
+        "Kamla Nagar",
+        "Malviya Nagar"
+      ],
+      "important_dates": [
+        "Event timeline occurred over a week leading up to the final polling day."
+      ],
+      "exam_relevance": [
+        "Not applicable as this is a lighthearted human-interest and local culture story under the Sports/General category."
+      ],
+      "upsc_analysis": "This story highlights urban community engagement, internet culture, and informal social trends in the national capital. It carries no direct relevance to administrative, economic, or policy-related civil services syllabus requirements.",
+      "causes": [
+        "Public enthusiasm and social media engagement surrounding informal community contests in Delhi."
+      ],
+      "impacts": [
+        "High public participation, spirited debates, and localized community engagement among residents and college students."
+      ],
+      "challenges": [
+        "Managing divergent opinions and debates regarding the eligibility and status of posthumous or competing canine finalists."
+      ],
+      "government_steps": [
+        "None applicable as this is a non-governmental, informal social media contest."
+      ],
+      "constitutional_or_policy_link": [
+        "None applicable."
+      ],
+      "way_forward": [
+        "Continued community-driven recreational events that foster local engagement and lighthearted social interaction."
+      ],
+      "mains_notes": "The article covers an informal public social media contest in Delhi centered around a popular community-voted canine competition, reflecting local urban culture and digital engagement trends without administrative significance.",
+      "mains_questions": [
+        "Discuss the role of social media and informal digital platforms in driving community engagement in urban areas."
+      ],
+      "takeaway": "Gola emerged as the frontrunner in exit polls for the 'Fattest Dog of Delhi' contest against Googoo.",
+      "prelims_facts": [
+        "The 'Fattest Dog of Delhi' contest utilized both Instagram online voting and physical voting booths."
+      ],
+      "vocabulary": [
+        {
+          "word": "Posthumous",
+          "meaning_hindi": "मरणोपरांत"
+        },
+        {
+          "word": "Landslide",
+          "meaning_hindi": "भारी बहुमत"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Delhi",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Delhi"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "'दिल्ली के सबसे मोटे कुत्ते' के चुनाव के एक्जिट पोल में गूगल पर भारी पड़े गोला",
+        "story_lead": "'दिल्ली के सबसे मोटे कुत्ते' प्रतियोगिता के फाइनल के दौरान आयोजित एक एक्जिट पोल में प्रतियोगी गूगल के मुकाबले गोला आगे रहे।",
+        "full_article_text": "'दिल्ली के सबसे मोटे कुत्ते' का चुनाव अपने अंतिम चरण में पहुंच गया, जिसमें मतदान केंद्र दोपहर 3 बजे से शाम 7 बजे तक खुले रहे। इंस्टाग्राम पर ऑनलाइन मतदान के साथ-साथ वसंत विहार में एक मतदान केंद्र पर एचटी द्वारा किए गए एक्जिट पोल से पता चला कि दिवंगत गोला (कबाब या राजपाल सिंह के रूप में भी जाने जाते हैं) गूगल के मुकाबले आगे चल रहे हैं।",
+        "background_context": "'दिल्ली के सबसे मोटे कुत्ते' प्रतियोगिता एक अनौपचारिक सार्वजनिक जुड़ाव कार्यक्रम है जो सोशल मीडिया और दिल्ली के विभिन्न इलाकों में फैले भौतिक मतदान केंद्रों के माध्यम से आयोजित किया जाता है।",
+        "bullet_points": [
+          "दिल्ली के सबसे मोटे कुत्ते प्रतियोगिता के फाइनल के लिए मतदान दोपहर 3 बजे से शाम 7 बजे के बीच हुआ।",
+          "वसंत विहार में एक्जिट पोल से गोला की बढ़त का पता चला।",
+          "इंस्टाग्राम पर ऑनलाइन मतदान में भी गोला को भारी समर्थन मिला।"
+        ],
+        "key_facts": [
+          "मतदान केंद्र दोपहर 3 बजे से शाम 7 बजे तक खुले रहे।",
+          "वसंत विहार में 49 मतदाताओं में से 38 ने गोला का समर्थन किया।"
+        ],
+        "key_locations": [
+          "दिल्ली",
+          "वसंत विहार",
+          "साकेत"
+        ],
+        "important_dates": [
+          "हालिया प्रतियोगिता सप्ताह"
+        ]
+      },
+      "quiz": {
+        "question": "Which canine candidate held the lead in the exit poll projection for the 'Fattest Dog of Delhi' election?",
+        "options": [
+          "Googoo",
+          "Gola",
+          "Tara Singh",
+          "Gajinder"
+        ],
+        "correct_answer": "Gola",
+        "explanation": "An exit poll conducted by Hindustan Times at Vasant Vihar and online polling indicated that Gola held a landslide lead over Googoo."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/delhis-fattest-dog-election-gola-kebab-googoo-aku-voting-election-battle-saket-sda-market-101790777914456.html",
+      "published_date": "2026-10-01",
+      "id": 26,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/jbkjj_1790778278411_SIKL_1790778290702_sp2U_134182e7-c4ce-4322-9ba9-1626c8cf3ea6_LASv.jpg",
+      "added_at": "2026-10-01T03:10:55.091712+05:30"
+    },
+    {
+      "category": "Science & Technology",
+      "exam_corner": false,
+      "headline": "Bank holidays in October 2026: Full list of public, festival holidays across India",
+      "story_lead": "October 2026 will see multiple bank holidays across India due to national and regional festivals. According to the Reserve Bank of India's holiday calendar, branches will remain closed on several days, including October 2 for Mahatma Gandhi Jayanti.",
+      "full_article_text": "October 2026 will bring a series of bank holidays across India, with branches set to remain shut on several days due to national and regional festivals. While some holidays will apply nationwide, others will be limited to specific states and cities, particularly during the Dussehra and Durga Puja period. According to the Reserve Bank of India's holiday calendar, banks will remain closed on October 2 for Mahatma Gandhi Jayanti, followed by a series of regional holidays later in the month. Customers planning branch visits should check the dates applicable to their city. In addition, all scheduled and non-scheduled banks will remain closed on all Sundays, and the second and fourth Saturdays of the month.",
+      "background_context": "The Reserve Bank of India regulates bank operating schedules and releases annual holiday calendars specifying national and regional closures for scheduled and non-scheduled banks.",
+      "bullet_points": [
+        "All scheduled and non-scheduled banks will be closed on all Sundays and the second and fourth Saturdays of October 2026.",
+        "Banks will remain closed on October 2 for Mahatma Gandhi Jayanti.",
+        "Holiday schedules include both nationwide public holidays and regional festival holidays.",
+        "Dussehra and Durga Puja periods will see region-specific branch closures.",
+        "Customers are advised to check city-specific applicability before planning branch visits."
+      ],
+      "key_facts": [
+        "Banks will remain closed on October 2, 2026, for Mahatma Gandhi Jayanti.",
+        "All scheduled and non-scheduled banks observe closures on Sundays and the second and fourth Saturdays.",
+        "Regional holidays vary by state and city, particularly during Dussehra and Durga Puja."
+      ],
+      "key_locations": [
+        "India"
+      ],
+      "important_dates": [
+        "October 2, 2026"
+      ],
+      "exam_relevance": [
+        "General awareness and banking operations context"
+      ],
+      "upsc_analysis": "Understanding banking schedules and regulatory calendars under the Reserve Bank of India is a fundamental aspect of the Indian financial and economic system.",
+      "causes": [
+        "Observance of national holidays like Mahatma Gandhi Jayanti",
+        "Regional and national religious and cultural festivals such as Dussehra and Durga Puja",
+        "Standard weekly offs including Sundays and the second and fourth Saturdays"
+      ],
+      "impacts": [
+        "Temporary pause in physical branch banking operations",
+        "Encouragement of digital and online banking alternatives for customers"
+      ],
+      "challenges": [
+        "Planning financial transactions around clustered holiday schedules"
+      ],
+      "government_steps": [
+        "Release of the official Reserve Bank of India holiday calendar"
+      ],
+      "constitutional_or_policy_link": [
+        "Reserve Bank of India regulatory framework"
+      ],
+      "way_forward": [
+        "Advising bank customers to utilize digital channels during extended holiday periods"
+      ],
+      "mains_notes": "October 2026 bank holiday schedules involve national observances like Mahatma Gandhi Jayanti and regional festival closures regulated by the Reserve Bank of India.",
+      "mains_questions": [
+        "How do scheduled bank holidays impact regular financial transactions and public convenience in India?"
+      ],
+      "takeaway": "Banks across India will observe multiple closures in October 2026 due to Mahatma Gandhi Jayanti, regional festivals, and regular weekend offs as per the Reserve Bank of India calendar.",
+      "prelims_facts": [
+        "Banks are closed on the second and fourth Saturdays of the month.",
+        "October 2 is observed as Mahatma Gandhi Jayanti."
+      ],
+      "vocabulary": [
+        {
+          "word": "Schedule",
+          "meaning_hindi": "अनुसूची"
+        },
+        {
+          "word": "Regional",
+          "meaning_hindi": "क्षेत्रीय"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Reserve Bank of India",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Reserve%20Bank%20of%20India"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "अक्टूबर 2026 में बैंक अवकाश: पूरे भारत में सार्वजनिक और तस्र्यों की छुट्टियों की पूरी सूची",
+        "story_lead": "अक्टूबर 2026 में राष्ट्रीय और क्षेत्रीय त्योहारों के कारण पूरे भारत में कई बैंक अवकाश रहेंगे। भारतीय रिजर्व बैंक के अवकाश कैलेंडर के अनुसार, महात्मा गांधी जयंती के लिए 2 अक्टूबर सहित कई दिनों तक शाखाएं बंद रहेंगी।",
+        "full_article_text": "अक्टूबर 2026 में पूरे भारत में कई बैंक अवकाश आएंगे, जिसमें राष्ट्रीय और क्षेत्रीय त्योहारों के कारण कई दिनों तक शाखाएं बंद रहेंगी। जबकि कुछ छुट्टियां देश भर में लागू होंगी, अन्य विशिष्ट राज्यों और शहरों तक सीमित होंगी, विशेष रूप से दशहरा और दुर्गा पूजा की अवधि के दौरान।",
+        "background_context": "भारतीय रिजर्व बैंक बैंकिंग संचालन कार्यक्रम को नियंत्रित करता है और अनुसूचित और गैर-अनुसूचित बैंकों के लिए क्षेत्रीय और राष्ट्रीय अवकाशों को निर्दिष्ट करने वाला कैलेंडर जारी करता है।",
+        "bullet_points": [
+          "अक्टूबर 2026 के सभी रविवार तथा दूसरे और चौथे शनिवार को सभी बैंक बंद रहेंगे।",
+          "महात्मा गांधी जयंती के अवसर पर 2 अक्टूबर को बैंक बंद रहेंगे।"
+        ],
+        "key_facts": [
+          "महात्मा गांधी जयंती के लिए 2 अक्टूबर 2026 को बैंक बंद रहेंगे।"
+        ],
+        "key_locations": [
+          "भारत"
+        ],
+        "important_dates": [
+          "2 अक्टूबर 2026"
+        ]
+      },
+      "quiz": {
+        "question": "Which national holiday falls on October 2, 2026, leading to a bank closure according to the RBI calendar?",
+        "options": [
+          "Republic Day",
+          "Independence Day",
+          "Mahatma Gandhi Jayanti",
+          "Gandhi Jayanti and Diwali"
+        ],
+        "correct_answer": "Mahatma Gandhi Jayanti",
+        "explanation": "According to the Reserve Bank of India holiday calendar, banks will remain closed on October 2 for Mahatma Gandhi Jayanti."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/bank-holidays-in-october-2026-full-list-of-public-festival-holidays-of-the-month-dussehra-diwali-october-calendar-india-101790779942375.html",
+      "published_date": "2026-10-01",
+      "id": 25,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/INDIA-ICICI-BANK-6_1730771896626_1790780440766_NcE2_6e527f0a-d97e-44c1-879a-f1ccf136ea1f_KXhA.jpg",
+      "added_at": "2026-10-01T03:10:55.091712+05:30"
+    },
+    {
+      "category": "Health",
+      "exam_corner": false,
+      "headline": "Religion not under threat in UP, people are: Chandra Shekhar Azad",
+      "story_lead": "Aazad Samaj Party national president and Nagina MP Chandra Shekhar Azad addressed a rally in Bareilly, Uttar Pradesh, stating that citizens rather than religion are under threat in the state. He emphasized that political discourse should focus on basic public concerns such as education, healthcare, employment, security, and dignity.",
+      "full_article_text": "Addressing a rally in Bareilly in support of party leader Achchan Ansari, Aazad Samaj Party national president and Nagina MP Chandra Shekhar Azad asserted that the primary concerns of ordinary people—education, healthcare, employment, security, and dignity—should take precedence over religious issues in political discourse. Azad criticized the state of government schools, stating improvements would only occur when policymakers and officials enrolled their children in them. On healthcare, he stressed that access to health services is a citizen's right and that the government must ensure adequate medical staff and facilities in public hospitals. Discussing employment, he suggested that Bareilly could develop industrial opportunities akin to Noida, Gurugram, and Mumbai to curb youth migration. He also advocated for dignified remuneration for ASHA and anganwadi workers, improved working conditions for police personnel including an eight-hour duty system and weekly offs, and equal application of the law regarding crime and justice. Following the rally, Azad held a roadshow with supporters.",
+      "background_context": "The remarks were made by Aazad Samaj Party national president and Nagina MP Chandra Shekhar Azad during a political rally in Bareilly, Uttar Pradesh, addressing everyday public concerns and governance issues.",
+      "bullet_points": [
+        "Chandra Shekhar Azad stated that people, not religion, are under threat in Uttar Pradesh.",
+        "He emphasized the need to prioritize basic issues like education, healthcare, employment, security, and dignity.",
+        "Azad argued that government schools would improve only if children of officials and ministers studied in them.",
+        "He called for proper medical facilities, doctors, and medicines in government hospitals.",
+        "He advocated for industrial development in Bareilly to prevent youth migration for jobs.",
+        "He demanded dignified remuneration for ASHA and anganwadi workers, and better working conditions for police personnel."
+      ],
+      "key_facts": [
+        "Chandra Shekhar Azad is the national president of the Aazad Samaj Party and MP for Nagina.",
+        "The rally was held in Bareilly in support of party leader Achchan Ansari.",
+        "Azad called for an eight-hour duty system and a weekly day off for police personnel.",
+        "He raised concerns regarding paper leaks and youth unemployment."
+      ],
+      "key_locations": [
+        "Bareilly",
+        "Uttar Pradesh",
+        "Noida",
+        "Gurugram",
+        "Mumbai"
+      ],
+      "important_dates": [
+        "Wednesday"
+      ],
+      "exam_relevance": [
+        "General Studies Paper II: Governance, Constitution, Polity, Social Justice."
+      ],
+      "upsc_analysis": "The discourse highlights the electoral and socio-political focus on developmental issues such as education, healthcare, and employment versus identity politics. It touches upon governance accountability, public service delivery, and labor welfare for grassroots workers and law enforcement.",
+      "causes": [
+        "Public grievances concerning education standards, healthcare access, unemployment, and law enforcement."
+      ],
+      "impacts": [
+        "Shifting political dialogue toward foundational civic needs and socio-economic welfare."
+      ],
+      "challenges": [
+        "Ensuring equitable development, quality public service delivery, and employment generation across tier-2 cities."
+      ],
+      "government_steps": [
+        "Operation of public health and educational infrastructure, implementation of honorariums for scheme workers like ASHA and anganwadi personnel."
+      ],
+      "constitutional_or_policy_link": [
+        "Directive Principles of State Policy regarding public health, education, and just and humane conditions of work."
+      ],
+      "way_forward": [
+        "Strengthening public education and healthcare infrastructure.",
+        "Fostering local industrial growth to generate employment.",
+        "Improving working conditions for public sector employees and grassroots workers."
+      ],
+      "mains_notes": "Political leader Chandra Shekhar Azad emphasized that governance should focus on fundamental needs such as education, healthcare, employment, and law and order, rather than identity-based politics. Key areas highlighted include school infrastructure, public health access, job creation, fair wages for ASHA and anganwadi workers, and working conditions for police personnel.",
+      "mains_questions": [
+        "Discuss the significance of shifting political discourse from identity issues to socio-economic developmental needs in India.",
+        "Analyze the structural challenges in public education and healthcare delivery in states like Uttar Pradesh."
+      ],
+      "takeaway": "Basic socio-economic needs like education, healthcare, and employment must take precedence in political discourse.",
+      "prelims_facts": [
+        "Chandra Shekhar Azad is the national president of Aazad Samaj Party and Nagina MP.",
+        "ASHA and anganwadi workers form a core part of grassroots healthcare delivery."
+      ],
+      "vocabulary": [
+        {
+          "word": "Honorarium",
+          "meaning_hindi": "मानदेय"
+        },
+        {
+          "word": "Migration",
+          "meaning_hindi": "प्रवास"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Chandra Shekhar Azad",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Chandra%20Shekhar%20Azad"
+        },
+        {
+          "name": "Bareilly",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Bareilly"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "यूपी में धर्म खतरे में नहीं, लोग हैं: चंद्रशेखर आजाद",
+        "story_lead": "आजाद समाज पार्टी के राष्ट्रीय अध्यक्ष और नगीना से सांसद चंद्रशेखर आजाद ने बुधवार को उत्तर प्रदेश में धार्मिक मुद्दों की राजनीति पर निशाना साधते हुए कहा कि राज्य में धर्म नहीं, बल्कि लोग खतरे में हैं।",
+        "full_article_text": "बरेली में पार्टी नेता अच्छन अंसारी के समर्थन में एक रैली को संबोधित करते हुए, आजाद ने कहा कि शिक्षा, रोजगार, स्वास्थ्य सेवा, सुरक्षा और गरिमा आम लोगों के सामने आने वाले मुद्दे हैं और राजनीतिक चर्चा इन बुनियादी चिंताओं पर केंद्रित होनी चाहिए। उन्होंने शिक्षा, स्वास्थ्य सेवा, रोजगार और कानून व्यवस्था को लेकर राज्य सरकार पर निशाना साधा। शिक्षा पर उन्होंने कहा कि सरकारी स्कूलों की स्थिति तभी सुधरेगी जब सरकारी अधिकारियों और मंत्रियों के बच्चे उन स्कूलों में पढ़ेंगे। स्वास्थ्य सेवा पर उन्होंने कहा कि स्वास्थ्य सेवाओं तक पहुंच हर नागरिक का अधिकार है। रोजगार पर उन्होंने कहा कि यदि नोएडा, गुरुग्राम और मुंबई जैसे शहर रोजगार पैदा कर सकते हैं, तो बरेली में भी औद्योगिक और रोजगार के अवसर विकसित किए जा सकते हैं। उन्होंने आशा और आंगनवाड़ी कार्यकर्ताओं के मानदेय का मुद्दा उठाया और पुलिस कर्मियों के लिए आठ घंटे की ड्यूटी प्रणाली और सप्ताह में एक दिन की छुट्टी की मांग की।",
+        "background_context": "यह बयान आजाद समाज पार्टी के राष्ट्रीय अध्यक्ष चंद्रशेखर आजाद द्वारा बरेली में एक रैली के दौरान दिया गया।",
+        "bullet_points": [
+          "चंद्रशेखर आजाद ने कहा कि उत्तर प्रदेश में धर्म नहीं बल्कि लोग खतरे में हैं।",
+          "उन्होंने शिक्षा, स्वास्थ्य, रोजगार और सुरक्षा जैसे बुनियादी मुद्दों पर जोर दिया।",
+          "उन्होंने बरेली में रोजगार के अवसर विकसित करने की मांग की।",
+          "उन्होंने पुलिस कर्मियों के लिए बेहतर कामкаज की स्थिति की वकालत की।"
+        ],
+        "key_facts": [
+          "चंद्रशेखर आजाद आजाद समाज पार्टी के राष्ट्रीय अध्यक्ष हैं।",
+          "यह रैली बरेली में आयोजित की गई थी।"
+        ],
+        "key_locations": [
+          "बरेली",
+          "उत्तर प्रदेश"
+        ],
+        "important_dates": [
+          "बुधवार"
+        ]
+      },
+      "quiz": {
+        "question": "Where did Aazad Samaj Party national president Chandra Shekhar Azad make the statement that people are under threat in Uttar Pradesh, not religion?",
+        "options": [
+          "Lucknow",
+          "Bareilly",
+          "Noida",
+          "Hathras"
+        ],
+        "correct_answer": "Bareilly",
+        "explanation": "Chandra Shekhar Azad made these remarks while addressing a rally in Bareilly, Uttar Pradesh."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/religion-not-under-threat-in-up-people-are-chandra-shekhar-azad-101790793621898.html",
+      "published_date": "2026-10-01",
+      "id": 24,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2025/06/30/1600x900/logo/ht-generic_india1_1751287243850_1751287256749.jpg",
+      "added_at": "2026-10-01T03:10:55.091712+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": false,
+      "headline": "At bypoll rally, Vijay continues attack on Oppn DMK, AIADMK",
+      "story_lead": "Tamil Nadu Chief Minister and Tamilaga Vettri Kazhagam (TVK) chief C Joseph Vijay targeted both the AIADMK and the DMK during a campaign rally in Dharapuram. Vijay alleged that the AIADMK was planning to ally with the DMK, which he described as an 'evil force', thereby betraying party founders MGR and J Jayalalithaa.",
+      "full_article_text": "Tamil Nadu Chief Minister and Tamilaga Vettri Kazhagam (TVK) chief C Joseph Vijay used a campaign rally at the SC-reserved Dharapuram constituency in Tiruppur district to intensify his criticism of the opposition parties. Vijay reiterated allegations that the AIADMK planned to enter into a coalition with the Dravida Munnetra Kazhagam (DMK), whom he termed an 'evil force'. Addressing a gathering for TVK nominee P Sathyabama, Vijay claimed that such a move would be a betrayal of AIADMK founder MG Ramachandran and former Chief Minister J Jayalalithaa, both of whom took political stances against the DMK. Vijay also defended Sathyabama, who previously won the seat as an AIADMK MLA, stating that she properly resigned before joining TVK. Meanwhile, DMK spokesperson TKS Elangovan reacted to the remarks by alleging that the Chief Minister was attacking the DMK on the instructions of the BJP-led Centre.",
+      "background_context": "The political developments unfold in Tamil Nadu surrounding a bypoll campaign in the Dharapuram constituency, involving TVK chief C Joseph Vijay, the AIADMK, and the ruling DMK.",
+      "bullet_points": [
+        "TVK chief C Joseph Vijay held a campaign rally in the SC-reserved Dharapuram constituency.",
+        "Vijay accused the AIADMK of planning an alliance with the DMK, calling the latter an 'evil force'.",
+        "He claimed such a coalition would betray the ideals of MGR and J Jayalalithaa.",
+        "Vijay defended TVK nominee P Sathyabama, noting she resigned as an AIADMK MLA before switching parties.",
+        "DMK spokesperson TKS Elangovan criticized Vijay's remarks, alleging he acts on instructions from the BJP-led Centre."
+      ],
+      "key_facts": [
+        "C Joseph Vijay is the Tamil Nadu Chief Minister and TVK chief.",
+        "The rally took place in the Dharapuram constituency located in Tiruppur district.",
+        "P Sathyabama is the TVK nominee and former AIADMK MLA.",
+        "TKS Elangovan serves as the DMK spokesperson."
+      ],
+      "key_locations": [
+        "Dharapuram",
+        "Tamil Nadu",
+        "Coimbatore",
+        "Tiruppur district"
+      ],
+      "important_dates": [
+        "Wednesday",
+        "April"
+      ],
+      "exam_relevance": [
+        "General Studies Paper II - Indian Polity and Governance",
+        "Understanding regional party dynamics and electoral politics in India"
+      ],
+      "upsc_analysis": "The political scenario in Tamil Nadu highlights the complex nature of regional alliances, party realationships, and the rhetoric used by emerging political entities against established Dravidian parties. Such developments are important for understanding state-level political party systems and electoral strategies in India.",
+      "causes": [
+        "Upcoming bypolls in Tamil Nadu prompting political campaigns and rallies.",
+        "Political realignments and party switching by local leaders like P Sathyabama."
+      ],
+      "impacts": [
+        "Heightened political rhetoric between TVK, AIADMK, and DMK in Tamil Nadu.",
+        "Intensified debates over political legacy and party betrayals in the state."
+      ],
+      "challenges": [
+        "Navigating accusations of political opportunistic alliances and defections among regional parties."
+      ],
+      "government_steps": [
+        "Not applicable based on the source text."
+      ],
+      "constitutional_or_policy_link": [
+        "Representation of the People Act, 1951 provisions related to defections and resignations."
+      ],
+      "way_forward": [
+        "Focusing on policy-driven campaigns and constructive political discourse during elections."
+      ],
+      "mains_notes": "Regional politics in Tamil Nadu continue to witness dynamic realignments with new entities like TVK engaging established parties like DMK and AIADMK. Political rhetoric often centers on legacy politics of figures like MGR and Jayalalithaa, influencing voter mobilization during bypolls.",
+      "mains_questions": [
+        "Discuss the role of regional parties and changing political alliances in Tamil Nadu's electoral landscape.",
+        "Analyze how political rhetoric regarding state founders influences contemporary election campaigns in regional politics."
+      ],
+      "takeaway": "TVK chief C Joseph Vijay criticized both the DMK and AIADMK during a bypoll campaign rally in Dharapuram, alleging political betrayals.",
+      "prelims_facts": [
+        "TVK is led by C Joseph Vijay.",
+        "Dharapuram is an SC-reserved constituency in Tiruppur district, Tamil Nadu."
+      ],
+      "vocabulary": [
+        {
+          "word": "Coalition",
+          "meaning_hindi": "गठबंधन"
+        },
+        {
+          "word": "Constituency",
+          "meaning_hindi": "निर्वाचन क्षेत्र"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "C Joseph Vijay",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=C_Joseph_Vijay"
+        },
+        {
+          "name": "MG Ramachandran",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=MG_Ramachandran"
+        },
+        {
+          "name": "J Jayalalithaa",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=J_Jayalalithaa"
+        },
+        {
+          "name": "Dharapuram",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Dharapuram"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "उपचुनाव रैली में विजय का विपक्षी डीएमके और अन्नाद्रमुक पर हमला जारी",
+        "story_lead": "तमिलनाडु के मुख्यमंत्री और तमिलगा वेत्री कड़गम (टीवीके) के प्रमुख सी. जोसफ विजय ने धारापुरम में एक चुनावी रैली के दौरान अन्नाद्रमुक और डीएमके दोनों को निशाना बनाया। विजय ने आरोप लगाया कि अन्नाद्रमुक 'दुष्ट' डीएमके के साथ गठबंधन करने की योजना बना रही है, जिससे एमजीआर और जे. जयललिता के साथ विश्वासघात हुआ है।",
+        "full_article_text": "तमिलनाडु के मुख्यमंत्री और तमिलगा वेत्री कड़गम (टीवीके) के प्रमुख सी. जोसफ विजय ने बुधवार को अन्नाद्रमुक के गढ़ माने जाने वाले धारापुरम (एससी-सुरक्षित) निर्वाचन क्षेत्र में एक रैली के मंच से अपने उस आरोप को दोहराया कि पार्टी द्रमुक के साथ गठबंधन करने की योजना बना रही है। उन्होंने द्रमुक को एक बार फिर 'दुष्ट ताकत' बताया। अपनी पार्टी की उम्मीदवार पी. सत्यभामा के समर्थन में एक चुनाव प्रचार रैली को संबोधित करते हुए विजय ने आरोप लगाया कि अन्नाद्रमुक ने अपने सुप्रीमों एमजी रामचंद्रन और पूर्व मुख्यमंत्री जे. जयललिता के साथ विश्वासघात किया है।",
+        "background_context": "तमिलनाडु में धारापुरम निर्वाचन क्षेत्र में उपचुनाव अभियान के दौरान राजनीतिक गतिविधियां, जिसमें टीवीके प्रमुख सी. जोसफ विजय, अन्नाद्रमुक और सत्तारूढ़ द्रमुक शामिल हैं।",
+        "bullet_points": [
+          "टीवीके प्रमुख सी. जोसफ विजय ने धारापुरम निर्वाचन क्षेत्र में एक रैली को संबोधित किया।",
+          "विजय ने अन्नाद्रमुक पर डीएमके के साथ गठबंधन की योजना बनाने का आरोप लगाया।",
+          "डीएमके को 'दुष्ट शक्ति' करार दिया।"
+        ],
+        "key_facts": [
+          "सी. जोसफ विजय तमिलनाडु के मुख्यमंत्री और टीवीके प्रमुख हैं।",
+          "यह रैली तिरुप्पुर जिले के धारापुरम में आयोजित की गई थी।"
+        ],
+        "key_locations": [
+          "धारापुरम",
+          "तमिलनाडु",
+          "कोयंबटूर",
+          "तिरुप्पुर जिला"
+        ],
+        "important_dates": [
+          "बुधवार",
+          "अप्रैल"
+        ]
+      },
+      "quiz": {
+        "question": "Which party's nominee campaign rally was addressed by TVK chief C Joseph Vijay in Dharapuram?",
+        "options": [
+          "AIADMK",
+          "TVK",
+          "DMK",
+          "BJP"
+        ],
+        "correct_answer": "TVK",
+        "explanation": "C Joseph Vijay addressed a campaign rally for his party's (TVK) nominee P Sathyabama in the Dharapuram constituency."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/at-bypoll-rally-vijay-continues-attack-on-oppn-dmk-aiadmk-101790797432867.html",
+      "published_date": "2026-10-01",
+      "id": 23,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/Tamil-Nadu-CM-C-Joseph-Vijay-comforts-TVK-s-Dharap_1790797497884_4sjA.jpg",
+      "added_at": "2026-10-01T03:10:55.091712+05:30"
+    },
+    {
+      "category": "World",
+      "exam_corner": false,
+      "headline": "Israel's Netanyahu hails Indian pilot Smit Machchar's heroics in saving 174 lives aboard flydubai aircraft",
+      "story_lead": "Israeli Prime Minister Benjamin Netanyahu has praised Indian pilot Captain Smit Machchar for his extraordinary bravery after he was stabbed by his Omani co-pilot mid-air on a flydubai flight. Despite serious injuries, Captain Machchar managed to open the cockpit door, enabling passengers and crew to overpower the attacker and safely land the aircraft carrying 174 people.",
+      "full_article_text": "Israeli Prime Minister Benjamin Netanyahu paid tribute to Indian pilot Captain Smit Machchar's extraordinary bravery for opening the cockpit door on time despite being stabbed by his Omani co-pilot mid-air. The incident occurred on Wednesday, September 30 evening, aboard flydubai flight FZ1073 travelling from Dubai to Tel Aviv. The co-pilot attacked Captain Machchar intending to crash the aircraft. Despite being seriously injured, Machchar opened the locked cockpit door, allowing passengers and crew to overpower the attacker. Two flydubai pilots who were travelling as passengers, along with passengers like Yaniv Hayoun, intervened to take control of the aircraft and landed it safely in Tabuk, Saudi Arabia. All 174 passengers and crew members, apart from Captain Machchar, remained safe. In the wake of the incident, flydubai announced the temporary suspension of its daily scheduled flights between Dubai and Tel Aviv for six days pending an investigation by authorities.",
+      "background_context": "The incident involved flydubai flight FZ1073 operating from Dubai to Tel Aviv on Wednesday, September 30. The flight faced a major security threat when the Omani co-pilot allegedly attacked the pilot mid-air, leading to emergency intervention by passengers and off-duty pilots, and an eventual safe landing in Tabuk, Saudi Arabia.",
+      "bullet_points": [
+        "Indian pilot Captain Smit Machchar was stabbed mid-air by his Omani co-pilot on a flydubai flight.",
+        "Despite serious injuries, Captain Machchar opened the cockpit door, allowing passengers and crew to overpower the attacker.",
+        "Two off-duty flydubai pilots and passengers, including Yaniv Hayoun, helped control the Boeing 737 MAX 8 aircraft.",
+        "The flight landed safely at Tabuk Airport in Saudi Arabia, saving all 174 passengers and crew members.",
+        "Israeli Prime Minister Benjamin Netanyahu praised Captain Machchar as a 'true hero' for his bravery.",
+        "flydubai suspended its 10 daily scheduled flights between Dubai and Tel Aviv for six days pending investigation."
+      ],
+      "key_facts": [
+        "Flight FZ1073 was travelling from Dubai to Tel Aviv.",
+        "The incident took place on Wednesday, September 30.",
+        "Captain Smit Machchar managed to open the cockpit door despite being stabbed.",
+        "174 lives were saved during the mid-air security incident.",
+        "The aircraft landed safely in Tabuk, Saudi Arabia."
+      ],
+      "key_locations": [
+        "Dubai",
+        "Tel Aviv",
+        "Tabuk",
+        "Saudi Arabia",
+        "Israel",
+        "Oman"
+      ],
+      "important_dates": [
+        "Wednesday, September 30"
+      ],
+      "exam_relevance": [
+        "General awareness regarding international incidents, aviation security, and notable achievements of Indian citizens abroad."
+      ],
+      "upsc_analysis": "While primarily an international news story involving aviation security and individual heroism, it highlights global cooperation, airline safety protocols, and cross-border security coordination in West Asia.",
+      "causes": [
+        "Mid-air attack by the Omani co-pilot on the pilot-in-command intending to crash the flight."
+      ],
+      "impacts": [
+        "Serious injuries to Captain Smit Machchar.",
+        "Temporary suspension of flydubai flights between Dubai and Tel Aviv.",
+        "International recognition of the pilot's bravery by Israeli leadership."
+      ],
+      "challenges": [
+        "Ensuring robust cockpit security and mental health screening for aviation crew.",
+        "Managing international coordination between aviation authorities of multiple countries."
+      ],
+      "government_steps": [
+        "Investigation initiated by flydubai and relevant authorities, with Saudi officials questioning the co-pilot."
+      ],
+      "constitutional_or_policy_link": [
+        "International civil aviation safety frameworks and bilateral diplomatic coordination."
+      ],
+      "way_forward": [
+        "Strengthening cockpit security protocols and psychological evaluations for commercial airline crew members worldwide."
+      ],
+      "mains_notes": "A flydubai flight FZ1073 from Dubai to Tel Aviv experienced a severe security threat when the Omani co-pilot attacked Indian pilot Captain Smit Machchar. Captain Machchar displayed exemplary courage by opening the cockpit door despite being stabbed, enabling passengers and off-duty pilots to secure the aircraft and land safely in Saudi Arabia. The event underscores the critical importance of rigorous aviation security and crew preparedness.",
+      "mains_questions": [
+        "Discuss the implications of mid-air security incidents on international civil aviation protocols.",
+        "Highlight the role of crew resilience and passenger intervention in averting aviation disasters."
+      ],
+      "takeaway": "Indian pilot Captain Smit Machchar was hailed globally for his bravery in preventing a catastrophic mid-air disaster on a flydubai flight.",
+      "prelims_facts": [
+        "Flight FZ1073 operated between Dubai and Tel Aviv.",
+        "The aircraft landed safely at Tabuk in Saudi Arabia.",
+        "Captain Smit Machchar is an Indian pilot."
+      ],
+      "vocabulary": [
+        {
+          "word": "Bravery",
+          "meaning_hindi": "वीरता / बहादुरी"
+        },
+        {
+          "word": "Intervention",
+          "meaning_hindi": "हस्तक्षेप"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Benjamin Netanyahu",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Benjamin%20Netanyahu"
+        },
+        {
+          "name": "flydubai",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=flydubai"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "इजरायली पीएम नेतन्याहू ने फ्लाईदुबई विमान में 174 लोगों की जान बचाने वाले भारतीय पायलट स्मिथ मच्छार की बहादुरी की सराहना की",
+        "story_lead": "इजरायल के प्रधानमंत्री बेंजामिन नेतन्याहू ने भारतीय पायलट कैप्टन स्मिथ मच्छार को उनकी असाधारण बहादुरी के लिए श्रद्धांजलि दी है, जब ओमान के सह-पायलट द्वारा बीच हवा में चाकू से हमला किए जाने के बावजूद उन्होंने कॉकपिट का दरवाजा खोल दिया था।",
+        "full_article_text": "इजरायल के प्रधानमंत्री बेंजामिन नेतन्याहू ने फ्लाईदुबई की घटना में भारतीय पायलट कैप्टन स्मिथ मच्छार की बहादुरी की प्रशंसा की। मच्छार ने 174 लोगों की जान बचाने के लिए कॉकपिट का दरवाजा खोला। ओमान के सह-पायलट ने बुधवार, 30 सितंबर की शाम को दुबई से तेल अवीव जा रही फ्लाईदुबई की उड़ान FZ1073 को दुर्घटनाग्रस्त करने के इरादे से उन पर हमला किया था।",
+        "background_context": "इस घटना में दुबई से तेल अवीव जाने वाली फ्लाईदुबई उड़ान FZ1073 शामिल थी, जिसमें सह-पायलट द्वारा हमले के बाद सऊदी अरब के तबुक में सुरक्षित लैंडिंग कराई गई।",
+        "bullet_points": [
+          "भारतीय पायलट कैप्टन स्मिथ मच्छार पर फ्लाईदुबई उड़ान में सह-पायलट ने हमला किया था।",
+          "गंभीर रूप से घायल होने के बावजूद मच्छार ने कॉकपिट का दरवाजा खोला।",
+          "यात्रियों और अन्य पायलटों ने हमलावर को काबू में किया।",
+          "विमान सऊदी अरब के तबुक में सुरक्षित उतरा।",
+          "इजरायल के प्रधानमंत्री नेतन्याहू ने पायलट को सच्चा हीरो बताया।"
+        ],
+        "key_facts": [
+          "उड़ान FZ1073 दुबई से तेल अवीव जा रही थी।",
+          "घटना 30 सितंबर को हुई।",
+          "174 लोगों की जान बचाई गई।"
+        ],
+        "key_locations": [
+          "दुबई",
+          "तेल अवीव",
+          "सऊदी अरब"
+        ],
+        "important_dates": [
+          "30 सितंबर"
+        ]
+      },
+      "quiz": {
+        "question": "Which airline operated the flight FZ1073 from Dubai to Tel Aviv where the mid-air security incident occurred?",
+        "options": [
+          "Emirates",
+          "flydubai",
+          "El Al",
+          "Air India"
+        ],
+        "correct_answer": "flydubai",
+        "explanation": "The incident took place on flydubai flight FZ1073 travelling from Dubai to Tel Aviv, where Indian pilot Captain Smit Machchar displayed exemplary bravery."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/netanyahu-hails-indian-pilot-capt-smit-machchars-heroics-in-saving-174-lives-aboard-flydubai-aircraft-101790798123005.html",
+      "published_date": "2026-10-01",
+      "id": 22,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/netanyahu_flydubai_1790798634827_1N80_1790798634983_GpCz_1adbe87f-182f-4270-84bd-a0d032aa52b9_Qb85.jpg",
+      "added_at": "2026-10-01T03:10:55.091712+05:30"
+    },
+    {
       "category": "World",
       "exam_corner": false,
       "headline": "UK PM Burnham says may rejoin EU if pros outweigh cons, drawing welcome from France and Spain",
@@ -2764,6 +4543,6 @@
       "added_at": "2026-10-01T00:13:10.423092+05:30"
     }
   ],
-  "updated_at": "2026-10-01T00:13:10.423092+05:30",
-  "count": 21
+  "updated_at": "2026-10-01T03:10:55.091712+05:30",
+  "count": 35
 }
