@@ -3,6 +3,1936 @@
   "news": [
     {
       "category": "India",
+      "exam_corner": false,
+      "headline": "Why British India Shifted Its Capital from Calcutta to Delhi in 1911",
+      "story_lead": "Until 1911, Calcutta served as the capital of British India before King George V announced the transfer of the seat of government to Delhi at the Delhi Durbar. The historic move was driven by a combination of strategic, geographical, and political considerations, including nationalist unrest following the partition of Bengal.",
+      "full_article_text": "On December 12, 1911, King George V announced at the Delhi Durbar that the capital of British India would be shifted from Calcutta to Delhi. This decision marked the beginning of the construction of New Delhi, an entirely new imperial city designed by British architects Edwin Lutyens and Herbert Baker on Raisina Hill. The choice of Delhi was influenced by its long history as a seat of power, notably under the Mughal Empire, which the British sought to connect with the traditions of the Raj through imperial Durbars held in 1877, 1903, and 1911. Geographically, Calcutta's location in the eastern part of the country made it remote from key regions, whereas Delhi offered a more central location and robust railway and commercial connections, including convenient travel to the summer capital, Shimla. Politically, the move was also aimed at addressing nationalist unrest and political liabilities triggered by the controversial partition of Bengal. The new capital was formally inaugurated in 1931.",
+      "background_context": "Before the British rule, Delhi had been the center of several kingdoms and the Mughal Empire. The British administration held imperial Durbars in Delhi in 1877, 1903, and 1911 to align the Raj with the city's historical legacy as an imperial power center. Additionally, the partition of Bengal had generated widespread nationalist protests and political friction, rendering Calcutta's proximity to Bengal a political liability for the administration.",
+      "bullet_points": [
+        "King George V announced the transfer of the capital from Calcutta to Delhi on December 12, 1911, at the Delhi Durbar.",
+        "Delhi was chosen for its central location, extensive transport and railway networks, and rich historical legacy as a seat of power.",
+        "The controversial partition of Bengal and resulting nationalist unrest made Calcutta a political liability for the British Raj.",
+        "Architects Edwin Lutyens and Herbert Baker designed the new imperial city on Raisina Hill.",
+        "The new capital of New Delhi was formally inaugurated in 1931.",
+        "Delhi also offered convenient rail connectivity to Shimla, the summer capital of British India."
+      ],
+      "key_facts": [
+        "Capital shifted from Calcutta to Delhi in 1911.",
+        "Announcement made by King George V at the Delhi Durbar on December 12, 1911.",
+        "New capital designed by Edwin Lutyens and Herbert Baker on Raisina Hill.",
+        "New Delhi formally inaugurated in 1931.",
+        "Shimla served as the summer capital of British India."
+      ],
+      "key_locations": [
+        "Calcutta",
+        "Delhi",
+        "New Delhi",
+        "Raisina Hill",
+        "Shimla",
+        "Bengal"
+      ],
+      "important_dates": [
+        "1877",
+        "1903",
+        "December 12, 1911",
+        "1931"
+      ],
+      "exam_relevance": [
+        "UPSC Civil Services Prelims: Modern Indian History (British administrative policies, viceroys, and important historical events)",
+        "UPSC Civil Services Mains (GS Paper 1): Modern Indian history from about the middle of the eighteenth century until the present—significant events, personalities, issues."
+      ],
+      "upsc_analysis": "The relocation of the imperial capital in 1911 is a significant event in modern Indian history. It demonstrates how administrative expediency, geopolitical strategy, and domestic political unrest (such as the fallout from the partition of Bengal) shaped British colonial policy. For aspirants, understanding this shift provides insight into the spatial strategies of colonial governance and the symbolic utilization of historical urban centers like Delhi.",
+      "causes": [
+        "Geographical remoteness of Calcutta in the eastern region of British India.",
+        "Need for a more centrally located administrative hub with robust railway and commercial networks.",
+        "Political fallout and nationalist unrest resulting from the partition of Bengal, making Calcutta a political liability.",
+        "Desire to connect the British Raj with Delhi's historical legacy as a center of imperial and Mughal power."
+      ],
+      "impacts": [
+        "Establishment and construction of New Delhi as a planned imperial capital.",
+        "Decline of Calcutta's status as the supreme administrative hub of British India.",
+        "Administrative restructuring of Bengal to mitigate political discontent."
+      ],
+      "challenges": [
+        "Navigating intense nationalist opposition and political unrest during the early 20th century.",
+        "Logistical challenge of planning and constructing a brand new administrative capital over two decades."
+      ],
+      "government_steps": [
+        "Holding the Delhi Durbar in 1911 to publicly announce the transfer of the capital.",
+        "Commissioning architects Edwin Lutyens and Herbert Baker to design government buildings and grand avenues on Raisina Hill."
+      ],
+      "constitutional_or_policy_link": [
+        "Administrative decentralization and structural policy adjustments undertaken by the British administration in response to nationalist agitation."
+      ],
+      "way_forward": [
+        "Analyzing historical urban planning paradigms to understand modern municipal and capital architecture development."
+      ],
+      "mains_notes": "The transfer of the British Indian capital from Calcutta to Delhi in 1911 was driven by both strategic geography and political necessity. While Calcutta's eastern location and association with the turbulent partition of Bengal posed administrative and political challenges, Delhi offered central connectivity, railway junctions, and deep symbolic capital linked to past empires. The move culminated in the creation of New Delhi under architects Lutyens and Baker, inaugurated in 1931.",
+      "mains_questions": [
+        "Discuss the geopolitical and political factors that led to the shifting of the British Indian capital from Calcutta to Delhi in 1911.",
+        "How did the political climate of early 20th-century Bengal influence British administrative policies, including the relocation of the capital?"
+      ],
+      "takeaway": "The 1911 shift of the British Indian capital from Calcutta to Delhi was a strategic administrative decision influenced by central geography, transport connectivity, and the need to manage nationalist political unrest.",
+      "prelims_facts": [
+        "Capital shifted in 1911.",
+        "Announcement made by King George V.",
+        "New capital designed by Edwin Lutyens and Herbert Baker.",
+        "Inaugurated in 1931."
+      ],
+      "vocabulary": [
+        {
+          "word": "Durbar",
+          "meaning_hindi": "दरबार / राजसभा"
+        },
+        {
+          "word": "Liability",
+          "meaning_hindi": "दायित्व / कमजोरी या राजनीतिक जोखिम"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "King George V",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=King_George_V"
+        },
+        {
+          "name": "Edwin Lutyens",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Edwin_Lutyens"
+        },
+        {
+          "name": "New Delhi",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=New_Delhi"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "वर्ष 1911 में ब्रिटिश भारत ने कलकत्ता से दिल्ली अपनी राजधानी क्यों स्थानांतरित की थी: इस कदम के कारणों का विश्लेषण",
+        "story_lead": "वर्ष 1911 तक कलकत्ता ब्रिटिश भारत की राजधानी था, जब तक कि किंग जॉर्ज पंचम ने दिल्ली दरबार में सरकार के केंद्र को दिल्ली स्थानांतरित करने की घोषणा नहीं की। यह ऐतिहासिक निर्णय रणनीतिक, भौगोलिक और राजनीतिक कारणों से प्रेरित था, जिसमें बंगाल के विभाजन के बाद उत्पन्न राष्ट्रव्यापी असंतोष भी शामिल था।",
+        "full_article_text": "12 दिसंबर 1911 को किंग जॉर्ज पंचम ने दिल्ली दरबार में घोषणा की कि ब्रिटिश भारत की राजधानी कलकत्ता से दिल्ली स्थानांतरित की जाएगी। इस निर्णय के साथ ही नई दिल्ली नामक एक नए इंपीरियल शहर के निर्माण की शुरुआत हुई, जिसे ब्रिटिश वास्तुकारों एडविन लुटियंस और हर्बर्ट बेकर द्वारा रायसीना हिल पर डिजाइन किया गया था। दिल्ली को चुनने का एक मुख्य कारण सत्ता के केंद्र के रूप में इसका लंबा इतिहास था, विशेष रूप से मुगल साम्राज्य के दौरान, जिसे अंग्रेज अपनी राजशाही के साथ जोड़ना चाहते थे। भौगोलिक दृष्टि से, कलकत्ता पूर्वी हिस्से में स्थित था, जबकि दिल्ली अधिक केंद्रीय रूप से स्थित थी और मजबूत परिवहन व रेलवे नेटवर्क से जुड़ी थी। राजनीतिक मोर्चे पर, यह कदम बंगाल के विभाजन से उपजे राष्ट्रवादी असंतोष और राजनीतिक जोखिमों को दूर करने के लिए उठाया गया था। नई राजधानी का औपचारिक उद्घाटन 1931 में हुआ था।",
+        "background_context": "ब्रिटिश शासन से पहले, दिल्ली कई साम्राज्यों और मुगल साम्राज्य का केंद्र रही थी। ब्रिटिश प्रशासन ने 1877, 1903 और 1911 में दिल्ली में इंपीरियल दरबार आयोजित किए थे। इसके अलावा, बंगाल के विभाजन ने व्यापक राष्ट्रवादी विरोध को जन्म दिया था, जिससे कलकत्ता की निकटता ब्रिटिश प्रशासन के लिए एक राजनीतिक जिम्मेदारी बन गई थी।",
+        "bullet_points": [
+          "किंग जॉर्ज पंचम ने 12 दिसंबर 1911 को दिल्ली दरबार में राजधानी को कलकत्ता से दिल्ली स्थानांतरित करने की घोषणा की।",
+          "दिल्ली को उसके केंद्रीय स्थान, परिवहन नेटवर्क और ऐतिहासिक महत्व के कारण चुना गया।",
+          "बंगाल के विभाजन और राष्ट्रवादी असंतोष के कारण कलकत्ता राजनीतिक रूप से चुनौतीपूर्ण हो गया था।",
+          "वास्तुकार एडविन लुटियंस और हर्बर्ट बेकर ने रायसीना हिल पर नई राजधानी का डिजाइन तैयार किया।",
+          "नई दिल्ली का औपचारिक उद्घाटन वर्ष 1931 में किया गया।"
+        ],
+        "key_facts": [
+          "वर्ष 1911 में राजधानी कलकत्ता से दिल्ली स्थानांतरित की गई।",
+          "घोषणा किंग जॉर्ज पंचम द्वारा की गई।",
+          "नई राजधानी का उद्घाटन 1931 में हुआ।"
+        ],
+        "key_locations": [
+          "कलकत्ता",
+          "दिल्ली",
+          "नई दिल्ली",
+          "रायसीना हिल",
+          "शिमला"
+        ],
+        "important_dates": [
+          "1877",
+          "1903",
+          "12 दिसंबर 1911",
+          "1931"
+        ]
+      },
+      "quiz": {
+        "question": "किस वर्ष ब्रिटिश भारत की राजधानी कलकत्ता से दिल्ली स्थानांतरित करने की घोषणा की गई थी?",
+        "options": [
+          "1905",
+          "1911",
+          "1931",
+          "1947"
+        ],
+        "correct_answer": "1911",
+        "explanation": "किंग जॉर्ज पंचम ने 12 दिसंबर 1911 को दिल्ली दरबार में ब्रिटिश भारत की राजधानी को कलकत्ता से दिल्ली स्थानांतरित करने की घोषणा की थी।"
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/in-1911-why-did-british-india-shift-its-capital-from-calcutta-to-delhi-decoding-the-reasons-behind-the-move-101790662751509.html",
+      "published_date": "2026-09-30",
+      "id": 102,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/29/1600x900/logo/kolkatatodelhi_1790663085910_ZnQE_1790663093234_nowW_311e779b-235f-4ec0-b122-a7ac4a5c371b_3uVN.png",
+      "added_at": "2026-09-30T12:14:45.906155+05:30"
+    },
+    {
+      "category": "Science & Technology",
+      "exam_corner": false,
+      "headline": "NCERT releases new Class 9 Social Science book; links taxation with nation-building",
+      "story_lead": "NCERT has released the new Class 9 Social Science textbook part 2, titled 'Understanding Society: India and Beyond', incorporating themes like personal income-tax calculations, government welfare schemes, and startup entrepreneurship. The curriculum uses Indian governance traditions, policy-making, and nation-building as central themes in its political science and economics chapters.",
+      "full_article_text": "The National Council of Educational Research and Training (NCERT) has released the new Class 9 social science textbook part 2, 'Understanding Society: India and Beyond'. The textbook introduces students to actual slab-wise income-tax calculations under the new tax regime, presenting the payment of taxes as a civic responsibility linked to national development. The chapter 'Managing Your Personal Finances' uses examples such as the Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (Ayushman Bharat PM-JAY) to explain financial protection for low-income households and discusses health insurance and personal financial management.\n\nEntrepreneurship is highlighted in the chapter 'From Ideas to Startups', citing examples such as the growth of Lijjat Papad and hotelier Mohan Singh Oberoi. It also details the Chettiar community's historical trading, banking, and trust-based lending networks as part of an Indian-knowledge-systems perspective. Startups are linked to the government's Viksit Bharat 2047 vision and Atmanirbhar Bharat, alongside a quote from Swami Vivekananda.\n\nIn the political science section, the chapter 'Governance and Public Policy' links institutions of government with historical traditions, incorporating national symbols and mottos such as 'Satyamev Jayate', 'Yato Dharmastato Jayah', and the Sengol. The National Education Policy (NEP) 2020 and Khelo Bharat Niti 2025 are used as case studies to explain consultative policymaking and the role of sport in nation-building. Part 2 contains six chapters, continuing NCERT's rollout of new textbooks under NEP 2020 and the National Curriculum Framework for School Education (NCF-SE) 2023.",
+      "background_context": "NCERT is rolling out new textbooks for Classes 1 to 9 under the National Education Policy (NEP) 2020 and the National Curriculum Framework for School Education (NCF-SE) 2023. Part 1 of the Class 9 textbook was released in June 2026.",
+      "bullet_points": [
+        "NCERT released the new Class 9 social science textbook part 2 titled 'Understanding Society: India and Beyond'.",
+        "The textbook introduces actual slab-wise income-tax calculations and links tax payment to civic responsibility and national development.",
+        "Entrepreneurship chapters cite examples like Lijjat Papad and Mohan Singh Oberoi, connecting startups to Viksit Bharat 2047.",
+        "Historical traditions and governance symbols such as the Sengol, 'Satyamev Jayate', and 'Yato Dharmastato Jayah' are integrated into political science.",
+        "National Education Policy (NEP) 2020 and Khelo Bharat Niti 2025 are featured as case studies in public policy.",
+        "Part 2 comprises six chapters covering history, political science, geography, and economics."
+      ],
+      "key_facts": [
+        "The new Class 9 textbook part 2 is titled 'Understanding Society: India and Beyond'.",
+        "Lijjat Papad grew from seven Mumbai homemakers who pooled ₹80 in 1959 to a cooperative with a turnover of ₹1,600 crore by 2023.",
+        "The textbook incorporates the national motto 'Satyamev Jayate', the Supreme Court's motto 'Yato Dharmastato Jayah', and the Sengol.",
+        "NCERT is implementing the National Education Policy (NEP) 2020 and NCF-SE 2023 across school textbooks."
+      ],
+      "key_locations": [
+        "India",
+        "Mumbai",
+        "New Delhi"
+      ],
+      "important_dates": [
+        "1959",
+        "2023",
+        "June 2026"
+      ],
+      "exam_relevance": [
+        "Prelims: General awareness of educational frameworks, NEP 2020 initiatives, and civic concepts.",
+        "Mains: Curriculum development, incorporation of Indian Knowledge Systems (IKS), and value-based education."
+      ],
+      "upsc_analysis": "The integration of practical financial literacy, historical governance traditions, and policy case studies into school curricula reflects the objectives of the National Education Policy (NEP) 2020. It emphasizes aligning foundational education with indigenous knowledge systems, civic responsibilities, and contemporary national development goals like Viksit Bharat 2047.",
+      "causes": [
+        "Implementation of National Education Policy (NEP) 2020 and National Curriculum Framework for School Education (NCF-SE) 2023.",
+        "Need to impart practical financial literacy, civic awareness, and entrepreneurial skills to school students."
+      ],
+      "impacts": [
+        "Students gain early exposure to personal finance, taxation, and startup ecosystems.",
+        "Familiarization with traditional Indian governance symbols and contemporary public policies."
+      ],
+      "challenges": [
+        "Ensuring uniform pedagogical understanding across diverse educational institutions and boards."
+      ],
+      "government_steps": [
+        "NCERT rolling out new textbooks aligned with NEP 2020 for Classes 1 to 9.",
+        "Using government initiatives like Ayushman Bharat PM-JAY and Khelo Bharat Niti 2025 as textbook case studies."
+      ],
+      "constitutional_or_policy_link": [
+        "National Education Policy (NEP) 2020",
+        "National Curriculum Framework for School Education (NCF-SE) 2023",
+        "Viksit Bharat 2047 vision"
+      ],
+      "way_forward": [
+        "Continuous review and teacher training to effectively impart practical civic and financial concepts to students."
+      ],
+      "mains_notes": "NCERT's new Class 9 textbook integrates practical financial management, taxation, and entrepreneurship with Indian knowledge systems and governance traditions, aligning with NEP 2020 objectives.",
+      "mains_questions": [
+        "Discuss how the integration of financial literacy and indigenous governance systems in school curricula aligns with the goals of the National Education Policy (NEP) 2020.",
+        "Analyze the significance of incorporating practical civic responsibilities and startup ecosystems into foundational education."
+      ],
+      "takeaway": "NCERT's new Class 9 social science textbook integrates practical financial literacy, entrepreneurship, and traditional governance models in alignment with NEP 2020.",
+      "prelims_facts": [
+        "Part 2 of the Class 9 textbook is titled 'Understanding Society: India and Beyond'.",
+        "The national motto 'Satyamev Jayate' is sourced from the Mundaka Upanishad.",
+        "The Supreme Court's motto 'Yato Dharmastato Jayah' is derived from the Mahabharata."
+      ],
+      "vocabulary": [
+        {
+          "word": "Taxation",
+          "meaning_hindi": "कराधान"
+        },
+        {
+          "word": "Entrepreneurship",
+          "meaning_hindi": "उद्यमिता"
+        },
+        {
+          "word": "Governance",
+          "meaning_hindi": "शासन व्यवस्था"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "NCERT",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=NCERT"
+        },
+        {
+          "name": "Swami Vivekananda",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Swami_Vivekananda"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "एनसीईआरटी ने नई कक्षा 9 की सामाजिक विज्ञान की पुस्तक जारी की; कराधान को राष्ट्र निर्माण से जोड़ा",
+        "story_lead": "एनसीईआरटी ने कक्षा 9 की नई सामाजिक विज्ञान की पाठ्यपुस्तक भाग 2 'अंडरस्टैंडिंग सोसाइटी: इंडिया एंड बियॉन्ड' जारी की है, जिसमें व्यक्तिगत आयकर गणना, सरकारी कल्याणकारी योजनाओं और स्टार्टअप उद्यमिता जैसे विषयों को शामिल किया गया है।",
+        "full_article_text": "राष्ट्रीय शैक्षिक अनुसंधान और प्रशिक्षण परिषद (NCERT) ने कक्षा 9 की नई सामाजिक विज्ञान पाठ्यपुस्तक भाग 2 'अंडरस्टैंडिंग सोसाइटी: इंडिया एंड बियॉन्ड' जारी की है। यह पाठ्यपुस्तक छात्रों को नई कर व्यवस्था के तहत वास्तविक स्लैब-वार आयकर गणना से परिचित कराती है और कर भुगतान को एक नागरिक जिम्मेदारी के रूप में प्रस्तुत करती है।",
+        "background_context": "एनसीईआरटी राष्ट्रीय शिक्षा नीति (NEP) 2020 और राष्ट्रीय पाठ्यचर्या की रूपरेखा (NCF-SE) 2023 के तहत कक्षा 1 से 9 तक की नई पाठ्यपुस्तकें जारी कर रहा है।",
+        "bullet_points": [
+          "एनसीईआरटी ने कक्षा 9 की नई सामाजिक विज्ञान पाठ्यपुस्तक भाग 2 जारी की।",
+          "पाठ्यपुस्तक में आयकर गणना और नागरिक जिम्मेदारी को शामिल किया गया है।",
+          "उद्यमिता और स्टार्टअप को 'विकसित भारत 2047' से जोड़ा गया है।",
+          "पारंपरिक शासन प्रतीकों को राजनीति विज्ञान में शामिल किया गया है।"
+        ],
+        "key_facts": [
+          "कक्षा 9 की नई पाठ्यपुस्तक का शीर्षक 'अंडरस्टैंडिंग सोसाइटी: इंडिया एंड बियॉन्ड' है।",
+          "एनसीईआरटी एनईपी 2020 के तहत नई पाठ्यपुस्तकें जारी कर रहा है।"
+        ],
+        "key_locations": [
+          "भारत",
+          "मुंबई",
+          "नई दिल्ली"
+        ],
+        "important_dates": [
+          "1959",
+          "2023",
+          "जून 2026"
+        ]
+      },
+      "quiz": {
+        "question": "What is the title of the newly released NCERT Class 9 social science textbook part 2?",
+        "options": [
+          "Understanding Society: India and Beyond",
+          "Democratic Politics and Society",
+          "Exploring India's Economy",
+          "Governance and Public Policy"
+        ],
+        "correct_answer": "Understanding Society: India and Beyond",
+        "explanation": "The newly released NCERT Class 9 social science textbook part 2 is titled 'Understanding Society: India and Beyond'."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/ncert-releases-new-class-9-social-science-book-links-taxation-with-nationbuilding-101790743899343.html",
+      "published_date": "2026-09-30",
+      "id": 101,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/The-textbook-introduces-students-to-actual-slab-wi_1790743893018_beHb.jpg",
+      "added_at": "2026-09-30T12:14:45.906155+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": false,
+      "headline": "Influencer under scanner as CCTV shows LPU entry before 'rape' rumour violence",
+      "story_lead": "Punjab Police are examining original CCTV footage and social media videos to reconstruct the sequence of events leading to violence at Lovely Professional University (LPU). A social media influencer has come under scrutiny after footage purportedly showed him entering the department of student welfare building prior to vandalism.",
+      "full_article_text": "Probe teams have begun scanning original CCTV footage from DVRs alongside social media videos to establish the authenticity of visuals and identify individuals involved in the recent violence at Lovely Professional University (LPU). The unrest occurred following unverified social media reports regarding an alleged incident involving a female student. A social media influencer with a verified Instagram account has come under the scanner after footage allegedly captured him entering the department of student welfare (DSW) building without covering his face, followed shortly by a group of masked and armed protesters. The influencer, who has over 21,000 followers, was also seen negotiating with police and allegedly damaging a statue and other property. While the university stated it would share records regarding the individual with police, the influencer denied participating in the violent protest, claiming he was only trying to stop students from breaking trophies and that he was being targeted for raising issues. The Punjab Police have registered three FIRs, formed a Special Investigation Team (SIT) to probe arson charges, and emphasized that the authenticity and context of all circulating videos must be verified before drawing conclusions.",
+      "background_context": "Violence erupted at Lovely Professional University following unverified reports circulated on social media regarding an alleged crime against a female student. The incident led to property damage, arson, and subsequent police intervention involving multiple FIRs and an SIT probe.",
+      "bullet_points": [
+        "Punjab Police are analyzing original CCTV footage and social media videos related to the LPU campus violence.",
+        "A social media influencer with a verified Instagram account has come under the scanner of investigators.",
+        "Footage purportedly shows the influencer entering the DSW building before masked protesters damaged university property and CCTV cameras.",
+        "The university stated it would share relevant inputs and records about the influencer with the probe team.",
+        "The influencer denied being part of the violent protest, claiming he attempted to prevent damage to trophies and raised issues concerning students.",
+        "Police have registered three FIRs and formed a Special Investigation Team (SIT) to investigate arson charges."
+      ],
+      "key_facts": [
+        "The incident took place at Lovely Professional University (LPU) following unverified reports on social media.",
+        "Punjab Police registered three FIRs and formed an SIT to probe arson charges.",
+        "A social media influencer with over 21,000 followers came under police scanner after appearing in CCTV footage at the DSW building.",
+        "The veracity of the original Reddit or social media post alleging the crime remains unclear."
+      ],
+      "key_locations": [
+        "Lovely Professional University",
+        "Punjab",
+        "Doaba region",
+        "Jalandhar",
+        "Kapurthala",
+        "SBS Nagar",
+        "Hoshiarpur"
+      ],
+      "important_dates": [
+        "Sunday"
+      ],
+      "exam_relevance": [
+        "General Studies Paper I & III: Social issues, role of social media in public disturbances, law and order, policing."
+      ],
+      "upsc_analysis": "The LPU campus incident highlights the growing challenge of unverified social media information triggering spontaneous public unrest and law and order situations. It underscores the critical need for digital verification by law enforcement and institutional frameworks to prevent misinformation-led violence.",
+      "causes": [
+        "Unverified social media reports circulating among students regarding an alleged crime",
+        "Spontaneous mobilization of students leading to violence and vandalism on campus"
+      ],
+      "impacts": [
+        "Damage to university property, including CCTV cameras, statues, and window panes",
+        "Suspension of classes and creation of an uneasy calm on campus",
+        "Registration of multiple FIRs and police investigation"
+      ],
+      "challenges": [
+        "Verifying the authenticity of numerous circulating videos and social media posts",
+        "Distinguishing between peaceful assembly, expression of grievances, and active participation in arson or vandalism",
+        "Addressing rumors and maintaining campus law and order"
+      ],
+      "government_steps": [
+        "Punjab Police registered three FIRs regarding the violence",
+        "A Special Investigation Team (SIT) was formed to probe arson charges",
+        "Investigators are methodically examining original CCTV footage alongside social media videos"
+      ],
+      "constitutional_or_policy_link": [
+        "Article 19 and public order considerations regarding the regulation of misinformation and protection of public property."
+      ],
+      "way_forward": [
+        "Enhancing digital literacy and institutional grievance redressal mechanisms to address student concerns before rumors escalate",
+        "Prompt fact-checking and official communication by authorities to debunk false social media reports",
+        "Fair and transparent investigation into individual roles during campus disturbances"
+      ],
+      "mains_notes": "Campus unrest fueled by unverified social media posts poses serious administrative and law and order challenges. The LPU incident demonstrates how digital content creators and social media reach can intersect with public violence, necessitating rigorous forensic investigation, verification of digital evidence, and proactive institutional communication.",
+      "mains_questions": [
+        "Discuss the challenges posed by unverified social media content in triggering campus unrest and suggest measures for effective institutional response.",
+        "Analyze the role of digital evidence and CCTV footage in modern police investigations involving public violence."
+      ],
+      "takeaway": "Punjab Police are analyzing CCTV footage and social media videos involving an influencer to investigate the sequence of events behind the LPU campus violence.",
+      "prelims_facts": [
+        "Lovely Professional University is located in Punjab.",
+        "Punjab Police formed an SIT to probe arson charges related to the campus violence."
+      ],
+      "vocabulary": [
+        {
+          "word": "Authenticator",
+          "meaning_hindi": "सत्यापनकर्ता"
+        },
+        {
+          "word": "Vandalism",
+          "meaning_hindi": "तोड़फोड़"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Lovely Professional University",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Lovely_Professional_University"
+        },
+        {
+          "name": "Punjab Police",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Punjab_Police"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "सी सी टी वी फुटेज में एल पी यू में प्रवेश सामने आने के बाद 'बलात्कार' की अफवाह और हिंसा मामले में इनफ्लुएंसर जांच के घेरे में",
+        "story_lead": "पंजाब पुलिस ने लवली प्रोफेशनल यूनिवर्सिटी में हिंसा का कारण बने घटनाक्रम का पता लगाने के लिए मूल सीसीटीवी फुटेज और सोशल मीडिया पर वायरल वीडियो की जांच शुरू कर दी है। एक सोशल मीडिया इनफ्लुएंसर जांच के दायरे में आया है।",
+        "full_article_text": "जांच टीमों ने लवली प्रोफेशनल यूनिवर्सिटी के डीवीआर से प्राप्त मूल सीसीटीवी फुटेज और सोशल मीडिया पर प्रसारित वीडियो की जांच शुरू कर दी है। विश्वविद्यालय परिसर में स्थिति सामान्य होने के साथ ही छात्र कल्याण विभाग भवन के आसपास के कई मूल वीडियो सामने आए हैं। पुलिस अधीक्षक गौरव तूरा ने कहा कि पुलिस मामले की सभी पहलुओं से जांच कर रही है। पुलिस द्वारा जांचे जा रहे एक वीडियो में एक सत्यापित इंस्टाग्राम अकाउंट वाला इनफ्लुएंसर बिना चेहरा ढके भवन में प्रवेश करता दिखाई दे रहा है, जिसके कुछ सेकंड बाद नकाबपोश और हथियारबंद प्रदर्शनकारी अंदर घुसते हैं। हालांकि, इनफ्लुएंसर ने हिंसा में शामिल होने से इनकार किया है और कहा है कि वह केवल छात्रों को रोकने गया था।",
+        "background_context": "लवली प्रोफेशनल यूनिवर्सिटी में एक बाहरी व्यक्ति द्वारा कथित बलात्कार की अपुष्ट खबरों के बाद हिंसा भड़क उठी थी, जिसकी जांच पुलिस कर रही है।",
+        "bullet_points": [
+          "पंजाब पुलिस एल पी यू परिसर हिंसा से जुड़े मूल सीसीटीवी फुटेज और वीडियो की जांच कर रही है।",
+          "एक सोशल मीडिया इनफ्लुएंसर जांच के दायरे में आया है।",
+          "पुलिस ने हिंसा के संबंध में तीन एफआईआर दर्ज की हैं और एसआईटी का गठन किया है।"
+        ],
+        "key_facts": [
+          "घटना लवली प्रोफेशनल यूनिवर्सिटी में हुई।",
+          "पुलिस ने तीन एफआईआर दर्ज की हैं और एसआईटी गठित की है।"
+        ],
+        "key_locations": [
+          "लवली प्रोफेशनल यूनिवर्सिटी",
+          "पंजाब"
+        ],
+        "important_dates": [
+          "रविवार"
+        ]
+      },
+      "quiz": {
+        "question": "Which institution's campus recently witnessed violent protests following unverified social media reports?",
+        "options": [
+          "Lovely Professional University",
+          "Panjab University",
+          "Guru Nanak Dev University",
+          "Thapar Institute"
+        ],
+        "correct_answer": "Lovely Professional University",
+        "explanation": "Violence erupted at Lovely Professional University following unverified reports that an outsider had allegedly raped a female student."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/lovely-professional-university-protests-latest-news-rape-suicide-rumours-101790743621721.html",
+      "published_date": "2026-09-30",
+      "id": 100,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/LPU_1790743675734_EEG9_1790743675846_5KoT_bf475b1e-7e80-46d4-8a00-850d7ed33ead_H6Y6.png",
+      "added_at": "2026-09-30T12:14:45.906155+05:30"
+    },
+    {
+      "category": "Science & Technology",
+      "exam_corner": false,
+      "headline": "Punjab Police initiate extradition of 14 people from UK in human trafficking case",
+      "story_lead": "The Bureau of Investigation (BOI) of the Punjab Police has initiated extradition proceedings against 14 Punjab residents currently held in UK detention centres. These individuals allegedly traveled from Amritsar to London using forged digital immigration and employment documents.",
+      "full_article_text": "The Bureau of Investigation (BOI), a wing of the Punjab Police, has begun the process to bring back 14 Punjab residents from the United Kingdom in connection with a suspected international human trafficking racket. This development follows a special investigation team (SIT) report detailing how these passengers traveled from Amritsar to London on Air India flights between January 11 and 16 this year using forged digital immigration documents and employment papers stored on mobile phones. After arriving in the UK, the individuals sought asylum and were subsequently detained by British authorities. Warrants have now been issued against all 14 passengers, and the Punjab Police are approaching the Union Ministry of Home Affairs (MHA) and the UK authorities via a mutual legal assistance request. The ongoing probe has also expanded to examine the possible role of Air India employees, ground-handling staff from AIASL, and travel agents.",
+      "background_context": "The case surfaced after British authorities detained an initial group of five passengers who arrived from Amritsar on January 11 and sought asylum with forged documents. Despite British alerts sent to Indian authorities and Air India, another nine passengers carrying similar documents boarded a flight on January 16. An FIR was registered in April in Mohali under relevant sections of the Bharatiya Nyaya Sanhita and the Punjab Prevention of Human Smuggling Act, 2012.",
+      "bullet_points": [
+        "Punjab Police BOI started extradition proceedings for 14 individuals detained in the UK.",
+        "Passengers allegedly used forged digital e-visas and employment documents on Air India flights from Amritsar.",
+        "SIT report identified a total of 30 people connected to the suspected network, including airline and ground staff.",
+        "A common mobile phone number was used to book tickets for 10 of the 14 passengers, pointing to an organised network.",
+        "Warrants have been issued against all 14 passengers currently held in UK detention centres."
+      ],
+      "key_facts": [
+        "14 passengers are currently held in UK detention centres.",
+        "The travel took place via Air India flights AI-169 and AI-117 from Amritsar between January 11 and 16.",
+        "The FIR was registered in Mohali in April under BNS human trafficking provisions and the Punjab Prevention of Human Smuggling Act, 2012.",
+        "An SIT is headed by Superintendent of Police Richa Agnihotri."
+      ],
+      "key_locations": [
+        "Punjab",
+        "United Kingdom",
+        "Amritsar",
+        "London",
+        "Mohali"
+      ],
+      "important_dates": [
+        "January 11, 2024",
+        "January 16, 2024",
+        "April 2024"
+      ],
+      "exam_relevance": [
+        "Mains: General Studies II - Issues related to international borders, human trafficking, and security mechanisms."
+      ],
+      "upsc_analysis": "This case highlights vulnerabilities in airport security, immigration checks, and international coordination against organized human trafficking rings. It emphasizes the need for robust institutional cooperation, stringent document verification at domestic departure points, and accountability of airline and ground-handling personnel.",
+      "causes": [
+        "Organized human trafficking networks utilizing forged digital e-visas and employment documents.",
+        "Lapses in boarding and security checks despite prior international alerts."
+      ],
+      "impacts": [
+        "Detention of 14 Indian nationals in UK facilities.",
+        "Heightened scrutiny on airline ground personnel and travel agents in Punjab."
+      ],
+      "challenges": [
+        "Coordinating international extradition and mutual legal assistance with UK authorities.",
+        "Examining forensic evidence from electronic devices belonging to airline and ground-handling staff."
+      ],
+      "government_steps": [
+        "Constitution of an SIT headed by SP Richa Agnihotri.",
+        "Issuance of arrest warrants and preparation of extradition requests via the Union Ministry of Home Affairs.",
+        "Sending electronic devices to the Central Forensic Science Laboratory (CFSL) for analysis."
+      ],
+      "constitutional_or_policy_link": [
+        "Bharatiya Nyaya Sanhita (BNS)",
+        "Punjab Prevention of Human Smuggling Act, 2012"
+      ],
+      "way_forward": [
+        "Strengthen inter-agency cooperation between Indian and British law enforcement.",
+        "Upgrade digital document verification protocols at international airports across India.",
+        "Strict penal action against complicit travel agents, airline personnel, and ground-handling staff."
+      ],
+      "mains_notes": "The Punjab Police's move to extradite 14 individuals from the UK underscores the transnational threat of human trafficking. It highlights systemic challenges in airport boarding protocols, the misuse of digital travel documents, and the complicity of local syndicates and aviation personnel.",
+      "mains_questions": [
+        "Discuss the challenges posed by transnational human trafficking syndicates and evaluate the measures required to plug security loopholes at Indian international airports.",
+        "Examine the role of international mutual legal assistance and extradition treaties in combating organized cross-border crimes."
+      ],
+      "takeaway": "Punjab Police have initiated extradition proceedings against 14 individuals linked to an international human trafficking racket involving forged digital e-visas.",
+      "prelims_facts": [
+        "The FIR invokes Section 143(3) of the Bharatiya Nyaya Sanhita and Section 13(1) of the Punjab Prevention of Human Smuggling Act, 2012."
+      ],
+      "vocabulary": [
+        {
+          "word": "Extradition",
+          "meaning_hindi": "प्रत्यर्पण"
+        },
+        {
+          "word": "Trafficking",
+          "meaning_hindi": "मानव तस्करी"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Punjab Police",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Punjab_Police"
+        },
+        {
+          "name": "Air India",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Air_India"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "पंजाब पुलिस ने यूके से 14 लोगों के प्रत्यर्पण की प्रक्रिया शुरू की",
+        "story_lead": "पंजाब पुलिस की जांच ब्यूरो (BOI) ने यूके के डिटेंशन सेंटर्स में बंद 14 पंजाब के नागरिकों के प्रत्यर्पण की प्रक्रिया शुरू कर दी है। इन लोगों पर फर्जी डिजिटल वीजा और दस्तावेजों का उपयोग करके अमृतसर से लंदन यात्रा करने का आरोप है।",
+        "full_article_text": "पंजाब पुलिस की जांच शाखा (BOI) ने एक संदिग्ध अंतरराष्ट्रीय मानव तस्करी रैकेट के सिलसिले में 14 पंजाब के निवासियों को यूनाइटेड किंगडम से वापस लाने की प्रक्रिया शुरू कर दी है।",
+        "background_context": "यह मामला तब सामने आया जब 11 जनवरी को अमृतसर से लंदन पहुंचे पांच यात्रियों के दस्तावेजों को फर्जी पाया गया और यूके के अधिकारियों ने उन्हें हिरासत में ले लिया।",
+        "bullet_points": [
+          "पंजाब पुलिस ने यूके से 14 लोगों के प्रत्यर्पण के लिए कदम उठाए।",
+          "यात्रियों पर फर्जी डिजिटल ई-वीजा का उपयोग करने का आरोप है।"
+        ],
+        "key_facts": [
+          "14 यात्री वर्तमान में यूके के डिटेंशन सेंटर्स में हैं।"
+        ],
+        "key_locations": [
+          "पंजाब",
+          "यूनाइटेड किंगडम",
+          "अमृतसर"
+        ],
+        "important_dates": [
+          "जनवरी 11, 2024",
+          "जनवरी 16, 2024"
+        ]
+      },
+      "quiz": {
+        "question": "Which wing of the Punjab Police initiated the extradition proceedings for the 14 passengers?",
+        "options": [
+          "Bureau of Investigation (BOI)",
+          "Intelligence Wing",
+          "Cyber Crime Cell",
+          "Counter Intelligence"
+        ],
+        "correct_answer": "Bureau of Investigation (BOI)",
+        "explanation": "The Bureau of Investigation (BOI), a wing of the Punjab Police, initiated the process to bring back the 14 residents from the UK."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/punjab-police-set-ball-rolling-to-extradite-14-people-from-uk-101790744713097.html",
+      "published_date": "2026-09-30",
+      "id": 99,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/punjab_police_1790744827683_7ihg_1790744827820_2whA_7fe9c864-dcff-4e7f-b7d7-47e93d4c2f55_kxod.jpg",
+      "added_at": "2026-09-30T12:14:45.906155+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": false,
+      "headline": "Verdict in Meerut 'blue drum' murder case expected today after 13 months of trial",
+      "story_lead": "The Meerut district court is set to pronounce its verdict in the widely followed Saurabh Rajput murder case on Wednesday, September 30. The trial, spanning 13 months, involved 126 hearings and testimonies from over 22 witnesses, with the prosecution seeking the death penalty for the accused.",
+      "full_article_text": "The Meerut district court is scheduled to pronounce its verdict in the Saurabh Rajput murder case on Wednesday, September 30. District government counsel Krishna Kumar Chaubey stated that all proceedings, including 126 hearings and testimonies from more than 22 witnesses, have been completed before district judge Arvind Kumar Mishra. The deceased's body was allegedly found concealed inside a blue drum at his house. The accused in the case are Saurabh’s wife, Muskan Rastogi, and Sahil Shukla, described by the prosecution as her alleged lover and co-accused. The prosecution has sought the death penalty for both accused, presenting scientific evidence and statements from 22 witnesses. The defence has argued that there is no eyewitness to the murder and that the accused were falsely implicated due to a property dispute. The case reached the court on March 17, 2025, and the trial was transferred to the district judge's court in July 2025.",
+      "background_context": "The case involves the alleged pre-planned murder of Saurabh Rajput, whose body was reportedly found inside a blue drum. The prosecution alleged that the accused purchased a knife, razor, cement, sand, and a large blue drum prior to the killing. Post-mortem evidence documented injuries caused by sharp-edged weapons. The trial began after the case reached the court on March 17, 2025, and continued under district judge Arvind Kumar Mishra.",
+      "bullet_points": [
+        "Meerut district court is set to deliver its verdict in the Saurabh Rajput murder case on Wednesday, September 30.",
+        "The trial saw 126 hearings and testimonies from more than 22 witnesses before district judge Arvind Kumar Mishra.",
+        "Muskan Rastogi (wife of the deceased) and Sahil Shukla are facing trial as co-accused in the case.",
+        "The prosecution has sought the death penalty for both accused, presenting scientific evidence and witness testimonies.",
+        "The defence argued that there was no eyewitness to the murder and claimed the accused were implicated due to a property dispute."
+      ],
+      "key_facts": [
+        "Verdict date: September 30",
+        "Total hearings: 126",
+        "Number of witnesses: Over 22",
+        "Presiding judge: District judge Arvind Kumar Mishra",
+        "Accused: Muskan Rastogi and Sahil Shukla"
+      ],
+      "key_locations": [
+        "Meerut",
+        "Meerut Jail"
+      ],
+      "important_dates": [
+        "March 17, 2025",
+        "March 19, 2025",
+        "July 2025",
+        "September 30"
+      ],
+      "exam_relevance": [
+        "General legal and judicial processes in India"
+      ],
+      "upsc_analysis": "This report covers a criminal trial process within the Indian judicial system, highlighting the presentation of scientific evidence, witness testimonies, and the timeline of district court proceedings.",
+      "causes": [
+        "Pre-planned murder allegations involving personal disputes and relationships"
+      ],
+      "impacts": [
+        "Ongoing legal proceedings and judicial verdict in the Meerut district court"
+      ],
+      "challenges": [
+        "Prosecuting serious criminal offenses based on circumstantial and scientific evidence without direct eyewitnesses"
+      ],
+      "government_steps": [
+        "Trial conducted through the Meerut district court under district judge Arvind Kumar Mishra"
+      ],
+      "constitutional_or_policy_link": [
+        "Right to fair trial and judicial administration under Indian criminal law"
+      ],
+      "way_forward": [
+        "Awaiting judicial pronouncement and adherence to due process of law"
+      ],
+      "mains_notes": "The Meerut 'blue drum' murder case trial concluded after 13 months, 126 hearings, and depositions from over 22 witnesses. The prosecution presented scientific evidence seeking the death penalty, while the defence highlighted the lack of eyewitnesses and alleged property disputes.",
+      "mains_questions": [
+        "Discuss the significance of scientific and forensic evidence in criminal trials in the absence of direct eyewitnesses."
+      ],
+      "takeaway": "The Meerut district court is set to deliver its verdict in the Saurabh Rajput murder case following a 13-month trial.",
+      "prelims_facts": [
+        "The trial involved 126 hearings and over 22 witnesses in the Meerut district court."
+      ],
+      "vocabulary": [
+        {
+          "word": "Pronouncement",
+          "meaning_hindi": "घोषणा"
+        },
+        {
+          "word": "Testimony",
+          "meaning_hindi": "गवाही"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Meerut",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Meerut"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "मेरठ 'ब्लू ड्रम' मामले में फैसला आज संभव: 126 सुनवाई और 22 गवाह",
+        "story_lead": "मेरठ जिला अदालत बुधवार, 30 सितंबर को बहुचर्चित सौरभ राजपूत हत्याकांड में अपना फैसला सुना सकती है। 13 महीने चले इस मुकदमे में 126 सुनवाई हुई और 22 से अधिक गवाहों की गवाही दर्ज की गई।",
+        "full_article_text": "मेरठ जिला अदालत बुधवार, 30 सितंबर को सौरभ राजपूत हत्याकांड में फैसला सुनाने वाली है। जिला शासकीय अधिवक्ता कृष्ण कुमार चौबे ने बताया कि मामले से जुड़ी सभी कार्यवाही पूरी हो चुकी है। जिला जज अरविंद कुमार मिश्रा की अदालत में 126 सुनवाई और 22 से अधिक गवाहों के बयान दर्ज किए गए। इस मामले में मृतक की पत्नी मुस्कान रस्तोगी और उसके कथित सह-अभियुक्त साहिल शुक्ला पर मुकदमा चल रहा है। अभियोजन पक्ष ने दोनों के लिए मृत्युदंड की मांग की है, जबकि बचाव पक्ष ने किसी भी प्रत्यक्षदर्शी के न होने का तर्क दिया है।",
+        "background_context": "इस मामले में अभियोजन पक्ष ने आरोप लगाया है कि हत्या पूर्व-नियोजित थी और आरोपियों ने अपराध से पहले हथियार व अन्य सामान खरीदा था।",
+        "bullet_points": [
+          "मेरठ जिला अदालत में 30 सितंबर को फैसले की संभावना।",
+          "मुकदमे के दौरान 126 सुनवाई और 22 से अधिक गवाहों के बयान हुए।",
+          "मुस्कान रस्तोगी और साहिल शुक्ला इस मामले में आरोपी हैं।"
+        ],
+        "key_facts": [
+          "फैसले की तिथि: 30 सितंबर",
+          "कुल सुनवाई: 126",
+          "गवाहों की संख्या: 22 से अधिक"
+        ],
+        "key_locations": [
+          "मेरठ"
+        ],
+        "important_dates": [
+          "30 सितंबर"
+        ]
+      },
+      "quiz": {
+        "question": "How many hearings were conducted in the Meerut 'blue drum' murder case trial according to the report?",
+        "options": [
+          "100 hearings",
+          "126 hearings",
+          "150 hearings",
+          "200 hearings"
+        ],
+        "correct_answer": "126 hearings",
+        "explanation": "The source states that the case has seen 126 hearings and testimony from more than 22 witnesses."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/verdict-in-meerut-blue-drum-case-likely-today-saurabh-rajput-muskan-rastogi-uttar-pradesh-101790745056893.html",
+      "published_date": "2026-09-30",
+      "id": 98,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/Muskan_Rastogi_1790745105304_PqHi_1790745105426_3nTQ_8b041cd9-7ced-4119-b947-8b3dd0e50ddb_bbVy.jpg",
+      "added_at": "2026-09-30T12:14:45.906155+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": false,
+      "headline": "29-Year-Old Driver Arrested After Mahindra Thar Hits Motorcycle on Dwarka Expressway",
+      "story_lead": "Gurugram police have arrested a 29-year-old man after a video surfaced on social media showing his Mahindra Thar striking a motorcycle during a high-speed maneuver on the Dwarka Expressway. The victims miraculously escaped a fatal run-over as oncoming drivers stopped in time. A case has been registered under the Bharatiya Nyaya Sanhita (BNS).",
+      "full_article_text": "Gurugram police arrested a 29-year-old driver named Manmeet, a resident of Mundhal Khurd village in Haryana’s Bhiwani district, following a road accident on the Dwarka Expressway. The incident occurred on September 26 when a black Mahindra Thar being driven at high speed swerved across lanes and struck a motorcycle carrying two men, Rajesh Kumar and Dinesh. Although the victims were thrown onto the road, they narrowly escaped a fatal run-over due to alert oncoming drivers who managed to stop their vehicles in time. Initially, the victims did not file a complaint, and the vehicle was registered in Bhiwani. However, after a dashcam video of the incident went viral on social media, police registered a suo motu case on Sunday at the Sector-10A police station. The First Information Report (FIR) was filed under sections 281 (rash driving or riding on a public way) and 125 (causing hurt or grievous hurt by an act endangering life or personal safety of others) of the Bharatiya Nyaya Sanhita (BNS). Utilizing the vehicle registration number visible in the viral video and CCTV footage, police traced the Thar to a service station in Sector-93 on Sunday and seized it. The driver was subsequently arrested on Tuesday. Police also traced the two victims, who survived the incident with minor cuts and bruises, and recorded their statements under Section 180 of the Bharatiya Nagarik Suraksha Sanhita (BNSS). Further investigation into the case is currently underway.",
+      "background_context": "The incident highlights the growing concerns surrounding reckless driving and high-speed maneuvers on modern expressway infrastructure in the National Capital Region (NCR). The case also demonstrates the role of digital evidence, such as dashcam footage and CCTV cameras, in enabling law enforcement agencies to take suo motu cognisance of traffic violations and crimes when formal complaints are initially absent.",
+      "bullet_points": [
+        "A 29-year-old man named Manmeet from Bhiwani district was arrested for hitting a motorcycle.",
+        "The incident took place on the Dwarka Expressway on September 26 during a high-speed maneuver.",
+        "The two motorcycle riders, Rajesh Kumar and Dinesh, survived the crash with minor cuts and bruises.",
+        "The case came to light after a dashcam video of the speeding black Mahindra Thar went viral on social media.",
+        "An FIR was registered under Sections 281 and 125 of the Bharatiya Nyaya Sanhita (BNS) at Sector-10A police station.",
+        "Police traced the vehicle to a Sector-93 service station using registration details visible in the video and CCTV footage."
+      ],
+      "key_facts": [
+        "Suspect: Manmeet, 29, from Mundhal Khurd village, Bhiwani district, Haryana.",
+        "Vehicle: Mahindra Thar (Bhiwani-registered).",
+        "Location: Dwarka Expressway, Gurugram.",
+        "Date of Incident: September 26.",
+        "Legal Sections Applied: Sections 281 and 125 of the Bharatiya Nyaya Sanhita (BNS); Section 180 of the Bharatiya Nagarik Suraksha Sanhita (BNSS)."
+      ],
+      "key_locations": [
+        "Dwarka Expressway",
+        "Gurugram",
+        "Mundhal Khurd village",
+        "Bhiwani district",
+        "Sector-10A police station",
+        "Sector-93"
+      ],
+      "important_dates": [
+        "September 26"
+      ],
+      "exam_relevance": [
+        "Prelims: Current events related to criminal law amendments (BNS and BNSS), road safety.",
+        "Mains (GS Paper II/III): Issues related to road safety, traffic enforcement, application of new criminal laws like the BNS, and the role of digital surveillance."
+      ],
+      "upsc_analysis": "The incident provides a practical case study for understanding the implementation of India's newly enacted criminal codes—the Bharatiya Nyaya Sanhita (BNS) and Bharatiya Nagarik Suraksha Sanhita (BNSS)—in handling traffic offenses and road rage. It underscores the challenges of road discipline on high-speed expressways and highlights how technology (dashcams and CCTVs) acts as a crucial force multiplier for police investigations in the absence of initial victim complaints.",
+      "causes": [
+        "Rash and negligent driving at high speeds.",
+        "Unsafe lane-swerving maneuvers on expressways."
+      ],
+      "impacts": [
+        "Endangerment of human lives on public roadways.",
+        "Physical injuries (cuts and bruises) to the motorcycle victims.",
+        "Prompt police intervention and arrest of the offender following viral digital evidence."
+      ],
+      "challenges": [
+        "Enforcing strict traffic discipline on high-speed corridors like the Dwarka Expressway.",
+        "Reliance on viral social media content for initiating action when victims initially fail to report crimes."
+      ],
+      "government_steps": [
+        "Registration of a case under BNS provisions by Gurugram Police.",
+        "Utilization of CCTV footage and vehicle registration numbers to trace and seize the vehicle.",
+        "Recording of witness and victim statements under Section 180 of the BNSS."
+      ],
+      "constitutional_or_policy_link": [
+        "Bharatiya Nyaya Sanhita (BNS), 2023",
+        "Bharatiya Nagarik Suraksha Sanhita (BNSS), 2023"
+      ],
+      "way_forward": [
+        "Enhanced automated speed and lane-discipline enforcement cameras on expressways.",
+        "Public awareness campaigns regarding immediate reporting of traffic violations and accidents.",
+        "Strict penal action against reckless driving to deter road rage and high-speed stunts."
+      ],
+      "mains_notes": "The arrest of a driver for a high-speed crash on the Dwarka Expressway highlights the utility of modern criminal codes (BNS/BNSS) and digital evidence in tackling road safety violations. While technology aids enforcement, systemic improvements in expressway monitoring and stricter penalties are essential to curb reckless driving.",
+      "mains_questions": [
+        "Discuss the role of digital evidence and social media footage in modern criminal investigations with reference to recent traffic violation cases in India.",
+        "Examine the key provisions under the Bharatiya Nyaya Sanhita (BNS) regarding rash driving and endangerment of personal safety."
+      ],
+      "takeaway": "Gurugram police arrested a Thar driver for a high-speed hit-and-run on the Dwarka Expressway, utilizing dashcam footage and new BNS provisions.",
+      "prelims_facts": [
+        "BNS Sections 281 and 125 deal with rash driving and causing hurt by acts endangering personal safety.",
+        "The Dwarka Expressway connects parts of Delhi and Haryana (Gurugram)."
+      ],
+      "vocabulary": [
+        {
+          "word": "Maneuver",
+          "meaning_hindi": "कौशलपूर्ण गतिविधि / पैंतरेबाज़ी"
+        },
+        {
+          "word": "Cognisance",
+          "meaning_hindi": "संज्ञान"
+        },
+        {
+          "word": "Seized",
+          "meaning_hindi": "ज़ब्त किया गया"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Gurugram",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Gurugram"
+        },
+        {
+          "name": "Dwarka Expressway",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Dwarka_Expressway"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "द्वारका एक्सप्रेसवे पर मोटरसाइकिल को टक्कर मारने वाली थार का 29 वर्षीय चालक गिरफ्तार: पुलिस",
+        "story_lead": "गुरुग्राम पुलिस ने सोशल मीडिया पर वायरल हुए एक वीडियो के बाद 29 वर्षीय व्यक्ति को गिरफ्तार किया है, जिसमें उसकी महिंद्रा थार द्वारका एक्सप्रेसवे पर तेज गति से गाड़ी चलाते समय एक मोटरसाइकिल से टकराती नजर आ रही है। गनीमत रही कि समय पर अन्य चालकों के ब्रेक लगाने से मोटरसाइकिल सवार दोनों बाल-बाल बच गए। भारतीय न्याय संहिता (बीएनएस) के तहत मामला दर्ज कर लिया गया है।",
+        "full_article_text": "गुरुग्राम पुलिस ने हरियाणा के भिवानी जिले के मुंढाल खुर्द गांव के रहने वाले मनमीत नामक 29 वर्षीय चालक को द्वारका एक्सप्रेसवे पर हुई दुर्घटना के सिलसिले में गिरफ्तार किया है। यह घटना 26 सितंबर को हुई जब तेज गति से जा रही एक महिंद्रा थार ने लेन बदलते हुए राजेश कुमार और दिनेश को ले जा रही एक मोटरसाइकिल को टक्कर मार दी। हालांकि दोनों पीड़ित सड़क पर गिर गए थे, लेकिन समय रहते पीछे से आ रहे अन्य वाहन चालकों के कारण उनकी जान बच गई। शुरुआत में पीड़ितों ने कोई शिकायत दर्ज नहीं कराई थी। हालांकि, सोशल मीडिया पर वायरल हुए डैशकैम वीडियो के बाद पुलिस ने रविवार को स्वतः संज्ञान लेते हुए मामला दर्ज किया। सेक्टर-10ए पुलिस स्टेशन में भारतीय न्याय संहिता (बीएनएस) की धारा 281 (सार्वजनिक मार्ग पर तेजी से वाहन चलाना) और 125 (दूसरों के जीवन या व्यक्तिगत सुरक्षा को खतरे में डालने वाले कृत्य से चोट पहुंचाना) के तहत प्राथमिकी दर्ज की गई। वीडियो और सीसीटीवी फुटेज में दिख रहे पंजीकरण नंबर की मदद से पुलिस ने सेक्टर-93 स्थित एक सर्विस स्टेशन से वाहन का पता लगाया और रविवार को उसे जब्त कर लिया। इसके बाद मंगलवार को चालक को गिरफ्तार कर लिया गया। पुलिस टीम ने पीड़ितों के बयान भारतीय नागरिक सुरक्षा संहिता (बीएनएसएस) की धारा 180 के तहत दर्ज किए।",
+        "background_context": "यह घटना राष्ट्रीय राजधानी क्षेत्र (NCR) में एक्सप्रेसवे पर तेज और लापरवाह ड्राइविंग से जुड़ी चिंताओं को उजागर करती है। यह मामला डिजिटल साक्ष्य (जैसे डैशकैम और सीसीटीवी फुटेज) के महत्व को भी दर्शाता है जो प्रारंभिक शिकायत न होने पर भी कानून प्रवर्तन एजेंसियों को स्वतः संज्ञान लेने में मदद करते हैं।",
+        "bullet_points": [
+          "भिवानी जिले के मुंढाल खुर्द निवासी 29 वर्षीय मनमीत को मोटरसाइकिल को टक्कर मारने के आरोप में गिरफ्तार किया गया।",
+          "यह घटना 26 सितंबर को द्वारका एक्सप्रेसवे पर हुई।",
+          "मोटरसाइकिल सवार राजेश कुमार और दिनेश मामूली चोटों के साथ सुरक्षित बच गए।",
+          "मामला तब सामने आया जब महिंद्रा थार का डैशकैम वीडियो सोशल मीडिया पर वायरल हुआ।",
+          "सेक्टर-10ए पुलिस स्टेशन में बीएनएस की धाराओं के तहत प्राथमिकी दर्ज की गई।"
+        ],
+        "key_facts": [
+          "संदिग्ध: मनमीत, 29 वर्ष, भिवानी, हरियाणा।",
+          "वाहन: महिंद्रा थार।",
+          "स्थान: द्वारका एक्सप्रेसवे, गुरुग्राम।"
+        ],
+        "key_locations": [
+          "द्वारका एक्सप्रेसवे",
+          "गुरुग्राम",
+          "भिवानी"
+        ],
+        "important_dates": [
+          "26 सितंबर"
+        ]
+      },
+      "quiz": {
+        "question": "Under which sections of the Bharatiya Nyaya Sanhita (BNS) was the FIR registered in the Dwarka Expressway accident case?",
+        "options": [
+          "Sections 100 and 200",
+          "Sections 281 and 125",
+          "Sections 302 and 307",
+          "Sections 420 and 406"
+        ],
+        "correct_answer": "Sections 281 and 125",
+        "explanation": "The FIR was filed under sections 281 (rash driving or riding on a public way) and 125 (causing hurt or grievous hurt by an act endangering life or personal safety of others) of the BNS."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/29yearold-thar-driver-who-hit-motorcycle-on-dwarka-expressway-arrested-police-101790747320963.html",
+      "published_date": "2026-09-30",
+      "id": 97,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/The-video-showed-the-speeding-black-Thar-swerving-_1790747313683_pwJB.png",
+      "added_at": "2026-09-30T12:14:45.906155+05:30"
+    },
+    {
+      "category": "World",
+      "exam_corner": false,
+      "headline": "Padma Bhushan 'at the very least' for Gyanesh Kumar: Bengal BJP leader's remark fuels ongoing row",
+      "story_lead": "West Bengal BJP chief Samik Bhattacharya stated that Chief Election Commissioner Gyanesh Kumar deserves a Padma Bhushan 'at the very least' for ensuring violence-free assembly elections and removing illegal infiltrators from the voter list. This demand has sparked strong reactions and swipes from opposition leaders including RJD MP Manoj Jha, J&K CM Omar Abdullah, and TMC MP Shatrughan Sinha.",
+      "full_article_text": "West Bengal BJP chief Samik Bhattacharya's remarks calling for a Padma Bhushan for Chief Election Commissioner (CEC) Gyanesh Kumar have fueled an ongoing political controversy. Bhattacharya credited the CEC with ensuring a violence-free assembly election in West Bengal and cleansing the electoral roll by removing illegal Bangladeshi infiltrators. The demand drew sharp and sarcastic reactions from opposition figures. RJD MP Manoj Jha suggested that Bhattacharya should be the first to receive the Bharat Ratna for his level of wisdom. Jammu and Kashmir Chief Minister Omar Abdullah took a similar swipe, suggesting a Bharat Ratna for delivering West Bengal to the BJP. TMC MP Shatrughan Sinha suggested Bhattacharya himself deserve a 'Jai Shree or Vijay Shree' award. Meanwhile, the Election Commission has rejected suggestions of an institutional rift after reports claimed other election commissioners objected to certain decisions, maintaining that all decisions were taken with the commission's approval.",
+      "background_context": "The controversy surrounding CEC Gyanesh Kumar stems from a news report alleging objections by other Election Commissioners to certain poll panel decisions, which the Election Commission rejected. Opposition parties have previously targeted the CEC and called for protests and resignation.",
+      "bullet_points": [
+        "West Bengal BJP chief Samik Bhattacharya called for a Padma Bhushan for CEC Gyanesh Kumar.",
+        "Bhattacharya credited the CEC with ensuring a violence-free election and removing illegal infiltrators in West Bengal.",
+        "RJD MP Manoj Jha mocked the demand, suggesting the BJP leader should receive the Bharat Ratna instead.",
+        "J&K CM Omar Abdullah took a swipe at the BJP regarding the suggestion.",
+        "TMC MP Shatrughan Sinha suggested Bhattacharya himself deserves an award.",
+        "The Election Commission rejected suggestions of an institutional rift within the poll panel."
+      ],
+      "key_facts": [
+        "Samik Bhattacharya is the West Bengal BJP chief and a Rajya Sabha MP.",
+        "Gyanesh Kumar is the Chief Election Commissioner (CEC).",
+        "Opposition leaders including Manoj Jha, Omar Abdullah, and Shatrughan Sinha reacted critically to the demand."
+      ],
+      "key_locations": [
+        "West Bengal",
+        "Panihati",
+        "North 24 Parganas",
+        "Bidhannagar",
+        "Jammu and Kashmir"
+      ],
+      "important_dates": [
+        "October 2",
+        "Friday",
+        "Saturday",
+        "Tuesday"
+      ],
+      "exam_relevance": [
+        "Polity and Governance - Election Commission of India"
+      ],
+      "upsc_analysis": "The article highlights the ongoing political discourse surrounding the Election Commission of India and its officials, reflecting the complex relationship between political parties and constitutional bodies.",
+      "causes": [
+        "Comments by West Bengal BJP chief praising the CEC's handling of elections and electoral rolls.",
+        "Existing political tensions and opposition criticism regarding the Election Commission."
+      ],
+      "impacts": [
+        "Fueling of political controversy and verbal sparring between the ruling party and opposition leaders."
+      ],
+      "challenges": [
+        "Maintaining the perceived neutrality and independence of constitutional bodies like the Election Commission amidst political commentary."
+      ],
+      "government_steps": [
+        "The Election Commission rejected suggestions of an institutional rift and maintained transparency in decision-making."
+      ],
+      "constitutional_or_policy_link": [
+        "Article 324 of the Constitution of India regarding the superintendence, direction, and control of elections vested in an Election Commission."
+      ],
+      "way_forward": [
+        "Ensuring the political neutrality of constitutional authorities and maintaining public trust in democratic institutions."
+      ],
+      "mains_notes": "Political remarks on constitutional authorities like the Election Commission highlight the challenges of institutional independence and the need to insulate poll bodies from partisan political discourse.",
+      "mains_questions": [
+        "Discuss the constitutional role of the Election Commission of India and the importance of maintaining its institutional independence."
+      ],
+      "takeaway": "West Bengal BJP chief's call for a Padma Bhushan for the CEC has intensified political debates involving opposition leaders.",
+      "prelims_facts": [
+        "Padma Bhushan is India's third-highest civilian award.",
+        "Article 324 relates to the Election Commission."
+      ],
+      "vocabulary": [
+        {
+          "word": "Infiltrators",
+          "meaning_hindi": "घुसपैठिए"
+        },
+        {
+          "word": "Controversy",
+          "meaning_hindi": "विवाद"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Gyanesh Kumar",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Gyanesh_Kumar"
+        },
+        {
+          "name": "West Bengal",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=West_Bengal"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "ज्ञानेंद्र कुमार के लिए पद्म भूषण 'कम से कम': पश्चिम बंगाल के भाजपा नेता के बयान से विवाद गहराया",
+        "story_lead": "पश्चिम बंगाल के भाजपा अध्यक्ष समिक भट्टाचार्य ने कहा कि मुख्य चुनाव आयुक्त (सीईसी) ज्ञानेंद्र कुमार 'कम से कम' पद्म भूषण के हकदार हैं।",
+        "full_article_text": "पश्चिम बंगाल के भाजपा अध्यक्ष समिक भट्टाचार्य के बयान ने राजनीतिक विवाद को और हवा दे दी है।",
+        "background_context": "यह विवाद मुख्य चुनाव आयुक्त को लेकर चल रहे राजनीतिक घटनाक्रम से जुड़ा है।",
+        "bullet_points": [
+          "समिक भट्टाचार्य ने ज्ञानेंद्र कुमार के लिए पद्म भूषण की मांग की।",
+          "विपक्षी नेताओं ने इस मांग पर तीखी प्रतिक्रिया दी।"
+        ],
+        "key_facts": [
+          "समिक भट्टाचार्य पश्चिम बंगाल भाजपा अध्यक्ष हैं।"
+        ],
+        "key_locations": [
+          "पश्चिम बंगाल"
+        ],
+        "important_dates": [
+          "शुक्रवार"
+        ]
+      },
+      "quiz": {
+        "question": "Who demanded a Padma Bhushan for CEC Gyanesh Kumar?",
+        "options": [
+          "Samik Bhattacharya",
+          "Manoj Jha",
+          "Omar Abdullah",
+          "Shatrughan Sinha"
+        ],
+        "correct_answer": "Samik Bhattacharya",
+        "explanation": "West Bengal BJP chief Samik Bhattacharya stated that CEC Gyanesh Kumar deserved a Padma Bhushan at the very least."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/padma-bhushan-at-the-very-least-for-gyanesh-kumar-bengal-bjps-call-fuels-ongoing-row-opposition-swipe-101790744200319.html",
+      "published_date": "2026-09-30",
+      "id": 96,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/Gyanesh_Kumar_1790748844753_fFrW_1790748844939_BNh0_54419b5d-b84f-457e-92cb-8ef611e9eb3b_m8nE.JPG",
+      "added_at": "2026-09-30T12:14:45.906155+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": true,
+      "headline": "ECI removes extra SIR declaration from Form 6 in states where revision is complete",
+      "story_lead": "The Election Commission of India (ECI) has withdrawn the additional Special Intensive Revision (SIR) declaration attached to online Form 6 applications in states and Union territories where the electoral roll revision exercise is complete. Fresh applicants in these regions will now only need to submit the statutory Form 6 prescribed under the Registration of Electors Rules, 1960. The move follows internal discussions and a clarification issued by the poll panel regarding the application of additional declarations during and outside the SIR period.",
+      "full_article_text": "The Election Commission of India (ECI) has withdrawn the additional Special Intensive Revision (SIR) declaration attached to the online Form 6 application in states and Union territories where the electoral roll revision exercise has been completed. This additional declaration has been removed from the ECINET application and portal, as well as the respective Chief Electoral Officer (CEO) websites in these specific states and UTs. Consequently, fresh electoral roll applicants seeking inclusion must now submit the statutory Form 6 prescribed under the Registration of Electors Rules, 1960.\n\nForm 6 is the statutory application utilized by eligible citizens to seek inclusion in the electoral roll as new voters, governed under the Registration of Electors Rules, 1960, which outline the preparation and revision of electoral rolls. The withdrawal follows the ECI's September 26 decision clarifying that the additional declaration attached to Form 6 applies strictly during the SIR period, while the forms prescribed under the 1960 rules are to be used outside the exercise.\n\nThe additional declaration had previously become a contentious issue within the poll panel, with Election Commissioners Vivek Joshi and Sukhbir Singh Sandhu raising objections concerning modifications to Form 6. While Joshi argued that the statutory form could not be modified without amending the rules, and Sandhu endorsed the objection, the ECI maintained that the declaration was introduced as part of the SIR process and that the requirement had been upheld by the Supreme Court.\n\nMeanwhile, political parties have raised multiple demands regarding the electoral roll revision process. The Congress Working Committee (CWC) demanded a halt to the SIR of electoral rolls, the restoration of deleted names, and public disclosure of complete data on major changes. The party also called for independent inquiries into discrepancies and for affected voters to be given an opportunity to appeal. The additional declaration during SIR had earlier drawn criticism from the opposition for seeking details on whether applicants, their parents, or grandparents appeared in an earlier electoral roll.",
+      "background_context": "Form 6 is the statutory application prescribed under the Registration of Electors Rules, 1960, used by eligible citizens to apply for inclusion in electoral rolls as new voters. The Special Intensive Revision (SIR) introduced additional declarations requiring applicants to provide details on whether they, their parents, or grandparents appeared in earlier electoral rolls, which became a point of contention within the Election Commission and among political parties.",
+      "bullet_points": [
+        "ECI has withdrawn the additional Special Intensive Revision (SIR) declaration from online Form 6 applications in states and UTs where electoral roll revision is complete.",
+        "The removal applies to the ECINET application, portal, and respective Chief Electoral Officer websites in those regions.",
+        "Fresh applicants will now submit the statutory Form 6 under the Registration of Electors Rules, 1960.",
+        "Election Commissioners Vivek Joshi and Sukhbir Singh Sandhu had previously raised objections to modifying the statutory form without amending the rules.",
+        "The ECI maintained that the declaration was part of the SIR process and upheld by the Supreme Court.",
+        "Political parties, including the Congress, have raised concerns over deletions and demanded a halt to the SIR process and public data disclosure."
+      ],
+      "key_facts": [
+        "Form 6 is prescribed under the Registration of Electors Rules, 1960.",
+        "The ECI announced on September 26 that additional declarations apply during the SIR period.",
+        "The removal of the extra declaration affects states and UTs where the revision exercise is complete."
+      ],
+      "key_locations": [
+        "India"
+      ],
+      "important_dates": [
+        "September 26"
+      ],
+      "exam_relevance": [
+        "UPSC Prelims: Polity and Governance - Election Commission of India, Electoral Rolls, Statutory Rules",
+        "UPSC Mains GS Paper II: Statutory, regulatory and various quasi-judicial bodies; Representation of the People Act"
+      ],
+      "upsc_analysis": "The issue highlights the administrative processes and statutory boundaries governing the Election Commission of India. Debates around the modification of statutory forms like Form 6 without amending underlying rules touch upon delegated legislation, administrative transparency, and the balance between executive directions and statutory mandates. Furthermore, controversies involving electoral roll revisions and deletions underscore the critical importance of maintaining accurate, inclusive voter lists to safeguard democratic electoral participation.",
+      "causes": [
+        "Completion of the electoral roll revision exercise in specific states and Union territories.",
+        "Internal deliberations and objections raised by Election Commissioners regarding the modification of statutory forms."
+      ],
+      "impacts": [
+        "Fresh applicants in completed states no longer need to fill out the additional SIR declaration on Form 6.",
+        "Heightened political debate and scrutiny regarding voter roll revisions, deletions, and transparency."
+      ],
+      "challenges": [
+        "Balancing administrative revision exercises with statutory rules and procedures.",
+        "Addressing political and public concerns regarding transparency, data disclosure, and alleged voter deletions."
+      ],
+      "government_steps": [
+        "ECI withdrew the additional SIR declaration from Form 6 in states where the revision is complete.",
+        "ECI clarified on September 26 regarding the usage of SIR declarations versus standard statutory forms."
+      ],
+      "constitutional_or_policy_link": [
+        "Registration of Electors Rules, 1960",
+        "Election Commission of India mandate under Article 324"
+      ],
+      "way_forward": [
+        "Ensuring clarity and strict adherence to statutory rules in electoral processes.",
+        "Fostering transparency through timely data sharing and grievance redressal for deleted voters."
+      ],
+      "mains_notes": "The Election Commission of India withdrew the additional Special Intensive Revision (SIR) declaration from Form 6 in regions where the electoral roll revision is complete. While the ECI maintained that the declaration was part of the SIR process and backed by the Supreme Court, internal dissent highlighted concerns over modifying statutory forms under the Registration of Electors Rules, 1960, without rule amendments. The development brings attention to the transparency of electoral roll management and the procedures governing voter registrations.",
+      "mains_questions": [
+        "Discuss the statutory framework governing the revision of electoral rolls in India and examine the administrative role of the Election Commission in this regard.",
+        "Analyze the significance of Form 6 in voter registration and evaluate the challenges associated with electoral roll revision exercises."
+      ],
+      "takeaway": "The ECI has removed the additional SIR declaration from Form 6 in states where electoral roll revisions are complete, reverting to standard statutory forms under the 1960 rules.",
+      "prelims_facts": [
+        "Form 6 is prescribed under the Registration of Electors Rules, 1960.",
+        "Special Intensive Revision (SIR) involves electoral roll updates.",
+        "The Election Commission of India oversees the preparation and revision of electoral rolls."
+      ],
+      "vocabulary": [
+        {
+          "word": "Statutory",
+          "meaning_hindi": "वैधानिक"
+        },
+        {
+          "word": "Declaration",
+          "meaning_hindi": "घोषणा"
+        },
+        {
+          "word": "Contention",
+          "meaning_hindi": "विवाद"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Election Commission of India",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Election_Commission_of_India"
+        },
+        {
+          "name": "Vivek Joshi",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Vivek_Joshi"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "ईसीआई ने उन राज्यों में फॉर्म 6 से अतिरिक्त एसआईआर घोषणा हटाई जहां संशोधन पूरा हो गया है",
+        "story_lead": "भारत निर्वाचन आयोग (ईसीआई) ने उन राज्यों और केंद्र शासित प्रदेशों में ऑनलाइन फॉर्म 6 आवेदन के साथ संलग्न अतिरिक्त विशेष गहन पुनरीक्षण (एसआईआर) घोषणा को वापस ले लिया है जहां मतदाता सूची संशोधन अभ्यास पूरा हो चुका है। इन क्षेत्रों में नए नामांकन चाहने वाले आवेदक अब केवल मतदाता पंजीकरण नियम, 1960 के तहत निर्धारित सांविधिक फॉर्म 6 जमा करने की आवश्यकता होगी।",
+        "full_article_text": "भारत निर्वाचन आयोग (ईसीआई) ने उन राज्यों और केंद्र शासित प्रदेशों में ऑनलाइन फॉर्म 6 आवेदन से अतिरिक्त विशेष गहन पुनरीक्षण (एसआईआर) घोषणा को हटा दिया है जहां मतदाता सूची संशोधन अभ्यास पूरा हो गया है। यह अतिरिक्त घोषणा ईसीनेट एप्लिकेशन और पोर्टल के साथ-साथ इन राज्यों और केंद्र शासित प्रदेशों की संबंधित मुख्य निर्वाचन अधिकारी वेबसाइटों से हटा दी गई है। मतदाता सूचियों में नए नामांकन चाहने वाले आवेदकों को अब मतदाता पंजीकरण नियम, 1960 के तहत निर्धारित सांविधिक फॉर्म 6 जमा करना होगा। यह कदम चुनाव आयोग के 26 सितंबर के उस स्पष्टीकरण के बाद उठाया गया है जिसमें कहा गया था कि फॉर्म 6 के साथ संलग्न अतिरिक्त घोषणा एसआईआर अवधि के दौरान लागू होगी, जबकि 1960 के नियमों के तहत निर्धारित फॉर्म का उपयोग अभ्यास के बाहर किया जाएगा। फॉर्म 6 पात्र नागरिकों द्वारा नए मतदाताओं के रूप में मतदाता सूची में शामिल होने के लिए उपयोग किया जाने वाला सांविधिक आवेदन है। यह मतदाता पंजीकरण नियम, 1960 के तहत निर्धारित है, जो मतदाता सूचियों की तैयारी और संशोधन को नियंत्रित करते हैं।",
+        "background_context": "फॉर्म 6 मतदाता पंजीकरण नियम, 1960 के तहत निर्धारित एक सांविधिक आवेदन है जिसका उपयोग पात्र नागरिक नए मतदाताओं के रूप में मतदाता सूची में शामिल होने के लिए करते हैं।",
+        "bullet_points": [
+          "ईसीआई ने उन राज्यों और केंद्र शासित प्रदेशों में फॉर्म 6 से अतिरिक्त एसआईआर घोषणा वापस ले ली है जहां संशोधन पूरा हो गया है।",
+          "यह निष्कासन ईसीनेट पोर्टल और सीईओ वेबसाइटों से किया गया है।",
+          "आवेदक अब 1960 के नियमों के तहत सांविधिक फॉर्म 6 जमा करेंगे।"
+        ],
+        "key_facts": [
+          "फॉर्म 6 मतदाता पंजीकरण नियम, 1960 के तहत निर्धारित है।"
+        ],
+        "key_locations": [
+          "भारत"
+        ],
+        "important_dates": [
+          "26 सितंबर"
+        ]
+      },
+      "quiz": {
+        "question": "Which statutory rules prescribe Form 6 for fresh electoral roll applicants in India?",
+        "options": [
+          "Registration of Electors Rules, 1960",
+          "Representation of the People Act, 1951",
+          "Delimitation Act, 2002",
+          "Constitution of India, Article 324"
+        ],
+        "correct_answer": "Registration of Electors Rules, 1960",
+        "explanation": "Form 6 is the statutory application prescribed under the Registration of Electors Rules, 1960, used by eligible citizens to seek inclusion in electoral rolls as new voters."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/eci-withdraws-sir-declaration-from-online-form-6-in-states-where-exercise-is-complete-101790748348129.html",
+      "published_date": "2026-09-30",
+      "id": 95,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/ANI-20260516330-0_1786687288866_1786687306960_b23e7bf4-c001-4cdd-9198-a6363e4b8ed3_1790749242672_JYWb_7d2da064-e014-4695-8aee-3faff923a2ea_ICV8.jpg",
+      "added_at": "2026-09-30T12:14:45.906155+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": false,
+      "headline": "DUSU Submits Memorandum to Delhi CM Demanding Hostels and Enhanced Women’s Safety",
+      "story_lead": "The newly elected Delhi University Students’ Union (DUSU) has submitted a formal memorandum to Delhi Chief Minister Rekha Gupta. The student body is pressing for the construction of student hostels, strict safety audits of accommodations, and enhanced women's safety measures around the campus.",
+      "full_article_text": "The Delhi University Students’ Union (DUSU) recently submitted a memorandum to Delhi Chief Minister Rekha Gupta, calling for coordinated action between the university administration and the Delhi government in a time-bound manner. The elected student body urged the government to construct hostels for students, conduct strict audits of existing student accommodations, and address pressing women’s safety concerns, including the installation and repair of streetlights around the campus. This move is aimed at implementing manifesto promises made by the Akhil Bharatiya Vidyarthi Parishad (ABVP) for the 2026–27 DUSU elections, where it secured three out of four panel positions. The ABVP had pledged to extend a campaign launched following the Satya Niketan building collapse in September, which demanded more student hostels and MCD official resignations. DUSU president Yash Dabas emphasized the necessity of safe and adequate hostel facilities alongside regular safety audits of PG accommodations and buildings. Furthermore, women's safety measures have gained heightened attention following recent incidents such as the gang rape of a minor school student near Kalkaji. DUSU secretary Riya Chhawdi highlighted the need for adequate lighting at dark spots, Pink Booths, and strengthened police patrolling arrangements in and around the university campus.",
+      "background_context": "The memorandum stems from manifesto promises made during the 2026–27 DUSU elections by the ABVP, which secured three out of four panel positions. The student campaign builds upon earlier demands raised following the Satya Niketan building collapse in September and heightened concerns over women's safety following incidents like the minor school student gang rape case near Kalkaji.",
+      "bullet_points": [
+        "DUSU submitted a memorandum to Delhi CM Rekha Gupta on Tuesday.",
+        "Demands include constructing new student hostels and auditing existing PGs.",
+        "Calls for coordinated action between the university administration and Delhi government.",
+        "Addresses women's safety through streetlights, Pink Booths, and enhanced patrolling.",
+        "Reflects the manifesto promises of ABVP for the 2026–27 DUSU elections."
+      ],
+      "key_facts": [
+        "DUSU submitted the memorandum to Delhi Chief Minister Rekha Gupta.",
+        "ABVP secured three out of four panel positions in the 2026–27 DUSU elections.",
+        "Demands were inspired partly by the Satya Niketan building collapse in September."
+      ],
+      "key_locations": [
+        "Delhi University",
+        "Satya Niketan",
+        "Kalkaji",
+        "Delhi"
+      ],
+      "important_dates": [
+        "Tuesday",
+        "September (Satya Niketan incident)",
+        "2026–27 (DUSU elections)"
+      ],
+      "exam_relevance": [
+        "Prelims: Current affairs related to student governance and civic administration.",
+        "Mains (General Studies II/IV): Governance, student welfare, urban safety, and women's safety in educational institutions."
+      ],
+      "upsc_analysis": "The demands raised by DUSU highlight critical urban governance and student welfare challenges in institutional hubs like Delhi University. From a civil services perspective, issues such as affordable student accommodation, building safety regulations (PG audits), and urban women's safety reflect the broader systemic gaps in municipal and state administrative coordination.",
+      "causes": [
+        "Lack of adequate student hostel facilities in Delhi University.",
+        "Safety concerns arising from incidents like the Satya Niketan building collapse.",
+        "Heightened public and student anxiety regarding women's safety following recent crimes near Kalkaji."
+      ],
+      "impacts": [
+        "Increased pressure on the Delhi government and university administration to implement time-bound safety and accommodation measures.",
+        "Renewed focus on student welfare and infrastructural safety audits across private accommodations."
+      ],
+      "challenges": [
+        "Coordinating multi-agency responses between Delhi University, municipal authorities, and the Delhi government.",
+        "Ensuring strict and regular safety audits of numerous private PGs and student accommodations."
+      ],
+      "government_steps": [
+        "Receipt of memorandum by Delhi CM Rekha Gupta for review and potential time-bound action."
+      ],
+      "constitutional_or_policy_link": [
+        "Right to life and personal liberty (Article 21) encompassing safe living environments and women's safety."
+      ],
+      "way_forward": [
+        "Establish a joint coordination committee comprising university officials, student representatives, and municipal authorities.",
+        "Mandate rigorous structural and fire safety audits for all PG accommodations catering to students.",
+        "Improve urban infrastructure by deploying Pink Booths, repairing streetlights, and increasing patrolling in university zones."
+      ],
+      "mains_notes": "Student bodies play a crucial role in voicing infrastructural and safety concerns in premier educational hubs. The DUSU memorandum emphasizes the dual need for affordable student housing and robust women's safety mechanisms, demanding coordinated interventions by state and university authorities.",
+      "mains_questions": [
+        "Discuss the urban governance challenges concerning student housing and safety in major educational hubs like Delhi University.",
+        "Examine the role of student unions in advocating for systemic administrative accountability and women's safety."
+      ],
+      "takeaway": "DUSU has urged the Delhi government for time-bound action on student hostels, PG safety audits, and enhanced women's safety measures around the campus.",
+      "prelims_facts": [
+        "DUSU submitted its memorandum to Delhi Chief Minister Rekha Gupta.",
+        "ABVP secured three of four panel positions in the 2026–27 DUSU elections."
+      ],
+      "vocabulary": [
+        {
+          "word": "Memorandum",
+          "meaning_hindi": "ज्ञापन"
+        },
+        {
+          "word": "Audits",
+          "meaning_hindi": "लेखापरीक्षा / जाँच"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Delhi University",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Delhi_University"
+        },
+        {
+          "name": "Rekha Gupta",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Rekha_Gupta"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "छात्रों के लिए हॉस्टल सुविधा और महिलाओं की सुरक्षा: डीयूएसयू ने दिल्ली की सीएम को सौंपा ज्ञापन",
+        "story_lead": "नव-निर्वाचित दिल्ली विश्वविद्यालय छात्र संघ (डीयूएसयू) ने दिल्ली सरकार से छात्रों के लिए हॉस्टल बनाने, मौजूदा छात्र आवासों के कड़े ऑडिट कराने और परिसर के आसपास स्ट्रीटलाइट्स की मरम्मत सहित महिलाओं की सुरक्षा संबंधी चिंताओं को दूर करने के लिए सक्रिय उपाय करने का आग्रह किया है।",
+        "full_article_text": "दिल्ली विश्वविद्यालय छात्र संघ (डीयूएसयू) ने मंगलवार को मुख्यमंत्री रेखा गुप्ता को एक ज्ञापन सौंपकर विश्वविद्यालय प्रशासन और दिल्ली सरकार से इन चिंताओं का समयबद्ध तरीके से समाधान करने के लिए समन्वित कार्रवाई करने का आह्वान किया।",
+        "background_context": "यह कदम एबीवीपी द्वारा 2026-27 के डीयूएसयू चुनावों के अपने घोषणापत्र में किए गए वादों को लागू करने के लिए उठाया गया है।",
+        "bullet_points": [
+          "डीयूएसयू ने मंगलवार को दिल्ली की सीएम रेखा गुप्ता को ज्ञापन सौंपा।",
+          "नए छात्र हॉस्टल के निर्माण और पीजी के ऑडिट की मांग।",
+          "महिलाओं की सुरक्षा के लिए पर्याप्त प्रकाश व्यवस्था और पिंक बूथ की मांग।"
+        ],
+        "key_facts": [
+          "डीयूएसयू ने मुख्यमंत्री रेखा गुप्ता को ज्ञापन सौंपा।"
+        ],
+        "key_locations": [
+          "दिल्ली विश्वविद्यालय",
+          "दिल्ली"
+        ],
+        "important_dates": [
+          "मंगलवार"
+        ]
+      },
+      "quiz": {
+        "question": "Which student body recently submitted a memorandum to Delhi CM Rekha Gupta demanding hostels and women's safety measures?",
+        "options": [
+          "JNUSU",
+          "DUSU",
+          "NSUI",
+          "AISA"
+        ],
+        "correct_answer": "DUSU",
+        "explanation": "The newly elected Delhi University Students’ Union (DUSU) submitted a memorandum to Delhi Chief Minister Rekha Gupta regarding student hostels and women's safety."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/hostel-facilities-for-students-women-s-safety-dusu-submits-memorandum-to-delhi-cm-101790748580080.html",
+      "published_date": "2026-09-30",
+      "id": 94,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/The-move-is-aimed-at-pressing-for-the-implementati_1790748573915_H48K.jpg",
+      "added_at": "2026-09-30T12:14:45.906155+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": false,
+      "headline": "J&K Assembly witnesses brief disruption over withdrawal of bill to increase MLAs' salaries",
+      "story_lead": "The Jammu and Kashmir Legislative Assembly experienced a brief disruption on Wednesday as members debated the recent withdrawal of a bill proposing an increase in legislators' salaries. Chief Minister Omar Abdullah had moved to withdraw the bills due to a lack of unanimity in the House.",
+      "full_article_text": "The Jammu and Kashmir Legislative Assembly witnessed a brief disruption on Wednesday over the withdrawal of a bill aimed at increasing legislators' salaries. As proceedings began, National Conference (NC) MLA from Pahalgam, Altaf Kaloo, raised the issue of the bill's withdrawal. The legislation, along with another bill proposing an increase in ministers' salaries, was withdrawn by the assembly after Chief Minister Omar Abdullah stated there was a lack of unanimity in the House. BJP MLAs had raised objections, prompting the chief minister to withdraw the measures. Kaloo alleged that the BJP opposed the bill because their recommendation for a ₹3 lakh salary was rejected, a claim refuted by BJP MLA Sham Lal Sharma, who clarified that the government withdrew the bill and suggested using funds for daily wagers and need-based workers instead. Speaker Abdul Rahim Rather intervened, noting the issue was closed on Tuesday, after which the House proceedings resumed with the Question Hour.",
+      "background_context": "The session involved discussions surrounding bills to increase salaries for MLAs and ministers in the Jammu and Kashmir Legislative Assembly, which were subsequently withdrawn by Chief Minister Omar Abdullah following objections and a lack of consensus.",
+      "bullet_points": [
+        "J&K Assembly saw a brief disruption over the withdrawal of a bill to increase legislators' salaries.",
+        "NC MLA Altaf Kaloo raised the issue at the start of House proceedings.",
+        "Chief Minister Omar Abdullah moved to withdraw the bills citing a lack of unanimity.",
+        "BJP MLAs raised objections, with MLA Sham Lal Sharma suggesting funds be used for daily wagers.",
+        "Speaker Abdul Rahim Rather intervened, stating the issue had been closed on Tuesday.",
+        "House proceedings subsequently resumed with the Question Hour."
+      ],
+      "key_facts": [
+        "The Jammu and Kashmir Legislative Assembly witnessed a brief disruption on Wednesday.",
+        "Bills to increase salaries of MLAs and ministers were withdrawn by the assembly.",
+        "Chief Minister Omar Abdullah moved the withdrawal due to a lack of unanimity.",
+        "Speaker Abdul Rahim Rather presided over the session."
+      ],
+      "key_locations": [
+        "Jammu and Kashmir"
+      ],
+      "important_dates": [
+        "Wednesday",
+        "Tuesday"
+      ],
+      "exam_relevance": [
+        "General awareness of current events and legislative procedures in Union Territories."
+      ],
+      "upsc_analysis": "The legislative discourse highlights the dynamics of consensus-building in assembly proceedings and the debate surrounding public funds versus emoluments for elected representatives.",
+      "causes": [
+        "Lack of unanimity in the House regarding the salary increase bills.",
+        "Objections raised by BJP MLAs leading the chief minister to withdraw the bills."
+      ],
+      "impacts": [
+        "Brief disruption of assembly proceedings before the resumption of the Question Hour."
+      ],
+      "challenges": [
+        "Reaching consensus among diverse political parties on legislative matters concerning remuneration."
+      ],
+      "government_steps": [
+        "Withdrawal of the salary enhancement bills by Chief Minister Omar Abdullah."
+      ],
+      "constitutional_or_policy_link": [
+        "Legislative assembly rules and procedures regarding the introduction and withdrawal of bills."
+      ],
+      "way_forward": [
+        "Fostering legislative consensus through constructive debate and prioritization of public welfare funds."
+      ],
+      "mains_notes": "The J&K Assembly faced brief disruptions over the withdrawal of MLA salary hike bills due to a lack of consensus. Discussions involved prioritizing daily wagers versus legislative emoluments, emphasizing the role of the Speaker in managing House proceedings.",
+      "mains_questions": [
+        "Discuss the procedural aspects of withdrawing bills in a state or UT legislative assembly.",
+        "Analyze the importance of legislative consensus in matters concerning public expenditure and emoluments."
+      ],
+      "takeaway": "Bills to increase J&K legislators' salaries were withdrawn by the government due to a lack of unanimity, causing a brief assembly disruption.",
+      "prelims_facts": [
+        "Chief Minister Omar Abdullah withdrew the salary enhancement bills.",
+        "Speaker of the J&K Assembly is Abdul Rahim Rather."
+      ],
+      "vocabulary": [
+        {
+          "word": "Unanimity",
+          "meaning_hindi": "सर्वसम्मति"
+        },
+        {
+          "word": "Disruption",
+          "meaning_hindi": "व्यवधान"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Omar Abdullah",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Omar%20Abdullah"
+        },
+        {
+          "name": "Jammu and Kashmir Legislative Assembly",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Jammu%20and%20Kashmir%20Legislative%20Assembly"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "विधायकों के वेतन बढ़ाने वाले विधेयक को वापस लेने पर जेएंडके विधानसभा में संक्षिप्त व्यवधान देखा गया",
+        "story_lead": "विधायकों के वेतन में वृद्धि से संबंधित विधेयक को वापस लेने के मुद्दे पर बुधवार को जम्मू-कश्मीर विधानसभा में संक्षिप्त व्यवधान देखा गया। मुख्यमंत्री उमर अब्दुल्ला ने सदन में सर्वसम्मति के अभाव का हवाला देते हुए विधेयकों को वापस ले लिया था।",
+        "full_article_text": "सदन की कार्यवाही शुरू होते ही पहलगाम से नेशनल कॉन्फ्रेंस (एनसी) के विधायक Altaf Kaloo ने विधेयक को वापस लेने का मुद्दा उठाया। जम्मू-कश्मीर विधानसभा में बुधवार को विधायकों के वेतन में वृद्धि के विधेयक को वापस लेने पर संक्षिप्त व्यवधान देखा गया। मुख्यमंत्री उमर अब्दुल्ला द्वारा सदन में सर्वसम्मति के अभाव का हवाला देते हुए मंत्रियों और विधायकों के वेतन वृद्धि से जुड़े विधेयकों को वापस ले लिया गया। भाजपा विधायकों ने विधेयक पर कुछ आपत्तियां उठाई थीं, जिसके बाद मुख्यमंत्री ने कहा कि यदि विधेयक सर्वसम्मति से पारित नहीं होते हैं तो वे उन्हें वापस ले लेंगे।",
+        "background_context": "सत्र के दौरान विधायकों और मंत्रियों के वेतन बढ़ाने वाले विधेयकों पर चर्चा हुई, जिन्हें बाद में आपत्तियों और आम सहमति के अभाव के कारण मुख्यमंत्री उमर अब्दुल्ला द्वारा वापस ले लिया गया।",
+        "bullet_points": [
+          "जेएंडके विधानसभा में विधायकों के वेतन बढ़ाने वाले विधेयक को वापस लेने पर संक्षिप्त व्यवधान हुआ।",
+          "एनसी विधायक Altaf Kaloo ने कार्यवाही शुरू होते ही यह मुद्दा उठाया।",
+          "मुख्यमंत्री उमर अब्दुल्ला ने सर्वसम्मति की कमी का हवाला देते हुए विधेयक वापस लिए।",
+          "भाजपा विधायकों ने आपत्तियां उठाईं, जिसके बाद सदन की कार्यवाही फिर से शुरू हुई।"
+        ],
+        "key_facts": [
+          "जम्मू-कश्मीर विधानसभा में बुधवार को संक्षिप्त व्यवधान देखा गया।",
+          "वेतन वृद्धि से जुड़े विधेयक वापस ले लिए गए।"
+        ],
+        "key_locations": [
+          "जम्मू और कश्मीर"
+        ],
+        "important_dates": [
+          "बुधवार",
+          "मंगलवार"
+        ]
+      },
+      "quiz": {
+        "question": "Who moved to withdraw the bills regarding the increase in legislators' salaries in the J&K Assembly?",
+        "options": [
+          "Altaf Kaloo",
+          "Omar Abdullah",
+          "Sham Lal Sharma",
+          "Abdul Rahim Rather"
+        ],
+        "correct_answer": "Omar Abdullah",
+        "explanation": "Chief Minister Omar Abdullah moved to withdraw the bills citing a lack of unanimity in the House."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/jk-assembly-witnesses-brief-disruption-over-withdrawal-of-bill-to-increase-mlas-salaries-101790745416601.html",
+      "published_date": "2026-09-30",
+      "id": 93,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/Jammu-and-Kashmir-assembly-Speaker-Abdul-Rahim-Rat_1790747291911_x83q_1790747292095_Xte5_35fcacca-076d-4b2e-bb63-c2520de1c447_KjPO.jpg",
+      "added_at": "2026-09-30T12:14:45.906155+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": true,
+      "headline": "Bengal asks Supreme Court to revoke bail for Cong’s Nandigram candidate",
+      "story_lead": "The West Bengal government has moved the Supreme Court seeking an immediate stay on the Calcutta high court order granting interim bail to Congress’s Nandigram bypoll candidate Milan Pradhan. The state argued that a murder accused facing multiple non-bailable warrants should not be granted relief to campaign for elections. The Supreme Court has agreed to list the matter for hearing.",
+      "full_article_text": "The West Bengal government moved the Supreme Court seeking an immediate stay on the Calcutta high court order granting interim bail to Congress’s Nandigram bypoll candidate Milan Pradhan. Solicitor General Tushar Mehta, appearing for the state government, argued before Chief Justice of India Surya Kant that Pradhan is a murder accused with six non-bailable warrants (NBWs) against him and should not have been given such relief merely for elections. On September 29, a single-judge bench of Justice Tirthankar Ghosh had granted Pradhan interim bail for three weeks in six criminal cases stemming from the 2007 Nandigram anti-land acquisition agitation. These cases include four murder charges, and the bail enabled him to campaign for the October 6 assembly bypoll. The high court directed him to surrender before the Haldia trial court on October 21 and imposed strict conditions, including furnishing a bail bond of ₹20,000 in each of the six cases and providing his mobile number to the investigating officer for tracking. Pradhan was arrested on September 18, hours after the Trinamool Congress candidate withdrew and party chief Mamata Banerjee announced support for him. He was in judicial remand for cases registered at Nandigram police station and neighbouring Khejuri for offences including murder, attempt to murder, and violations of the Arms Act. The Supreme Court agreed to list the matter for hearing on October 5, a day after campaigning for the bypoll concludes, while voting is scheduled for October 6 and counting for October 9.",
+      "background_context": "The legal proceedings involve criminal cases dating back to the 2007 Nandigram anti-land acquisition agitation. Milan Pradhan, the Congress candidate for the Nandigram assembly bypoll, was arrested on September 18 after receiving support from Trinamool Congress chief Mamata Banerjee following the withdrawal of the TMC candidate. He faced judicial remand across multiple cases registered in Nandigram and Khejuri police stations.",
+      "bullet_points": [
+        "West Bengal government moved the Supreme Court against the Calcutta high court's interim bail to Congress Nandigram candidate Milan Pradhan.",
+        "Solicitor General Tushar Mehta argued that Pradhan is a murder accused with six pending non-bailable warrants.",
+        "The high court had granted a three-week interim bail on September 29 in connection with cases dating back to the 2007 Nandigram anti-land acquisition agitation.",
+        "Conditions of the interim bail required Pradhan to deposit a ₹20,000 bail bond in each of the six cases and remain accessible to the investigating officer.",
+        "The Supreme Court agreed to list the matter for hearing on October 5, with voting for the Nandigram bypoll scheduled for October 6."
+      ],
+      "key_facts": [
+        "Milan Pradhan is the Congress candidate for the Nandigram assembly bypoll.",
+        "The Calcutta high court granted him interim bail on September 29 for three weeks.",
+        "Pradhan faces charges including murder, attempt to murder, and Arms Act violations from six cases linked to the 2007 Nandigram agitation.",
+        "The Supreme Court scheduled the hearing for October 5, ahead of the October 6 voting date."
+      ],
+      "key_locations": [
+        "West Bengal",
+        "Nandigram",
+        "Khejuri",
+        "Haldia",
+        "Kanthi"
+      ],
+      "important_dates": [
+        "September 15, 2023",
+        "September 18, 2023",
+        "September 25, 2023",
+        "September 29, 2023",
+        "October 5, 2023",
+        "October 6, 2023",
+        "October 7, 2023",
+        "October 9, 2023",
+        "October 21, 2023"
+      ],
+      "exam_relevance": [
+        "UPSC Prelims: Indian Polity and Governance (Judiciary, Bail jurisprudence)",
+        "UPSC Mains GS Paper II: Salient features of the Representation of the People Act, Judicial review, and Criminalization of politics."
+      ],
+      "upsc_analysis": "The legal contest surrounding the interim bail of a candidate facing serious criminal charges highlights the complex intersection between electoral democracy, individual rights to campaign, and criminal jurisprudence. It underscores ongoing debates regarding the criminalization of politics, the discretion of higher judiciary in granting interim relief during election cycles, and the role of the state in challenging such judicial orders.",
+      "causes": [
+        "Filing of nomination by an accused individual facing non-bailable warrants during an assembly bypoll.",
+        "Judicial intervention by the Calcutta High Court granting interim bail to enable election campaigning.",
+        "State government challenge in the Supreme Court opposing interim bail for a murder accused."
+      ],
+      "impacts": [
+        "Intense legal scrutiny on the parameters of granting interim bail to candidates facing criminal charges during elections.",
+        "Direct legal battle between the state administration and judicial relief orders ahead of the Nandigram bypoll."
+      ],
+      "challenges": [
+        "Balancing the right of an under-trial or accused individual to participate in democratic processes with the gravity of pending criminal charges.",
+        "Managing multiple non-bailable warrants and judicial custody timelines during an active electoral cycle."
+      ],
+      "government_steps": [
+        "State government approached the Supreme Court via the Solicitor General to seek an immediate stay on the Calcutta High Court's interim bail order.",
+        "Enforcement of strict tracking conditions by investigating authorities under high court directives."
+      ],
+      "constitutional_or_policy_link": [
+        "Article 136 of the Constitution of India (Special Leave to Appeal by the Supreme Court)",
+        "Provisions of the Code of Criminal Procedure (CrPC) regarding non-bailable warrants and bail jurisprudence."
+      ],
+      "way_forward": [
+        "Establishing clearer statutory guidelines regarding the grant of interim relief to candidates facing severe criminal charges during active elections.",
+        "Expediting trials in long-pending criminal cases arising from historical agitations to avoid electoral controversies."
+      ],
+      "mains_notes": "The case highlights the tensions surrounding interim bail granted to electoral candidates facing serious criminal charges like murder and non-bailable warrants. While candidates retain legal protections until conviction, state challenges underline concerns regarding the criminalization of politics and the necessity of maintaining judicial stringency in heinous cases.",
+      "mains_questions": [
+        "Discuss the ethical and legal challenges posed by the granting of interim bail to candidates facing serious criminal charges during elections.",
+        "Examine the role of the Supreme Court in reviewing high court orders related to interim relief for under-trials in the context of Indian electoral politics."
+      ],
+      "takeaway": "The Supreme Court agreed to hear West Bengal's plea challenging the interim bail granted to Congress Nandigram bypoll candidate Milan Pradhan.",
+      "prelims_facts": [
+        "Milan Pradhan is the Congress candidate for the Nandigram bypoll.",
+        "The cases against Pradhan originated from the 2007 Nandigram anti-land acquisition agitation.",
+        "Voting for the Nandigram bypoll was scheduled for October 6."
+      ],
+      "vocabulary": [
+        {
+          "word": "Interim bail",
+          "meaning_hindi": "अंतरिम जमानत"
+        },
+        {
+          "word": "Non-bailable warrant",
+          "meaning_hindi": "गैर-जमानती वारंट"
+        },
+        {
+          "word": "Judicial remand",
+          "meaning_hindi": "न्यायिक हिरासत"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Milan Pradhan",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Milan%20Pradhan"
+        },
+        {
+          "name": "Nandigram",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Nandigram"
+        },
+        {
+          "name": "Tushar Mehta",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Tushar%20Mehta"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "बंगाल ने कांग्रेस के नंदीग्राम उम्मीदवार की जमानत रद्द करने के लिए सुप्रीम कोर्ट का रुख किया",
+        "story_lead": "पश्चिम बंगाल सरकार ने कलकत्ता उच्च न्यायालय के उस आदेश पर तत्काल रोक लगाने के लिए सुप्रीम कोर्ट का रुख किया है, जिसमें कांग्रेस के नंदीग्राम उपचुनाव उम्मीदवार मिलन प्रधान को अंतरिम जमानत दी गई थी। राज्य ने तर्क दिया कि छह गैर-जमानती वारंटों का सामना कर रहे हत्या के आरोपी को ऐसी राहत नहीं दी जानी चाहिए। सुप्रीम कोर्ट मामले की सुनवाई के लिए राजी हो गया है।",
+        "full_article_text": "पश्चिम बंगाल सरकार ने बुधवार को सुप्रीम कोर्ट का रुख कर कांग्रेस के नंदीग्राम उपचुनाव उम्मीदवार मिलन प्रधान को कलकत्ता उच्च न्यायालय द्वारा दी गई अंतरिम जमानत पर तत्काल रोक लगाने की मांग की। सॉलिसिटर जनरल तुषार मेहता, जो राज्य सरकार की ओर से पेश हुए, ने मुख्य न्यायाधीश सूर्यकांत के समक्ष मामले का उल्लेख किया और उच्च न्यायालय के 29 सितंबर के आदेश के खिलाफ राज्य की अपील पर त्वरित सुनवाई का आग्रह किया। न्यायमूर्ति तीर्थंकर घोष की एकल पीठ ने प्रधान को 2007 के नंदीग्राम भूमि अधिग्रहण विरोधी आंदोलन से जुड़े छह आपराधिक मामलों में तीन सप्ताह की अंतरिम जमानत दी थी।",
+        "background_context": "कानूनी कार्यवाही में 2007 के नंदीग्राम भूमि अधिग्रहण विरोधी आंदोलन से जुड़े आपराधिक मामले शामिल हैं।",
+        "bullet_points": [
+          "पश्चिम बंगाल सरकार ने मिलन प्रधान की अंतरिम जमानत के खिलाफ सुप्रीम कोर्ट का रुख किया।",
+          "सॉलिसिटर जनरल तुषार मेहता ने दलील दी कि प्रधान हत्या के आरोपी हैं और उनके खिलाफ छह गैर-जमानती वारंट लंबित हैं।"
+        ],
+        "key_facts": [
+          "मिलन प्रधान नंदीग्राम उपचुनाव के लिए कांग्रेस उम्मीदवार हैं।",
+          "कलकत्ता उच्च न्यायालय ने उन्हें 29 सितंबर को तीन सप्ताह की अंतरिम जमानत दी थी।"
+        ],
+        "key_locations": [
+          "पश्चिम बंगाल",
+          "नंदीग्राम",
+          "खेजुरी",
+          "हल्दिया"
+        ],
+        "important_dates": [
+          "29 सितंबर",
+          "5 अक्टूबर",
+          "6 अक्टूबर",
+          "9 अक्टूबर"
+        ]
+      },
+      "quiz": {
+        "question": "Which court was approached by the West Bengal government to seek a stay on the interim bail granted to Milan Pradhan?",
+        "options": [
+          "Calcutta High Court",
+          "Supreme Court of India",
+          "Delhi High Court",
+          "Patna High Court"
+        ],
+        "correct_answer": "Supreme Court of India",
+        "explanation": "The West Bengal government moved the Supreme Court seeking an immediate stay on the Calcutta High Court order granting interim bail to Milan Pradhan."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/bengal-asks-supreme-court-to-revoke-bail-for-cong-s-nandigram-candidate-101790748760504.html",
+      "published_date": "2026-09-30",
+      "id": 92,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/Solicitor-general-Tushar-Mehta--who-appeared-for-t_1790748753979_5UK3.jpg",
+      "added_at": "2026-09-30T12:14:45.906155+05:30"
+    },
+    {
+      "category": "Science & Technology",
+      "exam_corner": false,
+      "headline": "Delhi High Court Denies Bail to Umar Khalid and Sharjeel Imam in 2020 Delhi Riots Case",
+      "story_lead": "The Delhi High Court has refused to grant bail to former JNU scholar Umar Khalid and activist Sharjeel Imam in the 2020 Delhi riots larger conspiracy case. A division bench comprising Justices Prathiba M. Singh and Dinesh Bhatt ruled that the High Court cannot modify conditions set by the Supreme Court. Both accused remain in custody under the Unlawful Activities (Prevention) Act (UAPA).",
+      "full_article_text": "The Delhi High Court on Wednesday rejected the bail pleas of former Jawaharlal Nehru University (JNU) scholar Umar Khalid and student activist Sharjeel Imam. The bench, comprising Justices Prathiba M. Singh and Dinesh Bhatt, observed that the Supreme Court had previously granted them liberty to file for fresh bail either before the examination of protected witnesses or upon the expiry of one year, whichever is earlier. The High Court clarified that it lacks the jurisdiction to modify conditions laid down by the apex court.\n\nUmar Khalid and Sharjeel Imam were charged under the Unlawful Activities (Prevention) Act (UAPA) on allegations of being key masterminds behind the February 2020 Delhi riots. The communal violence, which broke out during demonstrations against the Citizenship (Amendment) Act (CAA), 2019, and the National Register of Citizens (NRC), led to 53 deaths and left over 700 people injured.\n\nThe larger conspiracy case was investigated by the Special Cell of the Delhi Police, which also named activist Khalid Saifi and former AAP councillor Tahir Hussain among the accused. Sharjeel Imam was arrested on August 25, 2020, while Umar Khalid was taken into custody on September 13, 2020. The duo approached the High Court after the trial court dismissed their bail petitions for the third time on July 4.",
+      "background_context": "The case relates to the communal violence in Northeast Delhi in February 2020 during protests surrounding the Citizenship (Amendment) Act (CAA) and the National Register of Citizens (NRC). The Delhi Police Special Cell investigated the broader conspiracy angle behind the unrest.",
+      "bullet_points": [
+        "Delhi High Court refused bail to Umar Khalid and Sharjeel Imam in the 2020 Delhi riots larger conspiracy case.",
+        "A division bench of Justices Prathiba M. Singh and Dinesh Bhatt passed the order.",
+        "The court noted it cannot alter Supreme Court directions regarding timelines for filing fresh bail pleas.",
+        "Both accused are charged under the Unlawful Activities (Prevention) Act (UAPA).",
+        "Sharjeel Imam was arrested on August 25, 2020, and Umar Khalid on September 13, 2020.",
+        "The 2020 violence resulted in 53 casualties and injured over 700 people."
+      ],
+      "key_facts": [
+        "Bench: Justices Prathiba M. Singh and Dinesh Bhatt",
+        "Law Invoked: Unlawful Activities (Prevention) Act (UAPA)",
+        "Investigating Agency: Delhi Police Special Cell",
+        "Casualties of 2020 Riots: 53 deaths, 700+ injured"
+      ],
+      "key_locations": [
+        "Delhi",
+        "Delhi High Court",
+        "Jawaharlal Nehru University (JNU)"
+      ],
+      "important_dates": [
+        "February 2020 (Delhi Riots)",
+        "August 25, 2020 (Sharjeel Imam arrested)",
+        "September 13, 2020 (Umar Khalid arrested)",
+        "July 4 (Trial court dismissed bail for the third time)"
+      ],
+      "exam_relevance": [
+        "Judicial procedures and principles governing bail under special laws like UAPA",
+        "Hierarchy of courts and binding nature of Supreme Court directions"
+      ],
+      "upsc_analysis": "The ruling emphasizes the procedural hierarchy within the Indian judicial framework, where High Courts cannot alter specific procedural timelines or liberties established by the Supreme Court. It highlights legal provisions under anti-terror statutes like the UAPA regarding long-term detention, bail conditions, and judicial discretion.",
+      "causes": [
+        "Protests against the Citizenship (Amendment) Act (CAA) 2019 and NRC leading to communal violence in February 2020.",
+        "Allegations by Delhi Police of a larger planned conspiracy behind the violence."
+      ],
+      "impacts": [
+        "Continued judicial custody for the accused under UAPA charges.",
+        "Reaffirmation of High Court limitations relative to Supreme Court orders regarding bail terms."
+      ],
+      "challenges": [
+        "Balancing personal liberty under bail jurisprudence with strict provisions of anti-terror legislation (UAPA).",
+        "Managing extended trial durations involving protected witnesses."
+      ],
+      "government_steps": [
+        "Investigation conducted by Delhi Police Special Cell into the larger conspiracy aspect of the 2020 riots."
+      ],
+      "constitutional_or_policy_link": [
+        "Article 21 of the Indian Constitution (Right to Life and Personal Liberty)",
+        "Provisions of the Unlawful Activities (Prevention) Act (UAPA)"
+      ],
+      "way_forward": [
+        "Adherence to Supreme Court-mandated timelines regarding witness examination and fresh bail applications."
+      ],
+      "mains_notes": "Key legal principles highlighted: 1. High Court's adherence to Supreme Court conditions. 2. Legal standards under UAPA for bail. 3. Procedural timelines linked with protected witness testimonies.",
+      "mains_questions": [
+        "Discuss the balance between state security concerns under anti-terror laws like UAPA and individual rights under Article 21.",
+        "Examine the judicial hierarchy and restrictions on High Courts in modifying orders passed by the Supreme Court."
+      ],
+      "takeaway": "The Delhi High Court upheld Supreme Court-defined conditions regarding bail timelines for UAPA accused in the 2020 Delhi riots case.",
+      "prelims_facts": [
+        "UAPA is invoked in cases involving threats to national integrity and security.",
+        "High Courts cannot modify conditional orders previously set by the Supreme Court."
+      ],
+      "vocabulary": [
+        {
+          "word": "Conspiracy",
+          "meaning_hindi": "षड्यंत्र"
+        },
+        {
+          "word": "Liberty",
+          "meaning_hindi": "स्वतंत्रता / छूट"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Umar Khalid",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Umar_Khalid"
+        },
+        {
+          "name": "Sharjeel Imam",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Sharjeel_Imam"
+        },
+        {
+          "name": "Delhi High Court",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Delhi_High_Court"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "दिल्ली उच्च न्यायालय ने 2020 दिल्ली दंगा मामले में उमर खालिद और शरजील इमाम की ज़मानत याचिका खारिज की",
+        "story_lead": "दिल्ली उच्च न्यायालय ने फरवरी 2020 के दिल्ली दंगों की बड़ी साजिश के मामले में पूर्व जेएनयू छात्र उमर खालिद और छात्र कार्यकर्ता शरजील इमाम की ज़मानत याचिकाएं खारिज कर दी हैं। न्यायमूर्ति प्रतिभा एम सिंह और न्यायमूर्ति दिनेश भट्ट की पीठ ने कहा कि उच्च न्यायालय सर्वोच्च न्यायालय द्वारा तय की गई शर्तों में बदलाव नहीं कर सकता। दोनों आरोपी गैरकानूनी गतिविधियां (निवारण) अधिनियम (यूएपीए) के तहत हिरासत में हैं।",
+        "full_article_text": "दिल्ली उच्च न्यायालय ने बुधवार को जवाहरलाल नेहरू विश्वविद्यालय (जेएनयू) के पूर्व छात्र उमर खालिद और छात्र कार्यकर्ता शरजील इमाम की ज़मानत याचिकाओं को खारिज कर दिया। न्यायमूर्ति प्रतिभा एम सिंह और न्यायमूर्ति दिनेश भट्ट की पीठ ने कहा कि उच्चतम न्यायालय ने उन्हें संरक्षित गवाहों के परीक्षण से पहले या एक वर्ष की अवधि समाप्त होने पर (जो भी पहले हो) नए सिरे से ज़मानत आवेदन दायर करने की छूट दी थी। उच्च न्यायालय ने स्पष्ट किया कि वह शीर्ष अदालत द्वारा निर्धारित शर्तों में संशोधन नहीं कर सकता।\n\nउमर खालिद और शरजील इमाम पर फरवरी 2020 में हुए दिल्ली दंगों के मुख्य साजिशकर्ताओं में शामिल होने के आरोपों में गैरकानूनी गतिविधियां (निवारण) अधिनियम (यूएपीए) के तहत मामला दर्ज किया गया था। नागरिकता (संशोधन) अधिनियम (सीएए), 2019 और राष्ट्रीय नागरिक रजिस्टर (एनआरसी) के विरोध प्रदर्शनों के दौरान भड़की हिंसा में 53 लोगों की मौत हुई थी और 700 से अधिक लोग घायल हुए थे।\n\nदिल्ली पुलिस की स्पेशल सेल ने इस मामले की जांच की थी। 4 जुलाई को निचली अदालत द्वारा तीसरी बार ज़मानत याचिकाएं खारिज किए जाने के बाद दोनों ने उच्च न्यायालय का रुख किया था। शरजील इमाम को 25 अगस्त 2020 को और उमर खालिद को 13 सितंबर 2020 को गिरफ्तार किया गया था।",
+        "background_context": "यह मामला फरवरी 2020 में पूर्वोत्तर दिल्ली में सीएए और एनआरसी के खिलाफ प्रदर्शनों के दौरान हुई सांप्रदायिक हिंसा और उसके पीछे की कथित बड़ी साजिश से जुड़ा है।",
+        "bullet_points": [
+          "दिल्ली उच्च न्यायालय ने 2020 दिल्ली दंगों की साजिश के मामले में उमर खालिद और शरजील इमाम को ज़मानत देने से इनकार कर दिया।",
+          "यह आदेश न्यायमूर्ति प्रतिभा एम सिंह और न्यायमूर्ति दिनेश भट्ट की पीठ ने पारित किया।",
+          "अदालत ने कहा कि वह सर्वोच्च न्यायालय द्वारा निर्धारित शर्तों को संशोधित नहीं कर सकती।",
+          "दोनों आरोपी यूएपीए (UAPA) के तहत नामजद हैं।",
+          "शरजील इमाम को 25 अगस्त 2020 और उमर खालिद को 13 सितंबर 2020 को गिरफ्तार किया गया था।"
+        ],
+        "key_facts": [
+          "पीठ: न्यायमूर्ति प्रतिभा एम सिंह और न्यायमूर्ति दिनेश भट्ट",
+          "कानून: गैरकानूनी गतिविधियां (निवारण) अधिनियम (UAPA)",
+          "जांच एजेंसी: दिल्ली पुलिस स्पेशल सेल"
+        ],
+        "key_locations": [
+          "दिल्ली",
+          "दिल्ली उच्च न्यायालय",
+          "जवाहरलाल नेहरू विश्वविद्यालय"
+        ],
+        "important_dates": [
+          "फरवरी 2020 (दिल्ली दंगे)",
+          "25 अगस्त 2020 (शरजील इमाम की गिरफ्तारी)",
+          "13 सितंबर 2020 (उमर खालिद की गिरफ्तारी)"
+        ]
+      },
+      "quiz": {
+        "question": "Under which statutory legislation were Umar Khalid and Sharjeel Imam charged in connection with the February 2020 Delhi riots conspiracy case?",
+        "options": [
+          "Unlawful Activities (Prevention) Act",
+          "National Security Act",
+          "Prevention of Money Laundering Act",
+          "Maintenance of Internal Security Act"
+        ],
+        "correct_answer": "Unlawful Activities (Prevention) Act",
+        "explanation": "According to the source text, Umar Khalid and Sharjeel Imam were booked under the Unlawful Activities (Prevention) Act (UAPA) in connection with the February 2020 Delhi riots case."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/umar-khalid-sharjeel-imam-denied-bail-by-delhi-high-court-in-2020-riots-case-101790749336728.html",
+      "published_date": "2026-09-30",
+      "id": 91,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/umar_khalid_sharjeel_imam_1767571722268_1767571730846_1790749581755_fabO_726339c5-67e2-40c2-9352-0a04c9a9f088_eOnu.png",
+      "added_at": "2026-09-30T12:14:45.906155+05:30"
+    },
+    {
+      "category": "Science & Technology",
+      "exam_corner": false,
+      "headline": "Gujarat High Court dismisses Arvind Kejriwal's plea against cost in Prime Minister's degree case",
+      "story_lead": "The Gujarat High Court has rejected AAP convener Arvind Kejriwal's plea challenging a ₹25,000 cost imposed on him in the case concerning the disclosure of Prime Minister Narendra Modi's degree. A division bench stated that a political leader holding public office cannot use statutory proceedings for their political interests.",
+      "full_article_text": "The Gujarat High Court division bench comprising Chief Justice Sunita Agarwal and Justice DN Ray dismissed Arvind Kejriwal's appeal against a March 2023 single judge order. The single judge had previously quashed a 2016 Central Information Commission (CIC) direction requiring Gujarat University to provide information regarding Prime Minister Narendra Modi's degrees. The initial CIC order originated from an application filed by Kejriwal under the Right to Information Act (RTI Act). The court noted that the manner in which Kejriwal responded to the CIC and pursued the matter through written submissions speaks for itself, upholding the imposed ₹25,000 cost and dismissing the civil application for a stay.",
+      "background_context": "The case stems from a 2016 application filed by Aam Aadmi Party convener Arvind Kejriwal under the Right to Information Act (RTI Act) seeking details of Prime Minister Narendra Modi's degree from Gujarat University. This led to a CIC direction, which was subsequently challenged by Gujarat University before a single judge of the Gujarat High Court, resulting in the quashing of the CIC order and the imposition of costs on Kejriwal in March 2023.",
+      "bullet_points": [
+        "Gujarat High Court rejected Arvind Kejriwal's plea against a ₹25,000 cost imposition.",
+        "The case involves the disclosure of Prime Minister Narendra Modi's university degree details.",
+        "A division bench comprising Chief Justice Sunita Agarwal and Justice DN Ray heard the appeal.",
+        "The court stated that public office holders cannot use statutory proceedings for political interests.",
+        "The ruling upholds the earlier March 2023 single judge order quashing the 2016 CIC direction to Gujarat University."
+      ],
+      "key_facts": [
+        "Arvind Kejriwal filed an RTI application in 2016 regarding PM Narendra Modi's degree.",
+        "The Gujarat High Court imposed a ₹25,000 cost on Kejriwal.",
+        "The division bench was led by Chief Justice Sunita Agarwal and Justice DN Ray.",
+        "Gujarat University had challenged the 2016 CIC direction before a single judge."
+      ],
+      "key_locations": [
+        "Gujarat"
+      ],
+      "important_dates": [
+        "2016",
+        "March 2023"
+      ],
+      "exam_relevance": [
+        "Prelims: RTI Act provisions and CIC role",
+        "Mains: Judicial review, use of statutory bodies, and political accountability"
+      ],
+      "upsc_analysis": "The ruling highlights the judiciary's stance on the misuse or politicization of statutory mechanisms such as the Right to Information Act by public figures. It underscores the boundaries of transparency laws and judicial oversight regarding administrative and statutory decisions.",
+      "causes": [
+        "RTI application filed by Arvind Kejriwal seeking academic credentials of the Prime Minister.",
+        "Dispute over the CIC direction ordering Gujarat University to disclose degree information."
+      ],
+      "impacts": [
+        "Dismissal of the appeal and upholding of the ₹25,000 cost against Arvind Kejriwal.",
+        "Reinforcement of judicial interpretation regarding the appropriate use of statutory proceedings by public office holders."
+      ],
+      "challenges": [
+        "Balancing transparency and the right to information with concerns regarding the political instrumentalization of statutory bodies."
+      ],
+      "government_steps": [
+        "Gujarat University approached the High Court to challenge the CIC directive."
+      ],
+      "constitutional_or_policy_link": [
+        "Right to Information Act, 2005"
+      ],
+      "way_forward": [
+        "Adherence to statutory norms and judicial precedents regarding transparency and accountability."
+      ],
+      "mains_notes": "The Gujarat High Court dismissed Arvind Kejriwal's appeal against a ₹25,000 cost imposed in the Prime Minister's degree disclosure case. The court emphasized that political leaders holding public office must not utilize statutory proceedings for political interests, thereby upholding the single judge's order that had quashed the 2016 CIC directive to Gujarat University.",
+      "mains_questions": [
+        "Discuss the scope and limitations of the Right to Information Act in matters involving public figures.",
+        "Examine the judicial observations regarding the misuse of statutory proceedings for political interests."
+      ],
+      "takeaway": "The Gujarat High Court dismissed Arvind Kejriwal's plea against a cost imposition in the PM degree case, stating public office holders cannot misuse statutory proceedings for political gains.",
+      "prelims_facts": [
+        "The Right to Information (RTI) Act was enacted in 2005.",
+        "The Central Information Commission (CIC) is established under the RTI Act."
+      ],
+      "vocabulary": [
+        {
+          "word": "Appellant",
+          "meaning_hindi": "अपीलार्थी"
+        },
+        {
+          "word": "Statutory",
+          "meaning_hindi": "वैधानिक"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Arvind Kejriwal",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Arvind_Kejriwal"
+        },
+        {
+          "name": "Narendra Modi",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Narendra_Modi"
+        },
+        {
+          "name": "Gujarat High Court",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Gujarat_High_Court"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "गुजरात हाई कोर्ट ने प्रधानमंत्री की डिग्री मामले में आदेश के खिलाफ अरविंद केजरीवाल की याचिका खारिज की",
+        "story_lead": "गुजरात हाई कोर्ट ने प्रधानमंत्री नरेंद्र मोदी की डिग्री के विवरण के खुलासे से जुड़े मामले में आप संयोजक अरविंद केजरीवाल पर लगाए गए 25,000 रुपये के जुर्माने को चुनौती देने वाली याचिका खारिज कर दी है। अदालत ने कहा कि सार्वजनिक पद पर आसीन किसी राजनीतिक नेता को अपने राजनीतिक हितों के लिए वैधानिक कार्यवाही का उपयोग नहीं करना चाहिए।",
+        "full_article_text": "मुख्य न्यायमूर्ति सुनीता अग्रवाल और न्यायमूर्ति डीएन रे की खंडपीठ ने मार्च 2023 के एकल न्यायाधीश के आदेश के खिलाफ अरविंद केजरीवाल की अपील को खारिज कर दिया। एकल न्यायाधीश ने पहले 2016 के केंद्रीय सूचना आयोग (सीआईसी) के उस निर्देश को रद्द कर दिया था जिसमें गुजरात विश्वविद्यालय को मोदी की डिग्री से संबंधित जानकारी प्रदान करने का निर्देश दिया गया था।",
+        "background_context": "यह मामला 2016 में अरविंद द्वारा सूचना का अधिकार अधिनियम (आरटीआई अधिनियम) के तहत दायर एक आवेदन से उपजा है, जिसमें गुजरात विश्वविद्यालय से प्रधानमंत्री नरेंद्र मोदी की डिग्री के विवरण की मांग की गई थी।",
+        "bullet_points": [
+          "गुजरात हाई कोर्ट ने अरविंद केजरीवाल की याचिका खारिज की।",
+          "मामला प्रधानमंत्री नरेंद्र मोदी की डिग्री के विवरण से जुड़ा है।",
+          "मुख्य न्यायमूर्ति सुनीता अग्रवाल और न्यायमूर्ति डीएन रे ने सुनवाई की।"
+        ],
+        "key_facts": [
+          "अदालत ने 25,000 रुपये के जुर्माने को बरकरार रखा।"
+        ],
+        "key_locations": [
+          "गुजरात"
+        ],
+        "important_dates": [
+          "2016",
+          "मार्च 2023"
+        ]
+      },
+      "quiz": {
+        "question": "Which court dismissed Arvind Kejriwal's plea against the cost imposed in the Prime Minister's degree case?",
+        "options": [
+          "Supreme Court of India",
+          "Delhi High Court",
+          "Gujarat High Court",
+          "Patna High Court"
+        ],
+        "correct_answer": "Gujarat High Court",
+        "explanation": "A division bench of the Gujarat High Court dismissed Arvind Kejriwal's appeal against the ₹25,000 cost imposed in the case concerning the disclosure of Prime Minister Narendra Modi's degree."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/arvind-kejriwal-pm-narendra-modi-degree-row-gujarat-high-court-101790749806067.html",
+      "published_date": "2026-09-30",
+      "id": 90,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/kejriwal_1790749856664_MBnq_1790749856876_8u8A_88d80d90-acc9-4c26-8162-2d26b85ba3e0_zDyK.jpg",
+      "added_at": "2026-09-30T12:14:45.906155+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": true,
+      "headline": "Chennai Fisherfolk Protest Proposed Assembly and Secretariat Complex at Foreshore Estate",
+      "story_lead": "Fisherfolk along Chennai's Foreshore Estate have launched protests against the Tamil Nadu government's proposal to construct a new ₹1,200-crore Assembly and Secretariat complex in their area. The protesters are demanding the immediate cancellation of the government order, issuance of official land titles, and the construction of safe housing. In response to the growing unrest, the state government has announced that it is examining alternative sites for the project.",
+      "full_article_text": "Fisherfolk residing along the Foreshore Estate in Chennai staged a demonstration on Tuesday to protest against the Tamil Nadu state government's proposal to construct a new Assembly and Secretariat complex in the locality. Clad in black and carrying black flags, the protesters raised slogans demanding the withdrawal of the government order (G.O.) issued on September 8, which announced the construction plans. \n\nAccording to GR Vijayan, a member of the Tamil Nadu Fishermen Federation, the community's demands include the official issuance of land titles (patta) for the land previously allocated to them by the Metro City Improvement Trust. Additionally, the protesters highlighted the severely dilapidated condition of their houses and urged Chief Minister C Joseph Vijay to construct new housing on a war footing. The federation warned of a massive statewide protest uniting all fishing villages across Tamil Nadu if the G.O. is not cancelled.\n\nThe proposed ₹1,200-crore complex, spanning a built-up area of 20 lakh sq ft, was announced by Chief Minister C Joseph Vijay on September 3 to address space constraints at the historic Fort St George. Built in 1640, Fort St George spans 107 acres, but the state government owns only four acres, with the remainder controlled by defence authorities and the Archaeological Survey of India (ASI). \n\nAmidst the protests, a delegation of fisherfolk met former Chief Minister and DMK President MK Stalin, who assured them of his party's support. Meanwhile, State Law Minister CTR Nirmal Kumar clarified that the government is actively examining alternative sites and has assured that no decision will be taken against the interests of the fishing communities.",
+      "background_context": "The protest stems from the Tamil Nadu government's search for a new administrative headquarters due to severe space constraints at Fort St George. Constructed in 1640, the historic Fort St George campus spans 107 acres, but the state government owns only four acres, while the rest is under the control of the defence authorities and the Archaeological Survey of India (ASI). The proposal to build a new ₹1,200-crore complex at Foreshore Estate has triggered anxiety among local fisherfolk who fear displacement and are demanding long-pending land titles (patta) and housing security.",
+      "bullet_points": [
+        "Fisherfolk in Chennai's Foreshore Estate protested against the proposed ₹1,200-crore Assembly and Secretariat complex.",
+        "Protesters demanded the cancellation of the Government Order (G.O.) issued on September 8.",
+        "Key demands include the official issuance of land titles (patta) and the urgent reconstruction of dilapidated houses.",
+        "The Tamil Nadu Fishermen Federation has threatened a massive statewide agitation if demands are not met.",
+        "The proposed complex is designed to have a built-up area of 20 lakh sq ft to house all state departments.",
+        "Fort St George, the current seat of power built in 1640, faces severe space constraints as the state owns only four of its 107 acres.",
+        "State Law Minister CTR Nirmal Kumar stated that the government is currently examining alternative sites for the project."
+      ],
+      "key_facts": [
+        "The proposed Assembly-cum-Secretariat complex is estimated to cost ₹1,200 crore with a built-up area of 20 lakh sq ft.",
+        "Fort St George was built in 1640 and spans 107 acres, of which the state government owns only four acres.",
+        "The Government Order (G.O.) announcing the construction was issued on September 8.",
+        "The land in question was originally given to the fishermen by the Metro City Improvement Trust."
+      ],
+      "key_locations": [
+        "Chennai",
+        "Foreshore Estate",
+        "Fort St George",
+        "Tamil Nadu"
+      ],
+      "important_dates": [
+        "September 3",
+        "September 8",
+        "September 25"
+      ],
+      "exam_relevance": [
+        "GS Paper II: Government policies and interventions for development in various sectors and issues arising out of their design and implementation.",
+        "GS Paper III: Land reforms, infrastructure development, and coastal zone management issues."
+      ],
+      "upsc_analysis": "The conflict between infrastructural expansion and the rights of traditional coastal communities highlights a classic developmental dilemma in India. While the state government's need for a modern, consolidated administrative facility is justified by the severe space and historical preservation constraints at Fort St George, executing such projects in ecologically sensitive and inhabited coastal zones like Foreshore Estate directly impacts the livelihoods of marginalized fisherfolk. Securing land rights (patta) and ensuring adequate housing are critical components of inclusive development. The state's subsequent willingness to explore alternative sites reflects the growing power of grassroots democratic protests and the necessity of participatory planning in urban infrastructure projects.",
+      "causes": [
+        "The state government's proposal to build a new Assembly and Secretariat complex at Foreshore Estate.",
+        "Lack of official land titles (patta) for the land allocated to fishermen by the Metro City Improvement Trust.",
+        "Dilapidated housing conditions of the local fishing community requiring urgent government intervention."
+      ],
+      "impacts": [
+        "Public demonstrations and black-flag protests by the fisherfolk in Chennai.",
+        "Threat of a statewide agitation uniting all fishing villages across Tamil Nadu.",
+        "Political mobilization, with opposition parties like the DMK pledging support to the protesters.",
+        "Government reconsideration of the project site, with the Law Minister stating that alternative locations are being examined."
+      ],
+      "challenges": [
+        "Balancing state administrative infrastructure requirements with the livelihood and housing security of coastal communities.",
+        "Overcoming space constraints at the historical Fort St George campus, which is largely owned by defence authorities and the ASI.",
+        "Addressing long-pending land tenure and rehabilitation demands of the local fishermen."
+      ],
+      "government_steps": [
+        "State Law Minister CTR Nirmal Kumar announced that the government is examining alternative sites for the proposed complex.",
+        "The government clarified on September 25 that it has not taken any decision that would be anti-people or against the interests of the fishermen."
+      ],
+      "constitutional_or_policy_link": [
+        "Article 21 (Right to Life, which encompasses the right to livelihood and shelter).",
+        "Land Revenue and Patta regulations under state jurisdiction."
+      ],
+      "way_forward": [
+        "Conducting comprehensive social and environmental impact assessments before finalizing large-scale infrastructure sites.",
+        "Engaging in active dialogue with the Tamil Nadu Fishermen Federation to resolve land title (patta) and housing grievances.",
+        "Expediting the construction of safe, upgraded housing for the affected families on a war footing.",
+        "Selecting an alternative administrative site that does not displace vulnerable coastal populations or disrupt marine livelihoods."
+      ],
+      "mains_notes": "In infrastructure planning, the state must balance administrative efficiency with social justice. The Chennai fisherfolk protest underscores that developmental projects must not bypass the land tenure rights of traditional communities. Securing 'patta' and basic housing are essential prerequisites to prevent displacement-induced poverty.",
+      "mains_questions": [
+        "Examine the socio-economic challenges faced by coastal communities in India due to urban infrastructure expansion. Suggest measures for inclusive coastal zone planning.",
+        "The conflict between historical preservation, administrative expansion, and local community rights requires a balanced policy approach. Discuss with reference to the recent secretariat relocation proposal in Tamil Nadu."
+      ],
+      "takeaway": "The Chennai protest emphasizes that large-scale public infrastructure projects must prioritize participatory planning and secure the land and housing rights of local communities to avoid public unrest.",
+      "prelims_facts": [
+        "Fort St George was built in 1640 and is the historical seat of power in Tamil Nadu.",
+        "The state government owns only 4 acres of the 107-acre Fort St George campus, with the rest held by defence authorities and the Archaeological Survey of India (ASI)."
+      ],
+      "vocabulary": [
+        {
+          "word": "dilapidated",
+          "meaning_hindi": "जर्जर / टूटा-फूटा"
+        },
+        {
+          "word": "agitation",
+          "meaning_hindi": "आंदोलन / प्रदर्शन"
+        },
+        {
+          "word": "suo motu",
+          "meaning_hindi": "स्वतः संज्ञान"
+        },
+        {
+          "word": "patta",
+          "meaning_hindi": "भूमि स्वामित्व दस्तावेज (पट्टा)"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "C Joseph Vijay",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=C_Joseph_Vijay"
+        },
+        {
+          "name": "MK Stalin",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/M._K._Stalin"
+        },
+        {
+          "name": "CTR Nirmal Kumar",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=CTR_Nirmal_Kumar"
+        },
+        {
+          "name": "Fort St George",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_St._George,_India"
+        },
+        {
+          "name": "Foreshore Estate",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Foreshore_Estate"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "चेन्नई के मछुआरों ने विधानसभा और सचिवालय निर्माण के खिलाफ किया विरोध प्रदर्शन; बड़े आंदोलन की दी चेतावनी",
+        "story_lead": "चेन्नई के फोरशोर एस्टेट के मछुआरों ने अपने क्षेत्र में एक नए ₹1,200 करोड़ के विधानसभा और सचिवालय परिसर के निर्माण के राज्य सरकार के प्रस्ताव के खिलाफ विरोध प्रदर्शन शुरू कर दिया है। प्रदर्शनकारी सरकारी आदेश को रद्द करने, भूमि स्वामित्व (पट्टा) जारी करने और बेहतर आवास सुविधाओं की मांग कर रहे हैं। बढ़ते विरोध के जवाब में, राज्य सरकार ने संकेत दिया है कि वह इस परियोजना के लिए वैकल्पिक स्थलों की जांच कर रही है।",
+        "full_article_text": "चेन्नई में फोरशोर एस्टेट के पास रहने वाले मछुआरों ने मंगलवार को क्षेत्र में एक नया विधानसभा और सचिवालय परिसर बनाने के राज्य सरकार के प्रस्ताव के खिलाफ विरोध प्रदर्शन किया। काले कपड़े पहने और काले झंडे लिए प्रदर्शनकारियों ने प्रस्ताव के खिलाफ नारेबाजी की। उन्होंने मांग की कि 8 सितंबर को जारी सरकारी आदेश (जी.ओ.) को रद्द किया जाए, जिसमें विधानसभा और सचिवालय के निर्माण की योजना की घोषणा की गई थी।\n\nतमिलनाडु मछुआरा संघ के सदस्य जीआर विजयन ने प्रदर्शनकारियों की मांगों को रेखांकित किया। उन्होंने कहा कि मेट्रो सिटी इम्प्रूवमेंट ट्रस्ट द्वारा मछुआरों को दी गई भूमि का आधिकारिक स्वामित्व (पट्टा) उन्हें दिया जाना चाहिए। इसके अलावा, मछुआरों के कई घर बेहद जर्जर स्थिति में हैं, और उन्होंने मुख्यमंत्री से युद्ध स्तर पर उनके लिए घरों का निर्माण करने की मांग की है। मछुआरा संघ ने चेतावनी दी है कि यदि 5 दिनों के भीतर इस जी.ओ. को रद्द नहीं किया गया, तो वे पूरे तमिलनाडु में सभी मछली पकड़ने वाले गांवों को एकजुट कर एक बड़ा आंदोलन करेंगे।\n\nमुख्यमंत्री सी जोसेफ विजय ने 3 सितंबर को विधानसभा में एक स्वतः संज्ञान बयान देते हुए कहा था कि सरकार चेन्नई में ₹1,200 करोड़ की लागत से 20 लाख वर्ग फुट के निर्मित क्षेत्र के साथ एक नया विधानसभा-सह-सचिवालय परिसर स्थापित करेगी। यह प्रस्ताव फोर्ट सेंट जॉर्ज में जगह की कमी और इसके ऐतिहासिक संरक्षण से जुड़ी सीमाओं के कारण आया था। 1640 में निर्मित इस परिसर का क्षेत्रफल 107 एकड़ है, लेकिन राज्य सरकार के पास केवल चार एकड़ भूमि है; शेष भूमि रक्षा अधिकारियों और भारतीय पुरातत्व सर्वेक्षण (एएसआई) की है।\n\nइस बीच, राज्य के कानून मंत्री सीटीआर निर्मल कुमार ने स्पष्ट किया कि सरकार प्रस्तावित परिसर के लिए वैकल्पिक स्थलों की जांच कर रही है और मछुआरा समुदायों के हितों के खिलाफ कोई निर्णय नहीं लिया जाएगा।",
+        "background_context": "यह विरोध तमिलनाडु सरकार द्वारा फोर्ट सेंट जॉर्ज में गंभीर जगह की कमी के कारण एक नए प्रशासनिक मुख्यालय की तलाश से उत्पन्न हुआ है। 1640 में निर्मित ऐतिहासिक फोर्ट सेंट जॉर्ज परिसर 107 एकड़ में फैला है, लेकिन राज्य सरकार के पास केवल चार एकड़ जमीन है, जबकि बाकी हिस्सा रक्षा अधिकारियों और भारतीय पुरातत्व सर्वेक्षण (एएसआई) के नियंत्रण में है। फोरशोर एस्टेट में नए परिसर के निर्माण के प्रस्ताव ने स्थानीय मछुआरों में विस्थापन की चिंता पैदा कर दी है, जो अपने भूमि अधिकारों और आवास सुरक्षा की मांग कर रहे हैं।",
+        "bullet_points": [
+          "चेन्नई के फोरशोर एस्टेट में मछुआरों ने प्रस्तावित ₹1,200 करोड़ के विधानसभा और सचिवालय परिसर का विरोध किया।",
+          "प्रदर्शनकारियों ने 8 सितंबर को जारी सरकारी आदेश (जी.ओ.) को रद्द करने की मांग की।",
+          "मुख्य मांगों में भूमि स्वामित्व (पट्टा) जारी करना और जर्जर घरों का तत्काल पुनर्निर्माण शामिल है।",
+          "तमिलनाडु मछुआरा संघ ने मांगें पूरी न होने पर राज्यव्यापी आंदोलन की चेतावनी दी है।",
+          "प्रस्तावित परिसर का निर्मित क्षेत्र 20 लाख वर्ग फुट होना तय किया गया है।",
+          "1640 में बने फोर्ट सेंट जॉर्ज में जगह की भारी कमी है, जहां सरकार के पास केवल 4 एकड़ जमीन है।",
+          "कानून मंत्री सीटीआर निर्मल कुमार ने कहा कि सरकार परियोजना के लिए वैकल्पिक स्थलों की जांच कर रही है।"
+        ],
+        "key_facts": [
+          "प्रस्तावित विधानसभा-सह-सचिवालय परिसर की अनुमानित लागत ₹1,200 करोड़ और निर्मित क्षेत्र 20 लाख वर्ग फुट है।",
+          "फोर्ट सेंट जॉर्ज का निर्माण 1640 में हुआ था, जिसके 107 एकड़ में से राज्य सरकार के पास केवल 4 एकड़ जमीन है।",
+          "निर्माण की घोषणा करने वाला सरकारी आदेश (जी.ओ.) 8 सितंबर को जारी किया गया था।"
+        ],
+        "key_locations": [
+          "चेन्नई",
+          "फोरशोर एस्टेट",
+          "फोर्ट सेंट जॉर्ज",
+          "तमिलनाडु"
+        ],
+        "important_dates": [
+          "3 सितंबर",
+          "8 सितंबर",
+          "25 सितंबर"
+        ]
+      },
+      "quiz": {
+        "question": "With reference to the historical Fort St George mentioned in the news, consider the following statements:\n1. It was built in the year 1640.\n2. Out of its total 107 acres, the Tamil Nadu state government owns the majority of the land.\nWhich of the statements given above is/are correct?",
+        "options": [
+          "1 only",
+          "2 only",
+          "Both 1 and 2",
+          "Neither 1 nor 2"
+        ],
+        "correct_answer": "1 only",
+        "explanation": "Statement 1 is correct: Fort St George was built in 1640. Statement 2 is incorrect: Out of the 107 acres, the state government owns only four acres, while the rest belongs to the defence authorities and the Archaeological Survey of India (ASI)."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/chennai-fisherfolk-protest-assembly-secretariat-complex-foreshore-estate-proposal-warn-of-larger-stir-101790748798538.html",
+      "published_date": "2026-09-30",
+      "id": 89,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/09/30/1600x900/logo/3jj1z4ny_1790748898734_kLrB_1790748905227_K9Br_01a49260-bb5e-4f51-93db-33659479f9d3_SYLo.png",
+      "added_at": "2026-09-30T12:14:45.906155+05:30"
+    },
+    {
+      "category": "India",
       "exam_corner": true,
       "headline": "168,000 voters found ineligible for inclusion in final electoral rolls after Andhra Pradesh SIR",
       "story_lead": "Following the special intensive revision (SIR) in Andhra Pradesh, around 168,000 registered voters have been found ineligible for inclusion in the final electoral rolls. The Election Commission of India completed hearings on 99.96% of notices served to voters after draft rolls were released on July 31.",
@@ -11003,6 +12933,6 @@
       "added_at": "2026-09-30T00:12:47.040026+05:30"
     }
   ],
-  "updated_at": "2026-09-30T09:10:48.937106+05:30",
-  "count": 88
+  "updated_at": "2026-09-30T12:14:45.906155+05:30",
+  "count": 102
 }
