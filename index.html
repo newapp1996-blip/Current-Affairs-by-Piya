@@ -1,3 +1,4 @@
+```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -1844,7 +1845,7 @@
                 id="tab-overview"
             >
 
-                <div class="article-section">
+                <div class="article-section" id="storySection">
 
                     <h3>
                         Story
@@ -1857,10 +1858,10 @@
                 </div>
 
 
-                <div class="article-section">
+                <div class="article-section" id="articleTextSection">
 
                     <h3>
-                        Article / Study Note
+                        Important News Details
                     </h3>
 
                     <div id="articleText">
@@ -1870,7 +1871,7 @@
                 </div>
 
 
-                <div class="article-section">
+                <div class="article-section" id="backgroundSection">
 
                     <h3>
                         Background Context
@@ -1883,7 +1884,7 @@
                 </div>
 
 
-                <div class="article-section">
+                <div class="article-section" id="keyPointsSection">
 
                     <h3>
                         Key Points
@@ -1898,7 +1899,7 @@
                 </div>
 
 
-                <div class="article-section">
+                <div class="article-section" id="keyFactsSection">
 
                     <h3>
                         Key Facts
@@ -1913,7 +1914,7 @@
                 </div>
 
 
-                <div class="article-section">
+                <div class="article-section" id="keyLocationsSection">
 
                     <h3>
                         Key Locations
@@ -1928,7 +1929,7 @@
                 </div>
 
 
-                <div class="article-section">
+                <div class="article-section" id="relatedEntitiesSection">
 
                     <h3>
                         People & Places
@@ -1943,7 +1944,7 @@
                 </div>
 
 
-                <div class="article-section">
+                <div class="article-section" id="importantDatesSection">
 
                     <h3>
                         Important Dates
@@ -3388,6 +3389,32 @@
        ARTICLE LANGUAGE + VOICE
        ======================================================= */
 
+    function setOverviewSectionVisible(sectionId, visible) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.style.display = visible ? "" : "none";
+        }
+    }
+
+
+    function updateOverviewSectionVisibility(data) {
+        const hasText = value =>
+            typeof value === "string" && value.trim().length > 0;
+
+        const hasArray = value =>
+            Array.isArray(value) && value.some(item => String(item || "").trim());
+
+        setOverviewSectionVisible("storySection", hasText(data.story_lead));
+        setOverviewSectionVisible("articleTextSection", hasText(data.full_article_text));
+        setOverviewSectionVisible("backgroundSection", hasText(data.background_context));
+        setOverviewSectionVisible("keyPointsSection", hasArray(data.bullet_points));
+        setOverviewSectionVisible("keyFactsSection", hasArray(data.key_facts));
+        setOverviewSectionVisible("keyLocationsSection", hasArray(data.key_locations));
+        setOverviewSectionVisible("relatedEntitiesSection", hasArray(data.related_entities));
+        setOverviewSectionVisible("importantDatesSection", hasArray(data.important_dates));
+    }
+
+
     function getHindiTranslation(article) {
         const t = article?.hindi_translation;
 
@@ -3452,10 +3479,19 @@
                 ) +
                 "</p>";
 
+            const hindiOverview = {
+                story_lead: hindi.story_lead || currentArticleForModal.story_lead || "",
+                full_article_text: hindi.full_article_text || currentArticleForModal.full_article_text || "",
+                background_context: hindi.background_context || currentArticleForModal.background_context || "",
+                bullet_points: Array.isArray(hindi.bullet_points) ? hindi.bullet_points : [],
+                key_facts: Array.isArray(hindi.key_facts) ? hindi.key_facts : [],
+                key_locations: Array.isArray(hindi.key_locations) ? hindi.key_locations : [],
+                related_entities: currentArticleForModal.related_entities || [],
+                important_dates: Array.isArray(hindi.important_dates) ? hindi.important_dates : []
+            };
+
             document.getElementById("backgroundContext").textContent =
-                hindi.background_context ||
-                currentArticleForModal.background_context ||
-                "Background context is not available.";
+                hindiOverview.background_context;
 
             document.getElementById("overviewBullets").innerHTML =
                 arrayToList(hindi.bullet_points);
@@ -3472,6 +3508,8 @@
             renderRelatedEntities(
                 currentArticleForModal.related_entities || []
             );
+
+            updateOverviewSectionVisibility(hindiOverview);
 
             document.getElementById("hindiBtn").classList.add("active");
             document.getElementById("englishBtn").classList.remove("active");
@@ -3516,7 +3554,7 @@
 
         document.getElementById("backgroundContext").textContent =
             article.background_context ||
-            "Background context is not available.";
+            "";
 
         document.getElementById("overviewBullets").innerHTML =
             arrayToList(article.bullet_points);
@@ -3533,6 +3571,17 @@
         renderRelatedEntities(
             article.related_entities || []
         );
+
+        updateOverviewSectionVisibility({
+            story_lead: article.story_lead || "",
+            full_article_text: article.full_article_text || "",
+            background_context: article.background_context || "",
+            bullet_points: article.bullet_points || [],
+            key_facts: article.key_facts || [],
+            key_locations: article.key_locations || [],
+            related_entities: article.related_entities || [],
+            important_dates: article.important_dates || []
+        });
     }
 
 
@@ -4560,3 +4609,4 @@
 </body>
 
 </html>
+```
