@@ -2,6 +2,156 @@
   "date": "2026-10-01",
   "news": [
     {
+      "category": "World",
+      "exam_corner": false,
+      "headline": "Pargat Singh and Vijay Singla emerge as frontrunners for Punjab Congress chief after Amarinder Warring's exit",
+      "story_lead": "Following the resignation of Amarinder Singh Raja Warring as president of the Punjab Pradesh Congress Committee (PPCC), former minister Vijay Inder Singla and Jalandhar Cantt MLA Pargat Singh have emerged as frontrunners for the position ahead of the upcoming Assembly elections.",
+      "full_article_text": "Amarinder Singh Raja Warring submitted his resignation as the president of the Punjab Pradesh Congress Committee (PPCC) to the party high command after being informed of its decision to replace him. Two names have emerged as frontrunners for the post: former state minister and ex-MP Vijay Inder Singla, and Jalandhar Cantt MLA Pargat Singh. The party leadership is looking to appoint a leader who can take both the Warring and Charanjit Singh Channi camps along ahead of the 2027 Assembly polls. The turmoil in the Punjab unit escalated after July 1 when the central leadership initially chose to retain Warring, triggering retaliation from a rival faction led by Jalandhar MP and former chief minister Charanjit Singh Channi, whose loyalists boycotted official state committee programs and organised parallel outreach drives for three months. Following a grassroots mobilisation drive in August and subsequent meetings held by newly appointed Punjab in-charge Sachin Pilot, who replaced Bhupesh Baghel, the high command decided to replace Warring.",
+      "background_context": "",
+      "bullet_points": [
+        "Amarinder Singh Raja Warring resigned as Punjab Pradesh Congress Committee (PPCC) president after the party high command decided to replace him.",
+        "Former state minister Vijay Inder Singla and Jalandhar Cantt MLA Pargat Singh have emerged as frontrunners for the post.",
+        "The party is seeking a leader capable of uniting the Warring and Charanjit Singh Channi camps ahead of the upcoming Assembly polls.",
+        "Intra-party turmoil escalated after July 1 when the central leadership initially retained Warring, leading to a boycott by Channi loyalists and parallel outreach drives.",
+        "Sachin Pilot recently replaced Bhupesh Baghel as the Punjab Congress in-charge and submitted a report to the high command following meetings with state leaders."
+      ],
+      "key_facts": [
+        "Amarinder Singh Raja Warring resigned from his post as PPCC president.",
+        "Vijay Inder Singla is currently the chairperson of the Congress election management and coordination committee.",
+        "Pargat Singh is the Jalandhar Cantt MLA.",
+        "Sachin Pilot replaced Bhupesh Baghel as the Punjab Congress in-charge.",
+        "Punjab Assembly elections are expected to be held in February next year (or in the context of 2027 Assembly polls mentioned in sources)."
+      ],
+      "key_locations": [
+        "Punjab",
+        "Jalandhar Cantt"
+      ],
+      "important_dates": [
+        "July 1",
+        "August",
+        "February next year"
+      ],
+      "exam_relevance": [
+        "Mains: Indian Polity - Internal party democracy, dynamics of regional politics, and party organization."
+      ],
+      "upsc_analysis": "The political developments in the Punjab Congress unit highlight the challenges of internal factionalism and leadership transitions within major political parties ahead of legislative assembly elections. Such organizational reshuffles underline how intra-party dissent and balancing rival regional camps impact party stability and electoral strategies in India's competitive federal democracy.",
+      "causes": [
+        "Escalation of Punjab Congress infighting following the central leadership's initial decision on July 1 to retain Amarinder Warring as PPCC head.",
+        "Retaliation from a rival faction led by Charanjit Singh Channi through boycotts of official state programs and parallel outreach drives."
+      ],
+      "impacts": [
+        "Resignation of Amarinder Singh Raja Warring as PPCC president.",
+        "Initiation of a leadership shake-up and evaluation of new candidates like Vijay Inder Singla and Pargat Singh by the party high command."
+      ],
+      "challenges": [
+        "Bridging the divide between rival factions within the state unit led by Warring and Charanjit Singh Channi.",
+        "Rebuilding organizational cohesion ahead of upcoming state Assembly elections."
+      ],
+      "government_steps": [],
+      "constitutional_or_policy_link": [
+        "Internal party democracy and organizational framework governed under the Representation of the People Act and Election Commission of India guidelines for registered political parties."
+      ],
+      "way_forward": [
+        "Ensuring transparent and inclusive leadership selection to mitigate factionalism.",
+        "Fostering consensus among regional leaders to strengthen grassroots electoral machinery."
+      ],
+      "mains_notes": "Intra-party factionalism significantly influences the electoral fortunes of political parties in India. The recent leadership change in the Punjab Congress following disputes between factions led by Amarinder Warring and Charanjit Singh Channi underscores the critical need for effective high-command mediation and unity within state units ahead of legislative elections.",
+      "mains_questions": [
+        "Discuss the impact of internal factionalism and leadership disputes on the organizational strength of political parties in state-level elections.",
+        "Examine the role of central leadership in managing regional party dynamics and resolving internal dissent within political organizations in India."
+      ],
+      "takeaway": "Vijay Inder Singla and Pargat Singh have emerged as frontrunners for the Punjab Congress chief post following Amarinder Warring's resignation amidst internal factional turmoil.",
+      "prelims_facts": [
+        "Vijay Inder Singla serves as the chairperson of the Congress election management and coordination committee.",
+        "Sachin Pilot is the Punjab Congress in-charge, succeeding Bhupesh Baghel.",
+        "Pargat Singh is the Jalandhar Cantt MLA."
+      ],
+      "vocabulary": [
+        {
+          "word": "Reshuffle",
+          "meaning_hindi": " फेरबदल"
+        },
+        {
+          "word": "Frontrunner",
+          "meaning_hindi": "अग्रणी उम्मीदवार"
+        },
+        {
+          "word": "Infighting",
+          "meaning_hindi": "अंतर-दलीय कलह"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Amarinder Singh Raja Warring",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Amarinder%20Singh%20Raja%20Warring"
+        },
+        {
+          "name": "Vijay Inder Singla",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Vijay%20Inder%20Singla"
+        },
+        {
+          "name": "Pargat Singh",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Pargat%20Singh"
+        },
+        {
+          "name": "Charanjit Singh Channi",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Charanjit%20Singh%20Channi"
+        },
+        {
+          "name": "Sachin Pilot",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Sachin%20Pilot"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "अरिंदर वारिंग के इस्तीफे के बाद पंजाब कांग्रेस प्रमुख के रूप में परगट सिंह या विजय सिंगला? कौन बन सकता है अगला अध्यक्ष",
+        "story_lead": "पंजाब प्रदेश कांग्रेस कमेटी (PPCC) के अध्यक्ष के रूप में अमरिंदर सिंह राजा वारिंग के इस्तीफे के बाद, आगामी विधानसभा चुनावों से पहले पूर्व मंत्री विजय इंदर सिंगला और जालंधर कैंट के विधायक परगट सिंह इस पद के लिए सबसे आगे उभरे हैं।",
+        "full_article_text": "पार्टी सूत्रों के अनुसार, अमरिंदर सिंह राजा वारिंग ने पार्टी हाईकमान द्वारा उन्हें बदले जाने के निर्णय की जानकारी दिए जाने के बाद पंजाब प्रदेश कांग्रेस कमेटी (PPCC) के अध्यक्ष पद से अपना इस्तीफा सौंप दिया। इस पद के लिए दो नाम सबसे आगे उभरे हैं—पूर्व राज्य मंत्री और पूर्व सांसद विजय इंदर सिंगला और जालंधर कैंट के विधायक परगट सिंह। पार्टी नेतृत्व ऐसे नेता की नियुक्ति करना चाहता है जो 2027 के विधानसभा चुनावों से पहले वारिंग और चरणजीत सिंह चन्नी दोनों शिविरों को साथ लेकर चल सके। कांग्रेस की पंजाब इकाई में उथल-पुथल 1 जुलाई के बाद बढ़ गई जब केंद्रीय नेतृत्व ने शुरुआत में वारिंग को PPCC प्रमुख के रूप में बनाए रखने का फैसला किया, जिसके बाद जालंधर के सांसद और पूर्व मुख्यमंत्री चरणजीत सिंह चन्नी के नेतृत्व वाले प्रतिद्वंद्वी गुट ने प्रतिक्रिया व्यक्त की।",
+        "background_context": "",
+        "bullet_points": [
+          "अमरिंदर सिंह राजा वारिंग ने पार्टी हाईकमान के निर्णय के बाद पंजाब प्रदेश कांग्रेस कमेटी (PPCC) अध्यक्ष पद से इस्तीफा दिया।",
+          "पूर्व राज्य मंत्री विजय इंदर सिंगला और जालंधर कैंट के विधायक परगट सिंह इस पद के लिए प्रमुख दावेदार हैं।",
+          "पार्टी आगामी विधानसभा चुनावों से पहले वारिंग और चरणजीत सिंह चन्नी दोनों गुटों को साथ ले जाने में सक्षम नेता की तलाश कर रही है।",
+          "1 जुलाई को वारिंग को बरकरार रखने के केंद्रीय निर्णय के बाद पार्टी के भीतर कलह और तेज हो गई थी।"
+        ],
+        "key_facts": [
+          "अमरिंदर सिंह राजा वारिंग ने PPCC अध्यक्ष पद से इस्तीफा दिया।",
+          "विजय इंदर सिंगला कांग्रेस चुनाव प्रबंधन और समन्वय समिति के अध्यक्ष हैं।",
+          "सचिन पायलट ने भूपेश बघेल की जगह पंजाब कांग्रेस प्रभारी का पद संभाला है।"
+        ],
+        "key_locations": [
+          "पंजाब",
+          "जालंधर कैंट"
+        ],
+        "important_dates": [
+          "1 जुलाई",
+          "अगस्त"
+        ]
+      },
+      "quiz": {
+        "question": "Who among the following emerged as frontrunners for the post of Punjab Congress chief following Amarinder Warring's exit?",
+        "options": [
+          "Vijay Inder Singla and Pargat Singh",
+          "Charanjit Singh Channi and Sachin Pilot",
+          "Bhupesh Baghel and Amarinder Warring",
+          "Bhagwant Mann and Gyanesh Kumar"
+        ],
+        "correct_answer": "Vijay Inder Singla and Pargat Singh",
+        "explanation": "Following Amarinder Warring's exit, former minister Vijay Inder Singla and Jalandhar Cantt MLA Pargat Singh emerged as frontrunners for the PPCC president post."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/punjab-congress-chief-amarinder-warring-exit-pargat-singh-vijay-singla-ahead-of-assembly-elections-ppcc-president-101790853071705.html",
+      "published_date": "2026-10-01",
+      "content_version": 2,
+      "id": 170,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/10/01/1600x900/logo/singla_pargat_1790856839871_dmBG_1790856846279_C8gc_1536d13c-d036-4e03-8962-8e5ad2bf5cbb_jMuM.jpg",
+      "added_at": "2026-10-01T18:16:30.791032+05:30"
+    },
+    {
       "category": "Sports",
       "exam_corner": false,
       "headline": "Today’s Papers: FIGC Drama, Bianchedi Resigns, and Spalletti Pressure Reported",
@@ -22106,6 +22256,6 @@
       "content_version": 3
     }
   ],
-  "updated_at": "2026-10-01T17:39:42.653973+05:30",
-  "count": 169
+  "updated_at": "2026-10-01T18:16:30.791032+05:30",
+  "count": 170
 }
