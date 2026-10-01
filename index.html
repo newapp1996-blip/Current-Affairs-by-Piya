@@ -1,4 +1,3 @@
-```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -303,47 +302,65 @@
             font-weight: 700;
         }
 
-
         /* =================================================
            MOTIVATION
            ================================================= */
 
         .motivation {
-            background: linear-gradient(
-                135deg,
-                #8d0000,
-                #c40000
-            );
-
+            position: relative;
+            background: #222;
             color: white;
-
             border-radius: 10px;
-
-            padding: 14px 18px;
-
+            overflow: hidden;
             margin-bottom: 18px;
+            min-height: 250px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        }
 
+        .motivation-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .motivation-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 20px;
+            background: linear-gradient(
+                to top,
+                rgba(0,0,0,0.82) 0%,
+                rgba(0,0,0,0.48) 42%,
+                rgba(0,0,0,0.05) 100%
+            );
+        }
+
+        .motivation-content {
+            width: 100%;
+            max-width: 900px;
             text-align: center;
-
-            box-shadow:
-                0 2px 8px rgba(0,0,0,0.1);
         }
 
         .motivation-title {
             font-size: 11px;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            opacity: 0.8;
-            margin-bottom: 5px;
+            letter-spacing: 1.5px;
+            opacity: 0.9;
+            margin-bottom: 7px;
+            font-weight: 800;
         }
 
         #motivationQuote {
-            font-size: 16px;
-            font-weight: 700;
+            font-size: 19px;
+            line-height: 1.45;
+            font-weight: 800;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.65);
         }
-
-
-        /* =================================================
+/* =================================================
            LAYOUT
            ================================================= */
 
@@ -1002,27 +1019,7 @@
             padding: 6px 10px;
             font-size: 12px;
         }
-
-        .motivation {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .motivation-image {
-            width: 100%;
-            height: 210px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .motivation-content {
-            padding: 14px 16px 17px;
-            text-align: center;
-        }
-
-
-        /* =================================================
+/* =================================================
            ARTICLE TOOLS
            ================================================= */
 
@@ -1467,17 +1464,24 @@
             src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1600&q=85"
             alt="Study motivation"
             loading="eager"
+            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1600&q=85';"
         >
 
-        <div class="motivation-content">
-            <div class="motivation-title">
-                AURA STUDY MOTIVATION
-            </div>
+        <div class="motivation-overlay">
+            <div class="motivation-content">
 
-            <div id="motivationQuote">
-                Stay focused. Stay consistent.
+                <div class="motivation-title">
+                    AURA STUDY MOTIVATION
+                </div>
+
+                <div id="motivationQuote">
+                    Consistency turns ordinary study into extraordinary results.
+                </div>
+
             </div>
         </div>
+
+    </div>
 
     </div>
 
@@ -2547,6 +2551,47 @@
     }
 
 
+
+    /* =======================================================
+       MOTIVATION RENDERER
+       ======================================================= */
+
+    function renderMotivation(payload) {
+
+        const quoteElement =
+            document.getElementById("motivationQuote");
+
+        const imageElement =
+            document.getElementById("motivationImage");
+
+        if (!quoteElement || !imageElement) {
+            return;
+        }
+
+        const motivation =
+            payload?.motivation || {};
+
+        const quote =
+            String(
+                motivation.quote ||
+                "Consistency turns ordinary study into extraordinary results."
+            ).trim();
+
+        const imageUrl =
+            String(
+                motivation.image_url ||
+                "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1600&q=85"
+            ).trim();
+
+        quoteElement.textContent = quote;
+
+        if (imageUrl) {
+            imageElement.src = imageUrl;
+        }
+
+    }
+
+
     /* =======================================================
        INITIALIZATION
        ======================================================= */
@@ -2570,6 +2615,7 @@
             globalPayload =
                 await response.json();
 
+            renderMotivation(globalPayload);
             renderLastUpdated(globalPayload);
 
             availableDates =
@@ -2611,23 +2657,7 @@
 
             }
 
-            if (
-                globalPayload.motivation
-            ) {
-
-                document
-                    .getElementById("motivationQuote")
-                    .textContent =
-                    globalPayload.motivation.quote ||
-                    "Consistency turns ordinary study into extraordinary results.";
-
-                if (globalPayload.motivation.image_url) {
-                    const image = document.getElementById("motivationImage");
-                    if (image) {
-                        image.src = globalPayload.motivation.image_url;
-                    }
-                }
-            }
+            renderMotivation(globalPayload);
 
         } catch (error) {
 
@@ -4530,4 +4560,3 @@
 </body>
 
 </html>
-```
