@@ -3191,7 +3191,7 @@ let globalPayload = null;
 
         try {
             const response = await fetch(
-                "data/" + encodeURIComponent(date) + ".json?cache=" + Date.now()
+                "https://newapp1996-blip.github.io/Current-Affairs-by-Piya/data/" + encodeURIComponent(date) + ".json?cache=" + Date.now()
             );
             if (!response.ok) return [];
             const data = await response.json();
