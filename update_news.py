@@ -41,7 +41,7 @@ DATA_FILE = "data.json"
 DATA_DIR = "data"
 
 FIRST_RUN_COUNT = 30
-UPDATE_COUNT = 15
+UPDATE_COUNT = 9999
 
 MAX_CANDIDATES_PER_SOURCE = 25
 REQUEST_TIMEOUT = 15
@@ -1019,10 +1019,21 @@ def is_india_focused(text):
 def exam_corner_score(title, text, category):
 
     # --------------------------------------------------------
-    # Exam Corner is ONLY for Indian current affairs.
+    # Exam Corner covers exam-relevant current affairs
+    # across ALL major categories.
     # --------------------------------------------------------
 
-    if category != "India":
+    allowed_categories = {
+        "India",
+        "World",
+        "Economy",
+        "Science & Technology",
+        "Environment",
+        "Health",
+        "Sports",
+    }
+
+    if category not in allowed_categories:
         return 0
 
     combined = (
@@ -1116,8 +1127,63 @@ def classify_candidate(candidate, page_text=""):
     )
 
     science_score = count_matches(
-        title_blob,
-        SCIENCE
+    title_blob,
+    SCIENCE
+)
+
+# Strong Science & Technology indicators
+# These should be recognised even when the headline
+# does not contain the existing SCIENCE keyword list.
+science_strong = (
+    "drdo",
+    "isro",
+    "csir",
+    "technology",
+    "technolog",
+    "artificial intelligence",
+    "ai ",
+    "machine learning",
+    "semiconductor",
+    "quantum",
+    "robot",
+    "robotics",
+    "space",
+    "satellite",
+    "launch vehicle",
+    "missile",
+    "defence technology",
+    "defense technology",
+    "biotechnology",
+    "biotech",
+    "genome",
+    "genomics",
+    "gene",
+    "vaccine",
+    "nanotechnology",
+    "nanocrystal",
+    "research",
+    "innovation",
+    "laboratory",
+    "laboratories",
+    "scientific",
+    "scientist",
+    "indigenous technology",
+    "5g",
+    "6g",
+    "cybersecurity",
+    "cyber security",
+    "digital technology",
+    "supercomputer",
+    "astronomy",
+)
+
+science_strong_score = count_matches(
+    title_blob,
+    science_strong
+)
+
+if science_strong_score >= 1:
+    science_score += 3
     )
 
     economy_score = count_matches(
@@ -1259,7 +1325,7 @@ def classify_candidate(candidate, page_text=""):
 
     exam_corner = (
         category == "India"
-        and exam_score >= 4
+        and exam_score >= 7
     )
 
     candidate["category"] = category
