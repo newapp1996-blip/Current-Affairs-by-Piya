@@ -42,6 +42,11 @@ DATA_DIR = "data"
 FIRST_RUN_COUNT = 30
 UPDATE_COUNT = 15
 
+# One-time content cleanup version. Existing articles missing this version
+# are rebuilt using the stricter source-preserving extraction/prompt.
+CONTENT_VERSION = 2
+REBUILD_LEGACY_LIMIT = 10
+
 MAX_CANDIDATES_PER_SOURCE = 25
 REQUEST_TIMEOUT = 15
 
@@ -578,22 +583,21 @@ def extract_image_from_html(html, base_url):
 
 
 def extract_page_text(html):
+    """Extract the actual article body, including list items.
+
+    The previous version ignored <li> elements. That caused important
+    numbered/bulleted facts such as dates, cities, prices and schedules
+    to disappear before Gemini ever saw them.
+    """
     if not html:
         return ""
 
-    soup = BeautifulSoup(
-        html,
-        "html.parser"
-    )
+    soup = BeautifulSoup(html, "html.parser")
 
     for tag in soup([
-        "script",
-        "style",
-        "noscript",
-        "svg",
-        "header",
-        "footer",
-        "nav",
+        "script", "style", "noscript", "svg",
+        "header", "footer", "nav", "aside",
+        "form", "iframe"
     ]):
         tag.decompose()
 
@@ -604,23 +608,26 @@ def extract_page_text(html):
         or soup
     )
 
-    paragraphs = [
-        clean_text(
-            p.get_text(" ", strip=True)
-        )
-        for p in main.find_all(
-            ["p", "h2", "h3"]
-        )
-    ]
+    blocks = []
+    seen = set()
 
-    paragraphs = [
-        p for p in paragraphs
-        if len(p) >= 30
-    ]
+    for node in main.find_all(["p", "h2", "h3", "h4", "li"]):
+        text = clean_text(node.get_text(" ", strip=True))
+        if len(text) < 20:
+            continue
 
-    return "\n\n".join(
-        paragraphs[:80]
-    )
+        # Avoid duplicate nested list text.
+        key = text.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+
+        if node.name == "li":
+            blocks.append("- " + text)
+        else:
+            blocks.append(text)
+
+    return "\n\n".join(blocks[:160])
 
 
 # ============================================================
@@ -1203,12 +1210,24 @@ def article_prompt(candidate, page_text):
 You are the content engine for AURA EXAM AI,
 an Indian competitive-exam current-affairs website.
 
-Create a factually grounded study article ONLY
+Create a concise, factually grounded current-affairs note ONLY
 from the supplied source material.
 
-Do not invent facts.
-Do not exaggerate.
-Keep political coverage neutral and descriptive.
+SOURCE-PRESERVATION RULES — VERY IMPORTANT:
+- Use only facts explicitly present in SOURCE TEXT.
+- Do not add generic background, definitions, advice, conclusions,
+  assumptions, or facts from your own knowledge.
+- Preserve every important number, date, place, name, category,
+  exception, threshold, list item and comparison from the source.
+- If SOURCE TEXT contains a bullet/numbered list, preserve the
+  important items in full rather than replacing them with a generic summary.
+- Do not omit important details merely to make the article shorter.
+- "full_article_text" must be a clean, readable summary of the source
+  and should contain the important details needed to understand the news.
+- "background_context" must be empty unless the supplied source itself
+  explicitly provides background context.
+- Keep political coverage neutral and descriptive.
+- Never create facts just to fill a field.
 
 IMPORTANT CATEGORY RULES:
 
@@ -1248,13 +1267,13 @@ Required JSON object:
   "category": "{candidate['category']}",
   "exam_corner": {str(bool(candidate.get('exam_corner', False))).lower()},
   "headline": "clear factual headline",
-  "story_lead": "2-4 sentence lead",
-  "full_article_text": "coherent study-note style article based on the source",
-  "background_context": "relevant context supported by the source; do not invent",
-  "bullet_points": ["4-7 key points"],
-  "key_facts": ["important factual facts"],
-  "key_locations": ["places mentioned or clearly relevant"],
-  "important_dates": ["dates mentioned in source"],
+  "story_lead": "1-2 sentence summary using only source facts",
+  "full_article_text": "source-faithful concise article preserving all important dates, numbers, names, places, exceptions and list items",
+  "background_context": "ONLY source-stated background; otherwise empty string",
+  "bullet_points": ["4-8 source-supported key points; preserve important list details"],
+  "key_facts": ["source-supported facts only"],
+  "key_locations": ["only important places explicitly mentioned in source"],
+  "important_dates": ["only dates explicitly mentioned in source"],
   "exam_relevance": ["Prelims/Mains relevance"],
   "upsc_analysis": "balanced UPSC-oriented analysis",
   "causes": ["causes/drivers supported by source"],
@@ -1339,6 +1358,7 @@ def normalize_generated(article, candidate):
         article["exam_corner"] = False
 
     article["published_date"] = TODAY
+    article["content_version"] = CONTENT_VERSION
 
     for key in [
         "bullet_points",
@@ -1512,7 +1532,8 @@ def needs_repair(article):
     )
 
     return (
-        not isinstance(
+        int(article.get("content_version", 0) or 0) < CONTENT_VERSION
+        or not isinstance(
             hindi,
             dict
         )
@@ -1639,6 +1660,20 @@ def main():
         and needs_repair(a)
     ]
 
+    # Do not regenerate the whole archive in one workflow run.
+    # Legacy articles are upgraded gradually, while genuinely broken
+    # articles are always repaired first.
+    broken_targets = [
+        a for a in repair_targets
+        if int(a.get("content_version", 0) or 0) >= CONTENT_VERSION
+    ]
+    legacy_targets = [
+        a for a in repair_targets
+        if int(a.get("content_version", 0) or 0) < CONTENT_VERSION
+    ]
+    repair_targets = broken_targets + legacy_targets[:REBUILD_LEGACY_LIMIT]
+
+
     print(
         f"Existing articles: "
         f"{len(existing_news)} | "
@@ -1668,6 +1703,8 @@ def main():
                 "full_article_text",
                 ""
             )
+
+        legacy_rebuild = int(article.get("content_version", 0) or 0) < CONTENT_VERSION
 
         candidate = {
             "source_name": article.get(
@@ -1722,9 +1759,38 @@ def main():
                 )
             )
 
-            # Preserve existing rich fields.
-            for key, value in generated.items():
+            # For legacy articles, replace the old AI-generated content
+            # completely. The old version was created before list-item
+            # extraction was fixed, so merely filling missing fields would
+            # leave the incomplete article unchanged.
+            rebuild_fields = {
+                "headline",
+                "story_lead",
+                "full_article_text",
+                "background_context",
+                "bullet_points",
+                "key_facts",
+                "key_locations",
+                "important_dates",
+                "exam_relevance",
+                "upsc_analysis",
+                "causes",
+                "impacts",
+                "challenges",
+                "government_steps",
+                "constitutional_or_policy_link",
+                "way_forward",
+                "mains_notes",
+                "mains_questions",
+                "takeaway",
+                "prelims_facts",
+                "vocabulary",
+                "related_entities",
+                "hindi_translation",
+                "quiz",
+            }
 
+            for key, value in generated.items():
                 if key in {
                     "source_name",
                     "source_url",
@@ -1733,15 +1799,19 @@ def main():
                     "id",
                     "image_url",
                     "exam_corner",
+                    "content_version",
                 }:
                     continue
 
-                if not article.get(key):
+                if legacy_rebuild and key in rebuild_fields:
+                    article[key] = value
+                elif not article.get(key):
                     article[key] = value
 
             article["category"] = candidate[
                 "category"
             ]
+            article["content_version"] = CONTENT_VERSION
 
             article["exam_corner"] = bool(
                 candidate.get(
@@ -2042,6 +2112,7 @@ def main():
         next_id += 1
 
         article["published_date"] = TODAY
+        article["content_version"] = CONTENT_VERSION
 
         article["source_url"] = candidate[
             "source_url"
