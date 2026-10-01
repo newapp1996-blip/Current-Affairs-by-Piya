@@ -18,6 +18,1756 @@
     "news": [
       {
         "category": "India",
+        "exam_corner": false,
+        "headline": "New York Mayor Zohran Mamdani Proposes Plan for City's Hottest Subway Station",
+        "story_lead": "New York Mayor Zohran Mamdani has introduced a plan to address conditions at what he describes as the hottest station in the city's subway system, a location he refers to as a 'chamber of horrors.' The proposed solution focuses on addressing the extreme heat within the transit facility.",
+        "full_article_text": "New York Mayor Zohran Mamdani has outlined a specific plan to tackle high temperatures at the hottest station in the New York City subway system. The station, characterized by the Mayor as a 'chamber of horrors' due to excessive heat, is the target of new infrastructural interventions rather than standard air conditioning solutions. The initiative highlights ongoing urban infrastructure challenges related to public transit heat management in major metropolitan areas.",
+        "background_context": "Subway systems in major global cities frequently encounter severe temperature regulation challenges, particularly during warmer periods. High subterranean temperatures and lack of optimal airflow often create uncomfortable or hazardous conditions for daily commuters.",
+        "bullet_points": [
+          "New York Mayor Zohran Mamdani addressed the city's hottest subway station.",
+          "The station has been described as a 'chamber of horrors' due to severe heat.",
+          "The proposed plan avoids traditional air conditioning in favor of alternative solutions.",
+          "The initiative focuses on urban public transit infrastructure improvement."
+        ],
+        "key_facts": [
+          "Zohran Mamdani is the Mayor of New York.",
+          "The subject of the plan is the hottest station in the city's subway system."
+        ],
+        "key_locations": [
+          "New York"
+        ],
+        "important_dates": [],
+        "exam_relevance": [
+          "General urban infrastructure and public transit management."
+        ],
+        "upsc_analysis": "Urban governance requires effective management of public infrastructure, including public transport systems. Addressing environmental comfort and safety in mass transit networks is a crucial component of sustainable urban development.",
+        "causes": [
+          "Inadequate ventilation and natural cooling in subterranean subway environments.",
+          "Elevated ambient temperatures affecting underground transit facilities."
+        ],
+        "impacts": [
+          "Discomfort and potential health hazards for daily subway commuters.",
+          "Increased scrutiny on urban public transit infrastructure management."
+        ],
+        "challenges": [
+          "Retrofitting existing subterranean transit networks with effective cooling mechanisms.",
+          "Managing high operational costs associated with urban transit infrastructure upgrades."
+        ],
+        "government_steps": [
+          "Formulating targeted infrastructural plans by municipal leadership to address subway heat."
+        ],
+        "constitutional_or_policy_link": [],
+        "way_forward": [
+          "Implementing sustainable and energy-efficient climate control measures in public transit systems.",
+          "Enhancing ventilation and airflow networks across subterranean stations."
+        ],
+        "mains_notes": "Municipal governance must prioritize public transit infrastructure upgrades to ensure commuter safety and comfort, particularly in subterranean networks prone to extreme heat.",
+        "mains_questions": [
+          "Discuss the challenges of urban public transit infrastructure management with reference to temperature regulation in subway systems.",
+          "How do municipal authorities address infrastructural bottlenecks in metropolitan mass transit networks?"
+        ],
+        "takeaway": "New York Mayor Zohran Mamdani has proposed a targeted plan to address severe heat conditions at the city's hottest subway station.",
+        "prelims_facts": [
+          "Zohran Mamdani is associated with New York municipal leadership."
+        ],
+        "vocabulary": [
+          {
+            "word": "Subway",
+            "meaning_hindi": "भूमिगत रेल"
+          },
+          {
+            "word": "Infrastructural",
+            "meaning_hindi": "बुनियादी ढांचा से संबंधित"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "New York",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=New+York"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "न्यूज़ीलैंड के मेयर जोहरान ममदानी ने शहर के सबसे गर्म मेट्रो स्टेशन के लिए योजना बनाई",
+          "story_lead": "न्यू यॉर्क के मेयर जोहरान ममदानी ने शहर के मेट्रो सिस्टम के सबसे गर्म स्टेशन की स्थिति से निपटने के लिए एक योजना पेश की है। इस स्थान को वे 'हॉरर का चैंबर' कहते हैं।",
+          "full_article_text": "न्यू यॉर्क के मेयर जोहरान ममदानी ने न्यू यॉर्क सिटी मेट्रो सिस्टम के सबसे गर्म स्टेशन पर उच्च तापमान से निपटने के लिए एक विशिष्ट योजना की रूपरेखा तैयार की है। अत्यधिक गर्मी के कारण मेयर द्वारा 'हॉरर का चैंबर' के रूप में वर्णित इस स्टेशन को नए बुनियादी ढांचे के हस्तक्षेप का लक्ष्य बनाया गया है।",
+          "background_context": "प्रमुख वैश्विक शहरों में मेट्रो प्रणालियों को अक्सर गंभीर तापमान विनियमन चुनौतियों का सामना करना पड़ता है।",
+          "bullet_points": [
+            "मेयर जोहरान ममदानी ने शहर के सबसे गर्म मेट्रो स्टेशन को संबोधित किया।",
+            "स्टेशन को अत्यधिक गर्मी के कारण 'हॉरर का चैंबर' कहा गया है।",
+            "प्रस्तावित योजना वैकल्पिक समाधानों का समर्थन करती है।"
+          ],
+          "key_facts": [
+            "जोहरान ममदानी न्यू यॉर्क के मेयर हैं।"
+          ],
+          "key_locations": [
+            "न्यू यॉर्क"
+          ],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "Which city's mayor proposed a plan for the city's hottest subway station?",
+          "options": [
+            "London",
+            "New York",
+            "Tokyo",
+            "Paris"
+          ],
+          "correct_answer": "New York",
+          "explanation": "New York Mayor Zohran Mamdani proposed a plan for the city's hottest subway station."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/technology/tech-news/new-york-mayor-zohran-mamdani-has-a-plan-for-the-hottest-station-in-the-citys-subway-the-one-he-calls-a-chamber-of-horrors-and-it-isnt-ac-it-is-/articleshow/134608169.cms",
+        "published_date": "2026-10-01",
+        "id": 79,
+        "image_url": "https://static.toiimg.com/photo/msid-134608217,imgsize-987446.cms",
+        "added_at": "2026-10-01T10:39:01.689370+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": false,
+        "headline": "Drive wrong, pay more: Karnataka mulls Rs 5,000 fine for repeat traffic offenders",
+        "story_lead": "The Karnataka government is considering imposing fines of up to Rs 5,000 for repeat traffic offenders. The proposed measure targets violations such as driving on the wrong side and illegal parking.",
+        "full_article_text": "The Karnataka government is exploring a proposal to increase penalties for repeat traffic offenders, with fines potentially reaching up to Rs 5,000. The proposed stricter penalties are aimed at addressing common traffic violations such as one-way (wrong side) driving and illegal parking within the state. By increasing the financial penalty for individuals who repeatedly flout traffic rules, authorities aim to improve road safety and enforce stricter compliance among motorists.",
+        "background_context": "Traffic management and road safety regulations are overseen by state authorities in India, with state governments holding the purview to propose revisions to penalties for various traffic violations under applicable legal frameworks.",
+        "bullet_points": [
+          "Karnataka is considering fines up to Rs 5,000 for repeat traffic offenders.",
+          "The proposal specifically targets violations like wrong-side driving (one-way violations) and illegal parking.",
+          "The initiative aims to deter repeat violations and enhance road safety.",
+          "Stricter financial penalties are being mulled by state authorities."
+        ],
+        "key_facts": [
+          "State: Karnataka",
+          "Proposed maximum fine for repeat offenders: Rs 5,000",
+          "Targeted violations: Wrong-side driving and illegal parking"
+        ],
+        "key_locations": [
+          "Karnataka"
+        ],
+        "important_dates": [],
+        "exam_relevance": [
+          "General Studies Paper II/III - Governance, Road Safety, and Urban Traffic Management"
+        ],
+        "upsc_analysis": "Proposals to increase traffic fines reflect administrative efforts to curb urban traffic violations and enforce deterrence. From a governance perspective, examining the efficacy of punitive measures versus behavioral modification through infrastructure improvement remains a key debate in urban mobility and public policy.",
+        "causes": [
+          "Prevalence of repeat traffic violations such as wrong-side driving and illegal parking.",
+          "Need for stronger deterrents against traffic rule flouting."
+        ],
+        "impacts": [
+          "Potential increase in compliance with traffic regulations among motorists in Karnataka.",
+          "Higher financial penalties for repeat offenders."
+        ],
+        "challenges": [
+          "Effective enforcement and monitoring of repeat offenses.",
+          "Ensuring transparent implementation of enhanced fines."
+        ],
+        "government_steps": [
+          "Karnataka government mulling a proposal to raise fines up to Rs 5,000 for repeat offenders."
+        ],
+        "constitutional_or_policy_link": [
+          "Motor Vehicles Act and state-level traffic management policies."
+        ],
+        "way_forward": [
+          "Combine stricter financial penalties with better traffic infrastructure and automated enforcement systems."
+        ],
+        "mains_notes": "Karnataka is mulling fines of up to Rs 5,000 for repeat traffic offenders, focusing on violations like wrong-side driving and illegal parking. Such punitive measures highlight strategies to tackle urban traffic indiscipline.",
+        "mains_questions": [
+          "Discuss the role of stricter financial penalties in improving urban road safety and traffic compliance.",
+          "Examine the challenges in enforcing traffic regulations in growing Indian cities."
+        ],
+        "takeaway": "Karnataka is considering increasing fines up to Rs 5,000 for repeat traffic offenders committing wrong-side driving and illegal parking.",
+        "prelims_facts": [
+          "Karnataka government proposal targets repeat traffic offenders with fines up to Rs 5,000 for wrong-side driving and illegal parking."
+        ],
+        "vocabulary": [
+          {
+            "word": "Offender",
+            "meaning_hindi": "अपराधी / नियम तोड़ने वाला"
+          },
+          {
+            "word": "Penalty",
+            "meaning_hindi": "जुर्माना"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Karnataka",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Karnataka"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "गलत दिशा में गाड़ी चलाई तो देना होगा अधिक जुर्माना: कर्नाटक बार-बार यातायात नियम तोड़ने वालों पर 5,000 रुपये तक का जुर्माना लगाने पर विचार कर रहा है",
+          "story_lead": "कर्नाटक सरकार बार-बार यातायात नियम तोड़ने वालों पर 5,000 रुपये तक का जुर्माना लगाने पर विचार कर रही है। इस प्रस्तावित उपाय का उद्देश्य वन-वे (गलत दिशा में गाड़ी चलाना) और अवैध पार्किंग जैसी उल्लंघनाओं से निपटना है।",
+          "full_article_text": "कर्नाटक सरकार बार-बार यातायात नियम तोड़ने वालों के लिए जुर्माने की राशि बढ़ाने के प्रस्ताव पर विचार कर रही है, जिसमें जुर्माना 5,000 रुपये तक पहुंच सकता है। इन कड़े जुर्मानों का उद्देश्य राज्य के भीतर गलत दिशा में गाड़ी चलाने (वन-वे उल्लंघन) और अवैध पार्किंग जैसे सामान्य यातायात उल्लंघनों से निपटना है।",
+          "background_context": "भारत में यातायात प्रबंधन और सड़क सुरक्षा नियमों की देखरेख राज्य के अधिकारियों द्वारा की जाती है।",
+          "bullet_points": [
+            "कर्नाटक बार-बार यातायात नियम तोड़ने वालों पर 5,000 रुपये तक का जुर्माना लगाने पर विचार कर रहा है।",
+            "यह प्रस्ताव विशेष रूप से गलत दिशा में गाड़ी चलाने और अवैध पार्किंग को लक्षित करता है।"
+          ],
+          "key_facts": [
+            "राज्य: कर्नाटक",
+            "प्रस्तावित अधिकतम जुर्माना: 5,000 रुपये"
+          ],
+          "key_locations": [
+            "कर्नाटक"
+          ],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "What is the maximum fine Karnataka is mulling for repeat traffic offenders regarding violations like wrong-side driving?",
+          "options": [
+            "Rs 1,000",
+            "Rs 2,000",
+            "Rs 5,000",
+            "Rs 10,000"
+          ],
+          "correct_answer": "Rs 5,000",
+          "explanation": "The Karnataka government is considering fines of up to Rs 5,000 for repeat traffic offenders involved in violations such as wrong-side driving and illegal parking."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/city/bengaluru/fines-for-one-way-violation-illegal-parking-may-touch-up-to-rs-5k-for-repeat-offenders/articleshow/134601155.cms",
+        "published_date": "2026-10-01",
+        "id": 78,
+        "image_url": "https://static.toiimg.com/photo/msid-134607593,imgsize-203279.cms",
+        "added_at": "2026-10-01T10:39:01.689370+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": false,
+        "headline": "Rahul Gandhi questions who ordered changes to Form 6",
+        "story_lead": "Congress leader Rahul Gandhi has raised questions regarding the modifications made to Form 6, asking whether those involved were pressured and who gave the orders for the changes. The query highlights ongoing political discussions surrounding electoral documentation processes.",
+        "full_article_text": "Congress leader Rahul Gandhi has publicly raised questions regarding recent changes made to Form 6, an electoral registration document used in India. In his remarks, he questioned whether the individuals responsible for the alterations were subjected to pressure and demanded to know who issued the orders for these modifications. The source text notes these developments as part of political discourse concerning electoral procedures.",
+        "background_context": "The source material mentions Rahul Gandhi questioning the changes made to Form 6 and asking who ordered the modifications and if there was any pressure.",
+        "bullet_points": [
+          "Rahul Gandhi raised questions about changes made to Form 6.",
+          "He specifically asked if those involved were pressured.",
+          "He questioned who ordered the modifications.",
+          "The report originates from the Times of India."
+        ],
+        "key_facts": [
+          "Rahul Gandhi questioned changes to Form 6.",
+          "He inquired about the source of orders and potential pressure."
+        ],
+        "key_locations": [
+          "India"
+        ],
+        "important_dates": [],
+        "exam_relevance": [
+          "General awareness of political statements and electoral processes."
+        ],
+        "upsc_analysis": "The article reports political statements regarding administrative forms used in the electoral process, reflecting the ongoing discourse on institutional functioning and accountability.",
+        "causes": [
+          "Modifications made to Form 6."
+        ],
+        "impacts": [
+          "Political questioning regarding administrative transparency and pressure."
+        ],
+        "challenges": [
+          "Ensuring transparency and neutrality in electoral administrative procedures."
+        ],
+        "government_steps": [],
+        "constitutional_or_policy_link": [
+          "Electoral registration procedures under Indian election laws."
+        ],
+        "way_forward": [
+          "Maintaining transparency and clarity in administrative and electoral document modifications."
+        ],
+        "mains_notes": "Rahul Gandhi questioned the rationale and orders behind changes to Form 6, raising concerns about potential pressure on officials.",
+        "mains_questions": [
+          "Discuss the significance of Form 6 in India's electoral registration process."
+        ],
+        "takeaway": "Rahul Gandhi questioned who ordered changes to Form 6 and whether pressure was applied.",
+        "prelims_facts": [
+          "Form 6 is associated with electoral registration."
+        ],
+        "vocabulary": [
+          {
+            "word": "Pressured",
+            "meaning_hindi": "दबाव डाला गया"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Rahul Gandhi",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Rahul_Gandhi"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "राहुल गांधी ने सवाल उठाया कि फॉर्म 6 में बदलाव के आदेश किसने दिए",
+          "story_lead": "कांग्रेस नेता राहुल गांधी ने फॉर्म 6 में किए गए बदलावों को लेकर सवाल उठाया है और पूछा है कि क्या इसमें शामिल लोगों पर दबाव डाला गया था और इन बदलावों के आदेश किसने दिए थे।",
+          "full_article_text": "कांग्रेस नेता राहुल गांधी ने फॉर्म 6 में किए गए हालिया बदलावों पर सवाल उठाया है। अपनी टिप्पणियों में, उन्होंने पूछा कि क्या संशोधनों के लिए जिम्मेदार व्यक्तियों पर दबाव डाला गया था और यह जानना चाहा कि इन संशोधनों के आदेश किसने दिए।",
+          "background_context": "स्रोत सामग्री में राहुल गांधी द्वारा फॉर्म 6 में किए गए बदलावों पर सवाल उठाने और यह पूछने का उल्लेख है कि संशोधन के आदेश किसने दिए और क्या कोई दबाव था।",
+          "bullet_points": [
+            "राहुल गांधी ने फॉर्म 6 में किए गए बदलावों पर सवाल उठाए।",
+            "उन्होंने विशेष रूप से पूछा कि क्या संबंधित लोगों पर दबाव डाला गया था।",
+            "उन्होंने सवाल किया कि संशोधनों के आदेश किसने दिए।"
+          ],
+          "key_facts": [
+            "राहुल गांधी ने फॉर्म 6 में बदलाव पर सवाल उठाया।"
+          ],
+          "key_locations": [
+            "भारत"
+          ],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "Which form's changes were questioned by Rahul Gandhi according to the report?",
+          "options": [
+            "Form 6",
+            "Form 7",
+            "Form 8",
+            "Form 10"
+          ],
+          "correct_answer": "Form 6",
+          "explanation": "The report highlights Rahul Gandhi questioning the changes made to Form 6."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/india/were-they-pressured-rahul-gandhi-questions-who-ordered-form-6-changes/articleshow/134607949.cms",
+        "published_date": "2026-10-01",
+        "id": 77,
+        "image_url": "https://static.toiimg.com/photo/msid-134607988,imgsize-77228.cms",
+        "added_at": "2026-10-01T10:39:01.689370+05:30"
+      },
+      {
+        "category": "World",
+        "exam_corner": false,
+        "headline": "Israeli Passenger Controls flydubai Jet After Pilot Stabbing Incident",
+        "story_lead": "An Israeli passenger successfully helped control a plummeting flydubai passenger jet after the co-pilot was stabbed and the pilot wounded. The incident highlighted an extraordinary mid-air emergency handled by a passenger who noted watching air crash investigations helped him during the crisis.",
+        "full_article_text": "An extraordinary mid-air incident aboard a flydubai passenger jet unfolded when an Israeli passenger took control of the aircraft after the co-pilot was stabbed and the pilot was wounded. According to reports, the flight faced a critical situation as the aircraft began plummeting following the violent altercation inside the cockpit. The passenger intervened and helped stabilize the jet, later attributing his ability to respond to having watched air crash investigation shows. The event underscores the unpredictable nature of aviation security and the critical role of situational awareness in emergency crisis management.",
+        "background_context": "The incident involves a flydubai passenger flight where a security breach or violent altercation led to the co-pilot being stabbed and the pilot wounded, forcing an emergency intervention by a passenger.",
+        "bullet_points": [
+          "An Israeli passenger helped control a flydubai passenger jet mid-air.",
+          "The emergency occurred after the co-pilot was stabbed and the pilot was wounded.",
+          "The aircraft began plummeting before the situation was brought under control.",
+          "The passenger credited his familiarity with air crash investigations for aiding his response.",
+          "The incident raises important questions regarding cockpit security and mid-air threat management."
+        ],
+        "key_facts": [
+          "An Israeli passenger controlled a flydubai jet after a pilot stabbing incident.",
+          "The co-pilot was stabbed and the pilot was wounded during the flight.",
+          "The passenger utilized knowledge gained from watching air crash investigations."
+        ],
+        "key_locations": [
+          "Middle East"
+        ],
+        "important_dates": [],
+        "exam_relevance": [
+          "General international current affairs and aviation security awareness."
+        ],
+        "upsc_analysis": "From a civil services perspective, incidents of in-flight security breaches emphasize the rigorous implementation of international aviation safety protocols, cockpit door reinforcement standards, and crew training under the guidelines of international bodies like the International Civil Aviation Organization (ICAO).",
+        "causes": [
+          "An in-flight violent attack involving the stabbing of the co-pilot and wounding of the pilot."
+        ],
+        "impacts": [
+          "Sudden plummeting of the aircraft and immediate danger to passenger lives.",
+          "Emergency intervention by a passenger to stabilize the aircraft."
+        ],
+        "challenges": [
+          "Ensuring absolute cockpit security against unexpected internal threats.",
+          "Managing sudden incapacitation of flight crew members."
+        ],
+        "government_steps": [],
+        "constitutional_or_policy_link": [
+          "International Civil Aviation regulations and bilateral aviation safety norms."
+        ],
+        "way_forward": [
+          "Enhancing cockpit security protocols and strict adherence to international aviation safety standards."
+        ],
+        "mains_notes": "A flydubai flight faced a severe mid-air crisis when the co-pilot was stabbed and the pilot wounded, causing the plane to plummet. An Israeli passenger intervened and controlled the aircraft, highlighting vulnerabilities in cockpit security and the critical importance of emergency response readiness.",
+        "mains_questions": [
+          "Analyze the implications of in-flight security incidents on global aviation safety protocols.",
+          "Discuss the challenges of managing sudden crew incapacitation in commercial aviation."
+        ],
+        "takeaway": "An Israeli passenger successfully controlled a flydubai jet after the co-pilot was stabbed and the pilot wounded during a flight.",
+        "prelims_facts": [
+          "Incident involved a flydubai passenger jet.",
+          "Co-pilot was stabbed and the pilot was wounded."
+        ],
+        "vocabulary": [
+          {
+            "word": "Plummeting",
+            "meaning_hindi": "तेजी से नीचे गिरना"
+          },
+          {
+            "word": "Intervention",
+            "meaning_hindi": "हस्तक्षेप"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "flydubai",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=flydubai"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "पायलट के चाकू लगने के बाद इजरायली यात्री ने संभाली फ्लाईदुबई के विमान की कमान",
+          "story_lead": "सह-पायलट के चाकू लगने और पायलट के घायल होने के बाद एक इजरायली यात्री ने नीचे गिरते फ्लाईदुबई के यात्री विमान को नियंत्रित करने में सफलता प्राप्त की।",
+          "full_article_text": "फ्लाईदुबई के एक यात्री विमान में तब एक असाधारण घटना घटी जब सह-पायलट के चाकू लगने और पायलट के घायल होने के बाद एक इजरायली यात्री ने विमान को नियंत्रित किया। विमान अचानक नीचे गिरने लगा था, जिसके बाद यात्री ने हस्तक्षेप किया और विमान को स्थिर करने में मदद की।",
+          "background_context": "यह घटना फ्लाईदुबई की एक उड़ान से संबंधित है जहां सुरक्षा उल्लंघन या हिंसक झड़प के कारण सह-पायलट को चाकू मार दिया गया और पायलट घायल हो गया।",
+          "bullet_points": [
+            "एक इजरायली यात्री ने हवा में फ्लाईदुबई के विमान को नियंत्रित करने में मदद की।",
+            "यह आपात स्थिति सह-पायलट को चाकू मारे जाने और पायलट के घायल होने के बाद उत्पन्न हुई।",
+            "स्थिति को नियंत्रित करने से पहले विमान तेजी से नीचे गिरने लगा था।"
+          ],
+          "key_facts": [
+            "पायलट पर हमले के बाद इजरायली यात्री ने फ्लाईदुबई के विमान को संभाला।"
+          ],
+          "key_locations": [
+            "मध्य पूर्व"
+          ],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "Which airline's flight was involved in the incident where a passenger helped control the jet after a pilot was stabbed?",
+          "options": [
+            "Emirates",
+            "flydubai",
+            "El Al",
+            "Qatar Airways"
+          ],
+          "correct_answer": "flydubai",
+          "explanation": "The incident involved a flydubai passenger jet where an Israeli passenger helped control the aircraft after the co-pilot was stabbed and the pilot wounded."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/world/middle-east/i-watch-air-crash-investigation-how-israeli-passenger-controlled-plummeting-flydubai-passenger-jet-after-co-pilot-stabbed-and-wounded-pilot/articleshow/134607099.cms",
+        "published_date": "2026-10-01",
+        "id": 76,
+        "image_url": "https://static.toiimg.com/photo/msid-134607200,imgsize-51881.cms",
+        "added_at": "2026-10-01T10:39:01.689370+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": false,
+        "headline": "Details emerge regarding Omani co-pilot who attacked flydubai captain",
+        "story_lead": "Recent reports have shed light on the background of an Omani co-pilot identified as a religious extremist who attacked a flydubai captain. The incident has drawn international attention and raised questions regarding aviation security and personnel screening. Available details indicate behavior patterns associated with religious extremism.",
+        "full_article_text": "Reports have emerged regarding an Omani co-pilot involved in an attack on a flydubai captain. Described as a religious extremist, the co-pilot's behavioral traits reportedly included refusing handshakes with women. The incident highlights concerns within the aviation industry regarding the screening and psychological evaluation of flight crew members to ensure safety and security in commercial aviation. Authorities and aviation stakeholders continue to examine the circumstances surrounding the event.",
+        "background_context": "The incident involves an Omani co-pilot and a flydubai captain, bringing attention to crew dynamics, airline safety protocols, and behavioral monitoring in international commercial aviation.",
+        "bullet_points": [
+          "An Omani co-pilot was identified as the individual who attacked a flydubai captain.",
+          "Reports characterize the co-pilot as a religious extremist.",
+          "Specific behavioral traits noted include refusing handshakes with women.",
+          "The event has prompted scrutiny regarding aviation security and crew screening processes."
+        ],
+        "key_facts": [
+          "Incident involves an Omani co-pilot and a flydubai captain.",
+          "The co-pilot was described as a religious extremist.",
+          "Behavioral reports mention a refusal to shake hands with women."
+        ],
+        "key_locations": [
+          "Oman"
+        ],
+        "important_dates": [],
+        "exam_relevance": [
+          "General awareness and international current affairs."
+        ],
+        "upsc_analysis": "This incident serves as a point of reference for discussions on international aviation safety, crew vetting processes, and the global challenge of addressing radicalization and extremist behavior across critical sectors.",
+        "causes": [
+          "Individual extremist ideology and behavioral radicalization.",
+          "Potential gaps in pre-employment screening and continuous psychological monitoring of aviation personnel."
+        ],
+        "impacts": [
+          "Increased scrutiny on airline crew recruitment and background verification.",
+          "Heightened concerns regarding cockpit safety and interpersonal dynamics among flight crews."
+        ],
+        "challenges": [
+          "Detecting covert extremist ideologies during routine background checks.",
+          "Balancing privacy rights with rigorous psychological and behavioral monitoring in sensitive professions."
+        ],
+        "government_steps": [],
+        "constitutional_or_policy_link": [],
+        "way_forward": [
+          "Strengthening international aviation security standards for crew vetting.",
+          "Implementing regular psychological assessments and behavioral monitoring for pilots and co-pilots."
+        ],
+        "mains_notes": "The incident involving an Omani co-pilot attacking a flydubai captain underscores the necessity of robust background checks and psychological evaluations for personnel in critical infrastructure sectors like aviation to prevent security breaches.",
+        "mains_questions": [
+          "Discuss the challenges of personnel screening and behavioral monitoring in the commercial aviation sector.",
+          "How do incidents involving crew misconduct impact international aviation security protocols?"
+        ],
+        "takeaway": "Reports surrounding the Omani co-pilot who attacked a flydubai captain highlight ongoing concerns regarding crew vetting and aviation security.",
+        "prelims_facts": [
+          "The incident involved a flydubai captain and an Omani co-pilot."
+        ],
+        "vocabulary": [
+          {
+            "word": "Extremist",
+            "meaning_hindi": "कतरपंथीय / उग्रवादी"
+          },
+          {
+            "word": "Co-pilot",
+            "meaning_hindi": "सह-पायलट"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Oman",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Oman"
+          },
+          {
+            "name": "flydubai",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=flydubai"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "फ्लाईदुबई के कप्तान पर हमला करने वाले ओमान के सह-पायलट के बारे में सामने आए तथ्य",
+          "story_lead": "हालिया रिपोर्टों में एक ओमान के सह-पायलट की पृष्ठभूमि पर प्रकाश डाला गया है, जिसे धार्मिक चरमपंथी के रूप में पहचाना गया है और जिसने फ्लाईदुबई के कप्तान पर हमला किया था।",
+          "full_article_text": "फ्लाईदुबई के कप्तान पर हमला करने वाले ओमान के सह-पायलट से जुड़ी रिपोर्टें सामने आई हैं। धार्मिक चरमपंथी के रूप में वर्णित, सह-पायलट के व्यवहार में महिलाओं के साथ हाथ मिलाने से इनकार करना शामिल बताया गया है।",
+          "background_context": "इस घटना में ओमान का एक सह-पायलट और फ्लाईदुबई का कप्तान शामिल है, जिसने अंतर्राष्ट्रीय वाणिज्यिक विमानन में चालक दल की गतिशीलता और सुरक्षा प्रोटोकॉल पर ध्यान आकर्षित किया है।",
+          "bullet_points": [
+            "ओमान के एक सह-पायलट ने फ्लाईदुबई के कप्तान पर हमला किया।",
+            "रिपोर्टों में सह-पायलट को धार्मिक चरमपंथी बताया गया है।",
+            "व्यवहार संबंधी रिपोर्टों में महिलाओं से हाथ मिलाने से इनकार करने की बात शामिल है।"
+          ],
+          "key_facts": [
+            "घटना में ओमान का सह-पायलट और फ्लाईदुबई का कप्तान शामिल है।"
+          ],
+          "key_locations": [
+            "ओमान"
+          ],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "Which airline's captain was attacked by an Omani co-pilot according to recent reports?",
+          "options": [
+            "Emirates",
+            "flydubai",
+            "Oman Air",
+            "Etihad Airways"
+          ],
+          "correct_answer": "flydubai",
+          "explanation": "The source text states that an Omani co-pilot attacked a flydubai captain."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/world/middle-east/religious-extremist-refused-handshakes-with-women-what-we-know-about-flydubai-attacker/articleshow/134606941.cms",
+        "published_date": "2026-10-01",
+        "id": 75,
+        "image_url": "https://static.toiimg.com/photo/msid-134607096,imgsize-1831255.cms",
+        "added_at": "2026-10-01T10:39:01.689370+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": false,
+        "headline": "19-Year-Old Bengaluru College Student Stabbed to Death During Student Clash",
+        "story_lead": "A 19-year-old first-year BCom student was stabbed to death during a clash between two groups of students near a private college in Bengaluru on Wednesday afternoon. Police have gathered clues about the absconding accused and are examining CCTV footage and questioning witnesses.",
+        "full_article_text": "A 19-year-old college student died after being stabbed in the chest during a clash between two groups of students near Deepa Complex in Bengaluru on Wednesday afternoon. The incident occurred between 2:30 pm and 3:00 pm behind a private college within the limits of the Annapoorneshwari Nagar police station. According to police, the victim, a first-year BCom student, had attended college as usual before being called outside by another student from the same institution. Around seven to eight people had gathered near a gym behind the college. An argument between the student's friends and the other group escalated into a physical fight, during which the victim was stabbed in the chest. He was rushed to a nearby private hospital on a motorcycle by his friends but succumbed to his injuries during treatment. Police have inspected the scene, are questioning witnesses and students, and are reviewing CCTV footage to establish the sequence of events and apprehend the suspects.",
+        "background_context": "The incident highlights issues related to student altercations and campus safety within urban educational jurisdictions in Bengaluru, falling under the Annapoorneshwari Nagar police station limits.",
+        "bullet_points": [
+          "A 19-year-old first-year BCom student was killed in a student clash in Bengaluru.",
+          "The incident occurred on Wednesday afternoon between 2:30 pm and 3:00 pm.",
+          "The clash took place near Deepa Complex and a gym behind the private college.",
+          "The victim was stabbed in the chest during a physical fight that erupted from an ongoing enmity.",
+          "The injured student was taken to a private hospital on a motorcycle but died during treatment.",
+          "Police have launched an investigation, reviewing CCTV footage and questioning witnesses to trace the absconding suspects."
+        ],
+        "key_facts": [
+          "Victim age: 19 years old",
+          "Course: First-year BCom",
+          "Location: Near Deepa Complex, behind a private college in Bengaluru",
+          "Police jurisdiction: Annapoorneshwari Nagar police station",
+          "Time of incident: Wednesday afternoon (approx. 2:30 pm to 3:00 pm)",
+          "DCP statement: DCP N Yethish confirmed the incident and pursuit of absconding accused"
+        ],
+        "key_locations": [
+          "Bengaluru",
+          "Deepa Complex",
+          "Annapoorneshwari Nagar"
+        ],
+        "important_dates": [
+          "Wednesday"
+        ],
+        "exam_relevance": [
+          "General Studies Paper I (Indian Society - social issues, youth dynamics)",
+          "General Studies Paper IV (Ethics - juvenile delinquency, anger management among youth)"
+        ],
+        "upsc_analysis": "From a sociological and public order perspective, incidents of fatal violence among students point to deeper institutional challenges regarding youth counseling, conflict resolution mechanisms in educational spaces, and law enforcement measures to curb campus violence. While primarily a law and order issue, it underscores the need for robust institutional frameworks for student grievance redressal and psychological support.",
+        "causes": [
+          "Enmity and escalation of personal disputes between student groups",
+          "Lack of immediate conflict resolution mechanisms within academic environments"
+        ],
+        "impacts": [
+          "Loss of a young life and severe trauma to the victim's family and peers",
+          "Heightened security concerns regarding campus and student safety in Bengaluru"
+        ],
+        "challenges": [
+          "Preventing sudden physical altercations and knife violence among youth",
+          "Swift apprehension of absconding suspects and gathering reliable witness testimonies"
+        ],
+        "government_steps": [
+          "Immediate police intervention by Annapoorneshwari Nagar police station",
+          "Inspection of crime scenes, review of CCTV footage, and active tracking of suspects by law enforcement"
+        ],
+        "constitutional_or_policy_link": [
+          "Right to Life under Article 21 of the Constitution of India (protection against unlawful deprivation of life)"
+        ],
+        "way_forward": [
+          "Enhancing campus policing and coordination between educational institutions and local police",
+          "Establishing mental health counseling and peer mediation cells in colleges to address student disputes proactively"
+        ],
+        "mains_notes": "The stabbing incident involving a college student in Bengaluru reflects growing concerns over youth violence, peer conflicts, and campus security. Addressing such incidents requires a multi-pronged approach involving strict law enforcement, proactive institutional counseling, and moral guidance to curb aggressive behavior among young adults.",
+        "mains_questions": [
+          "Discuss the social and psychological factors contributing to rising youth violence and suggest remedial measures.",
+          "Examine the role of educational institutions and law enforcement in ensuring campus safety and preventing student altercations."
+        ],
+        "takeaway": "A 19-year-old college student lost his life following a violent student clash in Bengaluru, prompting active police investigations into the absconding suspects.",
+        "prelims_facts": [
+          "The incident occurred within the limits of Annapoorneshwari Nagar police station in Bengaluru."
+        ],
+        "vocabulary": [
+          {
+            "word": "Enmity",
+            "meaning_hindi": "दुश्मनी"
+          },
+          {
+            "word": "Absconded",
+            "meaning_hindi": "फरार हो गया"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Bengaluru",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Bengaluru"
+          },
+          {
+            "name": "Annapoorneshwari Nagar",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Annapoorneshwari_Nagar"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "बेंगलुरु में छात्रों के बीच झड़प के दौरान 19 वर्षीय कॉलेज छात्र की चाकू मारकर हत्या",
+          "story_lead": "पुलिस ने बताया कि बुधवार दोपहर बेंगलुरु में एक निजी कॉलेज के पास छात्रों के दो समूहों के बीच हुई झड़प के दौरान सीने में चाकू लगने से 19 वर्षीय प्रथम वर्ष के बीकॉम छात्र की मौत हो गई। पुलिस ने फरार आरोपियों के बारे में सुराग जुटाए हैं और उनकी तलाश कर रही है।",
+          "full_article_text": "पुलिस के अनुसार, बुधवार दोपहर को बेंगलुरु में दीपा कॉम्प्लेक्स के पास छात्रों के दो समूहों के बीच हुई झड़प के दौरान सीने में चाकू लगने से 19 वर्षीय कॉलेज छात्र की मौत हो गई। यह घटना अन्नपूर्णेश्वरी नगर पुलिस स्टेशन की सीमा के भीतर निजी कॉलेज के पीछे एक जिम के पास दोपहर 2:30 से 3:00 बजे के बीच हुई। पुलिस ने बताया कि उन्हें शामिल लोगों के बारे में सुराग मिल गए हैं और वे उनकी तलाश कर रहे हैं।",
+          "background_context": "यह घटना बेंगलुरु के शैक्षिक क्षेत्रों में छात्र संघर्षों और सुरक्षा से जुड़े मुद्दों को उजागर करती है।",
+          "bullet_points": [
+            "बेंगलुरु में छात्र झड़प के दौरान 19 वर्षीय प्रथम वर्ष के बीकॉम छात्र की हत्या।",
+            "यह घटना बुधवार दोपहर 2:30 से 3:00 बजे के बीच हुई।",
+            "झड़प दीपा कॉम्प्लेक्स और कॉलेज के पीछे स्थित जिम के पास हुई।",
+            "विवाद बढ़ने पर एक छात्र ने कथित तौर पर चाकू से हमला कर दिया।",
+            "घायल छात्र को अस्पताल ले जाया गया जहां इलाज के दौरान उसकी मौत हो गई।",
+            "पुलिस सीसीटीवी फुटेज खंगाल रही है और फरार आरोपियों की तलाश में जुटी है।"
+          ],
+          "key_facts": [
+            "पीड़ित की उम्र: 19 वर्ष",
+            "पाठ्यक्रम: प्रथम वर्ष बीकॉम",
+            "स्थान: दीपा कॉम्प्लेक्स के पास, बेंगलुरु"
+          ],
+          "key_locations": [
+            "बेंगलुरु",
+            "अन्नपूर्णेश्वरी नगर"
+          ],
+          "important_dates": [
+            "बुधवार"
+          ]
+        },
+        "quiz": {
+          "question": "In which area of Bengaluru did the student clash resulting in the stabbing incident take place?",
+          "options": [
+            "Within the limits of Annapoorneshwari Nagar police station",
+            "Near Majestic bus station",
+            "Inside Cubbon Park",
+            "Near Koramangala police station"
+          ],
+          "correct_answer": "Within the limits of Annapoorneshwari Nagar police station",
+          "explanation": "The incident took place near Deepa Complex behind a private college within the limits of the Annapoorneshwari Nagar police station in Bengaluru."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/19yrold-b-luru-college-student-stabbed-to-death-during-clash-101790797072162.html",
+        "published_date": "2026-10-01",
+        "id": 74,
+        "image_url": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1200&q=80",
+        "added_at": "2026-10-01T10:39:01.689370+05:30"
+      },
+      {
+        "category": "Science & Technology",
+        "exam_corner": false,
+        "headline": "Karnataka Government to Place Bengaluru Police Commissionerate Split Plan Before Cabinet",
+        "story_lead": "The Karnataka government is set to consider a proposal to divide the Bengaluru City Police Commissionerate into five distinct territorial units. The reorganisation plan aims to create 6,633 new police posts at a projected cost of ₹764.87 crore to improve coordination with the newly formed Greater Bengaluru Authority.",
+        "full_article_text": "The Karnataka government is expected to place its plan to split the Bengaluru City Police Commissionerate into five units before the Cabinet on Thursday. Approval for this proposal could clear the way for a major reorganisation creating 6,633 new police posts at a projected cost of ₹764.87 crore. The proposal divides Bengaluru into Central, North, South, East, and West commissionerates, each to be headed by an Inspector General of Police (IGP) or Deputy Inspector General of Police (DIGP) rank officer. All five units would function under a Chief Commissioner of Police of Director General of Police (DGP) rank. Prepared by Bengaluru Police Commissioner Seemant Kumar Singh and submitted on August 1, the plan also proposes increasing the number of Deputy Commissioners of Police (DCPs) from 18 to 28. This restructuring follows the expansion of Bengaluru’s administrative boundaries and the creation of the Greater Bengaluru Authority, whose civic administration is divided into five corporations. The police proposal seeks a corresponding territorial arrangement to improve coordination between policing and civic administration. Chief Minister D K Shivakumar announced the five commissionerate structure during his Independence Day address on August 15, stating it would strengthen law and order and facilitate the creation of police stations where needed. Under the proposed arrangement, the Central commissionerate covers the core city, North includes areas such as Yeshwanthpur and Yelahanka, East covers the existing East division and Whitefield, South encompasses South, Southeast, Electronic City, Anekal, Sarjapur, Suryanagar, Attibele, Bannerghatta, and Jigani, and West covers West, Kengeri, and Peenya. Certain specialised functions like the Central Crime Branch, cybercrime units, and traffic command will retain citywide structures. However, the structure has faced some reservations from sections of the police establishment regarding potential jurisdictional disputes, coordination problems during law and order operations, and the role of the Chief Commissioner supervising the five territorial commissioners.",
+        "background_context": "The restructuring proposal follows the expansion of Bengaluru’s administrative boundaries and the formation of the Greater Bengaluru Authority, whose civic administration is divided into five corporations. The government sought a corresponding territorial police arrangement to improve coordination between policing and civic administration.",
+        "bullet_points": [
+          "Karnataka cabinet to consider splitting Bengaluru City Police Commissionerate into five units.",
+          "Proposal involves creating 6,633 new police posts at a projected cost of ₹764.87 crore.",
+          "Five units will comprise Central, North, South, East, and West commissionerates.",
+          "All five commissionerates will function under a Chief Commissioner of Police of DGP rank.",
+          "Number of Deputy Commissioners of Police (DCPs) is proposed to be increased from 18 to 28.",
+          "Specialised functions like Central Crime Branch, cybercrime, and traffic command will retain citywide structures.",
+          "Restructuring aims to improve coordination with the Greater Bengaluru Authority's five civic corporations."
+        ],
+        "key_facts": [
+          "Projected cost of reorganisation is ₹764.87 crore.",
+          "Plan proposes creation of 6,633 new police posts.",
+          "Bengaluru Police Commissioner Seemant Kumar Singh submitted the proposal on August 1.",
+          "Chief Minister D K Shivakumar announced the structure on August 15.",
+          "DCP count will increase from 18 to 28."
+        ],
+        "key_locations": [
+          "Bengaluru",
+          "Yeshwanthpur",
+          "Yelahanka",
+          "Whitefield",
+          "Electronic City",
+          "Anekal",
+          "Sarjapur",
+          "Suryanagar",
+          "Attibele",
+          "Bannerghatta",
+          "Jigani",
+          "Kengeri",
+          "Peenya"
+        ],
+        "important_dates": [
+          "August 1",
+          "August 15"
+        ],
+        "exam_relevance": [
+          "Mains: General Studies Paper II - Governance, Constitution, Polity, Social Justice and International Relations (Government policies and interventions for development in various sectors and issues arising out of their design and implementation)."
+        ],
+        "upsc_analysis": "The proposed reorganisation of the Bengaluru City Police Commissionerate highlights the administrative challenges associated with rapid urban expansion and metropolitan governance. As cities expand spatially and administratively, aligning police jurisdictions with municipal or civic boundaries becomes crucial for maintaining law and order, effective traffic management, and seamless disaster response. However, administrative fragmentation within police structures can sometimes lead to jurisdictional disputes and inter-agency coordination challenges, requiring robust institutional frameworks and clear command hierarchies.",
+        "causes": [
+          "Expansion of Bengaluru’s administrative boundaries.",
+          "Creation of the Greater Bengaluru Authority with five civic corporations.",
+          "Need to strengthen law and order and improve coordination between policing and civic administration."
+        ],
+        "impacts": [
+          "Creation of 6,633 new police posts.",
+          "Increase in Deputy Commissioners of Police from 18 to 28.",
+          "Establishment of five distinct territorial commissionerates under a single Chief Commissioner."
+        ],
+        "challenges": [
+          "Potential jurisdictional disputes between neighbouring commissionerates during law and order operations.",
+          "Coordination problems across multiple territorial units.",
+          "Administrative questions regarding the supervisory role of the Chief Commissioner over the five territorial commissioners."
+        ],
+        "government_steps": [
+          "Preparation of a reorganisation plan by Bengaluru Police Commissioner Seemant Kumar Singh.",
+          "Announcement of the five-commissionerate structure by Chief Minister D K Shivakumar.",
+          "Placing the proposal before the state cabinet for approval."
+        ],
+        "constitutional_or_policy_link": [
+          "State list (List II) of the Seventh Schedule of the Constitution of India, which places 'Police' under the domain of state governments."
+        ],
+        "way_forward": [
+          "Ensure clear Standard Operating Procedures (SOPs) to prevent jurisdictional disputes among the five commissionerates.",
+          "Maintain centralized specialised units like cybercrime and traffic command for uniform enforcement.",
+          "Address concerns raised by the police establishment regarding administrative supervision and coordination."
+        ],
+        "mains_notes": "The Karnataka government's proposal to split the Bengaluru City Police Commissionerate into five territorial units (Central, North, South, East, and West) aims to match civic administrative boundaries under the Greater Bengaluru Authority. Costing ₹764.87 crore with 6,633 new posts, the move intends to streamline policing and urban governance. While it promises better ground-level coordination and localized law enforcement, challenges regarding command overlap and jurisdictional disputes must be carefully managed through clear SOPs and unified oversight.",
+        "mains_questions": [
+          "Discuss the rationale behind restructuring metropolitan police commissionerates in line with expanding civic administration, highlighting potential challenges.",
+          "How does administrative expansion in metropolitan cities impact urban policing and internal security frameworks? Analyse."
+        ],
+        "takeaway": "Karnataka plans to split the Bengaluru City Police Commissionerate into five units to align with urban expansion and improve civic coordination.",
+        "prelims_facts": [
+          "Bengaluru police reorganisation plan proposes 5 territorial commissionerates.",
+          "The plan projects the creation of 6,633 new police posts.",
+          "DCP count is proposed to rise from 18 to 28.",
+          "Specialised units like Central Crime Branch and cybercrime will retain citywide structures."
+        ],
+        "vocabulary": [
+          {
+            "word": "Commissionerate",
+            "meaning_hindi": "आयुक्तालय"
+          },
+          {
+            "word": "Reorganisation",
+            "meaning_hindi": "पुनर्गठन"
+          },
+          {
+            "word": "Jurisdiction",
+            "meaning_hindi": "क्षेत्राधिकार"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Bengaluru",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Bengaluru"
+          },
+          {
+            "name": "Karnataka",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Karnataka"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "कर्नाटक सरकार कैबिनेट के समक्ष बेंगलुरु पुलिस कमिश्नरेट विभाजन योजना पेश करने के लिए तैयार",
+          "story_lead": "कर्नाटक सरकार बेंगलुरु सिटी पुलिस कमिश्नरेट को पांच इकाइयों में विभाजित करने के अपने प्रस्ताव को गुरुवार को कैबिनेट के समक्ष रखने की योजना बना रही है। इस पुनर्गठन से ₹764.87 करोड़ की अनुमानित लागत पर 6,633 नए पुलिस पदों के सृजन का मार्ग प्रशस्त हो सकता है।",
+          "full_article_text": "कर्नाटक सरकार गुरुवार को कैबिनेट के समक्ष बेंगलुरु सिटी पुलिस कमिश्नरेट को पांच इकाइयों में विभाजित करने की अपनी योजना पेश करने जा रही है, जिसके अनुमोदन से एक पुनर्गठन का मार्ग प्रशस्त हो सकता है जो ₹764.87 करोड़ की अनुमानित लागत पर 6,633 नए पुलिस पद सृजित करेगा। यह प्रस्ताव बेंगलुरु को सेंट्रल, नॉर्थ, साउथ, ईस्ट और वेस्ट कमिश्नरेट में विभाजित करता है, जिनमें से प्रत्येक का नेतृत्व पुलिस महानिरीक्षक (IGP) या पुलिस उप-महानिरीक्षक (DIGP) रैंक के अधिकारी द्वारा किया जाएगा। सभी पांच इकाइयां पुलिस महानिदेशक (DGP) रैंक के एक मुख्य पुलिस आयुक्त के अधीन काम करेंगी।",
+          "background_context": "यह पुनर्गठन बेंगलुरु की प्रशासनिक सीमाओं के विस्तार और ग्रेटर बेंगलुरु अथॉरिटी के गठन के बाद आया है, जिसकी नागरिक प्रशासन व्यवस्था को पांच निगमों में विभाजित किया गया है।",
+          "bullet_points": [
+            "कर्नाटक कैबिनेट बेंगलुरु सिटी पुलिस कमिश्नरेट को पांच इकाइयों में बांटने की योजना पर विचार करेगी।",
+            "प्रस्ताव में ₹764.87 करोड़ की लागत से 6,633 नए पुलिस पद सृजित करने की बात है।",
+            "पांच इकाइयों में सेंट्रल, नॉर्थ, साउथ, ईस्ट और वेस्ट कमिश्नरेट शामिल होंगे।"
+          ],
+          "key_facts": [
+            "पुनर्गठन की अनुमानित लागत ₹764.87 करोड़ है।",
+            "6,633 नए पुलिस पदों का सृजन किया जाएगा।"
+          ],
+          "key_locations": [
+            "बेंगलुरु",
+            "कर्नाटक"
+          ],
+          "important_dates": [
+            "1 अगस्त",
+            "15 अगस्त"
+          ]
+        },
+        "quiz": {
+          "question": "Into how many territorial commissionerates is the Bengaluru City Police Commissionerate proposed to be divided under the new plan?",
+          "options": [
+            "A) Three units",
+            "B) Four units",
+            "C) Five units",
+            "D) Six units"
+          ],
+          "correct_answer": "C) Five units",
+          "explanation": "The proposal divides Bengaluru into Central, North, South, East and West commissionerates, making a total of five units."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/5commissionerate-plan-set-to-be-placed-before-cabinet-101790797129573.html",
+        "published_date": "2026-10-01",
+        "id": 73,
+        "image_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+        "added_at": "2026-10-01T10:39:01.689370+05:30"
+      },
+      {
+        "category": "World",
+        "exam_corner": false,
+        "headline": "Indian among 5 killed in Somalia during hijacked ship rescue",
+        "story_lead": "An Indian national was among five crew members killed during a shootout between Somali security forces and pirates attempting to retake a hijacked tanker. The victim, Mohammed Tanweeruz Zaman from West Bengal, worked as a cook on the Palau-flagged vessel MT Honour 25. The incident was reported to the Directorate General of Maritime Administration (DGMA) following the exchange of fire.",
+        "full_article_text": "West Bengal resident Mohammed Tanweeruz Zaman was among five crew members killed as Somali security forces tried to retake the tanker from pirates. Zaman, who worked as a cook on the Palau-flagged MT Honour 25 carrying bitumen, was killed in an exchange of fire during the rescue operation. The vessel had been hijacked on April 24 and was operated with a multi-national crew including one Indian, 10 Pakistanis, four Indonesians, one Myanmar national, and one Sri Lankan. The other deceased crew members include three Pakistanis and one Myanmar national. Following the operation, the vessel proceeded towards the port of Bosaso under escort.",
+        "background_context": "The incident involves the Palau-flagged tanker MT Honour 25 carrying bitumen, which was hijacked by Somali pirates. Somali security forces engaged in a shootout while trying to retake the vessel, resulting in casualties among the crew members.",
+        "bullet_points": [
+          "An Indian national, Mohammed Tanweeruz Zaman, was among five crew members killed in Somalia.",
+          "The casualties occurred during a shootout between Somali security forces and pirates trying to retake the hijacked tanker MT Honour 25.",
+          "Zaman worked as a cook on the Palau-flagged vessel, which carried a cargo of bitumen and had been hijacked on April 24.",
+          "The other deceased crew members include three Pakistanis and one Myanmar national.",
+          "The vessel's multi-national crew originally consisted of individuals from India, Pakistan, Indonesia, Myanmar, and Sri Lanka.",
+          "Following the operation, the vessel proceeded toward the port of Bosaso under escort."
+        ],
+        "key_facts": [
+          "Victim: Mohammed Tanweeruz Zaman, resident of West Bengal",
+          "Vessel: MT Honour 25, Palau-flagged tanker carrying bitumen",
+          "Hijack Date: April 24",
+          "Total Crew Deaths: 5 (1 Indian, 3 Pakistanis, 1 Myanmar national)",
+          "Hiring Agency: World Maritime Energy Private Limited based in Punjab",
+          "Destination under escort: Port of Bosaso"
+        ],
+        "key_locations": [
+          "Somalia",
+          "West Bengal",
+          "Punjab",
+          "Bosaso",
+          "Yemen"
+        ],
+        "important_dates": [
+          "April 24"
+        ],
+        "exam_relevance": [
+          "International Relations",
+          "Maritime Security",
+          "Safety of Indian Diaspora abroad"
+        ],
+        "upsc_analysis": "The incident highlights the persistent threat of maritime piracy off the coast of Somalia and Yemen, impacting international shipping lanes and the safety of Indian seafarers. It underscores the challenges faced by multi-national crews and the complexities involved in military or security-led rescue operations in high-risk maritime zones.",
+        "causes": [
+          "Hijacking of the tanker MT Honour 25 by Somali pirates",
+          "Armed exchange of fire between Somali security forces and pirates during the rescue attempt"
+        ],
+        "impacts": [
+          "Death of five crew members, including an Indian national",
+          "Disruption of maritime transport and safety concerns for seafarers in the region"
+        ],
+        "challenges": [
+          "Ensuring the safety of hostages and multi-national crew members during armed rescue operations against pirates",
+          "Combating piracy in the waters off Somalia and Yemen"
+        ],
+        "government_steps": [
+          "Reporting and tracking of maritime incidents through administrative bodies like the Directorate General of Maritime Administration (DGMA)"
+        ],
+        "constitutional_or_policy_link": [
+          "Protection of Indian citizens and diaspora abroad under general principles of consular and diplomatic welfare."
+        ],
+        "way_forward": [
+          "Enhanced international maritime cooperation and intelligence sharing to deter piracy off the Horn of Africa",
+          "Improved standard operating procedures for hostage rescue operations to minimize collateral casualties among crew members"
+        ],
+        "mains_notes": "An Indian national from West Bengal was killed alongside four other crew members during a security forces operation to rescue the hijacked Palau-flagged tanker MT Honour 25 in Somalia. The incident emphasizes the ongoing vulnerability of commercial shipping lanes near Somalia and Yemen to pirate attacks and the risks involved in armed rescue operations.",
+        "mains_questions": [
+          "Discuss the persistent security challenges posed by maritime piracy off the coast of Somalia and its implications for Indian seafarers.",
+          "Examine the complexities involved in security-led rescue operations for hijacked commercial vessels."
+        ],
+        "takeaway": "An Indian cook was among five crew members killed during a Somali security forces operation to retake a hijacked tanker.",
+        "prelims_facts": [
+          "MT Honour 25 is a Palau-flagged tanker carrying bitumen.",
+          "Mohammed Tanweeruz Zaman was an Indian national from West Bengal working as a cook.",
+          "The vessel was proceeding towards the port of Bosaso under escort."
+        ],
+        "vocabulary": [
+          {
+            "word": "Tanker",
+            "meaning_hindi": "टanker / तेल या तरल पदार्थ ले जाने वाला जहाज"
+          },
+          {
+            "word": "Hijacked",
+            "meaning_hindi": "अपहृत / कब्जा किया गया"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Somalia",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Somalia"
+          },
+          {
+            "name": "West Bengal",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=West_Bengal"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "सोमालिया में अपहृत जहाज को छुड़ाने के अभियान के दौरान 5 लोगों की मौत, एक भारतीय भी शामिल",
+          "story_lead": "सोमवार को सोमाली सुरक्षा बलों और समुद्री लुटेरों के बीच हुई गोलीबारी में एक अपहृत टैंकर के चालक दल के पांच सदस्य मारे गए, जिनमें एक भारतीय नागरिक भी शामिल था। पश्चिम बंगाल के रहने वाले मोहम्मद तनवीरउज जमां एमटी ऑनर 25 टैंकर पर कुक के रूप में काम कर रहे थे। इस घटना की सूचना मैरीटाइम एडमिनिस्ट्रेशन के निदेशालय को दी गई।",
+          "full_article_text": "पश्चिम बंगाल के निवासी मोहम्मद तनवीरउज जमां सोमाली सुरक्षा बलों द्वारा समुद्री लुटेरों से टैंकर को वापस लेने के प्रयास के दौरान मारे गए पांच चालक दल के सदस्यों में शामिल थे। मंगलवार को लुटेरों और सोमाली सुरक्षा बलों के बीच हुई गोलीबारी में एक भारतीय नागरिक और चार अन्य लोग मारे गए। मोहम्मद तनवीरउज जमां 24 अप्रैल को अपहृत किए गए एमटी ऑनर 25 टैंकर पर काम करते थे।",
+          "background_context": "यह घटना पलाव-ध्वज वाले टैंकर एमटी ऑनर 25 से जुड़ी है, जिस पर बिटुमेन लदा था और जिसका सोमाली समुद्री लुटेरों ने अपहरण कर लिया था।",
+          "bullet_points": [
+            "सोमालिया में एक भारतीय नागरिक सहित पांच चालक दल के सदस्य मारे गए।",
+            "यह घटना अपहृत टैंकर एमटी ऑनर 25 को छुड़ाने के लिए सुरक्षा बलों और लुटेरों के बीच गोलीबारी के दौरान हुई।",
+            "मृतक भारतीय मोहम्मद तनवीरउज जमां पश्चिम बंगाल के निवासी थे।"
+          ],
+          "key_facts": [
+            "पीड़ित: मोहम्मद तनवीरउज जमां, पश्चिम बंगाल निवासी",
+            "जहाज: एमटी ऑनर 25"
+          ],
+          "key_locations": [
+            "सोमालिया",
+            "पश्चिम बंगाल"
+          ],
+          "important_dates": [
+            "24 अप्रैल"
+          ]
+        },
+        "quiz": {
+          "question": "Which vessel was involved in the hijacking incident off Somalia where an Indian national lost his life during a rescue operation?",
+          "options": [
+            "MT Honour 25",
+            "MV Sunshine",
+            "Ocean Trident",
+            "Sea Guardian"
+          ],
+          "correct_answer": "MT Honour 25",
+          "explanation": "The incident involved the Palau-flagged tanker MT Honour 25 carrying bitumen, on which Indian national Mohammed Tanweeruz Zaman served as a cook."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/indian-national-killed-somali-pirates-hijacked-tanker-mohammed-tanweeruz-zaman-mt-honour-25-west-bengal-101790823602523.html",
+        "published_date": "2026-10-01",
+        "id": 72,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/10/01/1600x900/logo/IRAN-CRISIS-SHIPPING-1_1789367073204_a06c48ec-cfa9_1790823824730_ZxSn_1790823824884_Q0eG_d4434d38-2cd5-45aa-9067-86b605242231_Eybf.JPG",
+        "added_at": "2026-10-01T10:39:01.689370+05:30"
+      },
+      {
+        "category": "Environment",
+        "exam_corner": false,
+        "headline": "3 Gujaratis en route to the US go missing in Ethiopia, abductors demand ₹1 crore",
+        "story_lead": "Three members of a family from Gujarat who were traveling to the United States through an illegal migration route have gone missing in Ethiopia. Their relatives have reported that the individuals were abducted, with the alleged kidnappers demanding a ₹1 crore ransom.",
+        "full_article_text": "Three individuals from Gujarat—Rutvik Jansari, Mamta Chavda, and Mayuri from Mehsana and Gandhinagar—left for the United States on September 20 with the assistance of agents. According to a complaint lodged with the Gujarat Police, they last made contact with their relatives on September 22. Chavda's father, Kiritbhai Chauhan, stated that they approached agents to arrange her travel after she failed to obtain a visa, with agents allegedly charging around ₹70 lakh each for the journey. The trio flew to Abu Dhabi via Jaipur and subsequently to Ethiopia. A man identifying himself as 'Khan' later contacted the family demanding a ₹1 crore ransom for their release. Police have registered a missing persons complaint and are investigating the circumstances. Incidents involving perilous illegal migration routes from Gujarat have been documented previously, including a 2025 incident in Tehran and capsized boats near Torrey Pines State Beach.",
+        "background_context": "Illegal migration networks often utilize complex international pathways and hazardous sea or land routes to transport migrants from India to countries like the US, Canada, and Australia, frequently exposing them to risks such as extortion, captivity, and human trafficking operations.",
+        "bullet_points": [
+          "Three individuals from Gujarat went missing in Ethiopia while en route to the US.",
+          "Relatives reported that the individuals were abducted and a ₹1 crore ransom was demanded.",
+          "The travelers left India on September 20 and last contacted their families on September 22.",
+          "Agents allegedly charged around ₹70 lakh each to facilitate the illegal migration route.",
+          "Gujarat Police have registered a missing persons complaint and launched an investigation."
+        ],
+        "key_facts": [
+          "The three missing individuals are Rutvik Jansari, Mamta Chavda, and Mayuri.",
+          "They hail from Mehsana and Gandhinagar in Gujarat.",
+          "They left India on September 20 and lost contact after September 22.",
+          "Abductors allegedly demanded a ₹1 crore ransom."
+        ],
+        "key_locations": [
+          "Gujarat",
+          "Mehsana",
+          "Gandhinagar",
+          "Ethiopia",
+          "Abu Dhabi",
+          "Jaipur"
+        ],
+        "important_dates": [
+          "September 20",
+          "September 22",
+          "October 2025",
+          "May 2025",
+          "January 2022",
+          "December 2023"
+        ],
+        "exam_relevance": [
+          "Not currently applicable for competitive exam corner as per system classification rules, but relates generally to human trafficking and security studies."
+        ],
+        "upsc_analysis": "The incident highlights the socio-economic vulnerabilities, lack of legal avenues for rapid migration, and the operations of transnational human trafficking rings that exploit individuals seeking overseas employment or settlement.",
+        "causes": [
+          "Failure to obtain legitimate visas through official channels",
+          "High demand for foreign migration leading to reliance on illegal agents and smuggling networks"
+        ],
+        "impacts": [
+          "Financial distress on families due to exorbitant fees and ransom demands",
+          "Risk to the safety and lives of migrants navigating hazardous unauthorized routes"
+        ],
+        "challenges": [
+          "Tracking international smuggling networks operating across multiple foreign jurisdictions",
+          "Curbing illegal human trafficking operations and unauthorized departure channels"
+        ],
+        "government_steps": [
+          "Registration of police complaints and investigations into missing persons cases",
+          "Previous interventions by the Indian government resulting in the release of detained citizens abroad"
+        ],
+        "constitutional_or_policy_link": [
+          "Measures against illegal migration and human trafficking under national penal laws."
+        ],
+        "way_forward": [
+          "Strengthening vigilance against unauthorized travel agents and human trafficking syndicates",
+          "Creating awareness about the life-threatening risks associated with illegal migration routes"
+        ],
+        "mains_notes": "Transnational illegal migration poses severe security, financial, and humanitarian challenges. The reliance on unauthorized agents by individuals seeking foreign residency often leads to extortion, captivity, and human trafficking, requiring stringent law enforcement and international cooperation.",
+        "mains_questions": [
+          "Discuss the socio-economic factors driving illegal migration from India and the risks associated with unauthorized travel networks.",
+          "Examine the challenges faced by law enforcement agencies in tackling transnational human trafficking rings."
+        ],
+        "takeaway": "Three Gujarat residents traveling via an illegal migration route went missing in Ethiopia, highlighting the dangers and extortion risks tied to unauthorized human smuggling networks.",
+        "prelims_facts": [
+          "Three individuals from Mehsana and Gandhinagar went missing in Ethiopia.",
+          "The journey began on September 20 via Jaipur and Abu Dhabi."
+        ],
+        "vocabulary": [
+          {
+            "word": "Abduction",
+            "meaning_hindi": "अपहरण"
+          },
+          {
+            "word": "Ransom",
+            "meaning_hindi": "फिरौती"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Ethiopia",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Ethiopia"
+          },
+          {
+            "name": "Gujarat",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Gujarat"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "अमेरिका जा रहे गुजरात के तीन लोग इथियोपिया में लापता, अपहरणकर्ताओं ने 1 करोड़ रुपये की मांग की",
+          "story_lead": "अमेरिका जा रहे गुजरात के एक ही परिवार के तीन लोग अवैध प्रवास मार्ग के दौरान पूर्वी अफ्रीकी देश इथियोपिया में लापता हो गए हैं। उनके रिश्तेदारों का दावा है कि उनका अपहरण कर लिया गया है और 1 करोड़ रुपये की फिरौती मांगी गई है।",
+          "full_article_text": "गुजरात के मेहसाणा और गांधीनगर के रुत्वीक जानसारी, ममता चावड़ा और मयूरी एजेंटों की मदद से 20 सितंबर को अमेरिका के लिए रवाना हुए थे। गुजरात पुलिस में दर्ज कराई गई शिकायत के अनुसार, उन्होंने आखिरी बार 22 सितंबर को अपने परिजनों से संपर्क किया था।",
+          "background_context": "अवैध प्रवास नेटवर्क अक्सर जटिल अंतरराष्ट्रीय मार्गों का उपयोग करते हैं।",
+          "bullet_points": [
+            "अमेरिका जा रहे गुजरात के तीन लोग इथियोपिया में लापता हुए।",
+            "अपहरणकर्ताओं द्वारा 1 करोड़ रुपये की फिरौती मांगने का दावा।",
+            "पुलिस ने गुमशुदगी की शिकायत दर्ज कर जांच शुरू की।"
+          ],
+          "key_facts": [
+            "लापता लोग मेहसाणा और गांधीनगर से हैं।",
+            "वे 20 सितंबर को भारत से रवाना हुए थे।"
+          ],
+          "key_locations": [
+            "गुजरात",
+            "इथियोपिया",
+            "मेहसाणा"
+          ],
+          "important_dates": [
+            "20 सितंबर",
+            "22 सितंबर"
+          ]
+        },
+        "quiz": {
+          "question": "In which country did the three individuals from Gujarat reportedly go missing while en route to the US?",
+          "options": [
+            "Ethiopia",
+            "Canada",
+            "Mexico",
+            "Iran"
+          ],
+          "correct_answer": "Ethiopia",
+          "explanation": "The three individuals from Gujarat went missing in the East African nation of Ethiopia while traveling via an unauthorized route."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/3-gujaratis-en-route-to-the-us-go-missing-in-ethiopia-abductors-demand-1-crore-101790826356680.html",
+        "published_date": "2026-10-01",
+        "id": 71,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/10/01/1600x900/logo/The-alleged-abduction-is-the-latest-in-a-series-of_1790826349347_6QhB.png",
+        "added_at": "2026-10-01T10:39:01.689370+05:30"
+      },
+      {
+        "category": "Science & Technology",
+        "exam_corner": false,
+        "headline": "Maharashtra CM Devendra Fadnavis Clarifies Stand on Marathi Language Requirement for Drivers",
+        "story_lead": "Maharashtra Chief Minister Devendra Fadnavis has defended the state's requirement for passenger transport drivers to have a working knowledge of Marathi. Fadnavis emphasized that Marathi will be given priority in the state while assuring that speakers of other languages will not face discrimination.",
+        "full_article_text": "Maharashtra Chief Minister Devendra Fadnavis addressed concerns regarding the state transport department's requirement for passenger transport drivers to learn basic Marathi. The rule, implemented through an amendment to the Maharashtra Motor Vehicles Rules, 1989, mandates that autorickshaw, taxi, and app-based cab drivers possess a working knowledge of Marathi. Fadnavis clarified that the requirement involves a simple two-page syllabus containing basic phrases to facilitate communication with commuters. He stressed that the policy was not intended to impose the language or treat non-Marathi speakers unfairly, noting that regional identity and all Indian languages deserve respect.",
+        "background_context": "The controversy follows an amendment to the Maharashtra Motor Vehicles Rules, 1989, introduced by the Maharashtra transport department in August, requiring passenger transport drivers to possess a working knowledge of Marathi to avoid suspension or cancellation of their driving licences.",
+        "bullet_points": [
+          "Maharashtra CM Devendra Fadnavis clarified the state's stance on the Marathi language requirement for drivers.",
+          "The rule applies to autorickshaw, taxi, and app-based cab drivers under the Maharashtra Motor Vehicles Rules, 1989.",
+          "Fadnavis described the requirement as a basic two-page syllabus involving simple conversational phrases.",
+          "Violation of the rule can lead to licence suspension for up to three months and permanent cancellation for repeated violations.",
+          "Opposition parties like Shiv Sena (UBT) and MNS previously held rallies centered on Marathi pride."
+        ],
+        "key_facts": [
+          "The transport rule amendment was made to the Maharashtra Motor Vehicles Rules, 1989.",
+          "Driver licences can be suspended for up to three months for lacking working knowledge of Marathi.",
+          "The syllabus consists of a two-page guide for basic communication phrases.",
+          "The rules came into effect starting August 18."
+        ],
+        "key_locations": [
+          "Maharashtra",
+          "Mumbai"
+        ],
+        "important_dates": [
+          "July",
+          "August",
+          "August 18"
+        ],
+        "exam_relevance": [
+          "General Studies Paper II: Polity and Governance - Federalism, linguistic diversity, and regional policies."
+        ],
+        "upsc_analysis": "The issue highlights the ongoing debate between regional identity and linguistic diversity in India. It underscores the administrative measures taken by states to ensure local communication convenience while balancing constitutional safeguards regarding non-discrimination.",
+        "causes": [
+          "Need for effective communication between transport drivers and local commuters.",
+          "Political emphasis on regional identity and the protection of the local mother tongue."
+        ],
+        "impacts": [
+          "Passenger transport drivers must acquire basic working knowledge of Marathi to retain their licences.",
+          "Debates surrounding regional language policies and linguistic rights in Maharashtra."
+        ],
+        "challenges": [
+          "Balancing the promotion of the regional language with the rights of migrant workers and non-Marathi speaking drivers.",
+          "Preventing linguistic policies from escalating into inter-community conflicts."
+        ],
+        "government_steps": [
+          "Amending the Maharashtra Motor Vehicles Rules, 1989.",
+          "Introducing a basic two-page syllabus for drivers to learn essential phrases."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 345 of the Constitution of India concerning official languages of a State."
+        ],
+        "way_forward": [
+          "Providing adequate time and training facilities for non-Marathi speaking drivers to adapt to the new language requirements smoothly."
+        ],
+        "mains_notes": "Maharashtra's amendment to the Motor Vehicles Rules mandates a working knowledge of Marathi for transport drivers. While aimed at easing commuter communication, it raises questions about linguistic federalism, migrant integration, and the scope of regional policy implementation.",
+        "mains_questions": [
+          "Examine the balance between promoting regional languages and upholding linguistic rights of citizens in India.",
+          "Discuss the implications of state-level language mandates in public transport services."
+        ],
+        "takeaway": "Maharashtra has defended its rule requiring transport drivers to know basic Marathi, emphasizing regional priority without discrimination.",
+        "prelims_facts": [
+          "The rule amends the Maharashtra Motor Vehicles Rules, 1989."
+        ],
+        "vocabulary": [
+          {
+            "word": "Amendment",
+            "meaning_hindi": "संशोधन"
+          },
+          {
+            "word": "Discrimination",
+            "meaning_hindi": "भेदभाव"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Devendra Fadnavis",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Devendra_Fadnavis"
+          },
+          {
+            "name": "Maharashtra",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Maharashtra"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "‘मराठी को प्राथमिकता मिलेगी, लेकिन...’: भाषा और ड्राइविंग लाइसेंस नियम पर देवेंद्र फडणवीस",
+          "story_lead": "महाराष्ट्र के मुख्यमंत्री देवेंद्र फडणवीस ने स्पष्ट किया है कि राज्य में मराठी को प्राथमिकता दी जाएगी, साथ ही यह भी जोर दिया कि अन्य भाषाएं बोलने वालों के साथ कोई भेदभाव नहीं होना चाहिए।",
+          "full_article_text": "महाराष्ट्र के मुख्यमंत्री देवेंद्र फडणवीस ने यात्री परिवहन चालकों के लिए मराठी सीखने की अनिवार्यता पर स्पष्टीकरण दिया है। महाराष्ट्र मोटर वाहन नियम, 1989 में संशोधन के तहत, चालकों के लिए मराठी का कार्यसाधक ज्ञान होना आवश्यक किया गया है।",
+          "background_context": "यह विवाद महाराष्ट्र परिवहन विभाग द्वारा अगस्त में महाराष्ट्र मोटर वाहन नियम, 1989 में किए गए संशोधन के बाद सामने आया है।",
+          "bullet_points": [
+            "मुख्यमंत्री देवेंद्र फडणवीस ने चालकों के लिए मराठी भाषा के नियम पर स्थिति स्पष्ट की।",
+            "यह नियम ऑटो रिक्शा, टैक्सी और कैब चालकों पर लागू होता है।"
+          ],
+          "key_facts": [
+            "यह नियम महाराष्ट्र मोटर वाहन नियम, 1989 में संशोधन से संबंधित है।"
+          ],
+          "key_locations": [
+            "महाराष्ट्र",
+            "मुंबई"
+          ],
+          "important_dates": [
+            "जुलाई",
+            "अगस्त",
+            "18 अगस्त"
+          ]
+        },
+        "quiz": {
+          "question": "Which state's motor vehicles rules were recently amended to require a working knowledge of Marathi for passenger transport drivers?",
+          "options": [
+            "Karnataka",
+            "Maharashtra",
+            "Gujarat",
+            "Tamil Nadu"
+          ],
+          "correct_answer": "Maharashtra",
+          "explanation": "The Maharashtra transport department amended the Maharashtra Motor Vehicles Rules, 1989, requiring passenger transport drivers to have a working knowledge of Marathi."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/marathi-will-get-priority-but-devendra-fadnavis-on-language-driver-licence-rule-101790825682982.html",
+        "published_date": "2026-10-01",
+        "id": 70,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/10/01/1600x900/logo/ANI-20260914243-0_1790825653794_Hc2l_1790825679821_d1i6_9a433888-6578-41d3-a596-91a6d460dd08_Fqxm.jpg",
+        "added_at": "2026-10-01T10:39:01.689370+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": false,
+        "headline": "Prohibitory orders under Section 163 of BNSS imposed in Gurugram for board examinations",
+        "story_lead": "Prohibitory orders under Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS) have been imposed in Gurugram from October 1 to October 24. The restrictions aim to regulate movement and ensure the smooth conduct of Haryana Board of School Education examinations. Measures include closing photocopy shops and cyber cafes near exam centres and prohibiting weapons within a 500-metre radius.",
+        "full_article_text": "Prohibitory orders under section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS) have been imposed in Gurugram to regulate movement during Haryana Board of School Education examinations from October 1 to October 24, officials said. Section 163 pertains to the issuance of orders in urgent cases of nuisance or apprehended danger. The examinations for secondary (academic and open book), senior secondary (academic and open book), and first and second-year diploma in education (D.Ed) will be conducted daily starting from Thursday. According to orders issued by Deputy Commissioner (DC) of Gurugram, Uttam Singh, photocopy and xerox shops, cyber cafes, and similar establishments located around examination centres will remain closed for one-and-a-half hours before the commencement of the examination till it concludes. The order also prohibits the carrying of weapons within a 500-metre radius of examination centres and restricts the entry of unauthorised persons without valid identity cards. Additionally, unlawful gatherings of people around examination centres intended to disrupt or obstruct examinations are barred. Violators will face action under section 223 (disobedience) of the Bharatiya Nyaya Sanhita (BNS) and other applicable legal provisions.",
+        "background_context": "Prohibitory orders under legal provisions such as Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS) are routinely issued by district administrations in India to maintain law and order, prevent malpractice, and ensure the smooth conduct of public events and examinations.",
+        "bullet_points": [
+          "Section 163 of the BNSS has been imposed in Gurugram from October 1 to October 24.",
+          "The restrictions are implemented to ensure the smooth conduct of Haryana Board of School Education examinations.",
+          "Photocopy shops, cyber cafes, and similar establishments near exam centres must remain closed from 1.5 hours before exams until they conclude.",
+          "Carrying weapons within a 500-metre radius of examination centres is strictly prohibited.",
+          "Entry of unauthorized persons without valid identity cards into examination centres is banned.",
+          "Violators face penal action under Section 223 of the Bharatiya Nyaya Sanhita (BNS) for disobedience."
+        ],
+        "key_facts": [
+          "Legal provision used: Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS).",
+          "Penalty provision: Section 223 of the Bharatiya Nyaya Sanhita (BNS).",
+          "Duration of imposition: October 1 to October 24.",
+          "Geographical restriction: Within a 500-metre radius of examination centres.",
+          "Authority issuing the order: Deputy Commissioner of Gurugram, Uttam Singh."
+        ],
+        "key_locations": [
+          "Gurugram"
+        ],
+        "important_dates": [
+          "October 1 to October 24"
+        ],
+        "exam_relevance": [
+          "Prelims: Legal provisions like BNSS Section 163 and BNS Section 223.",
+          "Mains: District administration, maintenance of law and order, and conduct of fair public examinations."
+        ],
+        "upsc_analysis": "The invocation of Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS) highlights the administrative measures undertaken by district authorities to maintain public order and prevent malpractices during competitive and board examinations. Such executive powers are crucial for preventive policing and ensuring the integrity of institutional processes.",
+        "causes": [
+          "Need to prevent examination malpractices and cheating.",
+          "Apprehended danger of disruption or obstruction during the Haryana Board of School Education examinations."
+        ],
+        "impacts": [
+          "Regulation of movement and restriction of unlawful gatherings around exam venues.",
+          "Temporary closure of photocopy shops and cyber cafes near examination centres during exam hours."
+        ],
+        "challenges": [
+          "Balancing administrative restrictions with the convenience of local businesses and residents.",
+          "Effective enforcement of prohibitory orders across multiple examination centres."
+        ],
+        "government_steps": [
+          "Issuance of prohibitory orders under Section 163 of BNSS by the Deputy Commissioner of Gurugram.",
+          "Enforcement of perimeter security (500-metre weapon ban) around exam centres."
+        ],
+        "constitutional_or_policy_link": [
+          "Bharatiya Nagarik Suraksha Sanhita (BNSS), Section 163",
+          "Bharatiya Nyaya Sanhita (BNS), Section 223"
+        ],
+        "way_forward": [
+          "Ensuring strict compliance through coordination between district administration and law enforcement agencies.",
+          "Minimizing disruption to legitimate commercial establishments while enforcing necessary security protocols."
+        ],
+        "mains_notes": "District administrations utilize Section 163 of the BNSS to issue urgent prohibitory orders to safeguard public exams from disruption and malpractice. Measures such as closing cyber cafes, restricting weapon carriage within a 500-metre radius, and penalizing disobedience under BNS Section 223 underscore administrative mechanisms to uphold exam integrity.",
+        "mains_questions": [
+          "Discuss the scope and significance of prohibitory orders under Section 163 of the BNSS in maintaining public order and conducting fair examinations.",
+          "Examine the administrative challenges involved in enforcing security protocols around public examination centres in urban districts."
+        ],
+        "takeaway": "Section 163 of the BNSS has been invoked in Gurugram to ensure fair and uninterrupted school board examinations by restricting gatherings and closing nearby photocopy shops.",
+        "prelims_facts": [
+          "Section 163 BNSS pertains to urgent cases of nuisance or apprehended danger.",
+          "Section 223 BNS deals with disobedience to orders duly promulgated by public servants."
+        ],
+        "vocabulary": [
+          {
+            "word": "Prohibitory",
+            "meaning_hindi": "प्रतिबंधात्मक"
+          },
+          {
+            "word": "Nuisance",
+            "meaning_hindi": "उपद्रव / बाधा"
+          },
+          {
+            "word": "Disobedience",
+            "meaning_hindi": "अवज्ञा"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Gurugram",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Gurugram"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "गुरुग्राम में आज से निषेधाज्ञा लागू: धारा 163 क्या है, क्यों लगाई गई",
+          "story_lead": "हरियाणा विद्यालय शिक्षा बोर्ड की परीक्षाओं के दौरान आवाजाही को नियंत्रित करने के लिए गुरुग्राम में भारतीय नागरिक सुरक्षा संहिता (BNSS) की धारा 163 के तहत निषेधाज्ञा लागू कर दी गई है। यह आदेश 1 अक्टूबर से 24 अक्टूबर तक प्रभावी रहेगा।",
+          "full_article_text": "अधिकारियों ने बताया कि हरियाणा विद्यालय शिक्षा बोर्ड की परीक्षाओं के दौरान आवाजाही को नियंत्रित करने के लिए गुरुग्राम में भारतीय नागरिक सुरक्षा संहिता (BNSS) की धारा 163 के तहत निषेधाज्ञा लागू कर दी गई है। धारा 163 उपद्रव या आसन्न खतरे के मामलों में आदेश जारी करने से संबंधित है। अधिकारियों ने कहा कि माध्यमिक (शैक्षणिक और ओपन बुक), वरिष्ठ माध्यमिक (शैक्षणिक और ओपन बुक) तथा डी.एड प्रथम और द्वितीय वर्ष की परीक्षाएं गुरुवार से प्रतिदिन आयोजित की जाएंगी। गुरुग्राम के उपायुक्त (डीसी) उत्तम सिंह द्वारा जारी आदेशों के अनुसार, परीक्षा केंद्रों के आसपास स्थित फोटोकॉपी और ज़ेरॉक्स की दुकानें, साइबर कैफे और इसी तरह के अन्य प्रतिष्ठान परीक्षा शुरू होने से डेढ़ घंटे पहले से लेकर परीक्षा समाप्त होने तक बंद रहेंगे। आदेश में परीक्षा केंद्रों के 500 मीटर के दायरे में हथियार ले जाने पर भी प्रतिबंध लगाया गया है। वैध पहचान पत्र के बिना परीक्षा केंद्रों में अनधिकृत व्यक्तियों के प्रवेश पर भी रोक है। इसके अलावा, परीक्षाओं के संचालन में बाधा डालने के इरादे से परीक्षा केंद्रों के पास लोगों के गैरकानूनी रूप से एकत्र होने पर प्रतिबंध लगाया गया है। सिंह ने कहा कि नियमों का उल्लंघन करने वालों के खिलाफ भारतीय न्याय संहिता (BNS) की धारा 223 (अवज्ञा) और कानून के अन्य लागू प्रावधानों के तहत कार्रवाई की जाएगी।",
+          "background_context": "कानून व्यवस्था बनाए रखने और परीक्षाओं को निष्पक्ष रूप से संपन्न कराने के लिए जिला प्रशासन द्वारा समय-समय पर ऐसे आदेश जारी किए जाते हैं।",
+          "bullet_points": [
+            "गुरुग्राम में 1 अक्टूबर से 24 अक्टूबर तक BNSS की धारा 163 लागू की गई है।",
+            "यह कदम हरियाणा विद्यालय शिक्षा बोर्ड की परीक्षाओं को सुचारू रूप से चलाने के लिए उठाया गया है।",
+            "परीक्षा केंद्रों के पास स्थित फोटोकॉपी और साइबर कैफे परीक्षा के दौरान बंद रहेंगे।",
+            "परीक्षा केंद्रों के 500 मीटर के दायरे में हथियार ले जाने पर प्रतिबंध है।",
+            "नियमों का उल्लंघन करने पर BNS की धारा 223 के तहत कार्रवाई की जाएगी।"
+          ],
+          "key_facts": [
+            "लागू कानूनी प्रावधान: BNSS की धारा 163",
+            "उल्लंघन पर कार्रवाई: BNS की धारा 223",
+            "अवधि: 1 अक्टूबर से 24 अक्टूबर"
+          ],
+          "key_locations": [
+            "गुरुग्राम"
+          ],
+          "important_dates": [
+            "1 अक्टूबर से 24 अक्टूबर"
+          ]
+        },
+        "quiz": {
+          "question": "Under which legal provision have prohibitory orders been imposed in Gurugram to regulate movement during school board examinations?",
+          "options": [
+            "Section 144 of IPC",
+            "Section 163 of Bharatiya Nagarik Suraksha Sanhita (BNSS)",
+            "Section 223 of Bharatiya Nyaya Sanhita (BNS)",
+            "Section 124A of IPC"
+          ],
+          "correct_answer": "Section 163 of Bharatiya Nagarik Suraksha Sanhita (BNSS)",
+          "explanation": "Prohibitory orders in Gurugram during the Haryana Board of School Education examinations have been imposed under Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS)."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/prohibitory-order-imposed-in-gurugram-from-today-what-is-section-163-why-is-it-imposed-101790826515246.html",
+        "published_date": "2026-10-01",
+        "id": 69,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/10/01/1600x900/logo/gurugram_1790827183070_5Xqf_1790827183198_cIka_27f38a5c-a9ef-4ea2-a66e-7e6f9435cd35_ueyV.jpg",
+        "added_at": "2026-10-01T10:39:01.689370+05:30"
+      },
+      {
+        "category": "Health",
+        "exam_corner": false,
+        "headline": "flydubai Flight Hero Captain Smit Machchhar's Past Comments on Cabin Crew Role Go Viral",
+        "story_lead": "An old podcast featuring Indian pilot Captain Smit Machchhar has gone viral following his heroic intervention to save a flydubai flight from a mid-air attack by his co-pilot. In the interview, Machchhar emphasized the vital role of cabin crew members during emergencies and lamented how they are often improperly treated by the public.",
+        "full_article_text": "Captain Smit Machchhar, an Indian pilot hailed as a hero for subduing his first officer who allegedly attempted to crash flydubai flight FZ1073 from Dubai to Tel Aviv, gained renewed attention following the recirculation of a past podcast appearance. On podcaster Zalak Mehta's Bona-Fide Banter podcast in October of the previous year, Machchhar discussed the challenges of passenger management and the critical importance of cabin crew. During the conversation, Machchhar highlighted that while pilots hold the ultimate authority in the cockpit, cabin crew undergo rigorous safety, emergency, and first aid training that can save lives when things go wrong. He expressed regret over the public's perception of cabin crew, noting that people often fail to appreciate their value until an ordinary flight turns into an emergency. Furthermore, Machchhar shared anecdotes from his early career as a first officer regarding how effective communication and direct engagement with frustrated passengers during delays can help de-escalate tense situations.",
+        "background_context": "The incident involves flydubai flight FZ1073 traveling from Dubai to Tel Aviv on Wednesday, September 30, during which Captain Smit Machchhar was allegedly attacked by his first officer. Despite being stabbed and injured, Machchhar managed to open the locked cockpit door, enabling passengers and crew to overpower the co-pilot and save over 170 passengers.",
+        "bullet_points": [
+          "Captain Smit Machchhar saved over 170 passengers after fighting off his co-pilot on a flydubai flight.",
+          "An old podcast interview from October of the previous year featuring Machchhar went viral following the incident.",
+          "Machchhar emphasized that cabin crew undergo rigorous training in safety, emergency procedures, and first aid.",
+          "He expressed concern over how cabin crew are often improperly treated by passengers until an emergency occurs.",
+          "The pilot also shared insights on passenger management and de-escalation techniques during flight delays."
+        ],
+        "key_facts": [
+          "Captain Smit Machchhar is an Indian pilot who prevented a potential crash on a flydubai flight.",
+          "The flight involved was flydubai flight FZ1073 operating from Dubai to Tel Aviv.",
+          "The incident occurred on Wednesday, September 30.",
+          "Machchhar discussed cabin crew training on the Bona-Fide Banter podcast hosted by Zalak Mehta in October of the previous year."
+        ],
+        "key_locations": [
+          "Dubai",
+          "Tel Aviv"
+        ],
+        "important_dates": [
+          "September 30",
+          "October"
+        ],
+        "exam_relevance": [
+          "General awareness regarding aviation safety and crew management."
+        ],
+        "upsc_analysis": "The news pertains to an aviation safety incident and crew welfare rather than core civil services syllabus themes, remaining classified under general health or human interest categories as directed by source classification rules.",
+        "causes": [
+          "A mid-air altercation between the captain and first officer on a commercial flight."
+        ],
+        "impacts": [
+          "Highlighting the crucial role and training of cabin crew during in-flight emergencies.",
+          "Generating widespread public attention toward aviation safety protocols."
+        ],
+        "challenges": [
+          "Managing aggressive or frustrated passengers during flight delays and emergencies.",
+          "Addressing public misconceptions regarding the qualifications and roles of cabin crew."
+        ],
+        "government_steps": [],
+        "constitutional_or_policy_link": [],
+        "way_forward": [
+          "Enhancing mental health evaluations and security protocols for flight deck crew members.",
+          "Promoting greater respect and recognition for the training and responsibilities of cabin crew."
+        ],
+        "mains_notes": "Captain Smit Machchhar's actions on flydubai flight FZ1073 averted a major disaster involving over 170 passengers. His subsequent viral podcast comments underscored the essential safety and first-aid responsibilities carried out by cabin crew, highlighting the need to respect aviation support personnel.",
+        "mains_questions": [
+          "Discuss the critical role of cabin crew members in managing in-flight emergencies and ensuring passenger safety."
+        ],
+        "takeaway": "Captain Smit Machchhar's heroic actions on a flydubai flight brought renewed attention to his past advocacy for the vital safety role played by cabin crew.",
+        "prelims_facts": [
+          "flydubai flight FZ1073 operated between Dubai and Tel Aviv."
+        ],
+        "vocabulary": [
+          {
+            "word": "Podcast",
+            "meaning_hindi": "पॉडकास्ट (श्रव्य कार्यक्रम)"
+          },
+          {
+            "word": "De-escalate",
+            "meaning_hindi": "तनाव कम करना"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Captain Smit Machchhar",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Captain%20Smit%20Machchhar"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "फ्लाईदुबई उड़ान के हीरो कैप्टन स्मित मच्छड़ की केबिन क्रू के साथ सही व्यवहार न किए जाने पर की गई पुरानी टिप्पणियां वायरल",
+          "story_lead": "अपनी सह-पायलट द्वारा किए गए हमले को विफल कर फ्लाईदुबई की एक उड़ान में 170 से अधिक यात्रियों की जान बचाने वाले भारतीय पायलट कैप्टन स्मित मच्छड़ का एक पुराना पॉडकास्ट वायरल हो रहा है। इस साक्षात्कार में मच्छड़ ने आपात स्थिति के दौरान केबिन क्रू की महत्वपूर्ण भूमिका पर जोर दिया।",
+          "full_article_text": "दुबई से तेल अवीव जा रही फ्लाईदुबई की उड़ान FZ1073 के दौरान अपनी जान पर खेलकर सह-पायलट के हमले को नाकाम करने वाले भारतीय पायलट कैप्टन स्मित मच्छड़ का एक पुराना पॉडकास्ट साक्षात्कार फिर से चर्चा में आ गया है। पिछले साल अक्टूबर में पॉडकास्ट 'बोना-फाइड बैंटर' में मच्छड़ ने यात्रियों को संभालने और केबिन क्रू के महत्व पर चर्चा की थी। बातचीत के दौरान मच्छड़ ने बताया कि हालांकि कॉकपिट में मुख्य जिम्मेदारी पायलट की होती है, लेकिन केबिन क्रू भी सुरक्षा, आपातकालीन प्रक्रियाओं और प्राथमिक चिकित्सा का कड़ा प्रशिक्षण प्राप्त करते हैं।",
+          "background_context": "यह घटना बुधवार, 30 सितंबर को दुबई से तेल अवीव जाने वाली फ्लाईदुबई की उड़ान FZ1073 से जुड़ी है, जिस दौरान कैप्टन स्मित मच्छड़ पर कथित तौर पर उनके सह-पायलट ने हमला किया था।",
+          "bullet_points": [
+            "कैप्टन स्मित मच्छड़ ने फ्लाईदुबई उड़ान में 170 से अधिक यात्रियों की जान बचाई।",
+            "विवाद और घटना के बाद उनका पिछले साल का एक पुराना पॉडकास्ट वायरल हो गया।",
+            "मच्छड़ ने केबिन क्रू के कठोर सुरक्षा और आपातकालीन प्रशिक्षण पर प्रकाश डाला।"
+          ],
+          "key_facts": [
+            "कैप्टन स्मित मच्छड़ एक भारतीय पायलट हैं।",
+            "घटना 30 सितंबर को फ्लाईदुबई उड़ान FZ1073 पर हुई।"
+          ],
+          "key_locations": [
+            "दुबई",
+            "तेल अवीव"
+          ],
+          "important_dates": [
+            "30 सितंबर",
+            "अक्टूबर"
+          ]
+        },
+        "quiz": {
+          "question": "Which airline flight was involved in the incident where Captain Smit Machchhar saved passengers from an attack?",
+          "options": [
+            "Air India flight AI101",
+            "flydubai flight FZ1073",
+            "Emirates flight EK502",
+            "IndiGo flight 6E203"
+          ],
+          "correct_answer": "flydubai flight FZ1073",
+          "explanation": "Captain Smit Machchhar was operating flydubai flight FZ1073 from Dubai to Tel Aviv when the incident occurred."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/whos-going-to-save-you-flydubai-flight-hero-captain-smit-machchhar-on-cabin-crew-not-being-treated-properly-101790823763512.html",
+        "published_date": "2026-10-01",
+        "id": 68,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/10/01/1600x900/logo/smit_machchhar_flydubai_emergency_1790828797326_ww7d_1790828803098_bBTA_0d818a8c-eb03-4bbf-9661-af16009df273_WeJj.png",
+        "added_at": "2026-10-01T10:39:01.689370+05:30"
+      },
+      {
+        "category": "Health",
+        "exam_corner": false,
+        "headline": "Jodhpur Man Wanted in Assault Case Dies During Police Raid, Sparking Tensions",
+        "story_lead": "A 29-year-old man wanted in an assault case died during a police raid at his home in Jodhpur's Udaymandir Asan, Rajasthan. While police state he fell from the third floor and suffered an electric shock while trying to escape, his family alleges he was pushed off a balcony. The incident has triggered local protests, vandalism of police property, and demands for compensation.",
+        "full_article_text": "A tense situation arose in Udaymandir Asan, Jodhpur, Rajasthan, following the death of a 29-year-old man during a police raid late on Wednesday. The deceased was wanted in connection with an assault case and had an outstanding arrest warrant. According to the police, the man climbed onto the roof to escape upon seeing the police team, subsequently falling from the third floor and getting entangled in electrical wires, which caused an electric shock. He was rushed to the hospital, where doctors declared him dead.\n\nConversely, the family of the deceased has accused the police of pushing him off the balcony. They also alleged that the police had taken a bribe of ₹2,500 from the man's brother earlier that morning and mistreated the women in the household during the raid. Following the incident, angry locals and family members protested at the hospital, vandalized a police jeep, and allegedly assaulted a constable. Local councillor Raju Bhati has demanded ₹1 crore in compensation for the family, stating they would not take custody of the body until their demands are met. Additional police forces have been deployed to manage the escalating tension, and senior officers are attempting to counsel the family.",
+        "background_context": "The incident occurred during the execution of an arrest warrant against an individual who had been absconding in relation to an assault case. The conflicting accounts of the death have led to public anger and political involvement in Jodhpur.",
+        "bullet_points": [
+          "A 29-year-old man wanted in an assault case died during a police raid in Jodhpur's Udaymandir Asan.",
+          "Police claim the man fell from the third floor and suffered an electric shock while attempting to escape.",
+          "The family alleges that police personnel pushed him off the balcony and mistreated women in the house.",
+          "Family members also accused the police of accepting a bribe of ₹2,500 earlier that day.",
+          "Protesters vandalized a police vehicle, assaulted a constable, and refused to take custody of the body.",
+          "Local councillor Raju Bhati demanded ₹1 crore in compensation for the family of the deceased."
+        ],
+        "key_facts": [
+          "The deceased was 29 years old and wanted in an assault case.",
+          "The incident occurred in Udaymandir Asan, Jodhpur, Rajasthan.",
+          "The local councillor demanded ₹1 crore compensation.",
+          "An allegation of a ₹2,500 bribe was made against the police."
+        ],
+        "key_locations": [
+          "Jodhpur",
+          "Udaymandir Asan",
+          "Rajasthan"
+        ],
+        "important_dates": [
+          "Wednesday night"
+        ],
+        "exam_relevance": [
+          "While this specific incident is a local law-and-order issue, it highlights broader themes of police reforms, custodial deaths/accidental deaths during raids, and public-police relations relevant to general studies."
+        ],
+        "upsc_analysis": "The incident highlights the critical friction points in police-public relations during law enforcement operations. It underscores the need for transparency in police raids, body-worn cameras to verify conflicting accounts, and strict adherence to standard operating procedures (SOPs) to prevent accidental deaths and allegations of high-handedness.",
+        "causes": [
+          "Police raid to execute an outstanding arrest warrant against an absconding accused.",
+          "The accused attempting to escape or allegedly being pushed, leading to a fall from the third floor."
+        ],
+        "impacts": [
+          "Death of a 29-year-old suspect.",
+          "Public anger, vandalism of a police jeep, and assault on a constable.",
+          "Deployment of additional police forces to control local tensions."
+        ],
+        "challenges": [
+          "Conflicting narratives between the police and the family regarding the cause of death.",
+          "Maintaining law and order amidst public protests and refusal to accept the body.",
+          "Addressing allegations of bribery and mistreatment of women by police personnel."
+        ],
+        "government_steps": [
+          "Deployment of additional police forces to maintain law and order.",
+          "Efforts by senior police officers, including Additional Deputy Police Commissioner Narendra Singh Devda, to counsel and pacify the family."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 21 of the Constitution of India (Right to Life and Personal Liberty), which extends to accused individuals during police actions."
+        ],
+        "way_forward": [
+          "Conducting an independent judicial or magisterial inquiry to ascertain the exact cause of death.",
+          "Implementing police reforms such as the mandatory use of body cameras during raids to ensure accountability.",
+          "Strengthening community policing to bridge the trust gap between law enforcement and the public."
+        ],
+        "mains_notes": "The Jodhpur incident serves as a case study on the challenges of law enforcement execution, the necessity of maintaining human rights during raids, and the administrative challenges of managing public outrage following custodial or raid-related deaths.",
+        "mains_questions": [
+          "Analyze the importance of transparency and accountability in police operations during the execution of arrest warrants. Suggest measures to prevent accidental deaths during raids.",
+          "Discuss the role of community policing and administrative transparency in mitigating public-police conflict during sensitive law-and-order situations."
+        ],
+        "takeaway": "The death of a suspect during a police raid in Jodhpur has triggered severe public protests and highlighted the critical need for transparency in law enforcement operations.",
+        "prelims_facts": [
+          "Udaymandir Asan is located in Jodhpur, Rajasthan.",
+          "Narendra Singh Devda is the Additional Deputy Police Commissioner of the area."
+        ],
+        "vocabulary": [
+          {
+            "word": "Absconding",
+            "meaning_hindi": "फरार होना"
+          },
+          {
+            "word": "Vandalised",
+            "meaning_hindi": "तोड़फोड़ की"
+          },
+          {
+            "word": "Escalated",
+            "meaning_hindi": "तीव्र होना / बढ़ना"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Jodhpur",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Jodhpur"
+          },
+          {
+            "name": "Rajasthan",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Rajasthan"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "जोधपुर में मारपीट के मामले में वांछित व्यक्ति की पुलिस छापेमारी के दौरान मौत, तनाव बढ़ा",
+          "story_lead": "राजस्थान के जोधपुर के उदयमंदिर आसन में पुलिस छापेमारी के दौरान मारपीट के मामले में वांछित 29 वर्षीय व्यक्ति की मौत हो गई। जहां पुलिस का कहना है कि वह भागने की कोशिश में तीसरी मंजिल से गिर गया और बिजली के तारों में उलझने से उसे करंट लग गया, वहीं उसके परिवार का आरोप है कि उसे बालकनी से धक्का दिया गया था। इस घटना से स्थानीय विरोध प्रदर्शन और पुलिस संपत्ति में तोड़फोड़ शुरू हो गई है।",
+          "full_article_text": "राजस्थान के जोधपुर के उदयमंदिर आसन में बुधवार देर रात पुलिस छापेमारी के दौरान एक 29 वर्षीय व्यक्ति की मौत के बाद तनावपूर्ण स्थिति पैदा हो गई। मृतक मारपीट के एक मामले में वांछित था और उसके खिलाफ गिरफ्तारी वारंट लंबित था। पुलिस के अनुसार, पुलिस टीम को देखकर आरोपी भागने के लिए छत पर चढ़ गया और तीसरी मंजिल से गिर गया, जिससे वह बिजली के तारों में उलझ गया और उसे बिजली का झटका लगा। उसे अस्पताल ले जाया गया, जहां डॉक्टरों ने उसे मृत घोषित कर दिया।\n\nइसके विपरीत, मृतक के परिवार ने पुलिस पर उसे बालकनी से धक्का देने का आरोप लगाया है। उन्होंने यह भी आरोप लगाया कि पुलिस ने उसी सुबह उसके भाई से ₹2,500 की रिश्वत ली थी और छापेमारी के दौरान घर की महिलाओं के साथ दुर्व्यवहार किया था। घटना के बाद, गुस्साए स्थानीय लोगों और परिवार के सदस्यों ने अस्पताल में विरोध प्रदर्शन किया, पुलिस की एक जीप में तोड़फोड़ की और कथित तौर पर एक कांस्टेबल के साथ मारपीट की। स्थानीय पार्षद राजू भाटी ने परिवार के लिए ₹1 करोड़ के मुआवजे की मांग की है और कहा है कि जब तक उनकी मांगें पूरी नहीं हो जातीं, वे शव को कब्जे में नहीं लेंगे। तनाव को नियंत्रित करने के लिए अतिरिक्त पुलिस बल तैनात किया गया है और वरिष्ठ अधिकारी परिवार को समझाने का प्रयास कर रहे हैं।",
+          "background_context": "यह घटना मारपीट के एक मामले में फरार चल रहे व्यक्ति के खिलाफ गिरफ्तारी वारंट के निष्पादन के दौरान हुई। मौत के विरोधाभासी बयानों के कारण जोधपुर में सार्वजनिक आक्रोश और राजनीतिक हस्तक्षेप हुआ है।",
+          "bullet_points": [
+            "जोधपुर के उदयमंदिर आसन में पुलिस छापेमारी के दौरान मारपीट के मामले में वांछित 29 वर्षीय व्यक्ति की मौत हो गई।",
+            "पुलिस का दावा है कि व्यक्ति भागने के प्रयास में तीसरी मंजिल से गिर गया और उसे बिजली का झटका लगा।",
+            "परिवार का आरोप है कि पुलिसकर्मियों ने उसे बालकनी से धक्का दिया और घर की महिलाओं के साथ दुर्व्यवहार किया।",
+            "परिजनों ने पुलिस पर उसी दिन ₹2,500 की रिश्वत लेने का भी आरोप लगाया।",
+            "प्रदर्शनकारियों ने पुलिस वाहन में तोड़फोड़ की, एक कांस्टेबल के साथ मारपीट की और शव लेने से इनकार कर दिया।",
+            "स्थानीय पार्षद राजू भाटी ने मृतक के परिवार के लिए ₹1 करोड़ के मुआवजे की मांग की।"
+          ],
+          "key_facts": [
+            "मृतक 29 वर्ष का था और मारपीट के एक मामले में वांछित था।",
+            "यह घटना राजस्थान के जोधपुर के उदयमंदिर आसन में हुई।",
+            "स्थानीय पार्षद ने ₹1 करोड़ के मुआवजे की मांग की।",
+            "पुलिस के खिलाफ ₹2,500 की रिश्वत लेने का आरोप लगाया गया है।"
+          ],
+          "key_locations": [
+            "जोधपुर",
+            "उदयमंदिर आसन",
+            "राजस्थान"
+          ],
+          "important_dates": [
+            "बुधवार रात"
+          ]
+        },
+        "quiz": {
+          "question": "In which city of Rajasthan did a 29-year-old man die during a police raid, leading to local protests and demands for compensation?",
+          "options": [
+            "Jaipur",
+            "Jodhpur",
+            "Udaipur",
+            "Ajmer"
+          ],
+          "correct_answer": "Jodhpur",
+          "explanation": "The incident occurred in Udaymandir Asan, located in Jodhpur, Rajasthan, where a 29-year-old man died during a police raid."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/jodhpur-man-wanted-in-assault-case-dies-kin-allege-police-pushed-him-during-raid-101790828156268.html",
+        "published_date": "2026-10-01",
+        "id": 67,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/10/01/1600x900/logo/Police-said-an-arrest-warrant-was-pending-against-_1790828149660_DBzb.jpg",
+        "added_at": "2026-10-01T10:39:01.689370+05:30"
+      },
+      {
+        "category": "World",
+        "exam_corner": false,
+        "headline": "World Leaders Praise Indian Pilot Capt. Smit Machchhar for Foiling Mid-Air Crash Attempt on Flydubai Flight",
+        "story_lead": "Indian pilot Capt. Smit Machchhar prevented a catastrophic mid-air disaster aboard a Flydubai flight from Dubai to Tel Aviv after being stabbed by his co-pilot during an alleged crash attempt. Despite sustaining severe injuries, Machchhar opened the cockpit door, enabling crew and passengers to overpower the attacker. World leaders, including Prime Minister Narendra Modi, Israeli PM Benjamin Netanyahu, and US President Donald Trump, praised the Mumbai-born pilot for his heroism.",
+        "full_article_text": "A severe mid-air disaster was averted aboard a Flydubai Boeing 737 flight traveling from Dubai to Tel Aviv after the co-pilot stabbed the chief pilot, Capt. Smit Machchhar, in an alleged attempt to crash the aircraft. The plane rapidly plunged nearly 14,000 feet (4,267 meters) in under 30 seconds during the attack.\n\nDespite suffering serious injuries, Capt. Machchhar, who hails from Mumbai, fought back and managed to unlock the cockpit door to alert passengers and crew. Passengers and crew members rushed into the cockpit, restrained the attacker, and brought the situation under control. The flight subsequently landed safely in Israel.\n\nCapt. Machchhar was admitted to a hospital and was reported to be in stable condition. The Indian Embassy in Riyadh confirmed it was in close touch with Saudi authorities and the pilot's family.\n\nFollowing the incident, Israeli Prime Minister Benjamin Netanyahu stated that Israel will investigate the background of the co-pilot to determine whether he acted alone or had external links, including potential sponsorship from Iran, though he emphasized it was too early to draw conclusions prior to official interrogations. Leaders globally, including Indian PM Narendra Modi and Donald Trump, commended Capt. Machchhar's extraordinary valour and presence of mind in saving hundreds of lives.",
+        "background_context": "Flydubai operates international flights connecting major hubs across the Middle East. The flight was en route from Dubai (UAE) to Tel Aviv (Israel) when the co-pilot launched an attack inside the cockpit, causing a sharp drop in altitude before being restrained.",
+        "bullet_points": [
+          "Flydubai flight bound from Dubai to Tel Aviv suffered an attempted crash by its co-pilot.",
+          "Indian pilot Capt. Smit Machchhar from Mumbai was stabbed but resisted the attacker.",
+          "The Boeing 737 lost nearly 14,000 feet (4,267 m) of altitude in less than 30 seconds.",
+          "Machchhar opened the cockpit door, allowing passengers and crew to overpower the assailant.",
+          "The Indian embassy in Riyadh confirmed Capt. Machchhar was hospitalized and in stable condition.",
+          "PM Narendra Modi, Israeli PM Benjamin Netanyahu, and Donald Trump praised Machchhar as a hero.",
+          "Israeli authorities said an investigation will determine the attacker's motives and potential accomplices."
+        ],
+        "key_facts": [
+          "Pilot: Capt. Smit Machchhar (from Mumbai, India)",
+          "Airline & Aircraft: Flydubai, Boeing 737",
+          "Route: Dubai to Tel Aviv",
+          "Altitude drop: ~14,000 feet (4,267 meters) in under 30 seconds",
+          "Embassy confirmation: Indian Embassy in Riyadh confirmed stable condition"
+        ],
+        "key_locations": [
+          "Dubai, United Arab Emirates",
+          "Tel Aviv, Israel",
+          "Riyadh, Saudi Arabia",
+          "Mumbai, India"
+        ],
+        "important_dates": [
+          "Wednesday (Day of the incident and statements)"
+        ],
+        "exam_relevance": [
+          "International Relations: Aviation safety protocols and international response to airborne security threats.",
+          "Bilateral Relations: Role of Indian diplomatic missions abroad in supporting citizens during crises."
+        ],
+        "upsc_analysis": "While this event is primarily an international security incident, it highlights the importance of cockpit security measures, human factor management in commercial aviation, and diplomatic coordination by Indian foreign missions during crises involving Indian nationals overseas.",
+        "causes": [
+          "Alleged intentional attempt by the co-pilot to crash the Flydubai aircraft after stabbing the primary pilot inside the cockpit."
+        ],
+        "impacts": [
+          "In-flight emergency involving rapid loss of altitude by 14,000 feet.",
+          "Injury to pilot Capt. Smit Machchhar requiring hospitalization.",
+          "Prompted joint international attention and investigative commitments from Israel and relevant aviation authorities."
+        ],
+        "challenges": [
+          "Ensuring robust psychological screening and cockpit security for international airline crews.",
+          "Determining the root motives and potential network links behind the attack without premature speculation."
+        ],
+        "government_steps": [
+          "Indian Embassy in Riyadh established contact with Saudi authorities and the pilot's family to monitor his health and support coordination.",
+          "Israeli authorities announced an investigation into the attacker's background and potential external links."
+        ],
+        "constitutional_or_policy_link": [
+          "Consular assistance obligations of Indian diplomatic missions under foreign policy framework."
+        ],
+        "way_forward": [
+          "Strengthen international civil aviation safety protocols regarding crew access and cockpit monitoring.",
+          "Complete thorough intelligence and law enforcement investigations to identify any accomplices or motives behind the incident."
+        ],
+        "mains_notes": "Aviation security rests heavily on strict cockpit access policies and comprehensive crew evaluations. Diplomatic support via foreign embassies remains vital for protecting citizens involved in international emergencies.",
+        "mains_questions": [
+          "Discuss the challenges to international civil aviation security in the light of recent in-flight security incidents and evaluate the role of diplomatic missions in providing consular aid to nationals abroad."
+        ],
+        "takeaway": "Capt. Smit Machchhar's heroic actions saved hundreds of lives by preventing a deliberate crash during a Flydubai flight to Tel Aviv.",
+        "prelims_facts": [
+          "Capt. Smit Machchhar is an Indian pilot hailing from Mumbai.",
+          "Flydubai is an airline based in the United Arab Emirates.",
+          "The aircraft involved in the incident was a Boeing 737."
+        ],
+        "vocabulary": [
+          {
+            "word": "Valour",
+            "meaning_hindi": "वीरता / अदम्य साहस"
+          },
+          {
+            "word": "Foiled",
+            "meaning_hindi": "विफल कर दिया"
+          },
+          {
+            "word": "Catastrophic",
+            "meaning_hindi": "विनाशकारी / आपदाजनक"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Flydubai",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Flydubai"
+          },
+          {
+            "name": "Benjamin Netanyahu",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Benjamin_Netanyahu"
+          },
+          {
+            "name": "Narendra Modi",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Narendra_Modi"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "फ्लाईदुबई विमान दुर्घटना की साजिश नाकाम करने वाले भारतीय पायलट कैप्टन स्मित मच्छार की वैश्विक नेताओं ने की सराहना",
+          "story_lead": "दुबई से तेल अवीव जा रही फ्लाईदुबई की उड़ान के दौरान सह-पायलट द्वारा विमान को दुर्घटनाग्रस्त करने के प्रयास को भारतीय पायलट कैप्टन स्मित मच्छार ने नाकाम कर दिया। गंभीर रूप से घायल होने के बावजूद, कैप्टन मच्छार ने कॉकपिट का दरवाजा खोला, जिससे यात्रियों और चालक दल को हमलावर पर काबू पाने में मदद मिली। प्रधानमंत्री नरेंद्र मोदी, इजराइली पीएम बेंजामिन नेतन्याहू और डोनाल्ड ट्रंप सहित वैश्विक नेताओं ने उनकी वीरता की प्रशंसा की।",
+          "full_article_text": "दुबई से तेल अवीव जा रहे फ्लाईदुबई के बोइंग 737 विमान में एक बड़ा हादसा टल गया, जब सह-पायलट ने मुख्य पायलट कैप्टन स्मित मच्छार को चाकू मारकर विमान को क्रैश करने का प्रयास किया। हमले के दौरान विमान 30 सेकंड से भी कम समय में लगभग 14,000 फीट (4,267 मीटर) नीचे आ गया।\n\nमुंबई के रहने वाले कैप्टन मच्छार ने गंभीर चोटों के बावजूद संघर्ष किया और कॉकपिट का दरवाजा खोलने में सफल रहे। इसके बाद यात्रियों और क्रू मेंबर्स ने कॉकपिट में प्रवेश कर हमलावर को काबू में किया। विमान बाद में इजराइल में सुरक्षित उतर गया।\n\nकैप्टन मच्छार को अस्पताल में भर्ती कराया गया, जहां उनकी स्थिति स्थिर बताई गई है। रियाद में भारतीय दूतावास ने सऊदी अधिकारियों और पायलट के परिवार के साथ संपर्क की पुष्टि की है।\n\nइजराइली प्रधानमंत्री बेंजामिन नेतन्याहू ने कहा कि इजराइल हमलावर सह-पायलट की पृष्ठभूमि की जांच करेगा। वैश्विक नेताओं ने सैकड़ों लोगों की जान बचाने के लिए कैप्टन मच्छार के अदम्य साहस की सराहना की।",
+          "background_context": "फ्लाईदुबई मध्य पूर्व के प्रमुख शहरों के बीच उड़ानों का संचालन करती है। यह घटना दुबई से तेल अवीव की उड़ान के दौरान घटी।",
+          "bullet_points": [
+            "दुबई से तेल अवीव जा रही फ्लाईदुबई उड़ान में सह-पायलट ने क्रैश का प्रयास किया।",
+            "मुंबई के भारतीय पायलट कैप्टन स्मित मच्छार ने घायल होने के बावजूद मुकाबला किया।",
+            "बोइंग 737 विमान 30 सेकंड में लगभग 14,000 फीट नीचे गिरा।",
+            "मच्छार ने कॉकपिट का दरवाजा खोला, जिससे यात्रियों और क्रू ने हमलावर को पकड़ा।",
+            "रियाद स्थित भारतीय दूतावास ने कैप्टन की स्थिति स्थिर होने की पुष्टि की।",
+            "पीएम मोदी, बेंजामिन नेतन्याहू और डोनाल्ड ट्रंप ने पायलट की वीरता की सराहना की।"
+          ],
+          "key_facts": [
+            "पायलट: कैप्टन स्मित मच्छार (मुंबई, भारत)",
+            "एयरलाइन और विमान: फ्लाईदुबई, बोइंग 737",
+            "मार्ग: दुबई से तेल अवीव"
+          ],
+          "key_locations": [
+            "दुबई, संयुक्त अरब अमीरात",
+            "तेल अवीव, इजराइल",
+            "रियाद, सऊदी अरब",
+            "मुंबई, भारत"
+          ],
+          "important_dates": [
+            "बुधवार (घटना और बयानों का दिन)"
+          ]
+        },
+        "quiz": {
+          "question": "Which Indian pilot was widely praised for foiling a mid-air crash attempt aboard a Flydubai flight bound for Tel Aviv?",
+          "options": [
+            "A) Capt. Smit Machchhar",
+            "B) Capt. Abhinandan Varthaman",
+            "C) Capt. Vikram Batra",
+            "D) Capt. Zoya Agarwal"
+          ],
+          "correct_answer": "A) Capt. Smit Machchhar",
+          "explanation": "Capt. Smit Machchhar, hailing from Mumbai, was the pilot of the Flydubai flight who successfully resisted an attack by his co-pilot, enabling passengers and crew to restrain the attacker."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/flydubai-incident-pilot-smit-machchhar-live-updates-fz1073-crash-attempt-hijacking-israel-saudi-trump-netanyahu-modi-101790827447368.html",
+        "published_date": "2026-10-01",
+        "id": 66,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/10/01/1600x900/logo/AP09-30-2026-000656A-0_1790828079288_atlh_1790828094883_8NY7_99ba3712-d187-406a-8c53-9539b800f3ca_U0Mm.jpg",
+        "added_at": "2026-10-01T10:39:01.689370+05:30"
+      },
+      {
+        "category": "India",
         "exam_corner": true,
         "headline": "CCB charges industrialist R Veeramani with abetment of minor's suicide in 2004 case",
         "story_lead": "The Central Crime Branch (CCB) of the Tamil Nadu police has registered a new abetment to suicide case against Gem Granites founder R Veeramani in connection with the 2004 death of a minor. The development follows a text message retrieved by investigators that prompted a fresh complaint from the victim's mother.",
@@ -8323,15 +10073,15 @@
         "added_at": "2026-10-01T00:13:10.423092+05:30"
       }
     ],
-    "updated_at": "2026-10-01T09:11:37.625199+05:30",
-    "count": 65
+    "updated_at": "2026-10-01T10:39:01.689370+05:30",
+    "count": 79
   },
   "motivation": {
     "quote": "Discipline is choosing your preparation even when motivation is low.",
     "image_url": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=1600&q=85",
-    "updated_at": "2026-10-01T09:11:37.625199+05:30"
+    "updated_at": "2026-10-01T10:39:01.689370+05:30"
   },
   "last_updated_ist": "2026-09-25 08:53:09",
   "project": "AURA EXAM AI",
-  "last_updated": "2026-10-01T09:11:37.625199+05:30"
+  "last_updated": "2026-10-01T10:39:01.689370+05:30"
 }
