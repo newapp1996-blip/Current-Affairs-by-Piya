@@ -1184,7 +1184,6 @@ science_strong_score = count_matches(
 
 if science_strong_score >= 1:
     science_score += 3
-    )
 
     economy_score = count_matches(
         title_blob,
