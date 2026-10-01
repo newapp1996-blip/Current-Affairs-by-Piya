@@ -2,6 +2,608 @@
   "date": "2026-10-02",
   "news": [
     {
+      "category": "World",
+      "exam_corner": false,
+      "headline": "Gujarat trio allegedly held captive in Ethiopia released, no ransom paid: Police",
+      "story_lead": "Three members of a Gujarat family who were taken captive in Ethiopia while attempting illegal migration to the US have been released and reached Mumbai, with police stating that no ransom was paid.",
+      "full_article_text": "Three members of a Gujarat family—Rutvik Jansari, Mamta Chavda, and Mayuri from Mehsana and Gandhinagar—who were taken captive in Ethiopia while on their way to the US through an illegal migration route, reached Mumbai on Thursday after being released. They had left for the US on September 20 with the help of agents and last contacted their kin on September 22. A man identifying himself as “Khan” allegedly demanded a ₹1 crore ransom. Although Jansari’s grandfather Kanubhai stated they paid ₹60 lakh, the abductors continued demanding ₹1 crore. According to Inspector AM Ghelot of the Langhnaj police station, the three were released after police negotiated with the captors by explaining the families' poor financial condition. Police stated no ransom was paid for their release, and the central government and MEA were informed. The report highlights other instances of perilous illegal migration routes involving Gujarat residents, including an October 2025 case in Tehran, a May 2025 boat capsizing off Torrey Pines State Beach, the January 2022 Dingucha freezing deaths, a St Lawrence River drowning, and the December 2023 grounding of a Legend Airways flight carrying 303 Indians in France.",
+      "background_context": "",
+      "bullet_points": [
+        "Three members of a Gujarat family (Rutvik Jansari, Mamta Chavda, and Mayuri from Mehsana and Gandhinagar) taken captive in Ethiopia were released and reached Mumbai on Thursday.",
+        "The trio left for the US on September 20 via an illegal migration route and last contacted family on September 22.",
+        "Abductors demanded a ₹1 crore ransom; grandfather Kanubhai stated ₹60 lakh was paid, but abductors kept demanding ₹1 crore.",
+        "Inspector AM Ghelot stated the release was secured through police negotiations explaining the family's financial condition, with no ransom ultimately paid.",
+        "Central government and Ministry of External Affairs (MEA) were informed about the case.",
+        "Previous illegal migration incidents include a captive case in Tehran in October 2025, a boat capsizing off Torrey Pines State Beach in May 2025, the Dingucha freezing deaths in January 2022, a St Lawrence River drowning, and the grounding of a Legend Airways flight in France in December 2023 carrying 303 Indians."
+      ],
+      "key_facts": [
+        "Three members of a Gujarat family were held captive in Ethiopia.",
+        "The individuals are Rutvik Jansari, Mamta Chavda, and Mayuri from Mehsana and Gandhinagar.",
+        "They left for the US on September 20, 2025/agents' help and lost contact on September 22.",
+        "An abductor named 'Khan' demanded a ₹1 crore ransom; ₹60 lakh was initially paid according to the grandfather.",
+        "Langhnaj police station Inspector AM Ghelot negotiated the release without any ransom being paid.",
+        "The released individuals reached Mumbai airport on Thursday."
+      ],
+      "key_locations": [
+        "Ethiopia",
+        "Mumbai",
+        "Gujarat",
+        "Mehsana",
+        "Gandhinagar",
+        "US",
+        "Tehran",
+        "Torrey Pines State Beach",
+        "Dingucha",
+        "Canada",
+        "Mexico",
+        "St Lawrence River",
+        "France",
+        "Dubai",
+        "Nicaragua"
+      ],
+      "important_dates": [
+        "Thursday",
+        "September 20",
+        "September 22",
+        "October 2025",
+        "May 2025",
+        "January 2022",
+        "December 2023"
+      ],
+      "exam_relevance": [
+        "Relevant for UPSC Prelims (International locations, migration geography) and Mains (Human trafficking, irregular migration, security challenges, consular protection)."
+      ],
+      "upsc_analysis": "The incident highlights the grave vulnerabilities and human security risks associated with illegal migration networks operating transnationally. It underlines the role of law enforcement coordination, international consular mechanisms, and the socioeconomic push factors driving irregular migration from regions like Gujarat.",
+      "causes": [
+        "Socio-economic aspirations for foreign employment and settlement",
+        "Operations of unauthorized human smuggling and trafficking networks"
+      ],
+      "impacts": [
+        "Captivity, extortion, and physical endangerment of migrants",
+        "Financial distress for families due to exorbitant ransom demands and agent fees"
+      ],
+      "challenges": [
+        "Combating transnational human trafficking networks",
+        "Preventing hazardous irregular migration routes across land, sea, and air"
+      ],
+      "government_steps": [
+        "Police negotiation and intervention",
+        "Informing the central government and Ministry of External Affairs (MEA)"
+      ],
+      "constitutional_or_policy_link": [
+        "Protection of Indian citizens abroad under consular jurisdiction"
+      ],
+      "way_forward": [
+        "Strengthening domestic awareness against illegal immigration networks",
+        "Enhancing international intelligence sharing to crack down on human smuggling syndicates"
+      ],
+      "mains_notes": "Irregular migration poses multifaceted security and humanitarian challenges. The release of the Gujarat trio from Ethiopia without ransom underscores the necessity of coordinated law enforcement and diplomatic channels in tackling human trafficking, while pointing to the persistent dangers of illegal migration routes.",
+      "mains_questions": [
+        "Discuss the security and humanitarian implications of illegal migration networks operating from India through hazardous international routes.",
+        "Analyze the role of law enforcement and international cooperation in rescuing Indian nationals trapped abroad by human smuggling cartels."
+      ],
+      "takeaway": "Three captive Gujarat nationals were successfully rescued from Ethiopia and returned to Mumbai through police negotiations without paying any ransom.",
+      "prelims_facts": [
+        "Ethiopia is located in East Africa.",
+        "Langhnaj police station is situated in Gujarat."
+      ],
+      "vocabulary": [
+        {
+          "word": "Captive",
+          "meaning_hindi": "बंधक"
+        },
+        {
+          "word": "Ransom",
+          "meaning_hindi": "फिरौती"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Ethiopia",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Ethiopia"
+        },
+        {
+          "name": "Gujarat",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Gujarat"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "इथोपिया में बंधक बनाए गए गुजरात के तीन लोग रिहा, कोई फिरौती नहीं दी गई: पुलिस",
+        "story_lead": "अमेरिका जाने के अवैध प्रवास मार्ग के दौरान इथोपिया में बंधक बनाए गए गुजरात के एक परिवार के तीन सदस्य रिहा होने के बाद मुंबई पहुंच गए हैं, पुलिस ने कहा कि उनकी रिहाई के लिए कोई फिरौती नहीं दी गई है।",
+        "full_article_text": "महसाणा और गांधीनगर के रुत्विक जनसारी, ममता चावड़ा और मयूरी - जो अमेरिका जाने के अवैध प्रवास मार्ग पर थे, उन्हें इथोपिया में बंधक बनाया गया था और रिहाई के बाद वे गुरुवार को मुंबई पहुंच गए। उन्होंने एजेंटों की मदद से 20 सितंबर को अमेरिका के लिए उड़ान भरी थी। पुलिस में दर्ज शिकायत के अनुसार उन्होंने आखिरी बार 22 सितंबर को अपने परिजनों से संपर्क किया था। 'खान' नाम बताने वाले एक व्यक्ति ने परिवार से 1 करोड़ रुपये की फिरौती मांगी। जनसारी के दादा कानूभाई ने बताया कि बंधक बनाए जाने के बाद उन्होंने 60 लाख रुपये का भुगतान किया था, लेकिन अपहरणकर्ताओं ने 1 करोड़ रुपये की मांग जारी रखी। लांघनाज पुलिस स्टेशन के इंस्पेक्टर ए.एम. घेलोत ने बताया कि बंधक बनाने वालों से बातचीत के बाद तीनों को रिहा कर दिया गया। उन्होंने अपहरणकर्ताओं को बताया कि परिवार फिरौती देने की स्थिति में नहीं है और उन्हें रिहा करने के लिए मनाया। घेलोत ने बताया कि उनकी रिहाई के लिए कोई फिरौती नहीं दी गई। उन्होंने कहा कि पुलिस ने इस मामले की जानकारी केंद्र सरकार और विदेश मंत्रालय (MEA) को दी थी। तीनों गुरुवार दोपहर मुंबई हवाईअड्डे पहुंचे और महसाणा अपने घर जा रहे हैं।",
+        "background_context": "",
+        "bullet_points": [
+          "इथोपिया में बंधक बनाए गए गुजरात के एक परिवार के तीन सदस्य (रुत्विक जनसारी, ममता चावड़ा और मयूरी) रिहा होकर गुरुवार को मुंबई पहुंचे।",
+          "तीनों 20 सितंबर को अवैध प्रवास मार्ग से अमेरिका के लिए निकले थे और 22 सितंबर को आखिरी बार संपर्क किया था।",
+          "अपहरणकर्ताओं ने 1 करोड़ रुपये की फिरौती मांगी; दादा कानूभाई के अनुसार 60 लाख रुपये दिए गए थे, लेकिन मांग जारी रही।",
+          "इंस्पेक्टर ए.एम. घेलोत ने बताया कि पुलिस द्वारा परिवारों की वित्तीय स्थिति समझाने पर बिना किसी फिरौती के रिहाई संभव हुई।",
+          "मामले की सूचना केंद्र सरकार और विदेश मंत्रालय को दी गई थी।"
+        ],
+        "key_facts": [
+          "इथोपिया में गुजरात के तीन लोग बंधक बनाए गए थे।",
+          "रिहा हुए व्यक्तियों में रुत्विक जनसारी, ममता चावड़ा और मयूरी शामिल हैं।",
+          "पुलिस अधिकारी ए.एम. घेलोत ने बातचीत के जरिए उनकी रिहाई सुनिश्चित की।"
+        ],
+        "key_locations": [
+          "इथोपिया",
+          "मुंबई",
+          "गुजरात",
+          "महसाणा",
+          "गांधीनगर"
+        ],
+        "important_dates": [
+          "गुरुवार",
+          "20 सितंबर",
+          "22 सितंबर"
+        ]
+      },
+      "quiz": {
+        "question": "In which East African nation were the three members of the Gujarat family allegedly held captive before being released and returning to Mumbai?",
+        "options": [
+          "Kenya",
+          "Ethiopia",
+          "Tanzania",
+          "Uganda"
+        ],
+        "correct_answer": "Ethiopia",
+        "explanation": "The three members of a Gujarat family were taken captive in the East African nation of Ethiopia while attempting illegal migration to the US."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/gujarat-trio-allegedly-held-captive-in-ethiopia-released-no-ransom-paid-police-101790864538790.html",
+      "published_date": "2026-10-02",
+      "content_version": 2,
+      "id": 7,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/10/01/1600x900/logo/The-three--Rutvik-Jansari--Mamta-Chavda-and-Mayuri_1790864711382_W6Qb.jpg",
+      "added_at": "2026-10-02T03:11:09.073310+05:30"
+    },
+    {
+      "category": "Health",
+      "exam_corner": false,
+      "headline": "Capt Smit Machchhar Shifted to Abu Dhabi, MEA Closely Monitoring flydubai Indian Pilot's Health",
+      "story_lead": "Indian pilot Captain Smit Machchhar, who was allegedly stabbed by his co-pilot during a flydubai flight, has been shifted to Abu Dhabi for continued medical treatment after receiving initial care in Saudi Arabia.",
+      "full_article_text": "The Ministry of External Affairs (MEA) announced on Thursday that Captain Smit Machchhar, an Indian pilot who was allegedly stabbed by his co-pilot aboard flydubai flight FZ 1073, has been shifted to Abu Dhabi, UAE, for continued medical attention and recovery. The flight had previously made an emergency landing in Tabuk, Saudi Arabia, following an alleged crash attempt by the co-pilot, where Captain Machchhar received initial medical treatment. India's Ambassador to the UAE, Deepak Mittal, visited the pilot in the hospital and met with his family to assure them of all possible support. The Indian Embassy in Abu Dhabi and the Consulate in Dubai are in close contact with local authorities regarding the matter. Captain Machchhar has received global praise, including from Indian Prime Minister Narendra Modi and Israeli Prime Minister Benjamin Netanyahu, for his bravery in fighting off the attacker and opening the cockpit door to allow passengers and crew to overpower the co-pilot, thereby preventing a catastrophic mid-air disaster.",
+      "background_context": "",
+      "bullet_points": [
+        "Captain Smit Machchhar, the Indian pilot of flydubai flight FZ 1073, has been moved to Abu Dhabi for continued medical recovery.",
+        "He was initially treated at a hospital in Tabuk, Saudi Arabia, where the flight made an emergency landing.",
+        "The pilot was allegedly stabbed by his co-pilot during an alleged crash attempt but managed to fight back and open the cockpit door.",
+        "Indian Ambassador to the UAE, Deepak Mittal, met Captain Machchhar in the hospital and assured his family of full support.",
+        "Prime Minister Narendra Modi praised the pilot's unwavering resolve and courage in saving hundreds of lives.",
+        "Israeli Prime Minister Benjamin Netanyahu also lauded Machchhar's extraordinary bravery in preventing a catastrophic mid-air disaster."
+      ],
+      "key_facts": [
+        "Captain Smit Machchhar is an Indian national and the pilot of flydubai flight FZ 1073.",
+        "The co-pilot allegedly stabbed Machchhar during an attempted crash bid.",
+        "The flight made an emergency landing in Tabuk, Saudi Arabia.",
+        "Deepak Mittal is the Indian Ambassador to the UAE."
+      ],
+      "key_locations": [
+        "Abu Dhabi",
+        "Tabuk",
+        "Saudi Arabia",
+        "UAE",
+        "Dubai"
+      ],
+      "important_dates": [
+        "Thursday"
+      ],
+      "exam_relevance": [
+        "Consular assistance and diaspora safety under India's foreign policy.",
+        "Bilateral relations and coordination with Middle Eastern nations (UAE and Saudi Arabia)."
+      ],
+      "upsc_analysis": "The swift coordination between the Ministry of External Affairs, the Indian Embassy in Abu Dhabi, and local authorities in Saudi Arabia and the UAE highlights the efficiency of India's consular diplomacy. The incident underscores the critical importance of international aviation safety protocols, emergency response mechanisms, and the protection of Indian professionals working abroad in high-stakes environments.",
+      "causes": [
+        "An alleged stabbing and crash attempt by the co-pilot aboard flydubai flight FZ 1073."
+      ],
+      "impacts": [
+        "Emergency landing of the flydubai flight in Tabuk, Saudi Arabia.",
+        "Serious injuries to Captain Smit Machchhar, requiring medical evacuation from Saudi Arabia to Abu Dhabi.",
+        "Consular intervention by the Indian Embassy in Abu Dhabi and the Consulate in Dubai."
+      ],
+      "challenges": [
+        "Ensuring immediate medical and diplomatic support for Indian nationals injured in foreign jurisdictions.",
+        "Coordinating across multiple international borders (India, Saudi Arabia, and UAE) during an aviation emergency."
+      ],
+      "government_steps": [
+        "Indian Ambassador to the UAE Deepak Mittal met the pilot in the hospital and assured his family of complete support.",
+        "The Indian Embassy in Abu Dhabi and the Consulate in Dubai are maintaining close contact with local authorities."
+      ],
+      "constitutional_or_policy_link": [
+        "Consular protection and welfare of Indian citizens abroad under the Ministry of External Affairs."
+      ],
+      "way_forward": [
+        "Strengthening international aviation safety frameworks and mental health screening for flight crews.",
+        "Maintaining robust consular networks to provide rapid assistance to Indian nationals during overseas emergencies."
+      ],
+      "mains_notes": "The flydubai incident involving Captain Smit Machchhar highlights the vital role of India's consular machinery. Following an emergency landing in Tabuk, Saudi Arabia, due to an alleged mid-air attack by a co-pilot, the Indian Ministry of External Affairs actively monitored the situation. The pilot's subsequent transfer to Abu Dhabi for medical care was supported by Indian diplomatic missions in the UAE, demonstrating effective bilateral coordination and diaspora care.",
+      "mains_questions": [
+        "Analyze the role of India's consular diplomacy in ensuring the safety and welfare of Indian nationals abroad during international emergencies.",
+        "Aviation safety is not merely technical but also psychological. Discuss this in the context of recent safety challenges faced by international flight crews."
+      ],
+      "takeaway": "Indian pilot Captain Smit Machchhar is recovering in Abu Dhabi after bravely thwarting a co-pilot's mid-air crash attempt on a flydubai flight.",
+      "prelims_facts": [
+        "The incident occurred on flydubai flight FZ 1073.",
+        "The flight made an emergency landing in Tabuk, Saudi Arabia.",
+        "Deepak Mittal is India's Ambassador to the UAE."
+      ],
+      "vocabulary": [
+        {
+          "word": "valour",
+          "meaning_hindi": "वीरता"
+        },
+        {
+          "word": "gallantry",
+          "meaning_hindi": "शौर्य"
+        },
+        {
+          "word": "thwarted",
+          "meaning_hindi": "विफल कर दिया"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Smit Machchhar",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Smit_Machchhar"
+        },
+        {
+          "name": "Deepak Mittal",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Deepak_Mittal"
+        },
+        {
+          "name": "Abu Dhabi",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Abu_Dhabi"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "कैप्टन स्मित मछार को अबू धाबी स्थानांतरित किया गया, विदेश मंत्रालय रख रहा है स्वास्थ्य पर नजर",
+        "story_lead": "फ्लाईदुबई उड़ान पर सह-पायलट द्वारा कथित तौर पर किए गए हमले को विफल करने वाले भारतीय पायलट कैप्टन स्मित मछार को सऊदी अरब में शुरुआती इलाज के बाद आगे के इलाज के लिए अबू धाबी स्थानांतरित कर दिया गया है।",
+        "full_article_text": "विदेश मंत्रालय (MEA) ने गुरुवार को बताया कि फ्लाईदुबई उड़ान FZ 1073 के भारतीय पायलट कैप्टन स्मित मछार को आगे के इलाज और रिकवरी के लिए अबू धाबी, यूएई स्थानांतरित कर दिया गया है। इससे पहले सऊदी अरब के तबुक में उनका शुरुआती इलाज किया गया था, जहां सह-पायलट द्वारा विमान को क्रैश करने की कथित कोशिश और हमले के बाद विमान की आपातकालीन लैंडिंग कराई गई थी। यूएई में भारतीय राजदूत दीपक मित्तल ने अस्पताल में कैप्टन मछार से मुलाकात की और उनके परिवार को हर संभव सहायता का आश्वासन दिया। अबू धाबी में भारतीय दूतावास और दुबई में वाणिज्य दूतावास स्थानीय अधिकारियों के साथ निकट संपर्क में हैं। कैप्टन मछार की बहादुरी की प्रधानमंत्री नरेंद्र मोदी और इजरायली प्रधानमंत्री बेंजामिन नेतन्याहू सहित दुनिया भर में सराहना की गई है, जिन्होंने उन्हें एक 'नायक' बताया है।",
+        "background_context": "",
+        "bullet_points": [
+          "फ्लाईदुबई उड़ान FZ 1073 के भारतीय पायलट कैप्टन स्मित मछार को इलाज के लिए अबू धाबी स्थानांतरित किया गया है।",
+          "सऊदी अरब के तबुक में शुरुआती इलाज के बाद उन्हें यूएई लाया गया है।",
+          "सह-पायलट द्वारा कथित तौर पर चाकू मारने के बाद भी उन्होंने मुकाबला किया और कॉकपिट का दरवाजा खोलकर यात्रियों को हमलावर पर काबू पाने में मदद की।",
+          "भारतीय राजदूत दीपक मित्तल ने अस्पताल में पायलट से मुलाकात की और उनके परिवार को सहायता का आश्वासन दिया।",
+          "प्रधानमंत्री नरेंद्र मोदी और इजरायली पीएम बेंजामिन नेतन्याहू ने कैप्टन मछार की असाधारण वीरता की सराहना की।"
+        ],
+        "key_facts": [
+          "कैप्टन स्मित मछार फ्लाईदुबई उड़ान FZ 1073 के पायलट हैं।",
+          "सह-पायलट ने कथित तौर पर विमान को क्रैश करने की कोशिश के दौरान उन पर हमला किया था।",
+          "शुरुआती इलाज सऊदी अरब के तबुक में हुआ, जिसके बाद उन्हें अबू धाबी स्थानांतरित किया गया।",
+          "दीपक मित्तल यूएई में भारत के राजदूत हैं।"
+        ],
+        "key_locations": [
+          "अबू धाबी",
+          "तबुक",
+          "सऊदी अरब",
+          "यूएई",
+          "दुबई"
+        ],
+        "important_dates": [
+          "गुरुवार"
+        ]
+      },
+      "quiz": {
+        "question": "Which flight was piloted by Captain Smit Machchhar when he thwarted an alleged mid-air crash attempt by his co-pilot?",
+        "options": [
+          "flydubai flight FZ 1073",
+          "flydubai flight FZ 1088",
+          "Air India flight AI 101",
+          "Emirates flight EK 502"
+        ],
+        "correct_answer": "flydubai flight FZ 1073",
+        "explanation": "According to the Ministry of External Affairs statement, Captain Smit Machchhar was the pilot of flydubai flight FZ 1073."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/capt-smit-machchhar-shifted-to-abu-dhabi-monitoring-health-condition-mea-on-flydubai-indian-pilot-uae-israel-saudi-101790870561807.html",
+      "published_date": "2026-10-02",
+      "content_version": 2,
+      "id": 6,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/10/01/1600x900/Smit_Machchhar_1790871115715_tzZB_1790871115836_US7k_16c4cf19-c92f-47f1-85da-ed2ebc6a1092_AHxS.jpg",
+      "added_at": "2026-10-02T03:11:09.073310+05:30"
+    },
+    {
+      "category": "World",
+      "exam_corner": false,
+      "headline": "From guns to classrooms: Eight former Maoists clear Class 10 exam in Chhattisgarh’s Bastar",
+      "story_lead": "Eight surrendered Maoist cadres in Chhattisgarh’s Bastar have cleared the Class 10 examination conducted by the Chhattisgarh State Open School, taking a step towards resuming their education.",
+      "full_article_text": "Eight surrendered Maoist cadres in Chhattisgarh’s Bastar region have cleared the Class 10 examination conducted by the Chhattisgarh State Open School, taking a step towards resuming their education after returning to the mainstream. The candidates appeared for the examination from Jagdalpur, Bijapur, and Kanker, having dropped out of school at different stages before joining the Maoist movement. The exam was conducted in August, and results were declared last month. Bastar Superintendent of Police (SP) Shalabh Kumar Sinha stated that assistance was provided under the government's surrender and rehabilitation policy. Successful candidates include 36-year-old Geeta Narote (formerly 'Dr Champa'), 31-year-old Santosh Anchla (alias Sannu), 34-year-old Ramdhar Kashyap, along with Yadgiri Kondghatla (alias Bhaskar), Madkam Dulla, Navru Poyam, Arjun Payam (alias Vasu), and Ramji Gavde. Narote, Sannu, and Kashyap are currently staying at Triveni Parisar, a police facility in Jagdalpur.",
+      "background_context": "",
+      "bullet_points": [
+        "Eight surrendered Maoist cadres in Chhattisgarh’s Bastar cleared the Class 10 exam conducted by the Chhattisgarh State Open School.",
+        "Candidates appeared from Jagdalpur, Bijapur, and Kanker after dropping out of school at various stages prior to joining the Maoist movement.",
+        "Assistance was provided under the government's surrender and rehabilitation policy, with individuals receiving ₹50,000 each.",
+        "Geeta Narote (36), formerly 'Dr Champa', wants to become a nurse after dropping out following her father's death.",
+        "Santosh Anchla (31) joined the movement in 2008 through its cultural wing, Chetna Natya Manch.",
+        "Ramdhar Kashyap (34) dropped out after Class 2 and joined the movement after hearing claims about the Bodhghat project on the Indravati river.",
+        "Setu alias Shyam, a surrendered Telangana native and former teacher within the organization, helped prepare candidates using a timetable and previous model question papers.",
+        "Narote, Sannu, and Kashyap currently stay at Triveni Parisar, a police facility in Jagdalpur."
+      ],
+      "key_facts": [
+        "Eight surrendered Maoist cadres cleared the Class 10 exam conducted by Chhattisgarh State Open School.",
+        "The exam was conducted in August and results were declared last month.",
+        "Geeta Narote was among 210 Maoist cadres led by senior cadre Rupesh who surrendered in Jagdalpur in October last year.",
+        "Surrendered individuals received ₹50,000 each under the government's surrender policy."
+      ],
+      "key_locations": [
+        "Chhattisgarh",
+        "Bastar",
+        "Jagdalpur",
+        "Bijapur",
+        "Kanker",
+        "Gundul village",
+        "Koyelibeda area",
+        "Kotmeta village",
+        "Kondagaon district",
+        "Triveni Parisar"
+      ],
+      "important_dates": [
+        "August",
+        "October last year",
+        "March this year",
+        "2008"
+      ],
+      "exam_relevance": [
+        "UPSC Mains GS Paper III: Internal Security - Left Wing Extremism (LWE) and Rehabilitation Policies.",
+        "UPSC Mains GS Paper II: Governance, Social Justice - Welfare schemes for vulnerable sections and mainstreaming of surrendered cadres."
+      ],
+      "upsc_analysis": "The successful reintegration and education of surrendered Maoist cadres in Chhattisgarh highlight the effectiveness of targeted rehabilitation and surrender policies in addressing Left-Wing Extremism (LWE). Beyond counter-insurgency operations, providing educational, vocational, and financial support acts as a critical bridge for mainstreaming individuals alienated by conflict, ensuring long-term peacebuilding and human resource development in remote areas like Bastar.",
+      "causes": [
+        "Dropping out of school at early stages due to personal or familial hardships.",
+        "Joining the Maoist movement following personal tragedies, economic responsibilities, or fear of displacement (e.g., Bodhghat project on the Indravati river)."
+      ],
+      "impacts": [
+        "Resumption of education and opportunities for employment and self-employment.",
+        "Reconnection of former cadres with mainstream society and development."
+      ],
+      "challenges": [
+        "Early childhood dropouts, lack of regular teachers in rural areas, and socioeconomic vulnerabilities leading individuals to join insurgent groups."
+      ],
+      "government_steps": [
+        "Provision of facilities under the government's surrender and rehabilitation policy.",
+        "Financial assistance of ₹50,000 provided to surrendered cadres to purchase books and study materials.",
+        "Provision of accommodation at Triveni Parisar, a police facility in Jagdalpur."
+      ],
+      "constitutional_or_policy_link": [
+        "Government Surrender and Rehabilitation Policy for LWE-affected regions"
+      ],
+      "way_forward": [
+        "Continued educational and vocational support for surrendered individuals.",
+        "Strengthening foundational schooling and infrastructure in remote areas like Bastar to prevent initial dropouts."
+      ],
+      "mains_notes": "Eight surrendered Maoists in Bastar cleared the Class 10 exam through Chhattisgarh State Open School. Facilitated by the government's surrender and rehabilitation policy, individuals received financial assistance of ₹50,000 and support from police facilities like Triveni Parisar in Jagdalpur. This initiative underscores the vital role of education and rehabilitation in countering Left-Wing Extremism by mainstreaming former cadres.",
+      "mains_questions": [
+        "Discuss the role of rehabilitation and educational initiatives in mainstreaming surrendered cadres in Left-Wing Extremism affected regions.",
+        "How do socio-economic vulnerabilities contribute to Left-Wing Extremism in regions like Bastar, and what measures can address them?"
+      ],
+      "takeaway": "Eight surrendered Maoists in Bastar successfully cleared the Class 10 exam under the government's rehabilitation policy, paving the way for education and mainstream integration.",
+      "prelims_facts": [
+        "Class 10 examination was conducted by the Chhattisgarh State Open School.",
+        "Surrendered cadres received ₹50,000 each under the government surrender policy.",
+        "Bodhghat project is located on the Indravati river."
+      ],
+      "vocabulary": [
+        {
+          "word": "Surrendered",
+          "meaning_hindi": "आत्मसमर्पण करने वाले"
+        },
+        {
+          "word": "Rehabilitation",
+          "meaning_hindi": "पुनर्वास"
+        },
+        {
+          "word": "Mainstream",
+          "meaning_hindi": "मुख्यधारा"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Bastar",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Bastar"
+        },
+        {
+          "name": "Chhattisgarh",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Chhattisgarh"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "बंदूकों से कक्षाओं तक: छत्तीसगढ़ के बस्तर में आठ पूर्व माओवादियों ने पास की 10वीं की परीक्षा",
+        "story_lead": "छत्तीसगढ़ के बस्तर क्षेत्र में आठ आत्मसमर्पण करने वाले माओवादी कैडरों ने छत्तीसगढ़ राज्य ओपन स्कूल द्वारा आयोजित 10वीं की परीक्षा पास कर ली है।",
+        "full_article_text": "छत्तीसगढ़ के बस्तर क्षेत्र में आठ आत्मसमर्पण कर चुके माओवादी कैडरों ने छत्तीसगढ़ राज्य ओपन स्कूल द्वारा आयोजित 10वीं की परीक्षा पास कर ली है, जो मुख्यधारा में लौटने के बाद अपनी शिक्षा फिर से शुरू करने की दिशा में एक कदम है। जगदलपुर, बीजापुर और कांकेर से परीक्षा में शामिल होने वाले इन उम्मीदवारों ने माओवादी आंदोलन में शामिल होने से पहले अलग-अलग चरणों में स्कूल छोड़ दिया था। परीक्षा अगस्त में आयोजित की गई थी और परिणाम पिछले महीने घोषित किए गए थे। बस्तर के पुलिस अधीक्षक (एसपी) शलभ कुमार सिन्हा ने बताया कि सरकार की आत्मसमर्पण और पुनर्वास नीति के तहत सहायता प्रदान की गई है।",
+        "background_context": "",
+        "bullet_points": [
+          "छत्तीसगढ़ के बस्तर में आठ आत्मसमर्पण करने वाले माओवादियों ने 10वीं की परीक्षा पास की।",
+          "उम्मीदवारों ने जगदलपुर, बीजापुर और कांकेर से परीक्षा दी।",
+          "सरकार की आत्मसमर्पण और पुनर्वास नीति के तहत सहायता प्रदान की गई।",
+          "36 वर्षीय गीता नरोटे नर्स बनना चाहती हैं।"
+        ],
+        "key_facts": [
+          "आठ आत्मसमर्पण कर चुके माओवादियों ने छत्तीसगढ़ राज्य ओपन स्कूल की 10वीं की परीक्षा पास की।",
+          "आत्मसमर्पण नीति के तहत प्रत्येक को ₹50,000 की वित्तीय सहायता मिली।"
+        ],
+        "key_locations": [
+          "छत्तीसगढ़",
+          "बस्तर",
+          "जगदलपुर",
+          "बीजापुर",
+          "कांकेर"
+        ],
+        "important_dates": [
+          "अगस्त"
+        ]
+      },
+      "quiz": {
+        "question": "How many surrendered Maoist cadres cleared the Class 10 exam in Chhattisgarh’s Bastar?",
+        "options": [
+          "Five",
+          "Eight",
+          "Ten",
+          "Twenty-one"
+        ],
+        "correct_answer": "Eight",
+        "explanation": "Eight surrendered Maoist cadres in Chhattisgarh’s Bastar cleared the Class 10 examination conducted by the Chhattisgarh State Open School."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/from-guns-to-classrooms-eight-former-maoists-clear-class-10-exam-in-chhattisgarh-s-bastar-101790872281549.html",
+      "published_date": "2026-10-02",
+      "content_version": 2,
+      "id": 5,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/10/01/1600x900/logo/Eight-former-Maoists-who-surrendered-in-Bastar-hav_1790872273444_T4wL.jpg",
+      "added_at": "2026-10-02T03:11:09.073310+05:30"
+    },
+    {
+      "category": "World",
+      "exam_corner": false,
+      "headline": "Congress Moves to Replace Punjab Unit Chief Amarinder Singh Raja Warring Following Internal Feedback",
+      "story_lead": "The Congress leadership has asked Punjab unit chief Amarinder Singh Raja Warring to step down following feedback gathered by newly appointed AICC general secretary in-charge Sachin Pilot. The move comes ahead of Punjab assembly elections to balance regional and social equations in the state unit.",
+      "full_article_text": "The Congress leadership has asked its Punjab state unit chief, Amarinder Singh Raja Warring, to stand down following three weeks of feedback gathered by AICC general secretary in-charge Sachin Pilot. Pilot, who replaced Bhupesh Baghel on September 5, conducted discussions with state leaders and MPs, where a majority of Punjab's seven Lok Sabha Congress MPs and senior leaders requested a change of guard. The party aims to find a new state chief capable of balancing social and regional equations alongside Charanjit Singh Channi, Punjab's only Dalit chief minister to date. Former Union minister Vijay Inder Singla, from the Bania community, is considered a frontrunner to replace Warring. Singla and Channi belong to the Malwa region—the state's largest electoral region with 69 seats—where Bania voters hold key links to agricultural trade. Meanwhile, Partap Singh Bajwa, Leader of the Opposition in the assembly, and Sukhjinder Singh Randhawa represent prominent Jatt Sikh faces from the Majha region. In the 2022 assembly polls, the Aam Aadmi Party won 92 of 117 seats, Congress secured 18, and the Shiromani Akali Dal won 3.",
+      "background_context": "In the 2022 Punjab state assembly elections, the Aam Aadmi Party (AAP) achieved a landslide victory by winning 92 out of 117 seats. The incumbent Congress was reduced to 18 seats, while the Sukhbir Singh Badal-led Shiromani Akali Dal won 3 seats.",
+      "bullet_points": [
+        "Sachin Pilot replaced Bhupesh Baghel as AICC general secretary in-charge on September 5.",
+        "Congress asked Punjab unit chief Amarinder Singh Raja Warring to step down following Pilot's three-week feedback process.",
+        "A majority of Congress's seven Lok Sabha MPs from Punjab and senior leaders sought a leadership change.",
+        "Former Union minister Vijay Inder Singla is seen as a frontrunner to replace Raja Warring.",
+        "Charanjit Singh Channi remains the only Dalit chief minister of Punjab till date.",
+        "Malwa is the largest electoral region in Punjab, accounting for 69 assembly seats out of 117.",
+        "Partap Singh Bajwa serves as the Leader of the Opposition in the Punjab assembly."
+      ],
+      "key_facts": [
+        "Sachin Pilot assumed charge as AICC general secretary in-charge on September 5.",
+        "Congress holds 7 Lok Sabha seats in Punjab.",
+        "Punjab assembly has a total of 117 seats, with the Malwa region accounting for 69 seats.",
+        "2022 Punjab election results: AAP won 92 seats, Congress won 18 seats, SAD won 3 seats."
+      ],
+      "key_locations": [
+        "Punjab",
+        "Malwa region",
+        "Majha region"
+      ],
+      "important_dates": [
+        "September 5",
+        "July (when Bhupesh Baghel submitted his initial report)"
+      ],
+      "exam_relevance": [
+        "Useful for political dynamics, state electoral structures, regional representation, and party organizational dynamics in Indian democracy."
+      ],
+      "upsc_analysis": "The organizational changes in state party units highlight the role of regional, caste, and social equations in electoral politics. Key dynamics include balancing Dalit representation alongside Jatt Sikh and trader (Bania) communities across distinct geographical regions like Malwa and Majha.",
+      "causes": [
+        "Feedback from a majority of Punjab's seven Congress Lok Sabha MPs and state leaders seeking a change of guard.",
+        "Assessment report submitted by newly appointed AICC in-charge Sachin Pilot recommending leadership change to ensure social and regional balance ahead of state polls."
+      ],
+      "impacts": [
+        "Paves the way for new leadership in the Punjab Congress unit.",
+        "Aims to reconcile internal party factions between key leaders including Charanjit Singh Channi, Partap Singh Bajwa, and Sukhjinder Singh Randhawa."
+      ],
+      "challenges": [
+        "Maintaining unity among internal party factions prior to upcoming state elections.",
+        "Balancing representation between Jatt Sikh, Dalit, and Bania communities across Malwa and Majha regions."
+      ],
+      "government_steps": [],
+      "constitutional_or_policy_link": [
+        "Relates to representation and political dynamics within state legislative assembly structures under the Constitution of India."
+      ],
+      "way_forward": [
+        "Establishing a cohesive organizational structure that balances regional (Malwa and Majha) and social representation ahead of state elections."
+      ],
+      "mains_notes": "State political dynamics often depend on intra-party conflict resolution, regional balancing (e.g., Malwa vs Majha), and social coalition-building across Dalit, Jatt Sikh, and non-Sikh communities.",
+      "mains_questions": [
+        "Examine the significance of regional and social equations in political party organization during state assembly elections in India."
+      ],
+      "takeaway": "Congress is restructuring its Punjab state leadership based on internal feedback from AICC in-charge Sachin Pilot to balance regional and social equations ahead of state assembly polls.",
+      "prelims_facts": [
+        "Total assembly seats in Punjab: 117.",
+        "Malwa region contains 69 out of 117 assembly seats in Punjab.",
+        "Charanjit Singh Channi is the only Dalit Chief Minister of Punjab to date."
+      ],
+      "vocabulary": [
+        {
+          "word": "untenable",
+          "meaning_hindi": "असमर्थनीय / जो स्थिति बनाए रखने योग्य न हो"
+        },
+        {
+          "word": "frontrunner",
+          "meaning_hindi": "दौड़ में सबसे आगे रहने वाला प्रत्याशी"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Sachin Pilot",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Sachin_Pilot"
+        },
+        {
+          "name": "Amarinder Singh Raja Warring",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Amarinder_Singh_Raja_Warring"
+        },
+        {
+          "name": "Charanjit Singh Channi",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Charanjit_Singh_Channi"
+        },
+        {
+          "name": "Punjab",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Punjab"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "आंतरिक प्रतिक्रिया के बाद कांग्रेस ने पंजाब इकाई प्रमुख अमरिंदर सिंह राजा वड़िंग को हटाने का निर्णय लिया",
+        "story_lead": "नवनियुक्त एआईसीसी महासचिव प्रभारी सचिन पायलट द्वारा एकत्र की गई प्रतिक्रिया के बाद कांग्रेस नेतृत्व ने पंजाब इकाई अध्यक्ष अमरिंदर सिंह राजा वड़िंग को पद छोड़ने के लिए कहा है। यह कदम राज्य इकाई में क्षेत्रीय और सामाजिक समीकरणों को संतुलित करने के लिए उठाया गया है।",
+        "full_article_text": "कांग्रेस नेतृत्व ने पंजाब प्रदेश कांग्रेस कमेटी के अध्यक्ष अमरिंदर सिंह राजा वड़िंग को पद छोड़ने के लिए कहा है। यह निर्णय एआईसीसी महासचिव प्रभारी सचिन पायलट द्वारा तीन हफ्तों के दौरान जुटाई गई प्रतिक्रिया के बाद लिया गया। पायलट ने 5 सितंबर को भूपेश बघेल का स्थान लिया था और राज्य के नेताओं तथा सांसदों के साथ चर्चा की थी। पंजाब से कांग्रेस के सात लोकसभा सांसदों में से बहुमत और कई वरिष्ठ नेताओं ने नेतृत्व परिवर्तन की मांग की थी। पार्टी एक ऐसे नए राज्य प्रमुख की तलाश कर रही है जो अब तक के पंजाब के एकमात्र दलित मुख्यमंत्री चरणजीत सिंह चन्नी के साथ सामाजिक और क्षेत्रीय समीकरणों को बनाए रख सके। बनिया समुदाय से आने वाले पूर्व केंद्रीय मंत्री विजय इंदर सिंगला को वड़िंग के स्थान पर प्रमुख दावेदार माना जा रहा है। सिंगला और चन्नी मालवा क्षेत्र से आते हैं, जो 69 सीटों के साथ राज्य का सबसे बड़ा चुनावी क्षेत्र है। वहीं, विधानसभा में विपक्ष के नेता प्रताप सिंह बाजवा और सुखजिंदर सिंह रंधावा माझा क्षेत्र के प्रमुख जट सिख चेहरे हैं। 2022 के विधानसभा चुनावों में आम आदमी पार्टी ने 117 में से 92 सीटें जीती थीं, जबकि कांग्रेस को 18 और शिरोमणि अकाली दल को 3 सीटें मिली थीं।",
+        "background_context": "2022 के पंजाब विधानसभा चुनाव में आम आदमी पार्टी (AAP) ने 117 में से 92 सीटों पर जीत हासिल की थी। तत्कालीन सत्ताधारी कांग्रेस को केवल 18 सीटें मिली थीं, जबकि सुखबीर सिंह बादल के नेतृत्व वाले शिरोमणि अकाली दल को 3 सीटें मिली थीं।",
+        "bullet_points": [
+          "सचिन पायलट ने 5 सितंबर को भूपेश बघेल के स्थान पर एआईसीसी महासचिव प्रभारी का पद संभाला।",
+          "पायलट की तीन सप्ताह की प्रतिक्रिया प्रक्रिया के बाद कांग्रेस ने पंजाब इकाई प्रमुख अमरिंदर सिंह राजा वड़िंग से पद छोड़ने को कहा।",
+          "पंजाब से कांग्रेस के सात लोकसभा सांसदों में से अधिकांश और वरिष्ठ नेताओं ने नेतृत्व परिवर्तन की मांग की थी।",
+          "पूर्व केंद्रीय मंत्री विजय इंदर सिंगला को राजा वड़िंग की जगह लेने के लिए सबसे आगे माना जा रहा है।",
+          "चरणजीत सिंह चन्नी अब तक पंजाब के एकमात्र दलित मुख्यमंत्री हैं।",
+          "मालवा पंजाब का सबसे बड़ा चुनावी क्षेत्र है, जिसमें 117 में से 69 विधानसभा सीटें शामिल हैं।",
+          "प्रताप सिंह बाजवा पंजाब विधानसभा में नेता प्रतिपक्ष हैं।"
+        ],
+        "key_facts": [
+          "सचिन पायलट ने 5 सितंबर को एआईसीसी महासचिव प्रभारी का पदभार ग्रहण किया।",
+          "पंजाब में कांग्रेस के 7 लोकसभा सांसद हैं।",
+          "पंजाब विधानसभा में कुल 117 सीटें हैं, जिनमें से मालवा क्षेत्र में 69 सीटें हैं।",
+          "2022 पंजाब चुनाव परिणाम: आप ने 92 सीटें, कांग्रेस ने 18 सीटें, अकाली दल ने 3 सीटें जीतीं।"
+        ],
+        "key_locations": [
+          "पंजाब",
+          "मालवा क्षेत्र",
+          "माझा क्षेत्र"
+        ],
+        "important_dates": [
+          "5 सितंबर",
+          "जुलाई (जब भूपेश बघेल ने अपनी रिपोर्ट सौंपी थी)"
+        ]
+      },
+      "quiz": {
+        "question": "Which electoral region of Punjab accounts for the largest share of assembly seats (69 out of 117)?",
+        "options": [
+          "Majha region",
+          "Malwa region",
+          "Doaba region",
+          "Pothohar region"
+        ],
+        "correct_answer": "Malwa region",
+        "explanation": "According to the source text, Malwa is the largest electoral region in Punjab with 69 assembly seats out of a total of 117."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/why-did-the-congress-decide-to-remove-amrinder-singh-raja-warring-101790873720075.html",
+      "published_date": "2026-10-02",
+      "content_version": 2,
+      "id": 4,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/10/01/1600x900/logo/New-Delhi--Congress-MP-Amrinder-Singh-Raja-Warring_1790873713749_cTUm.jpg",
+      "added_at": "2026-10-02T03:11:09.073310+05:30"
+    },
+    {
       "category": "India",
       "exam_corner": false,
       "headline": "Indian Envoy to UAE Meets flydubai Pilot Smit Machchhar Following Foiled Crash Attempt",
@@ -489,6 +1091,6 @@
       "added_at": "2026-10-02T00:14:00.853583+05:30"
     }
   ],
-  "updated_at": "2026-10-02T00:14:00.853583+05:30",
-  "count": 3
+  "updated_at": "2026-10-02T03:11:09.073310+05:30",
+  "count": 7
 }
