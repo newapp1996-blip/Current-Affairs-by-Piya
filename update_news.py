@@ -4,6 +4,7 @@ import json
 import time
 import hashlib
 from datetime import datetime
+from email.utils import parsedate_to_datetime
 from zoneinfo import ZoneInfo
 from urllib.parse import quote, urljoin
 
@@ -42,13 +43,12 @@ DATA_DIR = "data"
 FIRST_RUN_COUNT = 30
 UPDATE_COUNT = 15
 
-# One-time content cleanup version. Existing articles missing this version
-# are rebuilt using the stricter source-preserving extraction/prompt.
-CONTENT_VERSION = 2
-REBUILD_LEGACY_LIMIT = 10
-
 MAX_CANDIDATES_PER_SOURCE = 25
 REQUEST_TIMEOUT = 15
+
+# Version used to rebuild older articles when the content
+# extraction/summary format changes.
+CONTENT_VERSION = 3
 
 
 # ============================================================
@@ -583,23 +583,38 @@ def extract_image_from_html(html, base_url):
 
 
 def extract_page_text(html):
-    """Extract the actual article body, including list items.
+    """
+    Extract article information without copying the publisher's
+    page into AURA.  The extracted text is source material for
+    an original AI summary.
 
-    The previous version ignored <li> elements. That caused important
-    numbered/bulleted facts such as dates, cities, prices and schedules
-    to disappear before Gemini ever saw them.
+    Important: include semantic list/table content because many
+    current-affairs stories put their most important facts there.
     """
     if not html:
         return ""
 
     soup = BeautifulSoup(html, "html.parser")
 
-    for tag in soup([
-        "script", "style", "noscript", "svg",
-        "header", "footer", "nav", "aside",
-        "form", "iframe"
-    ]):
+    # Remove page chrome, scripts and common non-editorial blocks.
+    unwanted = [
+        "script", "style", "noscript", "svg", "header", "footer",
+        "nav", "aside", "form", "button", "iframe",
+    ]
+    for tag in soup(unwanted):
         tag.decompose()
+
+    for tag in soup.find_all(True):
+        classes = " ".join(tag.get("class", [])).lower()
+        ident = str(tag.get("id", "")).lower()
+        marker = f"{classes} {ident}"
+        if any(word in marker for word in (
+            "advert", "advertisement", "sponsor", "newsletter",
+            "subscribe", "social-share", "related-story",
+            "recommended", "comments", "comment-section",
+            "cookie", "popup", "paywall",
+        )):
+            tag.decompose()
 
     main = (
         soup.find("article")
@@ -609,25 +624,87 @@ def extract_page_text(html):
     )
 
     blocks = []
-    seen = set()
+    semantic_tags = {
+        "h1", "h2", "h3", "h4", "h5",
+        "p", "li", "blockquote", "dt", "dd", "tr"
+    }
 
-    for node in main.find_all(["p", "h2", "h3", "h4", "li"]):
-        text = clean_text(node.get_text(" ", strip=True))
-        if len(text) < 20:
+    # Process document order. A list item/table row is treated as a
+    # complete semantic block so nested cells/paragraphs are not duplicated.
+    for node in main.find_all(list(semantic_tags)):
+        # Skip a node if it is nested inside another semantic block
+        # that already represents the same content.
+        parent = node.parent
+        nested = False
+        while parent is not None and parent is not main:
+            if getattr(parent, "name", None) in {"li", "tr"} and node.name in {"p", "li", "td", "th"}:
+                nested = True
+                break
+            parent = parent.parent
+        if nested:
             continue
 
-        # Avoid duplicate nested list text.
-        key = text.lower()
+        if node.name == "tr":
+            cells = [clean_text(c.get_text(" ", strip=True)) for c in node.find_all(["th", "td"])]
+            cells = [c for c in cells if c]
+            text = " | ".join(cells)
+        else:
+            text = clean_text(node.get_text(" ", strip=True))
+
+        if not text:
+            continue
+
+        # Keep list semantics visible to Gemini.
+        if node.name == "li":
+            text = "- " + text
+        elif node.name == "tr":
+            text = "TABLE: " + text
+
+        # Headings can be short; ordinary paragraphs should contain
+        # enough text to avoid navigation fragments.
+        if node.name not in {"h1", "h2", "h3", "h4", "h5", "dt", "dd"} and len(text.lstrip("- ")) < 20:
+            continue
+
+        if blocks and text == blocks[-1]:
+            continue
+
+        blocks.append(text)
+
+    # Remove consecutive duplicates while preserving order.
+    result = []
+    seen = set()
+    for block in blocks:
+        key = re.sub(r"\s+", " ", block).strip().lower()
         if key in seen:
             continue
         seen.add(key)
+        result.append(block)
 
-        if node.name == "li":
-            blocks.append("- " + text)
-        else:
-            blocks.append(text)
+    # More room for fact-heavy articles; Gemini input is capped later.
+    return "\n\n".join(result[:180])
 
-    return "\n\n".join(blocks[:160])
+
+def parse_published_date(value):
+    """Return YYYY-MM-DD when an RSS date can be parsed."""
+    value = clean_text(value)
+    if not value:
+        return TODAY
+    try:
+        dt = parsedate_to_datetime(value)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=IST)
+        return dt.astimezone(IST).strftime("%Y-%m-%d")
+    except Exception:
+        pass
+    for fmt in ("%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%d", "%d %b %Y", "%B %d, %Y"):
+        try:
+            dt = datetime.strptime(value, fmt)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=IST)
+            return dt.astimezone(IST).strftime("%Y-%m-%d")
+        except Exception:
+            continue
+    return TODAY
 
 
 # ============================================================
@@ -732,6 +809,7 @@ def rss_candidates():
                 "published_raw": clean_text(
                     published
                 ),
+                "published_date": parse_published_date(published),
             })
 
     return candidates
@@ -1207,44 +1285,45 @@ def classify_candidate(candidate, page_text=""):
 def article_prompt(candidate, page_text):
 
     return f"""
-You are the content engine for AURA EXAM AI,
-an Indian competitive-exam current-affairs website.
+You are the content engine for AURA EXAM AI, an Indian competitive-exam current-affairs website.
 
-Create a concise, factually grounded current-affairs note ONLY
-from the supplied source material.
+Create a COMPREHENSIVE, SOURCE-FAITHFUL CURRENT-AFFAIRS BRIEF from the supplied source material.
+The goal is to help a student understand the complete important information in the news, not merely its headline.
 
-SOURCE-PRESERVATION RULES — VERY IMPORTANT:
-- Use only facts explicitly present in SOURCE TEXT.
-- Do not add generic background, definitions, advice, conclusions,
-  assumptions, or facts from your own knowledge.
-- Preserve every important number, date, place, name, category,
-  exception, threshold, list item and comparison from the source.
-- If SOURCE TEXT contains a bullet/numbered list, preserve the
-  important items in full rather than replacing them with a generic summary.
-- Do not omit important details merely to make the article shorter.
-- "full_article_text" must be a clean, readable summary of the source
-  and should contain the important details needed to understand the news.
-- "background_context" must be empty unless the supplied source itself
-  explicitly provides background context.
+COPYRIGHT / ORIGINAL-WORDING RULES — VERY IMPORTANT:
+- Do NOT reproduce the source article verbatim.
+- Do NOT copy long sentences or distinctive wording from the publisher.
+- Write the visible article in your own original wording.
+- Use the source only to identify and preserve facts.
+- Facts such as dates, names, numbers, places, events and public records are to be retained accurately.
+- Do not omit important facts merely to make the summary short.
+- Do not invent information from your general knowledge.
+
+COMPLETENESS RULES — VERY IMPORTANT:
+- Preserve all material facts needed to understand the event.
+- Pay special attention to lists, numbered items, tables, dates, statistics, amounts, names, places, exceptions, deadlines and comparisons.
+- If the source contains a list of dates/locations, retain the individual important entries rather than collapsing them into a vague sentence.
+- If the source contains a table, preserve its important rows/columns in readable wording.
+- The full_article_text should normally be several informative paragraphs for a substantial story, not a 2-3 sentence generic summary.
+- For a short/simple story, keep it appropriately shorter; never add filler just to increase length.
+
+CONTEXT / ANALYSIS RULES:
+- background_context: use ONLY context explicitly supplied by the source; otherwise return an empty string.
+- causes, impacts, challenges, government_steps and constitutional_or_policy_link: include only when directly supported by the source and materially relevant. Otherwise return an empty array.
+- exam_relevance, mains_notes and prelims_facts may interpret the supplied facts for exam preparation, but must not introduce unsupported factual claims.
 - Keep political coverage neutral and descriptive.
-- Never create facts just to fill a field.
 
 IMPORTANT CATEGORY RULES:
-
-1. "Exam Corner" is NOT a general category.
-2. Exam Corner is ONLY for Indian current affairs
-   having clear competitive-exam relevance.
-3. A normal India news story must remain "India".
-4. International news must be "World".
-5. Health news must be "Health".
-6. Science/technology news must be
-   "Science & Technology".
-7. Economy/finance news must be "Economy".
-8. Environment/climate/wildlife news must be
-   "Environment".
-9. Sports news must be "Sports".
-10. Do not change the category merely because
-    the article mentions India.
+1. Exam Corner is NOT a general category.
+2. Exam Corner is ONLY for Indian current affairs having clear competitive-exam relevance.
+3. A normal India news story remains India.
+4. International news is World.
+5. Health news is Health.
+6. Science/technology news is Science & Technology.
+7. Economy/finance news is Economy.
+8. Environment/climate/wildlife news is Environment.
+9. Sports news is Sports.
+10. Do not change the supplied classifier category merely because the article mentions India.
 
 The supplied classifier category is authoritative.
 
@@ -1254,63 +1333,55 @@ SOURCE:
 Publisher: {candidate['source_name']}
 Category: {candidate['category']}
 Exam Corner: {candidate.get('exam_corner', False)}
-Exam Score: {candidate.get('exam_score', 0)}
 Headline: {candidate['headline']}
+Publication date: {candidate.get('published_date', TODAY)}
 URL: {candidate['source_url']}
 
-SOURCE TEXT:
-{page_text[:14000]}
+SOURCE MATERIAL:
+{page_text[:18000]}
 
 Required JSON object:
-
 {{
   "category": "{candidate['category']}",
   "exam_corner": {str(bool(candidate.get('exam_corner', False))).lower()},
-  "headline": "clear factual headline",
-  "story_lead": "1-2 sentence summary using only source facts",
-  "full_article_text": "source-faithful concise article preserving all important dates, numbers, names, places, exceptions and list items",
-  "background_context": "ONLY source-stated background; otherwise empty string",
-  "bullet_points": ["4-8 source-supported key points; preserve important list details"],
-  "key_facts": ["source-supported facts only"],
-  "key_locations": ["only important places explicitly mentioned in source"],
-  "important_dates": ["only dates explicitly mentioned in source"],
-  "exam_relevance": ["Prelims/Mains relevance"],
-  "upsc_analysis": "balanced UPSC-oriented analysis",
-  "causes": ["causes/drivers supported by source"],
-  "impacts": ["major impacts"],
-  "challenges": ["challenges"],
-  "government_steps": ["government/institutional steps explicitly supported"],
-  "constitutional_or_policy_link": ["constitutional/policy links only when justified"],
-  "way_forward": ["practical way-forward points"],
-  "mains_notes": "compact Mains-ready notes",
-  "mains_questions": ["2-3 possible Mains questions"],
-  "takeaway": "one-line takeaway",
-  "prelims_facts": ["prelims facts"],
+  "headline": "clear factual headline in original wording",
+  "story_lead": "2-4 sentence original lead covering what happened and why it matters when supported",
+  "full_article_text": "comprehensive original current-affairs brief preserving the important facts, details, lists, dates, numbers, names, places, exceptions and comparisons from the source",
+  "background_context": "source-supported background only, or empty string",
+  "bullet_points": ["6-10 important source-supported points when the story has enough material"],
+  "key_facts": ["important factual details that a student should remember"],
+  "key_locations": ["important places explicitly mentioned"],
+  "important_dates": ["important dates explicitly mentioned, with the associated event when useful"],
+  "exam_relevance": ["specific Prelims/Mains relevance based on the supplied facts"],
+  "upsc_analysis": "balanced analysis only when the source provides enough material; otherwise concise factual significance",
+  "causes": ["source-supported causes/drivers only"],
+  "impacts": ["source-supported impacts only"],
+  "challenges": ["source-supported challenges only"],
+  "government_steps": ["government/institutional steps explicitly supported by the source"],
+  "constitutional_or_policy_link": ["links only when clearly justified by the supplied material"],
+  "way_forward": ["only if supported or directly framed as an exam-analysis inference from the supplied facts"],
+  "mains_notes": "compact but information-rich Mains-ready notes",
+  "mains_questions": ["2-3 original questions based specifically on this news"],
+  "takeaway": "one concise factual takeaway",
+  "prelims_facts": ["high-value factual points from the source"],
   "vocabulary": [
-    {{
-      "word": "important English word",
-      "meaning_hindi": "Hindi meaning"
-    }}
+    {{"word": "important English word", "meaning_hindi": "Hindi meaning"}}
   ],
   "related_entities": [
-    {{
-      "name": "person or place",
-      "type": "person or place",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=URL_ENCODED_NAME"
-    }}
+    {{"name": "person/place/organisation", "type": "person/place/organisation", "wikipedia_url": ""}}
   ],
   "hindi_translation": {{
     "headline": "Hindi headline",
     "story_lead": "Hindi translation of lead",
-    "full_article_text": "Hindi translation of the full article",
-    "background_context": "Hindi background",
+    "full_article_text": "Hindi translation of the complete original brief",
+    "background_context": "Hindi background or empty",
     "bullet_points": ["Hindi bullet points"],
     "key_facts": ["Hindi facts"],
-    "key_locations": ["Hindi names/places where appropriate"],
-    "important_dates": ["dates"]
+    "key_locations": ["Hindi locations"],
+    "important_dates": ["Hindi date/event entries"]
   }},
   "quiz": {{
-    "question": "one article-specific MCQ",
+    "question": "one article-specific MCQ based on an important fact",
     "options": ["A", "B", "C", "D"],
     "correct_answer": "exactly one option string",
     "explanation": "short factual explanation"
@@ -1357,7 +1428,9 @@ def normalize_generated(article, candidate):
     if article["category"] != "India":
         article["exam_corner"] = False
 
-    article["published_date"] = TODAY
+    article["published_date"] = candidate.get(
+        "published_date", TODAY
+    )
     article["content_version"] = CONTENT_VERSION
 
     for key in [
@@ -1532,7 +1605,8 @@ def needs_repair(article):
     )
 
     return (
-        int(article.get("content_version", 0) or 0) < CONTENT_VERSION
+        article.get("content_version", 0) < CONTENT_VERSION
+        or not article.get("full_article_text")
         or not isinstance(
             hindi,
             dict
@@ -1660,20 +1734,6 @@ def main():
         and needs_repair(a)
     ]
 
-    # Do not regenerate the whole archive in one workflow run.
-    # Legacy articles are upgraded gradually, while genuinely broken
-    # articles are always repaired first.
-    broken_targets = [
-        a for a in repair_targets
-        if int(a.get("content_version", 0) or 0) >= CONTENT_VERSION
-    ]
-    legacy_targets = [
-        a for a in repair_targets
-        if int(a.get("content_version", 0) or 0) < CONTENT_VERSION
-    ]
-    repair_targets = broken_targets + legacy_targets[:REBUILD_LEGACY_LIMIT]
-
-
     print(
         f"Existing articles: "
         f"{len(existing_news)} | "
@@ -1704,8 +1764,6 @@ def main():
                 ""
             )
 
-        legacy_rebuild = int(article.get("content_version", 0) or 0) < CONTENT_VERSION
-
         candidate = {
             "source_name": article.get(
                 "source_name",
@@ -1724,6 +1782,7 @@ def main():
                 "Current Affairs"
             ),
             "source_url": source_url,
+            "published_date": article.get("published_date") or TODAY,
         }
 
         # Reclassify repaired article.
@@ -1759,38 +1818,9 @@ def main():
                 )
             )
 
-            # For legacy articles, replace the old AI-generated content
-            # completely. The old version was created before list-item
-            # extraction was fixed, so merely filling missing fields would
-            # leave the incomplete article unchanged.
-            rebuild_fields = {
-                "headline",
-                "story_lead",
-                "full_article_text",
-                "background_context",
-                "bullet_points",
-                "key_facts",
-                "key_locations",
-                "important_dates",
-                "exam_relevance",
-                "upsc_analysis",
-                "causes",
-                "impacts",
-                "challenges",
-                "government_steps",
-                "constitutional_or_policy_link",
-                "way_forward",
-                "mains_notes",
-                "mains_questions",
-                "takeaway",
-                "prelims_facts",
-                "vocabulary",
-                "related_entities",
-                "hindi_translation",
-                "quiz",
-            }
-
+            # Preserve existing rich fields.
             for key, value in generated.items():
+
                 if key in {
                     "source_name",
                     "source_url",
@@ -1799,11 +1829,12 @@ def main():
                     "id",
                     "image_url",
                     "exam_corner",
-                    "content_version",
                 }:
                     continue
 
-                if legacy_rebuild and key in rebuild_fields:
+                # A content-version rebuild is intentionally allowed to replace
+                # old AI summaries with the improved, more complete format.
+                if article.get("content_version", 0) < CONTENT_VERSION:
                     article[key] = value
                 elif not article.get(key):
                     article[key] = value
@@ -1811,7 +1842,6 @@ def main():
             article["category"] = candidate[
                 "category"
             ]
-            article["content_version"] = CONTENT_VERSION
 
             article["exam_corner"] = bool(
                 candidate.get(
@@ -2111,7 +2141,9 @@ def main():
         article["id"] = next_id
         next_id += 1
 
-        article["published_date"] = TODAY
+        article["published_date"] = candidate.get(
+            "published_date", TODAY
+        )
         article["content_version"] = CONTENT_VERSION
 
         article["source_url"] = candidate[
@@ -2340,6 +2372,11 @@ def main():
             article[
                 "exam_corner"
             ] = False
+
+    # Mark every successfully processed article with the current content version.
+    for article in existing_news:
+        if isinstance(article, dict):
+            article["content_version"] = CONTENT_VERSION
 
     # ========================================================
     # NEWEST FIRST

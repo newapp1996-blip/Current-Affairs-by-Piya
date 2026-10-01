@@ -304,6 +304,73 @@
         }
 
         /* =================================================
+           NEWS SEARCH
+           ================================================= */
+
+        .search-bar {
+            background: white;
+            border-radius: 10px;
+            padding: 12px 15px;
+            margin-bottom: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .search-bar input,
+        .search-bar select {
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 9px 10px;
+            background: white;
+            outline: none;
+        }
+
+        .search-bar input {
+            flex: 1 1 260px;
+            min-width: 180px;
+        }
+
+        .search-bar input:focus,
+        .search-bar select:focus {
+            border-color: #b30000;
+        }
+
+        .search-btn,
+        .clear-search-btn {
+            border: none;
+            border-radius: 6px;
+            padding: 9px 13px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        .search-btn {
+            background: #b30000;
+            color: white;
+        }
+
+        .clear-search-btn {
+            background: #eee;
+            color: #444;
+        }
+
+        .search-info {
+            width: 100%;
+            font-size: 12px;
+            color: #666;
+            margin-top: 2px;
+        }
+
+        .search-result-date {
+            font-weight: 800;
+            color: #b30000;
+        }
+
+
+        /* =================================================
            MOTIVATION
            ================================================= */
 
@@ -1454,6 +1521,40 @@
 
 
     <!-- =====================================================
+         NEWS SEARCH
+         ===================================================== -->
+
+    <div class="search-bar">
+
+        <input
+            id="newsSearchInput"
+            type="search"
+            placeholder="Search current affairs by topic, person, place, date or keyword..."
+            autocomplete="off"
+            onkeydown="if(event.key === 'Enter') searchNews()"
+        >
+
+        <select id="newsSearchScope" title="Search scope">
+            <option value="today">Today's News</option>
+            <option value="all">Whole Database</option>
+        </select>
+
+        <button class="search-btn" onclick="searchNews()">
+            🔎 Search
+        </button>
+
+        <button class="clear-search-btn" onclick="clearNewsSearch()">
+            Clear
+        </button>
+
+        <div id="searchInfo" class="search-info">
+            Search today's news or the complete archived database. Publication date is shown with every result.
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
          MOTIVATION
          ===================================================== -->
 
@@ -1845,7 +1946,7 @@
                 id="tab-overview"
             >
 
-                <div class="article-section" id="storySection">
+                <div class="article-section">
 
                     <h3>
                         Story
@@ -1858,10 +1959,10 @@
                 </div>
 
 
-                <div class="article-section" id="articleTextSection">
+                <div class="article-section">
 
                     <h3>
-                        Important News Details
+                        Important News Brief
                     </h3>
 
                     <div id="articleText">
@@ -1871,7 +1972,7 @@
                 </div>
 
 
-                <div class="article-section" id="backgroundSection">
+                <div class="article-section">
 
                     <h3>
                         Background Context
@@ -1884,7 +1985,7 @@
                 </div>
 
 
-                <div class="article-section" id="keyPointsSection">
+                <div class="article-section">
 
                     <h3>
                         Key Points
@@ -1899,7 +2000,7 @@
                 </div>
 
 
-                <div class="article-section" id="keyFactsSection">
+                <div class="article-section">
 
                     <h3>
                         Key Facts
@@ -1914,7 +2015,7 @@
                 </div>
 
 
-                <div class="article-section" id="keyLocationsSection">
+                <div class="article-section">
 
                     <h3>
                         Key Locations
@@ -1929,7 +2030,7 @@
                 </div>
 
 
-                <div class="article-section" id="relatedEntitiesSection">
+                <div class="article-section">
 
                     <h3>
                         People & Places
@@ -1944,7 +2045,7 @@
                 </div>
 
 
-                <div class="article-section" id="importantDatesSection">
+                <div class="article-section">
 
                     <h3>
                         Important Dates
@@ -2285,7 +2386,15 @@
        GLOBAL VARIABLES
        ======================================================= */
 
-    let globalPayload = null;
+        /* =======================================================
+       NEWS SEARCH STATE
+       ======================================================= */
+
+    let searchCache = {};
+    let searchModeActive = false;
+
+
+let globalPayload = null;
 
     let currentData = null;
 
@@ -2890,6 +2999,7 @@
             }
 
             currentData = data;
+            if (date) searchCache[date] = Array.isArray(data.news) ? data.news : [];
 
             document
                 .getElementById(
@@ -3033,6 +3143,193 @@
                 .toLowerCase()
         );
 
+    }
+
+
+    /* =======================================================
+       NEWS SEARCH
+       ======================================================= */
+
+    function normalizeSearchText(value) {
+        return String(value || "")
+            .toLowerCase()
+            .normalize("NFKD")
+            .replace(/[\u0300-\u036f]/g, "");
+    }
+
+
+    function articleSearchBlob(article) {
+        const arrays = [
+            article?.bullet_points,
+            article?.key_facts,
+            article?.key_locations,
+            article?.important_dates,
+            article?.exam_relevance,
+            article?.prelims_facts
+        ];
+
+        return normalizeSearchText([
+            article?.headline,
+            article?.story_lead,
+            article?.full_article_text,
+            article?.background_context,
+            article?.source_name,
+            article?.published_date,
+            ...arrays.flatMap(a => Array.isArray(a) ? a : [])
+        ].join(" "));
+    }
+
+
+    async function fetchDateNews(date) {
+        if (!date) return [];
+
+        if (date === globalPayload?.current_date && globalPayload?.today) {
+            return Array.isArray(globalPayload.today.news) ? globalPayload.today.news : [];
+        }
+
+        if (searchCache[date]) return searchCache[date];
+
+        try {
+            const response = await fetch(
+                "data/" + encodeURIComponent(date) + ".json?cache=" + Date.now()
+            );
+            if (!response.ok) return [];
+            const data = await response.json();
+            const news = Array.isArray(data.news) ? data.news : [];
+            searchCache[date] = news;
+            return news;
+        } catch (error) {
+            console.warn("Search could not load", date, error);
+            return [];
+        }
+    }
+
+
+    async function searchNews() {
+        const input = document.getElementById("newsSearchInput");
+        const scope = document.getElementById("newsSearchScope")?.value || "today";
+        const info = document.getElementById("searchInfo");
+        const container = document.getElementById("newsContainer");
+        const query = normalizeSearchText(input?.value);
+
+        if (query.length < 2) {
+            info.textContent = "Enter at least 2 characters to search.";
+            input?.focus();
+            return;
+        }
+
+        searchModeActive = true;
+        container.innerHTML = '<div class="status-box">Searching current affairs...</div>';
+        info.textContent = scope === "today"
+            ? "Searching today's news..."
+            : "Searching the complete archived database...";
+
+        let dates = [];
+        if (scope === "today") {
+            dates = [globalPayload?.current_date || currentData?.date].filter(Boolean);
+        } else {
+            dates = Array.isArray(globalPayload?.available_dates)
+                ? [...globalPayload.available_dates]
+                : [];
+        }
+
+        const results = [];
+
+        // Fetch archive files in small batches to avoid opening a large
+        // number of simultaneous requests on GitHub Pages.
+        for (let i = 0; i < dates.length; i += 8) {
+            const batch = dates.slice(i, i + 8);
+            const datasets = await Promise.all(batch.map(fetchDateNews));
+
+            datasets.forEach((news, batchIndex) => {
+                const date = batch[batchIndex];
+                news.forEach(article => {
+                    if (articleSearchBlob(article).includes(query)) {
+                        results.push({ article, date });
+                    }
+                });
+            });
+        }
+
+        results.sort((a, b) => {
+            const da = String(a.article.published_date || a.date || "");
+            const db = String(b.article.published_date || b.date || "");
+            return db.localeCompare(da);
+        });
+
+        container.innerHTML = "";
+
+        if (!results.length) {
+            container.innerHTML = `
+                <div class="status-box">
+                    No news found for <strong>${escapeHTML(input.value)}</strong>.
+                </div>
+            `;
+            info.textContent = scope === "today"
+                ? "No matching article found in today's news."
+                : "No matching article found in the complete database.";
+            return;
+        }
+
+        results.forEach(({article, date}) => {
+            container.appendChild(createSearchResultCard(article, date));
+        });
+
+        info.innerHTML =
+            "Found <strong>" + results.length + "</strong> matching article" +
+            (results.length === 1 ? "" : "s") +
+            ". Publication date is shown on each result.";
+    }
+
+
+    function createSearchResultCard(article, date) {
+        const card = document.createElement("article");
+        card.className = "news-card";
+        card.onclick = () => openSearchResult(article, date);
+
+        const image = article.image_url ||
+            "https://images.unsplash.com/photo-1495020689067-958852a7765e";
+        const category = article.category || "Current Affairs";
+        const headline = article.headline || "Current Affairs";
+        const lead = article.story_lead || article.full_article_text ||
+            "Click to read the complete analysis.";
+        const published = article.published_date || date || "";
+
+        card.innerHTML = `
+            <img class="news-image" src="${escapeHTML(image)}" alt="${escapeHTML(headline)}" loading="lazy" onerror="this.style.display='none'">
+            <div class="news-body">
+                <div class="news-meta">
+                    <span class="category-badge">${escapeHTML(category)}</span>
+                    <span class="news-number">#${escapeHTML(article.id)}</span>
+                </div>
+                <h3 class="news-title">${escapeHTML(headline)}</h3>
+                <p class="news-lead">${escapeHTML(truncateText(lead, 180))}</p>
+                <div class="news-source">
+                    <span>${escapeHTML(article.source_name || "News Source")}</span>
+                    <span class="search-result-date">Published: ${escapeHTML(formatDate(published))}</span>
+                </div>
+            </div>
+        `;
+
+        return card;
+    }
+
+
+    async function openSearchResult(article, date) {
+        searchModeActive = false;
+        await loadDateData(date);
+        openFullArticle(article.id);
+    }
+
+
+    function clearNewsSearch() {
+        const input = document.getElementById("newsSearchInput");
+        const info = document.getElementById("searchInfo");
+        if (input) input.value = "";
+        searchModeActive = false;
+        info.textContent = "Search today's news or the complete archived database. Publication date is shown with every result.";
+        currentPage = 1;
+        renderNews();
     }
 
 
@@ -3389,32 +3686,6 @@
        ARTICLE LANGUAGE + VOICE
        ======================================================= */
 
-    function setOverviewSectionVisible(sectionId, visible) {
-        const section = document.getElementById(sectionId);
-        if (section) {
-            section.style.display = visible ? "" : "none";
-        }
-    }
-
-
-    function updateOverviewSectionVisibility(data) {
-        const hasText = value =>
-            typeof value === "string" && value.trim().length > 0;
-
-        const hasArray = value =>
-            Array.isArray(value) && value.some(item => String(item || "").trim());
-
-        setOverviewSectionVisible("storySection", hasText(data.story_lead));
-        setOverviewSectionVisible("articleTextSection", hasText(data.full_article_text));
-        setOverviewSectionVisible("backgroundSection", hasText(data.background_context));
-        setOverviewSectionVisible("keyPointsSection", hasArray(data.bullet_points));
-        setOverviewSectionVisible("keyFactsSection", hasArray(data.key_facts));
-        setOverviewSectionVisible("keyLocationsSection", hasArray(data.key_locations));
-        setOverviewSectionVisible("relatedEntitiesSection", hasArray(data.related_entities));
-        setOverviewSectionVisible("importantDatesSection", hasArray(data.important_dates));
-    }
-
-
     function getHindiTranslation(article) {
         const t = article?.hindi_translation;
 
@@ -3479,19 +3750,13 @@
                 ) +
                 "</p>";
 
-            const hindiOverview = {
-                story_lead: hindi.story_lead || currentArticleForModal.story_lead || "",
-                full_article_text: hindi.full_article_text || currentArticleForModal.full_article_text || "",
-                background_context: hindi.background_context || currentArticleForModal.background_context || "",
-                bullet_points: Array.isArray(hindi.bullet_points) ? hindi.bullet_points : [],
-                key_facts: Array.isArray(hindi.key_facts) ? hindi.key_facts : [],
-                key_locations: Array.isArray(hindi.key_locations) ? hindi.key_locations : [],
-                related_entities: currentArticleForModal.related_entities || [],
-                important_dates: Array.isArray(hindi.important_dates) ? hindi.important_dates : []
-            };
-
-            document.getElementById("backgroundContext").textContent =
-                hindiOverview.background_context;
+            const hindiBackground =
+                hindi.background_context ||
+                currentArticleForModal.background_context ||
+                "";
+            document.getElementById("backgroundContext").textContent = hindiBackground;
+            const hindiBackgroundSection = document.getElementById("backgroundContext")?.closest(".article-section");
+            if (hindiBackgroundSection) hindiBackgroundSection.style.display = hindiBackground.trim() ? "" : "none";
 
             document.getElementById("overviewBullets").innerHTML =
                 arrayToList(hindi.bullet_points);
@@ -3508,8 +3773,6 @@
             renderRelatedEntities(
                 currentArticleForModal.related_entities || []
             );
-
-            updateOverviewSectionVisibility(hindiOverview);
 
             document.getElementById("hindiBtn").classList.add("active");
             document.getElementById("englishBtn").classList.remove("active");
@@ -3552,9 +3815,10 @@
             ) +
             "</p>";
 
-        document.getElementById("backgroundContext").textContent =
-            article.background_context ||
-            "";
+        const background = article.background_context || "";
+        document.getElementById("backgroundContext").textContent = background;
+        const backgroundSection = document.getElementById("backgroundContext")?.closest(".article-section");
+        if (backgroundSection) backgroundSection.style.display = background.trim() ? "" : "none";
 
         document.getElementById("overviewBullets").innerHTML =
             arrayToList(article.bullet_points);
@@ -3571,17 +3835,6 @@
         renderRelatedEntities(
             article.related_entities || []
         );
-
-        updateOverviewSectionVisibility({
-            story_lead: article.story_lead || "",
-            full_article_text: article.full_article_text || "",
-            background_context: article.background_context || "",
-            bullet_points: article.bullet_points || [],
-            key_facts: article.key_facts || [],
-            key_locations: article.key_locations || [],
-            related_entities: article.related_entities || [],
-            important_dates: article.important_dates || []
-        });
     }
 
 
