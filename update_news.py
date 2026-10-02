@@ -23,7 +23,7 @@ from google import genai
 # 3. Classify the article correctly
 # 4. Keep India / World / Sports / Science / Economy /
 #    Environment / Health categories separate
-# 5. Exam Corner contains ONLY high-value exam-relevant news
+# 5. Exam Corner contains ONLY high-value competitive-exam current affairs across relevant categories
 # 6. Generate exam-oriented study material using Gemini
 # 7. Preserve existing articles
 # 8. Repair missing quiz / Hindi / entities
@@ -48,299 +48,119 @@ CONTENT_VERSION = 2
 REBUILD_LEGACY_LIMIT = 10
 
 MAX_CANDIDATES_PER_SOURCE = 25
-REQUEST_TIMEOUT = 15
+REQUEST_TIMEOUT = 10
+
+# The workflow runs every 3 hours. Keep Gemini usage bounded per run.
+GEMINI_BATCH_SIZE = 8
+MAX_GEMINI_BATCHES_PER_RUN = 2
+MAX_ARTICLES_PER_RUN = 16
+MAX_REPAIR_ARTICLES_PER_RUN = 2
+GEMINI_QUOTA_EXHAUSTED = False
 
 
 # ============================================================
-# EXAM CORNER RELEVANCE SIGNALS
-# ============================================================
-# Exam Corner is a CROSS-CATEGORY filter.
-# It is designed to capture current affairs that can reasonably become
-# competitive-exam questions or UPSC-style issue topics.
-#
-# The classifier looks for two broad types of value:
-# 1. PRELIMS / ONE-LINER FACTS
-# 2. UPSC MAINS / ISSUE-BASED DEVELOPMENTS
-#
-# It deliberately does NOT require words such as "UPSC" or "exam".
+# EXAM CORNER KEYWORDS
+# ------------------------------------------------------------
+# IMPORTANT:
+# These are NOT enough by themselves.
+# Exam Corner is a cross-category filter and also requires
+# strong exam relevance to cross the threshold.
 # ============================================================
 
-EXAM_FACT_HIGH = (
-    "award",
-    "awards",
-    "honour",
-    "honor",
-    "prize",
-    "lifetime achievement",
-    "appointed",
-    "appointed as",
-    "elected as",
-    "first woman",
-    "first female",
-    "first indian",
-    "first-ever",
-    "first ever",
-    "historic record",
-    "world record",
-    "record",
-    "gi tag",
-    "geographical indication",
-    "scheme",
-    "yojana",
-    "mission",
-    "initiative",
-    "programme",
-    "program",
-    "portal",
-    "launched",
-    "unveiled",
-    "cabinet approved",
-    "cabinet approves",
-    "report",
-    "index",
-    "ranking",
-    "ranked",
-    "survey",
-    "census",
-    "conference",
-    "convention",
-    "summit",
-    "assembly",
-    "declaration",
-    "treaty",
-    "agreement",
-    "international day",
-    "world day",
-    "anniversary",
-    "centenary",
-    "100 years",
-    "headquarters",
-    "venue",
-    "first warning system",
-    "early warning system",
-)
-
-EXAM_INSTITUTIONS = (
+EXAM_HIGH_VALUE = (
     "upsc",
-    "union public service commission",
-    "rbi",
-    "reserve bank of india",
-    "sebi",
-    "uidai",
-    "niti aayog",
-    "election commission",
-    "supreme court",
-    "high court",
-    "parliament",
-    "lok sabha",
-    "rajya sabha",
-    "cabinet",
-    "ministry",
-    "finance commission",
-    "gst council",
-    "isro",
-    "drdo",
-    "fao",
-    "unesco",
-    "who",
-    "wto",
-    "imf",
-    "world bank",
-    "united nations",
-    "un general assembly",
-    "un security council",
-    "fao",
-    "icc",
-    "nato",
-    "asean",
-    "brics",
-    "sco",
-    "g20",
-)
-
-EXAM_GOVERNANCE_POLICY = (
-    "government policy",
-    "government scheme",
-    "government initiative",
-    "government programme",
-    "government program",
-    "policy",
-    "bill",
-    "act",
-    "ordinance",
-    "regulation",
-    "regulatory",
-    "constitutional",
-    "constitution",
-    "judiciary",
-    "judicial",
-    "governance",
-    "electoral",
-    "election",
-    "voter",
-    "representation of the people",
-    "public administration",
     "civil services",
+    "ssc",
+    "ibps",
+    "rbi",
+    "sebi",
+    "niti aayog",
+    "supreme court",
+    "parliament",
+    "cabinet",
+    "union cabinet",
+    "ministry",
+    "government scheme",
+    "yojana",
+    "policy",
+    "act",
+    "bill",
+    "constitution",
+    "constitutional",
+    "amendment",
     "committee",
     "commission",
-    "authority",
-    "mission",
-    "infrastructure project",
-)
-
-EXAM_ECONOMY = (
-    "rbi",
-    "sebi",
-    "gdp",
-    "inflation",
+    "report",
+    "economic survey",
+    "union budget",
+    "budget 202",
+    "census",
+    "election commission",
+    "finance commission",
+    "gst council",
     "monetary policy",
     "fiscal policy",
-    "budget",
-    "interest rate",
-    "repo rate",
-    "banking",
-    "finance ministry",
-    "tax",
-    "gst",
-    "trade agreement",
-    "free trade agreement",
-    "investment",
-    "employment",
-    "unemployment",
-    "energy",
-    "renewable energy",
-    "semiconductor",
-    "manufacturing",
-    "inclusive growth",
-)
-
-EXAM_ENVIRONMENT = (
-    "climate change",
-    "climate",
-    "sea-level rise",
-    "sea level rise",
-    "biodiversity",
-    "wildlife",
-    "conservation",
-    "forest",
-    "national park",
-    "wildlife sanctuary",
-    "tiger reserve",
-    "lion",
-    "elephant",
-    "wetland",
-    "ramsar",
-    "glacier",
-    "glacial lake",
-    "glacial lakes",
-    "pollution",
-    "air quality",
-    "aqi",
-    "pm2.5",
-    "pm10",
-    "el niño",
-    "el nino",
-    "monsoon",
-    "disaster management",
-    "green energy corridor",
-    "circular economy",
-)
-
-EXAM_SCIENCE = (
-    "isro",
-    "drdo",
-    "space",
-    "satellite",
-    "rocket",
-    "launch vehicle",
-    "netra",
-    "artificial intelligence",
-    "ai governance",
-    "machine learning",
-    "robot",
-    "robotics",
-    "semiconductor",
-    "quantum",
-    "biotechnology",
-    "biotech",
-    "brain organoid",
-    "organoid",
-    "genome",
-    "genomics",
-    "gene editing",
-    "vaccine",
-    "researchers",
-    "scientific",
-    "deepfake",
-    "cybersecurity",
-    "cyber security",
-)
-
-EXAM_WORLD_IR = (
-    "united nations",
-    "un general assembly",
-    "un security council",
     "foreign policy",
     "international relations",
-    "diplomatic",
+    "defence",
+    "defense",
+    "military exercise",
+    "armed forces",
+    "missile",
+    "border",
     "summit",
     "treaty",
     "agreement",
-    "declaration",
-    "bilateral",
-    "multilateral",
-    "border dispute",
-    "china",
-    "russia",
-    "united states",
-    "european union",
-    "nato",
+    "index",
+    "ranking",
+    "g20",
     "brics",
     "sco",
     "asean",
-    "g20",
-    "small island developing states",
-    "sids",
-    "unclos",
+    "united nations",
+    "world bank",
+    "imf",
+    "unesco",
+    "wto",
+    "cop30",
+    "environment agreement",
 )
 
-EXAM_SPORTS_MAJOR = (
-    "olympics",
-    "asian games",
-    "paralympics",
-    "world cup",
-    "world championship",
-    "championship",
-    "olympiad",
-    "major tournament",
-    "gold medal",
-    "silver medal",
-    "bronze medal",
-    "world record",
-    "record",
-    "historic",
-    "clean sweep",
-    "fastest",
-    "youngest",
-    "ranked",
-    "ranking",
+EXAM_MEDIUM = (
+    "appointment",
+    "ordinance",
+    "judiciary",
+    "high court",
+    "supreme court",
+    "lok sabha",
+    "rajya sabha",
+    "rajya sabha",
+    "ministry of finance",
+    "ministry of defence",
+    "ministry of external affairs",
+    "ministry of home affairs",
+    "ministry of education",
+    "ministry of environment",
+    "ministry of health",
+    "central government",
+    "state government",
+    "regulator",
+    "regulatory",
+    "commission",
+    "authority",
+    "national mission",
+    "national programme",
+    "national program",
+    "scheme",
+    "initiative",
+    "portal",
+    "infrastructure project",
+    "defence deal",
+    "defense deal",
+    "trade agreement",
+    "free trade agreement",
+    "fta",
 )
-
-EXAM_IMPORTANT_DAYS = (
-    "international day",
-    "world day",
-    "gandhi jayanti",
-    "constitution day",
-    "republic day",
-    "independence day",
-    "national science day",
-    "international yoga day",
-    "world environment day",
-)
-
-# Short aliases retained for compatibility with older code/repair data.
-EXAM_HIGH_VALUE = EXAM_FACT_HIGH + EXAM_INSTITUTIONS + EXAM_GOVERNANCE_POLICY
-EXAM_MEDIUM = EXAM_ECONOMY + EXAM_ENVIRONMENT + EXAM_SCIENCE + EXAM_WORLD_IR + EXAM_SPORTS_MAJOR + EXAM_IMPORTANT_DAYS
 
 
 # ============================================================
@@ -563,43 +383,6 @@ RSS_SOURCES = [
         "Google News Health India",
         "Health",
         "https://news.google.com/rss/search?q=India%20health%20when%3A1d&hl=en-IN&gl=IN&ceid=IN%3Aen",
-    ),
-    # Dedicated competitive-exam feeds. These improve recall for schemes,
-    # institutions, economy, science, environment and international affairs.
-    (
-        "Google News Government Policy",
-        "India",
-        "https://news.google.com/rss/search?q=India%20government%20policy%20scheme%20ministry%20initiative%20when%3A1d&hl=en-IN&gl=IN&ceid=IN%3Aen",
-    ),
-    (
-        "Google News Awards Appointments",
-        "India",
-        "https://news.google.com/rss/search?q=India%20award%20appointment%20honour%20first%20when%3A1d&hl=en-IN&gl=IN&ceid=IN%3Aen",
-    ),
-    (
-        "Google News Economy Exam",
-        "Economy",
-        "https://news.google.com/rss/search?q=India%20RBI%20SEBI%20economy%20budget%20GDP%20inflation%20energy%20employment%20when%3A1d&hl=en-IN&gl=IN&ceid=IN%3Aen",
-    ),
-    (
-        "Google News Science Exam",
-        "Science & Technology",
-        "https://news.google.com/rss/search?q=India%20ISRO%20DRDO%20science%20technology%20space%20AI%20semiconductor%20biotechnology%20when%3A1d&hl=en-IN&gl=IN&ceid=IN%3Aen",
-    ),
-    (
-        "Google News Environment Exam",
-        "Environment",
-        "https://news.google.com/rss/search?q=India%20environment%20climate%20biodiversity%20wildlife%20forest%20glacier%20when%3A1d&hl=en-IN&gl=IN&ceid=IN%3Aen",
-    ),
-    (
-        "Google News International Exam",
-        "World",
-        "https://news.google.com/rss/search?q=India%20international%20relations%20UN%20summit%20treaty%20declaration%20BRICS%20G20%20when%3A1d&hl=en-IN&gl=IN&ceid=IN%3Aen",
-    ),
-    (
-        "Google News Important Days",
-        "India",
-        "https://news.google.com/rss/search?q=India%20%22International%20Day%22%20OR%20%22World%20Day%22%20anniversary%20when%3A1d&hl=en-IN&gl=IN&ceid=IN%3Aen",
     ),
 ]
 
@@ -1070,44 +853,31 @@ def parse_json_response(text):
 
 
 def call_gemini(client, prompt):
-
+    global GEMINI_QUOTA_EXHAUSTED
+    if GEMINI_QUOTA_EXHAUSTED:
+        raise RuntimeError("Gemini quota already exhausted for this run.")
     last_error = None
-
     for model in GEMINI_MODELS:
-
         try:
-
             response = client.models.generate_content(
                 model=model,
                 contents=prompt,
-                config={
-                    "response_mime_type": "application/json",
-                    "temperature": 0.2,
-                },
+                config={"response_mime_type": "application/json", "temperature": 0.2},
             )
-
-            text = getattr(
-                response,
-                "text",
-                None
-            )
-
-            if text:
-                return parse_json_response(text)
-
+            response_text = getattr(response, "text", None)
+            if response_text:
+                return parse_json_response(response_text)
+            last_error = RuntimeError(f"Gemini {model} returned empty response")
         except Exception as exc:
-
             last_error = exc
-
-            print(
-                f"Gemini {model} failed: {exc}"
-            )
-
-            time.sleep(1)
-
-    raise RuntimeError(
-        f"All Gemini models failed: {last_error}"
-    )
+            msg = str(exc)
+            if ("429" in msg or "RESOURCE_EXHAUSTED" in msg or
+                    "quota" in msg.lower() or "rate limit" in msg.lower()):
+                GEMINI_QUOTA_EXHAUSTED = True
+                print(f"GEMINI QUOTA EXHAUSTED: {exc}")
+                raise RuntimeError("Gemini free-tier quota exhausted.") from exc
+            print(f"Gemini {model} failed: {exc}")
+    raise RuntimeError(f"All Gemini models failed: {last_error}")
 
 
 # ============================================================
@@ -1163,12 +933,11 @@ def is_india_focused(text):
 
 
 def exam_corner_score(title, text, category):
-    """Return a broad but selective competitive-exam relevance score.
+    """Score competitive-exam relevance across major categories.
 
-    Exam Corner is deliberately independent of the primary category.
-    The score combines factual one-liner potential with UPSC-style issue
-    relevance. Sports receives a stricter treatment so ordinary match news
-    does not flood Exam Corner.
+    Exam Corner is a FILTER, not a separate primary category. An article
+    can therefore remain Science & Technology, Economy, Environment, Health,
+    Sports, World, or India while also appearing in Exam Corner.
     """
 
     allowed_categories = {
@@ -1184,448 +953,260 @@ def exam_corner_score(title, text, category):
     if category not in allowed_categories:
         return 0
 
-    title_blob = clean_text(title).lower()
-    body_blob = clean_text(text)[:10000].lower()
-    combined = title_blob + " " + body_blob
+    title_lower = title.lower()
+    combined = (
+        title_lower
+        + " "
+        + title_lower
+        + " "
+        + text[:8000].lower()
+    )
 
-    score = 0
+    high = count_matches(combined, EXAM_HIGH_VALUE)
+    medium = count_matches(combined, EXAM_MEDIUM)
+    title_high = count_matches(title_lower, EXAM_HIGH_VALUE)
+    title_medium = count_matches(title_lower, EXAM_MEDIUM)
 
-    # --------------------------------------------------------
-    # 1. Factual / one-liner potential
-    # --------------------------------------------------------
-    fact_hits = count_matches(combined, EXAM_FACT_HIGH)
-    institution_hits = count_matches(combined, EXAM_INSTITUTIONS)
-    governance_hits = count_matches(combined, EXAM_GOVERNANCE_POLICY)
+    score = (
+        high * 3
+        + medium
+        + title_high * 3
+        + title_medium * 2
+    )
 
-    score += fact_hits * 3
-    score += institution_hits * 3
-    score += governance_hits * 2
+    # Category-specific exam-value signals.
+    category_boosts = {
+        "Science & Technology": (
+            "isro", "drdo", "csir", "semiconductor", "quantum",
+            "artificial intelligence", "machine learning", "satellite",
+            "space mission", "missile", "biotechnology", "genome",
+            "nuclear", "robotics", "5g", "6g", "cybersecurity",
+            "scientific research", "innovation", "launch vehicle",
+        ),
+        "Economy": (
+            "rbi", "sebi", "cbdc", "digital rupee", "upi", "gdp",
+            "inflation", "repo rate", "monetary policy", "fiscal policy",
+            "budget", "gst", "economic survey", "world bank", "imf",
+            "trade agreement", "fdi", "banking", "blue financing",
+        ),
+        "Environment": (
+            "climate", "biodiversity", "forest", "wildlife", "wetland",
+            "national park", "tiger reserve", "ram sar", "unesco",
+            "carbon market", "carbon credit", "emission", "conservation",
+            "environment act", "wildlife act", "forest certification",
+            "green credit", "climate agreement", "cop30",
+        ),
+        "Health": (
+            "who", "unicef", "sanitation", "vaccination", "vaccine",
+            "public health", "pandemic", "epidemic", "nutrition",
+            "disease", "health report", "global health",
+        ),
+        "Sports": (
+            "olympic", "paralympic", "world cup", "asian games",
+            "commonwealth games", "championship", "medal", "fifa",
+            "icc", "world athletics", "badminton", "tennis", "hockey",
+        ),
+        "World": (
+            "united nations", "unesco", "who", "unicef", "world bank",
+            "imf", "wto", "g20", "g7", "brics", "asean", "nato",
+            "international agreement", "treaty", "summit", "global report",
+        ),
+        "India": (
+            "ministry", "government scheme", "yojana", "act", "bill",
+            "constitution", "amendment", "committee", "commission",
+            "cabinet", "parliament", "rbi", "sebi", "niti aayog",
+        ),
+    }
 
-    # Headline facts matter more because the headline usually contains the
-    # event that would become the question.
-    title_fact_hits = count_matches(title_blob, EXAM_FACT_HIGH)
-    title_institution_hits = count_matches(title_blob, EXAM_INSTITUTIONS)
-    title_governance_hits = count_matches(title_blob, EXAM_GOVERNANCE_POLICY)
+    boost_terms = category_boosts.get(category, ())
+    category_hits = count_matches(combined, boost_terms)
 
-    score += title_fact_hits * 4
-    score += title_institution_hits * 4
-    score += title_governance_hits * 3
-
-    # --------------------------------------------------------
-    # 2. UPSC-style issue relevance
-    # --------------------------------------------------------
-    economy_hits = count_matches(combined, EXAM_ECONOMY)
-    environment_hits = count_matches(combined, EXAM_ENVIRONMENT)
-    science_hits = count_matches(combined, EXAM_SCIENCE)
-    world_hits = count_matches(combined, EXAM_WORLD_IR)
-
-    score += economy_hits * 2
-    score += environment_hits * 2
-    score += science_hits * 2
-    score += world_hits * 2
-
-    # --------------------------------------------------------
-    # 3. Category-specific boosts
-    # --------------------------------------------------------
-    if category == "Sports":
-        major_sports_hits = count_matches(
-            combined,
-            EXAM_SPORTS_MAJOR
-        )
-        title_major_sports_hits = count_matches(
-            title_blob,
-            EXAM_SPORTS_MAJOR
-        )
-
-        # Ordinary match reports should not qualify simply because they
-        # contain words such as cricket, match or tournament.
-        if major_sports_hits == 0:
-            return 0
-
-        score += major_sports_hits * 3
-        score += title_major_sports_hits * 5
-
-    elif category == "Environment":
-        score += count_matches(combined, EXAM_ENVIRONMENT) * 2
-
-    elif category == "Science & Technology":
-        score += count_matches(combined, EXAM_SCIENCE) * 2
-
-    elif category == "Economy":
-        score += count_matches(combined, EXAM_ECONOMY) * 2
-
-    elif category == "World":
-        score += count_matches(combined, EXAM_WORLD_IR) * 2
-
-    elif category == "Health":
-        # Health is included when the development has research, public
-        # health, biotechnology, policy or institutional significance.
-        health_signals = (
-            "public health",
-            "health policy",
-            "healthcare",
-            "health system",
-            "disease outbreak",
-            "vaccine",
-            "vaccination",
-            "biotechnology",
-            "biotech",
-            "medical research",
-            "clinical trial",
-            "who",
-        )
-        health_hits = count_matches(combined, health_signals)
-        score += health_hits * 3
-
-    # --------------------------------------------------------
-    # 4. Important days / anniversaries
-    # --------------------------------------------------------
-    day_hits = count_matches(combined, EXAM_IMPORTANT_DAYS)
-    score += day_hits * 4
-
-    # --------------------------------------------------------
-    # 5. India relevance is a boost, NOT a requirement.
-    # This allows major global developments such as UN declarations,
-    # Morocco's first female PM, international organisations, etc.
-    # --------------------------------------------------------
-    if is_india_focused(combined):
+    if category_hits >= 1:
         score += 3
+    if category_hits >= 2:
+        score += 2
 
-    # Named international organisations + international event/location
-    # are particularly useful for one-liner questions.
-    if (
-        count_matches(combined, EXAM_INSTITUTIONS) >= 1
-        and (
-            "conference" in combined
-            or "summit" in combined
-            or "assembly" in combined
-            or "declaration" in combined
-            or "convention" in combined
-            or "olympiad" in combined
-        )
-    ):
-        score += 5
+    # A clearly international institutional report/agreement can be exam
+    # relevant even when it has no India marker.
+    international_exam_terms = (
+        "united nations", "unesco", "who", "unicef", "world bank",
+        "imf", "wto", "cop30", "g20", "g7", "brics", "asean",
+        "nato", "international agreement", "treaty", "global report",
+    )
 
-    # First/record/award + named person/state/country tends to have
-    # strong one-liner potential.
-    if (
-        count_matches(combined, (
-            "first",
-            "record",
-            "award",
-            "appointed",
-            "elected",
-        )) >= 1
-        and (
-            "state" in combined
-            or "country" in combined
-            or "prime minister" in combined
-            or "president" in combined
-            or "minister" in combined
-            or "person" in combined
-            or "winner" in combined
-        )
-    ):
-        score += 4
-
-    return score
-
-
-def quick_exam_priority(candidate):
-    """Cheap RSS-headline ranking used before expensive page fetching/Gemini.
-
-    This does not make the final Exam Corner decision. It only ensures that
-    the first-run article quota is not consumed entirely by routine headlines.
-    """
-    title = clean_text(candidate.get("headline", "")).lower()
-    source_category = candidate.get("source_category", "India")
-
-    score = 0
-    score += count_matches(title, EXAM_FACT_HIGH) * 4
-    score += count_matches(title, EXAM_INSTITUTIONS) * 4
-    score += count_matches(title, EXAM_GOVERNANCE_POLICY) * 3
-    score += count_matches(title, EXAM_ECONOMY) * 2
-    score += count_matches(title, EXAM_ENVIRONMENT) * 2
-    score += count_matches(title, EXAM_SCIENCE) * 2
-    score += count_matches(title, EXAM_WORLD_IR) * 2
-
-    if source_category == "Sports":
-        major = count_matches(title, EXAM_SPORTS_MAJOR)
-        if major:
-            score += major * 5
-        else:
-            score = max(0, score - 3)
-
-    if source_category == "Health":
-        score += count_matches(
-            title,
-            (
-                "public health",
-                "health policy",
-                "vaccine",
-                "vaccination",
-                "outbreak",
-                "biotechnology",
-                "medical research",
-            )
-        ) * 3
-
-    if is_india_focused(title):
+    if count_matches(combined, international_exam_terms) >= 1:
         score += 2
 
     return score
 
 
 def classify_candidate(candidate, page_text=""):
-
-    title = clean_text(
-        candidate.get(
-            "headline",
-            ""
-        )
-    )
-
-    text = clean_text(
-        page_text
-    )
+    title = clean_text(candidate.get("headline", ""))
+    text = clean_text(page_text)
 
     title_blob = title.lower()
-
     body_blob = text[:8000].lower()
-
-    # Headline gets strong priority.
-    blob = (
-        title_blob
-        + " "
-        + title_blob
-        + " "
-        + body_blob
-    )
+    blob = title_blob + " " + title_blob + " " + body_blob
 
     source_category = candidate.get(
         "source_category",
-        candidate.get(
-            "category",
-            "India"
-        )
+        candidate.get("category", "India")
     )
 
     # --------------------------------------------------------
-    # STEP 1: Strong topic classification
+    # Category scoring
     # --------------------------------------------------------
-
-    sports_score = count_matches(
-        title_blob,
-        SPORTS
-    )
-
-    health_score = count_matches(
-        title_blob,
-        HEALTH
-    )
-
-    science_score = count_matches(
-        title_blob,
-        SCIENCE
-    )
-
-    # Strong Science & Technology indicators.
-    # These are weighted so important science/technology headlines
-    # are not missed just because the existing keyword list is narrow.
-    science_strong = (
-        "drdo",
-        "isro",
-        "csir",
-        "technology",
-        "technolog",
-        "artificial intelligence",
-        "ai ",
-        "machine learning",
-        "semiconductor",
-        "quantum",
-        "robot",
-        "robotics",
-        "space",
-        "satellite",
-        "launch vehicle",
-        "missile",
-        "defence technology",
-        "defense technology",
-        "biotechnology",
-        "biotech",
-        "genome",
-        "genomics",
-        "gene",
-        "vaccine",
-        "nanotechnology",
-        "nanocrystal",
-        "research",
-        "innovation",
-        "laboratory",
-        "laboratories",
-        "scientific",
-        "scientist",
-        "indigenous technology",
-        "5g",
-        "6g",
-        "cybersecurity",
-        "cyber security",
-        "digital technology",
-        "supercomputer",
-        "astronomy",
-    )
-
-    science_strong_score = count_matches(
-        title_blob,
-        science_strong
-    )
-
-    if science_strong_score >= 1:
-        science_score += 3
-
-    economy_score = count_matches(
-        title_blob,
-        ECONOMY
-    )
-
-    environment_score = count_matches(
-        title_blob,
-        ENVIRONMENT
-    )
-
-    world_score = count_matches(
-        title_blob,
-        WORLD
-    )
-
-    title_scores = {
-        "Sports": sports_score,
-        "Health": health_score,
-        "Science & Technology": science_score,
-        "Economy": economy_score,
-        "Environment": environment_score,
-        "World": world_score,
+    scores = {
+        "India": count_matches(title_blob, (
+            "india", "indian", "government", "ministry", "minister",
+            "cabinet", "parliament", "lok sabha", "rajya sabha",
+            "supreme court", "high court", "uidai", "aadhaar", "rbi",
+            "sebi", "niti aayog", "scheme", "yojana", "policy", "act",
+            "bill", "notification", "portal", "initiative", "drdo", "isro",
+        )),
+        "World": count_matches(title_blob, WORLD),
+        "Sports": count_matches(title_blob, SPORTS),
+        "Health": count_matches(title_blob, HEALTH),
+        "Science & Technology": count_matches(title_blob, SCIENCE),
+        "Economy": count_matches(title_blob, ECONOMY),
+        "Environment": count_matches(title_blob, ENVIRONMENT),
     }
 
-    strongest_title_category = max(
-        title_scores,
-        key=title_scores.get
+    # Strong science signals.
+    science_strong = (
+        "drdo", "isro", "csir", "technology", "technologies",
+        "artificial intelligence", "machine learning", "semiconductor",
+        "quantum", "robot", "robotics", "space mission", "satellite",
+        "launch vehicle", "missile", "radar", "nuclear", "biotechnology",
+        "genome", "genomics", "nanotechnology", "cybersecurity",
+        "scientific research", "innovation", "bulletproof",
+    )
+    if count_matches(blob, science_strong) >= 1:
+        scores["Science & Technology"] += 3
+
+    # Strong economy / finance signals.
+    economy_strong = (
+        "rbi", "reserve bank", "sebi", "cbdc", "digital rupee", "upi",
+        "repo rate", "interest rate", "monetary policy", "fiscal policy",
+        "gdp", "inflation", "gst", "budget", "economic survey", "banking",
+        "blue financing", "programmable cbdc", "foreign direct investment",
+    )
+    if count_matches(blob, economy_strong) >= 1:
+        scores["Economy"] += 3
+
+    # Environment includes laws, rules, amendments, notifications and policies.
+    environment_policy = (
+        "environment act", "environmental act", "forest act", "forest rule",
+        "forest rules", "wildlife act", "wildlife protection", "biodiversity act",
+        "biodiversity", "pollution control", "emission norms", "emission standard",
+        "climate policy", "climate law", "environment policy", "conservation policy",
+        "wetland rules", "coastal regulation", "eco-sensitive", "protected area",
+        "national park", "tiger reserve", "biosphere reserve", "ram sar", "unesco",
+        "green credit", "carbon market", "carbon credit", "forest certification",
+        "sustainable development", "environmental notification", "environmental rules",
+    )
+    if count_matches(blob, environment_policy) >= 1:
+        scores["Environment"] += 3
+
+    # Health signals.
+    health_strong = (
+        "who", "unicef", "public health", "health ministry", "sanitation",
+        "nutrition", "vaccine", "vaccination", "disease", "pandemic",
+        "epidemic", "health report", "global health", "medical",
+    )
+    if count_matches(blob, health_strong) >= 1:
+        scores["Health"] += 3
+
+    # Sports signals.
+    sports_strong = (
+        "olympic", "paralympic", "world cup", "asian games", "commonwealth games",
+        "championship", "medal", "gold medal", "silver medal", "bronze medal",
+        "fifa", "icc", "bcci", "badminton", "tennis", "hockey", "athletics",
+    )
+    if count_matches(blob, sports_strong) >= 1:
+        scores["Sports"] += 3
+
+    # International institutional signals.
+    world_strong = (
+        "united nations", "unesco", "who", "unicef", "world bank", "imf", "wto",
+        "international", "global", "bilateral", "multilateral", "summit", "treaty",
+        "agreement", "european union", "asean", "g20", "g7", "brics", "nato",
+    )
+    if count_matches(blob, world_strong) >= 1:
+        scores["World"] += 3
+
+    # Prefer a strong headline classification. Otherwise use body and source.
+    headline_scores = {
+        k: v for k, v in scores.items()
+        if k != "India"
+    }
+
+    strongest_headline_category = max(
+        headline_scores,
+        key=headline_scores.get
     )
 
-    strongest_title_score = title_scores[
-        strongest_title_category
-    ]
-
-    # --------------------------------------------------------
-    # Strong headline topic wins immediately.
-    # --------------------------------------------------------
-
-    if strongest_title_score >= 1:
-        category = strongest_title_category
-
+    if headline_scores[strongest_headline_category] >= 1:
+        category = strongest_headline_category
     else:
-
-        # Body scores are used only when headline is unclear.
-
         body_scores = {
-            "Sports": count_matches(
-                body_blob,
-                SPORTS
-            ),
-            "Health": count_matches(
-                body_blob,
-                HEALTH
-            ),
-            "Science & Technology": count_matches(
-                body_blob,
-                SCIENCE
-            ),
-            "Economy": count_matches(
-                body_blob,
-                ECONOMY
-            ),
-            "Environment": count_matches(
-                body_blob,
-                ENVIRONMENT
-            ),
-            "World": count_matches(
-                body_blob,
-                WORLD
-            ),
+            "India": count_matches(body_blob, (
+                "india", "indian", "government of india", "union government",
+                "central government", "ministry", "parliament", "rbi", "sebi",
+                "uidai", "aadhaar", "niti aayog", "supreme court of india",
+            )),
+            "World": count_matches(body_blob, WORLD),
+            "Sports": count_matches(body_blob, SPORTS),
+            "Health": count_matches(body_blob, HEALTH),
+            "Science & Technology": count_matches(body_blob, SCIENCE),
+            "Economy": count_matches(body_blob, ECONOMY),
+            "Environment": count_matches(body_blob, ENVIRONMENT),
         }
-
-        strongest_body_category = max(
-            body_scores,
-            key=body_scores.get
-        )
-
-        strongest_body_score = body_scores[
-            strongest_body_category
-        ]
-
-        if strongest_body_score >= 2:
+        strongest_body_category = max(body_scores, key=body_scores.get)
+        if body_scores[strongest_body_category] >= 2:
             category = strongest_body_category
-
-        elif source_category == "World":
-            category = "World"
-
-        elif source_category in {
-            "Sports",
-            "Science & Technology",
-            "Economy",
-            "Environment",
-            "Health",
-        }:
+        elif source_category in scores:
             category = source_category
-
         else:
             category = "India"
 
-    # --------------------------------------------------------
-    # STEP 2: Prevent false India classification
-    # --------------------------------------------------------
-
-    # If a story is clearly international, do not classify it
-    # as India simply because the article mentions India.
-
-    if contains_any(
-        title_blob,
-        WORLD
-    ) and not is_india_focused(title_blob):
-
+    # Explicit international headline markers should remain World unless the
+    # headline clearly identifies an India-specific institution/event.
+    if contains_any(title_blob, WORLD) and not is_india_focused(title_blob):
         category = "World"
 
-    # --------------------------------------------------------
-    # STEP 3: Exam Corner
-    # --------------------------------------------------------
-    # Exam Corner is a cross-category filter. The primary category is
-    # preserved; exam relevance is calculated independently.
-    # --------------------------------------------------------
+    # Re-check high-confidence India institutions that can be misclassified by
+    # generic words such as "world", "global" or "international".
+    if contains_any(title_blob, (
+        "government of india", "ministry of", "uidai", "aadhaar", "isro",
+        "drdo", "rbi", "sebi", "niti aayog", "lok sabha", "rajya sabha",
+        "union cabinet", "supreme court of india",
+    )):
+        if category in {"World", "India"}:
+            category = "India"
 
-    exam_score = exam_corner_score(
-        title,
-        text,
-        category
-    )
+    # --------------------------------------------------------
+    # Exam Corner is a filter/subset, not a category.
+    # --------------------------------------------------------
+    exam_score = exam_corner_score(title, text, category)
+    exam_corner = exam_score >= 7
 
-    # Calibrated against factual one-liners and UPSC-style issue news.
-    # A score of 10+ means the article has enough independent signals
-    # to be useful for competitive-exam preparation.
-    exam_corner = (
-        exam_score >= 10
-    )
+    exam_subjects = []
+    if exam_corner:
+        if category in {"India", "World", "Economy", "Environment", "Health", "Science & Technology"}:
+            exam_subjects = ["UPSC Prelims", "UPSC Mains"]
+        elif category == "Sports":
+            exam_subjects = ["General Awareness", "SSC", "Banking", "Railways"]
 
     candidate["category"] = category
-    candidate["exam_corner"] = bool(
-        exam_corner
-    )
+    candidate["category_scores"] = scores
+    candidate["exam_corner"] = bool(exam_corner)
     candidate["exam_score"] = exam_score
+    candidate["exam_subjects"] = exam_subjects
 
     print(
-        f"CLASSIFY | {title[:90]} | "
-        f"{category} | "
-        f"ExamCorner={exam_corner} | "
-        f"score={exam_score}"
+        f"CLASSIFY | {title[:90]} | {category} | "
+        f"ExamCorner={exam_corner} | score={exam_score}"
     )
 
     return candidate
@@ -1660,42 +1241,26 @@ SOURCE-PRESERVATION RULES — VERY IMPORTANT:
 - Keep political coverage neutral and descriptive.
 - Never create facts just to fill a field.
 
-IMPORTANT CATEGORY AND EXAM CORNER RULES:
+IMPORTANT CATEGORY RULES:
 
-1. "Exam Corner" is NOT a general category. It is a cross-category
-   filter/subset of high-value competitive-exam current affairs.
-2. An article can be in Exam Corner while its primary category is India,
-   World, Economy, Science & Technology, Environment, Health or Sports.
-3. Do NOT require the words UPSC, SSC, exam or competitive examination.
-4. Prioritize developments that can become factual one-liners or
-   UPSC-style issue questions, including:
-   - government schemes, missions, programmes and initiatives
-   - important institutions and constitutional/statutory bodies
-   - awards, honours, appointments, firsts and records
-   - reports, rankings, indices and major statistics
-   - international organisations, summits, conferences and declarations
-   - environment, biodiversity, wildlife, climate and disaster management
-   - science, biotechnology, space, AI, semiconductors and technology policy
-   - economy, banking, energy, employment and major policy changes
-   - judiciary, elections, governance and constitutional developments
-   - major international relations and security developments
-   - important sports championships, medals, records and international events
-   - nationally/internationally recognized important days and anniversaries
-   - important locations, venues, headquarters, state-country associations
-5. Ordinary daily sports scores, routine political statements, generic
-   crime stories and routine local events should NOT enter Exam Corner
-   unless they contain a strong factual or policy significance.
-6. A normal India news story must remain "India".
-7. International news must be "World".
-8. Health news must be "Health".
-9. Science/technology news must be "Science & Technology".
-10. Economy/finance news must be "Economy".
-11. Environment/climate/wildlife news must be "Environment".
-12. Sports news must be "Sports".
-13. Do not change the primary category merely because an article qualifies
-    for Exam Corner.
+1. "Exam Corner" is NOT a primary category; it is a cross-category filter.
+2. Exam Corner may include high-value India, World, Economy,
+   Science & Technology, Environment, Health and selected Sports news.
+3. Schemes, laws, policies, appointments, awards, reports, rankings,
+   conferences, firsts, records, GI tags, important days and major
+   institutional developments may qualify.
+4. Issue-based topics may qualify when they have clear competitive-exam
+   relevance: governance, economy, environment, science, IR, security,
+   social justice, health and public policy.
+5. Sports should qualify selectively: major international events,
+   major Indian achievements, records, championships and milestones;
+   not ordinary match results.
+6. Do not add an article to Exam Corner merely because it contains
+   words such as India, government, report or world.
+7. Keep the primary category unchanged. Exam Corner is an additional filter.
+8. The supplied Python Exam Corner decision is authoritative.
 
-The supplied classifier category and Exam Corner decision are authoritative.
+The supplied classifier category is authoritative.
 
 Return ONLY valid JSON.
 
@@ -1801,8 +1366,6 @@ def normalize_generated(article, candidate):
         )
     )
 
-    # Exam Corner is a cross-category filter, not a separate category.
-    # The classifier decides whether the article is exam-relevant.
 
     article["published_date"] = TODAY
     article["content_version"] = CONTENT_VERSION
@@ -2118,7 +1681,7 @@ def main():
         a for a in repair_targets
         if int(a.get("content_version", 0) or 0) < CONTENT_VERSION
     ]
-    repair_targets = broken_targets + legacy_targets[:REBUILD_LEGACY_LIMIT]
+    repair_targets = (broken_targets + legacy_targets[:REBUILD_LEGACY_LIMIT])[:MAX_REPAIR_ARTICLES_PER_RUN]
 
 
     print(
@@ -2419,273 +1982,193 @@ def main():
     )
 
     # ========================================================
-    # PRIORITIZE CANDIDATES
+    # SELECT + PROCESS NEW ARTICLES
     # ========================================================
-    # On the first build, prioritize headlines with strong competitive-exam
-    # signals so the initial 30 articles are not dominated by routine news.
-    # The final Exam Corner decision is still made only after reading the
-    # article page.
 
-    if target == FIRST_RUN_COUNT:
-        candidates = sorted(
-            enumerate(candidates),
-            key=lambda item: (
-                quick_exam_priority(item[1]),
-                -item[0]
-            ),
-            reverse=True
+    def preliminary_score(candidate):
+        title = clean_text(candidate.get("headline", "")).lower()
+        category = candidate.get("source_category", "India")
+        score = count_matches(title, EXAM_HIGH_VALUE) * 6
+        score += count_matches(title, EXAM_MEDIUM) * 3
+        factual = (
+            "award", "appointed", "appointment", "first", "historic",
+            "record", "milestone", "scheme", "yojana", "initiative",
+            "programme", "program", "policy", "act", "bill", "amendment",
+            "cabinet", "committee", "commission", "report", "index",
+            "ranking", "summit", "conference", "declaration", "agreement",
+            "treaty", "gi tag", "geographical indication", "important day",
+            "international day", "centenary", "mission", "conservation"
         )
-        candidates = [
-            item[1]
-            for item in candidates
-        ]
+        issue = (
+            "governance", "election commission", "supreme court", "parliament",
+            "constitutional", "gdp", "inflation", "employment", "climate",
+            "monsoon", "el niño", "drought", "pollution", "environment",
+            "artificial intelligence", "semiconductor", "space", "isro", "drdo",
+            "cyber", "defence", "defense", "border", "international relations",
+            "foreign policy", "united nations", "world bank", "imf", "unesco",
+            "who", "unicef", "health", "public health", "social justice"
+        )
+        score += count_matches(title, factual) * 2
+        score += count_matches(title, issue) * 2
+        if category == "Sports":
+            major = ("olympic", "asian games", "paralympic", "world cup",
+                     "championship", "medal", "historic", "record", "grand slam",
+                     "world athletics", "commonwealth")
+            score += 4 if count_matches(title, major) else -5
+        return score
 
-    # ========================================================
-    # SELECT NEW ARTICLES
-    # ========================================================
-
-    selected = []
+    ranked = []
     seen_titles = set()
+    existing_urls = {
+        a.get("source_url", "").split("?")[0].rstrip("/")
+        for a in existing_news if isinstance(a, dict)
+    }
 
     for candidate in candidates:
-
-        title_key = normalize_title(
-            candidate["headline"]
-        )
-
-        url_key = (
-            candidate["source_url"]
-            .split("?")[0]
-            .rstrip("/")
-        )
-
-        if not title_key:
-            continue
-
+        title_key = normalize_title(candidate["headline"])
+        url_key = candidate["source_url"].split("?")[0].rstrip("/")
         candidate_key = article_key({
-            "headline": candidate[
-                "headline"
-            ],
-            "source_url": candidate[
-                "source_url"
-            ],
+            "headline": candidate["headline"],
+            "source_url": candidate["source_url"],
         })
-
-        if candidate_key in existing_keys:
+        if (not title_key or candidate_key in existing_keys or
+                url_key in existing_urls or title_key in seen_titles):
             continue
+        seen_titles.add(title_key)
+        candidate["preliminary_exam_score"] = preliminary_score(candidate)
+        ranked.append(candidate)
 
-        if any(
-            a.get(
-                "source_url",
-                ""
-            ).split("?")[0].rstrip("/")
-            == url_key
-            for a in existing_news
-        ):
-            continue
+    ranked.sort(key=lambda x: x.get("preliminary_exam_score", 0), reverse=True)
+    selected = ranked[:MAX_ARTICLES_PER_RUN]
 
-        if title_key in seen_titles:
-            continue
+    print(f"Candidate pool: {len(candidates)} | ranked: {len(ranked)} | selected: {len(selected)}")
+    print(f"Gemini budget: {MAX_GEMINI_BATCHES_PER_RUN} batches x {GEMINI_BATCH_SIZE} articles")
 
-        seen_titles.add(
-            title_key
-        )
-
-        selected.append(
-            candidate
-        )
-
-        if len(selected) >= target:
-            break
-
-    # ========================================================
-    # PROCESS NEW ARTICLES
-    # ========================================================
+    prepared = []
+    for candidate in selected:
+        html = fetch_page(candidate["source_url"])
+        candidate["page_html"] = html
+        page_text = extract_page_text(html)
+        if len(page_text) < 250:
+            page_text = candidate["headline"]
+        candidate = classify_candidate(candidate, page_text)
+        candidate["page_text"] = page_text
+        prepared.append(candidate)
 
     added = 0
-
     numeric_ids = [
-        int(a.get("id", 0))
-        for a in existing_news
-        if isinstance(a, dict)
-        and str(
-            a.get("id", "")
-        ).isdigit()
+        int(a.get("id", 0)) for a in existing_news
+        if isinstance(a, dict) and str(a.get("id", "")).isdigit()
     ]
+    next_id = max(numeric_ids + [0]) + 1
 
-    next_id = (
-        max(
-            numeric_ids + [0]
-        )
-        + 1
-    )
+    for batch_start in range(0, len(prepared), GEMINI_BATCH_SIZE):
+        batch_no = batch_start // GEMINI_BATCH_SIZE
+        if batch_no >= MAX_GEMINI_BATCHES_PER_RUN:
+            print("Gemini budget reached; remaining articles will be picked up by the next 3-hour run.")
+            break
 
-    for index, candidate in enumerate(
-        selected
-    ):
+        batch = prepared[batch_start:batch_start + GEMINI_BATCH_SIZE]
+        payload = []
+        for i, c in enumerate(batch):
+            payload.append({
+                "batch_index": i,
+                "source_name": c["source_name"],
+                "source_url": c["source_url"],
+                "category": c["category"],
+                "exam_corner": bool(c.get("exam_corner", False)),
+                "exam_score": c.get("exam_score", 0),
+                "headline": c["headline"],
+                "source_text": c["page_text"][:12000],
+            })
 
-        html = fetch_page(
-            candidate[
-                "source_url"
-            ]
-        )
+        batch_prompt = """You are the content engine for AURA EXAM AI.
+Process ALL supplied articles independently and return ONLY valid JSON.
+Use ONLY facts explicitly present in each article's source_text. Never mix
+facts between articles and never invent facts. Preserve important dates,
+numbers, names, places, exceptions and lists. Keep political coverage
+neutral and descriptive.
 
-        candidate[
-            "page_html"
-        ] = html
+Exam Corner is a cross-category FILTER, not a primary category. The supplied
+Python category and Exam Corner boolean are authoritative. Do not remove an
+article from Exam Corner because it is World, Economy, Science & Technology,
+Environment, Health or selected major Sports. Sports should remain selective.
 
-        page_text = extract_page_text(
-            html
-        )
+For every article return all fields below. Keep arrays as arrays.
 
-        if len(page_text) < 250:
-            page_text = candidate[
-                "headline"
-            ]
+{"articles":[{
+"batch_index":0,"category":"supplied category","exam_corner":true,
+"headline":"factual headline","story_lead":"1-2 sentence source summary",
+"full_article_text":"source-faithful study note","background_context":"",
+"bullet_points":[],"key_facts":[],"key_locations":[],"important_dates":[],
+"exam_relevance":[],"upsc_analysis":"","causes":[],"impacts":[],
+"challenges":[],"government_steps":[],"constitutional_or_policy_link":[],
+"way_forward":[],"mains_notes":"","mains_questions":[],"takeaway":"",
+"prelims_facts":[],"vocabulary":[],"related_entities":[],
+"hindi_translation":{"headline":"","story_lead":"","full_article_text":"",
+"background_context":"","bullet_points":[],"key_facts":[],
+"key_locations":[],"important_dates":[]},
+"quiz":{"question":"","options":["A","B","C","D"],
+"correct_answer":"","explanation":""}
+}]}
 
-        # ----------------------------------------------------
-        # ACTUAL ARTICLE CLASSIFICATION
-        # ----------------------------------------------------
-
-        candidate = classify_candidate(
-            candidate,
-            page_text
-        )
+ARTICLES:
+""" + json.dumps(payload, ensure_ascii=False)
 
         try:
-
-            generated = call_gemini(
-                client,
-                article_prompt(
-                    candidate,
-                    page_text
-                )
-            )
-
-            article = normalize_generated(
-                generated,
-                candidate
-            )
-
+            result = call_gemini(client, batch_prompt)
         except Exception as exc:
-
-            print(
-                f"Generation failed: "
-                f"{candidate['headline']} "
-                f"-> {exc}"
-            )
-
+            print(f"Gemini batch failed: {exc}")
+            if GEMINI_QUOTA_EXHAUSTED:
+                break
             continue
 
-        article["id"] = next_id
-        next_id += 1
+        generated = result.get("articles", []) if isinstance(result, dict) else []
+        by_index = {}
+        for item in generated if isinstance(generated, list) else []:
+            if isinstance(item, dict):
+                try:
+                    by_index[int(item.get("batch_index"))] = item
+                except Exception:
+                    pass
 
-        article["published_date"] = TODAY
-        article["content_version"] = CONTENT_VERSION
+        for i, candidate in enumerate(batch):
+            generated_article = by_index.get(i)
+            if not generated_article:
+                print(f"No Gemini result for: {candidate['headline']}")
+                continue
 
-        article["source_url"] = candidate[
-            "source_url"
-        ]
+            article = normalize_generated(generated_article, candidate)
+            article["id"] = next_id
+            next_id += 1
+            article["published_date"] = TODAY
+            article["content_version"] = CONTENT_VERSION
+            article["source_url"] = candidate["source_url"]
+            article["source_name"] = candidate["source_name"]
+            article["category"] = candidate["category"]
+            article["exam_corner"] = bool(candidate.get("exam_corner", False))
+            article["image_url"] = choose_unique_image(candidate, article, used_images, len(existing_news))
+            article["added_at"] = NOW_ISO
+            ensure_entity_urls(article)
 
-        article["source_name"] = candidate[
-            "source_name"
-        ]
+            if not isinstance(article.get("quiz"), dict):
+                article["quiz"] = fallback_quiz(article)
+            if not isinstance(article.get("hindi_translation"), dict):
+                article["hindi_translation"] = {
+                    "headline": article.get("headline", ""),
+                    "story_lead": article.get("story_lead", ""),
+                    "full_article_text": article.get("full_article_text", ""),
+                    "background_context": article.get("background_context", ""),
+                    "bullet_points": article.get("bullet_points", []),
+                    "key_facts": article.get("key_facts", []),
+                    "key_locations": article.get("key_locations", []),
+                    "important_dates": article.get("important_dates", []),
+                }
 
-        article["category"] = candidate[
-            "category"
-        ]
-
-        # Exam Corner is a filter/subset across all major categories.
-        article["exam_corner"] = bool(
-            candidate.get(
-                "exam_corner",
-                False
-            )
-        )
-
-        article["image_url"] = (
-            choose_unique_image(
-                candidate,
-                article,
-                used_images,
-                index
-            )
-        )
-
-        article["added_at"] = NOW_ISO
-
-        ensure_entity_urls(
-            article
-        )
-
-        if not isinstance(
-            article.get("quiz"),
-            dict
-        ):
-            article["quiz"] = (
-                fallback_quiz(article)
-            )
-
-        if not isinstance(
-            article.get(
-                "hindi_translation"
-            ),
-            dict
-        ):
-
-            article[
-                "hindi_translation"
-            ] = {
-                "headline": article.get(
-                    "headline",
-                    ""
-                ),
-                "story_lead": article.get(
-                    "story_lead",
-                    ""
-                ),
-                "full_article_text": article.get(
-                    "full_article_text",
-                    ""
-                ),
-                "background_context": article.get(
-                    "background_context",
-                    ""
-                ),
-                "bullet_points": article.get(
-                    "bullet_points",
-                    []
-                ),
-                "key_facts": article.get(
-                    "key_facts",
-                    []
-                ),
-                "key_locations": article.get(
-                    "key_locations",
-                    []
-                ),
-                "important_dates": article.get(
-                    "important_dates",
-                    []
-                ),
-            }
-
-        existing_news.append(
-            article
-        )
-
-        existing_keys.add(
-            article_key(article)
-        )
-
-        added += 1
-
-        print(
-            f"Added #{article['id']}: "
-            f"{article['headline']} | "
-            f"Category={article['category']} | "
-            f"ExamCorner={article['exam_corner']}"
-        )
+            existing_news.append(article)
+            existing_keys.add(article_key(article))
+            added += 1
+            print(f"Added #{article['id']}: {article['headline']} | Category={article['category']} | ExamCorner={article['exam_corner']}")
 
     # ========================================================
     # RECLASSIFY ALL EXISTING ARTICLES
@@ -2750,11 +2233,16 @@ def main():
 
         article[
             "exam_corner"
-        ] = bool(
-            repaired.get(
-                "exam_corner",
-                False
+        ] = (
+            bool(
+                repaired.get(
+                    "exam_corner",
+                    False
+                )
             )
+            and article[
+                "category"
+            ] == "India"
         )
 
     # ========================================================
@@ -2790,7 +2278,12 @@ def main():
                 fallback_quiz(article)
             )
 
-        # Exam Corner remains a filter across major categories.
+        # Exam Corner is allowed across relevant primary categories.
+        if article.get("category") not in {
+            "India", "World", "Economy", "Science & Technology",
+            "Environment", "Health", "Sports"
+        }:
+            article["exam_corner"] = False
 
     # ========================================================
     # NEWEST FIRST
@@ -3001,22 +2494,16 @@ def main():
     # FINAL VALIDATION
     # ========================================================
 
+    allowed_exam_categories = {
+        "India", "World", "Economy", "Science & Technology",
+        "Environment", "Health", "Sports"
+    }
+
     invalid_exam_articles = [
-        a.get(
-            "headline",
-            "Unknown"
-        )
+        a.get("headline", "Unknown")
         for a in existing_news
         if a.get("exam_corner")
-        and a.get("category") not in {
-            "India",
-            "World",
-            "Economy",
-            "Science & Technology",
-            "Environment",
-            "Health",
-            "Sports",
-        }
+        and a.get("category") not in allowed_exam_categories
     ]
 
     if invalid_exam_articles:
