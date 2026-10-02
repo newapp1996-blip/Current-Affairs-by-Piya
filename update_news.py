@@ -4,6 +4,7 @@ import json
 import time
 import hashlib
 from datetime import datetime
+from email.utils import parsedate_to_datetime
 from zoneinfo import ZoneInfo
 from urllib.parse import quote, urljoin
 
@@ -23,7 +24,7 @@ from google import genai
 # 3. Classify the article correctly
 # 4. Keep India / World / Sports / Science / Economy /
 #    Environment / Health categories separate
-# 5. Exam Corner contains ONLY high-value competitive-exam current affairs across relevant categories
+# 5. Exam Corner contains ONLY high-value Indian exam news
 # 6. Generate exam-oriented study material using Gemini
 # 7. Preserve existing articles
 # 8. Repair missing quiz / Hindi / entities
@@ -40,22 +41,14 @@ DATA_FILE = "data.json"
 DATA_DIR = "data"
 
 FIRST_RUN_COUNT = 30
-UPDATE_COUNT = 9999
-
-# One-time content cleanup version. Existing articles missing this version
-# are rebuilt using the stricter source-preserving extraction/prompt.
-CONTENT_VERSION = 2
-REBUILD_LEGACY_LIMIT = 10
+UPDATE_COUNT = 15
 
 MAX_CANDIDATES_PER_SOURCE = 25
-REQUEST_TIMEOUT = 10
+REQUEST_TIMEOUT = 15
 
-# The workflow runs every 3 hours. Keep Gemini usage bounded per run.
-GEMINI_BATCH_SIZE = 8
-MAX_GEMINI_BATCHES_PER_RUN = 2
-MAX_ARTICLES_PER_RUN = 16
-MAX_REPAIR_ARTICLES_PER_RUN = 2
-GEMINI_QUOTA_EXHAUSTED = False
+# Version used to rebuild older articles when the content
+# extraction/summary format changes.
+CONTENT_VERSION = 3
 
 
 # ============================================================
@@ -63,8 +56,8 @@ GEMINI_QUOTA_EXHAUSTED = False
 # ------------------------------------------------------------
 # IMPORTANT:
 # These are NOT enough by themselves.
-# Exam Corner is a cross-category filter and also requires
-# strong exam relevance to cross the threshold.
+# Exam Corner also requires the article to be India-focused
+# and to cross the exam relevance threshold.
 # ============================================================
 
 EXAM_HIGH_VALUE = (
@@ -590,23 +583,38 @@ def extract_image_from_html(html, base_url):
 
 
 def extract_page_text(html):
-    """Extract the actual article body, including list items.
+    """
+    Extract article information without copying the publisher's
+    page into AURA.  The extracted text is source material for
+    an original AI summary.
 
-    The previous version ignored <li> elements. That caused important
-    numbered/bulleted facts such as dates, cities, prices and schedules
-    to disappear before Gemini ever saw them.
+    Important: include semantic list/table content because many
+    current-affairs stories put their most important facts there.
     """
     if not html:
         return ""
 
     soup = BeautifulSoup(html, "html.parser")
 
-    for tag in soup([
-        "script", "style", "noscript", "svg",
-        "header", "footer", "nav", "aside",
-        "form", "iframe"
-    ]):
+    # Remove page chrome, scripts and common non-editorial blocks.
+    unwanted = [
+        "script", "style", "noscript", "svg", "header", "footer",
+        "nav", "aside", "form", "button", "iframe",
+    ]
+    for tag in soup(unwanted):
         tag.decompose()
+
+    for tag in soup.find_all(True):
+        classes = " ".join(tag.get("class", [])).lower()
+        ident = str(tag.get("id", "")).lower()
+        marker = f"{classes} {ident}"
+        if any(word in marker for word in (
+            "advert", "advertisement", "sponsor", "newsletter",
+            "subscribe", "social-share", "related-story",
+            "recommended", "comments", "comment-section",
+            "cookie", "popup", "paywall",
+        )):
+            tag.decompose()
 
     main = (
         soup.find("article")
@@ -616,25 +624,87 @@ def extract_page_text(html):
     )
 
     blocks = []
-    seen = set()
+    semantic_tags = {
+        "h1", "h2", "h3", "h4", "h5",
+        "p", "li", "blockquote", "dt", "dd", "tr"
+    }
 
-    for node in main.find_all(["p", "h2", "h3", "h4", "li"]):
-        text = clean_text(node.get_text(" ", strip=True))
-        if len(text) < 20:
+    # Process document order. A list item/table row is treated as a
+    # complete semantic block so nested cells/paragraphs are not duplicated.
+    for node in main.find_all(list(semantic_tags)):
+        # Skip a node if it is nested inside another semantic block
+        # that already represents the same content.
+        parent = node.parent
+        nested = False
+        while parent is not None and parent is not main:
+            if getattr(parent, "name", None) in {"li", "tr"} and node.name in {"p", "li", "td", "th"}:
+                nested = True
+                break
+            parent = parent.parent
+        if nested:
             continue
 
-        # Avoid duplicate nested list text.
-        key = text.lower()
+        if node.name == "tr":
+            cells = [clean_text(c.get_text(" ", strip=True)) for c in node.find_all(["th", "td"])]
+            cells = [c for c in cells if c]
+            text = " | ".join(cells)
+        else:
+            text = clean_text(node.get_text(" ", strip=True))
+
+        if not text:
+            continue
+
+        # Keep list semantics visible to Gemini.
+        if node.name == "li":
+            text = "- " + text
+        elif node.name == "tr":
+            text = "TABLE: " + text
+
+        # Headings can be short; ordinary paragraphs should contain
+        # enough text to avoid navigation fragments.
+        if node.name not in {"h1", "h2", "h3", "h4", "h5", "dt", "dd"} and len(text.lstrip("- ")) < 20:
+            continue
+
+        if blocks and text == blocks[-1]:
+            continue
+
+        blocks.append(text)
+
+    # Remove consecutive duplicates while preserving order.
+    result = []
+    seen = set()
+    for block in blocks:
+        key = re.sub(r"\s+", " ", block).strip().lower()
         if key in seen:
             continue
         seen.add(key)
+        result.append(block)
 
-        if node.name == "li":
-            blocks.append("- " + text)
-        else:
-            blocks.append(text)
+    # More room for fact-heavy articles; Gemini input is capped later.
+    return "\n\n".join(result[:180])
 
-    return "\n\n".join(blocks[:160])
+
+def parse_published_date(value):
+    """Return YYYY-MM-DD when an RSS date can be parsed."""
+    value = clean_text(value)
+    if not value:
+        return TODAY
+    try:
+        dt = parsedate_to_datetime(value)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=IST)
+        return dt.astimezone(IST).strftime("%Y-%m-%d")
+    except Exception:
+        pass
+    for fmt in ("%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%d", "%d %b %Y", "%B %d, %Y"):
+        try:
+            dt = datetime.strptime(value, fmt)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=IST)
+            return dt.astimezone(IST).strftime("%Y-%m-%d")
+        except Exception:
+            continue
+    return TODAY
 
 
 # ============================================================
@@ -739,6 +809,7 @@ def rss_candidates():
                 "published_raw": clean_text(
                     published
                 ),
+                "published_date": parse_published_date(published),
             })
 
     return candidates
@@ -853,31 +924,44 @@ def parse_json_response(text):
 
 
 def call_gemini(client, prompt):
-    global GEMINI_QUOTA_EXHAUSTED
-    if GEMINI_QUOTA_EXHAUSTED:
-        raise RuntimeError("Gemini quota already exhausted for this run.")
+
     last_error = None
+
     for model in GEMINI_MODELS:
+
         try:
+
             response = client.models.generate_content(
                 model=model,
                 contents=prompt,
-                config={"response_mime_type": "application/json", "temperature": 0.2},
+                config={
+                    "response_mime_type": "application/json",
+                    "temperature": 0.2,
+                },
             )
-            response_text = getattr(response, "text", None)
-            if response_text:
-                return parse_json_response(response_text)
-            last_error = RuntimeError(f"Gemini {model} returned empty response")
+
+            text = getattr(
+                response,
+                "text",
+                None
+            )
+
+            if text:
+                return parse_json_response(text)
+
         except Exception as exc:
+
             last_error = exc
-            msg = str(exc)
-            if ("429" in msg or "RESOURCE_EXHAUSTED" in msg or
-                    "quota" in msg.lower() or "rate limit" in msg.lower()):
-                GEMINI_QUOTA_EXHAUSTED = True
-                print(f"GEMINI QUOTA EXHAUSTED: {exc}")
-                raise RuntimeError("Gemini free-tier quota exhausted.") from exc
-            print(f"Gemini {model} failed: {exc}")
-    raise RuntimeError(f"All Gemini models failed: {last_error}")
+
+            print(
+                f"Gemini {model} failed: {exc}"
+            )
+
+            time.sleep(1)
+
+    raise RuntimeError(
+        f"All Gemini models failed: {last_error}"
+    )
 
 
 # ============================================================
@@ -933,39 +1017,45 @@ def is_india_focused(text):
 
 
 def exam_corner_score(title, text, category):
-    """Score competitive-exam relevance across major categories.
 
-    Exam Corner is a FILTER, not a separate primary category. An article
-    can therefore remain Science & Technology, Economy, Environment, Health,
-    Sports, World, or India while also appearing in Exam Corner.
-    """
+    # --------------------------------------------------------
+    # Exam Corner is ONLY for Indian current affairs.
+    # --------------------------------------------------------
 
-    allowed_categories = {
-        "India",
-        "World",
-        "Economy",
-        "Science & Technology",
-        "Environment",
-        "Health",
-        "Sports",
-    }
-
-    if category not in allowed_categories:
+    if category != "India":
         return 0
 
-    title_lower = title.lower()
     combined = (
-        title_lower
+        title.lower()
         + " "
-        + title_lower
+        + title.lower()
         + " "
         + text[:8000].lower()
     )
 
-    high = count_matches(combined, EXAM_HIGH_VALUE)
-    medium = count_matches(combined, EXAM_MEDIUM)
-    title_high = count_matches(title_lower, EXAM_HIGH_VALUE)
-    title_medium = count_matches(title_lower, EXAM_MEDIUM)
+    if not is_india_focused(combined):
+        return 0
+
+    high = count_matches(
+        combined,
+        EXAM_HIGH_VALUE
+    )
+
+    medium = count_matches(
+        combined,
+        EXAM_MEDIUM
+    )
+
+    # Headline gets extra weight.
+    title_high = count_matches(
+        title.lower(),
+        EXAM_HIGH_VALUE
+    )
+
+    title_medium = count_matches(
+        title.lower(),
+        EXAM_MEDIUM
+    )
 
     score = (
         high * 3
@@ -974,239 +1064,215 @@ def exam_corner_score(title, text, category):
         + title_medium * 2
     )
 
-    # Category-specific exam-value signals.
-    category_boosts = {
-        "Science & Technology": (
-            "isro", "drdo", "csir", "semiconductor", "quantum",
-            "artificial intelligence", "machine learning", "satellite",
-            "space mission", "missile", "biotechnology", "genome",
-            "nuclear", "robotics", "5g", "6g", "cybersecurity",
-            "scientific research", "innovation", "launch vehicle",
-        ),
-        "Economy": (
-            "rbi", "sebi", "cbdc", "digital rupee", "upi", "gdp",
-            "inflation", "repo rate", "monetary policy", "fiscal policy",
-            "budget", "gst", "economic survey", "world bank", "imf",
-            "trade agreement", "fdi", "banking", "blue financing",
-        ),
-        "Environment": (
-            "climate", "biodiversity", "forest", "wildlife", "wetland",
-            "national park", "tiger reserve", "ram sar", "unesco",
-            "carbon market", "carbon credit", "emission", "conservation",
-            "environment act", "wildlife act", "forest certification",
-            "green credit", "climate agreement", "cop30",
-        ),
-        "Health": (
-            "who", "unicef", "sanitation", "vaccination", "vaccine",
-            "public health", "pandemic", "epidemic", "nutrition",
-            "disease", "health report", "global health",
-        ),
-        "Sports": (
-            "olympic", "paralympic", "world cup", "asian games",
-            "commonwealth games", "championship", "medal", "fifa",
-            "icc", "world athletics", "badminton", "tennis", "hockey",
-        ),
-        "World": (
-            "united nations", "unesco", "who", "unicef", "world bank",
-            "imf", "wto", "g20", "g7", "brics", "asean", "nato",
-            "international agreement", "treaty", "summit", "global report",
-        ),
-        "India": (
-            "ministry", "government scheme", "yojana", "act", "bill",
-            "constitution", "amendment", "committee", "commission",
-            "cabinet", "parliament", "rbi", "sebi", "niti aayog",
-        ),
-    }
-
-    boost_terms = category_boosts.get(category, ())
-    category_hits = count_matches(combined, boost_terms)
-
-    if category_hits >= 1:
-        score += 3
-    if category_hits >= 2:
-        score += 2
-
-    # A clearly international institutional report/agreement can be exam
-    # relevant even when it has no India marker.
-    international_exam_terms = (
-        "united nations", "unesco", "who", "unicef", "world bank",
-        "imf", "wto", "cop30", "g20", "g7", "brics", "asean",
-        "nato", "international agreement", "treaty", "global report",
-    )
-
-    if count_matches(combined, international_exam_terms) >= 1:
-        score += 2
-
     return score
 
 
 def classify_candidate(candidate, page_text=""):
-    title = clean_text(candidate.get("headline", ""))
-    text = clean_text(page_text)
+
+    title = clean_text(
+        candidate.get(
+            "headline",
+            ""
+        )
+    )
+
+    text = clean_text(
+        page_text
+    )
 
     title_blob = title.lower()
+
     body_blob = text[:8000].lower()
-    blob = title_blob + " " + title_blob + " " + body_blob
+
+    # Headline gets strong priority.
+    blob = (
+        title_blob
+        + " "
+        + title_blob
+        + " "
+        + body_blob
+    )
 
     source_category = candidate.get(
         "source_category",
-        candidate.get("category", "India")
+        candidate.get(
+            "category",
+            "India"
+        )
     )
 
     # --------------------------------------------------------
-    # Category scoring
+    # STEP 1: Strong topic classification
     # --------------------------------------------------------
-    scores = {
-        "India": count_matches(title_blob, (
-            "india", "indian", "government", "ministry", "minister",
-            "cabinet", "parliament", "lok sabha", "rajya sabha",
-            "supreme court", "high court", "uidai", "aadhaar", "rbi",
-            "sebi", "niti aayog", "scheme", "yojana", "policy", "act",
-            "bill", "notification", "portal", "initiative", "drdo", "isro",
-        )),
-        "World": count_matches(title_blob, WORLD),
-        "Sports": count_matches(title_blob, SPORTS),
-        "Health": count_matches(title_blob, HEALTH),
-        "Science & Technology": count_matches(title_blob, SCIENCE),
-        "Economy": count_matches(title_blob, ECONOMY),
-        "Environment": count_matches(title_blob, ENVIRONMENT),
+
+    sports_score = count_matches(
+        title_blob,
+        SPORTS
+    )
+
+    health_score = count_matches(
+        title_blob,
+        HEALTH
+    )
+
+    science_score = count_matches(
+        title_blob,
+        SCIENCE
+    )
+
+    economy_score = count_matches(
+        title_blob,
+        ECONOMY
+    )
+
+    environment_score = count_matches(
+        title_blob,
+        ENVIRONMENT
+    )
+
+    world_score = count_matches(
+        title_blob,
+        WORLD
+    )
+
+    title_scores = {
+        "Sports": sports_score,
+        "Health": health_score,
+        "Science & Technology": science_score,
+        "Economy": economy_score,
+        "Environment": environment_score,
+        "World": world_score,
     }
 
-    # Strong science signals.
-    science_strong = (
-        "drdo", "isro", "csir", "technology", "technologies",
-        "artificial intelligence", "machine learning", "semiconductor",
-        "quantum", "robot", "robotics", "space mission", "satellite",
-        "launch vehicle", "missile", "radar", "nuclear", "biotechnology",
-        "genome", "genomics", "nanotechnology", "cybersecurity",
-        "scientific research", "innovation", "bulletproof",
-    )
-    if count_matches(blob, science_strong) >= 1:
-        scores["Science & Technology"] += 3
-
-    # Strong economy / finance signals.
-    economy_strong = (
-        "rbi", "reserve bank", "sebi", "cbdc", "digital rupee", "upi",
-        "repo rate", "interest rate", "monetary policy", "fiscal policy",
-        "gdp", "inflation", "gst", "budget", "economic survey", "banking",
-        "blue financing", "programmable cbdc", "foreign direct investment",
-    )
-    if count_matches(blob, economy_strong) >= 1:
-        scores["Economy"] += 3
-
-    # Environment includes laws, rules, amendments, notifications and policies.
-    environment_policy = (
-        "environment act", "environmental act", "forest act", "forest rule",
-        "forest rules", "wildlife act", "wildlife protection", "biodiversity act",
-        "biodiversity", "pollution control", "emission norms", "emission standard",
-        "climate policy", "climate law", "environment policy", "conservation policy",
-        "wetland rules", "coastal regulation", "eco-sensitive", "protected area",
-        "national park", "tiger reserve", "biosphere reserve", "ram sar", "unesco",
-        "green credit", "carbon market", "carbon credit", "forest certification",
-        "sustainable development", "environmental notification", "environmental rules",
-    )
-    if count_matches(blob, environment_policy) >= 1:
-        scores["Environment"] += 3
-
-    # Health signals.
-    health_strong = (
-        "who", "unicef", "public health", "health ministry", "sanitation",
-        "nutrition", "vaccine", "vaccination", "disease", "pandemic",
-        "epidemic", "health report", "global health", "medical",
-    )
-    if count_matches(blob, health_strong) >= 1:
-        scores["Health"] += 3
-
-    # Sports signals.
-    sports_strong = (
-        "olympic", "paralympic", "world cup", "asian games", "commonwealth games",
-        "championship", "medal", "gold medal", "silver medal", "bronze medal",
-        "fifa", "icc", "bcci", "badminton", "tennis", "hockey", "athletics",
-    )
-    if count_matches(blob, sports_strong) >= 1:
-        scores["Sports"] += 3
-
-    # International institutional signals.
-    world_strong = (
-        "united nations", "unesco", "who", "unicef", "world bank", "imf", "wto",
-        "international", "global", "bilateral", "multilateral", "summit", "treaty",
-        "agreement", "european union", "asean", "g20", "g7", "brics", "nato",
-    )
-    if count_matches(blob, world_strong) >= 1:
-        scores["World"] += 3
-
-    # Prefer a strong headline classification. Otherwise use body and source.
-    headline_scores = {
-        k: v for k, v in scores.items()
-        if k != "India"
-    }
-
-    strongest_headline_category = max(
-        headline_scores,
-        key=headline_scores.get
+    strongest_title_category = max(
+        title_scores,
+        key=title_scores.get
     )
 
-    if headline_scores[strongest_headline_category] >= 1:
-        category = strongest_headline_category
+    strongest_title_score = title_scores[
+        strongest_title_category
+    ]
+
+    # --------------------------------------------------------
+    # Strong headline topic wins immediately.
+    # --------------------------------------------------------
+
+    if strongest_title_score >= 1:
+        category = strongest_title_category
+
     else:
+
+        # Body scores are used only when headline is unclear.
+
         body_scores = {
-            "India": count_matches(body_blob, (
-                "india", "indian", "government of india", "union government",
-                "central government", "ministry", "parliament", "rbi", "sebi",
-                "uidai", "aadhaar", "niti aayog", "supreme court of india",
-            )),
-            "World": count_matches(body_blob, WORLD),
-            "Sports": count_matches(body_blob, SPORTS),
-            "Health": count_matches(body_blob, HEALTH),
-            "Science & Technology": count_matches(body_blob, SCIENCE),
-            "Economy": count_matches(body_blob, ECONOMY),
-            "Environment": count_matches(body_blob, ENVIRONMENT),
+            "Sports": count_matches(
+                body_blob,
+                SPORTS
+            ),
+            "Health": count_matches(
+                body_blob,
+                HEALTH
+            ),
+            "Science & Technology": count_matches(
+                body_blob,
+                SCIENCE
+            ),
+            "Economy": count_matches(
+                body_blob,
+                ECONOMY
+            ),
+            "Environment": count_matches(
+                body_blob,
+                ENVIRONMENT
+            ),
+            "World": count_matches(
+                body_blob,
+                WORLD
+            ),
         }
-        strongest_body_category = max(body_scores, key=body_scores.get)
-        if body_scores[strongest_body_category] >= 2:
+
+        strongest_body_category = max(
+            body_scores,
+            key=body_scores.get
+        )
+
+        strongest_body_score = body_scores[
+            strongest_body_category
+        ]
+
+        if strongest_body_score >= 2:
             category = strongest_body_category
-        elif source_category in scores:
+
+        elif source_category == "World":
+            category = "World"
+
+        elif source_category in {
+            "Sports",
+            "Science & Technology",
+            "Economy",
+            "Environment",
+            "Health",
+        }:
             category = source_category
+
         else:
             category = "India"
 
-    # Explicit international headline markers should remain World unless the
-    # headline clearly identifies an India-specific institution/event.
-    if contains_any(title_blob, WORLD) and not is_india_focused(title_blob):
+    # --------------------------------------------------------
+    # STEP 2: Prevent false India classification
+    # --------------------------------------------------------
+
+    # If a story is clearly international, do not classify it
+    # as India simply because the article mentions India.
+
+    if contains_any(
+        title_blob,
+        WORLD
+    ) and not is_india_focused(title_blob):
+
         category = "World"
 
-    # Re-check high-confidence India institutions that can be misclassified by
-    # generic words such as "world", "global" or "international".
-    if contains_any(title_blob, (
-        "government of india", "ministry of", "uidai", "aadhaar", "isro",
-        "drdo", "rbi", "sebi", "niti aayog", "lok sabha", "rajya sabha",
-        "union cabinet", "supreme court of india",
-    )):
-        if category in {"World", "India"}:
-            category = "India"
-
     # --------------------------------------------------------
-    # Exam Corner is a filter/subset, not a category.
+    # STEP 3: Exam Corner
     # --------------------------------------------------------
-    exam_score = exam_corner_score(title, text, category)
-    exam_corner = exam_score >= 7
+    # VERY IMPORTANT:
+    # Exam Corner is NOT a normal category.
+    # It is a filter/subset of India news.
+    #
+    # Therefore:
+    #
+    # Sports              -> NEVER Exam Corner
+    # Health              -> NEVER Exam Corner
+    # Science             -> NEVER Exam Corner
+    # Economy             -> NEVER Exam Corner automatically
+    # Environment         -> NEVER Exam Corner automatically
+    # World               -> NEVER Exam Corner
+    #
+    # Only India + strong exam relevance can enter.
+    # --------------------------------------------------------
 
-    exam_subjects = []
-    if exam_corner:
-        if category in {"India", "World", "Economy", "Environment", "Health", "Science & Technology"}:
-            exam_subjects = ["UPSC Prelims", "UPSC Mains"]
-        elif category == "Sports":
-            exam_subjects = ["General Awareness", "SSC", "Banking", "Railways"]
+    exam_score = exam_corner_score(
+        title,
+        text,
+        category
+    )
+
+    exam_corner = (
+        category == "India"
+        and exam_score >= 4
+    )
 
     candidate["category"] = category
-    candidate["category_scores"] = scores
-    candidate["exam_corner"] = bool(exam_corner)
+    candidate["exam_corner"] = bool(
+        exam_corner
+    )
     candidate["exam_score"] = exam_score
-    candidate["exam_subjects"] = exam_subjects
 
     print(
-        f"CLASSIFY | {title[:90]} | {category} | "
-        f"ExamCorner={exam_corner} | score={exam_score}"
+        f"CLASSIFY | {title[:90]} | "
+        f"{category} | "
+        f"ExamCorner={exam_corner} | "
+        f"score={exam_score}"
     )
 
     return candidate
@@ -1219,46 +1285,45 @@ def classify_candidate(candidate, page_text=""):
 def article_prompt(candidate, page_text):
 
     return f"""
-You are the content engine for AURA EXAM AI,
-an Indian competitive-exam current-affairs website.
+You are the content engine for AURA EXAM AI, an Indian competitive-exam current-affairs website.
 
-Create a concise, factually grounded current-affairs note ONLY
-from the supplied source material.
+Create a COMPREHENSIVE, SOURCE-FAITHFUL CURRENT-AFFAIRS BRIEF from the supplied source material.
+The goal is to help a student understand the complete important information in the news, not merely its headline.
 
-SOURCE-PRESERVATION RULES — VERY IMPORTANT:
-- Use only facts explicitly present in SOURCE TEXT.
-- Do not add generic background, definitions, advice, conclusions,
-  assumptions, or facts from your own knowledge.
-- Preserve every important number, date, place, name, category,
-  exception, threshold, list item and comparison from the source.
-- If SOURCE TEXT contains a bullet/numbered list, preserve the
-  important items in full rather than replacing them with a generic summary.
-- Do not omit important details merely to make the article shorter.
-- "full_article_text" must be a clean, readable summary of the source
-  and should contain the important details needed to understand the news.
-- "background_context" must be empty unless the supplied source itself
-  explicitly provides background context.
+COPYRIGHT / ORIGINAL-WORDING RULES — VERY IMPORTANT:
+- Do NOT reproduce the source article verbatim.
+- Do NOT copy long sentences or distinctive wording from the publisher.
+- Write the visible article in your own original wording.
+- Use the source only to identify and preserve facts.
+- Facts such as dates, names, numbers, places, events and public records are to be retained accurately.
+- Do not omit important facts merely to make the summary short.
+- Do not invent information from your general knowledge.
+
+COMPLETENESS RULES — VERY IMPORTANT:
+- Preserve all material facts needed to understand the event.
+- Pay special attention to lists, numbered items, tables, dates, statistics, amounts, names, places, exceptions, deadlines and comparisons.
+- If the source contains a list of dates/locations, retain the individual important entries rather than collapsing them into a vague sentence.
+- If the source contains a table, preserve its important rows/columns in readable wording.
+- The full_article_text should normally be several informative paragraphs for a substantial story, not a 2-3 sentence generic summary.
+- For a short/simple story, keep it appropriately shorter; never add filler just to increase length.
+
+CONTEXT / ANALYSIS RULES:
+- background_context: use ONLY context explicitly supplied by the source; otherwise return an empty string.
+- causes, impacts, challenges, government_steps and constitutional_or_policy_link: include only when directly supported by the source and materially relevant. Otherwise return an empty array.
+- exam_relevance, mains_notes and prelims_facts may interpret the supplied facts for exam preparation, but must not introduce unsupported factual claims.
 - Keep political coverage neutral and descriptive.
-- Never create facts just to fill a field.
 
 IMPORTANT CATEGORY RULES:
-
-1. "Exam Corner" is NOT a primary category; it is a cross-category filter.
-2. Exam Corner may include high-value India, World, Economy,
-   Science & Technology, Environment, Health and selected Sports news.
-3. Schemes, laws, policies, appointments, awards, reports, rankings,
-   conferences, firsts, records, GI tags, important days and major
-   institutional developments may qualify.
-4. Issue-based topics may qualify when they have clear competitive-exam
-   relevance: governance, economy, environment, science, IR, security,
-   social justice, health and public policy.
-5. Sports should qualify selectively: major international events,
-   major Indian achievements, records, championships and milestones;
-   not ordinary match results.
-6. Do not add an article to Exam Corner merely because it contains
-   words such as India, government, report or world.
-7. Keep the primary category unchanged. Exam Corner is an additional filter.
-8. The supplied Python Exam Corner decision is authoritative.
+1. Exam Corner is NOT a general category.
+2. Exam Corner is ONLY for Indian current affairs having clear competitive-exam relevance.
+3. A normal India news story remains India.
+4. International news is World.
+5. Health news is Health.
+6. Science/technology news is Science & Technology.
+7. Economy/finance news is Economy.
+8. Environment/climate/wildlife news is Environment.
+9. Sports news is Sports.
+10. Do not change the supplied classifier category merely because the article mentions India.
 
 The supplied classifier category is authoritative.
 
@@ -1268,63 +1333,55 @@ SOURCE:
 Publisher: {candidate['source_name']}
 Category: {candidate['category']}
 Exam Corner: {candidate.get('exam_corner', False)}
-Exam Score: {candidate.get('exam_score', 0)}
 Headline: {candidate['headline']}
+Publication date: {candidate.get('published_date', TODAY)}
 URL: {candidate['source_url']}
 
-SOURCE TEXT:
-{page_text[:14000]}
+SOURCE MATERIAL:
+{page_text[:18000]}
 
 Required JSON object:
-
 {{
   "category": "{candidate['category']}",
   "exam_corner": {str(bool(candidate.get('exam_corner', False))).lower()},
-  "headline": "clear factual headline",
-  "story_lead": "1-2 sentence summary using only source facts",
-  "full_article_text": "source-faithful concise article preserving all important dates, numbers, names, places, exceptions and list items",
-  "background_context": "ONLY source-stated background; otherwise empty string",
-  "bullet_points": ["4-8 source-supported key points; preserve important list details"],
-  "key_facts": ["source-supported facts only"],
-  "key_locations": ["only important places explicitly mentioned in source"],
-  "important_dates": ["only dates explicitly mentioned in source"],
-  "exam_relevance": ["Prelims/Mains relevance"],
-  "upsc_analysis": "balanced UPSC-oriented analysis",
-  "causes": ["causes/drivers supported by source"],
-  "impacts": ["major impacts"],
-  "challenges": ["challenges"],
-  "government_steps": ["government/institutional steps explicitly supported"],
-  "constitutional_or_policy_link": ["constitutional/policy links only when justified"],
-  "way_forward": ["practical way-forward points"],
-  "mains_notes": "compact Mains-ready notes",
-  "mains_questions": ["2-3 possible Mains questions"],
-  "takeaway": "one-line takeaway",
-  "prelims_facts": ["prelims facts"],
+  "headline": "clear factual headline in original wording",
+  "story_lead": "2-4 sentence original lead covering what happened and why it matters when supported",
+  "full_article_text": "comprehensive original current-affairs brief preserving the important facts, details, lists, dates, numbers, names, places, exceptions and comparisons from the source",
+  "background_context": "source-supported background only, or empty string",
+  "bullet_points": ["6-10 important source-supported points when the story has enough material"],
+  "key_facts": ["important factual details that a student should remember"],
+  "key_locations": ["important places explicitly mentioned"],
+  "important_dates": ["important dates explicitly mentioned, with the associated event when useful"],
+  "exam_relevance": ["specific Prelims/Mains relevance based on the supplied facts"],
+  "upsc_analysis": "balanced analysis only when the source provides enough material; otherwise concise factual significance",
+  "causes": ["source-supported causes/drivers only"],
+  "impacts": ["source-supported impacts only"],
+  "challenges": ["source-supported challenges only"],
+  "government_steps": ["government/institutional steps explicitly supported by the source"],
+  "constitutional_or_policy_link": ["links only when clearly justified by the supplied material"],
+  "way_forward": ["only if supported or directly framed as an exam-analysis inference from the supplied facts"],
+  "mains_notes": "compact but information-rich Mains-ready notes",
+  "mains_questions": ["2-3 original questions based specifically on this news"],
+  "takeaway": "one concise factual takeaway",
+  "prelims_facts": ["high-value factual points from the source"],
   "vocabulary": [
-    {{
-      "word": "important English word",
-      "meaning_hindi": "Hindi meaning"
-    }}
+    {{"word": "important English word", "meaning_hindi": "Hindi meaning"}}
   ],
   "related_entities": [
-    {{
-      "name": "person or place",
-      "type": "person or place",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=URL_ENCODED_NAME"
-    }}
+    {{"name": "person/place/organisation", "type": "person/place/organisation", "wikipedia_url": ""}}
   ],
   "hindi_translation": {{
     "headline": "Hindi headline",
     "story_lead": "Hindi translation of lead",
-    "full_article_text": "Hindi translation of the full article",
-    "background_context": "Hindi background",
+    "full_article_text": "Hindi translation of the complete original brief",
+    "background_context": "Hindi background or empty",
     "bullet_points": ["Hindi bullet points"],
     "key_facts": ["Hindi facts"],
-    "key_locations": ["Hindi names/places where appropriate"],
-    "important_dates": ["dates"]
+    "key_locations": ["Hindi locations"],
+    "important_dates": ["Hindi date/event entries"]
   }},
   "quiz": {{
-    "question": "one article-specific MCQ",
+    "question": "one article-specific MCQ based on an important fact",
     "options": ["A", "B", "C", "D"],
     "correct_answer": "exactly one option string",
     "explanation": "short factual explanation"
@@ -1366,8 +1423,14 @@ def normalize_generated(article, candidate):
         )
     )
 
+    # Extra safety:
+    # Exam Corner can ONLY be attached to India.
+    if article["category"] != "India":
+        article["exam_corner"] = False
 
-    article["published_date"] = TODAY
+    article["published_date"] = candidate.get(
+        "published_date", TODAY
+    )
     article["content_version"] = CONTENT_VERSION
 
     for key in [
@@ -1542,7 +1605,8 @@ def needs_repair(article):
     )
 
     return (
-        int(article.get("content_version", 0) or 0) < CONTENT_VERSION
+        article.get("content_version", 0) < CONTENT_VERSION
+        or not article.get("full_article_text")
         or not isinstance(
             hindi,
             dict
@@ -1670,20 +1734,6 @@ def main():
         and needs_repair(a)
     ]
 
-    # Do not regenerate the whole archive in one workflow run.
-    # Legacy articles are upgraded gradually, while genuinely broken
-    # articles are always repaired first.
-    broken_targets = [
-        a for a in repair_targets
-        if int(a.get("content_version", 0) or 0) >= CONTENT_VERSION
-    ]
-    legacy_targets = [
-        a for a in repair_targets
-        if int(a.get("content_version", 0) or 0) < CONTENT_VERSION
-    ]
-    repair_targets = (broken_targets + legacy_targets[:REBUILD_LEGACY_LIMIT])[:MAX_REPAIR_ARTICLES_PER_RUN]
-
-
     print(
         f"Existing articles: "
         f"{len(existing_news)} | "
@@ -1714,8 +1764,6 @@ def main():
                 ""
             )
 
-        legacy_rebuild = int(article.get("content_version", 0) or 0) < CONTENT_VERSION
-
         candidate = {
             "source_name": article.get(
                 "source_name",
@@ -1734,6 +1782,7 @@ def main():
                 "Current Affairs"
             ),
             "source_url": source_url,
+            "published_date": article.get("published_date") or TODAY,
         }
 
         # Reclassify repaired article.
@@ -1769,38 +1818,9 @@ def main():
                 )
             )
 
-            # For legacy articles, replace the old AI-generated content
-            # completely. The old version was created before list-item
-            # extraction was fixed, so merely filling missing fields would
-            # leave the incomplete article unchanged.
-            rebuild_fields = {
-                "headline",
-                "story_lead",
-                "full_article_text",
-                "background_context",
-                "bullet_points",
-                "key_facts",
-                "key_locations",
-                "important_dates",
-                "exam_relevance",
-                "upsc_analysis",
-                "causes",
-                "impacts",
-                "challenges",
-                "government_steps",
-                "constitutional_or_policy_link",
-                "way_forward",
-                "mains_notes",
-                "mains_questions",
-                "takeaway",
-                "prelims_facts",
-                "vocabulary",
-                "related_entities",
-                "hindi_translation",
-                "quiz",
-            }
-
+            # Preserve existing rich fields.
             for key, value in generated.items():
+
                 if key in {
                     "source_name",
                     "source_url",
@@ -1809,11 +1829,12 @@ def main():
                     "id",
                     "image_url",
                     "exam_corner",
-                    "content_version",
                 }:
                     continue
 
-                if legacy_rebuild and key in rebuild_fields:
+                # A content-version rebuild is intentionally allowed to replace
+                # old AI summaries with the improved, more complete format.
+                if article.get("content_version", 0) < CONTENT_VERSION:
                     article[key] = value
                 elif not article.get(key):
                     article[key] = value
@@ -1821,7 +1842,6 @@ def main():
             article["category"] = candidate[
                 "category"
             ]
-            article["content_version"] = CONTENT_VERSION
 
             article["exam_corner"] = bool(
                 candidate.get(
@@ -1982,193 +2002,260 @@ def main():
     )
 
     # ========================================================
-    # SELECT + PROCESS NEW ARTICLES
+    # SELECT NEW ARTICLES
     # ========================================================
 
-    def preliminary_score(candidate):
-        title = clean_text(candidate.get("headline", "")).lower()
-        category = candidate.get("source_category", "India")
-        score = count_matches(title, EXAM_HIGH_VALUE) * 6
-        score += count_matches(title, EXAM_MEDIUM) * 3
-        factual = (
-            "award", "appointed", "appointment", "first", "historic",
-            "record", "milestone", "scheme", "yojana", "initiative",
-            "programme", "program", "policy", "act", "bill", "amendment",
-            "cabinet", "committee", "commission", "report", "index",
-            "ranking", "summit", "conference", "declaration", "agreement",
-            "treaty", "gi tag", "geographical indication", "important day",
-            "international day", "centenary", "mission", "conservation"
-        )
-        issue = (
-            "governance", "election commission", "supreme court", "parliament",
-            "constitutional", "gdp", "inflation", "employment", "climate",
-            "monsoon", "el niño", "drought", "pollution", "environment",
-            "artificial intelligence", "semiconductor", "space", "isro", "drdo",
-            "cyber", "defence", "defense", "border", "international relations",
-            "foreign policy", "united nations", "world bank", "imf", "unesco",
-            "who", "unicef", "health", "public health", "social justice"
-        )
-        score += count_matches(title, factual) * 2
-        score += count_matches(title, issue) * 2
-        if category == "Sports":
-            major = ("olympic", "asian games", "paralympic", "world cup",
-                     "championship", "medal", "historic", "record", "grand slam",
-                     "world athletics", "commonwealth")
-            score += 4 if count_matches(title, major) else -5
-        return score
-
-    ranked = []
+    selected = []
     seen_titles = set()
-    existing_urls = {
-        a.get("source_url", "").split("?")[0].rstrip("/")
-        for a in existing_news if isinstance(a, dict)
-    }
 
     for candidate in candidates:
-        title_key = normalize_title(candidate["headline"])
-        url_key = candidate["source_url"].split("?")[0].rstrip("/")
-        candidate_key = article_key({
-            "headline": candidate["headline"],
-            "source_url": candidate["source_url"],
-        })
-        if (not title_key or candidate_key in existing_keys or
-                url_key in existing_urls or title_key in seen_titles):
+
+        title_key = normalize_title(
+            candidate["headline"]
+        )
+
+        url_key = (
+            candidate["source_url"]
+            .split("?")[0]
+            .rstrip("/")
+        )
+
+        if not title_key:
             continue
-        seen_titles.add(title_key)
-        candidate["preliminary_exam_score"] = preliminary_score(candidate)
-        ranked.append(candidate)
 
-    ranked.sort(key=lambda x: x.get("preliminary_exam_score", 0), reverse=True)
-    selected = ranked[:MAX_ARTICLES_PER_RUN]
+        candidate_key = article_key({
+            "headline": candidate[
+                "headline"
+            ],
+            "source_url": candidate[
+                "source_url"
+            ],
+        })
 
-    print(f"Candidate pool: {len(candidates)} | ranked: {len(ranked)} | selected: {len(selected)}")
-    print(f"Gemini budget: {MAX_GEMINI_BATCHES_PER_RUN} batches x {GEMINI_BATCH_SIZE} articles")
+        if candidate_key in existing_keys:
+            continue
 
-    prepared = []
-    for candidate in selected:
-        html = fetch_page(candidate["source_url"])
-        candidate["page_html"] = html
-        page_text = extract_page_text(html)
-        if len(page_text) < 250:
-            page_text = candidate["headline"]
-        candidate = classify_candidate(candidate, page_text)
-        candidate["page_text"] = page_text
-        prepared.append(candidate)
+        if any(
+            a.get(
+                "source_url",
+                ""
+            ).split("?")[0].rstrip("/")
+            == url_key
+            for a in existing_news
+        ):
+            continue
 
-    added = 0
-    numeric_ids = [
-        int(a.get("id", 0)) for a in existing_news
-        if isinstance(a, dict) and str(a.get("id", "")).isdigit()
-    ]
-    next_id = max(numeric_ids + [0]) + 1
+        if title_key in seen_titles:
+            continue
 
-    for batch_start in range(0, len(prepared), GEMINI_BATCH_SIZE):
-        batch_no = batch_start // GEMINI_BATCH_SIZE
-        if batch_no >= MAX_GEMINI_BATCHES_PER_RUN:
-            print("Gemini budget reached; remaining articles will be picked up by the next 3-hour run.")
+        seen_titles.add(
+            title_key
+        )
+
+        selected.append(
+            candidate
+        )
+
+        if len(selected) >= target:
             break
 
-        batch = prepared[batch_start:batch_start + GEMINI_BATCH_SIZE]
-        payload = []
-        for i, c in enumerate(batch):
-            payload.append({
-                "batch_index": i,
-                "source_name": c["source_name"],
-                "source_url": c["source_url"],
-                "category": c["category"],
-                "exam_corner": bool(c.get("exam_corner", False)),
-                "exam_score": c.get("exam_score", 0),
-                "headline": c["headline"],
-                "source_text": c["page_text"][:12000],
-            })
+    # ========================================================
+    # PROCESS NEW ARTICLES
+    # ========================================================
 
-        batch_prompt = """You are the content engine for AURA EXAM AI.
-Process ALL supplied articles independently and return ONLY valid JSON.
-Use ONLY facts explicitly present in each article's source_text. Never mix
-facts between articles and never invent facts. Preserve important dates,
-numbers, names, places, exceptions and lists. Keep political coverage
-neutral and descriptive.
+    added = 0
 
-Exam Corner is a cross-category FILTER, not a primary category. The supplied
-Python category and Exam Corner boolean are authoritative. Do not remove an
-article from Exam Corner because it is World, Economy, Science & Technology,
-Environment, Health or selected major Sports. Sports should remain selective.
+    numeric_ids = [
+        int(a.get("id", 0))
+        for a in existing_news
+        if isinstance(a, dict)
+        and str(
+            a.get("id", "")
+        ).isdigit()
+    ]
 
-For every article return all fields below. Keep arrays as arrays.
+    next_id = (
+        max(
+            numeric_ids + [0]
+        )
+        + 1
+    )
 
-{"articles":[{
-"batch_index":0,"category":"supplied category","exam_corner":true,
-"headline":"factual headline","story_lead":"1-2 sentence source summary",
-"full_article_text":"source-faithful study note","background_context":"",
-"bullet_points":[],"key_facts":[],"key_locations":[],"important_dates":[],
-"exam_relevance":[],"upsc_analysis":"","causes":[],"impacts":[],
-"challenges":[],"government_steps":[],"constitutional_or_policy_link":[],
-"way_forward":[],"mains_notes":"","mains_questions":[],"takeaway":"",
-"prelims_facts":[],"vocabulary":[],"related_entities":[],
-"hindi_translation":{"headline":"","story_lead":"","full_article_text":"",
-"background_context":"","bullet_points":[],"key_facts":[],
-"key_locations":[],"important_dates":[]},
-"quiz":{"question":"","options":["A","B","C","D"],
-"correct_answer":"","explanation":""}
-}]}
+    for index, candidate in enumerate(
+        selected
+    ):
 
-ARTICLES:
-""" + json.dumps(payload, ensure_ascii=False)
+        html = fetch_page(
+            candidate[
+                "source_url"
+            ]
+        )
+
+        candidate[
+            "page_html"
+        ] = html
+
+        page_text = extract_page_text(
+            html
+        )
+
+        if len(page_text) < 250:
+            page_text = candidate[
+                "headline"
+            ]
+
+        # ----------------------------------------------------
+        # ACTUAL ARTICLE CLASSIFICATION
+        # ----------------------------------------------------
+
+        candidate = classify_candidate(
+            candidate,
+            page_text
+        )
 
         try:
-            result = call_gemini(client, batch_prompt)
+
+            generated = call_gemini(
+                client,
+                article_prompt(
+                    candidate,
+                    page_text
+                )
+            )
+
+            article = normalize_generated(
+                generated,
+                candidate
+            )
+
         except Exception as exc:
-            print(f"Gemini batch failed: {exc}")
-            if GEMINI_QUOTA_EXHAUSTED:
-                break
+
+            print(
+                f"Generation failed: "
+                f"{candidate['headline']} "
+                f"-> {exc}"
+            )
+
             continue
 
-        generated = result.get("articles", []) if isinstance(result, dict) else []
-        by_index = {}
-        for item in generated if isinstance(generated, list) else []:
-            if isinstance(item, dict):
-                try:
-                    by_index[int(item.get("batch_index"))] = item
-                except Exception:
-                    pass
+        article["id"] = next_id
+        next_id += 1
 
-        for i, candidate in enumerate(batch):
-            generated_article = by_index.get(i)
-            if not generated_article:
-                print(f"No Gemini result for: {candidate['headline']}")
-                continue
+        article["published_date"] = candidate.get(
+            "published_date", TODAY
+        )
+        article["content_version"] = CONTENT_VERSION
 
-            article = normalize_generated(generated_article, candidate)
-            article["id"] = next_id
-            next_id += 1
-            article["published_date"] = TODAY
-            article["content_version"] = CONTENT_VERSION
-            article["source_url"] = candidate["source_url"]
-            article["source_name"] = candidate["source_name"]
-            article["category"] = candidate["category"]
-            article["exam_corner"] = bool(candidate.get("exam_corner", False))
-            article["image_url"] = choose_unique_image(candidate, article, used_images, len(existing_news))
-            article["added_at"] = NOW_ISO
-            ensure_entity_urls(article)
+        article["source_url"] = candidate[
+            "source_url"
+        ]
 
-            if not isinstance(article.get("quiz"), dict):
-                article["quiz"] = fallback_quiz(article)
-            if not isinstance(article.get("hindi_translation"), dict):
-                article["hindi_translation"] = {
-                    "headline": article.get("headline", ""),
-                    "story_lead": article.get("story_lead", ""),
-                    "full_article_text": article.get("full_article_text", ""),
-                    "background_context": article.get("background_context", ""),
-                    "bullet_points": article.get("bullet_points", []),
-                    "key_facts": article.get("key_facts", []),
-                    "key_locations": article.get("key_locations", []),
-                    "important_dates": article.get("important_dates", []),
-                }
+        article["source_name"] = candidate[
+            "source_name"
+        ]
 
-            existing_news.append(article)
-            existing_keys.add(article_key(article))
-            added += 1
-            print(f"Added #{article['id']}: {article['headline']} | Category={article['category']} | ExamCorner={article['exam_corner']}")
+        article["category"] = candidate[
+            "category"
+        ]
+
+        # FINAL SAFETY RULE:
+        # Exam Corner can never contain
+        # non-India categories.
+        article["exam_corner"] = (
+            bool(
+                candidate.get(
+                    "exam_corner",
+                    False
+                )
+            )
+            and article[
+                "category"
+            ] == "India"
+        )
+
+        article["image_url"] = (
+            choose_unique_image(
+                candidate,
+                article,
+                used_images,
+                index
+            )
+        )
+
+        article["added_at"] = NOW_ISO
+
+        ensure_entity_urls(
+            article
+        )
+
+        if not isinstance(
+            article.get("quiz"),
+            dict
+        ):
+            article["quiz"] = (
+                fallback_quiz(article)
+            )
+
+        if not isinstance(
+            article.get(
+                "hindi_translation"
+            ),
+            dict
+        ):
+
+            article[
+                "hindi_translation"
+            ] = {
+                "headline": article.get(
+                    "headline",
+                    ""
+                ),
+                "story_lead": article.get(
+                    "story_lead",
+                    ""
+                ),
+                "full_article_text": article.get(
+                    "full_article_text",
+                    ""
+                ),
+                "background_context": article.get(
+                    "background_context",
+                    ""
+                ),
+                "bullet_points": article.get(
+                    "bullet_points",
+                    []
+                ),
+                "key_facts": article.get(
+                    "key_facts",
+                    []
+                ),
+                "key_locations": article.get(
+                    "key_locations",
+                    []
+                ),
+                "important_dates": article.get(
+                    "important_dates",
+                    []
+                ),
+            }
+
+        existing_news.append(
+            article
+        )
+
+        existing_keys.add(
+            article_key(article)
+        )
+
+        added += 1
+
+        print(
+            f"Added #{article['id']}: "
+            f"{article['headline']} | "
+            f"Category={article['category']} | "
+            f"ExamCorner={article['exam_corner']}"
+        )
 
     # ========================================================
     # RECLASSIFY ALL EXISTING ARTICLES
@@ -2278,12 +2365,18 @@ ARTICLES:
                 fallback_quiz(article)
             )
 
-        # Exam Corner is allowed across relevant primary categories.
-        if article.get("category") not in {
-            "India", "World", "Economy", "Science & Technology",
-            "Environment", "Health", "Sports"
-        }:
-            article["exam_corner"] = False
+        # Absolute final Exam Corner protection.
+        if article.get(
+            "category"
+        ) != "India":
+            article[
+                "exam_corner"
+            ] = False
+
+    # Mark every successfully processed article with the current content version.
+    for article in existing_news:
+        if isinstance(article, dict):
+            article["content_version"] = CONTENT_VERSION
 
     # ========================================================
     # NEWEST FIRST
@@ -2494,16 +2587,15 @@ ARTICLES:
     # FINAL VALIDATION
     # ========================================================
 
-    allowed_exam_categories = {
-        "India", "World", "Economy", "Science & Technology",
-        "Environment", "Health", "Sports"
-    }
-
     invalid_exam_articles = [
-        a.get("headline", "Unknown")
+        a.get(
+            "headline",
+            "Unknown"
+        )
         for a in existing_news
         if a.get("exam_corner")
-        and a.get("category") not in allowed_exam_categories
+        and a.get("category")
+        != "India"
     ]
 
     if invalid_exam_articles:
