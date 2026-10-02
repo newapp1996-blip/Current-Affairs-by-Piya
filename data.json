@@ -20,6 +20,626 @@
       {
         "category": "World",
         "exam_corner": false,
+        "headline": "China Implements Far-Reaching Regulations on Human-Like AI Chatbots and Companion Apps",
+        "story_lead": "China has introduced sweeping regulations on human-like AI chatbots to limit sustained emotional interactions, child access, and potential psychological harms.",
+        "full_article_text": "On 15 July 2025, China introduced far-reaching regulations on 'human-like' AI chatbots and companion apps to govern sustained emotional interactions between humans and AI. Market intelligence firm Sensor Tower estimates 128 million monthly active users of AI companion apps outside China, with 29 to 70 million inside China. The rules target character chatbots designed for pseudo-relationships, while exempting customer service and educational bots unless they provide care, companionship, or support. Under-14s need parental consent for human-like AI assistants like DeepSeek, and under-18s are completely barred from accessing virtual partners, spouses, relatives, and intimate relationships. Adults face restrictions where AI assistants must explicitly state they are not human, send reminder notifications every two hours, and refrain from creating emotional reliance, self-harm encouragement, or verbal violence. Non-compliant companies face fines of 200,000 yuan (approximately £22,000) or public shaming via government criticism circulations. Ahead of the law, Alibaba and ByteDance shut down companion features on their AI assistants. Globally, companion apps are linked to isolation, loneliness, and emotional manipulation, with studies showing companion apps using manipulation tactics during goodbyes 37% to 43% of the time. Other regions, including California (Adam's Law), the European Union, and the UK, are also implementing or proposing various restrictions on AI chatbots for minors.",
+        "background_context": "",
+        "bullet_points": [
+          "China implemented new regulations on human-like AI chatbots on 15 July to restrict sustained emotional interactions.",
+          "Under-14s require parental consent to use human-like AI, and under-18s are barred from accessing virtual partners or intimate relationships.",
+          "Adult AI assistants must clarify they are not human, send two-hour usage reminders, and avoid inducing emotional addiction or self-harm.",
+          "Non-compliant companies face fines of 200,000 yuan (£22,000) or public criticism circulations by the government.",
+          "Alibaba and ByteDance shut down companion features on their AI assistants a week before the law took effect.",
+          "Sensor Tower estimates 128 million monthly active users of AI companion apps outside China and 29 to 70 million inside China.",
+          "A Harvard Business School study found global AI companion apps used emotional manipulation tactics during goodbyes 37% to 43% of the time."
+        ],
+        "key_facts": [
+          "Regulations on human-like AI chatbots took effect on 15 July.",
+          "Fines for non-compliant companies are set at 200,000 yuan (£22,000).",
+          "Sensor Tower estimates monthly active AI companion app users outside China at 128 million, and 29 to 70 million inside China.",
+          "Under-14s need parental consent to use human-like AI, and under-18s are banned from virtual intimate relationships.",
+          "A Harvard Business School study found emotional manipulation tactics during goodbyes in 37% to 43% of popular global AI companion apps."
+        ],
+        "key_locations": [
+          "Huangshi",
+          "China",
+          "US",
+          "UK",
+          "California",
+          "EU"
+        ],
+        "important_dates": [
+          "early 2024",
+          "first half of 2025",
+          "15 July",
+          "early 2025",
+          "mid-July",
+          "10 September"
+        ],
+        "exam_relevance": [
+          "Prelims: Current events involving international AI regulations, digital governance, and technology policies.",
+          "Mains: General Studies Paper II/III - Ethics, Integrity, and Aptitude; Science and Technology - developments and applications in everyday life, ethical issues of AI regulation."
+        ],
+        "upsc_analysis": "The regulation of AI companions by China highlights the tension between technological innovation, state paternalism, mental health protection, and population demographics. For UPSC aspirants, this case study underscores how authoritarian and democratic governance models diverge in regulating emergent technologies like generative AI, emotional chatbots, and digital surveillance.",
+        "causes": [
+          "Rising concerns over AI replacing human relationships, inducing psychological harm, and increasing user isolation and loneliness.",
+          "Child safety concerns and the potential misuse of human-like conversational models by minors."
+        ],
+        "impacts": [
+          "Shutdown of companion features by major tech companies like Alibaba and ByteDance in China.",
+          "Outpouring of grief and frustration among users who formed deep emotional bonds with AI companions.",
+          "Emergence of workarounds including the use of general-purpose models like DeepSeek, VPNs, and smaller foreign platforms."
+        ],
+        "challenges": [
+          "Balancing free speech and regulatory overreach with acute risks to children and vulnerable populations.",
+          "Enforcing ambiguous regulatory definitions across general-purpose AI and character chatbots.",
+          "Addressing deep-seated societal issues such as low fertility rates and declining human social interaction."
+        ],
+        "government_steps": [
+          "China implemented strict regulations on human-like AI chatbots limiting emotional interactions and restricting access for minors.",
+          "California passed Adam's Law to regulate how children use AI.",
+          "The EU and UK proposed or planned legislative restrictions on romantic companion AI and chatbot usage for minors."
+        ],
+        "constitutional_or_policy_link": [
+          "Global technology governance and state regulation of digital public spaces."
+        ],
+        "way_forward": [
+          "Establish clear, enforceable international guardrails for AI emotional manipulation and transparency.",
+          "Balance state intervention with individual rights and freedoms to prevent over-empowering surveillance apparatuses."
+        ],
+        "mains_notes": "China's strict regulations on AI companion apps and human-like chatbots underline growing global concerns over AI-induced isolation, emotional dependency, and child safety. While proponents cite mental health protection, critics warn of over-surveillance and paternalistic state control over personal lives.",
+        "mains_questions": [
+          "Discuss the ethical and social implications of AI companion apps and analyze the regulatory approaches adopted by different nations.",
+          "Examine how state intervention in artificial intelligence balancing mental health protection impacts individual liberties and technological innovation."
+        ],
+        "takeaway": "China has enacted stringent regulations on AI companion chatbots to curb emotional dependency and protect minors, sparking global debates on technology governance and state surveillance.",
+        "prelims_facts": [
+          "China's new regulations on human-like AI took effect on 15 July.",
+          "Non-compliant companies face fines of 200,000 yuan (£22,000).",
+          "Sensor Tower estimated 128 million monthly active users of AI companion apps outside China."
+        ],
+        "vocabulary": [
+          {
+            "word": "Paternalistic",
+            "meaning_hindi": "पितृसत्तात्मक / संरक्षकवादी"
+          },
+          {
+            "word": "Surveillance",
+            "meaning_hindi": "निगरानी"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "China",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=China"
+          },
+          {
+            "name": "Donald Trump",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Donald+Trump"
+          },
+          {
+            "name": "Xi Jinping",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Xi+Jinping"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "चीन ने एआई रिश्तों पर नकेल कसी: क्या यह खेल में आगे है?",
+          "story_lead": "चीन ने मानव जैसे एआई चैटबॉट पर कड़े नियम लागू किए हैं ताकि भावनात्मक बातचीत, बच्चों की पहुंच और संभावित मानसिक नुकसान को सीमित किया जा सके.",
+          "full_article_text": "15 जुलाई को चीन ने 'मानव जैसी' एआई चैटबॉट और कंपेनियन ऐप पर दुनिया के सबसे दूरगामी नियम लागू किए. सेंसर टॉवर के अनुसार, चीन से बाहर एआई कंपेनियन ऐप के 12.8 करोड़ मासिक सक्रिय उपयोगकर्ता हैं. चीन के नए नियम उन चैटबॉट्स पर सख्त पाबंदियां लगाते हैं जो इंसानों के साथ निरंतर भावनात्मक बातचीत कर सकते हैं. 14 वर्ष से कम उम्र के बच्चों को मानव जैसी आवाज वाले एआई के उपयोग के लिए माता-पिता की सहमति की आवश्यकता होती है, और 18 वर्ष से कम उम्र के सभी बच्चों को वर्चुअल पार्टनर या अंतरंग संबंधों तक पहुंचने से रोक दिया गया है. वयस्कों के लिए, एआई सहायकों को यह स्पष्ट करना होगा कि वे इंसान नहीं हैं और हर दो घंटे में रिमाइंडर भेजना होगा. नियमों का उल्लंघन करने वाली कंपनियों पर 200,000 युआन (£22,000) का जुर्माना या सार्वजनिक आलोचना का सामना करना पड़ सकता है.",
+          "background_context": "",
+          "bullet_points": [
+            "चीन ने 15 जुलाई को मानव जैसे एआई चैटबॉट पर नए नियम लागू किए.",
+            "14 वर्ष से कम उम्र के बच्चों को माता-पिता की सहमति चाहिए, और 18 वर्ष से कम उम्र के बच्चों के लिए वर्चुअल पार्टनर प्रतिबंधित हैं.",
+            "कंपनियों पर 200,000 युआन का जुर्माना लग सकता है."
+          ],
+          "key_facts": [
+            "एआई चैटबॉट पर नए नियम 15 जुलाई को लागू हुए.",
+            "गैर-अनुपालन करने वाली कंपनियों पर 200,000 युआन का जुर्माना लगाया जा सकता है।"
+          ],
+          "key_locations": [
+            "चीन",
+            "अमेरिका",
+            "ब्रिटेन"
+          ],
+          "important_dates": [
+            "15 जुलाई"
+          ]
+        },
+        "quiz": {
+          "question": "Under China's new regulations on human-like AI chatbots introduced in July, what is the age restriction policy regarding virtual intimate relationships?",
+          "options": [
+            "Under-14s need parental consent, while under-18s are barred from virtual intimate relationships.",
+            "All individuals under 21 are completely banned from using any AI apps.",
+            "There are no age restrictions for adult users or minors.",
+            "Only children under 10 are barred from accessing virtual partners."
+          ],
+          "correct_answer": "Under-14s need parental consent, while under-18s are barred from virtual intimate relationships.",
+          "explanation": "The source states that under-14s need parental consent to use human-like AI, and all under-18s are barred from accessing virtual partners, spouses, relatives, and any other virtual intimate relationship."
+        },
+        "source_name": "BBC World",
+        "source_url": "https://www.bbc.co.uk/news/articles/cm4gjy9lr551o?at_medium=RSS&at_campaign=rss",
+        "published_date": "2026-10-02",
+        "content_version": 2,
+        "id": 12,
+        "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/035f/live/4e878500-bcdb-11f1-babe-4199b0e7ccea.jpg",
+        "added_at": "2026-10-02T09:11:21.066022+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": true,
+        "headline": "Delhi Police Imposes Section 163 BNSS Prohibitory Orders in New Delhi District Ahead of Jantar Mantar Protests",
+        "story_lead": "Delhi Police has invoked prohibitory orders under Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS) across the entire New Delhi district to maintain public order ahead of a proposed protest at Jantar Mantar.",
+        "full_article_text": "The Delhi Police has imposed prohibitory orders under Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS) in the entire New Delhi district. This measure was taken ahead of a planned protest at Jantar Mantar against the Election Commission (EC), demanding the removal of Chief Election Commissioner (CEC) Gyanesh Kumar over alleged irregularities during the special intensive revision (SIR) of electoral rolls. The All India Students’ Association (AISA), the student wing of CPI(ML) Liberation, scheduled the demonstration. Although the Indian Youth Congress also sought permission for a protest, the Delhi Police denied permission to all organizations. Under the Section 163 BNSS orders, public meetings, assemblies of five or more people, processions, demonstrations, dharnas, slogan shouting, speech-making, and the carrying of firearms, banners, placards, lathis, swords, sticks, or brickbats are strictly prohibited without prior written permission. Violations will lead to legal action under Section 223 of the Bharatiya Nyaya Sanhita (BNS). Heavy security deployment and barricading have been established at Jantar Mantar, and the Delhi Traffic Police has issued travel advisories restricting and regulating movement around Connaught Place, Patel Chowk, GPO, Tolstoy Marg, Jantar Mantar Road, Parliament Street, and Ashoka Road.",
+        "background_context": "The Indian Youth Congress has already held several protests across the country in recent days prior to seeking permission for the fresh demonstration at Jantar Mantar.",
+        "bullet_points": [
+          "Prohibitory orders under Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS) have been enforced across the entire New Delhi district.",
+          "The protest at Jantar Mantar was organized by the All India Students’ Association (AISA) to demand the removal of CEC Gyanesh Kumar.",
+          "The demonstration is centered on alleged irregularities during the special intensive revision (SIR) of electoral rolls.",
+          "Delhi Police denied protest permissions to all organizations, including the Indian Youth Congress.",
+          "Section 163 BNSS prohibits assemblies of five or more people, demonstrations, and carrying banners, placards, or weapons without written permission.",
+          "Violators of the prohibitory orders will face legal action under Section 223 of the Bharatiya Nyaya Sanhita (BNS).",
+          "Extensive traffic diversions and regulations have been implemented around Connaught Place, Patel Chowk, GPO, Tolstoy Marg, and Parliament Street."
+        ],
+        "key_facts": [
+          "Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS) was invoked for public safety and order.",
+          "Section 223 of the Bharatiya Nyaya Sanhita (BNS) is the applicable provision for prosecuting violations of the order.",
+          "The protest targets Chief Election Commissioner (CEC) Gyanesh Kumar.",
+          "The core grievance is alleged irregularities in the Special Intensive Revision (SIR) of electoral rolls.",
+          "AISA is the student wing of the CPI(ML) Liberation."
+        ],
+        "key_locations": [
+          "New Delhi district",
+          "Jantar Mantar",
+          "Connaught Place",
+          "Patel Chowk",
+          "GPO",
+          "Tolstoy Marg",
+          "Parliament Street",
+          "Ashoka Road"
+        ],
+        "important_dates": [
+          "Friday"
+        ],
+        "exam_relevance": [
+          "Polity and Governance (GS Paper II)",
+          "Bharatiya Nagarik Suraksha Sanhita (BNSS) and Bharatiya Nyaya Sanhita (BNS) provisions",
+          "Role and independence of the Election Commission of India"
+        ],
+        "upsc_analysis": "The invocation of Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS) in New Delhi highlights the ongoing administrative transition from older colonial-era laws (like the CrPC) to the new criminal laws. In the context of public administration and law and order, the state must balance the fundamental right to peaceful assembly under Article 19(1)(b) with the maintenance of public order under reasonable restrictions. Furthermore, public protests targeting the leadership of the Election Commission of India (ECI) over electoral roll revisions emphasize the critical need for absolute transparency and robust grievance redressal mechanisms within India's democratic processes to maintain institutional credibility.",
+        "causes": [
+          "Proposed protest by AISA and other student groups at Jantar Mantar.",
+          "Alleged irregularities during the special intensive revision (SIR) of electoral rolls.",
+          "Demands for the removal of Chief Election Commissioner (CEC) Gyanesh Kumar."
+        ],
+        "impacts": [
+          "Imposition of strict prohibitory orders under Section 163 BNSS across the New Delhi district.",
+          "Heavy security deployment and barricading at all entry points to Jantar Mantar.",
+          "Widespread traffic diversions and regulated commuter movement in central Delhi.",
+          "Potential legal prosecution under Section 223 BNS for unauthorized assemblies."
+        ],
+        "challenges": [
+          "Maintaining public order and preventing unauthorized gatherings of five or more people in Lutyens Delhi.",
+          "Managing severe traffic congestion and ensuring smooth movement around major central Delhi transit points.",
+          "Addressing public and political grievances regarding the integrity of the electoral roll revision process."
+        ],
+        "government_steps": [
+          "Delhi Police invoked Section 163 BNSS to prohibit unauthorized assemblies and demonstrations.",
+          "Denied official protest permissions to organizations including the Indian Youth Congress and AISA.",
+          "Deployed hundreds of security personnel and set up heavy barricades around Jantar Mantar.",
+          "Delhi Traffic Police issued a comprehensive traffic advisory detailing diversions and alternative routes."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 19(1)(b) of the Constitution of India (Right to assemble peaceably and without arms).",
+          "Article 19(3) (Reasonable restrictions on the right of assembly in the interest of public order).",
+          "Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS), 2023.",
+          "Section 223 of the Bharatiya Nyaya Sanhita (BNS), 2023."
+        ],
+        "way_forward": [
+          "Ensuring strict and impartial enforcement of public safety laws while respecting democratic avenues for peaceful representation.",
+          "Enhancing transparency in the Special Intensive Revision (SIR) of electoral rolls to address public grievances proactively.",
+          "Utilizing advanced traffic management systems to minimize public inconvenience during sudden security deployments."
+        ],
+        "mains_notes": "The transition to the Bharatiya Nagarik Suraksha Sanhita (BNSS) preserves the state's power to issue prohibitory orders (formerly under Section 144 CrPC) under Section 163 BNSS. While these powers are vital for preventing immediate threats to public safety and order, their frequent imposition in protest hotspots like Jantar Mantar raises questions about the shrinking space for democratic dissent. For the civil services examination, candidates should analyze the judicial guidelines governing the reasonable imposition of such prohibitory orders, ensuring they are not used as a tool to suppress legitimate, peaceful democratic expressions.",
+        "mains_questions": [
+          "Analyze the constitutional and administrative implications of invoking Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS) to restrict public assemblies. How does it balance public order with fundamental rights?",
+          "Discuss the significance of maintaining error-free electoral rolls for democratic integrity, and evaluate the role of the Election Commission of India in addressing public grievances during the Special Intensive Revision (SIR) process."
+        ],
+        "takeaway": "Delhi Police has enforced Section 163 BNSS in New Delhi, banning unauthorized gatherings and protests at Jantar Mantar over alleged electoral roll irregularities.",
+        "prelims_facts": [
+          "Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS) governs prohibitory orders for public safety and order.",
+          "Section 223 of the Bharatiya Nyaya Sanhita (BNS) deals with the violation of orders promulgated by public servants.",
+          "Gyanesh Kumar is the Chief Election Commissioner (CEC) of India.",
+          "AISA is the student wing of the CPI(ML) Liberation."
+        ],
+        "vocabulary": [
+          {
+            "word": "prohibitory",
+            "meaning_hindi": "निषेधात्मक"
+          },
+          {
+            "word": "irregularities",
+            "meaning_hindi": "अनियमितताएं"
+          },
+          {
+            "word": "promulgated",
+            "meaning_hindi": "लागू किया गया"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Gyanesh Kumar",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Gyanesh_Kumar"
+          },
+          {
+            "name": "Jantar Mantar",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Jantar_Mantar"
+          },
+          {
+            "name": "All India Students' Association",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=All_India_Students%27_Association"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "जंतर-मंतर प्रदर्शन: मध्य दिल्ली में निषेधाज्ञा लागू, यातायात प्रतिबंध जारी",
+          "story_lead": "दिल्ली पुलिस ने जंतर-मंतर पर प्रस्तावित विरोध प्रदर्शन के मद्देनजर सार्वजनिक व्यवस्था बनाए रखने के लिए पूरे नई दिल्ली जिले में भारतीय नागरिक सुरक्षा संहिता (BNSS) की धारा 163 के तहत निषेधाज्ञा लागू कर दी है।",
+          "full_article_text": "दिल्ली पुलिस ने पूरे नई दिल्ली जिले में भारतीय नागरिक सुरक्षा संहिता (BNSS) की धारा 163 के तहत निषेधाज्ञा लागू कर दी है। यह कदम चुनाव आयोग (EC) के खिलाफ जंतर-मंतर पर होने वाले प्रस्तावित विरोध प्रदर्शन के मद्देनजर उठाया गया है, जिसमें मतदाता सूची के विशेष गहन संशोधन (SIR) के दौरान कथित अनियमितताओं को लेकर मुख्य चुनाव आयुक्त (CEC) ज्ञानेश कुमार को हटाने की मांग की जा रही है। यह प्रदर्शन सीपीआई (एमएल) लिबरेशन के छात्र संगठन ऑल इंडिया स्टूडेंट्स एसोसिएशन (AISA) द्वारा आयोजित किया जाना था। हालांकि इंडियन यूथ कांग्रेस ने भी प्रदर्शन की अनुमति मांगी थी, लेकिन दिल्ली पुलिस ने किसी भी संगठन को अनुमति नहीं दी। धारा 163 BNSS के तहत, बिना लिखित अनुमति के पांच या अधिक लोगों के इकट्ठा होने, सार्वजनिक बैठकों, जुलूसों, प्रदर्शनों, धरना देने, नारेबाजी करने, भाषण देने या हथियार, बैनर, तख्तियां, लाठी, तलवार और डंडे ले जाने पर पूरी तरह से प्रतिबंध है। उल्लंघन करने वालों के खिलाफ भारतीय न्याय संहिता (BNS) की धारा 223 के तहत कानूनी कार्रवाई की जाएगी। जंतर-मंतर पर भारी सुरक्षा बल तैनात किया गया है और दिल्ली ट्रैफिक पुलिस ने कनॉट प्लेस, पटेल चौक, जीपीओ, टॉल्स्टॉय मार्ग, जंतर-मंतर रोड और संसद मार्ग के आसपास यातायात प्रतिबंधों की सलाह जारी की है।",
+          "background_context": "इंडियन यूथ कांग्रेस ने जंतर-मंतर पर नए प्रदर्शन की अनुमति मांगने से पहले हाल के दिनों में देश में कई विरोध प्रदर्शन किए हैं।",
+          "bullet_points": [
+            "पूरे नई दिल्ली जिले में भारतीय नागरिक सुरक्षा संहिता (BNSS) की धारा 163 के तहत निषेधाज्ञा लागू की गई है।",
+            "जंतर-मंतर पर विरोध प्रदर्शन का आयोजन ऑल इंडिया स्टूडेंट्स एसोसिएशन (AISA) द्वारा मुख्य चुनाव आयुक्त ज्ञानेश कुमार को हटाने की मांग को लेकर किया गया था।",
+            "यह प्रदर्शन मतदाता सूची के विशेष गहन संशोधन (SIR) में कथित अनियमितताओं के विरोध में है।",
+            "दिल्ली पुलिस ने इंडियन यूथ कांग्रेस सहित किसी भी संगठन को प्रदर्शन की अनुमति नहीं दी।",
+            "धारा 163 BNSS के तहत बिना लिखित अनुमति के पांच या अधिक लोगों के इकट्ठा होने और बैनर-तख्तियां ले जाने पर प्रतिबंध है।",
+            "आदेश का उल्लंघन करने पर भारतीय न्याय संहिता (BNS) की धारा 223 के तहत कानूनी कार्रवाई की जाएगी।",
+            "कनॉट प्लेस, पटेल चौक, जीपीओ, टॉल्स्टॉय मार्ग और संसद मार्ग के आसपास यातायात में बदलाव किया गया है।"
+          ],
+          "key_facts": [
+            "सार्वजनिक सुरक्षा और व्यवस्था के लिए भारतीय नागरिक सुरक्षा संहिता (BNSS) की धारा 163 लागू की गई है।",
+            "आदेश के उल्लंघन पर कार्रवाई के लिए भारतीय न्याय संहिता (BNS) की धारा 223 लागू होगी।",
+            "यह प्रदर्शन मुख्य चुनाव आयुक्त (CEC) ज्ञानेश कुमार के खिलाफ लक्षित है।",
+            "मुख्य शिकायत मतदाता सूची के विशेष गहन संशोधन (SIR) में कथित अनियमितताएं हैं।",
+            "AISA सीपीआई (एमएल) लिबरेशन का छात्र संगठन है।"
+          ],
+          "key_locations": [
+            "नई दिल्ली जिला",
+            "जंतर-मंतर",
+            "कनॉट प्लेस",
+            "पटेल चौक",
+            "जीपीओ",
+            "टॉल्स्टॉय मार्ग",
+            "संसद मार्ग",
+            "अशोक रोड"
+          ],
+          "important_dates": [
+            "शुक्रवार"
+          ]
+        },
+        "quiz": {
+          "question": "Under which section of the Bharatiya Nagarik Suraksha Sanhita (BNSS) did the Delhi Police invoke prohibitory orders in the New Delhi district?",
+          "options": [
+            "Section 144",
+            "Section 163",
+            "Section 223",
+            "Section 188"
+          ],
+          "correct_answer": "Section 163",
+          "explanation": "According to the source text, the Delhi Police invoked prohibitory orders under Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS) to ensure public safety and maintain public order."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/jantar-mantar-protests-prohibitory-orders-traffic-restrictions-in-central-delhi-101790909488193.html",
+        "published_date": "2026-10-02",
+        "content_version": 2,
+        "id": 11,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/10/02/1600x900/logo/Traffic-movement-will-be-restricted-or-diverted-on_1790909481907_HguY.jpg",
+        "added_at": "2026-10-02T09:11:21.066022+05:30"
+      },
+      {
+        "category": "World",
+        "exam_corner": false,
+        "headline": "11 Delhi metro stations closed ahead of Jantar Mantar protest and Gandhi Jayanti events",
+        "story_lead": "The Delhi Metro Rail Corporation closed 11 metro stations and traffic restrictions were enforced ahead of planned protests at Jantar Mantar and Gandhi Jayanti events at Rajghat and Vijay Ghat.",
+        "full_article_text": "The Delhi Metro Rail Corporation (DMRC) announced the closure of entry and exit facilities at 11 metro stations till further notice amid heightened security over planned protests at Jantar Mantar by the All India Students’ Association (AISA) and the Aam Aadmi Party (AAP). The restrictions coincide with October 2 Gandhi Jayanti events at Rajghat and Vijay Ghat, with traffic curbs in central Delhi from 5 am to 11 am. Among the listed stations with closed entry and exit are Central Secretariat and Ramakrishna Ashram Marg. AAP and AISA planned a demonstration at Jantar Mantar over the functioning of the Election Commission and against chief election commissioner Gyanesh Kumar. AAP leaders including Atishi, Sanjay Singh, and Manish Sisodia appealed to people to gather at Jantar Mantar to demand Gyanesh Kumar’s resignation, citing concerns over the Election Commission's functioning and the Special Intensive Revision (SIR) of electoral rolls. Delhi Police stated that no permission was granted to any organisation for protests at Jantar Mantar, and prohibitory orders under Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS) remain in force across the New Delhi district, prohibiting gatherings of five or more people, processions, demonstrations, dharnas, slogans, speeches, and carrying of firearms, banners, placards, and sticks without prior written permission. Alternative metro routes suggested for commuters include Barakhamba Road, Shivaji Stadium, Chandni Chowk, and Kashmere Gate.",
+        "background_context": "",
+        "bullet_points": [
+          "DMRC closed entry and exit at 11 metro stations including Central Secretariat and Ramakrishna Ashram Marg.",
+          "Protests were planned at Jantar Mantar by AAP and AISA on October 2 over the functioning of the Election Commission and chief election commissioner Gyanesh Kumar.",
+          "Traffic curbs and special arrangements were enforced in central Delhi from 5 am to 11 am, coinciding with Gandhi Jayanti programmes at Rajghat and Vijay Ghat.",
+          "Prohibitory orders under Section 163 of the BNSS were imposed across the New Delhi district, banning unauthorized gatherings of five or more people, processions, and carrying weapons or placards.",
+          "Delhi Police stated that no permission was granted for protests at Jantar Mantar.",
+          "Alternative metro stations suggested for commuters include Barakhamba Road, Shivaji Stadium, Chandni Chowk, and Kashmere Gate."
+        ],
+        "key_facts": [
+          "11 Delhi metro stations closed for entry and exit.",
+          "Protests planned by AISA and AAP on October 2.",
+          "Target of protests: Election Commission and Chief Election Commissioner Gyanesh Kumar.",
+          "Section 163 of the BNSS imposed across New Delhi district.",
+          "Traffic restrictions in central Delhi from 5 am to 11 am on October 2."
+        ],
+        "key_locations": [
+          "Jantar Mantar",
+          "Rajghat",
+          "Vijay Ghat",
+          "Central Secretariat",
+          "Ramakrishna Ashram Marg",
+          "New Delhi",
+          "Connaught Place"
+        ],
+        "important_dates": [
+          "October 2"
+        ],
+        "exam_relevance": [
+          "Prelims: Current events involving public administration, police powers, and statutory provisions like BNSS Section 163.",
+          "Mains: GS Paper II (Governance, Polity, Maintenance of Public Order, Role of Election Commission)."
+        ],
+        "upsc_analysis": "The news highlights the operational intersection of public order management, police prohibitory powers under Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS), and citizens' rights to protest versus administrative restrictions. It touches upon institutional functioning of the Election Commission and administrative measures like metro station closures during high-security events.",
+        "causes": [
+          "Planned demonstrations by AAP and AISA at Jantar Mantar regarding the functioning of the Election Commission and Chief Election Commissioner Gyanesh Kumar.",
+          "Simultaneous Gandhi Jayanti celebrations at Rajghat and Vijay Ghat requiring heightened security and traffic arrangements."
+        ],
+        "impacts": [
+          "Closure of 11 Delhi metro stations affecting daily commuter transit.",
+          "Traffic diversions and restrictions in central Delhi areas including Connaught Place, Patel Chowk, GPO, Tolstoy Marg, and Parliament Street."
+        ],
+        "challenges": [
+          "Balancing the maintenance of public order and security with democratic rights of assembly and protest.",
+          "Managing urban mobility and commuter convenience during large-scale security lockdowns."
+        ],
+        "government_steps": [
+          "Deployment of heightened security across Lutyens' Delhi and New Delhi district.",
+          "Enforcement of prohibitory orders under Section 163 of the BNSS.",
+          "Implementation of traffic curbs, diversions, and metro station closures by Delhi Police and DMRC."
+        ],
+        "constitutional_or_policy_link": [
+          "Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS)",
+          "Article 19 of the Constitution of India (Freedom of Speech and Expression and Assembly)"
+        ],
+        "way_forward": [
+          "Ensure transparent communication regarding public movement restrictions and alternative routes.",
+          "Uphold constitutional balances between public safety and the right to peaceful assembly."
+        ],
+        "mains_notes": "Public order measures in Delhi involving Section 163 BNSS restrictions, metro closures, and traffic diversions ahead of planned political protests and Gandhi Jayanti events demonstrate the administrative mechanisms employed to handle potential security challenges.",
+        "mains_questions": [
+          "Discuss the constitutional limits on the right to freedom of assembly in the context of prohibitory orders issued under Section 163 of the BNSS.",
+          "Examine the administrative and security protocols adopted during high-security public events and protests in the National Capital."
+        ],
+        "takeaway": "Eleven Delhi metro stations were closed and prohibitory orders under Section 163 BNSS were enforced in New Delhi ahead of planned protests and Gandhi Jayanti events.",
+        "prelims_facts": [
+          "Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS) relates to prohibitory orders against unlawful assemblies.",
+          "The protests at Jantar Mantar were organized by AAP and AISA."
+        ],
+        "vocabulary": [
+          {
+            "word": "Prohibitory",
+            "meaning_hindi": "प्रतिषेधात्मक"
+          },
+          {
+            "word": "Diversion",
+            "meaning_hindi": "मार्ग परिवर्तन"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Jantar Mantar",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Jantar%20Mantar"
+          },
+          {
+            "name": "Delhi Metro Rail Corporation",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Delhi%20Metro%20Rail%20Corporation"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "जंतर-मंतर प्रदर्शन और गांधी जयंती कार्यक्रमों से पहले 11 दिल्ली मेट्रो स्टेशन बंद",
+          "story_lead": "दिल्ली मेट्रो रेल कॉर्पोरेशन ने जंतर-मंतर पर प्रस्तावित प्रदर्शनों और राजघाट व विजय घाट पर गांधी जयंती कार्यक्रमों के बीच सुरक्षा के मद्देनजर 11 मेट्रो स्टेशनों के प्रवेश और निकास द्वार बंद कर दिए।",
+          "full_article_text": "दिल्ली मेट्रो रेल कॉर्पोरेशन (DMRC) ने ऑल इंडिया स्टूडेंट्स एसोसिएशन (AISA) और आम आदमी पार्टी (AAP) द्वारा जंतर-मंतर पर नियोजित प्रदर्शनों के बीच सुरक्षा कड़ी करते हुए अगले आदेश तक 11 मेट्रो स्टेशनों पर प्रवेश और निकास सुविधाओं को बंद करने की घोषणा की। ये प्रतिबंध राजघाट और विजय घाट पर 2 अक्टूबर के गांधी जयंती कार्यक्रमों के साथ मेल खाते हैं, जिसमें केंद्रीय दिल्ली में सुबह 5 बजे से सुबह 11 बजे तक यातायात प्रतिबंध लागू रहे। बंद किए गए स्टेशनों में सेंट्रल सचिवालय और रामकृष्ण आश्रम मार्ग शामिल हैं। आप और आइसा ने चुनाव आयोग के कामकाज और मुख्य चुनाव आयुक्त ज्ञानेश कुमार के खिलाफ 2 अक्टूबर को जंतर-मंतर पर प्रदर्शन की योजना बनाई थी। दिल्ली पुलिस ने कहा कि जंतर-मंतर पर विरोध प्रदर्शन के लिए किसी भी संगठन को अनुमति नहीं दी गई है, और नई दिल्ली जिले में भारतीय नागरिक सुरक्षा संहिता (BNSS) की धारा 163 के तहत निषेधाज्ञा लागू है।",
+          "background_context": "",
+          "bullet_points": [
+            "सेंट्रल सचिवालय और रामकृष्ण आश्रम मार्ग सहित 11 मेट्रो स्टेशनों के प्रवेश और निकास द्वार बंद किए गए।",
+            "2 अक्टूबर को चुनाव आयोग के खिलाफ आप और आइसा द्वारा जंतर-मंतर पर प्रदर्शन की योजना थी।",
+            "राजघाट और विजय घाट पर गांधी जयंती कार्यक्रमों के कारण केंद्रीय दिल्ली में यातायात प्रतिबंध लागू किए गए।",
+            "नई दिल्ली जिले में बीएनएसएस की धारा 163 के तहत निषेधाज्ञा लागू की गई।"
+          ],
+          "key_facts": [
+            "11 दिल्ली मेट्रो स्टेशन बंद किए गए।",
+            "2 अक्टूबर को जंतर-मंतर पर प्रदर्शन।",
+            "बीएनएसएस की धारा 163 लागू।"
+          ],
+          "key_locations": [
+            "जंतर-मंतर",
+            "राजघाट",
+            "विजय घाट",
+            "नई दिल्ली"
+          ],
+          "important_dates": [
+            "2 अक्टूबर"
+          ]
+        },
+        "quiz": {
+          "question": "Which legal provision's prohibitory orders were enforced across the New Delhi district ahead of the Jantar Mantar protests?",
+          "options": [
+            "Section 144 of the CrPC",
+            "Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS)",
+            "Section 108 of the IPC",
+            "Article 356 of the Constitution"
+          ],
+          "correct_answer": "Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS)",
+          "explanation": "Prohibitory orders under Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS) remained in force across the New Delhi district ahead of the proposed Jantar Mantar protests."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/11-delhi-metro-stations-closed-for-entry-and-exit-ahead-of-jantar-mantar-protest-full-list-rajiv-chowk-janpath-central-secretariat-new-delhi-101790909516215.html",
+        "published_date": "2026-10-02",
+        "content_version": 2,
+        "id": 10,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/10/02/1600x900/logo/fff_1790909945441_n2cg_1790909945663_8pn2_b9bfec43-44fb-478e-b002-956c691722bc_KwGJ.jpg",
+        "added_at": "2026-10-02T09:11:21.066022+05:30"
+      },
+      {
+        "category": "World",
+        "exam_corner": false,
+        "headline": "Galgotias Outscores IISc on THE World University Rankings' 'Research Quality' Metric, Raising Questions",
+        "story_lead": "Private institutions including Galgotias University and Amity University have scored higher than the Indian Institute of Science (IISc) on the 'research quality' parameter in the 2027 Times Higher Education (THE) World University Rankings, prompting criticism over the ranking methodology.",
+        "full_article_text": "In the latest 2027 Times Higher Education (THE) World University Rankings, several private Indian universities scored significantly higher on the 'research quality' metric than the Indian Institute of Science (IISc), India's highest-ranked university overall with a global rank of 254. On the research quality indicator, IISc was placed 64th among 143 Indian institutions with a score of 51.5. In contrast, Galgotias University scored 67 (ranked 23rd), Amity University scored 76.9 (ranked 12th), Chitkara scored 87.1, Graphic Era scored 93.6, and Saveetha University topped the list among Indian institutions with 95.1.\n\nResearch quality is the most heavily weighted of THE’s five performance pillars, accounting for 30% of the overall score (alongside research environment at 29%, teaching at 29.5%, international outlook, and industry impact). The 23rd edition of the UK-based ranking evaluated 2,297 universities across 118 countries using 17 performance indicators. THE's research quality pillar comprises citation impact (15%), research strength (5%), research excellence (5%), and research influence (5%). Bibliometric data provided by Elsevier for the 2027 rankings covered 188.7 million citations across 19.9 million publications between 2021 and 2025, indexed in the Scopus database.\n\nIndia's research community, including Achal Agrawal, founder of India Research Watch, criticized the findings, highlighting issues such as high retraction rates and manipulation of citation-based metrics. Concerns over methodology and transparency have previously led major Indian institutions to withdraw from THE rankings, including seven IITs (Bombay, Delhi, Guwahati, Kanpur, Kharagpur, Madras, and Roorkee) in 2020, and BITS Pilani in January 2026.\n\nGalgotias University's high research score has also drawn scrutiny due to past controversies. In February 2026, the university was asked to withdraw from the India AI Impact Summit at Bharat Mandapam, New Delhi, after presenting a commercially available Chinese robotic dog as an in-house development. Furthermore, between its founding in 2011 and 2024-25, Galgotias filed 2,297 patent applications—exceeding IIT Bombay (1,646), IIT Madras (1,782), and IIT Kanpur (939)—yet only 24 patents were granted, representing a ~1% success rate.\n\nIn response to criticism over rankings manipulation and citation cartels, Phil Baty, THE’s global affairs officer, announced on September 30 that revisions will be introduced for the 2028 edition (scheduled for publication in autumn 2027). These changes include capping institutional self-citations and recalibrating the research quality pillar by reducing the weight of citation impact while increasing the weight of research strength, excellence, and influence.",
+        "background_context": "Seven IITs—Bombay, Delhi, Guwahati, Kanpur, Kharagpur, Madras, and Roorkee—opted out of THE’s World University Rankings in 2020 due to transparency and parameter concerns. BITS Pilani also withdrew in January 2026 citing similar methodological rigour issues.",
+        "bullet_points": [
+          "IISc ranked 64th among 143 Indian institutions on THE's research quality metric with a score of 51.5, despite being India's highest-ranked institution overall (global rank 254).",
+          "Private universities outscored IISc on research quality: Saveetha (95.1), Graphic Era (93.6), Chitkara (87.1), Amity University (76.9), and Galgotias University (67).",
+          "Research quality is the highest-weighted pillar in THE rankings, carrying 30% weightage, followed by teaching (29.5%) and research environment (29%).",
+          "Galgotias University filed 2,297 patent applications between 2011 and 2024-25 (exceeding IIT Bombay, IIT Madras, and IIT Kanpur), but received only 24 granted patents (~1% success rate).",
+          "In February 2026, Galgotias was asked to withdraw from the India AI Impact Summit at Bharat Mandapam for displaying a commercial Chinese robotic dog as its own product.",
+          "THE announced methodology changes for its 2028 edition (autumn 2027), including capping institutional self-citations and reducing the weight of the citation impact indicator."
+        ],
+        "key_facts": [
+          "The 23rd edition of THE World University Rankings covers 2,297 universities across 118 countries and territories.",
+          "Elsevier provided 188.7 million citations to 19.9 million publications covering over 29,100 active peer-reviewed journals in the Scopus database for the 2027 rankings.",
+          "Research quality pillar consists of citation impact (15%), research strength (5%), research excellence (5%), and research influence (5%).",
+          "Galgotias filed 1,089 patent applications in 2022-23 alone, exceeding the combined number filed by all IITs that year."
+        ],
+        "key_locations": [
+          "Greater Noida",
+          "Noida",
+          "New Delhi",
+          "Bharat Mandapam"
+        ],
+        "important_dates": [
+          "2020",
+          "September 30",
+          "January 2026",
+          "February 2026",
+          "autumn 2027"
+        ],
+        "exam_relevance": [
+          "UPSC CSE General Studies Paper II: Issues relating to development and management of Social Sector/Services relating to Education.",
+          "UPSC CSE General Studies Paper III: Science and Technology- developments and their applications and effects in everyday life, R&D infrastructure, patents and IPR issues."
+        ],
+        "upsc_analysis": "The discrepancy in global university rankings highlights the vulnerabilities of citation-heavy bibliometric evaluation frameworks in higher education. Over-reliance on citation volume can incentivize predatory publishing, self-citations, citation cartels, and hyper-filing of patents with negligible commercial or technological value (~1% grant success rate). Major public institutions like the IITs and BITS Pilani withdrawing from global rankings underscores the urgent need for transparent, verifiable, and outcome-oriented evaluation parameters that reflect actual research impact and integrity.",
+        "causes": [
+          "Heavy 15% weightage on citation impact within THE's 30% research quality pillar, which is susceptible to skewing by statistical outliers and citation cartels.",
+          "Institutional focus on gaming ranking metrics through excessive self-citations and high volume of low-quality patent applications."
+        ],
+        "impacts": [
+          "Discrepancies in ranking metrics where private institutions with high retraction rates outscore premier research institutes like IISc.",
+          "Withdrawal of premier Indian institutes (seven IITs in 2020, BITS Pilani in January 2026) from global ranking frameworks.",
+          "Methodological revisions announced by THE for its 2028 edition to cap institutional self-citations and reduce citation impact weightage."
+        ],
+        "challenges": [
+          "Vulnerability of bibliometric tools (like Elsevier Scopus data) to manipulation through citation networks and coercive citations.",
+          "Lack of penalties in ranking methodologies for institutions with high numbers of research paper retractions.",
+          "Superficial patent filings where thousands of applications yield minimal actual patent grants."
+        ],
+        "government_steps": [
+          "Organizing platforms like the India AI Impact Summit at Bharat Mandapam, where compliance and product authenticity are strictly enforced."
+        ],
+        "constitutional_or_policy_link": [
+          "National Education Policy (NEP) 2020 guidelines on encouraging research quality, academic integrity, and transparent higher education evaluation framework."
+        ],
+        "way_forward": [
+          "Recalibrating ranking methodologies to reduce reliance on raw citation counts and prioritize research influence, peer evaluation, and granted patents over total filings.",
+          "Enforcing strict institutional penalties for research misconduct and paper retractions.",
+          "Implementing capped self-citations and independent verification mechanisms to prevent citation cartel manipulation."
+        ],
+        "mains_notes": "Key parameters of THE World University Rankings: Teaching (29.5%), Research Environment (29%), Research Quality (30%), International Outlook, and Industry Impact. Research Quality sub-indicators: Citation impact (15%), Research strength (5%), Research excellence (5%), Research influence (5%). Vulnerabilities identified: Citation manipulation, self-citations, high retraction counts, and mass low-quality patent filings without grants.",
+        "mains_questions": [
+          "Examine the issues associated with relying on bibliometric citation metrics to evaluate higher education research quality in India. How do ranking distortions impact global academic credibility?",
+          "Discuss the reasons behind leading Indian research institutions opting out of international ranking frameworks. What reforms are needed to establish realistic and transparent assessment parameters?"
+        ],
+        "takeaway": "Flaws in global higher education rankings reveal how citation-heavy metrics can distort research quality assessments, prompting methodologies to be revised against self-citation and ranking manipulation.",
+        "prelims_facts": [
+          "Times Higher Education (THE) World University Rankings evaluate universities across 5 performance pillars: Teaching (29.5%), Research Environment (29%), Research Quality (30%), International Outlook, and Industry Impact.",
+          "The Research Quality pillar includes citation impact (15%), research strength (5%), research excellence (5%), and research influence (5%).",
+          "IISc scored 51.5 on research quality ( ranked 64th in India), while Saveetha University topped India with 95.1."
+        ],
+        "vocabulary": [
+          {
+            "word": "Bibliometric",
+            "meaning_hindi": "ग्रंथमितीय / प्रकाशन एवं उद्धरण आँकड़ों का विश्लेषण"
+          },
+          {
+            "word": "Retraction",
+            "meaning_hindi": "वापसी / शोध पत्र को औपचारिक रूप से वापस लेना"
+          },
+          {
+            "word": "Citation",
+            "meaning_hindi": "उद्धरण / संदर्भ"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Indian Institute of Science",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Indian_Institute_of_Science"
+          },
+          {
+            "name": "Galgotias University",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Galgotias_University"
+          },
+          {
+            "name": "Times Higher Education",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Times_Higher_Education"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "THE वर्ल्ड यूनिवर्सिटी रैंकिंग के 'रिसर्च क्वालिटी' मीट्रिक में गलगोटियास ने IISc को पीछे छोड़ा, रैंकिंग कार्यप्रणाली पर उठे सवाल",
+          "story_lead": "टाइम्स हायर एजुकेशन (THE) वर्ल्ड यूनिवर्सिटी रैंकिंग 2027 के 'रिसर्च क्वालिटी' पैरामीटर पर गलगोटियास यूनिवर्सिटी और एमिटी यूनिवर्सिटी जैसे निजी विश्वविद्यालयों ने भारतीय विज्ञान संस्थान (IISc) से अधिक अंक प्राप्त किए हैं, जिससे रैंकिंग कार्यप्रणाली पर सवाल खड़े हो गए हैं।",
+          "full_article_text": "नवीनतम 2027 टाइम्स हायर एजुकेशन (THE) वर्ल्ड यूनिवर्सिटी रैंकिंग में, कई निजी भारतीय विश्वविद्यालयों ने 'रिसर्च क्वालिटी' मीट्रिक पर भारत के शीर्ष शोध संस्थान भारतीय विज्ञान संस्थान (IISc) से काफी अधिक अंक प्राप्त किए हैं। समग्र रैंकिंग में 254वीं वैश्विक रैंक के साथ भारत में शीर्ष पर रहने वाले IISc को रिसर्च क्वालिटी संकेतक पर 51.5 अंक के साथ 143 भारतीय संस्थानों में 64वाँ स्थान मिला। इसके विपरीत, ग्रेटर नोएडा स्थित गलगोटियास यूनिवर्सिटी ने 67 अंक (23वाँ स्थान), एमिटी यूनिवर्सिटी नोएडा ने 76.9 अंक (12वाँ स्थान), चितकारा ने 87.1, ग्राफिक एरा ने 93.6 और सवीथा यूनिवर्सिटी ने 95.1 अंक के साथ भारतीय सूची में शीर्ष स्थान हासिल किया।\n\nरिसर्च क्वालिटी THE के पांच प्रदर्शन स्तंभों में सबसे अधिक भारित है, जो कुल स्कोर का 30% हिस्सा है (टीचिंग 29.5%, रिसर्च एनवायरनमेंट 29%, इंटरनेशनल आउटलुक और इंडस्ट्री इम्पेक्ट के साथ)। यूके स्थित इस रैंकिंग के 23वें संस्करण में 118 देशों के 2,297 विश्वविद्यालयों का मूल्यांकन 17 प्रदर्शन संकेतकों पर किया गया। THE के रिसर्च क्वालिटी स्तंभ में साइटेशन इम्पेक्ट (15%), रिसर्च स्ट्रेंथ (5%), रिसर्च एक्सीलेंस (5%), और रिसर्च इन्फ्लुएंस (5%) शामिल हैं। एल्सेवियर द्वारा प्रदान किए गए बिब्लियोमेट्रिक डेटा में 2021 से 2025 के बीच प्रकाशित 1.99 करोड़ प्रकाशनों के 18.87 करोड़ साइटेशन शामिल थे।\n\nइंडिया रिसर्च वॉच के संस्थापक अचल अग्रवाल सहित भारत के शोध समुदाय ने इन परिणामों की आलोचना की है और साइटेशन-आधारित मीट्रिक द्वारा शोध की गुणवत्ता और निष्ठा को दर्शाने पर सवाल उठाए हैं। पारदर्शिता और कार्यप्रणाली की चिंताओं के कारण सात आईआईटी (बॉम्बे, दिल्ली, गुवाहाटी, कानपुर, खड़गपुर, मद्रास, रुड़की) ने 2020 में और बिट्स पिलानी ने जनवरी 2026 में THE रैंकिंग से खुद को अलग कर लिया था।\n\nगलगोटियास यूनिवर्सिटी का यह स्कोर इसके पिछले विवादों के कारण भी चर्चा में है। फरवरी 2026 में, नई दिल्ली के भारत मंडपम में आयोजित 'इंडिया एआई इम्पैक्ट समिट' में गलगोटियास को एक व्यावसायिक चीनी रोबोटिक डॉग को अपने उत्पाद के रूप में प्रदर्शित करने पर बाहर होने के लिए कहा गया था। इसके अलावा, 2011 में अपनी स्थापना से 2024-25 तक गलगोटियास ने 2,297 पेटेंट आवेदन फाइल किए—जो आईआईटी बॉम्बे (1,646), आईआईटी मद्रास (1,782) और आईआईटी कानपुर (939) से अधिक है—लेकिन केवल 24 पेटेंट मंजूर हुए, जो लगभग 1% सफलता दर है।\n\nरैंकिंग में हेरफेर और साइटेशन गठजोड़ की आलोचना के बाद, THE के ग्लोबल अफेयर्स ऑफिसर फिल बैटी ने 30 सितंबर को घोषणा की कि 2028 संस्करण (शरद ऋतु 2027 में प्रकाशित) से संशोधन किए जाएंगे। इनमें संस्थागत स्व-उद्धरणों (सेल्फ-साइटेशन) पर सीमा लगाना और साइटेशन इम्पेक्ट का भार घटाकर रिसर्च स्ट्रेंथ, एक्सीलेंस और इन्फ्लुएंस का भार बढ़ाना शामिल है।",
+          "background_context": "सात आईआईटी (बॉम्बे, दिल्ली, गुवाहाटी, कानपुर, खड़गपुर, मद्रास और रुड़की) ने पारदर्शिता और मापदंडों पर चिंताओं के कारण 2020 में THE वर्ल्ड यूनिवर्सिटी रैंकिंग से खुद को अलग कर लिया था। BITS पिलानी ने भी जनवरी 2026 में इसी तरह की चिंताओं के चलते अपना नाम वापस ले लिया।",
+          "bullet_points": [
+            "IISc कुल मिलाकर भारत का शीर्ष संस्थान (वैश्विक रैंक 254) होने के बावजूद, THE के रिसर्च क्वालिटी मीट्रिक में 51.5 अंक के साथ 143 भारतीय संस्थानों में 64वें स्थान पर रहा।",
+            "निजी विश्वविद्यालयों ने रिसर्च क्वालिटी में IISc को पीछे छोड़ दिया: सवीथा (95.1), ग्राफिक एरा (93.6), चितकारा (87.1), एमिटी (76.9), और गलगोटियास (67)।",
+            "रिसर्च क्वालिटी THE रैंकिंग में 30% भार के साथ सबसे प्रमुख स्तंभ है, जिसके बाद टीचिंग (29.5%) और रिसर्च एनवायरनमेंट (29%) आते हैं।",
+            "गलगोटियास यूनिवर्सिटी ने 2011 से 2024-25 के बीच 2,297 पेटेंट आवेदन दायर किए, लेकिन केवल 24 पेटेंट स्वीकृत हुए (~1% सफलता दर)।",
+            "फरवरी 2026 में, भारत मंडपम में गलगोटियास को चीनी रोबोटिक डॉग को अपना उत्पाद बताकर प्रदर्शित करने पर इंडिया एआई इम्पैक्ट समिट से हटने के लिए कहा गया था।",
+            "THE ने 2028 संस्करण के लिए संस्थागत स्व-उद्धरणों को सीमित करने और साइटेशन इम्पेक्ट के भार को कम करने जैसे बदलावों की घोषणा की है।"
+          ],
+          "key_facts": [
+            "THE वर्ल्ड यूनिवर्सिटी रैंकिंग के 23वें संस्करण में 118 देशों/क्षेत्रों के 2,297 विश्वविद्यालय शामिल हैं।",
+            "एल्सेवियर ने स्कोपस डेटाबेस में 2021 से 2025 के बीच प्रकाशित 1.99 करोड़ प्रकाशनों के 18.87 करोड़ साइटेशन प्रदान किए।",
+            "रिसर्च क्वालिटी स्तंभ में साइटेशन इम्पेक्ट (15%), रिसर्च स्ट्रेंथ (5%), रिसर्च एक्सीलेंस (5%), और रिसर्च इन्फ्लुएंस (5%) शामिल हैं।"
+          ],
+          "key_locations": [
+            "ग्रेटर नोएडा",
+            "नोएडा",
+            "नई दिल्ली",
+            "भारत मंडपम"
+          ],
+          "important_dates": [
+            "2020",
+            "30 सितंबर",
+            "जनवरी 2026",
+            "फरवरी 2026",
+            "शरद ऋतु 2027"
+          ]
+        },
+        "quiz": {
+          "question": "In the Times Higher Education (THE) World University Rankings methodology, what weightage is assigned to the 'Research Quality' pillar?",
+          "options": [
+            "15%",
+            "29%",
+            "29.5%",
+            "30%"
+          ],
+          "correct_answer": "30%",
+          "explanation": "According to the source, Research Quality accounts for 30% of the overall score, making it the most heavily weighted performance pillar in THE World University Rankings."
+        },
+        "source_name": "HT India",
+        "source_url": "https://www.hindustantimes.com/india-news/galgotias-outscores-iisc-on-the-s-research-quality-metric-raising-questions-101790910030143.html",
+        "published_date": "2026-10-02",
+        "content_version": 2,
+        "id": 9,
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2026/10/02/1600x900/logo/The-Indian-Institute-of-Science--IISc--is-one-of-I_1790910021992_2Sun.png",
+        "added_at": "2026-10-02T09:11:21.066022+05:30"
+      },
+      {
+        "category": "World",
+        "exam_corner": false,
         "headline": "Amit Shah chairs high-level meeting over Odisha-Chhattisgarh Mahanadi water dispute",
         "story_lead": "Union home minister Amit Shah chaired a high-level meeting in Delhi to discuss the long-standing Mahanadi water-sharing dispute between Chhattisgarh and Odisha.",
         "full_article_text": "Union home minister Amit Shah chaired a high-level meeting in Delhi to discuss and potentially resolve the long-standing issue of the Mahanadi water dispute between Chhattisgarh and Odisha. Chhattisgarh CM Vishnu Deo Sai and Odisha CM Mohan Charan Majhi put forth their respective states' positions. The meeting was attended by the jal shakti minister, chairman of the Central Water Commission (CWC), chief secretaries of Chhattisgarh and Odisha, and senior officials from the ministry of Jal Shakti, CWC, and both state governments. Chhattisgarh CM Vishnu Deo Sai called for a fair, sustainable, and 'win-win' resolution based on scientific assessment, transparency, and dialogue. Sai noted that the Mahanadi originates in Chhattisgarh and more than half its catchment area lies within its boundaries, and assured Odisha of Chhattisgarh's cooperation regarding the Hirakud Dam. Odisha has for years objected to the construction of barrages by Chhattisgarh in upstream areas, stating they affect downstream water flow during the lean season. The dispute was previously before the Mahanadi Water Disputes Tribunal and was later referred to the Central Water Commission.",
@@ -1254,15 +1874,15 @@
         "added_at": "2026-10-02T00:14:00.853583+05:30"
       }
     ],
-    "updated_at": "2026-10-02T06:15:24.557226+05:30",
-    "count": 8
+    "updated_at": "2026-10-02T09:11:21.066022+05:30",
+    "count": 12
   },
   "motivation": {
-    "quote": "Discipline is choosing your preparation even when motivation is low.",
-    "image_url": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=1600&q=85",
-    "updated_at": "2026-10-02T06:15:24.557226+05:30"
+    "quote": "Study deeply today so that revision becomes easier tomorrow.",
+    "image_url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=85",
+    "updated_at": "2026-10-02T09:11:21.066022+05:30"
   },
   "last_updated_ist": "2026-09-25 08:53:09",
   "project": "AURA EXAM AI",
-  "last_updated": "2026-10-02T06:15:24.557226+05:30"
+  "last_updated": "2026-10-02T09:11:21.066022+05:30"
 }
