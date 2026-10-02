@@ -3282,13 +3282,108 @@ let globalPayload = null;
     }
 
 
+    /*
+       NEWS THUMBNAIL DEDUPLICATION
+       Some articles can arrive with the same image_url. Keep the first
+       occurrence, but give repeated/missing thumbnails a stable alternative
+       so the main news grid does not show the same picture repeatedly.
+       This is presentation-only; it does not modify data.json or article text.
+    */
+    const NEWS_THUMBNAIL_FALLBACKS = [
+        "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1521295121783-8f32181a2f3c?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=900&q=80"
+    ];
+
+    function normalizedImageUrl(url) {
+        return String(url || "").trim().split("#")[0].split("?")[0].replace(/\/+$/, "");
+    }
+
+    function getDisplayImage(article, articleList) {
+        const news = Array.isArray(articleList)
+            ? articleList
+            : (Array.isArray(currentData?.news) ? currentData.news : []);
+
+        const defaultImage =
+            "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=900&q=80";
+
+        if (!article) return defaultImage;
+
+        const counts = new Map();
+        news.forEach(item => {
+            const key = normalizedImageUrl(item?.image_url);
+            if (key) counts.set(key, (counts.get(key) || 0) + 1);
+        });
+
+        // Reserve all unique images and the first occurrence of each repeated image.
+        const reserved = new Set();
+        const firstOccurrence = new Set();
+        news.forEach(item => {
+            const key = normalizedImageUrl(item?.image_url);
+            if (key && (counts.get(key) === 1 || !firstOccurrence.has(key))) {
+                reserved.add(key);
+                firstOccurrence.add(key);
+            }
+        });
+
+        const usedFallbacks = new Set();
+        const assigned = new Map();
+
+        news.forEach((item, index) => {
+            const rawUrl = String(item?.image_url || "").trim();
+            const key = normalizedImageUrl(rawUrl);
+            const isFirstOfRepeatedUrl = key && counts.get(key) > 1 &&
+                !Array.from(assigned.values()).some(value => normalizedImageUrl(value) === key);
+
+            if (key && (counts.get(key) === 1 || isFirstOfRepeatedUrl)) {
+                assigned.set(item, rawUrl);
+                return;
+            }
+
+            // Missing or duplicate URL: select a stable fallback not already used
+            // by an article's original image or another fallback in this dataset.
+            const seed = Math.abs(Number(item?.id) || index);
+            let fallback = "";
+            for (let offset = 0; offset < NEWS_THUMBNAIL_FALLBACKS.length; offset++) {
+                const candidate = NEWS_THUMBNAIL_FALLBACKS[
+                    (seed + offset) % NEWS_THUMBNAIL_FALLBACKS.length
+                ];
+                const candidateKey = normalizedImageUrl(candidate);
+                if (!reserved.has(candidateKey) && !usedFallbacks.has(candidateKey)) {
+                    fallback = candidate;
+                    usedFallbacks.add(candidateKey);
+                    break;
+                }
+            }
+
+            assigned.set(item, fallback || rawUrl || defaultImage);
+        });
+
+        if (assigned.has(article)) return assigned.get(article);
+
+        // Search results may come from archived dates rather than currentData.
+        const url = String(article.image_url || "").trim();
+        return url || NEWS_THUMBNAIL_FALLBACKS[
+            Math.abs(Number(article.id) || 0) % NEWS_THUMBNAIL_FALLBACKS.length
+        ];
+    }
+
+
     function createSearchResultCard(article, date) {
         const card = document.createElement("article");
         card.className = "news-card";
         card.onclick = () => openSearchResult(article, date);
 
-        const image = article.image_url ||
-            "https://images.unsplash.com/photo-1495020689067-958852a7765e";
+        const image = getDisplayImage(article);
         const category = article.category || "Current Affairs";
         const headline = article.headline || "Current Affairs";
         const lead = article.story_lead || article.full_article_text ||
@@ -3470,9 +3565,7 @@ let globalPayload = null;
             };
 
 
-        const image =
-            article.image_url ||
-            "https://images.unsplash.com/photo-1495020689067-958852a7765e";
+        const image = getDisplayImage(article);
 
 
         const category =
@@ -4071,8 +4164,7 @@ let globalPayload = null;
                 "articleImage"
             )
             .src =
-            article.image_url ||
-            "https://images.unsplash.com/photo-1495020689067-958852a7765e";
+            getDisplayImage(article);
 
 
         /* HEADLINE */
