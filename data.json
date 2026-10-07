@@ -23,6 +23,1726 @@
     "date": "2026-10-07",
     "news": [
       {
+        "category": "Science & Technology",
+        "exam_corner": false,
+        "headline": "BJP asserts Congress itself is responsible for electoral setbacks rather than the Election Commission",
+        "story_lead": "The Bharatiya Janata Party (BJP) has responded to criticism by stating that the Congress party alone is accountable for its electoral losses, dismissing allegations directed at the Election Commission. This political exchange forms part of broader discussions surrounding electoral integrity and institutional roles in India.",
+        "full_article_text": "The Bharatiya Janata Party (BJP) has strongly criticized the Congress party, asserting that the opposition party's own internal shortcomings and political strategies are responsible for its electoral defeats rather than the Election Commission (EC). The statement addresses ongoing debates concerning institutional functioning and electoral outcomes in the country. While various other national and international developments featured in media reports—such as security cooperation talks between national security advisors amid Canada trade talks, an incident involving a Flydubai flight cockpit attack on Captain Smit Machchhar, the Punjab government moving the Supreme Court against a CBI probe, and an Enforcement Directorate crackdown on a bribe racket involving public sector executives—the political back-and-forth between the ruling party and the opposition remains a central focus of domestic discourse.",
+        "background_context": "",
+        "bullet_points": [
+          "BJP stated that the Congress party is entirely accountable for its electoral losses.",
+          "The ruling party rejected accusations directed towards the Election Commission regarding election outcomes.",
+          "The discourse highlights ongoing political friction between major national parties regarding electoral processes.",
+          "Various other domestic and international developments were reported alongside the political exchange."
+        ],
+        "key_facts": [
+          "BJP attributed Congress electoral losses to the party itself rather than the Election Commission.",
+          "Publication date of the report is October 7, 2026."
+        ],
+        "key_locations": [
+          "India"
+        ],
+        "important_dates": [
+          "2026-10-07: Publication date of the report"
+        ],
+        "exam_relevance": [
+          "Relevant for understanding general political discourse and the role of constitutional bodies like the Election Commission in Indian democracy."
+        ],
+        "upsc_analysis": "The news highlights ongoing debates between political parties regarding the credibility and functioning of constitutional bodies such as the Election Commission of India.",
+        "causes": [
+          "Electoral defeats suffered by the Congress party leading to political scrutiny of election management bodies."
+        ],
+        "impacts": [
+          "Heightened political exchanges and debate concerning the neutrality and role of the Election Commission."
+        ],
+        "challenges": [],
+        "government_steps": [],
+        "constitutional_or_policy_link": [],
+        "way_forward": [],
+        "mains_notes": "The debate over electoral outcomes underlines the necessity of maintaining the absolute neutrality, credibility, and autonomy of constitutional institutions like the Election Commission while managing legitimate political discourse.",
+        "mains_questions": [
+          "Discuss the importance of maintaining the autonomy and credibility of the Election Commission in India's democratic framework."
+        ],
+        "takeaway": "The BJP has maintained that Congress's own political performance, not the Election Commission, is to blame for its electoral setbacks.",
+        "prelims_facts": [
+          "The BJP made statements holding Congress responsible for its election losses on October 7, 2026."
+        ],
+        "vocabulary": [
+          {
+            "word": "Accountable",
+            "meaning_hindi": "उत्तरदायी"
+          },
+          {
+            "word": "Allegations",
+            "meaning_hindi": "आरोप"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Bharatiya Janata Party",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Bharatiya%20Janata%20Party"
+          },
+          {
+            "name": "Indian National Congress",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Indian%20National%20Congress"
+          },
+          {
+            "name": "Election Commission of India",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Election%20Commission%20of%20India"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "कांग्रेस अपनी हार के लिए खुद जिम्मेदार है, चुनाव आयोग नहीं: भाजपा",
+          "story_lead": "भारतीय जनता पार्टी (भाजपा) ने यह कहकर कांग्रेस की आलोचना का जवाब दिया है कि विपक्षी दल अपनी चुनावी हार के लिए खुद जिम्मेदार है और चुनाव आयोग पर लगाए गए आरोप निराधार हैं।",
+          "full_article_text": "भारतीय जनता पार्टी (भाजपा) ने कांग्रेस पार्टी की आलोचना करते हुए कहा है कि चुनाव आयोग को दोषी ठहराने के बजाय पार्टी की अपनी आंतरिक कमियां और राजनीतिक रणनीतियां उसकी चुनावी हार के लिए जिम्मेदार हैं। यह बयान देश में संस्थागत कामकाज और चुनावी परिणामों को लेकर चल रही बहसों को संबोधित करता है।",
+          "background_context": "",
+          "bullet_points": [
+            "भाजपा ने कहा कि कांग्रेस पार्टी अपनी चुनावी हार के लिए पूरी तरह उत्तरदायी है।",
+            "सत्ताधारी दल ने चुनाव परिणामों के संबंध में चुनाव आयोग पर लगाए गए आरोपों को खारिज कर दिया।"
+          ],
+          "key_facts": [
+            "भाजपा ने कांग्रेस की चुनावी हार के लिए चुनाव आयोग के बजाय खुद कांग्रेस को जिम्मेदार ठहराया।"
+          ],
+          "key_locations": [
+            "भारत"
+          ],
+          "important_dates": [
+            "2026-10-07: रिपोर्ट की प्रकाशन तिथि"
+          ]
+        },
+        "quiz": {
+          "question": "According to the BJP, who is responsible for the electoral losses of the Congress party?",
+          "options": [
+            "The Election Commission",
+            "Congress itself",
+            "The Judiciary",
+            "The Media"
+          ],
+          "correct_answer": "Congress itself",
+          "explanation": "The BJP asserted that the Congress party itself, and not the Election Commission, is responsible for its electoral losses."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/india/congress-itself-not-ec-responsible-for-its-losses-bjp/articleshow/134752409.cms",
+        "published_date": "2026-10-07",
+        "content_version": 3,
+        "id": 60,
+        "image_url": "https://static.toiimg.com/photo/msid-134752413,imgsize-54236.cms",
+        "added_at": "2026-10-07T06:20:30.001584+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": false,
+        "headline": "Hollywood actor Michael Douglas opens up about past romantic relationships and being caught in bed",
+        "story_lead": "Veteran Hollywood actor Michael Douglas recently disclosed details about his past romantic relationships, including romances with co-stars. He also spoke about an incident where he was caught in bed by his partner.",
+        "full_article_text": "Veteran Hollywood actor Michael Douglas has publicly discussed details of his past relationships and romantic affairs. In recent disclosures, the actor opened up about his romance with his 'Basic Instinct' co-star. Furthermore, he recalled an instance involving being caught in bed with another woman.",
+        "background_context": "",
+        "bullet_points": [
+          "Michael Douglas shared details regarding his past affairs.",
+          "He spoke about a romance with his 'Basic Instinct' co-star.",
+          "The actor recounted an incident where he was caught in bed by his wife."
+        ],
+        "key_facts": [
+          "Michael Douglas discussed his past relationships and affairs.",
+          "He referenced a romance with a 'Basic Instinct' co-star.",
+          "He mentioned an incident where he was caught red-handed by his wife."
+        ],
+        "key_locations": [],
+        "important_dates": [
+          "2026-10-07: Publication date of the report"
+        ],
+        "exam_relevance": [
+          "Not relevant for competitive exams as this is a celebrity entertainment news item."
+        ],
+        "upsc_analysis": "This is an entertainment news item concerning Hollywood celebrities and has no relevance to the UPSC syllabus.",
+        "causes": [],
+        "impacts": [],
+        "challenges": [],
+        "government_steps": [],
+        "constitutional_or_policy_link": [],
+        "way_forward": [],
+        "mains_notes": "Not applicable for academic or competitive exam preparation.",
+        "mains_questions": [],
+        "takeaway": "Michael Douglas revealed details about his past affairs and being caught in bed.",
+        "prelims_facts": [
+          "Michael Douglas is associated with the film 'Basic Instinct'."
+        ],
+        "vocabulary": [
+          {
+            "word": "Romance",
+            "meaning_hindi": "प्रेम संबंध"
+          },
+          {
+            "word": "Affair",
+            "meaning_hindi": "अवैध संबंध"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Michael Douglas",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Michael%20Douglas"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "हॉलीवुड अभिनेता माइकल डगलस ने पिछले रिश्तों और बिस्तर पर पकड़े जाने के बारे में खुलासे किए",
+          "story_lead": "दिग्गज हॉलीवुड अभिनेता माइकल डगलस ने हाल ही में अपने पिछले रोमांटिक संबंधों और सह-कलाकारों के साथ रोमांस के बारे में विवरण साझा किए। उन्होंने एक ऐसी घटना का भी जिक्र किया जब उन्हें बिस्तर पर पकड़ा गया था।",
+          "full_article_text": "दिग्गज हॉलीवुड अभिनेता माइकल डगलस ने सार्वजनिक रूप से अपने पिछले रिश्तों और प्रेम प्रसंगों का विवरण साझा किया है। हाल ही में किए गए खुलासों में, अभिनेता ने अपनी 'बेसिक इंस्टिंक्ट' की सह-कलाकार के साथ अपने रोमांस के बारे में बात की। इसके अलावा, उन्होंने एक अन्य महिला के साथ बिस्तर पर पकड़े जाने की घटना को भी याद किया।",
+          "background_context": "",
+          "bullet_points": [
+            "माइकल डगलस ने अपने पिछले संबंधों के बारे में विवरण साझा किए।",
+            "उन्होंने 'बेसिक इंस्टिंक्ट' की सह-कलाकार के साथ रोमांस के बारे में बात की।",
+            "अभिनेता ने उस घटना को याद किया जब उनकी पत्नी ने उन्हें रंगे हाथों पकड़ा था।"
+          ],
+          "key_facts": [
+            "माइकल डगलस ने अपने पिछले रिश्तों और संबंधों पर चर्चा की।",
+            "उन्होंने 'बेसिक इंस्टिंक्ट' की सह-कलाकार के साथ रोमांस का जिक्र किया।",
+            "उन्होंने एक घटना का उल्लेख किया जब उनकी पत्नी ने उन्हें बिस्तर पर पकड़ा था।"
+          ],
+          "key_locations": [],
+          "important_dates": [
+            "2026-10-07: रिपोर्ट के प्रकाशन की तिथि"
+          ]
+        },
+        "quiz": {
+          "question": "Which Hollywood actor recently disclosed details about his past affairs and romance with a 'Basic Instinct' co-star?",
+          "options": [
+            "Tom Cruise",
+            "Michael Douglas",
+            "Brad Pitt",
+            "Leonardo DiCaprio"
+          ],
+          "correct_answer": "Michael Douglas",
+          "explanation": "Michael Douglas recently revealed details about his past affairs and romance with a 'Basic Instinct' co-star."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/michael-douglas-reveals-details-of-past-affairs-opens-up-about-romance-with-basic-instinct-co-star-being-caught-in-bed-with-another-woman/articleshow/134752471.cms",
+        "published_date": "2026-10-07",
+        "content_version": 3,
+        "id": 59,
+        "image_url": "https://static.toiimg.com/photo/msid-134752481,imgsize-38938.cms",
+        "added_at": "2026-10-07T06:20:30.001584+05:30"
+      },
+      {
+        "category": "Sports",
+        "exam_corner": false,
+        "headline": "NFL Stars Travis and Jason Kelce Quietly Contribute $10,000 to Support Laila Edwards' Family in Milan",
+        "story_lead": "NFL brothers Travis Kelce and Jason Kelce made a quiet $10,000 contribution to help fulfill a $50,000 Olympic fundraiser. The financial support successfully assisted Laila Edwards' family in traveling to Milan for a family reunion during the Olympic events.",
+        "full_article_text": "NFL personalities Travis Kelce and Jason Kelce provided financial assistance by quietly donating $10,000 to a fundraiser. The initiative, which had a target of $50,000, was established to support Laila Edwards' family. The contribution played a crucial role in helping the family reach Milan, enabling them to turn the fundraiser into a family reunion during the Olympic period.",
+        "background_context": "",
+        "bullet_points": [
+          "Travis Kelce and Jason Kelce made a quiet donation of $10,000.",
+          "The contribution was directed toward a $50,000 Olympic fundraiser.",
+          "The funds helped Laila Edwards' family travel to Milan for a family reunion."
+        ],
+        "key_facts": [
+          "Donation amount: $10,000",
+          "Fundraiser target: $50,000",
+          "Beneficiary: Laila Edwards' family",
+          "Destination: Milan",
+          "Contributors: Travis Kelce and Jason Kelce"
+        ],
+        "key_locations": [
+          "Milan"
+        ],
+        "important_dates": [
+          "2026-10-06 (Publication date)"
+        ],
+        "exam_relevance": [
+          "Not applicable as this is international sports news regarding a private donation and lacks direct competitive exam relevance for Indian civil services."
+        ],
+        "upsc_analysis": "This is a brief news report regarding philanthropic support by athletes for an Olympian's family and holds no direct significance for competitive exams in India.",
+        "causes": [
+          "A fundraising effort was launched to help Laila Edwards' family travel to Milan."
+        ],
+        "impacts": [
+          "The $10,000 donation from Travis and Jason Kelce helped complete the $50,000 fundraiser, allowing the family to reunite in Milan."
+        ],
+        "challenges": [],
+        "government_steps": [],
+        "constitutional_or_policy_link": [],
+        "way_forward": [],
+        "mains_notes": "NFL players Travis and Jason Kelce contributed $10,000 to support a $50,000 Olympic fundraiser, enabling Laila Edwards' family to travel to Milan for a reunion.",
+        "mains_questions": [
+          "How did the financial contribution by Travis and Jason Kelce assist Laila Edwards' family?",
+          "What was the objective of the $50,000 Olympic fundraiser supported by the Kelce brothers?"
+        ],
+        "takeaway": "NFL stars Travis and Jason Kelce donated $10,000 to help a $50,000 Olympic fundraiser enable Laila Edwards' family to reunite in Milan.",
+        "prelims_facts": [
+          "Travis and Jason Kelce donated $10,000.",
+          "The fundraiser amount was $50,000.",
+          "The beneficiary family belonged to Laila Edwards."
+        ],
+        "vocabulary": [
+          {
+            "word": "Fundraiser",
+            "meaning_hindi": "धन जुटाने का अभियान"
+          },
+          {
+            "word": "Contribution",
+            "meaning_hindi": "योगदान"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Travis Kelce",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Travis%20Kelce"
+          },
+          {
+            "name": "Jason Kelce",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Jason%20Kelce"
+          },
+          {
+            "name": "Laila Edwards",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Laila%20Edwards"
+          },
+          {
+            "name": "Milan",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Milan"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "एनएफएल स्टार ट्रैविस और जेसन केल्सी ने मिलां में लैला एडवर्ड्स के परिवार की मदद के लिए चुपचाप 10,000 डॉलर का दान दिया",
+          "story_lead": "एनएफएल भाइयों ट्रैविस केल्सी और जेसन केल्सी ने 50,000 डॉलर के ओलंपिक फंडरेज़र को पूरा करने में मदद के लिए चुपचाप 10,000 डॉलर का योगदान दिया। इस वित्तीय सहायता ने लैला एडवर्ड्स के परिवार को ओलंपिक के दौरान मिलान में एक पारिवारिक पुनर्मिलन के लिए यात्रा करने में सफलतापूर्वक मदद की।",
+          "full_article_text": "एनएफएल हस्तियों ट्रैविस केल्सी और जेसन केल्सी ने एक फंडरेज़र में चुपचाप 10,000 डॉलर का दान देकर वित्तीय सहायता प्रदान की। 50,000 डॉलर के लक्ष्य वाले इस अभियान को लैला एडवर्ड्स के परिवार का समर्थन करने के लिए स्थापित किया गया था। इस योगदान ने परिवार को मिलान पहुँचने में मदद करने में महत्वपूर्ण भूमिका निभाई, जिससे ओलंपिक अवधि के दौरान फंडरेज़र को एक पारिवारिक पुनर्मिलन में बदलने में मदद मिली।",
+          "background_context": "",
+          "bullet_points": [
+            "ट्रैविस केल्सी और जेसन केल्सी ने चुपचाप 10,000 डॉलर का दान दिया।",
+            "यह योगदान 50,000 डॉलर के ओलंपिक फंडरेज़र की ओर निर्देशित किया गया था।",
+            "इस राशि से लैला एडवर्ड्स के परिवार को मिलान में पारिवारिक पुनर्मिलन के लिए यात्रा करने में मदद मिली।"
+          ],
+          "key_facts": [
+            "दान राशि: 10,000 डॉलर",
+            "फंडरेज़र लक्ष्य: 50,000 डॉलर",
+            "लाभार्थी: लैला एडवर्ड्स का परिवार",
+            "गंतव्य: मिलान",
+            "दाता: ट्रैविस केल्सी और जेसन केल्सी"
+          ],
+          "key_locations": [
+            "मिलान"
+          ],
+          "important_dates": [
+            "2026-10-06 (प्रकाशन तिथि)"
+          ]
+        },
+        "quiz": {
+          "question": "How much money did Travis and Jason Kelce quietly donate to the Olympic fundraiser for Laila Edwards' family?",
+          "options": [
+            "5,000 dollars",
+            "10,000 dollars",
+            "25,000 dollars",
+            "50,000 dollars"
+          ],
+          "correct_answer": "10,000 dollars",
+          "explanation": "Travis and Jason Kelce quietly donated $10,000 to help turn the $50,000 fundraiser into a family reunion in Milan."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/sports/nfl/news/travis-and-jason-kelce-quietly-donated-10000-to-help-turn-a-50000-olympic-fundraiser-into-a-family-reunion-in-milan/articleshow/134689224.cms",
+        "published_date": "2026-10-06",
+        "content_version": 3,
+        "id": 58,
+        "image_url": "https://static.toiimg.com/photo/msid-134689360,imgsize-150129.cms",
+        "added_at": "2026-10-07T06:20:30.001584+05:30"
+      },
+      {
+        "category": "Sports",
+        "exam_corner": false,
+        "headline": "Ed and Donna Kelce Step In for Travis Kelce’s 87 & Running Foundation Amid Financial Controversy",
+        "story_lead": "Ed and Donna Kelce have stepped in to support Travis Kelce’s 87 & Running Foundation following financial controversy. Despite ongoing financial scrutiny, the organization continues its youth development programs, with Donna Kelce engaging students in a special experience and Ed Kelce connecting the family legacy to children.",
+        "full_article_text": "Travis Kelce’s charitable organization, the 87 & Running Foundation, has taken a new organizational step by involving Ed and Donna Kelce. The move comes amid a backdrop of financial controversy and scrutiny surrounding the foundation. Despite these challenges, the foundation continues its mission of supporting youth work and community engagement. As part of these efforts, Donna Kelce recently participated with students in a special experience related to the Kansas City Chiefs, while Ed Kelce has worked to connect the family's legacy with the children involved in the foundation's programs.",
+        "background_context": "",
+        "bullet_points": [
+          "Ed and Donna Kelce have stepped into active roles in Travis Kelce’s 87 & Running Foundation.",
+          "The foundation's recent moves come amid financial controversy and scrutiny.",
+          "Despite financial challenges, the organization continues its youth development work.",
+          "Donna Kelce joined students for a special Chiefs-related experience.",
+          "Ed Kelce is actively connecting the family's legacy with participating children."
+        ],
+        "key_facts": [
+          "Foundation name: 87 & Running Foundation",
+          "Key individuals involved: Travis Kelce, Ed Kelce, Donna Kelce"
+        ],
+        "key_locations": [
+          "United States"
+        ],
+        "important_dates": [
+          "2026-10-06: Publication date of the report"
+        ],
+        "exam_relevance": [
+          "Not directly applicable to competitive examinations as it pertains to a private sports figure's charitable foundation."
+        ],
+        "upsc_analysis": "This is a celebrity sports news item with no direct relevance to civil services examinations.",
+        "causes": [
+          "Financial controversy and scrutiny surrounding the foundation prompted new leadership involvement."
+        ],
+        "impacts": [
+          "Ed and Donna Kelce entering the picture to guide youth work and maintain foundation operations."
+        ],
+        "challenges": [
+          "Navigating financial controversy while continuing youth work."
+        ],
+        "government_steps": [],
+        "constitutional_or_policy_link": [],
+        "way_forward": [],
+        "mains_notes": "The article discusses private philanthropic governance adjustments by family members of a professional athlete amidst public scrutiny.",
+        "mains_questions": [
+          "Discuss the role of celebrity foundations in community development and the governance challenges they face."
+        ],
+        "takeaway": "Ed and Donna Kelce have intervened in Travis Kelce’s 87 & Running Foundation to support ongoing youth programs amidst financial controversy.",
+        "prelims_facts": [
+          "Travis Kelce operates the 87 & Running Foundation focused on youth work."
+        ],
+        "vocabulary": [
+          {
+            "word": "Scrutiny",
+            "meaning_hindi": "जांच या छानबीन"
+          },
+          {
+            "word": "Controversy",
+            "meaning_hindi": "विवाद"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Travis Kelce",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Travis%20Kelce"
+          },
+          {
+            "name": "Donna Kelce",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Donna%20Kelce"
+          },
+          {
+            "name": "Ed Kelce",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Ed%20Kelce"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "ट्रेविस केल्सी के 87 एंड रनिंग फाउंडेशन में वित्तीय विवाद के बीच एड और Donna केल्सी ने संभाली कमान",
+          "story_lead": "वित्तीय विवाद और जांच के बीच ट्रेविस केल्सी के 87 एंड रनिंग फाउंडेशन में मदद के लिए एड और डोना केल्सी आगे आए हैं। वित्तीय जांच के बावजूद यह संगठन युवाओं के लिए अपना काम जारी रखे हुए है।",
+          "full_article_text": "ट्रेविस केल्सी के चैरिटेबल संगठन, 87 एंड रनिंग फाउंडेशन ने वित्तीय विवाद और जांच के बीच एड और डोना केल्सी को शामिल करते हुए एक नया कदम उठाया है। इस वित्तीय जांच के बावजूद फाउंडेशन युवाओं के विकास और सामुदायिक कार्यों को जारी रखे हुए है।",
+          "background_context": "",
+          "bullet_points": [
+            "एड और डोना केल्सी ट्रेविस केल्सी के फाउंडेशन से जुड़े हैं।",
+            "यह कदम वित्तीय विवाद और जांच के बीच उठाया गया है।",
+            "फाउंडेशन ने अपनी युवा विकास गतिविधियां जारी रखी हैं।"
+          ],
+          "key_facts": [
+            "फाउंडेशन का नाम: 87 एंड रनिंग फाउंडेशन"
+          ],
+          "key_locations": [
+            "संयुक्त राज्य अमेरिका"
+          ],
+          "important_dates": [
+            "2026-10-06: रिपोर्ट प्रकाशित होने की तिथि"
+          ]
+        },
+        "quiz": {
+          "question": "Which family members stepped in to assist Travis Kelce’s 87 & Running Foundation amid financial controversy?",
+          "options": [
+            "Ed and Donna Kelce",
+            "Jason and Kylie Kelce",
+            "Patrick and Brittany Mahomes",
+            "Tom Brady and Gisele Bündchen"
+          ],
+          "correct_answer": "Ed and Donna Kelce",
+          "explanation": "Ed and Donna Kelce stepped into the picture to support Travis Kelce’s 87 & Running Foundation amidst financial controversy."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/sports/nfl/news/travis-kelces-87-running-foundation-makes-a-new-move-amid-financial-controversy-as-ed-and-donna-kelce-enter-the-picture/articleshow/134737378.cms",
+        "published_date": "2026-10-06",
+        "content_version": 3,
+        "id": 57,
+        "image_url": "https://static.toiimg.com/photo/msid-134738347,imgsize-85322.cms",
+        "added_at": "2026-10-07T06:20:30.001584+05:30"
+      },
+      {
+        "category": "Sports",
+        "exam_corner": false,
+        "headline": "Understanding the Endangered Monarch Butterflies and Their Poisonous Milkweed Diet",
+        "story_lead": "Monarch butterflies are remarkable traveller insects known for undertaking journeys as long as 3,000 miles. These endangered creatures rely heavily on a diet of poisonous milkweed to survive.",
+        "full_article_text": "Monarch butterflies are widely recognized for their incredible migratory journeys stretching up to 3,000 miles. Classified as endangered, these travellers depend on a specialized diet consisting of milkweed, a plant that is inherently poisonous. Consuming milkweed helps protect the butterflies by making them unpalatable or toxic to potential predators, aiding their survival across vast continental distances.",
+        "background_context": "",
+        "bullet_points": [
+          "Monarch butterflies are known for undertaking journeys as long as 3,000 miles.",
+          "The species is currently categorized as endangered.",
+          "Monarchs survive on a specialized diet of poisonous milkweed.",
+          "The toxic nature of milkweed helps defend the butterflies against predators."
+        ],
+        "key_facts": [
+          "Monarch butterflies travel up to 3,000 miles during migration.",
+          "They consume a poisonous milkweed diet for survival.",
+          "The species is considered endangered."
+        ],
+        "key_locations": [],
+        "important_dates": [],
+        "exam_relevance": [
+          "Useful for general awareness regarding wildlife conservation and migratory species."
+        ],
+        "upsc_analysis": "This article discusses the biological traits and conservation status of monarch butterflies, highlighting their reliance on milkweed.",
+        "causes": [],
+        "impacts": [],
+        "challenges": [
+          "Monarch butterflies face risks that categorize them as endangered."
+        ],
+        "government_steps": [],
+        "constitutional_or_policy_link": [],
+        "way_forward": [],
+        "mains_notes": "Monarch butterflies are endangered migratory insects capable of travelling up to 3,000 miles. Their survival is closely linked to a poisonous milkweed diet, which offers protection from predators.",
+        "mains_questions": [
+          "What makes monarch butterflies unique in terms of migration and diet?"
+        ],
+        "takeaway": "Monarch butterflies are endangered 3,000-mile traveller insects that rely on a poisonous milkweed diet for protection and survival.",
+        "prelims_facts": [
+          "Monarch butterflies can travel up to 3,000 miles.",
+          "They consume a poisonous milkweed diet."
+        ],
+        "vocabulary": [
+          {
+            "word": "Endangered",
+            "meaning_hindi": "संकटग्रस्त"
+          },
+          {
+            "word": "Poisonous",
+            "meaning_hindi": "विषैला"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Monarch butterfly",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Monarch%20butterfly"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "संकटग्रस्त मोनार्क तितलियाँ और उनके विषैले मिल्कवीड आहार की विशेषताएँ",
+          "story_lead": "मोनार्क तितलियाँ 3,000 मील की लंबी यात्रा तय करने के लिए जानी जाती हैं। ये संकटग्रस्त जीव जीवित रहने के लिए विषैले मिल्कवीड के आहार पर निर्भर करते हैं।",
+          "full_article_text": "मोनार्क तितलियाँ 3,000 मील तक की लंबी माइग्रेटरी यात्रा करने के लिए प्रसिद्ध हैं। संकटग्रस्त के रूप में वर्गीकृत, ये यात्री तितलियाँ मिल्कवीड के आहार पर निर्भर करती हैं, जो स्वाभाविक रूप से विषैला होता है। मिल्कवीड का सेवन करने से तितलियों की रक्षा होती है क्योंकि यह शिकारियों के लिए उन्हें जहरीला बनाता है।",
+          "background_context": "",
+          "bullet_points": [
+            "मोनार्क तितलियाँ 3,000 मील तक की यात्रा करती हैं।",
+            "इस प्रजाति को संकटग्रस्त माना जाता है।",
+            "मोनार्क विषैले मिल्कवीड आहार पर जीवित रहते हैं।",
+            "मिल्कवीड की विषाक्तता उन्हें शिकारियों से बचाने में मदद करती है।"
+          ],
+          "key_facts": [
+            "मोनार्क तितलियाँ 3,000 मील की यात्रा करती हैं।",
+            "वे जीवित रहने के लिए विषैले मिल्कवीड का सेवन करती हैं।"
+          ],
+          "key_locations": [],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": "How many miles can monarch butterflies travel during their migration?",
+          "options": [
+            "1,000 miles",
+            "2,000 miles",
+            "3,000 miles",
+            "5,000 miles"
+          ],
+          "correct_answer": "3,000 miles",
+          "explanation": "Monarch butterflies are known for travelling up to 3,000 miles."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/etimes/animals/meet-the-monarchs-the-endangered-3000-mile-traveller-butterflies-that-survive-on-poisonous-milkweed-diet/articleshow/134752678.cms",
+        "published_date": "2026-10-07",
+        "content_version": 3,
+        "id": 56,
+        "image_url": "https://static.toiimg.com/photo/msid-134752680,imgsize-387282.cms",
+        "added_at": "2026-10-07T06:20:30.001584+05:30"
+      },
+      {
+        "category": "Health",
+        "exam_corner": false,
+        "headline": "A review of Narendra Modi's 25 years in governance from Gujarat CM to Prime Minister of India",
+        "story_lead": "Marking 25 years in continuous office, Narendra Modi's tenure spans his leadership as the Chief Minister of Gujarat from October 2001 to May 2014, followed by his successive terms as the Prime Minister of India starting from 2014. The period witnessed major administrative initiatives, infrastructure expansions, welfare delivery reforms, and significant legislative and constitutional shifts across the country.",
+        "full_article_text": "Narendra Modi's 25 years in office began in October 2001 when he took charge as the Chief Minister of Gujarat, serving until May 2014. During his tenure in Gujarat, the state witnessed major structural reforms, including the rebuilding of Kutch and the passage of India's first state disaster management law in 2003. To attract investors and showcase economic strength, the Vibrant Gujarat Summit was launched in 2003. In 2006, the Jyotigram Yojana prioritized reliable power supply over subsidised erratic electricity, providing all 18,000 villages with three-phase power. Other regional initiatives included the Sagarkhedu Sarvangi Vikas Yojana in 2007 for coastal communities, the Garib Kalyan Mela in 2009 for welfare delivery, and extensive water conservation infrastructure like check dams and canals that brought Narmada water to Saurashtra and raised groundwater recharge levels. Ports such as Mundra, Hazira, and Pipavav were also developed by linking them with power, roads, rail, and industrial estates.\n\nTransitioning to national governance, Modi served his first term as Prime Minister from 2014 to 2019. Major financial inclusion steps included the Jan Dhan Yojana, which led to the opening of 59 crore accounts with over Rs 3.1 lakh crore in deposits, notably with women owning 33 crore of these accounts. This facilitated the expansion of Direct Benefit Transfer (DBT), which by August 2026 had transferred Rs 53.2 lakh crore across 320 schemes and 56 ministries. Sanitation and health campaigns like the Swachh Bharat Mission and PM Ujjwala Yojana (which provided 10.5 crore free LPG connections to poor households by May 2026) were rolled out. The social security net was expanded through schemes like Ayushman Bharat, raising official coverage estimates to 64% of Indians by 2025. Additionally, the Goods and Services Tax (GST) was introduced in July 2017 to economically unify the country.\n\nDuring his second term from 2019 to 2024, the administration undertook key political and legislative actions, including the revocation of Jammu and Kashmir's special constitutional status under Article 370 and its bifurcation into Union Territories, the passage of the Citizenship Amendment Act (CAA) in 2019, and the facilitation of the Ram Mandir construction in Ayodhya following a Supreme Court verdict. The administration also managed the challenges of the Covid-19 pandemic through indigenous vaccine scaling and vaccination drives, alongside the launch of Atmanirbhar Bharat and the rapid adoption of UPI. Following these terms, a third term began in 2024, accompanied by the Cabinet adopting a resolution hailing these governance achievements.",
+        "background_context": "",
+        "bullet_points": [
+          "Narendra Modi served as Gujarat Chief Minister from October 2001 to May 2014 before becoming India's Prime Minister.",
+          "Gujarat enacted India's first state disaster management law in 2003 and launched the Vibrant Gujarat Summit the same year.",
+          "The Jyotigram Yojana of 2006 ensured reliable three-phase power supply across all 18,000 villages in Gujarat.",
+          "Jan Dhan Yojana facilitated 59 crore bank accounts with over Rs 3.1 lakh crore in deposits, with women holding 33 crore accounts.",
+          "By August 2026, Direct Benefit Transfer (DBT) transferred Rs 53.2 lakh crore across 320 schemes and 56 ministries.",
+          "PM Ujjwala Yojana distributed 10.5 crore free LPG connections to women from poor households by May 2026.",
+          "Goods and Services Tax (GST) was implemented in July 2017 to establish a unified national market.",
+          "Major legislative and constitutional actions included the revocation of Article 370 for J&K, passage of the CAA in 2019, and the construction of the Ram Mandir in Ayodhya following a Supreme Court verdict."
+        ],
+        "key_facts": [
+          "Gujarat passed India's first state disaster management law in 2003.",
+          "Jyotigram Yojana was launched in 2006 to provide reliable power to 18,000 Gujarat villages.",
+          "Jan Dhan accounts reached 59 crore with over Rs 3.1 lakh crore in deposits.",
+          "DBT transferred Rs 53.2 lakh crore across 320 schemes and 56 ministries by August 2026.",
+          "PM Ujjwala Yojana provided 10.5 crore free LPG connections by May 2026.",
+          "GST was rolled out on July 1, 2017.",
+          "Social protection coverage increased from 19% in 2015 to 64% (94.3 crore Indians) by 2025."
+        ],
+        "key_locations": [
+          "Gujarat",
+          "Kutch",
+          "Saurashtra",
+          "Mundra",
+          "Hazira",
+          "Pipavav",
+          "Jammu and Kashmir",
+          "Ladakh",
+          "Ayodhya"
+        ],
+        "important_dates": [
+          "October 2001 - May 2014: Gujarat Chief Minister tenure",
+          "2003: Kutch rebuilt; India's first state disaster management law passed; Vibrant Gujarat Summit launched",
+          "2006: Jyotigram Yojana launched",
+          "2007: Sagarkhedu Sarvangi Vikas Yojana launched",
+          "2009: Garib Kalyan Mela launched",
+          "July 2017: GST rolled out",
+          "2019: CAA passed; Second term as PM begins",
+          "January 2024: Ram Mandir idol consecrated",
+          "August 2026: DBT cumulative figures reach Rs 53.2 lakh crore"
+        ],
+        "exam_relevance": [
+          "Useful for understanding administrative reforms, welfare delivery mechanisms like DBT, and major legislative milestones in modern Indian governance for UPSC CSE Prelims and Mains."
+        ],
+        "upsc_analysis": "The 25-year governance review highlights the evolution of public policy from regional infrastructure and disaster management models in Gujarat to nationwide digital public infrastructure, targeted welfare delivery (JAM trinity), and major federal and constitutional re-engineering.",
+        "causes": [
+          "Need for reliable rural power supply led to the Jyotigram Yojana in Gujarat.",
+          "Requirement for financial inclusion and direct subsidy delivery led to Jan Dhan Yojana and DBT.",
+          "Public health and sanitation inadequacies prompted the Swachh Bharat Mission and Ujjwala Yojana."
+        ],
+        "impacts": [
+          "Expansion of irrigation potential and groundwater recharge in Gujarat through inter-basin water transfers.",
+          "Empowerment of women through ownership of 33 crore Jan Dhan accounts and 10.5 crore LPG connections.",
+          "Economic unification of India through the introduction of GST."
+        ],
+        "challenges": [
+          "Managing the large human and administrative toll during the Covid-19 pandemic and subsequent lockdowns."
+        ],
+        "government_steps": [
+          "Implementation of state disaster management laws and infrastructure linkage in Gujarat.",
+          "Rollout of nationwide welfare programs including Jan Dhan Yojana, Swachh Bharat Mission, PM Ujjwala Yojana, and Ayushman Bharat.",
+          "Structural economic reforms including GST implementation and promotion of digital payments like UPI."
+        ],
+        "constitutional_or_policy_link": [
+          "Article 370 revocation and reorganization of Jammu and Kashmir",
+          "Citizenship Amendment Act (CAA), 2019",
+          "Goods and Services Tax implementation"
+        ],
+        "way_forward": [
+          "Continuous monitoring and scaling of digital governance and social security nets to reach remaining unserved populations."
+        ],
+        "mains_notes": "Narendra Modi's 25-year governance trajectory exhibits a transition from decentralized regional development models—such as infrastructure-led growth, power sector reforms (Jyotigram Yojana), and water conservation in Gujarat—to large-scale national welfare architecture. Key pillars include financial inclusion via JAM (Jan Dhan, Aadhaar, Mobile), targeted subsidy delivery through DBT, public health expansion (Ayushman Bharat, Ujjwala), and major legislative transformations including GST and constitutional changes in Jammu and Kashmir.",
+        "mains_questions": [
+          "Examine the evolution of welfare delivery mechanisms in India with special reference to Direct Benefit Transfer (DBT) and financial inclusion initiatives.",
+          "Discuss the administrative and economic significance of regional infrastructure models in shaping broader national development policies over the past two decades."
+        ],
+        "takeaway": "Narendra Modi completed 25 years in governance, transitioning from Gujarat Chief Minister (2001–2014) to Prime Minister of India, overseeing major economic reforms, welfare expansions, and infrastructure initiatives.",
+        "prelims_facts": [
+          "Gujarat passed India's first state disaster management law in 2003.",
+          "Jyotigram Yojana was launched in Gujarat in 2006.",
+          "Jan Dhan accounts reached 59 crore with women holding 33 crore accounts.",
+          "GST was implemented in July 2017.",
+          "Ayushman Bharat and related social protection schemes covered 94.3 crore Indians (64%) by 2025."
+        ],
+        "vocabulary": [
+          {
+            "word": "Revoking",
+            "meaning_hindi": "रद्द करना"
+          },
+          {
+            "word": "Consecrated",
+            "meaning_hindi": "प्रतिष्ठित"
+          },
+          {
+            "word": "Subsidised",
+            "meaning_hindi": "अनुदानित"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Narendra Modi",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Narendra%20Modi"
+          },
+          {
+            "name": "Gujarat",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Gujarat"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "गुजरात के मुख्यमंत्री से भारत के प्रधानमंत्री तक: मोदी के कार्यालय में 25 वर्ष",
+          "story_lead": "कार्यालय में लगातार 25 वर्ष पूरे होने पर, नरेंद्र मोदी का कार्यकाल अक्टूबर 2001 से मई 2014 तक गुजरात के मुख्यमंत्री के रूप में उनके नेतृत्व और उसके बाद 2014 से भारत के प्रधानमंत्री के रूप में उनके कार्यकाल को कवर करता है। इस अवधि में देश भर में प्रमुख प्रशासनिक पहल, बुनियादी ढांचा विस्तार, कल्याणकारी वितरण सुधार और महत्वपूर्ण विधायी व संवैधानिक बदलाव देखे गए।",
+          "full_article_text": "नरेंद्र मोदी के 25 वर्षों के कार्यकाल की शुरुआत अक्टूबर 2001 में गुजरात के मुख्यमंत्री के रूप में हुई, जहाँ उन्होंने मई 2014 तक सेवा की। गुजरात में अपने कार्यकाल के दौरान, राज्य ने कच्छ के पुनर्निर्माण और 2003 में भारत के पहले राज्य आपदा प्रबंधन कानून को पारित करने सहित कई संरचनात्मक सुधार देखे। निवेशकों को आकर्षित करने और अपनी आर्थिक ताकत दिखाने के लिए 2003 में वाइब्रेंट गुजरात शिखर सम्मेलन शुरू किया गया था। 2006 में, ज्योतिग्राम योजना ने रियायती लेकिन अनियंत्रित बिजली के बजाय विश्वसनीय बिजली आपूर्ति को प्राथमिकता दी, जिससे सभी 18,000 गांवों में तीन-चरण की बिजली पहुंच गई। अन्य क्षेत्रीय पहलों में तटीय समुदायों के लिए 2007 की सागरखेड़ू सर्वांगी विकास योजना, कल्याण वितरण के लिए 2009 का गरीब कल्याण मेला और सौराष्ट्र में नर्मदा का पानी पहुँचाने वाली चेक डैम और नहरों जैसी व्यापक जल संरक्षण बुनियादी ढाँचा परियोजनाएँ शामिल थीं। बंदरगाहों को बिजली, सड़क, रेल और औद्योगिक क्षेत्रों से भी जोड़ा गया। राष्ट्रीय शासन में संक्रमण करते हुए, मोदी ने 2014 से 2019 तक प्रधानमंत्री के रूप में अपना पहला कार्यकाल पूरा किया। जन धन योजना जैसे वित्तीय समावेशन के बड़े कदम उठाए गए, जिसके तहत 5.90 लाख करोड़ से अधिक के जमा के साथ 59 करोड़ खाते खोले गए, जिसमें महिलाओं के पास 33 करोड़ खाते थे। इससे प्रत्यक्ष लाभ हस्तांतरण (DBT) का विस्तार हुआ, जिसके माध्यम से अगस्त 2026 तक 320 योजनाओं और 56 मंत्रालयों में 53.2 लाख करोड़ रुपये स्थानांतरित किए गए। स्वच्छ भारत मिशन और प्रधानमंत्री उज्ज्वला योजना जैसी स्वास्थ्य और स्वच्छता अभियान शुरू किए गए, जिसके तहत मई 2026 तक गरीब परिवारों की महिलाओं को 10.5 करोड़ मुफ्त एलपीजी कनेक्शन दिए गए। आयुष्मान भारत जैसी योजनाओं के माध्यम से सामाजिक सुरक्षा का दायरा बढ़ाया गया। इसके अलावा, देश के आर्थिक एकीकरण के लिए जुलाई 2017 में वस्तु एवं सेवा कर (GST) लागू किया गया। 2019 से 2024 तक अपने दूसरे कार्यकाल के दौरान, प्रशासन ने अनुच्छेद 370 के तहत जम्मू-कश्मीर के विशेष संवैधानिक दर्जे को निरस्त करने और इसे केंद्र शासित प्रदेशों में विभाजित करने, 2019 में नागरिकता संशोधन अधिनियम (CAA) को पारित करने और सुप्रीम कोर्ट के फैसले के बाद अयोध्या में राम मंदिर के निर्माण जैसे प्रमुख राजनीतिक और विधायी कदम उठाए। प्रशासन ने स्वदेशी टीकों के विस्तार और टीकाकरण अभियानों के माध्यम से कोविड-19 महामारी की चुनौतियों का भी प्रबंधन किया। इसके बाद 2024 में उन्होंने तीसरा कार्यकाल शुरू किया।",
+          "background_context": "",
+          "bullet_points": [
+            "नरेंद्र मोदी ने भारत के प्रधानमंत्री बनने से पहले अक्टूबर 2001 से मई 2014 तक गुजरात के मुख्यमंत्री के रूप में कार्य किया।",
+            "गुजरात ने 2003 में भारत का पहला राज्य आपदा प्रबंधन कानून अधिनियमित किया और उसी वर्ष वाइब्रेंट गुजरात शिखर सम्मेलन शुरू किया।",
+            "2006 की ज्योतिग्राम योजना ने गुजरात के सभी 18,000 गांवों में विश्वसनीय तीन-चरण बिजली आपूर्ति सुनिश्चित की।",
+            "जन धन योजना के तहत 59 करोड़ बैंक खाते खोले गए, जिसमें महिलाओं के पास 33 करोड़ खाते थे।",
+            "अगस्त 2026 तक, प्रत्यक्ष लाभ हस्तांतरण (DBT) के माध्यम से 320 योजनाओं में 53.2 लाख करोड़ रुपये हस्तांतरित किए गए।",
+            "प्रधानमंत्री उज्ज्वला योजना ने मई 2026 तक गरीब परिवारों की महिलाओं को 10.5 करोड़ मुफ्त एलपीजी कनेक्शन वितरित किए।",
+            "एक एकीकृत राष्ट्रीय बाजार स्थापित करने के लिए 1 जुलाई, 2017 को वस्तु एवं सेवा कर (GST) लागू किया गया था।",
+            "प्रमुख विधायी और संवैधानिक कार्यों में जम्मू-कश्मीर के लिए अनुच्छेद 370 को निरस्त करना, 2019 में CAA पारित करना और अयोध्या में राम मंदिर का निर्माण शामिल है।"
+          ],
+          "key_facts": [
+            "गुजरात ने 2003 में भारत का पहला राज्य आपदा प्रबंधन कानून पारित किया।",
+            "गुजरात के 18,000 गांवों को बिजली देने के लिए 2006 में ज्योतिग्राम योजना शुरू की गई थी।",
+            "जन धन खाते 59 करोड़ तक पहुँच गए, जिसमें 3.1 लाख करोड़ से अधिक की जमा राशि थी।",
+            "अगस्त 2026 तक DBT के माध्यम से 53.2 लाख करोड़ रुपये स्थानांतरित किए गए।",
+            "मई 2026 तक पीएम उज्ज्वला योजना के तहत 10.5 करोड़ मुफ्त एलपीजी कनेक्शन दिए गए।",
+            "1 जुलाई 2017 को GST लागू किया गया था।"
+          ],
+          "key_locations": [
+            "गुजरात",
+            "कच्छ",
+            "सौराष्ट्र",
+            "मुंद्रा",
+            "हजीरा",
+            "पीपावाव",
+            "जम्मू और कश्मीर",
+            "लद्दाख",
+            "अयोध्या"
+          ],
+          "important_dates": [
+            "अक्टूबर 2001 - मई 2014: गुजरात के मुख्यमंत्री का कार्यकाल",
+            "2003: कच्छ का पुनर्निर्माण; आपदा प्रबंधन कानून पारित; वाइब्रेंट गुजरात शुरू",
+            "2006: ज्योतिग्राम योजना शुरू",
+            "2007: सागरखेड़ू सर्वांगी विकास योजना शुरू",
+            "जुलाई 2017: GST लागू किया गया",
+            "2019: CAA पारित; प्रधानमंत्री के रूप में दूसरा कार्यकाल शुरू",
+            "जनवरी 2024: राम मंदिर की प्राण प्रतिष्ठा",
+            "अगस्त 2026: DBT का कुल आंकड़ा 53.2 लाख करोड़ रुपये तक पहुँचा"
+          ]
+        },
+        "quiz": {
+          "question": "In which year was Gujarat's Jyotigram Yojana launched to prioritize reliable power supply to villages?",
+          "options": [
+            "2003",
+            "2006",
+            "2009",
+            "2014"
+          ],
+          "correct_answer": "2006",
+          "explanation": "Jyotigram Yojana was launched in 2006 in Gujarat to provide reliable three-phase power supply to all 18,000 villages."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/india/from-gujarat-cm-to-indias-pm-modis-25-years-in-office/articleshow/134752463.cms",
+        "published_date": "2026-10-07",
+        "content_version": 3,
+        "id": 55,
+        "image_url": "https://static.toiimg.com/photo/msid-134752462,imgsize-134876.cms",
+        "added_at": "2026-10-07T06:20:30.001584+05:30"
+      },
+      {
+        "category": "India",
+        "exam_corner": false,
+        "headline": "Psychological reasons behind why children touch parents' faces while talking",
+        "story_lead": "Psychological insights reveal that children who frequently touch a parent's face during conversations are often communicating through non-verbal means. This behavior can stem from several underlying motivations ranging from emotional reassurance to physical affection.",
+        "full_article_text": "Child psychology highlights that physical contact, such as touching a parent's face while speaking, goes beyond a mere habit and often forms an integral part of the interaction. For young children, this tactile gesture can serve as a subtle inquiry to confirm if the parent is fully engaged and present in the moment, effectively asking if the parent is still with them. Additionally, physical touch acts as a source of comfort, helping children feel secure during communication. In other instances, the gesture is simply a manifestation of affection or a preference for the sensory experience of the touch itself. Ultimately, experts suggest that parents should look beyond the physical gesture and focus on the deeper emotional dynamics of the relationship.",
+        "background_context": "",
+        "bullet_points": [
+          "Touching a parent's face while talking is often an integral part of a child's communication.",
+          "The gesture can act as a quiet way for a child to ask if the parent is still paying attention or present.",
+          "Physical touch helps provide a sense of safety and security for the child.",
+          "The behavior may simply stem from natural affection towards the parent.",
+          "Some children may engage in the action because they enjoy the physical sensation.",
+          "Experts advise parents to focus on the underlying relationship rather than just the physical gesture itself."
+        ],
+        "key_facts": [
+          "Children touching parents' faces while talking is linked to psychological and emotional communication.",
+          "Physical touch can make a child feel safe and confirm parental engagement."
+        ],
+        "key_locations": [],
+        "important_dates": [],
+        "exam_relevance": [
+          "Relevant for child psychology, parenting, and behavioral development studies."
+        ],
+        "upsc_analysis": "The article highlights non-verbal communication and behavioral patterns in child development.",
+        "causes": [],
+        "impacts": [],
+        "challenges": [],
+        "government_steps": [],
+        "constitutional_or_policy_link": [],
+        "way_forward": [],
+        "mains_notes": "Understanding child behavioral patterns such as facial touching during communication helps in analyzing non-verbal cues and emotional bonding in early childhood development.",
+        "mains_questions": [
+          "Discuss the significance of non-verbal communication and physical touch in child development.",
+          "How do behavioral cues like facial touching reflect emotional security in children?"
+        ],
+        "takeaway": "Children touching a parent's face while talking often signifies a need for reassurance, emotional security, or a simple expression of affection and sensory preference.",
+        "prelims_facts": [
+          "Child psychology identifies facial touching during conversation as a method of seeking reassurance and security."
+        ],
+        "vocabulary": [
+          {
+            "word": "Psychology",
+            "meaning_hindi": "मनोविज्ञान"
+          },
+          {
+            "word": "Affection",
+            "meaning_hindi": "स्नेह"
+          },
+          {
+            "word": "Sensation",
+            "meaning_hindi": "संवेदना"
+          }
+        ],
+        "related_entities": [],
+        "hindi_translation": {
+          "headline": "बातचीत के दौरान बच्चों द्वारा माता-पिता के चेहरे को छूने के पीछे के मनोवैज्ञानिक कारण",
+          "story_lead": "मनोवैज्ञानिक अंतर्दृष्टि से पता चलता है कि जो बच्चे बातचीत के दौरान बार-बार माता-पिता का चेहरा छूते हैं, वे अक्सर गैर-मौखिक माध्यमों से संवाद कर रहे होते हैं। यह व्यवहार भावनात्मक आश्वस्ति से लेकर शारीरिक स्नेह तक कई अंतर्निहित प्रेरणाओं से उपजी हो सकता है।",
+          "full_article_text": "बाल मनोविज्ञान इस बात पर प्रकाश डालता है कि बात करते समय माता-पिता के चेहरे को छूना जैसी शारीरिक संपर्क एक आदत से कहीं आगे की बात है और अक्सर बातचीत का एक अभिन्न अंग बनता है। छोटे बच्चों के लिए, यह स्पर्श संबंधी संकेत इस बात की पुष्टि करने के लिए एक सूक्ष्म पूछताछ के रूप में काम कर सकता है कि माता-पिता पूरी तरह से जुड़े हुए हैं या नहीं। इसके अतिरिक्त, शारीरिक स्पर्श बच्चे को सुरक्षित महसूस कराने में मदद करता है। अन्य मामलों में, यह हावभाव केवल स्नेह की अभिव्यक्ति या स्पर्श के संवेदी अनुभव की पसंद हो सकता है। अंततः, विशेषज्ञ सुझाव देते हैं कि माता-पिता को केवल शारीरिक इशारे से आगे देखना चाहिए और रिश्ते की गहरी भावनात्मक गतिशीलता पर ध्यान देना चाहिए।",
+          "background_context": "",
+          "bullet_points": [
+            "बात करते समय बच्चे का माता-पिता के चेहरे को छूना अक्सर उनके संवाद का एक हिस्सा होता है।",
+            "यह हावभाव इस बात का संकेत हो सकता है कि बच्चा यह जानना चाहता है कि माता-पिता साथ हैं या नहीं।",
+            "शारीरिक स्पर्श बच्चे को सुरक्षा की भावना प्रदान करने में मदद करता है।",
+            "यह व्यवहार माता-पिता के प्रति स्वाभाविक स्नेह के कारण भी हो सकता है।",
+            "कुछ बच्चे शारीरिक संवेदना पसंद होने के कारण भी ऐसा कर सकते हैं।",
+            "विशेषज्ञ सलाह देते हैं कि माता-पिता केवल इशारे के बजाय गहरे रिश्ते पर ध्यान दें।"
+          ],
+          "key_facts": [
+            "बच्चों द्वारा बात करते समय माता-पिता का चेहरा छूना मनोवैज्ञानिक और भावनात्मक संवाद से जुड़ा है।"
+          ],
+          "key_locations": [],
+          "important_dates": []
+        },
+        "quiz": {
+          "question": " according to psychology, why might a child keep touching a parent's face while talking?",
+          "options": [
+            "As a quiet way of asking if the parent is still engaged",
+            "To show anger or defiance",
+            "Because of a medical condition",
+            "To demand monetary rewards"
+          ],
+          "correct_answer": "As a quiet way of asking if the parent is still engaged",
+          "explanation": "Psychology indicates that touching a parent's face can be a quiet way of asking 'are you still with me?', providing safety, or showing affection."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/life-style/parenting/moments/psychology-says-children-who-keep-touching-a-parents-face-while-talking-may-have-a-deeper-reason-for-doing-it/articleshow/134715223.cms",
+        "published_date": "2026-10-06",
+        "content_version": 3,
+        "id": 54,
+        "image_url": "https://static.toiimg.com/photo/msid-134715493,imgsize-1291918.cms",
+        "added_at": "2026-10-07T06:20:30.001584+05:30"
+      },
+      {
+        "category": "World",
+        "exam_corner": false,
+        "headline": "Kirk and Anne Douglas's Historic Beverly Hills Estate Sells for $9.015 Million",
+        "story_lead": "The historic Beverly Hills property purchased by Hollywood icon Kirk Douglas and his wife Anne in 1976 has been sold for $9.015 million. The estate is notable for its private garden path, which features more than 40 celebrity autographs collected over the decades.",
+        "full_article_text": "The former Beverly Hills home of legendary actor Kirk Douglas and Anne Douglas has fetched $9.015 million, decades after the couple initially acquired it. Back in 1976, Kirk and Anne Douglas purchased the property for $400,000. During their ownership, they transformed the estate's garden path into a private walk of fame by gathering more than 40 celebrity autographs etched or recorded into the grounds. Forty-five years after their initial purchase, the property changed hands for over $9 million, marking a new chapter for the classic Hollywood legacy estate.",
+        "background_context": "",
+        "bullet_points": [
+          "Kirk and Anne Douglas bought the Beverly Hills property in 1976 for $400,000.",
+          "The couple turned the estate's garden path into a private walk of fame.",
+          "The garden path features more than 40 celebrity autographs.",
+          "The property ultimately sold 45 years later for $9.015 million."
+        ],
+        "key_facts": [
+          "Initial purchase price in 1976: $400,000",
+          "Final sale price: $9.015 million",
+          "Time span between purchase and sale: 45 years",
+          "Feature of the estate: Garden path with over 40 celebrity autographs"
+        ],
+        "key_locations": [
+          "Beverly Hills"
+        ],
+        "important_dates": [
+          "1976 - Kirk and Anne Douglas purchased the Beverly Hills property"
+        ],
+        "exam_relevance": [
+          "This news item is a human-interest and cultural property record story from the United States with no direct relevance to competitive examinations in India."
+        ],
+        "upsc_analysis": "This is a brief cultural and real estate transaction report concerning Hollywood history and holds no relevance for civil services examinations.",
+        "causes": [],
+        "impacts": [],
+        "challenges": [],
+        "government_steps": [],
+        "constitutional_or_policy_link": [],
+        "way_forward": [],
+        "mains_notes": "Not applicable for civil services examination preparation.",
+        "mains_questions": [],
+        "takeaway": "The historic Beverly Hills estate of Kirk and Anne Douglas, featuring a garden walk of fame with over 40 celebrity autographs, sold for $9.015 million after being purchased for $400,000 in 1976.",
+        "prelims_facts": [
+          "Kirk and Anne Douglas bought their Beverly Hills home in 1976.",
+          "The estate sold for $9.015 million.",
+          "The garden path contains over 40 celebrity autographs."
+        ],
+        "vocabulary": [
+          {
+            "word": "Estate",
+            "meaning_hindi": "संपत्ति"
+          },
+          {
+            "word": "Autograph",
+            "meaning_hindi": "हस्ताक्षर"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Kirk Douglas",
+            "type": "person",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Kirk%20Douglas"
+          },
+          {
+            "name": "Beverly Hills",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Beverly%20Hills"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "किर्क और ऐनी डगलस की ऐतिहासिक बेवर्ली हिल्स संपत्ति 9.015 मिलियन डॉलर में बिकी",
+          "story_lead": "हॉलीवुड के दिग्गज किर्क डगलस और उनकी पत्नी ऐनी द्वारा 1976 में खरीदी गई ऐतिहासिक बेवर्ली हिल्स संपत्ति 9.015 मिलियन डॉलर में बिक गई है। इस संपत्ति के बगीचे के रास्ते पर 40 से अधिक मशहूर हस्तियों के हस्ताक्षर दर्ज हैं।",
+          "full_article_text": "हॉलीवुड के दिग्गज अभिनेता किर्क डगलस और ऐनी डगलस का पूर्व बेवर्ली हिल्स घर 9.015 मिलियन डॉलर में बिका है। साल 1976 में किर्क और ऐनी डगलस ने इस संपत्ति को 400,000 डॉलर में खरीदा था। अपने स्वामित्व के दौरान, उन्होंने संपत्ति के बगीचे के रास्ते को दशकों में एकत्र किए गए 40 से अधिक मशहूर हस्तियों के हस्ताक्षरों के साथ एक निजी वॉक ऑफ फेम में बदल दिया। अपनी शुरुआती खरीद के 45 साल बाद, यह संपत्ति 9 मिलियन डॉलर से अधिक में बिकी, जो इस क्लासिक हॉलीवुड विरासत संपत्ति के लिए एक नए अध्याय की शुरुआत है।",
+          "background_context": "",
+          "bullet_points": [
+            "किर्क और ऐनी डगलस ने 1976 में 400,000 डॉलर में बेवर्ली हिल्स की संपत्ति खरीदी थी।",
+            "दंपति ने संपत्ति के बगीचे के रास्ते को एक निजी वॉक ऑफ फेम में बदल दिया।",
+            "बगीचे के रास्ते में 40 से अधिक मशहूर हस्तियों के हस्ताक्षर मौजूद हैं।",
+            "यह संपत्ति 45 साल बाद 9.015 मिलियन डॉलर में बिकी।"
+          ],
+          "key_facts": [
+            "1976 में शुरुआती खरीद मूल्य: $400,000",
+            "अंतिम बिक्री मूल्य: $9.015 मिलियन",
+            "खरीद और बिक्री के बीच का समय: 45 वर्ष",
+            "संपत्ति की विशेषता: 40 से अधिक सेलिब्रिटी हस्ताक्षरों वाला गार्डन पाथ"
+          ],
+          "key_locations": [
+            "बेवर्ली हिल्स"
+          ],
+          "important_dates": [
+            "1976 - किर्क और ऐनी डगलस द्वारा बेवर्ली हिल्स संपत्ति की खरीद"
+          ]
+        },
+        "quiz": {
+          "question": "In which year did Kirk and Anne Douglas purchase the Beverly Hills home for $400,000?",
+          "options": [
+            "1965",
+            "1976",
+            "1985",
+            "1990"
+          ],
+          "correct_answer": "1976",
+          "explanation": "Kirk and Anne Douglas purchased the Beverly Hills home in 1976 for $400,000."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/world/us/in-1976-kirk-and-anne-douglas-paid-400000-for-a-beverly-hills-home-and-turned-its-garden-path-into-a-private-walk-of-fame-with-more-than-40-celebrity-autographs-45-years-later-the-estate-sold-for-9-015-million/articleshow/134749529.cms",
+        "published_date": "2026-10-07",
+        "content_version": 3,
+        "id": 53,
+        "image_url": "https://static.toiimg.com/photo/msid-134749534,imgsize-673121.cms",
+        "added_at": "2026-10-07T06:20:30.001584+05:30"
+      },
+      {
+        "category": "World",
+        "exam_corner": false,
+        "headline": "Fort Cronkhite: Former WWII defense site near San Francisco transforms into coastal historic destination",
+        "story_lead": "Fort Cronkhite, a former World War II and Cold War military defense site located near San Francisco, has been converted into a historic coastal attraction. Surrounded by beaches, scenic trails, and Pacific Ocean views, the area preserves wartime barracks and offers a glimpse into America's military history.",
+        "full_article_text": "Fort Cronkhite, which once served as a strategic military post guarding San Francisco Bay with massive 16-inch guns, is now open as a public coastal historic site. Originally established to protect the region during World War II, the site later faced new defense demands during the Cold War era. Today, the location features surviving World War II-era barracks alongside natural surroundings that contrast with typical California beaches. Situated just outside San Francisco, the area functions as a recreational and educational destination for hikers, birdwatchers, and visitors interested in the nation's military past. The vicinity also hosts The Marine Mammal Center, adding ecological significance to the historic zone where visitors can spot wildlife such as brown pelicans and whales.",
+        "background_context": "",
+        "bullet_points": [
+          "Fort Cronkhite is located near San Francisco, California.",
+          "The site historically featured giant 16-inch guns designed to guard San Francisco Bay.",
+          "The area transitioned from a World War II defense installation to face threats during the Cold War.",
+          "Original World War II barracks still survive at the location today.",
+          "The surrounding area features hiking trails, birdwatching spots, and unique coastal beaches.",
+          "The Marine Mammal Center is situated near the historic site.",
+          "Visitors to the area can observe wildlife including brown pelicans and whales."
+        ],
+        "key_facts": [
+          "Fort Cronkhite once housed giant 16-inch guns capable of shaking San Francisco.",
+          "The site preserves surviving barracks from World War II.",
+          "The location serves as a coastal historic site near San Francisco with Pacific Ocean views.",
+          "The Marine Mammal Center is located near the fort."
+        ],
+        "key_locations": [
+          "San Francisco",
+          "San Francisco Bay",
+          "Fort Cronkhite"
+        ],
+        "important_dates": [
+          "World War II era - Initial military fortification and deployment of large guns",
+          "Cold War era - Subsequent period of strategic defense threat"
+        ],
+        "exam_relevance": [
+          "Useful for general awareness regarding historic preservation and coastal landmark management in international geography."
+        ],
+        "upsc_analysis": "Fort Cronkhite represents the adaptive reuse of former military infrastructure into public historic and ecological sites, highlighting the intersection of defense heritage preservation and public recreational access.",
+        "causes": [],
+        "impacts": [],
+        "challenges": [],
+        "government_steps": [],
+        "constitutional_or_policy_link": [],
+        "way_forward": [],
+        "mains_notes": "Fort Cronkhite, situated near San Francisco, illustrates the preservation of 20th-century military heritage, including WWII and Cold War installations, into accessible public coastal and ecological sites.",
+        "mains_questions": [
+          "Discuss the significance of converting former military defense sites like Fort Cronkhite into public historic and ecological resources."
+        ],
+        "takeaway": "Fort Cronkhite near San Francisco has transformed from a World War II and Cold War military defense post into a public historic site offering coastal views, preserved barracks, and ecological attractions.",
+        "prelims_facts": [
+          "Fort Cronkhite is situated near San Francisco.",
+          "The site historically featured 16-inch guns to guard San Francisco Bay.",
+          "The Marine Mammal Center is located near Fort Cronkhite."
+        ],
+        "vocabulary": [
+          {
+            "word": "Barracks",
+            "meaning_hindi": "सैनिक निवास / बैरक"
+          },
+          {
+            "word": "Historic site",
+            "meaning_hindi": "ऐतिहासिक स्थल"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Fort Cronkhite",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Fort%20Cronkhite"
+          },
+          {
+            "name": "San Francisco",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=San%20Francisco"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "फोर्ट क्रॉन्खाइट: सैन फ्रांसिस्को के पास द्वितीय विश्व युद्ध का पूर्व सैन्य किला अब तटीय ऐतिहासिक स्थल में बदला",
+          "story_lead": "सैन फ्रांसिस्को के पास स्थित फोर्ट क्रॉन्खाइट, जो कभी द्वितीय विश्व युद्ध और शीत युद्ध के दौरान एक सैन्य ठिकाना था, अब एक ऐतिहासिक तटीय आकर्षण बन गया है। समुद्र तटों, ट्रेल्स और प्रशांत महासागर के नजारों से घिरा यह क्षेत्र अपने समय की सैन्य बैरकों को सुरक्षित रखता है।",
+          "full_article_text": "फोर्ट क्रॉन्खाइट, जिसने कभी विशाल 16-इंच की तोपों के साथ सैन फ्रांसिस्को खाड़ी की रक्षा की थी, अब जनता के लिए एक ऐतिहासिक तटीय स्थल के रूप में खुला है। मूल रूप से द्वितीय विश्व युद्ध के दौरान इस क्षेत्र की सुरक्षा के लिए स्थापित यह स्थान बाद में शीत युद्ध के दौरान रणनीतिक सुरक्षा का केंद्र बना। आज इस स्थान पर युद्धकालीन बैरकें सुरक्षित हैं और यह हाइकर्स, पक्षी प्रेमियों और सैन्य इतिहास में रुचि रखने वाले आगंतुकों के लिए एक गंतव्य के रूप में कार्य करता है। इसके पास 'द मरीन मैमल सेंटर' भी स्थित है, जो इस ऐतिहासिक क्षेत्र को पारिस्थितिक महत्व प्रदान करता है।",
+          "background_context": "",
+          "bullet_points": [
+            "फोर्ट क्रॉन्खाइट कैलिफोर्निया में सैन फ्रांसिस्को के पास स्थित है।",
+            "इस स्थल पर ऐतिहासिक रूप से सैन फ्रांसिस्को खाड़ी की रक्षा के लिए विशाल 16-इंच की तोपें थीं।",
+            "यह क्षेत्र द्वितीय विश्व युद्ध के रक्षा प्रतिष्ठान से बदलकर शीत युद्ध के खतरों से जुड़ा रहा।",
+            "आज भी इस स्थान पर द्वितीय विश्व युद्ध के दौर की बैरकें मौजूद हैं।",
+            "आसपास के क्षेत्र में हाइकिंग ट्रेल्स और तटीय समुद्र तट शामिल हैं।",
+            "ऐतिहासिक स्थल के पास 'द मरीन मैमल सेंटर' स्थित है।"
+          ],
+          "key_facts": [
+            "फोर्ट क्रॉन्खाइट में कभी विशाल 16-इंच की तोपें थीं।",
+            "यह स्थल द्वितीय विश्व युद्ध की बैरकों को संरक्षित रखता है।",
+            "यह सैन फ्रांसिस्को के पास प्रशांत महासागर के दृश्यों वाला एक तटीय ऐतिहासिक स्थल है।"
+          ],
+          "key_locations": [
+            "सैन फ्रांसिस्को",
+            "सैन फ्रांसिस्को खाड़ी",
+            "फोर्ट क्रॉन्खाइट"
+          ],
+          "important_dates": [
+            "द्वितीय विश्व युद्ध काल - बड़े पैमाने पर सैन्य किलेबंदी",
+            "शी शीत युद्ध काल - रणनीतिक सुरक्षा का दौर"
+          ]
+        },
+        "quiz": {
+          "question": "Which large weapons were historically associated with Fort Cronkhite near San Francisco?",
+          "options": [
+            "12-inch naval guns",
+            "16-inch guns",
+            "8-inch artillery pieces",
+            "20-inch siege mortars"
+          ],
+          "correct_answer": "16-inch guns",
+          "explanation": "The source notes that Fort Cronkhite featured giant 16-inch guns that once guarded San Francisco Bay."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/world/us/fort-cronkhite-the-abandoned-wwii-fort-near-san-francisco-where-giant-16-inch-guns-once-shook-the-city-is-now-a-historic-site-surrounded-by-beaches-trails-and-pacific-ocean-views/articleshow/134748316.cms",
+        "published_date": "2026-10-06",
+        "content_version": 3,
+        "id": 52,
+        "image_url": "https://static.toiimg.com/photo/msid-134748403,imgsize-139245.cms",
+        "added_at": "2026-10-07T06:20:30.001584+05:30"
+      },
+      {
+        "category": "Sports",
+        "exam_corner": false,
+        "headline": "Eighty Percent Turnout Recorded in West Bengal Bypolls Amid Rigging and Intimidation Allegations",
+        "story_lead": "West Bengal recently witnessed a high voter turnout of 80% during local bypolls, which were marred by widespread complaints of electoral rigging and voter intimidation. The high-stakes exercise drew considerable attention amid ongoing political friction in the state.",
+        "full_article_text": "The recent bypolls held in West Bengal registered a voter participation rate of approximately 80 percent, reflecting significant enthusiasm among the electorate despite tense local conditions. However, the electoral process was overshadowed by serious allegations from various quarters concerning vote rigging, booth manipulation, and the intimidation of voters. Political observers and local participants reported friction during the polling hours as various groups raised concerns regarding the fairness and smooth conduct of the exercise. Authorities and election observers faced immense scrutiny as complaints regarding procedural irregularities and coercive practices surfaced from the polling booths.",
+        "background_context": "",
+        "bullet_points": [
+          "Voter turnout reached approximately 80% during the West Bengal bypolls.",
+          "The polling process was disrupted by allegations of rigging and voter intimidation.",
+          "Local groups and political entities raised concerns over the smooth and fair conduct of the elections.",
+          "The high voter participation stood in contrast to reports of friction and intimidation at various booths."
+        ],
+        "key_facts": [
+          "Turnout rate recorded was 80%.",
+          "Location of the bypolls was West Bengal.",
+          "The polls faced allegations of rigging and intimidation."
+        ],
+        "key_locations": [
+          "West Bengal"
+        ],
+        "important_dates": [
+          "2026-10-07: Publication date of the report concerning the West Bengal bypolls."
+        ],
+        "exam_relevance": [
+          "Relevant for understanding electoral dynamics, voter turnout trends, and allegations of malpractice in regional elections in India."
+        ],
+        "upsc_analysis": "The news highlights the recurring challenge of maintaining free and fair elections, balancing high voter turnout with allegations of intimidation and administrative friction.",
+        "causes": [
+          "High voter enthusiasm alongside competitive political mobilization leading to tensions."
+        ],
+        "impacts": [
+          "Raised concerns regarding electoral integrity and the need for robust security measures during polling."
+        ],
+        "challenges": [
+          "Preventing voter intimidation and addressing allegations of rigging during high-turnout bypolls."
+        ],
+        "government_steps": [],
+        "constitutional_or_policy_link": [
+          "Provisions related to the Election Commission of India and the conduct of free and fair elections under the Representation of the People Act."
+        ],
+        "way_forward": [
+          "Ensuring stringent deployment of security forces and swift redressal of grievances to safeguard democratic processes."
+        ],
+        "mains_notes": "The West Bengal bypolls witnessed an 80% voter turnout accompanied by serious allegations of rigging and voter intimidation. Such events underline the persistent operational challenges faced by election authorities in ensuring peaceful and fair polling environments in high-stakes regional contests.",
+        "mains_questions": [
+          "Discuss the challenges faced by election authorities in maintaining electoral integrity during high-turnout regional bypolls in India.",
+          "Analyze the implications of voter intimidation and rigging allegations on democratic participation."
+        ],
+        "takeaway": "West Bengal bypolls recorded an 80% turnout amidst widespread allegations of rigging and voter intimidation.",
+        "prelims_facts": [
+          "Voter turnout in West Bengal bypolls: 80%",
+          "Reported issues: Rigging and voter intimidation"
+        ],
+        "vocabulary": [
+          {
+            "word": "Intimidation",
+            "meaning_hindi": "धमकी या डराना"
+          },
+          {
+            "word": "Rigging",
+            "meaning_hindi": "चुनाव में धांधली"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "West Bengal",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/West_Bengal"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "पश्चिम बंगाल उपचुनाव में धांधली और डराने-धमकाने के आरोपों के बीच 80% मतदान",
+          "story_lead": "पश्चिम बंगाल में हाल ही में हुए उपचुनावों में लगभग 80 प्रतिशत मतदान दर्ज किया गया, जो चुनावी प्रक्रिया के दौरान धांधली और मतदाताओं को डराने-धमकाने के गंभीर आरोपों से घिर गया।",
+          "full_article_text": "पश्चिम बंगाल में हाल ही में संपन्न उपचुनावों में लगभग 80 प्रतिशत मतदान दर्ज हुआ, जो तनावपूर्ण स्थानीय परिस्थितियों के बावजूद मतदाताओं की भारी भागीदारी को दर्शाता है। हालांकि, मतदान प्रक्रिया के दौरान विभिन्न पक्षों से वोट की धांधली, बूथों में हेरफेर और मतदाताओं को डराने-धमकाने की गंभीर शिकायतें सामने आईं। मतदान के घंटों के दौरान राजनीतिक पर्यवेक्षकों और स्थानीय लोगों ने प्रक्रिया की निष्पक्षता को लेकर चिंता व्यक्त की।",
+          "background_context": "",
+          "bullet_points": [
+            "पश्चिम बंगाल उपचुनावों में लगभग 80% मतदान दर्ज किया गया।",
+            "मतदान प्रक्रिया के दौरान धांधली और मतदाताओं को डराने-धमकाने के आरोप लगे।",
+            "स्थानीय समूहों और राजनीतिक दलों ने चुनावों की निष्पक्षता को लेकर चिंता जताई।"
+          ],
+          "key_facts": [
+            "दर्ज किया गया मतदान प्रतिशत: 80%",
+            "स्थान: पश्चिम बंगाल"
+          ],
+          "key_locations": [
+            "पश्चिम बंगाल"
+          ],
+          "important_dates": [
+            "2026-10-07: पश्चिम बंगाल उपचुनावों से संबंधित रिपोर्ट के प्रकाशन की तिथि।"
+          ]
+        },
+        "quiz": {
+          "question": "What voter turnout percentage was recorded during the West Bengal bypolls mentioned in the report?",
+          "options": [
+            "70%",
+            "75%",
+            "80%",
+            "85%"
+          ],
+          "correct_answer": "80%",
+          "explanation": "The report states that 80% of votes were cast in the West Bengal bypolls amidst allegations of rigging and intimidation."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/india/80-vote-in-west-bengal-bypolls-amid-rigging-intimidation-charges/articleshow/134752541.cms",
+        "published_date": "2026-10-07",
+        "content_version": 3,
+        "id": 51,
+        "image_url": "https://static.toiimg.com/photo/msid-134752550,imgsize-90662.cms",
+        "added_at": "2026-10-07T06:20:30.001584+05:30"
+      },
+      {
+        "category": "World",
+        "exam_corner": false,
+        "headline": "Thirteen Navy Personnel Under Scrutiny in Pakistan-Linked Espionage Investigation",
+        "story_lead": "Authorities have placed thirteen personnel from the Navy under active scanner as part of an ongoing security investigation linked to espionage activities connected with Pakistan. The probe examines potential security compromises involving service members.",
+        "full_article_text": "An intelligence and security investigation has brought thirteen Navy personnel under formal scrutiny over suspected involvement in a Pakistan-linked espionage network. Investigators are examining potential breaches of defense security and unauthorized sharing of sensitive information with foreign operatives. The ongoing probe seeks to uncover the full extent of the intelligence network, identify any additional handlers or collaborators, and assess the nature of the information that may have been compromised. Security agencies are maintaining strict vigilance as inquiries continue into the activities of the personnel under scanner.",
+        "background_context": "",
+        "bullet_points": [
+          "Thirteen Navy personnel are currently under scanner in an espionage probe.",
+          "The investigation is linked to suspected intelligence activities connected with Pakistan.",
+          "Security agencies are examining potential breaches of defense information.",
+          "Authorities are working to identify the full scope of the network and potential handlers."
+        ],
+        "key_facts": [
+          "Number of Navy personnel under scanner: 13",
+          "Nature of probe: Pakistan-linked espionage investigation",
+          "Date of publication: October 6, 2026"
+        ],
+        "key_locations": [
+          "Pakistan"
+        ],
+        "important_dates": [
+          "October 6, 2026 - Publication date of the report"
+        ],
+        "exam_relevance": [
+          "Relevant for understanding national security challenges, internal security threats, and counter-espionage measures."
+        ],
+        "upsc_analysis": "The case highlights the persistent vulnerability of strategic defense installations and personnel to external intelligence operations, underscoring the critical need for robust counter-intelligence frameworks within the armed forces.",
+        "causes": [
+          "Suspected espionage activities and intelligence gathering by foreign operatives linked to Pakistan."
+        ],
+        "impacts": [
+          "Triggered a high-level security probe into naval personnel and potential defense information leaks."
+        ],
+        "challenges": [
+          "Detecting and neutralizing covert intelligence networks targeting military personnel."
+        ],
+        "government_steps": [
+          "Placing the implicated personnel under scanner and conducting a comprehensive security probe."
+        ],
+        "constitutional_or_policy_link": [],
+        "way_forward": [
+          "Strengthening internal counter-intelligence mechanisms and conducting regular security audits within defense establishments."
+        ],
+        "mains_notes": "Internal security threats involving military espionage require stringent counter-intelligence protocols, rigorous background checks, and continuous digital surveillance to prevent the compromise of strategic national defense assets.",
+        "mains_questions": [
+          "Discuss the challenges posed by external espionage networks targeting defense personnel and suggest measures to strengthen internal security in the armed forces."
+        ],
+        "takeaway": "Thirteen Navy personnel are facing scrutiny in a security probe concerning Pakistan-linked espionage.",
+        "prelims_facts": [
+          "13 Navy personnel are under scanner in the Pakistan-linked espionage probe reported in October 2026."
+        ],
+        "vocabulary": [
+          {
+            "word": "Espionage",
+            "meaning_hindi": "जासूसी"
+          },
+          {
+            "word": "Scrutiny",
+            "meaning_hindi": "छानबीन"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Pakistan",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Pakistan"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "पाकिस्तान से जुड़े जासूसी मामले में नौसेना के 13 कर्मी जांच के घेरे में",
+          "story_lead": "पाकिस्तान से जुड़ी जासूसी गतिविधियों की चल रही सुरक्षा जांच के तहत अधिकारियों ने नौसेना के तेरह कर्मियों को जांच के दायरे में रखा है।",
+          "full_article_text": "पाकिस्तान से जुड़े एक जासूसी नेटवर्क में कथित संलिप्तता को लेकर एक खुफिया और सुरक्षा जांच के तहत नौसेना के तेरह कर्मियों को औपचारिक जांच के दायरे में लाया गया है। जांचकर्ता रक्षा सुरक्षा के संभावित उल्लंघनों और विदेशी संचालकों के साथ संवेदनशील जानकारी के अनधिकृत आदान-प्रदान की जांच कर रहे हैं। चल रही जांच का उद्देश्य खुफिया नेटवर्क के पूरे दायरे का पता लगाना, किसी भी अतिरिक्त हैंडलर या सहयोगियों की पहचान करना और उन जानकारियों के स्वरूप का आकलन करना है जो खतरे में पड़ सकती हैं।",
+          "background_context": "",
+          "bullet_points": [
+            "नौसेना के तेरह कर्मी जासूसी जांच के दायरे में हैं।",
+            "यह जांच पाकिस्तान से जुड़ी संदिग्ध खुफिया गतिविधियों से संबंधित है।"
+          ],
+          "key_facts": [
+            "जांच के दायरे में नौसेना के कर्मी: 13",
+            "मामला: पाकिस्तान से जुड़ा जासूसी मामला"
+          ],
+          "key_locations": [
+            "पाकिस्तान"
+          ],
+          "important_dates": [
+            "6 अक्टूबर 2026 - रिपोर्ट के प्रकाशन की तिथि"
+          ]
+        },
+        "quiz": {
+          "question": "How many Navy personnel were reported to be under scanner in the Pakistan-linked espionage probe in October 2026?",
+          "options": [
+            "10",
+            "13",
+            "15",
+            "21"
+          ],
+          "correct_answer": "13",
+          "explanation": "The report states that 13 Navy personnel are under scanner in a Pakistan-linked espionage probe."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/city/vijayawada/13-navy-personnel-under-scanner-in-pak-linked-espionage-probe/articleshow/134748461.cms",
+        "published_date": "2026-10-06",
+        "content_version": 3,
+        "id": 50,
+        "image_url": "https://static.toiimg.com/photo/msid-134752685,imgsize-188700.cms",
+        "added_at": "2026-10-07T06:20:30.001584+05:30"
+      },
+      {
+        "category": "Economy",
+        "exam_corner": false,
+        "headline": "Most GST refunds may be processed within 17 days",
+        "story_lead": "Recent reports indicate that the majority of Goods and Services Tax (GST) refunds could see faster clearance, potentially being processed within a span of 17 days. This development highlights ongoing administrative efforts to improve tax compliance and liquidity for businesses under the indirect taxation framework.",
+        "full_article_text": "The administration of Goods and Services Tax (GST) refunds is reportedly moving toward a faster turnaround time, with expectations that most claims could be processed within 17 days. Such improvements in processing speed are vital for easing working capital constraints for taxpayers and businesses operating within the domestic economy. Efficient refund mechanisms form a core component of streamlining the indirect tax architecture, reducing compliance friction, and boosting overall economic transparency.",
+        "background_context": "",
+        "bullet_points": [
+          "Most GST refunds may be processed within a timeline of 17 days.",
+          "The initiative aims to improve tax administration and liquidity for businesses.",
+          "Processing speed is a critical factor for reducing working capital blockages for taxpayers."
+        ],
+        "key_facts": [
+          "Projected processing time for most GST refunds: 17 days."
+        ],
+        "key_locations": [
+          "India"
+        ],
+        "important_dates": [
+          "Publication date: October 7, 2026"
+        ],
+        "exam_relevance": [
+          "Relevant for UPSC Civil Services Exam under Economy: Tax reforms, GST administration, and ease of doing business."
+        ],
+        "upsc_analysis": "Efficient tax administration and faster refund mechanisms are critical indicators of improvements in the ease of doing business and tax compliance frameworks in India.",
+        "causes": [],
+        "impacts": [
+          "Potential improvement in business liquidity and reduced working capital blockages."
+        ],
+        "challenges": [],
+        "government_steps": [
+          "Targeting a faster processing duration of 17 days for most GST refunds."
+        ],
+        "constitutional_or_policy_link": [
+          "Goods and Services Tax (GST) framework in India"
+        ],
+        "way_forward": [
+          "Ensuring robust digital infrastructure and automated verification systems to consistently maintain faster tax refund timelines."
+        ],
+        "mains_notes": "Faster processing of GST refunds within 17 days significantly enhances business liquidity, reduces compliance costs, and strengthens trust in India's indirect taxation regime.",
+        "mains_questions": [
+          "Discuss the significance of efficient tax refund mechanisms in improving the ease of doing business in India.",
+          "How do streamlined GST processes impact the working capital requirements of businesses?"
+        ],
+        "takeaway": "Most GST refunds are projected to be processed within 17 days, aiming to enhance business liquidity.",
+        "prelims_facts": [
+          "Proposed processing timeline for most GST refunds: 17 days."
+        ],
+        "vocabulary": [
+          {
+            "word": "Refund",
+            "meaning_hindi": "प्रतिदाय / वापसी"
+          },
+          {
+            "word": "Liquidity",
+            "meaning_hindi": "तरलता"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Goods and Services Tax",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Goods_and_Services_Tax_(India)"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "अधिकांश जीएसटी रिफंड 17 दिनों के भीतर प्रोसेस किए जा सकते हैं",
+          "story_lead": "हालिया रिपोर्टों से संकेत मिलता है कि अधिकांश वस्तु एवं सेवा कर (जीएसटी) रिफंड के तेजी से निपटान की संभावना है, जिन्हें 17 दिनों के भीतर प्रोसेस किया जा सकता है।",
+          "full_article_text": "वस्तु एवं सेवा कर (जीएसटी) रिफंड का प्रशासन तेज बदलाव के दौर की ओर बढ़ रहा है, जिसमें यह उम्मीद की जा रही है कि अधिकांश दावों को 17 दिनों के भीतर प्रोसेस किया जा सकता है। कर प्रशासन में इस प्रकार के सुधार घरेलू अर्थव्यवस्था के तहत व्यवसायों के लिए कार्यशील पूंजी की बाधाओं को कम करने के लिए महत्वपूर्ण हैं।",
+          "background_context": "",
+          "bullet_points": [
+            "अधिकांश जीएसटी रिफंड 17 दिनों की समय सीमा के भीतर प्रोसेस किए जा सकते हैं।"
+          ],
+          "key_facts": [
+            "अधिकांश जीएसटी रिफंड के लिए अनुमानित प्रोसेसिंग समय: 17 दिन।"
+          ],
+          "key_locations": [
+            "भारत"
+          ],
+          "important_dates": [
+            "प्रकाशन तिथि: 7 अक्टूबर 2026"
+          ]
+        },
+        "quiz": {
+          "question": "What is the projected processing timeframe for most GST refunds according to recent reports?",
+          "options": [
+            "Within 7 days",
+            "Within 17 days",
+            "Within 30 days",
+            "Within 45 days"
+          ],
+          "correct_answer": "Within 17 days",
+          "explanation": "Reports indicate that most GST refunds may be processed within 17 days."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/business/india-business/most-gst-refunds-may-be-processed-within-17-days/articleshow/134752858.cms",
+        "published_date": "2026-10-07",
+        "content_version": 3,
+        "id": 49,
+        "image_url": "https://static.toiimg.com/photo/msid-134752881,imgsize-112784.cms",
+        "added_at": "2026-10-07T06:20:30.001584+05:30"
+      },
+      {
+        "category": "Economy",
+        "exam_corner": false,
+        "headline": "ITAT Chennai provides relief to individual after tax authorities question Rs 85.3 lakh cash gifts",
+        "story_lead": "The Income Tax Appellate Tribunal (ITAT) in Chennai has granted relief to a taxpayer who deposited Rs 85.3 lakh in cash received as gifts from his wife and relatives. Tax authorities had previously classified the deposits as unexplained income and issued a notice, but the tribunal accepted the submitted gift deeds.",
+        "full_article_text": "The Income Tax Appellate Tribunal (ITAT) of Chennai recently adjudicated a tax dispute involving a taxpayer who deposited Rs 85.3 lakh in cash into his bank accounts. The taxpayer stated that the funds were received as cash gifts from his wife and various relatives. However, the Income Tax Department flagged the deposits as unexplained income and initiated proceedings by issuing a notice. Upon review, ITAT Chennai accepted the documentary evidence, specifically the formal gift deeds provided by the taxpayer, and ruled in his favor, granting him relief from the tax liability demanded by the department on those specific deposits.",
+        "background_context": "",
+        "bullet_points": [
+          "A taxpayer deposited Rs 85.3 lakh in cash into bank accounts.",
+          "The funds were reportedly received as gifts from his wife and relatives.",
+          "The Income Tax Department initially categorized the deposits as unexplained income and issued a notice.",
+          "ITAT Chennai reviewed the case and accepted the taxpayer's formal gift deeds.",
+          "The tribunal ultimately granted relief to the taxpayer regarding the questioned cash deposits."
+        ],
+        "key_facts": [
+          "Amount in question: Rs 85.3 lakh",
+          "Source of funds claimed: Cash gifts from wife and relatives",
+          "Forum providing relief: ITAT Chennai",
+          "Key documents accepted: Gift deeds"
+        ],
+        "key_locations": [
+          "Chennai"
+        ],
+        "important_dates": [
+          "2026-10-07 (Publication date)"
+        ],
+        "exam_relevance": [
+          "Relevant for understanding the jurisdiction and functioning of the Income Tax Appellate Tribunal (ITAT) in resolving tax disputes involving cash gifts and unexplained deposits."
+        ],
+        "upsc_analysis": "This case highlights the procedural role of appellate bodies like the ITAT in evaluating documentary evidence, such as gift deeds, to adjudicate disputes between taxpayers and the Income Tax Department regarding cash transactions.",
+        "causes": [
+          "Taxpayer deposited Rs 85.3 lakh in cash which was flagged by tax authorities as unexplained income."
+        ],
+        "impacts": [
+          "The taxpayer received relief from tax liabilities following the acceptance of gift deeds by ITAT Chennai."
+        ],
+        "challenges": [],
+        "government_steps": [
+          "Income Tax Department issued a notice treating the cash deposits as unexplained income."
+        ],
+        "constitutional_or_policy_link": [],
+        "way_forward": [],
+        "mains_notes": "The ITAT Chennai ruling underscores the significance of maintaining valid documentation, such as gift deeds, for large cash transactions between family members to substantiate claims before appellate tax authorities.",
+        "mains_questions": [
+          "Discuss the role of the Income Tax Appellate Tribunal (ITAT) in resolving disputes related to unexplained cash deposits and gifts in India.",
+          "How do formal gift deeds serve as legal instruments in tax proceedings concerning cash transfers from relatives?"
+        ],
+        "takeaway": "ITAT Chennai accepted gift deeds to grant relief to a taxpayer whose Rs 85.3 lakh cash deposits from family members were earlier labeled as unexplained income.",
+        "prelims_facts": [
+          "Rs 85.3 lakh deposited as cash gifts from wife and relatives.",
+          "ITAT Chennai accepted gift deeds and provided relief."
+        ],
+        "vocabulary": [
+          {
+            "word": "Tribunal",
+            "meaning_hindi": "न्याधिकरण"
+          },
+          {
+            "word": "Unexplained Income",
+            "meaning_hindi": "स्पष्टीकरण रहित आय"
+          },
+          {
+            "word": "Gift Deed",
+            "meaning_hindi": "उपहार विलेख"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Income Tax Appellate Tribunal",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Income%20Tax%20Appellate%20Tribunal"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "आईटीएटी चेन्नई ने पत्नी और रिश्तेदारों से मिले 85.3 लाख रुपये के नकद उपहारों पर नोटिस पाने वाले व्यक्ति को राहत दी",
+          "story_lead": "चेन्नई स्थित आयकर अपीलीय न्यायाधिकरण (आईटीएटी) ने एक ऐसे करदाता को राहत दी है जिसने पत्नी और रिश्तेदारों से नकद उपहार के रूप में प्राप्त 85.3 लाख रुपये जमा किए थे। कर अधिकारियों ने पहले इन जमाओं को अस्पष्टीकृत आय के रूप में वर्गीकृत किया था और नोटिस भेजा था, लेकिन न्यायाधिकरण ने प्रस्तुत उपहार विलेखों को स्वीकार कर लिया।",
+          "full_article_text": "चेन्नई के आयकर अपीलीय न्यायाधिकरण (आईटीएटी) ने हाल ही में एक ऐसे कर विवाद का फैसला किया जिसमें एक करदाता ने अपने बैंक खातों में नकद के रूप में 85.3 लाख रुपये जमा किए थे। करदाता ने बताया कि यह धन उसकी पत्नी और विभिन्न रिश्तेदारों से नकद उपहार के रूप में प्राप्त हुआ था। हालांकि, आयकर विभाग ने इन जमाओं को अस्पष्टीकृत आय के रूप में चिह्नित किया और नोटिस जारी करके कार्यवाही शुरू की। समीक्षा करने पर, आईटीएटी चेन्नई ने करदाता द्वारा प्रदान किए गए दस्तावेजी साक्ष्य, विशेष रूप से औपचारिक उपहार विलेख (गिफ्ट डीड) को स्वीकार कर लिया और करदाता के पक्ष में फैसला सुनाते हुए विभाग द्वारा मांगे गए कर दायित्व से राहत प्रदान की।",
+          "background_context": "",
+          "bullet_points": [
+            "एक करदाता ने बैंक खातों में नकद के रूप में 85.3 लाख रुपये जमा किए।",
+            "यह राशि कथित तौर पर पत्नी और रिश्तेदारों से उपहार के रूप में प्राप्त हुई थी।",
+            "आयकर विभाग ने शुरू में इन जमाओं को अस्पष्टीकृत आय माना और नोटिस जारी किया।",
+            "आईटीएटी चेन्नई ने मामले की समीक्षा की और करदाता के औपचारिक उपहार विलेखों को स्वीकार किया।",
+            "न्यायाधिकरण ने अंततः करदाता को नकद जमा के संबंध में राहत दी।"
+          ],
+          "key_facts": [
+            "राशि: 85.3 लाख रुपये",
+            "धन का स्रोत: पत्नी और रिश्तेदारों से नकद उपहार",
+            "राहत देने वाला निकाय: आईटीएटी चेन्नई",
+            "स्वीकृत दस्तावेज: उपहार विलेख"
+          ],
+          "key_locations": [
+            "चेन्नई"
+          ],
+          "important_dates": [
+            "2026-10-07 (प्रकाशन तिथि)"
+          ]
+        },
+        "quiz": {
+          "question": "Which body provided relief to the taxpayer regarding the Rs 85.3 lakh cash deposits?",
+          "options": [
+            "Supreme Court of India",
+            "Income Tax Appellate Tribunal (ITAT) Chennai",
+            "Reserve Bank of India",
+            "Delhi High Court"
+          ],
+          "correct_answer": "Income Tax Appellate Tribunal (ITAT) Chennai",
+          "explanation": "ITAT Chennai accepted the gift deeds and granted relief to the taxpayer after tax authorities questioned the Rs 85.3 lakh cash deposits."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/business/india-business/man-deposits-rs-85-3-lakh-received-as-cash-gifts-from-wife-relatives-income-tax-calls-it-unexplained-and-sends-notice-but-itat-chennai-accepts-gift-deeds-and-gives-relief/articleshow/134743903.cms",
+        "published_date": "2026-10-07",
+        "content_version": 3,
+        "id": 48,
+        "image_url": "https://static.toiimg.com/photo/msid-134744335,imgsize-327768.cms",
+        "added_at": "2026-10-07T06:20:30.001584+05:30"
+      },
+      {
+        "category": "Environment",
+        "exam_corner": false,
+        "headline": "Gujarat: Married woman and her lover subjected to public humiliation and forced sexual acts as punishment",
+        "story_lead": "A married woman and her lover in Gujarat were subjected to forced sexual acts in a public setting as a form of local punishment following allegations regarding their affair. The incident highlights severe instances of public vigilantism and moral policing.",
+        "full_article_text": "In Gujarat, a married woman and her lover faced extreme public humiliation and were forced into a sexual act in public as a punitive measure for their relationship. The report emerged amid various other regional updates from Gujarat, including incidents related to wildlife sightings, local crimes, and regional developments across different districts.",
+        "background_context": "",
+        "bullet_points": [
+          "A married woman and her lover were targeted in Gujarat over their relationship.",
+          "The pair was subjected to public punishment involving forced sexual acts.",
+          "The incident underscores issues related to illegal moral policing and vigilantism.",
+          "Other regional headlines from Gujarat mentioned incidents such as a Rajkot art gallery project, a suicide case, a fatal SUV crash involving shipyard workers, and a dispute over goat grazing."
+        ],
+        "key_facts": [
+          "Location: Gujarat",
+          "Nature of incident: Forced sexual act in public as punishment for an affair involving a married woman and her lover."
+        ],
+        "key_locations": [
+          "Gujarat"
+        ],
+        "important_dates": [
+          "2026-10-07"
+        ],
+        "exam_relevance": [
+          "Relevant for general awareness regarding social issues, crime against women, and instances of illegal moral policing in India."
+        ],
+        "upsc_analysis": "This report outlines a severe case of illegal public punishment and moral policing in Gujarat, reflecting deep-seated societal issues regarding personal autonomy and extrajudicial punishments.",
+        "causes": [
+          "Local opposition and moral policing against an extra-marital affair."
+        ],
+        "impacts": [
+          "Severe violation of human dignity and personal safety of the victims involved."
+        ],
+        "challenges": [
+          "Combating illegal moral policing, vigilantism, and extrajudicial punishments in local communities."
+        ],
+        "government_steps": [],
+        "constitutional_or_policy_link": [],
+        "way_forward": [
+          "Strict enforcement of the rule of law and prompt legal action against individuals engaging in extrajudicial punishments and moral policing."
+        ],
+        "mains_notes": "The incident highlights the prevalence of extrajudicial punishments and moral policing in society, underscoring the need for stringent legal enforcement to protect individual rights and dignity.",
+        "mains_questions": [
+          "Discuss the social implications of moral policing and extrajudicial punishments in Indian society.",
+          "What measures are necessary to curb incidents of public humiliation and vigilantism?"
+        ],
+        "takeaway": "A married woman and her lover in Gujarat were forced into a public sexual act as extrajudicial punishment for an affair.",
+        "prelims_facts": [
+          "The incident of forced public punishment took place in Gujarat."
+        ],
+        "vocabulary": [
+          {
+            "word": "Vigilantism",
+            "meaning_hindi": "स्वयंघोषित न्याय / कानून अपने हाथ में लेना"
+          },
+          {
+            "word": "Punishment",
+            "meaning_hindi": "सजा"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Gujarat",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Gujarat"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "गुजरात: विवाहित महिला और उसके प्रेमी को अवैध संबंध की 'सज़ा' के तौर पर सार्वजनिक रूप से यौन कृत्य के लिए मजबूर किया गया",
+          "story_lead": "गुजरात में एक विवाहित महिला और उसके प्रेमी को उनके संबंध के आरोपों के बाद स्थानीय सज़ा के रूप में सार्वजनिक रूप से यौन कृत्य करने के लिए मजबूर किया गया। यह घटना सार्वजनिक मॉरल पुलिसिंग और अराजकता के गंभीर मामलों को उजागर करती है।",
+          "full_article_text": "गुजरात में, एक विवाहित महिला और उसके प्रेमी को गंभीर सार्वजनिक अपमान का सामना करना पड़ा और उनके रिश्ते के लिए एक दंडात्मक उपाय के रूप में उन्हें सार्वजनिक रूप से यौन संबंध बनाने के लिए मजबूर किया गया। यह रिपोर्ट गुजरात से अन्य क्षेत्रीय अपडेट के बीच सामने आई, जिसमें वन्यजीवों की संख्या, स्थानीय अपराध और विभिन्न जिलों से संबंधित अन्य घटनाएं शामिल थीं।",
+          "background_context": "",
+          "bullet_points": [
+            "गुजरात में एक विवाहित महिला और उसके प्रेमी को उनके रिश्ते को लेकर निशाना बनाया गया।",
+            "इस जोड़े को सज़ा के तौर पर सार्वजनिक रूप से यौन कृत्य करने के लिए मजबूर किया गया।",
+            "यह घटना अवैध मॉरल पुलिसिंग और अराजकता से जुड़े मुद्दों को रेखांकित करती है।",
+            "गुजरात के अन्य क्षेत्रीय समाचारों में राजकोट आर्ट गैलरी, आत्महत्या का मामला, और अन्य स्थानीय विवाद शामिल थे।"
+          ],
+          "key_facts": [
+            "स्थान: गुजरात",
+            "घटना का स्वरूप: विवाहित महिला और उसके प्रेमी के बीच संबंध के लिए सज़ा के रूप में सार्वजनिक रूप से यौन कृत्य के लिए मजबूर करना।"
+          ],
+          "key_locations": [
+            "गुजरात"
+          ],
+          "important_dates": [
+            "2026-10-07"
+          ]
+        },
+        "quiz": {
+          "question": "In which state did the incident involving the public punishment of a married woman and her lover take place?",
+          "options": [
+            "Gujarat",
+            "Maharashtra",
+            "Uttar Pradesh",
+            "Rajasthan"
+          ],
+          "correct_answer": "Gujarat",
+          "explanation": "The incident occurred in Gujarat, where a married woman and her lover were forced into a public sexual act as punishment for an affair."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/city/rajkot/lover-forced-into-sex-act-with-woman-in-public-as-punishment-for-affair/articleshow/134749260.cms",
+        "published_date": "2026-10-07",
+        "content_version": 3,
+        "id": 47,
+        "image_url": "https://static.toiimg.com/photo/msid-134752525,imgsize-306868.cms",
+        "added_at": "2026-10-07T06:20:30.001584+05:30"
+      },
+      {
+        "category": "World",
+        "exam_corner": false,
+        "headline": "Ukrainian Drone Attack Ignites Oil Tanker Carrying 23 Indian Crew Members off Russian Coast",
+        "story_lead": "A maritime incident occurred near the Russian Black Sea port of Sochi after an oil tanker carrying 23 Indian crew members was struck by a Ukrainian drone. The attack ignited a massive fire on the vessel, leading to the successful rescue of the Indian crew.",
+        "full_article_text": "An oil tanker carrying a crew of 23 Indian nationals caught fire off Russia's Black Sea coast following a Ukrainian drone strike. The incident caused a large blaze near the Russian Black Sea port of Sochi located in Krasnodar Krai. Amid ongoing risks to shipping lanes in the Black Sea region, the entire crew of Indian nationals was successfully rescued after the vessel was hit. Following the incident, authorities placed the Sochi coast under restrictions. India has raised formal concerns regarding ongoing attacks affecting commercial shipping in the area.",
+        "background_context": "The incident unfolded amidst wider Black Sea shipping risks and ongoing conflict dynamics involving drone strikes near Russian coastal infrastructure.",
+        "bullet_points": [
+          "A Ukrainian drone attack targeted an oil tanker off Russia's Black Sea coast.",
+          "The vessel was carrying a crew of 23 Indian nationals at the time of the attack.",
+          "The strike ignited a massive fire near the Russian Black Sea port of Sochi in Krasnodar Krai.",
+          "All 23 Indian crew members were successfully rescued following the incident.",
+          "The Sochi coast was placed under temporary restrictions as a result of the security threat.",
+          "India has raised official concerns over recurring attacks on commercial shipping in the Black Sea."
+        ],
+        "key_facts": [
+          "An oil tanker was hit by a Ukrainian drone off Russia's Black Sea coast.",
+          "The vessel carried 23 Indian crew members who were safely rescued.",
+          "The explosion and fire occurred near the Russian port of Sochi in Krasnodar Krai.",
+          "The Indian government has raised concerns regarding risks to international shipping."
+        ],
+        "key_locations": [
+          "Sochi",
+          "Krasnodar Krai",
+          "Black Sea"
+        ],
+        "important_dates": [
+          "October 6, 2026 - Date associated with the reporting and initial updates of the incident"
+        ],
+        "exam_relevance": [
+          "Relevant for understanding geopolitical security dynamics in the Black Sea region and the safety of Indian expatriates and merchant mariners abroad."
+        ],
+        "upsc_analysis": "The incident highlights the vulnerability of global commercial shipping lanes and maritime crews amid ongoing regional armed conflicts, necessitating active diplomatic engagement and protection for Indian nationals abroad.",
+        "causes": [
+          "A Ukrainian drone attack targeting an oil tanker operating off the Russian coast."
+        ],
+        "impacts": [
+          "A massive fire broke out on the oil tanker.",
+          "Restrictions were imposed along the Sochi coast.",
+          "India raised concerns regarding maritime safety and attacks on shipping."
+        ],
+        "challenges": [
+          "Ensuring the safety and security of commercial vessels and international crew members navigating high-risk conflict zones."
+        ],
+        "government_steps": [
+          "Indian authorities raised concerns over attacks on shipping and ensured the rescue of the Indian crew members."
+        ],
+        "constitutional_or_policy_link": [],
+        "way_forward": [
+          "Strengthening maritime security protocols and diplomatic safeguards for Indian nationals serving on commercial vessels in conflict-affected waters."
+        ],
+        "mains_notes": "The drone attack on an oil tanker carrying Indian crew members near Sochi underscores the cascading impact of regional conflicts on global maritime trade and the safety of expatriate workforce. It necessitates robust institutional frameworks for protecting merchant navy personnel and maintaining freedom of navigation.",
+        "mains_questions": [
+          "Discuss the implications of ongoing regional conflicts on international commercial shipping and the safety of civilian crews.",
+          "Examine India's diplomatic and protective responses to security threats faced by Indian diaspora and merchant mariners in conflict zones."
+        ],
+        "takeaway": "An oil tanker carrying 23 Indian crew members was hit by a Ukrainian drone off the Russian Black Sea coast near Sochi, prompting a successful rescue and raising international shipping safety concerns.",
+        "prelims_facts": [
+          "The targeted oil tanker carried 23 Indian crew members.",
+          "The incident occurred near the Russian Black Sea port of Sochi in Krasnodar Krai."
+        ],
+        "vocabulary": [
+          {
+            "word": "Tanker",
+            "meaning_hindi": "टैंकर / तेल ढोने वाला जहाज"
+          },
+          {
+            "word": "Restrictions",
+            "meaning_hindi": "प्रतिबंध"
+          }
+        ],
+        "related_entities": [
+          {
+            "name": "Sochi",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Sochi"
+          },
+          {
+            "name": "Krasnodar Krai",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnodar_Krai"
+          },
+          {
+            "name": "Black Sea",
+            "type": "place",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Sea"
+          }
+        ],
+        "hindi_translation": {
+          "headline": "रूस के तट के पास 23 भारतीयों को ले जा रहे तेल टैंकर पर यूक्रेनी ड्रोन हमले से लगी आग",
+          "story_lead": "रूस के काला सागर तट के पास सोची बंदरगाह के नजदीक एक तेल टैंकर पर यूक्रेनी ड्रोन द्वारा हमला किए जाने के बाद भीषण आग लग गई। इस टैंकर पर 23 भारतीय चालक दल के सदस्य सवार थे, जिन्हें सुरक्षित बचा लिया गया है।",
+          "full_article_text": "रूस के काला सागर तट के पास एक तेल टैंकर पर यूक्रेनी ड्रोन हमले के बाद आग लग गई, जिस पर 23 भारतीय नागरिक सवार थे। इस घटना के कारण Krasnodar Krai में स्थित रूसी काला सागर बंदरगाह सोची के पास भारी आग भड़क उठी। काला सागर क्षेत्र में नौवहन जोखिमों के बीच जहाज पर सवार सभी भारतीय चालक दल के सदस्यों को सुरक्षित बचा लिया गया। इस घटना के बाद सोची तट पर प्रतिबंध लगा दिए गए हैं। भारत ने वाणिज्यिक नौवहन पर हमलों को लेकर अपनी चिंता व्यक्त की है।",
+          "background_context": "यह घटना काला सागर क्षेत्र में नौवहन से जुड़े व्यापक जोखिमों और चल रहे संघर्ष के माहौल के बीच हुई है।",
+          "bullet_points": [
+            "रूस के काला सागर तट के पास एक तेल टैंकर पर यूक्रेनी ड्रोन हमला हुआ।",
+            "हमले के समय जहाज पर 23 भारतीय नाविक सवार थे।",
+            "इस हमले से Krasnodar Krai के सोची बंदरगाह के पास भीषण आग लग गई।",
+            "घटना के बाद सभी 23 भारतीय नाविकों को सुरक्षित बचा लिया गया।",
+            "सुरक्षा खतरे के मद्देनजर सोची तट पर प्रतिबंध लगा दिए गए।",
+            "भारत ने काला सागर में वाणिज्यिक नौवहन पर हो रहे हमलों पर गंभीर चिंता जताई है।"
+          ],
+          "key_facts": [
+            "रूस के काला सागर तट के पास एक तेल टैंकर ड्रोन हमले की चपेट में आया।",
+            "जहाज पर 23 भारतीय नाविक सवार थे जिन्हें सुरक्षित निकाल लिया गया।",
+            "यह घटना सोची और Krasnodar Krai के पास घटी।",
+            "भारत ने नौवहन सुरक्षा को लेकर अपनी चिंताएं उठाई हैं।"
+          ],
+          "key_locations": [
+            "सोची",
+            "क्रास्नोडार क्राय",
+            "काला सागर"
+          ],
+          "important_dates": [
+            "6 अक्टूबर 2026 - घटना की रिपोर्टिंग और अपडेट से जुड़ी तिथि"
+          ]
+        },
+        "quiz": {
+          "question": "How many Indian crew members were onboard the oil tanker that caught fire off Russia's Black Sea coast following a drone attack?",
+          "options": [
+            "15",
+            "20",
+            "23",
+            "30"
+          ],
+          "correct_answer": "23",
+          "explanation": "The oil tanker targeted by a Ukrainian drone off Russia's Black Sea coast near Sochi carried 23 Indian crew members, all of whom were safely rescued."
+        },
+        "source_name": "Times of India",
+        "source_url": "https://timesofindia.indiatimes.com/world/europe/ukrainian-drone-attack-sets-fire-to-oil-tanker-carrying-23-indians-off-russias-black-sea-coast/articleshow/134750275.cms",
+        "published_date": "2026-10-07",
+        "content_version": 3,
+        "id": 46,
+        "image_url": "https://static.toiimg.com/photo/msid-134752379,imgsize-622010.cms",
+        "added_at": "2026-10-07T06:20:30.001584+05:30"
+      },
+      {
         "category": "Environment",
         "exam_corner": false,
         "headline": "Maryland manure-lagoon overflow kills nearly 11,000 fish across 25 species",
@@ -5983,15 +7703,15 @@
         "added_at": "2026-10-07T00:15:02.220010+05:30"
       }
     ],
-    "updated_at": "2026-10-07T03:09:45.632370+05:30",
-    "count": 45
+    "updated_at": "2026-10-07T06:20:30.001584+05:30",
+    "count": 60
   },
   "motivation": {
-    "quote": "Read with purpose. Revise with discipline. Perform with confidence.",
-    "image_url": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=85",
-    "updated_at": "2026-10-07T03:09:45.632370+05:30"
+    "quote": "One focused hour today can remove many doubts tomorrow.",
+    "image_url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=85",
+    "updated_at": "2026-10-07T06:20:30.001584+05:30"
   },
   "last_updated_ist": "2026-09-25 08:53:09",
   "project": "AURA EXAM AI",
-  "last_updated": "2026-10-07T03:09:45.632370+05:30"
+  "last_updated": "2026-10-07T06:20:30.001584+05:30"
 }
