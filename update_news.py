@@ -41,9 +41,15 @@ DATA_FILE = "data.json"
 DATA_DIR = "data"
 
 FIRST_RUN_COUNT = 30
-UPDATE_COUNT = 15  # 15 Gemini articles per 6-hour run; keeps API usage controlled.
+UPDATE_COUNT = 15  # Keep the existing article batch size; workflow now runs every 6 hours.
 
-MAX_CANDIDATES_PER_SOURCE = 40
+# Free-tier protection: four scheduled runs/day x five calls = at most 20
+# generation requests/day for the primary model. Manual runs are also protected.
+MAX_GEMINI_CALLS_PER_RUN = 5
+GEMINI_CALLS_THIS_RUN = 0
+GEMINI_QUOTA_EXHAUSTED = False
+
+MAX_CANDIDATES_PER_SOURCE = 25
 REQUEST_TIMEOUT = 15
 
 # Version used to rebuild older articles when the content
@@ -61,170 +67,65 @@ CONTENT_VERSION = 4
 # ============================================================
 
 EXAM_HIGH_VALUE = (
-    "rbi",
-    "reserve bank",
-    "sebi",
-    "niti aayog",
-    "supreme court",
-    "parliament",
-    "cabinet",
-    "union cabinet",
-    "ministry",
-    "government scheme",
-    "yojana",
-    "policy",
-    "act",
-    "bill",
-    "constitution",
-    "constitutional",
-    "amendment",
-    "committee",
-    "commission",
-    "economic survey",
-    "union budget",
-    "budget 202",
-    "census",
-    "election commission",
-    "finance commission",
-    "gst council",
-    "monetary policy",
-    "fiscal policy",
-    "repo rate",
-    "interest rate",
-    "external debt",
-    "market borrowing",
-    "foreign policy",
-    "international relations",
-    "defence",
-    "defense",
-    "military exercise",
-    "armed forces",
-    "indian army",
-    "indian navy",
-    "indian air force",
-    "iaf",
-    "drdo",
-    "missile",
-    "brahmos",
-    "akash",
-    "border",
-    "summit",
-    "treaty",
-    "agreement",
-    "index",
-    "ranking",
-    "g20",
-    "brics",
-    "sco",
-    "asean",
-    "united nations",
-    "world bank",
-    "imf",
-    "unesco",
+    "appointment", "appointed", "takes charge", "named as", "elected",
+    "md & ceo", "ceo", "chairperson", "chairman", "governor",
+    "rbi", "sebi", "nabard", "sidbi", "banking", "monetary policy",
+    "repo rate", "small savings", "interest rates", "inflation", "gdp",
+    "budget", "borrowing", "external debt", "trade deficit", "gst",
+    "government scheme", "scheme", "yojana", "initiative", "mission",
+    "portal", "cabinet", "ministry", "government", "policy", "regulation",
+    "supreme court", "high court", "parliament", "lok sabha", "rajya sabha",
+    "bill", "act", "amendment", "committee", "commission", "authority",
+    "report", "index", "ranking", "census", "election commission",
+    "finance commission", "defence deal", "defense deal", "missile",
+    "armed forces", "military exercise", "air force", "navy", "army",
+    "brahmos", "akash", "drdo", "border", "treaty", "agreement",
+    "summit", "g20", "brics", "sco", "united nations", "world bank", "imf",
+    "unesco", "climate agreement", "cop", "environment agreement",
+    "national park", "tiger reserve", "wildlife sanctuary", "biodiversity",
+    "conservation", "cheetah", "project cheetah", "renewable energy",
+    "isro", "nasa", "space mission", "satellite", "rocket", "launch vehicle",
+    "artificial intelligence", "semiconductor", "quantum", "research",
+    "technology", "innovation", "science", "asian games", "asian para games",
+    "olympics", "paralympics", "marathon", "medal", "national record",
+    "national record", "flag-bearer", "flag bearer", "important day",
+    "anniversary", "theme", "observed on", "foundation day", "foundation day",
 )
 
 EXAM_MEDIUM = (
-    "appointment",
-    "appointed",
-    "takes charge",
-    "md & ceo",
-    "managing director",
-    "chief executive officer",
-    "chairperson",
-    "bank",
-    "banking",
-    "small savings",
-    "regulator",
-    "regulatory",
-    "authority",
-    "national mission",
-    "national programme",
-    "national program",
-    "scheme",
-    "initiative",
-    "portal",
-    "drive",
-    "infrastructure project",
-    "defence deal",
-    "defense deal",
-    "trade agreement",
-    "free trade agreement",
-    "fta",
-    "wildlife",
-    "tiger reserve",
-    "national park",
-    "cheetah",
-    "biodiversity",
-    "climate",
-    "space",
-    "isro",
-    "satellite",
-    "launch",
-    "science",
-    "technology",
-    "artificial intelligence",
-    "asian games",
-    "asian para games",
-    "olympics",
-    "paralympics",
-    "national record",
-    "flag-bearer",
-    "important day",
-    "anniversary",
-    "foundation day",
-    "observed on",
+    "first indian", "first ever", "historic", "landmark", "record",
+    "silver medal", "gold medal", "bronze medal", "wins", "won", "launches",
+    "signed contract", "contract", "approval", "approved", "inaugurated",
+    "launched", "released", "appointed", "tenure", "predecessor",
+    "headquarters", "founded", "established", "statutory", "ministry of",
+    "national programme", "national program", "national mission", "drive",
+    "target", "investment", "crore", "lakh crore", "billion", "million",
+ )
+
+EXAM_CORE_SIGNALS = (
+    "asian games", "asian para games", "olympics", "paralympics", "national record",
+    "flag-bearer", "flag bearer", "appointment", "takes charge", "md & ceo",
+    "rbi", "sebi", "repo rate", "small savings", "external debt", "government scheme",
+    "yojana", "national mission", "cabinet", "parliament", "supreme court",
+    "defence deal", "defense deal", "brahmos", "akash", "missile", "air force",
+    "cheetah", "tiger reserve", "wildlife sanctuary", "project cheetah",
+    "isro", "space mission", "satellite", "payload", "semiconductor",
+    "important day", "anniversary", "foundation day", "theme",
 )
 
-EXAM_SPORTS = (
-    "asian games", "asian para games", "olympics", "paralympics",
-    "commonwealth games", "world championship", "world cup",
-    "national record", "flag-bearer", "flag bearer",
-    "gold medal", "silver medal", "bronze medal", "medal",
-    "indian athlete", "india wins", "india won",
+EXAM_SECTION_RULES = (
+    ("Appointments & Banking", ("appointment", "appointed", "takes charge", "md & ceo", "ceo", "rbi", "sebi", "bank", "banking")),
+    ("Economy, Policy & Regulation", ("repo rate", "interest rate", "inflation", "gdp", "economy", "borrowing", "external debt", "gst", "policy", "regulation")),
+    ("Schemes & National Initiatives", ("scheme", "yojana", "initiative", "mission", "drive", "portal", "government", "target", "national programme", "national program")),
+    ("Environment & Wildlife", ("cheetah", "tiger reserve", "wildlife sanctuary", "national park", "biodiversity", "conservation", "climate", "environment")),
+    ("Sports", ("asian games", "asian para games", "olympics", "paralympics", "marathon", "medal", "championship", "flag-bearer", "flag bearer", "national record")),
+    ("Defence & Security", ("defence", "defense", "missile", "armed forces", "military", "brahmos", "akash", "drdo", "air force", "navy", "army", "border")),
+    ("Science & Technology", ("isro", "nasa", "space", "satellite", "rocket", "launch vehicle", "technology", "artificial intelligence", "semiconductor", "quantum", "research", "payload")),
+    ("Important Days & Commemorations", ("important day", "anniversary", "observed on", "theme", "foundation day", "air force day", "day observed")),
 )
 
 EXAM_IMPORTANT_DAYS = (
-    "air force day", "army day", "navy day", "republic day",
-    "independence day", "constitution day", "national sports day",
-    "national science day", "world environment day", "world health day",
-    "international day", "anniversary", "foundation day",
-    "observed on", "celebrated on",
-)
-
-
-EXAM_SECTION_RULES = (
-    ("Appointments & Banking", (
-        "appointment", "appointed", "takes charge", "md & ceo",
-        "managing director", "chief executive officer", "bank",
-        "banking", "rbi", "sebi", "chairperson"
-    )),
-    ("Economy, Policy & Regulation", (
-        "repo rate", "interest rate", "monetary policy", "fiscal policy",
-        "external debt", "market borrowing", "small savings", "economy",
-        "policy", "regulation", "regulatory", "gst", "budget", "tax"
-    )),
-    ("Schemes & National Initiatives", (
-        "scheme", "yojana", "national mission", "national programme",
-        "national program", "initiative", "portal", "drive",
-        "government launched", "government launches"
-    )),
-    ("Environment & Wildlife", (
-        "environment", "wildlife", "cheetah", "tiger reserve",
-        "national park", "biodiversity", "climate", "wetland",
-        "conservation", "forest"
-    )),
-    ("Sports", EXAM_SPORTS),
-    ("Defence & Security", (
-        "defence", "defense", "indian army", "indian navy",
-        "indian air force", "iaf", "drdo", "missile", "brahmos",
-        "akash", "military", "armed forces"
-    )),
-    ("Science & Technology", (
-        "isro", "space", "satellite", "launch", "science",
-        "technology", "artificial intelligence", "ai", "startup",
-        "earth observation", "cubesat"
-    )),
-    ("Important Days & Commemorations", EXAM_IMPORTANT_DAYS),
+    "important day", "anniversary", "observed on", "theme", "foundation day", "air force day", "day observed",
 )
 
 
@@ -233,56 +134,146 @@ EXAM_SECTION_RULES = (
 # ============================================================
 
 SPORTS = (
-    "cricket", "football", "tennis", "athlete", "athletics",
-    "badminton", "hockey", "wimbledon", "fifa", "ipl",
-    "asian games", "asian para games", "olympics", "paralympics",
-    "commonwealth games", "world championship", "world cup",
-    "medal", "gold medal", "silver medal", "bronze medal",
-    "national record", "flag-bearer", "flag bearer",
-    "tournament", "final", "semi-final", "grand prix",
+    "cricket",
+    "football",
+    "tennis",
+    "olympics",
+    "athlete",
+    "match",
+    "tournament",
+    "fifa",
+    "ipl",
+    "hockey",
+    "badminton",
+    "wimbledon",
+    "championship",
+    "medal",
+    "world cup",
+    "paralympics",
+    "asian games", "asian para games", "marathon", "flag-bearer", "flag bearer",
+    "national record", "medallist", "medal",
 )
 
 HEALTH = (
-    "disease", "virus", "vaccine", "vaccination", "health",
-    "medical", "cancer", "medicine", "public health",
-    "healthcare", "epidemic", "pandemic", "clinical trial",
-    "drug trial", "outbreak", "who health",
+    "hospital",
+    "disease",
+    "virus",
+    "vaccine",
+    "vaccination",
+    "health",
+    "medical",
+    "doctor",
+    "cancer",
+    "medicine",
+    "outbreak",
+    "public health",
+    "mental health",
+    "healthcare",
+    "epidemic",
+    "pandemic",
+    "drug trial",
+    "clinical trial",
 )
 
 SCIENCE = (
-    "isro", "nasa", "space", "satellite", "artificial intelligence",
-    "ai model", "quantum", "semiconductor", "robotics",
-    "biotechnology", "genome", "astronomy", "rocket",
-    "launch vehicle", "spacecraft", "earth observation",
-    "cubesat", "research breakthrough", "scientific",
-    "science and technology", "technology mission",
+    "space",
+    "isro",
+    "nasa",
+    "artificial intelligence",
+    "technology",
+    "tech",
+    "quantum",
+    "semiconductor",
+    "robot",
+    "robotics",
+    "research",
+    "science",
+    "satellite",
+    "astronomy",
+    "innovation",
+    "rocket",
+    "launch vehicle",
+    "mission",
+    "genome",
+    "biotechnology",
+    "nuclear", "thermal infrared", "cubesat", "earth observation", "payload",
 )
 
 ECONOMY = (
-    "rbi", "reserve bank", "sebi", "inflation", "gdp",
-    "repo rate", "interest rate", "monetary policy",
-    "fiscal policy", "external debt", "market borrowing",
-    "small savings", "gst", "tax", "budget", "economic survey",
-    "banking", "bank", "finance ministry", "financial",
-    "forex", "foreign exchange", "investment", "unemployment",
-    "employment data", "trade deficit", "current account",
+    "stock market",
+    "sensex",
+    "nifty",
+    "inflation",
+    "gdp",
+    "economy",
+    "rupee",
+    "trade",
+    "market",
+    "finance",
+    "rbi",
+    "banking",
+    "interest rate",
+    "fiscal",
+    "monetary policy",
+    "repo rate",
+    "forex",
+    "investment",
+    "tax",
+    "gst",
+    "unemployment",
+    "employment data",
 )
 
 ENVIRONMENT = (
-    "climate", "pollution", "forest", "wildlife", "biodiversity",
-    "carbon", "emission", "flood", "drought", "environment",
-    "greenhouse", "conservation", "wetland", "national park",
-    "tiger reserve", "elephant reserve", "renewable energy",
-    "solar energy", "climate change", "cheetah",
+    "climate",
+    "pollution",
+    "forest",
+    "wildlife",
+    "biodiversity",
+    "carbon",
+    "emission",
+    "flood",
+    "drought",
+    "environment",
+    "greenhouse",
+    "conservation",
+    "wetland",
+    "national park",
+    "tiger reserve",
+    "elephant reserve",
+    "renewable energy",
+    "solar energy",
+    "climate change", "cheetah", "tiger reserve", "wildlife sanctuary",
+    "project cheetah", "conservation", "biodiversity",
 )
 
 WORLD = (
-    "united states", "us president", "ukraine", "russia", "china",
-    "europe", "middle east", "israel", "palestine", "iran",
-    "pakistan", "bangladesh", "sri lanka", "nepal", "afghanistan",
-    "foreign policy", "global", "world", "un summit", "nato",
-    "european union", "european commission", "white house",
-    "beijing", "moscow", "washington", "united nations",
+    "united states",
+    "us president",
+    "ukraine",
+    "russia",
+    "china",
+    "europe",
+    "middle east",
+    "israel",
+    "palestine",
+    "iran",
+    "pakistan",
+    "bangladesh",
+    "sri lanka",
+    "nepal",
+    "afghanistan",
+    "foreign",
+    "global",
+    "world",
+    "un summit",
+    "nato",
+    "european union",
+    "european commission",
+    "white house",
+    "beijing",
+    "moscow",
+    "washington",
 )
 
 
@@ -909,44 +900,42 @@ def parse_json_response(text):
 
 
 def call_gemini(client, prompt):
+    """Call Gemini with strict per-run quota protection.
 
-    last_error = None
+    A 429 quota response is project/day quota exhaustion, not a reason to
+    hammer the other models. Stop immediately and let the remaining articles
+    use the deterministic fallback path.
+    """
+    global GEMINI_CALLS_THIS_RUN, GEMINI_QUOTA_EXHAUSTED
 
-    for model in GEMINI_MODELS:
+    if GEMINI_QUOTA_EXHAUSTED:
+        raise RuntimeError("Gemini quota exhausted; using local fallback")
 
-        try:
+    if GEMINI_CALLS_THIS_RUN >= MAX_GEMINI_CALLS_PER_RUN:
+        raise RuntimeError("Per-run Gemini call limit reached; using local fallback")
 
-            response = client.models.generate_content(
-                model=model,
-                contents=prompt,
-                config={
-                    "response_mime_type": "application/json",
-                    "temperature": 0.2,
-                },
-            )
+    GEMINI_CALLS_THIS_RUN += 1
 
-            text = getattr(
-                response,
-                "text",
-                None
-            )
+    try:
+        response = client.models.generate_content(
+            model=GEMINI_MODELS[0],
+            contents=prompt,
+            config={
+                "response_mime_type": "application/json",
+                "temperature": 0.2,
+            },
+        )
+        text = getattr(response, "text", None)
+        if text:
+            return parse_json_response(text)
+        raise RuntimeError("Gemini returned an empty response")
 
-            if text:
-                return parse_json_response(text)
-
-        except Exception as exc:
-
-            last_error = exc
-
-            print(
-                f"Gemini {model} failed: {exc}"
-            )
-
-            time.sleep(1)
-
-    raise RuntimeError(
-        f"All Gemini models failed: {last_error}"
-    )
+    except Exception as exc:
+        message = str(exc)
+        if "429" in message or "RESOURCE_EXHAUSTED" in message or "quota" in message.lower():
+            GEMINI_QUOTA_EXHAUSTED = True
+            print("Gemini quota reached. Remaining articles will use local fallback; no more Gemini retries this run.")
+        raise
 
 
 # ============================================================
@@ -1009,6 +998,25 @@ def is_india_focused(text):
     )
 
 
+def quick_category(candidate):
+    """Cheap headline-only category prediction used before page fetching."""
+    title = clean_text(candidate.get("headline", "")).lower()
+    source = candidate.get("source_category", "India")
+    keyword_sets = {"Sports": SPORTS, "Health": HEALTH, "Science & Technology": SCIENCE, "Economy": ECONOMY, "Environment": ENVIRONMENT, "World": WORLD}
+    scores = {k: count_matches(title, v) for k, v in keyword_sets.items()}
+    best = max(scores, key=scores.get)
+    if scores[best] > 0:
+        if best == "World" and contains_any(title, ("india", "indian", "rbi", "sebi", "new delhi", "mumbai")):
+            return "India"
+        return best
+    return source if source in {"India", "World", "Sports", "Science & Technology", "Economy", "Environment", "Health"} else "India"
+
+
+def exam_candidate_priority(candidate):
+    title = clean_text(candidate.get("headline", ""))
+    return exam_corner_score(title, "", candidate.get("source_category", "India"))
+
+
 def exam_corner_section(title, text, category=""):
     """Return the exam-oriented section without changing the site category."""
 
@@ -1047,141 +1055,94 @@ def exam_corner_section(title, text, category=""):
 
 
 def exam_corner_score(title, text, category):
-    """Score high-value Indian competitive-exam current affairs."""
-    combined = f"{title} {title} {text[:12000]}".lower()
-    india_linked = is_india_focused(combined) or any(
-        marker in combined for marker in (
-            "indian athlete", "india wins", "india won", "indian medal",
-            "indian air force", "indian army", "indian navy",
-            "indian government", "ministry of", "rbi", "sebi",
-            "isro", "drdo", "ntca",
-        )
-    )
-    if not india_linked:
-        return 0
+    """Score exam value independently of the display category.
+
+    Exam Corner is a cross-category subset: Sports, Defence, Science,
+    Environment, Economy, Health and India can all qualify when the story
+    contains factual material useful for competitive exams.
+    """
+    combined = f"{title.lower()} {title.lower()} {text[:10000].lower()}"
+    title_blob = title.lower()
+
     high = count_matches(combined, EXAM_HIGH_VALUE)
     medium = count_matches(combined, EXAM_MEDIUM)
-    sports_exam = count_matches(combined, EXAM_SPORTS)
-    important_day = count_matches(combined, EXAM_IMPORTANT_DAYS)
-    title_lower = title.lower()
-    title_high = count_matches(title_lower, EXAM_HIGH_VALUE)
-    title_medium = count_matches(title_lower, EXAM_MEDIUM)
-    title_sports = count_matches(title_lower, EXAM_SPORTS)
-    title_day = count_matches(title_lower, EXAM_IMPORTANT_DAYS)
-    score = (high * 3 + medium + sports_exam * 2 + important_day * 2 +
-             title_high * 4 + title_medium * 2 + title_sports * 3 + title_day * 4)
-    if category in {"Economy", "Sports", "Environment", "Science & Technology", "Health"}:
-        score += 1
+    title_high = count_matches(title_blob, EXAM_HIGH_VALUE)
+    title_medium = count_matches(title_blob, EXAM_MEDIUM)
+
+    score = high * 2 + medium + title_high * 4 + title_medium * 2
+
+    # A story enters Exam Corner only when it has a recognisable competitive-
+    # exam signal. This prevents generic celebrity/political/sports noise from
+    # being promoted merely because words such as "record" or "government"
+    # occur somewhere in the article.
+    core_hit = contains_any(combined, EXAM_CORE_SIGNALS)
+    title_core_hit = contains_any(title_blob, EXAM_CORE_SIGNALS)
+    if title_core_hit:
+        score += 5
+    elif core_hit:
+        score += 2
+    else:
+        return 0
+
     return score
 
 
-def exam_candidate_priority(candidate):
-    """Cheap headline ranking before expensive article fetching/Gemini calls."""
-    title = clean_text(candidate.get("headline", "")).lower()
-    source_category = candidate.get("source_category", candidate.get("category", ""))
-    priority = 0
-    priority += count_matches(title, EXAM_HIGH_VALUE) * 5
-    priority += count_matches(title, EXAM_MEDIUM) * 2
-    priority += count_matches(title, EXAM_SPORTS) * 6
-    priority += count_matches(title, EXAM_IMPORTANT_DAYS) * 6
-    priority += count_matches(title, (
-        "appointed", "takes charge", "appointed as", "joins as",
-        "repo rate", "interest rate", "scheme", "yojana", "rbi",
-        "sebi", "budget", "external debt", "borrowing", "defence deal",
-        "missile", "isro", "satellite", "cheetah", "tiger reserve",
-        "asian games", "asian para games", "flag-bearer", "medal",
-        "national record",
-    )) * 2
-    if source_category in {"Economy", "Sports", "Environment", "Science & Technology", "Health"}:
-        priority += 1
-    return priority
-
-
-
 def classify_candidate(candidate, page_text=""):
-    """Deterministic seven-category classifier; Exam Corner is independent."""
     title = clean_text(candidate.get("headline", ""))
     text = clean_text(page_text)
     title_blob = title.lower()
-    body_blob = text[:12000].lower()
+    body_blob = text[:10000].lower()
     source_category = candidate.get("source_category", candidate.get("category", "India"))
 
-    strong_rules = {
-        "Sports": (
-            "asian games", "asian para games", "olympics", "paralympics",
-            "commonwealth games", "world cup", "world championship",
-            "grand prix", "medal", "gold medal", "silver medal",
-            "bronze medal", "national record", "flag-bearer", "flag bearer",
-            "tournament", "match", "cricket", "football", "tennis",
-            "badminton", "hockey", "athlete", "athletics",
-        ),
-        "Health": (
-            "vaccine", "vaccination", "disease", "virus", "outbreak",
-            "epidemic", "pandemic", "clinical trial", "drug trial",
-            "health ministry", "public health", "healthcare", "cancer",
-            "medical research",
-        ),
-        "Science & Technology": (
-            "isro", "nasa", "satellite", "spacecraft", "rocket",
-            "launch vehicle", "cubesat", "earth observation",
-            "artificial intelligence", "ai model", "quantum",
-            "semiconductor", "biotechnology", "genome", "astronomy",
-            "scientific breakthrough", "science and technology",
-        ),
-        "Economy": (
-            "rbi", "reserve bank", "sebi", "repo rate", "interest rate",
-            "monetary policy", "fiscal policy", "external debt",
-            "market borrowing", "small savings", "gst", "tax",
-            "union budget", "economic survey", "gdp", "inflation",
-            "finance ministry", "banking", "bank", "forex",
-            "foreign exchange", "trade deficit", "current account",
-        ),
-        "Environment": (
-            "climate change", "climate", "pollution", "wildlife",
-            "biodiversity", "cheetah", "tiger reserve", "national park",
-            "wetland", "forest", "conservation", "greenhouse",
-            "carbon emission", "renewable energy", "solar energy",
-            "environment ministry",
-        ),
-        "World": (
-            "united states", "us president", "ukraine", "russia", "china",
-            "european union", "nato", "middle east", "israel", "palestine",
-            "iran", "pakistan", "bangladesh", "sri lanka", "nepal",
-            "afghanistan", "white house", "beijing", "moscow", "washington",
-            "foreign policy", "un summit",
-        ),
+    # Score title and body separately. Headline evidence is deliberately
+    # stronger so words such as "medal" or "RBI" cannot be drowned by body noise.
+    keyword_sets = {
+        "Sports": SPORTS,
+        "Health": HEALTH,
+        "Science & Technology": SCIENCE,
+        "Economy": ECONOMY,
+        "Environment": ENVIRONMENT,
+        "World": WORLD,
     }
-    scores = {k: 0 for k in strong_rules}
-    for cat, keywords in strong_rules.items():
-        for kw in keywords:
-            if kw in title_blob: scores[cat] += 5
-            if kw in body_blob: scores[cat] += 1
-    if source_category in scores: scores[source_category] += 2
-    best = max(scores, key=scores.get)
-    best_score = scores[best]
-    if source_category == "World" and best_score < 7:
-        category = "World"
-    elif best_score >= 7:
-        category = best
-    elif source_category in {"Sports", "Science & Technology", "Economy", "Environment", "Health", "World"}:
-        category = source_category
+    title_scores = {k: count_matches(title_blob, v) for k, v in keyword_sets.items()}
+    body_scores = {k: count_matches(body_blob, v) for k, v in keyword_sets.items()}
+
+    # Publisher/RSS topic is a strong prior, especially for Google News topic feeds.
+    category = source_category if source_category in keyword_sets else "India"
+
+    # A clear headline topic overrides a generic India/World source bucket.
+    best_title = max(title_scores, key=title_scores.get)
+    if title_scores[best_title] >= 1:
+        category = best_title
     else:
+        best_body = max(body_scores, key=body_scores.get)
+        if body_scores[best_body] >= 3:
+            category = best_body
+
+    # India policy/institutional stories must remain India even if their body
+    # mentions words such as "global", "market" or "technology".
+    india_policy = contains_any(title_blob, (
+        "government", "ministry", "rbi", "sebi", "cabinet", "parliament",
+        "supreme court", "high court", "indian", "india", "navi mumbai",
+        "new delhi", "mahesh muralidhar pai", "small savings",
+    ))
+    if source_category == "India" and india_policy and category == "World":
         category = "India"
-    if category == "World" and is_india_focused(title_blob):
-        if any(k in title_blob for k in strong_rules["Sports"]): category = "Sports"
-        elif any(k in title_blob for k in strong_rules["Economy"]): category = "Economy"
-        elif any(k in title_blob for k in strong_rules["Science & Technology"]): category = "Science & Technology"
-        elif any(k in title_blob for k in strong_rules["Environment"]): category = "Environment"
-        elif any(k in title_blob for k in strong_rules["Health"]): category = "Health"
-        else: category = "India"
+
+    # World is used when the headline itself is clearly international and does
+    # not identify India as the principal subject.
+    if category == "World" and contains_any(title_blob, (
+        "india", "indian", "new delhi", "mumbai", "rbi", "sebi"
+    )):
+        category = "India"
+
     exam_score = exam_corner_score(title, text, category)
-    sports_signal = count_matches(title_blob, EXAM_SPORTS)
-    day_signal = count_matches(title_blob, EXAM_IMPORTANT_DAYS)
-    exam_corner = exam_score >= (4 if (sports_signal or day_signal) else 5)
+    exam_corner = exam_score >= 5
+
     candidate["category"] = category
     candidate["exam_corner"] = bool(exam_corner)
     candidate["exam_score"] = exam_score
-    candidate["exam_corner_section"] = exam_corner_section(title, text, category) if exam_corner else ""
+
     print(f"CLASSIFY | {title[:90]} | {category} | ExamCorner={exam_corner} | score={exam_score}")
     return candidate
 
@@ -1539,8 +1500,7 @@ def needs_repair(article):
     )
 
     return (
-        article.get("content_version", 0) < CONTENT_VERSION
-        or not article.get("full_article_text")
+        not article.get("full_article_text")
         or not isinstance(
             hindi,
             dict
@@ -1566,6 +1526,46 @@ def needs_repair(article):
             list
         )
     )
+
+
+def local_fallback_article(candidate, page_text):
+    """Create a useful article without another API request after quota limits."""
+    headline = candidate.get("headline", "Current Affairs")
+    text = clean_text(page_text) or headline
+    sentences = re.split(r"(?<=[.!?])\s+", text)
+    lead = " ".join(sentences[:3]).strip()[:900] or headline
+    bullets = []
+    for line in re.split(r"\n+", page_text or ""):
+        line = clean_text(line).lstrip("-•")
+        if len(line) >= 35 and line not in bullets:
+            bullets.append(line[:500])
+        if len(bullets) >= 8:
+            break
+    if not bullets:
+        bullets = [lead]
+
+    section = ""
+    section = exam_corner_section(headline, text, candidate.get("category", "")) if candidate.get("exam_corner") else ""
+
+    return normalize_generated({
+        "category": candidate.get("category", "India"),
+        "exam_corner": candidate.get("exam_corner", False),
+        "exam_corner_section": section,
+        "exam_corner_topic": headline if candidate.get("exam_corner") else "",
+        "headline": headline,
+        "story_lead": lead,
+        "full_article_text": text[:7000],
+        "background_context": "",
+        "bullet_points": bullets,
+        "key_facts": bullets[:6],
+        "key_locations": [], "important_dates": [], "exam_relevance": [],
+        "upsc_analysis": "", "causes": [], "impacts": [], "challenges": [],
+        "government_steps": [], "constitutional_or_policy_link": [], "way_forward": [],
+        "mains_notes": "", "mains_questions": [], "takeaway": lead[:300],
+        "prelims_facts": bullets[:6], "vocabulary": [], "related_entities": [],
+        "hindi_translation": {"headline": headline, "story_lead": lead, "full_article_text": text[:7000], "background_context": "", "bullet_points": bullets, "key_facts": bullets[:6], "key_locations": [], "important_dates": []},
+        "quiz": None,
+    }, candidate)
 
 
 # ============================================================
@@ -1942,24 +1942,46 @@ def main():
     selected = []
     seen_titles = set()
 
-    # Reserve part of the SAME UPDATE_COUNT batch for high-value Exam Corner candidates.
-    # This does not create additional Gemini calls.
-    exam_pool = sorted(
-        [c for c in eligible if c.get("exam_candidate_priority", 0) >= 4],
-        key=lambda c: c.get("exam_candidate_priority", 0),
-        reverse=True,
-    )
-    exam_quota = min(10, target)
-    for candidate in exam_pool[:exam_quota]:
-        selected.append(candidate)
-    selected_keys = {article_key(c) for c in selected}
-    for candidate in eligible:
-        if len(selected) >= target:
-            break
-        if article_key(candidate) in selected_keys:
+    # First remove duplicates and add cheap headline scores. No Gemini call is
+    # made here, so this step costs essentially nothing from the API quota.
+    eligible = []
+    for candidate in candidates:
+        title_key = normalize_title(candidate["headline"])
+        url_key = candidate["source_url"].split("?")[0].rstrip("/")
+        candidate_key = article_key({"headline": candidate["headline"], "source_url": candidate["source_url"]})
+        if not title_key or candidate_key in existing_keys:
             continue
-        selected.append(candidate)
-        selected_keys.add(article_key(candidate))
+        if any(a.get("source_url", "").split("?")[0].rstrip("/") == url_key for a in existing_news):
+            continue
+        if title_key in seen_titles:
+            continue
+        seen_titles.add(title_key)
+        candidate["pre_category"] = quick_category(candidate)
+        candidate["exam_candidate_priority"] = exam_candidate_priority(candidate)
+        eligible.append(candidate)
+
+    # Balanced daily intake prevents one RSS feed from filling the entire day.
+    # Exam-worthy candidates are preferred inside every category.
+    quotas = {"India": 3, "World": 2, "Sports": 2, "Science & Technology": 2, "Economy": 2, "Environment": 2, "Health": 2}
+    for category, quota in quotas.items():
+        pool = [c for c in eligible if c.get("pre_category") == category]
+        pool.sort(key=lambda c: (c.get("exam_candidate_priority", 0), c.get("published_date", "")), reverse=True)
+        selected.extend(pool[:quota])
+
+    # Fill any empty category quota from the best remaining candidates.
+    selected_keys = {article_key(c) for c in selected}
+    remaining = [c for c in eligible if article_key(c) not in selected_keys]
+    remaining.sort(key=lambda c: (c.get("exam_candidate_priority", 0), c.get("published_date", "")), reverse=True)
+    selected.extend(remaining[:max(0, target - len(selected))])
+    selected = selected[:target]
+
+    # Process the strongest exam candidates first. This means the limited Gemini
+    # calls are spent on the stories most likely to belong in Exam Corner, such
+    # as Asian Games medals, flag-bearers, appointments, defence, schemes, etc.
+    selected.sort(
+        key=lambda c: (c.get("exam_candidate_priority", 0), c.get("published_date", "")),
+        reverse=True
+    )
 
     # ========================================================
     # PROCESS NEW ARTICLES
@@ -2035,10 +2057,10 @@ def main():
             print(
                 f"Generation failed: "
                 f"{candidate['headline']} "
-                f"-> {exc}"
+                f"-> {exc} | using local fallback"
             )
 
-            continue
+            article = local_fallback_article(candidate, page_text)
 
         article["id"] = next_id
         next_id += 1
@@ -2502,8 +2524,8 @@ def main():
     invalid_exam_articles = [
         a.get("headline", "Unknown")
         for a in existing_news
-        if a.get("exam_corner")
-        and not a.get("exam_corner_section")
+        if a.get("exam_corner") is True
+        and not a.get("headline")
     ]
 
     if invalid_exam_articles:
