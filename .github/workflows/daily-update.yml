@@ -2,8 +2,8 @@ name: Update Current Affairs
 
 on:
   schedule:
-    # Every 3 hours at :30 UTC
-    - cron: "30 */3 * * *"
+    # Every 6 hours at :30 UTC
+    - cron: "30 */6 * * *"
 
   workflow_dispatch:
 
@@ -22,52 +22,28 @@ jobs:
     timeout-minutes: 30
 
     steps:
-      # --------------------------------------------------
-      # 1. Checkout repository
-      # --------------------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      # --------------------------------------------------
-      # 2. Setup Python
-      # --------------------------------------------------
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
-      # --------------------------------------------------
-      # 3. Install dependencies
-      # --------------------------------------------------
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install feedparser requests beautifulsoup4 google-genai
-
-      # --------------------------------------------------
-      # 4. Update current affairs
-      # --------------------------------------------------
       - name: Update current affairs
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TZ: Asia/Kolkata
         run: |
           python update_news.py
-
-      # --------------------------------------------------
-      # 5. Always create a refresh marker
-      #    This guarantees a new commit on every run.
-      # --------------------------------------------------
       - name: Create refresh marker
         run: |
           mkdir -p .github
           echo "Last successful refresh: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" > .github/site-refresh.txt
-
-      # --------------------------------------------------
-      # 6. Commit updated data
-      # --------------------------------------------------
       - name: Commit updated current affairs
         run: |
           git config user.name "AURA EXAM AI"
@@ -81,24 +57,12 @@ jobs:
             git commit -m "Update current affairs"
             git push
           fi
-
-      # --------------------------------------------------
-      # 7. Configure GitHub Pages
-      # --------------------------------------------------
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
-
-      # --------------------------------------------------
-      # 8. Upload the CURRENT repository as Pages artifact
-      # --------------------------------------------------
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: "."
-
-      # --------------------------------------------------
-      # 9. Deploy directly to GitHub Pages
-      # --------------------------------------------------
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
