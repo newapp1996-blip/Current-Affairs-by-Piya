@@ -41,7 +41,7 @@ DATA_FILE = "data.json"
 DATA_DIR = "data"
 
 FIRST_RUN_COUNT = 30
-UPDATE_COUNT = 15
+UPDATE_COUNT = 15  # Keep the existing article batch size; workflow now runs every 6 hours.
 
 MAX_CANDIDATES_PER_SOURCE = 25
 REQUEST_TIMEOUT = 15
@@ -52,20 +52,17 @@ CONTENT_VERSION = 3
 
 
 # ============================================================
-# EXAM CORNER KEYWORDS
+# EXAM CORNER EXTRACTION RULES
 # ------------------------------------------------------------
-# IMPORTANT:
-# These are NOT enough by themselves.
-# Exam Corner also requires the article to be India-focused
-# and to cross the exam relevance threshold.
+# Exam Corner is a curated competitive-exam subset. It is NOT
+# limited to the India category. High-value Indian exam news can
+# come from Economy, Sports, Environment, Science, Defence, etc.
+# The normal site categories remain unchanged.
 # ============================================================
 
 EXAM_HIGH_VALUE = (
-    "upsc",
-    "civil services",
-    "ssc",
-    "ibps",
     "rbi",
+    "reserve bank",
     "sebi",
     "niti aayog",
     "supreme court",
@@ -83,7 +80,6 @@ EXAM_HIGH_VALUE = (
     "amendment",
     "committee",
     "commission",
-    "report",
     "economic survey",
     "union budget",
     "budget 202",
@@ -93,13 +89,24 @@ EXAM_HIGH_VALUE = (
     "gst council",
     "monetary policy",
     "fiscal policy",
+    "repo rate",
+    "interest rate",
+    "external debt",
+    "market borrowing",
     "foreign policy",
     "international relations",
     "defence",
     "defense",
     "military exercise",
     "armed forces",
+    "indian army",
+    "indian navy",
+    "indian air force",
+    "iaf",
+    "drdo",
     "missile",
+    "brahmos",
+    "akash",
     "border",
     "summit",
     "treaty",
@@ -114,32 +121,21 @@ EXAM_HIGH_VALUE = (
     "world bank",
     "imf",
     "unesco",
-    "wto",
-    "cop30",
-    "environment agreement",
 )
 
 EXAM_MEDIUM = (
     "appointment",
-    "ordinance",
-    "judiciary",
-    "high court",
-    "supreme court",
-    "lok sabha",
-    "rajya sabha",
-    "rajya sabha",
-    "ministry of finance",
-    "ministry of defence",
-    "ministry of external affairs",
-    "ministry of home affairs",
-    "ministry of education",
-    "ministry of environment",
-    "ministry of health",
-    "central government",
-    "state government",
+    "appointed",
+    "takes charge",
+    "md & ceo",
+    "managing director",
+    "chief executive officer",
+    "chairperson",
+    "bank",
+    "banking",
+    "small savings",
     "regulator",
     "regulatory",
-    "commission",
     "authority",
     "national mission",
     "national programme",
@@ -147,12 +143,100 @@ EXAM_MEDIUM = (
     "scheme",
     "initiative",
     "portal",
+    "drive",
     "infrastructure project",
     "defence deal",
     "defense deal",
     "trade agreement",
     "free trade agreement",
     "fta",
+    "wildlife",
+    "tiger reserve",
+    "national park",
+    "cheetah",
+    "biodiversity",
+    "climate",
+    "space",
+    "isro",
+    "satellite",
+    "launch",
+    "science",
+    "technology",
+    "artificial intelligence",
+    "asian games",
+    "asian para games",
+    "olympics",
+    "paralympics",
+    "national record",
+    "flag-bearer",
+    "important day",
+    "anniversary",
+    "foundation day",
+    "observed on",
+)
+
+EXAM_SPORTS = (
+    "asian games",
+    "asian para games",
+    "olympics",
+    "paralympics",
+    "commonwealth games",
+    "world championship",
+    "national record",
+    "flag-bearer",
+    "india medal",
+    "indian athlete",
+)
+
+EXAM_IMPORTANT_DAYS = (
+    "air force day",
+    "army day",
+    "navy day",
+    "republic day",
+    "independence day",
+    "constitution day",
+    "national sports day",
+    "national science day",
+    "world environment day",
+    "world health day",
+    "international day",
+    "anniversary",
+    "foundation day",
+)
+
+EXAM_SECTION_RULES = (
+    ("Appointments & Banking", (
+        "appointment", "appointed", "takes charge", "md & ceo",
+        "managing director", "chief executive officer", "bank",
+        "banking", "rbi", "sebi", "chairperson"
+    )),
+    ("Economy, Policy & Regulation", (
+        "repo rate", "interest rate", "monetary policy", "fiscal policy",
+        "external debt", "market borrowing", "small savings", "economy",
+        "policy", "regulation", "regulatory", "gst", "budget", "tax"
+    )),
+    ("Schemes & National Initiatives", (
+        "scheme", "yojana", "national mission", "national programme",
+        "national program", "initiative", "portal", "drive",
+        "government launched", "government launches"
+    )),
+    ("Environment & Wildlife", (
+        "environment", "wildlife", "cheetah", "tiger reserve",
+        "national park", "biodiversity", "climate", "wetland",
+        "conservation", "forest"
+    )),
+    ("Sports", EXAM_SPORTS),
+    ("Defence & Security", (
+        "defence", "defense", "indian army", "indian navy",
+        "indian air force", "iaf", "drdo", "missile", "brahmos",
+        "akash", "military", "armed forces"
+    )),
+    ("Science & Technology", (
+        "isro", "space", "satellite", "launch", "science",
+        "technology", "artificial intelligence", "ai", "startup",
+        "earth observation", "cubesat"
+    )),
+    ("Important Days & Commemorations", EXAM_IMPORTANT_DAYS),
 )
 
 
@@ -1008,6 +1092,14 @@ def is_india_focused(text):
         "reserve bank of india",
         "rbi",
         "isro",
+        "drdo",
+        "iaf",
+        "indian army",
+        "indian navy",
+        "indian air force",
+        "indian athlete",
+        "indian medal",
+        "government of india",
     )
 
     return contains_any(
@@ -1016,55 +1108,112 @@ def is_india_focused(text):
     )
 
 
+def exam_corner_section(title, text, category=""):
+    """Return the exam-oriented section without changing the site category."""
+
+    combined = (
+        f"{title} {title} {text[:10000]}"
+    ).lower()
+
+    scores = {}
+    for section, keywords in EXAM_SECTION_RULES:
+        scores[section] = count_matches(combined, keywords)
+
+    # Prefer a strong headline signal over a body-only signal.
+    title_lower = title.lower()
+    title_scores = {
+        section: count_matches(title_lower, keywords)
+        for section, keywords in EXAM_SECTION_RULES
+    }
+
+    best = max(scores, key=scores.get) if scores else "Other Exam-Relevant Current Affairs"
+    best_score = scores.get(best, 0)
+    best_title_score = title_scores.get(best, 0)
+
+    if best_score <= 0:
+        return "Other Exam-Relevant Current Affairs"
+
+    # Important-day stories should not be swallowed by a generic
+    # defence/science keyword when the event itself is the main news.
+    if any(k in title_lower for k in EXAM_IMPORTANT_DAYS):
+        return "Important Days & Commemorations"
+
+    # Headline-level evidence wins when present.
+    if best_title_score > 0:
+        return best
+
+    return best
+
+
 def exam_corner_score(title, text, category):
-
-    # --------------------------------------------------------
-    # Exam Corner is ONLY for Indian current affairs.
-    # --------------------------------------------------------
-
-    if category != "India":
-        return 0
+    """Score competitive-exam value across ALL normal site categories."""
 
     combined = (
         title.lower()
         + " "
         + title.lower()
         + " "
-        + text[:8000].lower()
+        + text[:10000].lower()
     )
 
+    # Exam Corner remains India-focused, but its source/category may be
+    # India, Economy, Sports, Environment, Science, Defence, etc.
     if not is_india_focused(combined):
         return 0
 
-    high = count_matches(
-        combined,
-        EXAM_HIGH_VALUE
-    )
+    high = count_matches(combined, EXAM_HIGH_VALUE)
+    medium = count_matches(combined, EXAM_MEDIUM)
+    sports_exam = count_matches(combined, EXAM_SPORTS)
+    important_day = count_matches(combined, EXAM_IMPORTANT_DAYS)
 
-    medium = count_matches(
-        combined,
-        EXAM_MEDIUM
-    )
+    title_lower = title.lower()
+    title_high = count_matches(title_lower, EXAM_HIGH_VALUE)
+    title_medium = count_matches(title_lower, EXAM_MEDIUM)
+    title_sports = count_matches(title_lower, EXAM_SPORTS)
+    title_day = count_matches(title_lower, EXAM_IMPORTANT_DAYS)
 
-    # Headline gets extra weight.
-    title_high = count_matches(
-        title.lower(),
-        EXAM_HIGH_VALUE
-    )
-
-    title_medium = count_matches(
-        title.lower(),
-        EXAM_MEDIUM
-    )
+    category_bonus = {
+        "India": 1,
+        "Economy": 1,
+        "Sports": 1,
+        "Environment": 1,
+        "Science & Technology": 1,
+        "Health": 1,
+    }.get(category, 0)
 
     score = (
         high * 3
         + medium
-        + title_high * 3
+        + sports_exam * 2
+        + important_day * 2
+        + title_high * 4
         + title_medium * 2
+        + title_sports * 3
+        + title_day * 4
+        + category_bonus
     )
 
     return score
+
+
+def exam_candidate_priority(candidate):
+    """Cheap RSS-title pre-ranking used only to ensure Exam Corner gets representation."""
+
+    title = clean_text(candidate.get("headline", "")).lower()
+    category = candidate.get("source_category", candidate.get("category", ""))
+
+    signals = count_matches(title, EXAM_HIGH_VALUE) * 4
+    signals += count_matches(title, EXAM_MEDIUM) * 2
+    signals += count_matches(title, EXAM_SPORTS) * 3
+    signals += count_matches(title, EXAM_IMPORTANT_DAYS) * 4
+
+    if category in {
+        "Economy", "Sports", "Environment",
+        "Science & Technology", "Health"
+    }:
+        signals += 1
+
+    return signals
 
 
 def classify_candidate(candidate, page_text=""):
@@ -1235,20 +1384,10 @@ def classify_candidate(candidate, page_text=""):
     # --------------------------------------------------------
     # STEP 3: Exam Corner
     # --------------------------------------------------------
-    # VERY IMPORTANT:
-    # Exam Corner is NOT a normal category.
-    # It is a filter/subset of India news.
-    #
-    # Therefore:
-    #
-    # Sports              -> NEVER Exam Corner
-    # Health              -> NEVER Exam Corner
-    # Science             -> NEVER Exam Corner
-    # Economy             -> NEVER Exam Corner automatically
-    # Environment         -> NEVER Exam Corner automatically
-    # World               -> NEVER Exam Corner
-    #
-    # Only India + strong exam relevance can enter.
+    # Exam Corner is a curated subset across the normal categories.
+    # It can contain Economy, Sports, Environment, Defence, Science,
+    # Health or India stories when they have clear Indian competitive-
+    # exam value. The normal category is NEVER replaced by Exam Corner.
     # --------------------------------------------------------
 
     exam_score = exam_corner_score(
@@ -1257,9 +1396,11 @@ def classify_candidate(candidate, page_text=""):
         category
     )
 
-    exam_corner = (
-        category == "India"
-        and exam_score >= 4
+    exam_corner = exam_score >= 6
+    exam_section = (
+        exam_corner_section(title, text, category)
+        if exam_corner
+        else ""
     )
 
     candidate["category"] = category
@@ -1267,6 +1408,7 @@ def classify_candidate(candidate, page_text=""):
         exam_corner
     )
     candidate["exam_score"] = exam_score
+    candidate["exam_corner_section"] = exam_section
 
     print(
         f"CLASSIFY | {title[:90]} | "
@@ -1314,8 +1456,8 @@ CONTEXT / ANALYSIS RULES:
 - Keep political coverage neutral and descriptive.
 
 IMPORTANT CATEGORY RULES:
-1. Exam Corner is NOT a general category.
-2. Exam Corner is ONLY for Indian current affairs having clear competitive-exam relevance.
+1. Exam Corner is a curated exam-relevance flag, NOT a replacement for the normal category.
+2. Exam Corner may contain high-value stories from India, Economy, Sports, Environment, Science & Technology, Defence/Security-related India news, Health, and other India-linked categories.
 3. A normal India news story remains India.
 4. International news is World.
 5. Health news is Health.
@@ -1323,9 +1465,17 @@ IMPORTANT CATEGORY RULES:
 7. Economy/finance news is Economy.
 8. Environment/climate/wildlife news is Environment.
 9. Sports news is Sports.
-10. Do not change the supplied classifier category merely because the article mentions India.
+10. Do not change the supplied classifier category merely because the article is in Exam Corner.
 
 The supplied classifier category is authoritative.
+
+EXAM CORNER STRUCTURE — ONLY WHEN Exam Corner IS TRUE:
+- Identify the most appropriate section from: Appointments & Banking; Economy, Policy & Regulation; Schemes & National Initiatives; Environment & Wildlife; Sports; Defence & Security; Science & Technology; Important Days & Commemorations.
+- Extract the exam-worthy facts in a direct bullet hierarchy.
+- Preserve names, designations, organisations, dates, amounts, rates, locations, records, targets, memberships, predecessors, institutional roles and other high-value facts when supported by the source.
+- Add a short Static GK block for the main organisation/person/place when the facts are stable and high-confidence. Use general knowledge only for genuinely static facts (for example, founded year, headquarters, statutory role, parent ministry, or established institutional identity); never invent uncertain or current facts.
+- Do not add unsupported current facts merely because they are commonly known.
+- For Exam Corner, make full_article_text information-dense and structured with a clear section heading followed by the key event and bullet-style factual details.
 
 Return ONLY valid JSON.
 
@@ -1344,6 +1494,9 @@ Required JSON object:
 {{
   "category": "{candidate['category']}",
   "exam_corner": {str(bool(candidate.get('exam_corner', False))).lower()},
+  "exam_corner_section": "{candidate.get('exam_corner_section', '')}",
+  "exam_corner_topic": "short factual topic label or empty string",
+  "static_gk": ["source-supported static GK facts or empty array"],
   "headline": "clear factual headline in original wording",
   "story_lead": "2-4 sentence original lead covering what happened and why it matters when supported",
   "full_article_text": "comprehensive original current-affairs brief preserving the important facts, details, lists, dates, numbers, names, places, exceptions and comparisons from the source",
@@ -1423,10 +1576,24 @@ def normalize_generated(article, candidate):
         )
     )
 
-    # Extra safety:
-    # Exam Corner can ONLY be attached to India.
-    if article["category"] != "India":
-        article["exam_corner"] = False
+    # Exam Corner is independent of the normal category.
+    # The classifier decides whether the article belongs in the curated
+    # exam subset; the normal category remains authoritative.
+    article["exam_corner"] = bool(
+        candidate.get("exam_corner", article.get("exam_corner", False))
+    )
+    article["exam_corner_section"] = (
+        candidate.get("exam_corner_section")
+        or article.get("exam_corner_section", "")
+        if article["exam_corner"]
+        else ""
+    )
+
+    if not article["exam_corner"]:
+        article["exam_corner_section"] = ""
+
+    if not isinstance(article.get("static_gk"), list):
+        article["static_gk"] = []
 
     article["published_date"] = candidate.get(
         "published_date", TODAY
@@ -1449,6 +1616,7 @@ def normalize_generated(article, candidate):
         "prelims_facts",
         "vocabulary",
         "related_entities",
+        "static_gk",
     ]:
 
         if not isinstance(
@@ -2008,39 +2176,23 @@ def main():
     selected = []
     seen_titles = set()
 
+    # Give Exam Corner a reliable representation in each update without
+    # increasing the Gemini article count. This is only a cheap RSS-title
+    # ranking; the final decision is still made after fetching the article.
+    eligible = []
     for candidate in candidates:
-
-        title_key = normalize_title(
-            candidate["headline"]
-        )
-
-        url_key = (
-            candidate["source_url"]
-            .split("?")[0]
-            .rstrip("/")
-        )
-
-        if not title_key:
-            continue
-
+        title_key = normalize_title(candidate["headline"])
+        url_key = candidate["source_url"].split("?")[0].rstrip("/")
         candidate_key = article_key({
-            "headline": candidate[
-                "headline"
-            ],
-            "source_url": candidate[
-                "source_url"
-            ],
+            "headline": candidate["headline"],
+            "source_url": candidate["source_url"],
         })
 
-        if candidate_key in existing_keys:
+        if not title_key or candidate_key in existing_keys:
             continue
 
         if any(
-            a.get(
-                "source_url",
-                ""
-            ).split("?")[0].rstrip("/")
-            == url_key
+            a.get("source_url", "").split("?")[0].rstrip("/") == url_key
             for a in existing_news
         ):
             continue
@@ -2048,16 +2200,33 @@ def main():
         if title_key in seen_titles:
             continue
 
-        seen_titles.add(
-            title_key
-        )
+        seen_titles.add(title_key)
+        candidate["exam_candidate_priority"] = exam_candidate_priority(candidate)
+        eligible.append(candidate)
 
-        selected.append(
-            candidate
-        )
+    exam_pool = sorted(
+        [c for c in eligible if c.get("exam_candidate_priority", 0) >= 4],
+        key=lambda c: c.get("exam_candidate_priority", 0),
+        reverse=True,
+    )
 
+    # At most 6 exam-priority candidates; the rest of the batch preserves
+    # the normal RSS order so the existing site categories are not starved.
+    for candidate in exam_pool[:min(6, target)]:
+        selected.append(candidate)
+
+    selected_keys = {
+        article_key(c)
+        for c in selected
+    }
+
+    for candidate in eligible:
         if len(selected) >= target:
             break
+        if article_key(candidate) in selected_keys:
+            continue
+        selected.append(candidate)
+        selected_keys.add(article_key(candidate))
 
     # ========================================================
     # PROCESS NEW ARTICLES
@@ -2159,18 +2328,17 @@ def main():
         ]
 
         # FINAL SAFETY RULE:
-        # Exam Corner can never contain
-        # non-India categories.
-        article["exam_corner"] = (
-            bool(
-                candidate.get(
-                    "exam_corner",
-                    False
-                )
+        # Exam Corner is an independent curated flag.
+        article["exam_corner"] = bool(
+            candidate.get(
+                "exam_corner",
+                False
             )
-            and article[
-                "category"
-            ] == "India"
+        )
+        article["exam_corner_section"] = (
+            candidate.get("exam_corner_section", "")
+            if article["exam_corner"]
+            else ""
         )
 
         article["image_url"] = (
@@ -2320,16 +2488,22 @@ def main():
 
         article[
             "exam_corner"
-        ] = (
-            bool(
-                repaired.get(
-                    "exam_corner",
-                    False
-                )
+        ] = bool(
+            repaired.get(
+                "exam_corner",
+                False
             )
-            and article[
-                "category"
-            ] == "India"
+        )
+
+        article[
+            "exam_corner_section"
+        ] = (
+            repaired.get(
+                "exam_corner_section",
+                ""
+            )
+            if article["exam_corner"]
+            else ""
         )
 
     # ========================================================
@@ -2365,13 +2539,18 @@ def main():
                 fallback_quiz(article)
             )
 
-        # Absolute final Exam Corner protection.
-        if article.get(
-            "category"
-        ) != "India":
-            article[
-                "exam_corner"
-            ] = False
+        # Absolute final Exam Corner sanitation.
+        article["exam_corner"] = bool(
+            article.get("exam_corner", False)
+        )
+        if not article["exam_corner"]:
+            article["exam_corner_section"] = ""
+        elif not article.get("exam_corner_section"):
+            article["exam_corner_section"] = exam_corner_section(
+                article.get("headline", ""),
+                article.get("full_article_text", ""),
+                article.get("category", "")
+            )
 
     # Mark every successfully processed article with the current content version.
     for article in existing_news:
@@ -2468,13 +2647,13 @@ def main():
 
     motivation_index = (
         len(available_dates)
-        + NOW.hour // 3
+        + NOW.hour // 6
     ) % len(
         MOTIVATION_IMAGES
     )
 
     quote_index = (
-        NOW.hour // 3
+        NOW.hour // 6
         + NOW.timetuple().tm_yday
     ) % len(
         MOTIVATION_QUOTES
@@ -2588,35 +2767,18 @@ def main():
     # ========================================================
 
     invalid_exam_articles = [
-        a.get(
-            "headline",
-            "Unknown"
-        )
+        a.get("headline", "Unknown")
         for a in existing_news
         if a.get("exam_corner")
-        and a.get("category")
-        != "India"
+        and not a.get("exam_corner_section")
     ]
 
     if invalid_exam_articles:
-
-        print(
-            "WARNING: Invalid Exam Corner "
-            "articles detected:"
-        )
-
-        for headline in (
-            invalid_exam_articles
-        ):
-            print(
-                f" - {headline}"
-            )
-
+        print("WARNING: Exam Corner articles missing section:")
+        for headline in invalid_exam_articles:
+            print(f" - {headline}")
     else:
-
-        print(
-            "Exam Corner validation: PASSED"
-        )
+        print("Exam Corner validation: PASSED")
 
     print("----------------------------------------")
     print(f"Today: {TODAY}")
