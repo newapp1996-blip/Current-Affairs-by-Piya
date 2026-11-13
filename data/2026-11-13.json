@@ -3,6 +3,1395 @@
   "news": [
     {
       "category": "Health",
+      "exam_corner": false,
+      "exam_corner_section": "",
+      "exam_corner_topic": "",
+      "headline": "India’s ambassador to Oman visits injured Indian seafarer in hospital - The Hindu",
+      "story_lead": "India’s ambassador to Oman visits injured Indian seafarer in hospital - The Hindu",
+      "full_article_text": "India’s ambassador to Oman visits injured Indian seafarer in hospital - The Hindu",
+      "background_context": "",
+      "bullet_points": [
+        "India’s ambassador to Oman visits injured Indian seafarer in hospital - The Hindu"
+      ],
+      "key_facts": [
+        "India’s ambassador to Oman visits injured Indian seafarer in hospital - The Hindu"
+      ],
+      "key_locations": [],
+      "important_dates": [],
+      "exam_relevance": [],
+      "upsc_analysis": "",
+      "causes": [],
+      "impacts": [],
+      "challenges": [],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [],
+      "mains_notes": "",
+      "mains_questions": [],
+      "takeaway": "India’s ambassador to Oman visits injured Indian seafarer in hospital - The Hindu",
+      "prelims_facts": [
+        "India’s ambassador to Oman visits injured Indian seafarer in hospital - The Hindu"
+      ],
+      "vocabulary": [],
+      "related_entities": [],
+      "hindi_translation": {
+        "headline": "India’s ambassador to Oman visits injured Indian seafarer in hospital - The Hindu",
+        "story_lead": "India’s ambassador to Oman visits injured Indian seafarer in hospital - The Hindu",
+        "full_article_text": "India’s ambassador to Oman visits injured Indian seafarer in hospital - The Hindu",
+        "background_context": "",
+        "bullet_points": [
+          "India’s ambassador to Oman visits injured Indian seafarer in hospital - The Hindu"
+        ],
+        "key_facts": [
+          "India’s ambassador to Oman visits injured Indian seafarer in hospital - The Hindu"
+        ],
+        "key_locations": [],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which topic is directly discussed in the current-affairs article titled: India’s ambassador to Oman visits injured Indian seafarer in hospital - The Hindu?",
+        "options": [
+          "India’s ambassador to Oman visits injured Indian seafarer in hospital - The Hindu",
+          "A topic not discussed in the article",
+          "An unrelated historical event",
+          "An unrelated scientific formula"
+        ],
+        "correct_answer": "India’s ambassador to Oman visits injured Indian seafarer in hospital - The Hindu",
+        "explanation": "The correct option is the topic explicitly identified by the article headline."
+      },
+      "source_name": "Google News India",
+      "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOZ0VmNGJoUlhoSnFBNG5zQUl2djFIWVVFNTUxM1NlMkFDUkpUek5wOHZJb2pnRUtJa3dWU0NXS1BjV0ZSQ0Y3b2ppcy04d1RpQV9FS3hNQ2ZGSWVjdEhDaE1xS3Zfa1djSFBxcThad2h4aXlIYkZvT3pRNFA1clhXVDVSM1hVckN5MHItUURsekZjOTNmS0JNWFlNNi05WkVRTXh4MXVlcDN1anVkcVdlM2NJemg3aFdxYkszNTJhUVFGRVo2LWfSAcwBQVVfeXFMT1RkRGdKQU5CQVZUMk1WV0lUM2ZPazRMWGlHb2NFa0pGcFFfdWRkLUpUbUlYQzNSYm41X05HeUFiUTk4TVg2UlRLaWhIcWZ0SG1DVDBjY2xBSXJubEpTNFdwLVZHZFp3T01JVmtVRjNkSFZ6bzEtMGdWUF9rbzJ4VzdTUm51NmFVTHFvS0ZFaHZhMl9GUGk3dWpKRkpDTndfMmM2SkRIWmdQQ2FHc0ZiZ2FFZThneUdUakJDYkdCdmZJM0NPV2Y3OS1yV251?oc=5",
+      "static_gk": [],
+      "published_date": "2026-11-13",
+      "content_version": 4,
+      "id": 45,
+      "image_url": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=80",
+      "added_at": "2026-11-13T12:34:28.287040+05:30"
+    },
+    {
+      "category": "Health",
+      "exam_corner": false,
+      "exam_corner_section": "",
+      "exam_corner_topic": "",
+      "headline": "Failed health check, elevated load, server restart: What led to the Microsoft outage",
+      "story_lead": "Failed health check, elevated load, server restart: What led to the Microsoft outage Automated server shutdowns led to an infra bottleneck, even as engineers deploy alternatives, while an initial fix attempt doesn’t seem to be delivering results Microsoft services, including Microsoft 365 for Business and Enterprise, as well as consumer products such as Microsoft Teams, Outlook, OneDrive, and Office on the web, continue to experience what the tech company described as a “service degradation” following a major global outage that has stretched across several hours. Microsoft has yet to confirm why the services went offline in the early hours of Friday, but it attributes the outage to several servers unexpectedly becoming unavailable after failing automated health checks, which placed elevated strain on the remaining infrastructure worldwide. The Microsoft Service Health Status currently li",
+      "full_article_text": "Failed health check, elevated load, server restart: What led to the Microsoft outage Automated server shutdowns led to an infra bottleneck, even as engineers deploy alternatives, while an initial fix attempt doesn’t seem to be delivering results Microsoft services, including Microsoft 365 for Business and Enterprise, as well as consumer products such as Microsoft Teams, Outlook, OneDrive, and Office on the web, continue to experience what the tech company described as a “service degradation” following a major global outage that has stretched across several hours. Microsoft has yet to confirm why the services went offline in the early hours of Friday, but it attributes the outage to several servers unexpectedly becoming unavailable after failing automated health checks, which placed elevated strain on the remaining infrastructure worldwide. The Microsoft Service Health Status currently lists all customer services as “operational”, but Microsoft’s update on X indicated there were issues to resolve. Deep Dive “We’ve monitored the status of the changes applied to improve serviceability and confirmed they’re not taking as expected. We’re identifying alternate workstreams that can be applied to increase capacity in the face of sustained traffic management imbalances,” said Microsoft 365 Status account on X. Why the services went offline By all accounts, the outage was caused by a cascading infrastructure failure. It began with automated health checks across its server infrastructure, which failed on certain servers and caused them to shut down. This increased the load on the remaining online servers, causing a cascading effect. Microsoft engineers have attempted to restart these servers, and Microsoft 365 Status does indicate that a portion of the affected servers has been restarted and remains stable. Restarting a server requires as long as 30 minutes, depending on hardware and workload. After an unexpected crash or hard reboot, the server may run a disk check process, which can take a long time on large drives. There is no guarantee that the issue which caused the server to shut down or become unresponsive will be fixed by a restart. “We’re testing a configuration change to address a problem that’s causing servers to fail automated health checks and become unavailable,” Microsoft said before it started deploying certain fixes. That attempt hasn’t delivered results so far. Microsoft said the disruption wasn’t driven by a spike in user traffic or a cyberattack. Instead, a core process on affected servers became overwhelmed, causing capacity loss when servers failed automated health checks and dropped offline. As a result, services became unavailable and unstable. - ABOUT THE AUTHOR Vishal Mathur Vishal Mathur is Technology Editor for Hindustan Times. When not making sense of technology, he often searches for an elusive analog space in a digital world.",
+      "background_context": "",
+      "bullet_points": [
+        "Failed health check, elevated load, server restart: What led to the Microsoft outage",
+        "Automated server shutdowns led to an infra bottleneck, even as engineers deploy alternatives, while an initial fix attempt doesn’t seem to be delivering results",
+        "Microsoft services, including Microsoft 365 for Business and Enterprise, as well as consumer products such as Microsoft Teams, Outlook, OneDrive, and Office on the web, continue to experience what the tech company described as a “service degradation” following a major global outage that has stretched across several hours.",
+        "Microsoft has yet to confirm why the services went offline in the early hours of Friday, but it attributes the outage to several servers unexpectedly becoming unavailable after failing automated health checks, which placed elevated strain on the remaining infrastructure worldwide.",
+        "The Microsoft Service Health Status currently lists all customer services as “operational”, but Microsoft’s update on X indicated there were issues to resolve.",
+        "“We’ve monitored the status of the changes applied to improve serviceability and confirmed they’re not taking as expected. We’re identifying alternate workstreams that can be applied to increase capacity in the face of sustained traffic management imbalances,” said Microsoft 365 Status account on X.",
+        "By all accounts, the outage was caused by a cascading infrastructure failure.",
+        "It began with automated health checks across its server infrastructure, which failed on certain servers and caused them to shut down. This increased the load on the remaining online servers, causing a cascading effect. Microsoft engineers have attempted to restart these servers, and Microsoft 365 Status does indicate that a portion of the affected servers has been restarted and remains stable."
+      ],
+      "key_facts": [
+        "Failed health check, elevated load, server restart: What led to the Microsoft outage",
+        "Automated server shutdowns led to an infra bottleneck, even as engineers deploy alternatives, while an initial fix attempt doesn’t seem to be delivering results",
+        "Microsoft services, including Microsoft 365 for Business and Enterprise, as well as consumer products such as Microsoft Teams, Outlook, OneDrive, and Office on the web, continue to experience what the tech company described as a “service degradation” following a major global outage that has stretched across several hours.",
+        "Microsoft has yet to confirm why the services went offline in the early hours of Friday, but it attributes the outage to several servers unexpectedly becoming unavailable after failing automated health checks, which placed elevated strain on the remaining infrastructure worldwide.",
+        "The Microsoft Service Health Status currently lists all customer services as “operational”, but Microsoft’s update on X indicated there were issues to resolve.",
+        "“We’ve monitored the status of the changes applied to improve serviceability and confirmed they’re not taking as expected. We’re identifying alternate workstreams that can be applied to increase capacity in the face of sustained traffic management imbalances,” said Microsoft 365 Status account on X."
+      ],
+      "key_locations": [],
+      "important_dates": [],
+      "exam_relevance": [],
+      "upsc_analysis": "",
+      "causes": [],
+      "impacts": [],
+      "challenges": [],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [],
+      "mains_notes": "",
+      "mains_questions": [],
+      "takeaway": "Failed health check, elevated load, server restart: What led to the Microsoft outage Automated server shutdowns led to an infra bottleneck, even as engineers deploy alternatives, while an initial fix attempt doesn’t seem to be delivering results Microsoft services, including Microsoft 365 for Busine",
+      "prelims_facts": [
+        "Failed health check, elevated load, server restart: What led to the Microsoft outage",
+        "Automated server shutdowns led to an infra bottleneck, even as engineers deploy alternatives, while an initial fix attempt doesn’t seem to be delivering results",
+        "Microsoft services, including Microsoft 365 for Business and Enterprise, as well as consumer products such as Microsoft Teams, Outlook, OneDrive, and Office on the web, continue to experience what the tech company described as a “service degradation” following a major global outage that has stretched across several hours.",
+        "Microsoft has yet to confirm why the services went offline in the early hours of Friday, but it attributes the outage to several servers unexpectedly becoming unavailable after failing automated health checks, which placed elevated strain on the remaining infrastructure worldwide.",
+        "The Microsoft Service Health Status currently lists all customer services as “operational”, but Microsoft’s update on X indicated there were issues to resolve.",
+        "“We’ve monitored the status of the changes applied to improve serviceability and confirmed they’re not taking as expected. We’re identifying alternate workstreams that can be applied to increase capacity in the face of sustained traffic management imbalances,” said Microsoft 365 Status account on X."
+      ],
+      "vocabulary": [],
+      "related_entities": [],
+      "hindi_translation": {
+        "headline": "Failed health check, elevated load, server restart: What led to the Microsoft outage",
+        "story_lead": "Failed health check, elevated load, server restart: What led to the Microsoft outage Automated server shutdowns led to an infra bottleneck, even as engineers deploy alternatives, while an initial fix attempt doesn’t seem to be delivering results Microsoft services, including Microsoft 365 for Business and Enterprise, as well as consumer products such as Microsoft Teams, Outlook, OneDrive, and Office on the web, continue to experience what the tech company described as a “service degradation” following a major global outage that has stretched across several hours. Microsoft has yet to confirm why the services went offline in the early hours of Friday, but it attributes the outage to several servers unexpectedly becoming unavailable after failing automated health checks, which placed elevated strain on the remaining infrastructure worldwide. The Microsoft Service Health Status currently li",
+        "full_article_text": "Failed health check, elevated load, server restart: What led to the Microsoft outage Automated server shutdowns led to an infra bottleneck, even as engineers deploy alternatives, while an initial fix attempt doesn’t seem to be delivering results Microsoft services, including Microsoft 365 for Business and Enterprise, as well as consumer products such as Microsoft Teams, Outlook, OneDrive, and Office on the web, continue to experience what the tech company described as a “service degradation” following a major global outage that has stretched across several hours. Microsoft has yet to confirm why the services went offline in the early hours of Friday, but it attributes the outage to several servers unexpectedly becoming unavailable after failing automated health checks, which placed elevated strain on the remaining infrastructure worldwide. The Microsoft Service Health Status currently lists all customer services as “operational”, but Microsoft’s update on X indicated there were issues to resolve. Deep Dive “We’ve monitored the status of the changes applied to improve serviceability and confirmed they’re not taking as expected. We’re identifying alternate workstreams that can be applied to increase capacity in the face of sustained traffic management imbalances,” said Microsoft 365 Status account on X. Why the services went offline By all accounts, the outage was caused by a cascading infrastructure failure. It began with automated health checks across its server infrastructure, which failed on certain servers and caused them to shut down. This increased the load on the remaining online servers, causing a cascading effect. Microsoft engineers have attempted to restart these servers, and Microsoft 365 Status does indicate that a portion of the affected servers has been restarted and remains stable. Restarting a server requires as long as 30 minutes, depending on hardware and workload. After an unexpected crash or hard reboot, the server may run a disk check process, which can take a long time on large drives. There is no guarantee that the issue which caused the server to shut down or become unresponsive will be fixed by a restart. “We’re testing a configuration change to address a problem that’s causing servers to fail automated health checks and become unavailable,” Microsoft said before it started deploying certain fixes. That attempt hasn’t delivered results so far. Microsoft said the disruption wasn’t driven by a spike in user traffic or a cyberattack. Instead, a core process on affected servers became overwhelmed, causing capacity loss when servers failed automated health checks and dropped offline. As a result, services became unavailable and unstable. - ABOUT THE AUTHOR Vishal Mathur Vishal Mathur is Technology Editor for Hindustan Times. When not making sense of technology, he often searches for an elusive analog space in a digital world.",
+        "background_context": "",
+        "bullet_points": [
+          "Failed health check, elevated load, server restart: What led to the Microsoft outage",
+          "Automated server shutdowns led to an infra bottleneck, even as engineers deploy alternatives, while an initial fix attempt doesn’t seem to be delivering results",
+          "Microsoft services, including Microsoft 365 for Business and Enterprise, as well as consumer products such as Microsoft Teams, Outlook, OneDrive, and Office on the web, continue to experience what the tech company described as a “service degradation” following a major global outage that has stretched across several hours.",
+          "Microsoft has yet to confirm why the services went offline in the early hours of Friday, but it attributes the outage to several servers unexpectedly becoming unavailable after failing automated health checks, which placed elevated strain on the remaining infrastructure worldwide.",
+          "The Microsoft Service Health Status currently lists all customer services as “operational”, but Microsoft’s update on X indicated there were issues to resolve.",
+          "“We’ve monitored the status of the changes applied to improve serviceability and confirmed they’re not taking as expected. We’re identifying alternate workstreams that can be applied to increase capacity in the face of sustained traffic management imbalances,” said Microsoft 365 Status account on X.",
+          "By all accounts, the outage was caused by a cascading infrastructure failure.",
+          "It began with automated health checks across its server infrastructure, which failed on certain servers and caused them to shut down. This increased the load on the remaining online servers, causing a cascading effect. Microsoft engineers have attempted to restart these servers, and Microsoft 365 Status does indicate that a portion of the affected servers has been restarted and remains stable."
+        ],
+        "key_facts": [
+          "Failed health check, elevated load, server restart: What led to the Microsoft outage",
+          "Automated server shutdowns led to an infra bottleneck, even as engineers deploy alternatives, while an initial fix attempt doesn’t seem to be delivering results",
+          "Microsoft services, including Microsoft 365 for Business and Enterprise, as well as consumer products such as Microsoft Teams, Outlook, OneDrive, and Office on the web, continue to experience what the tech company described as a “service degradation” following a major global outage that has stretched across several hours.",
+          "Microsoft has yet to confirm why the services went offline in the early hours of Friday, but it attributes the outage to several servers unexpectedly becoming unavailable after failing automated health checks, which placed elevated strain on the remaining infrastructure worldwide.",
+          "The Microsoft Service Health Status currently lists all customer services as “operational”, but Microsoft’s update on X indicated there were issues to resolve.",
+          "“We’ve monitored the status of the changes applied to improve serviceability and confirmed they’re not taking as expected. We’re identifying alternate workstreams that can be applied to increase capacity in the face of sustained traffic management imbalances,” said Microsoft 365 Status account on X."
+        ],
+        "key_locations": [],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which topic is directly discussed in the current-affairs article titled: Failed health check, elevated load, server restart: What led to the Microsoft outage?",
+        "options": [
+          "Failed health check, elevated load, server restart: What led to the Microsoft outage",
+          "A topic not discussed in the article",
+          "An unrelated historical event",
+          "An unrelated scientific formula"
+        ],
+        "correct_answer": "Failed health check, elevated load, server restart: What led to the Microsoft outage",
+        "explanation": "The correct option is the topic explicitly identified by the article headline."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/failed-health-check-elevated-load-server-restart-what-led-to-the-microsoft-outage-101794548856802.html",
+      "static_gk": [],
+      "published_date": "2026-11-13",
+      "content_version": 4,
+      "id": 44,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/11/13/1600x900/logo/CHICAGO--ILLINOIS---NOVEMBER-12--In-this-photo-ill_1794548849319_C2pk.jpg",
+      "added_at": "2026-11-13T12:34:28.287040+05:30"
+    },
+    {
+      "category": "Environment",
+      "exam_corner": false,
+      "exam_corner_section": "",
+      "exam_corner_topic": "",
+      "headline": "India and U.K. are turning climate ambition into action - The Hindu",
+      "story_lead": "India and U.K. are turning climate ambition into action - The Hindu",
+      "full_article_text": "India and U.K. are turning climate ambition into action - The Hindu",
+      "background_context": "",
+      "bullet_points": [
+        "India and U.K. are turning climate ambition into action - The Hindu"
+      ],
+      "key_facts": [
+        "India and U.K. are turning climate ambition into action - The Hindu"
+      ],
+      "key_locations": [],
+      "important_dates": [],
+      "exam_relevance": [],
+      "upsc_analysis": "",
+      "causes": [],
+      "impacts": [],
+      "challenges": [],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [],
+      "mains_notes": "",
+      "mains_questions": [],
+      "takeaway": "India and U.K. are turning climate ambition into action - The Hindu",
+      "prelims_facts": [
+        "India and U.K. are turning climate ambition into action - The Hindu"
+      ],
+      "vocabulary": [],
+      "related_entities": [],
+      "hindi_translation": {
+        "headline": "India and U.K. are turning climate ambition into action - The Hindu",
+        "story_lead": "India and U.K. are turning climate ambition into action - The Hindu",
+        "full_article_text": "India and U.K. are turning climate ambition into action - The Hindu",
+        "background_context": "",
+        "bullet_points": [
+          "India and U.K. are turning climate ambition into action - The Hindu"
+        ],
+        "key_facts": [
+          "India and U.K. are turning climate ambition into action - The Hindu"
+        ],
+        "key_locations": [],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which topic is directly discussed in the current-affairs article titled: India and U.K. are turning climate ambition into action - The Hindu?",
+        "options": [
+          "India and U.K. are turning climate ambition into action - The Hindu",
+          "A topic not discussed in the article",
+          "An unrelated historical event",
+          "An unrelated scientific formula"
+        ],
+        "correct_answer": "India and U.K. are turning climate ambition into action - The Hindu",
+        "explanation": "The correct option is the topic explicitly identified by the article headline."
+      },
+      "source_name": "Google News Environment India",
+      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPWENXZF9qYVhZVlc1SmxnZUU2anpJVHVnR1lMbl9MZ2YtekdQWlNpVTY0cVFXd2hNYV95SW9rX3dpX21hVzFYNUFHbnBwRWdra3BQclVZYWgzWmV6VWs1NWN3Zjh4V3VDWVh5UVlZV2pRY3FGcmpwbGpUWTVrV0QyX1hJVHZmaUVsbENCZEVjMTdSbzd5RzN4ZG9JSDhOMnNOVUo4UDNEdjU1bUh2UUVWd29R0gG4AUFVX3lxTFBMQmJxdWhDdHBONmh2TEs4WUhPMkJYUkRVX2pYeHhaYjhqQXkzcG1IcVl0eWVjUEw3MFh0bHc0SUdhX04xcmdCOUJoSm90Tkd3WVVLQUUwcmo0LTJyNjFNcHJ6Q0UtVDhWTVp6TlFxdFd4Q1J0VUVNX1hXQTRpWUk0eEVrQ0gtcFFhYmloLUVuTm1BYUZNQ1VOZ1JqZDExX1B3amlfa0dYdkNGSk42clFBVkFDczE5cEM?oc=5",
+      "static_gk": [],
+      "published_date": "2026-11-13",
+      "content_version": 4,
+      "id": 43,
+      "image_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80",
+      "added_at": "2026-11-13T12:34:28.287040+05:30"
+    },
+    {
+      "category": "Environment",
+      "exam_corner": false,
+      "exam_corner_section": "",
+      "exam_corner_topic": "",
+      "headline": "India committed to Climate Action through initiatives like LeadIT: Environment Minister Bhupender Yadav - News On AIR",
+      "story_lead": "India committed to Climate Action through initiatives like LeadIT: Environment Minister Bhupender Yadav - News On AIR",
+      "full_article_text": "India committed to Climate Action through initiatives like LeadIT: Environment Minister Bhupender Yadav - News On AIR",
+      "background_context": "",
+      "bullet_points": [
+        "India committed to Climate Action through initiatives like LeadIT: Environment Minister Bhupender Yadav - News On AIR"
+      ],
+      "key_facts": [
+        "India committed to Climate Action through initiatives like LeadIT: Environment Minister Bhupender Yadav - News On AIR"
+      ],
+      "key_locations": [],
+      "important_dates": [],
+      "exam_relevance": [],
+      "upsc_analysis": "",
+      "causes": [],
+      "impacts": [],
+      "challenges": [],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [],
+      "mains_notes": "",
+      "mains_questions": [],
+      "takeaway": "India committed to Climate Action through initiatives like LeadIT: Environment Minister Bhupender Yadav - News On AIR",
+      "prelims_facts": [
+        "India committed to Climate Action through initiatives like LeadIT: Environment Minister Bhupender Yadav - News On AIR"
+      ],
+      "vocabulary": [],
+      "related_entities": [],
+      "hindi_translation": {
+        "headline": "India committed to Climate Action through initiatives like LeadIT: Environment Minister Bhupender Yadav - News On AIR",
+        "story_lead": "India committed to Climate Action through initiatives like LeadIT: Environment Minister Bhupender Yadav - News On AIR",
+        "full_article_text": "India committed to Climate Action through initiatives like LeadIT: Environment Minister Bhupender Yadav - News On AIR",
+        "background_context": "",
+        "bullet_points": [
+          "India committed to Climate Action through initiatives like LeadIT: Environment Minister Bhupender Yadav - News On AIR"
+        ],
+        "key_facts": [
+          "India committed to Climate Action through initiatives like LeadIT: Environment Minister Bhupender Yadav - News On AIR"
+        ],
+        "key_locations": [],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which topic is directly discussed in the current-affairs article titled: India committed to Climate Action through initiatives like LeadIT: Environment Minister Bhupender Yadav - News On AIR?",
+        "options": [
+          "India committed to Climate Action through initiatives like LeadIT: Environment Minister Bhupender Yadav - News On AIR",
+          "A topic not discussed in the article",
+          "An unrelated historical event",
+          "An unrelated scientific formula"
+        ],
+        "correct_answer": "India committed to Climate Action through initiatives like LeadIT: Environment Minister Bhupender Yadav - News On AIR",
+        "explanation": "The correct option is the topic explicitly identified by the article headline."
+      },
+      "source_name": "Google News Environment India",
+      "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPNU11TkpMZDlKLTlWNzE2Tkd2VTdpcF81OGt5SnVOaWQzbGR5Q2M4OGlfWnBGWmZmc01NSVpJUlhCTW55TlA5SklNZWxDMmgtNVQ3WE5GV3RaRHRMek9wa2htNVJ0QXRXTnBvVmlDLVR1ZE5XZmpXVkFZMEExM3U4STJTR0p0ZjR3RXV5cGdZRGdSRzFKemIydzlfYmpfTDZObFhmY29UTUNlbU0tZ2VzRlFOSzlqWTZiUXl0Zk5OX2pTdW53QU1Z?oc=5",
+      "static_gk": [],
+      "published_date": "2026-11-13",
+      "content_version": 4,
+      "id": 42,
+      "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+      "added_at": "2026-11-13T12:34:28.287040+05:30"
+    },
+    {
+      "category": "Economy",
+      "exam_corner": true,
+      "exam_corner_section": "Schemes & National Initiatives",
+      "exam_corner_topic": "How debt-ridden stock market investor killed top executive's wife",
+      "headline": "How debt-ridden stock market investor killed top executive's wife",
+      "story_lead": "- àªà«àªàª°àª¾àª¤à« TOI - How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ Share your thoughts in the comments Be respectful Â· TOI community guidelines Videos Photostories Hot Picks Top Trending Trending Stories - Woman buys Rs 1,755 pressure cooker, finds rice and dal remain uncooked despite 3-4 whistles; consumer commission orders refund, Rs 12,000 compensation and Rs 3,000 costs, imposes Rs 21,000 penalty on store and dealer - Cockroaches, rat droppings, recycled cooking oil: 9 KFC, Dominoâs outlets shut after food safety raids in Hyderabad - Norwegian journalist claims MHA cancelled her visa for Hyderabad event - 'Multiple plots, luxury villa, farmland': Govt engineer's 'empire' ",
+      "full_article_text": "- àªà«àªàª°àª¾àª¤à« TOI - How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ Share your thoughts in the comments Be respectful Â· TOI community guidelines Videos Photostories Hot Picks Top Trending Trending Stories - Woman buys Rs 1,755 pressure cooker, finds rice and dal remain uncooked despite 3-4 whistles; consumer commission orders refund, Rs 12,000 compensation and Rs 3,000 costs, imposes Rs 21,000 penalty on store and dealer - Cockroaches, rat droppings, recycled cooking oil: 9 KFC, Dominoâs outlets shut after food safety raids in Hyderabad - Norwegian journalist claims MHA cancelled her visa for Hyderabad event - 'Multiple plots, luxury villa, farmland': Govt engineer's 'empire' under scanner - Bhagwat replaces Sajjanar as Hyd CP in major IPS reshuffle - Centre returns Sammakka Sagar DPR, seeks more project details - Visa cancelled after âorders from aboveâ, says Norwegian scribe invited to Hyd summit - Reduce traffic woes, boost healthcare infrastructure: CM to officials - Clear all 22-A land issues on war footing, revenue minister directs collectors - PM Modi to inaugurate Bengaluru Metro Pink Line, attend yoga institution's 50th anniversary celebrations - Delhi inaugurates 11-km Chhath Ghat along Munak Canal, calls it country's longest - Delhi's air quality turns 'hazardous' with AQI at 494, several areas remain in severe zone; visibility hit by dense fog - Weather tomorrow: Delhi to remain dry as IMD forecasts rain in Jammu and Kashmir, Himachal Pradesh, south India; heavy showers in Andaman - 'What difference does it make?': Molester asked Mumbai woman before pushing her off platform; how Naigaon horror unfolded inside local train - Bulldozer is now UPâs brand, says CM Yogi Adityanath; invites firms to manufacture - State FDA decides to withdraw plea challenging FSSAI jurisdiction - 'Road is full of potholes': Back from Italy, woman whose Thar killed LIC employee breaks silence - BJP to take Birsa Mundaâs ideals to every tribal home - Priyanka steps up UP role as Cong Begins Poll Preparations Daily Puzzles Connect Loop The Loop Daily Crossword",
+      "background_context": "",
+      "bullet_points": [
+        " How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ",
+        "How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ",
+        "Share your thoughts in the comments",
+        "Be respectful Â· TOI community guidelines",
+        " Woman buys Rs 1,755 pressure cooker, finds rice and dal remain uncooked despite 3-4 whistles; consumer commission orders refund, Rs 12,000 compensation and Rs 3,000 costs, imposes Rs 21,000 penalty on store and dealer",
+        " Cockroaches, rat droppings, recycled cooking oil: 9 KFC, Dominoâs outlets shut after food safety raids in Hyderabad",
+        " Norwegian journalist claims MHA cancelled her visa for Hyderabad event",
+        " 'Multiple plots, luxury villa, farmland': Govt engineer's 'empire' under scanner"
+      ],
+      "key_facts": [
+        " How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ",
+        "How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ",
+        "Share your thoughts in the comments",
+        "Be respectful Â· TOI community guidelines",
+        " Woman buys Rs 1,755 pressure cooker, finds rice and dal remain uncooked despite 3-4 whistles; consumer commission orders refund, Rs 12,000 compensation and Rs 3,000 costs, imposes Rs 21,000 penalty on store and dealer",
+        " Cockroaches, rat droppings, recycled cooking oil: 9 KFC, Dominoâs outlets shut after food safety raids in Hyderabad"
+      ],
+      "key_locations": [],
+      "important_dates": [],
+      "exam_relevance": [],
+      "upsc_analysis": "",
+      "causes": [],
+      "impacts": [],
+      "challenges": [],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [],
+      "mains_notes": "",
+      "mains_questions": [],
+      "takeaway": "- àªà«àªàª°àª¾àª¤à« TOI - How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ Share your thoughts ",
+      "prelims_facts": [
+        " How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ",
+        "How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ",
+        "Share your thoughts in the comments",
+        "Be respectful Â· TOI community guidelines",
+        " Woman buys Rs 1,755 pressure cooker, finds rice and dal remain uncooked despite 3-4 whistles; consumer commission orders refund, Rs 12,000 compensation and Rs 3,000 costs, imposes Rs 21,000 penalty on store and dealer",
+        " Cockroaches, rat droppings, recycled cooking oil: 9 KFC, Dominoâs outlets shut after food safety raids in Hyderabad"
+      ],
+      "vocabulary": [],
+      "related_entities": [],
+      "hindi_translation": {
+        "headline": "How debt-ridden stock market investor killed top executive's wife",
+        "story_lead": "- àªà«àªàª°àª¾àª¤à« TOI - How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ Share your thoughts in the comments Be respectful Â· TOI community guidelines Videos Photostories Hot Picks Top Trending Trending Stories - Woman buys Rs 1,755 pressure cooker, finds rice and dal remain uncooked despite 3-4 whistles; consumer commission orders refund, Rs 12,000 compensation and Rs 3,000 costs, imposes Rs 21,000 penalty on store and dealer - Cockroaches, rat droppings, recycled cooking oil: 9 KFC, Dominoâs outlets shut after food safety raids in Hyderabad - Norwegian journalist claims MHA cancelled her visa for Hyderabad event - 'Multiple plots, luxury villa, farmland': Govt engineer's 'empire' ",
+        "full_article_text": "- àªà«àªàª°àª¾àª¤à« TOI - How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ Share your thoughts in the comments Be respectful Â· TOI community guidelines Videos Photostories Hot Picks Top Trending Trending Stories - Woman buys Rs 1,755 pressure cooker, finds rice and dal remain uncooked despite 3-4 whistles; consumer commission orders refund, Rs 12,000 compensation and Rs 3,000 costs, imposes Rs 21,000 penalty on store and dealer - Cockroaches, rat droppings, recycled cooking oil: 9 KFC, Dominoâs outlets shut after food safety raids in Hyderabad - Norwegian journalist claims MHA cancelled her visa for Hyderabad event - 'Multiple plots, luxury villa, farmland': Govt engineer's 'empire' under scanner - Bhagwat replaces Sajjanar as Hyd CP in major IPS reshuffle - Centre returns Sammakka Sagar DPR, seeks more project details - Visa cancelled after âorders from aboveâ, says Norwegian scribe invited to Hyd summit - Reduce traffic woes, boost healthcare infrastructure: CM to officials - Clear all 22-A land issues on war footing, revenue minister directs collectors - PM Modi to inaugurate Bengaluru Metro Pink Line, attend yoga institution's 50th anniversary celebrations - Delhi inaugurates 11-km Chhath Ghat along Munak Canal, calls it country's longest - Delhi's air quality turns 'hazardous' with AQI at 494, several areas remain in severe zone; visibility hit by dense fog - Weather tomorrow: Delhi to remain dry as IMD forecasts rain in Jammu and Kashmir, Himachal Pradesh, south India; heavy showers in Andaman - 'What difference does it make?': Molester asked Mumbai woman before pushing her off platform; how Naigaon horror unfolded inside local train - Bulldozer is now UPâs brand, says CM Yogi Adityanath; invites firms to manufacture - State FDA decides to withdraw plea challenging FSSAI jurisdiction - 'Road is full of potholes': Back from Italy, woman whose Thar killed LIC employee breaks silence - BJP to take Birsa Mundaâs ideals to every tribal home - Priyanka steps up UP role as Cong Begins Poll Preparations Daily Puzzles Connect Loop The Loop Daily Crossword",
+        "background_context": "",
+        "bullet_points": [
+          " How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ",
+          "How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ",
+          "Share your thoughts in the comments",
+          "Be respectful Â· TOI community guidelines",
+          " Woman buys Rs 1,755 pressure cooker, finds rice and dal remain uncooked despite 3-4 whistles; consumer commission orders refund, Rs 12,000 compensation and Rs 3,000 costs, imposes Rs 21,000 penalty on store and dealer",
+          " Cockroaches, rat droppings, recycled cooking oil: 9 KFC, Dominoâs outlets shut after food safety raids in Hyderabad",
+          " Norwegian journalist claims MHA cancelled her visa for Hyderabad event",
+          " 'Multiple plots, luxury villa, farmland': Govt engineer's 'empire' under scanner"
+        ],
+        "key_facts": [
+          " How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ",
+          "How debt-ridden stock market investor killed PSU executive Arun Kumar Venugopalâs wife: âBludgeoned her with iron boxâ",
+          "Share your thoughts in the comments",
+          "Be respectful Â· TOI community guidelines",
+          " Woman buys Rs 1,755 pressure cooker, finds rice and dal remain uncooked despite 3-4 whistles; consumer commission orders refund, Rs 12,000 compensation and Rs 3,000 costs, imposes Rs 21,000 penalty on store and dealer",
+          " Cockroaches, rat droppings, recycled cooking oil: 9 KFC, Dominoâs outlets shut after food safety raids in Hyderabad"
+        ],
+        "key_locations": [],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which topic is directly discussed in the current-affairs article titled: How debt-ridden stock market investor killed top executive's wife?",
+        "options": [
+          "How debt-ridden stock market investor killed top executive's wife",
+          "A topic not discussed in the article",
+          "An unrelated historical event",
+          "An unrelated scientific formula"
+        ],
+        "correct_answer": "How debt-ridden stock market investor killed top executive's wife",
+        "explanation": "The correct option is the topic explicitly identified by the article headline."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/city/hyderabad/how-debt-ridden-stock-market-investor-killed-psu-executive-arun-kumar-venugopals-wife-bludgeoned-her-with-iron-box/articleshow/135785974.cms",
+      "static_gk": [],
+      "published_date": "2026-11-13",
+      "content_version": 4,
+      "id": 41,
+      "image_url": "https://static.toiimg.com/photo/msid-135786072,imgsize-44467.cms",
+      "added_at": "2026-11-13T12:34:28.287040+05:30"
+    },
+    {
+      "category": "Economy",
+      "exam_corner": false,
+      "exam_corner_section": "",
+      "exam_corner_topic": "",
+      "headline": "Man arrested for stabbing nephew for refusing to bring liquor from market in Gurugram",
+      "story_lead": "Man arrested for stabbing nephew for refusing to bring liquor from market in Gurugram The suspect, identified as Raju, is a resident of Chakarpur in Sector-28 and lived with his elder brother and nephew in a rented accommodation. Gurugram police arrested a 35-year-old man for stabbing his nephew with a pair of scissors, leaving him injured after an argument over bringing liquor from the market in Sector-28. The suspect, identified as Raju, is a resident of Chakarpur in Sector-28 and lived with his elder brother and nephew in a rented accommodation.",
+      "full_article_text": "Man arrested for stabbing nephew for refusing to bring liquor from market in Gurugram The suspect, identified as Raju, is a resident of Chakarpur in Sector-28 and lived with his elder brother and nephew in a rented accommodation. Gurugram police arrested a 35-year-old man for stabbing his nephew with a pair of scissors, leaving him injured after an argument over bringing liquor from the market in Sector-28. The suspect, identified as Raju, is a resident of Chakarpur in Sector-28 and lived with his elder brother and nephew in a rented accommodation. According to the police, he allegedly stabbed his nephew on the head and face around 1.30am on Wednesday after an argument over ordering liquor. What allegedly happened As per police, Raju was addicted to alcohol and was drinking liquor on Tuesday night when he had asked his nephew to fetch him more liquor from the market. Gurugram police's public relations officer (PRO) Sandeep Turan said the victim refused to comply with Raju, resulting in a heated argument. “It was during the argument that Raju picked up a pair of scissors and stabbed his nephew in the head and face,” he said. He said that the victim rushed downstairs in a blood-soaked condition and sought help from Raju’s brother. “The accused fled from the spot after threatening to kill the victim,” the PRO said. FIR filed The suspect's brother immediately alerted the police control room, following which emergency response vehicles reached the spot. On complaint of the suspect’s brother, an FIR was registered against him under various sections of the Bharatiya Nyaya Sanhita at DLF police station in Sector-29 on Wednesday, after which the suspect was traced and arrested. The accused was produced before a court on Thursday, and he was remanded to judicial custody. Police said that the victim was under treatment at a hospital. - ABOUT THE AUTHOR Debashish Karmakar Debashish Karmakar is a principal correspondent with the Hindustan Times, Gurugram bureau. He has a vast journalistic experience of almost 14 years of covering crime, court, power, transport, administration, weather and other beats while working across various organisations. He has been covering Gurugram, Faridabad, Nuh, Palwal and other districts of southern Haryana for more than four and a half years. He has produced several breaking and exclusive stories while reporting from the ground where he maintains a strong presence on a daily basis. He writes news articles which are hard-hitting and accurate. With his strong bureaucratic sources, he frequently writes stories to expose the failure of the system forcing authorities to take necessary course-corrective steps. Besides crime, important convictions and court orders, he also writes on human-angle stories, on power issues and challenges faced by the residents on a daily basis in Gurugram and neighbouring areas. In the past, he worked for media houses like The Times of India, where he extensively reported on important government matters and daily proceedings at the Patna High Court. He has also worked in the electronic media and had done ground coverage on the Kedarnath deluge that wrecked Uttarakhand in 2013. Read More",
+      "background_context": "",
+      "bullet_points": [
+        "Man arrested for stabbing nephew for refusing to bring liquor from market in Gurugram",
+        "The suspect, identified as Raju, is a resident of Chakarpur in Sector-28 and lived with his elder brother and nephew in a rented accommodation.",
+        "Gurugram police arrested a 35-year-old man for stabbing his nephew with a pair of scissors, leaving him injured after an argument over bringing liquor from the market in Sector-28.",
+        "The suspect, identified as Raju, is a resident of Chakarpur in Sector-28 and lived with his elder brother and nephew in a rented accommodation. According to the police, he allegedly stabbed his nephew on the head and face around 1.30am on Wednesday after an argument over ordering liquor.",
+        "As per police, Raju was addicted to alcohol and was drinking liquor on Tuesday night when he had asked his nephew to fetch him more liquor from the market.",
+        "Gurugram police's public relations officer (PRO) Sandeep Turan said the victim refused to comply with Raju, resulting in a heated argument.",
+        "“It was during the argument that Raju picked up a pair of scissors and stabbed his nephew in the head and face,” he said.",
+        "He said that the victim rushed downstairs in a blood-soaked condition and sought help from Raju’s brother."
+      ],
+      "key_facts": [
+        "Man arrested for stabbing nephew for refusing to bring liquor from market in Gurugram",
+        "The suspect, identified as Raju, is a resident of Chakarpur in Sector-28 and lived with his elder brother and nephew in a rented accommodation.",
+        "Gurugram police arrested a 35-year-old man for stabbing his nephew with a pair of scissors, leaving him injured after an argument over bringing liquor from the market in Sector-28.",
+        "The suspect, identified as Raju, is a resident of Chakarpur in Sector-28 and lived with his elder brother and nephew in a rented accommodation. According to the police, he allegedly stabbed his nephew on the head and face around 1.30am on Wednesday after an argument over ordering liquor.",
+        "As per police, Raju was addicted to alcohol and was drinking liquor on Tuesday night when he had asked his nephew to fetch him more liquor from the market.",
+        "Gurugram police's public relations officer (PRO) Sandeep Turan said the victim refused to comply with Raju, resulting in a heated argument."
+      ],
+      "key_locations": [],
+      "important_dates": [],
+      "exam_relevance": [],
+      "upsc_analysis": "",
+      "causes": [],
+      "impacts": [],
+      "challenges": [],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [],
+      "mains_notes": "",
+      "mains_questions": [],
+      "takeaway": "Man arrested for stabbing nephew for refusing to bring liquor from market in Gurugram The suspect, identified as Raju, is a resident of Chakarpur in Sector-28 and lived with his elder brother and nephew in a rented accommodation. Gurugram police arrested a 35-year-old man for stabbing his nephew wit",
+      "prelims_facts": [
+        "Man arrested for stabbing nephew for refusing to bring liquor from market in Gurugram",
+        "The suspect, identified as Raju, is a resident of Chakarpur in Sector-28 and lived with his elder brother and nephew in a rented accommodation.",
+        "Gurugram police arrested a 35-year-old man for stabbing his nephew with a pair of scissors, leaving him injured after an argument over bringing liquor from the market in Sector-28.",
+        "The suspect, identified as Raju, is a resident of Chakarpur in Sector-28 and lived with his elder brother and nephew in a rented accommodation. According to the police, he allegedly stabbed his nephew on the head and face around 1.30am on Wednesday after an argument over ordering liquor.",
+        "As per police, Raju was addicted to alcohol and was drinking liquor on Tuesday night when he had asked his nephew to fetch him more liquor from the market.",
+        "Gurugram police's public relations officer (PRO) Sandeep Turan said the victim refused to comply with Raju, resulting in a heated argument."
+      ],
+      "vocabulary": [],
+      "related_entities": [],
+      "hindi_translation": {
+        "headline": "Man arrested for stabbing nephew for refusing to bring liquor from market in Gurugram",
+        "story_lead": "Man arrested for stabbing nephew for refusing to bring liquor from market in Gurugram The suspect, identified as Raju, is a resident of Chakarpur in Sector-28 and lived with his elder brother and nephew in a rented accommodation. Gurugram police arrested a 35-year-old man for stabbing his nephew with a pair of scissors, leaving him injured after an argument over bringing liquor from the market in Sector-28. The suspect, identified as Raju, is a resident of Chakarpur in Sector-28 and lived with his elder brother and nephew in a rented accommodation.",
+        "full_article_text": "Man arrested for stabbing nephew for refusing to bring liquor from market in Gurugram The suspect, identified as Raju, is a resident of Chakarpur in Sector-28 and lived with his elder brother and nephew in a rented accommodation. Gurugram police arrested a 35-year-old man for stabbing his nephew with a pair of scissors, leaving him injured after an argument over bringing liquor from the market in Sector-28. The suspect, identified as Raju, is a resident of Chakarpur in Sector-28 and lived with his elder brother and nephew in a rented accommodation. According to the police, he allegedly stabbed his nephew on the head and face around 1.30am on Wednesday after an argument over ordering liquor. What allegedly happened As per police, Raju was addicted to alcohol and was drinking liquor on Tuesday night when he had asked his nephew to fetch him more liquor from the market. Gurugram police's public relations officer (PRO) Sandeep Turan said the victim refused to comply with Raju, resulting in a heated argument. “It was during the argument that Raju picked up a pair of scissors and stabbed his nephew in the head and face,” he said. He said that the victim rushed downstairs in a blood-soaked condition and sought help from Raju’s brother. “The accused fled from the spot after threatening to kill the victim,” the PRO said. FIR filed The suspect's brother immediately alerted the police control room, following which emergency response vehicles reached the spot. On complaint of the suspect’s brother, an FIR was registered against him under various sections of the Bharatiya Nyaya Sanhita at DLF police station in Sector-29 on Wednesday, after which the suspect was traced and arrested. The accused was produced before a court on Thursday, and he was remanded to judicial custody. Police said that the victim was under treatment at a hospital. - ABOUT THE AUTHOR Debashish Karmakar Debashish Karmakar is a principal correspondent with the Hindustan Times, Gurugram bureau. He has a vast journalistic experience of almost 14 years of covering crime, court, power, transport, administration, weather and other beats while working across various organisations. He has been covering Gurugram, Faridabad, Nuh, Palwal and other districts of southern Haryana for more than four and a half years. He has produced several breaking and exclusive stories while reporting from the ground where he maintains a strong presence on a daily basis. He writes news articles which are hard-hitting and accurate. With his strong bureaucratic sources, he frequently writes stories to expose the failure of the system forcing authorities to take necessary course-corrective steps. Besides crime, important convictions and court orders, he also writes on human-angle stories, on power issues and challenges faced by the residents on a daily basis in Gurugram and neighbouring areas. In the past, he worked for media houses like The Times of India, where he extensively reported on important government matters and daily proceedings at the Patna High Court. He has also worked in the electronic media and had done ground coverage on the Kedarnath deluge that wrecked Uttarakhand in 2013. Read More",
+        "background_context": "",
+        "bullet_points": [
+          "Man arrested for stabbing nephew for refusing to bring liquor from market in Gurugram",
+          "The suspect, identified as Raju, is a resident of Chakarpur in Sector-28 and lived with his elder brother and nephew in a rented accommodation.",
+          "Gurugram police arrested a 35-year-old man for stabbing his nephew with a pair of scissors, leaving him injured after an argument over bringing liquor from the market in Sector-28.",
+          "The suspect, identified as Raju, is a resident of Chakarpur in Sector-28 and lived with his elder brother and nephew in a rented accommodation. According to the police, he allegedly stabbed his nephew on the head and face around 1.30am on Wednesday after an argument over ordering liquor.",
+          "As per police, Raju was addicted to alcohol and was drinking liquor on Tuesday night when he had asked his nephew to fetch him more liquor from the market.",
+          "Gurugram police's public relations officer (PRO) Sandeep Turan said the victim refused to comply with Raju, resulting in a heated argument.",
+          "“It was during the argument that Raju picked up a pair of scissors and stabbed his nephew in the head and face,” he said.",
+          "He said that the victim rushed downstairs in a blood-soaked condition and sought help from Raju’s brother."
+        ],
+        "key_facts": [
+          "Man arrested for stabbing nephew for refusing to bring liquor from market in Gurugram",
+          "The suspect, identified as Raju, is a resident of Chakarpur in Sector-28 and lived with his elder brother and nephew in a rented accommodation.",
+          "Gurugram police arrested a 35-year-old man for stabbing his nephew with a pair of scissors, leaving him injured after an argument over bringing liquor from the market in Sector-28.",
+          "The suspect, identified as Raju, is a resident of Chakarpur in Sector-28 and lived with his elder brother and nephew in a rented accommodation. According to the police, he allegedly stabbed his nephew on the head and face around 1.30am on Wednesday after an argument over ordering liquor.",
+          "As per police, Raju was addicted to alcohol and was drinking liquor on Tuesday night when he had asked his nephew to fetch him more liquor from the market.",
+          "Gurugram police's public relations officer (PRO) Sandeep Turan said the victim refused to comply with Raju, resulting in a heated argument."
+        ],
+        "key_locations": [],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which topic is directly discussed in the current-affairs article titled: Man arrested for stabbing nephew for refusing to bring liquor from market in Gurugram?",
+        "options": [
+          "Man arrested for stabbing nephew for refusing to bring liquor from market in Gurugram",
+          "A topic not discussed in the article",
+          "An unrelated historical event",
+          "An unrelated scientific formula"
+        ],
+        "correct_answer": "Man arrested for stabbing nephew for refusing to bring liquor from market in Gurugram",
+        "explanation": "The correct option is the topic explicitly identified by the article headline."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/man-arrested-for-stabbing-nephew-for-refusing-to-bring-liquor-from-market-in-gurugram-101794539690323.html",
+      "static_gk": [],
+      "published_date": "2026-11-13",
+      "content_version": 4,
+      "id": 40,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/11/13/1600x900/logo/ANI-20260914397-0_1794540471887_kBiU_1794540515459_Xt22_a4ff880e-d80f-45ef-89c2-12ecadb96aa3_suq3.jpg",
+      "added_at": "2026-11-13T12:34:28.287040+05:30"
+    },
+    {
+      "category": "Science & Technology",
+      "exam_corner": false,
+      "exam_corner_section": "",
+      "exam_corner_topic": "",
+      "headline": "Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years",
+      "story_lead": "- àªà«àªàª°àª¾àª¤à« TOI - Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years Share your thoughts in the comments Be respectful Â· TOI community guidelines Vote & Share your view Videos Photostories Hot Picks Top Trending Trending Stories - 'India showed world yoga': PM Modi praises HV Sheshadri at Bengaluru event - 'No long speeches': Rahul Gandhi renews debate challenge to PM Modi with a 'guarantee' - Army vehicle carrying 14 personnel hits tree after losing control; 8 jawans injured - 'Don't fall into BJP's trap': Raj Thackeray alleges bid to divide Mumbai over Chhath Puja - Indonesian woman with alleged Chinese links caught at Sonauli border after failing to speak Hindi - Delhi govt alleges plot to dump dead fish in Yamuna ahead of Chhath Puja, seeks FIR - Railways looking into elimi",
+      "full_article_text": "- àªà«àªàª°àª¾àª¤à« TOI - Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years Share your thoughts in the comments Be respectful Â· TOI community guidelines Vote & Share your view Videos Photostories Hot Picks Top Trending Trending Stories - 'India showed world yoga': PM Modi praises HV Sheshadri at Bengaluru event - 'No long speeches': Rahul Gandhi renews debate challenge to PM Modi with a 'guarantee' - Army vehicle carrying 14 personnel hits tree after losing control; 8 jawans injured - 'Don't fall into BJP's trap': Raj Thackeray alleges bid to divide Mumbai over Chhath Puja - Indonesian woman with alleged Chinese links caught at Sonauli border after failing to speak Hindi - Delhi govt alleges plot to dump dead fish in Yamuna ahead of Chhath Puja, seeks FIR - Railways looking into eliminating RAC for train journey - 'We have given up violence': Former Maoist leader Deoji seeks ban on CPI (Maoist) lifted, eyes democratic politics - 'From armed struggle to people's politics': Ex-Maoist leader Deoji outlines new path, seeks release of jailed cadres - Consumer Commission Refund Order: Consultancy must repay Rs 18.89 lakh; within 30 days - Cooker Refund Order: Commission orders Rs 16,755; store and dealer face Rs 21,000 penalty - Appeal Extends Property Dispute: Alabama Power appeals; easement case remains unresolved - Bearadise Halloween Attraction: Florida DIY haunt grows to 5,000 sq ft; adds Salem witch-trial history - A London financier lost his Â£2.6 million claim to his mother's Chelsea home - 18th Annual Gala: Toronto event raises over $700,000; gang violence disrupts Haiti studentsâ schooling - Nostalgic Brisbane Home Purchase: Buyer pays A$4.9m for childhood Queenslander; sale bucks weak auction market - Tenant defies SC eviction order, his son sells landlordâs property, HC strikes off buyer's suit - Montana photographer leaves 480 acres, $1 million gift to fund Alzheimerâs research in hometown after his death - Europe plans to heat 6,500 homes and a school using crematorium heat Daily Puzzles Connect Loop The Loop Daily Crossword",
+      "background_context": "",
+      "bullet_points": [
+        " Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years",
+        "Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years",
+        "Share your thoughts in the comments",
+        "Be respectful Â· TOI community guidelines",
+        " 'India showed world yoga': PM Modi praises HV Sheshadri at Bengaluru event",
+        " 'No long speeches': Rahul Gandhi renews debate challenge to PM Modi with a 'guarantee'",
+        " Army vehicle carrying 14 personnel hits tree after losing control; 8 jawans injured",
+        " 'Don't fall into BJP's trap': Raj Thackeray alleges bid to divide Mumbai over Chhath Puja"
+      ],
+      "key_facts": [
+        " Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years",
+        "Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years",
+        "Share your thoughts in the comments",
+        "Be respectful Â· TOI community guidelines",
+        " 'India showed world yoga': PM Modi praises HV Sheshadri at Bengaluru event",
+        " 'No long speeches': Rahul Gandhi renews debate challenge to PM Modi with a 'guarantee'"
+      ],
+      "key_locations": [],
+      "important_dates": [],
+      "exam_relevance": [],
+      "upsc_analysis": "",
+      "causes": [],
+      "impacts": [],
+      "challenges": [],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [],
+      "mains_notes": "",
+      "mains_questions": [],
+      "takeaway": "- àªà«àªàª°àª¾àª¤à« TOI - Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years Share your thoughts in the comments Be respectful Â· TOI community guidelines Vote & Share your view Videos Photostories",
+      "prelims_facts": [
+        " Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years",
+        "Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years",
+        "Share your thoughts in the comments",
+        "Be respectful Â· TOI community guidelines",
+        " 'India showed world yoga': PM Modi praises HV Sheshadri at Bengaluru event",
+        " 'No long speeches': Rahul Gandhi renews debate challenge to PM Modi with a 'guarantee'"
+      ],
+      "vocabulary": [],
+      "related_entities": [],
+      "hindi_translation": {
+        "headline": "Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years",
+        "story_lead": "- àªà«àªàª°àª¾àª¤à« TOI - Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years Share your thoughts in the comments Be respectful Â· TOI community guidelines Vote & Share your view Videos Photostories Hot Picks Top Trending Trending Stories - 'India showed world yoga': PM Modi praises HV Sheshadri at Bengaluru event - 'No long speeches': Rahul Gandhi renews debate challenge to PM Modi with a 'guarantee' - Army vehicle carrying 14 personnel hits tree after losing control; 8 jawans injured - 'Don't fall into BJP's trap': Raj Thackeray alleges bid to divide Mumbai over Chhath Puja - Indonesian woman with alleged Chinese links caught at Sonauli border after failing to speak Hindi - Delhi govt alleges plot to dump dead fish in Yamuna ahead of Chhath Puja, seeks FIR - Railways looking into elimi",
+        "full_article_text": "- àªà«àªàª°àª¾àª¤à« TOI - Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years Share your thoughts in the comments Be respectful Â· TOI community guidelines Vote & Share your view Videos Photostories Hot Picks Top Trending Trending Stories - 'India showed world yoga': PM Modi praises HV Sheshadri at Bengaluru event - 'No long speeches': Rahul Gandhi renews debate challenge to PM Modi with a 'guarantee' - Army vehicle carrying 14 personnel hits tree after losing control; 8 jawans injured - 'Don't fall into BJP's trap': Raj Thackeray alleges bid to divide Mumbai over Chhath Puja - Indonesian woman with alleged Chinese links caught at Sonauli border after failing to speak Hindi - Delhi govt alleges plot to dump dead fish in Yamuna ahead of Chhath Puja, seeks FIR - Railways looking into eliminating RAC for train journey - 'We have given up violence': Former Maoist leader Deoji seeks ban on CPI (Maoist) lifted, eyes democratic politics - 'From armed struggle to people's politics': Ex-Maoist leader Deoji outlines new path, seeks release of jailed cadres - Consumer Commission Refund Order: Consultancy must repay Rs 18.89 lakh; within 30 days - Cooker Refund Order: Commission orders Rs 16,755; store and dealer face Rs 21,000 penalty - Appeal Extends Property Dispute: Alabama Power appeals; easement case remains unresolved - Bearadise Halloween Attraction: Florida DIY haunt grows to 5,000 sq ft; adds Salem witch-trial history - A London financier lost his Â£2.6 million claim to his mother's Chelsea home - 18th Annual Gala: Toronto event raises over $700,000; gang violence disrupts Haiti studentsâ schooling - Nostalgic Brisbane Home Purchase: Buyer pays A$4.9m for childhood Queenslander; sale bucks weak auction market - Tenant defies SC eviction order, his son sells landlordâs property, HC strikes off buyer's suit - Montana photographer leaves 480 acres, $1 million gift to fund Alzheimerâs research in hometown after his death - Europe plans to heat 6,500 homes and a school using crematorium heat Daily Puzzles Connect Loop The Loop Daily Crossword",
+        "background_context": "",
+        "bullet_points": [
+          " Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years",
+          "Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years",
+          "Share your thoughts in the comments",
+          "Be respectful Â· TOI community guidelines",
+          " 'India showed world yoga': PM Modi praises HV Sheshadri at Bengaluru event",
+          " 'No long speeches': Rahul Gandhi renews debate challenge to PM Modi with a 'guarantee'",
+          " Army vehicle carrying 14 personnel hits tree after losing control; 8 jawans injured",
+          " 'Don't fall into BJP's trap': Raj Thackeray alleges bid to divide Mumbai over Chhath Puja"
+        ],
+        "key_facts": [
+          " Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years",
+          "Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years",
+          "Share your thoughts in the comments",
+          "Be respectful Â· TOI community guidelines",
+          " 'India showed world yoga': PM Modi praises HV Sheshadri at Bengaluru event",
+          " 'No long speeches': Rahul Gandhi renews debate challenge to PM Modi with a 'guarantee'"
+        ],
+        "key_locations": [],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which topic is directly discussed in the current-affairs article titled: Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years?",
+        "options": [
+          "Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years",
+          "A topic not discussed in the article",
+          "An unrelated historical event",
+          "An unrelated scientific formula"
+        ],
+        "correct_answer": "Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 years",
+        "explanation": "The correct option is the topic explicitly identified by the article headline."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/india/centre-extends-ban-on-zakir-naiks-islamic-research-foundation-for-5-years/articleshow/135790746.cms",
+      "static_gk": [],
+      "published_date": "2026-11-13",
+      "content_version": 4,
+      "id": 39,
+      "image_url": "https://static.toiimg.com/photo/msid-135790781,imgsize-47840.cms",
+      "added_at": "2026-11-13T12:34:28.287040+05:30"
+    },
+    {
+      "category": "Science & Technology",
+      "exam_corner": false,
+      "exam_corner_section": "",
+      "exam_corner_topic": "",
+      "headline": "Centre extends ban on Zakir Naik’s Islamic Research Foundation for 5 more years",
+      "story_lead": "Centre extends ban on Zakir Naik’s Islamic Research Foundation for 5 more years The home ministry said the IRF andZakir Naik continued to encourage and aid followers in promoting enmity, hatred, and ill-will between different religious communities The Union ministry of home affairs (MHA) on Friday extended the ban on controversial television evangelist Zakir Naik’s Islamic Research Foundation (IRF) for another five years under the Unlawful Activities (Prevention) Act (UAPA), stressing that the outfit remained involved in activities prejudicial to national security and communal harmony. The home ministry said the IRF and its founder-president, Zakir Abdul Karim Naik, have continued to encourage and aid followers in promoting enmity, hatred, and ill-will between different religious communities. “The statements and speeches made by Dr Zakir Naik, the president of the IRF, are objectionable ",
+      "full_article_text": "Centre extends ban on Zakir Naik’s Islamic Research Foundation for 5 more years The home ministry said the IRF andZakir Naik continued to encourage and aid followers in promoting enmity, hatred, and ill-will between different religious communities The Union ministry of home affairs (MHA) on Friday extended the ban on controversial television evangelist Zakir Naik’s Islamic Research Foundation (IRF) for another five years under the Unlawful Activities (Prevention) Act (UAPA), stressing that the outfit remained involved in activities prejudicial to national security and communal harmony. The home ministry said the IRF and its founder-president, Zakir Abdul Karim Naik, have continued to encourage and aid followers in promoting enmity, hatred, and ill-will between different religious communities. “The statements and speeches made by Dr Zakir Naik, the president of the IRF, are objectionable and subversive,” the notification, signed by home ministry joint secretary Rakesh Rathi, said, adding that Naik has made radical statements and speeches to millions worldwide. The notification said that Zakir Naik had been promoting enmity and hatred among different religious groups and inspiring youths of a particular religion in India and abroad to commit terrorist acts. It said if the unlawful activities are not curbed or controlled immediately, IRF will take the opportunity to continue its subversive activities and re-organise its activists who are still absconding. It added that IRF will disrupt the secular fabric of the country by polluting the minds of the people by creating communal Naik fled India in 2016, shortly after terrorists responsible for an attack at a cafe in Dhaka, Bangladesh, claimed to be inspired by him. Following this, the Indian government banned Naik and his organisation, the Islamic Research Foundation (IRF), for five years in November 2016. The government renewed the ban in 2021. Friday’s order comes a day before it was to end. Naik is currently residing in Malaysia, where he was granted permanent residency under the administration of former prime minister Mahathir Mohamad. India has repeatedly requested Naik’s extradition to face charges of money laundering and incitement to extremism. He met Pakistan Prime Minister Shehbaz Sharif in Islamabad in October 2024 and made a second visit to the country in February 2025. The home ministry warned that if left unchecked, the IRF would “re-organise its activists who are still absconding,” disrupt the country’s secular fabric, propagate anti-national sentiments, and “escalate secessionism by supporting militancy”.",
+      "background_context": "",
+      "bullet_points": [
+        "Centre extends ban on Zakir Naik’s Islamic Research Foundation for 5 more years",
+        "The home ministry said the IRF andZakir Naik continued to encourage and aid followers in promoting enmity, hatred, and ill-will between different religious communities",
+        "The Union ministry of home affairs (MHA) on Friday extended the ban on controversial television evangelist Zakir Naik’s Islamic Research Foundation (IRF) for another five years under the Unlawful Activities (Prevention) Act (UAPA), stressing that the outfit remained involved in activities prejudicial to national security and communal harmony.",
+        "The home ministry said the IRF and its founder-president, Zakir Abdul Karim Naik, have continued to encourage and aid followers in promoting enmity, hatred, and ill-will between different religious communities.",
+        "“The statements and speeches made by Dr Zakir Naik, the president of the IRF, are objectionable and subversive,” the notification, signed by home ministry joint secretary Rakesh Rathi, said, adding that Naik has made radical statements and speeches to millions worldwide.",
+        "The notification said that Zakir Naik had been promoting enmity and hatred among different religious groups and inspiring youths of a particular religion in India and abroad to commit terrorist acts. It said if the unlawful activities are not curbed or controlled immediately, IRF will take the opportunity to continue its subversive activities and re-organise its activists who are still absconding.",
+        "It added that IRF will disrupt the secular fabric of the country by polluting the minds of the people by creating communal",
+        "Naik fled India in 2016, shortly after terrorists responsible for an attack at a cafe in Dhaka, Bangladesh, claimed to be inspired by him. Following this, the Indian government banned Naik and his organisation, the Islamic Research Foundation (IRF), for five years in November 2016. The government renewed the ban in 2021. Friday’s order comes a day before it was to end."
+      ],
+      "key_facts": [
+        "Centre extends ban on Zakir Naik’s Islamic Research Foundation for 5 more years",
+        "The home ministry said the IRF andZakir Naik continued to encourage and aid followers in promoting enmity, hatred, and ill-will between different religious communities",
+        "The Union ministry of home affairs (MHA) on Friday extended the ban on controversial television evangelist Zakir Naik’s Islamic Research Foundation (IRF) for another five years under the Unlawful Activities (Prevention) Act (UAPA), stressing that the outfit remained involved in activities prejudicial to national security and communal harmony.",
+        "The home ministry said the IRF and its founder-president, Zakir Abdul Karim Naik, have continued to encourage and aid followers in promoting enmity, hatred, and ill-will between different religious communities.",
+        "“The statements and speeches made by Dr Zakir Naik, the president of the IRF, are objectionable and subversive,” the notification, signed by home ministry joint secretary Rakesh Rathi, said, adding that Naik has made radical statements and speeches to millions worldwide.",
+        "The notification said that Zakir Naik had been promoting enmity and hatred among different religious groups and inspiring youths of a particular religion in India and abroad to commit terrorist acts. It said if the unlawful activities are not curbed or controlled immediately, IRF will take the opportunity to continue its subversive activities and re-organise its activists who are still absconding."
+      ],
+      "key_locations": [],
+      "important_dates": [],
+      "exam_relevance": [],
+      "upsc_analysis": "",
+      "causes": [],
+      "impacts": [],
+      "challenges": [],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [],
+      "mains_notes": "",
+      "mains_questions": [],
+      "takeaway": "Centre extends ban on Zakir Naik’s Islamic Research Foundation for 5 more years The home ministry said the IRF andZakir Naik continued to encourage and aid followers in promoting enmity, hatred, and ill-will between different religious communities The Union ministry of home affairs (MHA) on Friday e",
+      "prelims_facts": [
+        "Centre extends ban on Zakir Naik’s Islamic Research Foundation for 5 more years",
+        "The home ministry said the IRF andZakir Naik continued to encourage and aid followers in promoting enmity, hatred, and ill-will between different religious communities",
+        "The Union ministry of home affairs (MHA) on Friday extended the ban on controversial television evangelist Zakir Naik’s Islamic Research Foundation (IRF) for another five years under the Unlawful Activities (Prevention) Act (UAPA), stressing that the outfit remained involved in activities prejudicial to national security and communal harmony.",
+        "The home ministry said the IRF and its founder-president, Zakir Abdul Karim Naik, have continued to encourage and aid followers in promoting enmity, hatred, and ill-will between different religious communities.",
+        "“The statements and speeches made by Dr Zakir Naik, the president of the IRF, are objectionable and subversive,” the notification, signed by home ministry joint secretary Rakesh Rathi, said, adding that Naik has made radical statements and speeches to millions worldwide.",
+        "The notification said that Zakir Naik had been promoting enmity and hatred among different religious groups and inspiring youths of a particular religion in India and abroad to commit terrorist acts. It said if the unlawful activities are not curbed or controlled immediately, IRF will take the opportunity to continue its subversive activities and re-organise its activists who are still absconding."
+      ],
+      "vocabulary": [],
+      "related_entities": [],
+      "hindi_translation": {
+        "headline": "Centre extends ban on Zakir Naik’s Islamic Research Foundation for 5 more years",
+        "story_lead": "Centre extends ban on Zakir Naik’s Islamic Research Foundation for 5 more years The home ministry said the IRF andZakir Naik continued to encourage and aid followers in promoting enmity, hatred, and ill-will between different religious communities The Union ministry of home affairs (MHA) on Friday extended the ban on controversial television evangelist Zakir Naik’s Islamic Research Foundation (IRF) for another five years under the Unlawful Activities (Prevention) Act (UAPA), stressing that the outfit remained involved in activities prejudicial to national security and communal harmony. The home ministry said the IRF and its founder-president, Zakir Abdul Karim Naik, have continued to encourage and aid followers in promoting enmity, hatred, and ill-will between different religious communities. “The statements and speeches made by Dr Zakir Naik, the president of the IRF, are objectionable ",
+        "full_article_text": "Centre extends ban on Zakir Naik’s Islamic Research Foundation for 5 more years The home ministry said the IRF andZakir Naik continued to encourage and aid followers in promoting enmity, hatred, and ill-will between different religious communities The Union ministry of home affairs (MHA) on Friday extended the ban on controversial television evangelist Zakir Naik’s Islamic Research Foundation (IRF) for another five years under the Unlawful Activities (Prevention) Act (UAPA), stressing that the outfit remained involved in activities prejudicial to national security and communal harmony. The home ministry said the IRF and its founder-president, Zakir Abdul Karim Naik, have continued to encourage and aid followers in promoting enmity, hatred, and ill-will between different religious communities. “The statements and speeches made by Dr Zakir Naik, the president of the IRF, are objectionable and subversive,” the notification, signed by home ministry joint secretary Rakesh Rathi, said, adding that Naik has made radical statements and speeches to millions worldwide. The notification said that Zakir Naik had been promoting enmity and hatred among different religious groups and inspiring youths of a particular religion in India and abroad to commit terrorist acts. It said if the unlawful activities are not curbed or controlled immediately, IRF will take the opportunity to continue its subversive activities and re-organise its activists who are still absconding. It added that IRF will disrupt the secular fabric of the country by polluting the minds of the people by creating communal Naik fled India in 2016, shortly after terrorists responsible for an attack at a cafe in Dhaka, Bangladesh, claimed to be inspired by him. Following this, the Indian government banned Naik and his organisation, the Islamic Research Foundation (IRF), for five years in November 2016. The government renewed the ban in 2021. Friday’s order comes a day before it was to end. Naik is currently residing in Malaysia, where he was granted permanent residency under the administration of former prime minister Mahathir Mohamad. India has repeatedly requested Naik’s extradition to face charges of money laundering and incitement to extremism. He met Pakistan Prime Minister Shehbaz Sharif in Islamabad in October 2024 and made a second visit to the country in February 2025. The home ministry warned that if left unchecked, the IRF would “re-organise its activists who are still absconding,” disrupt the country’s secular fabric, propagate anti-national sentiments, and “escalate secessionism by supporting militancy”.",
+        "background_context": "",
+        "bullet_points": [
+          "Centre extends ban on Zakir Naik’s Islamic Research Foundation for 5 more years",
+          "The home ministry said the IRF andZakir Naik continued to encourage and aid followers in promoting enmity, hatred, and ill-will between different religious communities",
+          "The Union ministry of home affairs (MHA) on Friday extended the ban on controversial television evangelist Zakir Naik’s Islamic Research Foundation (IRF) for another five years under the Unlawful Activities (Prevention) Act (UAPA), stressing that the outfit remained involved in activities prejudicial to national security and communal harmony.",
+          "The home ministry said the IRF and its founder-president, Zakir Abdul Karim Naik, have continued to encourage and aid followers in promoting enmity, hatred, and ill-will between different religious communities.",
+          "“The statements and speeches made by Dr Zakir Naik, the president of the IRF, are objectionable and subversive,” the notification, signed by home ministry joint secretary Rakesh Rathi, said, adding that Naik has made radical statements and speeches to millions worldwide.",
+          "The notification said that Zakir Naik had been promoting enmity and hatred among different religious groups and inspiring youths of a particular religion in India and abroad to commit terrorist acts. It said if the unlawful activities are not curbed or controlled immediately, IRF will take the opportunity to continue its subversive activities and re-organise its activists who are still absconding.",
+          "It added that IRF will disrupt the secular fabric of the country by polluting the minds of the people by creating communal",
+          "Naik fled India in 2016, shortly after terrorists responsible for an attack at a cafe in Dhaka, Bangladesh, claimed to be inspired by him. Following this, the Indian government banned Naik and his organisation, the Islamic Research Foundation (IRF), for five years in November 2016. The government renewed the ban in 2021. Friday’s order comes a day before it was to end."
+        ],
+        "key_facts": [
+          "Centre extends ban on Zakir Naik’s Islamic Research Foundation for 5 more years",
+          "The home ministry said the IRF andZakir Naik continued to encourage and aid followers in promoting enmity, hatred, and ill-will between different religious communities",
+          "The Union ministry of home affairs (MHA) on Friday extended the ban on controversial television evangelist Zakir Naik’s Islamic Research Foundation (IRF) for another five years under the Unlawful Activities (Prevention) Act (UAPA), stressing that the outfit remained involved in activities prejudicial to national security and communal harmony.",
+          "The home ministry said the IRF and its founder-president, Zakir Abdul Karim Naik, have continued to encourage and aid followers in promoting enmity, hatred, and ill-will between different religious communities.",
+          "“The statements and speeches made by Dr Zakir Naik, the president of the IRF, are objectionable and subversive,” the notification, signed by home ministry joint secretary Rakesh Rathi, said, adding that Naik has made radical statements and speeches to millions worldwide.",
+          "The notification said that Zakir Naik had been promoting enmity and hatred among different religious groups and inspiring youths of a particular religion in India and abroad to commit terrorist acts. It said if the unlawful activities are not curbed or controlled immediately, IRF will take the opportunity to continue its subversive activities and re-organise its activists who are still absconding."
+        ],
+        "key_locations": [],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which topic is directly discussed in the current-affairs article titled: Centre extends ban on Zakir Naik’s Islamic Research Foundation for 5 more years?",
+        "options": [
+          "Centre extends ban on Zakir Naik’s Islamic Research Foundation for 5 more years",
+          "A topic not discussed in the article",
+          "An unrelated historical event",
+          "An unrelated scientific formula"
+        ],
+        "correct_answer": "Centre extends ban on Zakir Naik’s Islamic Research Foundation for 5 more years",
+        "explanation": "The correct option is the topic explicitly identified by the article headline."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/centre-extends-ban-on-zakir-naik-s-islamic-research-foundation-for-5-more-years-101794545794165.html",
+      "static_gk": [],
+      "published_date": "2026-11-13",
+      "content_version": 4,
+      "id": 38,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/11/13/1600x900/logo/Sudarshan-Vahini-activists-hold-placards-and-shout_1794546867129_eulv.jpg",
+      "added_at": "2026-11-13T12:34:28.287040+05:30"
+    },
+    {
+      "category": "World",
+      "exam_corner": false,
+      "exam_corner_section": "",
+      "exam_corner_topic": "",
+      "headline": "Microsoft outage hits millions worldwide; company says fixes not 'working as expected'",
+      "story_lead": "- àªà«àªàª°àª¾àª¤à« TOI - Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected' Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected' Microsoft 365 outage impacts email, Teams, Copilot and other services Hereâs what Microsoft said in its latest update Share your thoughts in the comments Be respectful Â· TOI community guidelines Microsoft 365 outage: Federal government departments impacted Microsoft 365 outage: Indigo issues service advisory Latest Mobiles Photostories Hot Picks Top Trending Trending Stories - Microsoft 365 outage: Microsoft Teams, Outlook, Microsoft Copilot and 16 other services impacted - Massive Microsoft 365 outage disrupts email, Teams, Copilot and more services; while some on internet say, 'take your time'; others see 'attack by ...' - Amazon says it",
+      "full_article_text": "- àªà«àªàª°àª¾àª¤à« TOI - Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected' Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected' Microsoft 365 outage impacts email, Teams, Copilot and other services Hereâs what Microsoft said in its latest update Share your thoughts in the comments Be respectful Â· TOI community guidelines Microsoft 365 outage: Federal government departments impacted Microsoft 365 outage: Indigo issues service advisory Latest Mobiles Photostories Hot Picks Top Trending Trending Stories - Microsoft 365 outage: Microsoft Teams, Outlook, Microsoft Copilot and 16 other services impacted - Massive Microsoft 365 outage disrupts email, Teams, Copilot and more services; while some on internet say, 'take your time'; others see 'attack by ...' - Amazon says its housing fund has deployed $2.7 billion since 2021 to create or preserve over 27,000 affordable homes, with residents saving an average of $4,900 a year in rent - US government is proposing USCIS to bring a new rule that could mean thousands of employees on H-1B visa losing their visa approval - Elon Musk's SpaceX plans over $74 billion in AI computing campuses across Texas and Arizona, including a $50 billion proposal that promises 6,500 jobs but faces opposition from 2,400 local petition signers - CEO of world's largest AI models repository, Hugging Face, calls Jensen Huang's resignation as Nvidia CEO 'sad'; says: I want to make one thing clear that we will keep fighting for ... - Palantir CEO Alex Karp, who gave $2 million to Republicans, now says he is a Democrat - West Virginia sues Snapchat over chatbot's alleged dangerous advice to teenagers - Season 11 Update: Marvel Rivals adds Nightcrawler; Battle Pass brings 10 costume sets - Consumer Commission Refund Order: Consultancy must repay Rs 18.89 lakh; within 30 days - Cooker Refund Order: Commission orders Rs 16,755; store and dealer face Rs 21,000 penalty - Appeal Extends Property Dispute: Alabama Power appeals; easement case remains unresolved - Bearadise Halloween Attraction: Florida DIY haunt grows to 5,000 sq ft; adds Salem witch-trial history - A London financier lost his Â£2.6 million claim to his mother's Chelsea home - 18th Annual Gala: Toronto event raises over $700,000; gang violence disrupts Haiti studentsâ schooling - Nostalgic Brisbane Home Purchase: Buyer pays A$4.9m for childhood Queenslander; sale bucks weak auction market - Tenant defies SC eviction order, his son sells landlordâs property, HC strikes off buyer's suit - Montana photographer leaves 480 acres, $1 million gift to fund Alzheimerâs research in hometown after his death - Europe plans to heat 6,500 homes and a school using crematorium heat Daily Puzzles Connect Loop The Loop Daily Crossword",
+      "background_context": "",
+      "bullet_points": [
+        " Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected'",
+        "Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected'",
+        "Microsoft 365 outage impacts email, Teams, Copilot and other services",
+        "Hereâs what Microsoft said in its latest update",
+        "Share your thoughts in the comments",
+        "Be respectful Â· TOI community guidelines",
+        "Microsoft 365 outage: Federal government departments impacted",
+        "Microsoft 365 outage: Indigo issues service advisory"
+      ],
+      "key_facts": [
+        " Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected'",
+        "Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected'",
+        "Microsoft 365 outage impacts email, Teams, Copilot and other services",
+        "Hereâs what Microsoft said in its latest update",
+        "Share your thoughts in the comments",
+        "Be respectful Â· TOI community guidelines"
+      ],
+      "key_locations": [],
+      "important_dates": [],
+      "exam_relevance": [],
+      "upsc_analysis": "",
+      "causes": [],
+      "impacts": [],
+      "challenges": [],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [],
+      "mains_notes": "",
+      "mains_questions": [],
+      "takeaway": "- àªà«àªàª°àª¾àª¤à« TOI - Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected' Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected' Microsoft 365 outage impacts email, Teams, Copilot",
+      "prelims_facts": [
+        " Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected'",
+        "Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected'",
+        "Microsoft 365 outage impacts email, Teams, Copilot and other services",
+        "Hereâs what Microsoft said in its latest update",
+        "Share your thoughts in the comments",
+        "Be respectful Â· TOI community guidelines"
+      ],
+      "vocabulary": [],
+      "related_entities": [],
+      "hindi_translation": {
+        "headline": "Microsoft outage hits millions worldwide; company says fixes not 'working as expected'",
+        "story_lead": "- àªà«àªàª°àª¾àª¤à« TOI - Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected' Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected' Microsoft 365 outage impacts email, Teams, Copilot and other services Hereâs what Microsoft said in its latest update Share your thoughts in the comments Be respectful Â· TOI community guidelines Microsoft 365 outage: Federal government departments impacted Microsoft 365 outage: Indigo issues service advisory Latest Mobiles Photostories Hot Picks Top Trending Trending Stories - Microsoft 365 outage: Microsoft Teams, Outlook, Microsoft Copilot and 16 other services impacted - Massive Microsoft 365 outage disrupts email, Teams, Copilot and more services; while some on internet say, 'take your time'; others see 'attack by ...' - Amazon says it",
+        "full_article_text": "- àªà«àªàª°àª¾àª¤à« TOI - Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected' Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected' Microsoft 365 outage impacts email, Teams, Copilot and other services Hereâs what Microsoft said in its latest update Share your thoughts in the comments Be respectful Â· TOI community guidelines Microsoft 365 outage: Federal government departments impacted Microsoft 365 outage: Indigo issues service advisory Latest Mobiles Photostories Hot Picks Top Trending Trending Stories - Microsoft 365 outage: Microsoft Teams, Outlook, Microsoft Copilot and 16 other services impacted - Massive Microsoft 365 outage disrupts email, Teams, Copilot and more services; while some on internet say, 'take your time'; others see 'attack by ...' - Amazon says its housing fund has deployed $2.7 billion since 2021 to create or preserve over 27,000 affordable homes, with residents saving an average of $4,900 a year in rent - US government is proposing USCIS to bring a new rule that could mean thousands of employees on H-1B visa losing their visa approval - Elon Musk's SpaceX plans over $74 billion in AI computing campuses across Texas and Arizona, including a $50 billion proposal that promises 6,500 jobs but faces opposition from 2,400 local petition signers - CEO of world's largest AI models repository, Hugging Face, calls Jensen Huang's resignation as Nvidia CEO 'sad'; says: I want to make one thing clear that we will keep fighting for ... - Palantir CEO Alex Karp, who gave $2 million to Republicans, now says he is a Democrat - West Virginia sues Snapchat over chatbot's alleged dangerous advice to teenagers - Season 11 Update: Marvel Rivals adds Nightcrawler; Battle Pass brings 10 costume sets - Consumer Commission Refund Order: Consultancy must repay Rs 18.89 lakh; within 30 days - Cooker Refund Order: Commission orders Rs 16,755; store and dealer face Rs 21,000 penalty - Appeal Extends Property Dispute: Alabama Power appeals; easement case remains unresolved - Bearadise Halloween Attraction: Florida DIY haunt grows to 5,000 sq ft; adds Salem witch-trial history - A London financier lost his Â£2.6 million claim to his mother's Chelsea home - 18th Annual Gala: Toronto event raises over $700,000; gang violence disrupts Haiti studentsâ schooling - Nostalgic Brisbane Home Purchase: Buyer pays A$4.9m for childhood Queenslander; sale bucks weak auction market - Tenant defies SC eviction order, his son sells landlordâs property, HC strikes off buyer's suit - Montana photographer leaves 480 acres, $1 million gift to fund Alzheimerâs research in hometown after his death - Europe plans to heat 6,500 homes and a school using crematorium heat Daily Puzzles Connect Loop The Loop Daily Crossword",
+        "background_context": "",
+        "bullet_points": [
+          " Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected'",
+          "Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected'",
+          "Microsoft 365 outage impacts email, Teams, Copilot and other services",
+          "Hereâs what Microsoft said in its latest update",
+          "Share your thoughts in the comments",
+          "Be respectful Â· TOI community guidelines",
+          "Microsoft 365 outage: Federal government departments impacted",
+          "Microsoft 365 outage: Indigo issues service advisory"
+        ],
+        "key_facts": [
+          " Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected'",
+          "Microsoft outage status update: Company says that the changes applied to fix outage not working 'as expected'",
+          "Microsoft 365 outage impacts email, Teams, Copilot and other services",
+          "Hereâs what Microsoft said in its latest update",
+          "Share your thoughts in the comments",
+          "Be respectful Â· TOI community guidelines"
+        ],
+        "key_locations": [],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which topic is directly discussed in the current-affairs article titled: Microsoft outage hits millions worldwide; company says fixes not 'working as expected'?",
+        "options": [
+          "Microsoft outage hits millions worldwide; company says fixes not 'working as expected'",
+          "A topic not discussed in the article",
+          "An unrelated historical event",
+          "An unrelated scientific formula"
+        ],
+        "correct_answer": "Microsoft outage hits millions worldwide; company says fixes not 'working as expected'",
+        "explanation": "The correct option is the topic explicitly identified by the article headline."
+      },
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-outage-status-update-company-says-that-the-changes-applied-to-fix-outage-not-working-as-expected/articleshow/135789407.cms",
+      "static_gk": [],
+      "published_date": "2026-11-13",
+      "content_version": 4,
+      "id": 37,
+      "image_url": "https://static.toiimg.com/photo/msid-135789448,imgsize-260628.cms",
+      "added_at": "2026-11-13T12:34:28.287040+05:30"
+    },
+    {
+      "category": "Health",
+      "exam_corner": false,
+      "exam_corner_section": "",
+      "exam_corner_topic": "",
+      "headline": "20-year-old undergraduate student dies by suicide at IIT Roorkee",
+      "story_lead": "20-year-old undergraduate student dies by suicide at IIT Roorkee Pradeep Singh Bisht, SHO at Roorkee police station, said police received information around midnight that a student had hanged himself in his hostel room. A 20-year-old undergraduate student at the Indian Institute of Technology (IIT) Roorkee allegedly died by suicide on Thursday night. The student had been suffering from depression for some time and had visited the institute's wellness centre for over a year.",
+      "full_article_text": "20-year-old undergraduate student dies by suicide at IIT Roorkee Pradeep Singh Bisht, SHO at Roorkee police station, said police received information around midnight that a student had hanged himself in his hostel room. A 20-year-old undergraduate student at the Indian Institute of Technology (IIT) Roorkee allegedly died by suicide on Thursday night. The student had been suffering from depression for some time and had visited the institute's wellness centre for over a year. According to police officials, the student allegedly hanged himself from a ceiling fan using a bedsheet. At around 11 pm, when fellow students knocked on his hostel room door and received no response, they looked through the window and saw him hanging from the ceiling fan. HT reached out to IIT Roorkee media cell in-charge Sonika Srivastava, but she was unavailable for comment. What the police said Pradeep Singh Bisht, station house officer (SHO) at Roorkee police station, said police received information around midnight that a student had hanged himself in his hostel room. \"He last met his friends around 3 pm (on Thursday) before returning to his hostel room. When a friend went to check on him at around 11 pm, the door was locked from the inside. Looking through the window, they found him hanging from the ceiling fan with a bedsheet,\" Bisht said. \"Upon receiving the alert around midnight, we reached the spot and brought the body down. He was declared dead following an examination by university doctors,\" he said. The officer said that the student was undergoing treatment for depression and had been visiting the university's wellness centre for over a year. \"We have recovered a suicide note from the spot. He has not blamed anyone for the extreme step, instead citing his depression,\" he added. \"Prima facie, it appears to be a case of suicide. There were no external injuries or signs of struggle on the body. His parents have been informed, and a post-mortem examination will be conducted today,\" the SHO said. Discussing suicides can be triggering for some. However, suicides are preventable. If you need support or know someone who does, please reach out to your nearest mental health specialist. Helplines: Aasra: 022 2754 6669; Sneha India Foundation: +914424640050 and Sanjivini: 011-24311918, Roshni Foundation (Secundrabad) Contact Nos: 040-66202001, 040-66202000; ONE LIFE: Contact No: 78930 78930, SEVA: Contact No: 09441778290",
+      "background_context": "",
+      "bullet_points": [
+        "20-year-old undergraduate student dies by suicide at IIT Roorkee",
+        "Pradeep Singh Bisht, SHO at Roorkee police station, said police received information around midnight that a student had hanged himself in his hostel room.",
+        "A 20-year-old undergraduate student at the Indian Institute of Technology (IIT) Roorkee allegedly died by suicide on Thursday night.",
+        "The student had been suffering from depression for some time and had visited the institute's wellness centre for over a year. According to police officials, the student allegedly hanged himself from a ceiling fan using a bedsheet.",
+        "At around 11 pm, when fellow students knocked on his hostel room door and received no response, they looked through the window and saw him hanging from the ceiling fan.",
+        "HT reached out to IIT Roorkee media cell in-charge Sonika Srivastava, but she was unavailable for comment.",
+        "Pradeep Singh Bisht, station house officer (SHO) at Roorkee police station, said police received information around midnight that a student had hanged himself in his hostel room.",
+        "\"He last met his friends around 3 pm (on Thursday) before returning to his hostel room. When a friend went to check on him at around 11 pm, the door was locked from the inside. Looking through the window, they found him hanging from the ceiling fan with a bedsheet,\" Bisht said."
+      ],
+      "key_facts": [
+        "20-year-old undergraduate student dies by suicide at IIT Roorkee",
+        "Pradeep Singh Bisht, SHO at Roorkee police station, said police received information around midnight that a student had hanged himself in his hostel room.",
+        "A 20-year-old undergraduate student at the Indian Institute of Technology (IIT) Roorkee allegedly died by suicide on Thursday night.",
+        "The student had been suffering from depression for some time and had visited the institute's wellness centre for over a year. According to police officials, the student allegedly hanged himself from a ceiling fan using a bedsheet.",
+        "At around 11 pm, when fellow students knocked on his hostel room door and received no response, they looked through the window and saw him hanging from the ceiling fan.",
+        "HT reached out to IIT Roorkee media cell in-charge Sonika Srivastava, but she was unavailable for comment."
+      ],
+      "key_locations": [],
+      "important_dates": [],
+      "exam_relevance": [],
+      "upsc_analysis": "",
+      "causes": [],
+      "impacts": [],
+      "challenges": [],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [],
+      "mains_notes": "",
+      "mains_questions": [],
+      "takeaway": "20-year-old undergraduate student dies by suicide at IIT Roorkee Pradeep Singh Bisht, SHO at Roorkee police station, said police received information around midnight that a student had hanged himself in his hostel room. A 20-year-old undergraduate student at the Indian Institute of Technology (IIT) ",
+      "prelims_facts": [
+        "20-year-old undergraduate student dies by suicide at IIT Roorkee",
+        "Pradeep Singh Bisht, SHO at Roorkee police station, said police received information around midnight that a student had hanged himself in his hostel room.",
+        "A 20-year-old undergraduate student at the Indian Institute of Technology (IIT) Roorkee allegedly died by suicide on Thursday night.",
+        "The student had been suffering from depression for some time and had visited the institute's wellness centre for over a year. According to police officials, the student allegedly hanged himself from a ceiling fan using a bedsheet.",
+        "At around 11 pm, when fellow students knocked on his hostel room door and received no response, they looked through the window and saw him hanging from the ceiling fan.",
+        "HT reached out to IIT Roorkee media cell in-charge Sonika Srivastava, but she was unavailable for comment."
+      ],
+      "vocabulary": [],
+      "related_entities": [],
+      "hindi_translation": {
+        "headline": "20-year-old undergraduate student dies by suicide at IIT Roorkee",
+        "story_lead": "20-year-old undergraduate student dies by suicide at IIT Roorkee Pradeep Singh Bisht, SHO at Roorkee police station, said police received information around midnight that a student had hanged himself in his hostel room. A 20-year-old undergraduate student at the Indian Institute of Technology (IIT) Roorkee allegedly died by suicide on Thursday night. The student had been suffering from depression for some time and had visited the institute's wellness centre for over a year.",
+        "full_article_text": "20-year-old undergraduate student dies by suicide at IIT Roorkee Pradeep Singh Bisht, SHO at Roorkee police station, said police received information around midnight that a student had hanged himself in his hostel room. A 20-year-old undergraduate student at the Indian Institute of Technology (IIT) Roorkee allegedly died by suicide on Thursday night. The student had been suffering from depression for some time and had visited the institute's wellness centre for over a year. According to police officials, the student allegedly hanged himself from a ceiling fan using a bedsheet. At around 11 pm, when fellow students knocked on his hostel room door and received no response, they looked through the window and saw him hanging from the ceiling fan. HT reached out to IIT Roorkee media cell in-charge Sonika Srivastava, but she was unavailable for comment. What the police said Pradeep Singh Bisht, station house officer (SHO) at Roorkee police station, said police received information around midnight that a student had hanged himself in his hostel room. \"He last met his friends around 3 pm (on Thursday) before returning to his hostel room. When a friend went to check on him at around 11 pm, the door was locked from the inside. Looking through the window, they found him hanging from the ceiling fan with a bedsheet,\" Bisht said. \"Upon receiving the alert around midnight, we reached the spot and brought the body down. He was declared dead following an examination by university doctors,\" he said. The officer said that the student was undergoing treatment for depression and had been visiting the university's wellness centre for over a year. \"We have recovered a suicide note from the spot. He has not blamed anyone for the extreme step, instead citing his depression,\" he added. \"Prima facie, it appears to be a case of suicide. There were no external injuries or signs of struggle on the body. His parents have been informed, and a post-mortem examination will be conducted today,\" the SHO said. Discussing suicides can be triggering for some. However, suicides are preventable. If you need support or know someone who does, please reach out to your nearest mental health specialist. Helplines: Aasra: 022 2754 6669; Sneha India Foundation: +914424640050 and Sanjivini: 011-24311918, Roshni Foundation (Secundrabad) Contact Nos: 040-66202001, 040-66202000; ONE LIFE: Contact No: 78930 78930, SEVA: Contact No: 09441778290",
+        "background_context": "",
+        "bullet_points": [
+          "20-year-old undergraduate student dies by suicide at IIT Roorkee",
+          "Pradeep Singh Bisht, SHO at Roorkee police station, said police received information around midnight that a student had hanged himself in his hostel room.",
+          "A 20-year-old undergraduate student at the Indian Institute of Technology (IIT) Roorkee allegedly died by suicide on Thursday night.",
+          "The student had been suffering from depression for some time and had visited the institute's wellness centre for over a year. According to police officials, the student allegedly hanged himself from a ceiling fan using a bedsheet.",
+          "At around 11 pm, when fellow students knocked on his hostel room door and received no response, they looked through the window and saw him hanging from the ceiling fan.",
+          "HT reached out to IIT Roorkee media cell in-charge Sonika Srivastava, but she was unavailable for comment.",
+          "Pradeep Singh Bisht, station house officer (SHO) at Roorkee police station, said police received information around midnight that a student had hanged himself in his hostel room.",
+          "\"He last met his friends around 3 pm (on Thursday) before returning to his hostel room. When a friend went to check on him at around 11 pm, the door was locked from the inside. Looking through the window, they found him hanging from the ceiling fan with a bedsheet,\" Bisht said."
+        ],
+        "key_facts": [
+          "20-year-old undergraduate student dies by suicide at IIT Roorkee",
+          "Pradeep Singh Bisht, SHO at Roorkee police station, said police received information around midnight that a student had hanged himself in his hostel room.",
+          "A 20-year-old undergraduate student at the Indian Institute of Technology (IIT) Roorkee allegedly died by suicide on Thursday night.",
+          "The student had been suffering from depression for some time and had visited the institute's wellness centre for over a year. According to police officials, the student allegedly hanged himself from a ceiling fan using a bedsheet.",
+          "At around 11 pm, when fellow students knocked on his hostel room door and received no response, they looked through the window and saw him hanging from the ceiling fan.",
+          "HT reached out to IIT Roorkee media cell in-charge Sonika Srivastava, but she was unavailable for comment."
+        ],
+        "key_locations": [],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which topic is directly discussed in the current-affairs article titled: 20-year-old undergraduate student dies by suicide at IIT Roorkee?",
+        "options": [
+          "20-year-old undergraduate student dies by suicide at IIT Roorkee",
+          "A topic not discussed in the article",
+          "An unrelated historical event",
+          "An unrelated scientific formula"
+        ],
+        "correct_answer": "20-year-old undergraduate student dies by suicide at IIT Roorkee",
+        "explanation": "The correct option is the topic explicitly identified by the article headline."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/20yearold-undergraduate-student-dies-by-suicide-at-iit-roorkee-101794549777637.html",
+      "static_gk": [],
+      "published_date": "2026-11-13",
+      "content_version": 4,
+      "id": 36,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/11/13/1600x900/logo/IIT-Roorkee_1704360091034_1794550474018_ls5A_80473b76-7d1c-42fc-b67d-2bad9771da62_poSi.jpg",
+      "added_at": "2026-11-13T12:34:28.287040+05:30"
+    },
+    {
+      "category": "India",
+      "exam_corner": true,
+      "exam_corner_section": "Schemes & National Initiatives",
+      "exam_corner_topic": "Legal Accountability & POCSO Act Enforcement",
+      "static_gk": [
+        "The Protection of Children from Sexual Offences (POCSO) Act was enacted in 2012 to protect children from offences of sexual assault, harassment, and pornography.",
+        "Section 21 of the POCSO Act strictly mandates reporting and recording of child sexual abuse, making non-compliance a punishable offence.",
+        "The Bharatiya Nyaya Sanhita (BNS), 2023 replaced the Indian Penal Code (IPC), 1860 as the primary substantive criminal law of India."
+      ],
+      "headline": "SIT Charges Former Greater Chennai Top Cop and Four Officers for Inaction in Child Sex Abuse Probe",
+      "story_lead": "The Special Investigation Team probing child sex abuse cases involving granite baron R Veeramani has submitted a 720-page charge sheet before a Chennai court, naming five police officers for inaction and evidence suppression. Among those named are former Greater Chennai Police Commissioner A Arun and Assistant Commissioner MA Yasmin. The officers face criminal charges under the POCSO Act and the Bharatiya Nyaya Sanhita for failing to act on digital evidence submitted in October 2025 and attempting to close the case prematurely.",
+      "full_article_text": "Special Investigation Team Action on Child Sex Abuse Probe\n\nThe Special Investigation Team (SIT) investigating child sexual abuse allegations against 84-year-old granite baron R Veeramani has submitted a 720-page charge sheet before a local court in Chennai, invoking penal provisions against five police personnel for operational inaction and evidence suppression.\n\nKey Police Officials Named\n* Senior officers named include former Greater Chennai Police Commissioner A Arun and Assistant Commissioner MA Yasmin.\n* The five officers are charged under Section 21 of the Protection of Children from Sexual Offences (POCSO) Act for failing to report or record child sexual abuse offences.\n* They are also booked under Bharatiya Nyaya Sanhita (BNS) Section 199 for public servants disobeying directions of law regarding sexual offence reports, and BNS Section 238 for causing the disappearance of evidence or giving false information to screen offenders.\n\nCase Details and Primary Accused Charges\n* The charge sheet is part of one of seven cases registered by the SIT based on complaints from nine minor victims and their mothers.\n* The core case was registered on September 27 following a complaint by a mother alleging the abuse of her 14-year-old Scheduled Caste daughter.\n* Drivers Parthiban and Babu allegedly transported the victim to Veeramani's Chennai residence.\n* Veeramani and his drivers are charged under BNS Section 87 (kidnapping or abducting to force illicit intercourse), BNS Section 351(3) (aggravated criminal intimidation), the POCSO Act, and the Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act.\n* The 720-page document relies on testimonies from 40 witnesses.\n\nInvestigation Chronology and Financial Scrutiny\n* October 2025: A pen drive containing video evidence of abuse was handed over to Chennai's Central Crime Branch.\n* February 2026: Police submitted a closure report four months after receiving the video, which was subsequently rejected by a local court with instructions to continue probing.\n* August 2026: Veeramani and accomplices Shanthi and Mahendra Simhan were arrested.\n* October 18, 2026: Manager Shaktivel was arrested for procuring 23 gold bars and transferring cash to influential figures to protect Veeramani.\n* Financial probes are scanning the sale of two Chennai properties owned by Veeramani, valued at ₹36.52 crore and ₹43.72 crore, which coincided with the February closure report, to check for official bribery.\n* The SIT has issued five lookout circulars, including for Veeramani's daughter Archana and businessman Prakash. Proceedings are underway to impound the passport and extradite Prakash, currently absconding in the United Kingdom, for facilitating financial transfers to police personnel.",
+      "background_context": "अक्टूबर 2025 में, बाल शोषण के कथित वीडियो वाली एक पेन ड्राइव चेन्नई पुलिस को सौंपी गई थी। चार महीने बाद फरवरी 2026 में पुलिस ने क्लोजर रिपोर्ट दाखिल की। एक स्थानीय अदालत ने इस क्लोजर रिपोर्ट को खारिज कर दिया और जांच जारी रखने का आदेश दिया, जिसके बाद मुख्य आरोपी और उसके सहयोगियों की गिरफ्तारी हुई।",
+      "bullet_points": [
+        "एसआईटी ने पूर्व चेन्नई पुलिस आयुक्त ए अरुण और एसी एमए यास्मीन सहित पांच पुलिस कर्मियों के खिलाफ 720 पन्नों का आरोप पत्र दायर किया।",
+        "अधिकारियों पर पॉक्सो अधिनियम की धारा 21 और बीएनएस की धारा 199 तथा 238 के तहत निष्क्रियता और साक्ष्य नष्ट करने का आरोप है।",
+        "मुख्य आरोपी आर वीरामणि (84) और ड्राइवर पार्थिबन तथा बाबू पर बीएनएस की धाराओं, पॉक्सो और एससी/एसटी अधिनियम के तहत आरोप तय किए गए हैं।",
+        "यह आरोप पत्र 40 गवाहों की गवाही पर आधारित है।",
+        "अक्टूबर 2025 में सौंपे गए वीडियो साक्ष्य के बाद फरवरी 2026 में पुलिस ने क्लोजर रिपोर्ट दाखिल की थी, जिसे अदालत ने खारिज कर दिया था।",
+        "वीरामणि के प्रबंधक शक्तिवेल को 23 सोने की छड़ें खरीदने और नकदी हस्तांतरित करने के आरोप में 18 अक्टूबर 2026 को गिरफ्तार किया गया था।",
+        "एसआईटी रिश्वत से जुड़ाव की जांच के लिए ₹36.52 करोड़ और ₹43.72 करोड़ की संपत्ति बिक्री की पड़ताल कर रही है।",
+        "एसआईटी ने लुकआउट सर्कुलर जारी किए हैं और ब्रिटेन में छिपे व्यवसायी प्रकाश के प्रत्यर्पण का प्रयास कर रही है।"
+      ],
+      "key_facts": [
+        "आरोप पत्र की लंबाई: 40 गवाहों के बयानों के साथ 720 पन्ने।",
+        "नामित वरिष्ठ पुलिस अधिकारी: पूर्व ग्रेटर चेन्नई पुलिस आयुक्त ए अरुण और सहायक आयुक्त एमए यास्मीन।",
+        "मुख्य आरोपी: ग्रेनाइट कारोबारी आर वीरामणि (84) और ड्राइवर पार्थिबन व बाबू।",
+        "पुलिस के खिलाफ लागू धाराएं: पॉक्सो अधिनियम धारा 21, बीएनएस धारा 199 और 238।",
+        "संपत्ति लेनदेन जांच के तहत: चेन्नई के पास ₹36.52 करोड़ और ₹43.72 करोड़ की संपत्तियां।",
+        "बरामदगी/रिश्वत तत्व: प्रबंधक शक्तिवेल द्वारा खरीदी गई 23 सोने की छड़ें।"
+      ],
+      "key_locations": [
+        "चेन्नई",
+        "ग्रेटर चेन्नई",
+        "यूनाइटेड किंगडम"
+      ],
+      "important_dates": [
+        "अक्टूबर 2025: सेंट्रल क्राइम ब्रांच को वीडियो साक्ष्य का पेन ड्राइव सौंपा गया।",
+        "फरवरी 2026: अदालत द्वारा पुलिस क्लोजर रिपोर्ट खारिज।",
+        "अगस्त 2026: आर वीरामणि और सहयोगियों की गिरफ्तारी।",
+        "27 सितंबर, 2026: पीड़िता की मां की शिकायत पर मुख्य मामला दर्ज।",
+        "18 अक्टूबर, 2026: प्रबंधक शक्तिवेल की गिरफ्तारी।",
+        "13 नवंबर, 2026: एसआईटी द्वारा 720 पन्नों का आरोप पत्र दाखिल।"
+      ],
+      "exam_relevance": [
+        "Prelims: Legal provisions of POCSO Act Section 21, BNS Sections 199 and 238, SC/ST Act, Lookout Circulars, and Extradition procedures.",
+        "Mains: GS Paper II (Police Accountability, Role of Judiciary in Monitoring Probe, Governance) and GS Paper IV (Civil Service Ethics & Abuse of Authority)."
+      ],
+      "upsc_analysis": "The invocation of Section 21 of the POCSO Act against senior police leadership marks a notable application of legal accountability for institutional inaction. The local court's rejection of the initial closure report illustrates judicial oversight in ensuring impartial criminal investigation when law enforcement officials attempt to suppress evidence in sensitive child protection cases.",
+      "causes": [
+        "Inaction and suppression of digital evidence submitted to police in October 2025.",
+        "Attempts by influential individuals to close cases through illegal financial inducements and closure reports."
+      ],
+      "impacts": [
+        "Filing of criminal charge sheets against high-ranking police officials under POCSO Act and BNS.",
+        "Reopening and systematic investigation of multiple sexual abuse complaints through an SIT."
+      ],
+      "challenges": [
+        "Investigating complex financial bribery networks involving property transactions and gold bars.",
+        "Extraditing key absconding suspects residing in foreign jurisdictions like the UK."
+      ],
+      "government_steps": [
+        "Formation of a dedicated Special Investigation Team (SIT) to investigate all child abuse complaints.",
+        "Issuance of lookout circulars and extradition proceedings through international channels."
+      ],
+      "constitutional_or_policy_link": [
+        "POCSO Act, 2012 (Section 21 - Mandatory reporting and penalties for failure to record reports).",
+        "Bharatiya Nyaya Sanhita, 2023 (Section 199 - Failure by public servants to record reports; Section 238 - Disappearance of evidence; Section 87 - Abduction; Section 351(3) - Aggravated intimidation).",
+        "Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act, 1989."
+      ],
+      "way_forward": [
+        "Strict enforcement of statutory provisions penalizing non-reporting by law enforcement officers under child protection laws.",
+        "Establishing institutional safeguards and independent oversight mechanism to prevent corruption and procedural suppression during preliminary criminal inquiries."
+      ],
+      "mains_notes": "Police Accountability and Mandatory Reporting Framework:\n1. POCSO Mandate: Section 21 establishes statutory criminal liability for public servants who fail to record or report child sexual abuse.\n2. Judicial Oversight: Court rejection of unjustified closure reports serves as a vital safeguard against police bias and corruption.\n3. Institutional Integrity: High-profile legal actions against senior officers reinforce duty of care and legal accountability in child protection cases.",
+      "mains_questions": [
+        "Analyze the statutory framework under the POCSO Act regarding mandatory reporting by public officials. How does non-compliance by police affect child justice delivery?",
+        "Examine the role of judicial oversight in preventing institutional inaction and procedural suppression in high-profile criminal investigations."
+      ],
+      "takeaway": "Former Greater Chennai Police Commissioner and four officers face charge-sheet under POCSO Act Section 21 and BNS sections for failure to act and suppressing evidence in a child sexual abuse case.",
+      "prelims_facts": [
+        "Section 21 of POCSO Act penalizes failure to report or record cases of child sexual abuse.",
+        "BNS Section 199 penalizes public servants for disobeying directions of law regarding sexual offence reports.",
+        "BNS Section 238 penalizes causing disappearance of evidence of an offence or providing false information.",
+        "Lookout circulars (LOCs) are issued by authorities to track or restrict international movement of absconding accused."
+      ],
+      "vocabulary": [
+        {
+          "word": "Inaction",
+          "meaning_hindi": "निष्क्रियता / कार्रवाई न करना"
+        },
+        {
+          "word": "Suppression",
+          "meaning_hindi": "दबाना / छिपाना"
+        },
+        {
+          "word": "Extradition",
+          "meaning_hindi": "प्रत्यर्पण"
+        },
+        {
+          "word": "Impound",
+          "meaning_hindi": "जब्त करना"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Protection of Children from Sexual Offences Act",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Protection%20of%20Children%20from%20Sexual%20Offences%20Act"
+        },
+        {
+          "name": "Bharatiya Nyaya Sanhita",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Bharatiya%20Nyaya%20Sanhita"
+        },
+        {
+          "name": "Greater Chennai Police",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Special:Search?search=Greater%20Chennai%20Police"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "एसआईटी ने बाल यौन शोषण मामले में निष्क्रियता के लिए ग्रेटर चेन्नई के पूर्व शीर्ष पुलिस अधिकारी और चार अन्य पर आरोप पत्र दाखिल किया",
+        "story_lead": "ग्रेनाइट कारोबारी आर वीरामणि से जुड़े बाल यौन शोषण मामले की जांच कर रही विशेष जांच टीम (SIT) ने एक स्थानीय अदालत में 720 पन्नों का आरोप पत्र दाखिल किया है, जिसमें पूर्व ग्रेटर चेन्नई पुलिस आयुक्त ए अरुण और सहायक आयुक्त एमए यास्मीन सहित पांच पुलिस अधिकारियों को निष्क्रियता और साक्ष्य छिपाने का आरोपी बनाया गया है। इन अधिकारियों पर पॉक्सो अधिनियम और भारतीय न्याय संहिता के तहत अक्टूबर 2025 में सौंपी गई डिजिटल साक्ष्यों पर कार्रवाई न करने और मामले को दबाने का प्रयास करने के आरोप लगाए गए हैं।",
+        "full_article_text": "बाल यौन उत्पीड़न मामले की एसआईटी जांच पर कार्रवाई\n\n84 वर्षीय ग्रेनाइट कारोबारी आर वीरामणि से जुड़े बाल यौन शोषण के मामलों की जांच कर रही विशेष जांच टीम (एसआईटी) ने चेन्नई की एक अदालत में 720 पन्नों का आरोप पत्र प्रस्तुत किया है, जिसमें पांच पुलिस कर्मियों को प्रक्रियात्मक निष्क्रियता और साक्ष्य गायब करने के लिए नामित किया गया है।\n\nनामित मुख्य पुलिस अधिकारी\n* नामित वरिष्ठ अधिकारियों में ग्रेटर चेन्नई के पूर्व पुलिस आयुक्त ए अरुण और सहायक आयुक्त एमए यास्मीन शामिल हैं।\n* इन पांच अधिकारियों पर बच्चों को यौन अपराधों से संरक्षण (POCSO) अधिनियम की धारा 21 के तहत बाल यौन शोषण की रिपोर्ट न करने या दर्ज न करने का आरोप है।\n* उनके खिलाफ भारतीय न्याय संहिता (BNS) की धारा 199 (यौन अपराधों की रिपोर्ट दर्ज करने से संबंधित कानूनी निर्देशों की अवहेलना) और धारा 238 (अपराध के साक्ष्य गायब करना या झूठी जानकारी देना) के तहत भी मामले दर्ज किए गए हैं।\n\nमुख्य मामले के विवरण और मुख्य आरोपी पर आरोप\n* यह आरोप पत्र नौ नाबालिग पीड़ितों और उनकी माताओं की शिकायतों पर एसआईटी द्वारा दर्ज सात मामलों में से एक में दाखिल किया गया है।\n* मुख्य मामला 27 सितंबर को एक मां की शिकायत पर दर्ज किया गया था, जिसमें आरोप लगाया गया था कि उसकी 14 वर्षीय अनुसूचित जाति की बेटी का यौन उत्पीड़न किया गया।\n* ड्राइवर पार्थिबन और बाबू कथित तौर पर पीड़िता को वीरामणि के चेन्नई स्थित आवास पर ले गए थे।\n* वीरामणि और उनके ड्राइवरों पर बीएनएस धारा 87 (अपहरण या अवैध संबंध के लिए मजबूर करना), बीएनएस धारा 351(3) (गंभीर आपराधिक धमकी), पॉक्सो अधिनियम और अनुसूचित जाति एवं अनुसूचित जनजाति (अत्याचार निवारण) अधिनियम के तहत आरोप लगाए गए हैं।\n* यह 720 पन्नों का आरोप पत्र 40 गवाहों के बयानों पर आधारित है।\n\nजांच का क्रमबद्ध विवरण और वित्तीय जांच\n* अक्टूबर 2025: यौन उत्पीड़न का वीडियो वाला पेन ड्राइव चेन्नई की सेंट्रल क्राइम ब्रांच को सौंपा गया।\n* फरवरी 2026: वीडियो प्राप्त करने के चार महीने बाद पुलिस ने क्लोजर रिपोर्ट दाखिल की, जिसे स्थानीय अदालत ने खारिज कर दिया और जांच जारी रखने के निर्देश दिए।\n* अगस्त 2026: वीरामणि और उनके सहयोगियों शांति और महेंद्र सिम्हन को गिरफ्तार किया गया।\n* 18 अक्टूबर, 2026: प्रबंधक शक्तिवेल को 23 सोने की छड़ें खरीदने और प्रभावशाली लोगों को नकद हस्तांतरित करने के आरोप में गिरफ्तार किया गया।\n* वित्तीय जांच में चेन्नई के पास स्थित वीरामणि की दो संपत्तियों की बिक्री (₹36.52 करोड़ और ₹43.72 करोड़) की जांच की जा रही है, जो फरवरी की क्लोजर रिपोर्ट के समय हुई थी, ताकि रिश्वतखोरी की संभावना का पता लगाया जा सके।\n* एसआईटी ने वीरामणि की बेटी अर्चना और व्यवसायी प्रकाश सहित पांच लोगों के खिलाफ लुकआउट सर्कुलर जारी किए हैं। ब्रिटेन में छिपे भगोड़े प्रकाश का पासपोर्ट जब्त करने और प्रत्यर्पण की कार्यवाही शुरू की गई है।"
+      },
+      "quiz": {
+        "question": "Which section of the Protection of Children from Sexual Offences (POCSO) Act penalises public servants or individuals for failure to report or record child sexual abuse?",
+        "options": [
+          "Section 12",
+          "Section 21",
+          "Section 35",
+          "Section 42"
+        ],
+        "correct_answer": "Section 21",
+        "explanation": "Section 21 of the POCSO Act specifically imposes criminal penalties on persons, including public officials, for failing to report or record cases of child sexual abuse."
+      },
+      "source_name": "HT India",
+      "source_url": "https://www.hindustantimes.com/india-news/veeramani-child-sex-abuse-case-sit-names-ex-greater-chennai-top-cop-as-accused-for-inaction-101794551257452.html",
+      "published_date": "2026-11-13",
+      "content_version": 4,
+      "id": 35,
+      "image_url": "https://www.hindustantimes.com/ht-img/img/2026/11/13/1600x900/logo/A-720-page-charge-sheet-was-filed-against-Veeraman_1794551249365_eHQ8.png",
+      "added_at": "2026-11-13T12:34:28.287040+05:30"
+    },
+    {
+      "category": "Science & Technology",
+      "exam_corner": true,
+      "exam_corner_section": "Science & Technology",
+      "exam_corner_topic": "Timeline of Donald Trump and Nvidia CEO Jensen Huang's Relations",
+      "static_gk": [
+        "Nvidia Corporation: A global technology firm headquartered in Santa Clara, California, known for designing graphics processing units (GPUs) and AI hardware.",
+        "Jensen Huang: Co-founder and Chief Executive Officer (CEO) of Nvidia.",
+        "Air Force One: The official air traffic control call sign for any United States Air Force aircraft carrying the President of the United States."
+      ],
+      "headline": "Timeline Highlights Relations Between Donald Trump and Nvidia CEO Jensen Huang",
+      "story_lead": "Reports highlight the timeline of interactions and engagements between Donald Trump and Nvidia Chief Executive Officer Jensen Huang. The relationship spans significant events, ranging from discussions aboard Air Force One to issues involving tech security and espionage controversies.",
+      "full_article_text": "### Overview of Ties Between Donald Trump and Jensen Huang\n\nRecent reporting traces the history and key milestones in the relationship between US President Donald Trump and Jensen Huang, the Chief Executive Officer of Nvidia.\n\nThe relationship highlights the growing intersection between top political leadership and executive leadership in the critical technology and semiconductor sectors. Major events in this timeline include high-level interactions aboard Air Force One as well as discussions surrounding national security, corporate intelligence, and technology policy.",
+      "background_context": "",
+      "bullet_points": [
+        "Reporting outlines the timeline of public and official engagements between Donald Trump and Jensen Huang.",
+        "Jensen Huang serves as the Chief Executive Officer of leading AI chipmaker Nvidia.",
+        "Key events in the relationship include high-profile meetings aboard Air Force One.",
+        "Interactions reflect broader policy discussions concerning semiconductor technology, espionage, and national security."
+      ],
+      "key_facts": [
+        "Jensen Huang is the CEO of Nvidia.",
+        "Donald Trump has had documented engagements with major semiconductor industry leaders.",
+        "The timeline covers events ranging from Air Force One discussions to tech espionage topics."
+      ],
+      "key_locations": [
+        "United States"
+      ],
+      "important_dates": [
+        "2026-11-13: Date of publication highlighting the timeline of relations."
+      ],
+      "exam_relevance": [
+        "Relevant for understanding international technology policy, state-industry relations, and global semiconductor geopolitics."
+      ],
+      "upsc_analysis": "The relationship between head-of-state leadership and major semiconductor executives illustrates the strategic convergence of technology hardware, international trade, and national security in modern diplomacy.",
+      "causes": [],
+      "impacts": [],
+      "challenges": [],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [],
+      "mains_notes": "Key aspects of government-industry relations in critical technology, AI hardware, and national security oversight.",
+      "mains_questions": [
+        "Examine the strategic significance of semiconductor manufacturing and technological leadership in international relations.",
+        "How do interactions between political leadership and tech executives influence national security and trade policies?"
+      ],
+      "takeaway": "The relationship between Donald Trump and Jensen Huang underscores the strategic importance of semiconductor leaders in national security and technology policy.",
+      "prelims_facts": [
+        "Nvidia is a dominant designer of semiconductors and artificial intelligence chips.",
+        "Jensen Huang co-founded Nvidia in 1993."
+      ],
+      "vocabulary": [
+        {
+          "word": "Timeline",
+          "meaning_hindi": "घटनाक्रम / समय-रेखा"
+        },
+        {
+          "word": "Spy",
+          "meaning_hindi": "जासूस / जासूसी"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Donald Trump",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Donald_Trump"
+        },
+        {
+          "name": "Jensen Huang",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Jensen_Huang"
+        },
+        {
+          "name": "Nvidia",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Nvidia"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "डोनाल्‍ड ट्रम्‍प और एनवीडिया के सीईओ जेन्सन हुआंग के संबंधों की समय-रेखा पर चर्चा",
+        "story_lead": "अमेरिकी राष्ट्रपति डोनाल्ड ट्रंप और एनवीडिया के मुख्य कार्यकारी अधिकारी (सीईओ) जेन्सन हुआंग के बीच संबंधों और मुलाकातों के घटनाक्रम को रेखांकित किया गया है। यह संबंध एयर फोर्स वन पर हुई मुलाकातों से लेकर तकनीकी सुरक्षा और जासूसी विवादों से जुड़े मुद्दों तक फैला हुआ है।",
+        "full_article_text": "### डोनाल्‍ड ट्रम्‍प और जेन्सन हुआंग के संबंधों का अवलोकन\n\nहालिया रिपोर्टों में अमेरिकी राष्ट्रपति डोनाल्ड ट्रंप और एनवीडिया के मुख्य कार्यकारी अधिकारी (सीईओ) जेन्सन हुआंग के बीच संबंधों के इतिहास और प्रमुख मील के पत्थरों को रेखांकित किया गया है।\n\nयह संबंध शीर्ष राजनीतिक नेतृत्व और महत्वपूर्ण प्रौद्योगिकी व सेमीकंडक्टर क्षेत्रों के कार्यकारी नेतृत्व के बीच बढ़ते तालमेल को दर्शाता है। इस समय-रेखा की प्रमुख घटनाओं में एयर फोर्स वन पर हुई उच्च स्तरीय मुलाकातों के साथ-साथ राष्ट्रीय सुरक्षा, कॉर्पोरेट इंटेलिजेंस और प्रौद्योगिकी नीति से जुड़ी चर्चाएं शामिल हैं।",
+        "background_context": "",
+        "bullet_points": [
+          "रिपोर्ट्स डोनाल्‍ड ट्रम्‍प और जेन्सन हुआंग के बीच सार्वजनिक और आधिकारिक जुड़ाव की समय-रेखा को रेखांकित करती हैं।",
+          "जेन्सन हुआंग प्रमुख एआई चिप निर्माता कंपनी एनवीडिया के सीईओ हैं।",
+          "इन संबंधों की प्रमुख घटनाओं में एयर फोर्स वन में हुई बैठकें शामिल हैं।",
+          "ये बातचीत सेमीकंडक्टर तकनीक, जासूसी और राष्ट्रीय सुरक्षा से जुड़ी व्यापक नीतिगत चर्चाओं को दर्शाती हैं।"
+        ],
+        "key_facts": [
+          "जेन्सन हुआंग एनवीडिया के सीईओ हैं।",
+          "डोनाल्ड ट्रंप के प्रमुख सेमीकंडक्टर उद्योग के नेताओं के साथ दर्ज जुड़ाव रहे हैं।",
+          "समय-रेखा एयर फोर्स वन की चर्चाओं से लेकर टेक जासूसी विषयों तक की घटनाओं को कवर करती है।"
+        ],
+        "key_locations": [
+          "संयुक्त राज्य अमेरिका"
+        ],
+        "important_dates": [
+          "2026-11-13: संबंधों की समय-रेखा पर प्रकाश डालने वाला प्रकाशन दिवस।"
+        ]
+      },
+      "quiz": {
+        "question": "Jensen Huang is the Chief Executive Officer (CEO) of which leading global semiconductor and AI hardware company?",
+        "options": [
+          "Intel",
+          "Nvidia",
+          "Qualcomm",
+          "AMD"
+        ],
+        "correct_answer": "Nvidia",
+        "explanation": "Jensen Huang is the co-founder and CEO of Nvidia Corporation, a major technology firm specialising in graphics processing units and AI hardware."
+      },
+      "source_name": "Google News World",
+      "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOc29tQTluM096cXduaE83VTNRZjVnekZDUTViZEpGQUNBUDhMNHNvRWNyMUxkNjRPdTFlenVwRFR1a0c3ZGV0RTJvVE9FdGdlTGkwZG1sVjI4N2w3aTN2bkJlUTFheXR4bllpNUtDblFRTmdTS3VFYVU5Xy12VjlBd0ZqZzJ2WnRFRHZCQ2hzbXVURHNBcUhQMFJzVjYxYXhsVFY3Y3k0X2lnU0hpendMTW9oajdIMFExV09Mb3V0LXdqWkFMUEl6Y0NBTVDSAdQBQVVfeXFMTW5GUEt5cG1aOGM3SGw0LWxsSVhxeEI1OG0yN0N0V19ZQkJaTlo1ZkhHVHhJMlJTSGE2UDVvNnZiVVhrM2lFX2ZZMk1GbGRhbkk3R1A1YW1kdFp2SS1RS3FvUzI1eF9DX1pjUnZxLWxfLTZOTFMtTDEtUHhhWmdCRVVpYk5SbGRVdkpmVzJtQkFyUkNuc2VhYVVVZWVvREFTVi1DVEsxUXU2dTNQWlFaVmhUazdZWVo1Q0JqbVc5cFU1V2NFRDFjTEdIZEwxQXJVYkJHdy0?oc=5",
+      "published_date": "2026-11-13",
+      "content_version": 4,
+      "id": 34,
+      "image_url": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1200&q=80",
+      "added_at": "2026-11-13T12:34:28.287040+05:30"
+    },
+    {
+      "category": "Science & Technology",
+      "exam_corner": true,
+      "exam_corner_section": "Science & Technology",
+      "exam_corner_topic": "Timeline of Donald Trump and Jensen Huang Ties",
+      "static_gk": [
+        "Nvidia Corporation is a major American technology company specialising in graphics processing units (GPUs) and artificial intelligence hardware, headquartered in Santa Clara, California."
+      ],
+      "headline": "Timeline Highlights the Evolving Relationship Between Donald Trump and Nvidia CEO Jensen Huang",
+      "story_lead": "A timeline of events traces the professional relationship and interactions between US President Donald Trump and Nvidia Chief Executive Officer Jensen Huang. The coverage highlights key developments ranging from high-profile meetings aboard Air Force One to espionage-related controversies in the semiconductor industry.",
+      "full_article_text": "#### Timeline of Trump and Jensen Huang's Relations\n\n- **Overview of Key Interactions**: The relationship between US President Donald Trump and Nvidia CEO Jensen Huang has encompassed multiple significant events at the intersection of technology policy, corporate governance, and national security.\n- **Air Force One Discussions**: High-level engagements between administration officials and leading semiconductor industry executives have featured discussions aboard Air Force One concerning tech leadership and global supply chains.\n- **Espionage and Security Concerns**: The ties also reflect broader scrutiny surrounding technology espionage, supply chain vulnerabilities, and regulatory oversight impacting major American chipmakers.",
+      "background_context": "",
+      "bullet_points": [
+        "Traces the timeline of interactions between US President Donald Trump and Nvidia CEO Jensen Huang.",
+        "Covers high-level engagements ranging from discussions aboard Air Force One to broader tech policies.",
+        "Highlights controversies and scrutiny concerning spy scandals and security within the semiconductor sector.",
+        "Demonstrates the strategic overlap between executive governance and corporate technology leadership."
+      ],
+      "key_facts": [
+        "Key Figures Involved: Donald Trump (US President) and Jensen Huang (CEO of Nvidia).",
+        "Key Topics Addressed: Aviation meetings (Air Force One), semiconductor industry policies, and espionage controversies."
+      ],
+      "key_locations": [
+        "United States"
+      ],
+      "important_dates": [
+        "2026-11-13 (Publication Date)"
+      ],
+      "exam_relevance": [
+        "Prelims: Identification of key figures in global technology governance and corporate leadership.",
+        "Mains: Understanding the strategic intersection of national security, semiconductor policy, and corporate-state relations."
+      ],
+      "upsc_analysis": "The relationship between top state executives and global technology leaders underscores the growing role of semiconductor technology as a critical element of national security, trade policy, and global economic strategy.",
+      "causes": [],
+      "impacts": [],
+      "challenges": [],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [],
+      "mains_notes": "Semiconductor Geopolitics: State policy increasingly interacts with technology executives due to national security concerns, supply chain integrity, and corporate espionage risks.",
+      "mains_questions": [
+        "Examine how national security concerns influence global supply chains in the critical semiconductor and hardware sectors."
+      ],
+      "takeaway": "The interactions between Donald Trump and Jensen Huang underscore the critical strategic connection between United States executive leadership and the global semiconductor industry.",
+      "prelims_facts": [
+        "Jensen Huang is the Chief Executive Officer of Nvidia Corporation.",
+        "Nvidia is a key player in global graphics processing units (GPUs) and artificial intelligence hardware."
+      ],
+      "vocabulary": [
+        {
+          "word": "Timeline",
+          "meaning_hindi": "घटनाक्रम / समय-रेखा"
+        },
+        {
+          "word": "Espionage",
+          "meaning_hindi": "जासूसी"
+        }
+      ],
+      "related_entities": [
+        {
+          "name": "Donald Trump",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Donald_Trump"
+        },
+        {
+          "name": "Jensen Huang",
+          "type": "person",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Jensen_Huang"
+        },
+        {
+          "name": "Nvidia",
+          "type": "place",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Nvidia"
+        }
+      ],
+      "hindi_translation": {
+        "headline": "डोनाल्ड ट्रंप और एनवीडिया के सीईओ जेन्सन हुआंग के संबंधों को रेखांकित करता टाइमलाइन",
+        "story_lead": "अमेरिकी राष्ट्रपति डोनाल्ड ट्रंप और एनवीडिया के मुख्य कार्यकारी अधिकारी जेन्सन हुआंग के बीच के पेशेवर संबंधों और मुलाकातों का विवरण एक टाइमलाइन के माध्यम से प्रस्तुत किया गया है। इसमें एयर फोर्स वन की बैठकों से लेकर जासूसी विवादों तक की प्रमुख घटनाएं शामिल हैं।",
+        "full_article_text": "#### ट्रंप और जेन्सन हुआंग के संबंधों का घटनाक्रम\n\n- **प्रमुख मुलाकातों का विवरण**: अमेरिकी राष्ट्रपति डोनाल्ड ट्रंप और एनवीडिया के सीईओ जेन्सन हुआंग के बीच संबंध प्रौद्योगिकी नीति, कॉर्पोरेट प्रशासन और राष्ट्रीय सुरक्षा के चौराहे पर कई महत्वपूर्ण घटनाओं को कवर करते हैं।\n- **एयर फोर्स वन की चर्चाएं**: प्रशासनिक अधिकारियों और अग्रणी सेमीकंडक्टर उद्योग के अधिकारियों के बीच एयर फोर्स वन पर तकनीकी नेतृत्व और वैश्विक आपूर्ति श्रृंखलाओं को लेकर उच्च स्तरीय चर्चाएं शामिल रही हैं।\n- **जासूसी और सुरक्षा संबंधी चिंताएं**: यह घटनाक्रम जासूसी विवादों, आपूर्ति श्रृंखला की कमजोरियों और प्रमुख अमेरिकी चिप निर्माताओं को प्रभावित करने वाली नियामक निगरानी को भी रेखांकित करता है।",
+        "background_context": "",
+        "bullet_points": [
+          "अमेरिकी राष्ट्रपति डोनाल्ड ट्रंप और एनवीडिया सीईओ जेन्सन हुआंग के बीच बातचीत के घटनाक्रम को रेखांकित करता है।",
+          "एयर फोर्स वन पर बैठकों से लेकर व्यापक प्रौद्योगिकी नीतियों तक की उच्चस्तरीय व्यस्तताओं को शामिल करता है।",
+          "सेमीकंडक्टर क्षेत्र में जासूसी विवादों और सुरक्षा से जुड़ी जांच पर प्रकाश डालता है।",
+          "सरकारी प्रशासन और कॉर्पोरेट प्रौद्योगिकी नेतृत्व के बीच रणनीतिक संबंधों को दर्शाता है।"
+        ],
+        "key_facts": [
+          "शामिल प्रमुख हस्तियां: डोनाल्ड ट्रंप (अमेरिकी राष्ट्रपति) और जेन्सन हुआंग (एनवीडिया के सीईओ)।",
+          "शामिल मुख्य विषय: एयर फोर्स वन पर बैठकें, सेमीकंडक्टर नीति और जासूसी विवाद।"
+        ],
+        "key_locations": [
+          "संयुक्त राज्य अमेरिका"
+        ],
+        "important_dates": [
+          "2026-11-13 (प्रकाशन तिथि)"
+        ]
+      },
+      "quiz": {
+        "question": "Jensen Huang is the Chief Executive Officer (CEO) of which global technology company?",
+        "options": [
+          "Intel",
+          "Nvidia",
+          "Qualcomm",
+          "AMD"
+        ],
+        "correct_answer": "Nvidia",
+        "explanation": "Jensen Huang is the co-founder and Chief Executive Officer of Nvidia Corporation, a leading company in semiconductor and GPU technology."
+      },
+      "source_name": "NDTV",
+      "source_url": "https://www.ndtv.com/world-news/air-force-one-to-spy-scandal-a-timeline-of-us-president-donald-trump-and-jensen-huangs-ties-12320564#publisher=newsstand",
+      "published_date": "2026-11-13",
+      "content_version": 4,
+      "id": 33,
+      "image_url": "https://c.ndtvimg.com/2026-11/q7h2umjk_jensen-trump_625x300_13_November_26.jpeg",
+      "added_at": "2026-11-13T12:34:28.287040+05:30"
+    },
+    {
+      "category": "Sports",
+      "exam_corner": true,
+      "exam_corner_section": "Sports",
+      "exam_corner_topic": "Indian contingent finishes Dakar Youth Olympics with 10 medals - Awaz The Voice",
+      "headline": "Indian contingent finishes Dakar Youth Olympics with 10 medals - Awaz The Voice",
+      "story_lead": "Indian contingent finishes Dakar Youth Olympics with 10 medals - Awaz The Voice",
+      "full_article_text": "Indian contingent finishes Dakar Youth Olympics with 10 medals - Awaz The Voice",
+      "background_context": "",
+      "bullet_points": [
+        "Indian contingent finishes Dakar Youth Olympics with 10 medals - Awaz The Voice"
+      ],
+      "key_facts": [
+        "Indian contingent finishes Dakar Youth Olympics with 10 medals - Awaz The Voice"
+      ],
+      "key_locations": [],
+      "important_dates": [],
+      "exam_relevance": [],
+      "upsc_analysis": "",
+      "causes": [],
+      "impacts": [],
+      "challenges": [],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [],
+      "mains_notes": "",
+      "mains_questions": [],
+      "takeaway": "Indian contingent finishes Dakar Youth Olympics with 10 medals - Awaz The Voice",
+      "prelims_facts": [
+        "Indian contingent finishes Dakar Youth Olympics with 10 medals - Awaz The Voice"
+      ],
+      "vocabulary": [],
+      "related_entities": [],
+      "hindi_translation": {
+        "headline": "Indian contingent finishes Dakar Youth Olympics with 10 medals - Awaz The Voice",
+        "story_lead": "Indian contingent finishes Dakar Youth Olympics with 10 medals - Awaz The Voice",
+        "full_article_text": "Indian contingent finishes Dakar Youth Olympics with 10 medals - Awaz The Voice",
+        "background_context": "",
+        "bullet_points": [
+          "Indian contingent finishes Dakar Youth Olympics with 10 medals - Awaz The Voice"
+        ],
+        "key_facts": [
+          "Indian contingent finishes Dakar Youth Olympics with 10 medals - Awaz The Voice"
+        ],
+        "key_locations": [],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which topic is directly discussed in the current-affairs article titled: Indian contingent finishes Dakar Youth Olympics with 10 medals - Awaz The Voice?",
+        "options": [
+          "Indian contingent finishes Dakar Youth Olympics with 10 medals - Awaz The Voice",
+          "A topic not discussed in the article",
+          "An unrelated historical event",
+          "An unrelated scientific formula"
+        ],
+        "correct_answer": "Indian contingent finishes Dakar Youth Olympics with 10 medals - Awaz The Voice",
+        "explanation": "The correct option is the topic explicitly identified by the article headline."
+      },
+      "source_name": "Google News Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMDRCTWp2YnQ2a01OZ0pjU05HcUh2MUl2RWJkYnAyVXFDMk9DWkxDbTBxSEUtMVFnVWZGRVctSFd0NUNhYTZ4RVJjTTUwTTE0c2wwTE03OVF0VFE3Qy0tenk0MjdaSFlxVEVPUnR0ZjltTks3allpeHQySDl3T1l5QmVWakR3OHZnMkoxdW9jVmZ2aDZwVmI4RFMway1wTVdpNTc5dy03dm5ZVjB3SVhJ?oc=5",
+      "static_gk": [],
+      "published_date": "2026-11-13",
+      "content_version": 4,
+      "id": 32,
+      "image_url": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1200&q=80",
+      "added_at": "2026-11-13T12:34:28.287040+05:30"
+    },
+    {
+      "category": "Sports",
+      "exam_corner": true,
+      "exam_corner_section": "Sports",
+      "exam_corner_topic": "India Ends Dakar Youth Olympics Campaign With 10 Medals, Its Second-Best Performance - Open Magazine",
+      "headline": "India Ends Dakar Youth Olympics Campaign With 10 Medals, Its Second-Best Performance - Open Magazine",
+      "story_lead": "India Ends Dakar Youth Olympics Campaign With 10 Medals, Its Second-Best Performance - Open Magazine",
+      "full_article_text": "India Ends Dakar Youth Olympics Campaign With 10 Medals, Its Second-Best Performance - Open Magazine",
+      "background_context": "",
+      "bullet_points": [
+        "India Ends Dakar Youth Olympics Campaign With 10 Medals, Its Second-Best Performance - Open Magazine"
+      ],
+      "key_facts": [
+        "India Ends Dakar Youth Olympics Campaign With 10 Medals, Its Second-Best Performance - Open Magazine"
+      ],
+      "key_locations": [],
+      "important_dates": [],
+      "exam_relevance": [],
+      "upsc_analysis": "",
+      "causes": [],
+      "impacts": [],
+      "challenges": [],
+      "government_steps": [],
+      "constitutional_or_policy_link": [],
+      "way_forward": [],
+      "mains_notes": "",
+      "mains_questions": [],
+      "takeaway": "India Ends Dakar Youth Olympics Campaign With 10 Medals, Its Second-Best Performance - Open Magazine",
+      "prelims_facts": [
+        "India Ends Dakar Youth Olympics Campaign With 10 Medals, Its Second-Best Performance - Open Magazine"
+      ],
+      "vocabulary": [],
+      "related_entities": [],
+      "hindi_translation": {
+        "headline": "India Ends Dakar Youth Olympics Campaign With 10 Medals, Its Second-Best Performance - Open Magazine",
+        "story_lead": "India Ends Dakar Youth Olympics Campaign With 10 Medals, Its Second-Best Performance - Open Magazine",
+        "full_article_text": "India Ends Dakar Youth Olympics Campaign With 10 Medals, Its Second-Best Performance - Open Magazine",
+        "background_context": "",
+        "bullet_points": [
+          "India Ends Dakar Youth Olympics Campaign With 10 Medals, Its Second-Best Performance - Open Magazine"
+        ],
+        "key_facts": [
+          "India Ends Dakar Youth Olympics Campaign With 10 Medals, Its Second-Best Performance - Open Magazine"
+        ],
+        "key_locations": [],
+        "important_dates": []
+      },
+      "quiz": {
+        "question": "Which topic is directly discussed in the current-affairs article titled: India Ends Dakar Youth Olympics Campaign With 10 Medals, Its Second-Best Performance - Open Magazine?",
+        "options": [
+          "India Ends Dakar Youth Olympics Campaign With 10 Medals, Its Second-Best Performance - Open Magazine",
+          "A topic not discussed in the article",
+          "An unrelated historical event",
+          "An unrelated scientific formula"
+        ],
+        "correct_answer": "India Ends Dakar Youth Olympics Campaign With 10 Medals, Its Second-Best Performance - Open Magazine",
+        "explanation": "The correct option is the topic explicitly identified by the article headline."
+      },
+      "source_name": "Google News India",
+      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNFd5QjhkdmtYNUMySzBIR3RPbVA3UlAxeVlmcVdmdHU2U0l6UzZsYmIzYk5iRWtrN1hJWlJReDhzdlpjV1RfRXpZc0ZoM1lMNmpPVTlrMF8yYWEzZmhHTjZFQkdWNFBPUFFFaks2WmxXNFBNTUdwb2ZpSE5JalJCN1FGQy1SemU3QVAxeXhkUE9kZTRheWM4VWxXcVVCaWdUZFJibFh5MHU2S09KVGhjWGpvV3UwaHA5RkE?oc=5",
+      "static_gk": [],
+      "published_date": "2026-11-13",
+      "content_version": 4,
+      "id": 31,
+      "image_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80",
+      "added_at": "2026-11-13T12:34:28.287040+05:30"
+    },
+    {
+      "category": "Health",
       "exam_corner": true,
       "exam_corner_section": "Schemes & National Initiatives",
       "exam_corner_topic": "IIT Kharagpur becomes first IIT to offer MD programmes approved by national medical body",
@@ -2608,6 +3997,6 @@
       "added_at": "2026-11-13T01:47:39.994493+05:30"
     }
   ],
-  "updated_at": "2026-11-13T01:47:39.994493+05:30",
-  "count": 30
+  "updated_at": "2026-11-13T12:34:28.287040+05:30",
+  "count": 45
 }
